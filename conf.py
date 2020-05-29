@@ -38,6 +38,8 @@ source_suffix = {
     '.md': 'markdown',
 }
 
+language = 'en'
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
@@ -61,3 +63,7 @@ html_static_path = ['_static']
 
 html_theme = "sphinx_rtd_theme"
 html_theme_path = ["_themes", ]
+
+# Translations
+locale_dirs = ['locale/']
+gettext_compact = False
