@@ -235,27 +235,8 @@
 
   {%- block footer %} {% endblock %}
 
- <script type="text/javascript">
-	 var _paq=_paq||[];
-	 _paq.push(['setCookieDomain','*.krita.org']);
-	 _paq.push(['setDomains','*.krita.org']);
-	 _paq.push(['setDocumentTitle',document.domain+"/"+document.title]);
-	 _paq.push(['trackPageView']);
-	 _paq.push(['enableLinkTracking']);
+        {%- block footer %} {% endblock %}
 
-	 (function(){
-	 	var u="//stats.kde.org/";
-	    _paq.push(['setTrackerUrl',u+'piwik.php']);
-	    _paq.push(['setSiteId',13]);
-	    var d = document, g = d.createElement('script'),s=d.getElementsByTagName('script')[0];
-	    g.type = 'text/javascript';
-	    g.async = true;
-	    g.defer = true;
-	    g.src = u+'piwik.js';
-	    s.parentNode.insertBefore(g,s);
-	  })();
-</script> 
-<noscript><p><img src="//stats.kde.org/piwik.php?idsite=13" style="border:0;" alt="" /></p></noscript>
 
 </body>
 </html>
