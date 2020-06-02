@@ -8,9 +8,8 @@ Welcome to the CryptPad documentation!
 
 .. toctree::
    :hidden:
-   :glob:
 
-   user_guide/*
+   user_guide
 
 
 
