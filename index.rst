@@ -3,10 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to the CryptPad documentation!
+Documentation CryptPad
 ==================================================
 
 .. toctree::
+   :maxdepth: 6
    :hidden:
 
    user_guide

@@ -53,6 +53,6 @@ Afin de ne pas recopier le même contenu d'un autre documents, vous pouvez lui a
 
 Pour Transformer un document en modèle, cliquez sur `[icon] Fichier > [icon] Sauver en tant que modèle`.
 
-Pour appliquer un modèle existant au document, cliquez sur `[icon] Fichier > [icon] Importer un modèle` (**/!\ Le contenu du document sera supprimé /!\**)
+Pour appliquer un modèle existant au document, cliquez sur file-o Fichier > icon Importer un modèle (Le contenu du document sera supprimé )
 
 

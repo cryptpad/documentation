@@ -6,9 +6,10 @@ Intro text yipee ya yo.
 
 
 .. toctree::
-    :hidden:
     :maxdepth: 5
+    :hidden:
 
+    user_guide/instances.md
     user_guide/accounts.md
     user_guide/collaboration.md
     user_guide/share_and_access.md
