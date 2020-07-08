@@ -1,21 +1,23 @@
-## Sécurité
+# Security
 
+## Passwords for documents and folders
+{**logged in user**}
 
+When you share the link to a document or shared folder through an insecure channel (for example email or SMS), someone might intercept the link and gain access to your data. To prevent this from happening, the [owners] of a document or folder can add a password. 
 
-### Mots de passe des documents / dossiers
+When you share documents with your contacts and teams directly on CryptPad, communications are encrypted and we assume that you want to give them access.  Therefore the password is remembered and sent with the pad when you share it. The recipient, or yourself, are **not** asked for it when they open the document.
 
-Quand vous partagez le lien de votre document / dossier de manière **non sécurisée** (par exemple par email ou SMS), il se peut que quelqu'un l'**intercepte** et accède à votre document.
+You can add a password to a document when you [create] it. 
 
-Pour éviter cela, CryptPad vous permet d'ajouter un **mot de passe**.
+You can also add or change the password in the [<i class="fa fa-unlock-alt"></i> **Access**] menu:
+- From the CryptDrive: `Right click` > <i class="fa fa-unlock-alt"></i> **Access**.
+- From the document toolbar: <i class="fa fa-unlock-alt"></i> **Access**.
 
-Vous pouvez en ajouter lors de la [création] de celui-ci ou `Clique droit - Accès` dans le drive ou `[icon] Accès` dans votre document (**/!\ Vous devez en être son propriétaire /!\**).
+## Remote Disconnect
+{**logged in user**}
 
-Bien sur, vous pouvez le changer / supprimer par la suite.
+In some cases (loss or theft of a device, forgotten to log out of a session on a shared computer, etc.) it can be necessary to close all active CryptPad sessions. This can be done in two ways: 
 
+- User menu (avatar at the top-right) > <i class="fa fa-gear"></i> **Settings** > <i class="fa fa-lock"></i> **Confidentiality** > **Close remote sessions**. This options logs out all sessions **except** the one from which it is actiaved. 
 
-
-### Déconnexion totale
-
-En cas de **vol d'un de vos matériels informatiques**, CryptPad vous permet de déclencher une **déconnexion à distance** de votre compte sur **tous vos appareils**, excepté celui sur lequel vous vous trouvez. Pour ce faire, Cliqué sur `Confidentialité > Fermer les autres sessions` dans vos paramètres ou sur votre avatar `Se déconnecter partout`. 
-
-Tous les appareils qui sont actuellement connectés sur votre compte CryptPad seront déconnectés. Tous les appareils qui ont enregistrés vos identifiants dans les cookies, vous forceront à vous identifier.
+- User menu (avatar at the top-right) > <i class="fa fa-plug"></i> **Log out everywhere**. This options logs out all sessions **including** the one from which it is activated. 

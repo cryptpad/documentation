@@ -1,9 +1,9 @@
-# Instances CryptPad
+# CryptPad instances
 
-CryptPad est un logiciel libre. Il peut être installé par qui veut proposer ce service dans un cadre personel ou professionel. 
+CryptPad is free software. It can be installed by whoever wants to provide this service in a personal or professional capacity. 
 
-Cette documentation est rédigée par l'équipe de dévelopement du projet par l'entreprise XWiki SAS à Paris, France. Cette équipe administre l'instance principale cryptpad.fr mais il en existe beaucoup d'autres. Cette documentation s'applique a toutes les instances sauf mention spéciale.
+This documentation is written and maintained by the development team at XWiki SAS in Paris, France. This team administers the flagship instance at cryptpad.fr, but there are many others. This documentation should apply to all instances unless explicitly mentionned. 
 
-Veuillez noter que cette documentation est mise à jour et s'applique à la dernière version de CryptPad. Il se peut que votre instance utilise une version antérieure. Chaque instance peut aussi avoir des réglages spécifiques, tels que l'espace de stockage, la désactivation de certaines applications, ou encore des différrences de couleurs/styles. 
+Please note that this documentation is kept up to date with the latest version of CryptPad [version number]. It is possible that other instances are using earlier versions. Each instance can also have specific settings such as storage space, disabled applications, or custom colors/styles.
 
-Si vous souhaitez mettre en place une instance CryptPad merci de vous référer au [Guide d'installation].
+If you are looking to set up a CryptPad instance please refer to the [Installation Guide].

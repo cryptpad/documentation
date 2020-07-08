@@ -1,27 +1,75 @@
-### Code
+# Code / Markdown
 
-- Affichez ou cachez la barre d'outils en cliquant sur le bouton [icon] Outils (Langage Markdown uniquement).
+The Code/Markdown application in CryptPad is an integration of [CodeMirror](https://codemirror.net/).
 
-- {**Connecté**} intégrez un fichier dans votre document en cliquant sur le bouton [icon] Insert.
+## Toolbar
 
-- Changer le langage (coloration syntaxique ?) de votre éditeur en cliquant sur le bouton [icon] Thème > Langage.
+<i class="fa fa-wrench"></i> **Tools**: Show/hide the text editor toolbar. 
 
-#### Markdown 
+<i class="fa fa-picture-o"></i> **Insert**: Add an image to the document. The image can be chosen in the CrpytDrive or uploaded. {**logged in user**}
 
-- Ajoutez des syntaxes Markdown grâce à la barre d'outil.
+<i class="cptools cptools-palette"></i> **Theme**: Set colors for the editor, detailed [below]
 
-- Vous pouvez ajouter différents diagrammes grâce aux syntaxes Mermaid (https://mermaid-js.github.io/mermaid/#/).
+<i class="fa fa-eye"></i> **Preview**: Show/hide the Markdown preview pane.
 
-- Pour en savoir plus sur le langage Makdown, cliquez sur le bouton aide [icon] de la barre d'outils.
+### Theme
 
-#### Aperçu
+<i class="fa fa-paint-brush"></i> **Color by author**: Highlight the text written by each user with their cursor color (picked in [user settings]). When active: 
+  - <i class="fa fa-paint-brush"></i> **Hide author colors** to turn off the display of colors in this window, the colors can be turned back on and remain active for other users. 
+  - <i class="fa fa-paint-brush"></i> **Color by author** > **Clear and disable** to turn off the colors for all users and delete the data.
 
-- Changez la couleur de fond de votre éditeur en cliquant sur le bouton [icon] Thème > Thème.
+**Theme**: Color scheme used in the code editor pane.
 
-- Voyer qui à écrit quoi dans le code en cliquant sur le bouton [icon] Thème > Couleurs par auteurs (beta).
+**Language**: Used for syntax highlighting. 
 
-- Regardez l'aperçu de votre code en cliquant sur le bouton [icon] Aperçu (Langage Markdown uniquement).
+## Import/Export
 
-- double-cliquez sur une image pour passer en vue galerie et naviguez entre elles avec les flèches.
+<i class="fa fa-file-o"></i> **File** > <i class="fa fa-upload"></i> **Import**.
+
+Suported formats: Any plain text file, the file extension is used to determine the language.
+
+<i class="fa fa-file-o"></i> **File** > <i class="fa fa-download"></i> **Export**.
+
+Supported formats: `.md`, any other extension can be typed for the name of the exported file. 
+
+## Markdown
+
+The Code application is particularly suited for writing documents in Markdown: a lightweight syntax that offers basic formatting while remaining readable. Markdown is readily converted to other formats such as HTML. 
+
+[Markdown syntax guide.](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet )
+
+<!--- localised link if possible. French here: 
+https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdown/ -->
+
+Additionally to basic Markdown syntax, the following features are also available: 
+
+- `[TOC]` Inserts a table of contents.
+- Todo list
+  - `- [ ] task` for a task to do.  
+  renders as <i class="fa fa-square-o"></i> task
+  - `- [x] task` for a completed task.  
+  renders as <i class="fa fa-check-o"></i> task
+- Diagrams with [Mermaid](https://mermaid-js.github.io/mermaid/#/).
+- Mindmaps with [Markmap](https://markmap.js.org/).
+- Mathematical equations with [Mathjax](https://www.mathjax.org/).
+
+## Images
+
+It is strongly advised **not** to insert external images in documents. The Markdown syntax `![description](https://site.com/image.jpg` is supported but presents security risks. Malicious code can be embedded in images and result iin data leakeage.
+
+For this reason, CryptPad makes use of `media-tag` to insert images from the CryptDrive. This syntax is more complex but it is managed automatically by the <i class="fa fa-picture-o"></i> **Insert** menu.
+
+### Lightbox
+
+To browse through all images and diagrams in a document: 
+
+- `Double click` on an image or diagram in the Markdown preview. 
+
+
+
+
+
+
+
 
 

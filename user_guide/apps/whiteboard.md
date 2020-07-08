@@ -1,23 +1,44 @@
-### Dessin
+# Whiteboard
 
-- Intégrez un fichier dans votre document en cliquant sur le bouton [icon] Insert.
+The Whiteboard application in CryptPad is based on [Fabric.js](http://fabricjs.com/).
 
-- {**Connecté**} sauvegardez votre document en tant qu'image dans leur drive en cliquant sur le bouton [icon] Fichier > [icon] Save as image.
+## Toolbar
 
-- Pour supprimer l'ensemble de vos dessins, cliquez sur le bouton nettoyer [icon] (Vous pouvez les récupérer en allant dans l'historique du document).
+<i class="fa fa-picture-o"></i> **Insert**: Add an image to the document. The image can be chosen in the CrpytDrive or uploaded. {**logged in user**}
 
-#### Mode dessin [icon]
+## Drawing
 
-- Le mode dessin vous permet de dessiner sur le tableau blanc.
+Two modes are available: 
 
-- Double-cliquez sur les couleurs pour changer la palette.
+- <i class="fa fa-paint-brush"></i> Paint mode: add new shapes to the drawing. 
+- <i class="fa fa-arrows"></i> Select mode: transform existing shapes. 
 
-- Réglez la taille et l'opacité du pinceau en choisissant sa valeur.
+To delete everything on the canvas: 
 
-#### Mode sélection [icon]
+- **Clear** button in the drawing toolbar at the botom.
 
-- Le mode sélection, permet de déplacer, orienter et redimensionner votre dessin une fois sélectionné.
+### Paint mode
 
-- Pour supprimer un dessin, sélectionnez-le et cliquez sur le bouton supprimer [icon] (Ne pas confondre avec le bouton nettoyer).
+The width and opacity of line are set in the drawing toolbar. The preview to the right shows the size and opacity of the paintbursh.
 
+Color is selected in the palette in the drawing toolbar. To change a color `Double click` on it and select a new one using the color-picker.
 
+### Select mode
+
+`Click` on an element to select it, then:
+- `Drag` to move.
+- Transform (scale, rotate) with the selection handles. 
+
+To delete a selected element: 
+- `Del` key.
+- <i class="fa fa-trash"></i> button in the drawing toolbar.
+
+## Export
+
+<i class="fa fa-file-o"></i> **File** > <i class="fa fa-download"></i> **Export** 
+
+Supported format: `.png`
+
+To export an image to the CryptDrive, for example to use it in other documents: 
+
+<i class="fa fa-file-o"></i> **File** > <i class="fa fa-file-image-o"></i> **Save as image**

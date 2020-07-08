@@ -1,25 +1,42 @@
-### Texte
+# Rich Text
 
-#### Fonctionnalité de base
+The Rich Text application in CryptPad is an integration of [CKEditor](https://ckeditor.com/).
 
-Une fois le document de texte créé, vous avez accès à de nombreuses fonctionnalités de base, tel que :
+## Toolbar
 
-- L'affichage ou non de la barre d'outils en cliquant sur le bouton `[icon] Outils`.
+<i class="fa fa-wrench"></i> **Tools**: Show/hide the text editor toolbar. 
 
-- {**Connecté**} L'intégration d'un fichier dans votre document en cliquant sur le bouton `[icon] Insérer`.
+<i class="fa fa-picture-o"></i> **Insert**: Add an image to the document. The image can be chosen in the CrpytDrive or uploaded. {**logged in user**}
 
-#### Commentaires
+## Import/Export
 
-Afin de suggérer une modification ou compléter une informations, vous pouvez ajouter des commentaires.
+<i class="fa fa-file-o"></i> **File** > <i class="fa fa-upload"></i> **Import**  
+Supported formats: `.html`.
 
-Pour cela, sélectionnez une phrase et cliquez à droite ou sur la barre d'outil le bouton [icon].
+<i class="fa fa-file-o"></i> **File** > <i class="fa fa-download"></i> **Export**   
+Supported formats: `.html`, `.doc`.
 
-Une fois écrit, une notification vous serra envoyé dès que quelqu'un vous aura répondue ou mentionné.
+To print or export a PDF:
 
-Dès que le problème est résolue, le commentaire peut être fermé.
+1. <i class="fa fa-file-o"></i> **File** > <i class="fa fa-print"></i> **Print**.
+1. Select your printer or "print to file".
 
-#### Impression/export
+## Comments
 
-Pour Exportez votre document en tant que PDF en cliquant sur le bouton imprimer [icon] de la barre d'outils.
+To comment on a part of the text: 
 
+1. Select the text to comment.
+1. <i class="fa fa-comment"></i> button, either to the right of the text or in the text editor toolbar.
+1. Write the comment. 
+1. <i class="fa fa-send-o"></i> **Submit**.
 
+Click on a comment to select it, then: 
+- <i class="fa fa-reply"></i> **Reply**: Adds a comment as a response.
+- <i class="fa fa-check"></i> **Resolve**: Deletes the comment after confirmation.
+
+To notify contacts in a comment, mention them with `@` and their [display name]. 
+
+You receive [notifications] when:
+
+- Someone replies to one of your comments.
+- Someone mentions you in a comment. 
