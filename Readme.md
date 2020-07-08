@@ -1,12 +1,18 @@
 
-Test setup for CryptPad documentation
+# CryptPad Documentation
 
-## Translation
+## Installation 
+
+`pipenv install` or `pip install requirements.txt` 
+
+## Build
 
 Currently set-up with `en` as first language and French translation.
 
 to build the default: `make html`  
 to build French: `make -e SPHINXOPTS="-D language='fr'" html`
+
+## Translation
 
 to update after default language has changed:  
 `sphinx-intl update -p _build/locale`
