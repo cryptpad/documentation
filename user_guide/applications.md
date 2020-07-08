@@ -45,7 +45,7 @@ To duplicate a document:
 - From the document to duplicate: <i class="fa fa-file-o"></i> **File** > <i class="fa fa-clone"></i> **Make a copy**.  
 - From the CryptDrive: `Right click` on the document to duplicate > <i class="fa fa-clone"></i> **Make a copy**.
 
-## History of a document
+## Document history
 
 The history of documents is saved and can be restored if needed. To restore a previous state: 
 

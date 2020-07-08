@@ -58,7 +58,7 @@ then
 1. **Copy** the link.
 1. Send the link. 
 
-## Embedding
+### Embedding
 
 Embedding allows for a CryptPad document to be displayed on a web page. 
 
@@ -115,7 +115,7 @@ This menu is used to restrict access to a document or shared folder:
 
 The menu has three tabs: 
 
-### Access
+### Access tab
 
 This tab summarises all the modalities of access to the document: 
 

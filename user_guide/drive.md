@@ -79,7 +79,7 @@ Once a document is deleted from the database, it cannot be restored through the 
 For unregistered users, only one option is available:
 - `Right click` on the document in the CryptDrive > <i class="fa fa-eraser"></i> **Remove from your CryptDrive**. 
 
-## History of the CryptDrive 
+## CryptDrive history
 
 The CryptDrive history is saved and can be restored if needed. From the CryptDrive: 
 
