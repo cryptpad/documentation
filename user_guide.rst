@@ -1,18 +1,20 @@
 
-Guide de l'utilisateur
+User Guide
 ================================
 
-Intro text yipee ya yo.
+
 
 
 .. toctree::
     :maxdepth: 5
+    :glob:
     :hidden:
 
     user_guide/instances.md
-    user_guide/accounts.md
+    user_guide/user_account.md
+    user_guide/drive.md
+    user_guide/security.md
     user_guide/collaboration.md
     user_guide/share_and_access.md
-    user_guide/security.md
-    user_guide/drive.md
-    user_guide/applications
+    user_guide/applications.md
+    user_guide/apps/code.md

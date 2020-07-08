@@ -12,6 +12,8 @@ Currently set-up with `en` as first language and French translation.
 to build the default: `make html`  
 to build French: `make -e SPHINXOPTS="-D language='fr'" html`
 
+View the result in `/_build/html/`
+
 ## Translation
 
 to update after default language has changed:  
