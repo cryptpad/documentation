@@ -94,7 +94,7 @@
             <a href="{{ pathto(master_doc) }}" class="icon icon-home">
               <img src="{{ pathto('_static/images/sidebar-logo.png' , 1) }}" class="logo" alt="Logo"/>
               <div class="icon-title">{{  project  }}</div>
-              {{ release }}
+              <span class="release">{{ release }}</span>
             </a>
             {% include "searchbox.html" %}
           {% endblock %}
