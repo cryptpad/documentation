@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Poll &mdash; CryptPad 3.19.0 documentation</title>
+  <title>General &mdash; CryptPad 3.19.0 documentation</title>
   
 
   
@@ -31,8 +31,8 @@
   <link rel="stylesheet" href="../../_static/css/cptools.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Kanban" href="kanban.html" />
-    <link rel="prev" title="Slides" href="slides.html" /> 
+    <link rel="next" title="Rich Text" href="richtext.html" />
+    <link rel="prev" title="Applications" href="../applications.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -181,13 +181,13 @@
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="../applications.html">Applications</a><ul class="current">
-<li class="toctree-l3"><a class="reference internal" href="general.html">General</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="general.html#new-document">New document</a></li>
-<li class="toctree-l4"><a class="reference internal" href="general.html#saving">Saving</a></li>
-<li class="toctree-l4"><a class="reference internal" href="general.html#make-a-copy">Make a copy</a></li>
-<li class="toctree-l4"><a class="reference internal" href="general.html#document-history">Document history</a></li>
-<li class="toctree-l4"><a class="reference internal" href="general.html#properties">Properties</a></li>
-<li class="toctree-l4"><a class="reference internal" href="general.html#users-and-chat">Users and chat</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">General</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#new-document">New document</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#saving">Saving</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#make-a-copy">Make a copy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#document-history">Document history</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#properties">Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#users-and-chat">Users and chat</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="richtext.html">Rich Text</a><ul>
@@ -228,11 +228,11 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Poll</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#toolbar">Toolbar</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#edit-mode">Edit mode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#voting">Voting</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#export">Export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="poll.html">Poll</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="poll.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="poll.html#edit-mode">Edit mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="poll.html#voting">Voting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="poll.html#export">Export</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="kanban.html">Kanban</a><ul>
@@ -319,13 +319,13 @@
         
           <li><a href="../applications.html">Applications</a> &raquo;</li>
         
-      <li>Poll</li>
+      <li>General</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/user_guide/apps/poll.md.txt" rel="nofollow"> 
+            <a href="../../_sources/user_guide/apps/general.md.txt" rel="nofollow"> 
              
               <img src="../../_static/images/source-code.png" />
              <!-- View page source -->
@@ -342,56 +342,71 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="poll">
-<h1>Poll<a class="headerlink" href="#poll" title="Permalink to this headline">¶</a></h1>
-<p>The Polls application is aimed at the facilitation of decisions in small groups of people who trust each other, for example to decide on a meeting date/time.</p>
-<p>It is not suited for polling a large number of people, or for situation where the security of the votes is paramount. To cast a vote, each user must have edit rights to the document. This enables each participant to <strong>modify and/or delete answers from other participants</strong>.</p>
-<p>A complete re-write of this application is planned for late 2020.</p>
-<!--- XXX watch date and update accordingly --> <div class="section" id="toolbar">
-<h2>Toolbar<a class="headerlink" href="#toolbar" title="Permalink to this headline">¶</a></h2>
-<p><i class="fa fa-pencil"></i> <strong>Edit</strong>: Switch to edit mode to change the poll description and response options.</p>
-<p><i class="fa fa-check"></i> <strong>Publish</strong>: Save the changes to the poll description and response options.</p>
-<p>In edit mode:</p>
-<p><i class="fa fa-wrench"></i> <strong>Tools</strong>: Show/hide the text editor toolbar.</p>
-<p><i class="fa fa-picture-o"></i> <strong>Insert</strong>:  Add an image to the poll description. The image can be chosen in the CrpytDrive or uploaded. {<strong>logged in user</strong>}</p>
-</div>
-<div class="section" id="edit-mode">
-<h2>Edit mode<a class="headerlink" href="#edit-mode" title="Permalink to this headline">¶</a></h2>
-<p>The poll description is written in <a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown</a>.</p>
-<!--- localised link if possible. French here: 
-https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdown/ --> <p>Use <i class="fa fa-picture-o"></i> <strong>Insert</strong> to add images.</p>
-<p>Response options are added to the left of the table. To add an option:</p>
-<ol class="simple">
-<li><p>Add a title to the “Option” field.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on <i class="fa fa-plus"></i> or <code class="docutils literal notranslate"><span class="pre">Enter</span></code>.</p></li>
-</ol>
-<p>To change an option, <code class="docutils literal notranslate"><span class="pre">Click</span></code> on the ✐ to the right of the title. To delete an option, <code class="docutils literal notranslate"><span class="pre">Click</span></code> on <i class="fa fa-times"></i> to the left of the title.</p>
-</div>
-<div class="section" id="voting">
-<h2>Voting<a class="headerlink" href="#voting" title="Permalink to this headline">¶</a></h2>
-<p>Each vote is logged in a column of the results table. To add a vote:</p>
-<ol class="simple">
-<li><p>Add a name to the column title.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on the cells of the options to indicate:</p></li>
-</ol>
+  <div class="section" id="general">
+<h1>General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="new-document">
+<h2>New document<a class="headerlink" href="#new-document" title="Permalink to this headline">¶</a></h2>
+<p>To create a new document:</p>
 <ul class="simple">
-<li><p>✔ Yes</p></li>
-<li><p>~ Maybe</p></li>
-<li><p>✖ No</p></li>
+<li><p>From the CryptDrive: <i class="fa fa-plus"></i> <strong>New</strong> in the toolbar.</p></li>
+<li><p>From a document: <i class="fa fa-file-o"></i> <strong>File</strong> &gt; <i class="fa fa-plus"></i> <strong>New</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl+e</span></code>.</p></li>
 </ul>
-<ol class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on <strong>Submit</strong> at the top of the column to save the vote and add it to the total count.</p></li>
-</ol>
-<p>Use <i class="fa fa-lock"></i> to unlock an existing column and edit the name and votes. Use <i class="fa fa-unlock"></i> to lock the column.</p>
-<p>To add a comment to the poll:</p>
-<ol class="simple">
-<li><p>Write your comment in the field labelled “Your comment”.</p></li>
-<li><p><strong>Send</strong></p></li>
-</ol>
+<p>[screenshot pad creation screen (localised)]</p>
+<p>{<strong>logged in user</strong>}</p>
+<p>The creation screen offers a number of options when new documents are created.</p>
+<ul class="simple">
+<li><p><strong>Owned pad</strong>: Create the new document as [owner]. If the document is created without an owner this setting cannot be modified.</p></li>
+<li><p><strong>Expiring pad</strong>: Specify an expiry date after which the document will be destroyed. This setting cannot be modified after the document is created.</p></li>
+<li><p><strong>Add a password</strong>: Secure the sharing of the document with a [password]. This setting can be added/modified in the [<i class="fa fa-unlock-alt"></i> <strong>Access</strong>] menu after the document is created.</p></li>
+<li><p><strong>Template</strong>: Use a [template] as a starting point for the document.</p></li>
+</ul>
 </div>
-<div class="section" id="export">
-<h2>Export<a class="headerlink" href="#export" title="Permalink to this headline">¶</a></h2>
-<p><i class="fa fa-file-o"></i> <strong>File</strong> &gt; <i class="fa fa-download"></i> <strong>Export</strong><br />Supported formats: <code class="docutils literal notranslate"><span class="pre">.csv</span></code></p>
+<div class="section" id="saving">
+<h2>Saving<a class="headerlink" href="#saving" title="Permalink to this headline">¶</a></h2>
+<p>Changes to documents are saved automatically. The status line in the document toolbar (under the title) can be used to confirm changes have been saved.</p>
+</div>
+<div class="section" id="make-a-copy">
+<h2>Make a copy<a class="headerlink" href="#make-a-copy" title="Permalink to this headline">¶</a></h2>
+<p>To duplicate a document:</p>
+<ul class="simple">
+<li><p>From the document to duplicate: <i class="fa fa-file-o"></i> <strong>File</strong> &gt; <i class="fa fa-clone"></i> <strong>Make a copy</strong>.</p></li>
+<li><p>From the CryptDrive: <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document to duplicate &gt; <i class="fa fa-clone"></i> <strong>Make a copy</strong>.</p></li>
+</ul>
+</div>
+<div class="section" id="document-history">
+<h2>Document history<a class="headerlink" href="#document-history" title="Permalink to this headline">¶</a></h2>
+<p>The history of documents is saved and can be restored if needed. To restore a previous state:</p>
+<ol class="simple">
+<li><p><i class="fa fa-file-o"></i> <strong>File</strong> &gt; <i class="fa fa-history"></i> <strong>History</strong>.</p></li>
+<li><p>Use the arrows <i class="fa fa-fast-backward"></i> <i class="fa fa-step-backward"></i> to step through the history.</p></li>
+<li><p>Restore the current step with <i class="fa fa-check-circle-o"></i>, or exit the history wihtout restoring with <i class="fa fa-window-close"></i>.</p></li>
+</ol>
+<p>To save storage space, history can be deleted in the document’s [properties]. {<strong>owners of the document</strong>}</p>
+</div>
+<div class="section" id="properties">
+<h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+<p>To access the properties menu:</p>
+<ul class="simple">
+<li><p>From the document: <i class="fa fa-file-o"></i> <strong>File</strong> &gt; <i class="fa fa-info-circle"></i> <strong>Properties</strong>.</p></li>
+<li><p>From the CryptDrive: <code class="docutils literal notranslate"><span class="pre">Rigth</span> <span class="pre">click</span></code> on the document &gt; <i class="fa fa-info-circle"></i> <strong>Properties</strong>.</p></li>
+</ul>
+<p>Available data:</p>
+<ul class="simple">
+<li><p>Links to edit and view (depending on your permissions).</p></li>
+<li><p>Dates of creation and last access.</p></li>
+<li><p>Size</p></li>
+</ul>
+<p>The document size shows the proportions used for content and for history. To save storage space, delete the document’s history with <strong>Delete history</strong> and confirm. {<strong>owners of the document</strong>}</p>
+</div>
+<div class="section" id="users-and-chat">
+<h2>Users and chat<a class="headerlink" href="#users-and-chat" title="Permalink to this headline">¶</a></h2>
+<p>Interact with users connected to the same document through the user-list <i class="fa fa-user"></i> <i class="fa fa-eye"></i> and the <i class="fa fa-comments"></i> <strong>Chat</strong>.</p>
+<p>To show/hide these panes:</p>
+<ul class="simple">
+<li><p><i class="fa fa-user"></i> n <i class="fa fa-eye"></i> n for the user-list.</p></li>
+<li><p><i class="fa fa-comments"></i> <strong>Chat</strong> for the chat.</p></li>
+</ul>
 </div>
 </div>
 
@@ -403,10 +418,10 @@ https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdo
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="kanban.html" class="btn btn-neutral float-right" title="Kanban" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="richtext.html" class="btn btn-neutral float-right" title="Rich Text" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="slides.html" class="btn btn-neutral" title="Slides" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="../applications.html" class="btn btn-neutral" title="Applications" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
       
     </div>
   

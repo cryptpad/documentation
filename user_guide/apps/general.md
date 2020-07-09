@@ -1,15 +1,6 @@
 
-# Applications
+# General
 
-There are 7 types of documents on CryptPad: 
-
-- Rich Text
-- Spreadsheet
-- Code
-- Presentation
-- Poll
-- Kanban
-- Whiteboard
 
 ## New document
 
@@ -19,7 +10,7 @@ To create a new document:
 - From a document: <i class="fa fa-file-o"></i> **File** > <i class="fa fa-plus"></i> **New**.  
 - `Ctrl+e`.
 
-### Creation screen
+
 
 [screenshot pad creation screen (localised)]
 

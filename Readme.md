@@ -39,4 +39,4 @@ have a folder e.g. `images/fr/` with localised version of the image, if using on
 
 - Adjust styles
 - Multi-language setup
-
+- replace `{**logged in user**}` and similar with badges
