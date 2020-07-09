@@ -75,11 +75,11 @@ Optional:
 
 - Import pads from your anonymous session: If you have created documents as a non-registered user you can import them into your account. 
 
-### Settings
+## Settings
 
 The account settings are found in the user menu (avatar at the top right) <i class="fa fa-gear"></i> **Settings**.
 
-#### Account
+### Account
 
 - Account name: Username chosen at registration. This name cannot be changed. {**logged in user**}
 
@@ -95,7 +95,7 @@ The account settings are found in the user menu (avatar at the top right) <i cla
 
 - Account deletion: Option to permanently delete your account and all of its documents. To delete your account use **Delete your account** and confirm. {**logged in user**}
 
-#### Confidentiality 
+### Confidentiality 
 
 - Close remote sessions: Log out of all sessions except the one from which this option is activated. (see also [Remote Disconnect]){**logged in user**}
 
@@ -111,7 +111,7 @@ CryptPad includes the keys to decrypt your documents in their links. Anyone with
 
 - Feedback: CryptPad can send anonymised usage feedback to the server in order to improve the user experience. The content of documents is never shared. This option is disabled by default. 
 
-#### CryptDrive
+### CryptDrive
 
 - Duplicated owned pads: When you move your owned pads to a shared folder, a copy is kept in your CryptDrive to ensure that you retain your control over it. You can hide duplicated files. Only the shared version will be visible, unless deleted, in which case the original will be displayed in its previous location.
 <!-- XXX the new `owned` branch does not create duplicates anymore, but existing duplicate will remain --> 
@@ -126,7 +126,7 @@ CryptPad includes the keys to decrypt your documents in their links. Anyone with
 
 - Delete History: The history of the CryptDrive and notifications can be deleted to save storage space. This does not affect the history of documents, which can be deleted individualy in the [properties] dialog. 
 
-#### Cursor
+### Cursor
 
 - Cursor color: Change the color of your cursor. This is used to identify you while collaborating on documents. It also determines the color of your text when [color by author] is active in Code documents. 
 
@@ -135,7 +135,7 @@ CryptPad includes the keys to decrypt your documents in their links. Anyone with
 - Display other users' cursor position (BETA): Display or hide the position of other users' cursors. 
 
 
-#### Rich Text 
+### Rich Text 
 
 User settings for the [Rich Text] application. 
 
@@ -146,7 +146,7 @@ User settings for the [Rich Text] application.
 - Comment notifications: Disable notifications when another user replies to one of your comments. 
 
 
-#### Code 
+### Code 
 
 User settings for the [Code] application. 
 
@@ -160,7 +160,7 @@ User settings for the [Code] application.
 
 - Spellcheck: Underline spelling mistakes in the code editor, correction suggestions are available through `Right click` on the word to correct. 
 
-#### Subscription 
+### Subscription 
 
 (only on cryptpad.fr)
 

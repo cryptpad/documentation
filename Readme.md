@@ -34,8 +34,9 @@ https://invent.kde.org/documentation/docs-krita-org#using-multiple-languages-at-
 `images` folder in repo root  
 have a folder e.g. `images/fr/` with localised version of the image, if using one.
 
-## Nav Issue
+## Todo
 
-Why is it not like Krita? 
-https://github.com/readthedocs/readthedocs.org/issues/1622 
+
+- Adjust styles
+- Multi-language setup
 

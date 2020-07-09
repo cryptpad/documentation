@@ -26,7 +26,7 @@ There are multiple ways to create folders in the CryptDrive:
 Once a folder is created, documents can be added to it by dragging them from the CryptDrive. 
 
 To change the color of a folder: 
-- `Rigth click` on the folder > <i class="cptools cptools-palette"></i> **Change color**.
+- `Right click` on the folder > <i class="cptools cptools-palette"></i> **Change color**.
 
 To share a folder and all of its contents: 
 - `Right click` on the folder > <i class="fa fa-share-alt"></i> **Share**. The folder will then be converted into a [shared folder].
