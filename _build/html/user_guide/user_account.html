@@ -120,11 +120,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#cryptdrive-history">CryptDrive history</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#tags">Tags</a></li>
-<li class="toctree-l3"><a class="reference internal" href="drive.html#templates">Templates</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="drive.html#create-a-template">Create a template</a></li>
-<li class="toctree-l4"><a class="reference internal" href="drive.html#use-a-template">Use a template</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#templates">Templates</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="security.html">Security</a><ul>
@@ -338,7 +334,7 @@
             
   <div class="section" id="user-account">
 <h1>User Account<a class="headerlink" href="#user-account" title="Permalink to this headline">¶</a></h1>
-<p>CryptPad encrypts data so that it is readable only by you and your collaborators. For this reason <strong>the administrators of the service cannot view or retrieve your password</strong>. Therefore it is important that you make a note of your password in a safe place.</p>
+<p>CryptPad encrypts data so that it is readable only by you and your collaborators. For this reason <strong>the administrators of the service cannot view, retrieve or reset your password</strong>. Therefore it is important that you make a note of your password in a safe place.</p>
 <p>CryptPad uses the combination of your username and password to identify you. Usernames are not unique on CryptPad. It is possible to create multiple accounts with the same username and different passwords.</p>
 <div class="section" id="account-types">
 <h2>Account types<a class="headerlink" href="#account-types" title="Permalink to this headline">¶</a></h2>
@@ -357,7 +353,7 @@
 <div class="section" id="logged-in-user">
 <h3>Logged in user<a class="headerlink" href="#logged-in-user" title="Permalink to this headline">¶</a></h3>
 <p>Logged in user are identified by an avatar (at the top right), either their profile picture if they have set one or the first letter of their display name.</p>
-<p>Registering an account does not require any personal information, only a username and password. Additional fuctionality for logged in users :</p>
+<p>Registering an account does not require any personal information, only a username and password. Additional functionality for logged in users :</p>
 <ul class="simple">
 <li><p>Personal and permanent storage space for documents.</p></li>
 <li><p>File storage for images/videos/PDF/etc…</p></li>
@@ -390,7 +386,7 @@
 <li><p><strong>Password</strong>: It is recommended to use a strong password. The password can be changed in [user settings].</p></li>
 </ul>
 <div class="warning">
-  Important: CryptPad administrators cannot view or retrieve your password if it is lost or forgotten. 
+  Important: CryptPad administrators cannot view, retrieve or reset your password if it is lost or forgotten. 
 </div><ul class="simple">
 <li><p><strong>Terms of service</strong>: Read and accept the terms of service.</p></li>
 </ul>
@@ -417,11 +413,11 @@
 <ul class="simple">
 <li><p><strong>Account name</strong>: Username chosen at registration. This name cannot be changed. {<strong>logged in user</strong>}</p></li>
 <li><p><strong>Public Signing Key</strong>: Used by instance administrators and/or on instances that offer subscriptions. This is the only data about your account that is available to the administrators of the service. {<strong>logged in user</strong>} <!-- XXX link to longer description--></p></li>
-<li><p><strong>Display Name</strong>: Name displayed to other users, for example when you collaborate on documents. To change this name enter a new name and clic on <strong>Save</strong>. {<strong>logged in user</strong>}</p></li>
-<li><p><strong>Language</strong>: Language used in the CryptPad interface. To change the language of CryptPad pick a new language in the drop-down menu. CryptPad is translated in English adn French by the development team, and in other languages by the [community]. Some translations can be incomplete and/or contain errors.</p></li>
+<li><p><strong>Display Name</strong>: Name displayed to other users, for example when you collaborate on documents. To change this name enter a new name and click on <strong>Save</strong>. {<strong>logged in user</strong>}</p></li>
+<li><p><strong>Language</strong>: Language used in the CryptPad interface. To change the language of CryptPad pick a new language in the drop-down menu. CryptPad is translated in English and French by the development team, and in other languages by the [community]. Some translations can be incomplete and/or contain errors.</p></li>
 <li><p><strong>Tips</strong>: Help messages in the CryptPad interface. Click on <strong>Reset</strong> to display them again if they have been dismissed.</p></li>
-<li><p><strong>Change your password</strong>: Form to change your password. Enter your current password and confirm the new password by typing it twice. {<strong>logged in user</strong>}</p></li>
-<li><p><strong>Account deletion</strong>: Option to permanently delete your account and all of its documents. To delete your account use <strong>Delete your account</strong> and confirm. {<strong>logged in user</strong>}</p></li>
+<li><p><strong>Change your password</strong>: Enter your current password and confirm the new password by typing it twice. {<strong>logged in user</strong>}</p></li>
+<li><p><strong>Account deletion</strong>: Option to permanently delete your account and all of its documents. <strong>Delete your account</strong> and confirm. {<strong>logged in user</strong>}</p></li>
 </ul>
 </div>
 <div class="section" id="confidentiality">
@@ -450,11 +446,11 @@
 <li><p><strong>Backup</strong>: Two types of backups are available.</p>
 <ul>
 <li><p><strong>Backup</strong> only saves the keys of documents in the CryptDrive, not their content. This option is designed to save access to documents and <strong>Restore</strong> it in another session.</p></li>
-<li><p><strong>Download my CryptDrive</strong> saves the content of all documents in hte CryptDrive. When possible, this is done in a format that is readable by other software. Some applications produce files that are only readable by CryptPad.</p></li>
+<li><p><strong>Download my CryptDrive</strong> saves the content of all documents in the CryptDrive. When possible, this is done in a format that is readable by other software. Some applications produce files that are only readable by CryptPad.</p></li>
 </ul>
 </li>
 <li><p><strong>Import</strong>: If pads have been created as a non-registered user prior to logging in, they can be imported to the CryptDrive. {<strong>logged in user</strong>}</p></li>
-<li><p><strong>Delete History</strong>: The history of the CryptDrive and notifications can be deleted to save storage space. This does not affect the history of documents, which can be deleted individualy in the [properties] dialog.</p></li>
+<li><p><strong>Delete History</strong>: The history of the CryptDrive and notifications can be deleted to save storage space. This does not affect the history of documents, which can be deleted individually in the [properties] dialog.</p></li>
 </ul>
 </div>
 <div class="section" id="cursor">
@@ -481,7 +477,7 @@
 <li><p><strong>Code editor indentation (spaces)</strong>: Choose the number of spaces for each level of indentation.</p></li>
 <li><p><strong>Indent using tabs (instead of spaces)</strong>: Insert tabs rather than spaces with the <code class="docutils literal notranslate"><span class="pre">Tab</span></code> key.</p></li>
 <li><p><strong>Auto-close brackets</strong>: Automatically insert a closing character <code class="docutils literal notranslate"><span class="pre">)</span></code> when brackets are opened with <code class="docutils literal notranslate"><span class="pre">(</span></code> (also works with <code class="docutils literal notranslate"><span class="pre">[</span></code>, <code class="docutils literal notranslate"><span class="pre">'</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;</span></code>).</p></li>
-<li><p><strong>Font size in the code editor</strong>: Set the size of text (in pixels) in the code editor.</p></li>
+<li><p><strong>Font size in the code editor</strong>: Set the size of text in the code editor.</p></li>
 <li><p><strong>Spellcheck</strong>: Underline spelling mistakes in the code editor, correction suggestions are available through <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the word to correct.</p></li>
 </ul>
 </div>

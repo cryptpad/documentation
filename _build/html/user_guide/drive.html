@@ -120,11 +120,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#cryptdrive-history">CryptDrive history</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#tags">Tags</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#templates">Templates</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#create-a-template">Create a template</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#use-a-template">Use a template</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="#templates">Templates</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="security.html">Security</a><ul>
@@ -389,7 +385,9 @@
 <div class="section" id="deleting">
 <h3>Deleting<a class="headerlink" href="#deleting" title="Permalink to this headline">¶</a></h3>
 <p>{<strong>logged in user</strong>}</p>
-<p>To delete a document from your CryptDrive, place it the <i class="fa fa-trash"></i> <strong>Trash</strong>:</p>
+<!-- XXX update this with new delete UX ---> <div class="warning">
+This section needs updating
+</div><p>To delete a document from your CryptDrive, place it the <i class="fa fa-trash"></i> <strong>Trash</strong>:</p>
 <ul class="simple">
 <li><p>Drag the document from the CryptDrive into the <i class="fa fa-trash"></i> <strong>Trash</strong>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> &gt; <i class="fa fa-trash"></i> <strong>Move to trash</strong></p></li>
@@ -410,7 +408,7 @@
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document in the CryptDrive &gt; <i class="fa fa-eraser"></i> <strong>Delete from the server</strong>.</p></li>
 </ul>
-<!-- XXX update this with new delete UX ---> <p>In this case the document is deleted from the database right away for all users, including anyone that had stored the document in their CryptDrive.</p>
+<p>In this case the document is deleted from the database right away for all users, including anyone that had stored the document in their CryptDrive.</p>
 <p>Once a document is deleted from the database, it cannot be restored through the CryptDrive [history].</p>
 <p>For unregistered users, only one option is available:</p>
 <ul class="simple">
@@ -449,8 +447,7 @@
 <h2>Templates<a class="headerlink" href="#templates" title="Permalink to this headline">¶</a></h2>
 <p>{<strong>logged in user</strong>}</p>
 <p>Templates provide reusable starting points to create documents of a similar structure, for example invoices, letterheads, reports, and so on.</p>
-<div class="section" id="create-a-template">
-<h3>Create a template<a class="headerlink" href="#create-a-template" title="Permalink to this headline">¶</a></h3>
+<p>To create a template:</p>
 <ol class="simple">
 <li><p>Select the  <i class="cptools cptools-template"></i> <strong>Templates</strong> tab in the CryptDrive.</p></li>
 <li><p><i class="fa fa-plus"></i> <strong>New</strong> in the toolbar.</p></li>
@@ -464,14 +461,11 @@
 <li><p>Create a [new document].</p></li>
 <li><p>On the creation screen select <i class="cptools cptools-new-template"></i> <strong>New template</strong>.</p></li>
 </ol>
-</div>
-<div class="section" id="use-a-template">
-<h3>Use a template<a class="headerlink" href="#use-a-template" title="Permalink to this headline">¶</a></h3>
+<p>To use a template:</p>
 <ul class="simple">
 <li><p>Select the template when creating a [new document].</p></li>
-<li><p>In an existing document: <i class="fa fa-file-o"></i> <strong>File</strong> &gt; <i class="fa fa-upload"></i> <strong>Import a template</strong>. Please note: this option <strong>replaces</strong> the contents of the document with the template.</p></li>
+<li><p>In an existing document: <i class="fa fa-file-o"></i> <strong>File</strong> &gt; <i class="fa fa-upload"></i> <strong>Import a template</strong>.<br />Please note: this option <strong>replaces</strong> the contents of the document with the template.</p></li>
 </ul>
-</div>
 </div>
 </div>
 
