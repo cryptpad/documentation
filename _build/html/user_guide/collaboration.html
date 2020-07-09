@@ -53,7 +53,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/sidebar-logo.png" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              3.19.0
+              <span class="release">3.19.0</span>
             </a>
             
 <div role="search">
@@ -143,13 +143,12 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#teams">Teams</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#team-drive">Team Drive</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#team-members">Team members</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#invite-members">Invite members</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#manage-members">Manage members</a></li>
-</ul>
-</li>
+<li class="toctree-l4"><a class="reference internal" href="#team-members">Team members</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#invite-members">Invite members</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#roles-and-permissions">Roles and permissions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#administration">Administration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#chat">Chat</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id1">Administration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#administration-tab">Administration tab</a></li>
 </ul>
 </li>
 </ul>
@@ -408,12 +407,12 @@
 <p>The number of teams a CryptPad user can join is limited to 3 for performance reasons.</p>
 <p>To create a team:</p>
 <ol class="simple">
-<li><p>User menu (avatar at the top-right) &gt; <i class="fa fa-users"></i> <strong>Équipes</strong>.</p></li>
+<li><p>User menu (avatar at the top-right) &gt; <i class="fa fa-users"></i> <strong>Teams</strong>.</p></li>
 <li><p><i class="fa fa-plus-circle"></i> <strong>New</strong>.</p></li>
 </ol>
 <p>To open an existing team:</p>
 <ol class="simple">
-<li><p>User menu (avatar at the top-right) &gt; <i class="fa fa-users"></i> <strong>Équipes</strong>.</p></li>
+<li><p>User menu (avatar at the top-right) &gt; <i class="fa fa-users"></i> <strong>Teams</strong>.</p></li>
 <li><p><i class="fa fa-list"></i> <strong>Teams</strong> &gt; <strong>Open</strong> button on the desired team.</p></li>
 </ol>
 <div class="section" id="team-drive">
@@ -423,8 +422,9 @@
 <div class="section" id="team-members">
 <h3>Team members<a class="headerlink" href="#team-members" title="Permalink to this headline">¶</a></h3>
 <p>To manage the members of a team, go to the <i class="fa fa-users"></i> <strong>Members</strong> tab.</p>
+</div>
 <div class="section" id="invite-members">
-<h4>Invite members<a class="headerlink" href="#invite-members" title="Permalink to this headline">¶</a></h4>
+<h3>Invite members<a class="headerlink" href="#invite-members" title="Permalink to this headline">¶</a></h3>
 <p>To invite members to a team:</p>
 <ul class="simple">
 <li><p><i class="fa fa-users"></i> <strong>Members</strong> tab &gt; <strong>Invite members</strong>.</p></li>
@@ -437,10 +437,8 @@
 <li><p>Personal message: Message that the recipient will see before they decide to accept the invitation to join the team.</p></li>
 </ul>
 </div>
-<div class="section" id="manage-members">
-<h4>Manage members<a class="headerlink" href="#manage-members" title="Permalink to this headline">¶</a></h4>
 <div class="section" id="roles-and-permissions">
-<h5>Roles and permissions<a class="headerlink" href="#roles-and-permissions" title="Permalink to this headline">¶</a></h5>
+<h3>Roles and permissions<a class="headerlink" href="#roles-and-permissions" title="Permalink to this headline">¶</a></h3>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -486,26 +484,24 @@
 <p>Edit: create, modify, and delete folders and pads.</p>
 <p>Manage Members: invite and revoke members, change member roles up to Admin.</p>
 <p>Manage Team: change team name and avatar, add or remove Owners, change team subscription, delete team.</p>
+</div>
 <div class="section" id="administration">
-<h6>Administration<a class="headerlink" href="#administration" title="Permalink to this headline">¶</a></h6>
+<h3>Administration<a class="headerlink" href="#administration" title="Permalink to this headline">¶</a></h3>
 <p>Each member’s role can be changed in the team roster. Team admins and owners can manage members of equal or lower role. For each member:</p>
 <p><i class="fa fa-angle-double-up"></i>: Promote to higher role.<br /><i class="fa fa-angle-double-down"></i>: Demote to lower role.<br /><i class="fa fa-times"></i>: Kick from the team.</p>
-</div>
-</div>
-</div>
 </div>
 <div class="section" id="chat">
 <h3>Chat<a class="headerlink" href="#chat" title="Permalink to this headline">¶</a></h3>
 <p>The team chat is similar to the chat with [contacts] except shared between all members of the team.</p>
 </div>
-<div class="section" id="id1">
-<h3>Administration<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="administration-tab">
+<h3>Administration tab<a class="headerlink" href="#administration-tab" title="Permalink to this headline">¶</a></h3>
 <p>{<strong>team owners</strong>}</p>
 <ul class="simple">
-<li><p>Public signing key: Used to identify the team on instances that offer subscitpions.</p></li>
-<li><p>Team name: Change the name of the team.</p></li>
-<li><p>Team avatar: Import/modify an avatar for the team.</p></li>
-<li><p>Team deletion: Permanently delete the team and all of its documents.</p></li>
+<li><p><strong>Public signing key</strong>: Used to identify the team on instances that offer subscitpions.</p></li>
+<li><p><strong>Team name</strong>: Change the name of the team.</p></li>
+<li><p><strong>Team avatar</strong>: Import/modify an avatar for the team.</p></li>
+<li><p><strong>Team deletion</strong>: Permanently delete the team and all of its documents.</p></li>
 </ul>
 </div>
 </div>
