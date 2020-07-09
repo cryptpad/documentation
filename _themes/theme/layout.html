@@ -93,19 +93,12 @@
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search">
           {% block sidebartitle %}
-       
-           <a href="{{ pathto(master_doc) }}" class="icon icon-home">
-
-			<img src="{{ pathto('_static/images/sidebar-logo.png' , 1) }}" class="logo" alt="Logo"/>
-           	
-           <!--	{{  project  }} -->
-
-
-          </a>
-
-
-          {% include "searchbox.html" %}
-
+            <a href="{{ pathto(master_doc) }}" class="icon icon-home">
+              <img src="{{ pathto('_static/images/sidebar-logo.png' , 1) }}" class="logo" alt="Logo"/>
+              <div class="icon-title">{{  project  }}</div>
+              {{ release }}
+            </a>
+            {% include "searchbox.html" %}
           {% endblock %}
         </div>
 

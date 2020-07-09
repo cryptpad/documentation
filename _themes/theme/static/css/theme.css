@@ -6126,6 +6126,7 @@ select#language-selector-container option {
     width: 100%;
     border-radius: 3px;
     padding: 13px 16px;
+    margin-top: 5px;;
 }
 
 .wy-side-nav-search img {
@@ -6147,10 +6148,13 @@ select#language-selector-container option {
     height: auto;
     width: auto;
     border-radius: 0;
-    max-width: 100%;
+    max-width: 50%;
     background: transparent;
 }
-
+.wy-side-nav-search > .icon-home > .icon-title {
+    font-size: 2em;
+    padding: 10px 0px;
+}
 .wy-side-nav-search > a.icon img.logo,
 .wy-side-nav-search .wy-dropdown > a.icon img.logo {
     margin-top: 0;
