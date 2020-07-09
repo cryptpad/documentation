@@ -1,0 +1,551 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>User Account &mdash; CryptPad 3.19.0 documentation</title>
+  
+
+  
+  <link rel="icon" type="image/png" href="../_static.images/main-favicon.png" id="favicon"/>
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/open-sans.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/cptools.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Drive" href="drive.html" />
+    <link rel="prev" title="CryptPad instances" href="instances.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+            <a href="../index.html" class="icon icon-home">
+              <img src="../_static/images/sidebar-logo.png" class="logo" alt="Logo"/>
+              <div class="icon-title">CryptPad</div>
+              3.19.0
+            </a>
+            
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+          
+        </div>
+
+        <div class="wy-side-nav-language-selector">
+        	<p class="caption-text">
+	        	<select id="language-selector-container">
+	        		<option value="en">English</option>
+	        		<option value="fr">Français</option>
+	        	</select>
+        	</p>
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../user_guide.html">User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="instances.html">CryptPad instances</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">User Account</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#account-types">Account types</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#non-registered-user">Non-registered user</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#logged-in-user">Logged in user</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#premium-user">Premium user</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#account-management">Account management</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#registration">Registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#logging-in">Logging in</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#settings">Settings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#account">Account</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#confidentiality">Confidentiality</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cryptdrive">CryptDrive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cursor">Cursor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rich-text">Rich Text</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#subscription">Subscription</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#support">Support</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#existing-tickets">Existing tickets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#new-tickets">New tickets</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#notifications">Notifications</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="drive.html">Drive</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#display">Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#managing-documents">Managing documents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="drive.html#folders">Folders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="drive.html#renaming">Renaming</a></li>
+<li class="toctree-l4"><a class="reference internal" href="drive.html#deleting">Deleting</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#cryptdrive-history">CryptDrive history</a></li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#tags">Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#templates">Templates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="drive.html#create-a-template">Create a template</a></li>
+<li class="toctree-l4"><a class="reference internal" href="drive.html#use-a-template">Use a template</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="security.html">Security</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="security.html#passwords-for-documents-and-folders">Passwords for documents and folders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#remote-disconnect">Remote Disconnect</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="collaboration.html">Collaboration / Social</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="collaboration.html#profile">Profile</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#personal-profile">Personal profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#user-profile">User profile</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="collaboration.html#contacts">Contacts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#add-a-contact">Add a contact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#manage-contacts">Manage contacts</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="collaboration.html#chat-with-contacts">Chat with contacts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="collaboration.html#teams">Teams</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#team-drive">Team Drive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#team-members">Team members</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="collaboration.html#invite-members">Invite members</a></li>
+<li class="toctree-l5"><a class="reference internal" href="collaboration.html#manage-members">Manage members</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#chat">Chat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#id1">Administration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="share_and_access.html">Share / Access</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="share_and_access.html#share">Share</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#access-rights">Access rights</a></li>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#sharing-with-contacts">Sharing with contacts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#sharing-a-link">Sharing a link</a></li>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#embedding">Embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#shared-folders">Shared folders</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="share_and_access.html#access">Access</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#access-tab">Access tab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#access-list">Access List</a></li>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#owners">Owners</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="applications.html">Applications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#new-document">New document</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="applications.html#creation-screen">Creation screen</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#saving">Saving</a></li>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#make-a-copy">Make a copy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#document-history">Document history</a></li>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#properties">Properties</a></li>
+<li class="toctree-l3"><a class="reference internal" href="applications.html#users-and-chat">Users and chat</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="apps/code.html">Code / Markdown</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="apps/code.html#toolbar">Toolbar</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#theme">Theme</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/code.html#import-export">Import/Export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="apps/code.html#markdown">Markdown</a></li>
+<li class="toctree-l3"><a class="reference internal" href="apps/code.html#images">Images</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#lightbox">Lightbox</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+	<!-- start top banner area (for fundraisers or messages)
+
+	<div style="text-align: center; background-color: #333">
+		<a href="https://krita.org/en/fundraising-2018-campaign/" target="_self" onclick="ga('send', 'event', 'frontpage', 'button', 'Fundraiser 2018');">
+			<img src="https://krita.org/wp-content/themes/krita-org-theme/images/decoration/2018-fundraiser-banner.png" style="max-width: 100%">
+		</a>
+	</div>
+	
+	 end top banner area -->
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CryptPad</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Index</a> &raquo;</li>
+        
+          <li><a href="../user_guide.html">User Guide</a> &raquo;</li>
+        
+      <li>User Account</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/user_guide/user_account.md.txt" rel="nofollow"> 
+             
+              <img src="../_static/images/source-code.png" />
+             <!-- View page source -->
+
+          </a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="user-account">
+<h1>User Account<a class="headerlink" href="#user-account" title="Permalink to this headline">¶</a></h1>
+<p>CryptPad encrypts data so that it is readable only by you and your collaborators. For this reason <strong>the administrators of the service cannot view or retrieve your password</strong>. Therefore it is important that you make a note of your password in a safe place.</p>
+<p>CryptPad uses the combination of your username and password to identify you. Usernames are not unique on CryptPad. It is possible to create multiple accounts with the same username and different passwords.</p>
+<div class="section" id="account-types">
+<h2>Account types<a class="headerlink" href="#account-types" title="Permalink to this headline">¶</a></h2>
+<p>There are three types of accounts on CryptPad:</p>
+<div class="section" id="non-registered-user">
+<h3>Non-registered user<a class="headerlink" href="#non-registered-user" title="Permalink to this headline">¶</a></h3>
+<p>Non-registered users are identified by this avatar (at the top right): <i style="font-size:2em" class="fa fa-user-secret"></i></p>
+<p>No personal information is necessary to use CryptPad without registering. However, functionality is reduced:</p>
+<ul class="simple">
+<li><p>Access to all applications.</p></li>
+<li><p>Sharing and collaborating on documents.</p></li>
+<li><p>Storage limited to 3 months of inactivity (counted per document).</p></li>
+<li><p>File storage unavailable for images/videos/PDF/etc…</p></li>
+</ul>
+</div>
+<div class="section" id="logged-in-user">
+<h3>Logged in user<a class="headerlink" href="#logged-in-user" title="Permalink to this headline">¶</a></h3>
+<p>Logged in user are identified by an avatar (at the top right), either their profile picture if they have set one or the first letter of their display name.</p>
+<p>Registering an account does not require any personal information, only a username and password. Additional fuctionality for logged in users :</p>
+<ul class="simple">
+<li><p>Personal and permanent storage space for documents.</p></li>
+<li><p>File storage for images/videos/PDF/etc…</p></li>
+<li><p>More options to manage documents as [owner]: add a [password], an [expiry date], or an [access list].</p></li>
+<li><p>Organisation of documents in [folders], [shared folders], or with [tags] and [templates].</p></li>
+<li><p>Creation of [teams].</p></li>
+<li><p>Customisation of the [profile] page and a list of [contacts] to [share documents] and [chat] with. Notifications for interactions between contacts.</p></li>
+</ul>
+</div>
+<div class="section" id="premium-user">
+<h3>Premium user<a class="headerlink" href="#premium-user" title="Permalink to this headline">¶</a></h3>
+<p>(only on cryptpad.fr)</p>
+<ul class="simple">
+<li><p>More storage space.</p></li>
+<li><p>Higher maximum upload size for files (images/videos/PDF/etc…).</p></li>
+<li><p>Priority response from the admin/support team.</p></li>
+<li><p>Support the development and sustainability of CryptPad.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="account-management">
+<h2>Account management<a class="headerlink" href="#account-management" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="registration">
+<h3>Registration<a class="headerlink" href="#registration" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">[screenshot:</span> <span class="pre">registration</span> <span class="pre">screen</span> <span class="pre">EN]</span></code></p>
+<p>To register a new account, go to the registration page: <strong>Register</strong> at the top right of the home page.</p>
+<p>Fill out the following information:</p>
+<ul class="simple">
+<li><p>Username: This is the name used to log in to CryptPad, it is different from the <strong>Display name</strong> visible by other users. The <strong>Username</strong> cannot be changed once the account is created.</p></li>
+<li><p>Password: It is recommended to use a strong password. The password can be changed in [user settings].</p></li>
+</ul>
+<p>Important: CryptPad administrators cannot view or retrieve your password if it is lost or forgotten.</p>
+<ul class="simple">
+<li><p>Terms of service: Read and accept the terms of service.</p></li>
+</ul>
+<p>Optional:</p>
+<ul class="simple">
+<li><p>Import pads from your anonymous session: If you have created documents as a non-registered user you can import them into your account.</p></li>
+</ul>
+</div>
+<div class="section" id="logging-in">
+<h3>Logging in<a class="headerlink" href="#logging-in" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">[screenshot:</span> <span class="pre">login</span> <span class="pre">screen</span> <span class="pre">EN]</span></code></p>
+<p>To log in to CryptPad visit the <strong>log in</strong> page (at the top right of the home page), and fill in the username and password used at registration.</p>
+<p>Optional:</p>
+<ul class="simple">
+<li><p>Import pads from your anonymous session: If you have created documents as a non-registered user you can import them into your account.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="settings">
+<h2>Settings<a class="headerlink" href="#settings" title="Permalink to this headline">¶</a></h2>
+<p>The account settings are found in the user menu (avatar at the top right) <i class="fa fa-gear"></i> <strong>Settings</strong>.</p>
+<div class="section" id="account">
+<h3>Account<a class="headerlink" href="#account" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Account name: Username chosen at registration. This name cannot be changed. {<strong>logged in user</strong>}</p></li>
+<li><p>Public Signing Key: Used by instance administrators and/or on instances that offer subscriptions. This is the only data about your account that is available to the administrators of the service. {<strong>logged in user</strong>} <!-- XXX link to longer description--></p></li>
+<li><p>Display Name: Name displayed to other users, for example when you collaborate on documents. To change this name enter a new name and clic on <strong>Save</strong>. {<strong>logged in user</strong>}</p></li>
+<li><p>Language: Language used in the CryptPad interface. To change the language of CryptPad pick a new language in the drop-down menu. CryptPad is translated in English adn French by the development team, and in other languages by the [community]. Some translations can be incomplete and/or contain errors.</p></li>
+<li><p>Tips: Help messages in the CryptPad interface. Click on <strong>Reset</strong> to display them again if they have been dismissed.</p></li>
+<li><p>Change your password: Form to change your password. Enter your current password and confirm the new password by typing it twice. {<strong>logged in user</strong>}</p></li>
+<li><p>Account deletion: Option to permanently delete your account and all of its documents. To delete your account use <strong>Delete your account</strong> and confirm. {<strong>logged in user</strong>}</p></li>
+</ul>
+</div>
+<div class="section" id="confidentiality">
+<h3>Confidentiality<a class="headerlink" href="#confidentiality" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Close remote sessions: Log out of all sessions except the one from which this option is activated. (see also [Remote Disconnect]){<strong>logged in user</strong>}</p></li>
+<li><p>Pad storage in CryptDrive: Manages if documents you visit are automatically stored in your CryptDrive. If no one [owns] a document you add to your CryptDrive, it counts against your storage quota.</p>
+<ul>
+<li><p><strong>Automatic</strong>: All the pads you visit are stored in your CryptDrive.</p></li>
+<li><p><strong>Manual (always ask)</strong>: If you have not stored a pad yet, you will be asked if you want to store them in your CryptDrive.</p></li>
+<li><p><strong>Manual (never ask)</strong> Pads are not stored automatically in your Cryptpad. The option to store them will be hidden. <!--- XXX hidden option? --></p></li>
+</ul>
+</li>
+<li><p>Safe links: When this setting is active, the link in your browser’s address bar does not provide access to the document unless the recipient already has it in their CryptDrive. This setting is active by default. It is highly recommended to keep it active and to use the [<i class="fa fa-share-alt"></i> <strong>Share</strong>] menu to copy links to documents.</p></li>
+</ul>
+<p>CryptPad includes the keys to decrypt your documents in their links. Anyone with access to your browsing history can potentially read your data. This includes intrusive browser extensions and browsers that sync your history across devices. Situations where your browser is visible by others, such as screen-sharing or screenshots, are also potentially risky in terms of leaking access to your documents. Enabling “safe links” prevents the keys from entering your browsing history or being displayed in your address bar whenever possible.</p>
+<ul class="simple">
+<li><p>Feedback: CryptPad can send anonymised usage feedback to the server in order to improve the user experience. The content of documents is never shared. This option is disabled by default.</p></li>
+</ul>
+</div>
+<div class="section" id="cryptdrive">
+<h3>CryptDrive<a class="headerlink" href="#cryptdrive" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Duplicated owned pads: When you move your owned pads to a shared folder, a copy is kept in your CryptDrive to ensure that you retain your control over it. You can hide duplicated files. Only the shared version will be visible, unless deleted, in which case the original will be displayed in its previous location.</p></li>
+</ul>
+<!-- XXX the new `owned` branch does not create duplicates anymore, but existing duplicate will remain --> <ul class="simple">
+<li><p>Thumbnails: To help navigating the CryptDrive in [grid] mode, CryptPad can create thumbnails of documents and store them in the browser. This option is turned off by default because it can slow down the browser on less powerful computers. The <strong>Clean</strong> button deletes all existing thumbnails.</p></li>
+<li><p>Backup: Two types of backups are available.</p>
+<ul>
+<li><p><strong>Backup</strong> only saves the keys of documents in the CryptDrive, not their content. This option is designed to save access to documents and <strong>Restore</strong> it in another session.</p></li>
+<li><p><strong>Download my CryptDrive</strong> saves the content of all documents in hte CryptDrive. When possible, this is done in a format that is readable by other software. Some applications produce files that are only readable by CryptPad.</p></li>
+</ul>
+</li>
+<li><p>Import: If pads have been created as a non-registered user prior to logging in, they can be imported to the CryptDrive. {<strong>logged in user</strong>}</p></li>
+<li><p>Delete History: The history of the CryptDrive and notifications can be deleted to save storage space. This does not affect the history of documents, which can be deleted individualy in the [properties] dialog.</p></li>
+</ul>
+</div>
+<div class="section" id="cursor">
+<h3>Cursor<a class="headerlink" href="#cursor" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Cursor color: Change the color of your cursor. This is used to identify you while collaborating on documents. It also determines the color of your text when [color by author] is active in Code documents.</p></li>
+<li><p>Share my cursor position: Display or hide the exact position of your cursor to other users.</p></li>
+<li><p>Display other users’ cursor position (BETA): Display or hide the position of other users’ cursors.</p></li>
+</ul>
+</div>
+<div class="section" id="rich-text">
+<h3>Rich Text<a class="headerlink" href="#rich-text" title="Permalink to this headline">¶</a></h3>
+<p>User settings for the [Rich Text] application.</p>
+<ul class="simple">
+<li><p>Editor’s maximum width: Switch between page mode (default) that limits the width of the text editor, and using the full width of the screen.</p></li>
+<li><p>Spellcheck: Enable spellcheck in Rich Text documents. Spelling errors are underlined and suggested corrections are available through <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">Right</span> <span class="pre">click</span></code> on the word to correct.</p></li>
+<li><p>Comment notifications: Disable notifications when another user replies to one of your comments.</p></li>
+</ul>
+</div>
+<div class="section" id="code">
+<h3>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h3>
+<p>User settings for the [Code] application.</p>
+<ul class="simple">
+<li><p>Code editor indentation (spaces): Choose the number of spaces for each level of indentation.</p></li>
+<li><p>Indent using tabs (instead of spaces): Insert tabs rather than spaces with the <code class="docutils literal notranslate"><span class="pre">Tab</span></code> key.</p></li>
+<li><p>Auto-close brackets: Automatically insert a closing character <code class="docutils literal notranslate"><span class="pre">)</span></code> when brackets are opened with <code class="docutils literal notranslate"><span class="pre">(</span></code> (also works with <code class="docutils literal notranslate"><span class="pre">[</span></code>, <code class="docutils literal notranslate"><span class="pre">'</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;</span></code>).</p></li>
+<li><p>Font size in the code editor: Set the size of text (in pixels) in the code editor.</p></li>
+<li><p>Spellcheck: Underline spelling mistakes in the code editor, correction suggestions are available through <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the word to correct.</p></li>
+</ul>
+</div>
+<div class="section" id="subscription">
+<h3>Subscription<a class="headerlink" href="#subscription" title="Permalink to this headline">¶</a></h3>
+<p>(only on cryptpad.fr)</p>
+<ul class="simple">
+<li><p>Redirects to the account page.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="support">
+<h2>Support<a class="headerlink" href="#support" title="Permalink to this headline">¶</a></h2>
+<p>Support tickets provide a secure communication channel with the administrators of the CryptPad instance. The <strong>Support</strong> page is accessible through the user menu (avatar at the top-right) &gt; <i class="fa fa-life-ring"></i> <strong>Support</strong>.</p>
+<div class="section" id="existing-tickets">
+<h3>Existing tickets<a class="headerlink" href="#existing-tickets" title="Permalink to this headline">¶</a></h3>
+<p>Follow up on existing tickets. It is possible to <strong>Reply</strong> to a ticket, <strong>Close</strong> it if the issue has been resolved, and <strong>Delete</strong> closed tickets.</p>
+</div>
+<div class="section" id="new-tickets">
+<h3>New tickets<a class="headerlink" href="#new-tickets" title="Permalink to this headline">¶</a></h3>
+<p>Send a new ticket. Fill in the form with a title, category, and the details of the problem or question. Add an attachment if needed, for example a screenshot, and click on <strong>Send</strong>.</p>
+</div>
+</div>
+<div class="section" id="notifications">
+<h2>Notifications<a class="headerlink" href="#notifications" title="Permalink to this headline">¶</a></h2>
+<p>{<strong>logged in user</strong>}</p>
+<p>CryptPad notifies you when your contacts interact with you. Notifications are displayed by the bell <i class="fa fa-bell-o"></i> next to the avatar (at the top-right). If you have unread notifications, the bell is filled <i class="fa fa-bell"></i> and a count is displayed.</p>
+<p><i class="fa fa-bell"></i> Bell drop down menu:</p>
+<ul class="simple">
+<li><p>Browse unread notifications.</p></li>
+<li><p>Delete a notification with <i class="fa fa-times"></i>.</p></li>
+<li><p><strong>Open notifications panel</strong>: View all notifications and notification history.</p>
+<ul>
+<li><p><i class="fa fa-trash"></i>: Delete all notifications of one type (<em>contact requests</em> or <em>Shared with me</em>).</p></li>
+</ul>
+</li>
+</ul>
+<!--- XXX Does the trash delete notifications or "hide" them and they are still in the history? ---></div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="drive.html" class="btn btn-neutral float-right" title="Drive" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="instances.html" class="btn btn-neutral" title="CryptPad instances" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, CryptPad Team.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a modified <a href="https://github.com/rtfd/sphinx_rtd_theme">RTD theme</a>.<br/>
+  <a href="https://cryptpad.fr" title="CryptPad flagship instance">CryptPad flagship instance</a> |
+  <a href="#" title="The Gitlab instance to edit this pages and collaborate.">Git repository for docs.cryptpad.fr </a>
+  . 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'3.19.0',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

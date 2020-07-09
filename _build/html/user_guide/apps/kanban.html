@@ -1,0 +1,441 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Kanban &mdash; CryptPad 3.19.0 documentation</title>
+  
+
+  
+  <link rel="icon" type="image/png" href="../../_static.images/main-favicon.png" id="favicon"/>
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/open-sans.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/cptools.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+            <a href="../../index.html" class="icon icon-home">
+              <img src="../../_static/images/sidebar-logo.png" class="logo" alt="Logo"/>
+              <div class="icon-title">CryptPad</div>
+              3.19.0
+            </a>
+            
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+          
+        </div>
+
+        <div class="wy-side-nav-language-selector">
+        	<p class="caption-text">
+	        	<select id="language-selector-container">
+	        		<option value="en">English</option>
+	        		<option value="fr">Français</option>
+	        	</select>
+        	</p>
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../user_guide.html">User Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../instances.html">CryptPad instances</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user_account.html">User Account</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_account.html#account-types">Account types</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#non-registered-user">Non-registered user</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#logged-in-user">Logged in user</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#premium-user">Premium user</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_account.html#account-management">Account management</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#registration">Registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#logging-in">Logging in</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_account.html#settings">Settings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#account">Account</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#confidentiality">Confidentiality</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#cryptdrive">CryptDrive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#cursor">Cursor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#rich-text">Rich Text</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#subscription">Subscription</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_account.html#support">Support</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#existing-tickets">Existing tickets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#new-tickets">New tickets</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_account.html#notifications">Notifications</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../drive.html">Drive</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../drive.html#display">Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../drive.html#managing-documents">Managing documents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../drive.html#folders">Folders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../drive.html#renaming">Renaming</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../drive.html#deleting">Deleting</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../drive.html#cryptdrive-history">CryptDrive history</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../drive.html#tags">Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../drive.html#templates">Templates</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../drive.html#create-a-template">Create a template</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../drive.html#use-a-template">Use a template</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../security.html">Security</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#passwords-for-documents-and-folders">Passwords for documents and folders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#remote-disconnect">Remote Disconnect</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../collaboration.html">Collaboration / Social</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../collaboration.html#profile">Profile</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#personal-profile">Personal profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#user-profile">User profile</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../collaboration.html#contacts">Contacts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#add-a-contact">Add a contact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#manage-contacts">Manage contacts</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../collaboration.html#chat-with-contacts">Chat with contacts</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../collaboration.html#teams">Teams</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#team-drive">Team Drive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#team-members">Team members</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../collaboration.html#invite-members">Invite members</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../collaboration.html#manage-members">Manage members</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#chat">Chat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#id1">Administration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../share_and_access.html">Share / Access</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../share_and_access.html#share">Share</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../share_and_access.html#access-rights">Access rights</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../share_and_access.html#sharing-with-contacts">Sharing with contacts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../share_and_access.html#sharing-a-link">Sharing a link</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../share_and_access.html#embedding">Embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../share_and_access.html#shared-folders">Shared folders</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../share_and_access.html#access">Access</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../share_and_access.html#access-tab">Access tab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../share_and_access.html#access-list">Access List</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../share_and_access.html#owners">Owners</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../applications.html">Applications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../applications.html#new-document">New document</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../applications.html#creation-screen">Creation screen</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../applications.html#saving">Saving</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../applications.html#make-a-copy">Make a copy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../applications.html#document-history">Document history</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../applications.html#properties">Properties</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../applications.html#users-and-chat">Users and chat</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="code.html">Code / Markdown</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="code.html#toolbar">Toolbar</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="code.html#theme">Theme</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="code.html#import-export">Import/Export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="code.html#markdown">Markdown</a></li>
+<li class="toctree-l3"><a class="reference internal" href="code.html#images">Images</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="code.html#lightbox">Lightbox</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+	<!-- start top banner area (for fundraisers or messages)
+
+	<div style="text-align: center; background-color: #333">
+		<a href="https://krita.org/en/fundraising-2018-campaign/" target="_self" onclick="ga('send', 'event', 'frontpage', 'button', 'Fundraiser 2018');">
+			<img src="https://krita.org/wp-content/themes/krita-org-theme/images/decoration/2018-fundraiser-banner.png" style="max-width: 100%">
+		</a>
+	</div>
+	
+	 end top banner area -->
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">CryptPad</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Index</a> &raquo;</li>
+        
+      <li>Kanban</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/user_guide/apps/kanban.md.txt" rel="nofollow"> 
+             
+              <img src="../../_static/images/source-code.png" />
+             <!-- View page source -->
+
+          </a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="kanban">
+<h1>Kanban<a class="headerlink" href="#kanban" title="Permalink to this headline">¶</a></h1>
+<p>The Kanban application in CryptPad is based on <a class="reference external" href="https://www.riccardotartaglia.it/jkanban/">JKanban</a>.</p>
+<div class="section" id="organisation">
+<h2>Organisation<a class="headerlink" href="#organisation" title="Permalink to this headline">¶</a></h2>
+<p>Move cards/columns:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Drag</span></code> the card/column to its desired position and <code class="docutils literal notranslate"><span class="pre">Drop</span></code>.</p></li>
+</ul>
+<p>Remove a card/column:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Drag</span></code> the card/column to the <i class="fa fa-trash"></i> Delete area at the bottom of the screen and <code class="docutils literal notranslate"><span class="pre">Drop</span></code> the card/column. (The <i class="fa fa-trash"></i> area only appears once you are dragging an element).</p></li>
+<li><p><i class="fa fa-pencil"></i> button on the card/column to open the editor &gt; <strong>Delete</strong> and confirm.</p></li>
+</ul>
+</div>
+<div class="section" id="columns">
+<h2>Columns<a class="headerlink" href="#columns" title="Permalink to this headline">¶</a></h2>
+<p>Create a new column:</p>
+<ul class="simple">
+<li><p><i class="fa fa-plus"></i> button to the right of the last columns.</p></li>
+</ul>
+<p>Change the title of a column:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on the column title.</p></li>
+<li><p>Type the new title.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Enter</span></code>.</p></li>
+</ul>
+<p>The column title and color can be changed in the column editor:</p>
+<ul class="simple">
+<li><p><i class="fa fa-pencil"></i> button next to the column title.</p></li>
+<li><p>Change the title and/or pick a color.</p></li>
+<li><p><strong>Close</strong>, <code class="docutils literal notranslate"><span class="pre">Esc</span></code> or <code class="docutils literal notranslate"><span class="pre">Enter</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="cards">
+<h2>Cards<a class="headerlink" href="#cards" title="Permalink to this headline">¶</a></h2>
+<p>Create a new card with the buttons at the bottom of each column:</p>
+<ul class="simple">
+<li><p><i class="cptools cptools-add-bottom"></i> to add a card at the bottom of the column.</p></li>
+<li><p><i class="cptools cptools-add-top"></i> to add a card at the top of the column.</p></li>
+</ul>
+<p>Change the title of a card:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on the card title.</p></li>
+<li><p>Type the new title.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Enter</span></code>.</p></li>
+</ul>
+<p>The title of a card can also be modified in the card editor (see below).</p>
+<div class="section" id="card-editor">
+<h3>Card editor<a class="headerlink" href="#card-editor" title="Permalink to this headline">¶</a></h3>
+<p>Open the card editor:</p>
+<ul class="simple">
+<li><p><i class="fa fa-pencil"></i> button next to the card title.</p></li>
+</ul>
+<p>In the card editor:</p>
+<ul class="simple">
+<li><p>Edit the card title.</p></li>
+<li><p>Edit the card body using <a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown</a>:</p></li>
+</ul>
+<!--- localised link if possible. French here: 
+https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdown/ --> <p>Italics, bold, links, lists, todo-lists, etc. are supported.</p>
+<ul class="simple">
+<li><p>Pick a card color.</p></li>
+<li><p>Add or remove tags to the card.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="display">
+<h2>Display<a class="headerlink" href="#display" title="Permalink to this headline">¶</a></h2>
+<p>Use the <i class="fa fa-minus"></i> and <i class="fa fa-bars"></i> icons at the top right to display:</p>
+<ul class="simple">
+<li><p><i class="fa fa-minus"></i> only card titles.</p></li>
+<li><p><i class="fa fa-bars"></i> full card contents.</p></li>
+</ul>
+<p>The tags at the top of the board are used to filter cards:</p>
+<ol class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on one or more tags.</p></li>
+<li><p>Only cards with these tags are displayed.</p></li>
+<li><p>Any new cards will automatically receive the selected tags.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on a selected tag to de-select it, or use <i class="fa fa-times"></i> <strong>Clear filter</strong> (at the left of the list) to de-select all tags.</p></li>
+</ol>
+</div>
+<div class="section" id="import-export">
+<h2>Import/Export<a class="headerlink" href="#import-export" title="Permalink to this headline">¶</a></h2>
+<p><i class="fa fa-file-o"></i> <strong>File</strong> &gt; <i class="fa fa-upload"></i> <strong>Import</strong>
+Supported formats: <code class="docutils literal notranslate"><span class="pre">.json</span></code> files exported by this application.</p>
+<p><i class="fa fa-file-o"></i> <strong>Files</strong> &gt; <i class="fa fa-download"></i> <strong>Export</strong><br />Supported formats: <code class="docutils literal notranslate"><span class="pre">.json</span></code>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, CryptPad Team.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a modified <a href="https://github.com/rtfd/sphinx_rtd_theme">RTD theme</a>.<br/>
+  <a href="https://cryptpad.fr" title="CryptPad flagship instance">CryptPad flagship instance</a> |
+  <a href="#" title="The Gitlab instance to edit this pages and collaborate.">Git repository for docs.cryptpad.fr </a>
+  . 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'3.19.0',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/language_data.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>
