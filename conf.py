@@ -65,7 +65,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'Readme.md', 'requiremen
 html_static_path = ['_static']
 
 html_css_files = [
-    'open-sans.css'
+    'css/open-sans.css'
 ]
 
 html_theme = "theme"
