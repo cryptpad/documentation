@@ -80,11 +80,11 @@ CryptPad teams are shared spaces between a group of users. A team has its own Cr
 The number of teams a CryptPad user can join is limited to 3 for performance reasons. 
 
 To create a team: 
-1. User menu (avatar at the top-right) > <i class="fa fa-users"></i> **Équipes**.
+1. User menu (avatar at the top-right) > <i class="fa fa-users"></i> **Teams**.
 1. <i class="fa fa-plus-circle"></i> **New**.
 
 To open an existing team: 
-1. User menu (avatar at the top-right) > <i class="fa fa-users"></i> **Équipes**.
+1. User menu (avatar at the top-right) > <i class="fa fa-users"></i> **Teams**.
 1. <i class="fa fa-list"></i> **Teams** > **Open** button on the desired team. 
 
 ### Team Drive
@@ -95,7 +95,7 @@ The team storage space is similar to the [CryptDrive] but shared between members
 
 To manage the members of a team, go to the <i class="fa fa-users"></i> **Members** tab.
 
-#### Invite members
+### Invite members
 
 To invite members to a team: 
 
@@ -111,9 +111,8 @@ To invite members to a team:
 
 - Personal message: Message that the recipient will see before they decide to accept the invitation to join the team. 
 
-#### Manage members
 
-##### Roles and permissions
+### Roles and permissions
 
 
 | Role | View | Edit | Manage members | Manage team |
@@ -134,7 +133,7 @@ Manage Members: invite and revoke members, change member roles up to Admin.
 
 Manage Team: change team name and avatar, add or remove Owners, change team subscription, delete team.
 
-###### Administration
+### Administration
 
 Each member's role can be changed in the team roster. Team admins and owners can manage members of equal or lower role. For each member: 
 
@@ -146,13 +145,13 @@ Each member's role can be changed in the team roster. Team admins and owners can
 
 The team chat is similar to the chat with [contacts] except shared between all members of the team.
 
-### Administration 
+### Administration tab
 {**team owners**}
 
-- Public signing key: Used to identify the team on instances that offer subscitpions. 
+- **Public signing key**: Used to identify the team on instances that offer subscitpions. 
 
-- Team name: Change the name of the team. 
+- **Team name**: Change the name of the team. 
 
-- Team avatar: Import/modify an avatar for the team.
+- **Team avatar**: Import/modify an avatar for the team.
 
-- Team deletion: Permanently delete the team and all of its documents.
+- **Team deletion**: Permanently delete the team and all of its documents.
