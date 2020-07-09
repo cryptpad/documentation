@@ -49,6 +49,10 @@ The <i class="fa fa-flag"></i> icon indicates that the title of a document is di
 
 ### Deleting
 {**logged in user**}
+<!-- XXX update this with new delete UX ---> 
+<div class="warning">
+This section needs updating
+</div>
 
 To delete a document from your CryptDrive, place it the <i class="fa fa-trash"></i> **Trash**:  
 
@@ -70,7 +74,7 @@ These documents remain available to other users that have them in their CryptDri
 
 The [owner] of a document can also delete it permanently: 
 - `Right click` on the document in the CryptDrive > <i class="fa fa-eraser"></i> **Delete from the server**.  
-<!-- XXX update this with new delete UX ---> 
+
 
 In this case the document is deleted from the database right away for all users, including anyone that had stored the document in their CryptDrive. 
 
@@ -113,7 +117,7 @@ Only the tags asigned to all the documents are then displayed. Any tags added an
 Templates provide reusable starting points to create documents of a similar structure, for example invoices, letterheads, reports, and so on. 
 
 
-### Create a template 
+To create a template:
 
 1. Select the  <i class="cptools cptools-template"></i> **Templates** tab in the CryptDrive. 
 1. <i class="fa fa-plus"></i> **New** in the toolbar.
@@ -127,10 +131,11 @@ or
 1. Create a [new document].
 1. On the creation screen select <i class="cptools cptools-new-template"></i> **New template**.
 
-### Use a template
+To use a template:
 
 - Select the template when creating a [new document].
-- In an existing document: <i class="fa fa-file-o"></i> **File** > <i class="fa fa-upload"></i> **Import a template**. Please note: this option **replaces** the contents of the document with the template. 
+- In an existing document: <i class="fa fa-file-o"></i> **File** > <i class="fa fa-upload"></i> **Import a template**.  
+Please note: this option **replaces** the contents of the document with the template. 
 
 
 
