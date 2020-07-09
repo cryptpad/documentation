@@ -64,6 +64,10 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'Readme.md', 'requiremen
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+html_css_files = [
+    'open-sans.css'
+]
+
 html_theme = "theme"
 html_theme_path = ["_themes"]
 using_rtd_theme = True
