@@ -106,11 +106,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#subscription">Subscription</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#support">Support</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#existing-tickets">Existing tickets</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#new-tickets">New tickets</a></li>
-</ul>
-</li>
+<li class="toctree-l3"><a class="reference internal" href="#support">Support</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#notifications">Notifications</a></li>
 </ul>
 </li>
@@ -390,16 +386,17 @@
 <p>To register a new account, go to the registration page: <strong>Register</strong> at the top right of the home page.</p>
 <p>Fill out the following information:</p>
 <ul class="simple">
-<li><p>Username: This is the name used to log in to CryptPad, it is different from the <strong>Display name</strong> visible by other users. The <strong>Username</strong> cannot be changed once the account is created.</p></li>
-<li><p>Password: It is recommended to use a strong password. The password can be changed in [user settings].</p></li>
+<li><p><strong>Username</strong>: This is the name used to log in to CryptPad, it is different from the <strong>Display name</strong> visible by other users. The <strong>Username</strong> cannot be changed once the account is created.</p></li>
+<li><p><strong>Password</strong>: It is recommended to use a strong password. The password can be changed in [user settings].</p></li>
 </ul>
-<p>Important: CryptPad administrators cannot view or retrieve your password if it is lost or forgotten.</p>
-<ul class="simple">
-<li><p>Terms of service: Read and accept the terms of service.</p></li>
+<div class="warning">
+  Important: CryptPad administrators cannot view or retrieve your password if it is lost or forgotten. 
+</div><ul class="simple">
+<li><p><strong>Terms of service</strong>: Read and accept the terms of service.</p></li>
 </ul>
 <p>Optional:</p>
 <ul class="simple">
-<li><p>Import pads from your anonymous session: If you have created documents as a non-registered user you can import them into your account.</p></li>
+<li><p><strong>Import pads from your anonymous session</strong>: If you have created documents as a non-registered user you can import them into your account.</p></li>
 </ul>
 </div>
 <div class="section" id="logging-in">
@@ -408,86 +405,84 @@
 <p>To log in to CryptPad visit the <strong>log in</strong> page (at the top right of the home page), and fill in the username and password used at registration.</p>
 <p>Optional:</p>
 <ul class="simple">
-<li><p>Import pads from your anonymous session: If you have created documents as a non-registered user you can import them into your account.</p></li>
+<li><p><strong>Import pads from your anonymous session</strong>: If you have created documents as a non-registered user you can import them into your account.</p></li>
 </ul>
 </div>
 </div>
 <div class="section" id="settings">
 <h2>Settings<a class="headerlink" href="#settings" title="Permalink to this headline">¶</a></h2>
-<p>The account settings are found in the user menu (avatar at the top right) <i class="fa fa-gear"></i> <strong>Settings</strong>.</p>
+<p>The account settings are found in the user menu (avatar at the top right) &gt; <i class="fa fa-gear"></i> <strong>Settings</strong>.</p>
 <div class="section" id="account">
 <h3>Account<a class="headerlink" href="#account" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p>Account name: Username chosen at registration. This name cannot be changed. {<strong>logged in user</strong>}</p></li>
-<li><p>Public Signing Key: Used by instance administrators and/or on instances that offer subscriptions. This is the only data about your account that is available to the administrators of the service. {<strong>logged in user</strong>} <!-- XXX link to longer description--></p></li>
-<li><p>Display Name: Name displayed to other users, for example when you collaborate on documents. To change this name enter a new name and clic on <strong>Save</strong>. {<strong>logged in user</strong>}</p></li>
-<li><p>Language: Language used in the CryptPad interface. To change the language of CryptPad pick a new language in the drop-down menu. CryptPad is translated in English adn French by the development team, and in other languages by the [community]. Some translations can be incomplete and/or contain errors.</p></li>
-<li><p>Tips: Help messages in the CryptPad interface. Click on <strong>Reset</strong> to display them again if they have been dismissed.</p></li>
-<li><p>Change your password: Form to change your password. Enter your current password and confirm the new password by typing it twice. {<strong>logged in user</strong>}</p></li>
-<li><p>Account deletion: Option to permanently delete your account and all of its documents. To delete your account use <strong>Delete your account</strong> and confirm. {<strong>logged in user</strong>}</p></li>
+<li><p><strong>Account name</strong>: Username chosen at registration. This name cannot be changed. {<strong>logged in user</strong>}</p></li>
+<li><p><strong>Public Signing Key</strong>: Used by instance administrators and/or on instances that offer subscriptions. This is the only data about your account that is available to the administrators of the service. {<strong>logged in user</strong>} <!-- XXX link to longer description--></p></li>
+<li><p><strong>Display Name</strong>: Name displayed to other users, for example when you collaborate on documents. To change this name enter a new name and clic on <strong>Save</strong>. {<strong>logged in user</strong>}</p></li>
+<li><p><strong>Language</strong>: Language used in the CryptPad interface. To change the language of CryptPad pick a new language in the drop-down menu. CryptPad is translated in English adn French by the development team, and in other languages by the [community]. Some translations can be incomplete and/or contain errors.</p></li>
+<li><p><strong>Tips</strong>: Help messages in the CryptPad interface. Click on <strong>Reset</strong> to display them again if they have been dismissed.</p></li>
+<li><p><strong>Change your password</strong>: Form to change your password. Enter your current password and confirm the new password by typing it twice. {<strong>logged in user</strong>}</p></li>
+<li><p><strong>Account deletion</strong>: Option to permanently delete your account and all of its documents. To delete your account use <strong>Delete your account</strong> and confirm. {<strong>logged in user</strong>}</p></li>
 </ul>
 </div>
 <div class="section" id="confidentiality">
 <h3>Confidentiality<a class="headerlink" href="#confidentiality" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p>Close remote sessions: Log out of all sessions except the one from which this option is activated. (see also [Remote Disconnect]){<strong>logged in user</strong>}</p></li>
-<li><p>Pad storage in CryptDrive: Manages if documents you visit are automatically stored in your CryptDrive. If no one [owns] a document you add to your CryptDrive, it counts against your storage quota.</p>
+<li><p><strong>Close remote sessions</strong>: Log out of all sessions except the one from which this option is activated. (see also [Remote Disconnect]){<strong>logged in user</strong>}</p></li>
+<li><p><strong>Pad storage in CryptDrive</strong>: Manages if documents you visit are automatically stored in your CryptDrive. If no one [owns] a document you add to your CryptDrive, it counts against your storage quota.</p>
 <ul>
 <li><p><strong>Automatic</strong>: All the pads you visit are stored in your CryptDrive.</p></li>
 <li><p><strong>Manual (always ask)</strong>: If you have not stored a pad yet, you will be asked if you want to store them in your CryptDrive.</p></li>
 <li><p><strong>Manual (never ask)</strong> Pads are not stored automatically in your Cryptpad. The option to store them will be hidden. <!--- XXX hidden option? --></p></li>
 </ul>
 </li>
-<li><p>Safe links: When this setting is active, the link in your browser’s address bar does not provide access to the document unless the recipient already has it in their CryptDrive. This setting is active by default. It is highly recommended to keep it active and to use the [<i class="fa fa-share-alt"></i> <strong>Share</strong>] menu to copy links to documents.</p></li>
+<li><p><strong>Safe links</strong>: When this setting is active, the link in your browser’s address bar does not provide access to the document unless the recipient already has it in their CryptDrive. This setting is active by default. It is highly recommended to keep it active and to use the [<i class="fa fa-share-alt"></i> <strong>Share</strong>] menu to copy links to documents.</p></li>
 </ul>
 <p>CryptPad includes the keys to decrypt your documents in their links. Anyone with access to your browsing history can potentially read your data. This includes intrusive browser extensions and browsers that sync your history across devices. Situations where your browser is visible by others, such as screen-sharing or screenshots, are also potentially risky in terms of leaking access to your documents. Enabling “safe links” prevents the keys from entering your browsing history or being displayed in your address bar whenever possible.</p>
 <ul class="simple">
-<li><p>Feedback: CryptPad can send anonymised usage feedback to the server in order to improve the user experience. The content of documents is never shared. This option is disabled by default.</p></li>
+<li><p><strong>Feedback</strong>: CryptPad can send anonymised usage feedback to the server in order to improve the user experience. The content of documents is never shared. This option is disabled by default.</p></li>
 </ul>
 </div>
 <div class="section" id="cryptdrive">
 <h3>CryptDrive<a class="headerlink" href="#cryptdrive" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p>Duplicated owned pads: When you move your owned pads to a shared folder, a copy is kept in your CryptDrive to ensure that you retain your control over it. You can hide duplicated files. Only the shared version will be visible, unless deleted, in which case the original will be displayed in its previous location.</p></li>
-</ul>
-<!-- XXX the new `owned` branch does not create duplicates anymore, but existing duplicate will remain --> <ul class="simple">
-<li><p>Thumbnails: To help navigating the CryptDrive in [grid] mode, CryptPad can create thumbnails of documents and store them in the browser. This option is turned off by default because it can slow down the browser on less powerful computers. The <strong>Clean</strong> button deletes all existing thumbnails.</p></li>
-<li><p>Backup: Two types of backups are available.</p>
+<li><p><strong>Duplicated owned pads</strong>: When you move your owned pads to a shared folder, a copy is kept in your CryptDrive to ensure that you retain your control over it. You can hide duplicated files. Only the shared version will be visible, unless deleted, in which case the original will be displayed in its previous location. <!-- XXX the new `owned` branch does not create duplicates anymore, but existing duplicate will remain --></p></li>
+<li><p><strong>Thumbnails</strong>: To help navigating the CryptDrive in [grid] mode, CryptPad can create thumbnails of documents and store them in the browser. This option is turned off by default because it can slow down the browser on less powerful computers. The <strong>Clean</strong> button deletes all existing thumbnails.</p></li>
+<li><p><strong>Backup</strong>: Two types of backups are available.</p>
 <ul>
 <li><p><strong>Backup</strong> only saves the keys of documents in the CryptDrive, not their content. This option is designed to save access to documents and <strong>Restore</strong> it in another session.</p></li>
 <li><p><strong>Download my CryptDrive</strong> saves the content of all documents in hte CryptDrive. When possible, this is done in a format that is readable by other software. Some applications produce files that are only readable by CryptPad.</p></li>
 </ul>
 </li>
-<li><p>Import: If pads have been created as a non-registered user prior to logging in, they can be imported to the CryptDrive. {<strong>logged in user</strong>}</p></li>
-<li><p>Delete History: The history of the CryptDrive and notifications can be deleted to save storage space. This does not affect the history of documents, which can be deleted individualy in the [properties] dialog.</p></li>
+<li><p><strong>Import</strong>: If pads have been created as a non-registered user prior to logging in, they can be imported to the CryptDrive. {<strong>logged in user</strong>}</p></li>
+<li><p><strong>Delete History</strong>: The history of the CryptDrive and notifications can be deleted to save storage space. This does not affect the history of documents, which can be deleted individualy in the [properties] dialog.</p></li>
 </ul>
 </div>
 <div class="section" id="cursor">
 <h3>Cursor<a class="headerlink" href="#cursor" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p>Cursor color: Change the color of your cursor. This is used to identify you while collaborating on documents. It also determines the color of your text when [color by author] is active in Code documents.</p></li>
-<li><p>Share my cursor position: Display or hide the exact position of your cursor to other users.</p></li>
-<li><p>Display other users’ cursor position (BETA): Display or hide the position of other users’ cursors.</p></li>
+<li><p><strong>Cursor color</strong>: Change the color of your cursor. This is used to identify you while collaborating on documents. It also determines the color of your text when [color by author] is active in Code documents.</p></li>
+<li><p><strong>Share my cursor position</strong>: Display or hide the exact position of your cursor to other users.</p></li>
+<li><p><strong>Display other users’ cursor position (BETA)</strong>: Display or hide the position of other users’ cursors.</p></li>
 </ul>
 </div>
 <div class="section" id="rich-text">
 <h3>Rich Text<a class="headerlink" href="#rich-text" title="Permalink to this headline">¶</a></h3>
 <p>User settings for the [Rich Text] application.</p>
 <ul class="simple">
-<li><p>Editor’s maximum width: Switch between page mode (default) that limits the width of the text editor, and using the full width of the screen.</p></li>
-<li><p>Spellcheck: Enable spellcheck in Rich Text documents. Spelling errors are underlined and suggested corrections are available through <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">Right</span> <span class="pre">click</span></code> on the word to correct.</p></li>
-<li><p>Comment notifications: Disable notifications when another user replies to one of your comments.</p></li>
+<li><p><strong>Editor’s maximum width</strong>: Switch between page mode (default) that limits the width of the text editor, and using the full width of the screen.</p></li>
+<li><p><strong>Spellcheck</strong>: Enable spellcheck in Rich Text documents. Spelling errors are underlined and suggested corrections are available through <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">Right</span> <span class="pre">click</span></code> on the word to correct.</p></li>
+<li><p><strong>Comment notifications</strong>: Disable notifications when another user replies to one of your comments.</p></li>
 </ul>
 </div>
 <div class="section" id="code">
 <h3>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h3>
 <p>User settings for the [Code] application.</p>
 <ul class="simple">
-<li><p>Code editor indentation (spaces): Choose the number of spaces for each level of indentation.</p></li>
-<li><p>Indent using tabs (instead of spaces): Insert tabs rather than spaces with the <code class="docutils literal notranslate"><span class="pre">Tab</span></code> key.</p></li>
-<li><p>Auto-close brackets: Automatically insert a closing character <code class="docutils literal notranslate"><span class="pre">)</span></code> when brackets are opened with <code class="docutils literal notranslate"><span class="pre">(</span></code> (also works with <code class="docutils literal notranslate"><span class="pre">[</span></code>, <code class="docutils literal notranslate"><span class="pre">'</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;</span></code>).</p></li>
-<li><p>Font size in the code editor: Set the size of text (in pixels) in the code editor.</p></li>
-<li><p>Spellcheck: Underline spelling mistakes in the code editor, correction suggestions are available through <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the word to correct.</p></li>
+<li><p><strong>Code editor indentation (spaces)</strong>: Choose the number of spaces for each level of indentation.</p></li>
+<li><p><strong>Indent using tabs (instead of spaces)</strong>: Insert tabs rather than spaces with the <code class="docutils literal notranslate"><span class="pre">Tab</span></code> key.</p></li>
+<li><p><strong>Auto-close brackets</strong>: Automatically insert a closing character <code class="docutils literal notranslate"><span class="pre">)</span></code> when brackets are opened with <code class="docutils literal notranslate"><span class="pre">(</span></code> (also works with <code class="docutils literal notranslate"><span class="pre">[</span></code>, <code class="docutils literal notranslate"><span class="pre">'</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;</span></code>).</p></li>
+<li><p><strong>Font size in the code editor</strong>: Set the size of text (in pixels) in the code editor.</p></li>
+<li><p><strong>Spellcheck</strong>: Underline spelling mistakes in the code editor, correction suggestions are available through <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the word to correct.</p></li>
 </ul>
 </div>
 <div class="section" id="subscription">
@@ -500,15 +495,17 @@
 </div>
 <div class="section" id="support">
 <h2>Support<a class="headerlink" href="#support" title="Permalink to this headline">¶</a></h2>
-<p>Support tickets provide a secure communication channel with the administrators of the CryptPad instance. The <strong>Support</strong> page is accessible through the user menu (avatar at the top-right) &gt; <i class="fa fa-life-ring"></i> <strong>Support</strong>.</p>
-<div class="section" id="existing-tickets">
-<h3>Existing tickets<a class="headerlink" href="#existing-tickets" title="Permalink to this headline">¶</a></h3>
-<p>Follow up on existing tickets. It is possible to <strong>Reply</strong> to a ticket, <strong>Close</strong> it if the issue has been resolved, and <strong>Delete</strong> closed tickets.</p>
-</div>
-<div class="section" id="new-tickets">
-<h3>New tickets<a class="headerlink" href="#new-tickets" title="Permalink to this headline">¶</a></h3>
-<p>Send a new ticket. Fill in the form with a title, category, and the details of the problem or question. Add an attachment if needed, for example a screenshot, and click on <strong>Send</strong>.</p>
-</div>
+<p>Support tickets provide a secure communication channel with the administrators of the CryptPad instance. The <strong>Support</strong> page is accessible through:</p>
+<ul class="simple">
+<li><p>User menu (avatar at the top-right) &gt; <i class="fa fa-life-ring"></i> <strong>Support</strong>.</p></li>
+</ul>
+<p><i class="fa fa-envelope-o"></i> <strong>Existing tickets</strong>: Follow up on conversations with the support team.</p>
+<ul class="simple">
+<li><p><strong>Reply</strong> to a ticket,</p></li>
+<li><p><strong>Close</strong> it if the issue has been resolved</p></li>
+<li><p><strong>Delete</strong> closed tickets.</p></li>
+</ul>
+<p><i class="fa fa-life-ring"></i> <strong>New ticket</strong>: To send a new ticket Fill in the form with a title, category, and the details of the problem or question. Add an attachment if needed, for example a screenshot, and click on <strong>Send</strong>.</p>
 </div>
 <div class="section" id="notifications">
 <h2>Notifications<a class="headerlink" href="#notifications" title="Permalink to this headline">¶</a></h2>
@@ -518,11 +515,19 @@
 <ul class="simple">
 <li><p>Browse unread notifications.</p></li>
 <li><p>Delete a notification with <i class="fa fa-times"></i>.</p></li>
-<li><p><strong>Open notifications panel</strong>: View all notifications and notification history.</p>
+<li><p><strong>Open notifications panel</strong>: View all notifications and notification history.</p></li>
+</ul>
+<p>On notifications panel page:</p>
+<ul class="simple">
+<li><p>Select the type of notification to view:</p>
 <ul>
-<li><p><i class="fa fa-trash"></i>: Delete all notifications of one type (<em>contact requests</em> or <em>Shared with me</em>).</p></li>
+<li><p><i class="fa fa-bars"></i> All.</p></li>
+<li><p><i class="fa fa-user"></i> Contact Requests.</p></li>
+<li><p><i class="cptools cptools-pad"></i> Shared with me.</p></li>
+<li><p><i class="fa fa-archive"></i> History.</p></li>
 </ul>
 </li>
+<li><p><i class="fa fa-trash"></i>: Delete notifications.</p></li>
 </ul>
 <!--- XXX Does the trash delete notifications or "hide" them and they are still in the history? ---></div>
 </div>
