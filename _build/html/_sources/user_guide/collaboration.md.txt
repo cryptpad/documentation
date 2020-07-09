@@ -48,7 +48,7 @@ On the profile page of another user:
 
 By sharing your profile:
 
-1. Copy the link: User menu (avatar at the top-right) >  <i class="fa fa-user-circle"></i> **Profile** > <i class="fa fa-shhare-alt"></i> **Share**.
+1. Copy the link: User menu (avatar at the top-right) >  <i class="fa fa-user-circle"></i> **Profile** > <i class="fa fa-share-alt"></i> **Share**.
 1. Paste and send through the means of your choice (preferably a secure mode of cummunication).
 
 ### Manage contacts
@@ -63,7 +63,7 @@ All contacts are listed at the left of the window. For each contact:
 <i class="fa fa-user-times"></i>: Remove.  
 <i class="fa fa-circle"></i>: Indicates that this contact is online.
 
-#### Chat with contacts
+### Chat with contacts
 
 On the Contacts page, `Click` on a contact in the list to open the chat with them in the main window. 
 
