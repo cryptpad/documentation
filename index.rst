@@ -11,7 +11,7 @@ CryptPad Documentation
    :hidden:
 
    user_guide
-
+   how_to_contribute
 
 
 .. Indices and tables
