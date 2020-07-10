@@ -4,7 +4,7 @@ The Whiteboard application in CryptPad is based on [Fabric.js](http://fabricjs.c
 
 ## Toolbar
 
-<i class="fa fa-picture-o"></i> **Insert**: Add an image to the document. The image can be chosen in the CrpytDrive or uploaded. {**logged in user**}
+<i class="fa fa-picture-o"></i> **Insert**: Add an image to the document. The image can be chosen in the CryptDrive or uploaded. {**logged in user**}
 
 ## Drawing
 
@@ -15,15 +15,15 @@ Two modes are available:
 
 To delete everything on the canvas: 
 
-- **Clear** button in the drawing toolbar at the botom.
+- **Clear** button in the drawing toolbar at the bottom.
 
-### Paint mode
+## Paint mode
 
-The width and opacity of line are set in the drawing toolbar. The preview to the right shows the size and opacity of the paintbursh.
+The width and opacity of line are set in the drawing toolbar. The preview to the right shows the size and opacity of the paintbrush.
 
 Color is selected in the palette in the drawing toolbar. To change a color `Double click` on it and select a new one using the color-picker.
 
-### Select mode
+## Select mode
 
 `Click` on an element to select it, then:
 - `Drag` to move.
@@ -35,8 +35,7 @@ To delete a selected element:
 
 ## Export
 
-<i class="fa fa-file-o"></i> **File** > <i class="fa fa-download"></i> **Export** 
-
+<i class="fa fa-file-o"></i> **File** > <i class="fa fa-download"></i> **Export**  
 Supported format: `.png`
 
 To export an image to the CryptDrive, for example to use it in other documents: 

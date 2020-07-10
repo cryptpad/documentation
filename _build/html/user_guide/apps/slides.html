@@ -193,29 +193,21 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="code.html">Code / Markdown</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="code.html#toolbar">Toolbar</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="code.html#theme">Theme</a></li>
-</ul>
-</li>
+<li class="toctree-l4"><a class="reference internal" href="code.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="code.html#theme">Theme</a></li>
 <li class="toctree-l4"><a class="reference internal" href="code.html#import-export">Import/Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="code.html#markdown">Markdown</a></li>
-<li class="toctree-l4"><a class="reference internal" href="code.html#images">Images</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="code.html#lightbox">Lightbox</a></li>
-</ul>
-</li>
+<li class="toctree-l4"><a class="reference internal" href="code.html#images">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="code.html#lightbox">Lightbox</a></li>
 </ul>
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Slides</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#toolbar">Toolbar</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#writing-slides-with-markdown">Writing slides with Markdown</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#theme">Theme</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#import-export">Import/Export</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="#images">Images</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#lightbox">Lightbox</a></li>
-</ul>
-</li>
+<li class="toctree-l4"><a class="reference internal" href="#theme">Theme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#images">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lightbox">Lightbox</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="poll.html">Poll</a><ul>
@@ -228,10 +220,8 @@
 <li class="toctree-l3"><a class="reference internal" href="kanban.html">Kanban</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="kanban.html#organisation">Organisation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="kanban.html#columns">Columns</a></li>
-<li class="toctree-l4"><a class="reference internal" href="kanban.html#cards">Cards</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="kanban.html#card-editor">Card editor</a></li>
-</ul>
-</li>
+<li class="toctree-l4"><a class="reference internal" href="kanban.html#cards">Cards</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kanban.html#card-editor">Card editor</a></li>
 <li class="toctree-l4"><a class="reference internal" href="kanban.html#display">Display</a></li>
 <li class="toctree-l4"><a class="reference internal" href="kanban.html#import-export">Import/Export</a></li>
 </ul>
@@ -354,32 +344,34 @@ https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdo
 <h2>Theme<a class="headerlink" href="#theme" title="Permalink to this headline">¶</a></h2>
 <p><i class="fa fa-gear"></i> <strong>Options</strong>:</p>
 <ul class="simple">
-<li><p>Layout: Toggle slide numbers, date, title, and transitions.</p></li>
-<li><p>Background Image: Displayed on all slides.</p></li>
-<li><p>Custom CSS: Paste CSS code to customise the presentation’s appearance.</p></li>
+<li><p><strong>Layout</strong>: Toggle slide numbers, date, title, and transitions.</p></li>
+<li><p><strong>Background Image</strong>: Displayed on all slides.</p></li>
+<li><p><strong>Custom CSS</strong>: Paste CSS code to customise the presentation’s appearance.</p></li>
 </ul>
 <p><i class="fa fa-i-cursor"></i> <strong>Text color</strong>,
 <i class="fa fa-square-o"></i> <strong>Background color</strong>: Pick colors for the presentation.</p>
 <p><strong>Theme</strong>: Color scheme used in the code editor pane.</p>
+</div>
 <div class="section" id="import-export">
-<h3>Import/Export<a class="headerlink" href="#import-export" title="Permalink to this headline">¶</a></h3>
+<h2>Import/Export<a class="headerlink" href="#import-export" title="Permalink to this headline">¶</a></h2>
 <p><i class="fa fa-file-o"></i> <strong>File</strong> &gt; <i class="fa fa-upload"></i> <strong>Import</strong>.</p>
 <p>Suported formats: Any plain text file.</p>
 <p><i class="fa fa-file-o"></i> <strong>File</strong> &gt; <i class="fa fa-download"></i> <strong>Export</strong>.</p>
 <p>Supported formats: <code class="docutils literal notranslate"><span class="pre">.md</span></code>.</p>
 </div>
-</div>
 <div class="section" id="images">
 <h2>Images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h2>
-<p>It is strongly advised <strong>not</strong> to insert external images in documents. The Markdown syntax <code class="docutils literal notranslate"><span class="pre">![description](https://site.com/image.jpg</span></code> is supported but presents security risks. Malicious code can be embedded in images and result iin data leakeage.</p>
+<p>It is strongly advised <strong>not</strong> to insert external images in documents. The Markdown syntax <code class="docutils literal notranslate"><span class="pre">![description](https://site.com/image.jpg)</span></code> is supported but presents security risks. Malicious code can be embedded in images and result iin data leakeage.</p>
 <p>For this reason, CryptPad makes use of <code class="docutils literal notranslate"><span class="pre">media-tag</span></code> to insert images from the CryptDrive. This syntax is more complex but it is managed automatically by the <i class="fa fa-picture-o"></i> <strong>Insert</strong> menu.</p>
-<div class="section" id="lightbox">
-<h3>Lightbox<a class="headerlink" href="#lightbox" title="Permalink to this headline">¶</a></h3>
-<p>To browse through all images and diagrams in a document:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Double</span> <span class="pre">click</span></code> on an image or diagram in the Markdown preview.</p></li>
-</ul>
 </div>
+<div class="section" id="lightbox">
+<h2>Lightbox<a class="headerlink" href="#lightbox" title="Permalink to this headline">¶</a></h2>
+<p>To browse through all images and diagrams in a document using the full width of hte window:</p>
+<ol class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Double</span> <span class="pre">click</span></code> on an image or diagram in the Markdown preview.</p></li>
+<li><p>Navigate with the arrow keys.</p></li>
+<li><p>Close the light box with <i class="fa fa-times"></i> or <code class="docutils literal notranslate"><span class="pre">Esc</span></code>.</p></li>
+</ol>
 </div>
 </div>
 

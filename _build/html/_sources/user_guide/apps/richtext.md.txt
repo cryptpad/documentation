@@ -36,7 +36,7 @@ Click on a comment to select it, then:
 
 To notify contacts in a comment, mention them with `@` and their [display name]. 
 
-You receive [notifications] when:
+You receive notifications when:
 
 - Someone replies to one of your comments.
 - Someone mentions you in a comment. 

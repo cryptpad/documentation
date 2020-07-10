@@ -29,16 +29,16 @@ The main addition to basic Markdown in the Slides application is the `---` delim
 ## Theme
 
 <i class="fa fa-gear"></i> **Options**:
-  - Layout: Toggle slide numbers, date, title, and transitions.
-  - Background Image: Displayed on all slides. 
-  - Custom CSS: Paste CSS code to customise the presentation's appearance. 
+  - **Layout**: Toggle slide numbers, date, title, and transitions.
+  - **Background Image**: Displayed on all slides. 
+  - **Custom CSS**: Paste CSS code to customise the presentation's appearance. 
 
 <i class="fa fa-i-cursor"></i> **Text color**, 
 <i class="fa fa-square-o"></i> **Background color**: Pick colors for the presentation. 
 
 **Theme**: Color scheme used in the code editor pane.
 
-### Import/Export 
+## Import/Export 
 
 <i class="fa fa-file-o"></i> **File** > <i class="fa fa-upload"></i> **Import**.
 
@@ -50,13 +50,15 @@ Supported formats: `.md`.
 
 ## Images
 
-It is strongly advised **not** to insert external images in documents. The Markdown syntax `![description](https://site.com/image.jpg` is supported but presents security risks. Malicious code can be embedded in images and result iin data leakeage.
+It is strongly advised **not** to insert external images in documents. The Markdown syntax `![description](https://site.com/image.jpg)` is supported but presents security risks. Malicious code can be embedded in images and result iin data leakeage.
 
 For this reason, CryptPad makes use of `media-tag` to insert images from the CryptDrive. This syntax is more complex but it is managed automatically by the <i class="fa fa-picture-o"></i> **Insert** menu.
 
 
-### Lightbox
+## Lightbox
 
-To browse through all images and diagrams in a document: 
+To browse through all images and diagrams in a document using the full width of hte window: 
 
-- `Double click` on an image or diagram in the Markdown preview. 
+1. `Double click` on an image or diagram in the Markdown preview. 
+1. Navigate with the arrow keys.
+1. Close the light box with <i class="fa fa-times"></i> or `Esc`.
