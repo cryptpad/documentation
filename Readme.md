@@ -42,4 +42,7 @@ have a folder e.g. `images/fr/` with localised version of the image, if using on
 - replace words in `[brackets]` with links
 - add images/screenshots
 - Multi-language setup
-- Adjust styles
+- Adjust theme
+    - inline code: color and padding
+    - paragraphs and headings: margin top and bottom
+    - fix favicon
