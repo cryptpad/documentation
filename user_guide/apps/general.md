@@ -20,21 +20,21 @@ The creation screen offers a number of options when new documents are created.
 
 - **Owned pad**: Create the new document as [owner]. If the document is created without an owner this setting cannot be modified. 
 - **Expiring pad**: Specify an expiry date after which the document will be destroyed. This setting cannot be modified after the document is created.
-- **Add a password**: Secure the sharing of the document with a [password]. This setting can be added/modified in the [<i class="fa fa-unlock-alt"></i> **Access**] menu after the document is created. 
+- **Add a password**: Secure the sharing of the document with a [password]. This setting can be changed later in the [<i class="fa fa-unlock-alt"></i> **Access**] menu. 
 
 - **Template**: Use a [template] as a starting point for the document.
 
 ## Saving
 
-Changes to documents are saved automatically. The status line in the document toolbar (under the title) can be used to confirm changes have been saved.
+Changes to documents are saved automatically. The status line in the document toolbar (under the title) confirms that changes have been saved.
 
 
 ## Make a copy
 
 To duplicate a document: 
 
-- From the document to duplicate: <i class="fa fa-file-o"></i> **File** > <i class="fa fa-clone"></i> **Make a copy**.  
-- From the CryptDrive: `Right click` on the document to duplicate > <i class="fa fa-clone"></i> **Make a copy**.
+- From the document: <i class="fa fa-file-o"></i> **File** > <i class="fa fa-clone"></i> **Make a copy**.  
+- From the CryptDrive: `Right click` on the document > <i class="fa fa-clone"></i> **Make a copy**.
 
 ## Document history
 
