@@ -48,40 +48,37 @@ To change the title of a document only in your CryptDrive:
 The <i class="fa fa-flag"></i> icon indicates that the title of a document is different in your CryptDrive than for other users. 
 
 ### Deleting
-{**logged in user**}
-<!-- XXX update this with new delete UX ---> 
-<div class="warning">
-This section needs updating
+
+
+There are two ways of deleting a document on CryptPad:  
+- <i class="fa fa-trash"></i> **Removing** a document means it stops appearing in the CryptDrive but remains in the database. The document remains in the CryptDrive of other users who have stored it. The document can be recovered in the CryptDrive using the [history].
+- <i class="cptools cptools-destroy"></i> **Destroying** a document deletes it from the database permanently. The document is deleted from all CryptDrives that store it, and it cannot be recovered using the CryptDrive history. {**document owners**}
+
+<div class="note">
+    If a document is not stored in any CryptDrive, it is <b>destroyed</b> from the database after 90 days (the length of this delay can be set by the service administrators). 
 </div>
 
-To delete a document from your CryptDrive, place it the <i class="fa fa-trash"></i> **Trash**:  
+To **remove** a document from the CryptDrive. 
 
 - Drag the document from the CryptDrive into the <i class="fa fa-trash"></i> **Trash**.
 - `Right click` > <i class="fa fa-trash"></i> **Move to trash**
 - Select the document and press the `Del` key.
 
-To delete the document directly from the CryptDrive (without storing it in the trash first):
+To **remove** the document from the CryptDrive without storing it in the trash first:
 - Select the document and press the `Shift + Del` keys. 
 
 To empty the trash: 
 - `Right click` on the <i class="fa fa-trash"></i> **Trash** tab to the left of the CryptDrive > <i class="fa fa-trash-o"></i> **Empty the trash**.
 - `Click` on the <i class="fa fa-trash"></i> **Trash** tab to access the trash > <i class="fa fa-trash-o"></i> **Empty the trash**.
 
-When the trash is emptied, the documents it contains are removed from the CryptDrive. 
+If there are documents you own in the trash when you empty it, you are prompted to decide if you want to **remove** or **destroy** them.
 
-These documents remain available to other users that have them in their CryptDrive. If a document is not stored in any CryptDrive, it is deleted permanently from the database after 90 days (the length of this delay can be set by the service administrators). 
-<!-- XXX double check -->
-
-The [owner] of a document can also delete it permanently: 
-- `Right click` on the document in the CryptDrive > <i class="fa fa-eraser"></i> **Delete from the server**.  
+To **destroy** a document without storing it in the trash first:
 
 
-In this case the document is deleted from the database right away for all users, including anyone that had stored the document in their CryptDrive. 
+- `Right click` on the document in the CryptDrive > <i class="cptools cptools-destroy"></i> **Destroy**. {**document owners**}
 
-Once a document is deleted from the database, it cannot be restored through the CryptDrive [history]. 
 
-For unregistered users, only one option is available:
-- `Right click` on the document in the CryptDrive > <i class="fa fa-eraser"></i> **Remove from your CryptDrive**. 
 
 ## CryptDrive history
 
