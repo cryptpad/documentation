@@ -36,8 +36,6 @@ have a folder e.g. `images/fr/` with localised version of the image, if using on
 
 ## Todo
 
-- rewrite `Drive > Deleting` to reflect new changes.
-
 - replace `{**logged in user**}` and similar with badges
 - replace words in `[brackets]` with links
 - add images/screenshots

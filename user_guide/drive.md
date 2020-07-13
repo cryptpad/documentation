@@ -52,7 +52,7 @@ The <i class="fa fa-flag"></i> icon indicates that the title of a document is di
 
 There are two ways of deleting a document on CryptPad:  
 - <i class="fa fa-trash"></i> **Removing** a document means it stops appearing in the CryptDrive but remains in the database. The document remains in the CryptDrive of other users who have stored it. The document can be recovered in the CryptDrive using the [history].
-- <i class="cptools cptools-destroy"></i> **Destroying** a document deletes from the database permanently. The document is deleted from all CryptDrives that store it, and it cannot be recovered using the CryptDrive history. {**document owners**}
+- <i class="cptools cptools-destroy"></i> **Destroying** a document deletes it from the database permanently. The document is deleted from all CryptDrives that store it, and it cannot be recovered using the CryptDrive history. {**document owners**}
 
 <div class="note">
     If a document is not stored in any CryptDrive, it is <b>destroyed</b> from the database after 90 days (the length of this delay can be set by the service administrators). 
