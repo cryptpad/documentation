@@ -377,16 +377,20 @@
 </div>
 <div class="section" id="deleting">
 <h3>Deleting<a class="headerlink" href="#deleting" title="Permalink to this headline">¶</a></h3>
-<p>{<strong>logged in user</strong>}</p>
-<!-- XXX update this with new delete UX ---> <div class="warning">
-This section needs updating
-</div><p>To delete a document from your CryptDrive, place it the <i class="fa fa-trash"></i> <strong>Trash</strong>:</p>
+<p>There are two ways of deleting a document on CryptPad:</p>
+<ul class="simple">
+<li><p><i class="fa fa-trash"></i> <strong>Removing</strong> a document means it stops appearing in the CryptDrive but remains in the database. The document remains in the CryptDrive of other users who have stored it. The document can be recovered in the CryptDrive using the [history].</p></li>
+<li><p><i class="cptools cptools-destroy"></i> <strong>Destroying</strong> a document deletes from the database permanently. The document is deleted from all CryptDrives that store it, and it cannot be recovered using the CryptDrive history. {<strong>document owners</strong>}</p></li>
+</ul>
+<div class="note">
+    If a document is not stored in any CryptDrive, it is <b>destroyed</b> from the database after 90 days (the length of this delay can be set by the service administrators). 
+</div><p>To <strong>remove</strong> a document from the CryptDrive.</p>
 <ul class="simple">
 <li><p>Drag the document from the CryptDrive into the <i class="fa fa-trash"></i> <strong>Trash</strong>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> &gt; <i class="fa fa-trash"></i> <strong>Move to trash</strong></p></li>
 <li><p>Select the document and press the <code class="docutils literal notranslate"><span class="pre">Del</span></code> key.</p></li>
 </ul>
-<p>To delete the document directly from the CryptDrive (without storing it in the trash first):</p>
+<p>To <strong>remove</strong> the document from the CryptDrive without storing it in the trash first:</p>
 <ul class="simple">
 <li><p>Select the document and press the <code class="docutils literal notranslate"><span class="pre">Shift</span> <span class="pre">+</span> <span class="pre">Del</span></code> keys.</p></li>
 </ul>
@@ -395,17 +399,10 @@ This section needs updating
 <li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the <i class="fa fa-trash"></i> <strong>Trash</strong> tab to the left of the CryptDrive &gt; <i class="fa fa-trash-o"></i> <strong>Empty the trash</strong>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on the <i class="fa fa-trash"></i> <strong>Trash</strong> tab to access the trash &gt; <i class="fa fa-trash-o"></i> <strong>Empty the trash</strong>.</p></li>
 </ul>
-<p>When the trash is emptied, the documents it contains are removed from the CryptDrive.</p>
-<p>These documents remain available to other users that have them in their CryptDrive. If a document is not stored in any CryptDrive, it is deleted permanently from the database after 90 days (the length of this delay can be set by the service administrators).</p>
-<!-- XXX double check --><p>The [owner] of a document can also delete it permanently:</p>
+<p>If there are documents you own in the trash when you empty it, you are prompted to decide if you want to <strong>remove</strong> or <strong>destroy</strong> them.</p>
+<p>To <strong>destroy</strong> a document without storing it in the trash first:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document in the CryptDrive &gt; <i class="fa fa-eraser"></i> <strong>Delete from the server</strong>.</p></li>
-</ul>
-<p>In this case the document is deleted from the database right away for all users, including anyone that had stored the document in their CryptDrive.</p>
-<p>Once a document is deleted from the database, it cannot be restored through the CryptDrive [history].</p>
-<p>For unregistered users, only one option is available:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document in the CryptDrive &gt; <i class="fa fa-eraser"></i> <strong>Remove from your CryptDrive</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document in the CryptDrive &gt; <i class="cptools cptools-destroy"></i> <strong>Destroy</strong>. {<strong>document owners</strong>}</p></li>
 </ul>
 </div>
 </div>
