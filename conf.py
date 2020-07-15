@@ -83,6 +83,7 @@ html_css_files = [
 html_theme = "theme"
 html_theme_path = ["_themes"]
 using_rtd_theme = True
+smartquotes = False
 
 html_theme_options = {
     'logo_only': False,
