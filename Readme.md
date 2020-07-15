@@ -22,7 +22,7 @@ to update after default language has changed:
 Check [the Sphinx docs](https://www.sphinx-doc.org/en/master/usage/advanced/intl.html)
 
 to generate `.po` files for a new language (not sure about this):  
-`make gettext` ?
+`make gettext`
 `sphinx-intl update -p _build/gettext -l de` 
 
 check this:  

@@ -10,7 +10,7 @@ CryptPad Documentation
    :maxdepth: 1
    :hidden:
 
-   user_guide
+   user_guide/index
    how_to_contribute
 
 
