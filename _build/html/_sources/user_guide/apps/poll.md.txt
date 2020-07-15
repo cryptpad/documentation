@@ -7,6 +7,9 @@ It is not suited for polling a large number of people, or for situation where th
 A complete re-write of this application is planned for late 2020. 
 <!--- XXX watch date and update accordingly --> 
 
+<img class="screenshot" alt="preview of the poll application" src="/images/poll-preview.png">
+
+
 ## Toolbar
 
 <i class="fa fa-pencil"></i> **Edit**: Switch to edit mode to change the poll description and response options.

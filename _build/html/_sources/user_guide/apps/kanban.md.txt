@@ -2,6 +2,8 @@
 
 The Kanban application in CryptPad is based on [JKanban](https://www.riccardotartaglia.it/jkanban/).
 
+<img class="screenshot" alt="preview of the kanban application" src="/images/kanban-preview.png">
+
 ## Organisation 
 
 Move cards/columns: 

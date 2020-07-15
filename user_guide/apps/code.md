@@ -2,6 +2,9 @@
 
 The Code/Markdown application in CryptPad is an integration of [CodeMirror](https://codemirror.net/).
 
+<img class="screenshot" alt="preview of the code application" src="/images/code-preview.png">
+
+
 ## Toolbar
 
 <i class="fa fa-wrench"></i> **Tools**: Show/hide the text editor toolbar. 
@@ -59,13 +62,7 @@ It is strongly advised **not** to insert external images in documents. The Markd
 
 For this reason, CryptPad makes use of `media-tag` to insert images from the CryptDrive. This syntax is more complex but it is managed automatically by the <i class="fa fa-picture-o"></i> **Insert** menu.
 
-## Lightbox
 
-To browse through all images and diagrams in a document using the full width of hte window: 
-
-1. `Double click` on an image or diagram in the Markdown preview. 
-1. Navigate with the arrow keys.
-1. Close the light box with <i class="fa fa-times"></i> or `Esc`.
 
 
 

@@ -86,17 +86,20 @@ To create a shared folder in the CryptDrive:
 
 To convert an existing folder into a shared folder: 
 
-
 1. `Right click` on the folder > <i class="fa fa-share-alt"></i> **Share**. 
 1. Choose the conversion options.   
   Password.  
   [Owned] folder.
 2. `OK` or press the `Enter` key.
 
+<div class="note">
+    Shared folders have their own history, separate from the [CryptDrive history]. Restoring the history of the drive does not affect shared folders, conversely the history of a shared folder can be restored without affecting the rest of the drive.
+</div>
+
 Folders are shared in a similar way to documents. To share a folder from the CryptDrive: 
 
 1. `Right click` on the folder > <i class="fa fa-share-alt"></i> **Share**. 
-1. Choose the [access rights].  
+2. Choose the [access rights].  
   **View**: Read-only without editing the contents of the folder.  
   **Edit**: View and make changes to the folder. 
 1. Three tabs are available:  

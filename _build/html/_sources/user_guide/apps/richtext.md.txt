@@ -2,6 +2,8 @@
 
 The Rich Text application in CryptPad is an integration of [CKEditor](https://ckeditor.com/).
 
+<img class="screenshot" alt="preview of the rich-text application" src="/images/rich-text-preview.png">
+
 ## Toolbar
 
 <i class="fa fa-wrench"></i> **Tools**: Show/hide the text editor toolbar. 

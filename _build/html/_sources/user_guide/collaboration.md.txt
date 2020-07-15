@@ -77,7 +77,9 @@ Load more chat history with <i class="fa fa-history"></i> or delete the history 
 
 CryptPad teams are shared spaces between a group of users. A team has its own CryptDrive, chat, and a list of members with roles and permissions. 
 
-The number of teams a CryptPad user can join is limited to 3 for performance reasons. 
+<div class="warning">
+  The number of teams a CryptPad user can join is limited to 3 for performance reasons.
+</div> 
 
 To create a team: 
 1. User menu (avatar at the top-right) > <i class="fa fa-users"></i> **Teams**.

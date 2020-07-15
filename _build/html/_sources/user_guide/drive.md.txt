@@ -12,6 +12,14 @@ Documents in the CryptDrive can be displayed as a <i class="fa fa-list"></i> lis
 
 In grid mode, CryptPad can display thumbnails of documents. These can be turned on in the [user settings]. 
 
+<img class="screenshot" alt="The CryptDrive in grid view" src="/images/drive-grid.png">
+
+The CrytpDrive in grid view.
+
+<img class="screenshot" alt="The CryptDrive in list view" src="/images/drive-list.png">
+
+The CryptDrive in list view.
+
 ## Managing documents
 
 ### Folders
@@ -71,7 +79,7 @@ To empty the trash:
 - `Right click` on the <i class="fa fa-trash"></i> **Trash** tab to the left of the CryptDrive > <i class="fa fa-trash-o"></i> **Empty the trash**.
 - `Click` on the <i class="fa fa-trash"></i> **Trash** tab to access the trash > <i class="fa fa-trash-o"></i> **Empty the trash**.
 
-If there are documents you own in the trash when you empty it, you are prompted to decide if you want to **remove** or **destroy** them.
+If you are an [owner] of some documents in the trash when you empty it, you are prompted to decide if you want to **remove** or **destroy** them.
 
 To **destroy** a document without storing it in the trash first:
 
@@ -82,13 +90,19 @@ To **destroy** a document without storing it in the trash first:
 
 ## CryptDrive history
 
+<img class="screenshot" alt="The CryptDrive history" src="/images/drive-history.png">
+
 The CryptDrive history is saved and can be restored if needed. From the CryptDrive: 
 
 1. `Click` on the <i class="fa fa-history"></i> history button at the top-right (under the avatar). 
-1. Use the arrows <i class="fa fa-fast-backward"></i> <i class="fa fa-step-backward"></i> to step through the history. 
-1. Restore the current step with <i class="fa fa-check-circle-o"></i>, or exit the history wihtout restoring with <i class="fa fa-window-close"></i>.
+2. Use the arrows <i class="fa fa-fast-backward"></i> <i class="fa fa-step-backward"></i> to step through the history. 
+3. Restore the current step with <i class="fa fa-check-circle-o"></i>, or exit the history wihtout restoring with <i class="fa fa-window-close"></i>.
 
 To save storage space the CryptDrive history can be deleted in the [user settings]. 
+
+<div class="note">
+    [Shared folders] have their own history, separate from the CryptDrive history. Restoring the history of the drive does not affect shared folders, conversely the history of a shared folder can be restored without affecting the rest of the drive.
+</div>
 
 ## Tags
 {**logged in user**}
@@ -99,14 +113,16 @@ The <i class="fa fa-hashtag"></i> **Tags** tab in the CryptDrive displays all ta
 
 To add or remove tags from a document: 
 
+<img class="screenshot" alt="Tags dialog window" src="/images/tag-dialog.png">
+
 - From the CrytpDrive: `Right click` on the document > <i class="fa fa-hashtag"></i> **Tags**.
 - From a document: <i class="fa fa-file-o"></i> **File** > <i class="fa fa-hashtag"></i> **Tags**.
 
 To manage tags for multiple documents: 
 1. Select the documents with `Ctrl + Click` in the CryptDrive. 
-1. `Right click` on the documents > <i class="fa fa-hashtag"></i> **Tags**.
+2. `Right click` on the documents > <i class="fa fa-hashtag"></i> **Tags**.
 
-Only the tags asigned to all the documents are then displayed. Any tags added and/or removed are applied to all the selected documents. 
+Only the tags assigned to all the documents are then displayed. Any tags added and/or removed are applied to all the selected documents. 
 
 ## Templates
 {**logged in user**}

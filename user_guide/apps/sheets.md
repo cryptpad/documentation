@@ -2,6 +2,9 @@
 
 The Spreadsheet application in CryptPad is an integration of [OnlyOffice](https://www.onlyoffice.com/).
 
+<img class="screenshot" alt="preview of the spreadsheets application" src="/images/sheets-preview.png">
+
+
 ## Warning
 
 The integration of OnlyOffice with Cryptpad's encrypted real-time collaboration does not include some of the functionality that is available in the other applications. Namely, **History** and **Templates** are not available. 
