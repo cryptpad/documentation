@@ -3,7 +3,13 @@
 
 ## Installation 
 
-`pipenv install` or `pip install requirements.txt` 
+```bash
+pipenv install
+```
+or
+```bash
+pip install requirements.txt` 
+```
 
 ## Build
 
@@ -17,13 +23,17 @@ View the result in `/_build/html/`
 ## Translation
 
 to update after default language has changed:  
-`sphinx-intl update -p _build/locale`
+```bash
+sphinx-intl update -p _build/locale`
+```
 
 Check [the Sphinx docs](https://www.sphinx-doc.org/en/master/usage/advanced/intl.html)
 
 to generate `.po` files for a new language (not sure about this):  
-`make gettext`
-`sphinx-intl update -p _build/gettext -l de` 
+```bash
+make gettext
+sphinx-intl update -p _build/gettext -l de
+```
 
 check this:  
 https://invent.kde.org/documentation/docs-krita-org#using-multiple-languages-at-once
