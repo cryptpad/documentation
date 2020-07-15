@@ -1,6 +1,8 @@
 
 # CryptPad Documentation
 
+Modified from the [Krita documentation](https://invent.kde.org/documentation/docs-krita-org/-/tree/master/).
+
 ## Installation 
 
 ```bash
@@ -13,32 +15,42 @@ pip install requirements.txt`
 
 ## Build
 
-Currently set-up with `en` as first language and French translation.
+English `en` is the default language.
 
-to build the default: `make html`  
-to build French: `make -e SPHINXOPTS="-D language='fr'" html`
+to build the default:  
+```bash
+make html
+```
+
+to build another language, e.g. French: 
+```bash
+make -e SPHINXOPTS="-D language='fr'" html
+```
 
 View the result in `/_build/html/`
 
-## Translation
+## Translations
 
 to update after default language has changed:  
 ```bash
 sphinx-intl update -p _build/locale`
 ```
 
-Check [the Sphinx docs](https://www.sphinx-doc.org/en/master/usage/advanced/intl.html)
-
-to generate `.po` files for a new language (not sure about this):  
+to generate `.po` files for a new language e.g. French:  
 ```bash
 make gettext
-sphinx-intl update -p _build/gettext -l de
+sphinx-intl update -p _build/gettext -l fr
 ```
 
-check this:  
-https://invent.kde.org/documentation/docs-krita-org#using-multiple-languages-at-once
+[update.sh](update.sh) updates all languages after English has changed: 
+```bash
+./update.sh
+```
 
-[build script](https://invent.kde.org/documentation/docs-krita-org/-/blob/master/rebuild-all.bat) to automate building all languages and moving them to a `dist` folder. e.g. `dist/en/`
+[build.sh](build.sh) builds all languages into the `www` folder: 
+```bash
+./build.sh
+```
 
 ### translated images
 `images` folder in repo root  
