@@ -11,7 +11,7 @@ The Code/Markdown application in CryptPad is an integration of [CodeMirror](http
 
 |picture-o| **Insert**: Add an image to the document. The image can be chosen in the CrpytDrive or uploaded. {**logged in user**}
 
-<i class="cptools cptools-palette"></i> **Theme**: Set colors for the editor, detailed [below]
+|cptools palette| **Theme**: Set colors for the editor, detailed [below]
 
 |eye| **Preview**: Show/hide the Markdown preview pane.
 

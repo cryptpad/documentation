@@ -198,7 +198,7 @@ On notifications panel page:
 - Select the type of notification to view:
   - |bars| All.
   - |user| Contact Requests.
-  - <i class="cptools cptools-pad"></i> Shared with me.
+  - |cptools pad| Shared with me.
   - |archive| History.
 
 - |trash|: Delete notifications.

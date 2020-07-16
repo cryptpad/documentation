@@ -41,8 +41,8 @@ The column title and color can be changed in the column editor:
 
 Create a new card with the buttons at the bottom of each column:
 
-- <i class="cptools cptools-add-bottom"></i> to add a card at the bottom of the column.
-- <i class="cptools cptools-add-top"></i> to add a card at the top of the column.
+- |cptools add-bottom| to add a card at the bottom of the column.
+- |cptools add-top| to add a card at the top of the column.
 
 Change the title of a card: 
 

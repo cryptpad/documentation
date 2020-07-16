@@ -80,9 +80,9 @@ Shared folders are made for sharing a set of documents at once.
 
 To create a shared folder in the CryptDrive: 
 
-- `+ New` > <i class="cptools cptools-shared-folder"></i> **Shared folder**.  
-- `Ctrl + e` > <i class="cptools cptools-shared-folder"></i> **Shared folder**.  
-- `Right click` > <i class="cptools cptools-shared-folder"></i> **New shared folder**.
+- `+ New` > |cptools shared-folder| **Shared folder**.  
+- `Ctrl + e` > |cptools shared-folder| **Shared folder**.  
+- `Right click` > |cptools shared-folder| **New shared folder**.
 
 To convert an existing folder into a shared folder: 
 
@@ -133,7 +133,7 @@ This tab summarises all the modalities of access to the document:
   
 - **Access list**: Displays the [access list] and indicates if it is enabled. 
 
-- <i class="cptools cptools-destroy"></i> **Destroy**: Delete the document permanently.
+- |cptools destroy| **Destroy**: Delete the document permanently.
 
 
 ### Access List

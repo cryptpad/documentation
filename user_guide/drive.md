@@ -34,7 +34,7 @@ There are multiple ways to create folders in the CryptDrive:
 Once a folder is created, documents can be added to it by dragging them from the CryptDrive. 
 
 To change the color of a folder: 
-- `Right click` on the folder > <i class="cptools cptools-palette"></i> **Change color**.
+- `Right click` on the folder > |cptools palette| **Change color**.
 
 To share a folder and all of its contents: 
 - `Right click` on the folder > |share-alt| **Share**. The folder will then be converted into a [shared folder].
@@ -60,7 +60,7 @@ The |flag| icon indicates that the title of a document is different in your Cryp
 
 There are two ways of deleting a document on CryptPad:  
 - |trash| **Removing** a document means it stops appearing in the CryptDrive but remains in the database. The document remains in the CryptDrive of other users who have stored it. The document can be recovered in the CryptDrive using the [history].
-- <i class="cptools cptools-destroy"></i> **Destroying** a document deletes it from the database permanently. The document is deleted from all CryptDrives that store it, and it cannot be recovered using the CryptDrive history. {**document owners**}
+- |cptools destroy| **Destroying** a document deletes it from the database permanently. The document is deleted from all CryptDrives that store it, and it cannot be recovered using the CryptDrive history. {**document owners**}
 
 <div class="note">
     If a document is not stored in any CryptDrive, it is <b>destroyed</b> from the database after 90 days (the length of this delay can be set by the service administrators). 
@@ -84,7 +84,7 @@ If you are an [owner] of some documents in the trash when you empty it, you are 
 To **destroy** a document without storing it in the trash first:
 
 
-- `Right click` on the document in the CryptDrive > <i class="cptools cptools-destroy"></i> **Destroy**. {**document owners**}
+- `Right click` on the document in the CryptDrive > |cptools destroy| **Destroy**. {**document owners**}
 
 
 
@@ -132,7 +132,7 @@ Templates provide reusable starting points to create documents of a similar stru
 
 To create a template:
 
-1. Select the  <i class="cptools cptools-template"></i> **Templates** tab in the CryptDrive. 
+1. Select the  |cptools template| **Templates** tab in the CryptDrive. 
 1. |plus| **New** in the toolbar.
 
 or
@@ -142,7 +142,7 @@ or
 or 
 
 1. Create a [new document].
-1. On the creation screen select <i class="cptools cptools-new-template"></i> **New template**.
+1. On the creation screen select |cptools new-template| **New template**.
 
 To use a template:
 
