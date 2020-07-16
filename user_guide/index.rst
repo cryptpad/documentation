@@ -12,7 +12,7 @@ User Guide
     instances.md
     user_account.md
     drive.md
-    security.md
+    security
     collaboration.md
     share_and_access.md
     applications.rst
