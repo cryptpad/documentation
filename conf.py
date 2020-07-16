@@ -14,6 +14,12 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+import os
+from sphinx import addnodes
+from docutils.nodes import strong, emphasis, reference, Text
+from docutils.parsers.rst.roles import set_classes
+from docutils.parsers.rst import Directive
+import docutils.parsers.rst.directives as directives
 
 # -- Project information -----------------------------------------------------
 
@@ -115,3 +121,45 @@ html_theme_options = {
 # Translations
 locale_dirs = ['locale/']
 gettext_compact = False
+
+
+# Add support for cptools
+
+def cptools_global(key=''):
+    def cptools(role, rawtext, text, lineno, inliner, options={}, content=[]):
+        options.update({'classes': []})
+        options['classes'].append('cptools')
+        if key:
+            options['classes'].append('cptools-%s' % key)
+        else:
+             for x in text.split(","):
+                options['classes'].append('cptools-%s' % x)
+        set_classes(options)
+        node = emphasis(**options)
+        return [node], []
+    return cptools
+
+#add directive
+class Cptools(Directive):
+
+    has_content = True
+
+    def run(self):
+        options= {'classes' : []}
+        options['classes'].append('cptools')
+        for x in self.content[0].split(' '):
+            options['classes'].append('cptools-%s' % x)
+        set_classes(options)
+        node = emphasis(**options)
+        return [node]
+
+cptools_icons = ['destroy', 'add-bottom', 'add-top', 'folder-upload', 'folder-no-color', 'slide', 'shared-folder', 'poll', 'file-upload', 'whiteboard', 'todo', 'pad', 'folder-open', 'kanban', 'folder', 'shared-folder-open', 'file', 'contacts', 'code', 'template', 'new-template', 'palette']
+
+prolog = '\n'.join(['.. |cptools %s| cptools:: %s' % (icon, icon) for icon in cptools_icons])
+prolog += '\n'
+
+def setup(app):
+    app.add_role('cptools', cptools_global())
+    app.add_directive('cptools', Cptools)
+    app.config.rst_prolog += prolog
+    return {'version': '0.0.1'}
