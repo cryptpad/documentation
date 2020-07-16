@@ -61,6 +61,7 @@ exclude_patterns = [
     'Thumbs.db',
     '.DS_Store',
     'Readme.md',
+    'www',
     '_themes/theme/static/fonts/cptools/Readme.md',
     'requirements.txt'
     ]
