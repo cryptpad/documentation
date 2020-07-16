@@ -1,7 +1,7 @@
 Applications
 ============
 
-This section *starts* with general **concepts** on creating and managing documents on CryptPad, and then covers the various applications available. `python <www.python.org>`_
+This section *starts* with general **concepts** on creating and managing documents on CryptPad, and then covers the various applications available.
 
 
 .. toctree::

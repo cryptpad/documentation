@@ -9,10 +9,10 @@ User Guide
     :maxdepth: 7
     :hidden:
 
-    instances.md
-    user_account.md
-    drive.md
+    instances
+    user_account
+    drive
     security
-    collaboration.md
-    share_and_access.md
-    applications.rst
+    collaboration
+    share_and_access
+    applications
