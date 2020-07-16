@@ -6,35 +6,35 @@
 
 Each registered user on CryptPad has a profile page\ accessible from the user menu:
 
-- User menu (avatar at the top-right) > <i class="fa fa-user-circle"></i> **Profile**.
+- User menu (avatar at the top-right) > |user-circle| **Profile**.
 
 ### Personal profile
 
 The following elements can be customised on the profile page: 
 
-- Avatar with <i class="fa fa-upload"></i> **Uplaod a new avatar**
-- Description with <i class="fa fa-pencil"></i> **Add a description**.
+- Avatar with |upload| **Uplaod a new avatar**
+- Description with |pencil| **Add a description**.
 - Website with **Add a link to your website**.
   
 Sharing : 
   - **View my profile**: Preview the profile page as it appears to other users. 
-- <i class="fa fa-share-alt"></i> **Share**: Copy a link to your profile. 
+- |share-alt| **Share**: Copy a link to your profile. 
 
 ### User profile
 
 To see the profile of another user: 
 
-- **User list** <i class="fa fa-users"></i> <i class="fa fa-eye"></i> of a document where they are connected > `Click` on their name. 
+- **User list** |users| |eye| of a document where they are connected > `Click` on their name. 
 - If the user is in your list of [contacts].   
-User menu (avatar at the top-right) > <i class="fa fa-address-book"></i> **Contacts** > `Double click` on their name in the list. 
+User menu (avatar at the top-right) > |address-book| **Contacts** > `Double click` on their name in the list. 
 
 On another user's profile page: 
 
 - **Send a contact request**: Adds this user to your [contacts] once they have approved the request. 
 
-- <i class="fa fa-bell-slash"></i> **Mute**: Blocks notifications and messages from this user. They will not know that they have been muted. 
+- |bell-slash| **Mute**: Blocks notifications and messages from this user. They will not know that they have been muted. 
 
-- <i class="fa fa-key"></i> **Copy public key**: Copies the key used by instance administrators and on instances that offer subscriptions. 
+- |key| **Copy public key**: Copies the key used by instance administrators and on instances that offer subscriptions. 
 
 ## Contacts
 {**logged in user**}
@@ -48,28 +48,28 @@ On the profile page of another user:
 
 By sharing your profile:
 
-1. Copy the link: User menu (avatar at the top-right) >  <i class="fa fa-user-circle"></i> **Profile** > <i class="fa fa-share-alt"></i> **Share**.
+1. Copy the link: User menu (avatar at the top-right) >  |user-circle| **Profile** > |share-alt| **Share**.
 1. Paste and send through the means of your choice (preferably a secure mode of cummunication).
 
 ### Manage contacts
 
 To access the Contacts page: 
 
-- User menu (avatar at the top-right) > <i class="fa fa-address-book"></i> **Contacts**.
+- User menu (avatar at the top-right) > |address-book| **Contacts**.
 
 All contacts are listed at the left of the window. For each contact: 
 
-<i class="fa fa-bell-slash"></i>: Mute messages and notifications.  
-<i class="fa fa-user-times"></i>: Remove.  
-<i class="fa fa-circle"></i>: Indicates that this contact is online.
+|bell-slash|: Mute messages and notifications.  
+|user-times|: Remove.  
+|circle|: Indicates that this contact is online.
 
 ### Chat with contacts
 
 On the Contacts page, `Click` on a contact in the list to open the chat with them in the main window. 
 
-Write messages in the field at the bottom and send them with <i class="fa fa-paper-plane"></i> or `Enter`.
+Write messages in the field at the bottom and send them with |paper-plane| or `Enter`.
 
-Load more chat history with <i class="fa fa-history"></i> or delete the history with <i class="fa fa-eraser"></i>.
+Load more chat history with |history| or delete the history with |eraser|.
 
 
 ## Teams
@@ -82,12 +82,12 @@ CryptPad teams are shared spaces between a group of users. A team has its own Cr
 </div> 
 
 To create a team: 
-1. User menu (avatar at the top-right) > <i class="fa fa-users"></i> **Teams**.
-1. <i class="fa fa-plus-circle"></i> **New**.
+1. User menu (avatar at the top-right) > |users| **Teams**.
+1. |plus-circle| **New**.
 
 To open an existing team: 
-1. User menu (avatar at the top-right) > <i class="fa fa-users"></i> **Teams**.
-1. <i class="fa fa-list"></i> **Teams** > **Open** button on the desired team. 
+1. User menu (avatar at the top-right) > |users| **Teams**.
+1. |list| **Teams** > **Open** button on the desired team. 
 
 ### Team Drive
 
@@ -95,17 +95,17 @@ The team storage space is similar to the [CryptDrive] but shared between members
 
 ### Team members
 
-To manage the members of a team, go to the <i class="fa fa-users"></i> **Members** tab.
+To manage the members of a team, go to the |users| **Members** tab.
 
 ### Invite members
 
 To invite members to a team: 
 
-- <i class="fa fa-users"></i> **Members** tab > **Invite members**.
+- |users| **Members** tab > **Invite members**.
 
-<i class="fa fa-address-book"></i> **Contacts** tab: Select CryptPad contacts to invite them to the team. Invitees receive an invite notification and can confirm they want to join the team. 
+|address-book| **Contacts** tab: Select CryptPad contacts to invite them to the team. Invitees receive an invite notification and can confirm they want to join the team. 
 
-<i class="fa fa-link"></i> **Link** tab: Copy a link to send through the means of your choice (preferably a secure mode of cummunication). This link is single-use only. It becomes invalid after someone first uses it to join the team.
+|link| **Link** tab: Copy a link to send through the means of your choice (preferably a secure mode of cummunication). This link is single-use only. It becomes invalid after someone first uses it to join the team.
 
 - Temporary name: Used to identify the invite link in the list of pending invitations.
 
@@ -141,7 +141,7 @@ Each member's role can be changed in the team roster. Team admins and owners can
 
 <i class="fa fa-angle-double-up"></i>: Promote to higher role.  
 <i class="fa fa-angle-double-down"></i>: Demote to lower role.   
-<i class="fa fa-times"></i>: Kick from the team.
+|times|: Kick from the team.
 
 ### Chat 
 

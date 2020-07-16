@@ -79,7 +79,7 @@ Optional:
 
 ## Settings
 
-The account settings are found in the user menu (avatar at the top right) > <i class="fa fa-gear"></i> **Settings**.
+The account settings are found in the user menu (avatar at the top right) > |gear| **Settings**.
 
 ### Account
 
@@ -107,7 +107,7 @@ The account settings are found in the user menu (avatar at the top right) > <i c
   - **Manual (always ask)**: If you have not stored a pad yet, you will be asked if you want to store them in your CryptDrive.
   - **Manual (never ask)** Pads are not stored automatically in your Cryptpad. The option to store them will be hidden. <!--- XXX hidden option? -->
 
-- **Safe links**: When this setting is active, the link in your browser's address bar does not provide access to the document unless the recipient already has it in their CryptDrive. This setting is active by default. It is highly recommended to keep it active and to use the [<i class="fa fa-share-alt"></i> **Share**] menu to copy links to documents. 
+- **Safe links**: When this setting is active, the link in your browser's address bar does not provide access to the document unless the recipient already has it in their CryptDrive. This setting is active by default. It is highly recommended to keep it active and to use the [|share-alt| **Share**] menu to copy links to documents. 
 
 CryptPad includes the keys to decrypt your documents in their links. Anyone with access to your browsing history can potentially read your data. This includes intrusive browser extensions and browsers that sync your history across devices. Situations where your browser is visible by others, such as screen-sharing or screenshots, are also potentially risky in terms of leaking access to your documents. Enabling "safe links" prevents the keys from entering your browsing history or being displayed in your address bar whenever possible. 
 
@@ -171,36 +171,36 @@ User settings for the [Code] application.
 
 Support tickets provide a secure communication channel with the administrators of the CryptPad instance. The **Support** page is accessible through: 
 
-- User menu (avatar at the top-right) > <i class="fa fa-life-ring"></i> **Support**. 
+- User menu (avatar at the top-right) > |life-ring| **Support**. 
 
-<i class="fa fa-envelope-o"></i> **Existing tickets**: Follow up on conversations with the support team. 
+|envelope-o| **Existing tickets**: Follow up on conversations with the support team. 
 - **Reply** to a ticket, 
 - **Close** it if the issue has been resolved
 - **Delete** closed tickets. 
 
-<i class="fa fa-life-ring"></i> **New ticket**: To send a new ticket Fill in the form with a title, category, and the details of the problem or question. Add an attachment if needed, for example a screenshot, and click on **Send**. 
+|life-ring| **New ticket**: To send a new ticket Fill in the form with a title, category, and the details of the problem or question. Add an attachment if needed, for example a screenshot, and click on **Send**. 
 
 
 
 ## Notifications 
 {**logged in user**}
 
-CryptPad notifies you when your contacts interact with you. Notifications are displayed by the bell <i class="fa fa-bell-o"></i> next to the avatar (at the top-right). If you have unread notifications, the bell is filled <i class="fa fa-bell"></i> and a count is displayed. 
+CryptPad notifies you when your contacts interact with you. Notifications are displayed by the bell |bell-o| next to the avatar (at the top-right). If you have unread notifications, the bell is filled |bell| and a count is displayed. 
 
-<i class="fa fa-bell"></i> Bell drop down menu: 
+|bell| Bell drop down menu: 
 
 - Browse unread notifications.
-- Delete a notification with <i class="fa fa-times"></i>.
+- Delete a notification with |times|.
 - **Open notifications panel**: View all notifications and notification history. 
 
 On notifications panel page: 
 
 - Select the type of notification to view:
-  - <i class="fa fa-bars"></i> All.
-  - <i class="fa fa-user"></i> Contact Requests.
+  - |bars| All.
+  - |user| Contact Requests.
   - <i class="cptools cptools-pad"></i> Shared with me.
-  - <i class="fa fa-archive"></i> History.
+  - |archive| History.
 
-- <i class="fa fa-trash"></i>: Delete notifications.
+- |trash|: Delete notifications.
 
 <!--- XXX Does the trash delete notifications or "hide" them and they are still in the history? --->

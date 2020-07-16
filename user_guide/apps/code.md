@@ -7,19 +7,19 @@ The Code/Markdown application in CryptPad is an integration of [CodeMirror](http
 
 ## Toolbar
 
-<i class="fa fa-wrench"></i> **Tools**: Show/hide the text editor toolbar. 
+|wrench| **Tools**: Show/hide the text editor toolbar. 
 
-<i class="fa fa-picture-o"></i> **Insert**: Add an image to the document. The image can be chosen in the CrpytDrive or uploaded. {**logged in user**}
+|picture-o| **Insert**: Add an image to the document. The image can be chosen in the CrpytDrive or uploaded. {**logged in user**}
 
 <i class="cptools cptools-palette"></i> **Theme**: Set colors for the editor, detailed [below]
 
-<i class="fa fa-eye"></i> **Preview**: Show/hide the Markdown preview pane.
+|eye| **Preview**: Show/hide the Markdown preview pane.
 
 ## Theme
 
-<i class="fa fa-paint-brush"></i> **Color by author**: Highlight the text written by each user with their cursor color (picked in [user settings]). When active: 
-  - <i class="fa fa-paint-brush"></i> **Hide author colors** to turn off the display of colors in this window, the colors can be turned back on and remain active for other users. 
-  - <i class="fa fa-paint-brush"></i> **Color by author** > **Clear and disable** to turn off the colors for all users and delete the data.
+|paint-brush| **Color by author**: Highlight the text written by each user with their cursor color (picked in [user settings]). When active: 
+  - |paint-brush| **Hide author colors** to turn off the display of colors in this window, the colors can be turned back on and remain active for other users. 
+  - |paint-brush| **Color by author** > **Clear and disable** to turn off the colors for all users and delete the data.
 
 **Theme**: Color scheme used in the code editor pane.
 
@@ -27,11 +27,11 @@ The Code/Markdown application in CryptPad is an integration of [CodeMirror](http
 
 ## Import/Export
 
-<i class="fa fa-file-o"></i> **File** > <i class="fa fa-upload"></i> **Import**.
+|file-o| **File** > |upload| **Import**.
 
 Suported formats: Any plain text file, the file extension is used to determine the language.
 
-<i class="fa fa-file-o"></i> **File** > <i class="fa fa-download"></i> **Export**.
+|file-o| **File** > |download| **Export**.
 
 Supported formats: `.md`, any other extension can be typed for the name of the exported file. 
 
@@ -49,9 +49,9 @@ Additionally to basic Markdown syntax, the following features are also available
 - `[TOC]` Inserts a table of contents.
 - Todo list
   - `- [ ] task` for a task to do.  
-  renders as: <i class="fa fa-square-o"></i> task
+  renders as: |square-o| task
   - `- [x] task` for a completed task.  
-  renders as: <i class="fa fa-check-square"></i> task
+  renders as: |check-square| task
 - Diagrams with [Mermaid](https://mermaid-js.github.io/mermaid/#/).
 - Mindmaps with [Markmap](https://markmap.js.org/).
 - Mathematical equations with [Mathjax](https://www.mathjax.org/).
@@ -60,7 +60,7 @@ Additionally to basic Markdown syntax, the following features are also available
 
 It is strongly advised **not** to insert external images in documents. The Markdown syntax `![description](https://site.com/image.jpg)` is supported but presents security risks. Malicious code can be hidden in images and result in data leakeage.
 
-For this reason, CryptPad makes use of `media-tag` to insert images from the CryptDrive. This syntax is more complex but it is managed automatically by the <i class="fa fa-picture-o"></i> **Insert** menu.
+For this reason, CryptPad makes use of `media-tag` to insert images from the CryptDrive. This syntax is more complex but it is managed automatically by the |picture-o| **Insert** menu.
 
 
 

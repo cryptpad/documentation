@@ -1,11 +1,11 @@
 
 # Share / Access
 
-<i class="fa fa-share-alt"></i> **Share** and <i class="fa fa-unlock-alt"></i> **Access** are the two menus to manage how other users can interact with your documents on CryptPad. 
+|share-alt| **Share** and |unlock-alt| **Access** are the two menus to manage how other users can interact with your documents on CryptPad. 
 
-- From the document toolbar: <i class="fa fa-share-alt"></i> **Share** and <i class="fa fa-unlock-alt"></i> **Access** at the center.
+- From the document toolbar: |share-alt| **Share** and |unlock-alt| **Access** at the center.
 - From the CryptDrive: `Right click` on a document > 
-<i class="fa fa-share-alt"></i> **Share** or <i class="fa fa-unlock-alt"></i> **Access**.
+|share-alt| **Share** or |unlock-alt| **Access**.
 
 ## Share 
 
@@ -29,8 +29,8 @@ This is the recommended method for sharing documents securely on CryptPad. When 
 
 To share with one or more contacts: 
 
-- <i class="fa fa-share-alt"></i> **Share** in the document toolbar > <i class="fa fa-address-book"></i> **Contacts**.
-- `Right click` on the document in the CryptDrive > <i class="fa fa-share-alt"></i> **Share** > <i class="fa fa-address-book"></i> **Contacts**.
+- |share-alt| **Share** in the document toolbar > |address-book| **Contacts**.
+- `Right click` on the document in the CryptDrive > |share-alt| **Share** > |address-book| **Contacts**.
 
 Then: 
 
@@ -47,8 +47,8 @@ The **Link** tab provides links that can be shared through the medium of your ch
 
 To copy the link to a document: 
 
-- From the document: <i class="fa fa-share-alt"></i> **Share** in the toolbar  > <i class="fa fa-link"></i> **Link**    
-- From the CryptDrive : `Right click` on the document > <i class="fa fa-share-alt"></i> **Share** > <i class="fa fa-link"></i> **Link** 
+- From the document: |share-alt| **Share** in the toolbar  > |link| **Link**    
+- From the CryptDrive : `Right click` on the document > |share-alt| **Share** > |link| **Link** 
 
 then 
 
@@ -64,8 +64,8 @@ Embedding allows for a CryptPad document to be displayed on a web page.
 
 To embed a document: 
 
-- From the document : <i class="fa fa-share-alt"></i> **Share** in the toolbar > <i class="fa fa-code"></i> **Embed**.
-- From the CryptDrive : `Right click` on the document > <i class="fa fa-share-alt"></i> **Share** > <i class="fa fa-code"></i> **Embed**.
+- From the document : |share-alt| **Share** in the toolbar > |code| **Embed**.
+- From the CryptDrive : `Right click` on the document > |share-alt| **Share** > |code| **Embed**.
 
 then
 
@@ -86,7 +86,7 @@ To create a shared folder in the CryptDrive:
 
 To convert an existing folder into a shared folder: 
 
-1. `Right click` on the folder > <i class="fa fa-share-alt"></i> **Share**. 
+1. `Right click` on the folder > |share-alt| **Share**. 
 1. Choose the conversion options.   
   Password.  
   [Owned] folder.
@@ -98,14 +98,14 @@ To convert an existing folder into a shared folder:
 
 Folders are shared in a similar way to documents. To share a folder from the CryptDrive: 
 
-1. `Right click` on the folder > <i class="fa fa-share-alt"></i> **Share**. 
+1. `Right click` on the folder > |share-alt| **Share**. 
 2. Choose the [access rights].  
   **View**: Read-only without editing the contents of the folder.  
   **Edit**: View and make changes to the folder. 
 1. Three tabs are available:  
-  <i class="fa fa-address-book"></i> **Contacts**: Recommended method to share securely with contacts and teams on CryptPad.  
-  <i class="fa fa-link"></i> **Link**: Copy a link to send through the medium of your choice.  
-  <i class="fa fa-code"></i> **Embed**: Copy code to include the folder on a web page.
+  |address-book| **Contacts**: Recommended method to share securely with contacts and teams on CryptPad.  
+  |link| **Link**: Copy a link to send through the medium of your choice.  
+  |code| **Embed**: Copy code to include the folder on a web page.
 
 
 ## Access
@@ -113,8 +113,8 @@ Folders are shared in a similar way to documents. To share a folder from the Cry
 
 This menu is used to restrict access to a document or shared folder: 
 
-- From the document: <i class="fa fa-unlock-alt"></i> **Access**.
-- From the CryptDrive: `Right click` on the document or shared folder > <i class="fa fa-unlock-alt"></i> **Access**.
+- From the document: |unlock-alt| **Access**.
+- From the CryptDrive: `Right click` on the document or shared folder > |unlock-alt| **Access**.
 
 
 ### Access tab
@@ -129,7 +129,7 @@ This tab summarises all the modalities of access to the document:
 
 - **Edit rights requests**:  
   **Request edit rights**: For users with read-only access rights.  
-  <i class="fa fa-bell-slash"></i> **Mute access requests for this pad**: Hides edit rights requests for this document. {**document owners**}
+  |bell-slash| **Mute access requests for this pad**: Hides edit rights requests for this document. {**document owners**}
   
 - **Access list**: Displays the [access list] and indicates if it is enabled. 
 
@@ -146,9 +146,9 @@ To enable the access list, tick **Enable access list**. The [owners] of the docu
 To add contacts or teams to the list: 
 
 1. Select them in the list of contacts on the right.
-1. Add them to the list with the <i class="fa fa-arrow-left"></i> button.
+1. Add them to the list with the |arrow-left| button.
 
-To remove a user or team from the list use the <i class="fa fa-times"></i> button next to their name.
+To remove a user or team from the list use the |times| button next to their name.
 
 ### Owners
 
@@ -170,6 +170,6 @@ The ownership of a document is set on the [creation screen].
 To add users or teams as owners: 
 
 1. Select them in the list of contacts on the right. 
-2. Add them to the list with the <i class="fa fa-arrow-left"></i> button.
+2. Add them to the list with the |arrow-left| button.
 
-To remove an owner, use the <i class="fa fa-times"></i> button next to their name. 
+To remove an owner, use the |times| button next to their name. 

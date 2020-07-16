@@ -18,10 +18,10 @@ Please refer to the [OnlyOffice documentation](https://helpcenter.onlyoffice.com
 ## Import/Export
 
 
-<i class="fa fa-file-o"></i> **File** > <i class="fa fa-upload"></i> **Import**.
+|file-o| **File** > |upload| **Import**.
 
 Supported formats: `.bin` files exported by this application, Excel `.xslx` currently only supported in Chromium and Gogle Chrome browsers. 
 
-<i class="fa fa-file-o"></i> **File** > <i class="fa fa-download"></i> **Export**.
+|file-o| **File** > |download| **Export**.
 
 Supported formats: `.bin`, Excel `.xslx` currently only supported in Chromium and Gogle Chrome browsers. 
