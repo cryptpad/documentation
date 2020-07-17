@@ -66,11 +66,9 @@ available:
 -  ``[TOC]`` Inserts a table of contents.
 -  Todo list
 
-   -  ``- [ ] task`` for a task to do.
-   renders as: |square-o| task
+   -  ``- [ ] task`` for a task to do: |square-o| task.
 
-   -  ``- [x] task`` for a completed task.
-   renders as: |check-square| task
+   -  ``- [x] task`` for a completed task: |check-square| task.
 
 -  Diagrams with `Mermaid <https://mermaid-js.github.io/mermaid/#/>`__.
 -  Mindmaps with `Markmap <https://markmap.js.org/>`__.
