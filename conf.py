@@ -99,7 +99,8 @@ html_static_path = ['static']
 html_css_files = [
     'css/open-sans.css',
     'css/cptools.css',
-    'css/fontawesome.css'
+    'css/fontawesome.css',
+    'css/cp-overrides.css'
 ]
 
 html_theme = "theme"
