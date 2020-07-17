@@ -40,14 +40,10 @@ username and password. Additional functionality for logged in users :
 
 -  Personal and permanent storage space for documents.
 -  File storage for images/videos/PDF/etc…
--  More options to manage documents as [owner]: add a [password], an
-   [expiry date], or an [access list].
--  Organisation of documents in [folders], [shared folders], or with
-   [tags] and [templates].
--  Creation of [teams].
--  Customisation of the [profile] page and a list of [contacts] to
-   [share documents] and [chat] with. Notifications for interactions
-   between contacts.
+-  More options to manage documents as :ref:`owner <owners>`: add a :ref:`password <access_tab>`, an :ref:`expiry date <access_tab>`, or an :ref:`access list <access_list>`.
+-  Organisation of documents in :ref:`folders <folders>`, :ref:`shared folders <shared_folders>`, or with :ref:`tags <tags>` and :ref:`templates <templates>`.
+-  Creation of :ref:`teams <teams>`.
+-  Customisation of the :ref:`profile <profile>` page and a list of :ref:`contacts <contacts>` to :ref:`share documents <share>` and :ref:`chat <chat_contacts>` with. Notifications for interactions between contacts.
 
 Premium user
 ~~~~~~~~~~~~
@@ -72,14 +68,11 @@ the top right of the home page.
 
 Fill out the following information:
 
--  **Username**: This is the name used to log in to CryptPad, it is
-   different from the **Display name** visible by other users. The
-   **Username** cannot be changed once the account is created.
+-  **Username**: This is the name used to log in to CryptPad, it is different from the **Display name** visible by other users. The **Username** cannot be changed once the account is created.
 
--  **Password**: It is recommended to use a strong password. The
-   password can be changed in [user settings].
+-  **Password**: It is recommended to use a strong password. The password can be changed in [user settings].
 
-.. warning::
+.. danger::
 
    Important: CryptPad administrators cannot view, retrieve or reset
    your password if it is lost or forgotten.
@@ -106,113 +99,72 @@ Optional:
    documents as a non-registered user you can import them into your
    account.
 
+.. _user_settings:
+
 Settings
 --------
 
 The account settings are found in the user menu (avatar at the top
 right) > |gear| **Settings**.
 
+.. _user_settings_account:
+
 Account
 ~~~~~~~
 
--  **Account name**: Username chosen at registration. This name cannot
-   be changed. {**logged in user**}
+-  **Account name**: Username chosen at registration. This name cannot be changed. |badge-logged-in|
 
--  **Public Signing Key**: Used by instance administrators and/or on
-   instances that offer subscriptions. This is the only data about your
-   account that is available to the administrators of the service.
-   {**logged in user**}
+-  **Public Signing Key**: Used by instance administrators and/or on instances that offer subscriptions. This is the only data about your account that is available to the administrators of the service. |badge-logged-in|
 
--  **Display Name**: Name displayed to other users, for example when you
-   collaborate on documents. To change this name enter a new name and
-   click on **Save**. {**logged in user**}
+-  **Display Name**: Name displayed to other users, for example when you collaborate on documents. To change this name enter a new name and click on **Save**. |badge-logged-in|
 
--  **Language**: Language used in the CryptPad interface. To change the
-   language of CryptPad pick a new language in the drop-down menu.
-   CryptPad is translated in English and French by the development team,
-   and in other languages by the [community]. Some translations can be
-   incomplete and/or contain errors.
+-  **Language**: Language used in the CryptPad interface. To change the language of CryptPad pick a new language in the drop-down menu. CryptPad is translated in English and French by the development team, and in other languages by the :ref:`community <contribute_translation>`. Some translations can be incomplete and/or contain errors.
 
--  **Tips**: Help messages in the CryptPad interface. Click on **Reset**
-   to display them again if they have been dismissed.
+-  **Tips**: Help messages in the CryptPad interface. Click on **Reset** to display them again if they have been dismissed.
 
--  **Change your password**: Enter your current password and confirm the
-   new password by typing it twice. {**logged in user**}
+-  **Change your password**: Enter your current password and confirm the new password by typing it twice. |badge-logged-in|
 
--  **Account deletion**: Option to permanently delete your account and
-   all of its documents. **Delete your account** and confirm. {**logged
-   in user**}
+-  **Account deletion**: Option to permanently delete your account and all of its documents. **Delete your account** and confirm. |badge-logged-in|
+
+.. _user_settings_confidentiality:
 
 Confidentiality
 ~~~~~~~~~~~~~~~
 
--  **Close remote sessions**: Log out of all sessions except the one
-   from which this option is activated. (see also [Remote
-   Disconnect]){**logged in user**}
+-  **Close remote sessions**: Log out of all sessions except the one from which this option is activated. (see also :ref:`remote_disconnect`) |badge-logged-in|
 
--  **Pad storage in CryptDrive**: Manages if documents you visit are
-   automatically stored in your CryptDrive. If no one [owns] a document
-   you add to your CryptDrive, it counts against your storage quota.
+-  **Pad storage in CryptDrive**: Manages if documents you visit are automatically stored in your CryptDrive. If no one :ref:`owns <owners>` a document you add to your CryptDrive, it counts against your storage quota.
 
-   -  **Automatic**: All the pads you visit are stored in your
-      CryptDrive.
-   -  **Manual (always ask)**: If you have not stored a pad yet, you
-      will be asked if you want to store them in your CryptDrive.
-   -  **Manual (never ask)** Pads are not stored automatically in your
-      Cryptpad. The option to store them will be hidden.
+   -  **Automatic**: All the pads you visit are stored in your CryptDrive.
+   -  **Manual (always ask)**: If you have not stored a pad yet, you will be asked if you want to store them in your CryptDrive.
+   -  **Manual (never ask)** Pads are not stored automatically in your Cryptpad. The option to store them will be hidden.
 
 -  **Safe links**: When this setting is active, the link in your
-   browser’s address bar does not provide access to the document unless
-   the recipient already has it in their CryptDrive. This setting is
-   active by default. It is highly recommended to keep it active and to
-   use the [|share-alt\| **Share**] menu to copy links to documents.
+   browser’s address bar does not provide access to the document unless the recipient already has it in their CryptDrive. This setting is active by default. It is highly recommended to keep it active and to use the :ref:`share` menu to copy links to documents.
 
-CryptPad includes the keys to decrypt your documents in their links.
-Anyone with access to your browsing history can potentially read your
-data. This includes intrusive browser extensions and browsers that sync
-your history across devices. Situations where your browser is visible by
-others, such as screen-sharing or screenshots, are also potentially
-risky in terms of leaking access to your documents. Enabling “safe
-links” prevents the keys from entering your browsing history or being
-displayed in your address bar whenever possible.
+CryptPad includes the keys to decrypt your documents in their links. Anyone with access to your browsing history can potentially read your data. This includes intrusive browser extensions and browsers that sync your history across devices. Situations where your browser is visible by others, such as screen-sharing or screenshots, are also potentially risky in terms of leaking access to your documents. Enabling “safe links” prevents the keys from entering your browsing history or being displayed in your address bar whenever possible.
 
--  **Feedback**: CryptPad can send anonymised usage feedback to the
-   server in order to improve the user experience. The content of
-   documents is never shared. This option is disabled by default.
+-  **Feedback**: CryptPad can send anonymised usage feedback to the server in order to improve the user experience. The content of documents is never shared. This option is disabled by default.
+
+.. _user_settings_cryptdrive:
 
 CryptDrive
 ~~~~~~~~~~
 
--  **Duplicated owned pads**: When you move your owned pads to a shared
-   folder, a copy is kept in your CryptDrive to ensure that you retain
-   your control over it. You can hide duplicated files. Only the shared
-   version will be visible, unless deleted, in which case the original
-   will be displayed in its previous location.
+-  **Duplicated owned pads**: When you move your owned pads to a shared folder, a copy is kept in your CryptDrive to ensure that you retain your control over it. You can hide duplicated files. Only the shared version will be visible, unless deleted, in which case the original will be displayed in its previous location.
 
--  **Thumbnails**: To help navigating the CryptDrive in [grid] mode,
-   CryptPad can create thumbnails of documents and store them in the
-   browser. This option is turned off by default because it can slow
-   down the browser on less powerful computers. The **Clean** button
-   deletes all existing thumbnails.
+-  **Thumbnails**: To help navigating the CryptDrive in [grid] mode, CryptPad can create thumbnails of documents and store them in the browser. This option is turned off by default because it can slow down the browser on less powerful computers. The **Clean** button deletes all existing thumbnails.
 
 -  **Backup**: Two types of backups are available.
 
-   -  **Backup** only saves the keys of documents in the CryptDrive, not
-      their content. This option is designed to save access to documents
-      and **Restore** it in another session.
-   -  **Download my CryptDrive** saves the content of all documents in
-      the CryptDrive. When possible, this is done in a format that is
-      readable by other software. Some applications produce files that
-      are only readable by CryptPad.
+   -  **Backup** only saves the keys of documents in the CryptDrive, not their content. This option is designed to save access to documents and **Restore** it in another session.
+   -  **Download my CryptDrive** saves the content of all documents in the CryptDrive. When possible, this is done in a format that is readable by other software. Some applications produce files that are only readable by CryptPad.
 
--  **Import**: If pads have been created as a non-registered user prior
-   to logging in, they can be imported to the CryptDrive. {**logged in
-   user**}
+-  **Import**: If pads have been created as a non-registered user prior to logging in, they can be imported to the CryptDrive. |badge-logged-in|
 
--  **Delete History**: The history of the CryptDrive and notifications
-   can be deleted to save storage space. This does not affect the
-   history of documents, which can be deleted individually in the
-   [properties] dialog.
+-  **Delete History**: The history of the CryptDrive and notifications can be deleted to save storage space. This does not affect the history of documents, which can be deleted individually in the :ref:`properties <document_properties>` dialog.
+
+.. _user_settings_cursor:
 
 Cursor
 ~~~~~~
@@ -228,10 +180,12 @@ Cursor
 -  **Display other users’ cursor position (BETA)**: Display or hide the
    position of other users’ cursors.
 
+.. _user_settings_richtext:
+
 Rich Text
 ~~~~~~~~~
 
-User settings for the `Rich Text <#rich-text>`__ application.
+User settings for the :ref:`app_rich_text` application.
 
 -  **Editor’s maximum width**: Switch between page mode (default) that
    limits the width of the text editor, and using the full width of the
@@ -244,10 +198,12 @@ User settings for the `Rich Text <#rich-text>`__ application.
 -  **Comment notifications**: Disable notifications when another user
    replies to one of your comments.
 
+.. _user_settings_code:
+
 Code
 ~~~~
 
-User settings for the `Code <#code>`__ application.
+User settings for the :ref:`app_code` application.
 
 -  **Code editor indentation (spaces)**: Choose the number of spaces for
    each level of indentation.
@@ -266,12 +222,16 @@ User settings for the `Code <#code>`__ application.
    correction suggestions are available through ``Right click`` on the
    word to correct.
 
+.. _user_settings_subscription:
+
 Subscription
 ~~~~~~~~~~~~
 
 (only on cryptpad.fr)
 
 -  Redirects to the account page.
+
+.. _user_support:
 
 Support
 -------
@@ -283,8 +243,11 @@ accessible through:
 -  User menu (avatar at the top-right) > |life-ring| **Support**.
 
 |envelope-o| **Existing tickets**: Follow up on conversations with the
-support team. - **Reply** to a ticket, - **Close** it if the issue has
-been resolved - **Delete** closed tickets.
+support team.
+
+- **Reply** to a ticket.
+- **Close** it if the issue has been resolved.
+- **Delete** closed tickets.
 
 |life-ring| **New ticket**: To send a new ticket Fill in the form with
 a title, category, and the details of the problem or question. Add an
@@ -293,7 +256,7 @@ attachment if needed, for example a screenshot, and click on **Send**.
 Notifications
 -------------
 
-{**logged in user**}
+|badge-logged-in|
 
 CryptPad notifies you when your contacts interact with you.
 Notifications are displayed by the bell |bell-o| next to the avatar
@@ -303,7 +266,7 @@ Notifications are displayed by the bell |bell-o| next to the avatar
 |bell| Bell drop down menu:
 
 -  Browse unread notifications.
--  Delete a notification with \|times|.
+-  Delete a notification with |times|.
 -  **Open notifications panel**: View all notifications and notification
    history.
 
@@ -316,8 +279,6 @@ On notifications panel page:
    -  |cptools pad| Shared with me.
    -  |archive| History.
 
--  \|trash|: Delete notifications.
+-  |trash|: Delete notifications.
 
-.. raw:: html
-
-   <!--- XXX Does the trash delete notifications or "hide" them and they are still in the history? --->
+.. XXX Does the trash delete notifications or "hide" them and they are still in the history?

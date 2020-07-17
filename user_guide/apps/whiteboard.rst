@@ -1,14 +1,20 @@
+
+.. _app_whiteboard:
+
 Whiteboard
 ==========
 
 The Whiteboard application in CryptPad is based on
 `Fabric.js <http://fabricjs.com/>`__.
 
+.. image:: /images/whiteboard-preview.png
+   :class: screenshot
+
 Toolbar
 -------
 
 |picture-o| **Insert**: Add an image to the document. The image can be
-chosen in the CryptDrive or uploaded. {**logged in user**}
+chosen in the CryptDrive or uploaded. |badge-logged-in|
 
 Drawing
 -------

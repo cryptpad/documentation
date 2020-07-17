@@ -12,6 +12,9 @@ must have edit rights to the document. This enables each participant to
 
 A complete re-write of this application is planned for late 2020.
 
+.. image:: /images/poll-preview.png
+   :class: screenshot
+
 Toolbar
 -------
 
@@ -26,7 +29,7 @@ In edit mode:
 |wrench| **Tools**: Show/hide the text editor toolbar.
 
 |picture-o| **Insert**: Add an image to the poll description. The
-image can be chosen in the CrpytDrive or uploaded. {**logged in user**}
+image can be chosen in the CrpytDrive or uploaded. |badge-logged-in|
 
 Edit mode
 ---------

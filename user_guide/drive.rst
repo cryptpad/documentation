@@ -1,3 +1,6 @@
+
+.. _drive:
+
 Drive
 =====
 
@@ -18,17 +21,26 @@ right of the CryptDrive toolbar (under the avatar).
 In grid mode, CryptPad can display thumbnails of documents. These can be
 turned on in the [user settings].
 
-The CrytpDrive in grid view.
+.. figure:: /images/drive-grid.png
+   :class: screenshot
 
-The CryptDrive in list view.
+   The CryptDrive in grid view.
+
+.. figure:: /images/drive-list.png
+   :class: screenshot
+
+   The CryptDrive in list view.
+
 
 Managing documents
 ------------------
 
+.. _folders:
+
 Folders
 ~~~~~~~
 
-{**logged in user**}
+|badge-logged-in|
 
 There are multiple ways to create folders in the CryptDrive:
 
@@ -39,12 +51,13 @@ There are multiple ways to create folders in the CryptDrive:
 Once a folder is created, documents can be added to it by dragging them
 from the CryptDrive.
 
-To change the color of a folder: - ``Right click`` on the folder >
-|cptools palette| **Change color**.
+To change the color of a folder:
 
-To share a folder and all of its contents: - ``Right click`` on the
-folder > |share-alt| **Share**. The folder will then be converted into
-a [shared folder].
+- ``Right click`` on the folder > |cptools palette| **Change color**.
+
+To share a folder and all of its contents:
+
+- ``Right click`` on the folder > |share-alt| **Share**. The folder will then be converted into a :ref:`shared folder <shared_folders>`.
 
 Renaming
 ~~~~~~~~
@@ -54,35 +67,35 @@ document title for all users, the other changes it only in your
 CryptDrive.
 
 To change the title of a documents for all users that have it in their
-CryptDrive: 1. ``Click`` on the title or the |pencil| button in the
-toolbar of the document. 1. Type the new title. 1. Save with the
-|check| button or ``Enter`` key.
+CryptDrive:
 
-To change the title of a document only in your CryptDrive: 1.
-``Right click`` on the document in your CryptDrive > |pencil|
-**Rename**. 1. Type the new name. 1. Save with the ``Enter`` key.
+#. ``Click`` on the title or the |pencil| button in the toolbar of the document.
+#. Type the new title.
+#. Save with the |check| button or ``Enter`` key.
+
+To change the title of a document only in your CryptDrive:
+
+#. ``Right click`` on the document in your CryptDrive > |pencil| **Rename**.
+#. Type the new name.
+#. Save with the ``Enter`` key.
 
 The |flag| icon indicates that the title of a document is different in
 your CryptDrive than for other users.
 
+.. _deleting:
+
 Deleting
 ~~~~~~~~
 
-| There are two ways of deleting a document on CryptPad:
-| - |trash| **Removing** a document means it stops appearing in the
-  CryptDrive but remains in the database. The document remains in the
-  CryptDrive of other users who have stored it. The document can be
-  recovered in the CryptDrive using the [history]. - |cptools destroy|
-  **Destroying** a document deletes it from the database permanently.
-  The document is deleted from all CryptDrives that store it, and it
-  cannot be recovered using the CryptDrive history. {**document
-  owners**}
+There are two ways of deleting a document on CryptPad:
+
+- |trash| **Removing** a document means it stops appearing in the   CryptDrive but remains in the database. The document remains in the   CryptDrive of other users who have stored it. The document can be   recovered in the CryptDrive using the [history].
+- |cptools destroy| **Destroying** a document deletes it from the database permanently.   The document is deleted from all CryptDrives that store it, and it   cannot be recovered using the CryptDrive history. |badge-owners|
+
 
 .. note::
 
-   ::
-
-      If a document is not stored in any CryptDrive, it is <b>destroyed</b> from the database after 90 days (the length of this delay can be set by the service administrators). 
+   If a document is not stored in any CryptDrive, it is **destroyed** from the database after 90 days (the length of this delay can be set by the service administrators).
 
 To **remove** a document from the CryptDrive.
 
@@ -91,21 +104,24 @@ To **remove** a document from the CryptDrive.
 -  Select the document and press the ``Del`` key.
 
 To **remove** the document from the CryptDrive without storing it in the
-trash first: - Select the document and press the ``Shift + Del`` keys.
+trash first:
 
-To empty the trash: - ``Right click`` on the |trash| **Trash** tab to
-the left of the CryptDrive > |trash-o| **Empty the trash**. -
-``Click`` on the |trash| **Trash** tab to access the trash >
-|trash-o| **Empty the trash**.
+- Select the document and press the ``Shift + Del`` keys.
 
-If you are an [owner] of some documents in the trash when you empty it,
+To empty the trash: 
+
+- ``Right click`` on the |trash| **Trash** tab to the left of the CryptDrive > |trash-o| **Empty the trash**. 
+- ``Click`` on the |trash| **Trash** tab to access the trash > |trash-o| **Empty the trash**.
+
+If you are an :ref:`owner <owners>` of some documents in the trash when you empty it,
 you are prompted to decide if you want to **remove** or **destroy**
 them.
 
 To **destroy** a document without storing it in the trash first:
 
--  ``Right click`` on the document in the CryptDrive > \|cptools
-   destroy\| **Destroy**. {**document owners**}
+-  ``Right click`` on the document in the CryptDrive > |cptools destroy| **Destroy**. |badge-owners|
+
+.. _drive_history:
 
 CryptDrive history
 ------------------
@@ -118,21 +134,20 @@ CryptDrive:
 2. Use the arrows |fast-backward| |step-backward| to step through
    the history.
 3. Restore the current step with , or exit the history wihtout restoring
-   with \|window-close|.
+   with |window-close|.
 
-To save storage space the CryptDrive history can be deleted in the [user
-settings].
+To save storage space the CryptDrive history can be deleted in the :ref:`user settings <user_settings_cryptDrive>`.
 
 .. note::
 
-   ::
+   :ref:`Shared folders <shared_folders>` have their own history, separate from the CryptDrive history. Restoring the history of the drive does not affect shared folders, conversely the history of a shared folder can be restored without affecting the rest of the drive.
 
-      [Shared folders] have their own history, separate from the CryptDrive history. Restoring the history of the drive does not affect shared folders, conversely the history of a shared folder can be restored without affecting the rest of the drive.
+.. _tags:
 
 Tags
 ----
 
-{**logged in user**}
+|badge-logged-in|
 
 Group documents in multiple categories by using tags. Your tags are not
 visible by other users.
@@ -146,17 +161,20 @@ To add or remove tags from a document:
    **Tags**.
 -  From a document: |file-o| **File** > |hashtag| **Tags**.
 
-To manage tags for multiple documents: 1. Select the documents with
-``Ctrl + Click`` in the CryptDrive. 2. ``Right click`` on the documents
-> |hashtag| **Tags**.
+To manage tags for multiple documents: 
+
+#. Select the documents with ``Ctrl + Click`` in the CryptDrive. 
+#. ``Right click`` on the documents > |hashtag| **Tags**.
 
 Only the tags assigned to all the documents are then displayed. Any tags
 added and/or removed are applied to all the selected documents.
 
+.. _templates:
+
 Templates
 ---------
 
-{**logged in user**}
+|badge-logged-in|
 
 Templates provide reusable starting points to create documents of a
 similar structure, for example invoices, letterheads, reports, and so
@@ -180,7 +198,7 @@ or
 
 To use a template:
 
--  Select the template when creating a [new document].
+-  Select the template when creating a :ref:`new document <new_document>`.
 -  In an existing document: |file-o| **File** > |upload| **Import a
    template**.
    Please note: this option **replaces** the contents of the document

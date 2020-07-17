@@ -80,6 +80,8 @@ exclude_patterns = [
 
 rst_epilog = """
 .. |badge-logged-in| replace:: **Logged in users**
+.. |badge-owners| replace:: **Document owners**
+.. |badge-team-owners| replace:: **Team owners**
 """
 
 

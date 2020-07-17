@@ -1,6 +1,8 @@
 General
 =======
 
+.. _new_document:
+
 New document
 ------------
 
@@ -12,12 +14,12 @@ To create a new document:
 
 [screenshot pad creation screen (localised)]
 
-{**logged in user**}
+|badge-logged-in|
 
 The creation screen offers a number of options when new documents are
 created.
 
--  **Owned pad**: Create the new document as [owner]. If the document is
+-  **Owned pad**: Create the new document as :ref:`owner <owners>`. If the document is
    created without an owner this setting cannot be modified.
 
 -  **Expiring pad**: Specify an expiry date after which the document
@@ -25,10 +27,11 @@ created.
    is created.
 
 -  **Add a password**: Secure the sharing of the document with a
-   [password]. This setting can be changed later in the [|unlock-alt\|
-   **Access**] menu.
+   :ref:`password <passwords>`. This setting can be changed later in the :ref:`access` menu.
 
--  **Template**: Use a [template] as a starting point for the document.
+-  **Template**: Use a :ref:`template <templates>` as a starting point for the document.
+
+.. _saving:
 
 Saving
 ------
@@ -36,6 +39,8 @@ Saving
 Changes to documents are saved automatically. The status line in the
 document toolbar (under the title) confirms that changes have been
 saved.
+
+.. _make_a_copy:
 
 Make a copy
 -----------
@@ -46,6 +51,8 @@ To duplicate a document:
 -  From the CryptDrive: ``Right click`` on the document > |clone|
    **Make a copy**.
 
+.. _document_history:
+
 Document history
 ----------------
 
@@ -55,14 +62,18 @@ restore a previous state:
 1. |file-o| **File** > |history| **History**.
 2. Use the arrows |fast-backward| |step-backward| to step through
    the history.
-3. Restore the current step with , or exit the history wihtout restoring
-   with \|window-close|.
+3. Restore the current step with , or exit the history without restoring
+   with |window-close|.
 
 To save storage space, history can be deleted in the document’s
-`properties <#properties>`__. {**owners of the document**}
+:ref:`properties <document_properties>` |badge-owners|
+
+.. _document_properties:
 
 Properties
 ----------
+
+[properties screenshot]
 
 To access the properties menu:
 
@@ -79,7 +90,9 @@ Available data:
 
 The document size shows the proportions used for content and for
 history. To save storage space, delete the document’s history with
-**Delete history** and confirm. {**owners of the document**}
+**Delete history** and confirm. |badge-owners|
+
+.. _document_users_and_chat:
 
 Users and chat
 --------------

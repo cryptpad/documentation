@@ -1,10 +1,12 @@
 Collaboration / Social
 ======================
 
+.. _profile:
+
 Profile
 -------
 
-{**logged in user**}
+|badge-logged-in|
 
 Each registered user on CryptPad has a profile page accessible from the
 user menu:
@@ -20,8 +22,11 @@ The following elements can be customised on the profile page:
 -  Description with |pencil| **Add a description**.
 -  Website with **Add a link to your website**.
 
-Sharing : - **View my profile**: Preview the profile page as it appears
-to other users. - |share-alt| **Share**: Copy a link to your profile.
+Sharing:
+
+- **View my profile**: Preview the profile page as it appears to other users.
+
+- |share-alt| **Share**: Copy a link to your profile.
 
 User profile
 ~~~~~~~~~~~~
@@ -30,14 +35,13 @@ To see the profile of another user:
 
 -  **User list** |users| |eye| of a document where they are
    connected > ``Click`` on their name.
--  If the user is in your list of `contacts <#contacts>`__.
+-  If the user is in your list of :ref:`contacts <contacts>`.
    User menu (avatar at the top-right) > |address-book| **Contacts** >
    ``Double click`` on their name in the list.
 
 On another user’s profile page:
 
--  **Send a contact request**: Adds this user to your
-   `contacts <#contacts>`__ once they have approved the request.
+-  **Send a contact request**: Adds this user to your :ref:`contacts <contacts>` once they have approved the request.
 
 -  |bell-slash| **Mute**: Blocks notifications and messages from this
    user. They will not know that they have been muted.
@@ -45,10 +49,12 @@ On another user’s profile page:
 -  |key| **Copy public key**: Copies the key used by instance
    administrators and on instances that offer subscriptions.
 
+.. _contacts:
+
 Contacts
 --------
 
-{**logged in user**}
+|badge-logged-in|
 
 On CryptPad, using contacts makes collaboration more secure and simple.
 
@@ -73,9 +79,11 @@ To access the Contacts page:
 
 All contacts are listed at the left of the window. For each contact:
 
-| \|bell-slash|: Mute messages and notifications.
-| \|user-times|: Remove.
-| \|circle|: Indicates that this contact is online.
+* |bell-slash|: Mute messages and notifications.
+* |user-times|: Remove.
+* |circle|: Indicates that this contact is online.
+
+.. _chat_contacts:
 
 Chat with contacts
 ~~~~~~~~~~~~~~~~~~
@@ -87,33 +95,37 @@ Write messages in the field at the bottom and send them with
 |paper-plane| or ``Enter``.
 
 Load more chat history with |history| or delete the history with
-\|eraser|.
+|eraser|.
+
+.. _teams:
 
 Teams
 -----
 
-{**logged in user**}
+|badge-logged-in|
 
 CryptPad teams are shared spaces between a group of users. A team has
 its own CryptDrive, chat, and a list of members with roles and
 permissions.
 
-.. warning::
+.. note::
 
-   The number of teams a CryptPad user can join is limited to 3 for
-   performance reasons.
+   The number of teams a CryptPad user can join is limited to 3 for performance reasons.
 
-To create a team: 1. User menu (avatar at the top-right) > |users|
-**Teams**. 1. |plus-circle| **New**.
+To create a team:
 
-To open an existing team: 1. User menu (avatar at the top-right) >
-|users| **Teams**. 1. |list| **Teams** > **Open** button on the
-desired team.
+#. User menu (avatar at the top-right) > |users| **Teams**. 
+#. |plus-circle| **New**.
+
+To open an existing team: 
+
+#. User menu (avatar at the top-right) > |users| **Teams**.
+#. |list| **Teams** > **Open** button on the desired team.
 
 Team Drive
 ~~~~~~~~~~
 
-The team storage space is similar to the [CryptDrive] but shared between
+The team storage space is similar to the :ref:`CryptDrive <drive>` but shared between
 members of the team.
 
 Team members
@@ -137,13 +149,13 @@ choice (preferably a secure mode of cummunication). This link is
 single-use only. It becomes invalid after someone first uses it to join
 the team.
 
--  Temporary name: Used to identify the invite link in the list of
+-  **Temporary name**: Used to identify the invite link in the list of
    pending invitations.
 
--  Password: Protect the link against potiential interception.
+-  **Password**: Protect the link against potiential interception.
    (optional)
 
--  Personal message: Message that the recipient will see before they
+-  **Personal message**: Message that the recipient will see before they
    decide to accept the invitation to join the team.
 
 Roles and permissions
@@ -176,20 +188,19 @@ Administration
 Each member’s role can be changed in the team roster. Team admins and
 owners can manage members of equal or lower role. For each member:
 
-| : Promote to higher role.
-| : Demote to lower role.
-| \|times|: Kick from the team.
+| |angle-double-up| : Promote to higher role.
+| |angle-double-down|: Demote to lower role.
+| |times|: Kick from the team.
 
 Chat
 ~~~~
 
-The team chat is similar to the chat with `contacts <#contacts>`__
-except shared between all members of the team.
+The team chat is similar to the chat with :ref:`contacts <contacts>` except shared between all members of the team.
 
 Administration tab
 ~~~~~~~~~~~~~~~~~~
 
-{**team owners**}
+|badge-team-owners|
 
 -  **Public signing key**: Used to identify the team on instances that
    offer subscitpions.

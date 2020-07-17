@@ -1,8 +1,14 @@
+
+.. _app_code:
+
 Code / Markdown
 ===============
 
 The Code/Markdown application in CryptPad is an integration of
 `CodeMirror <https://codemirror.net/>`__.
+
+.. image:: /images/code-preview.png
+   :class: screenshot
 
 Toolbar
 -------
@@ -10,9 +16,9 @@ Toolbar
 |wrench| **Tools**: Show/hide the text editor toolbar.
 
 |picture-o| **Insert**: Add an image to the document. The image can be
-chosen in the CrpytDrive or uploaded. {**logged in user**}
+chosen in the CrpytDrive or uploaded. |badge-logged-in|
 
-|palette| **Theme**: Set colors for the editor, detailed
+|cptools palette| **Theme**: Set colors for the editor, detailed
 [below]
 
 |eye| **Preview**: Show/hide the Markdown preview pane.
@@ -21,11 +27,11 @@ Theme
 -----
 
 |paint-brush| **Color by author**: Highlight the text written by each
-user with their cursor color (picked in [user settings]). When active: -
-|paint-brush| **Hide author colors** to turn off the display of colors
-in this window, the colors can be turned back on and remain active for
-other users. - |paint-brush| **Color by author** > **Clear and
-disable** to turn off the colors for all users and delete the data.
+user with their cursor color (picked in :ref:`user settings <user_settings_cursor>`). When active:
+
+- |paint-brush| **Hide author colors** to turn off the display of colors in this window, the colors can be turned back on and remain active for other users.
+
+- |paint-brush| **Color by author** > **Clear and disable** to turn off the colors for all users and delete the data.
 
 **Theme**: Color scheme used in the code editor pane.
 
@@ -34,15 +40,11 @@ disable** to turn off the colors for all users and delete the data.
 Import/Export
 -------------
 
-|file-o| **File** > |upload| **Import**.
+| |file-o| **File** > |upload| **Import**.
+| Suported formats: Any plain text file, the file extension is used to determine the language.
 
-Suported formats: Any plain text file, the file extension is used to
-determine the language.
-
-|file-o| **File** > |download| **Export**.
-
-Supported formats: ``.md``, any other extension can be typed for the
-name of the exported file.
+| |file-o| **File** > |download| **Export**.
+| Supported formats: ``.md``, any other extension can be typed for the name of the exported file.
 
 Markdown
 --------
@@ -55,10 +57,8 @@ as HTML.
 `Markdown syntax
 guide. <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__
 
-.. raw:: html
-
-   <!--- localised link if possible. French here: 
-   https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdown/ -->
+.. localised link to markdown tutorial if possible. French here:
+   https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdown/
 
 Additionally to basic Markdown syntax, the following features are also
 available:
@@ -67,9 +67,10 @@ available:
 -  Todo list
 
    -  ``- [ ] task`` for a task to do.
-      renders as: |square-o| task
+   renders as: |square-o| task
+
    -  ``- [x] task`` for a completed task.
-      renders as: |check-square| task
+   renders as: |check-square| task
 
 -  Diagrams with `Mermaid <https://mermaid-js.github.io/mermaid/#/>`__.
 -  Mindmaps with `Markmap <https://markmap.js.org/>`__.

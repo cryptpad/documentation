@@ -10,7 +10,7 @@ at cryptpad.fr, but there are many others. This documentation should
 apply to all instances unless explicitly mentionned.
 
 Please note that this documentation is kept up to date with the latest
-version of CryptPad. It is possible that other instances are using
+version of CryptPad: |release|. It is possible that other instances are using
 earlier versions. Each instance can also have specific settings such as
 storage space, disabled applications, or custom colors/styles.
 

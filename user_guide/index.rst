@@ -2,7 +2,7 @@
 User Guide
 ================================
 
-
+Welcome to the CryptPad User Guide.
 
 
 .. toctree::

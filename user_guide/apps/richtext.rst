@@ -1,8 +1,14 @@
+
+.. _app_rich_text:
+
 Rich Text
 =========
 
 The Rich Text application in CryptPad is an integration of
 `CKEditor <https://ckeditor.com/>`__.
+
+.. image:: /images/rich-text-preview.png
+   :class: screenshot
 
 Toolbar
 -------
@@ -10,7 +16,7 @@ Toolbar
 |wrench| **Tools**: Show/hide the text editor toolbar.
 
 |picture-o| **Insert**: Add an image to the document. The image can be
-chosen in the CrpytDrive or uploaded. {**logged in user**}
+chosen in the CrpytDrive or uploaded. |badge-logged-in|
 
 Import/Export
 -------------
@@ -42,7 +48,7 @@ comment as a response. - |check| **Resolve**: Deletes the comment
 after confirmation.
 
 To notify contacts in a comment, mention them with ``@`` and their
-[display name].
+:ref:`display name <user_settings_account>`.
 
 You receive notifications when:
 

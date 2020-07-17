@@ -1,8 +1,15 @@
+
+.. _app_slides:
+
 Slides
 ======
 
 The Slides application in CryptPad is an integration of
 `CodeMirror <https://codemirror.net/>`__.
+
+.. image:: /images/slides-preview.png
+   :class: screenshot
+
 
 Toolbar
 -------
@@ -10,9 +17,9 @@ Toolbar
 |wrench| **Tools**: Show/hide the text editor toolbar.
 
 |picture-o| **Insert**: Add an image to the document. The image can be
-chosen in the CrpytDrive or uploaded. {**logged in user**}
+chosen in the CrpytDrive or uploaded. |badge-logged-in|
 
-|palette| **Theme**: Set colors for the editor, detailed
+|cptools palette| **Theme**: Set colors for the editor, detailed
 [below]
 
 |eye| **Preview**: Show/hide the slides preview pane.
@@ -40,10 +47,13 @@ The main addition to basic Markdown in the Slides application is the
 Theme
 -----
 
-|gear| **Options**: - **Layout**: Toggle slide numbers, date, title,
-and transitions. - **Background Image**: Displayed on all slides. -
-**Custom CSS**: Paste CSS code to customise the presentation’s
-appearance.
+|gear| **Options**:
+
+   - **Layout**: Toggle slide numbers, date, title, and transitions.
+
+   - **Background Image**: Displayed on all slides.
+
+   - **Custom CSS**: Paste CSS code to customise the presentation’s appearance.
 
 |i-cursor| **Text color**, |square-o| **Background color**: Pick
 colors for the presentation.
@@ -53,13 +63,11 @@ colors for the presentation.
 Import/Export
 -------------
 
-|file-o| **File** > |upload| **Import**.
+| |file-o| **File** > |upload| **Import**.
+| Suported formats: Any plain text file.
 
-Suported formats: Any plain text file.
-
-|file-o| **File** > |download| **Export**.
-
-Supported formats: ``.md``.
+| |file-o| **File** > |download| **Export**.
+| Supported formats: ``.md``.
 
 Images
 ------

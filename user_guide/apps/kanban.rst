@@ -4,6 +4,9 @@ Kanban
 The Kanban application in CryptPad is based on
 `JKanban <https://www.riccardotartaglia.it/jkanban/>`__.
 
+.. image:: /images/kanban-preview.png
+   :class: screenshot
+
 Organisation
 ------------
 
@@ -46,14 +49,14 @@ Cards
 
 Create a new card with the buttons at the bottom of each column:
 
--  |add-bottom| to add a card at the bottom of the column.
--  |add-top| to add a card at the top of the column.
+-  |cptools add-bottom| to add a card at the bottom of the column.
+-  |cptools add-top| to add a card at the top of the column.
 
 Change the title of a card:
 
 1. ``Click`` on the card title.
 2. Type the new title.
-3. ``Enter``.
+3. ``Enter``
 
 The title of a card can also be modified in the card editor (see below).
 
