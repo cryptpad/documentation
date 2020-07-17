@@ -6,7 +6,7 @@ Collaboration / Social
 Profile
 -------
 
-|badge-logged-in|
+:badge:`logged in users`
 
 Each registered user on CryptPad has a profile page accessible from the
 user menu:
@@ -54,7 +54,7 @@ On another user’s profile page:
 Contacts
 --------
 
-|badge-logged-in|
+:badge:`Logged in users`
 
 On CryptPad, using contacts makes collaboration more secure and simple.
 
@@ -102,7 +102,7 @@ Load more chat history with |history| or delete the history with
 Teams
 -----
 
-|badge-logged-in|
+:badge:`Logged in users`
 
 CryptPad teams are shared spaces between a group of users. A team has
 its own CryptDrive, chat, and a list of members with roles and
@@ -200,7 +200,7 @@ The team chat is similar to the chat with :ref:`contacts <contacts>` except shar
 Administration tab
 ~~~~~~~~~~~~~~~~~~
 
-|badge-team-owners|
+:badge:`Team owners`
 
 -  **Public signing key**: Used to identify the team on instances that
    offer subscitpions.

@@ -79,9 +79,9 @@ exclude_patterns = [
 # to use it: rst_prolog = sphinx_fontawesome.prolog + "my prolog"
 
 rst_epilog = """
-.. |badge-logged-in| replace:: **Logged in users**
-.. |badge-owners| replace:: **Document owners**
-.. |badge-team-owners| replace:: **Team owners**
+
+.. role:: badge
+
 """
 
 

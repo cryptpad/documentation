@@ -112,26 +112,26 @@ right) > |gear| **Settings**.
 Account
 ~~~~~~~
 
--  **Account name**: Username chosen at registration. This name cannot be changed. |badge-logged-in|
+-  **Account name**: Username chosen at registration. This name cannot be changed. :badge:`Logged in users`
 
--  **Public Signing Key**: Used by instance administrators and/or on instances that offer subscriptions. This is the only data about your account that is available to the administrators of the service. |badge-logged-in|
+-  **Public Signing Key**: Used by instance administrators and/or on instances that offer subscriptions. This is the only data about your account that is available to the administrators of the service. :badge:`Logged in users`
 
--  **Display Name**: Name displayed to other users, for example when you collaborate on documents. To change this name enter a new name and click on **Save**. |badge-logged-in|
+-  **Display Name**: Name displayed to other users, for example when you collaborate on documents. To change this name enter a new name and click on **Save**. :badge:`Logged in users`
 
 -  **Language**: Language used in the CryptPad interface. To change the language of CryptPad pick a new language in the drop-down menu. CryptPad is translated in English and French by the development team, and in other languages by the :ref:`community <contribute_translation>`. Some translations can be incomplete and/or contain errors.
 
 -  **Tips**: Help messages in the CryptPad interface. Click on **Reset** to display them again if they have been dismissed.
 
--  **Change your password**: Enter your current password and confirm the new password by typing it twice. |badge-logged-in|
+-  **Change your password**: Enter your current password and confirm the new password by typing it twice. :badge:`Logged in users`
 
--  **Account deletion**: Option to permanently delete your account and all of its documents. **Delete your account** and confirm. |badge-logged-in|
+-  **Account deletion**: Option to permanently delete your account and all of its documents. **Delete your account** and confirm. :badge:`Logged in users`
 
 .. _user_settings_confidentiality:
 
 Confidentiality
 ~~~~~~~~~~~~~~~
 
--  **Close remote sessions**: Log out of all sessions except the one from which this option is activated. (see also :ref:`remote_disconnect`) |badge-logged-in|
+-  **Close remote sessions**: Log out of all sessions except the one from which this option is activated. (see also :ref:`remote_disconnect`) :badge:`Logged in users`
 
 -  **Pad storage in CryptDrive**: Manages if documents you visit are automatically stored in your CryptDrive. If no one :ref:`owns <owners>` a document you add to your CryptDrive, it counts against your storage quota.
 
@@ -160,7 +160,7 @@ CryptDrive
    -  **Backup** only saves the keys of documents in the CryptDrive, not their content. This option is designed to save access to documents and **Restore** it in another session.
    -  **Download my CryptDrive** saves the content of all documents in the CryptDrive. When possible, this is done in a format that is readable by other software. Some applications produce files that are only readable by CryptPad.
 
--  **Import**: If pads have been created as a non-registered user prior to logging in, they can be imported to the CryptDrive. |badge-logged-in|
+-  **Import**: If pads have been created as a non-registered user prior to logging in, they can be imported to the CryptDrive. :badge:`Logged in users`
 
 -  **Delete History**: The history of the CryptDrive and notifications can be deleted to save storage space. This does not affect the history of documents, which can be deleted individually in the :ref:`properties <document_properties>` dialog.
 
@@ -256,7 +256,7 @@ attachment if needed, for example a screenshot, and click on **Send**.
 Notifications
 -------------
 
-|badge-logged-in|
+:badge:`Logged in users`
 
 CryptPad notifies you when your contacts interact with you.
 Notifications are displayed by the bell |bell-o| next to the avatar

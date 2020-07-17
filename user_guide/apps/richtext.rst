@@ -16,7 +16,7 @@ Toolbar
 |wrench| **Tools**: Show/hide the text editor toolbar.
 
 |picture-o| **Insert**: Add an image to the document. The image can be
-chosen in the CrpytDrive or uploaded. |badge-logged-in|
+chosen in the CrpytDrive or uploaded. :badge:`Logged in users`
 
 Import/Export
 -------------

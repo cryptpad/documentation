@@ -66,3 +66,5 @@ have a folder e.g. `images/fr/` with localised version of the image, if using on
     - inline code: color and padding
     - paragraphs and headings: margin top and bottom
     - fix favicon
+
+- Instructions for translators (e.g. to leave .rst syntax alone) https://weblate.cryptpad.fr/settings/user-guide/ 
