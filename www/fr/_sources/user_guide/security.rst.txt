@@ -6,7 +6,7 @@ Security
 Passwords for documents and folders
 -----------------------------------
 
-|badge-logged-in|
+:badge:`Logged in users`
 
 When you share the link to a document or shared folder through an
 insecure channel (for example email or SMS), someone might intercept the
@@ -31,7 +31,7 @@ You can also add or change the password in the :ref:`access` menu:
 Remote Disconnect
 -----------------
 
-|badge-logged-in|
+:badge:`Logged in users`
 
 In some cases (loss or theft of a device, forgotten to log out of a
 session on a shared computer, etc.) it can be necessary to close all
