@@ -187,7 +187,6 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="sheets.html">Spreadsheets</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="sheets.html#warning">Warning</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sheets.html#documentation">Documentation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sheets.html#import-export">Import/Export</a></li>
 </ul>
@@ -309,7 +308,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/user_guide/apps/code.md.txt" rel="nofollow"> 
+            <a href="../../_sources/user_guide/apps/code.rst.txt" rel="nofollow"> 
              
               <img src="../../_static/images/source-code.png" />
              <!-- View page source -->
@@ -327,45 +326,62 @@
            <div itemprop="articleBody">
             
   <div class="section" id="code-markdown">
-<h1>Code / Markdown<a class="headerlink" href="#code-markdown" title="Permalink to this headline">¶</a></h1>
-<p>The Code/Markdown application in CryptPad is an integration of <a class="reference external" href="https://codemirror.net/">CodeMirror</a>.</p>
-<img class="screenshot" alt="preview of the code application" src="/images/code-preview.png"><div class="section" id="toolbar">
+<span id="app-code"></span><h1>Code / Markdown<a class="headerlink" href="#code-markdown" title="Permalink to this headline">¶</a></h1>
+<p>The Code/Markdown application in CryptPad is an integration of
+<a class="reference external" href="https://codemirror.net/">CodeMirror</a>.</p>
+<img alt="../../_images/code-preview.png" class="screenshot" src="../../_images/code-preview.png" />
+<div class="section" id="toolbar">
 <h2>Toolbar<a class="headerlink" href="#toolbar" title="Permalink to this headline">¶</a></h2>
-<p><i class="fa fa-wrench"></i> <strong>Tools</strong>: Show/hide the text editor toolbar.</p>
-<p><i class="fa fa-picture-o"></i> <strong>Insert</strong>: Add an image to the document. The image can be chosen in the CrpytDrive or uploaded. {<strong>logged in user</strong>}</p>
-<p><i class="cptools cptools-palette"></i> <strong>Theme</strong>: Set colors for the editor, detailed [below]</p>
-<p><i class="fa fa-eye"></i> <strong>Preview</strong>: Show/hide the Markdown preview pane.</p>
+<p><em class="fa fa-wrench"></em> <strong>Tools</strong>: Show/hide the text editor toolbar.</p>
+<p><em class="fa fa-picture-o"></em> <strong>Insert</strong>: Add an image to the document. The image can be
+chosen in the CrpytDrive or uploaded. <strong>Logged in users</strong></p>
+<p><em class="cptools cptools-palette"></em> <strong>Theme</strong>: Set colors for the editor, detailed
+[below]</p>
+<p><em class="fa fa-eye"></em> <strong>Preview</strong>: Show/hide the Markdown preview pane.</p>
 </div>
 <div class="section" id="theme">
 <h2>Theme<a class="headerlink" href="#theme" title="Permalink to this headline">¶</a></h2>
-<p><i class="fa fa-paint-brush"></i> <strong>Color by author</strong>: Highlight the text written by each user with their cursor color (picked in [user settings]). When active:</p>
+<p><em class="fa fa-paint-brush"></em> <strong>Color by author</strong>: Highlight the text written by each
+user with their cursor color (picked in <a class="reference internal" href="../user_account.html#user-settings-cursor"><span class="std std-ref">user settings</span></a>). When active:</p>
 <ul class="simple">
-<li><p><i class="fa fa-paint-brush"></i> <strong>Hide author colors</strong> to turn off the display of colors in this window, the colors can be turned back on and remain active for other users.</p></li>
-<li><p><i class="fa fa-paint-brush"></i> <strong>Color by author</strong> &gt; <strong>Clear and disable</strong> to turn off the colors for all users and delete the data.</p></li>
+<li><p><em class="fa fa-paint-brush"></em> <strong>Hide author colors</strong> to turn off the display of colors in this window, the colors can be turned back on and remain active for other users.</p></li>
+<li><p><em class="fa fa-paint-brush"></em> <strong>Color by author</strong> &gt; <strong>Clear and disable</strong> to turn off the colors for all users and delete the data.</p></li>
 </ul>
 <p><strong>Theme</strong>: Color scheme used in the code editor pane.</p>
 <p><strong>Language</strong>: Used for syntax highlighting.</p>
 </div>
 <div class="section" id="import-export">
 <h2>Import/Export<a class="headerlink" href="#import-export" title="Permalink to this headline">¶</a></h2>
-<p><i class="fa fa-file-o"></i> <strong>File</strong> &gt; <i class="fa fa-upload"></i> <strong>Import</strong>.</p>
-<p>Suported formats: Any plain text file, the file extension is used to determine the language.</p>
-<p><i class="fa fa-file-o"></i> <strong>File</strong> &gt; <i class="fa fa-download"></i> <strong>Export</strong>.</p>
-<p>Supported formats: <code class="docutils literal notranslate"><span class="pre">.md</span></code>, any other extension can be typed for the name of the exported file.</p>
+<div class="line-block">
+<div class="line"><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong>.</div>
+<div class="line">Suported formats: Any plain text file, the file extension is used to determine the language.</div>
+</div>
+<div class="line-block">
+<div class="line"><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-download"></em> <strong>Export</strong>.</div>
+<div class="line">Supported formats: <code class="docutils literal notranslate"><span class="pre">.md</span></code>, any other extension can be typed for the name of the exported file.</div>
+</div>
 </div>
 <div class="section" id="markdown">
 <h2>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">¶</a></h2>
-<p>The Code application is particularly suited for writing documents in Markdown: a lightweight syntax that offers basic formatting while remaining readable. Markdown is readily converted to other formats such as HTML.</p>
-<p><a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown syntax guide.</a></p>
-<!--- localised link if possible. French here: 
-https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdown/ --><p>Additionally to basic Markdown syntax, the following features are also available:</p>
-<ul class="simple">
+<p>The Code application is particularly suited for writing documents in
+Markdown: a lightweight syntax that offers basic formatting while
+remaining readable. Markdown is readily converted to other formats such
+as HTML.</p>
+<p><a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown syntax
+guide.</a></p>
+<p>Additionally to basic Markdown syntax, the following features are also
+available:</p>
+<ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">[TOC]</span></code> Inserts a table of contents.</p></li>
 <li><p>Todo list</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[</span> <span class="pre">]</span> <span class="pre">task</span></code> for a task to do.<br />renders as: <i class="fa fa-square-o"></i> task</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[x]</span> <span class="pre">task</span></code> for a completed task.<br />renders as: <i class="fa fa-check-square"></i> task</p></li>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[</span> <span class="pre">]</span> <span class="pre">task</span></code> for a task to do.</p></li>
 </ul>
+<p>renders as: <em class="fa fa-square-o"></em> task</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[x]</span> <span class="pre">task</span></code> for a completed task.</p></li>
+</ul>
+<p>renders as: <em class="fa fa-check-square"></em> task</p>
 </li>
 <li><p>Diagrams with <a class="reference external" href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a>.</p></li>
 <li><p>Mindmaps with <a class="reference external" href="https://markmap.js.org/">Markmap</a>.</p></li>
@@ -374,8 +390,13 @@ https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdo
 </div>
 <div class="section" id="images">
 <h2>Images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h2>
-<p>It is strongly advised <strong>not</strong> to insert external images in documents. The Markdown syntax <code class="docutils literal notranslate"><span class="pre">![description](https://site.com/image.jpg)</span></code> is supported but presents security risks. Malicious code can be hidden in images and result in data leakeage.</p>
-<p>For this reason, CryptPad makes use of <code class="docutils literal notranslate"><span class="pre">media-tag</span></code> to insert images from the CryptDrive. This syntax is more complex but it is managed automatically by the <i class="fa fa-picture-o"></i> <strong>Insert</strong> menu.</p>
+<p>It is strongly advised <strong>not</strong> to insert external images in documents.
+The Markdown syntax <code class="docutils literal notranslate"><span class="pre">![description](https://site.com/image.jpg)</span></code> is
+supported but presents security risks. Malicious code can be hidden in
+images and result in data leakeage.</p>
+<p>For this reason, CryptPad makes use of <code class="docutils literal notranslate"><span class="pre">media-tag</span></code> to insert images
+from the CryptDrive. This syntax is more complex but it is managed
+automatically by the <em class="fa fa-picture-o"></em> <strong>Insert</strong> menu.</p>
 </div>
 </div>
 

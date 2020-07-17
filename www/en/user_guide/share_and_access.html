@@ -187,7 +187,6 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="apps/sheets.html">Spreadsheets</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="apps/sheets.html#warning">Warning</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/sheets.html#documentation">Documentation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/sheets.html#import-export">Import/Export</a></li>
 </ul>
@@ -307,7 +306,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/user_guide/share_and_access.md.txt" rel="nofollow"> 
+            <a href="../_sources/user_guide/share_and_access.rst.txt" rel="nofollow"> 
              
               <img src="../_static/images/source-code.png" />
              <!-- View page source -->
@@ -326,150 +325,208 @@
             
   <div class="section" id="share-access">
 <h1>Share / Access<a class="headerlink" href="#share-access" title="Permalink to this headline">¶</a></h1>
-<p><i class="fa fa-share-alt"></i> <strong>Share</strong> and <i class="fa fa-unlock-alt"></i> <strong>Access</strong> are the two menus to manage how other users can interact with your documents on CryptPad.</p>
+<p><em class="fa fa-share-alt"></em> <strong>Share</strong> and <em class="fa fa-unlock-alt"></em> <strong>Access</strong> are the two menus
+to manage how other users can interact with your documents on CryptPad.</p>
 <ul class="simple">
-<li><p>From the document toolbar: <i class="fa fa-share-alt"></i> <strong>Share</strong> and <i class="fa fa-unlock-alt"></i> <strong>Access</strong> at the center.</p></li>
-<li><p>From the CryptDrive: <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on a document &gt;
-<i class="fa fa-share-alt"></i> <strong>Share</strong> or <i class="fa fa-unlock-alt"></i> <strong>Access</strong>.</p></li>
+<li><p>From the document toolbar: <em class="fa fa-share-alt"></em> <strong>Share</strong> and <em class="fa fa-unlock-alt"></em>
+<strong>Access</strong> at the center.</p></li>
+<li><p>From the CryptDrive: <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on a document &gt; <em class="fa fa-share-alt"></em>
+<strong>Share</strong> or <em class="fa fa-unlock-alt"></em> <strong>Access</strong>.</p></li>
 </ul>
 <div class="section" id="share">
-<h2>Share<a class="headerlink" href="#share" title="Permalink to this headline">¶</a></h2>
-<p>There are three ways to share a document: [Contacts], [Link], and [Embed]. In each case, access rights can be set to authorise the recipient to edit the document, or to only view it.</p>
+<span id="id1"></span><h2>Share<a class="headerlink" href="#share" title="Permalink to this headline">¶</a></h2>
+<p>There are three ways to share a document: <a class="reference internal" href="#share-contacts"><span class="std std-ref">Sharing with contacts</span></a>, <a class="reference internal" href="#share-link"><span class="std std-ref">Sharing a link</span></a>, and <a class="reference internal" href="#share-embed"><span class="std std-ref">Embedding</span></a>. In each case, access rights can be set to authorise the recipient to edit the document, or to only view it.</p>
 <div class="section" id="access-rights">
-<h3>Access rights<a class="headerlink" href="#access-rights" title="Permalink to this headline">¶</a></h3>
+<span id="share-access-rights"></span><h3>Access rights<a class="headerlink" href="#access-rights" title="Permalink to this headline">¶</a></h3>
 <p>There are 4 levels of permissions:</p>
 <ul class="simple">
 <li><p><strong>View</strong>: Read-only without editing the document.</p></li>
-<li><p><strong>Present</strong>: Read-only the rendered output of the document, available in the [Code] and [Slides] applications.</p></li>
+<li><p><strong>Present</strong>: Read-only the rendered output of the document, available
+in the [Code] and [Slides] applications.</p></li>
 <li><p><strong>Edit</strong>: View and make changes to the document.</p></li>
-<li><p><strong>View once and self-destruct</strong>: Read-only <strong>one time</strong>. Once the link is opened by a recipient, the document is deleted permanently.</p></li>
+<li><p><strong>View once and self-destruct</strong>: Read-only <strong>one time</strong>. Once the
+link is opened by a recipient, the document is deleted permanently.</p></li>
 </ul>
-<p>Note: If a document is already stored in the CryptDrive of a user with edit rights, the &quot;edit link&quot; is shown in the document's properties even if the user is in View mode.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If a document is already stored in the CryptDrive of a user with edit rights, the “edit link” is shown in the document’s properties even if the user is in View mode.</p>
+</div>
 </div>
 <div class="section" id="sharing-with-contacts">
-<h3>Sharing with contacts<a class="headerlink" href="#sharing-with-contacts" title="Permalink to this headline">¶</a></h3>
-<p>{<strong>logged in user</strong>}</p>
-<p>This is the recommended method for sharing documents securely on CryptPad. When sharing directly with [contacts], document links never leave the encrypted platform of CryptPad. This prevents data from being leaked to third parties.</p>
+<span id="share-contacts"></span><h3>Sharing with contacts<a class="headerlink" href="#sharing-with-contacts" title="Permalink to this headline">¶</a></h3>
+<p><strong>Logged in users</strong></p>
+<p>This is the recommended method for sharing documents securely on CryptPad. When sharing directly with <a class="reference internal" href="collaboration.html#contacts"><span class="std std-ref">contacts</span></a>, document links never leave the encrypted platform of CryptPad. This prevents data from being leaked to third parties.</p>
 <p>To share with one or more contacts:</p>
 <ul class="simple">
-<li><p><i class="fa fa-share-alt"></i> <strong>Share</strong> in the document toolbar &gt; <i class="fa fa-address-book"></i> <strong>Contacts</strong>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document in the CryptDrive &gt; <i class="fa fa-share-alt"></i> <strong>Share</strong> &gt; <i class="fa fa-address-book"></i> <strong>Contacts</strong>.</p></li>
+<li><p><em class="fa fa-share-alt"></em> <strong>Share</strong> in the document toolbar &gt; <em class="fa fa-address-book"></em>
+<strong>Contacts</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document in the CryptDrive &gt; <em class="fa fa-share-alt"></em>
+<strong>Share</strong> &gt; <em class="fa fa-address-book"></em> <strong>Contacts</strong>.</p></li>
 </ul>
 <p>Then:</p>
-<ol class="simple">
-<li><p>Choose the [access rights].</p></li>
+<ol class="arabic simple">
+<li><p>Choose the <a class="reference internal" href="#share-access-rights"><span class="std std-ref">access rights</span></a>.</p></li>
 <li><p>Select the contacts or teams to share with.</p></li>
 <li><p><strong>Share</strong> button.</p></li>
 </ol>
-<p>When sharing with contacts, they receive a notification.<br />When sharing with a team, the document is added directly to the team's CryptDrive.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When sharing with contacts, they receive a notification.
+When sharing with a team, the document is added directly to the team’s CryptDrive.</p>
+</div>
 </div>
 <div class="section" id="sharing-a-link">
-<h3>Sharing a link<a class="headerlink" href="#sharing-a-link" title="Permalink to this headline">¶</a></h3>
-<p>The <strong>Link</strong> tab provides links that can be shared through the medium of your choice. Depending on how you send the link, this method can present security risks. To add a level of security, it is recommended to add a [password] to your document before sharing the link.</p>
+<span id="share-link"></span><h3>Sharing a link<a class="headerlink" href="#sharing-a-link" title="Permalink to this headline">¶</a></h3>
+<p>The <strong>Link</strong> tab provides links that can be shared through the medium of
+your choice. Depending on how you send the link, this method can present
+security risks. To add a level of security, it is recommended to add a
+<a class="reference internal" href="#access-tab"><span class="std std-ref">password</span></a> to your document before sharing the link.</p>
 <p>To copy the link to a document:</p>
 <ul class="simple">
-<li><p>From the document: <i class="fa fa-share-alt"></i> <strong>Share</strong> in the toolbar  &gt; <i class="fa fa-link"></i> <strong>Link</strong></p></li>
-<li><p>From the CryptDrive : <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document &gt; <i class="fa fa-share-alt"></i> <strong>Share</strong> &gt; <i class="fa fa-link"></i> <strong>Link</strong></p></li>
+<li><p>From the document: <em class="fa fa-share-alt"></em> <strong>Share</strong> in the toolbar &gt; <em class="fa fa-link"></em>
+<strong>Link</strong></p></li>
+<li><p>From the CryptDrive : <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document &gt; <em class="fa fa-share-alt"></em>
+<strong>Share</strong> &gt; <em class="fa fa-link"></em> <strong>Link</strong></p></li>
 </ul>
 <p>then</p>
-<ol class="simple">
-<li><p>Choose the [access rights].<br /><strong>Embed mode</strong> hides the toolbar and user list<br /><strong>Preview</strong> allows to check what the link will look like before sending it.</p></li>
+<ol class="arabic simple">
+<li><p>Choose the <a class="reference internal" href="#share-access-rights"><span class="std std-ref">access rights</span></a> and additional options:</p>
+<ul class="simple">
+<li><p><strong>Embed mode</strong> hides the toolbar and user list</p></li>
+<li><p><strong>Preview</strong> allows to check what the link will look like before sending it.</p></li>
+</ul>
+</li>
 <li><p><strong>Copy</strong> the link.</p></li>
 <li><p>Send the link.</p></li>
 </ol>
 </div>
 <div class="section" id="embedding">
-<h3>Embedding<a class="headerlink" href="#embedding" title="Permalink to this headline">¶</a></h3>
+<span id="share-embed"></span><h3>Embedding<a class="headerlink" href="#embedding" title="Permalink to this headline">¶</a></h3>
 <p>Embedding allows for a CryptPad document to be displayed on a web page.</p>
 <p>To embed a document:</p>
 <ul class="simple">
-<li><p>From the document : <i class="fa fa-share-alt"></i> <strong>Share</strong> in the toolbar &gt; <i class="fa fa-code"></i> <strong>Embed</strong>.</p></li>
-<li><p>From the CryptDrive : <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document &gt; <i class="fa fa-share-alt"></i> <strong>Share</strong> &gt; <i class="fa fa-code"></i> <strong>Embed</strong>.</p></li>
+<li><p>From the document : <em class="fa fa-share-alt"></em> <strong>Share</strong> in the toolbar &gt; <em class="fa fa-code"></em>
+<strong>Embed</strong>.</p></li>
+<li><p>From the CryptDrive : <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document &gt; <em class="fa fa-share-alt"></em>
+<strong>Share</strong> &gt; <em class="fa fa-code"></em> <strong>Embed</strong>.</p></li>
 </ul>
 <p>then</p>
-<ol class="simple">
-<li><p>Choose the [access rights].</p></li>
+<ol class="arabic simple">
+<li><p>Choose the <a class="reference internal" href="#share-access-rights"><span class="std std-ref">access rights</span></a>.</p></li>
 <li><p><strong>Copy</strong> the embed code.</p></li>
 <li><p>Paste the code on a web page.</p></li>
 </ol>
 </div>
 <div class="section" id="shared-folders">
-<h3>Shared folders<a class="headerlink" href="#shared-folders" title="Permalink to this headline">¶</a></h3>
-<p>{<strong>logged in user</strong>}</p>
+<span id="id2"></span><h3>Shared folders<a class="headerlink" href="#shared-folders" title="Permalink to this headline">¶</a></h3>
+<p><strong>Logged in users</strong></p>
 <p>Shared folders are made for sharing a set of documents at once.</p>
 <p>To create a shared folder in the CryptDrive:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">New</span></code> &gt; <i class="cptools cptools-shared-folder"></i> <strong>Shared folder</strong>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">e</span></code> &gt; <i class="cptools cptools-shared-folder"></i> <strong>Shared folder</strong>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> &gt; <i class="cptools cptools-shared-folder"></i> <strong>New shared folder</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">New</span></code> &gt; <em class="cptools cptools-shared-folder"></em> <strong>Shared folder</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">e</span></code> &gt; <em class="cptools cptools-shared-folder"></em> <strong>Shared folder</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> &gt; <em class="cptools cptools-shared-folder"></em> <strong>New shared folder</strong>.</p></li>
 </ul>
 <p>To convert an existing folder into a shared folder:</p>
-<ol class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the folder &gt; <i class="fa fa-share-alt"></i> <strong>Share</strong>.</p></li>
-<li><p>Choose the conversion options.<br />Password.<br />[Owned] folder.</p></li>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the folder &gt; <em class="fa fa-share-alt"></em> <strong>Share</strong>.</p></li>
+<li><p>Choose the conversion options.
+Password.
+[Owned] folder.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">OK</span></code> or press the <code class="docutils literal notranslate"><span class="pre">Enter</span></code> key.</p></li>
 </ol>
-<div class="note">
-    Shared folders have their own history, separate from the [CryptDrive history]. Restoring the history of the drive does not affect shared folders, conversely the history of a shared folder can be restored without affecting the rest of the drive.
-</div><p>Folders are shared in a similar way to documents. To share a folder from the CryptDrive:</p>
-<ol class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the folder &gt; <i class="fa fa-share-alt"></i> <strong>Share</strong>.</p></li>
-<li><p>Choose the [access rights].<br /><strong>View</strong>: Read-only without editing the contents of the folder.<br /><strong>Edit</strong>: View and make changes to the folder.</p></li>
-<li><p>Three tabs are available:<br /><i class="fa fa-address-book"></i> <strong>Contacts</strong>: Recommended method to share securely with contacts and teams on CryptPad.<br /><i class="fa fa-link"></i> <strong>Link</strong>: Copy a link to send through the medium of your choice.<br /><i class="fa fa-code"></i> <strong>Embed</strong>: Copy code to include the folder on a web page.</p></li>
+<p>Folders are shared in a similar way to documents. To share a folder from
+the CryptDrive:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the folder &gt; <em class="fa fa-share-alt"></em> <strong>Share</strong>.</p></li>
+<li><p>Choose the <a class="reference external" href="#access-rights">access rights</a>.
+<strong>View</strong>: Read-only without editing the contents of the folder.
+<strong>Edit</strong>: View and make changes to the folder.</p></li>
+<li><p>Three tabs are available:
+<em class="fa fa-address-book"></em> <strong>Contacts</strong>: Recommended method to share securely
+with contacts and teams on CryptPad.
+<em class="fa fa-link"></em> <strong>Link</strong>: Copy a link to send through the medium of your
+choice.
+<em class="fa fa-code"></em> <strong>Embed</strong>: Copy code to include the folder on a web page.</p></li>
 </ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Shared folders have their own history, separate from the <a class="reference internal" href="drive.html#drive-history"><span class="std std-ref">CryptDrive history</span></a>. Restoring the history of the drive does not affect shared folders, conversely the history of a shared folder can be restored without affecting the rest of the drive.</p>
+</div>
 </div>
 </div>
 <div class="section" id="access">
-<h2>Access<a class="headerlink" href="#access" title="Permalink to this headline">¶</a></h2>
-<p>{<strong>logged in user</strong>}</p>
+<span id="id3"></span><h2>Access<a class="headerlink" href="#access" title="Permalink to this headline">¶</a></h2>
+<p><strong>Logged in users</strong></p>
 <p>This menu is used to restrict access to a document or shared folder:</p>
 <ul class="simple">
-<li><p>From the document: <i class="fa fa-unlock-alt"></i> <strong>Access</strong>.</p></li>
-<li><p>From the CryptDrive: <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document or shared folder &gt; <i class="fa fa-unlock-alt"></i> <strong>Access</strong>.</p></li>
+<li><p>From the document: <em class="fa fa-unlock-alt"></em> <strong>Access</strong>.</p></li>
+<li><p>From the CryptDrive: <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document or shared folder
+&gt; <em class="fa fa-unlock-alt"></em> <strong>Access</strong>.</p></li>
 </ul>
 <div class="section" id="access-tab">
-<h3>Access tab<a class="headerlink" href="#access-tab" title="Permalink to this headline">¶</a></h3>
+<span id="id4"></span><h3>Access tab<a class="headerlink" href="#access-tab" title="Permalink to this headline">¶</a></h3>
 <p>This tab summarises all the modalities of access to the document:</p>
-<ul class="simple">
-<li><p><strong>Expiration date</strong>: Date at which the document will be deleted. This date is set at the creation of the document and cannot be modified afterwards.</p></li>
-<li><p><strong>Password</strong>: Displays if a [password] has been set. A new password can be set, or an existing password modified.</p></li>
-<li><p><strong>Owners</strong>: List of all the document's [owners].</p></li>
-<li><p><strong>Edit rights requests</strong>:<br /><strong>Request edit rights</strong>: For users with read-only access rights.<br /><i class="fa fa-bell-slash"></i> <strong>Mute access requests for this pad</strong>: Hides edit rights requests for this document. {<strong>document owners</strong>}</p></li>
-<li><p><strong>Access list</strong>: Displays the [access list] and indicates if it is enabled.</p></li>
-<li><p><i class="cptools cptools-destroy"></i> <strong>Destroy</strong>: Delete the document permanently.</p></li>
+<ul>
+<li><p><strong>Expiration date</strong>: Date at which the document will be deleted. This
+date is set at the creation of the document and cannot be modified
+afterwards.</p></li>
+<li><p><strong>Password</strong>: Displays if a [password] has been set. A new password
+can be set, or an existing password modified.</p></li>
+<li><p><strong>Owners</strong>: List of all the document’s <a class="reference external" href="#owners">owners</a>.</p></li>
+<li><div class="line-block">
+<div class="line"><strong>Edit rights requests</strong>:</div>
+<div class="line"><strong>Request edit rights</strong>: For users with read-only access rights.</div>
+<div class="line"><em class="fa fa-bell-slash"></em> <strong>Mute access requests for this pad</strong>: Hides edit rights requests for this document. <strong>Document owners</strong></div>
+</div>
+</li>
+<li><p><strong>Access list</strong>: Displays the <a class="reference external" href="#access-list">access list</a> and
+indicates if it is enabled.</p></li>
+<li><p><em class="cptools cptools-destroy"></em> <strong>Destroy</strong>: Delete the document permanently.</p></li>
 </ul>
 </div>
 <div class="section" id="access-list">
-<h3>Access List<a class="headerlink" href="#access-list" title="Permalink to this headline">¶</a></h3>
-<p>{<strong>document owners</strong>}</p>
-<p>The access list restricts access to a document. Once active, users who are not on the list are not able to access the document, even if they have it stored in their CryptDrive.</p>
-<p>To enable the access list, tick <strong>Enable access list</strong>. The [owners] of the document are on the list by default and cannot be removed from it.</p>
+<span id="id5"></span><h3>Access List<a class="headerlink" href="#access-list" title="Permalink to this headline">¶</a></h3>
+<p><strong>Document owners</strong></p>
+<p>The access list restricts access to a document. Once active, users who
+are not on the list are not able to access the document, even if they
+have it stored in their CryptDrive.</p>
+<p>To enable the access list, tick <strong>Enable access list</strong>. The
+<a class="reference external" href="#owners">owners</a> of the document are on the list by default and
+cannot be removed from it.</p>
 <p>To add contacts or teams to the list:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Select them in the list of contacts on the right.</p></li>
-<li><p>Add them to the list with the <i class="fa fa-arrow-left"></i> button.</p></li>
+<li><p>Add them to the list with the <em class="fa fa-arrow-left"></em> button.</p></li>
 </ol>
-<p>To remove a user or team from the list use the <i class="fa fa-times"></i> button next to their name.</p>
+<p>To remove a user or team from the list use the <em class="fa fa-times"></em> button next to
+their name.</p>
 </div>
 <div class="section" id="owners">
-<h3>Owners<a class="headerlink" href="#owners" title="Permalink to this headline">¶</a></h3>
-<p>This tab is used to manage the ownership of the document. Owners of a document have the following permissions:</p>
+<span id="id6"></span><h3>Owners<a class="headerlink" href="#owners" title="Permalink to this headline">¶</a></h3>
+<p>This tab is used to manage the ownership of the document. Owners of a
+document have the following permissions:</p>
 <ul class="simple">
-<li><p>Enable an [acces list].</p></li>
+<li><p>Enable an <a class="reference internal" href="#access-list"><span class="std std-ref">acces list</span></a>.</p></li>
 <li><p>Enable a password.</p></li>
 <li><p>Add or remove other owners.</p></li>
 <li><p>Destroy the document.</p></li>
 </ul>
 <p>The ownership of a document is set on the [creation screen].</p>
-<div class="note">
-  If a document is created without owners, no one has permissions to manage its ownership. It cannot be permanently destroyed by anyone, but can be removed from the CryptDrive and will be destroyed automatically after 90 days of inactivity.
-</div><p>{<strong>document owners</strong>}</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If a document is created without owners, no one has permissions to
+manage its ownership. It cannot be permanently destroyed by anyone,
+but can be removed from the CryptDrive and will be destroyed
+automatically after 90 days of inactivity.</p>
+</div>
+<p><strong>Document owners</strong></p>
 <p>To add users or teams as owners:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Select them in the list of contacts on the right.</p></li>
-<li><p>Add them to the list with the <i class="fa fa-arrow-left"></i> button.</p></li>
+<li><p>Add them to the list with the <em class="fa fa-arrow-left"></em> button.</p></li>
 </ol>
-<p>To remove an owner, use the <i class="fa fa-times"></i> button next to their name.</p>
+<p>To remove an owner, use the <em class="fa fa-times"></em> button next to their name.</p>
 </div>
 </div>
 </div>
