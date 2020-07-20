@@ -6,7 +6,7 @@ Developer Guide
 
 
 .. toctree::
-    :maxdepth: 7
+    :maxdepth: 1
     :hidden:
 
     setup.rst

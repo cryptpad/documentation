@@ -6,14 +6,14 @@ de garder en tête certains éléments qui bloqueront leur intégration au
 projet s'ils ne sont pas respectés.
 
 Zero-knowledge
-~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^
 
 **Aucune donnée non-essentielle concernant l'utilisateur ou ses
 documents ne doit atteindre le serveur de manière non-chiffrée.** C'est
 l'élément le plus important pour CryptPad !
 
 Données visibles par le serveur
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Certaines données sont malheureusement impossible à ne pas recevoir sur
 le serveur à cause du fonctionnement même d'Internet via le protocole
@@ -47,7 +47,7 @@ contributeur ayant des difficulté à respecter cette règle pour les
 modifications souhaitées.
 
 Zero-knowledge dans CryptPad
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Beaucoup de mesures sont en place dans CryptPad pour contourner les
 besoins habituels des services de connaître l'identité de leurs
