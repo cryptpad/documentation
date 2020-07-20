@@ -1,0 +1,454 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>&lt;no title&gt; &mdash; Documentation CryptPad 3.19.0</title>
+  
+
+  
+  <link rel="icon" type="image/png" href="../../../../../_static.images/main-favicon.png" id="favicon"/>
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/open-sans.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/cptools.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/fontawesome.css" type="text/css" />
+  <link rel="stylesheet" href="../../../../../_static/css/cp-overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../../../../search.html" /> 
+
+  
+  <script src="../../../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+            <a href="../../../../../index.html" class="icon icon-home">
+              <img src="../../../../../_static/images/sidebar-logo.png" class="logo" alt="Logo"/>
+              <div class="icon-title">CryptPad</div>
+              <span class="release">3.19.0</span>
+            </a>
+            
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+          
+        </div>
+
+        <div class="wy-side-nav-language-selector">
+        	<p class="caption-text">
+	        	<select id="language-selector-container">
+	        		<option value="en">English</option>
+	        		<option value="fr">Français</option>
+	        	</select>
+        	</p>
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../user_guide/index.html">Guide Utilisateur</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../user_guide/instances.html">Instances CryptPad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../user_guide/user_account.html">User Account</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/user_account.html#account-types">Account types</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/user_account.html#non-registered-user">Non-registered user</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/user_account.html#logged-in-user">Logged in user</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/user_account.html#premium-user">Premium user</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/user_account.html#account-management">Account management</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/user_account.html#registration">Registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/user_account.html#logging-in">Logging in</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/user_account.html#settings">Settings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/user_account.html#account">Account</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/user_account.html#confidentiality">Confidentiality</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/user_account.html#cryptdrive">CryptDrive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/user_account.html#cursor">Cursor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/user_account.html#rich-text">Rich Text</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/user_account.html#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/user_account.html#subscription">Subscription</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/user_account.html#support">Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/user_account.html#notifications">Notifications</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../user_guide/drive.html">Drive</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/drive.html#display">Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/drive.html#managing-documents">Managing documents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/drive.html#folders">Folders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/drive.html#renaming">Renaming</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/drive.html#deleting">Deleting</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/drive.html#cryptdrive-history">CryptDrive history</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/drive.html#tags">Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/drive.html#templates">Templates</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../user_guide/security.html">Sécurité</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/security.html#passwords-for-documents-and-folders">Mot de passe des documents et dossiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/security.html#remote-disconnect">Déconnexion à distance</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../user_guide/collaboration.html">Collaboration / Social</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/collaboration.html#profile">Profile</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/collaboration.html#personal-profile">Personal profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/collaboration.html#user-profile">User profile</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/collaboration.html#contacts">Contacts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/collaboration.html#add-a-contact">Add a contact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/collaboration.html#manage-contacts">Manage contacts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/collaboration.html#chat-with-contacts">Chat with contacts</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/collaboration.html#teams">Teams</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/collaboration.html#team-drive">Team Drive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/collaboration.html#team-members">Team members</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/collaboration.html#invite-members">Invite members</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/collaboration.html#roles-and-permissions">Roles and permissions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/collaboration.html#administration">Administration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/collaboration.html#chat">Chat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/collaboration.html#administration-tab">Administration tab</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../user_guide/share_and_access.html">Share / Access</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/share_and_access.html#share">Share</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/share_and_access.html#access-rights">Access rights</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/share_and_access.html#sharing-with-contacts">Sharing with contacts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/share_and_access.html#sharing-a-link">Sharing a link</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/share_and_access.html#embedding">Embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/share_and_access.html#shared-folders">Shared folders</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/share_and_access.html#access">Access</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/share_and_access.html#access-tab">Access tab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/share_and_access.html#access-list">Access List</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/share_and_access.html#owners">Owners</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../user_guide/applications.html">Applications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/apps/general.html">General</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/general.html#new-document">New document</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/general.html#saving">Saving</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/general.html#make-a-copy">Make a copy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/general.html#document-history">Document history</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/general.html#properties">Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/general.html#users-and-chat">Users and chat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/apps/richtext.html">Rich Text</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/richtext.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/richtext.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/richtext.html#comments">Comments</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/apps/sheets.html">Spreadsheets</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/sheets.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/sheets.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/apps/code.html">Code / Markdown</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/code.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/code.html#theme">Theme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/code.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/code.html#markdown">Markdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/code.html#images">Images</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/apps/slides.html">Slides</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/slides.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/slides.html#writing-slides-with-markdown">Writing slides with Markdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/slides.html#theme">Theme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/slides.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/slides.html#images">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/slides.html#lightbox">Lightbox</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/apps/poll.html">Poll</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/poll.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/poll.html#edit-mode">Edit mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/poll.html#voting">Voting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/poll.html#export">Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/apps/kanban.html">Kanban</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/kanban.html#organisation">Organisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/kanban.html#columns">Columns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/kanban.html#cards">Cards</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/kanban.html#card-editor">Card editor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/kanban.html#display">Display</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/kanban.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../user_guide/apps/whiteboard.html">Whiteboard</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/whiteboard.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/whiteboard.html#drawing">Drawing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/whiteboard.html#paint-mode">Paint mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/whiteboard.html#select-mode">Select mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../user_guide/apps/whiteboard.html#export">Export</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../dev_guide/index.html">Developer Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../dev_guide/setup.html">Instance locale de développement</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../dev_guide/setup.html#prerequis">Prérequis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../dev_guide/setup.html#installation">Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../dev_guide/setup.html#configuration">Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../dev_guide/setup.html#cache-et-compilation-important">Cache et compilation (important)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../dev_guide/setup.html#lancement-en-mode-developpement">Lancement en mode développement</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../dev_guide/contribute.html">Contribuer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../dev_guide/contribute.html#licence">Licence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../dev_guide/contribute.html#git">Git</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../dev_guide/contribute.html#pull-requests">Pull requests</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../dev_guide/contribute.html#branches">Branches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../dev_guide/contribute.html#avant-de-contribuer">Avant de contribuer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../dev_guide/basics.html">Points fondamentaux de CryptPad</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../dev_guide/basics.html#zero-knowledge">Zero-knowledge</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../dev_guide/basics.html#donnees-visibles-par-le-serveur">Données visibles par le serveur</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../dev_guide/basics.html#zero-knowledge-dans-cryptpad">Zero-knowledge dans CryptPad</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../dev_guide/basics.html#content-security-policy-csp-et-securite">Content Security Policy (CSP) et sécurité</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../dev_guide/basics.html#personnalisation">Personnalisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../dev_guide/basics.html#architecture-du-code">Architecture du code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../dev_guide/basics.html#cles-de-traduction">Clés de traduction</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../dev_guide/code.html">Code</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../dev_guide/general.html">Les URLs “safe” et “unsafe”</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../dev_guide/general.html#exemple">Exemple</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../dev_guide/general.html#structure-en-5-niveaux">Structure en 5 niveaux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../dev_guide/general.html#chiffrement">Chiffrement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../dev_guide/general.html#drive-et-journal-de-pins">Drive et journal de “pins”</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../dev_guide/general.html#exemple-1">Exemple</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../dev_guide/general.html#inscription-connexion-et-block">Inscription, connexion et block</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../dev_guide/general.html#exemple-2">Exemple</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../dev_guide/general.html#communication-client-serveur-netflux">Communication client-serveur (Netflux)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../dev_guide/general.html#cote-serveur">Côté serveur</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../dev_guide/general.html#cote-client">Côté client</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../dev_guide/general.html#exemple-3">Exemple</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../../../../dev_guide/common.html">Common</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../dev_guide/common/crypto.html">chainpad-crypto</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../dev_guide/common/common-hash.html">Common hash</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../../../../dev_guide/common/common-util.html">Common util</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../how_to_contribute.html">Comment contribuer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../how_to_contribute.html#report-bugs">Report bugs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../how_to_contribute.html#translate-cryptpad">Translate CryptPad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../how_to_contribute.html#contribute-to-the-code">Contribute to the code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../../how_to_contribute.html#financial-support">Financial support</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+	<!-- start top banner area (for fundraisers or messages)
+
+	<div style="text-align: center; background-color: #333">
+		<a href="https://krita.org/en/fundraising-2018-campaign/" target="_self" onclick="ga('send', 'event', 'frontpage', 'button', 'Fundraiser 2018');">
+			<img src="https://krita.org/wp-content/themes/krita-org-theme/images/decoration/2018-fundraiser-banner.png" style="max-width: 100%">
+		</a>
+	</div>
+	
+	 end top banner area -->
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">CryptPad</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../../../../index.html">Index</a> &raquo;</li>
+        
+      <li>&lt;no title&gt;</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../../../../_sources/www2/en/_static/fonts/cptools/Readme.md.txt" rel="nofollow"> 
+             
+              <img src="../../../../../_static/images/source-code.png" />
+             <!-- View page source -->
+
+          </a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p>The &quot;cptools&quot; font is using the <a class="reference external" href="https://fontawesome.com/icons/palette?style=solid">palette-solid icon</a> from the &quot;Font Awesome 5 Free&quot; icon set.</p>
+<p>This icon is licensed under the <a class="reference external" href="https://fontawesome.com/license/free">Creative Commons Attribution 4.0 International license</a>.</p>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, CryptPad Team.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a modified <a href="https://github.com/rtfd/sphinx_rtd_theme">RTD theme</a>.<br/>
+  <a href="https://cryptpad.fr" title="CryptPad flagship instance">CryptPad flagship instance</a> |
+  <a href="#" title="The Gitlab instance to edit this pages and collaborate.">Git repository for docs.cryptpad.fr </a>
+  . 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../../../',
+            VERSION:'3.19.0',
+            LANGUAGE:'fr',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../../../../_static/language_data.js"></script>
+      <script type="text/javascript" src="../../../../../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

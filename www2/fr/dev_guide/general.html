@@ -1,0 +1,889 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Les URLs “safe” et “unsafe” &mdash; Documentation CryptPad 3.19.0</title>
+  
+
+  
+  <link rel="icon" type="image/png" href="../_static.images/main-favicon.png" id="favicon"/>
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/open-sans.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/cptools.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/fontawesome.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/cp-overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Common" href="common.html" />
+    <link rel="prev" title="Code" href="code.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+            <a href="../index.html" class="icon icon-home">
+              <img src="../_static/images/sidebar-logo.png" class="logo" alt="Logo"/>
+              <div class="icon-title">CryptPad</div>
+              <span class="release">3.19.0</span>
+            </a>
+            
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+          
+        </div>
+
+        <div class="wy-side-nav-language-selector">
+        	<p class="caption-text">
+	        	<select id="language-selector-container">
+	        		<option value="en">English</option>
+	        		<option value="fr">Français</option>
+	        	</select>
+        	</p>
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/index.html">Guide Utilisateur</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/instances.html">Instances CryptPad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/user_account.html">User Account</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#account-types">Account types</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#non-registered-user">Non-registered user</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#logged-in-user">Logged in user</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#premium-user">Premium user</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#account-management">Account management</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#registration">Registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#logging-in">Logging in</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#settings">Settings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#account">Account</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#confidentiality">Confidentiality</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#cryptdrive">CryptDrive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#cursor">Cursor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#rich-text">Rich Text</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#subscription">Subscription</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#support">Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#notifications">Notifications</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/drive.html">Drive</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/drive.html#display">Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/drive.html#managing-documents">Managing documents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/drive.html#folders">Folders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/drive.html#renaming">Renaming</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/drive.html#deleting">Deleting</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/drive.html#cryptdrive-history">CryptDrive history</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/drive.html#tags">Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/drive.html#templates">Templates</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/security.html">Sécurité</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/security.html#passwords-for-documents-and-folders">Mot de passe des documents et dossiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/security.html#remote-disconnect">Déconnexion à distance</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/collaboration.html">Collaboration / Social</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/collaboration.html#profile">Profile</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#personal-profile">Personal profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#user-profile">User profile</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/collaboration.html#contacts">Contacts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#add-a-contact">Add a contact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#manage-contacts">Manage contacts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#chat-with-contacts">Chat with contacts</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/collaboration.html#teams">Teams</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#team-drive">Team Drive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#team-members">Team members</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#invite-members">Invite members</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#roles-and-permissions">Roles and permissions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#administration">Administration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#chat">Chat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#administration-tab">Administration tab</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/share_and_access.html">Share / Access</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/share_and_access.html#share">Share</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/share_and_access.html#access-rights">Access rights</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/share_and_access.html#sharing-with-contacts">Sharing with contacts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/share_and_access.html#sharing-a-link">Sharing a link</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/share_and_access.html#embedding">Embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/share_and_access.html#shared-folders">Shared folders</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/share_and_access.html#access">Access</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/share_and_access.html#access-tab">Access tab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/share_and_access.html#access-list">Access List</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/share_and_access.html#owners">Owners</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/applications.html">Applications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/general.html">General</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#new-document">New document</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#saving">Saving</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#make-a-copy">Make a copy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#document-history">Document history</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#properties">Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#users-and-chat">Users and chat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/richtext.html">Rich Text</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/richtext.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/richtext.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/richtext.html#comments">Comments</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/sheets.html">Spreadsheets</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/sheets.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/sheets.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/code.html">Code / Markdown</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/code.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/code.html#theme">Theme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/code.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/code.html#markdown">Markdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/code.html#images">Images</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/slides.html">Slides</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/slides.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/slides.html#writing-slides-with-markdown">Writing slides with Markdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/slides.html#theme">Theme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/slides.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/slides.html#images">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/slides.html#lightbox">Lightbox</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/poll.html">Poll</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/poll.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/poll.html#edit-mode">Edit mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/poll.html#voting">Voting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/poll.html#export">Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/kanban.html">Kanban</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/kanban.html#organisation">Organisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/kanban.html#columns">Columns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/kanban.html#cards">Cards</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/kanban.html#card-editor">Card editor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/kanban.html#display">Display</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/kanban.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/whiteboard.html">Whiteboard</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/whiteboard.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/whiteboard.html#drawing">Drawing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/whiteboard.html#paint-mode">Paint mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/whiteboard.html#select-mode">Select mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/whiteboard.html#export">Export</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Developer Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="setup.html">Instance locale de développement</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="setup.html#prerequis">Prérequis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="setup.html#installation">Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="setup.html#configuration">Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="setup.html#cache-et-compilation-important">Cache et compilation (important)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="setup.html#lancement-en-mode-developpement">Lancement en mode développement</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="contribute.html">Contribuer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="contribute.html#licence">Licence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contribute.html#git">Git</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="contribute.html#pull-requests">Pull requests</a></li>
+<li class="toctree-l4"><a class="reference internal" href="contribute.html#branches">Branches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="contribute.html#avant-de-contribuer">Avant de contribuer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="basics.html">Points fondamentaux de CryptPad</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="basics.html#zero-knowledge">Zero-knowledge</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="basics.html#donnees-visibles-par-le-serveur">Données visibles par le serveur</a></li>
+<li class="toctree-l4"><a class="reference internal" href="basics.html#zero-knowledge-dans-cryptpad">Zero-knowledge dans CryptPad</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="basics.html#content-security-policy-csp-et-securite">Content Security Policy (CSP) et sécurité</a></li>
+<li class="toctree-l3"><a class="reference internal" href="basics.html#personnalisation">Personnalisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="basics.html#architecture-du-code">Architecture du code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="basics.html#cles-de-traduction">Clés de traduction</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="code.html">Code</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Les URLs “safe” et “unsafe”</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#exemple">Exemple</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#structure-en-5-niveaux">Structure en 5 niveaux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#chiffrement">Chiffrement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#drive-et-journal-de-pins">Drive et journal de “pins”</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#exemple-1">Exemple</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#inscription-connexion-et-block">Inscription, connexion et block</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#exemple-2">Exemple</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#communication-client-serveur-netflux">Communication client-serveur (Netflux)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#cote-serveur">Côté serveur</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cote-client">Côté client</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#exemple-3">Exemple</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="common.html">Common</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="common/crypto.html">chainpad-crypto</a></li>
+<li class="toctree-l4"><a class="reference internal" href="common/common-hash.html">Common hash</a></li>
+<li class="toctree-l4"><a class="reference internal" href="common/common-util.html">Common util</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../how_to_contribute.html">Comment contribuer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#report-bugs">Report bugs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#translate-cryptpad">Translate CryptPad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#contribute-to-the-code">Contribute to the code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#financial-support">Financial support</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+	<!-- start top banner area (for fundraisers or messages)
+
+	<div style="text-align: center; background-color: #333">
+		<a href="https://krita.org/en/fundraising-2018-campaign/" target="_self" onclick="ga('send', 'event', 'frontpage', 'button', 'Fundraiser 2018');">
+			<img src="https://krita.org/wp-content/themes/krita-org-theme/images/decoration/2018-fundraiser-banner.png" style="max-width: 100%">
+		</a>
+	</div>
+	
+	 end top banner area -->
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CryptPad</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Index</a> &raquo;</li>
+        
+          <li><a href="index.html">Developer Guide</a> &raquo;</li>
+        
+          <li><a href="code.html">Code</a> &raquo;</li>
+        
+      <li>Les URLs “safe” et “unsafe”</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/dev_guide/general.rst.txt" rel="nofollow"> 
+             
+              <img src="../_static/images/source-code.png" />
+             <!-- View page source -->
+
+          </a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="les-urls-safe-et-unsafe">
+<h1>Les URLs “safe” et “unsafe”<a class="headerlink" href="#les-urls-safe-et-unsafe" title="Lien permanent vers ce titre">¶</a></h1>
+<p>La configuration du serveur fait état de 2 URLs différentes, via les
+champs “httpUnsafeOrigin” et “httpSafeOrigin”. Par défaut, sur une
+instance de développement, ce sont les adresses
+<code class="docutils literal notranslate"><span class="pre">http://localhost:3000/</span></code> (unsafe) et <code class="docutils literal notranslate"><span class="pre">http://localhost:3001/</span></code>
+(<strong>unsafe</strong>). La seconde (<strong>safe</strong>) n’est généralement pas montrée aux
+utilisateurs car elle ne fonctionne que pour des éléments ouverts de
+manière interne. Ouvrir CryptPad manuellement avec l’URL safe ne permet
+pas d’accéder aux applications.</p>
+<p>CryptPad utilise un système de sandbox qui permet d’isoler l’interface
+utilisateur du contenu en mémoire. Pour des raisons de confort
+d’utilisation, il est nécessaire de garder en mémoire toutes les
+informations du compte utilisateur courant (contenu du drive, liste de
+contacts, équipes, etc.). L’interface, qui est la partie vulnérable de
+la structure et pourrait contenir des failles, est donc tenue à l’écart
+de ces informations et ne reçoit que celles essentielles pour utiliser
+le document courant. Pour effectuer cela, toute cette partie “interface
+utilisateur” a été placée dans une iframe prenant l’intégralité de la
+fenêtre et ouverte sur l’URL <strong>safe</strong>. Le niveau de base, parent de
+l’iframe, qui contient les données sensibles et quant à lui ouvert sur
+l’URL <strong>unsafe</strong> fournie aux utilisateurs.</p>
+<div class="section" id="exemple">
+<h2>Exemple<a class="headerlink" href="#exemple" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Dans un système en production, il est possible d’utiliser des</p>
+</div>
+<p>sous-domaines différents ou même des domaines différents pour
+représenter ces 2 origines. Par exemple, sur l’instance gérée par les
+développeurs, l’URL unsafe est <code class="docutils literal notranslate"><span class="pre">https://cryptpad.fr</span></code> et l’URL safe est
+<code class="docutils literal notranslate"><span class="pre">https://sandbox.cryptpad.info/.</span></code></p>
+</div>
+</div>
+<div class="section" id="structure-en-5-niveaux">
+<h1>Structure en 5 niveaux<a class="headerlink" href="#structure-en-5-niveaux" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Le code de CryptPad est réparti dans 5 niveaux distincts, 2 côté serveur
+et 3 côté clients.</p>
+<ul class="simple">
+<li><p>Côté serveur</p>
+<ul>
+<li><p>Le “server” qui contient le code lancé dans le processus
+principal. Il gère les connexions websockets et tous les appels au
+serveur passent donc par ce niveau.</p></li>
+<li><p>Les “workers” qui gèrent toutes les connexions à la base de
+données et les traitements demandant davantage de ressource du
+processeur. Le “server” principal les appelle lorsqu’il reçoit
+certaines commandes des utilisateurs. Ils sont lancés dans des
+processus distincts afin de pouvoir exploiter au mieux les
+potentiels différents coeurs du processeur.</p></li>
+</ul>
+</li>
+<li><p>Côte client</p>
+<ul>
+<li><p>Le niveau de base, appelé “outer” dans le code, qui contient le
+HTML chargé par le navigateur en fonction de l’URL de la page. Ce
+niveau est chargé avec l’URL “unsafe” (celle qui est visible dans
+la barre d’adresse du navigateur) car il a accès à des données
+sensibles, notamment les clés de chiffrement du compte
+utilisateur.</p></li>
+<li><p>L’iframe contenant l’interface utilisateur, appelée “inner” dans
+le code, et lancée en tant que fille de “outer” et elle utilise
+l’URL “safe”. Cette iframe représente l’intégralité de l’écran
+visible par l’utilisateur. Aucun élément d’interface ne se trouve
+au dehors (dans le niveau “outer”). Elle n’a accès qu’aux données
+nécessitant d’être affichées à l’écran.</p></li>
+<li><p>Le niveau supérieur, appelé “worker” (au singulier, différent des
+“workers” côté serveur), qui gère la connexion au serveur et garde
+en mémoire toutes les données du compte utilisateur (ou du compte
+“non-enregistré”). Ce niveau est chargé dans un SharedWorker
+lorsque le navigateur le supporte (Firefox, Chrome, Edge) avec
+l’URL “unsafe”, ce qui signifie que tous les onglets du navigateur
+du client chargés sur cette instance de CryptPad auront accès au
+même worker. Il permet donc de n’avoir à charger les données du
+compte qu’une fois pour tous les onglets ouverts, et il permet de
+n’avoir à lancer qu’une seule connexion Websocket avec le serveur.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="chiffrement">
+<h1>Chiffrement<a class="headerlink" href="#chiffrement" title="Lien permanent vers ce titre">¶</a></h1>
+<p>CryptPad utilise plusieurs systèmes de chiffrements adaptés aux
+différents cas d’utilisation. Ces systèmes sont utilisés avec la
+librairie <a class="reference external" href="https://github.com/dchest/tweetnacl-js">TweetNaCl</a>.</p>
+<ul class="simple">
+<li><p>Documents, compte utilisateur, fichiers statiques et chat de groupe</p>
+<ul>
+<li><p>Chiffrement symétrique “xsalsa20-poly1305”.</p></li>
+<li><p>Une clé de chiffrement unique permet aux utilisateurs de chiffrer
+et déchiffrer le contenu souhaité. Cette clé est dérivée du “hash”
+de l’URL du document (la partie située après le #) car cette
+partie n’est jamais envoyée au serveur par le navigateur, ce qui
+permet de respecter la contrainte Zero-knowledge.</p></li>
+<li><p>Tous les utilisateurs ayant accès à cette clé peuvent déchiffrer
+les “patchs” permettant de reconstruire le document ou déchiffrer
+les messages du chat.</p></li>
+</ul>
+</li>
+<li><p>Accès en lecture seule des documents</p>
+<ul>
+<li><p>Signature “ed25519”.</p></li>
+<li><p>Le chiffrement étant symétrique, tous les utilisateurs pouvant
+lire et donc déchiffrer le document peuvent aussi techniquement
+chiffrer des messages et les envoyer. Un système de signature
+permet d’autoriser ou non l’envoi de messages.</p></li>
+<li><p>L’URL d’édition contient, en plus de clé de chiffrement, une clé
+de signature. Les éditeurs vont donc “signer” les messages après
+chiffrement.</p></li>
+<li><p>Une clé “publique” de vérification permet à tous les utilisateurs
+(éditeurs <strong>et</strong> lecteurs) de vérifier si un message (un patch) a
+bien été signé avec la bonne clé de signature. Les messages dont
+la signature est invalide sont ignorés.</p></li>
+<li><p>Lorsqu’un document est créé, on envoie au serveur la clé publique
+de vérification associée à ce document. Les messages dont la
+signature n’est pas valides ne sont pas stockés dans la base de
+données.</p></li>
+</ul>
+</li>
+<li><p>Chat privé entre deux utilisateurs (application “contacts”)</p>
+<ul>
+<li><p>Chiffrement asymétrique “x25519-xsalsa20-poly1305”.</p></li>
+<li><p>Lors de la création d’un compte utilisateur, une paire de clé de
+chiffrement asymétrique est générée pour le compte, ainsi qu’une
+paire de clé de signature. Chacune de ces paires contient une
+composante privée et une composante publique. Les parties
+publiques sont partagées avec les contacts.</p></li>
+<li><p>Le chiffrement asymétrique permet, lorsque l’on connait la clé
+publique de chiffrement de l’autre utilisateur, de chiffrer un
+message que lui seul pourra déchiffrer. Ainsi, en utilisant notre
+propre clé privée et la clé publique du contact, on peut chiffrer
+le message pour cet utilisateur uniquement, à condition qu’il
+connaisse notre propre clé publique.</p></li>
+<li><p>Envoyer une demande de contact à un utilisateur permet d’effectuer
+l’échange de clés publiques permettant ce chiffrement.</p></li>
+</ul>
+</li>
+<li><p>Mailbox, centre de notifications</p>
+<ul>
+<li><p>Double chiffrement asymétrique “x25519-xsalsa20-poly1305”.</p></li>
+<li><p>Le centre de notifications fonctionne grâce aux autres
+utilisateurs qui envoient une “notification” lorsqu’ils effectuent
+une action concernant l’utilisateur courant.</p></li>
+<li><p>On souhaite ici pouvoir envoyer des messages à un autre
+utilisateur d’une manière où il a la preuve de l’identité de
+l’expéditeur, sans que le serveur (ou quiconque ayant accès à la
+base de données) ne puisse identifier l’expéditaire ou le
+destinataire via leurs clés publiques.</p></li>
+<li><p>Le message est d’abord chiffré de manière asymétrique en utilisant
+notre clé privée et la clé publique du destinataire. Pour pouvoir
+lire cette partie, le destinataire doit connaître notre clé
+publique, ce qui n’est pas forcément le cas si il n’y a pas eu de
+demande de contact.</p></li>
+<li><p>On ajoute alors notre propre clé publique (de manière
+non-chiffrée) au message (chiffré), et on chiffre l’ensemble de
+manière asymétrique en utilisant cette fois une paire de clé à
+usage unique générée pour l’occasion. On envoie le message
+nouvellement chiffré avec la partie publique de la clé
+nouvellement générée.</p></li>
+<li><p>Le destinataire peut alors déchiffrer une première fois avec sa
+clé privée et la clé publique à usage unique. Il a alors accès à
+un nouveau contenu chiffré ainsi qu’à notre véritable clé
+publique. Il peut enfin déchiffrer le véritable message en
+utilisant sa clé privée et notre clé publique. Si cet utilisateur
+connaisait déjà notre clé publique, il a alors une preuve
+cryptographique que nous sommes l’expéditeur du message.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="drive-et-journal-de-pins">
+<h1>Drive et journal de “pins”<a class="headerlink" href="#drive-et-journal-de-pins" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Le compte utilisateur, comprenant les clés cryptographiques associées,
+le drive, les contacts et les équipes, est stocké dans la base de
+données de la même manière qu’un document collaboratif CryptPad
+quelconque. Le chiffrement le rend indifférenciable d’un pad pour
+quiconque aurait accès à la base de données.</p>
+<p>La partie “drive” du compte correspond donc à une hiérarchie de
+documents (fichiers et dossiers), chaque fichier étant associé à
+l’adresse du document collaboratif lié. Les adresses de lecture-seule et
+d’édition sont stockées séparément de manière à pouvoir stocker les
+documents même si seul l’accès en lecture-seule est connu.</p>
+<p>Les drives étant impossible à différencier des documents normaux, un
+autre système a été mis en place afin de pouvoir garantir que les
+documents y étant stockés ne seront pas supprimés pour inactivité pour
+les utilisateurs enregistrés. Il s’agit de la <strong>liste de pins</strong>.</p>
+<p>La base de données contient ainsi une <strong>liste de pins</strong> pour chaque
+utilisateur enregistré, chaque liste étant identifiée par la <strong>clé
+publique de signature</strong> du compte utilisateur. Cette liste contient les
+identifiants de tous les documents collaboratifs stockés dans le drive
+de l’utilisateur concerné. Lorsque le serveur doit supprimer des
+documents pour cause d’inactivité, il peut vérifier qu’ils ne sont
+présents dans aucune liste de pins.</p>
+<div class="section" id="exemple-1">
+<span id="id1"></span><h2>Exemple<a class="headerlink" href="#exemple-1" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">//</span> <span class="n">Drive</span>
+<span class="p">{</span>
+  <span class="s2">&quot;root&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;Folder&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">&quot;e76245241314a65dacfe13b1c34b4fa7&quot;</span><span class="p">:</span> <span class="mi">842390975368</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;0c1bf2c6be2cd5eaafd2b2bd1a4043ea&quot;</span><span class="p">:</span> <span class="mi">937347739064</span>
+  <span class="p">},</span>
+  <span class="s2">&quot;filesData&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;937347739064&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Rich text 1&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;atime&quot;</span><span class="p">:</span> <span class="mi">1594892373553</span><span class="p">,</span>
+      <span class="s2">&quot;ctime&quot;</span><span class="p">:</span> <span class="mi">1594892373553</span><span class="p">,</span>
+      <span class="s2">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://localhost:3000/pad/#/2/pad/edit/D3YorVnQYakniVbj+fgdq7tx/&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;channel&quot;</span><span class="p">:</span> <span class="s2">&quot;2e44fb409dc333f0008a3bae4a74f032&quot;</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;842390975368&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Markdown document&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;atime&quot;</span><span class="p">:</span> <span class="mi">1594814836987</span><span class="p">,</span>
+      <span class="s2">&quot;ctime&quot;</span><span class="p">:</span> <span class="mi">1594814831653</span><span class="p">,</span>
+      <span class="s2">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://localhost:3000/code/#/2/code/edit/0WKVNAeUzgSs+WtIQQmhkwiw/&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;channel&quot;</span><span class="p">:</span> <span class="s2">&quot;f0b3fa6aaa4a1285f68c3329f4fc9e86&quot;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="o">//</span> <span class="n">Pins</span>
+<span class="p">[</span><span class="s2">&quot;2e44fb409dc333f0008a3bae4a74f032&quot;</span><span class="p">,</span> <span class="s2">&quot;f0b3fa6aaa4a1285f68c3329f4fc9e86&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="inscription-connexion-et-block">
+<h1>Inscription, connexion et block<a class="headerlink" href="#inscription-connexion-et-block" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Un compte utilisateur est donc composé d’un document collaboratif
+contenant le drive ainsi que d’une liste de “pins”. Un troisième élément
+est également stocké pour les comptes utilisateurs afin de pouvoir gérer
+le changement de mot de passe. Bien qu’il soit en effet impossible de
+récupérer son compte si le mot de passe est oublié, il est possible de
+changer le mot de passe si l’on a toujours accès au compte.</p>
+<p>Contrairement aux systèmes classiques où le nom d’utilisateur et le hash
+du mot de passe sont envoyés au serveur, sur CryptPad aucune de ces 2
+informations ne quitte le navigateur de l’utilisateur. Ils sont à la
+place utilisés comme arguments pour une <a class="reference external" href="https://fr.wikipedia.org/wiki/Scrypt">fonction de dérivation
+Scrypt</a> qui fournit
+l’équivalent d’un hash. La différence avec une fonction de hachage
+classique se situe dans le fait que <strong>Scrypt est rendue volontairement
+très coûteuse en ressources processeur</strong> alors qu’une fonction de
+hachage se doit d’être la plus rapide possible. Éant utilisée pour la
+gestion des identifiants de l’utilisateur, rendre son exécution longue
+permet de bloquer les attaques par force brute. Il faut en effet
+plusieurs secondes pour exécuter la fonction avec un ordinateur haut de
+gamme à l’heure où ce document est écrit.</p>
+<p>Une fois la fonction exécutée, on obtient un hash contenant une série
+d’octets qui vont nous servir à générer des clés de connexion. Ces clés,
+une clé de chiffrement et une clé représentant un identifiant unique,
+permettent de créer ou récupérer un <strong>block</strong>. Il s’agit d’un fichier
+chiffré stocké sur le serveur et contenant les véritables clés du compte
+utilisateur.</p>
+<p>En résumé, lors de l’<strong>inscription</strong> à CryptPad, les identifiants
+entrés permettent de créer un “block”. On crée en parallère des clés
+d’accès au compte utilisateur (un identifiant unique pour le compte, une
+clé de chiffrement et une paire de clés de signature pour pouvoir
+modifier les données du compte), que l’on va chiffrer et stocker dans le
+block. Lors de la <strong>connexion</strong>, Scrypt nous permet de récupérer
+l’identifiant du block et de pouvoir le déchiffrer, ce qui nous donne
+accès aux clés du compte utilisateur.</p>
+<p>Lorsque l’utilisateur souhaite <strong>changer de mot de passe</strong>, il n’y a
+donc pas besoin de migrer le compte entier vers un nouveau document,
+uniquement le “block”. Scrypt va en effet nous donner de nouvelles clés
+de connexion pour utiliser un nouveau block. Ce block sera chiffré avec
+une clé différente du premier, mais le contenu déchiffré sera le même :
+les clés du compte utilisateur. Il ne reste alors plus qu’à invalider le
+contenu du block d’origine.</p>
+<p>Afin de ne permettre aux utilisateurs de rester connecter sans devoir
+taper leur mot de passe à chaque nouvelle session, les clés du block
+sont gardées en mémoire dans le <strong>localStorage</strong> du navigateur (pour le
+domaine “unsafe”). Se déconnecter revient donc à supprimer ces clés du
+localStorage.</p>
+<div class="section" id="exemple-2">
+<span id="id2"></span><h2>Exemple<a class="headerlink" href="#exemple-2" title="Lien permanent vers ce titre">¶</a></h2>
+<ul class="simple">
+<li><p>Exemple de clés de connexion (clés d’accès au block et de
+chiffrement) sur cryptpad.fr</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">localStorage.Block_hash</span> <span class="pre">=</span> <span class="pre">&quot;https://files.cryptpad.fr/block/c8/c89FhK8CQfTcoiP073T-RwSgqbY7f--Naoa3ZH8feLk=#UDYn4ZMy1tLksGtYMPewPewCSPkM+vEbluI7hMIe81U=&quot;</span></code></p></li>
+</ul>
+</li>
+<li><p>Exemple de clés de compte utilisateur (accès, chiffrement et
+signature) sur cryptpad.fr</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;/1/edit/PeWuMBluHImPezK+0IHvtA/4e4242jfxWiKi3JAjtkx-lDt/&quot;</span></code></p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="communication-client-serveur-netflux">
+<h1>Communication client-serveur (Netflux)<a class="headerlink" href="#communication-client-serveur-netflux" title="Lien permanent vers ce titre">¶</a></h1>
+<p>La communication entre le client et le serveur s’effectue dans la grande
+majorité des cas via une connexion Websocket. Cette connexion est basée
+sur une implémentation du protocole
+<a class="reference external" href="https://github.com/xwiki-labs/netflux-spec2/blob/master/specification.md">Netflux</a>.
+Les exceptions concernent les fichiers statiques (images, vidéos, pdf,
+etc.) et les fichiers de type “block” qui sont stockés entiers chiffrés
+et qui sont récupérés par les utilisateurs en XHR (téléchargement du
+fichier chiffré complet).</p>
+<p>Avec le protocole Netflux, les utilsateurs créent un “network” qu’ils
+utilisent ensuite pour effectuer plusieurs types d’opérations. <strong>Les
+points importants</strong> concernant l’implémentation du protocole sont : *
+Chaque utilisateur est identifié par une chaîne hexadécimale de 32
+caractères appelée <strong>netfluxId</strong>. Cet identifiant est généré par le
+serveur et est créé pour chaque connexion Websocket. Un utilisateur qui
+ouvre CryptPad via 2 navigateurs différents en même temps aura un
+netfluxId pour chaque navigateur (pour chaque connexion au serveur). Cet
+identifiant change donc a chaque nouvelle connexion, aucun mécanisme
+n’existe pour préserver l’identifiant d’un utilisateur entre différentes
+sessions. * Un utilisateur peut rejoindre des salons et y envoyer des
+messages. Tous les membres du salon reçoivent les messages. Chaque
+document collaboratif ouvert sur CryptPad est représenté par un salon
+sur le serveur avec un identifiant unique. * L’identifiant des salons
+est également une chaîne hexadécimale de 32 caractères appelée
+<strong>channelId</strong> ou <strong>channel</strong>. Le channelId associé a un document est
+dérivé de son URL, afin qu’il soit connu de tous les utilisateurs y
+ayant accès. * Les utilisateurs peuvent s’envoyer des messages directs
+entre eux sans passer par un salon, à condition qu’ils connaissent le
+“netfluxId” du destinataire.</p>
+<div class="section" id="cote-serveur">
+<h2>Côté serveur<a class="headerlink" href="#cote-serveur" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Au niveau du serveur, Netflux est implémenté via le module npm
+“chainpad-server” :
+<code class="docutils literal notranslate"><span class="pre">./node_modules/chainpad-server/NetfluxWebsocketSrv.js</span></code>. Ce module
+crée le serveur Websocket et écoute les connexions entrantes et les
+requêtes des clients. Il crée et garde en mémoire les salons et leurs
+membres tant qu’il reste au moins un membre dans le salon. Il transmet
+également les messages privés envoyés par les membres entre eux.</p>
+<p><strong>IMPORTANT :</strong> Le protocole Netflux ne fait pas mention d’un serveur
+centralisé et donc ne fournit aucune solution directe pour le stockage
+des messages envoyés dans les salons. Le serveur centralisé utilisé dans
+CryptPad est le résultat de <strong>l’implémentation Websocket</strong> du protocole.
+La partie stockage des données a été réalisée sans modifier les règles
+imposées par le protocole.</p>
+<p>Le <strong>stockage des données</strong> a été réalisée grâce à l’ajout d’un “faux”
+membre dans chaque salon du serveur. Dés qu’un salon est créé par un
+utilisateur, un utilisateur spécial nommé <strong>history keeper</strong> le rejoint.
+Cet utilisateur reçoit tous les messages du salon comme n’importe quel
+membre et il stocke les messages dans une base de données. Quand un
+utilisateur rejoint un salon (c’est-à-dire qu’il ouvre un document), son
+navigateur va envoyer un <strong>message direct</strong> au membre <strong>history keeper</strong>
+afin de lui demander l’historique du document. <strong>History keeper</strong> va
+envoyer la partie de l’historique nécessaire pour reconstruire la
+dernière version du document. Une fois synchronisé, l’utilisateur va
+recevoir tous les nouveaux changements en temps réel et va pouvoir
+envoyer ses propres modifications.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Ce faux utilisateur est géré par le serveur mais son code est</p>
+</div>
+<p>bien distinct de la partie “Netflux” du serveur. Il représente toute la
+base de données et son code est donc séparé dans de nombreux fichiers.
+La base se trouve dans <code class="docutils literal notranslate"><span class="pre">./lib/historyKeeper.js</span></code></p>
+</div>
+<div class="section" id="cote-client">
+<h2>Côté client<a class="headerlink" href="#cote-client" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Au niveau du client, un module “bower” permet de gérer le protocole
+Netflux avec des APIs simples. Le module se trouve dans
+<code class="docutils literal notranslate"><span class="pre">./www/bower_components/netflux-websocket/netflux-client.js</span></code>. Une fois
+chargé, ce module permet de créer un <strong>network</strong> représentant la
+connexion Websocket au serveur Netflux et l’état de l’utilisateur
+courant dans au niveau du serveur.</p>
+<p>Ce “network” contient la <strong>liste des salons</strong> rejoints par
+l’utilisateur, ainsi que la <strong>liste des membres</strong> présents dans chaque
+salon. Il permet d’effectuer toutes les opérations permises par le
+protocole : * Rejoindre un salon :
+<code class="docutils literal notranslate"><span class="pre">(Promise)</span> <span class="pre">network.join(channelId)</span></code> (fournit un object <code class="docutils literal notranslate"><span class="pre">channel</span></code>) *
+Envoyer un message privé :
+<code class="docutils literal notranslate"><span class="pre">(Promise)</span> <span class="pre">network.sendTo(netfluxId,</span> <span class="pre">message)</span></code> * Obtenir la liste des
+salons : <code class="docutils literal notranslate"><span class="pre">(Array)</span> <span class="pre">network.webChannels</span></code> * Écouter des évènements dans
+un network : <code class="docutils literal notranslate"><span class="pre">network.on('message',</span> <span class="pre">handler)</span></code> (évènements: message,
+disconnect)</p>
+<p>Et pour chaque salon obtenu via “network.join” : * Envoyer un message :
+<code class="docutils literal notranslate"><span class="pre">(Promise)</span> <span class="pre">channel.bcast(message)</span></code> * Quitter un salon :
+<code class="docutils literal notranslate"><span class="pre">channel.leave(reason)</span></code> * Écouter des évènements :
+<code class="docutils literal notranslate"><span class="pre">channel.on('message',</span> <span class="pre">handler)</span></code> (évènements: message, join, leave) *
+Obtenir l’identifiant du salon : <code class="docutils literal notranslate"><span class="pre">(String)</span> <span class="pre">channel.id</span></code> * Obtenir la
+liste des membres : <code class="docutils literal notranslate"><span class="pre">(Array)</span> <span class="pre">channel.members</span></code></p>
+</div>
+<div class="section" id="exemple-3">
+<span id="id3"></span><h2>Exemple<a class="headerlink" href="#exemple-3" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">//</span> <span class="n">Clientside</span>
+<span class="n">var</span> <span class="n">channelId</span> <span class="o">=</span> <span class="s2">&quot;f0b3fa6aaa4a1285f68c3329f4fc9e86&quot;</span><span class="p">;</span>
+<span class="n">Netflux</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;ws://lcoalhost:3000/cryptpad_websocket&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">function</span> <span class="p">(</span><span class="n">network</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="o">//</span> <span class="n">on</span> <span class="n">success</span>
+
+  <span class="n">network</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">channelId</span><span class="p">)</span><span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">function</span> <span class="p">(</span><span class="n">channel</span><span class="p">)</span> <span class="p">{</span>
+    <span class="o">//</span> <span class="n">on</span> <span class="n">success</span>
+
+    <span class="o">//</span> <span class="n">listen</span> <span class="k">for</span> <span class="n">new</span> <span class="n">messages</span>
+    <span class="n">channel</span><span class="o">.</span><span class="n">on</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span> <span class="n">function</span> <span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">senderNetfluxId</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s1">&#39;Message received:&#39;</span> <span class="o">+</span> <span class="n">message</span><span class="p">);</span>
+    <span class="p">});</span>
+    <span class="o">//</span> <span class="n">send</span> <span class="n">a</span> <span class="n">message</span>
+    <span class="n">channel</span><span class="o">.</span><span class="n">bcast</span><span class="p">(</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">);</span>
+
+  <span class="p">},</span> <span class="n">function</span> <span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="o">//</span> <span class="n">on</span> <span class="n">error</span>
+
+    <span class="n">console</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">error</span><span class="p">);</span>
+
+  <span class="p">});</span>
+
+<span class="p">},</span> <span class="n">function</span> <span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
+  <span class="o">//</span> <span class="n">on</span> <span class="n">error</span>
+
+  <span class="n">console</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">error</span><span class="p">);</span>
+
+<span class="p">});</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="common.html" class="btn btn-neutral float-right" title="Common" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="code.html" class="btn btn-neutral" title="Code" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, CryptPad Team.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a modified <a href="https://github.com/rtfd/sphinx_rtd_theme">RTD theme</a>.<br/>
+  <a href="https://cryptpad.fr" title="CryptPad flagship instance">CryptPad flagship instance</a> |
+  <a href="#" title="The Gitlab instance to edit this pages and collaborate.">Git repository for docs.cryptpad.fr </a>
+  . 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'3.19.0',
+            LANGUAGE:'fr',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

@@ -68,6 +68,7 @@ exclude_patterns = [
     '.DS_Store',
     'Readme.md',
     'www',
+    'www2',
     '_themes/theme/static/fonts/cptools/Readme.md',
     'requirements.txt'
     ]

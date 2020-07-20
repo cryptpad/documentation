@@ -1,0 +1,702 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Points fondamentaux de CryptPad &mdash; Documentation CryptPad 3.19.0</title>
+  
+
+  
+  <link rel="icon" type="image/png" href="../_static.images/main-favicon.png" id="favicon"/>
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/open-sans.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/cptools.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/fontawesome.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/cp-overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Recherche" href="../search.html" />
+    <link rel="next" title="Code" href="code.html" />
+    <link rel="prev" title="Contribuer" href="contribute.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+            <a href="../index.html" class="icon icon-home">
+              <img src="../_static/images/sidebar-logo.png" class="logo" alt="Logo"/>
+              <div class="icon-title">CryptPad</div>
+              <span class="release">3.19.0</span>
+            </a>
+            
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+          
+        </div>
+
+        <div class="wy-side-nav-language-selector">
+        	<p class="caption-text">
+	        	<select id="language-selector-container">
+	        		<option value="en">English</option>
+	        		<option value="fr">Français</option>
+	        	</select>
+        	</p>
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/index.html">Guide Utilisateur</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/instances.html">Instances CryptPad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/user_account.html">User Account</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#account-types">Account types</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#non-registered-user">Non-registered user</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#logged-in-user">Logged in user</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#premium-user">Premium user</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#account-management">Account management</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#registration">Registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#logging-in">Logging in</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#settings">Settings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#account">Account</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#confidentiality">Confidentiality</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#cryptdrive">CryptDrive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#cursor">Cursor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#rich-text">Rich Text</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#subscription">Subscription</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#support">Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#notifications">Notifications</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/drive.html">Drive</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/drive.html#display">Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/drive.html#managing-documents">Managing documents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/drive.html#folders">Folders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/drive.html#renaming">Renaming</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/drive.html#deleting">Deleting</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/drive.html#cryptdrive-history">CryptDrive history</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/drive.html#tags">Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/drive.html#templates">Templates</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/security.html">Sécurité</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/security.html#passwords-for-documents-and-folders">Mot de passe des documents et dossiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/security.html#remote-disconnect">Déconnexion à distance</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/collaboration.html">Collaboration / Social</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/collaboration.html#profile">Profile</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#personal-profile">Personal profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#user-profile">User profile</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/collaboration.html#contacts">Contacts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#add-a-contact">Add a contact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#manage-contacts">Manage contacts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#chat-with-contacts">Chat with contacts</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/collaboration.html#teams">Teams</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#team-drive">Team Drive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#team-members">Team members</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#invite-members">Invite members</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#roles-and-permissions">Roles and permissions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#administration">Administration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#chat">Chat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#administration-tab">Administration tab</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/share_and_access.html">Share / Access</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/share_and_access.html#share">Share</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/share_and_access.html#access-rights">Access rights</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/share_and_access.html#sharing-with-contacts">Sharing with contacts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/share_and_access.html#sharing-a-link">Sharing a link</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/share_and_access.html#embedding">Embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/share_and_access.html#shared-folders">Shared folders</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/share_and_access.html#access">Access</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/share_and_access.html#access-tab">Access tab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/share_and_access.html#access-list">Access List</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/share_and_access.html#owners">Owners</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/applications.html">Applications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/general.html">General</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#new-document">New document</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#saving">Saving</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#make-a-copy">Make a copy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#document-history">Document history</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#properties">Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#users-and-chat">Users and chat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/richtext.html">Rich Text</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/richtext.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/richtext.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/richtext.html#comments">Comments</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/sheets.html">Spreadsheets</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/sheets.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/sheets.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/code.html">Code / Markdown</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/code.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/code.html#theme">Theme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/code.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/code.html#markdown">Markdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/code.html#images">Images</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/slides.html">Slides</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/slides.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/slides.html#writing-slides-with-markdown">Writing slides with Markdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/slides.html#theme">Theme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/slides.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/slides.html#images">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/slides.html#lightbox">Lightbox</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/poll.html">Poll</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/poll.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/poll.html#edit-mode">Edit mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/poll.html#voting">Voting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/poll.html#export">Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/kanban.html">Kanban</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/kanban.html#organisation">Organisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/kanban.html#columns">Columns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/kanban.html#cards">Cards</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/kanban.html#card-editor">Card editor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/kanban.html#display">Display</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/kanban.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/whiteboard.html">Whiteboard</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/whiteboard.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/whiteboard.html#drawing">Drawing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/whiteboard.html#paint-mode">Paint mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/whiteboard.html#select-mode">Select mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/whiteboard.html#export">Export</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Developer Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="setup.html">Instance locale de développement</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="setup.html#prerequis">Prérequis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="setup.html#installation">Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="setup.html#configuration">Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="setup.html#cache-et-compilation-important">Cache et compilation (important)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="setup.html#lancement-en-mode-developpement">Lancement en mode développement</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="contribute.html">Contribuer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="contribute.html#licence">Licence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contribute.html#git">Git</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="contribute.html#pull-requests">Pull requests</a></li>
+<li class="toctree-l4"><a class="reference internal" href="contribute.html#branches">Branches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="contribute.html#avant-de-contribuer">Avant de contribuer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Points fondamentaux de CryptPad</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#zero-knowledge">Zero-knowledge</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#donnees-visibles-par-le-serveur">Données visibles par le serveur</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#zero-knowledge-dans-cryptpad">Zero-knowledge dans CryptPad</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#content-security-policy-csp-et-securite">Content Security Policy (CSP) et sécurité</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#personnalisation">Personnalisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#architecture-du-code">Architecture du code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cles-de-traduction">Clés de traduction</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="code.html">Code</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="general.html">Les URLs “safe” et “unsafe”</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="general.html#exemple">Exemple</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="general.html#structure-en-5-niveaux">Structure en 5 niveaux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="general.html#chiffrement">Chiffrement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="general.html#drive-et-journal-de-pins">Drive et journal de “pins”</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="general.html#exemple-1">Exemple</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="general.html#inscription-connexion-et-block">Inscription, connexion et block</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="general.html#exemple-2">Exemple</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="general.html#communication-client-serveur-netflux">Communication client-serveur (Netflux)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="general.html#cote-serveur">Côté serveur</a></li>
+<li class="toctree-l4"><a class="reference internal" href="general.html#cote-client">Côté client</a></li>
+<li class="toctree-l4"><a class="reference internal" href="general.html#exemple-3">Exemple</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="common.html">Common</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="common/crypto.html">chainpad-crypto</a></li>
+<li class="toctree-l4"><a class="reference internal" href="common/common-hash.html">Common hash</a></li>
+<li class="toctree-l4"><a class="reference internal" href="common/common-util.html">Common util</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../how_to_contribute.html">Comment contribuer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#report-bugs">Report bugs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#translate-cryptpad">Translate CryptPad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#contribute-to-the-code">Contribute to the code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#financial-support">Financial support</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+	<!-- start top banner area (for fundraisers or messages)
+
+	<div style="text-align: center; background-color: #333">
+		<a href="https://krita.org/en/fundraising-2018-campaign/" target="_self" onclick="ga('send', 'event', 'frontpage', 'button', 'Fundraiser 2018');">
+			<img src="https://krita.org/wp-content/themes/krita-org-theme/images/decoration/2018-fundraiser-banner.png" style="max-width: 100%">
+		</a>
+	</div>
+	
+	 end top banner area -->
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CryptPad</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Index</a> &raquo;</li>
+        
+          <li><a href="index.html">Developer Guide</a> &raquo;</li>
+        
+      <li>Points fondamentaux de CryptPad</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/dev_guide/basics.rst.txt" rel="nofollow"> 
+             
+              <img src="../_static/images/source-code.png" />
+             <!-- View page source -->
+
+          </a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="points-fondamentaux-de-cryptpad">
+<h1>Points fondamentaux de CryptPad<a class="headerlink" href="#points-fondamentaux-de-cryptpad" title="Lien permanent vers ce titre">¶</a></h1>
+<p>Lors de changements d'envergure effectués à CryptPad, il est important
+de garder en tête certains éléments qui bloqueront leur intégration au
+projet s'ils ne sont pas respectés.</p>
+<div class="section" id="zero-knowledge">
+<h2>Zero-knowledge<a class="headerlink" href="#zero-knowledge" title="Lien permanent vers ce titre">¶</a></h2>
+<p><strong>Aucune donnée non-essentielle concernant l'utilisateur ou ses
+documents ne doit atteindre le serveur de manière non-chiffrée.</strong> C'est
+l'élément le plus important pour CryptPad !</p>
+<div class="section" id="donnees-visibles-par-le-serveur">
+<h3>Données visibles par le serveur<a class="headerlink" href="#donnees-visibles-par-le-serveur" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Certaines données sont malheureusement impossible à ne pas recevoir sur
+le serveur à cause du fonctionnement même d'Internet via le protocole
+HTTP. Il s'agit notamment de l'adresse IP ainsi que d'éléments
+concernant le navigateur et le système d'exploitation des utilisateurs.
+Les utilisateurs peuvent toutefois se protéger se leur côté :</p>
+<ul class="simple">
+<li><p>L'utilisation d'un VPN ou de TOR permet de &quot;remplacer&quot; son adresse IP
+réelle par une autre.</p></li>
+<li><p>Certaines extensions pour navigateur permettent de modifier son
+&quot;user-agent&quot; (qui contient par défaut la verion du navigateur et de
+système d'exploitation de l'utilisateur).</p></li>
+</ul>
+<p>Par ailleurs, le serveur CryptPad reçoit également de manière
+non-chiffrée la &quot;clé publique de signature&quot; générée par CryptPad pour
+identifier chaque utilisateur. Cette clé est la seule chose qui relie
+les données des utilisateurs à leur &quot;compte CryptPad&quot;, mais elle ne
+permet pas de faire le lien avec une personne physique.</p>
+<p><strong>Nous n'accepterons aucune contribution qui envoie au serveur, de
+manière directe ou non, des données non-chiffrée permettant d'identifier
+un utilisateur (nom d'utilisateur, image de profil, liste de contacts,
+etc.).</strong></p>
+<p>Lorsqu'une telle information semble nécessaire, l'expérience nous a
+montré qu'il est presque toujours possible de trouver des solutions
+alternatives permettant de répondre au même besoin tout en protégeant
+les utilisateurs. Le code source contient beaucoup d'outils adaptés à ce
+genre de situation et l'équipe de développement est prête à aider tout
+contributeur ayant des difficulté à respecter cette règle pour les
+modifications souhaitées.</p>
+</div>
+<div class="section" id="zero-knowledge-dans-cryptpad">
+<h3>Zero-knowledge dans CryptPad<a class="headerlink" href="#zero-knowledge-dans-cryptpad" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Beaucoup de mesures sont en place dans CryptPad pour contourner les
+besoins habituels des services de connaître l'identité de leurs
+utilisateurs :</p>
+<ul class="simple">
+<li><p>Il est impossible de &quot;retrouver&quot; un compte utilisateur à partir d'un
+nom ou pseudonyme, que ce soit pour les administrateurs du service ou
+pour ajouter un contact.</p>
+<ul>
+<li><p><strong>Raisons</strong></p>
+<ul>
+<li><p>Un tel système de recherche nécessite l'accès à une base de
+données non-chiffrée de noms d'utilisateurs. Aucun nom n'est
+stocké dans la base de données de CryptPad.</p></li>
+</ul>
+</li>
+<li><p><strong>Dans CryptPad</strong></p>
+<ul>
+<li><p>Les comptes sont identifiés par leur &quot;clé publique de
+signature&quot;. Cette clé est générée à l'inscription dans le
+navigateur du client lui-même. Le nom d'utilisateur et le mot
+de passe requis pour s'identifier sont utilisés dans une
+fonction <a class="reference external" href="https://fr.wikipedia.org/wiki/Scrypt">Scrypt</a> pour dériver des clés de chiffrements dans
+le navigateur du client.</p></li>
+<li><p>Seules les parties &quot;publiques&quot; de ces clés sont parfois
+envoyées au serveur.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Il est impossible de &quot;ré-initialiser&quot; son mot de passe en cas de
+perte de celui-ci.</p>
+<ul>
+<li><p><strong>Raisons</strong></p>
+<ol class="arabic simple">
+<li><p>Les services permettant de ré-initialiser le mot de passe
+nécessitent l'envoi d'un email par le serveur. Le serveur
+CryptPad n'a pas accès aux adresses emails et ne peut donc pas
+effectuer cette tâche.</p></li>
+<li><p>S'il était possible aux administrateurs de changer le mot de
+passe d'un compte utilisateur, cela signifierait qu'ils
+pourraient le changer à tout moment et accéder aux données, ce
+que nous ne voulons pas.</p></li>
+</ol>
+</li>
+<li><p><strong>Dans CryptPad</strong></p>
+<ul>
+<li><p>Aucun système n'est actuellement en place pour retrouver son
+mot de passe en cas de perte.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Toutes les données stockées dans la base de données sont chiffrées
+avant d'être envoyées au serveur. Il y a 2 systèmes principaux pour
+stocker des données sur le serveur :</p>
+<ul>
+<li><p>Pour les comptes utilisateurs et les pads/documents modifiables,
+notre librairie <a class="reference external" href="https://github.com/xwiki-contrib/chainpad">ChainPad</a> est généralement utilisée. Elle permet
+lors de la modification d'un document de créer un &quot;patch&quot;
+contenant les différences par rapport à l'état précédent. Ce patch
+est alors chiffré et envoyé au serveur pour être redirigé vers les
+autres participants du document et être stocké dans la base de
+données. Les documents sont donc principalement stockés sous forme
+d'une suite de patchs permettant de les reconstruire à partir d'un
+point de départ donné.</p></li>
+<li><p>Pour les fichiers statiques non-modifiables (image, vidéo, pdf,
+etc.) qui peuvent être stockés dans le compte ou intégrés aux
+documents, ils sont simplement chiffrés dans le navigateur du
+client et envoyés au serveur pour y être stockés tels quels.</p></li>
+<li><p><strong>A noter</strong> : les &quot;comptes utilisateurs&quot; avec leur drive sont
+considérés comme des &quot;documents modifiables&quot; et sont donc
+impossible à différencier dans la base de données d'un document
+texte par exemple.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="content-security-policy-csp-et-securite">
+<h2>Content Security Policy (CSP) et sécurité<a class="headerlink" href="#content-security-policy-csp-et-securite" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Le fonctionnement même de la plupart des applications dans CryptPad est
+basé sur la collaboration entre différents utilisateurs. Ces
+applications permettent alors à un utilisateur d'écrire du contenu qui
+sera affiché dans le navigateur d'un autre. Un élément majeur consiste
+alors à <strong>empêcher un utilisateur malveillant d'envoyer du code qui sera
+exécuté par le navigateur d'un autre utilisateur</strong> (vulnerabilité de
+type XSS). Pour empêcher cette possibilité, CryptPad utilise pour cela 3
+grands mécanismes pour garantir au maximum la sécurité des données.</p>
+<p>Au premier niveau, le code contient de nombreux mécanismes pour filter
+ce qui est écrit par des utilisateurs et affiché chez d'autres afin d'y
+retirer tout ce qui ressemble à du code. Cependant, une erreur ou un
+oubli est toujours possible d'une part, et le CryptPad utilise des
+librairies externes dont le code pourrait être vulnérable suite à une
+mise à jour.</p>
+<p>Au deuxième niveau, afin d'ajouter une protection supplémentaire, le
+serveur envoie alors des règles de <strong>Content-Security-Policy</strong> aux
+navigateurs des utilisateurs. Ces règles permettent au navigateur de
+savoir ce qu'il peut effectuer sans risque et ce qui est bloqué car
+potentiellement dangereux. Elles sont nombreuses mais les principales
+pour les contributeurs concernent le JavaScript :</p>
+<ul class="simple">
+<li><p>Il est impossible de charger du code JavaScript depuis un site
+externe (CDN). Tous les fichiers JavaScript chargés dans une page
+doivent être hébergés par le système représenté par l'adresse
+indiquée dans le champ <code class="docutils literal notranslate"><span class="pre">httpUnsafeOrigin</span></code> du fichier de
+configuration.</p></li>
+<li><p>Il est impossible d'exécuter du JavaScript &quot;inline&quot;, c'est-à-dire en
+utilisant des attributs HTML du type
+<code class="docutils literal notranslate"><span class="pre">&lt;span</span> <span class="pre">onclick=&quot;alert('test');&quot;&gt;Click&lt;/span&gt;</span></code>. Les gestionnaires
+d'évènements doivent être ajoutés depuis le code JavaScript
+directement : <code class="docutils literal notranslate"><span class="pre">span.addEventListener('click',</span> <span class="pre">onClick);</span></code>.</p></li>
+<li><p>Il est impossible d'évaluer une chaîne de caractère en tant que code
+avec la fonction JavaScript <code class="docutils literal notranslate"><span class="pre">eval()</span></code>.</p></li>
+</ul>
+<p>Enfin, au troisième niveau, si vraiment une faille &quot;XSS&quot; est présente et
+que les règles CSP arrivent à être contournées, un dernier mécanisme
+permet de protéger un compte CryptPad des utilisateurs malveillants.
+CryptPad fonctionne avec un système de &quot;sandbox&quot; : toute l'interface est
+ainsi créée dans une iframe ouverte sur une origine HTTP différente de
+celle de l'onglet du navigateur, qui contient l'ensemble des données de
+votre compte utilisateur. Dans une instance de développement, cette
+séparation est effectuée en utilisant 2 ports différents :
+<code class="docutils literal notranslate"><span class="pre">http://localhost:3000</span></code> pour l'onglet principal et
+<code class="docutils literal notranslate"><span class="pre">http://localhost:3001</span></code> pour l'iframe sandbox. L'intégralité de
+l'interface collaborative étant présente dans cette iframe, si du code
+venait à être injecté par un autre utilisateur, il ne pourrait être
+exécuté qu'à ce niveau. La différence d'origine entre la sandbox et le
+reste du code protègerait le reste de votre compte d'être récupéré par
+un utilisateur. <strong>L'utilisateur malveillant ne pourrait donc récupérer
+que les données présentes dans le document auquel il a déjà accès</strong>.</p>
+</div>
+<div class="section" id="personnalisation">
+<h2>Personnalisation<a class="headerlink" href="#personnalisation" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Lors de l'écriture de code pour CryptPad, il est important de se
+souvenir qu'il existe de nombreuses instances de CryptPad et que les
+administrateurs de celles-ci souhaitent parfois personnaliser des
+éléments de l'interface ou le fonctionnement de certains outils.</p>
+<p>Afin de faciliter la mise à jour vers une version plus récente de
+CryptPad lorsque de telles modifications sont présentes, les éléments
+estimés personnalisables sans risque par l'équipe de développement sont
+stockés dans le dossier <code class="docutils literal notranslate"><span class="pre">customize.dist</span></code>. Chaque fichier stocké dans
+ce répertoire peut être modifié en créant un dossier <code class="docutils literal notranslate"><span class="pre">customize</span></code> et en
+copiant le fichier d'origine. Si un fichier existe dans <code class="docutils literal notranslate"><span class="pre">customize</span></code>,
+il sera alors fourni aux utilisateurs à la place de son homonyme dans
+<code class="docutils literal notranslate"><span class="pre">customize.dist</span></code>.</p>
+<p>La plupart des images, logos et des fichiers de style LESS sont donc
+placés dans <code class="docutils literal notranslate"><span class="pre">customize.dist</span></code> afin de pouvoir être facilement
+modifiables. Les modifications locales effectuées dans <code class="docutils literal notranslate"><span class="pre">customize</span></code>
+sont ignorées par Git et ne peuvent donc pas être envoyées comme
+contributions.</p>
+</div>
+<div class="section" id="architecture-du-code">
+<h2>Architecture du code<a class="headerlink" href="#architecture-du-code" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Plusieurs points important concernant le code sont à respecter au
+maximum lors de contributions à CryptPad :</p>
+<ul class="simple">
+<li><p>Tout le code JavaScript du client doit respecter les standards ES5
+(ECMAScript Edition 5).</p></li>
+<li><p>Le code de style est écrit au format LESS.</p>
+<ul>
+<li><p>Rappel : aucune étape de build/compilation n'est requise durant le
+développement.</p></li>
+</ul>
+</li>
+<li><p>CryptPad utilise un système de sandbox (détaillé dans la suite de ce
+guide) pour contenir toute l'interface des outils collaboratifs.
+Lorsque du code doit toucher au contenu du drive, aux équipes, aux
+contacts ou à tout autre élément ne devant pas être accessible aux
+autres utilisateurs, ce code doit se trouver en dehors de la sandbox.</p></li>
+<li><p>CryptPad utilise la technologie SharedWorker (quand le navigateur la
+supporte) pour partager un &quot;thread&quot; entre tous les onglets du
+navigateur ouvert sur la même instance CryptPad. Le code qui concerne
+toutes les applications de CryptPad peut être placé à ce niveau
+(détaillé dans la suite de ce guide) afin d'éviter de l'exécuter une
+fois dans chaque onglet.</p></li>
+</ul>
+</div>
+<div class="section" id="cles-de-traduction">
+<h2>Clés de traduction<a class="headerlink" href="#cles-de-traduction" title="Lien permanent vers ce titre">¶</a></h2>
+<p>CryptPad est traduit officiellement (par l'équipe de développement) en
+anglais (langue par défaut) et en français. De nombreuses autres langues
+sont disponibles, mais les traductions sont effectuées par la communauté
+via notre plateforme <a class="reference external" href="https://weblate.cryptpad.fr">Weblate</a>.</p>
+<p>Les clés de traductions pouvant être traduites sur Weblate doivent être
+ajoutées manuellement par l'équipe de développement. Pour faciliter
+l'intégration des contributions, nous demandons de <strong>ne pas ajouter
+directement de clé de traduction dans le fihcier de traduction</strong>. Les
+clés de traduction à ajouter peuvent être indiquées soit dans le message
+accompagnant la &quot;pull request&quot;, soit en commentaire dans le code
+directement. Lorsqu'une telle clé doit être ajoutée, il est préférable
+d'inclure (si possible) au moins soit une version anglaise, soit une
+version française du texte.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="code.html" class="btn btn-neutral float-right" title="Code" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="contribute.html" class="btn btn-neutral" title="Contribuer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, CryptPad Team.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a modified <a href="https://github.com/rtfd/sphinx_rtd_theme">RTD theme</a>.<br/>
+  <a href="https://cryptpad.fr" title="CryptPad flagship instance">CryptPad flagship instance</a> |
+  <a href="#" title="The Gitlab instance to edit this pages and collaborate.">Git repository for docs.cryptpad.fr </a>
+  . 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'3.19.0',
+            LANGUAGE:'fr',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>
