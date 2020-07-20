@@ -11,6 +11,7 @@ CryptPad Documentation
    :hidden:
 
    user_guide/index
+   dev_guide/index
    how_to_contribute
 
 
