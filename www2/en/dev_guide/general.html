@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Les URLs “safe” et “unsafe” &mdash; CryptPad 3.19.0 documentation</title>
+  <title>Généralités &mdash; CryptPad 3.19.0 documentation</title>
   
 
   
@@ -269,24 +269,24 @@
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="reference internal" href="code.html">Code</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Les URLs “safe” et “unsafe”</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#exemple">Exemple</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Généralités</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#les-urls-safe-et-unsafe">Les URLs “safe” et “unsafe”</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#structure-en-5-niveaux">Structure en 5 niveaux</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#chiffrement">Chiffrement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#drive-et-journal-de-pins">Drive et journal de “pins”</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#exemple">Exemple</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#structure-en-5-niveaux">Structure en 5 niveaux</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#chiffrement">Chiffrement</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#drive-et-journal-de-pins">Drive et journal de “pins”</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#exemple-1">Exemple</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#inscription-connexion-et-block">Inscription, connexion et block</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#exemple-2">Exemple</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#inscription-connexion-et-block">Inscription, connexion et block</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#exemple-2">Exemple</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#communication-client-serveur-netflux">Communication client-serveur (Netflux)</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#cote-serveur">Côté serveur</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#cote-client">Côté client</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#exemple-3">Exemple</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#communication-client-serveur-netflux">Communication client-serveur (Netflux)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#cote-serveur">Côté serveur</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#cote-client">Côté client</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#exemple-3">Exemple</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="common.html">Common</a><ul>
@@ -365,7 +365,7 @@
         
           <li><a href="code.html">Code</a> &raquo;</li>
         
-      <li>Les URLs “safe” et “unsafe”</li>
+      <li>Généralités</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -388,8 +388,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="les-urls-safe-et-unsafe">
-<h1>Les URLs “safe” et “unsafe”<a class="headerlink" href="#les-urls-safe-et-unsafe" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="generalites">
+<h1>Généralités<a class="headerlink" href="#generalites" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="les-urls-safe-et-unsafe">
+<h2>Les URLs “safe” et “unsafe”<a class="headerlink" href="#les-urls-safe-et-unsafe" title="Permalink to this headline">¶</a></h2>
 <p>La configuration du serveur fait état de 2 URLs différentes, via les
 champs “httpUnsafeOrigin” et “httpSafeOrigin”. Par défaut, sur une
 instance de développement, ce sont les adresses
@@ -410,20 +412,13 @@ utilisateur” a été placée dans une iframe prenant l’intégralité de la
 fenêtre et ouverte sur l’URL <strong>safe</strong>. Le niveau de base, parent de
 l’iframe, qui contient les données sensibles et quant à lui ouvert sur
 l’URL <strong>unsafe</strong> fournie aux utilisateurs.</p>
-<div class="section" id="exemple">
-<h2>Exemple<a class="headerlink" href="#exemple" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Dans un système en production, il est possible d’utiliser des</p>
-</div>
-<p>sous-domaines différents ou même des domaines différents pour
-représenter ces 2 origines. Par exemple, sur l’instance gérée par les
-développeurs, l’URL unsafe est <code class="docutils literal notranslate"><span class="pre">https://cryptpad.fr</span></code> et l’URL safe est
-<code class="docutils literal notranslate"><span class="pre">https://sandbox.cryptpad.info/.</span></code></p>
+<p>Dans un système en production, il est possible d’utiliser des sous-domaines différents ou même des domaines différents pour représenter ces 2 origines. Par exemple, sur l’instance gérée par les développeurs, l’URL unsafe est <code class="docutils literal notranslate"><span class="pre">https://cryptpad.fr</span></code> et l’URL safe est <code class="docutils literal notranslate"><span class="pre">https://sandbox.cryptpad.info/.</span></code></p>
 </div>
 </div>
 <div class="section" id="structure-en-5-niveaux">
-<h1>Structure en 5 niveaux<a class="headerlink" href="#structure-en-5-niveaux" title="Permalink to this headline">¶</a></h1>
+<h2>Structure en 5 niveaux<a class="headerlink" href="#structure-en-5-niveaux" title="Permalink to this headline">¶</a></h2>
 <p>Le code de CryptPad est réparti dans 5 niveaux distincts, 2 côté serveur
 et 3 côté clients.</p>
 <ul class="simple">
@@ -469,7 +464,7 @@ n’avoir à lancer qu’une seule connexion Websocket avec le serveur.</p></li>
 </ul>
 </div>
 <div class="section" id="chiffrement">
-<h1>Chiffrement<a class="headerlink" href="#chiffrement" title="Permalink to this headline">¶</a></h1>
+<h2>Chiffrement<a class="headerlink" href="#chiffrement" title="Permalink to this headline">¶</a></h2>
 <p>CryptPad utilise plusieurs systèmes de chiffrements adaptés aux
 différents cas d’utilisation. Ces systèmes sont utilisés avec la
 librairie <a class="reference external" href="https://github.com/dchest/tweetnacl-js">TweetNaCl</a>.</p>
@@ -559,7 +554,7 @@ cryptographique que nous sommes l’expéditeur du message.</p></li>
 </ul>
 </div>
 <div class="section" id="drive-et-journal-de-pins">
-<h1>Drive et journal de “pins”<a class="headerlink" href="#drive-et-journal-de-pins" title="Permalink to this headline">¶</a></h1>
+<h2>Drive et journal de “pins”<a class="headerlink" href="#drive-et-journal-de-pins" title="Permalink to this headline">¶</a></h2>
 <p>Le compte utilisateur, comprenant les clés cryptographiques associées,
 le drive, les contacts et les équipes, est stocké dans la base de
 données de la même manière qu’un document collaboratif CryptPad
@@ -581,45 +576,42 @@ identifiants de tous les documents collaboratifs stockés dans le drive
 de l’utilisateur concerné. Lorsque le serveur doit supprimer des
 documents pour cause d’inactivité, il peut vérifier qu’ils ne sont
 présents dans aucune liste de pins.</p>
-<div class="section" id="exemple-1">
-<span id="id1"></span><h2>Exemple<a class="headerlink" href="#exemple-1" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">//</span> <span class="n">Drive</span>
+<div class="section" id="exemple">
+<span id="exemple-1"></span><h3>Exemple<a class="headerlink" href="#exemple" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// Drive</span>
 <span class="p">{</span>
-  <span class="s2">&quot;root&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="s2">&quot;Folder&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="s2">&quot;e76245241314a65dacfe13b1c34b4fa7&quot;</span><span class="p">:</span> <span class="mi">842390975368</span>
+  <span class="s2">&quot;root&quot;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&quot;Folder&quot;</span><span class="o">:</span> <span class="p">{</span>
+      <span class="s2">&quot;e76245241314a65dacfe13b1c34b4fa7&quot;</span><span class="o">:</span> <span class="mi">842390975368</span>
     <span class="p">},</span>
-    <span class="s2">&quot;0c1bf2c6be2cd5eaafd2b2bd1a4043ea&quot;</span><span class="p">:</span> <span class="mi">937347739064</span>
+    <span class="s2">&quot;0c1bf2c6be2cd5eaafd2b2bd1a4043ea&quot;</span><span class="o">:</span> <span class="mi">937347739064</span>
   <span class="p">},</span>
-  <span class="s2">&quot;filesData&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="s2">&quot;937347739064&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Rich text 1&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;atime&quot;</span><span class="p">:</span> <span class="mi">1594892373553</span><span class="p">,</span>
-      <span class="s2">&quot;ctime&quot;</span><span class="p">:</span> <span class="mi">1594892373553</span><span class="p">,</span>
-      <span class="s2">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://localhost:3000/pad/#/2/pad/edit/D3YorVnQYakniVbj+fgdq7tx/&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;channel&quot;</span><span class="p">:</span> <span class="s2">&quot;2e44fb409dc333f0008a3bae4a74f032&quot;</span>
+  <span class="s2">&quot;filesData&quot;</span><span class="o">:</span> <span class="p">{</span>
+    <span class="s2">&quot;937347739064&quot;</span><span class="o">:</span> <span class="p">{</span>
+      <span class="s2">&quot;title&quot;</span><span class="o">:</span> <span class="s2">&quot;Rich text 1&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;atime&quot;</span><span class="o">:</span> <span class="mi">1594892373553</span><span class="p">,</span>
+      <span class="s2">&quot;ctime&quot;</span><span class="o">:</span> <span class="mi">1594892373553</span><span class="p">,</span>
+      <span class="s2">&quot;href&quot;</span><span class="o">:</span> <span class="s2">&quot;http://localhost:3000/pad/#/2/pad/edit/D3YorVnQYakniVbj+fgdq7tx/&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;channel&quot;</span><span class="o">:</span> <span class="s2">&quot;2e44fb409dc333f0008a3bae4a74f032&quot;</span>
     <span class="p">},</span>
-    <span class="s2">&quot;842390975368&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;Markdown document&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;atime&quot;</span><span class="p">:</span> <span class="mi">1594814836987</span><span class="p">,</span>
-      <span class="s2">&quot;ctime&quot;</span><span class="p">:</span> <span class="mi">1594814831653</span><span class="p">,</span>
-      <span class="s2">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://localhost:3000/code/#/2/code/edit/0WKVNAeUzgSs+WtIQQmhkwiw/&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;channel&quot;</span><span class="p">:</span> <span class="s2">&quot;f0b3fa6aaa4a1285f68c3329f4fc9e86&quot;</span>
+    <span class="s2">&quot;842390975368&quot;</span><span class="o">:</span> <span class="p">{</span>
+      <span class="s2">&quot;title&quot;</span><span class="o">:</span> <span class="s2">&quot;Markdown document&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;atime&quot;</span><span class="o">:</span> <span class="mi">1594814836987</span><span class="p">,</span>
+      <span class="s2">&quot;ctime&quot;</span><span class="o">:</span> <span class="mi">1594814831653</span><span class="p">,</span>
+      <span class="s2">&quot;href&quot;</span><span class="o">:</span> <span class="s2">&quot;http://localhost:3000/code/#/2/code/edit/0WKVNAeUzgSs+WtIQQmhkwiw/&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;channel&quot;</span><span class="o">:</span> <span class="s2">&quot;f0b3fa6aaa4a1285f68c3329f4fc9e86&quot;</span>
     <span class="p">}</span>
   <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="o">//</span> <span class="n">Pins</span>
+<span class="c1">// Pins</span>
 <span class="p">[</span><span class="s2">&quot;2e44fb409dc333f0008a3bae4a74f032&quot;</span><span class="p">,</span> <span class="s2">&quot;f0b3fa6aaa4a1285f68c3329f4fc9e86&quot;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 </div>
 <div class="section" id="inscription-connexion-et-block">
-<h1>Inscription, connexion et block<a class="headerlink" href="#inscription-connexion-et-block" title="Permalink to this headline">¶</a></h1>
+<h2>Inscription, connexion et block<a class="headerlink" href="#inscription-connexion-et-block" title="Permalink to this headline">¶</a></h2>
 <p>Un compte utilisateur est donc composé d’un document collaboratif
 contenant le drive ainsi que d’une liste de “pins”. Un troisième élément
 est également stocké pour les comptes utilisateurs afin de pouvoir gérer
@@ -666,7 +658,7 @@ sont gardées en mémoire dans le <strong>localStorage</strong> du navigateur (p
 domaine “unsafe”). Se déconnecter revient donc à supprimer ces clés du
 localStorage.</p>
 <div class="section" id="exemple-2">
-<span id="id2"></span><h2>Exemple<a class="headerlink" href="#exemple-2" title="Permalink to this headline">¶</a></h2>
+<span id="id1"></span><h3>Exemple<a class="headerlink" href="#exemple-2" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Exemple de clés de connexion (clés d’accès au block et de
 chiffrement) sur cryptpad.fr</p>
@@ -684,7 +676,7 @@ signature) sur cryptpad.fr</p>
 </div>
 </div>
 <div class="section" id="communication-client-serveur-netflux">
-<h1>Communication client-serveur (Netflux)<a class="headerlink" href="#communication-client-serveur-netflux" title="Permalink to this headline">¶</a></h1>
+<h2>Communication client-serveur (Netflux)<a class="headerlink" href="#communication-client-serveur-netflux" title="Permalink to this headline">¶</a></h2>
 <p>La communication entre le client et le serveur s’effectue dans la grande
 majorité des cas via une connexion Websocket. Cette connexion est basée
 sur une implémentation du protocole
@@ -695,26 +687,13 @@ et qui sont récupérés par les utilisateurs en XHR (téléchargement du
 fichier chiffré complet).</p>
 <p>Avec le protocole Netflux, les utilsateurs créent un “network” qu’ils
 utilisent ensuite pour effectuer plusieurs types d’opérations. <strong>Les
-points importants</strong> concernant l’implémentation du protocole sont : *
-Chaque utilisateur est identifié par une chaîne hexadécimale de 32
-caractères appelée <strong>netfluxId</strong>. Cet identifiant est généré par le
-serveur et est créé pour chaque connexion Websocket. Un utilisateur qui
-ouvre CryptPad via 2 navigateurs différents en même temps aura un
-netfluxId pour chaque navigateur (pour chaque connexion au serveur). Cet
-identifiant change donc a chaque nouvelle connexion, aucun mécanisme
-n’existe pour préserver l’identifiant d’un utilisateur entre différentes
-sessions. * Un utilisateur peut rejoindre des salons et y envoyer des
-messages. Tous les membres du salon reçoivent les messages. Chaque
-document collaboratif ouvert sur CryptPad est représenté par un salon
-sur le serveur avec un identifiant unique. * L’identifiant des salons
-est également une chaîne hexadécimale de 32 caractères appelée
-<strong>channelId</strong> ou <strong>channel</strong>. Le channelId associé a un document est
-dérivé de son URL, afin qu’il soit connu de tous les utilisateurs y
-ayant accès. * Les utilisateurs peuvent s’envoyer des messages directs
-entre eux sans passer par un salon, à condition qu’ils connaissent le
-“netfluxId” du destinataire.</p>
+points importants</strong> concernant l’implémentation du protocole sont :
+-  Chaque utilisateur est identifié par une chaîne hexadécimale de 32 caractères appelée <strong>netfluxId</strong>. Cet identifiant est généré par le serveur et est créé pour chaque connexion Websocket. Un utilisateur qui ouvre CryptPad via 2 navigateurs différents en même temps aura un netfluxId pour chaque navigateur (pour chaque connexion au serveur). Cet identifiant change donc a chaque nouvelle connexion, aucun mécanisme n’existe pour préserver l’identifiant d’un utilisateur entre différentes sessions.
+-  Un utilisateur peut rejoindre des salons et y envoyer des messages. Tous les membres du salon reçoivent les messages. Chaque document collaboratif ouvert sur CryptPad est représenté par un salon sur le serveur avec un identifiant unique.
+-  L’identifiant des salons est également une chaîne hexadécimale de 32 caractères appelée <strong>channelId</strong> ou <strong>channel</strong>. Le channelId associé a un document est dérivé de son URL, afin qu’il soit connu de tous les utilisateurs y ayant accès.
+-  Les utilisateurs peuvent s’envoyer des messages directs entre eux sans passer par un salon, à condition qu’ils connaissent le “netfluxId” du destinataire.</p>
 <div class="section" id="cote-serveur">
-<h2>Côté serveur<a class="headerlink" href="#cote-serveur" title="Permalink to this headline">¶</a></h2>
+<h3>Côté serveur<a class="headerlink" href="#cote-serveur" title="Permalink to this headline">¶</a></h3>
 <p>Au niveau du serveur, Netflux est implémenté via le module npm
 “chainpad-server” :
 <code class="docutils literal notranslate"><span class="pre">./node_modules/chainpad-server/NetfluxWebsocketSrv.js</span></code>. Ce module
@@ -749,7 +728,7 @@ base de données et son code est donc séparé dans de nombreux fichiers.
 La base se trouve dans <code class="docutils literal notranslate"><span class="pre">./lib/historyKeeper.js</span></code></p>
 </div>
 <div class="section" id="cote-client">
-<h2>Côté client<a class="headerlink" href="#cote-client" title="Permalink to this headline">¶</a></h2>
+<h3>Côté client<a class="headerlink" href="#cote-client" title="Permalink to this headline">¶</a></h3>
 <p>Au niveau du client, un module “bower” permet de gérer le protocole
 Netflux avec des APIs simples. Le module se trouve dans
 <code class="docutils literal notranslate"><span class="pre">./www/bower_components/netflux-websocket/netflux-client.js</span></code>. Une fois
@@ -759,54 +738,50 @@ courant dans au niveau du serveur.</p>
 <p>Ce “network” contient la <strong>liste des salons</strong> rejoints par
 l’utilisateur, ainsi que la <strong>liste des membres</strong> présents dans chaque
 salon. Il permet d’effectuer toutes les opérations permises par le
-protocole : * Rejoindre un salon :
-<code class="docutils literal notranslate"><span class="pre">(Promise)</span> <span class="pre">network.join(channelId)</span></code> (fournit un object <code class="docutils literal notranslate"><span class="pre">channel</span></code>) *
-Envoyer un message privé :
-<code class="docutils literal notranslate"><span class="pre">(Promise)</span> <span class="pre">network.sendTo(netfluxId,</span> <span class="pre">message)</span></code> * Obtenir la liste des
-salons : <code class="docutils literal notranslate"><span class="pre">(Array)</span> <span class="pre">network.webChannels</span></code> * Écouter des évènements dans
-un network : <code class="docutils literal notranslate"><span class="pre">network.on('message',</span> <span class="pre">handler)</span></code> (évènements: message,
-disconnect)</p>
-<p>Et pour chaque salon obtenu via “network.join” : * Envoyer un message :
-<code class="docutils literal notranslate"><span class="pre">(Promise)</span> <span class="pre">channel.bcast(message)</span></code> * Quitter un salon :
-<code class="docutils literal notranslate"><span class="pre">channel.leave(reason)</span></code> * Écouter des évènements :
-<code class="docutils literal notranslate"><span class="pre">channel.on('message',</span> <span class="pre">handler)</span></code> (évènements: message, join, leave) *
-Obtenir l’identifiant du salon : <code class="docutils literal notranslate"><span class="pre">(String)</span> <span class="pre">channel.id</span></code> * Obtenir la
-liste des membres : <code class="docutils literal notranslate"><span class="pre">(Array)</span> <span class="pre">channel.members</span></code></p>
+protocole :
+-  Rejoindre un salon : <code class="docutils literal notranslate"><span class="pre">(Promise)</span> <span class="pre">network.join(channelId)</span></code> (fournit un object <code class="docutils literal notranslate"><span class="pre">channel</span></code>)
+-  Envoyer un message privé : <code class="docutils literal notranslate"><span class="pre">(Promise)</span> <span class="pre">network.sendTo(netfluxId,</span> <span class="pre">message)</span></code>
+-  Obtenir la liste des salons : <code class="docutils literal notranslate"><span class="pre">(Array)</span> <span class="pre">network.webChannels</span></code>
+-  Écouter des évènements dans un network : <code class="docutils literal notranslate"><span class="pre">network.on('message',</span> <span class="pre">handler)</span></code> (évènements: message, disconnect)</p>
+<p>Et pour chaque salon obtenu via “network.join” :
+-  Envoyer un message : <code class="docutils literal notranslate"><span class="pre">(Promise)</span> <span class="pre">channel.bcast(message)</span></code>
+-  Quitter un salon : <code class="docutils literal notranslate"><span class="pre">channel.leave(reason)</span></code>
+-  Écouter des évènements : <code class="docutils literal notranslate"><span class="pre">channel.on('message',</span> <span class="pre">handler)</span></code> (évènements: message, join, leave)
+-  Obtenir l’identifiant du salon : <code class="docutils literal notranslate"><span class="pre">(String)</span> <span class="pre">channel.id</span></code>
+-  Obtenir la liste des membres : <code class="docutils literal notranslate"><span class="pre">(Array)</span> <span class="pre">channel.members</span></code></p>
 </div>
 <div class="section" id="exemple-3">
-<span id="id3"></span><h2>Exemple<a class="headerlink" href="#exemple-3" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">//</span> <span class="n">Clientside</span>
-<span class="n">var</span> <span class="n">channelId</span> <span class="o">=</span> <span class="s2">&quot;f0b3fa6aaa4a1285f68c3329f4fc9e86&quot;</span><span class="p">;</span>
-<span class="n">Netflux</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="s1">&#39;ws://lcoalhost:3000/cryptpad_websocket&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">function</span> <span class="p">(</span><span class="n">network</span><span class="p">)</span> <span class="p">{}</span>
-  <span class="o">//</span> <span class="n">on</span> <span class="n">success</span>
+<span id="id2"></span><h3>Exemple<a class="headerlink" href="#exemple-3" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// Clientside</span>
+<span class="kd">var</span> <span class="nx">channelId</span> <span class="o">=</span> <span class="s2">&quot;f0b3fa6aaa4a1285f68c3329f4fc9e86&quot;</span><span class="p">;</span>
+<span class="nx">Netflux</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="s1">&#39;ws://lcoalhost:3000/cryptpad_websocket&#39;</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">network</span><span class="p">)</span> <span class="p">{}</span>
+  <span class="c1">// on success</span>
 
-  <span class="n">network</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">channelId</span><span class="p">)</span><span class="o">.</span><span class="n">then</span><span class="p">(</span><span class="n">function</span> <span class="p">(</span><span class="n">channel</span><span class="p">)</span> <span class="p">{</span>
-    <span class="o">//</span> <span class="n">on</span> <span class="n">success</span>
+  <span class="nx">network</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">channelId</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">channel</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// on success</span>
 
-    <span class="o">//</span> <span class="n">listen</span> <span class="k">for</span> <span class="n">new</span> <span class="n">messages</span>
-    <span class="n">channel</span><span class="o">.</span><span class="n">on</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span> <span class="n">function</span> <span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">senderNetfluxId</span><span class="p">)</span> <span class="p">{</span>
-      <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s1">&#39;Message received:&#39;</span> <span class="o">+</span> <span class="n">message</span><span class="p">);</span>
+    <span class="c1">// listen for new messages</span>
+    <span class="nx">channel</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">senderNetfluxId</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Message received:&#39;</span> <span class="o">+</span> <span class="nx">message</span><span class="p">);</span>
     <span class="p">});</span>
-    <span class="o">//</span> <span class="n">send</span> <span class="n">a</span> <span class="n">message</span>
-    <span class="n">channel</span><span class="o">.</span><span class="n">bcast</span><span class="p">(</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">);</span>
+    <span class="c1">// send a message</span>
+    <span class="nx">channel</span><span class="p">.</span><span class="nx">bcast</span><span class="p">(</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">);</span>
 
-  <span class="p">},</span> <span class="n">function</span> <span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
-    <span class="o">//</span> <span class="n">on</span> <span class="n">error</span>
+  <span class="p">},</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// on error</span>
 
-    <span class="n">console</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">error</span><span class="p">);</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
 
   <span class="p">});</span>
 
-<span class="p">},</span> <span class="n">function</span> <span class="p">(</span><span class="n">error</span><span class="p">)</span> <span class="p">{</span>
-  <span class="o">//</span> <span class="n">on</span> <span class="n">error</span>
+<span class="p">},</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// on error</span>
 
-  <span class="n">console</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">error</span><span class="p">);</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
 
 <span class="p">});</span>
 </pre></div>
+</div>
 </div>
 </div>
 </div>

@@ -1,3 +1,6 @@
+Généralités
+###########
+
 Les URLs “safe” et “unsafe”
 ---------------------------
 
@@ -23,14 +26,7 @@ fenêtre et ouverte sur l’URL **safe**. Le niveau de base, parent de
 l’iframe, qui contient les données sensibles et quant à lui ouvert sur
 l’URL **unsafe** fournie aux utilisateurs.
 
-Exemple
-~~~~~~~
-
-.. note:: Dans un système en production, il est possible d’utiliser des
-sous-domaines différents ou même des domaines différents pour
-représenter ces 2 origines. Par exemple, sur l’instance gérée par les
-développeurs, l’URL unsafe est ``https://cryptpad.fr`` et l’URL safe est
-``https://sandbox.cryptpad.info/.``
+.. note:: Dans un système en production, il est possible d’utiliser des sous-domaines différents ou même des domaines différents pour représenter ces 2 origines. Par exemple, sur l’instance gérée par les développeurs, l’URL unsafe est ``https://cryptpad.fr`` et l’URL safe est ``https://sandbox.cryptpad.info/.``
 
 Structure en 5 niveaux
 ----------------------
@@ -195,8 +191,6 @@ Exemple
 
 .. code-block:: javascript
 
-::
-
    // Drive
    {
      "root": {
@@ -309,24 +303,11 @@ fichier chiffré complet).
 
 Avec le protocole Netflux, les utilsateurs créent un “network” qu’ils
 utilisent ensuite pour effectuer plusieurs types d’opérations. **Les
-points importants** concernant l’implémentation du protocole sont : \*
-Chaque utilisateur est identifié par une chaîne hexadécimale de 32
-caractères appelée **netfluxId**. Cet identifiant est généré par le
-serveur et est créé pour chaque connexion Websocket. Un utilisateur qui
-ouvre CryptPad via 2 navigateurs différents en même temps aura un
-netfluxId pour chaque navigateur (pour chaque connexion au serveur). Cet
-identifiant change donc a chaque nouvelle connexion, aucun mécanisme
-n’existe pour préserver l’identifiant d’un utilisateur entre différentes
-sessions. \* Un utilisateur peut rejoindre des salons et y envoyer des
-messages. Tous les membres du salon reçoivent les messages. Chaque
-document collaboratif ouvert sur CryptPad est représenté par un salon
-sur le serveur avec un identifiant unique. \* L’identifiant des salons
-est également une chaîne hexadécimale de 32 caractères appelée
-**channelId** ou **channel**. Le channelId associé a un document est
-dérivé de son URL, afin qu’il soit connu de tous les utilisateurs y
-ayant accès. \* Les utilisateurs peuvent s’envoyer des messages directs
-entre eux sans passer par un salon, à condition qu’ils connaissent le
-“netfluxId” du destinataire.
+points importants** concernant l’implémentation du protocole sont :
+-  Chaque utilisateur est identifié par une chaîne hexadécimale de 32 caractères appelée **netfluxId**. Cet identifiant est généré par le serveur et est créé pour chaque connexion Websocket. Un utilisateur qui ouvre CryptPad via 2 navigateurs différents en même temps aura un netfluxId pour chaque navigateur (pour chaque connexion au serveur). Cet identifiant change donc a chaque nouvelle connexion, aucun mécanisme n’existe pour préserver l’identifiant d’un utilisateur entre différentes sessions.
+-  Un utilisateur peut rejoindre des salons et y envoyer des messages. Tous les membres du salon reçoivent les messages. Chaque document collaboratif ouvert sur CryptPad est représenté par un salon sur le serveur avec un identifiant unique.
+-  L’identifiant des salons est également une chaîne hexadécimale de 32 caractères appelée **channelId** ou **channel**. Le channelId associé a un document est dérivé de son URL, afin qu’il soit connu de tous les utilisateurs y ayant accès.
+-  Les utilisateurs peuvent s’envoyer des messages directs entre eux sans passer par un salon, à condition qu’ils connaissent le “netfluxId” du destinataire.
 
 Côté serveur
 ~~~~~~~~~~~~
@@ -377,20 +358,18 @@ courant dans au niveau du serveur.
 Ce “network” contient la **liste des salons** rejoints par
 l’utilisateur, ainsi que la **liste des membres** présents dans chaque
 salon. Il permet d’effectuer toutes les opérations permises par le
-protocole : \* Rejoindre un salon :
-``(Promise) network.join(channelId)`` (fournit un object ``channel``) \*
-Envoyer un message privé :
-``(Promise) network.sendTo(netfluxId, message)`` \* Obtenir la liste des
-salons : ``(Array) network.webChannels`` \* Écouter des évènements dans
-un network : ``network.on('message', handler)`` (évènements: message,
-disconnect)
+protocole :
+-  Rejoindre un salon : ``(Promise) network.join(channelId)`` (fournit un object ``channel``)
+-  Envoyer un message privé : ``(Promise) network.sendTo(netfluxId, message)``
+-  Obtenir la liste des salons : ``(Array) network.webChannels``
+-  Écouter des évènements dans un network : ``network.on('message', handler)`` (évènements: message, disconnect)
 
-Et pour chaque salon obtenu via “network.join” : \* Envoyer un message :
-``(Promise) channel.bcast(message)`` \* Quitter un salon :
-``channel.leave(reason)`` \* Écouter des évènements :
-``channel.on('message', handler)`` (évènements: message, join, leave) \*
-Obtenir l’identifiant du salon : ``(String) channel.id`` \* Obtenir la
-liste des membres : ``(Array) channel.members``
+Et pour chaque salon obtenu via “network.join” :
+-  Envoyer un message : ``(Promise) channel.bcast(message)``
+-  Quitter un salon : ``channel.leave(reason)``
+-  Écouter des évènements : ``channel.on('message', handler)`` (évènements: message, join, leave)
+-  Obtenir l’identifiant du salon : ``(String) channel.id``
+-  Obtenir la liste des membres : ``(Array) channel.members``
 
 .. _exemple-3:
 
@@ -398,8 +377,6 @@ Exemple
 ~~~~~~~
 
 .. code-block:: javascript
-
-::
 
    // Clientside
    var channelId = "f0b3fa6aaa4a1285f68c3329f4fc9e86";

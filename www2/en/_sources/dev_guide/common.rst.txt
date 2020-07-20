@@ -3,7 +3,7 @@ Common
 ======
 
 .. toctree::
-    :maxdepth: 7
+    :maxdepth: 1
     :hidden:
 
     common/crypto.rst

@@ -3,7 +3,7 @@ Code
 ====
 
 .. toctree::
-    :maxdepth: 7
+    :maxdepth: 0
     :hidden:
 
     general.rst
