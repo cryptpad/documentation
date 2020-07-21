@@ -18,7 +18,7 @@ There are three types of accounts on CryptPad:
 Non-registered user
 ~~~~~~~~~~~~~~~~~~~
 
-Non-registered users are identified by this avatar (at the top right):
+Non-registered users are identified by this avatar (at the top right): |user-secret|
 
 No personal information is necessary to use CryptPad without
 registering. However, functionality is reduced:
@@ -70,7 +70,7 @@ Fill out the following information:
 
 -  **Username**: This is the name used to log in to CryptPad, it is different from the **Display name** visible by other users. The **Username** cannot be changed once the account is created.
 
--  **Password**: It is recommended to use a strong password. The password can be changed in [user settings].
+-  **Password**: It is recommended to use a strong password. The password can be changed in :ref:`user settings <user_settings>`.
 
 .. danger::
 
@@ -153,7 +153,7 @@ CryptDrive
 
 -  **Duplicated owned pads**: When you move your owned pads to a shared folder, a copy is kept in your CryptDrive to ensure that you retain your control over it. You can hide duplicated files. Only the shared version will be visible, unless deleted, in which case the original will be displayed in its previous location.
 
--  **Thumbnails**: To help navigating the CryptDrive in [grid] mode, CryptPad can create thumbnails of documents and store them in the browser. This option is turned off by default because it can slow down the browser on less powerful computers. The **Clean** button deletes all existing thumbnails.
+-  **Thumbnails**: To help navigating the CryptDrive in :ref:`grid mode <drive_display>`, CryptPad can create thumbnails of documents and store them in the browser. This option is turned off by default because it can slow down the browser on less powerful computers. The **Clean** button deletes all existing thumbnails.
 
 -  **Backup**: Two types of backups are available.
 
@@ -171,7 +171,7 @@ Cursor
 
 -  **Cursor color**: Change the color of your cursor. This is used to
    identify you while collaborating on documents. It also determines the
-   color of your text when [color by author] is active in Code
+   color of your text when :ref:`color by author <app_code_theme>` is active in Code
    documents.
 
 -  **Share my cursor position**: Display or hide the exact position of
@@ -270,7 +270,7 @@ Notifications are displayed by the bell |bell-o| next to the avatar
 -  **Open notifications panel**: View all notifications and notification
    history.
 
-On notifications panel page:
+On the notifications panel page:
 
 -  Select the type of notification to view:
 

@@ -6,7 +6,7 @@ Collaboration / Social
 Profile
 -------
 
-:badge:`logged in users`
+:badge:`Logged in users`
 
 Each registered user on CryptPad has a profile page accessible from the
 user menu:
@@ -18,7 +18,7 @@ Personal profile
 
 The following elements can be customised on the profile page:
 
--  Avatar with |upload| **Uplaod a new avatar**
+-  Avatar with |upload| **Uplaod a new avatar**.
 -  Description with |pencil| **Add a description**.
 -  Website with **Add a link to your website**.
 
@@ -61,7 +61,9 @@ On CryptPad, using contacts makes collaboration more secure and simple.
 Add a contact
 ~~~~~~~~~~~~~
 
-On the profile page of another user: - **Send a contact request**.
+On the profile page of another user: 
+
+- **Send a contact request**.
 
 By sharing your profile:
 

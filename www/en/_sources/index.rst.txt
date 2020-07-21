@@ -6,17 +6,16 @@
 CryptPad Documentation
 ==================================================
 
+Welcome to the CryptPad documentation. This site contains 3 guides with information about using CryptPad, installing and administering the service, and contributing to the code.
+
 .. toctree::
    :maxdepth: 1
-   :hidden:
 
    user_guide/index
    how_to_contribute
 
+- Developer Guide (in progress)
+- Administrator Guide (in progress)
 
-.. Indices and tables
-.. ==================
-
-.. * :ref:`genindex`
-.. * :ref:`modindex`
-.. * :ref:`search`
+.. image:: /images/home-page.png
+   :class: screenshot

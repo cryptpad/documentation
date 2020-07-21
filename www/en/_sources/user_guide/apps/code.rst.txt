@@ -19,9 +19,11 @@ Toolbar
 chosen in the CrpytDrive or uploaded. :badge:`Logged in users`
 
 |cptools palette| **Theme**: Set colors for the editor, detailed
-[below]
+:ref:`below <app_code_theme>`.
 
 |eye| **Preview**: Show/hide the Markdown preview pane.
+
+.. _app_code_theme:
 
 Theme
 -----
@@ -80,8 +82,18 @@ Images
 It is strongly advised **not** to insert external images in documents.
 The Markdown syntax ``![description](https://site.com/image.jpg)`` is
 supported but presents security risks. Malicious code can be hidden in
-images and result in data leakeage.
+images and result in data leakage.
 
 For this reason, CryptPad makes use of ``media-tag`` to insert images
 from the CryptDrive. This syntax is more complex but it is managed
 automatically by the |picture-o| **Insert** menu.
+
+Lightbox
+--------
+
+To browse through all images and diagrams in a document using the full
+width of the window:
+
+1. ``Double click`` on an image or diagram in the Markdown preview.
+2. Navigate with the arrow keys.
+3. Close the light box with |times| or ``Esc``.
