@@ -71,6 +71,10 @@ et 3 côté clients.
       compte qu’une fois pour tous les onglets ouverts, et il permet de
       n’avoir à lancer qu’une seule connexion Websocket avec le serveur.
 
+
+.. image:: /images/dev/5levels.png
+   :class: screenshot
+
 Chiffrement
 -----------
 
