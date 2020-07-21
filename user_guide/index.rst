@@ -17,16 +17,3 @@ This guide is about using CryptPad to create, store, and collaborate on document
     collaboration
     share_and_access
     applications
-
-.. toctree::
-    :maxdepth: 1
-    :caption: Applications
-
-    apps/general
-    apps/richtext
-    apps/sheets
-    apps/code
-    apps/slides
-    apps/poll
-    apps/kanban
-    apps/whiteboard
