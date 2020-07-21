@@ -11,6 +11,8 @@ from the other pages:
 -  ``Clic`` on the logo at the top-left.
 -  User menu (avatar at the top-right) > |hdd-o| **CryptDrive**.
 
+.. _drive_display:
+
 Display
 -------
 
@@ -19,7 +21,7 @@ Documents in the CryptDrive can be displayed as a |list| list or a
 right of the CryptDrive toolbar (under the avatar).
 
 In grid mode, CryptPad can display thumbnails of documents. These can be
-turned on in the [user settings].
+turned on in the :ref:`user settings <user_settings_cryptdrive>`.
 
 .. figure:: /images/drive-grid.png
    :class: screenshot
@@ -89,8 +91,8 @@ Deleting
 
 There are two ways of deleting a document on CryptPad:
 
-- |trash| **Removing** a document means it stops appearing in the   CryptDrive but remains in the database. The document remains in the   CryptDrive of other users who have stored it. The document can be   recovered in the CryptDrive using the [history].
-- |cptools destroy| **Destroying** a document deletes it from the database permanently.   The document is deleted from all CryptDrives that store it, and it   cannot be recovered using the CryptDrive history. :badge:`Document owners`
+- |trash| **Removing** a document means it stops appearing in the CryptDrive but remains in the database. The document remains in the CryptDrive of other users who have stored it. The document can be recovered in the CryptDrive using the :ref:`history <cryptdrive_history>`.
+- |cptools destroy| **Destroying** a document deletes it from the database permanently. The document is deleted from all CryptDrives that store it, and it   cannot be recovered using the CryptDrive history. :badge:`Document owners`
 
 
 .. note::
@@ -192,7 +194,7 @@ or
 
 or
 
-1. Create a [new document].
+1. Create a :ref:`new document <new_document>`.
 2. On the creation screen select |cptools new-template| **New
    template**.
 

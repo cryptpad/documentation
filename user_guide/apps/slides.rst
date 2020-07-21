@@ -75,7 +75,7 @@ Images
 It is strongly advised **not** to insert external images in documents.
 The Markdown syntax ``![description](https://site.com/image.jpg)`` is
 supported but presents security risks. Malicious code can be embedded in
-images and result iin data leakeage.
+images and result in data leakage.
 
 For this reason, CryptPad makes use of ``media-tag`` to insert images
 from the CryptDrive. This syntax is more complex but it is managed
@@ -85,7 +85,7 @@ Lightbox
 --------
 
 To browse through all images and diagrams in a document using the full
-width of hte window:
+width of the window:
 
 1. ``Double click`` on an image or diagram in the Markdown preview.
 2. Navigate with the arrow keys.

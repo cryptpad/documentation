@@ -86,7 +86,7 @@ Available data:
 
 -  Links to edit and view (depending on your permissions).
 -  Dates of creation and last access.
--  Size
+-  Size.
 
 The document size shows the proportions used for content and for
 history. To save storage space, delete the document’s history with

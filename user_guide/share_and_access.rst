@@ -25,7 +25,7 @@ There are 4 levels of permissions:
 
 -  **View**: Read-only without editing the document.
 -  **Present**: Read-only the rendered output of the document, available
-   in the [Code] and [Slides] applications.
+   in the :ref:`app_code` and :ref:`app_slides` applications.
 -  **Edit**: View and make changes to the document.
 -  **View once and self-destruct**: Read-only **one time**. Once the
    link is opened by a recipient, the document is deleted permanently.
@@ -76,13 +76,13 @@ To copy the link to a document:
 -  From the document: |share-alt| **Share** in the toolbar > |link|
    **Link**
 -  From the CryptDrive : ``Right click`` on the document > |share-alt|
-   **Share** > |link| **Link**
+   **Share** > |link| **Link**.
 
-then
+Then:
 
 #. Choose the :ref:`access rights <share_access_rights>` and additional options:
 
-   * **Embed mode** hides the toolbar and user list
+   * **Embed mode** hides the toolbar and user list.
    * **Preview** allows to check what the link will look like before sending it.
 
 #. **Copy** the link.
@@ -128,7 +128,7 @@ To convert an existing folder into a shared folder:
 1. ``Right click`` on the folder > |share-alt| **Share**.
 2. Choose the conversion options.
    Password.
-   [Owned] folder.
+   :ref:`Owned <owners>` folder.
 3. ``OK`` or press the ``Enter`` key.
 
 Folders are shared in a similar way to documents. To share a folder from
@@ -147,7 +147,7 @@ the CryptDrive:
 
 .. note::
 
-   Shared folders have their own history, separate from the :Ref:`drive_history`. Restoring the history of the drive does not affect shared folders, conversely the history of a shared folder can be restored without affecting the rest of the drive.
+   Shared folders have their own history, separate from the :ref:`drive_history`. Restoring the history of the drive does not affect shared folders, conversely the history of a shared folder can be restored without affecting the rest of the drive.
 
 
 .. _access:
@@ -224,7 +224,7 @@ document have the following permissions:
 -  Add or remove other owners.
 -  Destroy the document.
 
-The ownership of a document is set on the [creation screen].
+The ownership of a document is set when :ref:`creating it<new_document>`.
 
 .. note::
 
