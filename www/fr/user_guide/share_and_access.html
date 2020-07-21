@@ -198,7 +198,7 @@
 <li class="toctree-l4"><a class="reference internal" href="apps/code.html#import-export">Import/Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/code.html#markdown">Markdown</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/code.html#images">Images</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/code.html#lightbox">Lightbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#lightbox">Galerie</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="apps/slides.html">Présentation</a><ul>
@@ -262,7 +262,7 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/code.html#import-export">Import/Export</a></li>
 <li class="toctree-l3"><a class="reference internal" href="apps/code.html#markdown">Markdown</a></li>
 <li class="toctree-l3"><a class="reference internal" href="apps/code.html#images">Images</a></li>
-<li class="toctree-l3"><a class="reference internal" href="apps/code.html#lightbox">Lightbox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="apps/code.html#lightbox">Galerie</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="apps/slides.html">Présentation</a><ul>
@@ -402,8 +402,7 @@
 <p>Il y a 4 types de permissions :</p>
 <ul class="simple">
 <li><p><strong>Lecture-seule</strong> : Consulter le document sans le modifier.</p></li>
-<li><p><strong>Present</strong>: Read-only the rendered output of the document, available
-in the <a class="reference internal" href="apps/code.html#app-code"><span class="std std-ref">Code / Markdown</span></a> and <a class="reference internal" href="apps/slides.html#app-slides"><span class="std std-ref">Présentation</span></a> applications.</p></li>
+<li><p><strong>Présentation</strong> : Consulter le rendu du document, disponible dans les applications <a class="reference internal" href="apps/code.html#app-code"><span class="std std-ref">Code / Markdown</span></a> et <a class="reference internal" href="apps/slides.html#app-slides"><span class="std std-ref">Présentation</span></a>.</p></li>
 <li><p><strong>Édition</strong> : Consulter et modifier le document.</p></li>
 <li><p><strong>Voir et autodétruire</strong> : Consulter le document en lecture seule et <strong>une seule fois</strong>. Le document est supprimé définitivement une fois ouvert par le destinataire.</p></li>
 </ul>
@@ -438,14 +437,13 @@ in the <a class="reference internal" href="apps/code.html#app-code"><span class=
 <p>Pour copier le lien d'un document :</p>
 <ul class="simple">
 <li><p>Depuis le document : <em class="fa fa-share-alt"></em> <strong>Partager</strong> dans la barre d'outils &gt; <em class="fa fa-link"></em> <strong>Lien</strong>.</p></li>
-<li><p>From the CryptDrive : <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document &gt; <em class="fa fa-share-alt"></em>
-<strong>Share</strong> &gt; <em class="fa fa-link"></em> <strong>Link</strong>.</p></li>
+<li><p>Depuis le CryptDrive : <code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le document &gt; <em class="fa fa-share-alt"></em> <strong>Partager</strong> &gt; <em class="fa fa-link"></em> <strong>Lien</strong>.</p></li>
 </ul>
 <p>Puis :</p>
 <ol class="arabic simple">
 <li><p>Choisir les :ref:<a href="#id1"><span class="problematic" id="id2">`</span></a>droits d'accès &lt;share_access_rights&gt;`et les options additionnelles :</p>
 <ul class="simple">
-<li><p><strong>Embed mode</strong> hides the toolbar and user list.</p></li>
+<li><p><strong>Mode intégration</strong> cache la barre d'outils CryptPad et la liste des utilisateurs connectés.</p></li>
 <li><p><strong>Aperçu</strong> permet de visualiser le lien avant de l'envoyer.</p></li>
 </ul>
 </li>
@@ -469,7 +467,7 @@ in the <a class="reference internal" href="apps/code.html#app-code"><span class=
 </ol>
 </div>
 <div class="section" id="shared-folders">
-<span id="id2"></span><h3>Dossiers partagés<a class="headerlink" href="#shared-folders" title="Lien permanent vers ce titre">¶</a></h3>
+<span id="id4"></span><h3>Dossiers partagés<a class="headerlink" href="#shared-folders" title="Lien permanent vers ce titre">¶</a></h3>
 <p><span class="badge">Utilisateurs enregistrés</span></p>
 <p>Les dossiers partagés permettent de partager un ensemble de documents.</p>
 <p>Pour créer un dossier partagé dans le CryptDrive :</p>
@@ -481,25 +479,23 @@ in the <a class="reference internal" href="apps/code.html#app-code"><span class=
 <p>Pour convertir un dossier existant en dossier partagé :</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> &gt; <em class="fa fa-share-alt"></em> <strong>Partager</strong>.</p></li>
-<li><p>Choose the conversion options.
-Password.
-<a class="reference internal" href="#owners"><span class="std std-ref">Owned</span></a> folder.</p></li>
+<li><p>Choisir les options de conversion en dossier partagé. Mot de passe. Être <a class="reference internal" href="#owners"><span class="std std-ref">propriétaire</span></a> du dossier partagé.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">OK</span></code> ou la touche <code class="docutils literal notranslate"><span class="pre">Entrée</span></code>.</p></li>
 </ol>
 <p>Les dossiers sont partagés de manière similaire aux documents. Pour partager un dossier, depuis le CryptDrive :</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> &gt; <em class="fa fa-share-alt"></em> <strong>Partager</strong>.</p></li>
-<li><p>Choisir les <a href="#id7"><span class="problematic" id="id8">`droits d'accès&lt;#access-rights&gt;`__</span></a>. <strong>Lecture-seule</strong> : Consulter le contenu du dossier sans le modifier. <strong>Édition</strong> : Consulter et modifier le contenu du dossier.</p></li>
+<li><p>Choisir les <a href="#id9"><span class="problematic" id="id10">`droits d'accès&lt;#access-rights&gt;`__</span></a>. <strong>Lecture-seule</strong> : Consulter le contenu du dossier sans le modifier. <strong>Édition</strong> : Consulter et modifier le contenu du dossier.</p></li>
 <li><p>Trois onglets sont disponibles : <em class="fa fa-address-book"></em> <strong>Contacts</strong> : Méthode conseillée pour partager de manière sécurisée avec vos contacts et équipes CryptPad. <em class="fa fa-link"></em> <strong>Lien</strong> : Copier un lien à transmettre par le moyen de votre choix. <em class="fa fa-code"></em> <strong>Intégration</strong> : Copier le code pour inclure le dossier sur une page web.</p></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Shared folders have their own history, separate from the <a class="reference internal" href="drive.html#drive-history"><span class="std std-ref">Historique du CryptDrive</span></a>. Restoring the history of the drive does not affect shared folders, conversely the history of a shared folder can be restored without affecting the rest of the drive.</p>
+<p>Les dossiers partagés ont leur propre historique, séparé de l'<a class="reference internal" href="drive.html#drive-history"><span class="std std-ref">Historique du CryptDrive</span></a>. Restaurer l'historique du drive n'affecte pas les dossiers partagés, inversement l'historique d'un dossier partagé peut être restauré ou supprimé sans affecter le reste du drive.</p>
 </div>
 </div>
 </div>
 <div class="section" id="access">
-<span id="id3"></span><h2>Accès<a class="headerlink" href="#access" title="Lien permanent vers ce titre">¶</a></h2>
+<span id="id5"></span><h2>Accès<a class="headerlink" href="#access" title="Lien permanent vers ce titre">¶</a></h2>
 <p><span class="badge">Utilisateurs enregistrés</span></p>
 <p>Ce menu permet de restreindre l'accès à un document ou dossier partagé :</p>
 <ul class="simple">
@@ -507,11 +503,11 @@ Password.
 <li><p>Depuis le CryptDrive : <code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le document ou dossier partagé &gt; <em class="fa fa-unlock-alt"></em> <strong>Accès</strong>.</p></li>
 </ul>
 <div class="section" id="access-tab">
-<span id="id4"></span><h3>Onglet Accès<a class="headerlink" href="#access-tab" title="Lien permanent vers ce titre">¶</a></h3>
+<span id="id6"></span><h3>Onglet Accès<a class="headerlink" href="#access-tab" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Cet onglet résume toutes les modalités d'accès au document :</p>
 <ul>
 <li><p><strong>Date d'expiration</strong> : Date de destruction du document. Cette date est réglée à la création du document et ne peut pas être modifié par la suite.</p></li>
-<li><p><strong>Mot de passe</strong> : Affiche si un [mot de passe] a été activé. Un nouveau mot de passe peut être activé, et un mot de passe existant peut être modifié.</p></li>
+<li><p><strong>Mot de passe</strong> : Affiche si un mot de passe a été activé. Un nouveau mot de passe peut être activé, et un mot de passe existant peut être modifié.</p></li>
 <li><p><strong>Propriétaires</strong> : Liste de tous les <a class="reference external" href="#owners">owners</a> du document.</p></li>
 <li><div class="line-block">
 <div class="line"><strong>Demander les droits d'édition</strong> :</div>
@@ -524,7 +520,7 @@ Password.
 </ul>
 </div>
 <div class="section" id="access-list">
-<span id="id5"></span><h3>Liste<a class="headerlink" href="#access-list" title="Lien permanent vers ce titre">¶</a></h3>
+<span id="id7"></span><h3>Liste<a class="headerlink" href="#access-list" title="Lien permanent vers ce titre">¶</a></h3>
 <p><span class="badge">Propriétaires du document</span></p>
 <p>La liste d'accès permet de restreindre l'accès à un document. Une fois activée, les utilisateurs qui ne sont pas sur la liste n'ont pas accès au document, même si celui-ci est dans leur CryptDrive.</p>
 <p>Pour activer la liste d'accès, cochez la case <strong>Activer la liste d'accès</strong>. Les propriétaires du document sont sur la liste par défaut et ne peuvent pas en être supprimés.</p>
@@ -536,7 +532,7 @@ Password.
 <p>Pour supprimer un utilisateur ou une équipe de la liste d'accès, utiliser le bouton <em class="fa fa-times"></em> à côté de leur nom.</p>
 </div>
 <div class="section" id="owners">
-<span id="id6"></span><h3>Propriétaires<a class="headerlink" href="#owners" title="Lien permanent vers ce titre">¶</a></h3>
+<span id="id8"></span><h3>Propriétaires<a class="headerlink" href="#owners" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Cet onglet est utilisé pour gérer les propriétaires du document. Les propriétaires ont les permissions suivantes :</p>
 <ul class="simple">
 <li><p>Activer une <a class="reference internal" href="#access-list"><span class="std std-ref">liste d'accès</span></a>.</p></li>
@@ -544,7 +540,7 @@ Password.
 <li><p>Ajouter ou supprimer d'autres propriétaires.</p></li>
 <li><p>Détruire le document.</p></li>
 </ul>
-<p>The ownership of a document is set when <a class="reference internal" href="apps/general.html#new-document"><span class="std std-ref">creating it</span></a>.</p>
+<p>La propriété d'un document est établie lors de sa <a class="reference internal" href="apps/general.html#new-document"><span class="std std-ref">création</span></a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Si un document est créé sans propriétaire, personne n'a la permission de gérer sa propriété. Il ne peut pas être détruit de manière permanente, mais peut être supprimé du CryptDrive et est détruit automatiquement après 90 jours d'inactivité.</p>

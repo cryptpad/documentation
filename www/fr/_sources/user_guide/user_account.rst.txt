@@ -61,7 +61,7 @@ Account management
 Registration
 ~~~~~~~~~~~~
 
-``[screenshot: registration screen EN]``
+.. XXX screenshot: registration screen
 
 To register a new account, go to the registration page: **Register** at
 the top right of the home page.
@@ -88,7 +88,7 @@ Optional:
 Logging in
 ~~~~~~~~~~
 
-``[screenshot: login screen EN]``
+.. XXX screenshot: login screen
 
 To log in to CryptPad visit the **log in** page (at the top right of the
 home page), and fill in the username and password used at registration.

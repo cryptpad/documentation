@@ -13,4 +13,5 @@ version of CryptPad: |release|. It is possible that other instances are using
 earlier versions. Each instance can also have specific settings such as
 storage space, disabled applications, or custom colors/styles.
 
+.. XXX add once installation guide is live
 .. If you are looking to set up a CryptPad instance please refer to the [Installation Guide].

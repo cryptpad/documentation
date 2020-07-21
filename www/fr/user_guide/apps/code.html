@@ -198,7 +198,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#import-export">Import/Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#markdown">Markdown</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#images">Images</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#lightbox">Lightbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lightbox">Galerie</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="slides.html">Présentation</a><ul>
@@ -262,7 +262,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#import-export">Import/Export</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#markdown">Markdown</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#images">Images</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#lightbox">Lightbox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lightbox">Galerie</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="slides.html">Présentation</a><ul>
@@ -397,8 +397,7 @@
 <h2>Barre d'outils<a class="headerlink" href="#toolbar" title="Lien permanent vers ce titre">¶</a></h2>
 <p><em class="fa fa-wrench"></em> <strong>Outils</strong> : Affiche ou cache la barre d'outils de l'éditeur de texte.</p>
 <p><em class="fa fa-picture-o"></em> <strong>Insérer</strong> : Intègre une image dans le document. L'image peut être choisie dans le CryptDrive ou importée. <span class="badge">Utilisateurs enregistrés</span></p>
-<p><em class="cptools cptools-palette"></em> <strong>Theme</strong>: Set colors for the editor, detailed
-<a class="reference internal" href="#app-code-theme"><span class="std std-ref">below</span></a>.</p>
+<p><em class="cptools cptools-palette"></em> <strong>Thème</strong> : Réglages d'affichage détaillés <a class="reference internal" href="#app-code-theme"><span class="std std-ref">ci-dessous</span></a>.</p>
 <p><em class="fa fa-eye"></em> <strong>Aperçu</strong> : Affiche ou cache la fenêtre de rendu Markdown.</p>
 </div>
 <div class="section" id="theme">
@@ -442,20 +441,16 @@
 </div>
 <div class="section" id="images">
 <h2>Images<a class="headerlink" href="#images" title="Lien permanent vers ce titre">¶</a></h2>
-<p>It is strongly advised <strong>not</strong> to insert external images in documents.
-The Markdown syntax <code class="docutils literal notranslate"><span class="pre">![description](https://site.com/image.jpg)</span></code> is
-supported but presents security risks. Malicious code can be hidden in
-images and result in data leakage.</p>
+<p>Il est fortement déconseillé d'insérer des images extérieures à CryptPad. La syntaxe <code class="docutils literal notranslate"><span class="pre">![description](https://site.com/image.png)</span></code> est supportée, mais elle présente d'importants risques de sécurité. Les images peuvent en effet être utilisées à des fins malicieuses pour lire vos données.</p>
 <p>Pour cette raison, CryptPad utilise des <code class="docutils literal notranslate"><span class="pre">media-tag</span></code> pour insérer des images de votre CryptDrive. Cette syntaxe est plus complexe, mais elle est gérée automatiquement par le menu <em class="fa fa-picture-o"></em> <strong>Insérer</strong>.</p>
 </div>
 <div class="section" id="lightbox">
-<h2>Lightbox<a class="headerlink" href="#lightbox" title="Lien permanent vers ce titre">¶</a></h2>
-<p>To browse through all images and diagrams in a document using the full
-width of the window:</p>
+<h2>Galerie<a class="headerlink" href="#lightbox" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Pour voir une galerie de toutes les images et diagrammes d'un document :</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Double</span> <span class="pre">click</span></code> on an image or diagram in the Markdown preview.</p></li>
-<li><p>Navigate with the arrow keys.</p></li>
-<li><p>Close the light box with <em class="fa fa-times"></em> or <code class="docutils literal notranslate"><span class="pre">Esc</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Double-Clic</span></code> sur une image ou un diagramme dans l'aperçu Markdown.</p></li>
+<li><p>Naviguer avec les flêches du clavier.</p></li>
+<li><p>Fermer la galerie avec <em class="fa fa-times"></em> ou <code class="docutils literal notranslate"><span class="pre">Échap</span></code>.</p></li>
 </ol>
 </div>
 </div>

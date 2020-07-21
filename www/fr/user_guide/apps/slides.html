@@ -198,7 +198,7 @@
 <li class="toctree-l4"><a class="reference internal" href="code.html#import-export">Import/Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="code.html#markdown">Markdown</a></li>
 <li class="toctree-l4"><a class="reference internal" href="code.html#images">Images</a></li>
-<li class="toctree-l4"><a class="reference internal" href="code.html#lightbox">Lightbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="code.html#lightbox">Galerie</a></li>
 </ul>
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Présentation</a><ul>
@@ -262,7 +262,7 @@
 <li class="toctree-l3"><a class="reference internal" href="code.html#import-export">Import/Export</a></li>
 <li class="toctree-l3"><a class="reference internal" href="code.html#markdown">Markdown</a></li>
 <li class="toctree-l3"><a class="reference internal" href="code.html#images">Images</a></li>
-<li class="toctree-l3"><a class="reference internal" href="code.html#lightbox">Lightbox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="code.html#lightbox">Galerie</a></li>
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Présentation</a><ul>
@@ -397,7 +397,7 @@
 <h2>Barre d'outils<a class="headerlink" href="#toolbar" title="Lien permanent vers ce titre">¶</a></h2>
 <p><em class="fa fa-wrench"></em> <strong>Outils</strong> : Affiche ou cache la barre d'outils de l'éditeur de texte.</p>
 <p><em class="fa fa-picture-o"></em> <strong>Insérer</strong> : Intègre une image dans le document. L'image peut être choisie dans le CryptDrive ou importée. <span class="badge">Utilisateurs enregistrés</span></p>
-<p><em class="cptools cptools-palette"></em> <strong>Thème</strong> : Réglages d'affichage détaillés [ci-dessous].</p>
+<p><em class="cptools cptools-palette"></em> <strong>Thème</strong> : Réglages d'affichage détaillés <a class="reference internal" href="#app-slides-theme"><span class="std std-ref">ci-dessous</span></a>.</p>
 <p><em class="fa fa-eye"></em> <strong>Aperçu</strong> : Affiche ou cache la fenêtre de rendu du diaporama.</p>
 <p><em class="fa fa-play-circle"></em> <strong>Présenter</strong> : Lance la présentation du diaporama en plein fenêtre.</p>
 </div>
@@ -409,7 +409,7 @@
 https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdown/ --><p>Le principal ajout à la syntaxe de base est le séparateur <code class="docutils literal notranslate"><span class="pre">---</span></code> pour délimiter les diapositives.</p>
 </div>
 <div class="section" id="theme">
-<h2>Thème<a class="headerlink" href="#theme" title="Lien permanent vers ce titre">¶</a></h2>
+<span id="app-slides-theme"></span><h2>Thème<a class="headerlink" href="#theme" title="Lien permanent vers ce titre">¶</a></h2>
 <p><em class="fa fa-gear"></em> <strong>Options</strong> :</p>
 <blockquote>
 <div><ul class="simple">
@@ -434,16 +434,12 @@ https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdo
 </div>
 <div class="section" id="images">
 <h2>Images<a class="headerlink" href="#images" title="Lien permanent vers ce titre">¶</a></h2>
-<p>It is strongly advised <strong>not</strong> to insert external images in documents.
-The Markdown syntax <code class="docutils literal notranslate"><span class="pre">![description](https://site.com/image.jpg)</span></code> is
-supported but presents security risks. Malicious code can be embedded in
-images and result in data leakage.</p>
+<p>Il est <strong>fortement déconseillé</strong> d'insérer des images extérieures à CryptPad. La syntaxe <code class="docutils literal notranslate"><span class="pre">![description](https://site.com/image.png)</span></code> est supportée, mais elle présente d'importants risques de sécurité. Les images peuvent en effet être utilisées à des fins malicieuses pour lire vos données.</p>
 <p>Pour cette raison, CryptPad utilise des <code class="docutils literal notranslate"><span class="pre">media-tag</span></code> pour insérer des images de votre CryptDrive. Cette syntaxe est plus complexe, mais elle est gérée automatiquement par le menu <em class="fa fa-picture-o"></em> <strong>Insérer</strong>.</p>
 </div>
 <div class="section" id="lightbox">
 <h2>Galerie<a class="headerlink" href="#lightbox" title="Lien permanent vers ce titre">¶</a></h2>
-<p>To browse through all images and diagrams in a document using the full
-width of the window:</p>
+<p>Pour voir une galerie de toutes les images et diagrammes d'un document :</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Double-Clic</span></code> sur une image ou un diagramme dans l'aperçu Markdown.</p></li>
 <li><p>Naviguer avec les flêches du clavier.</p></li>
