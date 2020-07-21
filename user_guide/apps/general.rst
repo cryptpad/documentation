@@ -12,9 +12,9 @@ To create a new document:
 -  From a document: |file-o| **File** > |plus| **New**.
 -  ``Ctrl+e``.
 
-[screenshot pad creation screen (localised)]
-
 :badge:`Logged in users`
+
+.. XXX pad creation screenshot
 
 The creation screen offers a number of options when new documents are
 created.
@@ -73,7 +73,7 @@ To save storage space, history can be deleted in the document’s
 Properties
 ----------
 
-[properties screenshot]
+.. XXX properties screenshot
 
 To access the properties menu:
 

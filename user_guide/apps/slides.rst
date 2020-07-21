@@ -19,8 +19,7 @@ Toolbar
 |picture-o| **Insert**: Add an image to the document. The image can be
 chosen in the CrpytDrive or uploaded. :badge:`Logged in users`
 
-|cptools palette| **Theme**: Set colors for the editor, detailed
-[below]
+|cptools palette| **Theme**: Set colors for the editor, detailed :ref:`below <app_slides_theme>`
 
 |eye| **Preview**: Show/hide the slides preview pane.
 
@@ -43,6 +42,8 @@ guide. <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__
 
 The main addition to basic Markdown in the Slides application is the
 ``---`` delimiter to separate slides.
+
+.. _app_slides_theme:
 
 Theme
 -----

@@ -16,6 +16,8 @@ Share
 
 There are three ways to share a document: :ref:`share_contacts`, :ref:`share_link`, and :ref:`share_embed`. In each case, access rights can be set to authorise the recipient to edit the document, or to only view it.
 
+.. XXX share modal screenshot
+
 .. _share_access_rights:
 
 Access rights
@@ -155,6 +157,8 @@ the CryptDrive:
 Access
 ------
 
+.. XXX Access modal screenshot
+
 :badge:`Logged in users`
 
 This menu is used to restrict access to a document or shared folder:
@@ -174,7 +178,7 @@ This tab summarises all the modalities of access to the document:
    date is set at the creation of the document and cannot be modified
    afterwards.
 
--  **Password**: Displays if a [password] has been set. A new password
+-  **Password**: Displays if a password has been set. A new password
    can be set, or an existing password modified.
 
 -  **Owners**: List of all the document’s `owners <#owners>`__.
