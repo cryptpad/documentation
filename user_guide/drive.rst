@@ -91,7 +91,7 @@ Deleting
 
 There are two ways of deleting a document on CryptPad:
 
-- |trash| **Removing** a document means it stops appearing in the CryptDrive but remains in the database. The document remains in the CryptDrive of other users who have stored it. The document can be recovered in the CryptDrive using the :ref:`history <cryptdrive_history>`.
+- |trash| **Removing** a document means it stops appearing in the CryptDrive but remains in the database. The document remains in the CryptDrive of other users who have stored it. The document can be recovered in the CryptDrive using the :ref:`history <drive_history>`.
 - |cptools destroy| **Destroying** a document deletes it from the database permanently. The document is deleted from all CryptDrives that store it, and it   cannot be recovered using the CryptDrive history. :badge:`Document owners`
 
 

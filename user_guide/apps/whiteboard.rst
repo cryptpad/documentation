@@ -41,14 +41,14 @@ color-picker.
 Select mode
 -----------
 
-``Click`` on an element to select it, then: 
+``Click`` on an element to select it, then:
 
-- ``Drag`` to move. 
+- ``Drag`` to move.
 - Transform (scale, rotate) with the selection handles.
 
-To delete a selected element: 
+To delete a selected element:
 
-- ``Del`` key. 
+- ``Del`` key.
 - |trash| button in the drawing toolbar.
 
 Export

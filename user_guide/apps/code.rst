@@ -19,7 +19,7 @@ Toolbar
 chosen in the CrpytDrive or uploaded. :badge:`Logged in users`
 
 |cptools palette| **Theme**: Set colors for the editor, detailed
-:ref:`below <app-code_teme>`.
+:ref:`below <app_code_theme>`.
 
 |eye| **Preview**: Show/hide the Markdown preview pane.
 
