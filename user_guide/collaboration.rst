@@ -18,7 +18,7 @@ Personal profile
 
 The following elements can be customised on the profile page:
 
--  Avatar with |upload| **Uplaod a new avatar**.
+-  Avatar with |upload| **Upload a new avatar**.
 -  Description with |pencil| **Add a description**.
 -  Website with **Add a link to your website**.
 

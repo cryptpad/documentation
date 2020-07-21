@@ -19,7 +19,7 @@ Toolbar
 |picture-o| **Insert**: Add an image to the document. The image can be
 chosen in the CrpytDrive or uploaded. :badge:`Logged in users`
 
-|cptools palette| **Theme**: Set colors for the editor, detailed :ref:`below <app_slides_theme>`
+|cptools palette| **Theme**: Set colors for the editor, detailed :ref:`below <app_slides_theme>`.
 
 |eye| **Preview**: Show/hide the slides preview pane.
 
