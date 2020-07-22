@@ -16,8 +16,6 @@ Share
 
 There are three ways to share a document: :ref:`share_contacts`, :ref:`share_link`, and :ref:`share_embed`. In each case, access rights can be set to authorise the recipient to edit the document, or to only view it.
 
-.. XXX share modal screenshot
-
 .. _share_access_rights:
 
 Access rights
@@ -44,6 +42,10 @@ Sharing with contacts
 :badge:`Logged in users`
 
 This is the recommended method for sharing documents securely on CryptPad. When sharing directly with :ref:`contacts <contacts>`, document links never leave the encrypted platform of CryptPad. This prevents data from being leaked to third parties.
+
+.. image:: /images/share-modal-contacts.png
+   :class: screenshot
+
 
 To share with one or more contacts:
 
@@ -73,6 +75,10 @@ your choice. Depending on how you send the link, this method can present
 security risks. To add a level of security, it is recommended to add a
 :ref:`password <access_tab>` to your document before sharing the link.
 
+.. image:: /images/share-modal-link.png
+   :class: screenshot
+
+
 To copy the link to a document:
 
 -  From the document: |share-alt| **Share** in the toolbar > |link|**Link**.
@@ -94,6 +100,9 @@ Embedding
 ~~~~~~~~~
 
 Embedding allows for a CryptPad document to be displayed on a web page.
+
+.. image:: /images/share-modal-embed.png
+   :class: screenshot
 
 To embed a document:
 
@@ -155,8 +164,6 @@ the CryptDrive:
 Access
 ------
 
-.. XXX Access modal screenshot
-
 :badge:`Logged in users`
 
 This menu is used to restrict access to a document or shared folder:
@@ -169,6 +176,9 @@ This menu is used to restrict access to a document or shared folder:
 
 Access tab
 ~~~~~~~~~~
+
+.. image:: /images/access-modal-access.png
+   :class: screenshot
 
 This tab summarises all the modalities of access to the document:
 
@@ -197,6 +207,10 @@ Access List
 
 :badge:`Document owners`
 
+
+.. image:: /images/access-modal-list.png
+   :class: screenshot
+
 The access list restricts access to a document. Once active, users who
 are not on the list are not able to access the document, even if they
 have it stored in their CryptDrive.
@@ -217,6 +231,10 @@ their name.
 
 Owners
 ~~~~~~
+
+
+.. image:: /images/access-modal-owners.png
+   :class: screenshot
 
 This tab is used to manage the ownership of the document. Owners of a
 document have the following permissions:

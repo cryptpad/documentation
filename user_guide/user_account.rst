@@ -61,16 +61,20 @@ Account management
 Registration
 ~~~~~~~~~~~~
 
-.. XXX screenshot: registration screen
-
 To register a new account, go to the registration page: **Register** at
 the top right of the home page.
+
+.. image:: /images/registration.png
+   :class: screenshot
 
 Fill out the following information:
 
 -  **Username**: This is the name used to log in to CryptPad, it is different from the **Display name** visible by other users. The **Username** cannot be changed once the account is created.
 
 -  **Password**: It is recommended to use a strong password. The password can be changed in :ref:`user settings <user_settings>`.
+
+.. image:: /images/registration-warning.png
+   :class: screenshot
 
 .. danger::
 
@@ -87,8 +91,6 @@ Optional:
 
 Logging in
 ~~~~~~~~~~
-
-.. XXX screenshot: login screen
 
 To log in to CryptPad visit the **log in** page (at the top right of the
 home page), and fill in the username and password used at registration.
