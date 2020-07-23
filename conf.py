@@ -80,7 +80,8 @@ exclude_patterns = [
 
 rst_epilog = """
 
-.. role:: badge
+.. role:: badge_user
+.. role:: badge_owner
 
 """
 

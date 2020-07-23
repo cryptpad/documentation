@@ -42,7 +42,7 @@ Managing documents
 Folders
 ~~~~~~~
 
-:badge:`Logged in users`
+:badge_user:`Logged in users`
 
 There are multiple ways to create folders in the CryptDrive:
 
@@ -92,7 +92,7 @@ Deleting
 There are two ways of deleting a document on CryptPad:
 
 - |trash| **Removing** a document means it stops appearing in the CryptDrive but remains in the database. The document remains in the CryptDrive of other users who have stored it. The document can be recovered in the CryptDrive using the :ref:`history <drive_history>`.
-- |cptools destroy| **Destroying** a document deletes it from the database permanently. The document is deleted from all CryptDrives that store it, and it cannot be recovered using the CryptDrive history. :badge:`Document owners`
+- |cptools destroy| **Destroying** a document deletes it from the database permanently. The document is deleted from all CryptDrives that store it, and it cannot be recovered using the CryptDrive history. :badge_owner:`Document owners`
 
 
 .. note::
@@ -121,7 +121,7 @@ them.
 
 To **destroy** a document without storing it in the trash first:
 
--  ``Right click`` on the document in the CryptDrive > |cptools destroy| **Destroy**. :badge:`Document owners`
+-  ``Right click`` on the document in the CryptDrive > |cptools destroy| **Destroy**. :badge_owner:`Document owners`
 
 .. _drive_history:
 
@@ -149,7 +149,7 @@ To save storage space the CryptDrive history can be deleted in the :ref:`user se
 Tags
 ----
 
-:badge:`Logged in users`
+:badge_user:`Logged in users`
 
 Group documents in multiple categories by using tags. Your tags are not
 visible by other users.
@@ -175,7 +175,7 @@ added and/or removed are applied to all the selected documents.
 Templates
 ---------
 
-:badge:`Logged in users`
+:badge_user:`Logged in users`
 
 Templates provide reusable starting points to create documents of a
 similar structure, for example invoices, letterheads, reports, and so

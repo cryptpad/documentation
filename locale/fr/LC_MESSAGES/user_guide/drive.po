@@ -5,19 +5,18 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: CryptPad\n"
+"Project-Id-Version:  CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-21 16:44+0100\n"
+"POT-Creation-Date: 2020-07-23 17:03+0100\n"
 "PO-Revision-Date: 2020-07-21 15:47+0000\n"
 "Last-Translator: David Benqué <david.benque@xwiki.com>\n"
-"Language-Team: French <http://weblate.cryptpad.fr/projects/user-guide/drive/"
-"fr/>\n"
 "Language: fr\n"
+"Language-Team: French <http://weblate.cryptpad.fr/projects/user-"
+"guide/drive/fr/>\n"
+"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.1\n"
 "Generated-By: Babel 2.8.0\n"
 
 #: ../../user_guide/drive.rst:5
@@ -82,8 +81,9 @@ msgid "Folders"
 msgstr "Dossiers"
 
 #: ../../user_guide/drive.rst:45 ../../user_guide/drive.rst:152
-#: ../../user_guide/drive.rst:179
-msgid ":badge:`Logged in users`"
+#: ../../user_guide/drive.rst:178
+#, fuzzy
+msgid ":badge_user:`Logged in users`"
 msgstr ":badge:`Utilisateurs enregistrés`"
 
 #: ../../user_guide/drive.rst:47
@@ -216,16 +216,17 @@ msgstr ""
 "l':ref:`historique <drive_history>`."
 
 #: ../../user_guide/drive.rst:95
+#, fuzzy
 msgid ""
 "|cptools destroy| **Destroying** a document deletes it from the database "
 "permanently. The document is deleted from all CryptDrives that store it, "
-"and it cannot be recovered using the CryptDrive history. :badge:`Document"
-" owners`"
+"and it cannot be recovered using the CryptDrive history. "
+":badge_owner:`Document owners`"
 msgstr ""
-"|cptools destroy| **Détruire** un document le supprime de la base de données "
-"de manière permanente. Le document est supprimé de tous les CryptDrives où "
-"il est stocké, et il ne peut pas être restauré par l'historique. :badge:`"
-"Utilisateurs enregistrés`"
+"|cptools destroy| **Détruire** un document le supprime de la base de "
+"données de manière permanente. Le document est supprimé de tous les "
+"CryptDrives où il est stocké, et il ne peut pas être restauré par "
+"l'historique. :badge:`Utilisateurs enregistrés`"
 
 #: ../../user_guide/drive.rst:100
 msgid ""
@@ -302,9 +303,10 @@ msgid "To **destroy** a document without storing it in the trash first:"
 msgstr "Pour **détruire** un document sans le stocker dans la corbeille :"
 
 #: ../../user_guide/drive.rst:124
+#, fuzzy
 msgid ""
 "``Right click`` on the document in the CryptDrive > |cptools destroy| "
-"**Destroy**. :badge:`Document owners`"
+"**Destroy**. :badge_owner:`Document owners`"
 msgstr ""
 "``Clic droit`` sur le document dans le CryptDrive > |cptools destroy| "
 "**Détruire**. :badge:`Utilisateurs enregistrés`"
@@ -336,8 +338,9 @@ msgstr ""
 "l'historique étape par étape."
 
 #: ../../user_guide/drive.rst:138
+#, fuzzy
 msgid ""
-"Restore the current step with , or exit the history wihtout restoring "
+"Restore the current step with , or exit the history without restoring "
 "with |window-close|."
 msgstr ""
 "Restaurer l'étape sélectionnée avec |check-circle-o| ou sortir de "
@@ -395,23 +398,23 @@ msgstr ""
 "Dans le CryptDrive : ``Clic droit`` sur le document> |hashtag| **Mots-"
 "clés**."
 
-#: ../../user_guide/drive.rst:164
+#: ../../user_guide/drive.rst:163
 msgid "From a document: |file-o| **File** > |hashtag| **Tags**."
 msgstr "Dans un document : |file-o| **Fichier** > |hashtag| **Mots-clés**."
 
-#: ../../user_guide/drive.rst:166
+#: ../../user_guide/drive.rst:165
 msgid "To manage tags for multiple documents:"
 msgstr "Pour gérer les mots-clés de plusieurs documents :"
 
-#: ../../user_guide/drive.rst:168
+#: ../../user_guide/drive.rst:167
 msgid "Select the documents with ``Ctrl + Click`` in the CryptDrive."
 msgstr "Sélectionner les documents avec ``Ctrl + Clic`` dans le CryptDrive."
 
-#: ../../user_guide/drive.rst:169
+#: ../../user_guide/drive.rst:168
 msgid "``Right click`` on the documents > |hashtag| **Tags**."
 msgstr "``Clic droit`` sur les documents > |hashtag| **Mots-clés**."
 
-#: ../../user_guide/drive.rst:171
+#: ../../user_guide/drive.rst:170
 msgid ""
 "Only the tags assigned to all the documents are then displayed. Any tags "
 "added and/or removed are applied to all the selected documents."
@@ -420,11 +423,11 @@ msgstr ""
 "alors affichés. Les ajouts et/ou suppressions de mots-clés sont "
 "appliquées à toute la séléction."
 
-#: ../../user_guide/drive.rst:177
+#: ../../user_guide/drive.rst:176
 msgid "Templates"
 msgstr "Modèles"
 
-#: ../../user_guide/drive.rst:181
+#: ../../user_guide/drive.rst:180
 msgid ""
 "Templates provide reusable starting points to create documents of a "
 "similar structure, for example invoices, letterheads, reports, and so on."
@@ -432,23 +435,23 @@ msgstr ""
 "Les modèles sont des gabarits réutilisables pour créer des documents de "
 "même type, par exemple facture, papier à lettre, rapport, etc."
 
-#: ../../user_guide/drive.rst:185
+#: ../../user_guide/drive.rst:184
 msgid "To create a template:"
 msgstr "Créer un modèle :"
 
-#: ../../user_guide/drive.rst:187
+#: ../../user_guide/drive.rst:186
 msgid "Select the |cptools template| **Templates** tab in the CryptDrive."
 msgstr "Sélectionner l'onglet |cptools template| **Modèles** dans le CryptDrive."
 
-#: ../../user_guide/drive.rst:188
+#: ../../user_guide/drive.rst:187
 msgid "|plus| **New** in the toolbar."
 msgstr "|plus| **Nouveau pad** dans la barre d'outils."
 
-#: ../../user_guide/drive.rst:190 ../../user_guide/drive.rst:195
+#: ../../user_guide/drive.rst:189 ../../user_guide/drive.rst:194
 msgid "or"
 msgstr "ou"
 
-#: ../../user_guide/drive.rst:192
+#: ../../user_guide/drive.rst:191
 msgid ""
 "In an existing document: |file-o| **File** > |bookmark| **Save as "
 "template**."
@@ -456,27 +459,27 @@ msgstr ""
 "Dans un document existant : |file-o| **Ficher** > |bookmark| "
 "**Sauvegarder en tant que modèle**."
 
-#: ../../user_guide/drive.rst:197
+#: ../../user_guide/drive.rst:196
 msgid "Create a :ref:`new document <new_document>`."
 msgstr "Créer un :ref:`nouveau document <new_document>`."
 
-#: ../../user_guide/drive.rst:198
+#: ../../user_guide/drive.rst:197
 msgid "On the creation screen select |cptools new-template| **New template**."
 msgstr ""
 "Sur l'écran de création séléctionner |cptools new-template| **Nouveau "
 "modèle**."
 
-#: ../../user_guide/drive.rst:201
+#: ../../user_guide/drive.rst:200
 msgid "To use a template:"
 msgstr "Utiliser un modèle :"
 
-#: ../../user_guide/drive.rst:203
+#: ../../user_guide/drive.rst:202
 msgid "Select the template when creating a :ref:`new document <new_document>`."
 msgstr ""
 "Sélectionner le modèle lors de la création d'un :ref:`nouveau document "
 "<new_document>`."
 
-#: ../../user_guide/drive.rst:204
+#: ../../user_guide/drive.rst:203
 msgid ""
 "In an existing document: |file-o| **File** > |upload| **Import a "
 "template**. Please note: this option **replaces** the contents of the "
@@ -742,3 +745,4 @@ msgstr ""
 
 #~ msgid "Create a [new document]."
 #~ msgstr "Créer un [nouveau document]."
+

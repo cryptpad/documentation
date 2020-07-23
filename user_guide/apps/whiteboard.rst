@@ -14,7 +14,7 @@ Toolbar
 -------
 
 |picture-o| **Insert**: Add an image to the document. The image can be
-chosen in the CryptDrive or uploaded. :badge:`Logged in users`
+chosen in the CryptDrive or uploaded. :badge_user:`Logged in users`
 
 Drawing
 -------
