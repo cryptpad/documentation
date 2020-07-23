@@ -135,7 +135,7 @@ CryptDrive:
    the avatar).
 2. Use the arrows |fast-backward| |step-backward| to step through
    the history.
-3. Restore the current step with , or exit the history wihtout restoring
+3. Restore the current step with , or exit the history without restoring
    with |window-close|.
 
 To save storage space the CryptDrive history can be deleted in the :ref:`user settings <user_settings_cryptDrive>`.
@@ -159,8 +159,7 @@ and their associated documents.
 
 To add or remove tags from a document:
 
--  From the CrytpDrive: ``Right click`` on the document > |hashtag|
-   **Tags**.
+-  From the CrytpDrive: ``Right click`` on the document > |hashtag| **Tags**.
 -  From a document: |file-o| **File** > |hashtag| **Tags**.
 
 To manage tags for multiple documents: 

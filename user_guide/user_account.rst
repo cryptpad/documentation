@@ -4,7 +4,7 @@ User Account
 CryptPad encrypts data so that it is readable only by you and your
 collaborators. For this reason **the administrators of the service
 cannot view, retrieve or reset your password**. Therefore it is
-important that you make a note of your password in a safe place.
+important that you make a note of your password in a safe place separate from your CryptPad account.
 
 CryptPad uses the combination of your username and password to identify
 you. Usernames are not unique on CryptPad. It is possible to create
