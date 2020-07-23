@@ -81,7 +81,7 @@ security risks. To add a level of security, it is recommended to add a
 
 To copy the link to a document:
 
--  From the document: |share-alt| **Share** in the toolbar > |link|**Link**.
+-  From the document: |share-alt| **Share** in the toolbar > |link| **Link**.
 -  From the CryptDrive : ``Right click`` on the document > |share-alt| **Share** > |link| **Link**.
 
 Then:
