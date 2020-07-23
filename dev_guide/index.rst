@@ -4,4 +4,4 @@ Developer Guide
 ================================
 
 .. note::
-    This section is under construction.
+    This section is currently in progress.
