@@ -12,10 +12,9 @@ Welcome to the CryptPad documentation. This site contains 3 guides with informat
    :maxdepth: 1
 
    user_guide/index
+   Administrator Guide (in progress) <admin_guide/index>
+   Developer Guide (in progress) <dev_guide/index>
    how_to_contribute
-
-- Developer Guide (in progress)
-- Administrator Guide (in progress)
 
 .. image:: /images/home-page.png
    :class: screenshot

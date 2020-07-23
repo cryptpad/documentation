@@ -1,11 +1,11 @@
+
+.. _how_to_contribute:
+
 How to contribute
 =================
 
-.. warning::
+There are various ways to contribute to CryptPad, many of which do not require any coding skills. If you would like to discuss anything listed here, or other ways of contributing, please  `get in touch with the development team <https://cryptpad.fr/contact.html>`__.
 
-   Work in Progress
-
-There are various ways to contribute to CryptPad, many of which do not require any coding skills.
 
 Spread the word
 ---------------
@@ -16,8 +16,7 @@ The simplest way to help CryptPad is to make the project known. As an Open Sourc
 - Posting about CryptPad on social media.
 - Following and relaying our own communications from our `Blog <https://blog.cryptpad.fr>`__, from `Mastodon <https://social.weho.st/@cryptpad>`__ or `Twitter <https://twitter.com/cryptpad>`__.
 - Relaying the `CryptPad Crowdfunding <https://opencollective.com/cryptpad>`__.
-- Presenting CryptPad in conferences or meetups, or inviting the team to present. If you need help contact us on the `#cryptpad matrix channel <https://riot.im/app/#/room/#cryptpad:matrix.org>`__.
-
+- Presenting CryptPad in conferences or meetups, or inviting the team to present.
 
 
 .. _contribute_bugs:
@@ -41,23 +40,31 @@ Translate CryptPad
 
 The CryptPad team translates the software in English and French, with many more languages provided by the community. Translating CryptPad—and/or keeping translations up to date as the platform develops—is a much needed effort to make it available to as many people as possible.
 
-Translations include all text in CryptPad itself, as well as this documentation.
+To translate CryptPad itself please see the `Translation guide <https://github.com/xwiki-labs/cryptpad/blob/master/customize.dist/translations/README.md>`__.
 
-For more information see the `Translation guide <https://github.com/xwiki-labs/cryptpad/blob/master/customize.dist/translations/README.md>`__.
-
+To translate this documentation please `get in touch with the development team <https://cryptpad.fr/contact.html>`__.
 
 .. _contribute_code:
 
 Contribute to the code
 ----------------------
 
+CryptPad is written in JavaScript and we accept pull requests on `Github <https://github.com/xwiki-labs/cryptpad>`__. Note that the security layer is separated from the application layer, so it is possible to contribute to CryptPad without skills in cryptography. Contributions include, by order of difficulty:
 
--  Pull requests on Github
+- Fixing a bug from the `issue tracker <https://github.com/xwiki-labs/cryptpad/issues>`__.
+- Adding a new feature.
+- Building a new application or integrating an existing one to CryptPad's encrypted real-time collaboration.
+
+Please see the :ref:`dev_guide` for more information.
 
 .. _contribute_financial:
 
 Financial support
 -----------------
 
--  OpenCollective donations: one off or recurring.
--  Subscriptions on cryptpad.fr
+Contribute to making CryptPad financially sustainable:
+
+- One-time or recurring donations on `Open Collective <https://opencollective.com/cryptpad>`__.
+- Subscriptions to `cryptpad.fr <https://accounts.cryptpad.fr>`__.
+- For larger organisations, `contact the team <https://cryptpad.fr/contact.html>`__ if you would like to sponsor a feature or to discuss support contracts for an on-site instance.
+
