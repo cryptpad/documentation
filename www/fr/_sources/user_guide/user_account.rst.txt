@@ -4,7 +4,7 @@ User Account
 CryptPad encrypts data so that it is readable only by you and your
 collaborators. For this reason **the administrators of the service
 cannot view, retrieve or reset your password**. Therefore it is
-important that you make a note of your password in a safe place.
+important that you make a note of your password in a safe place separate from your CryptPad account.
 
 CryptPad uses the combination of your username and password to identify
 you. Usernames are not unique on CryptPad. It is possible to create
@@ -18,7 +18,7 @@ There are three types of accounts on CryptPad:
 Non-registered user
 ~~~~~~~~~~~~~~~~~~~
 
-Non-registered users are identified by this avatar (at the top right):
+Non-registered users are identified by this avatar (at the top right): |user-secret|
 
 No personal information is necessary to use CryptPad without
 registering. However, functionality is reduced:
@@ -61,16 +61,20 @@ Account management
 Registration
 ~~~~~~~~~~~~
 
-``[screenshot: registration screen EN]``
-
 To register a new account, go to the registration page: **Register** at
 the top right of the home page.
+
+.. image:: /images/registration.png
+   :class: screenshot
 
 Fill out the following information:
 
 -  **Username**: This is the name used to log in to CryptPad, it is different from the **Display name** visible by other users. The **Username** cannot be changed once the account is created.
 
--  **Password**: It is recommended to use a strong password. The password can be changed in [user settings].
+-  **Password**: It is recommended to use a strong password. The password can be changed in :ref:`user settings <user_settings>`.
+
+.. image:: /images/registration-warning.png
+   :class: screenshot
 
 .. danger::
 
@@ -87,8 +91,6 @@ Optional:
 
 Logging in
 ~~~~~~~~~~
-
-``[screenshot: login screen EN]``
 
 To log in to CryptPad visit the **log in** page (at the top right of the
 home page), and fill in the username and password used at registration.
@@ -112,26 +114,26 @@ right) > |gear| **Settings**.
 Account
 ~~~~~~~
 
--  **Account name**: Username chosen at registration. This name cannot be changed. :badge:`Logged in users`
+-  **Account name**: Username chosen at registration. This name cannot be changed. :badge_user:`Logged in users`
 
--  **Public Signing Key**: Used by instance administrators and/or on instances that offer subscriptions. This is the only data about your account that is available to the administrators of the service. :badge:`Logged in users`
+-  **Public Signing Key**: Used by instance administrators and/or on instances that offer subscriptions. This is the only data about your account that is available to the administrators of the service. :badge_user:`Logged in users`
 
--  **Display Name**: Name displayed to other users, for example when you collaborate on documents. To change this name enter a new name and click on **Save**. :badge:`Logged in users`
+-  **Display Name**: Name displayed to other users, for example when you collaborate on documents. To change this name enter a new name and click on **Save**. :badge_user:`Logged in users`
 
 -  **Language**: Language used in the CryptPad interface. To change the language of CryptPad pick a new language in the drop-down menu. CryptPad is translated in English and French by the development team, and in other languages by the :ref:`community <contribute_translation>`. Some translations can be incomplete and/or contain errors.
 
 -  **Tips**: Help messages in the CryptPad interface. Click on **Reset** to display them again if they have been dismissed.
 
--  **Change your password**: Enter your current password and confirm the new password by typing it twice. :badge:`Logged in users`
+-  **Change your password**: Enter your current password and confirm the new password by typing it twice. :badge_user:`Logged in users`
 
--  **Account deletion**: Option to permanently delete your account and all of its documents. **Delete your account** and confirm. :badge:`Logged in users`
+-  **Account deletion**: Option to permanently delete your account and all of its documents. **Delete your account** and confirm. :badge_user:`Logged in users`
 
 .. _user_settings_confidentiality:
 
 Confidentiality
 ~~~~~~~~~~~~~~~
 
--  **Close remote sessions**: Log out of all sessions except the one from which this option is activated. (see also :ref:`remote_disconnect`) :badge:`Logged in users`
+-  **Close remote sessions**: Log out of all sessions except the one from which this option is activated. (see also :ref:`remote_disconnect`) :badge_user:`Logged in users`
 
 -  **Pad storage in CryptDrive**: Manages if documents you visit are automatically stored in your CryptDrive. If no one :ref:`owns <owners>` a document you add to your CryptDrive, it counts against your storage quota.
 
@@ -153,14 +155,14 @@ CryptDrive
 
 -  **Duplicated owned pads**: When you move your owned pads to a shared folder, a copy is kept in your CryptDrive to ensure that you retain your control over it. You can hide duplicated files. Only the shared version will be visible, unless deleted, in which case the original will be displayed in its previous location.
 
--  **Thumbnails**: To help navigating the CryptDrive in [grid] mode, CryptPad can create thumbnails of documents and store them in the browser. This option is turned off by default because it can slow down the browser on less powerful computers. The **Clean** button deletes all existing thumbnails.
+-  **Thumbnails**: To help navigating the CryptDrive in :ref:`grid mode <drive_display>`, CryptPad can create thumbnails of documents and store them in the browser. This option is turned off by default because it can slow down the browser on less powerful computers. The **Clean** button deletes all existing thumbnails.
 
 -  **Backup**: Two types of backups are available.
 
    -  **Backup** only saves the keys of documents in the CryptDrive, not their content. This option is designed to save access to documents and **Restore** it in another session.
    -  **Download my CryptDrive** saves the content of all documents in the CryptDrive. When possible, this is done in a format that is readable by other software. Some applications produce files that are only readable by CryptPad.
 
--  **Import**: If pads have been created as a non-registered user prior to logging in, they can be imported to the CryptDrive. :badge:`Logged in users`
+-  **Import**: If pads have been created as a non-registered user prior to logging in, they can be imported to the CryptDrive. :badge_user:`Logged in users`
 
 -  **Delete History**: The history of the CryptDrive and notifications can be deleted to save storage space. This does not affect the history of documents, which can be deleted individually in the :ref:`properties <document_properties>` dialog.
 
@@ -171,7 +173,7 @@ Cursor
 
 -  **Cursor color**: Change the color of your cursor. This is used to
    identify you while collaborating on documents. It also determines the
-   color of your text when [color by author] is active in Code
+   color of your text when :ref:`color by author <app_code_theme>` is active in Code
    documents.
 
 -  **Share my cursor position**: Display or hide the exact position of
@@ -256,7 +258,7 @@ attachment if needed, for example a screenshot, and click on **Send**.
 Notifications
 -------------
 
-:badge:`Logged in users`
+:badge_user:`Logged in users`
 
 CryptPad notifies you when your contacts interact with you.
 Notifications are displayed by the bell |bell-o| next to the avatar
@@ -270,7 +272,7 @@ Notifications are displayed by the bell |bell-o| next to the avatar
 -  **Open notifications panel**: View all notifications and notification
    history.
 
-On notifications panel page:
+On the notifications panel page:
 
 -  Select the type of notification to view:
 

@@ -8,11 +8,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>General &mdash; CryptPad 3.19.0 documentation</title>
+  <title>General &mdash; CryptPad 3.20.1 documentation</title>
   
 
   
-  <link rel="icon" type="image/png" href="../../_static.images/main-favicon.png" id="favicon"/>
+  <link rel="icon" type="image/png" href="../../_static/images/main-favicon.png" id="favicon"/>
   
   
 
@@ -54,7 +54,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/sidebar-logo.png" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">3.19.0</span>
+              <span class="release">3.20.1</span>
             </a>
             
 <div role="search">
@@ -112,6 +112,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../user_account.html#notifications">Notifications</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../security.html">Security</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#passwords-for-documents-and-folders">Passwords for documents and folders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#remote-disconnect">Remote Disconnect</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../drive.html">Drive</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#display">Display</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#managing-documents">Managing documents</a><ul>
@@ -123,11 +128,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#cryptdrive-history">CryptDrive history</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#tags">Tags</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#templates">Templates</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../security.html">Security</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../security.html#passwords-for-documents-and-folders">Passwords for documents and folders</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../security.html#remote-disconnect">Remote Disconnect</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../collaboration.html">Collaboration / Social</a><ul>
@@ -198,6 +198,7 @@
 <li class="toctree-l4"><a class="reference internal" href="code.html#import-export">Import/Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="code.html#markdown">Markdown</a></li>
 <li class="toctree-l4"><a class="reference internal" href="code.html#images">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="code.html#lightbox">Lightbox</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="slides.html">Slides</a><ul>
@@ -237,7 +238,10 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin_guide/index.html">Administrator Guide (in progress)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev_guide/index.html">Developer Guide (in progress)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../how_to_contribute.html">How to contribute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#spread-the-word">Spread the word</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#report-bugs">Report bugs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#translate-cryptpad">Translate CryptPad</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#contribute-to-the-code">Contribute to the code</a></li>
@@ -336,8 +340,8 @@
 <li><p>From a document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-plus"></em> <strong>New</strong>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Ctrl+e</span></code>.</p></li>
 </ul>
-<p>[screenshot pad creation screen (localised)]</p>
-<p><span class="badge">Logged in users</span></p>
+<img alt="../../_images/creation-screen.png" class="screenshot" src="../../_images/creation-screen.png" />
+<p><span class="badge-user">Logged in users</span></p>
 <p>The creation screen offers a number of options when new documents are
 created.</p>
 <ul class="simple">
@@ -378,11 +382,11 @@ the history.</p></li>
 with <em class="fa fa-window-close"></em>.</p></li>
 </ol>
 <p>To save storage space, history can be deleted in the document’s
-<a class="reference internal" href="#document-properties"><span class="std std-ref">properties</span></a> <span class="badge">Document owners</span></p>
+<a class="reference internal" href="#document-properties"><span class="std std-ref">properties</span></a> <span class="badge-owner">Document owners</span></p>
 </div>
 <div class="section" id="properties">
 <span id="document-properties"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
-<p>[properties screenshot]</p>
+<img alt="../../_images/properties.png" class="screenshot" src="../../_images/properties.png" />
 <p>To access the properties menu:</p>
 <ul class="simple">
 <li><p>From the document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-info-circle"></em>
@@ -394,11 +398,11 @@ with <em class="fa fa-window-close"></em>.</p></li>
 <ul class="simple">
 <li><p>Links to edit and view (depending on your permissions).</p></li>
 <li><p>Dates of creation and last access.</p></li>
-<li><p>Size</p></li>
+<li><p>Size.</p></li>
 </ul>
 <p>The document size shows the proportions used for content and for
 history. To save storage space, delete the document’s history with
-<strong>Delete history</strong> and confirm. <span class="badge">Document owners</span></p>
+<strong>Delete history</strong> and confirm. <span class="badge-owner">Document owners</span></p>
 </div>
 <div class="section" id="users-and-chat">
 <span id="document-users-and-chat"></span><h2>Users and chat<a class="headerlink" href="#users-and-chat" title="Permalink to this headline">¶</a></h2>
@@ -457,7 +461,7 @@ history. To save storage space, delete the document’s history with
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'3.19.0',
+            VERSION:'3.20.1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

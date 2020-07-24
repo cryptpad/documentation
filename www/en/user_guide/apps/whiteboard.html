@@ -8,11 +8,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Whiteboard &mdash; CryptPad 3.19.0 documentation</title>
+  <title>Whiteboard &mdash; CryptPad 3.20.1 documentation</title>
   
 
   
-  <link rel="icon" type="image/png" href="../../_static.images/main-favicon.png" id="favicon"/>
+  <link rel="icon" type="image/png" href="../../_static/images/main-favicon.png" id="favicon"/>
   
   
 
@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="../../_static/css/cp-overrides.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="How to contribute" href="../../how_to_contribute.html" />
+    <link rel="next" title="Administrator Guide" href="../../admin_guide/index.html" />
     <link rel="prev" title="Kanban" href="kanban.html" /> 
 
   
@@ -54,7 +54,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/sidebar-logo.png" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">3.19.0</span>
+              <span class="release">3.20.1</span>
             </a>
             
 <div role="search">
@@ -112,6 +112,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../user_account.html#notifications">Notifications</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../security.html">Security</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#passwords-for-documents-and-folders">Passwords for documents and folders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#remote-disconnect">Remote Disconnect</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../drive.html">Drive</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#display">Display</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#managing-documents">Managing documents</a><ul>
@@ -123,11 +128,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#cryptdrive-history">CryptDrive history</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#tags">Tags</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#templates">Templates</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../security.html">Security</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../security.html#passwords-for-documents-and-folders">Passwords for documents and folders</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../security.html#remote-disconnect">Remote Disconnect</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../collaboration.html">Collaboration / Social</a><ul>
@@ -198,6 +198,7 @@
 <li class="toctree-l4"><a class="reference internal" href="code.html#import-export">Import/Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="code.html#markdown">Markdown</a></li>
 <li class="toctree-l4"><a class="reference internal" href="code.html#images">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="code.html#lightbox">Lightbox</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="slides.html">Slides</a><ul>
@@ -237,7 +238,10 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin_guide/index.html">Administrator Guide (in progress)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev_guide/index.html">Developer Guide (in progress)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../how_to_contribute.html">How to contribute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#spread-the-word">Spread the word</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#report-bugs">Report bugs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#translate-cryptpad">Translate CryptPad</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#contribute-to-the-code">Contribute to the code</a></li>
@@ -334,7 +338,7 @@
 <div class="section" id="toolbar">
 <h2>Toolbar<a class="headerlink" href="#toolbar" title="Permalink to this headline">¶</a></h2>
 <p><em class="fa fa-picture-o"></em> <strong>Insert</strong>: Add an image to the document. The image can be
-chosen in the CryptDrive or uploaded. <span class="badge">Logged in users</span></p>
+chosen in the CryptDrive or uploaded. <span class="badge-user">Logged in users</span></p>
 </div>
 <div class="section" id="drawing">
 <h2>Drawing<a class="headerlink" href="#drawing" title="Permalink to this headline">¶</a></h2>
@@ -358,10 +362,16 @@ color-picker.</p>
 </div>
 <div class="section" id="select-mode">
 <h2>Select mode<a class="headerlink" href="#select-mode" title="Permalink to this headline">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on an element to select it, then: - <code class="docutils literal notranslate"><span class="pre">Drag</span></code> to move. -
-Transform (scale, rotate) with the selection handles.</p>
-<p>To delete a selected element: - <code class="docutils literal notranslate"><span class="pre">Del</span></code> key. - <em class="fa fa-trash"></em> button in the
-drawing toolbar.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on an element to select it, then:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Drag</span></code> to move.</p></li>
+<li><p>Transform (scale, rotate) with the selection handles.</p></li>
+</ul>
+<p>To delete a selected element:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Del</span></code> key.</p></li>
+<li><p><em class="fa fa-trash"></em> button in the drawing toolbar.</p></li>
+</ul>
 </div>
 <div class="section" id="export">
 <h2>Export<a class="headerlink" href="#export" title="Permalink to this headline">¶</a></h2>
@@ -371,7 +381,7 @@ drawing toolbar.</p>
 </div>
 <p>To export an image to the CryptDrive, for example to use it in other
 documents:</p>
-<p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <strong>Save as image</strong></p>
+<p><em class="fa fa-file-o"></em> <strong>File</strong> &gt;  <em class="fa fa-file-image-o"></em> <strong>Save as image</strong></p>
 </div>
 </div>
 
@@ -383,7 +393,7 @@ documents:</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../how_to_contribute.html" class="btn btn-neutral float-right" title="How to contribute" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../../admin_guide/index.html" class="btn btn-neutral float-right" title="Administrator Guide" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="kanban.html" class="btn btn-neutral" title="Kanban" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
@@ -420,7 +430,7 @@ documents:</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'3.19.0',
+            VERSION:'3.20.1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

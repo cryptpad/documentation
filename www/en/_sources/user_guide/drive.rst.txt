@@ -11,6 +11,8 @@ from the other pages:
 -  ``Clic`` on the logo at the top-left.
 -  User menu (avatar at the top-right) > |hdd-o| **CryptDrive**.
 
+.. _drive_display:
+
 Display
 -------
 
@@ -19,7 +21,7 @@ Documents in the CryptDrive can be displayed as a |list| list or a
 right of the CryptDrive toolbar (under the avatar).
 
 In grid mode, CryptPad can display thumbnails of documents. These can be
-turned on in the [user settings].
+turned on in the :ref:`user settings <user_settings_cryptdrive>`.
 
 .. figure:: /images/drive-grid.png
    :class: screenshot
@@ -40,7 +42,7 @@ Managing documents
 Folders
 ~~~~~~~
 
-:badge:`Logged in users`
+:badge_user:`Logged in users`
 
 There are multiple ways to create folders in the CryptDrive:
 
@@ -89,8 +91,8 @@ Deleting
 
 There are two ways of deleting a document on CryptPad:
 
-- |trash| **Removing** a document means it stops appearing in the   CryptDrive but remains in the database. The document remains in the   CryptDrive of other users who have stored it. The document can be   recovered in the CryptDrive using the [history].
-- |cptools destroy| **Destroying** a document deletes it from the database permanently.   The document is deleted from all CryptDrives that store it, and it   cannot be recovered using the CryptDrive history. :badge:`Document owners`
+- |trash| **Removing** a document means it stops appearing in the CryptDrive but remains in the database. The document remains in the CryptDrive of other users who have stored it. The document can be recovered in the CryptDrive using the :ref:`history <drive_history>`.
+- |cptools destroy| **Destroying** a document deletes it from the database permanently. The document is deleted from all CryptDrives that store it, and it cannot be recovered using the CryptDrive history. :badge_owner:`Document owners`
 
 
 .. note::
@@ -119,7 +121,7 @@ them.
 
 To **destroy** a document without storing it in the trash first:
 
--  ``Right click`` on the document in the CryptDrive > |cptools destroy| **Destroy**. :badge:`Document owners`
+-  ``Right click`` on the document in the CryptDrive > |cptools destroy| **Destroy**. :badge_owner:`Document owners`
 
 .. _drive_history:
 
@@ -133,7 +135,7 @@ CryptDrive:
    the avatar).
 2. Use the arrows |fast-backward| |step-backward| to step through
    the history.
-3. Restore the current step with , or exit the history wihtout restoring
+3. Restore the current step with , or exit the history without restoring
    with |window-close|.
 
 To save storage space the CryptDrive history can be deleted in the :ref:`user settings <user_settings_cryptDrive>`.
@@ -147,7 +149,7 @@ To save storage space the CryptDrive history can be deleted in the :ref:`user se
 Tags
 ----
 
-:badge:`Logged in users`
+:badge_user:`Logged in users`
 
 Group documents in multiple categories by using tags. Your tags are not
 visible by other users.
@@ -157,8 +159,7 @@ and their associated documents.
 
 To add or remove tags from a document:
 
--  From the CrytpDrive: ``Right click`` on the document > |hashtag|
-   **Tags**.
+-  From the CrytpDrive: ``Right click`` on the document > |hashtag| **Tags**.
 -  From a document: |file-o| **File** > |hashtag| **Tags**.
 
 To manage tags for multiple documents: 
@@ -174,7 +175,7 @@ added and/or removed are applied to all the selected documents.
 Templates
 ---------
 
-:badge:`Logged in users`
+:badge_user:`Logged in users`
 
 Templates provide reusable starting points to create documents of a
 similar structure, for example invoices, letterheads, reports, and so
@@ -192,7 +193,7 @@ or
 
 or
 
-1. Create a [new document].
+1. Create a :ref:`new document <new_document>`.
 2. On the creation screen select |cptools new-template| **New
    template**.
 

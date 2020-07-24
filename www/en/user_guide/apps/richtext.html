@@ -8,11 +8,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Rich Text &mdash; CryptPad 3.19.0 documentation</title>
+  <title>Rich Text &mdash; CryptPad 3.20.1 documentation</title>
   
 
   
-  <link rel="icon" type="image/png" href="../../_static.images/main-favicon.png" id="favicon"/>
+  <link rel="icon" type="image/png" href="../../_static/images/main-favicon.png" id="favicon"/>
   
   
 
@@ -54,7 +54,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/sidebar-logo.png" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">3.19.0</span>
+              <span class="release">3.20.1</span>
             </a>
             
 <div role="search">
@@ -112,6 +112,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../user_account.html#notifications">Notifications</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../security.html">Security</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#passwords-for-documents-and-folders">Passwords for documents and folders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#remote-disconnect">Remote Disconnect</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../drive.html">Drive</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#display">Display</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#managing-documents">Managing documents</a><ul>
@@ -123,11 +128,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#cryptdrive-history">CryptDrive history</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#tags">Tags</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#templates">Templates</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../security.html">Security</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../security.html#passwords-for-documents-and-folders">Passwords for documents and folders</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../security.html#remote-disconnect">Remote Disconnect</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../collaboration.html">Collaboration / Social</a><ul>
@@ -198,6 +198,7 @@
 <li class="toctree-l4"><a class="reference internal" href="code.html#import-export">Import/Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="code.html#markdown">Markdown</a></li>
 <li class="toctree-l4"><a class="reference internal" href="code.html#images">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="code.html#lightbox">Lightbox</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="slides.html">Slides</a><ul>
@@ -237,7 +238,10 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin_guide/index.html">Administrator Guide (in progress)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev_guide/index.html">Developer Guide (in progress)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../how_to_contribute.html">How to contribute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#spread-the-word">Spread the word</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#report-bugs">Report bugs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#translate-cryptpad">Translate CryptPad</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#contribute-to-the-code">Contribute to the code</a></li>
@@ -335,7 +339,7 @@
 <h2>Toolbar<a class="headerlink" href="#toolbar" title="Permalink to this headline">¶</a></h2>
 <p><em class="fa fa-wrench"></em> <strong>Tools</strong>: Show/hide the text editor toolbar.</p>
 <p><em class="fa fa-picture-o"></em> <strong>Insert</strong>: Add an image to the document. The image can be
-chosen in the CrpytDrive or uploaded. <span class="badge">Logged in users</span></p>
+chosen in the CrpytDrive or uploaded. <span class="badge-user">Logged in users</span></p>
 </div>
 <div class="section" id="import-export">
 <h2>Import/Export<a class="headerlink" href="#import-export" title="Permalink to this headline">¶</a></h2>
@@ -363,9 +367,11 @@ editor toolbar.</p></li>
 <li><p>Write the comment.</p></li>
 <li><p><em class="fa fa-send-o"></em> <strong>Submit</strong>.</p></li>
 </ol>
-<p>Click on a comment to select it, then: - <em class="fa fa-reply"></em> <strong>Reply</strong>: Adds a
-comment as a response. - <em class="fa fa-check"></em> <strong>Resolve</strong>: Deletes the comment
-after confirmation.</p>
+<p>Click on a comment to select it, then:</p>
+<ul class="simple">
+<li><p><em class="fa fa-reply"></em> <strong>Reply</strong>: Adds a comment as a response.</p></li>
+<li><p><em class="fa fa-check"></em> <strong>Resolve</strong>: Deletes the comment after confirmation.</p></li>
+</ul>
 <p>To notify contacts in a comment, mention them with <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> and their
 <a class="reference internal" href="../user_account.html#user-settings-account"><span class="std std-ref">display name</span></a>.</p>
 <p>You receive notifications when:</p>
@@ -421,7 +427,7 @@ after confirmation.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'3.19.0',
+            VERSION:'3.20.1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

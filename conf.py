@@ -28,7 +28,7 @@ copyright = '2020, CryptPad Team'
 author = 'CryptPad Team'
 
 # The full version, including alpha/beta/rc tags
-release = '3.19.0'
+release = '3.20.1'
 
 
 # -- General configuration ---------------------------------------------------
@@ -81,7 +81,8 @@ exclude_patterns = [
 
 rst_epilog = """
 
-.. role:: badge
+.. role:: badge_user
+.. role:: badge_owner
 
 """
 
@@ -95,7 +96,7 @@ rst_epilog = """
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['static']
+# html_static_path = ['static']
 
 html_css_files = [
     'css/open-sans.css',

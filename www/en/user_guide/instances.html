@@ -8,11 +8,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>CryptPad instances &mdash; CryptPad 3.19.0 documentation</title>
+  <title>CryptPad instances &mdash; CryptPad 3.20.1 documentation</title>
   
 
   
-  <link rel="icon" type="image/png" href="../_static.images/main-favicon.png" id="favicon"/>
+  <link rel="icon" type="image/png" href="../_static/images/main-favicon.png" id="favicon"/>
   
   
 
@@ -54,7 +54,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/sidebar-logo.png" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">3.19.0</span>
+              <span class="release">3.20.1</span>
             </a>
             
 <div role="search">
@@ -112,6 +112,11 @@
 <li class="toctree-l3"><a class="reference internal" href="user_account.html#notifications">Notifications</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="security.html">Security</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="security.html#passwords-for-documents-and-folders">Passwords for documents and folders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#remote-disconnect">Remote Disconnect</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="drive.html">Drive</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#display">Display</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#managing-documents">Managing documents</a><ul>
@@ -123,11 +128,6 @@
 <li class="toctree-l3"><a class="reference internal" href="drive.html#cryptdrive-history">CryptDrive history</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#tags">Tags</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#templates">Templates</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="security.html">Security</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="security.html#passwords-for-documents-and-folders">Passwords for documents and folders</a></li>
-<li class="toctree-l3"><a class="reference internal" href="security.html#remote-disconnect">Remote Disconnect</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="collaboration.html">Collaboration / Social</a><ul>
@@ -198,6 +198,7 @@
 <li class="toctree-l4"><a class="reference internal" href="apps/code.html#import-export">Import/Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/code.html#markdown">Markdown</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/code.html#images">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#lightbox">Lightbox</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="apps/slides.html">Slides</a><ul>
@@ -237,7 +238,10 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">Administrator Guide (in progress)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev_guide/index.html">Developer Guide (in progress)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how_to_contribute.html">How to contribute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#spread-the-word">Spread the word</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#report-bugs">Report bugs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#translate-cryptpad">Translate CryptPad</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#contribute-to-the-code">Contribute to the code</a></li>
@@ -330,14 +334,11 @@
 provide this service in a personal or professional capacity.</p>
 <p>This documentation is written and maintained by the development team at
 XWiki SAS in Paris, France. This team administers the flagship instance
-at cryptpad.fr, but there are many others. This documentation should
-apply to all instances unless explicitly mentionned.</p>
+at <a class="reference external" href="https://cryptpad.fr">cryptpad.fr</a>, but there are many others. This documentation applies to all instances unless explicitly mentioned.</p>
 <p>Please note that this documentation is kept up to date with the latest
-version of CryptPad: 3.19.0. It is possible that other instances are using
+version of CryptPad: 3.20.1. It is possible that other instances are using
 earlier versions. Each instance can also have specific settings such as
 storage space, disabled applications, or custom colors/styles.</p>
-<p>If you are looking to set up a CryptPad instance please refer to the
-[Installation Guide].</p>
 </div>
 
 
@@ -385,7 +386,7 @@ storage space, disabled applications, or custom colors/styles.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'3.19.0',
+            VERSION:'3.20.1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

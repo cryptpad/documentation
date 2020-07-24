@@ -12,10 +12,33 @@
 
 /* Badges for "Logged in users", "Document owners" etc */
 
-.badge {
+.badge-user, .badge-owner {
     display: inline-block;
-    background-color: #ddd;
-    padding: 2px 5px;
+    font-size: 0.8em;
+    background-color: #c2e2f8;
+    padding: 0px 5px;
+}
+
+.badge-owner::before, .badge-user::before {
+    font-family: "FontAwesome";
+}
+
+.badge-user::before {
+    content: " ";
+}
+
+.badge-owner::before {
+    content: " ";
+}
+
+h3 {
+    margin: 40px 0px 15px 0px;
+}
+
+.rst-content code.literal {
+    color: #FF0073;
+    border-color: #ccc;
+    padding: 0.15em 0.5em;
 }
 
 .wy-menu-vertical li.toctree-l4 ul {
@@ -25,3 +48,4 @@
 .wy-menu-vertical li.toctree-l4 .toctree-expand {
     display: none !important;
 }
+

@@ -14,7 +14,7 @@ Toolbar
 -------
 
 |picture-o| **Insert**: Add an image to the document. The image can be
-chosen in the CryptDrive or uploaded. :badge:`Logged in users`
+chosen in the CryptDrive or uploaded. :badge_user:`Logged in users`
 
 Drawing
 -------
@@ -41,11 +41,15 @@ color-picker.
 Select mode
 -----------
 
-``Click`` on an element to select it, then: - ``Drag`` to move. -
-Transform (scale, rotate) with the selection handles.
+``Click`` on an element to select it, then:
 
-To delete a selected element: - ``Del`` key. - |trash| button in the
-drawing toolbar.
+- ``Drag`` to move.
+- Transform (scale, rotate) with the selection handles.
+
+To delete a selected element:
+
+- ``Del`` key.
+- |trash| button in the drawing toolbar.
 
 Export
 ------
@@ -56,4 +60,4 @@ Export
 To export an image to the CryptDrive, for example to use it in other
 documents:
 
-|file-o| **File** > **Save as image**
+|file-o| **File** >  |file-image-o| **Save as image**
