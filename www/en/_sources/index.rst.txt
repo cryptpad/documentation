@@ -6,7 +6,11 @@
 CryptPad Documentation
 ==================================================
 
-Welcome to the CryptPad documentation. This site contains 3 guides with information about using CryptPad, installing and administering the service, and contributing to the code.
+Welcome to the CryptPad documentation.
+
+CryptPad is a collaboration suite, encrypted and open-source.
+
+This site contains 3 guides with information about using CryptPad, installing and administering the service, and contributing to the code.
 
 .. toctree::
    :maxdepth: 1

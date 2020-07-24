@@ -16,7 +16,7 @@ To create a new document:
 .. image:: /images/creation-screen.png
    :class: screenshot
 
-:badge:`Logged in users`
+:badge_user:`Logged in users`
 
 The creation screen offers a number of options when new documents are
 created.
@@ -68,7 +68,7 @@ restore a previous state:
    with |window-close|.
 
 To save storage space, history can be deleted in the document’s
-:ref:`properties <document_properties>` :badge:`Document owners`
+:ref:`properties <document_properties>` :badge_owner:`Document owners`
 
 .. _document_properties:
 
@@ -94,7 +94,7 @@ Available data:
 
 The document size shows the proportions used for content and for
 history. To save storage space, delete the document’s history with
-**Delete history** and confirm. :badge:`Document owners`
+**Delete history** and confirm. :badge_owner:`Document owners`
 
 .. _document_users_and_chat:
 

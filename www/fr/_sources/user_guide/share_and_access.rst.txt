@@ -39,7 +39,7 @@ There are 4 levels of permissions:
 Sharing with contacts
 ~~~~~~~~~~~~~~~~~~~~~
 
-:badge:`Logged in users`
+:badge_user:`Logged in users`
 
 This is the recommended method for sharing documents securely on CryptPad. When sharing directly with :ref:`contacts <contacts>`, document links never leave the encrypted platform of CryptPad. This prevents data from being leaked to third parties.
 
@@ -122,7 +122,7 @@ then
 Shared folders
 ~~~~~~~~~~~~~~
 
-:badge:`Logged in users`
+:badge_user:`Logged in users`
 
 Shared folders are made for sharing a set of documents at once.
 
@@ -164,7 +164,7 @@ the CryptDrive:
 Access
 ------
 
-:badge:`Logged in users`
+:badge_user:`Logged in users`
 
 This menu is used to restrict access to a document or shared folder:
 
@@ -193,7 +193,7 @@ This tab summarises all the modalities of access to the document:
 
 -  | **Edit rights requests**:
    | **Request edit rights**: For users with read-only access rights.
-   | |bell-slash| **Mute access requests for this pad**: Hides edit rights requests for this document. :badge:`Document owners`
+   | |bell-slash| **Mute access requests for this pad**: Hides edit rights requests for this document. :badge_owner:`Document owners`
 
 -  **Access list**: Displays the `access list <#access-list>`__ and
    indicates if it is enabled.
@@ -205,7 +205,7 @@ This tab summarises all the modalities of access to the document:
 Access List
 ~~~~~~~~~~~
 
-:badge:`Document owners`
+:badge_owner:`Document owners`
 
 
 .. image:: /images/access-modal-list.png
@@ -253,7 +253,7 @@ The ownership of a document is set when :ref:`creating it<new_document>`.
    but can be removed from the CryptDrive and will be destroyed
    automatically after 90 days of inactivity.
 
-:badge:`Document owners`
+:badge_owner:`Document owners`
 
 To add users or teams as owners:
 
