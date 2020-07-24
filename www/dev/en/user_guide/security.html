@@ -8,11 +8,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Security &mdash; CryptPad 3.19.0 documentation</title>
+  <title>Security &mdash; CryptPad 3.20.1 documentation</title>
   
 
   
-  <link rel="icon" type="image/png" href="../_static.images/main-favicon.png" id="favicon"/>
+  <link rel="icon" type="image/png" href="../_static/images/main-favicon.png" id="favicon"/>
   
   
 
@@ -33,8 +33,8 @@
   <link rel="stylesheet" href="../_static/css/cp-overrides.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Collaboration / Social" href="collaboration.html" />
-    <link rel="prev" title="Drive" href="drive.html" /> 
+    <link rel="next" title="Drive" href="drive.html" />
+    <link rel="prev" title="User Account" href="user_account.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -54,7 +54,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/sidebar-logo.png" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">3.19.0</span>
+              <span class="release">3.20.1</span>
             </a>
             
 <div role="search">
@@ -112,6 +112,11 @@
 <li class="toctree-l3"><a class="reference internal" href="user_account.html#notifications">Notifications</a></li>
 </ul>
 </li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Security</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#passwords-for-documents-and-folders">Passwords for documents and folders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remote-disconnect">Remote Disconnect</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="drive.html">Drive</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#display">Display</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#managing-documents">Managing documents</a><ul>
@@ -123,11 +128,6 @@
 <li class="toctree-l3"><a class="reference internal" href="drive.html#cryptdrive-history">CryptDrive history</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#tags">Tags</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#templates">Templates</a></li>
-</ul>
-</li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Security</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#passwords-for-documents-and-folders">Passwords for documents and folders</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#remote-disconnect">Remote Disconnect</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="collaboration.html">Collaboration / Social</a><ul>
@@ -198,6 +198,7 @@
 <li class="toctree-l4"><a class="reference internal" href="apps/code.html#import-export">Import/Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/code.html#markdown">Markdown</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/code.html#images">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#lightbox">Lightbox</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="apps/slides.html">Slides</a><ul>
@@ -237,7 +238,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../dev_guide/index.html">Developer Guide</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">Administrator Guide (in progress)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev_guide/index.html">Developer Guide (in progress)</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../dev_guide/setup.html">Instance locale de développement</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../dev_guide/setup.html#prerequis">Prérequis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../dev_guide/setup.html#installation">Installation</a></li>
@@ -295,11 +297,71 @@
 <li class="toctree-l4"><a class="reference internal" href="../dev_guide/common/common-util.html">Common util</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/client.html">Client</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/architecture.html">Architecture client</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/architecture.html#worker">Worker</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/architecture.html#outer">Outer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/architecture.html#inner">Inner</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/chainpad.html">ChainPad et Listmap</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/chainpad.html#chainpad">ChainPad</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/chainpad.html#checkpoints">Checkpoints</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/chainpad.html#chainpad-avec-des-objets">ChainPad avec des objets</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/chainpad.html#chainpad-netflux">Chainpad-netflux</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/chainpad.html#listmap">Listmap</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/requirejs.html">RequireJS</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/requirejs.html#utilisation">Utilisation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/requirejs.html#cache">Cache</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/requirejs.html#config">Config</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/requirejs.html#requirecss-requireless">RequireCSS, RequireLess</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/translations.html">Utiliser les clés de traduction</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/translations.html#utilisation">Utilisation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/translations.html#structure">Structure</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/framework.html">Framework</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/framework.html#www-common-sframe-app-outer-js">www/common/sframe-app-outer.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/framework.html#www-common-sframe-app-framework-js">www/common/sframe-app-framework.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/framework.html#customize-dist-src-less2-include-framework-less">customize.dist/src/less2/include/framework.less</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/worker.html">Worker</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/worker.html#async-store-js-et-modules">async-store.js et modules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/worker.html#commandes-de-lobjet-store">Commandes de l’objet “Store”</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/worker.html#liste-des-modules-et-objet-store">Liste des modules et objet “store”</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/outer.html">Outer</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/outer.html#communication-entre-les-niveaux">Communication entre les niveaux</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/outer.html#communication-avec-inner-sframe-common-outer">Communication avec inner - sframe-common-outer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/outer.html#communication-avec-le-worker-cryptpad-common">Communication avec le worker - cryptpad-common</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/outer.html#autres-fichiers-notables">Autres fichiers notables</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/inner.html">Inner</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/inner.html#fonctionnement">Fonctionnement</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/inner.html#sframe-common">Sframe-common</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/inner.html#metadata-manager">metadata-manager</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/inner.html#localstore">localStore</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/inner.html#mailbox">mailbox</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/inner.html#modules-dinterface">Modules d’interface</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/inner.html#modules-additionnels">Modules additionnels</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/server.html">Server</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../how_to_contribute.html">How to contribute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#spread-the-word">Spread the word</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#report-bugs">Report bugs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#translate-cryptpad">Translate CryptPad</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#contribute-to-the-code">Contribute to the code</a></li>
@@ -390,7 +452,7 @@
 <h1>Security<a class="headerlink" href="#security" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="passwords-for-documents-and-folders">
 <span id="passwords"></span><h2>Passwords for documents and folders<a class="headerlink" href="#passwords-for-documents-and-folders" title="Permalink to this headline">¶</a></h2>
-<p><span class="badge">Logged in users</span></p>
+<p><span class="badge-user">Logged in users</span></p>
 <p>When you share the link to a document or shared folder through an
 insecure channel (for example email or SMS), someone might intercept the
 link and gain access to your data. To prevent this from happening, the
@@ -409,7 +471,7 @@ it when they open the document.</p>
 </div>
 <div class="section" id="remote-disconnect">
 <span id="id1"></span><h2>Remote Disconnect<a class="headerlink" href="#remote-disconnect" title="Permalink to this headline">¶</a></h2>
-<p><span class="badge">Logged in users</span></p>
+<p><span class="badge-user">Logged in users</span></p>
 <p>In some cases (loss or theft of a device, forgotten to log out of a
 session on a shared computer, etc.) it can be necessary to close all
 active CryptPad sessions. This can be done in two ways:</p>
@@ -432,10 +494,10 @@ active CryptPad sessions. This can be done in two ways:</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="collaboration.html" class="btn btn-neutral float-right" title="Collaboration / Social" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="drive.html" class="btn btn-neutral float-right" title="Drive" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="drive.html" class="btn btn-neutral" title="Drive" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="user_account.html" class="btn btn-neutral" title="User Account" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
       
     </div>
   
@@ -469,7 +531,7 @@ active CryptPad sessions. This can be done in two ways:</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'3.19.0',
+            VERSION:'3.20.1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

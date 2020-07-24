@@ -8,11 +8,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Share / Access &mdash; CryptPad 3.19.0 documentation</title>
+  <title>Share / Access &mdash; CryptPad 3.20.1 documentation</title>
   
 
   
-  <link rel="icon" type="image/png" href="../_static.images/main-favicon.png" id="favicon"/>
+  <link rel="icon" type="image/png" href="../_static/images/main-favicon.png" id="favicon"/>
   
   
 
@@ -54,7 +54,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/sidebar-logo.png" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">3.19.0</span>
+              <span class="release">3.20.1</span>
             </a>
             
 <div role="search">
@@ -112,6 +112,11 @@
 <li class="toctree-l3"><a class="reference internal" href="user_account.html#notifications">Notifications</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="security.html">Security</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="security.html#passwords-for-documents-and-folders">Passwords for documents and folders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#remote-disconnect">Remote Disconnect</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="drive.html">Drive</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#display">Display</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#managing-documents">Managing documents</a><ul>
@@ -123,11 +128,6 @@
 <li class="toctree-l3"><a class="reference internal" href="drive.html#cryptdrive-history">CryptDrive history</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#tags">Tags</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#templates">Templates</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="security.html">Security</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="security.html#passwords-for-documents-and-folders">Passwords for documents and folders</a></li>
-<li class="toctree-l3"><a class="reference internal" href="security.html#remote-disconnect">Remote Disconnect</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="collaboration.html">Collaboration / Social</a><ul>
@@ -198,6 +198,7 @@
 <li class="toctree-l4"><a class="reference internal" href="apps/code.html#import-export">Import/Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/code.html#markdown">Markdown</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/code.html#images">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#lightbox">Lightbox</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="apps/slides.html">Slides</a><ul>
@@ -237,7 +238,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../dev_guide/index.html">Developer Guide</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">Administrator Guide (in progress)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev_guide/index.html">Developer Guide (in progress)</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../dev_guide/setup.html">Instance locale de développement</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../dev_guide/setup.html#prerequis">Prérequis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../dev_guide/setup.html#installation">Installation</a></li>
@@ -295,11 +297,71 @@
 <li class="toctree-l4"><a class="reference internal" href="../dev_guide/common/common-util.html">Common util</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/client.html">Client</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/architecture.html">Architecture client</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/architecture.html#worker">Worker</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/architecture.html#outer">Outer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/architecture.html#inner">Inner</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/chainpad.html">ChainPad et Listmap</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/chainpad.html#chainpad">ChainPad</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/chainpad.html#checkpoints">Checkpoints</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/chainpad.html#chainpad-avec-des-objets">ChainPad avec des objets</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/chainpad.html#chainpad-netflux">Chainpad-netflux</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/chainpad.html#listmap">Listmap</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/requirejs.html">RequireJS</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/requirejs.html#utilisation">Utilisation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/requirejs.html#cache">Cache</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/requirejs.html#config">Config</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/requirejs.html#requirecss-requireless">RequireCSS, RequireLess</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/translations.html">Utiliser les clés de traduction</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/translations.html#utilisation">Utilisation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/translations.html#structure">Structure</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/framework.html">Framework</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/framework.html#www-common-sframe-app-outer-js">www/common/sframe-app-outer.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/framework.html#www-common-sframe-app-framework-js">www/common/sframe-app-framework.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/framework.html#customize-dist-src-less2-include-framework-less">customize.dist/src/less2/include/framework.less</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/worker.html">Worker</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/worker.html#async-store-js-et-modules">async-store.js et modules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/worker.html#commandes-de-lobjet-store">Commandes de l’objet “Store”</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/worker.html#liste-des-modules-et-objet-store">Liste des modules et objet “store”</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/outer.html">Outer</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/outer.html#communication-entre-les-niveaux">Communication entre les niveaux</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/outer.html#communication-avec-inner-sframe-common-outer">Communication avec inner - sframe-common-outer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/outer.html#communication-avec-le-worker-cryptpad-common">Communication avec le worker - cryptpad-common</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/outer.html#autres-fichiers-notables">Autres fichiers notables</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/inner.html">Inner</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/inner.html#fonctionnement">Fonctionnement</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/inner.html#sframe-common">Sframe-common</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/inner.html#metadata-manager">metadata-manager</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/inner.html#localstore">localStore</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/inner.html#mailbox">mailbox</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/inner.html#modules-dinterface">Modules d’interface</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/inner.html#modules-additionnels">Modules additionnels</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/server.html">Server</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../how_to_contribute.html">How to contribute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#spread-the-word">Spread the word</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#report-bugs">Report bugs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#translate-cryptpad">Translate CryptPad</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#contribute-to-the-code">Contribute to the code</a></li>
@@ -405,7 +467,7 @@ to manage how other users can interact with your documents on CryptPad.</p>
 <ul class="simple">
 <li><p><strong>View</strong>: Read-only without editing the document.</p></li>
 <li><p><strong>Present</strong>: Read-only the rendered output of the document, available
-in the [Code] and [Slides] applications.</p></li>
+in the <a class="reference internal" href="apps/code.html#app-code"><span class="std std-ref">Code / Markdown</span></a> and <a class="reference internal" href="apps/slides.html#app-slides"><span class="std std-ref">Slides</span></a> applications.</p></li>
 <li><p><strong>Edit</strong>: View and make changes to the document.</p></li>
 <li><p><strong>View once and self-destruct</strong>: Read-only <strong>one time</strong>. Once the
 link is opened by a recipient, the document is deleted permanently.</p></li>
@@ -417,8 +479,9 @@ link is opened by a recipient, the document is deleted permanently.</p></li>
 </div>
 <div class="section" id="sharing-with-contacts">
 <span id="share-contacts"></span><h3>Sharing with contacts<a class="headerlink" href="#sharing-with-contacts" title="Permalink to this headline">¶</a></h3>
-<p><span class="badge">Logged in users</span></p>
+<p><span class="badge-user">Logged in users</span></p>
 <p>This is the recommended method for sharing documents securely on CryptPad. When sharing directly with <a class="reference internal" href="collaboration.html#contacts"><span class="std std-ref">contacts</span></a>, document links never leave the encrypted platform of CryptPad. This prevents data from being leaked to third parties.</p>
+<img alt="../_images/share-modal-contacts.png" class="screenshot" src="../_images/share-modal-contacts.png" />
 <p>To share with one or more contacts:</p>
 <ul class="simple">
 <li><p><em class="fa fa-share-alt"></em> <strong>Share</strong> in the document toolbar &gt; <em class="fa fa-address-book"></em>
@@ -444,18 +507,17 @@ When sharing with a team, the document is added directly to the team’s CryptDr
 your choice. Depending on how you send the link, this method can present
 security risks. To add a level of security, it is recommended to add a
 <a class="reference internal" href="#access-tab"><span class="std std-ref">password</span></a> to your document before sharing the link.</p>
+<img alt="../_images/share-modal-link.png" class="screenshot" src="../_images/share-modal-link.png" />
 <p>To copy the link to a document:</p>
 <ul class="simple">
-<li><p>From the document: <em class="fa fa-share-alt"></em> <strong>Share</strong> in the toolbar &gt; <em class="fa fa-link"></em>
-<strong>Link</strong></p></li>
-<li><p>From the CryptDrive : <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document &gt; <em class="fa fa-share-alt"></em>
-<strong>Share</strong> &gt; <em class="fa fa-link"></em> <strong>Link</strong></p></li>
+<li><p>From the document: <em class="fa fa-share-alt"></em> <strong>Share</strong> in the toolbar &gt; <em class="fa fa-link"></em> <strong>Link</strong>.</p></li>
+<li><p>From the CryptDrive : <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document &gt; <em class="fa fa-share-alt"></em> <strong>Share</strong> &gt; <em class="fa fa-link"></em> <strong>Link</strong>.</p></li>
 </ul>
-<p>then</p>
+<p>Then:</p>
 <ol class="arabic simple">
 <li><p>Choose the <a class="reference internal" href="#share-access-rights"><span class="std std-ref">access rights</span></a> and additional options:</p>
 <ul class="simple">
-<li><p><strong>Embed mode</strong> hides the toolbar and user list</p></li>
+<li><p><strong>Embed mode</strong> hides the toolbar and user list.</p></li>
 <li><p><strong>Preview</strong> allows to check what the link will look like before sending it.</p></li>
 </ul>
 </li>
@@ -466,6 +528,7 @@ security risks. To add a level of security, it is recommended to add a
 <div class="section" id="embedding">
 <span id="share-embed"></span><h3>Embedding<a class="headerlink" href="#embedding" title="Permalink to this headline">¶</a></h3>
 <p>Embedding allows for a CryptPad document to be displayed on a web page.</p>
+<img alt="../_images/share-modal-embed.png" class="screenshot" src="../_images/share-modal-embed.png" />
 <p>To embed a document:</p>
 <ul class="simple">
 <li><p>From the document : <em class="fa fa-share-alt"></em> <strong>Share</strong> in the toolbar &gt; <em class="fa fa-code"></em>
@@ -482,7 +545,7 @@ security risks. To add a level of security, it is recommended to add a
 </div>
 <div class="section" id="shared-folders">
 <span id="id2"></span><h3>Shared folders<a class="headerlink" href="#shared-folders" title="Permalink to this headline">¶</a></h3>
-<p><span class="badge">Logged in users</span></p>
+<p><span class="badge-user">Logged in users</span></p>
 <p>Shared folders are made for sharing a set of documents at once.</p>
 <p>To create a shared folder in the CryptDrive:</p>
 <ul class="simple">
@@ -495,7 +558,7 @@ security risks. To add a level of security, it is recommended to add a
 <li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the folder &gt; <em class="fa fa-share-alt"></em> <strong>Share</strong>.</p></li>
 <li><p>Choose the conversion options.
 Password.
-[Owned] folder.</p></li>
+<a class="reference internal" href="#owners"><span class="std std-ref">Owned</span></a> folder.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">OK</span></code> or press the <code class="docutils literal notranslate"><span class="pre">Enter</span></code> key.</p></li>
 </ol>
 <p>Folders are shared in a similar way to documents. To share a folder from
@@ -520,7 +583,7 @@ choice.
 </div>
 <div class="section" id="access">
 <span id="id3"></span><h2>Access<a class="headerlink" href="#access" title="Permalink to this headline">¶</a></h2>
-<p><span class="badge">Logged in users</span></p>
+<p><span class="badge-user">Logged in users</span></p>
 <p>This menu is used to restrict access to a document or shared folder:</p>
 <ul class="simple">
 <li><p>From the document: <em class="fa fa-unlock-alt"></em> <strong>Access</strong>.</p></li>
@@ -529,18 +592,19 @@ choice.
 </ul>
 <div class="section" id="access-tab">
 <span id="id4"></span><h3>Access tab<a class="headerlink" href="#access-tab" title="Permalink to this headline">¶</a></h3>
+<img alt="../_images/access-modal-access.png" class="screenshot" src="../_images/access-modal-access.png" />
 <p>This tab summarises all the modalities of access to the document:</p>
 <ul>
 <li><p><strong>Expiration date</strong>: Date at which the document will be deleted. This
 date is set at the creation of the document and cannot be modified
 afterwards.</p></li>
-<li><p><strong>Password</strong>: Displays if a [password] has been set. A new password
+<li><p><strong>Password</strong>: Displays if a password has been set. A new password
 can be set, or an existing password modified.</p></li>
 <li><p><strong>Owners</strong>: List of all the document’s <a class="reference external" href="#owners">owners</a>.</p></li>
 <li><div class="line-block">
 <div class="line"><strong>Edit rights requests</strong>:</div>
 <div class="line"><strong>Request edit rights</strong>: For users with read-only access rights.</div>
-<div class="line"><em class="fa fa-bell-slash"></em> <strong>Mute access requests for this pad</strong>: Hides edit rights requests for this document. <span class="badge">Document owners</span></div>
+<div class="line"><em class="fa fa-bell-slash"></em> <strong>Mute access requests for this pad</strong>: Hides edit rights requests for this document. <span class="badge-owner">Document owners</span></div>
 </div>
 </li>
 <li><p><strong>Access list</strong>: Displays the <a class="reference external" href="#access-list">access list</a> and
@@ -550,7 +614,8 @@ indicates if it is enabled.</p></li>
 </div>
 <div class="section" id="access-list">
 <span id="id5"></span><h3>Access List<a class="headerlink" href="#access-list" title="Permalink to this headline">¶</a></h3>
-<p><span class="badge">Document owners</span></p>
+<p><span class="badge-owner">Document owners</span></p>
+<img alt="../_images/access-modal-list.png" class="screenshot" src="../_images/access-modal-list.png" />
 <p>The access list restricts access to a document. Once active, users who
 are not on the list are not able to access the document, even if they
 have it stored in their CryptDrive.</p>
@@ -567,6 +632,7 @@ their name.</p>
 </div>
 <div class="section" id="owners">
 <span id="id6"></span><h3>Owners<a class="headerlink" href="#owners" title="Permalink to this headline">¶</a></h3>
+<img alt="../_images/access-modal-owners.png" class="screenshot" src="../_images/access-modal-owners.png" />
 <p>This tab is used to manage the ownership of the document. Owners of a
 document have the following permissions:</p>
 <ul class="simple">
@@ -575,7 +641,7 @@ document have the following permissions:</p>
 <li><p>Add or remove other owners.</p></li>
 <li><p>Destroy the document.</p></li>
 </ul>
-<p>The ownership of a document is set on the [creation screen].</p>
+<p>The ownership of a document is set when <a class="reference internal" href="apps/general.html#new-document"><span class="std std-ref">creating it</span></a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If a document is created without owners, no one has permissions to
@@ -583,7 +649,7 @@ manage its ownership. It cannot be permanently destroyed by anyone,
 but can be removed from the CryptDrive and will be destroyed
 automatically after 90 days of inactivity.</p>
 </div>
-<p><span class="badge">Document owners</span></p>
+<p><span class="badge-owner">Document owners</span></p>
 <p>To add users or teams as owners:</p>
 <ol class="arabic simple">
 <li><p>Select them in the list of contacts on the right.</p></li>
@@ -639,7 +705,7 @@ automatically after 90 days of inactivity.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'3.19.0',
+            VERSION:'3.20.1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

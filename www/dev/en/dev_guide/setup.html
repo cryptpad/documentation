@@ -8,11 +8,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Instance locale de développement &mdash; CryptPad 3.19.0 documentation</title>
+  <title>Instance locale de développement &mdash; CryptPad 3.20.1 documentation</title>
   
 
   
-  <link rel="icon" type="image/png" href="../_static.images/main-favicon.png" id="favicon"/>
+  <link rel="icon" type="image/png" href="../_static/images/main-favicon.png" id="favicon"/>
   
   
 
@@ -54,7 +54,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/sidebar-logo.png" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">3.19.0</span>
+              <span class="release">3.20.1</span>
             </a>
             
 <div role="search">
@@ -112,6 +112,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#notifications">Notifications</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/security.html">Security</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/security.html#passwords-for-documents-and-folders">Passwords for documents and folders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/security.html#remote-disconnect">Remote Disconnect</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../user_guide/drive.html">Drive</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/drive.html#display">Display</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/drive.html#managing-documents">Managing documents</a><ul>
@@ -123,11 +128,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/drive.html#cryptdrive-history">CryptDrive history</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/drive.html#tags">Tags</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/drive.html#templates">Templates</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../user_guide/security.html">Security</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../user_guide/security.html#passwords-for-documents-and-folders">Passwords for documents and folders</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../user_guide/security.html#remote-disconnect">Remote Disconnect</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../user_guide/collaboration.html">Collaboration / Social</a><ul>
@@ -198,6 +198,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/code.html#import-export">Import/Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/code.html#markdown">Markdown</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/code.html#images">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/code.html#lightbox">Lightbox</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/slides.html">Slides</a><ul>
@@ -237,7 +238,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Developer Guide</a><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">Administrator Guide (in progress)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Developer Guide (in progress)</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Instance locale de développement</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#prerequis">Prérequis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#installation">Installation</a></li>
@@ -295,11 +297,71 @@
 <li class="toctree-l4"><a class="reference internal" href="common/common-util.html">Common util</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="client.html">Client</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client/architecture.html">Architecture client</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="client/architecture.html#worker">Worker</a></li>
+<li class="toctree-l5"><a class="reference internal" href="client/architecture.html#outer">Outer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="client/architecture.html#inner">Inner</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="client/chainpad.html">ChainPad et Listmap</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="client/chainpad.html#chainpad">ChainPad</a></li>
+<li class="toctree-l5"><a class="reference internal" href="client/chainpad.html#checkpoints">Checkpoints</a></li>
+<li class="toctree-l5"><a class="reference internal" href="client/chainpad.html#chainpad-avec-des-objets">ChainPad avec des objets</a></li>
+<li class="toctree-l5"><a class="reference internal" href="client/chainpad.html#chainpad-netflux">Chainpad-netflux</a></li>
+<li class="toctree-l5"><a class="reference internal" href="client/chainpad.html#listmap">Listmap</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="client/requirejs.html">RequireJS</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="client/requirejs.html#utilisation">Utilisation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="client/requirejs.html#cache">Cache</a></li>
+<li class="toctree-l5"><a class="reference internal" href="client/requirejs.html#config">Config</a></li>
+<li class="toctree-l5"><a class="reference internal" href="client/requirejs.html#requirecss-requireless">RequireCSS, RequireLess</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="client/translations.html">Utiliser les clés de traduction</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="client/translations.html#utilisation">Utilisation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="client/translations.html#structure">Structure</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="client/framework.html">Framework</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="client/framework.html#www-common-sframe-app-outer-js">www/common/sframe-app-outer.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="client/framework.html#www-common-sframe-app-framework-js">www/common/sframe-app-framework.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="client/framework.html#customize-dist-src-less2-include-framework-less">customize.dist/src/less2/include/framework.less</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="client/worker.html">Worker</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="client/worker.html#async-store-js-et-modules">async-store.js et modules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="client/worker.html#commandes-de-lobjet-store">Commandes de l’objet “Store”</a></li>
+<li class="toctree-l5"><a class="reference internal" href="client/worker.html#liste-des-modules-et-objet-store">Liste des modules et objet “store”</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="client/outer.html">Outer</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="client/outer.html#communication-entre-les-niveaux">Communication entre les niveaux</a></li>
+<li class="toctree-l5"><a class="reference internal" href="client/outer.html#communication-avec-inner-sframe-common-outer">Communication avec inner - sframe-common-outer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="client/outer.html#communication-avec-le-worker-cryptpad-common">Communication avec le worker - cryptpad-common</a></li>
+<li class="toctree-l5"><a class="reference internal" href="client/outer.html#autres-fichiers-notables">Autres fichiers notables</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="client/inner.html">Inner</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="client/inner.html#fonctionnement">Fonctionnement</a></li>
+<li class="toctree-l5"><a class="reference internal" href="client/inner.html#sframe-common">Sframe-common</a></li>
+<li class="toctree-l5"><a class="reference internal" href="client/inner.html#metadata-manager">metadata-manager</a></li>
+<li class="toctree-l5"><a class="reference internal" href="client/inner.html#localstore">localStore</a></li>
+<li class="toctree-l5"><a class="reference internal" href="client/inner.html#mailbox">mailbox</a></li>
+<li class="toctree-l5"><a class="reference internal" href="client/inner.html#modules-dinterface">Modules d’interface</a></li>
+<li class="toctree-l5"><a class="reference internal" href="client/inner.html#modules-additionnels">Modules additionnels</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="server.html">Server</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../how_to_contribute.html">How to contribute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#spread-the-word">Spread the word</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#report-bugs">Report bugs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#translate-cryptpad">Translate CryptPad</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#contribute-to-the-code">Contribute to the code</a></li>
@@ -396,13 +458,13 @@ installés sur votre système :</p>
 <li><p>git</p></li>
 <li><p>nodejs (nous utilisons node v12.14.0)</p>
 <ul>
-<li><p>Nous recommendons l'utilisation de nvm pour installer nodejs</p></li>
+<li><p>Nous recommendons l’utilisation de nvm pour installer nodejs</p></li>
 </ul>
 </li>
 <li><p>npm</p></li>
 <li><p>bower</p>
 <ul>
-<li><p>Vous pouvez l'installer avec <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span> <span class="pre">-g</span> <span class="pre">bower</span></code> une fois npm
+<li><p>Vous pouvez l’installer avec <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span> <span class="pre">-g</span> <span class="pre">bower</span></code> une fois npm
 installé</p></li>
 </ul>
 </li>
@@ -410,11 +472,12 @@ installé</p></li>
 </div>
 <div class="section" id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
-<p>Le code source de CryptPad se trouve sur <a href="#id1"><span class="problematic" id="id2">`GitHub`_</span></a>. Pour contribuer, il
-faut posséder un compte sur cette plateforme.</p>
+<p>Le code source de CryptPad se trouve sur
+<a class="reference external" href="https://github.com">GitHub</a>. Pour contribuer, il faut posséder un
+compte sur cette plateforme.</p>
 <ul class="simple">
 <li><p>Effectuer un fork de notre code:
-<a href="#id3"><span class="problematic" id="id4">`https://github.com/xwiki-labs/cryptpad.git`_</span></a></p></li>
+<a class="reference external" href="https://github.com/xwiki-labs/cryptpad.git">https://github.com/xwiki-labs/cryptpad.git</a></p></li>
 <li><p>Cloner le fork sur votre système dans le répertoire souhaité</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/{VOTRE_NOM_D'UTILISATEUR}/cryptpad.git</span></code></p></li>
@@ -431,7 +494,7 @@ bower) :</p></li>
 </div>
 <div class="section" id="configuration">
 <h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h2>
-<p>Une fois l'instance installée, certains éléments de configuration
+<p>Une fois l’instance installée, certains éléments de configuration
 peuvent être réglés avant de lancer le serveur.</p>
 <ul class="simple">
 <li><p>Effectuer une copie de la configuration par défaut:</p></li>
@@ -441,27 +504,28 @@ cp config.example.js config.js
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>Le <a href="#id5"><span class="problematic" id="id6">`fichier de configuration`_</span></a> donne la liste des éléments
-configurables et comment les utiliser.</p></li>
+<li><p>Le <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/blob/master/config/config.example.js">fichier de
+configuration</a>
+donne la liste des éléments configurables et comment les utiliser.</p></li>
 <li><p>Pour une instance de développement, on retrouve parmis les éléments
 importants :</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">httpUnsafeOrigin</span></code> : pour utiliser le serveur de développement
 et le client de test sur des systèmes différents, il faut modifier
-cette valeur pour utiliser l'adresse réseau du serveur (exemple:
-'<a href="#id7"><span class="problematic" id="id8">`http://192.168.0.10:3000`_</span></a>')</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">adminKeys</span></code> : pour avoir accès au panneau d'administration dans
+cette valeur pour utiliser l’adresse réseau du serveur (exemple:
+‘<a class="reference external" href="http://192.168.0.10:3000">http://192.168.0.10:3000</a>’)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">adminKeys</span></code> : pour avoir accès au panneau d’administration dans
 le client CryptPad, il faut créer un compte utilisateur sur
-l'instance et ajouter la <em>Clé publique de signature</em> ici.</p></li>
+l’instance et ajouter la <em>Clé publique de signature</em> ici.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">supportMailboxPublicKey</span></code> : pour avoir accès au support sur
-l'instance de développement, il faut générer un &quot;compte&quot; de
+l’instance de développement, il faut générer un “compte” de
 support en utilisant le script *generate-admin-key.js&quot;</p>
 <ul>
-<li><p>``node ./scripts/generate-admin-keys.js`</p></li>
+<li><p>`<code class="docutils literal notranslate"><span class="pre">node</span> <span class="pre">./scripts/generate-admin-keys.js</span></code></p></li>
 <li><p>Copier la clé <strong>publique</strong> (public key) dans le champ
 <code class="docutils literal notranslate"><span class="pre">supportMailboxPublicKey</span></code> du fichier de configuration</p></li>
 <li><p>Copier la clé <strong>privée</strong> (private key) dans la partie support
-du panneau d'administration (après avoir configuré un compte
+du panneau d’administration (après avoir configuré un compte
 administrateur). Cette clé <strong>privée</strong> est la même pour tous les
 comptes administrateurs souhaitant accéder au support.</p></li>
 </ul>
@@ -474,19 +538,19 @@ comptes administrateurs souhaitant accéder au support.</p></li>
 </div>
 <div class="section" id="cache-et-compilation-important">
 <h2>Cache et compilation (important)<a class="headerlink" href="#cache-et-compilation-important" title="Permalink to this headline">¶</a></h2>
-<p>CryptPad utilise un système de &quot;Cache busting&quot; pour gérer la version du
+<p>CryptPad utilise un système de “Cache busting” pour gérer la version du
 code JavaScript et du code CSS compilé. Cela signifie que, pour un
 lancement normal du serveur, tout le code sera mis en cache à la
 première ouverture de chaque fichier et les modifications apportées par
 la suite aux sources ne seront pas appliquées dans le navigateur. Pour
 éviter ce problème, il faut donc lancer le serveur en mode
 <em>développement</em>.</p>
-<p>Il est important de noter qu'aucune étape de &quot;build&quot; ou &quot;compilation&quot;
-n'est nécessaire lors du développement de code pour CryptPad. Les fichiers
-JavaScript sont chargés &quot;bruts&quot; dans le navigateur et le code &quot;LESS&quot; est
-compilé en CSS par le navigateur des clients directement. Pour tester une
-modification, il suffit donc d'écrire le code et de recharger la page sur
-CryptPad.</p>
+<p>Il est important de noter qu’aucune étape de “build” ou “compilation”
+n’est nécessaire lors du développement de code pour CryptPad. Les
+fichiers JavaScript sont chargés “bruts” dans le navigateur et le code
+“LESS” est compilé en CSS par le navigateur des clients directement.
+Pour tester une modification, il suffit donc d’écrire le code et de
+recharger la page sur CryptPad.</p>
 </div>
 <div class="section" id="lancement-en-mode-developpement">
 <h2>Lancement en mode développement<a class="headerlink" href="#lancement-en-mode-developpement" title="Permalink to this headline">¶</a></h2>
@@ -541,7 +605,7 @@ CryptPad.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'3.19.0',
+            VERSION:'3.20.1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

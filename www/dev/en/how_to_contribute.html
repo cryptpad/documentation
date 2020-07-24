@@ -8,11 +8,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>How to contribute &mdash; CryptPad 3.19.0 documentation</title>
+  <title>How to contribute &mdash; CryptPad 3.20.1 documentation</title>
   
 
   
-  <link rel="icon" type="image/png" href="_static.images/main-favicon.png" id="favicon"/>
+  <link rel="icon" type="image/png" href="_static/images/main-favicon.png" id="favicon"/>
   
   
 
@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="_static/css/cp-overrides.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Common util" href="dev_guide/common/common-util.html" /> 
+    <link rel="prev" title="Server" href="dev_guide/server.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -53,7 +53,7 @@
             <a href="index.html" class="icon icon-home">
               <img src="_static/images/sidebar-logo.png" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">3.19.0</span>
+              <span class="release">3.20.1</span>
             </a>
             
 <div role="search">
@@ -111,6 +111,11 @@
 <li class="toctree-l3"><a class="reference internal" href="user_guide/user_account.html#notifications">Notifications</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/security.html">Security</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="user_guide/security.html#passwords-for-documents-and-folders">Passwords for documents and folders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_guide/security.html#remote-disconnect">Remote Disconnect</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="user_guide/drive.html">Drive</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="user_guide/drive.html#display">Display</a></li>
 <li class="toctree-l3"><a class="reference internal" href="user_guide/drive.html#managing-documents">Managing documents</a><ul>
@@ -122,11 +127,6 @@
 <li class="toctree-l3"><a class="reference internal" href="user_guide/drive.html#cryptdrive-history">CryptDrive history</a></li>
 <li class="toctree-l3"><a class="reference internal" href="user_guide/drive.html#tags">Tags</a></li>
 <li class="toctree-l3"><a class="reference internal" href="user_guide/drive.html#templates">Templates</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="user_guide/security.html">Security</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="user_guide/security.html#passwords-for-documents-and-folders">Passwords for documents and folders</a></li>
-<li class="toctree-l3"><a class="reference internal" href="user_guide/security.html#remote-disconnect">Remote Disconnect</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="user_guide/collaboration.html">Collaboration / Social</a><ul>
@@ -197,6 +197,7 @@
 <li class="toctree-l4"><a class="reference internal" href="user_guide/apps/code.html#import-export">Import/Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/apps/code.html#markdown">Markdown</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/apps/code.html#images">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/code.html#lightbox">Lightbox</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="user_guide/apps/slides.html">Slides</a><ul>
@@ -236,7 +237,8 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="dev_guide/index.html">Developer Guide</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="admin_guide/index.html">Administrator Guide (in progress)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dev_guide/index.html">Developer Guide (in progress)</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="dev_guide/setup.html">Instance locale de développement</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="dev_guide/setup.html#prerequis">Prérequis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dev_guide/setup.html#installation">Installation</a></li>
@@ -294,11 +296,71 @@
 <li class="toctree-l4"><a class="reference internal" href="dev_guide/common/common-util.html">Common util</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide/client.html">Client</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="dev_guide/client/architecture.html">Architecture client</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/architecture.html#worker">Worker</a></li>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/architecture.html#outer">Outer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/architecture.html#inner">Inner</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="dev_guide/client/chainpad.html">ChainPad et Listmap</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/chainpad.html#chainpad">ChainPad</a></li>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/chainpad.html#checkpoints">Checkpoints</a></li>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/chainpad.html#chainpad-avec-des-objets">ChainPad avec des objets</a></li>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/chainpad.html#chainpad-netflux">Chainpad-netflux</a></li>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/chainpad.html#listmap">Listmap</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="dev_guide/client/requirejs.html">RequireJS</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/requirejs.html#utilisation">Utilisation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/requirejs.html#cache">Cache</a></li>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/requirejs.html#config">Config</a></li>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/requirejs.html#requirecss-requireless">RequireCSS, RequireLess</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="dev_guide/client/translations.html">Utiliser les clés de traduction</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/translations.html#utilisation">Utilisation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/translations.html#structure">Structure</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="dev_guide/client/framework.html">Framework</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/framework.html#www-common-sframe-app-outer-js">www/common/sframe-app-outer.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/framework.html#www-common-sframe-app-framework-js">www/common/sframe-app-framework.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/framework.html#customize-dist-src-less2-include-framework-less">customize.dist/src/less2/include/framework.less</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="dev_guide/client/worker.html">Worker</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/worker.html#async-store-js-et-modules">async-store.js et modules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/worker.html#commandes-de-lobjet-store">Commandes de l’objet “Store”</a></li>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/worker.html#liste-des-modules-et-objet-store">Liste des modules et objet “store”</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="dev_guide/client/outer.html">Outer</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/outer.html#communication-entre-les-niveaux">Communication entre les niveaux</a></li>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/outer.html#communication-avec-inner-sframe-common-outer">Communication avec inner - sframe-common-outer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/outer.html#communication-avec-le-worker-cryptpad-common">Communication avec le worker - cryptpad-common</a></li>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/outer.html#autres-fichiers-notables">Autres fichiers notables</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="dev_guide/client/inner.html">Inner</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/inner.html#fonctionnement">Fonctionnement</a></li>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/inner.html#sframe-common">Sframe-common</a></li>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/inner.html#metadata-manager">metadata-manager</a></li>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/inner.html#localstore">localStore</a></li>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/inner.html#mailbox">mailbox</a></li>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/inner.html#modules-dinterface">Modules d’interface</a></li>
+<li class="toctree-l5"><a class="reference internal" href="dev_guide/client/inner.html#modules-additionnels">Modules additionnels</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide/server.html">Server</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">How to contribute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#spread-the-word">Spread the word</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#report-bugs">Report bugs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#translate-cryptpad">Translate CryptPad</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#contribute-to-the-code">Contribute to the code</a></li>
@@ -384,37 +446,51 @@
            <div itemprop="articleBody">
             
   <div class="section" id="how-to-contribute">
-<h1>How to contribute<a class="headerlink" href="#how-to-contribute" title="Permalink to this headline">¶</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Work in Progress</p>
+<span id="id1"></span><h1>How to contribute<a class="headerlink" href="#how-to-contribute" title="Permalink to this headline">¶</a></h1>
+<p>There are various ways to contribute to CryptPad, many of which do not require any coding skills. If you would like to discuss anything listed here, or other ways of contributing, please  <a class="reference external" href="https://cryptpad.fr/contact.html">get in touch with the development team</a>.</p>
+<div class="section" id="spread-the-word">
+<h2>Spread the word<a class="headerlink" href="#spread-the-word" title="Permalink to this headline">¶</a></h2>
+<p>The simplest way to help CryptPad is to make the project known. As an Open Source project, CryptPad has very little budget to spare for marketing. We rely on the community to promote the service, for example by:</p>
+<ul class="simple">
+<li><p>Using CrytpPad and demonstrating it to friends and colleagues, highlighting why privacy is important.</p></li>
+<li><p>Posting about CryptPad on social media.</p></li>
+<li><p>Following and relaying our own communications from our <a class="reference external" href="https://blog.cryptpad.fr">Blog</a>, from <a class="reference external" href="https://social.weho.st/&#64;cryptpad">Mastodon</a> or <a class="reference external" href="https://twitter.com/cryptpad">Twitter</a>.</p></li>
+<li><p>Relaying the <a class="reference external" href="https://opencollective.com/cryptpad">CryptPad Crowdfunding</a>.</p></li>
+<li><p>Presenting CryptPad in conferences or meetups, or inviting the team to present.</p></li>
+</ul>
 </div>
-<p>You don’t have to know how to code.</p>
 <div class="section" id="report-bugs">
 <span id="contribute-bugs"></span><h2>Report bugs<a class="headerlink" href="#report-bugs" title="Permalink to this headline">¶</a></h2>
+<p>If you encounter a problem with CryptPad, reporting it helps improve the service for everyone. When reporting, please provide as much information as possible about the conditions in which the problem occurred, what you expected to happen, and what happened instead. These details help the team reproduce the error, which is the first step towards fixing it.</p>
+<p>There are two ways to report bugs or issues:</p>
 <ul class="simple">
-<li><p>Support ticket</p></li>
-<li><p>Github issues</p></li>
+<li><p>Cryptpad's built in <a class="reference internal" href="user_guide/user_account.html#user-support"><span class="std std-ref">support ticket system</span></a> where you can message instance administrators. These messages are encrypted like everything else on CryptPad.</p></li>
+<li><p><a class="reference external" href="https://github.com/xwiki-labs/cryptpad/issues/new/choose">Github issue tracker</a> to file the issue publicly using the bug report template. (A Github account is needed to submit issues)</p></li>
 </ul>
-<p>Bug reporting template</p>
 </div>
 <div class="section" id="translate-cryptpad">
 <span id="contribute-translation"></span><h2>Translate CryptPad<a class="headerlink" href="#translate-cryptpad" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Weblate</p></li>
-</ul>
+<p>The CryptPad team translates the software in English and French, with many more languages provided by the community. Translating CryptPad—and/or keeping translations up to date as the platform develops—is a much needed effort to make it available to as many people as possible.</p>
+<p>To translate CryptPad itself please see the <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/blob/master/customize.dist/translations/README.md">Translation guide</a>.</p>
+<p>To translate this documentation please <a class="reference external" href="https://cryptpad.fr/contact.html">get in touch with the development team</a>.</p>
 </div>
 <div class="section" id="contribute-to-the-code">
 <span id="contribute-code"></span><h2>Contribute to the code<a class="headerlink" href="#contribute-to-the-code" title="Permalink to this headline">¶</a></h2>
+<p>CryptPad is written in JavaScript and we accept pull requests on <a class="reference external" href="https://github.com/xwiki-labs/cryptpad">Github</a>. Note that the security layer is separated from the application layer, so it is possible to contribute to CryptPad without skills in cryptography. Contributions include, by order of difficulty:</p>
 <ul class="simple">
-<li><p>Pull requests on Github</p></li>
+<li><p>Fixing a bug from the <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/issues">issue tracker</a>.</p></li>
+<li><p>Adding a new feature.</p></li>
+<li><p>Building a new application or integrating an existing one to CryptPad's encrypted real-time collaboration.</p></li>
 </ul>
+<p>Please see the <a class="reference internal" href="dev_guide/index.html#dev-guide"><span class="std std-ref">Developer Guide</span></a> for more information.</p>
 </div>
 <div class="section" id="financial-support">
 <span id="contribute-financial"></span><h2>Financial support<a class="headerlink" href="#financial-support" title="Permalink to this headline">¶</a></h2>
+<p>Contribute to making CryptPad financially sustainable:</p>
 <ul class="simple">
-<li><p>OpenCollective donations: one off or recurring.</p></li>
-<li><p>Subscriptions on cryptpad.fr</p></li>
+<li><p>One-time or recurring donations on <a class="reference external" href="https://opencollective.com/cryptpad">Open Collective</a>.</p></li>
+<li><p>Subscriptions to <a class="reference external" href="https://accounts.cryptpad.fr">cryptpad.fr</a>.</p></li>
+<li><p>For larger organisations, <a class="reference external" href="https://cryptpad.fr/contact.html">contact the team</a> if you would like to sponsor a feature or to discuss support contracts for an on-site instance.</p></li>
 </ul>
 </div>
 </div>
@@ -428,7 +504,7 @@
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
       
-        <a href="dev_guide/common/common-util.html" class="btn btn-neutral" title="Common util" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="dev_guide/server.html" class="btn btn-neutral" title="Server" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
       
     </div>
   
@@ -462,7 +538,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'3.19.0',
+            VERSION:'3.20.1',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

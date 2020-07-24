@@ -1,0 +1,783 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Worker &mdash; Documentation CryptPad 3.20.1</title>
+  
+
+  
+  <link rel="icon" type="image/png" href="../../_static/images/main-favicon.png" id="favicon"/>
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/open-sans.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/cptools.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/fontawesome.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/cp-overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="next" title="Outer" href="outer.html" />
+    <link rel="prev" title="Framework" href="framework.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+            <a href="../../index.html" class="icon icon-home">
+              <img src="../../_static/images/sidebar-logo.png" class="logo" alt="Logo"/>
+              <div class="icon-title">CryptPad</div>
+              <span class="release">3.20.1</span>
+            </a>
+            
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+          
+        </div>
+
+        <div class="wy-side-nav-language-selector">
+        	<p class="caption-text">
+	        	<select id="language-selector-container">
+	        		<option value="en">English</option>
+	        		<option value="fr">Français</option>
+	        	</select>
+        	</p>
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../user_guide/index.html">Guide Utilisateur</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../user_guide/instances.html">Instances CryptPad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../user_guide/user_account.html">Compte utilisateur</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/user_account.html#account-types">Types de comptes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#non-registered-user">Utilisateur non-enregistré</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#logged-in-user">Utilisateur enregistré</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#premium-user">Utilisateur abonné</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/user_account.html#account-management">Gestion du compte</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#registration">Inscription</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#logging-in">Connexion</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/user_account.html#settings">Préférences</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#account">Compte</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#confidentiality">Confidentialité</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#cryptdrive">CryptDrive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#cursor">Curseur</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#rich-text">Documents texte</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#subscription">Abonnement</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/user_account.html#support">Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/user_account.html#notifications">Notifications</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../user_guide/security.html">Sécurité</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/security.html#passwords-for-documents-and-folders">Mot de passe des documents et dossiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/security.html#remote-disconnect">Déconnexion à distance</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../user_guide/drive.html">Drive</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/drive.html#display">Affichage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/drive.html#managing-documents">Gestion des documents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/drive.html#folders">Dossiers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/drive.html#renaming">Renommer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/drive.html#deleting">Supprimer</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/drive.html#cryptdrive-history">Historique du CryptDrive</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/drive.html#tags">Mots-Clés</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/drive.html#templates">Modèles</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../user_guide/collaboration.html">Collaboration / Social</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/collaboration.html#profile">Profil</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/collaboration.html#personal-profile">Profil personnel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/collaboration.html#user-profile">Profil utilisateur</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/collaboration.html#contacts">Contacts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/collaboration.html#add-a-contact">Ajouter un contact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/collaboration.html#manage-contacts">Gérer les contacts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/collaboration.html#chat-with-contacts">Chat avec les contacts</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/collaboration.html#teams">Équipes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/collaboration.html#team-drive">Drive d'équipe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/collaboration.html#team-members">Membres</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/collaboration.html#invite-members">Inviter des membres</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/collaboration.html#roles-and-permissions">Rôles et permissions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/collaboration.html#administration">Administration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/collaboration.html#chat">Chat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/collaboration.html#administration-tab">Onglet Administration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../user_guide/share_and_access.html">Partage / Accès</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/share_and_access.html#share">Partager</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/share_and_access.html#access-rights">Droits d'accès</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/share_and_access.html#sharing-with-contacts">Partager avec des contacts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/share_and_access.html#sharing-a-link">Partager un lien</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/share_and_access.html#embedding">Intégration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/share_and_access.html#shared-folders">Dossiers partagés</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/share_and_access.html#access">Accès</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/share_and_access.html#access-tab">Onglet Accès</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/share_and_access.html#access-list">Liste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/share_and_access.html#owners">Propriétaires</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../user_guide/applications.html">Applications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/apps/general.html">Général</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/general.html#new-document">Nouveau document</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/general.html#saving">Sauvegarde</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/general.html#make-a-copy">Faire une copie</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/general.html#document-history">Historique des documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/general.html#properties">Propriétés</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/general.html#users-and-chat">Utilisateurs et Chat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/apps/richtext.html">Documents texte</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/richtext.html#toolbar">Barre d'outils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/richtext.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/richtext.html#comments">Commentaires</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/apps/sheets.html">Tableur</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/sheets.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/sheets.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/apps/code.html">Code / Markdown</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/code.html#toolbar">Barre d'outils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/code.html#theme">Thème</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/code.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/code.html#markdown">Markdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/code.html#images">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/code.html#lightbox">Galerie</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/apps/slides.html">Présentation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/slides.html#toolbar">Barre d'outils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/slides.html#writing-slides-with-markdown">Rédaction en Markdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/slides.html#theme">Thème</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/slides.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/slides.html#images">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/slides.html#lightbox">Galerie</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/apps/poll.html">Sondage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/poll.html#toolbar">Barre d'outils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/poll.html#edit-mode">Édition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/poll.html#voting">Vote</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/poll.html#export">Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/apps/kanban.html">Kanban</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/kanban.html#organisation">Organisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/kanban.html#columns">Colonnes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/kanban.html#cards">Cartes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/kanban.html#card-editor">Éditeur de carte</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/kanban.html#display">Affichage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/kanban.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/apps/whiteboard.html">Dessin</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/whiteboard.html#toolbar">Barre d'outils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/whiteboard.html#drawing">Dessiner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/whiteboard.html#paint-mode">Mode Pinceau</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/whiteboard.html#select-mode">Mode Sélection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/whiteboard.html#export">Export</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin_guide/index.html">Guide administrateur (en cours)</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Guide Développeur (en cours)</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../setup.html">Instance locale de développement</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../setup.html#prerequis">Prérequis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../setup.html#installation">Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../setup.html#configuration">Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../setup.html#cache-et-compilation-important">Cache et compilation (important)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../setup.html#lancement-en-mode-developpement">Lancement en mode développement</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute.html">Contribuer</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../contribute.html#licence">Licence</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../contribute.html#git">Git</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../contribute.html#pull-requests">Pull requests</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../contribute.html#branches">Branches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../contribute.html#avant-de-contribuer">Avant de contribuer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../basics.html">Points fondamentaux de CryptPad</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../basics.html#zero-knowledge">Zero-knowledge</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../basics.html#donnees-visibles-par-le-serveur">Données visibles par le serveur</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../basics.html#zero-knowledge-dans-cryptpad">Zero-knowledge dans CryptPad</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../basics.html#content-security-policy-csp-et-securite">Content Security Policy (CSP) et sécurité</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../basics.html#personnalisation">Personnalisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../basics.html#architecture-du-code">Architecture du code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../basics.html#cles-de-traduction">Clés de traduction</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="../code.html">Code</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../general.html">Généralités</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../general.html#les-urls-safe-et-unsafe">Les URLs “safe” et “unsafe”</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../general.html#structure-en-5-niveaux">Structure en 5 niveaux</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../general.html#chiffrement">Chiffrement</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../general.html#drive-et-journal-de-pins">Drive et journal de “pins”</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../general.html#exemple">Exemple</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../general.html#inscription-connexion-et-block">Inscription, connexion et block</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../general.html#exemple-2">Exemple</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../general.html#communication-client-serveur-netflux">Communication client-serveur (Netflux)</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../general.html#cote-serveur">Côté serveur</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../general.html#cote-client">Côté client</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../general.html#exemple-3">Exemple</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../common.html">Common</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../common/crypto.html">chainpad-crypto</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../common/common-hash.html">Common hash</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../common/common-util.html">Common util</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="../client.html">Client</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="architecture.html">Architecture client</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="architecture.html#worker">Worker</a></li>
+<li class="toctree-l5"><a class="reference internal" href="architecture.html#outer">Outer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="architecture.html#inner">Inner</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="chainpad.html">ChainPad et Listmap</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad">ChainPad</a></li>
+<li class="toctree-l5"><a class="reference internal" href="chainpad.html#checkpoints">Checkpoints</a></li>
+<li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad-avec-des-objets">ChainPad avec des objets</a></li>
+<li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad-netflux">Chainpad-netflux</a></li>
+<li class="toctree-l5"><a class="reference internal" href="chainpad.html#listmap">Listmap</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="requirejs.html">RequireJS</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="requirejs.html#utilisation">Utilisation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="requirejs.html#cache">Cache</a></li>
+<li class="toctree-l5"><a class="reference internal" href="requirejs.html#config">Config</a></li>
+<li class="toctree-l5"><a class="reference internal" href="requirejs.html#requirecss-requireless">RequireCSS, RequireLess</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="translations.html">Utiliser les clés de traduction</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="translations.html#utilisation">Utilisation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="translations.html#structure">Structure</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="framework.html">Framework</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="framework.html#www-common-sframe-app-outer-js">www/common/sframe-app-outer.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="framework.html#www-common-sframe-app-framework-js">www/common/sframe-app-framework.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="framework.html#customize-dist-src-less2-include-framework-less">customize.dist/src/less2/include/framework.less</a></li>
+</ul>
+</li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Worker</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#async-store-js-et-modules">async-store.js et modules</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#commandes-de-lobjet-store">Commandes de l’objet “Store”</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#liste-des-modules-et-objet-store">Liste des modules et objet “store”</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="outer.html">Outer</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-entre-les-niveaux">Communication entre les niveaux</a></li>
+<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-avec-inner-sframe-common-outer">Communication avec inner - sframe-common-outer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-avec-le-worker-cryptpad-common">Communication avec le worker - cryptpad-common</a></li>
+<li class="toctree-l5"><a class="reference internal" href="outer.html#autres-fichiers-notables">Autres fichiers notables</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="inner.html">Inner</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="inner.html#fonctionnement">Fonctionnement</a></li>
+<li class="toctree-l5"><a class="reference internal" href="inner.html#sframe-common">Sframe-common</a></li>
+<li class="toctree-l5"><a class="reference internal" href="inner.html#metadata-manager">metadata-manager</a></li>
+<li class="toctree-l5"><a class="reference internal" href="inner.html#localstore">localStore</a></li>
+<li class="toctree-l5"><a class="reference internal" href="inner.html#mailbox">mailbox</a></li>
+<li class="toctree-l5"><a class="reference internal" href="inner.html#modules-dinterface">Modules d’interface</a></li>
+<li class="toctree-l5"><a class="reference internal" href="inner.html#modules-additionnels">Modules additionnels</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../server.html">Server</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../how_to_contribute.html">Comment contribuer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#spread-the-word">Diffuser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#report-bugs">Signaler des bugs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#translate-cryptpad">Traduire CryptPad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#contribute-to-the-code">Contribuer au code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#financial-support">Soutien financier</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+	<!-- start top banner area (for fundraisers or messages)
+
+	<div style="text-align: center; background-color: #333">
+		<a href="https://krita.org/en/fundraising-2018-campaign/" target="_self" onclick="ga('send', 'event', 'frontpage', 'button', 'Fundraiser 2018');">
+			<img src="https://krita.org/wp-content/themes/krita-org-theme/images/decoration/2018-fundraiser-banner.png" style="max-width: 100%">
+		</a>
+	</div>
+	
+	 end top banner area -->
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">CryptPad</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Index</a> &raquo;</li>
+        
+          <li><a href="../index.html">Developer Guide</a> &raquo;</li>
+        
+          <li><a href="../code.html">Code</a> &raquo;</li>
+        
+          <li><a href="../client.html">Client</a> &raquo;</li>
+        
+      <li>Worker</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/dev_guide/client/worker.rst.txt" rel="nofollow"> 
+             
+              <img src="../../_static/images/source-code.png" />
+             <!-- View page source -->
+
+          </a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="worker">
+<h1>Worker<a class="headerlink" href="#worker" title="Lien permanent vers ce titre">¶</a></h1>
+<p>La partie <a class="reference internal" href="architecture.html#architecture-worker"><span class="std std-ref">Architecture client</span></a> explique la structure et le
+fonctionnement global du “worker”. Il y est expliqué que le fichier
+<code class="docutils literal notranslate"><span class="pre">www/common/outer/async-store.js</span></code> représente la base du worker. Ce
+fichier et ses dépendances vont être expliqués ici.</p>
+<div class="section" id="async-store-js-et-modules">
+<h2>async-store.js et modules<a class="headerlink" href="#async-store-js-et-modules" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Async-store contient l’ensemble des fonctions représentant les commandes
+envoyées par “outer”. Il a pour rôle de gérer la connexion au compte
+utilisateur, charger les sous-structures liées à ce compte (dossiers
+partagés, profil) et charger l’ensemble des modules qui étendent son
+champ d’utilisation. Il crée deux objets principaux, nommés <code class="docutils literal notranslate"><span class="pre">store</span></code> et
+<code class="docutils literal notranslate"><span class="pre">Store</span></code>. Le premier représente la mémoire du worker et stocke tout ce
+qui a été chargé par celui-ci, le second représente ses “muscles” et
+contient toutes les fonctions pouvant être exécutées par les commandes
+de “outer”. Beaucoup de modules sont chargés pour exécuter des tâches
+spécifiques et sont accessibles via <code class="docutils literal notranslate"><span class="pre">store</span></code>.</p>
+</div>
+<div class="section" id="commandes-de-lobjet-store">
+<h2>Commandes de l’objet “Store”<a class="headerlink" href="#commandes-de-lobjet-store" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Les commandes pouvant être exécutées par async-store contiennent
+notament :</p>
+<ul class="simple">
+<li><p>Initialisation</p>
+<ul>
+<li><p>Chargement du compte utilisateur (via listmap), des dossiers
+partagés et des équipes</p></li>
+<li><p>Chargement des différents modules du worker</p></li>
+<li><p>Initialisation d’une session authentifiée avec le serveur (pour
+les utilisateurs enregistrés)</p></li>
+</ul>
+</li>
+<li><p>Requêtes serveur authentifiées</p>
+<ul>
+<li><p>L’identité de l’auteur est prouvée au serveur avec la clé de
+signature de l’utilisateur enregistré</p></li>
+<li><p>Modifier sa “liste de pins”, modifier son mot de passe, détruire
+un pad dont on est propriétaire, récupérer l’espace de stockage
+restant pour le compte, exécuter des commandes administrateurs,
+etc.</p></li>
+<li><p>Upload d’un fichier statique dans le drive utilisateur</p></li>
+</ul>
+</li>
+<li><p>Requêtes serveur non-authentifiées</p>
+<ul>
+<li><p>Récupérer la taille totale d’un document dans la base de données
+(avec son historique)</p></li>
+<li><p>Récupérer les méta-données d’un document (liste de propriétaires,
+liste d’accès, date d’expiration, etc.)</p></li>
+</ul>
+</li>
+<li><p>Actions sur le compte utilisateur</p>
+<ul>
+<li><p>Stockage ou récupération des Préférences</p></li>
+<li><p>Commandes à effectuer dans le drive</p></li>
+<li><p>Gestion des dossiers partagés</p></li>
+<li><p>Gérer les contacts (ajout ou suppression de contacts)</p></li>
+</ul>
+</li>
+<li><p>Actions sur les différents modules</p>
+<ul>
+<li><p>Chaque module peut recevoir ses propres commandes, mais celles-ci
+transitent d’abord par “async-store” qui va la redistribuer aux
+modules concernés</p></li>
+</ul>
+</li>
+<li><p>Documents collaboratifs</p>
+<ul>
+<li><p>Rejoindre un document collaboratif</p>
+<ul>
+<li><p>Initialisation de chainpad-netflux pour ce document</p></li>
+<li><p>Envoyer des messages sur ce document</p></li>
+<li><p>Écouter des évènements sur ce document</p></li>
+</ul>
+</li>
+<li><p>Obtenir une partie d’historique d’un document (pour le mode
+“historique” de l’interface)</p></li>
+<li><p>Modifier le mot de passe d’un document</p></li>
+<li><p>Gérer les métadonnées du document (liste d’accès ou propriétaires)</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="liste-des-modules-et-objet-store">
+<h2>Liste des modules et objet “store”<a class="headerlink" href="#liste-des-modules-et-objet-store" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Les modules chargés par “async-store” représente des ensembles d’actions
+liées par fonctionnalité et servant dans certains cas spécifiques. Les
+modules principaux sont dans l’ordre de leur initialisation :</p>
+<ul class="simple">
+<li><p>Compte utilisateur</p>
+<ul>
+<li><p>Module intégré à async-store (indispensable au fonctionnement du
+worker)</p></li>
+<li><p>Charge le compte utilisateur et son drive (via chainpad-listmap)</p></li>
+<li><p>Initialisation de l’objet <code class="docutils literal notranslate"><span class="pre">store</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">store.proxy</span></code> : Proxy du compte utilisateur</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">store.realtime</span></code> : Chainpad associé au compte utilisateur</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">store.network</span></code> : Réseau Netflux</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Proxy-manager</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">www/common/proxy-manager.js</span></code></p></li>
+<li><p>Il gère le drive du compte utilisateur et tous les dossiers
+partagés qu’il contient</p></li>
+<li><p>Le drive et les dossiers partagés sont représentés par un Proxy
+(chainpad-listmap) chacun, ce module effectue les actions en
+gardant la cohérence entre ces éléments distincts</p></li>
+<li><p>Il charge une librairie “userObject.js” qui effectue les
+opérations “unitaires” dans un proxy donné et l’initialise pour
+tous les “Proxy” liés au drive et aux dossiers partagés</p>
+<ul>
+<li><p>Opérations unitaires : ajouter, supprimer, renommer, déplacer
+un pad, effectuer une recherche par texte, trouver l’élement à
+un chemin donné, etc.</p></li>
+</ul>
+</li>
+<li><p>Toutes les actions entraînant une modification du contenu du drive
+passent par ce module</p></li>
+<li><p>Accessible via <code class="docutils literal notranslate"><span class="pre">store.manager</span></code></p></li>
+</ul>
+</li>
+<li><p>Dossiers partagés</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">www/common/outer/sharedfolders.js</span></code></p></li>
+<li><p>Il charge tous les dossiers partagés d’un drive donné depuis le
+serveur (avec chainpad-listmap) et les ajoute au “proxy-manager”</p></li>
+<li><p>Il gère les dossiers partagés en commun entre le drive principal
+et le drive de chaque équipe dont l’utilisateur est membre</p></li>
+<li><p>Les pertes d’accès (via une liste d’accès), suppression du dossier
+ou modification de droits (édition ou lecture) sont
+automatiquement signalés aux proxy-manager concernés</p></li>
+<li><p>Module auto-géré, non accessible directement</p></li>
+</ul>
+</li>
+<li><p>Curseur</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">www/common/outer/cursor.js</span></code></p></li>
+<li><p>Il gère la position du curseur de chaque utilisateur dans les
+différents documents ouverts qui supportent cette fonctionnalité</p></li>
+<li><p>Pour chaque document, le salon “éphémère” (données non stockées
+dans la base de données) associé est ouvert</p></li>
+</ul>
+</li>
+<li><p>OnlyOffice</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">www/common/outer/onlyoffice.js</span></code></p></li>
+<li><p>Les applications basées sur OnlyOffice (Tableur uniquement pour le
+moment) n’utilisent pas uniquement ChainPad et ont un
+fonctionnement différent au niveau du stokcage, notamment pour les
+checkpoints.</p></li>
+<li><p>Ce module va rejoindre les salons Netflux associés à chaque
+document OnlyOffice ouvert et contenant les patchs chiffrés.</p></li>
+</ul>
+</li>
+<li><p>Messenger</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">www/common/outer/messenger.js</span></code></p></li>
+<li><p>Il gère toute la partie réseau et parfois le chiffrement des
+systèmes de chat utilisés dans CryptPad</p>
+<ul>
+<li><p>Chat dans un pad (reseau uniquement)</p></li>
+<li><p>Chat d’équipe (réseau et chiffrement)</p></li>
+<li><p>Chat avec un contact (réseau et chiffrement)</p></li>
+</ul>
+</li>
+<li><p>Accessible via <code class="docutils literal notranslate"><span class="pre">store.messenger</span></code> ou <code class="docutils literal notranslate"><span class="pre">store.modules.messenger</span></code></p></li>
+</ul>
+</li>
+<li><p>Profil</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">www/common/outer/profile.js</span></code></p></li>
+<li><p>Ce module charge le document lié au profil de l’utilisateur
+enregistré courant (via listmap)</p></li>
+<li><p>Il effectue toutes les modifications souhaitées sur ce document
+(données modifiables du profil)</p></li>
+<li><p>Il écoute les changements effectués sur le nom d’utilisateur
+<strong>affiché</strong> pour également mettre à jour ce nom dans le profil</p></li>
+<li><p>Accessible via <code class="docutils literal notranslate"><span class="pre">store.modules.profile</span></code></p></li>
+</ul>
+</li>
+<li><p>Team</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">www/common/outer/team.js</span></code></p></li>
+<li><p>Le plus complexe des modules, il effectue une partie du travail
+attribué à “async-store” mais en ce qui concerne les équipes :</p>
+<ul>
+<li><p>Chargement du “compte” de chaque équipe (avec son drive)</p></li>
+<li><p>Chargement d’un proxy-manager pour le drive de chaque équipe</p></li>
+<li><p>Chargement des dossiers partagés de chaque équipe</p></li>
+<li><p>Chargement du module “roster”</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">www/common/outer/roster.js</span></code></p></li>
+<li><p>Contient la liste des membres et gère les droits d’accès de
+chaque membre</p></li>
+</ul>
+</li>
+<li><p>Initialisation d’une session authentifiée avec le serveur
+(signée avec la clé de l’équipe)</p>
+<ul>
+<li><p>Gestion des documents dont l’équipe est propriétaire</p></li>
+<li><p>Gestion de la “liste de pins” de l’équipe</p></li>
+<li><p>Gestion de l’espace de stockage de l’équipe</p></li>
+<li><p>Upload de fichier statique dans le drive de l’équipe</p></li>
+</ul>
+</li>
+<li><p>Gestion des métadonnées de l’équipe (nom, image)</p></li>
+<li><p>Permet la création, suppression et gestion d’une équipe</p></li>
+</ul>
+</li>
+<li><p>Accessible via <code class="docutils literal notranslate"><span class="pre">store.modules.team</span></code>, qui contient notamment des
+informations sur chaque équipes</p></li>
+</ul>
+</li>
+<li><p>Historique</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">www/common/outer/history.js</span></code></p></li>
+<li><p>Ce module permet de vérifier la taille de l’historique de chaque
+document collaboratif et de supprimer l’historique non-essentiel,
+c’est-à-dire tous les messages antérieurs à l’avant-dernier
+checkpoint</p></li>
+<li><p>Accessible via <code class="docutils literal notranslate"><span class="pre">store.modules.history</span></code></p></li>
+</ul>
+</li>
+<li><p>Mailbox</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">www/common/outer/mailbox.js</span></code></p></li>
+<li><p>Ce module permet de gérer les “boîtes mail” d’un utilisateur. Ces
+mailboxes sont des moyens de stockage supplémentaires créés pour
+chaque compte utilisateur CryptPad et permettent à différent
+utilisateurs de s’envoyer des messages chiffrés.</p></li>
+<li><p>Les messages ne quittent jamais CryptPad et quand un message est
+envoyé à un utilisateur hors-ligne, celui-ci recevra le message à
+sa prochaine connexion. Pour envoyer un message à quelqu’un, il
+est nécessaire de connaître “l’adresse” de sa mailbox et la clé
+publique de chiffrement de cet utilisateur (afin que lui seul
+puisse déchiffrer le contenu).</p></li>
+<li><p>Ce module est à la base du système de notifications de CryptPad.
+Quand une notification est affichée pour un utilisateur, elle a en
+réalité été envoyée par un autre utilisateur.</p></li>
+<li><p>Accessible via <code class="docutils literal notranslate"><span class="pre">store.mailbox</span></code>, ce module notamment permet
+d’envoyer des messages avec <code class="docutils literal notranslate"><span class="pre">sendTo</span></code> ou de supprimer des
+messages affichés avec <code class="docutils literal notranslate"><span class="pre">dismiss</span></code>.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="outer.html" class="btn btn-neutral float-right" title="Outer" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="framework.html" class="btn btn-neutral" title="Framework" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, CryptPad Team.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a modified <a href="https://github.com/rtfd/sphinx_rtd_theme">RTD theme</a>.<br/>
+  <a href="https://cryptpad.fr" title="CryptPad flagship instance">CryptPad flagship instance</a> |
+  <a href="#" title="The Gitlab instance to edit this pages and collaborate.">Git repository for docs.cryptpad.fr </a>
+  . 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'3.20.1',
+            LANGUAGE:'fr',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/language_data.js"></script>
+      <script type="text/javascript" src="../../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

@@ -12,9 +12,11 @@ To create a new document:
 -  From a document: |file-o| **File** > |plus| **New**.
 -  ``Ctrl+e``.
 
-[screenshot pad creation screen (localised)]
 
-:badge:`Logged in users`
+.. image:: /images/creation-screen.png
+   :class: screenshot
+
+:badge_user:`Logged in users`
 
 The creation screen offers a number of options when new documents are
 created.
@@ -66,14 +68,16 @@ restore a previous state:
    with |window-close|.
 
 To save storage space, history can be deleted in the document’s
-:ref:`properties <document_properties>` :badge:`Document owners`
+:ref:`properties <document_properties>` :badge_owner:`Document owners`
 
 .. _document_properties:
 
 Properties
 ----------
 
-[properties screenshot]
+
+.. image:: /images/properties.png
+   :class: screenshot
 
 To access the properties menu:
 
@@ -86,11 +90,11 @@ Available data:
 
 -  Links to edit and view (depending on your permissions).
 -  Dates of creation and last access.
--  Size
+-  Size.
 
 The document size shows the proportions used for content and for
 history. To save storage space, delete the document’s history with
-**Delete history** and confirm. :badge:`Document owners`
+**Delete history** and confirm. :badge_owner:`Document owners`
 
 .. _document_users_and_chat:
 

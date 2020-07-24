@@ -91,7 +91,7 @@ Common util
     Provide a "response" object to handle responses when sending queries using "txid" (transaction id). The returned object contains the following methods:
     
     | ``response.expect(id, f, ms)`` creates a "pending" callback with the provided "id". When a response is received with this id, "f" is called. "ms" is an optional timeout.
-    | ``response.handle(id, args)`` triggers the pending callback associated with the provided "id" if it exists. The callback "f" added with ``expect```will be called with the provided "args".
+    | ``response.handle(id, args)`` triggers the pending callback associated with the provided "id" if it exists. The callback "f" added with ``expect`` will be called with the provided "args".
     | ``response.clear(id)`` removes the pending callback for the provided "id".
     | ``response.expected(id)`` returns the current state if a given "id" (true if still pending, false if already called).
     | ``response.expectation(id)`` returns the pending callback associated to the provided "id".

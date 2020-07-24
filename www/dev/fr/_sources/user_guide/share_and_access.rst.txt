@@ -25,7 +25,7 @@ There are 4 levels of permissions:
 
 -  **View**: Read-only without editing the document.
 -  **Present**: Read-only the rendered output of the document, available
-   in the [Code] and [Slides] applications.
+   in the :ref:`app_code` and :ref:`app_slides` applications.
 -  **Edit**: View and make changes to the document.
 -  **View once and self-destruct**: Read-only **one time**. Once the
    link is opened by a recipient, the document is deleted permanently.
@@ -39,9 +39,13 @@ There are 4 levels of permissions:
 Sharing with contacts
 ~~~~~~~~~~~~~~~~~~~~~
 
-:badge:`Logged in users`
+:badge_user:`Logged in users`
 
 This is the recommended method for sharing documents securely on CryptPad. When sharing directly with :ref:`contacts <contacts>`, document links never leave the encrypted platform of CryptPad. This prevents data from being leaked to third parties.
+
+.. image:: /images/share-modal-contacts.png
+   :class: screenshot
+
 
 To share with one or more contacts:
 
@@ -71,18 +75,20 @@ your choice. Depending on how you send the link, this method can present
 security risks. To add a level of security, it is recommended to add a
 :ref:`password <access_tab>` to your document before sharing the link.
 
+.. image:: /images/share-modal-link.png
+   :class: screenshot
+
+
 To copy the link to a document:
 
--  From the document: |share-alt| **Share** in the toolbar > |link|
-   **Link**
--  From the CryptDrive : ``Right click`` on the document > |share-alt|
-   **Share** > |link| **Link**
+-  From the document: |share-alt| **Share** in the toolbar > |link| **Link**.
+-  From the CryptDrive : ``Right click`` on the document > |share-alt| **Share** > |link| **Link**.
 
-then
+Then:
 
 #. Choose the :ref:`access rights <share_access_rights>` and additional options:
 
-   * **Embed mode** hides the toolbar and user list
+   * **Embed mode** hides the toolbar and user list.
    * **Preview** allows to check what the link will look like before sending it.
 
 #. **Copy** the link.
@@ -94,6 +100,9 @@ Embedding
 ~~~~~~~~~
 
 Embedding allows for a CryptPad document to be displayed on a web page.
+
+.. image:: /images/share-modal-embed.png
+   :class: screenshot
 
 To embed a document:
 
@@ -113,7 +122,7 @@ then
 Shared folders
 ~~~~~~~~~~~~~~
 
-:badge:`Logged in users`
+:badge_user:`Logged in users`
 
 Shared folders are made for sharing a set of documents at once.
 
@@ -128,7 +137,7 @@ To convert an existing folder into a shared folder:
 1. ``Right click`` on the folder > |share-alt| **Share**.
 2. Choose the conversion options.
    Password.
-   [Owned] folder.
+   :ref:`Owned <owners>` folder.
 3. ``OK`` or press the ``Enter`` key.
 
 Folders are shared in a similar way to documents. To share a folder from
@@ -147,7 +156,7 @@ the CryptDrive:
 
 .. note::
 
-   Shared folders have their own history, separate from the :Ref:`drive_history`. Restoring the history of the drive does not affect shared folders, conversely the history of a shared folder can be restored without affecting the rest of the drive.
+   Shared folders have their own history, separate from the :ref:`drive_history`. Restoring the history of the drive does not affect shared folders, conversely the history of a shared folder can be restored without affecting the rest of the drive.
 
 
 .. _access:
@@ -155,7 +164,7 @@ the CryptDrive:
 Access
 ------
 
-:badge:`Logged in users`
+:badge_user:`Logged in users`
 
 This menu is used to restrict access to a document or shared folder:
 
@@ -168,20 +177,23 @@ This menu is used to restrict access to a document or shared folder:
 Access tab
 ~~~~~~~~~~
 
+.. image:: /images/access-modal-access.png
+   :class: screenshot
+
 This tab summarises all the modalities of access to the document:
 
 -  **Expiration date**: Date at which the document will be deleted. This
    date is set at the creation of the document and cannot be modified
    afterwards.
 
--  **Password**: Displays if a [password] has been set. A new password
+-  **Password**: Displays if a password has been set. A new password
    can be set, or an existing password modified.
 
 -  **Owners**: List of all the document’s `owners <#owners>`__.
 
 -  | **Edit rights requests**:
    | **Request edit rights**: For users with read-only access rights.
-   | |bell-slash| **Mute access requests for this pad**: Hides edit rights requests for this document. :badge:`Document owners`
+   | |bell-slash| **Mute access requests for this pad**: Hides edit rights requests for this document. :badge_owner:`Document owners`
 
 -  **Access list**: Displays the `access list <#access-list>`__ and
    indicates if it is enabled.
@@ -193,7 +205,11 @@ This tab summarises all the modalities of access to the document:
 Access List
 ~~~~~~~~~~~
 
-:badge:`Document owners`
+:badge_owner:`Document owners`
+
+
+.. image:: /images/access-modal-list.png
+   :class: screenshot
 
 The access list restricts access to a document. Once active, users who
 are not on the list are not able to access the document, even if they
@@ -216,6 +232,10 @@ their name.
 Owners
 ~~~~~~
 
+
+.. image:: /images/access-modal-owners.png
+   :class: screenshot
+
 This tab is used to manage the ownership of the document. Owners of a
 document have the following permissions:
 
@@ -224,7 +244,7 @@ document have the following permissions:
 -  Add or remove other owners.
 -  Destroy the document.
 
-The ownership of a document is set on the [creation screen].
+The ownership of a document is set when :ref:`creating it<new_document>`.
 
 .. note::
 
@@ -233,7 +253,7 @@ The ownership of a document is set on the [creation screen].
    but can be removed from the CryptDrive and will be destroyed
    automatically after 90 days of inactivity.
 
-:badge:`Document owners`
+:badge_owner:`Document owners`
 
 To add users or teams as owners:
 

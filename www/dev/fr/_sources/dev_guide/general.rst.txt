@@ -344,10 +344,7 @@ dernière version du document. Une fois synchronisé, l’utilisateur va
 recevoir tous les nouveaux changements en temps réel et va pouvoir
 envoyer ses propres modifications.
 
-.. note:: Ce faux utilisateur est géré par le serveur mais son code est
-bien distinct de la partie “Netflux” du serveur. Il représente toute la
-base de données et son code est donc séparé dans de nombreux fichiers.
-La base se trouve dans ``./lib/historyKeeper.js``
+.. note:: Ce faux utilisateur est géré par le serveur mais son code est bien distinct de la partie “Netflux” du serveur. Il représente toute la base de données et son code est donc séparé dans de nombreux fichiers.  La base se trouve dans ``./lib/historyKeeper.js``
 
 Côté client
 ~~~~~~~~~~~
