@@ -57,7 +57,7 @@ module depuis n’importe où dans le code. Il s’utilise avec la fonction
 ``require`` disponible également de manière globale, qui s’utilise de la
 même manière que ``define``, mais avec la particularité de pouvoir être
 utilisée n’importe où dans le code. Elle peut être utilisée plusieurs
-fois dans un fichier et de manière asynchrone si nécessaire et ne pemret
+fois dans un fichier et de manière asynchrone si nécessaire et ne permet
 donc pas de créer de module.
 
 Lorsqu’un module est créé avec ``define``, il peut être chargé avec

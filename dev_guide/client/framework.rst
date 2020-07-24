@@ -143,7 +143,7 @@ customize.dist/src/less2/include/framework.less
 Enfin, tous les éléments de style communs aux différentes applications
 collaboratives peuvent être chargés dans le fichier app-xxxx.less via un
 unique appel. Un framework LESS
-``ustomize.dist/src/less2/include/framework.less`` existe en effet et va
+``customize.dist/src/less2/include/framework.less`` existe en effet et va
 charger le style de la barre d’outils, du chat, des différents menus,
 des boutons ou encore des fenêtres.
 
