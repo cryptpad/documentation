@@ -125,7 +125,7 @@ html_theme_options = {
 # Translations
 locale_dirs = ['locale/']
 gettext_compact = False
-
+figure_language_filename = "{path}{language}/{basename}{ext}"
 
 # Add support for cptools
 

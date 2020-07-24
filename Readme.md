@@ -31,12 +31,12 @@ View the result in `/_build/html/`
 
 ## Translations
 
-to update after default language has changed:  
+To update after default language has changed:  
 ```bash
 sphinx-intl update -p _build/locale`
 ```
 
-to generate `.po` files for a new language e.g. French:  
+To generate `.po` files for a new language e.g. French:  
 ```bash
 make gettext
 sphinx-intl update -p _build/gettext -l fr
@@ -53,8 +53,8 @@ sphinx-intl update -p _build/gettext -l fr
 ```
 
 ### translated images
-`images` folder in repo root  
-have a folder e.g. `images/fr/` with localised version of the image, if using one.
+Images for English are in the `/images` folder.  
+To provide localised versions of images, place them in a folder such as `images/fr/`. 
 
 ## Todo
 
