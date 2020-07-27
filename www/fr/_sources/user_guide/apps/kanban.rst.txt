@@ -4,7 +4,7 @@ Kanban
 The Kanban application in CryptPad is based on
 `JKanban <https://www.riccardotartaglia.it/jkanban/>`__.
 
-.. image:: /images/kanban-preview.png
+.. image:: /images/app-kanban-preview.png
    :class: screenshot
 
 Organisation

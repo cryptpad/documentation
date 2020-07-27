@@ -7,7 +7,7 @@ Rich Text
 The Rich Text application in CryptPad is an integration of
 `CKEditor <https://ckeditor.com/>`__.
 
-.. image:: /images/rich-text-preview.png
+.. image:: /images/app-richtext-preview.png
    :class: screenshot
 
 Toolbar

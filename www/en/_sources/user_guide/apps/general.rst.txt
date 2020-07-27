@@ -13,7 +13,7 @@ To create a new document:
 -  ``Ctrl+e``.
 
 
-.. image:: /images/creation-screen.png
+.. image:: /images/app-creation-screen.png
    :class: screenshot
 
 :badge_user:`Logged in users`

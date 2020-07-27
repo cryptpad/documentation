@@ -7,7 +7,7 @@ Spreadsheets
 The Spreadsheet application in CryptPad is an integration of
 `OnlyOffice <https://www.onlyoffice.com/>`__.
 
-.. image:: /images/sheets-preview.png
+.. image:: /images/app-sheets-preview.png
    :class: screenshot
 
 

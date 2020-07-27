@@ -7,7 +7,7 @@ Code / Markdown
 The Code/Markdown application in CryptPad is an integration of
 `CodeMirror <https://codemirror.net/>`__.
 
-.. image:: /images/code-preview.png
+.. image:: /images/app-code-preview.png
    :class: screenshot
 
 Toolbar
