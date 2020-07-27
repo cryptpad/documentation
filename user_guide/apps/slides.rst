@@ -7,7 +7,7 @@ Slides
 The Slides application in CryptPad is an integration of
 `CodeMirror <https://codemirror.net/>`__.
 
-.. image:: /images/slides-preview.png
+.. image:: /images/app-slides-preview.png
    :class: screenshot
 
 

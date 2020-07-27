@@ -43,7 +43,7 @@ Sharing with contacts
 
 This is the recommended method for sharing documents securely on CryptPad. When sharing directly with :ref:`contacts <contacts>`, document links never leave the encrypted platform of CryptPad. This prevents data from being leaked to third parties.
 
-.. image:: /images/share-modal-contacts.png
+.. image:: /images/modal-share-contacts.png
    :class: screenshot
 
 
@@ -75,7 +75,7 @@ your choice. Depending on how you send the link, this method can present
 security risks. To add a level of security, it is recommended to add a
 :ref:`password <access_tab>` to your document before sharing the link.
 
-.. image:: /images/share-modal-link.png
+.. image:: /images/modal-share-link.png
    :class: screenshot
 
 
@@ -101,7 +101,7 @@ Embedding
 
 Embedding allows for a CryptPad document to be displayed on a web page.
 
-.. image:: /images/share-modal-embed.png
+.. image:: /images/modal-share-embed.png
    :class: screenshot
 
 To embed a document:
@@ -177,7 +177,7 @@ This menu is used to restrict access to a document or shared folder:
 Access tab
 ~~~~~~~~~~
 
-.. image:: /images/access-modal-access.png
+.. image:: /images/modal-access-access.png
    :class: screenshot
 
 This tab summarises all the modalities of access to the document:
@@ -208,7 +208,7 @@ Access List
 :badge_owner:`Document owners`
 
 
-.. image:: /images/access-modal-list.png
+.. image:: /images/modal-access-list.png
    :class: screenshot
 
 The access list restricts access to a document. Once active, users who
@@ -233,7 +233,7 @@ Owners
 ~~~~~~
 
 
-.. image:: /images/access-modal-owners.png
+.. image:: /images/modal-access-owners.png
    :class: screenshot
 
 This tab is used to manage the ownership of the document. Owners of a

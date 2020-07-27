@@ -157,14 +157,17 @@ visible by other users.
 The |hashtag| **Tags** tab in the CryptDrive displays all tags in use
 and their associated documents.
 
+.. image:: /images/modal-tags.png
+   :class: screenshot
+
 To add or remove tags from a document:
 
 -  From the CrytpDrive: ``Right click`` on the document > |hashtag| **Tags**.
 -  From a document: |file-o| **File** > |hashtag| **Tags**.
 
-To manage tags for multiple documents: 
+To manage tags for multiple documents:
 
-#. Select the documents with ``Ctrl + Click`` in the CryptDrive. 
+#. Select the documents with ``Ctrl + Click`` in the CryptDrive.
 #. ``Right click`` on the documents > |hashtag| **Tags**.
 
 Only the tags assigned to all the documents are then displayed. Any tags
