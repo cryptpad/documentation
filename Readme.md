@@ -53,14 +53,7 @@ sphinx-intl update -p _build/gettext -l fr
 ```
 
 ### translated images
+
 Images for English are in the `/images` folder.  
 To provide localised versions of images, place them in a folder such as `images/fr/`. 
 
-## Todo
-
-- Adjust theme
-    - style badges
-    - paragraphs and headings: margin top and bottom
-    - fix favicon
-
-- Instructions for translators (e.g. to leave .rst syntax alone) https://weblate.cryptpad.fr/settings/user-guide/ 
