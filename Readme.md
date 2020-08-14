@@ -30,6 +30,10 @@ View the result in `/_build/html/`
 
 ## Translations
 
+If you are interested in translating this documentation, you can use our [Weblate project](https://weblate.cryptpad.fr/projects/user-guide/) for the user guide. If your language is not listed, please [contact the development team](https://cryptpad.fr/contact.html) to add it.
+
+### Translated builds
+
 To update after default language has changed:  
 ```bash
 sphinx-intl update -p _build/locale`
