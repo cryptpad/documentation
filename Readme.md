@@ -57,6 +57,6 @@ To provide localised versions of images, place them in a folder such as `images/
 
 ## Licenses
 
-The content of this docuemntation is licensed under the [Creative Commons Attribution 4.0 Internarional](LICENSE) (CC-BY).
+The content of this documentation is licensed under the [Creative Commons Attribution 4.0 Internarional](LICENSE) (CC-BY).
 
 The theme is modified from the [Krita documentation](https://invent.kde.org/documentation/docs-krita-org/-/tree/master/) and licensed under the [GNU Free Documentation License](_themes/theme/LICENSE).
