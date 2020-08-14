@@ -54,4 +54,4 @@ sphinx-intl update -p _build/gettext -l fr
 
 ### translated images
 Images for English are in the `/images` folder.  
-To provide localised versions of images, place them in a folder such as `images/fr/`. asdfasdf
+To provide localised versions of images, place them in a folder such as `images/fr/`.
