@@ -32,6 +32,13 @@ View the result in `/_build/html/`
 
 If you are interested in translating this documentation, you can use our [Weblate project](https://weblate.cryptpad.fr/projects/user-guide/) for the user guide. If your language is not listed, please [contact the development team](https://cryptpad.fr/contact.html) to add it.
 
+To add a new language
+```
+sphinx-intl update --pot-dir _build/gettext -l de
+```
+change `de` to the locale you want to add
+
+
 ### Translated builds
 
 To update after default language has changed:  
