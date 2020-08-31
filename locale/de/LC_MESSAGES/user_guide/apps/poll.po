@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-23 17:03+0100\n"
-"PO-Revision-Date: 2020-08-29 14:45+0000\n"
+"PO-Revision-Date: 2020-09-01 08:45+0000\n"
 "Last-Translator: Jan <janrei.g@googlemail.com>\n"
 "Language-Team: German <http://weblate.cryptpad.fr/projects/user-guide/"
 "application-poll/de/>\n"
@@ -30,6 +30,9 @@ msgid ""
 "groups of people who trust each other, for example to decide on a meeting"
 " date/time."
 msgstr ""
+"Die Umfrage-Anwendung ist dafür gedacht, kleinen Gruppen die Entscheidung "
+"etwa auf ein Datum oder eine Uhrzeit für ein Treffen zu erleichtern, deren "
+"Mitglieder sich gegenseitig vertrauen."
 
 #: ../../user_guide/apps/poll.rst:8
 msgid ""
@@ -38,6 +41,11 @@ msgid ""
 "must have edit rights to the document. This enables each participant to "
 "**modify and/or delete answers from other participants**."
 msgstr ""
+"Sie ist nicht für Umfragen mit einer großen Anzahl von Personen oder für "
+"Situationen geeignet, in denen die Sicherheit der Abstimmungen wichtig ist. "
+"Um abstimmen zu können, muss jeder Benutzer die Bearbeitungsrechte für das "
+"Dokument haben. Dies ermöglicht es jedem Teilnehmer, **Antworten von anderen "
+"Teilnehmern zu ändern und/oder zu löschen**."
 
 #: ../../user_guide/apps/poll.rst:13
 msgid "A complete re-write of this application is planned for late 2020."
@@ -52,21 +60,26 @@ msgid ""
 "|pencil| **Edit**: Switch to edit mode to change the poll description and"
 " response options."
 msgstr ""
+"|pencil| **Bearbeiten**: Wechselt zum Bearbeitungsmodus, um Änderungen der "
+"Umfragebeschreibung und Antwortoptionen zu ermöglichen."
 
 #: ../../user_guide/apps/poll.rst:24
 msgid ""
 "|check| **Publish**: Save the changes to the poll description and "
 "response options."
 msgstr ""
+"|check| **Veröffentlichen**: Speichert die Umfragebeschreibung und "
+"Antwortoptionen."
 
 #: ../../user_guide/apps/poll.rst:27
 msgid "In edit mode:"
-msgstr ""
+msgstr "Im Bearbeitungsmodus:"
 
 #: ../../user_guide/apps/poll.rst:29
 msgid "|wrench| **Tools**: Show/hide the text editor toolbar."
 msgstr ""
-"|wrench| **Werkzeuge**: Werkzeugleiste für den Texteditor ein-/ausblenden."
+"|wrench| **Werkzeuge**: Blendet die Werkzeugleiste für den Texteditor ein/"
+"aus."
 
 #: ../../user_guide/apps/poll.rst:31
 msgid ""
@@ -74,10 +87,13 @@ msgid ""
 "can be chosen in the CrpytDrive or uploaded. :badge_user:`Logged in "
 "users`"
 msgstr ""
+"|picture-o| **Einfügen**: Fügt ein Bild zur Umfragebeschreibung hinzu. Das "
+"Bild kann aus dem CryptDrive ausgewählt oder hochgeladen werden. "
+":badge_user:`Eingeloggte Benutzer`"
 
 #: ../../user_guide/apps/poll.rst:35
 msgid "Edit mode"
-msgstr ""
+msgstr "Bearbeitungsmodus"
 
 #: ../../user_guide/apps/poll.rst:37
 msgid ""
@@ -85,80 +101,94 @@ msgid ""
 "/markdown-here/wiki/Markdown-Cheatsheet>`__. Use |picture-o| **Insert** "
 "to add images."
 msgstr ""
+"In der Umfragenbeschreibung kann `Markdown <https://github.com/adam-p/"
+"markdown-here/wiki/Markdown-Cheatsheet>`__ verwendet werden. Benutze "
+"|picture-o| **Einfügen**, um Bilder hinzuzufügen."
 
 #: ../../user_guide/apps/poll.rst:41
 msgid "Response options are added to the left of the table. To add an option:"
 msgstr ""
+"Antwortoptionen werden auf der linken Seite der Tabelle hinzugefügt. Um eine "
+"Option hinzuzufügen:"
 
 #: ../../user_guide/apps/poll.rst:43
 msgid "Add a title to the “Option” field."
-msgstr ""
+msgstr "Füge einen Titel zum Feld \"Option\" hinzu."
 
 #: ../../user_guide/apps/poll.rst:44
 msgid "``Click`` on |plus| or ``Enter``."
-msgstr ""
+msgstr "``Klicke`` auf |plus| oder ``Enter``."
 
 #: ../../user_guide/apps/poll.rst:46
 msgid ""
 "To change an option, ``Click`` on the ✐ to the right of the title. To "
 "delete an option, ``Click`` on |times| to the left of the title."
 msgstr ""
+"Um eine Option zu ändern, ``Klicke`` auf ✐ rechts des Titels. Um eine Option "
+"zu löschen, ``Klicke`` auf |times| links des Titels."
 
 #: ../../user_guide/apps/poll.rst:50
 msgid "Voting"
-msgstr ""
+msgstr "Abstimmung"
 
 #: ../../user_guide/apps/poll.rst:52
 msgid "Each vote is logged in a column of the results table. To add a vote:"
 msgstr ""
+"Jede Stimme wird in einer Spalte der Ergebnistabelle protokolliert. Um eine "
+"Stimme hinzuzufügen:"
 
 #: ../../user_guide/apps/poll.rst:54
 msgid "Add a name to the column title."
-msgstr ""
+msgstr "Gib einen Namen im Titel der Spalte ein."
 
 #: ../../user_guide/apps/poll.rst:55
 msgid "``Click`` on the cells of the options to indicate:"
-msgstr ""
+msgstr "``Klicke`` in eine Zelle, um zwischen den Optionen zu wechseln:"
 
 #: ../../user_guide/apps/poll.rst:57
 msgid "✔ Yes"
-msgstr ""
+msgstr "✔ Ja"
 
 #: ../../user_guide/apps/poll.rst:58
 msgid "~ Maybe"
-msgstr ""
+msgstr "~ Vielleicht"
 
 #: ../../user_guide/apps/poll.rst:59
 msgid "✖ No"
-msgstr ""
+msgstr "✖ Nein"
 
 #: ../../user_guide/apps/poll.rst:61
 msgid ""
 "``Click`` on **Submit** at the top of the column to save the vote and add"
 " it to the total count."
 msgstr ""
+"``Klicke`` auf **Bestätigen** im Spaltenkopf, um die Stimmen zu speichern "
+"und zur Auswertung hinzuzufügen."
 
 #: ../../user_guide/apps/poll.rst:64
 msgid ""
 "Use |lock| to unlock an existing column and edit the name and votes. Use "
 "|unlock| to lock the column."
 msgstr ""
+"Verwende |lock|, um eine Spalte zu entsperren und Name und Stimmen zu "
+"ändern. Verwende |unlock|, um die Spalte zu sperren."
 
 #: ../../user_guide/apps/poll.rst:67
 msgid "To add a comment to the poll:"
-msgstr ""
+msgstr "Um ein Kommentar zur Umfrage hinzuzufügen:"
 
 #: ../../user_guide/apps/poll.rst:69
 msgid "Write your comment in the field labelled “Your comment”."
 msgstr ""
+"Schreibe deinen Kommentar in das mit \"Dein Kommentar\" beschriftete Feld."
 
 #: ../../user_guide/apps/poll.rst:70
 msgid "**Send**"
-msgstr ""
+msgstr "**Senden**"
 
 #: ../../user_guide/apps/poll.rst:73
 msgid "Export"
-msgstr ""
+msgstr "Export"
 
 #: ../../user_guide/apps/poll.rst:75
 msgid "|file-o| **File** > |download| **Export**"
