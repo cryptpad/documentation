@@ -1,0 +1,598 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="de" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="de" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Zusammenarbeit &mdash; CryptPad 3.21.0 Dokumentation</title>
+  
+
+  
+  <link rel="icon" type="image/png" href="../_static/images/main-favicon.png" id="favicon"/>
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/open-sans.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/cptools.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/fontawesome.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/cp-overrides.css" type="text/css" />
+    <link rel="index" title="Stichwortverzeichnis" href="../genindex.html" />
+    <link rel="search" title="Suche" href="../search.html" />
+    <link rel="next" title="Teilen / Zugriff" href="share_and_access.html" />
+    <link rel="prev" title="Drive" href="drive.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+            <a href="../index.html" class="icon icon-home">
+              <img src="../_static/images/sidebar-logo.png" class="logo" alt="Logo"/>
+              <div class="icon-title">CryptPad</div>
+              <span class="release">3.21.0</span>
+            </a>
+            
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+          
+        </div>
+
+        <div class="wy-side-nav-language-selector">
+        	<p class="caption-text">
+	        	<select id="language-selector-container">
+	        		<option value="en">English</option>
+              <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
+	        	</select>
+        	</p>
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Benutzer-Handbuch</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="instances.html">CryptPad-Instanzen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_account.html">Benutzer-Account</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="user_account.html#account-types">Account-Typen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#non-registered-user">Nicht-registrierte Benutzer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#logged-in-user">Eingeloggte Benutzer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#premium-user">Premium-Benutzer</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="user_account.html#account-management">Verwaltung von Accounts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#registration">Registrierung</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#logging-in">Einloggen</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="user_account.html#settings">Einstellungen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#account">Account</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#confidentiality">Vertraulichkeit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#cryptdrive">CryptDrive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#cursor">Cursor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#rich-text">Rich Text</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#subscription">Abonnement</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="user_account.html#support">Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_account.html#notifications">Benachrichtigungen</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="security.html">Sicherheit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="security.html#passwords-for-documents-and-folders">Passwörter für Dokumente und Ordner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#remote-disconnect">Sitzungen beenden</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="drive.html">Drive</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#display">Anzeige</a></li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#managing-documents">Dokumente verwalten</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="drive.html#folders">Ordner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="drive.html#renaming">Umbenennen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="drive.html#deleting">Löschen</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#cryptdrive-history">Verlauf des CryptDrives</a></li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#tags">Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#templates">Vorlagen</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Zusammenarbeit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#profile">Profil</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#personal-profile">Eigenes Profil</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#user-profile">Profile anderer Benutzer</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#contacts">Kontakte</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#add-a-contact">Einen Kontakt hinzufügen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#manage-contacts">Kontakte verwalten</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#chat-with-contacts">Mit Kontakten chatten</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#teams">Teams</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#team-drive">Drive von Teams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#team-members">Team-Mitglieder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#invite-members">Mitglieder einladen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#roles-and-permissions">Rollen und Zugriffsrechte</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#administration">Administration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#chat">Chat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#administration-tab">Unterseite &quot;Administration&quot;</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="share_and_access.html">Teilen / Zugriff</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="share_and_access.html#share">Teilen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#access-rights">Zugriffsrechte</a></li>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#sharing-with-contacts">Mit Kontakten teilen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#sharing-a-link">Einen Link teilen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#embedding">Einbetten</a></li>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#shared-folders">Geteilte Ordner</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="share_and_access.html#access">Zugriff</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#access-tab">Unterseite &quot;Zugriff&quot;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#access-list">Zugriffsliste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#owners">Eigentümer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="applications.html">Anwendungen</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="apps/general.html">Allgemein</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#new-document">Neues Dokument</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#saving">Speichern</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#make-a-copy">Eine Kopie anfertigen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#document-history">Dokumentenverlauf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#properties">Eigenschaften</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#users-and-chat">Benutzer und Chat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/richtext.html">Rich Text</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/richtext.html#toolbar">Werkzeugleiste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/richtext.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/richtext.html#comments">Kommentare</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/sheets.html">Tabellen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/sheets.html#documentation">Dokumentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/sheets.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/code.html">Code / Markdown</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#toolbar">Werkzeugleiste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#theme">Theme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#markdown">Markdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#images">Bilder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#lightbox">Lightbox</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/slides.html">Präsentation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/slides.html#toolbar">Werkzeugleiste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/slides.html#writing-slides-with-markdown">Folien mit Markdown erstellen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/slides.html#theme">Theme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/slides.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/slides.html#images">Bilder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/slides.html#lightbox">Lightbox</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/poll.html">Umfrage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/poll.html#toolbar">Werkzeugleiste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/poll.html#edit-mode">Bearbeitungsmodus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/poll.html#voting">Abstimmung</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/poll.html#export">Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/kanban.html">Kanban</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#organisation">Organisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#columns">Spalten</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#cards">Karten</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#card-editor">Karteneditor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#display">Anzeige</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Whiteboard</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">Werkzeugleiste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">Zeichnen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-mode">Pinsel-Modus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#select-mode">Auswahl-Modus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#export">Export</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">Administrator-Handbuch (in Arbeit)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev_guide/index.html">Entwickler-Handbuch (in Arbeit)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../how_to_contribute.html">Wie du uns unterstützen kannst</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#spread-the-word">Mache CryptPad bekannt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#report-bugs">Fehler melden</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#translate-cryptpad">CryptPad übersetzen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#contribute-to-the-code">Zum Code beitragen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#financial-support">Finanzielle Unterstützung</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+	<!-- start top banner area (for fundraisers or messages)
+
+	<div style="text-align: center; background-color: #333">
+		<a href="https://krita.org/en/fundraising-2018-campaign/" target="_self" onclick="ga('send', 'event', 'frontpage', 'button', 'Fundraiser 2018');">
+			<img src="https://krita.org/wp-content/themes/krita-org-theme/images/decoration/2018-fundraiser-banner.png" style="max-width: 100%">
+		</a>
+	</div>
+	
+	 end top banner area -->
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CryptPad</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Stichwortverzeichnis</a> &raquo;</li>
+        
+          <li><a href="index.html">Benutzer-Handbuch</a> &raquo;</li>
+        
+      <li>Zusammenarbeit</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/user_guide/collaboration.rst.txt" rel="nofollow"> 
+             
+              <img src="../_static/images/source-code.png" />
+             <!-- View page source -->
+
+          </a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="collaboration-social">
+<h1>Zusammenarbeit<a class="headerlink" href="#collaboration-social" title="Link zu dieser Überschrift">¶</a></h1>
+<div class="section" id="profile">
+<span id="id1"></span><h2>Profil<a class="headerlink" href="#profile" title="Link zu dieser Überschrift">¶</a></h2>
+<p><span class="badge-user">Eingeloggte Benutzer</span></p>
+<p>Jeder registrierte Benutzer von CryptPad hat eine Profilseite, auf die über das Benutzermenü zugegriffen werden kann:</p>
+<ul class="simple">
+<li><p>Benutzermenü (Avatar oben rechts) &gt; <em class="fa fa-user-circle"></em> <strong>Profil</strong>.</p></li>
+</ul>
+<div class="section" id="personal-profile">
+<h3>Eigenes Profil<a class="headerlink" href="#personal-profile" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Die folgenden Elemente können auf der Profilseite angepasst werden:</p>
+<ul class="simple">
+<li><p>Avatar mit <em class="fa fa-upload"></em> <strong>Neuen Avatar hochladen</strong>.</p></li>
+<li><p>Beschreibung mit <em class="fa fa-pencil"></em> <strong>Beschreibung hinzufügen</strong>.</p></li>
+<li><p>Website mit <strong>Link zu deiner Website hinzufügen</strong>.</p></li>
+</ul>
+<p>Teilen:</p>
+<ul class="simple">
+<li><p><strong>Mein Profil anzeigen</strong>: Zeigt eine Vorschau des Profils an, so wie sie für andere Benutzer aussieht.</p></li>
+<li><p><em class="fa fa-share-alt"></em> <strong>Teilen</strong>: Kopiert den Link zu deinem Profil in die Zwischenablage.</p></li>
+</ul>
+</div>
+<div class="section" id="user-profile">
+<h3>Profile anderer Benutzer<a class="headerlink" href="#user-profile" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Um das Profil eines anderen Benutzers anzusehen:</p>
+<ul class="simple">
+<li><p><strong>Benutzerliste</strong> <em class="fa fa-users"></em> <em class="fa fa-eye"></em> eines vom Benutzer gerade verwendeten Dokuments &gt; <code class="docutils literal notranslate"><span class="pre">Klicke</span></code> auf den Namen.</p></li>
+<li><p>Wenn der Benutzer in deiner <a class="reference internal" href="#contacts"><span class="std std-ref">Kontaktliste</span></a> ist: Benutzermenü (Avatar oben rechts) &gt; <em class="fa fa-address-book"></em> <strong>Kontakte</strong> &gt; <code class="docutils literal notranslate"><span class="pre">Doppelklicke</span></code> auf den Namen in der Liste.</p></li>
+</ul>
+<p>Auf der Profilseite eines anderen Benutzers:</p>
+<ul class="simple">
+<li><p><strong>Kontaktanfrage senden</strong>: Fügt diesen Benutzer zu deiner <a class="reference internal" href="#contacts"><span class="std std-ref">Kontaktliste</span></a> hinzu, sobald er die Anfrage bestätigt hat.</p></li>
+<li><p><em class="fa fa-bell-slash"></em> <strong>Stummschalten</strong>: Blockiert Benachrichtigungen und Nachrichten von diesem Benutzer. Er weiß nicht, dass er stummgeschaltet wurde.</p></li>
+<li><p><em class="fa fa-key"></em> <strong>Öffentlichen Schlüssel kopieren</strong>: Kopiert den Schlüssel in die Zwischenablage. Er wird von Administratoren verwendet und auch auf Instanzen, die Abonnements anbieten.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="contacts">
+<span id="id2"></span><h2>Kontakte<a class="headerlink" href="#contacts" title="Link zu dieser Überschrift">¶</a></h2>
+<p><span class="badge-user">Eingeloggte Benutzer</span></p>
+<p>Mit Kontakten auf CryptPad ist die Zusammenarbeit sicherer und einfacher.</p>
+<div class="section" id="add-a-contact">
+<h3>Einen Kontakt hinzufügen<a class="headerlink" href="#add-a-contact" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Auf der Profilseite eines anderen Benutzers:</p>
+<ul class="simple">
+<li><p><strong>Kontaktanfrage senden</strong>.</p></li>
+</ul>
+<p>Durch Teilen deines Profils:</p>
+<ol class="arabic simple">
+<li><p>Kopiere den Link: Benutzermenü (Avatar oben rechts) &gt; <em class="fa fa-user-circle"></em> <strong>Profil</strong> &gt; <em class="fa fa-share-alt"></em> <strong>Teilen</strong>.</p></li>
+<li><p>Sende den Link an den Benutzer auf eine Art deiner Wahl (am besten über einen sicheren Kommukationskanal).</p></li>
+</ol>
+</div>
+<div class="section" id="manage-contacts">
+<h3>Kontakte verwalten<a class="headerlink" href="#manage-contacts" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Um auf die Kontakte-Seite zuzugreifen:</p>
+<ul class="simple">
+<li><p>Benutzermenü (Avatar oben rechts) &gt; <em class="fa fa-address-book"></em> <strong>Kontakte</strong>.</p></li>
+</ul>
+<p>Alle Kontakte werden auf der linken Seite des Fensters aufgelistet. Für jeden Kontakt:</p>
+<ul class="simple">
+<li><p><em class="fa fa-bell-slash"></em>: Nachrichten und Benachrichtigungen stummschalten.</p></li>
+<li><p><em class="fa fa-user-times"></em>: Entfernen.</p></li>
+<li><p><em class="fa fa-circle"></em>: Zeigt an, dass der Kontakt online ist.</p></li>
+</ul>
+</div>
+<div class="section" id="chat-with-contacts">
+<span id="chat-contacts"></span><h3>Mit Kontakten chatten<a class="headerlink" href="#chat-with-contacts" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Auf der Kontakte-Seite, <code class="docutils literal notranslate"><span class="pre">klicke</span></code> auf einen Kontakt, um einen Chat mit diesem Benutzer im Hauptfenster zu öffnen.</p>
+<p>Schreibe Nachrichten im Feld unten und sende sie mit <em class="fa fa-paper-plane"></em> oder <code class="docutils literal notranslate"><span class="pre">Enter</span></code> ab.</p>
+<p>Lade weiteren Chat-Verlauf mit <em class="fa fa-history"></em> oder lösche den Verlauf mit <em class="fa fa-eraser"></em>.</p>
+</div>
+</div>
+<div class="section" id="teams">
+<span id="id3"></span><h2>Teams<a class="headerlink" href="#teams" title="Link zu dieser Überschrift">¶</a></h2>
+<p><span class="badge-user">Eingeloggte Benutzer</span></p>
+<p>Teams auf CryptPad sind geteilte Arbeitsbereiche für Benutzergruppen. Ein Team hat ein eigenes CryptDrive, einen Chat, eine Mitgliederliste mit Rollen und Zugriffsrechten.</p>
+<div class="admonition note">
+<p class="admonition-title">Bemerkung</p>
+<p>Aus Performance-Gründen ist die Anzahl von Teams, denen ein Benutzer beitreten kann, auf drei begrenzt.</p>
+</div>
+<p>Um ein Team zu erstellen:</p>
+<ol class="arabic simple">
+<li><p>Benutzermenü (Avatar oben rechts) &gt; <em class="fa fa-users"></em> <strong>Teams</strong>.</p></li>
+<li><p><em class="fa fa-plus-circle"></em> <strong>Neu</strong>.</p></li>
+</ol>
+<p>Um ein bestehendes Team aufzurufen:</p>
+<ol class="arabic simple">
+<li><p>Benutzermenü (Avatar oben rechts) &gt; <em class="fa fa-users"></em> <strong>Teams</strong>.</p></li>
+<li><p><em class="fa fa-list"></em> <strong>Teams</strong> &gt; Schaltfläche <strong>Öffnen</strong> beim gewünschten Team.</p></li>
+</ol>
+<div class="section" id="team-drive">
+<h3>Drive von Teams<a class="headerlink" href="#team-drive" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Der Speicherplatz von Teams ist ähnlich zum <a class="reference internal" href="drive.html#drive"><span class="std std-ref">CryptDrive</span></a>, wird aber mit anderen Mitgliedern des Teams geteilt.</p>
+</div>
+<div class="section" id="team-members">
+<h3>Team-Mitglieder<a class="headerlink" href="#team-members" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Um die Mitglieder des Teams zu verwalten, gehe zur Unterseite <em class="fa fa-users"></em> <strong>Mitglieder</strong>.</p>
+</div>
+<div class="section" id="invite-members">
+<h3>Mitglieder einladen<a class="headerlink" href="#invite-members" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Um Mitglieder zum Team einzuladen:</p>
+<ul class="simple">
+<li><p>Unterseite <em class="fa fa-users"></em> <strong>Mitglieder</strong> &gt; <strong>Mitglieder einladen</strong>.</p></li>
+</ul>
+<p><em class="fa fa-address-book"></em> <strong>Kontakte</strong>: Wähle CryptPad-Kontakte aus, um sie in das Team einzuladen. Die Eingeladenen erhalten eine Benachrichtigung über die Einladung und können bestätigen, dass sie dem Team beitreten möchten.</p>
+<p><em class="fa fa-link"></em> <strong>Link</strong>: Kopiere einen Link, um ihn auf einem selbst gewählten Weg zu versenden (am besten über einen sicheren Kommunikationskanal). Dieser Link kann nur einmal verwendet werden. Er wird ungültig, sobald jemand ihn zum ersten Mal benutzt, um dem Team beizutreten.</p>
+<ul class="simple">
+<li><p><strong>Vorläufiger Name</strong>: Wird in der Liste ausstehender Einladungen zur Identifikation des Einladungslinks verwendet.</p></li>
+<li><p><strong>Passwort</strong>: Schützt den Link davor, abgefangen zu werden. (optional)</p></li>
+<li><p><strong>Persönliche Nachricht</strong>: Die Nachricht wird dem Empfänger angezeigt, bevor er über den Beitritt zum Team entscheidet.</p></li>
+</ul>
+</div>
+<div class="section" id="roles-and-permissions">
+<h3>Rollen und Zugriffsrechte<a class="headerlink" href="#roles-and-permissions" title="Link zu dieser Überschrift">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 35%" />
+<col style="width: 28%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Rolle</p></th>
+<th class="head"><p>Ansehen</p></th>
+<th class="head"><p>Bearbeiten</p></th>
+<th class="head"><p>Mitglieder verwalten</p></th>
+<th class="head"><p>Team verwalten</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Betrachter</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mitglieder</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Admins</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Eigentümer</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+</tr>
+</tbody>
+</table>
+<p>Zugriffsrechte:</p>
+<p>Ansehen: auf Ordner und Dateien zugreifen (nur lesen).</p>
+<p>Bearbeiten: Ordner und Pads erstellen, ändern und löschen.</p>
+<p>Mitglieder verwalten: Mitglieder einladen und entfernen, Rollen bis hin zum Admin ändern.</p>
+<p>Team verwalten: Name und Avatar ändern, Eigentümer hinzufügen oder entfernen, Abonnement des Teams ändern, Team löschen.</p>
+</div>
+<div class="section" id="administration">
+<h3>Administration<a class="headerlink" href="#administration" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Die Rolle der Benutzer kann in der Mitgliederliste geändert werden. Team-Admins und -Eigentümer können die Benutzer bis hoch zu ihrer eigenen Rolle ändern. Für jeden Benutzer:</p>
+<div class="line-block">
+<div class="line"><em class="fa fa-angle-double-up"></em> : Einer höheren Rolle zuweisen.</div>
+<div class="line"><em class="fa fa-angle-double-down"></em>: Einer niedrigeren Rolle zuweisen.</div>
+<div class="line"><em class="fa fa-times"></em>: Vom Team entfernen.</div>
+</div>
+</div>
+<div class="section" id="chat">
+<h3>Chat<a class="headerlink" href="#chat" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Der Team-Chat ist ähnlich zum Chat mit <a class="reference internal" href="#contacts"><span class="std std-ref">Kontakten</span></a>, wird aber mit anderen Mitgliedern des Teams geteilt.</p>
+</div>
+<div class="section" id="administration-tab">
+<h3>Unterseite &quot;Administration&quot;<a class="headerlink" href="#administration-tab" title="Link zu dieser Überschrift">¶</a></h3>
+<p><span class="badge-owner">Team-Eigentümer</span></p>
+<ul class="simple">
+<li><p><strong>Öffentlicher Schlüssel zum Unterschreiben</strong>: Wird auf Instanzen, die Abonnements anbieten, zur Identifikation des Teams verwendet.</p></li>
+<li><p><strong>Teamname</strong>: Den Namen des Teams ändern.</p></li>
+<li><p><strong>Teamavatar</strong>: Den Avatar des Teams importieren/ändern.</p></li>
+<li><p><strong>Löschung des Teams</strong>: Das Team und die dazugehörigen Dokumente endgültig löschen.</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="share_and_access.html" class="btn btn-neutral float-right" title="Teilen / Zugriff" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="drive.html" class="btn btn-neutral" title="Drive" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, CryptPad Team.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a modified <a href="https://github.com/rtfd/sphinx_rtd_theme">RTD theme</a>.<br/>
+  <a href="https://cryptpad.fr" title="CryptPad flagship instance">CryptPad flagship instance</a> |
+  <a href="#" title="The Gitlab instance to edit this pages and collaborate.">Git repository for docs.cryptpad.fr </a>
+  . 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'3.21.0',
+            LANGUAGE:'de',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

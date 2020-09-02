@@ -1,0 +1,582 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="de" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="de" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Teilen / Zugriff &mdash; CryptPad 3.21.0 Dokumentation</title>
+  
+
+  
+  <link rel="icon" type="image/png" href="../_static/images/main-favicon.png" id="favicon"/>
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/open-sans.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/cptools.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/fontawesome.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/cp-overrides.css" type="text/css" />
+    <link rel="index" title="Stichwortverzeichnis" href="../genindex.html" />
+    <link rel="search" title="Suche" href="../search.html" />
+    <link rel="next" title="Anwendungen" href="applications.html" />
+    <link rel="prev" title="Zusammenarbeit" href="collaboration.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+            <a href="../index.html" class="icon icon-home">
+              <img src="../_static/images/sidebar-logo.png" class="logo" alt="Logo"/>
+              <div class="icon-title">CryptPad</div>
+              <span class="release">3.21.0</span>
+            </a>
+            
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+          
+        </div>
+
+        <div class="wy-side-nav-language-selector">
+        	<p class="caption-text">
+	        	<select id="language-selector-container">
+	        		<option value="en">English</option>
+              <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
+	        	</select>
+        	</p>
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Benutzer-Handbuch</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="instances.html">CryptPad-Instanzen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_account.html">Benutzer-Account</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="user_account.html#account-types">Account-Typen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#non-registered-user">Nicht-registrierte Benutzer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#logged-in-user">Eingeloggte Benutzer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#premium-user">Premium-Benutzer</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="user_account.html#account-management">Verwaltung von Accounts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#registration">Registrierung</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#logging-in">Einloggen</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="user_account.html#settings">Einstellungen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#account">Account</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#confidentiality">Vertraulichkeit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#cryptdrive">CryptDrive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#cursor">Cursor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#rich-text">Rich Text</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#subscription">Abonnement</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="user_account.html#support">Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_account.html#notifications">Benachrichtigungen</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="security.html">Sicherheit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="security.html#passwords-for-documents-and-folders">Passwörter für Dokumente und Ordner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#remote-disconnect">Sitzungen beenden</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="drive.html">Drive</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#display">Anzeige</a></li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#managing-documents">Dokumente verwalten</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="drive.html#folders">Ordner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="drive.html#renaming">Umbenennen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="drive.html#deleting">Löschen</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#cryptdrive-history">Verlauf des CryptDrives</a></li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#tags">Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#templates">Vorlagen</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="collaboration.html">Zusammenarbeit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="collaboration.html#profile">Profil</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#personal-profile">Eigenes Profil</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#user-profile">Profile anderer Benutzer</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="collaboration.html#contacts">Kontakte</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#add-a-contact">Einen Kontakt hinzufügen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#manage-contacts">Kontakte verwalten</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#chat-with-contacts">Mit Kontakten chatten</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="collaboration.html#teams">Teams</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#team-drive">Drive von Teams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#team-members">Team-Mitglieder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#invite-members">Mitglieder einladen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#roles-and-permissions">Rollen und Zugriffsrechte</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#administration">Administration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#chat">Chat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#administration-tab">Unterseite &quot;Administration&quot;</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Teilen / Zugriff</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#share">Teilen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#access-rights">Zugriffsrechte</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sharing-with-contacts">Mit Kontakten teilen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sharing-a-link">Einen Link teilen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#embedding">Einbetten</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#shared-folders">Geteilte Ordner</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#access">Zugriff</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#access-tab">Unterseite &quot;Zugriff&quot;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#access-list">Zugriffsliste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#owners">Eigentümer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="applications.html">Anwendungen</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="apps/general.html">Allgemein</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#new-document">Neues Dokument</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#saving">Speichern</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#make-a-copy">Eine Kopie anfertigen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#document-history">Dokumentenverlauf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#properties">Eigenschaften</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#users-and-chat">Benutzer und Chat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/richtext.html">Rich Text</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/richtext.html#toolbar">Werkzeugleiste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/richtext.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/richtext.html#comments">Kommentare</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/sheets.html">Tabellen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/sheets.html#documentation">Dokumentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/sheets.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/code.html">Code / Markdown</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#toolbar">Werkzeugleiste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#theme">Theme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#markdown">Markdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#images">Bilder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#lightbox">Lightbox</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/slides.html">Präsentation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/slides.html#toolbar">Werkzeugleiste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/slides.html#writing-slides-with-markdown">Folien mit Markdown erstellen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/slides.html#theme">Theme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/slides.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/slides.html#images">Bilder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/slides.html#lightbox">Lightbox</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/poll.html">Umfrage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/poll.html#toolbar">Werkzeugleiste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/poll.html#edit-mode">Bearbeitungsmodus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/poll.html#voting">Abstimmung</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/poll.html#export">Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/kanban.html">Kanban</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#organisation">Organisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#columns">Spalten</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#cards">Karten</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#card-editor">Karteneditor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#display">Anzeige</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Whiteboard</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">Werkzeugleiste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">Zeichnen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-mode">Pinsel-Modus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#select-mode">Auswahl-Modus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#export">Export</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">Administrator-Handbuch (in Arbeit)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev_guide/index.html">Entwickler-Handbuch (in Arbeit)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../how_to_contribute.html">Wie du uns unterstützen kannst</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#spread-the-word">Mache CryptPad bekannt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#report-bugs">Fehler melden</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#translate-cryptpad">CryptPad übersetzen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#contribute-to-the-code">Zum Code beitragen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#financial-support">Finanzielle Unterstützung</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+	<!-- start top banner area (for fundraisers or messages)
+
+	<div style="text-align: center; background-color: #333">
+		<a href="https://krita.org/en/fundraising-2018-campaign/" target="_self" onclick="ga('send', 'event', 'frontpage', 'button', 'Fundraiser 2018');">
+			<img src="https://krita.org/wp-content/themes/krita-org-theme/images/decoration/2018-fundraiser-banner.png" style="max-width: 100%">
+		</a>
+	</div>
+	
+	 end top banner area -->
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CryptPad</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Stichwortverzeichnis</a> &raquo;</li>
+        
+          <li><a href="index.html">Benutzer-Handbuch</a> &raquo;</li>
+        
+      <li>Teilen / Zugriff</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/user_guide/share_and_access.rst.txt" rel="nofollow"> 
+             
+              <img src="../_static/images/source-code.png" />
+             <!-- View page source -->
+
+          </a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="share-access">
+<h1>Teilen / Zugriff<a class="headerlink" href="#share-access" title="Link zu dieser Überschrift">¶</a></h1>
+<p>Mit den Menüs <em class="fa fa-share-alt"></em> <strong>Teilen</strong> und <em class="fa fa-unlock-alt"></em> <strong>Zugriff</strong> kannst du bestimmen, wie andere Benutzer mit deinen Dokumenten arbeiten können.</p>
+<ul class="simple">
+<li><p>Werkzeugleiste im Dokument: <em class="fa fa-share-alt"></em> <strong>Teilen</strong> and <em class="fa fa-unlock-alt"></em> <strong>Zugriff</strong> in der Mitte.</p></li>
+<li><p>Im CryptDrive: <code class="docutils literal notranslate"><span class="pre">Rechtsklicke</span></code> auf ein Dokument &gt; <em class="fa fa-share-alt"></em> <strong>Teilen</strong> or <em class="fa fa-unlock-alt"></em> <strong>Zugriff</strong>.</p></li>
+</ul>
+<div class="section" id="share">
+<span id="id1"></span><h2>Teilen<a class="headerlink" href="#share" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Es gibt drei Möglichkeiten, um ein Dokument zu teilen: <a class="reference internal" href="#share-contacts"><span class="std std-ref">Mit Kontakten teilen</span></a>, <a class="reference internal" href="#share-link"><span class="std std-ref">Einen Link teilen</span></a>, and <a class="reference internal" href="#share-embed"><span class="std std-ref">Einbetten</span></a>. In jeden Fall kann bestimmt werden, ob der Empfänger das Dokument bearbeiten oder nur ansehen kann.</p>
+<div class="section" id="access-rights">
+<span id="share-access-rights"></span><h3>Zugriffsrechte<a class="headerlink" href="#access-rights" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Es gibt vier Berechtigungsstufen:</p>
+<ul class="simple">
+<li><p><strong>Ansehen</strong>: Nur lesen, keine Bearbeitung des Dokuments.</p></li>
+<li><p><strong>Anzeigemodus</strong>: Nur lesen der Darstellung des Dokuments, verfügbar in den Anwendungen <a class="reference internal" href="apps/code.html#app-code"><span class="std std-ref">Code / Markdown</span></a> und <a class="reference internal" href="apps/slides.html#app-slides"><span class="std std-ref">Präsentation</span></a>.</p></li>
+<li><p><strong>Bearbeiten</strong>: Lesen und Bearbeiten des Dokuments.</p></li>
+<li><p><strong>Einmal ansehen mit Selbstzerstörung</strong>: Nur lesen, <strong>einmal</strong>. Sobald der Link vom Empfänger geöffnet wird, wird das Dokument endgültig gelöscht.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Bemerkung</p>
+<p>Wenn das Dokument bereits im CryptDrive eines Benutzers mit Bearbeitungsrechten gespeichert ist, wird der Bearbeitungslink auch dann in Dokumenteigenschaften angezeigt, wenn der Benutzer im Ansehen-Modus ist.</p>
+</div>
+</div>
+<div class="section" id="sharing-with-contacts">
+<span id="share-contacts"></span><h3>Mit Kontakten teilen<a class="headerlink" href="#sharing-with-contacts" title="Link zu dieser Überschrift">¶</a></h3>
+<p><span class="badge-user">Eingeloggte Benutzer</span></p>
+<p>Dies ist der empfohlene Weg, um Dokumente sicher auf CryptPad zu teilen. Beim direkten Teilen mit <a class="reference internal" href="collaboration.html#contacts"><span class="std std-ref">contacts</span></a> verlassen die Links zu Dokumenten niemals die verschlüsselte Plattform von CryptPad.</p>
+<img alt="../_images/modal-share-contacts.png" class="screenshot" src="../_images/modal-share-contacts.png" />
+<p>Um mit einem oder mehreren Kontakten zu teilen:</p>
+<ul class="simple">
+<li><p><em class="fa fa-share-alt"></em> <strong>Teilen</strong> in der Werkzeugleiste im Dokument &gt; <em class="fa fa-address-book"></em> <strong>Kontakte</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Rechtsklicke</span></code> auf das Dokument im CryptDrive &gt; <em class="fa fa-share-alt"></em> <strong>Teilen</strong> &gt; <em class="fa fa-address-book"></em> <strong>Kontakte</strong>.</p></li>
+</ul>
+<p>Dann:</p>
+<ol class="arabic simple">
+<li><p>Wähle die <a class="reference internal" href="#share-access-rights"><span class="std std-ref">Zugriffsrechte</span></a>.</p></li>
+<li><p>Wählen einen Kontakt oder ein Team aus, mit dem du das Dokument teilen möchtest.</p></li>
+<li><p>Schaltfläche <strong>Teilen</strong>.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Bemerkung</p>
+<p>Nach dem Teilen mit Kontakten erhalten sie eine Benachrichtigung. Beim Teilen mit einem Team wird das Dokument direkt zum CryptDrive des Teams hinzugefügt.</p>
+</div>
+</div>
+<div class="section" id="sharing-a-link">
+<span id="share-link"></span><h3>Einen Link teilen<a class="headerlink" href="#sharing-a-link" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Die Unterseite <strong>Link</strong> stellt Links bereit, die auf einen Kanal deiner Wahl geteilt werden können. Je nachdem wie du den Link versendest, kann dies mit Sicherheitsrisiken verbunden sein. Für eine zusätzliche Sicherheitsebene wird empfohlen, vor dem Teilen ein <a class="reference internal" href="#access-tab"><span class="std std-ref">Passwort</span></a> hinzuzufügen.</p>
+<img alt="../_images/modal-share-link.png" class="screenshot" src="../_images/modal-share-link.png" />
+<p>Um den Link zu einem Dokument kopieren:</p>
+<ul class="simple">
+<li><p>Im Dokument: <em class="fa fa-share-alt"></em> <strong>Teilen</strong> in der Werkzeugleiste &gt; <em class="fa fa-link"></em> <strong>Link</strong>.</p></li>
+<li><p>Im CryptDrive : <code class="docutils literal notranslate"><span class="pre">Rechtsklicke</span></code> auf das Dokument &gt; <em class="fa fa-share-alt"></em> <strong>Teilen</strong> &gt; <em class="fa fa-link"></em> <strong>Link</strong>.</p></li>
+</ul>
+<p>Dann:</p>
+<ol class="arabic simple">
+<li><p>Wähle die <a class="reference internal" href="#share-access-rights"><span class="std std-ref">Zugriffsrechte</span></a> und weitere Optionen:</p>
+<ul class="simple">
+<li><p><strong>Einbettungsmodus</strong> versteckt die Werkzeugleiste und Benutzerliste.</p></li>
+<li><p><strong>Vorschau</strong> zeigt dir, wie der Link aussieht, bevor du ihn teilst.</p></li>
+</ul>
+</li>
+<li><p><strong>Kopiere</strong> den Link.</p></li>
+<li><p>Versende den Link.</p></li>
+</ol>
+</div>
+<div class="section" id="embedding">
+<span id="share-embed"></span><h3>Einbetten<a class="headerlink" href="#embedding" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Das Einbetten erlaubt, CryptPad-Dokumente in anderen Webseiten anzuzeigen.</p>
+<img alt="../_images/modal-share-embed.png" class="screenshot" src="../_images/modal-share-embed.png" />
+<p>Um ein Dokument einzubetten:</p>
+<ul class="simple">
+<li><p>Im Dokument: <em class="fa fa-share-alt"></em> <strong>Teilen</strong> in der Werzeugleiste &gt; <em class="fa fa-code"></em> <strong>Einbetten</strong>.</p></li>
+<li><p>Im CryptDrive : <code class="docutils literal notranslate"><span class="pre">Rechtsklicke</span></code> auf das Dokument &gt; <em class="fa fa-share-alt"></em> <strong>Teilen</strong> &gt; <em class="fa fa-code"></em> <strong>Einbetten</strong>.</p></li>
+</ul>
+<p>dann</p>
+<ol class="arabic simple">
+<li><p>Wähle die <a class="reference internal" href="#share-access-rights"><span class="std std-ref">Zugriffsrechte</span></a>.</p></li>
+<li><p><strong>Kopiere</strong> dein Einbettungscode.</p></li>
+<li><p>Füge den Code auf einer Webseite ein.</p></li>
+</ol>
+</div>
+<div class="section" id="shared-folders">
+<span id="id2"></span><h3>Geteilte Ordner<a class="headerlink" href="#shared-folders" title="Link zu dieser Überschrift">¶</a></h3>
+<p><span class="badge-user">Eingeloggte Benutzer</span></p>
+<p>Geteilte Ordner sind dazu gedacht, mehrere Dokumente auf einmal zu teilen.</p>
+<p>Um einen geteilten Ordner im CryptDrive zu erstellen:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Neu</span></code> &gt; <em class="cptools cptools-shared-folder"></em> <strong>Geteilter Ordner</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Strg</span> <span class="pre">+</span> <span class="pre">e</span></code> &gt; <em class="cptools cptools-shared-folder"></em> <strong>Geteilter Ordner</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Rechtsklick</span></code> &gt; <em class="cptools cptools-shared-folder"></em> <strong>Neuer geteilter Ordner</strong>.</p></li>
+</ul>
+<p>Um einen bestehenden Ordner in einen geteilten Ordner umzuwandeln:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Rechtsklicke</span></code> auf den Ordner &gt; <em class="fa fa-share-alt"></em> <strong>Teilen</strong>.</p></li>
+<li><p>Wähle die Optionen zur Umwandlung. Passwort. <a class="reference internal" href="#owners"><span class="std std-ref">Eigener</span></a> Ordner.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">OK</span></code> oder drücke die Taste <code class="docutils literal notranslate"><span class="pre">Enter</span></code>.</p></li>
+</ol>
+<p>Das Teilen von Ordnern funktioniert ähnlich wie das Teilen von Dokumenten. Um einen Ordner im CryptDrive zu teilen:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Rechtsklicke</span></code> auf den Ordner &gt; <em class="fa fa-share-alt"></em> <strong>Teilen</strong>.</p></li>
+<li><p>Wähle die <a class="reference external" href="#access-rights">Zugriffsrechte</a>. <strong>Ansehen</strong>: Nur lesen ohne Bearbeitung des Ordnerinhalts. <strong>Bearbeiten</strong>: Ansehen und Verändern des Ordners.</p></li>
+<li><p>Es gibt drei Unterseiten: <em class="fa fa-address-book"></em> <strong>Kontakte</strong>: Empfohlene Methode zum sicheren Teilen mit Kontakten und Teams auf CryptPad. <em class="fa fa-link"></em> <strong>Link</strong>: Link kopieren und über einen Weg deiner Wahl versenden. <em class="fa fa-code"></em> <strong>Einbettung</strong>: Code kopieren und Ordner auf einer Webseite einbetten.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Bemerkung</p>
+<p>Geteilte Ordner haben ihren eigenen Verlauf, unabhängig vom <a class="reference internal" href="drive.html#drive-history"><span class="std std-ref">Verlauf des CryptDrives</span></a>. Die Wiederherstellung des CryptDrive-Verlaufs beeinflusst geteilte Ordner nicht. Umgekehrt kann der Verlauf eines geteilten Ordners wiederhergestellt werden, ohne andere Teile des CryptDrives zu beeinflussen.</p>
+</div>
+</div>
+</div>
+<div class="section" id="access">
+<span id="id3"></span><h2>Zugriff<a class="headerlink" href="#access" title="Link zu dieser Überschrift">¶</a></h2>
+<p><span class="badge-user">Eingeloggte Benutzer</span></p>
+<p>Dieses Menü kann dazu verwendet werden, den Zugriff auf Dokumente oder geteilte Ordner einzuschränken:</p>
+<ul class="simple">
+<li><p>Im Dokument: <em class="fa fa-unlock-alt"></em> <strong>Zugriff</strong>.</p></li>
+<li><p>Im CryptDrive: <code class="docutils literal notranslate"><span class="pre">Rechtsklicke</span></code> auf das Dokument oder geteilten Ordner &gt; <em class="fa fa-unlock-alt"></em> <strong>Zugriff</strong>.</p></li>
+</ul>
+<div class="section" id="access-tab">
+<span id="id4"></span><h3>Unterseite &quot;Zugriff&quot;<a class="headerlink" href="#access-tab" title="Link zu dieser Überschrift">¶</a></h3>
+<img alt="../_images/modal-access-access.png" class="screenshot" src="../_images/modal-access-access.png" />
+<p>Hier werden die Bedingungen für den Zugriff auf das Dokument zusammengefasst:</p>
+<ul>
+<li><p><strong>Ablaufdatum</strong>: Datum, an dem das Dokument gelöscht wird. Dieses Datum wird bei der Erstellung des Dokuments festgelegt und kann später nicht mehr geändert werden.</p></li>
+<li><p><strong>Passwort</strong>: Zeigt an, ob ein Passwort festgelegt wurde. Es kann ein neues Passwort festgelegt werden oder ein bestehendes Passwort geändert werden.</p></li>
+<li><p><strong>Eigentümer</strong>: Listet alle <a class="reference external" href="#owners">Eigentümer</a> des Dokuments auf.</p></li>
+<li><div class="line-block">
+<div class="line"><strong>Zugriffsanfragen</strong>:</div>
+<div class="line"><strong>Bearbeitungsrechte anfragen</strong>: Für Nutzer nur mit Lesezugriff.</div>
+<div class="line"><em class="fa fa-bell-slash"></em> <strong>Zugriffsanfragen für dieses Pad stummschalten</strong>: Versteckt Zugriffsanfragen für dieses Dokument. <span class="badge-owner">Eigentümer von Dokumenten</span></div>
+</div>
+</li>
+<li><p><strong>Zugriffsliste</strong>: Zeigt die <a class="reference external" href="#access-list">Zugriffsliste</a> und ob sie aktiviert ist.</p></li>
+<li><p><em class="cptools cptools-destroy"></em> <strong>Zerstören</strong>: Löscht das Dokument endgültig.</p></li>
+</ul>
+</div>
+<div class="section" id="access-list">
+<span id="id5"></span><h3>Zugriffsliste<a class="headerlink" href="#access-list" title="Link zu dieser Überschrift">¶</a></h3>
+<p><span class="badge-owner">Eigentümer von Dokumenten</span></p>
+<img alt="../_images/modal-access-list.png" class="screenshot" src="../_images/modal-access-list.png" />
+<p>Die Zugriffsliste beschränkt den Zugriff auf ein Dokument. Wenn aktiviert, können Benutzer, die nicht auf der Liste stehen, nicht auf das Dokument zugreifen, selbst wenn sie es in ihrem CryptDrive gespeichert haben.</p>
+<p>Um die Zugriffsliste zu aktivieren, wähle <strong>Zugriffsliste aktivieren</strong> aus. Die`Eigentümer &lt;#owners&gt;`__ des Dokuments stehen standardmäßig auf der Liste und können nicht entfernt werden.</p>
+<p>Um Kontakte oder Teams zu der Liste hinzuzufügen:</p>
+<ol class="arabic simple">
+<li><p>Wähle sie aus der Kontaktliste auf der rechten Seite aus.</p></li>
+<li><p>Füge sie mit der Schaltfläche <em class="fa fa-arrow-left"></em> zu der Liste hinzu.</p></li>
+</ol>
+<p>Um einen Benutzer oder ein Team aus der Liste zu entfernen, verwende die Schaltfläche <em class="fa fa-times"></em> neben dem Namen.</p>
+</div>
+<div class="section" id="owners">
+<span id="id6"></span><h3>Eigentümer<a class="headerlink" href="#owners" title="Link zu dieser Überschrift">¶</a></h3>
+<img alt="../_images/modal-access-owners.png" class="screenshot" src="../_images/modal-access-owners.png" />
+<p>Hier kann die Eigentümerschaft des Dokuments verwaltet werden. Eigentümer haben die folgenden Berechtigungen:</p>
+<ul class="simple">
+<li><p>Eine <a class="reference internal" href="#access-list"><span class="std std-ref">Zugriffsliste</span></a> aktivieren.</p></li>
+<li><p>Ein Passwort aktivieren.</p></li>
+<li><p>Andere Eigentümer hinzufügen oder entfernen.</p></li>
+<li><p>Das Dokument zerstören.</p></li>
+</ul>
+<p>Die Eigentümerschaft eines Dokuments wird bei der <a class="reference internal" href="apps/general.html#new-document"><span class="std std-ref">Erstellung</span></a> festgelegt.</p>
+<div class="admonition note">
+<p class="admonition-title">Bemerkung</p>
+<p>Wenn ein Dokument ohne Eigentümer erstellt wird, hat niemand die Berechtigung zur Verwaltung der Eigentümerschaft. Das Dokument kann nicht dauerhaft zerstört werden, aber es kann aus dem CryptDrive entfernt werden und wird dann automatisch nach 90 Tagen Inaktivität zerstört.</p>
+</div>
+<p><span class="badge-owner">Eigentümer von Dokumenten</span></p>
+<p>Um Benutzer oder Teams als Eigentümer hinzuzufügen:</p>
+<ol class="arabic simple">
+<li><p>Wähle sie aus der Kontaktliste auf der rechten Seite aus.</p></li>
+<li><p>Füge sie mit der Schaltfläche <em class="fa fa-arrow-left"></em> zu der Liste hinzu.</p></li>
+</ol>
+<p>Um einen Eigentümer zu entfernen, benutze die Schaltfläche <em class="fa fa-times"></em> neben seinem Namen.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="applications.html" class="btn btn-neutral float-right" title="Anwendungen" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="collaboration.html" class="btn btn-neutral" title="Zusammenarbeit" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, CryptPad Team.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a modified <a href="https://github.com/rtfd/sphinx_rtd_theme">RTD theme</a>.<br/>
+  <a href="https://cryptpad.fr" title="CryptPad flagship instance">CryptPad flagship instance</a> |
+  <a href="#" title="The Gitlab instance to edit this pages and collaborate.">Git repository for docs.cryptpad.fr </a>
+  . 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'3.21.0',
+            LANGUAGE:'de',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>
