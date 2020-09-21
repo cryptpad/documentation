@@ -65,7 +65,7 @@ Import/Export
 -------------
 
 | |file-o| **File** > |upload| **Import**.
-| Suported formats: Any plain text file.
+| Supported formats: Any plain text file.
 
 | |file-o| **File** > |download| **Export**.
 | Supported formats: ``.md``.
