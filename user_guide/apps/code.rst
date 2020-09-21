@@ -43,7 +43,7 @@ Import/Export
 -------------
 
 | |file-o| **File** > |upload| **Import**.
-| Suported formats: Any plain text file, the file extension is used to determine the language.
+| Supported formats: Any plain text file, the file extension is used to determine the language.
 
 | |file-o| **File** > |download| **Export**.
 | Supported formats: ``.md``, any other extension can be typed for the name of the exported file.
