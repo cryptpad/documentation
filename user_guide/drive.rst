@@ -133,10 +133,10 @@ CryptDrive:
 
 1. ``Click`` on the |history| history button at the top-right (under
    the avatar).
-2. Use the arrows |fast-backward| |step-backward| to step through
+2. Use the arrows |fast-backward| |step-backward| and |step-forward| |fast-forward| to step through
    the history.
-3. Restore the current step with , or exit the history without restoring
-   with |window-close|.
+3. Restore the displayed version with |check| **Restore** , or exit the history without restoring
+   with |times| **Close**.
 
 To save storage space the CryptDrive history can be deleted in the :ref:`user settings <user_settings_cryptDrive>`.
 

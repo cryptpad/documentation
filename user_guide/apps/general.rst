@@ -64,17 +64,88 @@ To duplicate a document:
 Document history
 ----------------
 
-The history of documents is saved and can be restored if needed. To
-restore a previous state:
+.. figure:: /images/history-toolbar-richtext.png
+   :class: screenshot
+
+   The history toolbar
+
+The history of documents is saved and can be restored if needed. To view and
+restore the history of a document:
 
 1. |file-o| **File** > |history| **History**.
-2. Use the arrows |fast-backward| |step-backward| to step through
-   the history.
-3. Restore the current step with , or exit the history without restoring
-   with |window-close|.
+2. Use the arrows to navigate:
+
+   - |step-backward| and |step-forward| between each edit
+   - |step-backward| |user| and |user| |step-forward| between each author
+   - |step-backward| |users| and |users| |step-forward| between each editing session (when the same group of authors was connected to the document)
+
+3. Restore the displayed version with |check| **Restore** , or close the history without restoring
+   with |times| **Close**.
 
 To save storage space, history can be deleted in the document’s
 :ref:`properties <document_properties>` :badge_owner:`Document owners`
+
+**Version Links**
+
+To share a link to the displayed version of the history:
+
+- |share-alt| **Share** in the toolbar
+- Select **Contacts** or **Link** similarly to when :ref:`sharing a document <share>`
+
+Recipients will be able to view the selected version in read-only mode.
+
+.. warning::
+   Sharing a link to a version also gives read-only access to all versions of the document.
+
+.. XXX problem with nested headings messing up the sidebar navigation here
+.. using bold for now, if/when solved put a link to this in snapshots section
+.. .. _snapshot_from_history:
+
+**Create a snapshot from history**
+
+To create a :ref:`snapshot <snapshots>` from the displayed version of the history:
+
+- |camera| button in the toolbar.
+- In the dialog, provide a name for the snapshot.
+- |camera| **New Snapshot**
+
+
+.. _snapshots:
+
+Snapshots
+---------
+
+.. figure:: /images/snapshots-dialog.png
+   :class: screenshot
+
+   The snapshots dialog
+
+Snapshots are specific points in the history of a document that are named for easy reference.
+
+To create a snapshot from the current state of the document:
+
+- |file-o| **File** > |camera| **Snapshots**
+- In the dialog, provide a name for the snapshot.
+- |camera| **New Snapshot**
+
+To create a snapshot from a version in the document's history see :ref:`snapshot from history <document_history>` above.
+
+To view and restore a snapshot:
+
+- |file-o| **File** > |camera| **Snapshots**
+- In the dialog, ``Click`` on the snapshot in the list and |eye| **View**.
+- The snapshot opens in a new window.
+- |check| **Restore** or |times| **Close**
+
+To delete a snapshot:
+
+- |file-o| **File** > |camera| **Snapshots**
+- In the dialog, ``Click`` on the snapshot in the list and |trash| **Delete**.
+
+.. warning::
+   Snapshots are part of the document's history. If you delete the history in the :ref:`document_properties`
+   snapshots will be deleted as well.
+
 
 .. _document_properties:
 
