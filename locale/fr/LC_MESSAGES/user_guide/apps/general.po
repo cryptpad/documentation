@@ -5,19 +5,18 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: CryptPad\n"
+"Project-Id-Version:  CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-24 14:46+0100\n"
+"POT-Creation-Date: 2020-10-05 15:00+0100\n"
 "PO-Revision-Date: 2020-08-24 15:00+0000\n"
 "Last-Translator: David Benqué <david.benque@xwiki.com>\n"
-"Language-Team: French <http://weblate.cryptpad.fr/projects/user-guide/"
-"application-general/fr/>\n"
 "Language: fr\n"
+"Language-Team: French <http://weblate.cryptpad.fr/projects/user-guide"
+"/application-general/fr/>\n"
+"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.1\n"
 "Generated-By: Babel 2.8.0\n"
 
 #: ../../user_guide/apps/general.rst:2
@@ -138,35 +137,51 @@ msgstr ""
 msgid "Document history"
 msgstr "Historique des documents"
 
-#: ../../user_guide/apps/general.rst:67
+#: ../../user_guide/apps/general.rst:70
+msgid "The history toolbar"
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:72
+#, fuzzy
 msgid ""
-"The history of documents is saved and can be restored if needed. To "
-"restore a previous state:"
+"The history of documents is saved and can be restored if needed. To view "
+"and restore the history of a document:"
 msgstr ""
 "L'historique des documents est sauvegardé et peut être restauré en cas de"
 " besoin. Pour remonter dans l'historique :"
 
-#: ../../user_guide/apps/general.rst:70
+#: ../../user_guide/apps/general.rst:75
 msgid "|file-o| **File** > |history| **History**."
 msgstr "|file-o| **Ficher** > |history| **Historique**."
 
-#: ../../user_guide/apps/general.rst:71
-msgid ""
-"Use the arrows |fast-backward| |step-backward| to step through the "
-"history."
+#: ../../user_guide/apps/general.rst:76
+msgid "Use the arrows to navigate:"
 msgstr ""
-"Utiliser les flèches |fast-backward| |step-backward| pour remonter dans "
-"l'historique étape par étape."
 
-#: ../../user_guide/apps/general.rst:73
+#: ../../user_guide/apps/general.rst:78
+msgid "|step-backward| and |step-forward| between each edit"
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:79
+msgid "|step-backward| |user| and |user| |step-forward| between each author"
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:80
 msgid ""
-"Restore the current step with , or exit the history without restoring "
-"with |window-close|."
+"|step-backward| |users| and |users| |step-forward| between each editing "
+"session (when the same group of authors was connected to the document)"
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:82
+#, fuzzy
+msgid ""
+"Restore the displayed version with |check| **Restore** , or close the "
+"history without restoring with |times| **Close**."
 msgstr ""
 "Restaurer l'étape sélectionnée avec |check-circle-o| ou sortir de "
 "l'historique sans restaurer avec |window-close|."
 
-#: ../../user_guide/apps/general.rst:76
+#: ../../user_guide/apps/general.rst:85
 msgid ""
 "To save storage space, history can be deleted in the document’s "
 ":ref:`properties <document_properties>` :badge_owner:`Document owners`"
@@ -175,19 +190,133 @@ msgstr ""
 "dans les :ref:`propriétés du document <document_properties>`. "
 ":badge_owner:`Propriétaires du document`"
 
-#: ../../user_guide/apps/general.rst:82
+#: ../../user_guide/apps/general.rst:88
+msgid "**Version Links**"
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:90
+msgid "To share a link to the displayed version of the history:"
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:92
+#, fuzzy
+msgid "|share-alt| **Share** in the toolbar"
+msgstr "|plus| **Nouveau pad** dans la barre d'outils."
+
+#: ../../user_guide/apps/general.rst:93
+msgid ""
+"Select **Contacts** or **Link** similarly to when :ref:`sharing a "
+"document <share>`"
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:95
+msgid "Recipients will be able to view the selected version in read-only mode."
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:98
+msgid ""
+"Sharing a link to a version also gives read-only access to all versions "
+"of the document."
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:104
+msgid "**Create a snapshot from history**"
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:106
+msgid ""
+"To create a :ref:`snapshot <snapshots>` from the displayed version of the"
+" history:"
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:108
+#, fuzzy
+msgid "|camera| button in the toolbar."
+msgstr "|plus| **Nouveau pad** dans la barre d'outils."
+
+#: ../../user_guide/apps/general.rst:109 ../../user_guide/apps/general.rst:128
+msgid "In the dialog, provide a name for the snapshot."
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:110 ../../user_guide/apps/general.rst:129
+msgid "|camera| **New Snapshot**"
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:116
+msgid "Snapshots"
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:121
+msgid "The snapshots dialog"
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:123
+msgid ""
+"Snapshots are specific points in the history of a document that are named"
+" for easy reference."
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:125
+msgid "To create a snapshot from the current state of the document:"
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:127 ../../user_guide/apps/general.rst:135
+#: ../../user_guide/apps/general.rst:142
+#, fuzzy
+msgid "|file-o| **File** > |camera| **Snapshots**"
+msgstr "|file-o| **Ficher** > |history| **Historique**."
+
+#: ../../user_guide/apps/general.rst:131
+msgid ""
+"To create a snapshot from a version in the document's history see "
+":ref:`snapshot from history <document_history>` above."
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:133
+msgid "To view and restore a snapshot:"
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:136
+msgid "In the dialog, ``Click`` on the snapshot in the list and |eye| **View**."
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:137
+msgid "The snapshot opens in a new window."
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:138
+msgid "|check| **Restore** or |times| **Close**"
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:140
+msgid "To delete a snapshot:"
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:143
+msgid ""
+"In the dialog, ``Click`` on the snapshot in the list and |trash| "
+"**Delete**."
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:146
+msgid ""
+"Snapshots are part of the document's history. If you delete the history "
+"in the :ref:`document_properties` snapshots will be deleted as well."
+msgstr ""
+
+#: ../../user_guide/apps/general.rst:153
 msgid "Properties"
 msgstr "Propriétés"
 
-#: ../../user_guide/apps/general.rst:88
+#: ../../user_guide/apps/general.rst:159
 msgid "To access the properties menu:"
 msgstr "Pour accéder aux propriétés d'un document :"
 
-#: ../../user_guide/apps/general.rst:90
+#: ../../user_guide/apps/general.rst:161
 msgid "From the document: |file-o| **File** > |info-circle| **Properties**."
 msgstr "Depuis le document : |file-o| **Ficher** > |info-circle| **Propriétés**."
 
-#: ../../user_guide/apps/general.rst:92
+#: ../../user_guide/apps/general.rst:163
 msgid ""
 "From the CryptDrive: ``Rigth click`` on the document > |info-circle| "
 "**Properties**."
@@ -195,25 +324,25 @@ msgstr ""
 "Depuis le CryptDrive : ``Clic-Droit`` sur le document > |info-circle| "
 "**Propriétés**."
 
-#: ../../user_guide/apps/general.rst:95
+#: ../../user_guide/apps/general.rst:166
 msgid "Available data:"
 msgstr "Données disponibles :"
 
-#: ../../user_guide/apps/general.rst:97
+#: ../../user_guide/apps/general.rst:168
 msgid "Links to edit and view (depending on your permissions)."
 msgstr ""
 "Liens d'édition et de lecture seule (suivant vos permissions d'accès au "
 "document)."
 
-#: ../../user_guide/apps/general.rst:98
+#: ../../user_guide/apps/general.rst:169
 msgid "Dates of creation and last access."
 msgstr "Dates de création et d'accès."
 
-#: ../../user_guide/apps/general.rst:99
+#: ../../user_guide/apps/general.rst:170
 msgid "Size."
 msgstr "Taille."
 
-#: ../../user_guide/apps/general.rst:101
+#: ../../user_guide/apps/general.rst:172
 msgid ""
 "The document size shows the proportions used for content and for history."
 " To save storage space, delete the document’s history with **Delete "
@@ -224,11 +353,11 @@ msgstr ""
 "l'espace de stockage : **Effacer l'historique** puis confirmer. "
 ":badge_owner:`Propriétaires du document`"
 
-#: ../../user_guide/apps/general.rst:108
+#: ../../user_guide/apps/general.rst:179
 msgid "Users and chat"
 msgstr "Utilisateurs et Chat"
 
-#: ../../user_guide/apps/general.rst:110
+#: ../../user_guide/apps/general.rst:181
 msgid ""
 "Interact with users connected to the same document through the user-list "
 "|user| |eye| and the |comments| **Chat**."
@@ -237,15 +366,15 @@ msgstr ""
 "permettent de voir et d'interagir avec les autres utilisateurs présents "
 "sur le document en même temps que vous."
 
-#: ../../user_guide/apps/general.rst:113
+#: ../../user_guide/apps/general.rst:184
 msgid "To show/hide these panes:"
 msgstr "Pour afficher/cacher ces fenêtres :"
 
-#: ../../user_guide/apps/general.rst:115
+#: ../../user_guide/apps/general.rst:186
 msgid "|user| n |eye| n for the user-list."
 msgstr "|user| n |eye| n pour la liste des utilisateurs."
 
-#: ../../user_guide/apps/general.rst:116
+#: ../../user_guide/apps/general.rst:187
 msgid "|comments| **Chat** for the chat."
 msgstr "|comments| **Chat** pour le chat."
 
@@ -389,3 +518,12 @@ msgstr "|comments| **Chat** pour le chat."
 
 #~ msgid "``Ctrl+e``."
 #~ msgstr "``Ctrl+e``."
+
+#~ msgid ""
+#~ "Use the arrows |fast-backward| |step-"
+#~ "backward| to step through the history."
+#~ msgstr ""
+#~ "Utiliser les flèches |fast-backward| "
+#~ "|step-backward| pour remonter dans "
+#~ "l'historique étape par étape."
+
