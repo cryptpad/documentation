@@ -75,9 +75,9 @@ restore the history of a document:
 1. |file-o| **File** > |history| **History**.
 2. Use the arrows to navigate:
 
-   - |step-backward| and |step-forward| between each edit.
-   - |step-backward| |user| and |user| |step-forward| between each author.
-   - |step-backward| |users| and |users| |step-forward| between each editing session (when the same group of authors was connected to the document).
+   - |step-backward| and |step-forward| between each edit
+   - |step-backward| |user| and |user| |step-forward| between each author
+   - |step-backward| |users| and |users| |step-forward| between each editing session (when the same group of authors was connected to the document)
 
 3. Restore the displayed version with |check| **Restore** , or close the history without restoring
    with |times| **Close**.
@@ -89,8 +89,8 @@ To save storage space, history can be deleted in the document’s
 
 To share a link to the displayed version of the history:
 
-- |share-alt| **Share** in the toolbar.
-- Select **Contacts**, **Link** or **Embed** similarly to when :ref:`sharing a document <share>`.
+- |share-alt| **Share** in the toolbar
+- Select **Contacts** or **Link** similarly to when :ref:`sharing a document <share>`
 
 Recipients will be able to view the selected version in read-only mode.
 
