@@ -239,7 +239,7 @@ Owners
 This tab is used to manage the ownership of the document. Owners of a
 document have the following permissions:
 
--  Enable an :ref:`acces list <access_list>`.
+-  Enable an :ref:`access list <access_list>`.
 -  Enable a password.
 -  Add or remove other owners.
 -  Destroy the document.

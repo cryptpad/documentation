@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Général &mdash; Documentation CryptPad 3.21.0</title>
+  <title>Général &mdash; Documentation CryptPad 3.23.0</title>
   
 
   
@@ -54,7 +54,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/sidebar-logo.png" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">3.21.0</span>
+              <span class="release">3.23.0</span>
             </a>
             
 <div role="search">
@@ -178,6 +178,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#saving">Sauvegarde</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#make-a-copy">Faire une copie</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#document-history">Historique des documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#snapshots">Captures</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#properties">Propriétés</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#users-and-chat">Utilisateurs et Chat</a></li>
 </ul>
@@ -370,13 +371,72 @@
 </div>
 <div class="section" id="document-history">
 <span id="id4"></span><h2>Historique des documents<a class="headerlink" href="#document-history" title="Lien permanent vers ce titre">¶</a></h2>
-<p>L'historique des documents est sauvegardé et peut être restauré en cas de besoin. Pour remonter dans l'historique :</p>
+<div class="figure align-default" id="id6">
+<img alt="../../_images/history-toolbar-richtext.png" class="screenshot" src="../../_images/history-toolbar-richtext.png" />
+<p class="caption"><span class="caption-text">La barre d'outils de l'historique</span><a class="headerlink" href="#id6" title="Lien permanent vers cette image">¶</a></p>
+</div>
+<p>L'historique des documents est sauvegardé et peut être restauré en cas de besoin. Pour voir et restaurer l'historique d'un document :</p>
 <ol class="arabic simple">
 <li><p><em class="fa fa-file-o"></em> <strong>Ficher</strong> &gt; <em class="fa fa-history"></em> <strong>Historique</strong>.</p></li>
-<li><p>Utiliser les flèches <em class="fa fa-fast-backward"></em> <em class="fa fa-step-backward"></em> pour remonter dans l'historique étape par étape.</p></li>
-<li><p>Restaurer l'étape sélectionnée avec <em class="fa fa-check-circle-o"></em> ou sortir de l'historique sans restaurer avec <em class="fa fa-window-close"></em>.</p></li>
+<li><p>Utiliser les flèches pour naviguer :</p>
+<ul class="simple">
+<li><p><em class="fa fa-step-backward"></em> et <em class="fa fa-step-forward"></em> entre chaque chagement</p></li>
+<li><p><em class="fa fa-step-backward"></em> <em class="fa fa-user"></em> et <em class="fa fa-user"></em> <em class="fa fa-step-forward"></em> entre chaque auteur</p></li>
+<li><p><em class="fa fa-step-backward"></em> <em class="fa fa-users"></em> et <em class="fa fa-users"></em> <em class="fa fa-step-forward"></em> entre chaque session (lorsque le même groupe d'auteurs était connecté au document)</p></li>
+</ul>
+</li>
+<li><p>Restaurer l'étape sélectionnée avec <em class="fa fa-check"></em> <strong>Restaurer</strong>, ou sortir sans restaurer avec <em class="fa fa-times"></em> <strong>Fermer</strong>.</p></li>
 </ol>
 <p>Pour économiser de l'espace de stockage, l'historique peut être supprimé dans les <a class="reference internal" href="#document-properties"><span class="std std-ref">propriétés du document</span></a>. <span class="badge-owner">Propriétaires du document</span></p>
+<p><strong>Liens vers une version</strong></p>
+<p>Pour partager un lien vers la version affichée dans l'historique :</p>
+<ul class="simple">
+<li><p><em class="fa fa-share-alt"></em> <strong>Partager</strong> dans la barre d'outils</p></li>
+<li><p>Sélectionner <strong>Contacts</strong> ou <strong>Lien</strong> de la même façon que lors du <a class="reference internal" href="../share_and_access.html#share"><span class="std std-ref">partage d'un document</span></a></p></li>
+</ul>
+<p>Les destinataires verront la version selectionnée en mode lecture seule.</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Partager un lien vers une version donne également accès en lecture seule à toutes les versions du document.</p>
+</div>
+<p><strong>Faire une capture dans l'historique</strong></p>
+<p>Pour faire une <a class="reference internal" href="#snapshots"><span class="std std-ref">capture</span></a> de la version affichée dans l'historique :</p>
+<ul class="simple">
+<li><p>Bouton <em class="fa fa-camera"></em> dans la barre d'outils.</p></li>
+<li><p>Dans le dialogue, donner un nom à la capture.</p></li>
+<li><p><em class="fa fa-camera"></em> <strong>Capturer</strong></p></li>
+</ul>
+</div>
+<div class="section" id="snapshots">
+<span id="id5"></span><h2>Captures<a class="headerlink" href="#snapshots" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="figure align-default" id="id7">
+<img alt="../../_images/snapshots-dialog.png" class="screenshot" src="../../_images/snapshots-dialog.png" />
+<p class="caption"><span class="caption-text">Le dialogue de captures</span><a class="headerlink" href="#id7" title="Lien permanent vers cette image">¶</a></p>
+</div>
+<p>Les captures sont des versions dans l'historique d'un document qui sont nommées pour être facilement retrouvées.</p>
+<p>Pour faire une nouvelle capture du document :</p>
+<ul class="simple">
+<li><p><em class="fa fa-file-o"></em> <strong>Ficher</strong> &gt; <em class="fa fa-camera"></em> <strong>Captures</strong></p></li>
+<li><p>Dans le dialogue, donner un nom à la capture.</p></li>
+<li><p><em class="fa fa-camera"></em> <strong>Capturer</strong></p></li>
+</ul>
+<p>Pour faire capturer une version antérieure dans l'historique du document voir <a class="reference internal" href="#document-history"><span class="std std-ref">faire une capture dans l'historique</span></a> ci dessus.</p>
+<p>Pour voir et restaurer une capture :</p>
+<ul class="simple">
+<li><p><em class="fa fa-file-o"></em> <strong>Ficher</strong> &gt; <em class="fa fa-camera"></em> <strong>Captures</strong></p></li>
+<li><p>Dans le dialogue, <code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur la capture et <em class="fa fa-eye"></em> <strong>Ouvrir</strong>.</p></li>
+<li><p>La capture s'ouvre dans une nouvelle fenêtre.</p></li>
+<li><p><em class="fa fa-check"></em> <strong>Restaurer</strong> ou <em class="fa fa-times"></em> <strong>Fermer</strong></p></li>
+</ul>
+<p>Pour effacer une capture :</p>
+<ul class="simple">
+<li><p><em class="fa fa-file-o"></em> <strong>Ficher</strong> &gt; <em class="fa fa-camera"></em> <strong>Captures</strong></p></li>
+<li><p>Dans le dialogue, <code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur la capture et <em class="fa fa-trash"></em> <strong>Supprimer</strong>.</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Les captures font partie de l'historique du document. Si vous effacez l'historique dans les <a class="reference internal" href="#document-properties"><span class="std std-ref">Propriétés</span></a>, les captures seront aussi supprimées.</p>
+</div>
 </div>
 <div class="section" id="properties">
 <span id="document-properties"></span><h2>Propriétés<a class="headerlink" href="#properties" title="Lien permanent vers ce titre">¶</a></h2>
@@ -450,7 +510,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'3.21.0',
+            VERSION:'3.23.0',
             LANGUAGE:'fr',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
