@@ -178,7 +178,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#saving">Speichern</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#make-a-copy">Eine Kopie anfertigen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#document-history">Dokumentenverlauf</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#snapshots">Snapshots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#snapshots">Gespeicherte Versionen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#properties">Eigenschaften</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#users-and-chat">Benutzer und Chat</a></li>
 </ul>
@@ -191,6 +191,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="sheets.html">Tabellen</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="sheets.html#documentation">Dokumentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#history">History</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sheets.html#import-export">Import/Export</a></li>
 </ul>
 </li>
@@ -373,71 +374,73 @@
 <span id="id4"></span><h2>Dokumentenverlauf<a class="headerlink" href="#document-history" title="Link zu dieser Überschrift">¶</a></h2>
 <div class="figure align-default" id="id6">
 <img alt="../../_images/history-toolbar-richtext.png" class="screenshot" src="../../_images/history-toolbar-richtext.png" />
-<p class="caption"><span class="caption-text">The history toolbar</span><a class="headerlink" href="#id6" title="Link zu diesem Bild">¶</a></p>
+<p class="caption"><span class="caption-text">Die Werkzeugleiste für den Verlauf</span><a class="headerlink" href="#id6" title="Link zu diesem Bild">¶</a></p>
 </div>
-<p>The history of documents is saved and can be restored if needed. To view and
-restore the history of a document:</p>
+<p>Der Verlauf von Dokumenten wird gespeichert und kann bei Bedarf wiederherstellt werden. Um den Verlauf eines Dokuments anzusehen und wiederherzustellen:</p>
 <ol class="arabic simple">
 <li><p><em class="fa fa-file-o"></em> <strong>Datei</strong> &gt; <em class="fa fa-history"></em> <strong>Verlauf</strong>.</p></li>
-<li><p>Use the arrows to navigate:</p>
+<li><p>Verwende die Pfeile zum Navigieren:</p>
 <ul class="simple">
-<li><p><em class="fa fa-step-backward"></em> and <em class="fa fa-step-forward"></em> between each edit.</p></li>
-<li><p><em class="fa fa-step-backward"></em> <em class="fa fa-user"></em> and <em class="fa fa-user"></em> <em class="fa fa-step-forward"></em> between each author.</p></li>
-<li><p><em class="fa fa-step-backward"></em> <em class="fa fa-users"></em> and <em class="fa fa-users"></em> <em class="fa fa-step-forward"></em> between each editing session (when the same group of authors was connected to the document).</p></li>
+<li><p><em class="fa fa-step-backward"></em> und <em class="fa fa-step-forward"></em> zwischen den Bearbeitungen.</p></li>
+<li><p><em class="fa fa-step-backward"></em> <em class="fa fa-user"></em> und <em class="fa fa-user"></em> <em class="fa fa-step-forward"></em> zwischen den Autoren.</p></li>
+<li><p><em class="fa fa-step-backward"></em> <em class="fa fa-users"></em> und <em class="fa fa-users"></em> <em class="fa fa-step-forward"></em> zwischen den Sitzungen (wenn die gleichen Autoren mit dem Dokument verbunden waren).</p></li>
 </ul>
 </li>
-<li><p>Stelle die ausgewählte Version mit <em class="fa fa-check-circle-o"></em> <strong>Wiederherstellen</strong> wieder her oder verlasse den Verlauf ohne Wiederherstellung mit <em class="fa fa-window-close"></em> <strong>Schließen</strong>.</p></li>
+<li><p>Stelle die ausgewählte Version mit <em class="fa fa-check"></em> <strong>Wiederherstellen</strong> wieder her oder verlasse den Verlauf ohne Wiederherstellung mit <em class="fa fa-times"></em> <strong>Schließen</strong>.</p></li>
 </ol>
 <p>Um Speicherplatz zu sparen, kann der Verlauf in den <a class="reference internal" href="#document-properties"><span class="std std-ref">Eigenschaften</span></a> des Dokuments gelöscht werden. <span class="badge-owner">Eigentümer von Dokumenten</span></p>
-<p><strong>Version Links</strong></p>
-<p>To share a link to the displayed version of the history:</p>
+<div class="admonition note">
+<p class="admonition-title">Bemerkung</p>
+<p>The history functionality works slightly differently in the <a class="reference internal" href="sheets.html#app-sheets"><span class="std std-ref">Tabellen</span></a> application, due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration. Please refer to <a class="reference internal" href="sheets.html#sheets-history"><span class="std std-ref">speadsheet history</span></a> for further details.</p>
+</div>
+<p><strong>Link zu Versionen</strong></p>
+<p>Um einen Link zur angezeigten Version zu teilen:</p>
 <ul class="simple">
-<li><p><em class="fa fa-share-alt"></em> <strong>Share</strong> in the toolbar.</p></li>
-<li><p>Select <strong>Contacts</strong>, <strong>Link</strong> or <strong>Embed</strong> similarly to when <a class="reference internal" href="../share_and_access.html#share"><span class="std std-ref">sharing a document</span></a>.</p></li>
+<li><p><em class="fa fa-share-alt"></em> <strong>Teilen</strong> in der Werkzeugleiste.</p></li>
+<li><p>Wähle <strong>Kontakte</strong>, <strong>Link</strong> oder <strong>Einbetten</strong> ähnlich wie beim <a class="reference internal" href="../share_and_access.html#share"><span class="std std-ref">Teilen eines Dokuments</span></a>.</p></li>
 </ul>
-<p>Recipients will be able to view the selected version in read-only mode.</p>
+<p>Die Empfänger können die ausgewählte Version schreibgeschützt ansehen.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warnung</p>
-<p>Sharing a link to a version also gives read-only access to all versions of the document.</p>
+<p>Durch das Teilen eines Links zu einer Version wird auch schreibgeschützter Zugriff auf alle Version des Dokuments weitergegeben.</p>
 </div>
-<p><strong>Create a snapshot from history</strong></p>
-<p>To create a <a class="reference internal" href="#snapshots"><span class="std std-ref">snapshot</span></a> from the displayed version of the history:</p>
+<p><strong>Version aus dem Verlauf speichern</strong></p>
+<p>Um den angezeigten Bearbeitungsstand im Verlauf als <a class="reference internal" href="#snapshots"><span class="std std-ref">gespeicherte Version</span></a> festzulegen:</p>
 <ul class="simple">
 <li><p>Schaltfläche <em class="fa fa-camera"></em> in der Werkzeugleiste.</p></li>
-<li><p>In the dialog, provide a name for the snapshot.</p></li>
-<li><p><em class="fa fa-camera"></em> <strong>New Snapshot</strong></p></li>
+<li><p>Gib im Dialog einen Namen für die gespeicherte Version an.</p></li>
+<li><p><em class="fa fa-camera"></em> <strong>Version speichern</strong></p></li>
 </ul>
 </div>
 <div class="section" id="snapshots">
-<span id="id5"></span><h2>Snapshots<a class="headerlink" href="#snapshots" title="Link zu dieser Überschrift">¶</a></h2>
+<span id="id5"></span><h2>Gespeicherte Versionen<a class="headerlink" href="#snapshots" title="Link zu dieser Überschrift">¶</a></h2>
 <div class="figure align-default" id="id7">
 <img alt="../../_images/snapshots-dialog.png" class="screenshot" src="../../_images/snapshots-dialog.png" />
-<p class="caption"><span class="caption-text">The snapshots dialog</span><a class="headerlink" href="#id7" title="Link zu diesem Bild">¶</a></p>
+<p class="caption"><span class="caption-text">Der Dialog zum Speichern von Versionen</span><a class="headerlink" href="#id7" title="Link zu diesem Bild">¶</a></p>
 </div>
-<p>Snapshots are specific points in the history of a document that are named for easy reference.</p>
-<p>To create a snapshot from the current state of the document:</p>
+<p>Gespeicherte Versionen sind bestimmte Punkte im Verlauf eines Dokuments, die zur besseren Auffindbarkeit benannt sind.</p>
+<p>Um den aktuellen Stand eines Dokuments als gespeicherte Version festzulegen:</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-camera"></em> <strong>Snapshots</strong></p></li>
-<li><p>In the dialog, provide a name for the snapshot.</p></li>
-<li><p><em class="fa fa-camera"></em> <strong>New Snapshot</strong></p></li>
+<li><p><em class="fa fa-file-o"></em> <strong>Datei</strong> &gt; <em class="fa fa-camera"></em> <strong>Gespeicherte Versionen</strong></p></li>
+<li><p>Gib im Dialog einen Namen für die gespeicherte Version an.</p></li>
+<li><p><em class="fa fa-camera"></em> <strong>Version speichern</strong></p></li>
 </ul>
-<p>To create a snapshot from a version in the document's history see <a class="reference internal" href="#document-history"><span class="std std-ref">snapshot from history</span></a> above.</p>
-<p>To view and restore a snapshot:</p>
+<p>Zur Festlegung eines Bearbeitungsstands im Verlauf als <a class="reference internal" href="#snapshots"><span class="std std-ref">gespeicherte Version</span></a> siehe <a class="reference internal" href="#document-history"><span class="std std-ref">entsprechenden Abschnitt</span></a> oben.</p>
+<p>Um eine gespeicherte Version anzusehen und wiederherzustellen:</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-camera"></em> <strong>Snapshots</strong></p></li>
-<li><p>In the dialog, <code class="docutils literal notranslate"><span class="pre">Click</span></code> on the snapshot in the list and <em class="fa fa-eye"></em> <strong>View</strong>.</p></li>
-<li><p>The snapshot opens in a new window.</p></li>
+<li><p><em class="fa fa-file-o"></em> <strong>Datei</strong> &gt; <em class="fa fa-camera"></em> <strong>Gespeicherte Versionen</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Klicke</span></code> im Dialog auf die gespeicherte Version und dann auf <em class="fa fa-eye"></em> <strong>Öffnen</strong>.</p></li>
+<li><p>Die gespeicherte Version wird in einem neuen Fenster geöffnet.</p></li>
 <li><p><em class="fa fa-check"></em> <strong>Wiederherstellen</strong> oder <em class="fa fa-times"></em> <strong>Schließen</strong></p></li>
 </ul>
-<p>To delete a snapshot:</p>
+<p>Um eine gespeicherte Version zu löschen:</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-camera"></em> <strong>Snapshots</strong></p></li>
-<li><p>In the dialog, <code class="docutils literal notranslate"><span class="pre">Click</span></code> on the snapshot in the list and <em class="fa fa-trash"></em> <strong>Delete</strong>.</p></li>
+<li><p><em class="fa fa-file-o"></em> <strong>Datei</strong> &gt; <em class="fa fa-camera"></em> <strong>Gespeicherte Versionen</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Klicke</span></code> im Dialog auf die gespeicherte Version und dann auf <em class="fa fa-trash"></em> <strong>Löschen</strong>.</p></li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Warnung</p>
-<p>Snapshots are part of the document's history. If you delete the history in the <a class="reference internal" href="#document-properties"><span class="std std-ref">Eigenschaften</span></a>
-snapshots will be deleted as well.</p>
+<p>Gespeicherte Versionen sind Bestandteil des Dokumentenverlaufs. Wenn du den Verlauf in den <a class="reference internal" href="#document-properties"><span class="std std-ref">Eigenschaften</span></a> löschst, werden auch gespeicherte Versionen gelöscht.</p>
 </div>
 </div>
 <div class="section" id="properties">
