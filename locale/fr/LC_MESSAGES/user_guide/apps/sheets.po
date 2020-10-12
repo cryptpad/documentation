@@ -5,19 +5,18 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: CryptPad\n"
+"Project-Id-Version:  CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-17 15:31+0100\n"
+"POT-Creation-Date: 2020-10-12 13:12+0100\n"
 "PO-Revision-Date: 2020-07-21 12:39+0000\n"
 "Last-Translator: David Benqué <david.benque@xwiki.com>\n"
-"Language-Team: French <http://weblate.cryptpad.fr/projects/user-guide/"
-"application-sheets/fr/>\n"
 "Language: fr\n"
+"Language-Team: French <http://weblate.cryptpad.fr/projects/user-guide"
+"/application-sheets/fr/>\n"
+"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.1\n"
 "Generated-By: Babel 2.8.0\n"
 
 #: ../../user_guide/apps/sheets.rst:5
@@ -29,63 +28,110 @@ msgid ""
 "The Spreadsheet application in CryptPad is an integration of `OnlyOffice "
 "<https://www.onlyoffice.com/>`__."
 msgstr ""
-"L'application Tableur est une intégration d'`OnlyOffice <https://www."
-"onlyoffice.com/>`__."
+"L'application Tableur est une intégration d'`OnlyOffice "
+"<https://www.onlyoffice.com/>`__."
 
 #: ../../user_guide/apps/sheets.rst:16
+#, fuzzy
 msgid ""
 "The integration of OnlyOffice with Cryptpad’s encrypted real-time "
 "collaboration does not include some of the functionality that is "
-"available in the other applications. Namely, **History** and "
-"**Templates** are not available."
+"available in the other applications. Namely, **Templates** are not yet "
+"available but will be in a future release."
 msgstr ""
-"L'intégration entre OnlyOffice et le système de collaboration en temps réel "
-"de CryptPad sont complexes et ne permettent pas toutes les fonctionnalités "
-"présentes dans les autres applications. Les fonctions **Historique** et "
-"**Modèles** ne sont pas disponibles."
+"L'intégration entre OnlyOffice et le système de collaboration en temps "
+"réel de CryptPad sont complexes et ne permettent pas toutes les "
+"fonctionnalités présentes dans les autres applications. Les fonctions "
+"**Historique** et **Modèles** ne sont pas disponibles."
 
-#: ../../user_guide/apps/sheets.rst:22
+#: ../../user_guide/apps/sheets.rst:21
 msgid "Documentation"
 msgstr "Documentation"
 
-#: ../../user_guide/apps/sheets.rst:24
+#: ../../user_guide/apps/sheets.rst:23
 msgid ""
 "Please refer to the `OnlyOffice documentation "
 "<https://helpcenter.onlyoffice.com/en/ONLYOFFICE-Editors/ONLYOFFICE-"
 "Spreadsheet-Editor/index.aspx>`__ for a spreadsheet user-guide."
 msgstr ""
-"Les fonctionnalités spécifiques du tableur sont documentées dans le `manuel "
-"OnlyOffice <https://helpcenter.onlyoffice.com/fr/ONLYOFFICE-Editors/"
-"ONLYOFFICE-Spreadsheet-Editor/index.aspx>`__."
+"Les fonctionnalités spécifiques du tableur sont documentées dans le "
+"`manuel OnlyOffice <https://helpcenter.onlyoffice.com/fr/ONLYOFFICE-"
+"Editors/ONLYOFFICE-Spreadsheet-Editor/index.aspx>`__."
 
-#: ../../user_guide/apps/sheets.rst:29
+#: ../../user_guide/apps/sheets.rst:30
+msgid "History"
+msgstr ""
+
+#: ../../user_guide/apps/sheets.rst:33
+#, fuzzy
+msgid ""
+"Due to the integration of OnlyOffice with CryptPad's encrypted real-time "
+"collaboration, history in speadsheets works differently than :ref:`in the"
+" other applications <document_history>`."
+msgstr ""
+"L'intégration entre OnlyOffice et le système de collaboration en temps "
+"réel de CryptPad sont complexes et ne permettent pas toutes les "
+"fonctionnalités présentes dans les autres applications. Les fonctions "
+"**Historique** et **Modèles** ne sont pas disponibles."
+
+#: ../../user_guide/apps/sheets.rst:38
+msgid "The spreadsheet history toolbar"
+msgstr ""
+
+#: ../../user_guide/apps/sheets.rst:40
+msgid ""
+"History in spreadsheets only allows to jump back to the previous version,"
+" and then move forward through individual edits."
+msgstr ""
+
+#: ../../user_guide/apps/sheets.rst:42
+msgid "|fast-backward| previous version"
+msgstr ""
+
+#: ../../user_guide/apps/sheets.rst:43
+msgid "|step-forward| step forward one edit"
+msgstr ""
+
+#: ../../user_guide/apps/sheets.rst:44
+msgid "|fast-forward| next version"
+msgstr ""
+
+#: ../../user_guide/apps/sheets.rst:46
+msgid ""
+"The functionality to restore and share a version, as well as everything "
+"relating to :ref:`snapshots`, works in the same way as in :ref:`the other"
+" applications <document_history>`."
+msgstr ""
+
+#: ../../user_guide/apps/sheets.rst:49
 msgid "Import/Export"
 msgstr "Import/Export"
 
-#: ../../user_guide/apps/sheets.rst:31
+#: ../../user_guide/apps/sheets.rst:51
 msgid "|file-o| **File** > |upload| **Import**."
 msgstr "|file-o| **Fichier** > |upload| **Importer**."
 
-#: ../../user_guide/apps/sheets.rst:32
+#: ../../user_guide/apps/sheets.rst:52
 msgid ""
 "Supported formats: ``.bin`` files exported by this application, Excel "
 "``.xslx`` currently only supported in Chromium and Google Chrome "
 "browsers."
 msgstr ""
-"Formats supportés : Fichiers ``.bin`` exportés par l'application. Fichiers "
-"Excel ``.xlsx`` uniquement dans les navigateurs Chromium ou Google Chrome."
+"Formats supportés : Fichiers ``.bin`` exportés par l'application. "
+"Fichiers Excel ``.xlsx`` uniquement dans les navigateurs Chromium ou "
+"Google Chrome."
 
-#: ../../user_guide/apps/sheets.rst:34
+#: ../../user_guide/apps/sheets.rst:54
 msgid "|file-o| **File** > |download| **Export**."
 msgstr "|file-o| **Fichier** > |download| **Exporter**."
 
-#: ../../user_guide/apps/sheets.rst:35
+#: ../../user_guide/apps/sheets.rst:55
 msgid ""
 "Supported formats: ``.bin``, Excel ``.xslx`` currently only supported in "
 "Chromium and Google Chrome browsers."
 msgstr ""
-"Formats supportés : ``.bin`` et fichers Excel ``.xlsx`` uniquement dans les "
-"navigateurs Chromium ou Google Chrome."
+"Formats supportés : ``.bin`` et fichers Excel ``.xlsx`` uniquement dans "
+"les navigateurs Chromium ou Google Chrome."
 
 #~ msgid ""
 #~ "The Spreadsheet application in CryptPad "
@@ -132,3 +178,4 @@ msgstr ""
 #~ "currently only supported in Chromium and"
 #~ " Gogle Chrome browsers."
 #~ msgstr ""
+
