@@ -1,38 +1,27 @@
-Instance locale de développement
-================================
+Set up a development instance
+=============================
 
-Prérequis
----------
+Prerequisites
+-------------
 
-Avant de commencer, veuillez vous assurer que les éléments suivants sont
-installés sur votre système :
+First, please make sure that the following tools are installed on your system:
 
 -  git
--  nodejs (nous utilisons node v12.14.0)
-
-   -  Nous recommendons l’utilisation de nvm pour installer nodejs
-
+-  nodejs (we use node v12.14.0)
+   -  We recommend using nvm to install nodejs.
 -  npm
 -  bower
-
-   -  Vous pouvez l’installer avec ``npm install -g bower`` une fois npm
-      installé
+   -  You can install it with ``npm install -g bower`` once npm is installed
 
 Installation
 ------------
 
-Le code source de CryptPad se trouve sur
-`GitHub <https://github.com>`__. Pour contribuer, il faut posséder un
-compte sur cette plateforme.
+The source code can be found on `GitHub <https://github.com>`__. You must have an account on this platform in order to contribute.
 
--  Effectuer un fork de notre code:
-   https://github.com/xwiki-labs/cryptpad.git
--  Cloner le fork sur votre système dans le répertoire souhaité
-
-   -  ``git clone https://github.com/{VOTRE_NOM_D'UTILISATEUR}/cryptpad.git``
-
--  Installer les dépendances du serveur (avec npm) et du client (avec
-   bower) :
+-  Fork our code: https://github.com/xwiki-labs/cryptpad.git
+-  Clone the fork on your system in the desired directory
+   -  `git clone https://github.com/{YOUR_USER_NAME}/cryptpad.git`
+-  Install the server dependencies with npm  and client dependencies with bower:
 
 ::
 
@@ -43,63 +32,39 @@ compte sur cette plateforme.
 Configuration
 -------------
 
-Une fois l’instance installée, certains éléments de configuration
-peuvent être réglés avant de lancer le serveur.
+Once everything is installed, you can configure some values before starting the server.
 
--  Effectuer une copie de la configuration par défaut:
+-  Make a copy of the default configuration:
 
 ::
 
    cd $cryptpath/config
    cp config.example.js config.js
 
--  Le `fichier de
-   configuration <https://github.com/xwiki-labs/cryptpad/blob/master/config/config.example.js>`__
-   donne la liste des éléments configurables et comment les utiliser.
--  Pour une instance de développement, on retrouve parmis les éléments
-   importants :
+-  The `example configuration file <https://github.com/xwiki-labs/cryptpad/blob/master/config/config.example.js>`__ lists the configurable values and how to use them.
+-  For a development instance, the important elements are:
 
-   -  ``httpUnsafeOrigin`` : pour utiliser le serveur de développement
-      et le client de test sur des systèmes différents, il faut modifier
-      cette valeur pour utiliser l’adresse réseau du serveur (exemple:
-      ‘http://192.168.0.10:3000’)
-   -  ``adminKeys`` : pour avoir accès au panneau d’administration dans
-      le client CryptPad, il faut créer un compte utilisateur sur
-      l’instance et ajouter la *Clé publique de signature* ici.
-   -  ``supportMailboxPublicKey`` : pour avoir accès au support sur
-      l’instance de développement, il faut générer un “compte” de
-      support en utilisant le script \*generate-admin-key.js"
+   -  ``httpUnsafeOrigin``: if you want to use the development server and the test client on different systems, you have to modify this value to use the network address of the server (example: 'http://192.168.0.10:3000').
+   -  ``adminKeys``: if you want to have access to the administration panel in the CryptPad client, you need to create a user account on the instance and add its *Public Signature Key* here.
+   -  ``supportMailboxPublicKey``: if you want to have access to the support panel on the development instance, you need to generate support "keys" using the *generate-admin-key.js* script.
 
-      -  \`\ ``node ./scripts/generate-admin-keys.js``
-      -  Copier la clé **publique** (public key) dans le champ
-         ``supportMailboxPublicKey`` du fichier de configuration
-      -  Copier la clé **privée** (private key) dans la partie support
-         du panneau d’administration (après avoir configuré un compte
-         administrateur). Cette clé **privée** est la même pour tous les
-         comptes administrateurs souhaitant accéder au support.
+      -  ``node ./scripts/generate-admin-keys.js``
+      -  Add the **public key** into the ``supportMailboxPublicKey`` field of the configuration file
+      -  Copy the **private key** in the support part of the control panel (after setting up an administrator account). This private key is the same for all administrator accounts that want to access support.
 
-   -  ``defaultStorageLimit`` : pour augmenter la limite de stockage
-      (50Mo par défaut) sur votre instance de développement
+   -  ``defaultStorageLimit``: to increase the storage limit (50MB by default) on your development instance.
 
-Cache et compilation (important)
---------------------------------
 
-CryptPad utilise un système de “Cache busting” pour gérer la version du
-code JavaScript et du code CSS compilé. Cela signifie que, pour un
-lancement normal du serveur, tout le code sera mis en cache à la
-première ouverture de chaque fichier et les modifications apportées par
-la suite aux sources ne seront pas appliquées dans le navigateur. Pour
-éviter ce problème, il faut donc lancer le serveur en mode
-*développement*.
+Caching
+-------
 
-Il est important de noter qu’aucune étape de “build” ou “compilation”
-n’est nécessaire lors du développement de code pour CryptPad. Les
-fichiers JavaScript sont chargés “bruts” dans le navigateur et le code
-“LESS” est compilé en CSS par le navigateur des clients directement.
-Pour tester une modification, il suffit donc d’écrire le code et de
-recharger la page sur CryptPad.
+CryptPad uses a "cache busting" system to manage versions of the JavaScript code and the compiled CSS code.
+This means that, for a normal launch of the server, all the code will be cached on first use and the modifications made thereafter to the sources won't be applied in your browser. To avoid this problem, the server must be launched in *development* mode.
 
-Lancement en mode développement
--------------------------------
+It's important to note that no "build" or "compilation" step is necessary when developing code for CryptPad. The JavaScript files are loaded "raw" in the browser and the "LESS" code is compiled by the clients' browser directly. To test a modification, just write the code and reload the page on CryptPad.
+
+
+Launching in development mode
+-----------------------------
 
 -  ``npm run dev``

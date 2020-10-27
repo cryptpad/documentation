@@ -4,7 +4,7 @@ Key elements in CryptPad
 Zero-knowledge
 --------------
 
-**All user data must be encrypted before sending it to the server.**
+**All user data must be encrypted before being sent to the server.**
 
 What our server can see
 ~~~~~~~~~~~~~~~~~~~~~~~

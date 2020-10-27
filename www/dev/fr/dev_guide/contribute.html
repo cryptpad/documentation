@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Contribuer &mdash; Documentation CryptPad 3.23.0</title>
+  <title>Contribute &mdash; Documentation CryptPad 3.23.0</title>
   
 
   
@@ -34,7 +34,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
     <link rel="next" title="Key elements in CryptPad" href="basics.html" />
-    <link rel="prev" title="Instance locale de développement" href="setup.html" /> 
+    <link rel="prev" title="Set up a development instance" href="setup.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -242,20 +242,20 @@
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Developer Guide</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="setup.html">Instance locale de développement</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="setup.html#prerequis">Prérequis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html">Set up a development instance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="setup.html#prerequisites">Prerequisites</a></li>
 <li class="toctree-l3"><a class="reference internal" href="setup.html#installation">Installation</a></li>
 <li class="toctree-l3"><a class="reference internal" href="setup.html#configuration">Configuration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="setup.html#cache-et-compilation-important">Cache et compilation (important)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="setup.html#lancement-en-mode-developpement">Lancement en mode développement</a></li>
+<li class="toctree-l3"><a class="reference internal" href="setup.html#caching">Caching</a></li>
+<li class="toctree-l3"><a class="reference internal" href="setup.html#launching-in-development-mode">Launching in development mode</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Contribuer</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#licence">Licence</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Contribute</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#license">License</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#git">Git</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#pull-requests">Pull requests</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#branches">Branches</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#avant-de-contribuer">Avant de contribuer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#before-contributing">Before contributing</a></li>
 </ul>
 </li>
 </ul>
@@ -272,28 +272,28 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="code.html">Code</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="general.html">Généralités</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="general.html#les-urls-safe-et-unsafe">Les URLs “safe” et “unsafe”</a></li>
-<li class="toctree-l4"><a class="reference internal" href="general.html#structure-en-5-niveaux">Structure en 5 niveaux</a></li>
-<li class="toctree-l4"><a class="reference internal" href="general.html#chiffrement">Chiffrement</a></li>
-<li class="toctree-l4"><a class="reference internal" href="general.html#drive-et-journal-de-pins">Drive et journal de “pins”</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="general.html#exemple">Exemple</a></li>
+<li class="toctree-l3"><a class="reference internal" href="general.html">General information</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="general.html#sandbox">Sandbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="general.html#level-structure">5-level structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="general.html#encryption">Encryption</a></li>
+<li class="toctree-l4"><a class="reference internal" href="general.html#drive-and-pins-log">Drive and &quot;pins&quot; log</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="general.html#example">Example</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="general.html#inscription-connexion-et-block">Inscription, connexion et block</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="general.html#exemple-2">Exemple</a></li>
+<li class="toctree-l4"><a class="reference internal" href="general.html#registration-login-and-block">Registration, login and block</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="general.html#example-2">Example</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="general.html#communication-client-serveur-netflux">Communication client-serveur (Netflux)</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="general.html#cote-serveur">Côté serveur</a></li>
-<li class="toctree-l5"><a class="reference internal" href="general.html#cote-client">Côté client</a></li>
-<li class="toctree-l5"><a class="reference internal" href="general.html#exemple-3">Exemple</a></li>
+<li class="toctree-l4"><a class="reference internal" href="general.html#client-server-communication-netflux">Client-server communication (Netflux)</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="general.html#server-side">Server side</a></li>
+<li class="toctree-l5"><a class="reference internal" href="general.html#client-side">Client side</a></li>
+<li class="toctree-l5"><a class="reference internal" href="general.html#example-3">Example</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="client.html">Client</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="client/architecture.html">Architecture client</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client/architecture.html">Client architecture</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="client/architecture.html#worker">Worker</a></li>
 <li class="toctree-l5"><a class="reference internal" href="client/architecture.html#outer">Outer</a></li>
 <li class="toctree-l5"><a class="reference internal" href="client/architecture.html#inner">Inner</a></li>
@@ -407,7 +407,7 @@
         
           <li><a href="index.html">Developer Guide</a> &raquo;</li>
         
-      <li>Contribuer</li>
+      <li>Contribute</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -430,55 +430,33 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="contribuer">
-<h1>Contribuer<a class="headerlink" href="#contribuer" title="Lien permanent vers ce titre">¶</a></h1>
-<p>Avant toute contribution de code pour CryptPad, il est nécessaire de
-connaître certains éléments.</p>
-<div class="section" id="licence">
-<h2>Licence<a class="headerlink" href="#licence" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Le code source de CryptPad est fournit librement sous licence <a class="reference external" href="https://www.gnu.org/licenses/agpl-3.0.fr.html">AGPLv3</a>.
-Les termes de la licence peuvent être lus en détail mais nous souhaitons
-insister sur les points suivants :</p>
-<ul class="simple">
-<li><p>Cette licence autorise la ré-utilisation et la modification du code,
-mais il est important de noter que le code modifié doit être libre et
-accessible lui aussi.</p></li>
-<li><p>Toute librairie intégrée au projet lors de contribution doit être
-compatible avec cette licence.</p></li>
-</ul>
+  <div class="section" id="contribute">
+<h1>Contribute<a class="headerlink" href="#contribute" title="Lien permanent vers ce titre">¶</a></h1>
+<p>For any code contribution to CryptPad, you should remember the following elements.</p>
+<div class="section" id="license">
+<h2>License<a class="headerlink" href="#license" title="Lien permanent vers ce titre">¶</a></h2>
+<p>CryptPad's source code is freely available under license <a class="reference external" href="https://www.gnu.org/licenses/agpl-3.0.fr.html">AGPLv3</a>. We'd like to emphasize in particular the following points:
+-  This license allows the re-use and modification of the code, but the modified code must also be free and accessible.
+-  Any library included in the project for a contribution must be compatible with this license.</p>
 </div>
 <div class="section" id="git">
 <h2>Git<a class="headerlink" href="#git" title="Lien permanent vers ce titre">¶</a></h2>
 <div class="section" id="pull-requests">
 <h3>Pull requests<a class="headerlink" href="#pull-requests" title="Lien permanent vers ce titre">¶</a></h3>
-<p>Le code source est publié sur GitHub. Nous acceptons les contributions
-sous la forme de &quot;pull requests&quot; et nous nous efferçons d'y répondre au
-plus vite. Le délai de réponse dépendra de la complexité des changements
-effectués ainsi que de la charge de travail courante de l'équipe de
-développement.</p>
+<p>The source code is published on GitHub. We accept contributions in the form of &quot;pull requests&quot; and we'll try to respond as quickly as possible. The response time will depend on the complexity of the changes made and the current workload of the development team.</p>
 </div>
 <div class="section" id="branches">
 <h3>Branches<a class="headerlink" href="#branches" title="Lien permanent vers ce titre">¶</a></h3>
-<p>Les contributions peuvent être basées sur la branche <code class="docutils literal notranslate"><span class="pre">main</span></code> qui est
-mise à jour à chaque release et contient du code stable. Pour les
-contributeurs expérimentés, nous pouvons aussi accepter les
-contributions basées sur la branche <code class="docutils literal notranslate"><span class="pre">staging</span></code> qui contient
-généralement du code prévu pour la prochaine release et/ou en cours de
-développement. Ce code peut être instable, l'utilisation de cette
-branche est donc généralement déconseillée.</p>
+<p>Contributions can be based on the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch which is updated with each release and contains stable code. Experienced contributors can also work on the <code class="docutils literal notranslate"><span class="pre">staging</span></code> branch which usually contains code planned for the next release and/or under development. This code may be unstable, so the use of this branch is usually discouraged.</p>
 </div>
-<div class="section" id="avant-de-contribuer">
-<h3>Avant de contribuer<a class="headerlink" href="#avant-de-contribuer" title="Lien permanent vers ce titre">¶</a></h3>
-<p>Avant d'envoyer la &quot;pull request&quot; sur GitHub, il est important de :</p>
+<div class="section" id="before-contributing">
+<h3>Before contributing<a class="headerlink" href="#before-contributing" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Before sending the &quot;pull request&quot; to GitHub, it is important to:</p>
 <ul class="simple">
-<li><p>tester le code</p></li>
-<li><p>s'assurer de la conformité avec nos règles de codage</p>
-<ul>
-<li><p>la commande <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">run</span> <span class="pre">lint</span></code> permet d'analyser le code source
-avant de le publier et signale toute &quot;erreur&quot; rencontrée</p></li>
-</ul>
-</li>
-<li><p>décrire au mieux les changements effectués</p></li>
+<li><p>test the code</p></li>
+<li><p>ensure compliance with our coding rules
+-  the <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">run</span> <span class="pre">lint</span></code> command will list syntax errors and inconsistencies</p></li>
+<li><p>describe the changes and why they were made in the message</p></li>
 </ul>
 </div>
 </div>
@@ -495,7 +473,7 @@ avant de le publier et signale toute &quot;erreur&quot; rencontrée</p></li>
         <a href="basics.html" class="btn btn-neutral float-right" title="Key elements in CryptPad" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="setup.html" class="btn btn-neutral" title="Instance locale de développement" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="setup.html" class="btn btn-neutral" title="Set up a development instance" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
       
     </div>
   

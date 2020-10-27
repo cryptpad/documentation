@@ -1,21 +1,14 @@
-Contribuer
+Contribute
 ----------
 
-Avant toute contribution de code pour CryptPad, il est nécessaire de
-connaître certains éléments.
+For any code contribution to CryptPad, you should remember the following elements.
 
-Licence
+License
 ~~~~~~~
 
-Le code source de CryptPad est fournit librement sous licence `AGPLv3`_.
-Les termes de la licence peuvent être lus en détail mais nous souhaitons
-insister sur les points suivants :
-
--  Cette licence autorise la ré-utilisation et la modification du code,
-   mais il est important de noter que le code modifié doit être libre et
-   accessible lui aussi.
--  Toute librairie intégrée au projet lors de contribution doit être
-   compatible avec cette licence.
+CryptPad's source code is freely available under license `AGPLv3 <https://www.gnu.org/licenses/agpl-3.0.fr.html>`__. We'd like to emphasize in particular the following points:
+-  This license allows the re-use and modification of the code, but the modified code must also be free and accessible.
+-  Any library included in the project for a contribution must be compatible with this license.
 
 Git
 ~~~
@@ -23,36 +16,20 @@ Git
 Pull requests
 ^^^^^^^^^^^^^
 
-Le code source est publié sur GitHub. Nous acceptons les contributions
-sous la forme de "pull requests" et nous nous efferçons d'y répondre au
-plus vite. Le délai de réponse dépendra de la complexité des changements
-effectués ainsi que de la charge de travail courante de l'équipe de
-développement.
+The source code is published on GitHub. We accept contributions in the form of "pull requests" and we'll try to respond as quickly as possible. The response time will depend on the complexity of the changes made and the current workload of the development team.
 
 Branches
 ^^^^^^^^
 
-Les contributions peuvent être basées sur la branche ``main`` qui est
-mise à jour à chaque release et contient du code stable. Pour les
-contributeurs expérimentés, nous pouvons aussi accepter les
-contributions basées sur la branche ``staging`` qui contient
-généralement du code prévu pour la prochaine release et/ou en cours de
-développement. Ce code peut être instable, l'utilisation de cette
-branche est donc généralement déconseillée.
+Contributions can be based on the ``main`` branch which is updated with each release and contains stable code. Experienced contributors can also work on the ``staging`` branch which usually contains code planned for the next release and/or under development. This code may be unstable, so the use of this branch is usually discouraged.
 
-Avant de contribuer
+Before contributing
 ^^^^^^^^^^^^^^^^^^^
 
-Avant d'envoyer la "pull request" sur GitHub, il est important de :
+Before sending the "pull request" to GitHub, it is important to:
 
--  tester le code
--  s'assurer de la conformité avec nos règles de codage
-
-   -  la commande ``npm run lint`` permet d'analyser le code source
-      avant de le publier et signale toute "erreur" rencontrée
-
--  décrire au mieux les changements effectués
-
-
-.. _AGPLv3: https://www.gnu.org/licenses/agpl-3.0.fr.html
+-  test the code
+-  ensure compliance with our coding rules
+   -  the ``npm run lint`` command will list syntax errors and inconsistencies
+-  describe the changes and why they were made in the message
 
