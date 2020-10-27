@@ -1,0 +1,548 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="de" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="de" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Allgemein &mdash; CryptPad 3.23.0 Dokumentation</title>
+  
+
+  
+  <link rel="icon" type="image/png" href="../../_static/images/main-favicon.png" id="favicon"/>
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/open-sans.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/cptools.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/fontawesome.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/cp-overrides.css" type="text/css" />
+    <link rel="index" title="Stichwortverzeichnis" href="../../genindex.html" />
+    <link rel="search" title="Suche" href="../../search.html" />
+    <link rel="next" title="Rich Text" href="richtext.html" />
+    <link rel="prev" title="Anwendungen" href="../applications.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+            <a href="../../index.html" class="icon icon-home">
+              <img src="../../_static/images/sidebar-logo.png" class="logo" alt="Logo"/>
+              <div class="icon-title">CryptPad</div>
+              <span class="release">3.23.0</span>
+            </a>
+            
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+          
+        </div>
+
+        <div class="wy-side-nav-language-selector">
+        	<p class="caption-text">
+	        	<select id="language-selector-container">
+	        		<option value="en">English</option>
+              <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
+	        	</select>
+        	</p>
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Benutzer-Handbuch</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../instances.html">CryptPad-Instanzen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user_account.html">Benutzer-Account</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_account.html#account-types">Account-Typen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#non-registered-user">Nicht-registrierte Benutzer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#logged-in-user">Eingeloggte Benutzer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#premium-user">Premium-Benutzer</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_account.html#account-management">Verwaltung von Accounts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#registration">Registrierung</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#logging-in">Einloggen</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_account.html#settings">Einstellungen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#account">Account</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#confidentiality">Vertraulichkeit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#cryptdrive">CryptDrive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#cursor">Cursor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#rich-text">Rich Text</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#subscription">Abonnement</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_account.html#support">Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_account.html#notifications">Benachrichtigungen</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../security.html">Sicherheit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#passwords-for-documents-and-folders">Passwörter für Dokumente und Ordner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#remote-disconnect">Sitzungen beenden</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../drive.html">Drive</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../drive.html#display">Anzeige</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../drive.html#managing-documents">Dokumente verwalten</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../drive.html#folders">Ordner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../drive.html#renaming">Umbenennen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../drive.html#deleting">Löschen</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../drive.html#cryptdrive-history">Verlauf des CryptDrives</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../drive.html#tags">Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../drive.html#templates">Vorlagen</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../collaboration.html">Zusammenarbeit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../collaboration.html#profile">Profil</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#personal-profile">Eigenes Profil</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#user-profile">Profile anderer Benutzer</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../collaboration.html#contacts">Kontakte</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#add-a-contact">Einen Kontakt hinzufügen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#manage-contacts">Kontakte verwalten</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#chat-with-contacts">Mit Kontakten chatten</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../collaboration.html#teams">Teams</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#team-drive">Drive von Teams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#team-members">Team-Mitglieder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#invite-members">Mitglieder einladen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#roles-and-permissions">Rollen und Zugriffsrechte</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#administration">Administration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#chat">Chat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#administration-tab">Unterseite &quot;Administration&quot;</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../share_and_access.html">Teilen / Zugriff</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../share_and_access.html#share">Teilen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../share_and_access.html#access-rights">Zugriffsrechte</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../share_and_access.html#sharing-with-contacts">Mit Kontakten teilen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../share_and_access.html#sharing-a-link">Einen Link teilen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../share_and_access.html#embedding">Einbetten</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../share_and_access.html#shared-folders">Geteilte Ordner</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../share_and_access.html#access">Zugriff</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../share_and_access.html#access-tab">Unterseite &quot;Zugriff&quot;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../share_and_access.html#access-list">Zugriffsliste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../share_and_access.html#owners">Eigentümer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="../applications.html">Anwendungen</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Allgemein</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#new-document">Neues Dokument</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#saving">Speichern</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#make-a-copy">Eine Kopie anfertigen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#document-history">Dokumentenverlauf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#snapshots">Gespeicherte Versionen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#properties">Eigenschaften</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#users-and-chat">Benutzer und Chat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="richtext.html">Rich Text</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="richtext.html#toolbar">Werkzeugleiste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="richtext.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="richtext.html#comments">Kommentare</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sheets.html">Tabellen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#documentation">Dokumentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#history">Verlauf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="code.html">Code / Markdown</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="code.html#toolbar">Werkzeugleiste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="code.html#theme">Theme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="code.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="code.html#markdown">Markdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="code.html#images">Bilder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="code.html#lightbox">Lightbox</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="slides.html">Präsentation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="slides.html#toolbar">Werkzeugleiste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="slides.html#writing-slides-with-markdown">Folien mit Markdown erstellen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="slides.html#theme">Theme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="slides.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="slides.html#images">Bilder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="slides.html#lightbox">Lightbox</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="poll.html">Umfrage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="poll.html#toolbar">Werkzeugleiste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="poll.html#edit-mode">Bearbeitungsmodus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="poll.html#voting">Abstimmung</a></li>
+<li class="toctree-l4"><a class="reference internal" href="poll.html#export">Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="kanban.html">Kanban</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="kanban.html#organisation">Organisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kanban.html#columns">Spalten</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kanban.html#cards">Karten</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kanban.html#card-editor">Karteneditor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kanban.html#display">Anzeige</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kanban.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Whiteboard</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Werkzeugleiste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Zeichnen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-mode">Pinsel-Modus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#select-mode">Auswahl-Modus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Export</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin_guide/index.html">Administrator-Handbuch (in Arbeit)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev_guide/index.html">Entwickler-Handbuch (in Arbeit)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../how_to_contribute.html">Wie du uns unterstützen kannst</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#spread-the-word">Mache CryptPad bekannt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#report-bugs">Fehler melden</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#translate-cryptpad">CryptPad übersetzen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#contribute-to-the-code">Zum Code beitragen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#financial-support">Finanzielle Unterstützung</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+	<!-- start top banner area (for fundraisers or messages)
+
+	<div style="text-align: center; background-color: #333">
+		<a href="https://krita.org/en/fundraising-2018-campaign/" target="_self" onclick="ga('send', 'event', 'frontpage', 'button', 'Fundraiser 2018');">
+			<img src="https://krita.org/wp-content/themes/krita-org-theme/images/decoration/2018-fundraiser-banner.png" style="max-width: 100%">
+		</a>
+	</div>
+	
+	 end top banner area -->
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">CryptPad</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Stichwortverzeichnis</a> &raquo;</li>
+        
+          <li><a href="../index.html">Benutzer-Handbuch</a> &raquo;</li>
+        
+          <li><a href="../applications.html">Anwendungen</a> &raquo;</li>
+        
+      <li>Allgemein</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/user_guide/apps/general.rst.txt" rel="nofollow"> 
+             
+              <img src="../../_static/images/source-code.png" />
+             <!-- View page source -->
+
+          </a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="general">
+<h1>Allgemein<a class="headerlink" href="#general" title="Link zu dieser Überschrift">¶</a></h1>
+<div class="section" id="new-document">
+<span id="id1"></span><h2>Neues Dokument<a class="headerlink" href="#new-document" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Um ein neues Dokument zu erstellen:</p>
+<ul class="simple">
+<li><p>Überall in CryptPad: <code class="docutils literal notranslate"><span class="pre">Strg+E</span></code>.</p></li>
+<li><p>Im CryptDrive:</p>
+<ul>
+<li><p><em class="fa fa-plus"></em> <strong>Neu</strong> in der Werkzeugleiste.</p></li>
+<li><p><em class="fa fa-plus"></em> <strong>Neues Pad</strong> am Ende der Liste/Kachelansicht.</p></li>
+</ul>
+</li>
+<li><p>Im Dokument: <em class="fa fa-file-o"></em> <strong>Datei</strong> &gt; <em class="fa fa-plus"></em> <strong>Neu</strong>.</p></li>
+</ul>
+<img alt="../../_images/app-creation-screen.png" class="screenshot" src="../../_images/app-creation-screen.png" />
+<p><span class="badge-user">Eingeloggte Benutzer</span></p>
+<p>Der Dialog zur Erstellung neuer Dokumente bietet mehrere Optionen an.</p>
+<ul class="simple">
+<li><p><strong>Eigenes Pad</strong>: Erstellt das neue Dokument als <a class="reference internal" href="../share_and_access.html#owners"><span class="std std-ref">Eigentümer</span></a>. Wenn das Dokument ohne einen Eigentümer erstellt wird, kann diese Einstellungen nicht geändert werden.</p></li>
+<li><p><strong>Auslaufendes Pad</strong>: Bestimmt einen Zeitraum, nach dem das Dokument zerstört werden soll. Diese Einstellung kann nach der Erstellung des Dokuments nicht mehr geändert werden.</p></li>
+<li><p><strong>Passwort hinzufügen</strong>: Sichert das Teilen des Dokuments mit einem <a class="reference internal" href="../security.html#passwords"><span class="std std-ref">Passwort</span></a> ab. Diese Einstellung kann später im Menü <a class="reference internal" href="../share_and_access.html#access"><span class="std std-ref">Zugriff</span></a> geändert werden.</p></li>
+<li><p><strong>Vorlage</strong>: Legt eine <a class="reference internal" href="../drive.html#templates"><span class="std std-ref">Vorlage</span></a> als Basis für das Dokument fest.</p></li>
+</ul>
+</div>
+<div class="section" id="saving">
+<span id="id2"></span><h2>Speichern<a class="headerlink" href="#saving" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Änderungen an Dokumenten werden automatisch gespeichert. Die Statuszeile in der Werkzeugleiste (unterhalb des Titels) bestätigt, dass die Änderungen gespeichert wurden.</p>
+</div>
+<div class="section" id="make-a-copy">
+<span id="id3"></span><h2>Eine Kopie anfertigen<a class="headerlink" href="#make-a-copy" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Um ein Dokument zu duplizieren:</p>
+<ul class="simple">
+<li><p>Im Dokument: <em class="fa fa-file-o"></em> <strong>Datei</strong> &gt; <em class="fa fa-clone"></em> <strong>Kopie erstellen</strong>.</p></li>
+<li><p>Im CryptDrive: <code class="docutils literal notranslate"><span class="pre">Rechtsklicke</span></code> auf das Dokument &gt; <em class="fa fa-clone"></em> <strong>Kopie erstellen</strong>.</p></li>
+</ul>
+</div>
+<div class="section" id="document-history">
+<span id="id4"></span><h2>Dokumentenverlauf<a class="headerlink" href="#document-history" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="figure align-default" id="id6">
+<img alt="../../_images/history-toolbar-richtext.png" class="screenshot" src="../../_images/history-toolbar-richtext.png" />
+<p class="caption"><span class="caption-text">Die Werkzeugleiste für den Verlauf</span><a class="headerlink" href="#id6" title="Link zu diesem Bild">¶</a></p>
+</div>
+<p>Der Verlauf von Dokumenten wird gespeichert und kann bei Bedarf wiederherstellt werden. Um den Verlauf eines Dokuments anzusehen und wiederherzustellen:</p>
+<ol class="arabic simple">
+<li><p><em class="fa fa-file-o"></em> <strong>Datei</strong> &gt; <em class="fa fa-history"></em> <strong>Verlauf</strong>.</p></li>
+<li><p>Verwende die Pfeile zum Navigieren:</p>
+<ul class="simple">
+<li><p><em class="fa fa-step-backward"></em> und <em class="fa fa-step-forward"></em> zwischen den Bearbeitungen.</p></li>
+<li><p><em class="fa fa-step-backward"></em> <em class="fa fa-user"></em> und <em class="fa fa-user"></em> <em class="fa fa-step-forward"></em> zwischen den Autoren.</p></li>
+<li><p><em class="fa fa-step-backward"></em> <em class="fa fa-users"></em> und <em class="fa fa-users"></em> <em class="fa fa-step-forward"></em> zwischen den Sitzungen (wenn die gleichen Autoren mit dem Dokument verbunden waren).</p></li>
+</ul>
+</li>
+<li><p>Stelle die ausgewählte Version mit <em class="fa fa-check"></em> <strong>Wiederherstellen</strong> wieder her oder verlasse den Verlauf ohne Wiederherstellung mit <em class="fa fa-times"></em> <strong>Schließen</strong>.</p></li>
+</ol>
+<p>Um Speicherplatz zu sparen, kann der Verlauf in den <a class="reference internal" href="#document-properties"><span class="std std-ref">Eigenschaften</span></a> des Dokuments gelöscht werden. <span class="badge-owner">Eigentümer von Dokumenten</span></p>
+<div class="admonition note">
+<p class="admonition-title">Bemerkung</p>
+<p>Der Verlauf funktioniert in der Anwendung <a class="reference internal" href="sheets.html#app-sheets"><span class="std std-ref">Tabellen</span></a> aufgrund der Integration von OnlyOffice in die verschlüsselte Echtzeit-Zusammenarbeit von CryptPad etwas anders. Siehe den Abschnitt zu <a class="reference internal" href="sheets.html#sheets-history"><span class="std std-ref">Verlauf in Tabellen</span></a> für weitere Details.</p>
+</div>
+<p><strong>Link zu Versionen</strong></p>
+<p>Um einen Link zur angezeigten Version zu teilen:</p>
+<ul class="simple">
+<li><p><em class="fa fa-share-alt"></em> <strong>Teilen</strong> in der Werkzeugleiste.</p></li>
+<li><p>Wähle <strong>Kontakte</strong>, <strong>Link</strong> oder <strong>Einbetten</strong> ähnlich wie beim <a class="reference internal" href="../share_and_access.html#share"><span class="std std-ref">Teilen eines Dokuments</span></a>.</p></li>
+</ul>
+<p>Die Empfänger können die ausgewählte Version schreibgeschützt ansehen.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warnung</p>
+<p>Durch das Teilen eines Links zu einer Version wird auch schreibgeschützter Zugriff auf alle Version des Dokuments weitergegeben.</p>
+</div>
+<p><strong>Version aus dem Verlauf speichern</strong></p>
+<p>Um den angezeigten Bearbeitungsstand im Verlauf als <a class="reference internal" href="#snapshots"><span class="std std-ref">gespeicherte Version</span></a> festzulegen:</p>
+<ul class="simple">
+<li><p>Schaltfläche <em class="fa fa-camera"></em> in der Werkzeugleiste.</p></li>
+<li><p>Gib im Dialog einen Namen für die gespeicherte Version an.</p></li>
+<li><p><em class="fa fa-camera"></em> <strong>Version speichern</strong></p></li>
+</ul>
+</div>
+<div class="section" id="snapshots">
+<span id="id5"></span><h2>Gespeicherte Versionen<a class="headerlink" href="#snapshots" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="figure align-default" id="id7">
+<img alt="../../_images/snapshots-dialog.png" class="screenshot" src="../../_images/snapshots-dialog.png" />
+<p class="caption"><span class="caption-text">Der Dialog zum Speichern von Versionen</span><a class="headerlink" href="#id7" title="Link zu diesem Bild">¶</a></p>
+</div>
+<p>Gespeicherte Versionen sind bestimmte Punkte im Verlauf eines Dokuments, die zur besseren Auffindbarkeit benannt sind.</p>
+<p>Um den aktuellen Stand eines Dokuments als gespeicherte Version festzulegen:</p>
+<ul class="simple">
+<li><p><em class="fa fa-file-o"></em> <strong>Datei</strong> &gt; <em class="fa fa-camera"></em> <strong>Gespeicherte Versionen</strong></p></li>
+<li><p>Gib im Dialog einen Namen für die gespeicherte Version an.</p></li>
+<li><p><em class="fa fa-camera"></em> <strong>Version speichern</strong></p></li>
+</ul>
+<p>Zur Festlegung eines Bearbeitungsstands im Verlauf als gespeicherte Version siehe <a class="reference internal" href="#document-history"><span class="std std-ref">entsprechenden Abschnitt</span></a> oben.</p>
+<p>Um eine gespeicherte Version anzusehen und wiederherzustellen:</p>
+<ul class="simple">
+<li><p><em class="fa fa-file-o"></em> <strong>Datei</strong> &gt; <em class="fa fa-camera"></em> <strong>Gespeicherte Versionen</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Klicke</span></code> im Dialog auf die gespeicherte Version und dann auf <em class="fa fa-eye"></em> <strong>Öffnen</strong>.</p></li>
+<li><p>Die gespeicherte Version wird in einem neuen Fenster geöffnet.</p></li>
+<li><p><em class="fa fa-check"></em> <strong>Wiederherstellen</strong> oder <em class="fa fa-times"></em> <strong>Schließen</strong></p></li>
+</ul>
+<p>Um eine gespeicherte Version zu löschen:</p>
+<ul class="simple">
+<li><p><em class="fa fa-file-o"></em> <strong>Datei</strong> &gt; <em class="fa fa-camera"></em> <strong>Gespeicherte Versionen</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Klicke</span></code> im Dialog auf die gespeicherte Version und dann auf <em class="fa fa-trash"></em> <strong>Löschen</strong>.</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warnung</p>
+<p>Gespeicherte Versionen sind Bestandteil des Dokumentenverlaufs. Wenn du den Verlauf in den <a class="reference internal" href="#document-properties"><span class="std std-ref">Eigenschaften</span></a> löschst, werden auch gespeicherte Versionen gelöscht.</p>
+</div>
+</div>
+<div class="section" id="properties">
+<span id="document-properties"></span><h2>Eigenschaften<a class="headerlink" href="#properties" title="Link zu dieser Überschrift">¶</a></h2>
+<img alt="../../_images/properties.png" class="screenshot" src="../../_images/properties.png" />
+<p>Um auf die Eigenschaften zuzugreifen:</p>
+<ul class="simple">
+<li><p>Im Dokument: <em class="fa fa-file-o"></em> <strong>Datei</strong> &gt; <em class="fa fa-info-circle"></em> <strong>Eigenschaften</strong>.</p></li>
+<li><p>Im CryptDrive: <code class="docutils literal notranslate"><span class="pre">Rechtsklicke</span></code> auf das Dokument &gt; <em class="fa fa-info-circle"></em> <strong>Eigenschaften</strong>.</p></li>
+</ul>
+<p>Verfügbare Informationen:</p>
+<ul class="simple">
+<li><p>Links zum Bearbeiten und Ansehen (abhängig von deinen Zugriffsrechten).</p></li>
+<li><p>Zeitpunkte der Erstellung und des letzten Zugriffs.</p></li>
+<li><p>Größe.</p></li>
+</ul>
+<p>Die Größe des Dokuments beinhaltet den von Inhalt und Verlauf belegten Speicherplatz. Um Speicherplatz zu sparen, lösche den Verlauf des Dokuments mit <strong>Verlauf löschen</strong> und bestätige. <span class="badge-owner">Eigentümer von Dokumenten</span></p>
+</div>
+<div class="section" id="users-and-chat">
+<span id="document-users-and-chat"></span><h2>Benutzer und Chat<a class="headerlink" href="#users-and-chat" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Interagiere mit anderen Benutzer, die mit dem selben Dokumenten verbunden sind, über die Benutzerliste <em class="fa fa-user"></em> <em class="fa fa-eye"></em> und den <em class="fa fa-comments"></em> <strong>Chat</strong>.</p>
+<p>Um diese Bereiche ein-/auszublenden:</p>
+<ul class="simple">
+<li><p><em class="fa fa-user"></em> n <em class="fa fa-eye"></em> n für die Benutzerliste.</p></li>
+<li><p><em class="fa fa-comments"></em> <strong>Chat</strong> für den Chat.</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="richtext.html" class="btn btn-neutral float-right" title="Rich Text" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../applications.html" class="btn btn-neutral" title="Anwendungen" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, CryptPad Team.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a modified <a href="https://github.com/rtfd/sphinx_rtd_theme">RTD theme</a>.<br/>
+  <a href="https://cryptpad.fr" title="CryptPad flagship instance">CryptPad flagship instance</a> |
+  <a href="#" title="The Gitlab instance to edit this pages and collaborate.">Git repository for docs.cryptpad.fr </a>
+  . 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'3.23.0',
+            LANGUAGE:'de',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/language_data.js"></script>
+      <script type="text/javascript" src="../../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

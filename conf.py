@@ -28,7 +28,7 @@ copyright = '2020, CryptPad Team'
 author = 'CryptPad Team'
 
 # The full version, including alpha/beta/rc tags
-release = '3.20.1'
+release = '3.23.0'
 
 
 # -- General configuration ---------------------------------------------------
@@ -126,7 +126,7 @@ html_theme_options = {
 # Translations
 locale_dirs = ['locale/']
 gettext_compact = False
-
+figure_language_filename = "{path}{language}/{basename}{ext}"
 
 # Add support for cptools
 

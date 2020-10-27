@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>General &mdash; CryptPad 3.20.1 documentation</title>
+  <title>General &mdash; CryptPad 3.23.0 documentation</title>
   
 
   
@@ -54,7 +54,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/sidebar-logo.png" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">3.20.1</span>
+              <span class="release">3.23.0</span>
             </a>
             
 <div role="search">
@@ -71,7 +71,8 @@
         	<p class="caption-text">
 	        	<select id="language-selector-container">
 	        		<option value="en">English</option>
-	        		<option value="fr">Français</option>
+              <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
 	        	</select>
         	</p>
         </div>
@@ -177,6 +178,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#saving">Saving</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#make-a-copy">Make a copy</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#document-history">Document history</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#snapshots">Snapshots</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#properties">Properties</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#users-and-chat">Users and chat</a></li>
 </ul>
@@ -189,6 +191,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="sheets.html">Spreadsheets</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="sheets.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#history">History</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sheets.html#import-export">Import/Export</a></li>
 </ul>
 </li>
@@ -336,11 +339,16 @@
 <span id="id1"></span><h2>New document<a class="headerlink" href="#new-document" title="Permalink to this headline">¶</a></h2>
 <p>To create a new document:</p>
 <ul class="simple">
-<li><p>From the CryptDrive: <em class="fa fa-plus"></em> <strong>New</strong> in the toolbar.</p></li>
-<li><p>From a document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-plus"></em> <strong>New</strong>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl+e</span></code>.</p></li>
+<li><p>From anywhere on CryptPad: <code class="docutils literal notranslate"><span class="pre">Ctrl+e</span></code>.</p></li>
+<li><p>From the CryptDrive:</p>
+<ul>
+<li><p><em class="fa fa-plus"></em> <strong>New</strong> in the toolbar.</p></li>
+<li><p><em class="fa fa-plus"></em> <strong>New</strong> at the bottom of the file list/grid.</p></li>
 </ul>
-<img alt="../../_images/creation-screen.png" class="screenshot" src="../../_images/creation-screen.png" />
+</li>
+<li><p>From a document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-plus"></em> <strong>New</strong>.</p></li>
+</ul>
+<img alt="../../_images/app-creation-screen.png" class="screenshot" src="../../_images/app-creation-screen.png" />
 <p><span class="badge-user">Logged in users</span></p>
 <p>The creation screen offers a number of options when new documents are
 created.</p>
@@ -372,17 +380,80 @@ saved.</p>
 </div>
 <div class="section" id="document-history">
 <span id="id4"></span><h2>Document history<a class="headerlink" href="#document-history" title="Permalink to this headline">¶</a></h2>
-<p>The history of documents is saved and can be restored if needed. To
-restore a previous state:</p>
+<div class="figure align-default" id="id6">
+<img alt="../../_images/history-toolbar-richtext.png" class="screenshot" src="../../_images/history-toolbar-richtext.png" />
+<p class="caption"><span class="caption-text">The history toolbar</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</div>
+<p>The history of documents is saved and can be restored if needed. To view and
+restore the history of a document:</p>
 <ol class="arabic simple">
 <li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-history"></em> <strong>History</strong>.</p></li>
-<li><p>Use the arrows <em class="fa fa-fast-backward"></em> <em class="fa fa-step-backward"></em> to step through
-the history.</p></li>
-<li><p>Restore the current step with , or exit the history without restoring
-with <em class="fa fa-window-close"></em>.</p></li>
+<li><p>Use the arrows to navigate:</p>
+<ul class="simple">
+<li><p><em class="fa fa-step-backward"></em> and <em class="fa fa-step-forward"></em> between each edit.</p></li>
+<li><p><em class="fa fa-step-backward"></em> <em class="fa fa-user"></em> and <em class="fa fa-user"></em> <em class="fa fa-step-forward"></em> between each author.</p></li>
+<li><p><em class="fa fa-step-backward"></em> <em class="fa fa-users"></em> and <em class="fa fa-users"></em> <em class="fa fa-step-forward"></em> between each editing session (when the same group of authors was connected to the document).</p></li>
+</ul>
+</li>
+<li><p>Restore the displayed version with <em class="fa fa-check"></em> <strong>Restore</strong> , or close the history without restoring
+with <em class="fa fa-times"></em> <strong>Close</strong>.</p></li>
 </ol>
 <p>To save storage space, history can be deleted in the document’s
 <a class="reference internal" href="#document-properties"><span class="std std-ref">properties</span></a> <span class="badge-owner">Document owners</span></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The history functionality works slightly differently in the <a class="reference internal" href="sheets.html#app-sheets"><span class="std std-ref">Spreadsheets</span></a> application, due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration. Please refer to <a class="reference internal" href="sheets.html#sheets-history"><span class="std std-ref">speadsheet history</span></a> for further details.</p>
+</div>
+<p><strong>Version Links</strong></p>
+<p>To share a link to the displayed version of the history:</p>
+<ul class="simple">
+<li><p><em class="fa fa-share-alt"></em> <strong>Share</strong> in the toolbar.</p></li>
+<li><p>Select <strong>Contacts</strong>, <strong>Link</strong> or <strong>Embed</strong> similarly to when <a class="reference internal" href="../share_and_access.html#share"><span class="std std-ref">sharing a document</span></a>.</p></li>
+</ul>
+<p>Recipients will be able to view the selected version in read-only mode.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Sharing a link to a version also gives read-only access to all versions of the document.</p>
+</div>
+<p><strong>Create a snapshot from history</strong></p>
+<p>To create a <a class="reference internal" href="#snapshots"><span class="std std-ref">snapshot</span></a> from the displayed version of the history:</p>
+<ul class="simple">
+<li><p><em class="fa fa-camera"></em> button in the toolbar.</p></li>
+<li><p>In the dialog, provide a name for the snapshot.</p></li>
+<li><p><em class="fa fa-camera"></em> <strong>New Snapshot</strong></p></li>
+</ul>
+</div>
+<div class="section" id="snapshots">
+<span id="id5"></span><h2>Snapshots<a class="headerlink" href="#snapshots" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id7">
+<img alt="../../_images/snapshots-dialog.png" class="screenshot" src="../../_images/snapshots-dialog.png" />
+<p class="caption"><span class="caption-text">The snapshots dialog</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</div>
+<p>Snapshots are specific points in the history of a document that are named for easy reference.</p>
+<p>To create a snapshot from the current state of the document:</p>
+<ul class="simple">
+<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-camera"></em> <strong>Snapshots</strong></p></li>
+<li><p>In the dialog, provide a name for the snapshot.</p></li>
+<li><p><em class="fa fa-camera"></em> <strong>New Snapshot</strong></p></li>
+</ul>
+<p>To create a snapshot from a version in the document's history see <a class="reference internal" href="#document-history"><span class="std std-ref">snapshot from history</span></a> above.</p>
+<p>To view and restore a snapshot:</p>
+<ul class="simple">
+<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-camera"></em> <strong>Snapshots</strong></p></li>
+<li><p>In the dialog, <code class="docutils literal notranslate"><span class="pre">Click</span></code> on the snapshot in the list and <em class="fa fa-eye"></em> <strong>View</strong>.</p></li>
+<li><p>The snapshot opens in a new window.</p></li>
+<li><p><em class="fa fa-check"></em> <strong>Restore</strong> or <em class="fa fa-times"></em> <strong>Close</strong></p></li>
+</ul>
+<p>To delete a snapshot:</p>
+<ul class="simple">
+<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-camera"></em> <strong>Snapshots</strong></p></li>
+<li><p>In the dialog, <code class="docutils literal notranslate"><span class="pre">Click</span></code> on the snapshot in the list and <em class="fa fa-trash"></em> <strong>Delete</strong>.</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Snapshots are part of the document's history. If you delete the history in the <a class="reference internal" href="#document-properties"><span class="std std-ref">Properties</span></a>
+snapshots will be deleted as well.</p>
+</div>
 </div>
 <div class="section" id="properties">
 <span id="document-properties"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
@@ -461,7 +532,7 @@ history. To save storage space, delete the document’s history with
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'3.20.1',
+            VERSION:'3.23.0',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

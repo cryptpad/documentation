@@ -1,0 +1,607 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="de" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="de" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Benutzer-Account &mdash; CryptPad 3.23.0 Dokumentation</title>
+  
+
+  
+  <link rel="icon" type="image/png" href="../_static/images/main-favicon.png" id="favicon"/>
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/open-sans.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/cptools.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/fontawesome.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/cp-overrides.css" type="text/css" />
+    <link rel="index" title="Stichwortverzeichnis" href="../genindex.html" />
+    <link rel="search" title="Suche" href="../search.html" />
+    <link rel="next" title="Sicherheit" href="security.html" />
+    <link rel="prev" title="CryptPad-Instanzen" href="instances.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+            <a href="../index.html" class="icon icon-home">
+              <img src="../_static/images/sidebar-logo.png" class="logo" alt="Logo"/>
+              <div class="icon-title">CryptPad</div>
+              <span class="release">3.23.0</span>
+            </a>
+            
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+          
+        </div>
+
+        <div class="wy-side-nav-language-selector">
+        	<p class="caption-text">
+	        	<select id="language-selector-container">
+	        		<option value="en">English</option>
+              <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
+	        	</select>
+        	</p>
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Benutzer-Handbuch</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="instances.html">CryptPad-Instanzen</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Benutzer-Account</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#account-types">Account-Typen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#non-registered-user">Nicht-registrierte Benutzer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#logged-in-user">Eingeloggte Benutzer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#premium-user">Premium-Benutzer</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#account-management">Verwaltung von Accounts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#registration">Registrierung</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#logging-in">Einloggen</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#settings">Einstellungen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#account">Account</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#confidentiality">Vertraulichkeit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cryptdrive">CryptDrive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cursor">Cursor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rich-text">Rich Text</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#subscription">Abonnement</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#support">Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#notifications">Benachrichtigungen</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="security.html">Sicherheit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="security.html#passwords-for-documents-and-folders">Passwörter für Dokumente und Ordner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#remote-disconnect">Sitzungen beenden</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="drive.html">Drive</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#display">Anzeige</a></li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#managing-documents">Dokumente verwalten</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="drive.html#folders">Ordner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="drive.html#renaming">Umbenennen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="drive.html#deleting">Löschen</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#cryptdrive-history">Verlauf des CryptDrives</a></li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#tags">Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#templates">Vorlagen</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="collaboration.html">Zusammenarbeit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="collaboration.html#profile">Profil</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#personal-profile">Eigenes Profil</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#user-profile">Profile anderer Benutzer</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="collaboration.html#contacts">Kontakte</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#add-a-contact">Einen Kontakt hinzufügen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#manage-contacts">Kontakte verwalten</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#chat-with-contacts">Mit Kontakten chatten</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="collaboration.html#teams">Teams</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#team-drive">Drive von Teams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#team-members">Team-Mitglieder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#invite-members">Mitglieder einladen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#roles-and-permissions">Rollen und Zugriffsrechte</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#administration">Administration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#chat">Chat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#administration-tab">Unterseite &quot;Administration&quot;</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="share_and_access.html">Teilen / Zugriff</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="share_and_access.html#share">Teilen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#access-rights">Zugriffsrechte</a></li>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#sharing-with-contacts">Mit Kontakten teilen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#sharing-a-link">Einen Link teilen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#embedding">Einbetten</a></li>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#shared-folders">Geteilte Ordner</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="share_and_access.html#access">Zugriff</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#access-tab">Unterseite &quot;Zugriff&quot;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#access-list">Zugriffsliste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#owners">Eigentümer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="applications.html">Anwendungen</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="apps/general.html">Allgemein</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#new-document">Neues Dokument</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#saving">Speichern</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#make-a-copy">Eine Kopie anfertigen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#document-history">Dokumentenverlauf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#snapshots">Gespeicherte Versionen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#properties">Eigenschaften</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#users-and-chat">Benutzer und Chat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/richtext.html">Rich Text</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/richtext.html#toolbar">Werkzeugleiste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/richtext.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/richtext.html#comments">Kommentare</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/sheets.html">Tabellen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/sheets.html#documentation">Dokumentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/sheets.html#history">Verlauf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/sheets.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/code.html">Code / Markdown</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#toolbar">Werkzeugleiste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#theme">Theme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#markdown">Markdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#images">Bilder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#lightbox">Lightbox</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/slides.html">Präsentation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/slides.html#toolbar">Werkzeugleiste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/slides.html#writing-slides-with-markdown">Folien mit Markdown erstellen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/slides.html#theme">Theme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/slides.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/slides.html#images">Bilder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/slides.html#lightbox">Lightbox</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/poll.html">Umfrage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/poll.html#toolbar">Werkzeugleiste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/poll.html#edit-mode">Bearbeitungsmodus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/poll.html#voting">Abstimmung</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/poll.html#export">Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/kanban.html">Kanban</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#organisation">Organisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#columns">Spalten</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#cards">Karten</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#card-editor">Karteneditor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#display">Anzeige</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Whiteboard</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">Werkzeugleiste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">Zeichnen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-mode">Pinsel-Modus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#select-mode">Auswahl-Modus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#export">Export</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">Administrator-Handbuch (in Arbeit)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dev_guide/index.html">Entwickler-Handbuch (in Arbeit)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../how_to_contribute.html">Wie du uns unterstützen kannst</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#spread-the-word">Mache CryptPad bekannt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#report-bugs">Fehler melden</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#translate-cryptpad">CryptPad übersetzen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#contribute-to-the-code">Zum Code beitragen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#financial-support">Finanzielle Unterstützung</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+	<!-- start top banner area (for fundraisers or messages)
+
+	<div style="text-align: center; background-color: #333">
+		<a href="https://krita.org/en/fundraising-2018-campaign/" target="_self" onclick="ga('send', 'event', 'frontpage', 'button', 'Fundraiser 2018');">
+			<img src="https://krita.org/wp-content/themes/krita-org-theme/images/decoration/2018-fundraiser-banner.png" style="max-width: 100%">
+		</a>
+	</div>
+	
+	 end top banner area -->
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CryptPad</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Stichwortverzeichnis</a> &raquo;</li>
+        
+          <li><a href="index.html">Benutzer-Handbuch</a> &raquo;</li>
+        
+      <li>Benutzer-Account</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/user_guide/user_account.rst.txt" rel="nofollow"> 
+             
+              <img src="../_static/images/source-code.png" />
+             <!-- View page source -->
+
+          </a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="user-account">
+<h1>Benutzer-Account<a class="headerlink" href="#user-account" title="Link zu dieser Überschrift">¶</a></h1>
+<p>CryptPad verschlüsselt Daten so, dass diese nur für dich und deine Mitarbeitenden lesbar sind. Aus diesem Grund <strong>können die Administratoren des Dienstes dein Passwort nicht einsehen, abrufen oder zurücksetzen</strong>. Daher ist es wichtig, dass du dir dein Passwort an einem sicheren Ort getrennt von deinem CryptPad-Account notierst.</p>
+<p>CryptPad verwendet die Kombination aus deinem Benutzernamen und Passwort, um dich zu identifizieren. Benutzernamen sind auf CryptPad nicht eindeutig. Es ist möglich, mehrere Konten mit dem gleichen Benutzernamen und verschiedenen Passwörtern zu erstellen.</p>
+<div class="section" id="account-types">
+<h2>Account-Typen<a class="headerlink" href="#account-types" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Es gibt vier Account-Typen auf CryptPad:</p>
+<div class="section" id="non-registered-user">
+<h3>Nicht-registrierte Benutzer<a class="headerlink" href="#non-registered-user" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Nicht-registrierte Benutzer werden durch diesen Avatar identifiziert (oben rechts): <em class="fa fa-user-secret"></em></p>
+<p>Zur Verwendung von CryptPad ohne Registrierung werden keine persönlichen Informationen benötigt. Allerdings ist der Funktionsumfang eingeschränkt:</p>
+<ul class="simple">
+<li><p>Zugriff auf alle Anwendungen.</p></li>
+<li><p>Teilen und gemeinsames Bearbeiten von Dokumenten.</p></li>
+<li><p>Speicherdauer begrenzt auf drei Monate von Inaktivität (für jedes einzelne Dokument).</p></li>
+<li><p>Dateispeicher nicht verfügbar für Bilder, Videos, PDFs, …</p></li>
+</ul>
+</div>
+<div class="section" id="logged-in-user">
+<h3>Eingeloggte Benutzer<a class="headerlink" href="#logged-in-user" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Eingeloggte Benutzer werden durch einen Avatar identifiziert (oben rechts), entweder durch ihr Profilbild, wenn sie einen festgelegt haben, oder durch den ersten Buchstaben ihres Anzeigenamens.</p>
+<p>Die Registrierung eines Accounts erfordert keine persönlichen Informationen, sondern nur einen Benutzernamen und ein Passwort. Zusätzliche Funktionen für angemeldete Benutzer:</p>
+<ul class="simple">
+<li><p>Persönlicher und dauerhafter Speicherplatz für Dokumente.</p></li>
+<li><p>Dateispeicher für Bilder, Videos, PDFs, …</p></li>
+<li><p>Mehr Optionen zur Verwaltung von Dokumenten als <a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">Eigentümer</span></a>: ein <a class="reference internal" href="share_and_access.html#access-tab"><span class="std std-ref">Passwort</span></a> hinzufügen, ein <a class="reference internal" href="share_and_access.html#access-tab"><span class="std std-ref">Ablaufdatum</span></a> oder eine <a class="reference internal" href="share_and_access.html#access-list"><span class="std std-ref">Zugriffsliste</span></a>.</p></li>
+<li><p>Organisation von Dokumenten in <a class="reference internal" href="drive.html#folders"><span class="std std-ref">Ordnern</span></a>, <a class="reference internal" href="share_and_access.html#shared-folders"><span class="std std-ref">geteilten Ordnern</span></a> oder mit <a class="reference internal" href="drive.html#tags"><span class="std std-ref">Tags</span></a> und <a class="reference internal" href="drive.html#templates"><span class="std std-ref">Vorlagen</span></a>.</p></li>
+<li><p>Erstellung von <a class="reference internal" href="collaboration.html#teams"><span class="std std-ref">Teams</span></a>.</p></li>
+<li><p>Einrichtung einer <a class="reference internal" href="collaboration.html#profile"><span class="std std-ref">Profilseite</span></a> und einer Liste von <a class="reference internal" href="collaboration.html#contacts"><span class="std std-ref">Kontakten</span></a> zum <a class="reference internal" href="share_and_access.html#share"><span class="std std-ref">Teilen von Dokumenten</span></a> und <a class="reference internal" href="collaboration.html#chat-contacts"><span class="std std-ref">Chatten</span></a>. Benachrichtigungen für die Interaktion zwischen Kontakten.</p></li>
+</ul>
+</div>
+<div class="section" id="premium-user">
+<h3>Premium-Benutzer<a class="headerlink" href="#premium-user" title="Link zu dieser Überschrift">¶</a></h3>
+<p>(nur auf cryptpad.fr)</p>
+<ul class="simple">
+<li><p>Mehr Speicherplatz.</p></li>
+<li><p>Höheres Limit für das Hochladen von Dateien (Bildern, Videos, PDFs etc.).</p></li>
+<li><p>Schnellere Antwort vom Administratoren- und Support-Team.</p></li>
+<li><p>Unterstützung der Entwicklung und Zukunftsfähigkeit von CryptPad.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="account-management">
+<h2>Verwaltung von Accounts<a class="headerlink" href="#account-management" title="Link zu dieser Überschrift">¶</a></h2>
+<div class="section" id="registration">
+<h3>Registrierung<a class="headerlink" href="#registration" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Um einen neuen Account zu registrieren, gehe zur Registrierungsseite: <strong>Registrieren</strong> oben rechts auf der Startseite.</p>
+<img alt="../_images/registration.png" class="screenshot" src="../_images/registration.png" />
+<p>Fülle die folgenden Informationen aus:</p>
+<ul class="simple">
+<li><p><strong>Benutzername</strong>: Mit diesem Namen loggst du dich bei CryptPad ein, er kann sich vom für andere Benutzer sichtbaren <strong>Anzeigenamen</strong> unterscheiden. Der <strong>Benutzername</strong> kann nach der Erstellung des Accounts nicht mehr geändert werden.</p></li>
+<li><p><strong>Passwort</strong>: Es wird empfohlen, ein starkes Passwort zu verwenden. Das Passwort kann in den <a class="reference internal" href="#user-settings"><span class="std std-ref">Benutzereinstellungen</span></a> geändert werden.</p></li>
+</ul>
+<img alt="../_images/registration-warning.png" class="screenshot" src="../_images/registration-warning.png" />
+<div class="admonition danger">
+<p class="admonition-title">Gefahr</p>
+<p>Wichtig: Die Administratoren von CryptPad können dein Passwort nicht einsehen, abrufen oder zurücksetzen, wenn du es verlierst oder vergisst.</p>
+</div>
+<ul class="simple">
+<li><p><strong>Nutzungsbedingungen</strong>: Lese und akzeptiere die Nutzungsbedingungen.</p></li>
+</ul>
+<p>Optional:</p>
+<ul class="simple">
+<li><p><strong>Die Pads aus deiner anonymen Sitzung importieren</strong>: Sofern du Dokumente als nicht registrierter Benutzer erstellt hast, kannst du sie in deinen Account importieren.</p></li>
+</ul>
+</div>
+<div class="section" id="logging-in">
+<h3>Einloggen<a class="headerlink" href="#logging-in" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Zum Einloggen besuche die Seite <strong>Einloggen</strong> (oben rechts auf der Startseite) und gib deinen Benutzernamen und dein Passwort ein.</p>
+<p>Optional:</p>
+<ul class="simple">
+<li><p><strong>Die Pads aus deiner anonymen Sitzung importieren</strong>: Sofern du Dokumente als nicht registrierter Benutzer erstellt hast, kannst du sie in deinen Account importieren.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="settings">
+<span id="user-settings"></span><h2>Einstellungen<a class="headerlink" href="#settings" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Die Einstellungen für den Account befinden sich im Benutzermenü (Avatar oben rechts) &gt; <em class="fa fa-gear"></em> <strong>Einstellungen</strong>.</p>
+<div class="section" id="account">
+<span id="user-settings-account"></span><h3>Account<a class="headerlink" href="#account" title="Link zu dieser Überschrift">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Kontoname</strong>: Bei der Registrierung gewählter Benutzername . Dieser Name kann nicht geändert werden. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
+<li><p><strong>Öffentlicher Schlüssel zum Unterschreiben</strong>: Wird von Administratoren verwendet und/oder auf Instanzen, die Abonnements anbieten. Dies ist die einzige Information über deinen Account, der für die Administratoren des Dienstes einsehbar ist. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
+<li><p><strong>Anzeigename</strong>: Für andere Benutzer sichtbarer Name, beispielsweise bei der gemeinsamen Bearbeitung von Dokumenten. Um diesen Namen zu ändern, gib einen neuen Namen ein und klicke auf <strong>Speichern</strong>. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
+<li><p><strong>Sprache</strong>: In der Benutzeroberfläche von CryptPad verwendete Sprache. Um die Sprache zu ändern, wähle ein andere Sprache aus dem Auswahlmenü aus. CryptPad wird vom Entwicklerteam ins Englische und Französische übersetzt. Andere Sprachen werden von der <a class="reference internal" href="../how_to_contribute.html#contribute-translation"><span class="std std-ref">Community</span></a> gepflegt. Manche Übersetzungen können unvollständig sein oder Fehler enthalten.</p></li>
+<li><p><strong>Tipps</strong>: Hilfetexte in der Benutzeroberfläche von CryptPad. Klicke auf <strong>Zurücksetzen</strong>, um sie wieder anzuzeigen, sofern sie ausgeblendet wurden.</p></li>
+<li><p><strong>Dein Passwort ändern</strong>: Gib dein aktuelles Passwort ein und bestätige dein neues Passwort, indem du es zweimal eingibst. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
+<li><p><strong>Löschung des Accounts</strong>: Option zum Löschen deines Accounts und aller darin gespeicherter Dokumente. Klicke auf <strong>Deinen Account löschen</strong> und bestätige. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
+</ul>
+</div>
+<div class="section" id="confidentiality">
+<span id="user-settings-confidentiality"></span><h3>Vertraulichkeit<a class="headerlink" href="#confidentiality" title="Link zu dieser Überschrift">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Andere Sitzungen beenden</strong>: Logge dich aus allen Sitzungen aus, abgesehen von der gerade verwendeten Sitzung (siehe auch <a class="reference internal" href="security.html#remote-disconnect"><span class="std std-ref">Sitzungen beenden</span></a>). <span class="badge-user">Eingeloggte Benutzer</span></p></li>
+<li><p><strong>Speichern von Pads im CryptDrive</strong>: Verwaltet, ob Dokumente automatisch in deinem CryptDrive gespeichert werden. Wenn Dokumente keinen <a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">Eigentümer</span></a> haben, werden sie auf deinen verfügbaren Speicherplatz angerechnet.</p>
+<ul>
+<li><p><strong>Automatisch</strong>: Alle geöffneten Pads werden in deinem CryptDrive gespeichert.</p></li>
+<li><p><strong>Manuell (immer fragen)</strong>: Wenn du das Pad noch nicht gespeichert hast, wirst du gefragt, ob du es in deinem CryptDrive speichern möchtest.</p></li>
+<li><p><strong>Manuell (nie nachfragen)</strong> Pads werden nicht automatisch in deinem CryptDrive gespeichert. Die Option zum Speichern wird versteckt.</p></li>
+</ul>
+</li>
+<li><p><strong>Sichere Links</strong>: Wenn diese Einstellung aktiv ist, ermöglicht der Link in der Adressleiste deines Browsers keinen Zugriff auf das Dokument, es sei denn, der Empfänger hat es bereits in seinem CryptDrive. Diese Einstellung ist standardmäßig aktiv. Es wird dringend empfohlen, sie aktiv zu lassen und das Menü <a class="reference internal" href="share_and_access.html#share"><span class="std std-ref">Teilen</span></a> zu verwenden, um Links zu Dokumenten zu kopieren.</p></li>
+</ul>
+<p>CryptPad fügt den Pad-Links die Schlüssel zum Entschlüsseln der Inhalte hinzu. Jeder, der Zugriff auf den Browserverlauf hat, kann möglicherweise die Daten lesen. Dazu gehören Browsererweiterungen und Browser, die den Verlauf geräteübergreifend synchronisieren. Situationen, in denen dein Browser für andere sichtbar ist, wie z.B. Screen-Sharing oder Screenshots, sind ebenfalls potentiell riskant. Die Aktivierung von &quot;sicheren Links&quot; verhindert, dass die Schlüssel in den Browserverlauf gelangen oder in der Adressleiste angezeigt werden, wann immer dies möglich ist.</p>
+<ul class="simple">
+<li><p><strong>Rückmeldung</strong>: CryptPad kann anonymisierte Rückmeldungen an den Server senden, um die Benutzererfahrung zu verbessern. Der Inhalt von Dokumenten wird niemals geteilt. Diese Option ist standardmäßig deaktiviert.</p></li>
+</ul>
+</div>
+<div class="section" id="cryptdrive">
+<span id="user-settings-cryptdrive"></span><h3>CryptDrive<a class="headerlink" href="#cryptdrive" title="Link zu dieser Überschrift">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Duplizierte eigene Pads</strong>: Wenn du ein eigenes Pad in einem geteilten Ordner verschiebst, wird eine Kopie in deinem CryptDrive behalten, damit du die Kontrolle des Dokuments nicht verlierst. Du kannst duplizierte Dateien verbergen. Nur die Version in dem geteilten Ordner wird dann angezeigt, außer sie wurde gelöscht. In diesem Fall, wird das Original an seinem ursprünglichen Ort wieder angezeigt.</p></li>
+<li><p><strong>Vorschaubilder</strong>: Um bei der Orientierung in der <a class="reference internal" href="drive.html#drive-display"><span class="std std-ref">Kachelansicht</span></a> des CryptDrives zu unterstützen, kann CryptPad automatisch Vorschaubilder von Dokumenten erstellen und im Browser speichern. Diese Option ist standardmäßig deaktiviert, da sie den Browser auf weniger leistungsfähigen Computern verlangsamen kann. Die Schaltfläche <strong>Entfernen</strong> löscht alle vorhandenen Vorschaubilder.</p></li>
+<li><p><strong>Backup</strong>: Es gibt zwei Arten von Backups.</p>
+<ul>
+<li><p><strong>Backup</strong> speichert nur die Schlüssel für die Dokumente in deinem CryptDrive, nicht deren Inhalte. Diese Option ist dazu gedacht, den Zugriff auf Dokumente zu sichern und ihn mit <strong>Wiederherstellen</strong> in einer anderen Sitzung wiederherzustellen.</p></li>
+<li><p><strong>Mein CryptDrive herunterladen</strong> speichert den Inhalt aller Dokumente im CryptDrive. Wenn möglich, geschieht dies in einem für andere Software lesbaren Format. Einige Anwendungen speichern die Dokumente in einem Format, das nur für CryptPad lesbar ist.</p></li>
+</ul>
+</li>
+<li><p><strong>Importieren</strong>: Wenn Pads vor dem Einloggen erstellt wurden, können sie in das CryptDrive importiert werden. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
+<li><p><strong>Verlauf löschen</strong>: Der Verlauf des CryptDrives und der Benachrichtigungen kann gelöscht werden, um Speicherplatz zu sparen. Dies betrifft nicht den Verlauf von Dokumenten, der jeweils in den <a class="reference internal" href="apps/general.html#document-properties"><span class="std std-ref">Eigenschaften</span></a> des Dokuments gelöscht werden kann.</p></li>
+</ul>
+</div>
+<div class="section" id="cursor">
+<span id="user-settings-cursor"></span><h3>Cursor<a class="headerlink" href="#cursor" title="Link zu dieser Überschrift">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Cursorfarbe</strong>: Ändert die Farbe deines Cursors. Dadurch kannst du bei der gemeinsamen Bearbeitung von Dokumenten identifiziert werden. Es legt auch die Farbe deines Texts fest, wenn <a class="reference internal" href="apps/code.html#app-code-theme"><span class="std std-ref">Autorenfarben</span></a> in Code-Pads aktiviert sind.</p></li>
+<li><p><strong>Meine Cursorposition teilen</strong>: Zeigt oder versteckt die genaue Position deines Cursors für andere Benutzer.</p></li>
+<li><p><strong>Position des Cursors von anderen Nutzern anzeigen (BETA)</strong>: Zeigt oder versteckt die Position der Cursor anderer Benutzer.</p></li>
+</ul>
+</div>
+<div class="section" id="rich-text">
+<span id="user-settings-richtext"></span><h3>Rich Text<a class="headerlink" href="#rich-text" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Einstellungen für Anwendung <a class="reference internal" href="apps/richtext.html#app-rich-text"><span class="std std-ref">Rich Text</span></a>.</p>
+<ul class="simple">
+<li><p><strong>Maximalgröße des Editors</strong>: Schalte um zwischen der Seitenansicht (Standard), die auf die Breite des Texteditors beschränkt ist, und der Ausnutzung der vollen Bildschirmbreite.</p></li>
+<li><p><strong>Rechtschreibprüfung</strong>: Aktiviert die Rechtschreibprüfung in Rich-Text-Pads. Rechtschreibfehler werden rot unterstrichen. Verbesserungsvorschläge sind nach <code class="docutils literal notranslate"><span class="pre">Strg</span> <span class="pre">+</span> <span class="pre">Rechtsklick</span></code> auf das zu korrigierende Wort verfügbar.</p></li>
+<li><p><strong>Kommentar-Benachrichtigungen</strong>: Deaktiviert Benachrichtigungen, wenn ein anderer Benutzer auf deine Kommentare antwortet.</p></li>
+</ul>
+</div>
+<div class="section" id="code">
+<span id="user-settings-code"></span><h3>Code<a class="headerlink" href="#code" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Einstellungen für die Anwendung <a class="reference internal" href="apps/code.html#app-code"><span class="std std-ref">Code / Markdown</span></a>.</p>
+<ul class="simple">
+<li><p><strong>Einrückung für den Code-Editor (Leerzeichen)</strong>: Wählt die Anzahl von Leerzeichen für jede Einrückungsebene.</p></li>
+<li><p><strong>Mit Tabs einrücken (anstatt mit Leerzeichen)</strong>: Fügt Tabs mit der Taste <code class="docutils literal notranslate"><span class="pre">Tab</span></code> ein anstatt Leerzeichen.</p></li>
+<li><p><strong>Klammern automatisch schließen</strong>: Fügt automatisch eine schließende Klammer <code class="docutils literal notranslate"><span class="pre">)</span></code> ein, wenn Klammern mit <code class="docutils literal notranslate"><span class="pre">(</span></code> geöffnet werden (funktioniert auch mit <code class="docutils literal notranslate"><span class="pre">[</span></code>, <code class="docutils literal notranslate"><span class="pre">'</span></code>, <code class="docutils literal notranslate"><span class="pre">&quot;</span></code>).</p></li>
+<li><p><strong>Schriftgröße im Code-Editor</strong>: Legt die Schriftgröße im Code-Editor fest.</p></li>
+<li><p><strong>Rechtschreibprüfung</strong>: Unterstreicht Rechtschreibfehler im Code-Editor, Verbesserungsvorschläge sind nach <code class="docutils literal notranslate"><span class="pre">Rechtsklick</span></code> auf das zu korrigierende Wort verfügbar.</p></li>
+</ul>
+</div>
+<div class="section" id="subscription">
+<span id="user-settings-subscription"></span><h3>Abonnement<a class="headerlink" href="#subscription" title="Link zu dieser Überschrift">¶</a></h3>
+<p>(nur auf cryptpad.fr)</p>
+<ul class="simple">
+<li><p>Leitet zur Account-Seite weiter.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="support">
+<span id="user-support"></span><h2>Support<a class="headerlink" href="#support" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Support-Tickets stellen einen sicheren Kommunikationskanal zu den Administratoren der CryptPad-Instanz zur Verfügung. Auf die Seite <strong>Support</strong> kann wie folgt zugegriffen werden:</p>
+<ul class="simple">
+<li><p>Benutzermenü (Avatar oben rechts) &gt; <em class="fa fa-life-ring"></em> <strong>Support</strong>.</p></li>
+</ul>
+<p><em class="fa fa-envelope-o"></em> <strong>Vorhandene Tickets</strong>: Setze Unterhaltungen mit Support-Team fort.</p>
+<ul class="simple">
+<li><p>Auf ein Ticket <strong>antworten</strong>.</p></li>
+<li><p>Tickets <strong>schließen</strong>, wenn das Problem gelöst wurde.</p></li>
+<li><p>Geschlossene Tickets <strong>löschen</strong>.</p></li>
+</ul>
+<p><em class="fa fa-life-ring"></em> <strong>Neues Ticket</strong>: Um ein neues Ticket zu erstellen, fülle das Formular mit Titel, Kategorie und Details zu deinem Problem oder deiner Frage aus. Bei Bedarf kannst du einen Anhang hinzufügen, zum Beispiel einen Screenshot und klicke auf <strong>Absenden</strong>.</p>
+</div>
+<div class="section" id="notifications">
+<h2>Benachrichtigungen<a class="headerlink" href="#notifications" title="Link zu dieser Überschrift">¶</a></h2>
+<p><span class="badge-user">Eingeloggte Benutzer</span></p>
+<p>CryptPad benachrichtigt dich, wenn ein Kontakt mit dir interagiert. Benachrichtigungen werden bei der Glocke <em class="fa fa-bell-o"></em> neben deinem Avatar (oben rechts) angezeigt. Wenn du ungelesene Benachrichtigungen hast, ist die Glocke ausgefüllt <em class="fa fa-bell"></em> und es wird ein Zähler angezeigt.</p>
+<p><em class="fa fa-bell"></em> Dropdown-Menü der Glocke:</p>
+<ul class="simple">
+<li><p>Durchsuche ungelesene Benachrichtigungen.</p></li>
+<li><p>Lösche eine Benachrichtigung mit <em class="fa fa-times"></em>.</p></li>
+<li><p><strong>Benachrichtungspanel öffnen</strong>: Alle Benachrichtigungen und den Verlauf der Benachrichtigungen ansehen.</p></li>
+</ul>
+<p>Auf der Seite des Benachrichtigungspanels:</p>
+<ul class="simple">
+<li><p>Wähle die Art der anzuzeigenden Benachrichtigungen:</p>
+<ul>
+<li><p><em class="fa fa-bars"></em> Alle.</p></li>
+<li><p><em class="fa fa-user"></em> Kontaktanfragen.</p></li>
+<li><p><em class="cptools cptools-pad"></em> Mit mir geteilt.</p></li>
+<li><p><em class="fa fa-archive"></em> Verlauf.</p></li>
+</ul>
+</li>
+<li><p><em class="fa fa-trash"></em>: Benachrichtigungen löschen.</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="security.html" class="btn btn-neutral float-right" title="Sicherheit" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="instances.html" class="btn btn-neutral" title="CryptPad-Instanzen" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, CryptPad Team.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a modified <a href="https://github.com/rtfd/sphinx_rtd_theme">RTD theme</a>.<br/>
+  <a href="https://cryptpad.fr" title="CryptPad flagship instance">CryptPad flagship instance</a> |
+  <a href="#" title="The Gitlab instance to edit this pages and collaborate.">Git repository for docs.cryptpad.fr </a>
+  . 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'3.23.0',
+            LANGUAGE:'de',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

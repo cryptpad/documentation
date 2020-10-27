@@ -1,7 +1,6 @@
 
 # CryptPad Documentation
 
-Modified from the [Krita documentation](https://invent.kde.org/documentation/docs-krita-org/-/tree/master/).
 
 ## Installation 
 
@@ -31,12 +30,23 @@ View the result in `/_build/html/`
 
 ## Translations
 
-to update after default language has changed:  
+If you are interested in translating this documentation, you can use our [Weblate project](https://weblate.cryptpad.fr/projects/user-guide/) for the user guide. If your language is not listed, please [contact the development team](https://cryptpad.fr/contact.html) to add it.
+
+To add a new language
+```
+sphinx-intl update --pot-dir _build/gettext -l de
+```
+change `de` to the locale you want to add
+
+
+### Translated builds
+
+To update after default language has changed:  
 ```bash
 sphinx-intl update -p _build/locale`
 ```
 
-to generate `.po` files for a new language e.g. French:  
+To generate `.po` files for a new language e.g. French:  
 ```bash
 make gettext
 sphinx-intl update -p _build/gettext -l fr
@@ -53,14 +63,11 @@ sphinx-intl update -p _build/gettext -l fr
 ```
 
 ### translated images
-`images` folder in repo root  
-have a folder e.g. `images/fr/` with localised version of the image, if using one.
+Images for English are in the `/images` folder.  
+To provide localised versions of images, place them in a folder such as `images/fr/`.
 
-## Todo
+## Licenses
 
-- Adjust theme
-    - style badges
-    - paragraphs and headings: margin top and bottom
-    - fix favicon
+The content of this documentation is licensed under the [Creative Commons Attribution 4.0 Internarional](LICENSE) (CC-BY).
 
-- Instructions for translators (e.g. to leave .rst syntax alone) https://weblate.cryptpad.fr/settings/user-guide/ 
+The theme is modified from the [Krita documentation](https://invent.kde.org/documentation/docs-krita-org/-/tree/master/) and licensed under the [GNU Free Documentation License](_themes/theme/LICENSE).
