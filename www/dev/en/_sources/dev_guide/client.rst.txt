@@ -8,7 +8,6 @@ Client
 
     client/architecture.rst
     client/chainpad.rst
-    client/requirejs.rst
     client/translations.rst
     client/framework.rst
     client/worker.rst

@@ -89,62 +89,14 @@ Communication avec le worker - cryptpad-common
 
 ``www/common/cryptpad-common.js``
 
-Ce fichier est l’un des plus anciens fichiers du code de CryptPad. Son
-fonctionnement est resté le même depuis le début bien que son contenu
-aie beaucoup changé. Son rôle principal est de créer un canal de
-communication avec le worker puis, une fois prêt, de commander au worker
-de charger le compte utilisateur. Les clés du compte auront au préalable
-été extraites du localStorage. Une fois le compte utilisateur et tous
-les modules chargés, le worker envoie un signal à cryptpad-common qui va
-lui-même permettre à sframe-common-outer de continuer.
+Ce fichier a pour rôle principal de créer un canal de communication avec
+le worker et de l’initialiser pour le compte utilisateur. Les clés du
+compte auront au préalable été extraites du localStorage. Une fois le
+compte utilisateur et tous les modules chargés, le worker envoie un
+signal à cryptpad-common qui va lui-même permettre à sframe-common-outer
+de continuer.
 
 En dehors de ce processus de chargement du compte utilisateur,
 cryptpad-common garde un contact privilégié avec le worker, ce qui lui
-permet d’effectuer certaines tâches que l’on souhaite garder en dehors
-de celui-ci mais qui nécessite d’accéder à certaines de ses données.
-
-Toutes les tâches qui contiennent une partie cryptographique et qui ne
-sont pas liées ni au fonctionnement temps-réel d’un pad, ni à un élément
-global du compte utilisateur seront exécutées dans ce fichier. Les
-parties cryptographiques liées au compte utilisateur sont effectuées
-dans le worker car elles concernent tous les onglets et ne doivent donc
-pas être répétées de nombreuses fois. Le fonctionnement temps-réel des
-pads, y compris le chiffrement, est traité dans un fichier spécifique.
-Les éléments restant concernent donc les tâches nécessitant de
-déchiffrer ou chiffrer des données comme les changements de mots d
-epasse ou les copies. Ces commandes sont généralement lancées par une
-action de l’utilisateur dans “inner” puis reçues par sframe-common-outer
-qui demande à cryptpad-common de les traiter.
-
-Le reste de ce fichier consiste enfin à transférer des messages entre le
-worker et sframe-common-outer ou inner.
-
-Autres fichiers notables
-------------------------
-
--  ``www/common/sframe-chainpad-netflux-outer.js``
-
-   -  Ce fichier est responsable du fonctionnement temps-réel du pad
-      chargé dans l’onglet actuel. Il transmet les messages entre inner
-      et le worker et les chiffre/déchiffre au passage.
-
--  ``www/common/outer/localstore.js``
-
-   -  Ce fichier gère l’accès à certains éléments récurrents du
-      localStorage. Il permet notamment d’ajouter les clés du compte
-      utilisateur à la connexion et il les supprime lors de la
-      déconnexion.
-
--  ``www/common/cryptget.js``
-
-   -  Cette librairie peut techniquement être utilisée dans les 3
-      niveaux du client de CryptPad, mais elle est le plus souvent
-      utilisée dans outer. Elle permet, pour un document donné, de
-      récupérer en une commande simple son contenu déchiffré au format
-      texte ou de définir le contenu à une certaine valeur de manière
-      simple.
-   -  Elle utilise chainpad-netflux pour créer une connexion au réseau,
-      charger le document, récupérer son contenu (pour une commande
-      “get”) ou définir son contenu (commande “put”) puis ferme
-      directement la connexion réseau.
-
+permet d’effectuer certaines tâches propres à l’onglet courant mais qui
+nécessitent d’accéder aux données du worker.

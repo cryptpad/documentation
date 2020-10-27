@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="../../_static/css/cp-overrides.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Recherche" href="../../search.html" />
-    <link rel="next" title="Server" href="../server.html" />
+    <link rel="next" title="Comment contribuer" href="../../how_to_contribute.html" />
     <link rel="prev" title="Outer" href="outer.html" /> 
 
   
@@ -261,12 +261,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../basics.html">Points fondamentaux de CryptPad</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../basics.html#zero-knowledge">Zero-knowledge</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../basics.html#donnees-visibles-par-le-serveur">Données visibles par le serveur</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../basics.html#zero-knowledge-dans-cryptpad">Zero-knowledge dans CryptPad</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../basics.html#content-security-policy-csp-et-securite">Content Security Policy (CSP) et sécurité</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../basics.html#personnalisation">Personnalisation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../basics.html#architecture-du-code">Architecture du code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../basics.html#regles-du-code">Règles du code</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../basics.html#cles-de-traduction">Clés de traduction</a></li>
 </ul>
 </li>
@@ -291,12 +290,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../common.html">Common</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../common/crypto.html">chainpad-crypto</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../common/common-hash.html">Common hash</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../common/common-util.html">Common util</a></li>
-</ul>
-</li>
 <li class="toctree-l3 current"><a class="reference internal" href="../client.html">Client</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="architecture.html">Architecture client</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="architecture.html#worker">Worker</a></li>
@@ -310,13 +303,6 @@
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad-avec-des-objets">ChainPad avec des objets</a></li>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad-netflux">Chainpad-netflux</a></li>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#listmap">Listmap</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="requirejs.html">RequireJS</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="requirejs.html#utilisation">Utilisation</a></li>
-<li class="toctree-l5"><a class="reference internal" href="requirejs.html#cache">Cache</a></li>
-<li class="toctree-l5"><a class="reference internal" href="requirejs.html#config">Config</a></li>
-<li class="toctree-l5"><a class="reference internal" href="requirejs.html#requirecss-requireless">RequireCSS, RequireLess</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="translations.html">Utiliser les clés de traduction</a><ul>
@@ -333,29 +319,22 @@
 <li class="toctree-l4"><a class="reference internal" href="worker.html">Worker</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="worker.html#async-store-js-et-modules">async-store.js et modules</a></li>
 <li class="toctree-l5"><a class="reference internal" href="worker.html#commandes-de-lobjet-store">Commandes de l’objet “Store”</a></li>
-<li class="toctree-l5"><a class="reference internal" href="worker.html#liste-des-modules-et-objet-store">Liste des modules et objet “store”</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="outer.html">Outer</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="outer.html#communication-entre-les-niveaux">Communication entre les niveaux</a></li>
 <li class="toctree-l5"><a class="reference internal" href="outer.html#communication-avec-inner-sframe-common-outer">Communication avec inner - sframe-common-outer</a></li>
 <li class="toctree-l5"><a class="reference internal" href="outer.html#communication-avec-le-worker-cryptpad-common">Communication avec le worker - cryptpad-common</a></li>
-<li class="toctree-l5"><a class="reference internal" href="outer.html#autres-fichiers-notables">Autres fichiers notables</a></li>
 </ul>
 </li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Inner</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="#fonctionnement">Fonctionnement</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#sframe-common">Sframe-common</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#metadata-manager">metadata-manager</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#localstore">localStore</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#mailbox">mailbox</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#modules-dinterface">Modules d’interface</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#modules-additionnels">Modules additionnels</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../server.html">Server</a></li>
 </ul>
 </li>
 </ul>
@@ -466,28 +445,9 @@ affichées change complètement.</p>
 “inner.js” de chaque application. Ce fichier charge tous les éléments
 nécessaires au fonctionnement de l’iframe et gère la représentation des
 données dans l’application concernée. Que l’application utilise le
-système “framework” ou non, le fonctionnement global reste le même :</p>
-<ul class="simple">
-<li><p>Un module sframe-common charge le module de communication avec
-“outer” et initialise différents systèmes</p>
-<ul>
-<li><p>Metadata manager</p></li>
-<li><p>localStore</p></li>
-<li><p>mailbox</p></li>
-<li><p>et de nombreux autres sytèmes selon le type d’application</p></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="sframe-common">
-<h2>Sframe-common<a class="headerlink" href="#sframe-common" title="Lien permanent vers ce titre">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">www/common/sframe-common.js</span></code></p>
-<p>C’est le point central de l’iframe inner. Cet élément va charger tous
-les sous-modules essentiels à l’iframe et va gérer le canal de
-communication avec l’extérieur. La plupart des systèmes à ce niveau qui
-ne sont pas purement interface et qui ont besoin de données utilisent
-sframe-common pour les récupérer. Dans le code, la variable y donnant
-accès est souvent appelée <code class="docutils literal notranslate"><span class="pre">common</span></code> et parfois <code class="docutils literal notranslate"><span class="pre">sfCommon</span></code>.</p>
+système “framework” ou non, le fonctionnement global reste le même : un
+module sframe-common charge le système de communication avec “outer” et
+initialise différents éléments.</p>
 </div>
 <div class="section" id="metadata-manager">
 <h2>metadata-manager<a class="headerlink" href="#metadata-manager" title="Lien permanent vers ce titre">¶</a></h2>
@@ -513,59 +473,24 @@ demandant :</p>
 <li><p>les “metadata” du document collaboratif qui sont stockées dans le
 document lui-même</p>
 <ul>
-<li><p>le titre, le titre par défaut et le nom de l’application</p></li>
+<li><p>le titre et le nom de l’application</p></li>
 <li><p>la liste d’utilisateur avec les données publiques des éditeurs
 (nom, avatar, profil, clés publiques, mailbox, etc.)</p></li>
-<li><p>la liste des auteurs (afin d’afficher les couleurs par auteur dans
-l’application Code)</p></li>
 </ul>
 </li>
 <li><p>les données “private” qui représentent la liste des données privées
 fournies par l’extérieur et qui sont très variées</p>
 <ul>
-<li><p>l’origine (<code class="docutils literal notranslate"><span class="pre">window.location.origin</span></code>) “unsafe” utilisée dans
-“outer” et le chemin (<code class="docutils literal notranslate"><span class="pre">window.location.pathname</span></code>) de
+<li><p>l’origine “unsafe” utilisée dans “outer” et le nom de
 l’application</p></li>
 <li><p>le type de hash pour les documents collaboratifs : édition ou
 lecture seule, mode présentation, mode intégration, etc.</p></li>
-<li><p>des données concernant le document lui-même : modèle ou non,
-supprimé ou accessible, le “channelId”, etc.</p></li>
+<li><p>des données concernant le document lui-même</p></li>
 </ul>
 </li>
 <li><p>les données “user” qui représentent l’utilisateur actuel et qui sont
 identiques à celles partagées dans la liste d’utilisateur du document</p></li>
 </ul>
-</div>
-<div class="section" id="localstore">
-<h2>localStore<a class="headerlink" href="#localstore" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Ce système est intégré directement à sframe-common. Il permet de
-récupérer certaines valeurs stockées dans le localStorage situé à
-l’extérieur et d’y stocker de nouvelles valeurs. Le “localStorage” du
-domaine “safe” de inner n’est <strong>jamais</strong> utilisé. Les données
-accessibles ne contiennent évidemment pas les clés d’accès au compte et
-seules les valeurs ayant un marquage spécifique sont accessibles depuis
-le “localStore” du niveau inner.</p>
-<p>Dans le code, ce système est accessible globalement au niveau inner via
-<code class="docutils literal notranslate"><span class="pre">window.cryptpadStore</span></code>. Il offre deux méthodes <code class="docutils literal notranslate"><span class="pre">get</span></code> et <code class="docutils literal notranslate"><span class="pre">put</span></code> qui
-permettent de lire ou de modifier une clé. Les modifications sont
-directement envoyées à outer pour être stockées dans le localStorage.</p>
-</div>
-<div class="section" id="mailbox">
-<h2>mailbox<a class="headerlink" href="#mailbox" title="Lien permanent vers ce titre">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">www/common/sframe-common-mailbox.js</span></code></p>
-<p>Ce module permet de récupérer les messages envoyées aux boîtes mails du
-compte utilisateur directement dans “inner”. Les messages accessibles
-ici sont d’abord filtrés par le worker afin de ne jamais contenir
-d’informations sensibles. Le code situé dans inner peut s’abonner (avec
-la méthode <code class="docutils literal notranslate"><span class="pre">subscribe()</span></code>) à un type de messages afin d’y avoir accès
-et de recevoir les nouveaux messages en temps-réel. Le centre de
-notifications de la barre d’outils est par exemple abonné aux messages
-de type “notifications”.</p>
-<p>Ce module permet également d’envoyer un message (une notification) à un
-autre utilisateur avec la méthode <code class="docutils literal notranslate"><span class="pre">sendTo</span></code>. Il faut pour cela
-connaître certaines informations publiques du destinataire. C’est donc
-ce système qui est utilisé pour envoyer une “demande de contact” à un
-autre utlisateur par exemple.</p>
 </div>
 <div class="section" id="modules-dinterface">
 <h2>Modules d’interface<a class="headerlink" href="#modules-dinterface" title="Lien permanent vers ce titre">¶</a></h2>
@@ -589,10 +514,10 @@ elle est ouverte</p></li>
 qui disparaît automatiquement après quelques secondes</p></li>
 <li><p>UI.confirmButton : ajoute une étape de confirmation “Êtes-vous sûrs?”
 sur le bouton fournit en argument</p></li>
-<li><p>UI.(add|remove|error)LoadingScreen : ajouter, enlever ou modifier
-(afficher une erreur) un écran de chargement</p></li>
-<li><p>De nombreux outils pour créer des fenêtres personnalisées au style
-CryptPad</p></li>
+<li><p>UI.(add|remove|error)LoadingScreen : ajouter, enlever ou modifier un
+écran de chargement</p></li>
+<li><p>De nombreux outils pour créer des fenêtres personnalisées utilisant
+le style CryptPad</p></li>
 </ul>
 </div>
 <div class="section" id="common-ui-elements">
@@ -617,24 +542,6 @@ actuelle</p></li>
 </ul>
 </div>
 </div>
-<div class="section" id="modules-additionnels">
-<h2>Modules additionnels<a class="headerlink" href="#modules-additionnels" title="Lien permanent vers ce titre">¶</a></h2>
-<p>De très nombreux autres modules existent, certains pour une ou plusieurs
-applications, d’autres pour les applications collaboratives uniquement
-ou l’inverse. Les plus utilisés sont :</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">www/common/hyperscript.js</span></code> qui permet de créer des éléments HTML
-d’une manière plus simple et plus rapide que les fonctions natives ou
-même jQuery</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">www/common/sframe-common-history.js</span></code> qui permet d’afficher
-l’historique du document courant</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">www/common/sframe-common-codemirror.js</span></code> qui permet d’initialiser
-une instance CodeMirror pré-configurée et prête pour le
-fonctionnement temps-réel</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">www/common/sframe-common-file.js</span></code> qui permet de gérer l’upload de
-fichiers statiques dans un document ou dans le drive</p></li>
-</ul>
-</div>
 </div>
 
 
@@ -645,7 +552,7 @@ fichiers statiques dans un document ou dans le drive</p></li>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../server.html" class="btn btn-neutral float-right" title="Server" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../../how_to_contribute.html" class="btn btn-neutral float-right" title="Comment contribuer" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="outer.html" class="btn btn-neutral" title="Outer" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>

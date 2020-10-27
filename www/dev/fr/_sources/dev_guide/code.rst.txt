@@ -7,8 +7,6 @@ Code
     :hidden:
 
     general.rst
-    common.rst
     client.rst
-    server.rst
 
 

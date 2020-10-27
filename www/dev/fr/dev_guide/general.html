@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="../_static/css/cp-overrides.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
-    <link rel="next" title="Common" href="common.html" />
+    <link rel="next" title="Client" href="client.html" />
     <link rel="prev" title="Code" href="code.html" /> 
 
   
@@ -261,12 +261,11 @@
 <li class="toctree-l2"><a class="reference internal" href="basics.html">Points fondamentaux de CryptPad</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="basics.html#zero-knowledge">Zero-knowledge</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="basics.html#donnees-visibles-par-le-serveur">Données visibles par le serveur</a></li>
-<li class="toctree-l4"><a class="reference internal" href="basics.html#zero-knowledge-dans-cryptpad">Zero-knowledge dans CryptPad</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="basics.html#content-security-policy-csp-et-securite">Content Security Policy (CSP) et sécurité</a></li>
 <li class="toctree-l3"><a class="reference internal" href="basics.html#personnalisation">Personnalisation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="basics.html#architecture-du-code">Architecture du code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="basics.html#regles-du-code">Règles du code</a></li>
 <li class="toctree-l3"><a class="reference internal" href="basics.html#cles-de-traduction">Clés de traduction</a></li>
 </ul>
 </li>
@@ -291,12 +290,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="common.html">Common</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="common/crypto.html">chainpad-crypto</a></li>
-<li class="toctree-l4"><a class="reference internal" href="common/common-hash.html">Common hash</a></li>
-<li class="toctree-l4"><a class="reference internal" href="common/common-util.html">Common util</a></li>
-</ul>
-</li>
 <li class="toctree-l3"><a class="reference internal" href="client.html">Client</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="client/architecture.html">Architecture client</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="client/architecture.html#worker">Worker</a></li>
@@ -310,13 +303,6 @@
 <li class="toctree-l5"><a class="reference internal" href="client/chainpad.html#chainpad-avec-des-objets">ChainPad avec des objets</a></li>
 <li class="toctree-l5"><a class="reference internal" href="client/chainpad.html#chainpad-netflux">Chainpad-netflux</a></li>
 <li class="toctree-l5"><a class="reference internal" href="client/chainpad.html#listmap">Listmap</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="client/requirejs.html">RequireJS</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="client/requirejs.html#utilisation">Utilisation</a></li>
-<li class="toctree-l5"><a class="reference internal" href="client/requirejs.html#cache">Cache</a></li>
-<li class="toctree-l5"><a class="reference internal" href="client/requirejs.html#config">Config</a></li>
-<li class="toctree-l5"><a class="reference internal" href="client/requirejs.html#requirecss-requireless">RequireCSS, RequireLess</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="client/translations.html">Utiliser les clés de traduction</a><ul>
@@ -333,29 +319,22 @@
 <li class="toctree-l4"><a class="reference internal" href="client/worker.html">Worker</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="client/worker.html#async-store-js-et-modules">async-store.js et modules</a></li>
 <li class="toctree-l5"><a class="reference internal" href="client/worker.html#commandes-de-lobjet-store">Commandes de l’objet “Store”</a></li>
-<li class="toctree-l5"><a class="reference internal" href="client/worker.html#liste-des-modules-et-objet-store">Liste des modules et objet “store”</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="client/outer.html">Outer</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="client/outer.html#communication-entre-les-niveaux">Communication entre les niveaux</a></li>
 <li class="toctree-l5"><a class="reference internal" href="client/outer.html#communication-avec-inner-sframe-common-outer">Communication avec inner - sframe-common-outer</a></li>
 <li class="toctree-l5"><a class="reference internal" href="client/outer.html#communication-avec-le-worker-cryptpad-common">Communication avec le worker - cryptpad-common</a></li>
-<li class="toctree-l5"><a class="reference internal" href="client/outer.html#autres-fichiers-notables">Autres fichiers notables</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="client/inner.html">Inner</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="client/inner.html#fonctionnement">Fonctionnement</a></li>
-<li class="toctree-l5"><a class="reference internal" href="client/inner.html#sframe-common">Sframe-common</a></li>
 <li class="toctree-l5"><a class="reference internal" href="client/inner.html#metadata-manager">metadata-manager</a></li>
-<li class="toctree-l5"><a class="reference internal" href="client/inner.html#localstore">localStore</a></li>
-<li class="toctree-l5"><a class="reference internal" href="client/inner.html#mailbox">mailbox</a></li>
 <li class="toctree-l5"><a class="reference internal" href="client/inner.html#modules-dinterface">Modules d’interface</a></li>
-<li class="toctree-l5"><a class="reference internal" href="client/inner.html#modules-additionnels">Modules additionnels</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="server.html">Server</a></li>
 </ul>
 </li>
 </ul>
@@ -750,11 +729,13 @@ et qui sont récupérés par les utilisateurs en XHR (téléchargement du
 fichier chiffré complet).</p>
 <p>Avec le protocole Netflux, les utilsateurs créent un “network” qu’ils
 utilisent ensuite pour effectuer plusieurs types d’opérations. <strong>Les
-points importants</strong> concernant l’implémentation du protocole sont :
--  Chaque utilisateur est identifié par une chaîne hexadécimale de 32 caractères appelée <strong>netfluxId</strong>. Cet identifiant est généré par le serveur et est créé pour chaque connexion Websocket. Un utilisateur qui ouvre CryptPad via 2 navigateurs différents en même temps aura un netfluxId pour chaque navigateur (pour chaque connexion au serveur). Cet identifiant change donc a chaque nouvelle connexion, aucun mécanisme n’existe pour préserver l’identifiant d’un utilisateur entre différentes sessions.
--  Un utilisateur peut rejoindre des salons et y envoyer des messages. Tous les membres du salon reçoivent les messages. Chaque document collaboratif ouvert sur CryptPad est représenté par un salon sur le serveur avec un identifiant unique.
--  L’identifiant des salons est également une chaîne hexadécimale de 32 caractères appelée <strong>channelId</strong> ou <strong>channel</strong>. Le channelId associé a un document est dérivé de son URL, afin qu’il soit connu de tous les utilisateurs y ayant accès.
--  Les utilisateurs peuvent s’envoyer des messages directs entre eux sans passer par un salon, à condition qu’ils connaissent le “netfluxId” du destinataire.</p>
+points importants</strong> concernant l’implémentation du protocole sont :</p>
+<ul class="simple">
+<li><p>Chaque utilisateur est identifié par une chaîne hexadécimale de 32 caractères appelée <strong>netfluxId</strong>. Cet identifiant est généré par le serveur et est créé pour chaque connexion Websocket. Un utilisateur qui ouvre CryptPad via 2 navigateurs différents en même temps aura un netfluxId pour chaque navigateur (pour chaque connexion au serveur). Cet identifiant change donc a chaque nouvelle connexion, aucun mécanisme n’existe pour préserver l’identifiant d’un utilisateur entre différentes sessions.</p></li>
+<li><p>Un utilisateur peut rejoindre des salons et y envoyer des messages. Tous les membres du salon reçoivent les messages. Chaque document collaboratif ouvert sur CryptPad est représenté par un salon sur le serveur avec un identifiant unique.</p></li>
+<li><p>L’identifiant des salons est également une chaîne hexadécimale de 32 caractères appelée <strong>channelId</strong> ou <strong>channel</strong>. Le channelId associé a un document est dérivé de son URL, afin qu’il soit connu de tous les utilisateurs y ayant accès.</p></li>
+<li><p>Les utilisateurs peuvent s’envoyer des messages directs entre eux sans passer par un salon, à condition qu’ils connaissent le “netfluxId” du destinataire.</p></li>
+</ul>
 <div class="section" id="cote-serveur">
 <h3>Côté serveur<a class="headerlink" href="#cote-serveur" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Au niveau du serveur, Netflux est implémenté via le module npm
@@ -798,17 +779,21 @@ courant dans au niveau du serveur.</p>
 <p>Ce “network” contient la <strong>liste des salons</strong> rejoints par
 l’utilisateur, ainsi que la <strong>liste des membres</strong> présents dans chaque
 salon. Il permet d’effectuer toutes les opérations permises par le
-protocole :
--  Rejoindre un salon : <code class="docutils literal notranslate"><span class="pre">(Promise)</span> <span class="pre">network.join(channelId)</span></code> (fournit un object <code class="docutils literal notranslate"><span class="pre">channel</span></code>)
--  Envoyer un message privé : <code class="docutils literal notranslate"><span class="pre">(Promise)</span> <span class="pre">network.sendTo(netfluxId,</span> <span class="pre">message)</span></code>
--  Obtenir la liste des salons : <code class="docutils literal notranslate"><span class="pre">(Array)</span> <span class="pre">network.webChannels</span></code>
--  Écouter des évènements dans un network : <code class="docutils literal notranslate"><span class="pre">network.on('message',</span> <span class="pre">handler)</span></code> (évènements: message, disconnect)</p>
-<p>Et pour chaque salon obtenu via “network.join” :
--  Envoyer un message : <code class="docutils literal notranslate"><span class="pre">(Promise)</span> <span class="pre">channel.bcast(message)</span></code>
--  Quitter un salon : <code class="docutils literal notranslate"><span class="pre">channel.leave(reason)</span></code>
--  Écouter des évènements : <code class="docutils literal notranslate"><span class="pre">channel.on('message',</span> <span class="pre">handler)</span></code> (évènements: message, join, leave)
--  Obtenir l’identifiant du salon : <code class="docutils literal notranslate"><span class="pre">(String)</span> <span class="pre">channel.id</span></code>
--  Obtenir la liste des membres : <code class="docutils literal notranslate"><span class="pre">(Array)</span> <span class="pre">channel.members</span></code></p>
+protocole :</p>
+<ul class="simple">
+<li><p>Rejoindre un salon : <code class="docutils literal notranslate"><span class="pre">(Promise)</span> <span class="pre">network.join(channelId)</span></code> (fournit un object <code class="docutils literal notranslate"><span class="pre">channel</span></code>)</p></li>
+<li><p>Envoyer un message privé : <code class="docutils literal notranslate"><span class="pre">(Promise)</span> <span class="pre">network.sendTo(netfluxId,</span> <span class="pre">message)</span></code></p></li>
+<li><p>Obtenir la liste des salons : <code class="docutils literal notranslate"><span class="pre">(Array)</span> <span class="pre">network.webChannels</span></code></p></li>
+<li><p>Écouter des évènements dans un network : <code class="docutils literal notranslate"><span class="pre">network.on('message',</span> <span class="pre">handler)</span></code> (évènements: message, disconnect)</p></li>
+</ul>
+<p>Et pour chaque salon obtenu via “network.join” :</p>
+<ul class="simple">
+<li><p>Envoyer un message : <code class="docutils literal notranslate"><span class="pre">(Promise)</span> <span class="pre">channel.bcast(message)</span></code></p></li>
+<li><p>Quitter un salon : <code class="docutils literal notranslate"><span class="pre">channel.leave(reason)</span></code></p></li>
+<li><p>Écouter des évènements : <code class="docutils literal notranslate"><span class="pre">channel.on('message',</span> <span class="pre">handler)</span></code> (évènements: message, join, leave)</p></li>
+<li><p>Obtenir l’identifiant du salon : <code class="docutils literal notranslate"><span class="pre">(String)</span> <span class="pre">channel.id</span></code></p></li>
+<li><p>Obtenir la liste des membres : <code class="docutils literal notranslate"><span class="pre">(Array)</span> <span class="pre">channel.members</span></code></p></li>
+</ul>
 </div>
 <div class="section" id="exemple-3">
 <span id="id2"></span><h3>Exemple<a class="headerlink" href="#exemple-3" title="Lien permanent vers ce titre">¶</a></h3>
@@ -854,7 +839,7 @@ protocole :
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="common.html" class="btn btn-neutral float-right" title="Common" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="client.html" class="btn btn-neutral float-right" title="Client" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="code.html" class="btn btn-neutral" title="Code" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>

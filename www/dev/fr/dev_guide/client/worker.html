@@ -261,12 +261,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../basics.html">Points fondamentaux de CryptPad</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../basics.html#zero-knowledge">Zero-knowledge</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../basics.html#donnees-visibles-par-le-serveur">Données visibles par le serveur</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../basics.html#zero-knowledge-dans-cryptpad">Zero-knowledge dans CryptPad</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../basics.html#content-security-policy-csp-et-securite">Content Security Policy (CSP) et sécurité</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../basics.html#personnalisation">Personnalisation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../basics.html#architecture-du-code">Architecture du code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../basics.html#regles-du-code">Règles du code</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../basics.html#cles-de-traduction">Clés de traduction</a></li>
 </ul>
 </li>
@@ -291,12 +290,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../common.html">Common</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../common/crypto.html">chainpad-crypto</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../common/common-hash.html">Common hash</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../common/common-util.html">Common util</a></li>
-</ul>
-</li>
 <li class="toctree-l3 current"><a class="reference internal" href="../client.html">Client</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="architecture.html">Architecture client</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="architecture.html#worker">Worker</a></li>
@@ -310,13 +303,6 @@
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad-avec-des-objets">ChainPad avec des objets</a></li>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad-netflux">Chainpad-netflux</a></li>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#listmap">Listmap</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="requirejs.html">RequireJS</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="requirejs.html#utilisation">Utilisation</a></li>
-<li class="toctree-l5"><a class="reference internal" href="requirejs.html#cache">Cache</a></li>
-<li class="toctree-l5"><a class="reference internal" href="requirejs.html#config">Config</a></li>
-<li class="toctree-l5"><a class="reference internal" href="requirejs.html#requirecss-requireless">RequireCSS, RequireLess</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="translations.html">Utiliser les clés de traduction</a><ul>
@@ -333,29 +319,22 @@
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Worker</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="#async-store-js-et-modules">async-store.js et modules</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#commandes-de-lobjet-store">Commandes de l’objet “Store”</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#liste-des-modules-et-objet-store">Liste des modules et objet “store”</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="outer.html">Outer</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="outer.html#communication-entre-les-niveaux">Communication entre les niveaux</a></li>
 <li class="toctree-l5"><a class="reference internal" href="outer.html#communication-avec-inner-sframe-common-outer">Communication avec inner - sframe-common-outer</a></li>
 <li class="toctree-l5"><a class="reference internal" href="outer.html#communication-avec-le-worker-cryptpad-common">Communication avec le worker - cryptpad-common</a></li>
-<li class="toctree-l5"><a class="reference internal" href="outer.html#autres-fichiers-notables">Autres fichiers notables</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="inner.html">Inner</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="inner.html#fonctionnement">Fonctionnement</a></li>
-<li class="toctree-l5"><a class="reference internal" href="inner.html#sframe-common">Sframe-common</a></li>
 <li class="toctree-l5"><a class="reference internal" href="inner.html#metadata-manager">metadata-manager</a></li>
-<li class="toctree-l5"><a class="reference internal" href="inner.html#localstore">localStore</a></li>
-<li class="toctree-l5"><a class="reference internal" href="inner.html#mailbox">mailbox</a></li>
 <li class="toctree-l5"><a class="reference internal" href="inner.html#modules-dinterface">Modules d’interface</a></li>
-<li class="toctree-l5"><a class="reference internal" href="inner.html#modules-additionnels">Modules additionnels</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../server.html">Server</a></li>
 </ul>
 </li>
 </ul>
@@ -454,10 +433,6 @@
             
   <div class="section" id="worker">
 <h1>Worker<a class="headerlink" href="#worker" title="Lien permanent vers ce titre">¶</a></h1>
-<p>La partie <a class="reference internal" href="architecture.html#architecture-worker"><span class="std std-ref">Architecture client</span></a> explique la structure et le
-fonctionnement global du “worker”. Il y est expliqué que le fichier
-<code class="docutils literal notranslate"><span class="pre">www/common/outer/async-store.js</span></code> représente la base du worker. Ce
-fichier et ses dépendances vont être expliqués ici.</p>
 <div class="section" id="async-store-js-et-modules">
 <h2>async-store.js et modules<a class="headerlink" href="#async-store-js-et-modules" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Async-store contient l’ensemble des fonctions représentant les commandes
@@ -532,173 +507,6 @@ modules concernés</p></li>
 “historique” de l’interface)</p></li>
 <li><p>Modifier le mot de passe d’un document</p></li>
 <li><p>Gérer les métadonnées du document (liste d’accès ou propriétaires)</p></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="liste-des-modules-et-objet-store">
-<h2>Liste des modules et objet “store”<a class="headerlink" href="#liste-des-modules-et-objet-store" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Les modules chargés par “async-store” représente des ensembles d’actions
-liées par fonctionnalité et servant dans certains cas spécifiques. Les
-modules principaux sont dans l’ordre de leur initialisation :</p>
-<ul class="simple">
-<li><p>Compte utilisateur</p>
-<ul>
-<li><p>Module intégré à async-store (indispensable au fonctionnement du
-worker)</p></li>
-<li><p>Charge le compte utilisateur et son drive (via chainpad-listmap)</p></li>
-<li><p>Initialisation de l’objet <code class="docutils literal notranslate"><span class="pre">store</span></code></p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">store.proxy</span></code> : Proxy du compte utilisateur</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">store.realtime</span></code> : Chainpad associé au compte utilisateur</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">store.network</span></code> : Réseau Netflux</p></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>Proxy-manager</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">www/common/proxy-manager.js</span></code></p></li>
-<li><p>Il gère le drive du compte utilisateur et tous les dossiers
-partagés qu’il contient</p></li>
-<li><p>Le drive et les dossiers partagés sont représentés par un Proxy
-(chainpad-listmap) chacun, ce module effectue les actions en
-gardant la cohérence entre ces éléments distincts</p></li>
-<li><p>Il charge une librairie “userObject.js” qui effectue les
-opérations “unitaires” dans un proxy donné et l’initialise pour
-tous les “Proxy” liés au drive et aux dossiers partagés</p>
-<ul>
-<li><p>Opérations unitaires : ajouter, supprimer, renommer, déplacer
-un pad, effectuer une recherche par texte, trouver l’élement à
-un chemin donné, etc.</p></li>
-</ul>
-</li>
-<li><p>Toutes les actions entraînant une modification du contenu du drive
-passent par ce module</p></li>
-<li><p>Accessible via <code class="docutils literal notranslate"><span class="pre">store.manager</span></code></p></li>
-</ul>
-</li>
-<li><p>Dossiers partagés</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">www/common/outer/sharedfolders.js</span></code></p></li>
-<li><p>Il charge tous les dossiers partagés d’un drive donné depuis le
-serveur (avec chainpad-listmap) et les ajoute au “proxy-manager”</p></li>
-<li><p>Il gère les dossiers partagés en commun entre le drive principal
-et le drive de chaque équipe dont l’utilisateur est membre</p></li>
-<li><p>Les pertes d’accès (via une liste d’accès), suppression du dossier
-ou modification de droits (édition ou lecture) sont
-automatiquement signalés aux proxy-manager concernés</p></li>
-<li><p>Module auto-géré, non accessible directement</p></li>
-</ul>
-</li>
-<li><p>Curseur</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">www/common/outer/cursor.js</span></code></p></li>
-<li><p>Il gère la position du curseur de chaque utilisateur dans les
-différents documents ouverts qui supportent cette fonctionnalité</p></li>
-<li><p>Pour chaque document, le salon “éphémère” (données non stockées
-dans la base de données) associé est ouvert</p></li>
-</ul>
-</li>
-<li><p>OnlyOffice</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">www/common/outer/onlyoffice.js</span></code></p></li>
-<li><p>Les applications basées sur OnlyOffice (Tableur uniquement pour le
-moment) n’utilisent pas uniquement ChainPad et ont un
-fonctionnement différent au niveau du stokcage, notamment pour les
-checkpoints.</p></li>
-<li><p>Ce module va rejoindre les salons Netflux associés à chaque
-document OnlyOffice ouvert et contenant les patchs chiffrés.</p></li>
-</ul>
-</li>
-<li><p>Messenger</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">www/common/outer/messenger.js</span></code></p></li>
-<li><p>Il gère toute la partie réseau et parfois le chiffrement des
-systèmes de chat utilisés dans CryptPad</p>
-<ul>
-<li><p>Chat dans un pad (reseau uniquement)</p></li>
-<li><p>Chat d’équipe (réseau et chiffrement)</p></li>
-<li><p>Chat avec un contact (réseau et chiffrement)</p></li>
-</ul>
-</li>
-<li><p>Accessible via <code class="docutils literal notranslate"><span class="pre">store.messenger</span></code> ou <code class="docutils literal notranslate"><span class="pre">store.modules.messenger</span></code></p></li>
-</ul>
-</li>
-<li><p>Profil</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">www/common/outer/profile.js</span></code></p></li>
-<li><p>Ce module charge le document lié au profil de l’utilisateur
-enregistré courant (via listmap)</p></li>
-<li><p>Il effectue toutes les modifications souhaitées sur ce document
-(données modifiables du profil)</p></li>
-<li><p>Il écoute les changements effectués sur le nom d’utilisateur
-<strong>affiché</strong> pour également mettre à jour ce nom dans le profil</p></li>
-<li><p>Accessible via <code class="docutils literal notranslate"><span class="pre">store.modules.profile</span></code></p></li>
-</ul>
-</li>
-<li><p>Team</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">www/common/outer/team.js</span></code></p></li>
-<li><p>Le plus complexe des modules, il effectue une partie du travail
-attribué à “async-store” mais en ce qui concerne les équipes :</p>
-<ul>
-<li><p>Chargement du “compte” de chaque équipe (avec son drive)</p></li>
-<li><p>Chargement d’un proxy-manager pour le drive de chaque équipe</p></li>
-<li><p>Chargement des dossiers partagés de chaque équipe</p></li>
-<li><p>Chargement du module “roster”</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">www/common/outer/roster.js</span></code></p></li>
-<li><p>Contient la liste des membres et gère les droits d’accès de
-chaque membre</p></li>
-</ul>
-</li>
-<li><p>Initialisation d’une session authentifiée avec le serveur
-(signée avec la clé de l’équipe)</p>
-<ul>
-<li><p>Gestion des documents dont l’équipe est propriétaire</p></li>
-<li><p>Gestion de la “liste de pins” de l’équipe</p></li>
-<li><p>Gestion de l’espace de stockage de l’équipe</p></li>
-<li><p>Upload de fichier statique dans le drive de l’équipe</p></li>
-</ul>
-</li>
-<li><p>Gestion des métadonnées de l’équipe (nom, image)</p></li>
-<li><p>Permet la création, suppression et gestion d’une équipe</p></li>
-</ul>
-</li>
-<li><p>Accessible via <code class="docutils literal notranslate"><span class="pre">store.modules.team</span></code>, qui contient notamment des
-informations sur chaque équipes</p></li>
-</ul>
-</li>
-<li><p>Historique</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">www/common/outer/history.js</span></code></p></li>
-<li><p>Ce module permet de vérifier la taille de l’historique de chaque
-document collaboratif et de supprimer l’historique non-essentiel,
-c’est-à-dire tous les messages antérieurs à l’avant-dernier
-checkpoint</p></li>
-<li><p>Accessible via <code class="docutils literal notranslate"><span class="pre">store.modules.history</span></code></p></li>
-</ul>
-</li>
-<li><p>Mailbox</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">www/common/outer/mailbox.js</span></code></p></li>
-<li><p>Ce module permet de gérer les “boîtes mail” d’un utilisateur. Ces
-mailboxes sont des moyens de stockage supplémentaires créés pour
-chaque compte utilisateur CryptPad et permettent à différent
-utilisateurs de s’envoyer des messages chiffrés.</p></li>
-<li><p>Les messages ne quittent jamais CryptPad et quand un message est
-envoyé à un utilisateur hors-ligne, celui-ci recevra le message à
-sa prochaine connexion. Pour envoyer un message à quelqu’un, il
-est nécessaire de connaître “l’adresse” de sa mailbox et la clé
-publique de chiffrement de cet utilisateur (afin que lui seul
-puisse déchiffrer le contenu).</p></li>
-<li><p>Ce module est à la base du système de notifications de CryptPad.
-Quand une notification est affichée pour un utilisateur, elle a en
-réalité été envoyée par un autre utilisateur.</p></li>
-<li><p>Accessible via <code class="docutils literal notranslate"><span class="pre">store.mailbox</span></code>, ce module notamment permet
-d’envoyer des messages avec <code class="docutils literal notranslate"><span class="pre">sendTo</span></code> ou de supprimer des
-messages affichés avec <code class="docutils literal notranslate"><span class="pre">dismiss</span></code>.</p></li>
 </ul>
 </li>
 </ul>

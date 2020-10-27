@@ -34,7 +34,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Recherche" href="../../search.html" />
     <link rel="next" title="Framework" href="framework.html" />
-    <link rel="prev" title="RequireJS" href="requirejs.html" /> 
+    <link rel="prev" title="ChainPad et Listmap" href="chainpad.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -261,12 +261,11 @@
 <li class="toctree-l2"><a class="reference internal" href="../basics.html">Points fondamentaux de CryptPad</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../basics.html#zero-knowledge">Zero-knowledge</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../basics.html#donnees-visibles-par-le-serveur">Données visibles par le serveur</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../basics.html#zero-knowledge-dans-cryptpad">Zero-knowledge dans CryptPad</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../basics.html#content-security-policy-csp-et-securite">Content Security Policy (CSP) et sécurité</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../basics.html#personnalisation">Personnalisation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../basics.html#architecture-du-code">Architecture du code</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../basics.html#regles-du-code">Règles du code</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../basics.html#cles-de-traduction">Clés de traduction</a></li>
 </ul>
 </li>
@@ -291,12 +290,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../common.html">Common</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../common/crypto.html">chainpad-crypto</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../common/common-hash.html">Common hash</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../common/common-util.html">Common util</a></li>
-</ul>
-</li>
 <li class="toctree-l3 current"><a class="reference internal" href="../client.html">Client</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="architecture.html">Architecture client</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="architecture.html#worker">Worker</a></li>
@@ -310,13 +303,6 @@
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad-avec-des-objets">ChainPad avec des objets</a></li>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad-netflux">Chainpad-netflux</a></li>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#listmap">Listmap</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="requirejs.html">RequireJS</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="requirejs.html#utilisation">Utilisation</a></li>
-<li class="toctree-l5"><a class="reference internal" href="requirejs.html#cache">Cache</a></li>
-<li class="toctree-l5"><a class="reference internal" href="requirejs.html#config">Config</a></li>
-<li class="toctree-l5"><a class="reference internal" href="requirejs.html#requirecss-requireless">RequireCSS, RequireLess</a></li>
 </ul>
 </li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Utiliser les clés de traduction</a><ul>
@@ -333,29 +319,22 @@
 <li class="toctree-l4"><a class="reference internal" href="worker.html">Worker</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="worker.html#async-store-js-et-modules">async-store.js et modules</a></li>
 <li class="toctree-l5"><a class="reference internal" href="worker.html#commandes-de-lobjet-store">Commandes de l’objet “Store”</a></li>
-<li class="toctree-l5"><a class="reference internal" href="worker.html#liste-des-modules-et-objet-store">Liste des modules et objet “store”</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="outer.html">Outer</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="outer.html#communication-entre-les-niveaux">Communication entre les niveaux</a></li>
 <li class="toctree-l5"><a class="reference internal" href="outer.html#communication-avec-inner-sframe-common-outer">Communication avec inner - sframe-common-outer</a></li>
 <li class="toctree-l5"><a class="reference internal" href="outer.html#communication-avec-le-worker-cryptpad-common">Communication avec le worker - cryptpad-common</a></li>
-<li class="toctree-l5"><a class="reference internal" href="outer.html#autres-fichiers-notables">Autres fichiers notables</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="inner.html">Inner</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="inner.html#fonctionnement">Fonctionnement</a></li>
-<li class="toctree-l5"><a class="reference internal" href="inner.html#sframe-common">Sframe-common</a></li>
 <li class="toctree-l5"><a class="reference internal" href="inner.html#metadata-manager">metadata-manager</a></li>
-<li class="toctree-l5"><a class="reference internal" href="inner.html#localstore">localStore</a></li>
-<li class="toctree-l5"><a class="reference internal" href="inner.html#mailbox">mailbox</a></li>
 <li class="toctree-l5"><a class="reference internal" href="inner.html#modules-dinterface">Modules d’interface</a></li>
-<li class="toctree-l5"><a class="reference internal" href="inner.html#modules-additionnels">Modules additionnels</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../server.html">Server</a></li>
 </ul>
 </li>
 </ul>
@@ -527,7 +506,7 @@ sera utilisée à la place pour cette chaîne.</p>
         <a href="framework.html" class="btn btn-neutral float-right" title="Framework" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="requirejs.html" class="btn btn-neutral" title="RequireJS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="chainpad.html" class="btn btn-neutral" title="ChainPad et Listmap" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
       
     </div>
   
