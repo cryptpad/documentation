@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Points fondamentaux de CryptPad &mdash; CryptPad 3.20.1 documentation</title>
+  <title>Key elements in CryptPad &mdash; CryptPad 3.23.0 documentation</title>
   
 
   
@@ -54,7 +54,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/sidebar-logo.png" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">3.20.1</span>
+              <span class="release">3.23.0</span>
             </a>
             
 <div role="search">
@@ -71,7 +71,8 @@
         	<p class="caption-text">
 	        	<select id="language-selector-container">
 	        		<option value="en">English</option>
-	        		<option value="fr">Français</option>
+              <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
 	        	</select>
         	</p>
         </div>
@@ -177,6 +178,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#saving">Saving</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#make-a-copy">Make a copy</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#document-history">Document history</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#snapshots">Snapshots</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#properties">Properties</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#users-and-chat">Users and chat</a></li>
 </ul>
@@ -189,6 +191,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/sheets.html">Spreadsheets</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/sheets.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/sheets.html#history">History</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/sheets.html#import-export">Import/Export</a></li>
 </ul>
 </li>
@@ -238,8 +241,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">Administrator Guide (in progress)</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Developer Guide (in progress)</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Developer Guide</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="setup.html">Instance locale de développement</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="setup.html#prerequis">Prérequis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="setup.html#installation">Installation</a></li>
@@ -258,15 +260,12 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Points fondamentaux de CryptPad</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#zero-knowledge">Zero-knowledge</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#donnees-visibles-par-le-serveur">Données visibles par le serveur</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#content-security-policy-csp-et-securite">Content Security Policy (CSP) et sécurité</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#personnalisation">Personnalisation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#regles-du-code">Règles du code</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#cles-de-traduction">Clés de traduction</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Key elements in CryptPad</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#zero-knowledge">Zero-knowledge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#content-security-policy-csp-and-security">Content Security Policy (CSP) and security</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#customization">Customization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#code-rules">Code rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#translation-keys">Translation keys</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="code.html">Code</a><ul>
@@ -339,6 +338,7 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">Administrator Guide (in progress)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how_to_contribute.html">How to contribute</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#spread-the-word">Spread the word</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#report-bugs">Report bugs</a></li>
@@ -404,7 +404,7 @@
         
           <li><a href="index.html">Developer Guide</a> &raquo;</li>
         
-      <li>Points fondamentaux de CryptPad</li>
+      <li>Key elements in CryptPad</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -427,158 +427,51 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="points-fondamentaux-de-cryptpad">
-<h1>Points fondamentaux de CryptPad<a class="headerlink" href="#points-fondamentaux-de-cryptpad" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="key-elements-in-cryptpad">
+<h1>Key elements in CryptPad<a class="headerlink" href="#key-elements-in-cryptpad" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="zero-knowledge">
 <h2>Zero-knowledge<a class="headerlink" href="#zero-knowledge" title="Permalink to this headline">¶</a></h2>
-<p><strong>Aucune donnée non-essentielle concernant l’utilisateur ou ses
-documents ne doit atteindre le serveur de manière non-chiffrée.</strong> C’est
-l’élément le plus important pour CryptPad !</p>
-<div class="section" id="donnees-visibles-par-le-serveur">
-<h3>Données visibles par le serveur<a class="headerlink" href="#donnees-visibles-par-le-serveur" title="Permalink to this headline">¶</a></h3>
-<p>Certaines données sont malheureusement impossible à ne pas recevoir sur
-le serveur à cause du fonctionnement même d’Internet via le protocole
-HTTP. Il s’agit notamment de l’adresse IP ainsi que d’éléments
-concernant le navigateur et le système d’exploitation des utilisateurs.
-Les utilisateurs peuvent toutefois se protéger se leur côté :</p>
+<p><strong>All user data must be encrypted before sending it to the server.</strong></p>
+<p>Données visibles par le serveur
+What our server can see
+~~~~~~~~~~~~~~~~~~~~~~~</p>
+<p>Some data is always sent to the server because that's the way HTTP protocol work. It includes the user's IP address and their &quot;user agent&quot; (browser and operating system), even though it's possible to hide these elements (with a VPN and browser extensions).</p>
+<p>On its side, CryptPad also sends some unencrypted data in order to recognize each user: the &quot;Public signing key&quot;, generated automatically by CryptPad for each user account. It's the only link between user data and their CryptPad account, but it's a short random string that doesn't contain any personal data and cant' be linked to any physical person.</p>
+<p><strong>We won't accept any contribution that sends unencrypted data that can identify a user (username, avatar, contact list, etc.) to the server, directly or undirectly.</strong></p>
+<p>Experience showed us that when we think we need such data, it's almost always possible to find a solution that can fill the same requirements but protect user data. Our codebase already contains lots of tools that can be used to solve these cases and our development team is willing to help any contributor that might encounter such difficulties.</p>
+</div>
+<div class="section" id="content-security-policy-csp-and-security">
+<h2>Content Security Policy (CSP) and security<a class="headerlink" href="#content-security-policy-csp-and-security" title="Permalink to this headline">¶</a></h2>
+<p>The very functioning of most CryptPad applications is based on collaboration between different users. These applications allow a user to write content that will be displayed in another user's browser. A major concern consists then in <strong>preventing a malicious user from sending code that will be executed by another user's browser</strong> (XSS vulnerability). To prevent this possibility, CryptPad uses 3 main mechanisms to guarantee data security.</p>
+<p>The first element to respect when writing code for CryptPad is to use &quot;sanitizers&quot;, i.e. tools that clean up user content displayed to others. These sanitizers must remove anything that can be used to execute JavaScript, such as <code class="docutils literal notranslate"><span class="pre">onclick=&quot;...&quot;</span></code> HTML attributes or <code class="docutils literal notranslate"><span class="pre">&lt;script&gt;</span></code> tags.</p>
+<p>The second element is managed by the server and adds additional protection. The server sends <strong>Content-Security-Policy</strong> rules to users. These rules allow the browser to know what it can safely do and what is potentially dangerous and must be blocked. They are numerous but the main ones concern JavaScript:</p>
 <ul class="simple">
-<li><p>L’utilisation d’un VPN ou de TOR permet de “remplacer” son adresse IP
-réelle par une autre.</p></li>
-<li><p>Certaines extensions pour navigateur permettent de modifier son
-“user-agent” (qui contient par défaut la verion du navigateur et de
-système d’exploitation de l’utilisateur).</p></li>
+<li><p>We can't load JavaScript code from an external site (CDN). All JavaScript files loaded in CryptPad must be hosted on the domain represented by the <code class="docutils literal notranslate"><span class="pre">httpUnsafeOrigin</span></code> field in the configuration file.</p></li>
+<li><p>We can't execute &quot;inline&quot; JavaScript, i.e. using HTML attributes such as <code class="docutils literal notranslate"><span class="pre">&lt;span</span> <span class="pre">onclick=&quot;alert('test');&quot;&gt;Click&lt;/span&gt;</span></code>. The event handlers must be added from the JavaScript code directly: <code class="docutils literal notranslate"><span class="pre">span.addEventListener('click',</span> <span class="pre">onClick);</span></code>.</p></li>
+<li><p>We can't evaluate a string as code with the <code class="docutils literal notranslate"><span class="pre">eval()</span></code> function.</p></li>
 </ul>
-<p>Par ailleurs, le serveur CryptPad reçoit également de manière
-non-chiffrée la “clé publique de signature” générée par CryptPad pour
-identifier chaque utilisateur. Cette clé est la seule chose qui relie
-les données des utilisateurs à leur “compte CryptPad”, mais elle ne
-permet pas de faire le lien avec une personne physique.</p>
-<p><strong>Nous n’accepterons aucune contribution qui envoie au serveur, de
-manière directe ou non, des données non-chiffrée permettant d’identifier
-un utilisateur (nom d’utilisateur, image de profil, liste de contacts,
-etc.).</strong></p>
-<p>Lorsqu’une telle information semble nécessaire, l’expérience nous a
-montré qu’il est presque toujours possible de trouver des solutions
-alternatives permettant de répondre au même besoin tout en protégeant
-les utilisateurs. Le code source contient beaucoup d’outils adaptés à ce
-genre de situation et l’équipe de développement est prête à aider tout
-contributeur ayant des difficulté à respecter cette règle pour les
-modifications souhaitées.</p>
+<p>Finally, at the third level, if an &quot;XSS&quot; vulnerability exists and CSP rules can be bypassed, a last mechanism can be used to protect a CryptPad account from malicious users. CryptPad works with a &quot;sandbox&quot; system: the whole interface is created inside an iframe open on a different HTTP origin than the one of the browser tab (which contains all the data of your user account). In a development instance, this separation is done using 2 different ports: <code class="docutils literal notranslate"><span class="pre">http://localhost:3000</span></code> for the main tab and <code class="docutils literal notranslate"><span class="pre">http://localhost:3001</span></code> for the sandbox iframe. The entire collaborative interface being rendered in this iframe, if code was injected by another user, it could only be executed at this level. The &quot;origin&quot; difference between the sandbox and the tab itself would protect the rest of your account: <strong>the malicious user would only be able to recover the data from the document he already has access to</strong>.</p>
 </div>
+<div class="section" id="customization">
+<h2>Customization<a class="headerlink" href="#customization" title="Permalink to this headline">¶</a></h2>
+<p>When writing code for CryptPad, it's important to remember that there are many CryptPad instances and that their administrators sometimes want to customize UI elements.</p>
+<p>In order to make the upgrade process easier when such modifications are present, the elements that the development team believes can be customized without risk are stored in the <code class="docutils literal notranslate"><span class="pre">customize.dist</span></code> folder. Each file stored in this directory can be modified by creating a <code class="docutils literal notranslate"><span class="pre">customize</span></code> folder containing a copy of the original file. If a file exists in <code class="docutils literal notranslate"><span class="pre">customize</span></code>, it will be served to users instead of its namesake in <code class="docutils literal notranslate"><span class="pre">customize.dist</span></code>.</p>
+<p>Most images, logos and LESS style files are therefore placed in <code class="docutils literal notranslate"><span class="pre">customize.dist</span></code> so that they can be easily modified. Local changes made in <code class="docutils literal notranslate"><span class="pre">customize</span></code> are ignored by Git and can't be sent as contributions.</p>
 </div>
-<div class="section" id="content-security-policy-csp-et-securite">
-<h2>Content Security Policy (CSP) et sécurité<a class="headerlink" href="#content-security-policy-csp-et-securite" title="Permalink to this headline">¶</a></h2>
-<p>Le fonctionnement même de la plupart des applications dans CryptPad est
-basé sur la collaboration entre différents utilisateurs. Ces
-applications permettent alors à un utilisateur d’écrire du contenu qui
-sera affiché dans le navigateur d’un autre. Un élément majeur consiste
-alors à <strong>empêcher un utilisateur malveillant d’envoyer du code qui sera
-exécuté par le navigateur d’un autre utilisateur</strong> (vulnerabilité de
-type XSS). Pour empêcher cette possibilité, CryptPad utilise pour cela 3
-grands mécanismes pour garantir au maximum la sécurité des données.</p>
-<p>Le premier élément, à respecter lors de l’écriture de code pour
-CryptPad, est l’utilisation de “sanitizer”, c’est-à-dire d’outils qui
-nettoie le contenu entrés par des utilisateurs et affiché chez d’autres.
-Ce nettoyage doit enlever tout ce qui peut permettre d’exécuter du
-JavaScript chez d’autres utilisateurs, comme des attributs
-<code class="docutils literal notranslate"><span class="pre">onclick=&quot;...&quot;</span></code> ou des balises <code class="docutils literal notranslate"><span class="pre">&lt;script&gt;</span></code> directement.</p>
-<p>Le deuxième élément est géré par le serveur etpermet d’ajouter une
-protection supplémentaire. Celui-ci envoie des règles de
-<strong>Content-Security-Policy</strong> aux utilisateurs. Ces règles permettent au
-navigateur de savoir ce qu’il peut effectuer sans risque et ce qui est
-bloqué car potentiellement dangereux. Elles sont nombreuses mais les
-principales pour les contributeurs concernent le JavaScript :</p>
+<div class="section" id="code-rules">
+<h2>Code rules<a class="headerlink" href="#code-rules" title="Permalink to this headline">¶</a></h2>
+<p>Several important points concerning the code are to be respected as much as possible when contributing to CryptPad:</p>
 <ul class="simple">
-<li><p>Il est impossible de charger du code JavaScript depuis un site
-externe (CDN). Tous les fichiers JavaScript chargés dans CryptPad
-doivent être hébergés sur le domaine représenté par le champ
-<code class="docutils literal notranslate"><span class="pre">httpUnsafeOrigin</span></code> du fichier de configuration.</p></li>
-<li><p>Il est impossible d’exécuter du JavaScript “inline”, c’est-à-dire en
-utilisant des attributs HTML du type
-<code class="docutils literal notranslate"><span class="pre">&lt;span</span> <span class="pre">onclick=&quot;alert('test');&quot;&gt;Click&lt;/span&gt;</span></code>. Les gestionnaires
-d’évènements doivent être ajoutés depuis le code JavaScript
-directement : <code class="docutils literal notranslate"><span class="pre">span.addEventListener('click',</span> <span class="pre">onClick);</span></code>.</p></li>
-<li><p>Il est impossible d’évaluer une chaîne de caractère en tant que code
-avec la fonction JavaScript <code class="docutils literal notranslate"><span class="pre">eval()</span></code>.</p></li>
-</ul>
-<p>Enfin, au troisième niveau, si vraiment une faille “XSS” est présente et
-que les règles CSP arrivent à être contournées, un dernier mécanisme
-permet de protéger un compte CryptPad des utilisateurs malveillants.
-CryptPad fonctionne avec un système de “sandbox” : toute l’interface est
-ainsi créée dans une iframe ouverte sur une origine HTTP différente de
-celle de l’onglet du navigateur, qui contient l’ensemble des données de
-votre compte utilisateur. Dans une instance de développement, cette
-séparation est effectuée en utilisant 2 ports différents :
-<code class="docutils literal notranslate"><span class="pre">http://localhost:3000</span></code> pour l’onglet principal et
-<code class="docutils literal notranslate"><span class="pre">http://localhost:3001</span></code> pour l’iframe sandbox. L’intégralité de
-l’interface collaborative étant présente dans cette iframe, si du code
-venait à être injecté par un autre utilisateur, il ne pourrait être
-exécuté qu’à ce niveau. La différence d’origine entre la sandbox et le
-reste du code protègerait le reste de votre compte d’être récupéré par
-un utilisateur. <strong>L’utilisateur malveillant ne pourrait donc récupérer
-que les données présentes dans le document auquel il a déjà accès</strong>.</p>
-</div>
-<div class="section" id="personnalisation">
-<h2>Personnalisation<a class="headerlink" href="#personnalisation" title="Permalink to this headline">¶</a></h2>
-<p>Lors de l’écriture de code pour CryptPad, il est important de se
-souvenir qu’il existe de nombreuses instances de CryptPad et que les
-administrateurs de celles-ci souhaitent parfois personnaliser des
-éléments de l’interface ou le fonctionnement de certains outils.</p>
-<p>Afin de faciliter la mise à jour vers une version plus récente de
-CryptPad lorsque de telles modifications sont présentes, les éléments
-estimés personnalisables sans risque par l’équipe de développement sont
-stockés dans le dossier <code class="docutils literal notranslate"><span class="pre">customize.dist</span></code>. Chaque fichier stocké dans
-ce répertoire peut être modifié en créant un dossier <code class="docutils literal notranslate"><span class="pre">customize</span></code> et en
-copiant le fichier d’origine. Si un fichier existe dans <code class="docutils literal notranslate"><span class="pre">customize</span></code>,
-il sera alors fourni aux utilisateurs à la place de son homonyme dans
-<code class="docutils literal notranslate"><span class="pre">customize.dist</span></code>.</p>
-<p>La plupart des images, logos et des fichiers de style LESS sont donc
-placés dans <code class="docutils literal notranslate"><span class="pre">customize.dist</span></code> afin de pouvoir être facilement
-modifiables. Les modifications locales effectuées dans <code class="docutils literal notranslate"><span class="pre">customize</span></code>
-sont ignorées par Git et ne peuvent donc pas être envoyées comme
-contributions.</p>
-</div>
-<div class="section" id="regles-du-code">
-<h2>Règles du code<a class="headerlink" href="#regles-du-code" title="Permalink to this headline">¶</a></h2>
-<p>Plusieurs points important concernant le code sont à respecter au
-maximum lors de contributions à CryptPad :</p>
-<ul class="simple">
-<li><p>Tout le code JavaScript du client doit respecter les standards ES5
-(ECMAScript Edition 5).</p></li>
-<li><p>Le code de style est écrit au format LESS.</p>
-<ul>
-<li><p>Rappel : aucune étape de build/compilation n’est requise durant le
-développement.</p></li>
-</ul>
-</li>
-<li><p>CryptPad utilise un système de sandbox (détaillé dans la suite de ce
-guide) pour contenir toute l’interface des outils collaboratifs.
-Lorsque du code doit toucher au contenu du drive, aux équipes, aux
-contacts ou à tout autre élément ne devant pas être accessible aux
-autres utilisateurs, ce code doit se trouver en dehors de la sandbox.</p></li>
-<li><p>CryptPad utilise la technologie SharedWorker (quand le navigateur la
-supporte) pour partager un “thread” entre tous les onglets du
-navigateur ouvert sur la même instance CryptPad. Le code qui concerne
-toutes les applications de CryptPad peut être placé à ce niveau
-(détaillé dans la suite de ce guide) afin d’éviter de l’exécuter une
-fois dans chaque onglet.</p></li>
+<li><p>All JavaScript code in the client must respect ES5 (ECMAScript Edition 5) standards.</p></li>
+<li><p>The style code is written in LESS format.</p></li>
+<li><p>CryptPad uses a sandbox system containing the entire UI of the collaborative tools. When a script needs to update the content of the drive, teams, contacts or any other element that should not be accessible to other users, this code must be outside of the sandbox.</p></li>
+<li><p>CryptPad uses the SharedWorker technology (when the browser supports it) to share a &quot;thread&quot; between all the browser tabs open on the same CryptPad instance. Code that concerns all CryptPad applications can be placed at this level to avoid running it once in each tab.</p></li>
 </ul>
 </div>
-<div class="section" id="cles-de-traduction">
-<h2>Clés de traduction<a class="headerlink" href="#cles-de-traduction" title="Permalink to this headline">¶</a></h2>
-<p>CryptPad est traduit officiellement (par l’équipe de développement) en
-anglais (langue par défaut) et en français. De nombreuses autres langues
-sont disponibles, mais les traductions sont effectuées par la communauté
-via notre plateforme <a class="reference external" href="https://weblate.cryptpad.fr">Weblate</a>.</p>
-<p>Les clés de traductions pouvant être traduites sur Weblate doivent être
-ajoutées manuellement par l’équipe de développement. Pour faciliter
-l’intégration des contributions, nous demandons de <strong>ne pas ajouter
-directement de clé de traduction dans le fihcier de traduction</strong>. Les
-clés de traduction à ajouter peuvent être indiquées soit dans le message
-accompagnant la “pull request”, soit en commentaire dans le code
-directement. Lorsqu’une telle clé doit être ajoutée, il est préférable
-d’inclure (si possible) au moins soit une version anglaise, soit une
-version française du texte.</p>
+<div class="section" id="translation-keys">
+<h2>Translation keys<a class="headerlink" href="#translation-keys" title="Permalink to this headline">¶</a></h2>
+<p>CryptPad is officially translated (by the development team) into English (default language) and French. Many other languages are available, but translations are made by the community via our <a class="reference external" href="https://weblate.cryptpad.fr">Weblate platform</a>.</p>
+<p>Translation keys must be added manually by the development team to Weblate. To make it easier to merge contributions into the main branch, we ask contributor <strong>not to add their new translation keys directly into the translation files</strong>. The requested translation keys can be listed either in the &quot;pull request&quot; message or as a comment in the code directly. It's also preferable to add at least either an English or a French version of the text.</p>
 </div>
 </div>
 
@@ -627,7 +520,7 @@ version française du texte.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'3.20.1',
+            VERSION:'3.23.0',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

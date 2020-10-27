@@ -12,7 +12,7 @@ must have edit rights to the document. This enables each participant to
 
 A complete re-write of this application is planned for late 2020.
 
-.. image:: /images/poll-preview.png
+.. image:: /images/app-poll-preview.png
    :class: screenshot
 
 Toolbar

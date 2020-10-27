@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Kanban &mdash; Documentation CryptPad 3.20.1</title>
+  <title>Kanban &mdash; Documentation CryptPad 3.23.0</title>
   
 
   
@@ -54,7 +54,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/sidebar-logo.png" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">3.20.1</span>
+              <span class="release">3.23.0</span>
             </a>
             
 <div role="search">
@@ -71,7 +71,8 @@
         	<p class="caption-text">
 	        	<select id="language-selector-container">
 	        		<option value="en">English</option>
-	        		<option value="fr">Français</option>
+              <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
 	        	</select>
         	</p>
         </div>
@@ -177,6 +178,7 @@
 <li class="toctree-l4"><a class="reference internal" href="general.html#saving">Sauvegarde</a></li>
 <li class="toctree-l4"><a class="reference internal" href="general.html#make-a-copy">Faire une copie</a></li>
 <li class="toctree-l4"><a class="reference internal" href="general.html#document-history">Historique des documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="general.html#snapshots">Captures</a></li>
 <li class="toctree-l4"><a class="reference internal" href="general.html#properties">Propriétés</a></li>
 <li class="toctree-l4"><a class="reference internal" href="general.html#users-and-chat">Utilisateurs et Chat</a></li>
 </ul>
@@ -189,6 +191,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="sheets.html">Tableur</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="sheets.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#history">Historique</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sheets.html#import-export">Import/Export</a></li>
 </ul>
 </li>
@@ -238,8 +241,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../admin_guide/index.html">Guide administrateur (en cours)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../dev_guide/index.html">Guide Développeur (en cours)</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="../../dev_guide/index.html">Developer Guide</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../dev_guide/setup.html">Instance locale de développement</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../dev_guide/setup.html#prerequis">Prérequis</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../dev_guide/setup.html#installation">Installation</a></li>
@@ -258,15 +260,12 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../dev_guide/basics.html">Points fondamentaux de CryptPad</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/basics.html#zero-knowledge">Zero-knowledge</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../dev_guide/basics.html#donnees-visibles-par-le-serveur">Données visibles par le serveur</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/basics.html#content-security-policy-csp-et-securite">Content Security Policy (CSP) et sécurité</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/basics.html#personnalisation">Personnalisation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/basics.html#regles-du-code">Règles du code</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/basics.html#cles-de-traduction">Clés de traduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../dev_guide/basics.html">Key elements in CryptPad</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/basics.html#zero-knowledge">Zero-knowledge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/basics.html#content-security-policy-csp-and-security">Content Security Policy (CSP) and security</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/basics.html#customization">Customization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/basics.html#code-rules">Code rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/basics.html#translation-keys">Translation keys</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../dev_guide/code.html">Code</a><ul>
@@ -339,6 +338,7 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin_guide/index.html">Guide Administrateur (en cours)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../how_to_contribute.html">Comment contribuer</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#spread-the-word">Diffuser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#report-bugs">Signaler des bugs</a></li>
@@ -432,7 +432,7 @@
   <div class="section" id="kanban">
 <h1>Kanban<a class="headerlink" href="#kanban" title="Lien permanent vers ce titre">¶</a></h1>
 <p>L'application Kanban de CryptPad est basée sur <a class="reference external" href="https://www.riccardotartaglia.it/jkanban/">JKanban</a>.</p>
-<img alt="../../_images/kanban-preview.png" class="screenshot" src="../../_images/kanban-preview.png" />
+<img alt="../../_images/app-kanban-preview.png" class="screenshot" src="../../_images/app-kanban-preview.png" />
 <div class="section" id="organisation">
 <h2>Organisation<a class="headerlink" href="#organisation" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Réorganiser les cartes/colonnes :</p>
@@ -571,7 +571,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'3.20.1',
+            VERSION:'3.23.0',
             LANGUAGE:'fr',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

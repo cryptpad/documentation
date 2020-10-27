@@ -13,5 +13,3 @@ Developer Guide
     basics.rst
     code.rst
 
-.. note::
-    This section is currently in progress.

@@ -7,7 +7,7 @@ Whiteboard
 The Whiteboard application in CryptPad is based on
 `Fabric.js <http://fabricjs.com/>`__.
 
-.. image:: /images/whiteboard-preview.png
+.. image:: /images/app-whiteboard-preview.png
    :class: screenshot
 
 Toolbar

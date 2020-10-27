@@ -119,7 +119,7 @@ To create a team:
 #. User menu (avatar at the top-right) > |users| **Teams**. 
 #. |plus-circle| **New**.
 
-To open an existing team: 
+To open an existing team:
 
 #. User menu (avatar at the top-right) > |users| **Teams**.
 #. |list| **Teams** > **Open** button on the desired team.
@@ -129,6 +129,7 @@ Team Drive
 
 The team storage space is similar to the :ref:`CryptDrive <drive>` but shared between
 members of the team.
+
 
 Team members
 ~~~~~~~~~~~~
@@ -211,5 +212,8 @@ Administration tab
 
 -  **Team avatar**: Import/modify an avatar for the team.
 
+-  **Download team drive**: Save the content of all documents in the CryptDrive. When possible, this is done in a format that is readable by other software. Some applications produce files that are only readable by CryptPad.
+
 -  **Team deletion**: Permanently delete the team and all of its
    documents.
+

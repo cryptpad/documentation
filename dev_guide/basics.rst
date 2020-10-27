@@ -1,164 +1,60 @@
-Points fondamentaux de CryptPad
+Key elements in CryptPad
 ===============================
 
 Zero-knowledge
 --------------
 
-**Aucune donnée non-essentielle concernant l’utilisateur ou ses
-documents ne doit atteindre le serveur de manière non-chiffrée.** C’est
-l’élément le plus important pour CryptPad !
+**All user data must be encrypted before sending it to the server.**
 
 Données visibles par le serveur
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+What our server can see
+~~~~~~~~~~~~~~~~~~~~~~~
 
-Certaines données sont malheureusement impossible à ne pas recevoir sur
-le serveur à cause du fonctionnement même d’Internet via le protocole
-HTTP. Il s’agit notamment de l’adresse IP ainsi que d’éléments
-concernant le navigateur et le système d’exploitation des utilisateurs.
-Les utilisateurs peuvent toutefois se protéger se leur côté :
+Some data is always sent to the server because that's the way HTTP protocol work. It includes the user's IP address and their "user agent" (browser and operating system), even though it's possible to hide these elements (with a VPN and browser extensions).
 
--  L’utilisation d’un VPN ou de TOR permet de “remplacer” son adresse IP
-   réelle par une autre.
--  Certaines extensions pour navigateur permettent de modifier son
-   “user-agent” (qui contient par défaut la verion du navigateur et de
-   système d’exploitation de l’utilisateur).
+On its side, CryptPad also sends some unencrypted data in order to recognize each user: the "Public signing key", generated automatically by CryptPad for each user account. It's the only link between user data and their CryptPad account, but it's a short random string that doesn't contain any personal data and cant' be linked to any physical person.
 
-Par ailleurs, le serveur CryptPad reçoit également de manière
-non-chiffrée la “clé publique de signature” générée par CryptPad pour
-identifier chaque utilisateur. Cette clé est la seule chose qui relie
-les données des utilisateurs à leur “compte CryptPad”, mais elle ne
-permet pas de faire le lien avec une personne physique.
+**We won't accept any contribution that sends unencrypted data that can identify a user (username, avatar, contact list, etc.) to the server, directly or undirectly.**
 
-**Nous n’accepterons aucune contribution qui envoie au serveur, de
-manière directe ou non, des données non-chiffrée permettant d’identifier
-un utilisateur (nom d’utilisateur, image de profil, liste de contacts,
-etc.).**
+Experience showed us that when we think we need such data, it's almost always possible to find a solution that can fill the same requirements but protect user data. Our codebase already contains lots of tools that can be used to solve these cases and our development team is willing to help any contributor that might encounter such difficulties.
 
-Lorsqu’une telle information semble nécessaire, l’expérience nous a
-montré qu’il est presque toujours possible de trouver des solutions
-alternatives permettant de répondre au même besoin tout en protégeant
-les utilisateurs. Le code source contient beaucoup d’outils adaptés à ce
-genre de situation et l’équipe de développement est prête à aider tout
-contributeur ayant des difficulté à respecter cette règle pour les
-modifications souhaitées.
+Content Security Policy (CSP) and security
+------------------------------------------
 
-Content Security Policy (CSP) et sécurité
------------------------------------------
+The very functioning of most CryptPad applications is based on collaboration between different users. These applications allow a user to write content that will be displayed in another user's browser. A major concern consists then in **preventing a malicious user from sending code that will be executed by another user's browser** (XSS vulnerability). To prevent this possibility, CryptPad uses 3 main mechanisms to guarantee data security.
 
-Le fonctionnement même de la plupart des applications dans CryptPad est
-basé sur la collaboration entre différents utilisateurs. Ces
-applications permettent alors à un utilisateur d’écrire du contenu qui
-sera affiché dans le navigateur d’un autre. Un élément majeur consiste
-alors à **empêcher un utilisateur malveillant d’envoyer du code qui sera
-exécuté par le navigateur d’un autre utilisateur** (vulnerabilité de
-type XSS). Pour empêcher cette possibilité, CryptPad utilise pour cela 3
-grands mécanismes pour garantir au maximum la sécurité des données.
+The first element to respect when writing code for CryptPad is to use "sanitizers", i.e. tools that clean up user content displayed to others. These sanitizers must remove anything that can be used to execute JavaScript, such as ``onclick="..."`` HTML attributes or ``<script>`` tags.
 
-Le premier élément, à respecter lors de l’écriture de code pour
-CryptPad, est l’utilisation de “sanitizer”, c’est-à-dire d’outils qui
-nettoie le contenu entrés par des utilisateurs et affiché chez d’autres.
-Ce nettoyage doit enlever tout ce qui peut permettre d’exécuter du
-JavaScript chez d’autres utilisateurs, comme des attributs
-``onclick="..."`` ou des balises ``<script>`` directement.
+The second element is managed by the server and adds additional protection. The server sends **Content-Security-Policy** rules to users. These rules allow the browser to know what it can safely do and what is potentially dangerous and must be blocked. They are numerous but the main ones concern JavaScript:
 
-Le deuxième élément est géré par le serveur etpermet d’ajouter une
-protection supplémentaire. Celui-ci envoie des règles de
-**Content-Security-Policy** aux utilisateurs. Ces règles permettent au
-navigateur de savoir ce qu’il peut effectuer sans risque et ce qui est
-bloqué car potentiellement dangereux. Elles sont nombreuses mais les
-principales pour les contributeurs concernent le JavaScript :
+-  We can't load JavaScript code from an external site (CDN). All JavaScript files loaded in CryptPad must be hosted on the domain represented by the ``httpUnsafeOrigin`` field in the configuration file.
+-  We can't execute "inline" JavaScript, i.e. using HTML attributes such as ``<span onclick="alert('test');">Click</span>``. The event handlers must be added from the JavaScript code directly: ``span.addEventListener('click', onClick);``.
+-  We can't evaluate a string as code with the ``eval()`` function.
 
--  Il est impossible de charger du code JavaScript depuis un site
-   externe (CDN). Tous les fichiers JavaScript chargés dans CryptPad
-   doivent être hébergés sur le domaine représenté par le champ
-   ``httpUnsafeOrigin`` du fichier de configuration.
--  Il est impossible d’exécuter du JavaScript “inline”, c’est-à-dire en
-   utilisant des attributs HTML du type
-   ``<span onclick="alert('test');">Click</span>``. Les gestionnaires
-   d’évènements doivent être ajoutés depuis le code JavaScript
-   directement : ``span.addEventListener('click', onClick);``.
--  Il est impossible d’évaluer une chaîne de caractère en tant que code
-   avec la fonction JavaScript ``eval()``.
+Finally, at the third level, if an "XSS" vulnerability exists and CSP rules can be bypassed, a last mechanism can be used to protect a CryptPad account from malicious users. CryptPad works with a "sandbox" system: the whole interface is created inside an iframe open on a different HTTP origin than the one of the browser tab (which contains all the data of your user account). In a development instance, this separation is done using 2 different ports: ``http://localhost:3000`` for the main tab and ``http://localhost:3001`` for the sandbox iframe. The entire collaborative interface being rendered in this iframe, if code was injected by another user, it could only be executed at this level. The "origin" difference between the sandbox and the tab itself would protect the rest of your account: **the malicious user would only be able to recover the data from the document he already has access to**.
 
-Enfin, au troisième niveau, si vraiment une faille “XSS” est présente et
-que les règles CSP arrivent à être contournées, un dernier mécanisme
-permet de protéger un compte CryptPad des utilisateurs malveillants.
-CryptPad fonctionne avec un système de “sandbox” : toute l’interface est
-ainsi créée dans une iframe ouverte sur une origine HTTP différente de
-celle de l’onglet du navigateur, qui contient l’ensemble des données de
-votre compte utilisateur. Dans une instance de développement, cette
-séparation est effectuée en utilisant 2 ports différents :
-``http://localhost:3000`` pour l’onglet principal et
-``http://localhost:3001`` pour l’iframe sandbox. L’intégralité de
-l’interface collaborative étant présente dans cette iframe, si du code
-venait à être injecté par un autre utilisateur, il ne pourrait être
-exécuté qu’à ce niveau. La différence d’origine entre la sandbox et le
-reste du code protègerait le reste de votre compte d’être récupéré par
-un utilisateur. **L’utilisateur malveillant ne pourrait donc récupérer
-que les données présentes dans le document auquel il a déjà accès**.
+Customization
+-------------
 
-Personnalisation
+When writing code for CryptPad, it's important to remember that there are many CryptPad instances and that their administrators sometimes want to customize UI elements.
+
+In order to make the upgrade process easier when such modifications are present, the elements that the development team believes can be customized without risk are stored in the ``customize.dist`` folder. Each file stored in this directory can be modified by creating a ``customize`` folder containing a copy of the original file. If a file exists in ``customize``, it will be served to users instead of its namesake in ``customize.dist``.
+
+Most images, logos and LESS style files are therefore placed in ``customize.dist`` so that they can be easily modified. Local changes made in ``customize`` are ignored by Git and can't be sent as contributions.
+
+Code rules
+----------
+
+Several important points concerning the code are to be respected as much as possible when contributing to CryptPad:
+
+-  All JavaScript code in the client must respect ES5 (ECMAScript Edition 5) standards.
+-  The style code is written in LESS format.
+-  CryptPad uses a sandbox system containing the entire UI of the collaborative tools. When a script needs to update the content of the drive, teams, contacts or any other element that should not be accessible to other users, this code must be outside of the sandbox.
+-  CryptPad uses the SharedWorker technology (when the browser supports it) to share a "thread" between all the browser tabs open on the same CryptPad instance. Code that concerns all CryptPad applications can be placed at this level to avoid running it once in each tab.
+
+Translation keys
 ----------------
 
-Lors de l’écriture de code pour CryptPad, il est important de se
-souvenir qu’il existe de nombreuses instances de CryptPad et que les
-administrateurs de celles-ci souhaitent parfois personnaliser des
-éléments de l’interface ou le fonctionnement de certains outils.
+CryptPad is officially translated (by the development team) into English (default language) and French. Many other languages are available, but translations are made by the community via our `Weblate platform <https://weblate.cryptpad.fr>`__.
 
-Afin de faciliter la mise à jour vers une version plus récente de
-CryptPad lorsque de telles modifications sont présentes, les éléments
-estimés personnalisables sans risque par l’équipe de développement sont
-stockés dans le dossier ``customize.dist``. Chaque fichier stocké dans
-ce répertoire peut être modifié en créant un dossier ``customize`` et en
-copiant le fichier d’origine. Si un fichier existe dans ``customize``,
-il sera alors fourni aux utilisateurs à la place de son homonyme dans
-``customize.dist``.
-
-La plupart des images, logos et des fichiers de style LESS sont donc
-placés dans ``customize.dist`` afin de pouvoir être facilement
-modifiables. Les modifications locales effectuées dans ``customize``
-sont ignorées par Git et ne peuvent donc pas être envoyées comme
-contributions.
-
-Règles du code
---------------
-
-Plusieurs points important concernant le code sont à respecter au
-maximum lors de contributions à CryptPad :
-
--  Tout le code JavaScript du client doit respecter les standards ES5
-   (ECMAScript Edition 5).
--  Le code de style est écrit au format LESS.
-
-   -  Rappel : aucune étape de build/compilation n’est requise durant le
-      développement.
-
--  CryptPad utilise un système de sandbox (détaillé dans la suite de ce
-   guide) pour contenir toute l’interface des outils collaboratifs.
-   Lorsque du code doit toucher au contenu du drive, aux équipes, aux
-   contacts ou à tout autre élément ne devant pas être accessible aux
-   autres utilisateurs, ce code doit se trouver en dehors de la sandbox.
--  CryptPad utilise la technologie SharedWorker (quand le navigateur la
-   supporte) pour partager un “thread” entre tous les onglets du
-   navigateur ouvert sur la même instance CryptPad. Le code qui concerne
-   toutes les applications de CryptPad peut être placé à ce niveau
-   (détaillé dans la suite de ce guide) afin d’éviter de l’exécuter une
-   fois dans chaque onglet.
-
-Clés de traduction
-------------------
-
-CryptPad est traduit officiellement (par l’équipe de développement) en
-anglais (langue par défaut) et en français. De nombreuses autres langues
-sont disponibles, mais les traductions sont effectuées par la communauté
-via notre plateforme `Weblate <https://weblate.cryptpad.fr>`__.
-
-Les clés de traductions pouvant être traduites sur Weblate doivent être
-ajoutées manuellement par l’équipe de développement. Pour faciliter
-l’intégration des contributions, nous demandons de **ne pas ajouter
-directement de clé de traduction dans le fihcier de traduction**. Les
-clés de traduction à ajouter peuvent être indiquées soit dans le message
-accompagnant la “pull request”, soit en commentaire dans le code
-directement. Lorsqu’une telle clé doit être ajoutée, il est préférable
-d’inclure (si possible) au moins soit une version anglaise, soit une
-version française du texte.
+Translation keys must be added manually by the development team to Weblate. To make it easier to merge contributions into the main branch, we ask contributor **not to add their new translation keys directly into the translation files**. The requested translation keys can be listed either in the "pull request" message or as a comment in the code directly. It's also preferable to add at least either an English or a French version of the text.
