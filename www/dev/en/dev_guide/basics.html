@@ -261,7 +261,10 @@
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Key elements in CryptPad</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#zero-knowledge">Zero-knowledge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zero-knowledge">Zero-knowledge</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#what-our-server-can-see">What our server can see</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#content-security-policy-csp-and-security">Content Security Policy (CSP) and security</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#customization">Customization</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#code-rules">Code rules</a></li>
@@ -432,13 +435,13 @@
 <div class="section" id="zero-knowledge">
 <h2>Zero-knowledge<a class="headerlink" href="#zero-knowledge" title="Permalink to this headline">¶</a></h2>
 <p><strong>All user data must be encrypted before sending it to the server.</strong></p>
-<p>Données visibles par le serveur
-What our server can see
-~~~~~~~~~~~~~~~~~~~~~~~</p>
+<div class="section" id="what-our-server-can-see">
+<h3>What our server can see<a class="headerlink" href="#what-our-server-can-see" title="Permalink to this headline">¶</a></h3>
 <p>Some data is always sent to the server because that's the way HTTP protocol work. It includes the user's IP address and their &quot;user agent&quot; (browser and operating system), even though it's possible to hide these elements (with a VPN and browser extensions).</p>
 <p>On its side, CryptPad also sends some unencrypted data in order to recognize each user: the &quot;Public signing key&quot;, generated automatically by CryptPad for each user account. It's the only link between user data and their CryptPad account, but it's a short random string that doesn't contain any personal data and cant' be linked to any physical person.</p>
 <p><strong>We won't accept any contribution that sends unencrypted data that can identify a user (username, avatar, contact list, etc.) to the server, directly or undirectly.</strong></p>
 <p>Experience showed us that when we think we need such data, it's almost always possible to find a solution that can fill the same requirements but protect user data. Our codebase already contains lots of tools that can be used to solve these cases and our development team is willing to help any contributor that might encounter such difficulties.</p>
+</div>
 </div>
 <div class="section" id="content-security-policy-csp-and-security">
 <h2>Content Security Policy (CSP) and security<a class="headerlink" href="#content-security-policy-csp-and-security" title="Permalink to this headline">¶</a></h2>

@@ -6,7 +6,6 @@ Zero-knowledge
 
 **All user data must be encrypted before sending it to the server.**
 
-Données visibles par le serveur
 What our server can see
 ~~~~~~~~~~~~~~~~~~~~~~~
 
