@@ -1,102 +1,58 @@
 Outer
 =====
 
-Le niveau “outer” représente le point de départ du code de CryptPad.
-Outre le fichier HTML qui se contente d’exécuter le JavaScript
-principal, ce niveau est entièrement constitué de code JavaScript. Il
-est séparé en deux fichiers principaux, qui sont connectés à l’iframe
-inner pour l’un et au worker pour l’autre. Les APIs utilisées pour
-communiquer sont les mêmes dans les deux cas.
+The "outer" level represents the starting point of the CryptPad code. Except for the initial HTML file loaded by the browser, this level is entirely made of JavaScript code. It is split into two main files, which are connected to the iframe inner for one and to the worker for the other. The APIs used to communicate are the same in both cases.
 
-Communication entre les niveaux
--------------------------------
+Communication between levels
+----------------------------
 
-La communication se fait en utilisant une mini-librairie développée dans
-CryptPad implémentée dans le fichier
-``www/common/outer/worker-channel.js``. Cette librairie permet a deux
-systèmes de s’envoyer des messages de types “requête” et “évènement”.
-Une requête (“query”) consiste à envoyer des données et à attendre une
-répondre, alors qu’un évènement (“event”) se contente d’envoyer les
-données.
+The communication is done using a mini-library developed in CryptPad in the ``wwww/common/outer/worker-channel.js`` file. This library allows two systems to send "query" and "event" messages to each other. A "query" consists of sending data and waiting for a response, while an "event" is just sending data.
 
-Cette librairie gère automatiquement les callbacks pour les réponses
-reçues et permet à chaque partie d’indiquer quand elle est prête à
-communiquer. La façon dont les messages sont envoyées est gérée en
-dehors de la librairie grâce à une fonction “sendMessage” qui lui est
-fournie en argument. Elle déclenche un évènement créé avec
-“Util.mkEvent” et fourni lui aussi en argument lorsqu’un évènement ou
-une requête est reçue. S’il s’agit d’une requête, un callback est inclus
-dans l’évènement avec les données.
+This library automatically manages callbacks for received answers and allows each party to indicate when it is ready to communicate. The way messages are sent is managed outside the library thanks to a "sendMessage" function that is provided as an argument. If it is a query, a callback is included with the data.
 
-Communication avec inner - sframe-common-outer
-----------------------------------------------
+Communication with inner
+------------------------
 
 ``www/common/sframe-common-outer.js``
 
-Il s’agit là du premier fichier JavaScript principal chargé par toutes
-les applications CryptPad. Il est chargé juste après la création de
-l’iframe inner et va d’abord procéder à l’installation d’un canal de
-communication entre ces deux niveaux. Une fois ce canal créé, il va
-charger le second fichier JavaScript principal qui va gérer le côté
-“worker”. Ces également le seul niveau qui a directement accès aux clés
-contenues dans l’URL du document.
+This is one of the first main JavaScript file loaded by all CryptPad applications. It's loaded just after the creation of the inner iframe and will first proceed to the installation of a communication channel between these two levels. Once this channel is created, it will load the second main JavaScript file which will manage the "worker" side. This is also the only file that has direct access to the keys contained in the URL of the document.
 
-Deux étapes vont alors avoir lieu en parallèle :
+Two steps will then take place in parallel:
 
--  le chargement du compte utilisateur dans le worker
--  le chargement de l’interface de l’application dans inner
+-  loading the user account in the worker
+-  loading the application interface in the inner iframe
 
-Une fois le compte utilisateur chargé, sframe-common-outer va
-initialiser tous ses “handlers” qui vont gérer les évènements et
-requêtes reçues de la part de “inner”. Ces “handlers” sont nombreux et
-repérables dans le code avec ``sframeChan.on('...', handler);``. Ils
-permettent notamment de :
+Once the user account is loaded, sframe-common-outer will initialize all its "handlers" which will manage the events and queries received from "inner". These "handlers" are many and can be found in the code with ``sframeChan.on('...', handler);``. They are notably used to:
 
--  Effectuer des actions propres au niveau “outer”
+-  Execute functions related to the "outer" level
 
-   -  Changer le titre de l’onglet ou son icône
-   -  Modifier le localStorage ou modifier le sessionStorage
+  -  Change the title of the tab or its icon
+  -  Modify the localStorage or modify theStorage session
 
--  Effectuer des actions liées aux clés du document
+-  Execute functions related to the keys of the document
 
-   -  Changement du mot de passe du document (nécessite de déchiffrer et
-      rechiffrer entièrement le contenu)
-   -  Enregistrer ou modifier les informations du pad dans le drive
-      (l’URL du pad est stockée dans le drive)
-   -  Créer une copie ou créer un modèle du document (nécessite l’accès
-      au contenu déchiffré pour le rechiffrer différemment)
+  -  Changing the document password (requires decrypting and re-encrypting the entire content)
+  -  Save or modify the pad data in the drive (the URL of the pad is stored in the drive)
+  -  Make a copy or make a template of the document (requires access to the decrypted content to re-encrypt it differently)
 
--  Transférer des commandes au worker
+-  Transfer commands to the worker
 
-   -  Upload de fichier
-   -  Accès à différentes données
-   -  Rejoindre un pad, pouvoir recevoir et envoyer des patchs
-   -  Actions de gestion d’un pad (renommer, supprimer, liste d’accès,
-      propriétaires, etc.)
+  -  File Upload
+  -  Access to more data
+  -  Join a pad and be able to receive and send patches
+  -  Pad management actions (rename, delete, access list, owners, etc.)
 
--  Transférer des commandes aux modules du worker
+-  Transfer commands to the worker's modules
 
-   -  Ces commandes ne font généralement que transiter ici, elles ne
-      sont pas lues et sont directement envoyées au worker
+  -  These commands usually only pass through here, they are not read and are sent directly to the worker.
 
-Une fois toutes ces fonctions enregistrées, sframe-common-outer va se
-déclarer “prêt” et quand “inner” le sera aussi, ce script lancera le
-processus pour démarrer l’application utilisée (si nécessaire) : créer
-un nouveau document ou rejoindre un document existant.
+Once all these "handlers" have been registered, sframe-common-outer will declare itself "ready" and when "inner" will be too, this script will start the realtime engine (if necessary): create a new document or join an existing one.
 
-Communication avec le worker - cryptpad-common
-----------------------------------------------
+Communication with worker
+-------------------------
 
 ``www/common/cryptpad-common.js``
 
-Ce fichier a pour rôle principal de créer un canal de communication avec
-le worker et de l’initialiser pour le compte utilisateur. Les clés du
-compte auront au préalable été extraites du localStorage. Une fois le
-compte utilisateur et tous les modules chargés, le worker envoie un
-signal à cryptpad-common qui va lui-même permettre à sframe-common-outer
-de continuer.
+The main role of this file is to create a communication channel with the worker and to initialize it for the user account. The keys of the account will have been extracted from the localStorage beforehand. Once the user account and all the modules are loaded, the worker sends a signal to cryptpad-common which will itself allow the sframe-common-outer script to continue.
 
-En dehors de ce processus de chargement du compte utilisateur,
-cryptpad-common garde un contact privilégié avec le worker, ce qui lui
-permet d’effectuer certaines tâches propres à l’onglet courant mais qui
-nécessitent d’accéder aux données du worker.
+Apart from this user account loading process, cryptpad-common keeps a privileged contact with the worker, which allows it to perform some tasks specific to the current tab but which require access to the worker's data.

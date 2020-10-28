@@ -1,71 +1,26 @@
-Utiliser les clés de traduction
-===============================
+Translation keys
+================
 
-L’interface de CryptPad est officiellement disponible en anglais et en
-français. Elle est également traduite (intégralement ou partiellement)
-par la communauté en de nombreuses autres langues, notamment en
-allemand. Cette gestion des différentes langues fonctionne avec un
-système de clés de traduction à utiliser dans le code. A l’exception de
-quelques rares cas, aucun texte affiché à l’écran n’est écrit de manière
-brut dans le code. Une clé est utilisée à la place et la texte associé à
-cette clé est récupérée dans un fichier séparé. Bien qu’utilisable de
-manière simple, ce système possède une structure très complexe.
+CryptPad's interface is officially available in English and French. It is also translated (fully or partially) by the community into many other languages, especially in German. This localization system works with a set of translation keys used in the code. Almost all the text displayed on the screen comes from suck keys and nothing in written in the raw code. The text associated to each key is stored in a single separate file. Although it's easy to use, this system has a complex structure.
 
-Utilisation
------------
+Usage
+-----
 
-Afin d’utiliser les clés de traduction dans une partie du code, il
-suffit de charger le module “Messages” avec RequireJS. Ce module est
-disponible au chemin ``/customize/messages.js`` et fonctionne
-automatiquement avec la langue choisie par l’utilisateur.
+In order to use the translation keys in the code, just load the "Messages" module with RequireJS. This module is available at ``/customize/messages.js`` and automatically uses the language chosen by the user.
 
-Une fois le module chargé, “Messages” représente un objet contenant
-toutes les clés de traduction et peut donc être utilisé dans le code
-avec “Messages.cleDeTraduction” qui fera référence au texte de la clé
-“cleDeTraduction” dans la langue de l’utilisateur.
+Once the module is loaded, "Messages" represents an object containing all the translation keys and can therefore be used in the code with "Messages.translationKey" which will refer to the text of the "translationKey" in the user's language.
 
 Structure
 ---------
 
-Un des points fondamentaux mentionné au début de ce guide concernait la
-“personnalisation”. Chaque instance de CryptPad peut être personnalisée,
-notamment au niveau des images, logos, styles et pages statiques. Les
-clés de traduction sont également des éléments personnalisables, ce qui
-rend la structure du système assez complexe.
+One of the key elements mentioned at the beginning of this guide was about "customization". Each instance of CryptPad can be customized, in particular its images, logos, styles and static pages. Translation keys are also customizable elements, which makes the structure of the system quite complex.
 
-Les clés sont d’abord créées et traduites dans des fichiers JSON obtenus
-avec `Weblate <https://weblate.cryptpad.fr>`__. Ces fichiers sont
-disponibles dans le dossier ``www/common/translations/``. On y trouve
-par exemple ``www/common/translations/messages.json`` (version anglaise
-de base) ou ``www/common/translations/messages.fr.json`` (version
-française). Ces fichiers sont liés à Weblate et représentent la base des
-traductions. Ils ne peuvent pas être personnalisés directement car il
-serait alors très compliqué pour les administrateurs d’instance de les
-maintenir à jour à chaque nouvelle version de CryptPad (la moindre clé
-manquante dans les traductions peut dans certains cas rendre des
-fonctionnalités inutilisable).
+The keys are first created and translated in JSON files obtained from `Weblate <https://weblate.cryptpad.fr>`__. These files are available in the ``wwww/common/translations/`` directory. There you can find for example ``wwww/common/translations/messages.json`` (default English version) or ``wwww/common/translations/messages.fr.json`` (French version). These files can't be customized directly because it would create lots of merge conflicts for the instance administrators when upgrading CryptPad to a newer version (one key missing in the default translation file may in some cases make some features unusable).
 
-Afin de pouvoir ajouter une étape de personnalisation, ces fichiers sont
-chargés dans des **modules de langues** présents dans le dossier
-``customize.dist/translations/`` (dossier contenant tous les fichiers
-pouvant être personnalisés). On y retrouve ainsi
-``customize.dist/translations/messsages.js`` et
-``customize.dist/translations/messages.fr.js``. Ces modules de langue
-charge leur fichier JSON correspondant et permettent de l’étendre ou de
-le modifier. Pour personnaliser un fichier présent dans
-``customize.dist``, il suffit d’en faire une copie dans un dossier
-``customize``. Dans notre cas, les administrateurs souhaitant
-personnaliser les traductions peuvent donc copier ``messages.xx.js``
-dans ``customize/translations/messages.js``. Ils ont alors accès à
-l’objet “Messages” correspond à la langue choisie et peuvent directement
-ajouter, supprimer ou modifier des clés existantes avec
-``Messages.key = "Text";``.
 
-Enfin, le fichier ``customize.dist/messages.js`` va récupérer le
-**module de langue** correspondant à la langue de l’utilisateur (anglais
-par défaut) et definir un module RequireJS avec cette langue. Si une
-chaîne n’est pas traduite dans la langue choisie, la version anglais
-sera utilisée à la place pour cette chaîne.
+In order to allow this customization step, the translation files are loaded in **language modules** present in the ``customize.dist/translations/`` directory. The English and French versions exist there as ``customize.dist/translations/messages.js`` and ``customize.dist/translations/messages.fr.js``. These language modules load their corresponding JSON file and allow administrators to extend or modify them. To customize a file in ``customize.dist``, just copy it to a ``customize`` folder. In our case, administrators who want to customize translations can copy ``messages.xx.js`` to ``customize/translations/messages.xx.js``. They then have access to the "Messages" object corresponding to the chosen language and can directly add, delete or modify existing keys with ``Messages.key = "Text";``.
+
+Finally, the file ``customize.dist/messages.js`` will retrieve the **language module** corresponding to the user's language (English by default). If a string is not translated into the chosen language, the English version will be used instead for this string.
 
 .. image:: /images/dev/translations.png
    :class: screenshot

@@ -299,16 +299,16 @@
 <li class="toctree-l5"><a class="reference internal" href="architecture.html#inner">Inner</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="chainpad.html">ChainPad et Listmap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chainpad.html">ChainPad and Listmap</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad">ChainPad</a></li>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#checkpoints">Checkpoints</a></li>
-<li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad-avec-des-objets">ChainPad avec des objets</a></li>
+<li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad-with-javascript-objects">ChainPad with JavaScript objects</a></li>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad-netflux">Chainpad-netflux</a></li>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#listmap">Listmap</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="translations.html">Utiliser les clés de traduction</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="translations.html#utilisation">Utilisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="translations.html">Translation keys</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="translations.html#usage">Usage</a></li>
 <li class="toctree-l5"><a class="reference internal" href="translations.html#structure">Structure</a></li>
 </ul>
 </li>
@@ -319,20 +319,20 @@
 </ul>
 </li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Worker</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#async-store-js-et-modules">async-store.js et modules</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#commandes-de-lobjet-store">Commandes de l’objet “Store”</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#async-store-js">async-store.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#store-commands">“Store” commands</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="outer.html">Outer</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-entre-les-niveaux">Communication entre les niveaux</a></li>
-<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-avec-inner-sframe-common-outer">Communication avec inner - sframe-common-outer</a></li>
-<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-avec-le-worker-cryptpad-common">Communication avec le worker - cryptpad-common</a></li>
+<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-between-levels">Communication between levels</a></li>
+<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-with-inner">Communication with inner</a></li>
+<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-with-worker">Communication with worker</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="inner.html">Inner</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="inner.html#fonctionnement">Fonctionnement</a></li>
+<li class="toctree-l5"><a class="reference internal" href="inner.html#workflow">Workflow</a></li>
 <li class="toctree-l5"><a class="reference internal" href="inner.html#metadata-manager">metadata-manager</a></li>
-<li class="toctree-l5"><a class="reference internal" href="inner.html#modules-dinterface">Modules d’interface</a></li>
+<li class="toctree-l5"><a class="reference internal" href="inner.html#ui-modules">UI modules</a></li>
 </ul>
 </li>
 </ul>
@@ -436,83 +436,81 @@
             
   <div class="section" id="worker">
 <h1>Worker<a class="headerlink" href="#worker" title="Lien permanent vers ce titre">¶</a></h1>
-<div class="section" id="async-store-js-et-modules">
-<h2>async-store.js et modules<a class="headerlink" href="#async-store-js-et-modules" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Async-store contient l’ensemble des fonctions représentant les commandes
-envoyées par “outer”. Il a pour rôle de gérer la connexion au compte
-utilisateur, charger les sous-structures liées à ce compte (dossiers
-partagés, profil) et charger l’ensemble des modules qui étendent son
-champ d’utilisation. Il crée deux objets principaux, nommés <code class="docutils literal notranslate"><span class="pre">store</span></code> et
-<code class="docutils literal notranslate"><span class="pre">Store</span></code>. Le premier représente la mémoire du worker et stocke tout ce
-qui a été chargé par celui-ci, le second représente ses “muscles” et
-contient toutes les fonctions pouvant être exécutées par les commandes
-de “outer”. Beaucoup de modules sont chargés pour exécuter des tâches
-spécifiques et sont accessibles via <code class="docutils literal notranslate"><span class="pre">store</span></code>.</p>
+<div class="section" id="async-store-js">
+<h2>async-store.js<a class="headerlink" href="#async-store-js" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Async-store contains all the functions representing the commands sent by &quot;outer&quot;. Its role is to manage the connection to the user account, load the sub-structures linked to this account (shared folders, profile, teams) and load all the modules that extend its use. It creates two main objects, named <code class="docutils literal notranslate"><span class="pre">store</span></code> and <code class="docutils literal notranslate"><span class="pre">Store</span></code>. The first one represents the memory of the worker and stores everything that has been loaded, the second one represents his &quot;muscles&quot; and contains all the functions that can be executed by the commands of &quot;outer&quot;. Many modules are loaded to perform specific tasks and are accessible via <code class="docutils literal notranslate"><span class="pre">store</span></code>.</p>
 </div>
-<div class="section" id="commandes-de-lobjet-store">
-<h2>Commandes de l’objet “Store”<a class="headerlink" href="#commandes-de-lobjet-store" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Les commandes pouvant être exécutées par async-store contiennent
-notament :</p>
+<div class="section" id="store-commands">
+<h2>“Store” commands<a class="headerlink" href="#store-commands" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Commands that can be executed by async-store include :</p>
 <ul class="simple">
-<li><p>Initialisation</p>
-<ul>
-<li><p>Chargement du compte utilisateur (via listmap), des dossiers
-partagés et des équipes</p></li>
-<li><p>Chargement des différents modules du worker</p></li>
-<li><p>Initialisation d’une session authentifiée avec le serveur (pour
-les utilisateurs enregistrés)</p></li>
+<li><p>Initialization</p></li>
 </ul>
-</li>
-<li><p>Requêtes serveur authentifiées</p>
-<ul>
-<li><p>L’identité de l’auteur est prouvée au serveur avec la clé de
-signature de l’utilisateur enregistré</p></li>
-<li><p>Modifier sa “liste de pins”, modifier son mot de passe, détruire
-un pad dont on est propriétaire, récupérer l’espace de stockage
-restant pour le compte, exécuter des commandes administrateurs,
-etc.</p></li>
-<li><p>Upload d’un fichier statique dans le drive utilisateur</p></li>
+<blockquote>
+<div><ul class="simple">
+<li><p>Loading user account (via listmap), shared folders and teams</p></li>
+<li><p>Loading of the different modules in the worker</p></li>
+<li><p>Initiating an authenticated session with the server (for registered users)</p></li>
 </ul>
-</li>
-<li><p>Requêtes serveur non-authentifiées</p>
-<ul>
-<li><p>Récupérer la taille totale d’un document dans la base de données
-(avec son historique)</p></li>
-<li><p>Récupérer les méta-données d’un document (liste de propriétaires,
-liste d’accès, date d’expiration, etc.)</p></li>
+</div></blockquote>
+<ul class="simple">
+<li><p>Authenticated server requests</p></li>
 </ul>
-</li>
-<li><p>Actions sur le compte utilisateur</p>
-<ul>
-<li><p>Stockage ou récupération des Préférences</p></li>
-<li><p>Commandes à effectuer dans le drive</p></li>
-<li><p>Gestion des dossiers partagés</p></li>
-<li><p>Gérer les contacts (ajout ou suppression de contacts)</p></li>
+<blockquote>
+<div><ul class="simple">
+<li><p>Modify your &quot;pin log&quot;, change a password, destroy an owned pad, recover the remaining storage space for the account, execute administrator commands, etc.</p></li>
+<li><p>Upload a static file to the user drive</p></li>
+<li><p>The identity of the author is proved to the server with the signature key of the registered user.</p></li>
 </ul>
-</li>
-<li><p>Actions sur les différents modules</p>
-<ul>
-<li><p>Chaque module peut recevoir ses propres commandes, mais celles-ci
-transitent d’abord par “async-store” qui va la redistribuer aux
-modules concernés</p></li>
+</div></blockquote>
+<ul class="simple">
+<li><p>Unauthenticated server requests</p></li>
 </ul>
-</li>
-<li><p>Documents collaboratifs</p>
-<ul>
-<li><p>Rejoindre un document collaboratif</p>
-<ul>
-<li><p>Initialisation de chainpad-netflux pour ce document</p></li>
-<li><p>Envoyer des messages sur ce document</p></li>
-<li><p>Écouter des évènements sur ce document</p></li>
+<blockquote>
+<div><ul class="simple">
+<li><p>Retrieve the total size of a document in the database (with its history)</p></li>
+<li><p>Retrieve the metadata of a document (list of owners, access list, expiration date, etc.).</p></li>
 </ul>
-</li>
-<li><p>Obtenir une partie d’historique d’un document (pour le mode
-“historique” de l’interface)</p></li>
-<li><p>Modifier le mot de passe d’un document</p></li>
-<li><p>Gérer les métadonnées du document (liste d’accès ou propriétaires)</p></li>
+</div></blockquote>
+<ul class="simple">
+<li><p>Actions on the user account</p></li>
 </ul>
-</li>
+<blockquote>
+<div><ul class="simple">
+<li><p>Storing or retrieving Settings</p></li>
+<li><p>Commands to be performed in the drive</p></li>
+<li><p>Shared folder management</p></li>
+<li><p>Contacts management (add or delete contacts)</p></li>
 </ul>
+</div></blockquote>
+<ul class="simple">
+<li><p>Actions on the different modules</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>Each module can receive its own commands, but these first pass through &quot;async-store&quot; which will redistribute it to the concerned modules.</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p>Collaborative documents</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>Join a collaborative document</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>Chainpad-netflux initialization</p></li>
+<li><p>Send messages to this document's channel</p></li>
+<li><p>Listen to events on this document's channel</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p>Obtain a part of the document history</p></li>
+<li><p>Change the password of a document</p></li>
+<li><p>Manage document metadata (access list or owners)</p></li>
+</ul>
+</div></blockquote>
 </div>
 </div>
 

@@ -34,7 +34,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Worker" href="worker.html" />
-    <link rel="prev" title="Utiliser les clés de traduction" href="translations.html" /> 
+    <link rel="prev" title="Translation keys" href="translations.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -299,16 +299,16 @@
 <li class="toctree-l5"><a class="reference internal" href="architecture.html#inner">Inner</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="chainpad.html">ChainPad et Listmap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chainpad.html">ChainPad and Listmap</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad">ChainPad</a></li>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#checkpoints">Checkpoints</a></li>
-<li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad-avec-des-objets">ChainPad avec des objets</a></li>
+<li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad-with-javascript-objects">ChainPad with JavaScript objects</a></li>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad-netflux">Chainpad-netflux</a></li>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#listmap">Listmap</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="translations.html">Utiliser les clés de traduction</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="translations.html#utilisation">Utilisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="translations.html">Translation keys</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="translations.html#usage">Usage</a></li>
 <li class="toctree-l5"><a class="reference internal" href="translations.html#structure">Structure</a></li>
 </ul>
 </li>
@@ -319,20 +319,20 @@
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="worker.html">Worker</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="worker.html#async-store-js-et-modules">async-store.js et modules</a></li>
-<li class="toctree-l5"><a class="reference internal" href="worker.html#commandes-de-lobjet-store">Commandes de l’objet “Store”</a></li>
+<li class="toctree-l5"><a class="reference internal" href="worker.html#async-store-js">async-store.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="worker.html#store-commands">“Store” commands</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="outer.html">Outer</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-entre-les-niveaux">Communication entre les niveaux</a></li>
-<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-avec-inner-sframe-common-outer">Communication avec inner - sframe-common-outer</a></li>
-<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-avec-le-worker-cryptpad-common">Communication avec le worker - cryptpad-common</a></li>
+<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-between-levels">Communication between levels</a></li>
+<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-with-inner">Communication with inner</a></li>
+<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-with-worker">Communication with worker</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="inner.html">Inner</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="inner.html#fonctionnement">Fonctionnement</a></li>
+<li class="toctree-l5"><a class="reference internal" href="inner.html#workflow">Workflow</a></li>
 <li class="toctree-l5"><a class="reference internal" href="inner.html#metadata-manager">metadata-manager</a></li>
-<li class="toctree-l5"><a class="reference internal" href="inner.html#modules-dinterface">Modules d’interface</a></li>
+<li class="toctree-l5"><a class="reference internal" href="inner.html#ui-modules">UI modules</a></li>
 </ul>
 </li>
 </ul>
@@ -436,63 +436,31 @@
             
   <div class="section" id="framework">
 <h1>Framework<a class="headerlink" href="#framework" title="Permalink to this headline">¶</a></h1>
-<p>La plupart des applications d’édition collaborative de CryptPad
-fonctionnent de la même manière et seule la façon dont les données sont
-affichées diffère. Pour cela, une grande partie de leur code peut être
-mise en commun. Il existe djéjà beaucoup de code commun à plusieurs
-parties de CryptPad, mais dans le cas des applications collaboratives
-cela va encore plus loin.</p>
-<p>Chaque application classique est composée de plusieurs fichiers :</p>
+<p>Most of CryptPad's collaborative editing applications work in the same way and only how the data is displayed differs. Therefore, a large part of their code can be shared. There is already a lot of code common to several parts of CryptPad, but in the case of collaborative applications it goes even further.</p>
+<p>Each classic application is composed of several files:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">index.html</span></code>, le point de départ HTML qui charge le JavaScript de
-“outer”</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">main.js</span></code>, le point de départ du JavaScript de “outer”, qui charge
-l’iframe “inner” et le reste du code</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">inner.html</span></code>, le point de départ HTML de l’iframe</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">inner.js</span></code>, le JavaScript propre à l’application</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">app-xxxx.less</span></code>, pour l’apparence de l’application</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">index.html</span></code>, the HTML starting point that loads the JavaScript of &quot;outer&quot;.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">main.js</span></code>, the starting point of the &quot;outer&quot; JavaScript, which loads the &quot;inner&quot; iframe and the worker</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">inner.html</span></code>, the HTML starting point of the iframe</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">inner.js</span></code>, the application-specific JavaScript</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">app-xxxx.less</span></code>, for the style of the application</p></li>
 </ul>
 <div class="section" id="www-common-sframe-app-outer-js">
 <h2>www/common/sframe-app-outer.js<a class="headerlink" href="#www-common-sframe-app-outer-js" title="Permalink to this headline">¶</a></h2>
-<p>En ce qui concerne le fichier <code class="docutils literal notranslate"><span class="pre">main.js</span></code>, c’est le seul fichier
-JavaScript de “outer” qui est propre à l’application courante. Dans
-certains cas, il doit contenir des instructions spécifiques permettant
-de donne davantage de droits à l’application ou ajouter des commandes
-spéciales pour la base de données. Par exemple pour l’application Drive,
-il est nécessaire d’avoir accès au contenu complet du drive dans
-l’iframe “inner”. Cette application est donc la seule qui possède des
-accès complets sur le compte utilisateurs, et ces accès sont fournis par
-le fichier “main.js”.</p>
-<p>Dans le cas des applications collaboratives, aucun accès spécial n’est
-nécessaire et elles ont toutes accès aux mêmes informations de la base
-de données, c’est pourquoi le fichier <code class="docutils literal notranslate"><span class="pre">main.js</span></code> n’existe pas et est
-remplacé par un fichier <code class="docutils literal notranslate"><span class="pre">www/common/sframe-app-outer.js</span></code> qui a
-exactement le même rôle mais est commun à toutes les applications
-collaboratives.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">main.js</span></code> file is the only JavaScript file of &quot;outer&quot; that is specific to the current application. In some cases, it must contain specific instructions to give more rights to the application or add special commands for the database. For example, in the Drive application it is necessary to have access to the complete contents of the drive in the &quot;inner&quot; iframe. So this application is the only one that has full access to the user account, and these accesses are provided by the &quot;main.js&quot; file.</p>
+<p>In the case of collaborative applications, no special access is needed and they all have access to the same database information, that's why the <code class="docutils literal notranslate"><span class="pre">main.js</span></code> file does not exist and is replaced by a <code class="docutils literal notranslate"><span class="pre">wwww/common/sframe-app-outer.js</span></code> file which has exactly the same role but is common to all collaborative applications.</p>
 </div>
 <div class="section" id="www-common-sframe-app-framework-js">
 <h2>www/common/sframe-app-framework.js<a class="headerlink" href="#www-common-sframe-app-framework-js" title="Permalink to this headline">¶</a></h2>
-<p>A l’intérieur de l’iframe, chaque application a besoin de son propre
-code pour afficher les données du document collaboratif. Le fichier
-<code class="docutils literal notranslate"><span class="pre">inner.js</span></code> est donc toujours présent et charge les librairies et
-outils tels que CodeMirror (code, slide, polls), jKanban (kanban) ou
-encore CkEditor (texte). Une partie importante du code représente
-toutefois des éléments communs à toutes ces applications :</p>
+<p>Inside the iframe, each application needs its own code to display the data of the collaborative document. The <code class="docutils literal notranslate"><span class="pre">inner.js</span></code> file always exists and loads libraries and tools such as CodeMirror (code, slide, polls), jKanban (kanban) or CkEditor (text). However, a large part of the code represents elements common to all these applications:</p>
 <ul class="simple">
-<li><p>Chargement de l’historique déchiffré pour pouvoir reconstruire le
-document</p></li>
-<li><p>Chargement de “ChainPad” pour créer le document et gérer l’édition
-temps-réel via les patchs</p></li>
-<li><p>Gestion des déconnexions/reconnexions</p></li>
-<li><p>Gestion de tous les outils spécifiques présents dans la barre
-d’outils : historique, export, liste d’utilisateurs, chat, etc.</p></li>
+<li><p>Loading the decrypted history to be able to rebuild the document</p></li>
+<li><p>Loading &quot;ChainPad&quot; to create the document and manage real-time editing via patches</p></li>
+<li><p>Management of disconnections/reconnections</p></li>
+<li><p>Management of all the specific tools present in the toolbar: history, export, user list, chat, etc.</p></li>
 </ul>
-<p>Tous ces éléments sont inclus dans le “framework”
-<code class="docutils literal notranslate"><span class="pre">www/common/sframe-app-framework.js</span></code> qui simplifie alors au maximum la
-création d’une application en s’occupant directement de tous ces
-éléments et en fournissant des APIs simples pour <code class="docutils literal notranslate"><span class="pre">inner.js</span></code>.</p>
-<p>Un fichier <code class="docutils literal notranslate"><span class="pre">inner.js</span></code> qui peut représenter une application complète
-ressemble alors à :</p>
+<p>All these elements are included in the <code class="docutils literal notranslate"><span class="pre">wwww/common/sframe-app-framework.js</span></code> framework, which then simplifies the creation of a new application by taking care of all these elements directly and providing simple APIs for <code class="docutils literal notranslate"><span class="pre">inner.js</span></code>.</p>
+<p>An <code class="docutils literal notranslate"><span class="pre">inner.js</span></code> file for a complete application then looks like:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// This is the initialization loading the CryptPad libraries</span>
 <span class="nx">define</span><span class="p">([</span>
     <span class="s1">&#39;jquery&#39;</span><span class="p">,</span>
@@ -568,19 +536,8 @@ ressemble alors à :</p>
 </div>
 <div class="section" id="customize-dist-src-less2-include-framework-less">
 <h2>customize.dist/src/less2/include/framework.less<a class="headerlink" href="#customize-dist-src-less2-include-framework-less" title="Permalink to this headline">¶</a></h2>
-<p>Enfin, tous les éléments de style communs aux différentes applications
-collaboratives peuvent être chargés dans le fichier app-xxxx.less via un
-unique appel. Un framework LESS
-<code class="docutils literal notranslate"><span class="pre">customize.dist/src/less2/include/framework.less</span></code> existe en effet et va
-charger le style de la barre d’outils, du chat, des différents menus,
-des boutons ou encore des fenêtres.</p>
-<p>Deux mixins sont disponibles dans ce fichier, <code class="docutils literal notranslate"><span class="pre">.framework_main()</span></code> et
-<code class="docutils literal notranslate"><span class="pre">.framework_min_main()</span></code>. La version minimale “min” est utilisée pour
-les applications non collaboratives (drive, préférences, profile,
-support, etc.) qui ré-utilisent la plupart des éléments de style. La
-version complète ajoute le style du chat, des mentions (pour les
-commentaires), de l’écran de création de pad et des styles pour le
-curseur des autres utilisateurs.</p>
+<p>All style elements common to the different collaborative applications can be loaded into the app-xxxx.less file via a single call. A LESS framework <code class="docutils literal notranslate"><span class="pre">customize.dist/src/less2/include/framework.less</span></code> exists and will load the style of the toolbar, the chat, the different menus, the buttons and the modals.</p>
+<p>Two mixins are available in this file, <code class="docutils literal notranslate"><span class="pre">.framework_main()</span></code> and <code class="docutils literal notranslate"><span class="pre">.framework_min_main()</span></code>. The minimal &quot;min&quot; version is used for non-collaborative applications (drive, preferences, profile, support, etc.) that reuse most of the style elements. The full version adds the chat style, mentions (for comments), pad creation screen and styles for other users' cursor.</p>
 </div>
 </div>
 
@@ -595,7 +552,7 @@ curseur des autres utilisateurs.</p>
         <a href="worker.html" class="btn btn-neutral float-right" title="Worker" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="translations.html" class="btn btn-neutral" title="Utiliser les clés de traduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="translations.html" class="btn btn-neutral" title="Translation keys" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
       
     </div>
   

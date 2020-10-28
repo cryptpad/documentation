@@ -1,68 +1,36 @@
 Framework
 =========
 
-La plupart des applications d’édition collaborative de CryptPad
-fonctionnent de la même manière et seule la façon dont les données sont
-affichées diffère. Pour cela, une grande partie de leur code peut être
-mise en commun. Il existe djéjà beaucoup de code commun à plusieurs
-parties de CryptPad, mais dans le cas des applications collaboratives
-cela va encore plus loin.
+Most of CryptPad's collaborative editing applications work in the same way and only how the data is displayed differs. Therefore, a large part of their code can be shared. There is already a lot of code common to several parts of CryptPad, but in the case of collaborative applications it goes even further.
 
-Chaque application classique est composée de plusieurs fichiers :
+Each classic application is composed of several files:
 
--  ``index.html``, le point de départ HTML qui charge le JavaScript de
-   “outer”
--  ``main.js``, le point de départ du JavaScript de “outer”, qui charge
-   l’iframe “inner” et le reste du code
--  ``inner.html``, le point de départ HTML de l’iframe
--  ``inner.js``, le JavaScript propre à l’application
--  ``app-xxxx.less``, pour l’apparence de l’application
+-  ``index.html``, the HTML starting point that loads the JavaScript of "outer".
+-  ``main.js``, the starting point of the "outer" JavaScript, which loads the "inner" iframe and the worker
+-  ``inner.html``, the HTML starting point of the iframe
+-  ``inner.js``, the application-specific JavaScript
+-  ``app-xxxx.less``, for the style of the application
 
 www/common/sframe-app-outer.js
 ------------------------------
 
-En ce qui concerne le fichier ``main.js``, c’est le seul fichier
-JavaScript de “outer” qui est propre à l’application courante. Dans
-certains cas, il doit contenir des instructions spécifiques permettant
-de donne davantage de droits à l’application ou ajouter des commandes
-spéciales pour la base de données. Par exemple pour l’application Drive,
-il est nécessaire d’avoir accès au contenu complet du drive dans
-l’iframe “inner”. Cette application est donc la seule qui possède des
-accès complets sur le compte utilisateurs, et ces accès sont fournis par
-le fichier “main.js”.
+The ``main.js`` file is the only JavaScript file of "outer" that is specific to the current application. In some cases, it must contain specific instructions to give more rights to the application or add special commands for the database. For example, in the Drive application it is necessary to have access to the complete contents of the drive in the "inner" iframe. So this application is the only one that has full access to the user account, and these accesses are provided by the "main.js" file.
 
-Dans le cas des applications collaboratives, aucun accès spécial n’est
-nécessaire et elles ont toutes accès aux mêmes informations de la base
-de données, c’est pourquoi le fichier ``main.js`` n’existe pas et est
-remplacé par un fichier ``www/common/sframe-app-outer.js`` qui a
-exactement le même rôle mais est commun à toutes les applications
-collaboratives.
+In the case of collaborative applications, no special access is needed and they all have access to the same database information, that's why the ``main.js`` file does not exist and is replaced by a ``wwww/common/sframe-app-outer.js`` file which has exactly the same role but is common to all collaborative applications.
 
 www/common/sframe-app-framework.js
 ----------------------------------
 
-A l’intérieur de l’iframe, chaque application a besoin de son propre
-code pour afficher les données du document collaboratif. Le fichier
-``inner.js`` est donc toujours présent et charge les librairies et
-outils tels que CodeMirror (code, slide, polls), jKanban (kanban) ou
-encore CkEditor (texte). Une partie importante du code représente
-toutefois des éléments communs à toutes ces applications :
+Inside the iframe, each application needs its own code to display the data of the collaborative document. The ``inner.js`` file always exists and loads libraries and tools such as CodeMirror (code, slide, polls), jKanban (kanban) or CkEditor (text). However, a large part of the code represents elements common to all these applications:
 
--  Chargement de l’historique déchiffré pour pouvoir reconstruire le
-   document
--  Chargement de “ChainPad” pour créer le document et gérer l’édition
-   temps-réel via les patchs
--  Gestion des déconnexions/reconnexions
--  Gestion de tous les outils spécifiques présents dans la barre
-   d’outils : historique, export, liste d’utilisateurs, chat, etc.
+-  Loading the decrypted history to be able to rebuild the document
+-  Loading "ChainPad" to create the document and manage real-time editing via patches
+-  Management of disconnections/reconnections
+-  Management of all the specific tools present in the toolbar: history, export, user list, chat, etc.
 
-Tous ces éléments sont inclus dans le “framework”
-``www/common/sframe-app-framework.js`` qui simplifie alors au maximum la
-création d’une application en s’occupant directement de tous ces
-éléments et en fournissant des APIs simples pour ``inner.js``.
+All these elements are included in the ``wwww/common/sframe-app-framework.js`` framework, which then simplifies the creation of a new application by taking care of all these elements directly and providing simple APIs for ``inner.js``.
 
-Un fichier ``inner.js`` qui peut représenter une application complète
-ressemble alors à :
+An ``inner.js`` file for a complete application then looks like:
 
 .. code:: javascript
 
@@ -140,18 +108,6 @@ ressemble alors à :
 customize.dist/src/less2/include/framework.less
 -----------------------------------------------
 
-Enfin, tous les éléments de style communs aux différentes applications
-collaboratives peuvent être chargés dans le fichier app-xxxx.less via un
-unique appel. Un framework LESS
-``customize.dist/src/less2/include/framework.less`` existe en effet et va
-charger le style de la barre d’outils, du chat, des différents menus,
-des boutons ou encore des fenêtres.
+All style elements common to the different collaborative applications can be loaded into the app-xxxx.less file via a single call. A LESS framework ``customize.dist/src/less2/include/framework.less`` exists and will load the style of the toolbar, the chat, the different menus, the buttons and the modals.
 
-Deux mixins sont disponibles dans ce fichier, ``.framework_main()`` et
-``.framework_min_main()``. La version minimale “min” est utilisée pour
-les applications non collaboratives (drive, préférences, profile,
-support, etc.) qui ré-utilisent la plupart des éléments de style. La
-version complète ajoute le style du chat, des mentions (pour les
-commentaires), de l’écran de création de pad et des styles pour le
-curseur des autres utilisateurs.
-
+Two mixins are available in this file, ``.framework_main()`` and ``.framework_min_main()``. The minimal "min" version is used for non-collaborative applications (drive, preferences, profile, support, etc.) that reuse most of the style elements. The full version adds the chat style, mentions (for comments), pad creation screen and styles for other users' cursor.

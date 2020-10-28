@@ -299,16 +299,16 @@
 <li class="toctree-l5"><a class="reference internal" href="architecture.html#inner">Inner</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="chainpad.html">ChainPad et Listmap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chainpad.html">ChainPad and Listmap</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad">ChainPad</a></li>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#checkpoints">Checkpoints</a></li>
-<li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad-avec-des-objets">ChainPad avec des objets</a></li>
+<li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad-with-javascript-objects">ChainPad with JavaScript objects</a></li>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad-netflux">Chainpad-netflux</a></li>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#listmap">Listmap</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="translations.html">Utiliser les clés de traduction</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="translations.html#utilisation">Utilisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="translations.html">Translation keys</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="translations.html#usage">Usage</a></li>
 <li class="toctree-l5"><a class="reference internal" href="translations.html#structure">Structure</a></li>
 </ul>
 </li>
@@ -319,20 +319,20 @@
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="worker.html">Worker</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="worker.html#async-store-js-et-modules">async-store.js et modules</a></li>
-<li class="toctree-l5"><a class="reference internal" href="worker.html#commandes-de-lobjet-store">Commandes de l’objet “Store”</a></li>
+<li class="toctree-l5"><a class="reference internal" href="worker.html#async-store-js">async-store.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="worker.html#store-commands">“Store” commands</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="outer.html">Outer</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-entre-les-niveaux">Communication entre les niveaux</a></li>
-<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-avec-inner-sframe-common-outer">Communication avec inner - sframe-common-outer</a></li>
-<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-avec-le-worker-cryptpad-common">Communication avec le worker - cryptpad-common</a></li>
+<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-between-levels">Communication between levels</a></li>
+<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-with-inner">Communication with inner</a></li>
+<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-with-worker">Communication with worker</a></li>
 </ul>
 </li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Inner</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#fonctionnement">Fonctionnement</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#workflow">Workflow</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#metadata-manager">metadata-manager</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#modules-dinterface">Modules d’interface</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#ui-modules">UI modules</a></li>
 </ul>
 </li>
 </ul>
@@ -436,112 +436,64 @@
             
   <div class="section" id="inner">
 <h1>Inner<a class="headerlink" href="#inner" title="Permalink to this headline">¶</a></h1>
-<p>Le niveau inner correspond à toute l’interface visible de CryptPad. Il
-représente une iframe isolée du contenu complet du compte de
-l’utilisateur. Chaque application CryptPad possède sa propre interface,
-mais de nombreux éléments sont en commun et le fonctionnement reste le
-même dans la majorité des cas. Seule la manière dont les données sont
-affichées change complètement.</p>
-<div class="section" id="fonctionnement">
-<h2>Fonctionnement<a class="headerlink" href="#fonctionnement" title="Permalink to this headline">¶</a></h2>
-<p>Le point de départ JavaScript du niveau “inner” correspond au fichier
-“inner.js” de chaque application. Ce fichier charge tous les éléments
-nécessaires au fonctionnement de l’iframe et gère la représentation des
-données dans l’application concernée. Que l’application utilise le
-système “framework” ou non, le fonctionnement global reste le même : un
-module sframe-common charge le système de communication avec “outer” et
-initialise différents éléments.</p>
+<p>The inner level corresponds to the entire visible interface of CryptPad. It represents an iframe isolated from the complete content of the user's account. Each CryptPad application has its own interface, but many elements are in common and the functioning remains the same in the majority of cases. Only the way the data is displayed changes completely.</p>
+<div class="section" id="workflow">
+<h2>Workflow<a class="headerlink" href="#workflow" title="Permalink to this headline">¶</a></h2>
+<p>The JavaScript starting point of the &quot;inner&quot; level corresponds to the &quot;inner.js&quot; file of each application. This file loads all the necessary elements for the iframe to work and manages the data representation in the selected application. Whether the application uses the &quot;framework&quot; system or not, the overall operation remains the same: an sframe-common module loads the communication system with &quot;outer&quot; and initializes different elements.</p>
 </div>
 <div class="section" id="metadata-manager">
 <h2>metadata-manager<a class="headerlink" href="#metadata-manager" title="Permalink to this headline">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">www/common/metadata-manager.js</span></code></p>
-<p>Ce module permet aux niveaux extérieurs à l’iframe (worker et outer) de
-fournir des données à celle-ci. Ces données sont réparties en 2
-catégories selon à qui elles sont destinées : les données “user”
-contiennent tout ce qui est public concernant le compte utilisateur
-actuel et sont destinées aux autres utilisateurs et les données “priv”
-contiennent des éléments privé ou qui ne servent pas aux autres
-utilisateur.</p>
-<p>Les niveaux extérieurs décident d’eux-mêmes de quand ré-envoyer ces
-données, car ce sont eux qui savent quand elles sont mises à jour. Les
-mises à jours sont très fréquentes et une première version est envoyée
-dés l’initialisation des sytèmes.</p>
-<p>Une fois les données reçues par le “metadata manager”, celui-ci les
-réorganise par fonction. Ce module utilise en effet également des
-données provenant du niveau “inner”, et en particulier du document
-collaboratif actuel (lorsque l’application CryptPad est de ce type). Il
-peut ainsi fournir 3 types de contenu à tout module de “inner” le
-demandant :</p>
+<p>This module allows the levels outside the iframe (worker and outer) to provide data to the iframe. These data are divided into 2 categories: &quot;user&quot; data contain every public elements concerning the current user account and &quot;priv&quot; data contain elements that are private or that are not sent to other users.</p>
+<p>This module also uses data coming from the &quot;inner&quot; level, and in particular from the current collaborative document (when applicable). It can thus provide 3 types of content to any &quot;inner&quot; module requesting it:</p>
 <ul class="simple">
-<li><p>les “metadata” du document collaboratif qui sont stockées dans le
-document lui-même</p>
-<ul>
-<li><p>le titre et le nom de l’application</p></li>
-<li><p>la liste d’utilisateur avec les données publiques des éditeurs
-(nom, avatar, profil, clés publiques, mailbox, etc.)</p></li>
+<li><p>the collaborative document &quot;metadata&quot; that are stored in the document itself</p></li>
 </ul>
-</li>
-<li><p>les données “private” qui représentent la liste des données privées
-fournies par l’extérieur et qui sont très variées</p>
-<ul>
-<li><p>l’origine “unsafe” utilisée dans “outer” et le nom de
-l’application</p></li>
-<li><p>le type de hash pour les documents collaboratifs : édition ou
-lecture seule, mode présentation, mode intégration, etc.</p></li>
-<li><p>des données concernant le document lui-même</p></li>
+<blockquote>
+<div><ul class="simple">
+<li><p>the title and name of the application</p></li>
+<li><p>the user list with public data of editors (name, avatar, profile, public keys, mailbox, etc.).</p></li>
 </ul>
-</li>
-<li><p>les données “user” qui représentent l’utilisateur actuel et qui sont
-identiques à celles partagées dans la liste d’utilisateur du document</p></li>
+</div></blockquote>
+<ul class="simple">
+<li><p>the &quot;private&quot; data coming from the outside levels which are very varied</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>the &quot;unsafe&quot; origin used in &quot;outer&quot; and the name of the application</p></li>
+<li><p>the type of hash for collaborative documents: edition or read-only, presentation mode, embed mode, etc.</p></li>
+<li><p>data about the document itself</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p>the &quot;user&quot; data that represents the current user and that is directly put in the document user list</p></li>
 </ul>
 </div>
-<div class="section" id="modules-dinterface">
-<h2>Modules d’interface<a class="headerlink" href="#modules-dinterface" title="Permalink to this headline">¶</a></h2>
-<p>Il existe deux grands modules d’interface. Un premier, nommé
-“common-interface”, fournit des éléments basiques, vide de contenu, qui
-peuvent être réutilisés pour afficher quelque chose à l’utilisateur. Le
-second, nommé common-ui-elements&quot; permet d’afficher des éléments déjà
-remplis mais qui sont réutilisés à plusieurs endroits dans le code de
-inner.</p>
+<div class="section" id="ui-modules">
+<h2>UI modules<a class="headerlink" href="#ui-modules" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="common-interface">
 <h3>common-interface<a class="headerlink" href="#common-interface" title="Permalink to this headline">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">www/common/common-interface.js</span></code></p>
-<p>Ce module permet donc de créer des éléments d’interface vides
-réutilisables. Les plus utilisés sont :</p>
+<p>This module allows you to create reusable empty interface elements. The most used are :</p>
 <ul class="simple">
-<li><p>UI.alert, UI.confirm, UI.prompt : crée une boîte de dialogue
-similaire aux <code class="docutils literal notranslate"><span class="pre">alert</span></code>, <code class="docutils literal notranslate"><span class="pre">confirm</span></code> et <code class="docutils literal notranslate"><span class="pre">prompt</span></code> natifs mais
-utilisant le style de CryptPad et ne bloquant pas le thread quand
-elle est ouverte</p></li>
-<li><p>UI.log : crée une notification bleue dans le coin inférieur gauche
-qui disparaît automatiquement après quelques secondes</p></li>
-<li><p>UI.confirmButton : ajoute une étape de confirmation “Êtes-vous sûrs?”
-sur le bouton fournit en argument</p></li>
-<li><p>UI.(add|remove|error)LoadingScreen : ajouter, enlever ou modifier un
-écran de chargement</p></li>
-<li><p>De nombreux outils pour créer des fenêtres personnalisées utilisant
-le style CryptPad</p></li>
+<li><p>UI.alert, UI.confirm, UI.prompt: creates a dialog box similar to the native <code class="docutils literal notranslate"><span class="pre">alert</span></code>, <code class="docutils literal notranslate"><span class="pre">confirm</span></code> and <code class="docutils literal notranslate"><span class="pre">prompt</span></code> but using the CryptPad style and not blocking the thread when it is open.</p></li>
+<li><p>UI.log: creates a small notification in the bottom-left corner that disappears automatically after a few seconds</p></li>
+<li><p>UI.confirmButton: adds a confirmation step &quot;Are you sure?&quot; on the button provided</p></li>
+<li><p>UI.(add|remove|error)LoadingScreen: add, remove or modify a loading screen</p></li>
+<li><p>Many tools to create custom windows using CryptPad style</p></li>
 </ul>
 </div>
 <div class="section" id="common-ui-elements">
 <h3>common-ui-elements<a class="headerlink" href="#common-ui-elements" title="Permalink to this headline">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">www/common/common-ui-elements.js</span></code></p>
-<p>Ce module permet au code situé dans inner d’afficher des éléments avec
-du contenu pré-existant, parfois récupéré directement de l’extérieur de
-l’iframe. La plupart des fonctions ont besoin d’un accès au module
-“sframe-common” pour être utilisées car elles doivent récupérer des
-données avant de fournir l’élément souhaité.</p>
-<p>Il contient notamment le code pour :</p>
+<p>This module provides tools to display elements with pre-existing content, sometimes retrieved directly from outside the iframe:</p>
 <ul class="simple">
-<li><p>Afficher l’écran de création des pads</p></li>
-<li><p>Créer des boutons d’action pour la barre d’outils avec le style
-adéquat</p></li>
-<li><p>Créer une barre d’outils Markdown (pour les applications code, slide,
-poll et le profil)</p></li>
-<li><p>Créer un menu “Aide / Pour bien démarrer…” pour l’application
-actuelle</p></li>
-<li><p>Créer un menu déroulant pour changer la langue de l’interface</p></li>
-<li><p>Et beaucoup d’autres outils…</p></li>
+<li><p>Display the pad creation screen</p></li>
+<li><p>Create action buttons for the toolbar with the appropriate style</p></li>
+<li><p>Create a Markdown toolbar (for code, slide, poll and profile applications)</p></li>
+<li><p>Create a &quot;Help / Getting started...&quot; menu for the current application</p></li>
+<li><p>Create a drop-down menu to change the interface language</p></li>
+<li><p>And many other tools ...</p></li>
 </ul>
 </div>
 </div>

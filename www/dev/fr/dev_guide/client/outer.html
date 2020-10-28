@@ -299,16 +299,16 @@
 <li class="toctree-l5"><a class="reference internal" href="architecture.html#inner">Inner</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="chainpad.html">ChainPad et Listmap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chainpad.html">ChainPad and Listmap</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad">ChainPad</a></li>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#checkpoints">Checkpoints</a></li>
-<li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad-avec-des-objets">ChainPad avec des objets</a></li>
+<li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad-with-javascript-objects">ChainPad with JavaScript objects</a></li>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad-netflux">Chainpad-netflux</a></li>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#listmap">Listmap</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="translations.html">Utiliser les clés de traduction</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="translations.html#utilisation">Utilisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="translations.html">Translation keys</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="translations.html#usage">Usage</a></li>
 <li class="toctree-l5"><a class="reference internal" href="translations.html#structure">Structure</a></li>
 </ul>
 </li>
@@ -319,20 +319,20 @@
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="worker.html">Worker</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="worker.html#async-store-js-et-modules">async-store.js et modules</a></li>
-<li class="toctree-l5"><a class="reference internal" href="worker.html#commandes-de-lobjet-store">Commandes de l’objet “Store”</a></li>
+<li class="toctree-l5"><a class="reference internal" href="worker.html#async-store-js">async-store.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="worker.html#store-commands">“Store” commands</a></li>
 </ul>
 </li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">Outer</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#communication-entre-les-niveaux">Communication entre les niveaux</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#communication-avec-inner-sframe-common-outer">Communication avec inner - sframe-common-outer</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#communication-avec-le-worker-cryptpad-common">Communication avec le worker - cryptpad-common</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#communication-between-levels">Communication between levels</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#communication-with-inner">Communication with inner</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#communication-with-worker">Communication with worker</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="inner.html">Inner</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="inner.html#fonctionnement">Fonctionnement</a></li>
+<li class="toctree-l5"><a class="reference internal" href="inner.html#workflow">Workflow</a></li>
 <li class="toctree-l5"><a class="reference internal" href="inner.html#metadata-manager">metadata-manager</a></li>
-<li class="toctree-l5"><a class="reference internal" href="inner.html#modules-dinterface">Modules d’interface</a></li>
+<li class="toctree-l5"><a class="reference internal" href="inner.html#ui-modules">UI modules</a></li>
 </ul>
 </li>
 </ul>
@@ -436,101 +436,67 @@
             
   <div class="section" id="outer">
 <h1>Outer<a class="headerlink" href="#outer" title="Lien permanent vers ce titre">¶</a></h1>
-<p>Le niveau “outer” représente le point de départ du code de CryptPad.
-Outre le fichier HTML qui se contente d’exécuter le JavaScript
-principal, ce niveau est entièrement constitué de code JavaScript. Il
-est séparé en deux fichiers principaux, qui sont connectés à l’iframe
-inner pour l’un et au worker pour l’autre. Les APIs utilisées pour
-communiquer sont les mêmes dans les deux cas.</p>
-<div class="section" id="communication-entre-les-niveaux">
-<h2>Communication entre les niveaux<a class="headerlink" href="#communication-entre-les-niveaux" title="Lien permanent vers ce titre">¶</a></h2>
-<p>La communication se fait en utilisant une mini-librairie développée dans
-CryptPad implémentée dans le fichier
-<code class="docutils literal notranslate"><span class="pre">www/common/outer/worker-channel.js</span></code>. Cette librairie permet a deux
-systèmes de s’envoyer des messages de types “requête” et “évènement”.
-Une requête (“query”) consiste à envoyer des données et à attendre une
-répondre, alors qu’un évènement (“event”) se contente d’envoyer les
-données.</p>
-<p>Cette librairie gère automatiquement les callbacks pour les réponses
-reçues et permet à chaque partie d’indiquer quand elle est prête à
-communiquer. La façon dont les messages sont envoyées est gérée en
-dehors de la librairie grâce à une fonction “sendMessage” qui lui est
-fournie en argument. Elle déclenche un évènement créé avec
-“Util.mkEvent” et fourni lui aussi en argument lorsqu’un évènement ou
-une requête est reçue. S’il s’agit d’une requête, un callback est inclus
-dans l’évènement avec les données.</p>
+<p>The &quot;outer&quot; level represents the starting point of the CryptPad code. Except for the initial HTML file loaded by the browser, this level is entirely made of JavaScript code. It is split into two main files, which are connected to the iframe inner for one and to the worker for the other. The APIs used to communicate are the same in both cases.</p>
+<div class="section" id="communication-between-levels">
+<h2>Communication between levels<a class="headerlink" href="#communication-between-levels" title="Lien permanent vers ce titre">¶</a></h2>
+<p>The communication is done using a mini-library developed in CryptPad in the <code class="docutils literal notranslate"><span class="pre">wwww/common/outer/worker-channel.js</span></code> file. This library allows two systems to send &quot;query&quot; and &quot;event&quot; messages to each other. A &quot;query&quot; consists of sending data and waiting for a response, while an &quot;event&quot; is just sending data.</p>
+<p>This library automatically manages callbacks for received answers and allows each party to indicate when it is ready to communicate. The way messages are sent is managed outside the library thanks to a &quot;sendMessage&quot; function that is provided as an argument. If it is a query, a callback is included with the data.</p>
 </div>
-<div class="section" id="communication-avec-inner-sframe-common-outer">
-<h2>Communication avec inner - sframe-common-outer<a class="headerlink" href="#communication-avec-inner-sframe-common-outer" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="communication-with-inner">
+<h2>Communication with inner<a class="headerlink" href="#communication-with-inner" title="Lien permanent vers ce titre">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">www/common/sframe-common-outer.js</span></code></p>
-<p>Il s’agit là du premier fichier JavaScript principal chargé par toutes
-les applications CryptPad. Il est chargé juste après la création de
-l’iframe inner et va d’abord procéder à l’installation d’un canal de
-communication entre ces deux niveaux. Une fois ce canal créé, il va
-charger le second fichier JavaScript principal qui va gérer le côté
-“worker”. Ces également le seul niveau qui a directement accès aux clés
-contenues dans l’URL du document.</p>
-<p>Deux étapes vont alors avoir lieu en parallèle :</p>
+<p>This is one of the first main JavaScript file loaded by all CryptPad applications. It's loaded just after the creation of the inner iframe and will first proceed to the installation of a communication channel between these two levels. Once this channel is created, it will load the second main JavaScript file which will manage the &quot;worker&quot; side. This is also the only file that has direct access to the keys contained in the URL of the document.</p>
+<p>Two steps will then take place in parallel:</p>
 <ul class="simple">
-<li><p>le chargement du compte utilisateur dans le worker</p></li>
-<li><p>le chargement de l’interface de l’application dans inner</p></li>
+<li><p>loading the user account in the worker</p></li>
+<li><p>loading the application interface in the inner iframe</p></li>
 </ul>
-<p>Une fois le compte utilisateur chargé, sframe-common-outer va
-initialiser tous ses “handlers” qui vont gérer les évènements et
-requêtes reçues de la part de “inner”. Ces “handlers” sont nombreux et
-repérables dans le code avec <code class="docutils literal notranslate"><span class="pre">sframeChan.on('...',</span> <span class="pre">handler);</span></code>. Ils
-permettent notamment de :</p>
+<p>Once the user account is loaded, sframe-common-outer will initialize all its &quot;handlers&quot; which will manage the events and queries received from &quot;inner&quot;. These &quot;handlers&quot; are many and can be found in the code with <code class="docutils literal notranslate"><span class="pre">sframeChan.on('...',</span> <span class="pre">handler);</span></code>. They are notably used to:</p>
 <ul class="simple">
-<li><p>Effectuer des actions propres au niveau “outer”</p>
-<ul>
-<li><p>Changer le titre de l’onglet ou son icône</p></li>
-<li><p>Modifier le localStorage ou modifier le sessionStorage</p></li>
+<li><p>Execute functions related to the &quot;outer&quot; level</p></li>
 </ul>
-</li>
-<li><p>Effectuer des actions liées aux clés du document</p>
-<ul>
-<li><p>Changement du mot de passe du document (nécessite de déchiffrer et
-rechiffrer entièrement le contenu)</p></li>
-<li><p>Enregistrer ou modifier les informations du pad dans le drive
-(l’URL du pad est stockée dans le drive)</p></li>
-<li><p>Créer une copie ou créer un modèle du document (nécessite l’accès
-au contenu déchiffré pour le rechiffrer différemment)</p></li>
+<blockquote>
+<div><ul class="simple">
+<li><p>Change the title of the tab or its icon</p></li>
+<li><p>Modify the localStorage or modify theStorage session</p></li>
 </ul>
-</li>
-<li><p>Transférer des commandes au worker</p>
-<ul>
-<li><p>Upload de fichier</p></li>
-<li><p>Accès à différentes données</p></li>
-<li><p>Rejoindre un pad, pouvoir recevoir et envoyer des patchs</p></li>
-<li><p>Actions de gestion d’un pad (renommer, supprimer, liste d’accès,
-propriétaires, etc.)</p></li>
+</div></blockquote>
+<ul class="simple">
+<li><p>Execute functions related to the keys of the document</p></li>
 </ul>
-</li>
-<li><p>Transférer des commandes aux modules du worker</p>
-<ul>
-<li><p>Ces commandes ne font généralement que transiter ici, elles ne
-sont pas lues et sont directement envoyées au worker</p></li>
+<blockquote>
+<div><ul class="simple">
+<li><p>Changing the document password (requires decrypting and re-encrypting the entire content)</p></li>
+<li><p>Save or modify the pad data in the drive (the URL of the pad is stored in the drive)</p></li>
+<li><p>Make a copy or make a template of the document (requires access to the decrypted content to re-encrypt it differently)</p></li>
 </ul>
-</li>
+</div></blockquote>
+<ul class="simple">
+<li><p>Transfer commands to the worker</p></li>
 </ul>
-<p>Une fois toutes ces fonctions enregistrées, sframe-common-outer va se
-déclarer “prêt” et quand “inner” le sera aussi, ce script lancera le
-processus pour démarrer l’application utilisée (si nécessaire) : créer
-un nouveau document ou rejoindre un document existant.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>File Upload</p></li>
+<li><p>Access to more data</p></li>
+<li><p>Join a pad and be able to receive and send patches</p></li>
+<li><p>Pad management actions (rename, delete, access list, owners, etc.)</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p>Transfer commands to the worker's modules</p></li>
+</ul>
+<blockquote>
+<div><ul class="simple">
+<li><p>These commands usually only pass through here, they are not read and are sent directly to the worker.</p></li>
+</ul>
+</div></blockquote>
+<p>Once all these &quot;handlers&quot; have been registered, sframe-common-outer will declare itself &quot;ready&quot; and when &quot;inner&quot; will be too, this script will start the realtime engine (if necessary): create a new document or join an existing one.</p>
 </div>
-<div class="section" id="communication-avec-le-worker-cryptpad-common">
-<h2>Communication avec le worker - cryptpad-common<a class="headerlink" href="#communication-avec-le-worker-cryptpad-common" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="communication-with-worker">
+<h2>Communication with worker<a class="headerlink" href="#communication-with-worker" title="Lien permanent vers ce titre">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">www/common/cryptpad-common.js</span></code></p>
-<p>Ce fichier a pour rôle principal de créer un canal de communication avec
-le worker et de l’initialiser pour le compte utilisateur. Les clés du
-compte auront au préalable été extraites du localStorage. Une fois le
-compte utilisateur et tous les modules chargés, le worker envoie un
-signal à cryptpad-common qui va lui-même permettre à sframe-common-outer
-de continuer.</p>
-<p>En dehors de ce processus de chargement du compte utilisateur,
-cryptpad-common garde un contact privilégié avec le worker, ce qui lui
-permet d’effectuer certaines tâches propres à l’onglet courant mais qui
-nécessitent d’accéder aux données du worker.</p>
+<p>The main role of this file is to create a communication channel with the worker and to initialize it for the user account. The keys of the account will have been extracted from the localStorage beforehand. Once the user account and all the modules are loaded, the worker sends a signal to cryptpad-common which will itself allow the sframe-common-outer script to continue.</p>
+<p>Apart from this user account loading process, cryptpad-common keeps a privileged contact with the worker, which allows it to perform some tasks specific to the current tab but which require access to the worker's data.</p>
 </div>
 </div>
 

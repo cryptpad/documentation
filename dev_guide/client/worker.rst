@@ -1,73 +1,52 @@
 Worker
 ======
 
-async-store.js et modules
--------------------------
+async-store.js
+--------------
 
-Async-store contient l’ensemble des fonctions représentant les commandes
-envoyées par “outer”. Il a pour rôle de gérer la connexion au compte
-utilisateur, charger les sous-structures liées à ce compte (dossiers
-partagés, profil) et charger l’ensemble des modules qui étendent son
-champ d’utilisation. Il crée deux objets principaux, nommés ``store`` et
-``Store``. Le premier représente la mémoire du worker et stocke tout ce
-qui a été chargé par celui-ci, le second représente ses “muscles” et
-contient toutes les fonctions pouvant être exécutées par les commandes
-de “outer”. Beaucoup de modules sont chargés pour exécuter des tâches
-spécifiques et sont accessibles via ``store``.
+Async-store contains all the functions representing the commands sent by "outer". Its role is to manage the connection to the user account, load the sub-structures linked to this account (shared folders, profile, teams) and load all the modules that extend its use. It creates two main objects, named ``store`` and ``Store``. The first one represents the memory of the worker and stores everything that has been loaded, the second one represents his "muscles" and contains all the functions that can be executed by the commands of "outer". Many modules are loaded to perform specific tasks and are accessible via ``store``.
 
-Commandes de l’objet “Store”
-----------------------------
+“Store” commands
+----------------
 
-Les commandes pouvant être exécutées par async-store contiennent
-notament :
+Commands that can be executed by async-store include :
 
--  Initialisation
+-  Initialization
 
-   -  Chargement du compte utilisateur (via listmap), des dossiers
-      partagés et des équipes
-   -  Chargement des différents modules du worker
-   -  Initialisation d’une session authentifiée avec le serveur (pour
-      les utilisateurs enregistrés)
+  -  Loading user account (via listmap), shared folders and teams
+  -  Loading of the different modules in the worker
+  -  Initiating an authenticated session with the server (for registered users)
 
--  Requêtes serveur authentifiées
+-  Authenticated server requests
 
-   -  L’identité de l’auteur est prouvée au serveur avec la clé de
-      signature de l’utilisateur enregistré
-   -  Modifier sa “liste de pins”, modifier son mot de passe, détruire
-      un pad dont on est propriétaire, récupérer l’espace de stockage
-      restant pour le compte, exécuter des commandes administrateurs,
-      etc.
-   -  Upload d’un fichier statique dans le drive utilisateur
+  -  Modify your "pin log", change a password, destroy an owned pad, recover the remaining storage space for the account, execute administrator commands, etc.
+  -  Upload a static file to the user drive
+  -  The identity of the author is proved to the server with the signature key of the registered user.
 
--  Requêtes serveur non-authentifiées
+-  Unauthenticated server requests
 
-   -  Récupérer la taille totale d’un document dans la base de données
-      (avec son historique)
-   -  Récupérer les méta-données d’un document (liste de propriétaires,
-      liste d’accès, date d’expiration, etc.)
+  -  Retrieve the total size of a document in the database (with its history)
+  -  Retrieve the metadata of a document (list of owners, access list, expiration date, etc.).
 
--  Actions sur le compte utilisateur
+-  Actions on the user account
 
-   -  Stockage ou récupération des Préférences
-   -  Commandes à effectuer dans le drive
-   -  Gestion des dossiers partagés
-   -  Gérer les contacts (ajout ou suppression de contacts)
+  -  Storing or retrieving Settings
+  -  Commands to be performed in the drive
+  -  Shared folder management
+  -  Contacts management (add or delete contacts)
 
--  Actions sur les différents modules
+-  Actions on the different modules
 
-   -  Chaque module peut recevoir ses propres commandes, mais celles-ci
-      transitent d’abord par “async-store” qui va la redistribuer aux
-      modules concernés
+  -  Each module can receive its own commands, but these first pass through "async-store" which will redistribute it to the concerned modules.
 
--  Documents collaboratifs
+-  Collaborative documents
 
-   -  Rejoindre un document collaboratif
+  -  Join a collaborative document
 
-      -  Initialisation de chainpad-netflux pour ce document
-      -  Envoyer des messages sur ce document
-      -  Écouter des évènements sur ce document
+    -  Chainpad-netflux initialization
+    -  Send messages to this document's channel
+    -  Listen to events on this document's channel
 
-   -  Obtenir une partie d’historique d’un document (pour le mode
-      “historique” de l’interface)
-   -  Modifier le mot de passe d’un document
-   -  Gérer les métadonnées du document (liste d’accès ou propriétaires)
+  -  Obtain a part of the document history
+  -  Change the password of a document
+  -  Manage document metadata (access list or owners)

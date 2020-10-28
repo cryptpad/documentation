@@ -1,118 +1,62 @@
 Inner
 =====
 
-Le niveau inner correspond à toute l’interface visible de CryptPad. Il
-représente une iframe isolée du contenu complet du compte de
-l’utilisateur. Chaque application CryptPad possède sa propre interface,
-mais de nombreux éléments sont en commun et le fonctionnement reste le
-même dans la majorité des cas. Seule la manière dont les données sont
-affichées change complètement.
 
-Fonctionnement
---------------
+The inner level corresponds to the entire visible interface of CryptPad. It represents an iframe isolated from the complete content of the user's account. Each CryptPad application has its own interface, but many elements are in common and the functioning remains the same in the majority of cases. Only the way the data is displayed changes completely.
 
-Le point de départ JavaScript du niveau “inner” correspond au fichier
-“inner.js” de chaque application. Ce fichier charge tous les éléments
-nécessaires au fonctionnement de l’iframe et gère la représentation des
-données dans l’application concernée. Que l’application utilise le
-système “framework” ou non, le fonctionnement global reste le même : un
-module sframe-common charge le système de communication avec “outer” et
-initialise différents éléments.
+Workflow
+--------
+
+The JavaScript starting point of the "inner" level corresponds to the "inner.js" file of each application. This file loads all the necessary elements for the iframe to work and manages the data representation in the selected application. Whether the application uses the "framework" system or not, the overall operation remains the same: an sframe-common module loads the communication system with "outer" and initializes different elements.
 
 metadata-manager
 ----------------
 
 ``www/common/metadata-manager.js``
 
-Ce module permet aux niveaux extérieurs à l’iframe (worker et outer) de
-fournir des données à celle-ci. Ces données sont réparties en 2
-catégories selon à qui elles sont destinées : les données “user”
-contiennent tout ce qui est public concernant le compte utilisateur
-actuel et sont destinées aux autres utilisateurs et les données “priv”
-contiennent des éléments privé ou qui ne servent pas aux autres
-utilisateur.
+This module allows the levels outside the iframe (worker and outer) to provide data to the iframe. These data are divided into 2 categories: "user" data contain every public elements concerning the current user account and "priv" data contain elements that are private or that are not sent to other users.
 
-Les niveaux extérieurs décident d’eux-mêmes de quand ré-envoyer ces
-données, car ce sont eux qui savent quand elles sont mises à jour. Les
-mises à jours sont très fréquentes et une première version est envoyée
-dés l’initialisation des sytèmes.
+This module also uses data coming from the "inner" level, and in particular from the current collaborative document (when applicable). It can thus provide 3 types of content to any "inner" module requesting it:
 
-Une fois les données reçues par le “metadata manager”, celui-ci les
-réorganise par fonction. Ce module utilise en effet également des
-données provenant du niveau “inner”, et en particulier du document
-collaboratif actuel (lorsque l’application CryptPad est de ce type). Il
-peut ainsi fournir 3 types de contenu à tout module de “inner” le
-demandant :
+-  the collaborative document "metadata" that are stored in the document itself
 
--  les “metadata” du document collaboratif qui sont stockées dans le
-   document lui-même
+  -  the title and name of the application
+  -  the user list with public data of editors (name, avatar, profile, public keys, mailbox, etc.).
 
-   -  le titre et le nom de l’application
-   -  la liste d’utilisateur avec les données publiques des éditeurs
-      (nom, avatar, profil, clés publiques, mailbox, etc.)
+-  the "private" data coming from the outside levels which are very varied
 
--  les données “private” qui représentent la liste des données privées
-   fournies par l’extérieur et qui sont très variées
+  -  the "unsafe" origin used in "outer" and the name of the application
+  -  the type of hash for collaborative documents: edition or read-only, presentation mode, embed mode, etc.
+  -  data about the document itself
 
-   -  l’origine “unsafe” utilisée dans “outer” et le nom de
-      l’application
-   -  le type de hash pour les documents collaboratifs : édition ou
-      lecture seule, mode présentation, mode intégration, etc.
-   -  des données concernant le document lui-même
+-  the "user" data that represents the current user and that is directly put in the document user list
 
--  les données “user” qui représentent l’utilisateur actuel et qui sont
-   identiques à celles partagées dans la liste d’utilisateur du document
-
-Modules d’interface
--------------------
-
-Il existe deux grands modules d’interface. Un premier, nommé
-“common-interface”, fournit des éléments basiques, vide de contenu, qui
-peuvent être réutilisés pour afficher quelque chose à l’utilisateur. Le
-second, nommé common-ui-elements" permet d’afficher des éléments déjà
-remplis mais qui sont réutilisés à plusieurs endroits dans le code de
-inner.
+UI modules
+----------
 
 common-interface
 ~~~~~~~~~~~~~~~~
 
 ``www/common/common-interface.js``
 
-Ce module permet donc de créer des éléments d’interface vides
-réutilisables. Les plus utilisés sont :
+This module allows you to create reusable empty interface elements. The most used are :
 
--  UI.alert, UI.confirm, UI.prompt : crée une boîte de dialogue
-   similaire aux ``alert``, ``confirm`` et ``prompt`` natifs mais
-   utilisant le style de CryptPad et ne bloquant pas le thread quand
-   elle est ouverte
--  UI.log : crée une notification bleue dans le coin inférieur gauche
-   qui disparaît automatiquement après quelques secondes
--  UI.confirmButton : ajoute une étape de confirmation “Êtes-vous sûrs?”
-   sur le bouton fournit en argument
--  UI.(add|remove|error)LoadingScreen : ajouter, enlever ou modifier un
-   écran de chargement
--  De nombreux outils pour créer des fenêtres personnalisées utilisant
-   le style CryptPad
+-  UI.alert, UI.confirm, UI.prompt: creates a dialog box similar to the native ``alert``, ``confirm`` and ``prompt`` but using the CryptPad style and not blocking the thread when it is open.
+-  UI.log: creates a small notification in the bottom-left corner that disappears automatically after a few seconds
+-  UI.confirmButton: adds a confirmation step "Are you sure?" on the button provided
+-  UI.(add|remove|error)LoadingScreen: add, remove or modify a loading screen
+-  Many tools to create custom windows using CryptPad style
 
 common-ui-elements
 ~~~~~~~~~~~~~~~~~~
 
 ``www/common/common-ui-elements.js``
 
-Ce module permet au code situé dans inner d’afficher des éléments avec
-du contenu pré-existant, parfois récupéré directement de l’extérieur de
-l’iframe. La plupart des fonctions ont besoin d’un accès au module
-“sframe-common” pour être utilisées car elles doivent récupérer des
-données avant de fournir l’élément souhaité.
+This module provides tools to display elements with pre-existing content, sometimes retrieved directly from outside the iframe:
 
-Il contient notamment le code pour :
-
--  Afficher l’écran de création des pads
--  Créer des boutons d’action pour la barre d’outils avec le style
-   adéquat
--  Créer une barre d’outils Markdown (pour les applications code, slide,
-   poll et le profil)
--  Créer un menu “Aide / Pour bien démarrer…” pour l’application
-   actuelle
--  Créer un menu déroulant pour changer la langue de l’interface
--  Et beaucoup d’autres outils…
+-  Display the pad creation screen
+-  Create action buttons for the toolbar with the appropriate style
+-  Create a Markdown toolbar (for code, slide, poll and profile applications)
+-  Create a "Help / Getting started..." menu for the current application
+-  Create a drop-down menu to change the interface language
+-  And many other tools ...

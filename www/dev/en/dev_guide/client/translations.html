@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Utiliser les clés de traduction &mdash; CryptPad 3.23.0 documentation</title>
+  <title>Translation keys &mdash; CryptPad 3.23.0 documentation</title>
   
 
   
@@ -34,7 +34,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Framework" href="framework.html" />
-    <link rel="prev" title="ChainPad et Listmap" href="chainpad.html" /> 
+    <link rel="prev" title="ChainPad and Listmap" href="chainpad.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -299,16 +299,16 @@
 <li class="toctree-l5"><a class="reference internal" href="architecture.html#inner">Inner</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="chainpad.html">ChainPad et Listmap</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="chainpad.html">ChainPad and Listmap</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad">ChainPad</a></li>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#checkpoints">Checkpoints</a></li>
-<li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad-avec-des-objets">ChainPad avec des objets</a></li>
+<li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad-with-javascript-objects">ChainPad with JavaScript objects</a></li>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#chainpad-netflux">Chainpad-netflux</a></li>
 <li class="toctree-l5"><a class="reference internal" href="chainpad.html#listmap">Listmap</a></li>
 </ul>
 </li>
-<li class="toctree-l4 current"><a class="current reference internal" href="#">Utiliser les clés de traduction</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#utilisation">Utilisation</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Translation keys</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#usage">Usage</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#structure">Structure</a></li>
 </ul>
 </li>
@@ -319,20 +319,20 @@
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="worker.html">Worker</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="worker.html#async-store-js-et-modules">async-store.js et modules</a></li>
-<li class="toctree-l5"><a class="reference internal" href="worker.html#commandes-de-lobjet-store">Commandes de l’objet “Store”</a></li>
+<li class="toctree-l5"><a class="reference internal" href="worker.html#async-store-js">async-store.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="worker.html#store-commands">“Store” commands</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="outer.html">Outer</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-entre-les-niveaux">Communication entre les niveaux</a></li>
-<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-avec-inner-sframe-common-outer">Communication avec inner - sframe-common-outer</a></li>
-<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-avec-le-worker-cryptpad-common">Communication avec le worker - cryptpad-common</a></li>
+<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-between-levels">Communication between levels</a></li>
+<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-with-inner">Communication with inner</a></li>
+<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-with-worker">Communication with worker</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="inner.html">Inner</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="inner.html#fonctionnement">Fonctionnement</a></li>
+<li class="toctree-l5"><a class="reference internal" href="inner.html#workflow">Workflow</a></li>
 <li class="toctree-l5"><a class="reference internal" href="inner.html#metadata-manager">metadata-manager</a></li>
-<li class="toctree-l5"><a class="reference internal" href="inner.html#modules-dinterface">Modules d’interface</a></li>
+<li class="toctree-l5"><a class="reference internal" href="inner.html#ui-modules">UI modules</a></li>
 </ul>
 </li>
 </ul>
@@ -411,7 +411,7 @@
         
           <li><a href="../client.html">Client</a> &raquo;</li>
         
-      <li>Utiliser les clés de traduction</li>
+      <li>Translation keys</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -434,66 +434,20 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="utiliser-les-cles-de-traduction">
-<h1>Utiliser les clés de traduction<a class="headerlink" href="#utiliser-les-cles-de-traduction" title="Permalink to this headline">¶</a></h1>
-<p>L’interface de CryptPad est officiellement disponible en anglais et en
-français. Elle est également traduite (intégralement ou partiellement)
-par la communauté en de nombreuses autres langues, notamment en
-allemand. Cette gestion des différentes langues fonctionne avec un
-système de clés de traduction à utiliser dans le code. A l’exception de
-quelques rares cas, aucun texte affiché à l’écran n’est écrit de manière
-brut dans le code. Une clé est utilisée à la place et la texte associé à
-cette clé est récupérée dans un fichier séparé. Bien qu’utilisable de
-manière simple, ce système possède une structure très complexe.</p>
-<div class="section" id="utilisation">
-<h2>Utilisation<a class="headerlink" href="#utilisation" title="Permalink to this headline">¶</a></h2>
-<p>Afin d’utiliser les clés de traduction dans une partie du code, il
-suffit de charger le module “Messages” avec RequireJS. Ce module est
-disponible au chemin <code class="docutils literal notranslate"><span class="pre">/customize/messages.js</span></code> et fonctionne
-automatiquement avec la langue choisie par l’utilisateur.</p>
-<p>Une fois le module chargé, “Messages” représente un objet contenant
-toutes les clés de traduction et peut donc être utilisé dans le code
-avec “Messages.cleDeTraduction” qui fera référence au texte de la clé
-“cleDeTraduction” dans la langue de l’utilisateur.</p>
+  <div class="section" id="translation-keys">
+<h1>Translation keys<a class="headerlink" href="#translation-keys" title="Permalink to this headline">¶</a></h1>
+<p>CryptPad's interface is officially available in English and French. It is also translated (fully or partially) by the community into many other languages, especially in German. This localization system works with a set of translation keys used in the code. Almost all the text displayed on the screen comes from suck keys and nothing in written in the raw code. The text associated to each key is stored in a single separate file. Although it's easy to use, this system has a complex structure.</p>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>In order to use the translation keys in the code, just load the &quot;Messages&quot; module with RequireJS. This module is available at <code class="docutils literal notranslate"><span class="pre">/customize/messages.js</span></code> and automatically uses the language chosen by the user.</p>
+<p>Once the module is loaded, &quot;Messages&quot; represents an object containing all the translation keys and can therefore be used in the code with &quot;Messages.translationKey&quot; which will refer to the text of the &quot;translationKey&quot; in the user's language.</p>
 </div>
 <div class="section" id="structure">
 <h2>Structure<a class="headerlink" href="#structure" title="Permalink to this headline">¶</a></h2>
-<p>Un des points fondamentaux mentionné au début de ce guide concernait la
-“personnalisation”. Chaque instance de CryptPad peut être personnalisée,
-notamment au niveau des images, logos, styles et pages statiques. Les
-clés de traduction sont également des éléments personnalisables, ce qui
-rend la structure du système assez complexe.</p>
-<p>Les clés sont d’abord créées et traduites dans des fichiers JSON obtenus
-avec <a class="reference external" href="https://weblate.cryptpad.fr">Weblate</a>. Ces fichiers sont
-disponibles dans le dossier <code class="docutils literal notranslate"><span class="pre">www/common/translations/</span></code>. On y trouve
-par exemple <code class="docutils literal notranslate"><span class="pre">www/common/translations/messages.json</span></code> (version anglaise
-de base) ou <code class="docutils literal notranslate"><span class="pre">www/common/translations/messages.fr.json</span></code> (version
-française). Ces fichiers sont liés à Weblate et représentent la base des
-traductions. Ils ne peuvent pas être personnalisés directement car il
-serait alors très compliqué pour les administrateurs d’instance de les
-maintenir à jour à chaque nouvelle version de CryptPad (la moindre clé
-manquante dans les traductions peut dans certains cas rendre des
-fonctionnalités inutilisable).</p>
-<p>Afin de pouvoir ajouter une étape de personnalisation, ces fichiers sont
-chargés dans des <strong>modules de langues</strong> présents dans le dossier
-<code class="docutils literal notranslate"><span class="pre">customize.dist/translations/</span></code> (dossier contenant tous les fichiers
-pouvant être personnalisés). On y retrouve ainsi
-<code class="docutils literal notranslate"><span class="pre">customize.dist/translations/messsages.js</span></code> et
-<code class="docutils literal notranslate"><span class="pre">customize.dist/translations/messages.fr.js</span></code>. Ces modules de langue
-charge leur fichier JSON correspondant et permettent de l’étendre ou de
-le modifier. Pour personnaliser un fichier présent dans
-<code class="docutils literal notranslate"><span class="pre">customize.dist</span></code>, il suffit d’en faire une copie dans un dossier
-<code class="docutils literal notranslate"><span class="pre">customize</span></code>. Dans notre cas, les administrateurs souhaitant
-personnaliser les traductions peuvent donc copier <code class="docutils literal notranslate"><span class="pre">messages.xx.js</span></code>
-dans <code class="docutils literal notranslate"><span class="pre">customize/translations/messages.js</span></code>. Ils ont alors accès à
-l’objet “Messages” correspond à la langue choisie et peuvent directement
-ajouter, supprimer ou modifier des clés existantes avec
-<code class="docutils literal notranslate"><span class="pre">Messages.key</span> <span class="pre">=</span> <span class="pre">&quot;Text&quot;;</span></code>.</p>
-<p>Enfin, le fichier <code class="docutils literal notranslate"><span class="pre">customize.dist/messages.js</span></code> va récupérer le
-<strong>module de langue</strong> correspondant à la langue de l’utilisateur (anglais
-par défaut) et definir un module RequireJS avec cette langue. Si une
-chaîne n’est pas traduite dans la langue choisie, la version anglais
-sera utilisée à la place pour cette chaîne.</p>
+<p>One of the key elements mentioned at the beginning of this guide was about &quot;customization&quot;. Each instance of CryptPad can be customized, in particular its images, logos, styles and static pages. Translation keys are also customizable elements, which makes the structure of the system quite complex.</p>
+<p>The keys are first created and translated in JSON files obtained from <a class="reference external" href="https://weblate.cryptpad.fr">Weblate</a>. These files are available in the <code class="docutils literal notranslate"><span class="pre">wwww/common/translations/</span></code> directory. There you can find for example <code class="docutils literal notranslate"><span class="pre">wwww/common/translations/messages.json</span></code> (default English version) or <code class="docutils literal notranslate"><span class="pre">wwww/common/translations/messages.fr.json</span></code> (French version). These files can't be customized directly because it would create lots of merge conflicts for the instance administrators when upgrading CryptPad to a newer version (one key missing in the default translation file may in some cases make some features unusable).</p>
+<p>In order to allow this customization step, the translation files are loaded in <strong>language modules</strong> present in the <code class="docutils literal notranslate"><span class="pre">customize.dist/translations/</span></code> directory. The English and French versions exist there as <code class="docutils literal notranslate"><span class="pre">customize.dist/translations/messages.js</span></code> and <code class="docutils literal notranslate"><span class="pre">customize.dist/translations/messages.fr.js</span></code>. These language modules load their corresponding JSON file and allow administrators to extend or modify them. To customize a file in <code class="docutils literal notranslate"><span class="pre">customize.dist</span></code>, just copy it to a <code class="docutils literal notranslate"><span class="pre">customize</span></code> folder. In our case, administrators who want to customize translations can copy <code class="docutils literal notranslate"><span class="pre">messages.xx.js</span></code> to <code class="docutils literal notranslate"><span class="pre">customize/translations/messages.xx.js</span></code>. They then have access to the &quot;Messages&quot; object corresponding to the chosen language and can directly add, delete or modify existing keys with <code class="docutils literal notranslate"><span class="pre">Messages.key</span> <span class="pre">=</span> <span class="pre">&quot;Text&quot;;</span></code>.</p>
+<p>Finally, the file <code class="docutils literal notranslate"><span class="pre">customize.dist/messages.js</span></code> will retrieve the <strong>language module</strong> corresponding to the user's language (English by default). If a string is not translated into the chosen language, the English version will be used instead for this string.</p>
 <img alt="../../_images/translations.png" class="screenshot" src="../../_images/translations.png" />
 </div>
 </div>
@@ -509,7 +463,7 @@ sera utilisée à la place pour cette chaîne.</p>
         <a href="framework.html" class="btn btn-neutral float-right" title="Framework" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="chainpad.html" class="btn btn-neutral" title="ChainPad et Listmap" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="chainpad.html" class="btn btn-neutral" title="ChainPad and Listmap" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
       
     </div>
   
