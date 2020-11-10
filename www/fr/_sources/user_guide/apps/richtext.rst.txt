@@ -18,6 +18,8 @@ Toolbar
 |picture-o| **Insert**: Add an image to the document. The image can be
 chosen in the CrpytDrive or uploaded. :badge_user:`Logged in users`
 
+|list-ul| **Outline**: Show/hide the clickable table of contents to the left of the document.
+
 Import/Export
 -------------
 

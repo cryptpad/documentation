@@ -42,7 +42,7 @@ The CryptPad team translates the software in English and French, with many more 
 
 To translate CryptPad itself please see the `Translation guide <https://github.com/xwiki-labs/cryptpad/blob/master/customize.dist/translations/README.md>`__.
 
-To translate this documentation please `get in touch with the development team <https://cryptpad.fr/contact.html>`__.
+To translate this documentation please visit the project on `Weblate <https://weblate.cryptpad.fr/projects/user-guide/>`__. To start translating a new language, please `get in touch with the development team <https://cryptpad.fr/contact.html>`__.
 
 .. _contribute_code:
 
