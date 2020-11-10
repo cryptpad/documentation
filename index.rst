@@ -19,6 +19,7 @@ This site contains 3 guides with information about using CryptPad, installing an
    Administrator Guide (in progress) <admin_guide/index>
    Developer Guide (in progress) <dev_guide/index>
    how_to_contribute
+   FAQ
 
 .. image:: /images/home-page.png
    :class: screenshot
