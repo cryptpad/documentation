@@ -112,11 +112,12 @@ permissions.
 
 .. note::
 
-   The number of teams a CryptPad user can join is limited to 3 for performance reasons.
+   The number of teams a CryptPad user can join used to be limited to 3 for performance reasons. This has now been increased to 5 as we have added details to the loading screen that show how long teams take to load. This allows users to negotiate the tradeoff between number of teams and increased loading time.
+
 
 To create a team:
 
-#. User menu (avatar at the top-right) > |users| **Teams**. 
+#. User menu (avatar at the top-right) > |users| **Teams**.
 #. |plus-circle| **New**.
 
 To open an existing team:

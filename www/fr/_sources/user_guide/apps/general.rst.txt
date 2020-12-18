@@ -168,6 +168,7 @@ To access the properties menu:
 
 Available data:
 
+-  Document identifier to share with instance administrators in case of an issue. (note that this does not expose the content of of the document).
 -  Links to edit and view (depending on your permissions).
 -  Dates of creation and last access.
 -  Size.

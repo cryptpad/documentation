@@ -12,12 +12,13 @@ Spread the word
 
 The simplest way to help CryptPad is to make the project known. As an Open Source project, CryptPad has very little budget to spare for marketing. We rely on the community to promote the service, for example by:
 
-- Using CrytpPad and demonstrating it to friends and colleagues, highlighting why privacy is important.
+- Using CryptPad and demonstrating it to friends and colleagues, highlighting why privacy is important.
 - Posting about CryptPad on social media.
 - Following and relaying our own communications from our `Blog <https://blog.cryptpad.fr>`__, from `Mastodon <https://social.weho.st/@cryptpad>`__ or `Twitter <https://twitter.com/cryptpad>`__.
 - Relaying the `CryptPad Crowdfunding <https://opencollective.com/cryptpad>`__.
 - Presenting CryptPad in conferences or meetups, or inviting the team to present.
 
+For examples of past presentations please see the `Cryptpad Peertube Channel <https://peertube.xwiki.com/video-channels/cryptpad_channel/videos>`_ with playlists of presentation in `English <https://peertube.xwiki.com/videos/watch/playlist/cfa5d7f1-48cd-4a6b-8594-7d766341e43c>`_ and `French <https://peertube.xwiki.com/videos/watch/playlist/f1d74811-e42f-4059-881f-f93ae47c437a>`_.
 
 .. _contribute_bugs:
 
@@ -67,4 +68,8 @@ Contribute to making CryptPad financially sustainable:
 - One-time or recurring donations on `Open Collective <https://opencollective.com/cryptpad>`__.
 - Subscriptions to `cryptpad.fr <https://accounts.cryptpad.fr>`__.
 - For larger organisations, `contact the team <https://cryptpad.fr/contact.html>`__ if you would like to sponsor a feature or to discuss support contracts for an on-site instance.
+
+.. note::
+
+    Note to instance owners: cryptpad.fr used to offer a revenue sharing system for subscriptions on self-hosted instances. We have discontinued this possibility at this time. However if you are an instance owner and are interested in such a system we would still be interested to hear from you. In the future we might be interested to restore such a revenue sharing model with large instance owners.
 
