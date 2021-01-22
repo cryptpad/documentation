@@ -39,6 +39,11 @@ History in spreadsheets only allows to jump back to the previous version, and th
 
 The functionality to restore and share a version, as well as everything relating to :ref:`snapshots`, works in the same way as in :ref:`the other applications <document_history>`.
 
+Printing
+--------
+
+Export and print using a local app.
+
 Import/Export
 -------------
 
