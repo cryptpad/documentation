@@ -20,5 +20,5 @@ This site contains 3 guides with information about using CryptPad, installing an
    Developer Guide (in progress) <dev_guide/index>
    how_to_contribute
 
-.. image:: /images/home-page.png
+.. image:: /images/shredder_banner_tight.png
    :class: screenshot
