@@ -94,7 +94,6 @@ There are two ways of deleting a document on CryptPad:
 - |trash| **Removing** a document means it stops appearing in the CryptDrive but remains in the database. The document remains in the CryptDrive of other users who have stored it. The document can be recovered in the CryptDrive using the :ref:`history <drive_history>`.
 - |cptools destroy| **Destroying** a document deletes it from the database permanently. The document is deleted from all CryptDrives that store it, and it cannot be recovered using the CryptDrive history. :badge_owner:`Document owners`
 
-
 .. note::
 
    If a document is not stored in any CryptDrive, it is **destroyed** from the database after 90 days (the length of this delay can be set by the service administrators).
@@ -110,9 +109,9 @@ trash first:
 
 - Select the document and press the ``Shift + Del`` keys.
 
-To empty the trash: 
+To empty the trash:
 
-- ``Right click`` on the |trash| **Trash** tab to the left of the CryptDrive > |trash-o| **Empty the trash**. 
+- ``Right click`` on the |trash| **Trash** tab to the left of the CryptDrive > |trash-o| **Empty the trash**.
 - ``Click`` on the |trash| **Trash** tab to access the trash > |trash-o| **Empty the trash**.
 
 If you are an :ref:`owner <owners>` of some documents in the trash when you empty it,
@@ -122,6 +121,9 @@ them.
 To **destroy** a document without storing it in the trash first:
 
 -  ``Right click`` on the document in the CryptDrive > |cptools destroy| **Destroy**. :badge_owner:`Document owners`
+
+.. note::
+   Once destroyed, documents may still appear in other user's CryptDrives. Once a document has been added to someone's drive, the encrypted nature of CryptPad makes it impossible to take it back. Therefore a destroyed document may still appeared in a user's drive if they had previously stored it. However, they will not be able to open the document.
 
 .. _drive_history:
 

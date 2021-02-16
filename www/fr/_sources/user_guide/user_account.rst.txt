@@ -122,7 +122,7 @@ Account
 
 -  **Language**: Language used in the CryptPad interface. To change the language of CryptPad pick a new language in the drop-down menu. CryptPad is translated in English and French by the development team, and in other languages by the :ref:`community <contribute_translation>`. Some translations can be incomplete and/or contain errors.
 
--  **Tips**: Help messages in the CryptPad interface. Click on **Reset** to display them again if they have been dismissed.
+- **Automatic Download limit**: Maximum size in megabytes (MB) for automatically loading media elements (images, videos, pdf) embedded into documents. Elements bigger than the specified size can be loaded manually. Use "-1" to always load the media elements automatically.
 
 -  **Change your password**: Enter your current password and confirm the new password by typing it twice. :badge_user:`Logged in users`
 
@@ -152,6 +152,8 @@ CryptPad includes the keys to decrypt your documents in their links. Anyone with
 
 CryptDrive
 ~~~~~~~~~~
+
+-  **Tips**: Help messages in the CryptPad interface. Click on **Reset** to display them again if they have been dismissed.
 
 -  **Duplicated owned pads**: When you move your owned pads to a shared folder, a copy is kept in your CryptDrive to ensure that you retain your control over it. You can hide duplicated files. Only the shared version will be visible, unless deleted, in which case the original will be displayed in its previous location.
 
