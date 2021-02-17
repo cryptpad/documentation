@@ -42,7 +42,10 @@ The functionality to restore and share a version, as well as everything relating
 Printing
 --------
 
-Export and print using a local app.
+To print spreadsheets it is recommended to export using one of the formats below and to handle page layout with a desktop application such as Libre Office.
+
+Alternatively the ``.pdf`` export can be used to produce file for print, results may vary depending on the layout of the document.
+
 
 Import/Export
 -------------
@@ -51,4 +54,4 @@ Import/Export
 | Supported formats: ``.bin`` files exported by this application, Excel ``.xslx``.
 
 | |file-o| **File** > |download| **Export**.
-| Supported formats: ``.bin``, Excel ``.xslx``.
+| Supported formats: ``.bin``, Excel ``.xslx``, ``.ods``, ``.csv``, ``.pdf``.

@@ -59,6 +59,9 @@ To duplicate a document:
 -  From the CryptDrive: ``Right click`` on the document > |clone|
    **Make a copy**.
 
+.. note::
+   Due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration, **Make a copy** is not available in Spreadsheets.
+
 .. _document_history:
 
 Document history
