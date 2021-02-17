@@ -148,6 +148,11 @@ CryptPad includes the keys to decrypt your documents in their links. Anyone with
 
 -  **Feedback**: CryptPad can send anonymised usage feedback to the server in order to improve the user experience. The content of documents is never shared. This option is disabled by default.
 
+Appearance
+~~~~~~~~~~
+
+- **Color theme**: determines the theme (light or dark) used across CryptPad. By default this follows the operating system and/or browser setting, but it can also be set manually.
+
 .. _user_settings_cryptdrive:
 
 CryptDrive
