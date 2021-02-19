@@ -159,7 +159,7 @@ Properties
 ----------
 
 
-.. image:: /images/properties.png
+.. image:: /images/modal-properties.png
    :class: screenshot
 
 To access the properties menu:

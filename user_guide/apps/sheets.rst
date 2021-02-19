@@ -1,8 +1,8 @@
 
 .. _app_sheets:
 
-Spreadsheets
-============
+Spreadsheet
+===========
 
 The Spreadsheet application in CryptPad is an integration of
 `OnlyOffice <https://www.onlyoffice.com/>`__.
@@ -39,10 +39,12 @@ History in spreadsheets only allows to jump back to the previous version, and th
 
 The functionality to restore and share a version, as well as everything relating to :ref:`snapshots`, works in the same way as in :ref:`the other applications <document_history>`.
 
+.. _sheets_printing:
+
 Printing
 --------
 
-To print spreadsheets it is recommended to export using one of the formats below and to handle page layout with a desktop application such as Libre Office.
+To print spreadsheets it is recommended to export using one of the formats below and to handle page layout with a desktop application such as LibreOffice Calc.
 
 Alternatively the ``.pdf`` export can be used to produce file for print, results may vary depending on the layout of the document.
 

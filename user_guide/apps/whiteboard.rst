@@ -16,6 +16,8 @@ Toolbar
 |picture-o| **Insert**: Add an image to the document. The image can be
 chosen in the CryptDrive or uploaded. :badge_user:`Logged in users`
 
+.. XXX add text, undo, redo
+
 Drawing
 -------
 
