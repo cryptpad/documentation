@@ -53,6 +53,7 @@ To switch back to **Fast mode** use the **Collaboration** tab in the OnlyOffice 
 History
 -------
 
+To access the spreadsheet history, use |file-o| **File** > |history| **History** in the CryptPad toolbar.
 
 Due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration, history in speadsheets works differently than :ref:`in the other applications <document_history>`.
 
