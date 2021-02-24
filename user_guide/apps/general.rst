@@ -89,7 +89,7 @@ To save storage space, history can be deleted in the document’s
 :ref:`properties <document_properties>` :badge_owner:`Document owners`
 
 .. note::
-   The history functionality works slightly differently in the :ref:`app_sheets` application, due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration. Please refer to :ref:`speadsheet history <sheets_history>` for further details.
+   The history functionality works slightly differently in the :ref:`app_sheets` application, due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration. Please refer to :ref:`spreadsheet history <sheets_history>` for further details.
 
 **Version Links**
 
@@ -166,7 +166,7 @@ To access the properties menu:
 
 -  From the document: |file-o| **File** > |info-circle|
    **Properties**.
--  From the CryptDrive: ``Rigth click`` on the document >
+-  From the CryptDrive: ``Right click`` on the document >
    |info-circle| **Properties**.
 
 Available data:
