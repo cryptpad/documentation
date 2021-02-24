@@ -1,30 +1,36 @@
 Frequently Asked Questions
 ==========================
 
-How to import my documents from another platform?
--------------------------------------------------
+How to import/export my documents to/from another platform?
+-----------------------------------------------------------
 
-Making CryptPad compatible with a wide range of document formats is a key challenge for the development team. Unfortunately the technology for converting documents in the browser still has limitations, especially as far private and open source solutions are concerned. While work in this area is ongoing, the methods below should help in importing and exporting to/from other widely used software.
+Making CryptPad compatible with a wide range of document formats is an ongoing challenge for the development team. Unfortunately the technology for converting documents in the browser still has limitations, especially as far private and open source solutions are concerned. While work in this area is in progress, the methods below should help in importing and exporting to/from other widely used software.
 
-.. XXX note on copy/pasting?
+.. note::
+    Simply copy-pasting content from existing software into CryptPad is an easy first step to try when importing/exporting. Please note that the import/export methods below can improve results significantly.
 
-.. markdown/code section?
-.. XXX note on right-click > open in code editor?
 
-Rich text documents
-~~~~~~~~~~~~~~~~~~~~~
+It is possible to upload **files** to CryptPad for secure storage and sharing. However this does not make every file an editable CryptPad **document**.
+
+Text files uploaded as files can be opened as a Code/Markdown document from the Drive with ``Right click`` > |cptools code| **Open in Code editor**.
+
+To import any other file type in an editable form, please use the |file-o| **File** > |upload| **Import** functionality in a CryptPad document.
+
+
+Rich text document import/export
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To import rich text documents (Microsoft Word, Google Docs, LibreOffice Writer, etc.), the supported format is HTML:
 
 1. Export your document as HTML in your existing software.
 2. Save the file to your computer.
 3. Open a new :ref:`app_rich_text` document on CryptPad (or an existing one to replace the contents).
-3. |file-o| **File** > |upload| **Import** and select your file.
+4. |file-o| **File** > |upload| **Import** and select your file.
 
 To export, use |file-o| **File** > |download| **Export** and select ``.doc`` as the format.
 
-Spreadsheets
-~~~~~~~~~~~~
+Spreadsheets import/export
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To import spreadsheets, the supported format is ``.xlsx``. This is the Microsoft Excel format, but can be exported from other software such as Google Sheets and LibreOffice Calc:
 
@@ -40,6 +46,20 @@ To export, use |file-o| **File** > |download| **Export** and choose a format:
 - To use in LibreOffice Calc, select ``.ods``.
 - For cases where no further editing of the data is required after export (presentations, reports, etc), select ``.pdf``.
 - For backup purposes or to share with a user on another CryptPad instance, select ``.bin``.
+
+I cannot do X with a document I created
+---------------------------------------
+
+Some functionality on CryptPad is restricted to :ref:`document owners <owners>`. This includes:
+
+-  Enabling an :ref:`access list <access_list>`.
+-  Enabling a password.
+-  Adding or removing other owners.
+-  Destroying the document.
+
+The ownership of a document is set when :ref:`creating it<new_document>` and cannot be changed afterwards if the document is created without an owner.
+
+The development team is considering removing this distinction in future. In the meantime, the safe default option is to "own" all documents you create in order to retain full control over them, including the ability to destroy them.
 
 
 Can I use CryptPad on mobile?
@@ -58,13 +78,11 @@ We are not planning a dedicated mobile application for the following reasons:
 
 To address these problems, the development team is working on making CryptPad a "Progressive Web App". This means that it can be used on mobile through the web browser, behaving like an application while being the same software that runs on desktop browsers. This has the benefit of turning every CryptPad instance into a web app provider, rather than putting the burden of choosing the right instance on the user.
 
-What is a document owner?
--------------------------
-
 
 Can CryptPad sync documents to my local filesystem?
 ---------------------------------------------------
 
+The way encryption is currently used in CryptPad does not allow syncing with the local file system. This is a regularly requested feature however, so the development team hopes to make it available in future.
 
 
 What is the relationship between CryptPad and OnlyOffice?
@@ -72,6 +90,3 @@ What is the relationship between CryptPad and OnlyOffice?
 
 The CryptPad :ref:`app_sheets` application is an integration of `OnlyOffice Spreadsheets <https://www.onlyoffice.com/en/spreadsheet-editor.aspx>`_. However, this only concerns the client-side code, CryptPad does not make use of the OnlyOffice Document Server. CryptPad's encrypted collaboration, used for spreadsheets and other applications, is completely different from the encryption system used in parts of upstream OnlyOffice. Some of CryptPad's file format conversion tools are based on OnlyOffice code, but substantial work has been done to make it run in the browser rather than on the server, therefore avoiding the need to reveal the contents of users' documents when converting.
 
-
-Can you provide a Data Processing Agreement?
---------------------------------------------
