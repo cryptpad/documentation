@@ -84,6 +84,7 @@ Can CryptPad sync documents to my local filesystem?
 
 The way encryption is currently used in CryptPad does not allow syncing with the local file system. This is a regularly requested feature however, so the development team hopes to make it available in future.
 
+.. _FAQ_OOintegration:
 
 What is the relationship between CryptPad and OnlyOffice?
 ---------------------------------------------------------
