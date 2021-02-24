@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Rich Text &mdash; CryptPad 4.0 Dokumentation</title>
+  <title>Rich Text &mdash; CryptPad 4.3.0 Dokumentation</title>
   
 
   
@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="../../_static/css/cp-overrides.css" type="text/css" />
     <link rel="index" title="Stichwortverzeichnis" href="../../genindex.html" />
     <link rel="search" title="Suche" href="../../search.html" />
-    <link rel="next" title="Tabellen" href="sheets.html" />
+    <link rel="next" title="Spreadsheet" href="sheets.html" />
     <link rel="prev" title="Allgemein" href="general.html" /> 
 
   
@@ -54,7 +54,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">4.0</span>
+              <span class="release">4.3.0</span>
             </a>
             
 <div role="search">
@@ -102,6 +102,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../user_account.html#settings">Einstellungen</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#account">Account</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#confidentiality">Vertraulichkeit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#appearance">Appearance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#cryptdrive">CryptDrive</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#cursor">Cursor</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#rich-text">Rich Text</a></li>
@@ -185,13 +186,17 @@
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Rich Text</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#toolbar">Werkzeugleiste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#view-settings">View settings</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#import-export">Import/Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#comments">Kommentare</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="sheets.html">Tabellen</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sheets.html">Spreadsheet</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="sheets.html#documentation">Dokumentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#toolbars">Toolbars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#undo-and-collaboration-modes">Undo and collaboration modes</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sheets.html#history">Verlauf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#printing">Printing</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sheets.html#import-export">Import/Export</a></li>
 </ul>
 </li>
@@ -232,8 +237,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Whiteboard</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Werkzeugleiste</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Zeichnen</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-mode">Pinsel-Modus</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#select-mode">Auswahl-Modus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Paint mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Select mode</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Export</a></li>
 </ul>
 </li>
@@ -249,6 +254,21 @@
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#translate-cryptpad">CryptPad übersetzen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#contribute-to-the-code">Zum Code beitragen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#financial-support">Finanzielle Unterstützung</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently Asked Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">How to import/export my documents to/from another platform?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#rich-text-document-import-export">Rich text document import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#spreadsheets-import-export">Spreadsheets import/export</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-cannot-do-x-with-a-document-i-created">I cannot do X with a document I created</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-i-use-cryptpad-on-mobile">Can I use CryptPad on mobile?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#are-you-planning-to-make-an-app">Are you planning to make an app?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-cryptpad-sync-documents-to-my-local-filesystem">Can CryptPad sync documents to my local filesystem?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#what-is-the-relationship-between-cryptpad-and-onlyoffice">What is the relationship between CryptPad and OnlyOffice?</a></li>
 </ul>
 </li>
 </ul>
@@ -341,7 +361,16 @@
 <h2>Werkzeugleiste<a class="headerlink" href="#toolbar" title="Link zu dieser Überschrift">¶</a></h2>
 <p><em class="fa fa-wrench"></em> <strong>Werkzeuge</strong>: Blendet die Werkzeugleiste für den Texteditor ein/aus.</p>
 <p><em class="fa fa-picture-o"></em> <strong>Einfügen</strong>: Fügt ein Bild in das Dokument ein. Das Bild kann aus dem CryptDrive ausgewählt oder hochgeladen werden. <span class="badge-user">Eingeloggte Benutzer</span></p>
-<p><em class="fa fa-list-ul"></em> <strong>Gliederung</strong>: Blendet das anklickbare Inhaltsverzeichnis auf der linken Seite des Dokuments ein/aus.</p>
+</div>
+<div class="section" id="view-settings">
+<h2>View settings<a class="headerlink" href="#view-settings" title="Link zu dieser Überschrift">¶</a></h2>
+<p>The buttons at the top of the editor control the display of text editor elements.</p>
+<p><em class="fa fa-list-ul"></em> : Show/hide the document outline.</p>
+<p><em class="fa fa-comment"></em> : Show/hide the comments (a red icon when closed indicates that there are comments).</p>
+<p><em class="fa fa-expand"></em> : Use the full width of the window for the text editor.</p>
+<p><em class="fa fa-compress"></em> : Use reduced width &quot;page mode&quot; for the text editor.</p>
+<p>To set defaults for these settings, for example to control which sections are visible when recipients visit a shared link to the document, use the <strong>Document Settings</strong> dialog:</p>
+<p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-cog"></em> <strong>Document Settings</strong>.</p>
 </div>
 <div class="section" id="import-export">
 <h2>Import/Export<a class="headerlink" href="#import-export" title="Link zu dieser Überschrift">¶</a></h2>
@@ -390,7 +419,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="sheets.html" class="btn btn-neutral float-right" title="Tabellen" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="sheets.html" class="btn btn-neutral float-right" title="Spreadsheet" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="general.html" class="btn btn-neutral" title="Allgemein" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
@@ -427,7 +456,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'4.0',
+            VERSION:'4.3.0',
             LANGUAGE:'de',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

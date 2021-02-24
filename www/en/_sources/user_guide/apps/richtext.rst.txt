@@ -18,7 +18,22 @@ Toolbar
 |picture-o| **Insert**: Add an image to the document. The image can be
 chosen in the CrpytDrive or uploaded. :badge_user:`Logged in users`
 
-|list-ul| **Outline**: Show/hide the clickable table of contents to the left of the document.
+View settings
+-------------
+
+The buttons at the top of the editor control the display of text editor elements.
+
+|list-ul| : Show/hide the document outline.
+
+|comment| : Show/hide the comments (a red icon when closed indicates that there are comments).
+
+|expand| : Use the full width of the window for the text editor.
+
+|compress| : Use reduced width "page mode" for the text editor.
+
+To set defaults for these settings, for example to control which sections are visible when recipients visit a shared link to the document, use the **Document Settings** dialog:
+
+|file-o| **File** > |cog| **Document Settings**.
 
 Import/Export
 -------------

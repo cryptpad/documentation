@@ -1,3 +1,8 @@
+:root {
+    --cryptpad-color-brand: #0087FF;
+}
+
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -3025,7 +3030,8 @@ select#language-selector-container option {
     background: transparent;
 }
 .wy-side-nav-search > .icon-home > .icon-title {
-    font-family: "Open Sans", sans-serif;
+    font-family: "IBM Plex Mono", sans-serif;
+    color: var(--cryptpad-color-brand);
     font-size: 2em;
     padding: 10px 0px;
 }
@@ -3121,7 +3127,7 @@ select#language-selector-container option {
 
 .wy-nav-top {
     display: none;
-    background: #7cc8ff;
+    background: var(--cryptpad-color-brand);
     color: #fff;
     padding: 0.4045em 0.809em;
     position: relative;

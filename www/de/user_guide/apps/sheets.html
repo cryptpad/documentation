@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Tabellen &mdash; CryptPad 4.0 Dokumentation</title>
+  <title>Spreadsheet &mdash; CryptPad 4.3.0 Dokumentation</title>
   
 
   
@@ -54,7 +54,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">4.0</span>
+              <span class="release">4.3.0</span>
             </a>
             
 <div role="search">
@@ -102,6 +102,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../user_account.html#settings">Einstellungen</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#account">Account</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#confidentiality">Vertraulichkeit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#appearance">Appearance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#cryptdrive">CryptDrive</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#cursor">Cursor</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#rich-text">Rich Text</a></li>
@@ -185,13 +186,17 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="richtext.html">Rich Text</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#toolbar">Werkzeugleiste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="richtext.html#view-settings">View settings</a></li>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#import-export">Import/Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#comments">Kommentare</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Tabellen</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Spreadsheet</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#documentation">Dokumentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#toolbars">Toolbars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#undo-and-collaboration-modes">Undo and collaboration modes</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#history">Verlauf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#printing">Printing</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#import-export">Import/Export</a></li>
 </ul>
 </li>
@@ -232,8 +237,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Whiteboard</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Werkzeugleiste</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Zeichnen</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-mode">Pinsel-Modus</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#select-mode">Auswahl-Modus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Paint mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Select mode</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Export</a></li>
 </ul>
 </li>
@@ -249,6 +254,21 @@
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#translate-cryptpad">CryptPad übersetzen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#contribute-to-the-code">Zum Code beitragen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#financial-support">Finanzielle Unterstützung</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently Asked Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">How to import/export my documents to/from another platform?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#rich-text-document-import-export">Rich text document import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#spreadsheets-import-export">Spreadsheets import/export</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-cannot-do-x-with-a-document-i-created">I cannot do X with a document I created</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-i-use-cryptpad-on-mobile">Can I use CryptPad on mobile?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#are-you-planning-to-make-an-app">Are you planning to make an app?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-cryptpad-sync-documents-to-my-local-filesystem">Can CryptPad sync documents to my local filesystem?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#what-is-the-relationship-between-cryptpad-and-onlyoffice">What is the relationship between CryptPad and OnlyOffice?</a></li>
 </ul>
 </li>
 </ul>
@@ -310,7 +330,7 @@
         
           <li><a href="../applications.html">Anwendungen</a> &raquo;</li>
         
-      <li>Tabellen</li>
+      <li>Spreadsheet</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -333,16 +353,44 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="spreadsheets">
-<span id="app-sheets"></span><h1>Tabellen<a class="headerlink" href="#spreadsheets" title="Link zu dieser Überschrift">¶</a></h1>
-<p>Die Tabellen-Anwendung in CryptPad ist eine Integration von <a class="reference external" href="https://www.onlyoffice.com/">OnlyOffice</a>.</p>
+  <div class="section" id="spreadsheet">
+<span id="app-sheets"></span><h1>Spreadsheet<a class="headerlink" href="#spreadsheet" title="Link zu dieser Überschrift">¶</a></h1>
+<p>The Spreadsheet application in CryptPad is an integration of
+<a class="reference external" href="https://www.onlyoffice.com/">OnlyOffice</a>. To read more about the details of this integration see <a class="reference internal" href="../../FAQ.html#faq-oointegration"><span class="std std-ref">What is the relationship between CryptPad and OnlyOffice?</span></a>.</p>
 <img alt="../../_images/app-sheets-preview.png" class="screenshot" src="../../_images/app-sheets-preview.png" />
 <div class="section" id="documentation">
 <h2>Dokumentation<a class="headerlink" href="#documentation" title="Link zu dieser Überschrift">¶</a></h2>
 <p>Eine Anleitung zur Verwendung von Tabellen findest du in der <a class="reference external" href="https://helpcenter.onlyoffice.com/de/ONLYOFFICE-Editors/ONLYOFFICE-Spreadsheet-Editor/index.aspx">OnlyOffice-Dokumentation</a>.</p>
 </div>
+<div class="section" id="toolbars">
+<h2>Toolbars<a class="headerlink" href="#toolbars" title="Link zu dieser Überschrift">¶</a></h2>
+<p>CryptPad integrates OnlyOffice spreadsheets into the same encrypted collaboration system as the other applications. Additionally OnlyOffice provides a wide range of functions in a tabbed toolbar. This results in a double toolbar that can cause confusion:</p>
+<div class="admonition danger">
+<p class="admonition-title">Gefahr</p>
+<p>XXX add spreadsheet toolbar screenshot</p>
+</div>
+<ul class="simple">
+<li><p>The topmost <strong>CryptPad toolbar</strong> is used for <em class="fa fa-file-o"></em> <strong>File</strong> operations (including import/export, history, properties, etc) as well as <em class="fa fa-share-alt"></em> <strong>Share</strong> and <em class="fa fa-unlock-alt"></em> <strong>Access</strong>.</p></li>
+<li><p>The <strong>OnlyOffice toolbar</strong> is used for all functionality within the spreadsheet document itself, as well as the collaboration modes explained in the next section.</p></li>
+</ul>
+</div>
+<div class="section" id="undo-and-collaboration-modes">
+<h2>Undo and collaboration modes<a class="headerlink" href="#undo-and-collaboration-modes" title="Link zu dieser Überschrift">¶</a></h2>
+<p>OnlyOffice provides two collaborative editing modes in spreadsheets that affect how changes are synced between users and whether or not the <strong>Undo</strong> functionality is available.</p>
+<ul class="simple">
+<li><p><strong>Fast Mode</strong> is enabled by default. New edits by all users are automatically synced with others as they are made. In this mode it is not possible to undo.</p></li>
+<li><p><strong>Strict Mode</strong> allows each user to make changes independently. The modified cells are &quot;locked&quot; for others until the author manually saves their changes. New edits are only synced with other users after being saved. In this mode it is possible to undo changes that have not yet been saved. When a user saves their changes, others are prompted to save in order to receive the latest edits.</p></li>
+</ul>
+<p>When <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">Z</span></code> is pressed for undo, the application will automatically suggest switching to <strong>Strict Mode</strong> to enable the undo functionality.</p>
+<p>To switch back to <strong>Fast mode</strong> use the <strong>Collaboration</strong> tab in the OnlyOffice toolbar and select <strong>Co-editing Mode</strong> &gt; <strong>Fast</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Bemerkung</p>
+<p>Note that CryptPad remembers your choice of editing mode across sessions and documents.</p>
+</div>
+</div>
 <div class="section" id="history">
 <span id="sheets-history"></span><h2>Verlauf<a class="headerlink" href="#history" title="Link zu dieser Überschrift">¶</a></h2>
+<p>To access the spreadsheet history, use <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-history"></em> <strong>History</strong> in the CryptPad toolbar.</p>
 <p>Aufgrund der Integration von OnlyOffice in die verschlüsselte Echtzeit-Zusammenarbeit von CryptPad funktioniert der Verlauf in Tabellen anders als der <a class="reference internal" href="general.html#document-history"><span class="std std-ref">Verlauf in anderen Anwendungen</span></a>.</p>
 <div class="figure align-default" id="id1">
 <img alt="../../_images/history-toolbar-sheets.png" class="screenshot" src="../../_images/history-toolbar-sheets.png" />
@@ -356,6 +404,11 @@
 </ul>
 <p>Die Wiederherstellung und das Teilen einer Version, sowie <a class="reference internal" href="general.html#snapshots"><span class="std std-ref">Gespeicherte Versionen</span></a> funktionieren wie in <a class="reference internal" href="general.html#document-history"><span class="std std-ref">den anderen Anwendungen</span></a>.</p>
 </div>
+<div class="section" id="printing">
+<span id="sheets-printing"></span><h2>Printing<a class="headerlink" href="#printing" title="Link zu dieser Überschrift">¶</a></h2>
+<p>To print spreadsheets it is recommended to export using one of the formats below and to handle page layout with a desktop application such as LibreOffice Calc.</p>
+<p>Alternatively the <code class="docutils literal notranslate"><span class="pre">.pdf</span></code> export can be used to produce file for print, results may vary depending on the layout of the document.</p>
+</div>
 <div class="section" id="import-export">
 <h2>Import/Export<a class="headerlink" href="#import-export" title="Link zu dieser Überschrift">¶</a></h2>
 <div class="line-block">
@@ -364,7 +417,7 @@
 </div>
 <div class="line-block">
 <div class="line"><em class="fa fa-file-o"></em> <strong>Datei</strong> &gt; <em class="fa fa-download"></em> <strong>Exportieren</strong>.</div>
-<div class="line">Unterstützte Formate: <code class="docutils literal notranslate"><span class="pre">.bin</span></code>, Excel-Dateien <code class="docutils literal notranslate"><span class="pre">.xslx</span></code>.</div>
+<div class="line">Supported formats: <code class="docutils literal notranslate"><span class="pre">.bin</span></code>, Excel <code class="docutils literal notranslate"><span class="pre">.xslx</span></code>, <code class="docutils literal notranslate"><span class="pre">.ods</span></code>, <code class="docutils literal notranslate"><span class="pre">.csv</span></code>, <code class="docutils literal notranslate"><span class="pre">.pdf</span></code>.</div>
 </div>
 </div>
 </div>
@@ -414,7 +467,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'4.0',
+            VERSION:'4.3.0',
             LANGUAGE:'de',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

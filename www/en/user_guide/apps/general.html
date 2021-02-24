@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>General &mdash; CryptPad 4.0 documentation</title>
+  <title>General &mdash; CryptPad 4.3.0 documentation</title>
   
 
   
@@ -54,7 +54,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">4.0</span>
+              <span class="release">4.3.0</span>
             </a>
             
 <div role="search">
@@ -102,6 +102,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../user_account.html#settings">Settings</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#account">Account</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#confidentiality">Confidentiality</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#appearance">Appearance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#cryptdrive">CryptDrive</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#cursor">Cursor</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#rich-text">Rich Text</a></li>
@@ -185,13 +186,17 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="richtext.html">Rich Text</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="richtext.html#view-settings">View settings</a></li>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#import-export">Import/Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#comments">Comments</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="sheets.html">Spreadsheets</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sheets.html">Spreadsheet</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="sheets.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#toolbars">Toolbars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#undo-and-collaboration-modes">Undo and collaboration modes</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sheets.html#history">History</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#printing">Printing</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sheets.html#import-export">Import/Export</a></li>
 </ul>
 </li>
@@ -232,8 +237,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Whiteboard</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Toolbar</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Drawing</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-mode">Paint mode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#select-mode">Select mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Paint mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Select mode</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Export</a></li>
 </ul>
 </li>
@@ -249,6 +254,21 @@
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#translate-cryptpad">Translate CryptPad</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#contribute-to-the-code">Contribute to the code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#financial-support">Financial support</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently Asked Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">How to import/export my documents to/from another platform?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#rich-text-document-import-export">Rich text document import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#spreadsheets-import-export">Spreadsheets import/export</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-cannot-do-x-with-a-document-i-created">I cannot do X with a document I created</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-i-use-cryptpad-on-mobile">Can I use CryptPad on mobile?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#are-you-planning-to-make-an-app">Are you planning to make an app?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-cryptpad-sync-documents-to-my-local-filesystem">Can CryptPad sync documents to my local filesystem?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#what-is-the-relationship-between-cryptpad-and-onlyoffice">What is the relationship between CryptPad and OnlyOffice?</a></li>
 </ul>
 </li>
 </ul>
@@ -377,6 +397,10 @@ saved.</p>
 <li><p>From the CryptDrive: <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document &gt; <em class="fa fa-clone"></em>
 <strong>Make a copy</strong>.</p></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration, <strong>Make a copy</strong> is not available in Spreadsheets.</p>
+</div>
 </div>
 <div class="section" id="document-history">
 <span id="id4"></span><h2>Document history<a class="headerlink" href="#document-history" title="Permalink to this headline">¶</a></h2>
@@ -402,7 +426,7 @@ with <em class="fa fa-times"></em> <strong>Close</strong>.</p></li>
 <a class="reference internal" href="#document-properties"><span class="std std-ref">properties</span></a> <span class="badge-owner">Document owners</span></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The history functionality works slightly differently in the <a class="reference internal" href="sheets.html#app-sheets"><span class="std std-ref">Spreadsheets</span></a> application, due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration. Please refer to <a class="reference internal" href="sheets.html#sheets-history"><span class="std std-ref">speadsheet history</span></a> for further details.</p>
+<p>The history functionality works slightly differently in the <a class="reference internal" href="sheets.html#app-sheets"><span class="std std-ref">Spreadsheet</span></a> application, due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration. Please refer to <a class="reference internal" href="sheets.html#sheets-history"><span class="std std-ref">spreadsheet history</span></a> for further details.</p>
 </div>
 <p><strong>Version Links</strong></p>
 <p>To share a link to the displayed version of the history:</p>
@@ -457,12 +481,12 @@ snapshots will be deleted as well.</p>
 </div>
 <div class="section" id="properties">
 <span id="document-properties"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
-<img alt="../../_images/properties.png" class="screenshot" src="../../_images/properties.png" />
+<img alt="../../_images/modal-properties.png" class="screenshot" src="../../_images/modal-properties.png" />
 <p>To access the properties menu:</p>
 <ul class="simple">
 <li><p>From the document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-info-circle"></em>
 <strong>Properties</strong>.</p></li>
-<li><p>From the CryptDrive: <code class="docutils literal notranslate"><span class="pre">Rigth</span> <span class="pre">click</span></code> on the document &gt;
+<li><p>From the CryptDrive: <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document &gt;
 <em class="fa fa-info-circle"></em> <strong>Properties</strong>.</p></li>
 </ul>
 <p>Available data:</p>
@@ -533,7 +557,7 @@ history. To save storage space, delete the document’s history with
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'4.0',
+            VERSION:'4.3.0',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

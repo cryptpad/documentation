@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Dessin &mdash; Documentation CryptPad 4.0</title>
+  <title>Dessin &mdash; Documentation CryptPad 4.3.0</title>
   
 
   
@@ -54,7 +54,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">4.0</span>
+              <span class="release">4.3.0</span>
             </a>
             
 <div role="search">
@@ -102,6 +102,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../user_account.html#settings">Préférences</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#account">Compte</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#confidentiality">Confidentialité</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#appearance">Appearance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#cryptdrive">CryptDrive</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#cursor">Curseur</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#rich-text">Documents texte</a></li>
@@ -185,13 +186,17 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="richtext.html">Documents texte</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#toolbar">Barre d'outils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="richtext.html#view-settings">View settings</a></li>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#import-export">Import/Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#comments">Commentaires</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="sheets.html">Tableur</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sheets.html">Spreadsheet</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="sheets.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#toolbars">Toolbars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#undo-and-collaboration-modes">Undo and collaboration modes</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sheets.html#history">Historique</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#printing">Printing</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sheets.html#import-export">Import/Export</a></li>
 </ul>
 </li>
@@ -232,8 +237,8 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Dessin</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#toolbar">Barre d'outils</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#drawing">Dessiner</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#paint-mode">Mode Pinceau</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#select-mode">Mode Sélection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Paint mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#arrows-select-mode"><em class="fa fa-arrows"></em> Select mode</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#export">Export</a></li>
 </ul>
 </li>
@@ -249,6 +254,21 @@
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#translate-cryptpad">Traduire CryptPad</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#contribute-to-the-code">Contribuer au code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#financial-support">Soutien financier</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently Asked Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">How to import/export my documents to/from another platform?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#rich-text-document-import-export">Rich text document import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#spreadsheets-import-export">Spreadsheets import/export</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-cannot-do-x-with-a-document-i-created">I cannot do X with a document I created</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-i-use-cryptpad-on-mobile">Can I use CryptPad on mobile?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#are-you-planning-to-make-an-app">Are you planning to make an app?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-cryptpad-sync-documents-to-my-local-filesystem">Can CryptPad sync documents to my local filesystem?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#what-is-the-relationship-between-cryptpad-and-onlyoffice">What is the relationship between CryptPad and OnlyOffice?</a></li>
 </ul>
 </li>
 </ul>
@@ -353,13 +373,13 @@
 <li><p>Bouton <strong>Nettoyer</strong> dans la barre d'outils de dessin.</p></li>
 </ul>
 </div>
-<div class="section" id="paint-mode">
-<h2>Mode Pinceau<a class="headerlink" href="#paint-mode" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="paint-brush-paint-mode">
+<h2><em class="fa fa-paint-brush"></em> Paint mode<a class="headerlink" href="#paint-brush-paint-mode" title="Lien permanent vers ce titre">¶</a></h2>
 <p>La taille et l'opacité du trait sont réglées dans la barre d'outils de dessin. Un aperçu du curseur à droite permet de visualiser la taille du trait.</p>
 <p>La couleur est sélectionnée dans la palette en bas de la fenêtre. Pour modifier une couleur <code class="docutils literal notranslate"><span class="pre">Double</span> <span class="pre">clic</span></code> sur celle-ci et en sélectionner une nouvelle.</p>
 </div>
-<div class="section" id="select-mode">
-<h2>Mode Sélection<a class="headerlink" href="#select-mode" title="Lien permanent vers ce titre">¶</a></h2>
+<div class="section" id="arrows-select-mode">
+<h2><em class="fa fa-arrows"></em> Select mode<a class="headerlink" href="#arrows-select-mode" title="Lien permanent vers ce titre">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur un élément pour le sélectionner, puis :</p>
 <ul class="simple">
 <li><p>Déplacer en le faisant glisser.</p></li>
@@ -427,7 +447,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'4.0',
+            VERSION:'4.3.0',
             LANGUAGE:'fr',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

@@ -1,3 +1,5 @@
+.. _cryptpad_instances:
+
 CryptPad instances
 ==================
 
