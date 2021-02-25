@@ -4,17 +4,17 @@ Frequently Asked Questions
 How to import/export my documents to/from another platform?
 -----------------------------------------------------------
 
-Making CryptPad compatible with a wide range of document formats is an ongoing challenge for the development team. Unfortunately the technology for converting documents in the browser still has limitations, especially as far private and open source solutions are concerned. While work in this area is in progress, the methods below should help in importing and exporting to/from other widely used software.
+Making CryptPad compatible with a wide range of document formats is an ongoing challenge for the development team. Unfortunately the technology for converting documents in the browser still has limitations, especially as far as private and open source solutions are concerned. While work in this area is in progress, the methods below should help in importing and exporting to/from other widely used software.
 
 .. note::
     Simply copy-pasting content from existing software into CryptPad is an easy first step to try when importing/exporting. Please note that the import/export methods below can improve results significantly.
 
 
-It is possible to upload **files** to CryptPad for secure storage and sharing. However this does not make every file an editable CryptPad **document**.
+It is possible to upload **files** to CryptPad for secure storage and sharing, however this does not make every file an editable CryptPad **document**.
 
 Text files uploaded as files can be opened as a Code/Markdown document from the Drive with ``Right click`` > |cptools code| **Open in Code editor**.
 
-To import any other file type in an editable form, please use the |file-o| **File** > |upload| **Import** functionality in a CryptPad document.
+To import any other file type in an editable form, please use the |file-o| **File** > |upload| **Import** functionality in the appropriate CryptPad editor as explained below.
 
 
 Rich text document import/export
@@ -32,7 +32,7 @@ To export, use |file-o| **File** > |download| **Export** and select ``.doc`` as 
 Spreadsheets import/export
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To import spreadsheets, the supported format is ``.xlsx``. This is the Microsoft Excel format, but can be exported from other software such as Google Sheets and LibreOffice Calc:
+To import spreadsheets, the supported format are Microsoft Excel ``.xlsx`` and OpenDocument ``.ods``. These can both be exported from popular software such as Google Sheets and LibreOffice Calc:
 
 1. Export your document as ``.xlsx`` in your existing software.
 2. Save the file to your computer.
