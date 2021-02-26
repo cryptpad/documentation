@@ -42,7 +42,7 @@ When ``Ctrl Z`` is pressed for undo, the application will automatically suggest 
 To switch back to **Fast mode** use the **Collaboration** tab in the OnlyOffice toolbar and select **Co-editing Mode** > **Fast**.
 
 .. note::
-   Note that CryptPad remembers your choice of editing mode on each device for all documents.
+   CryptPad remembers your choice of editing mode on each device for all documents.
 
 
 .. _sheets_history:

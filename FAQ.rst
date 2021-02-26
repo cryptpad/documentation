@@ -34,7 +34,7 @@ Spreadsheets import/export
 
 To import spreadsheets, the supported format are Microsoft Excel ``.xlsx`` and OpenDocument ``.ods``. These can both be exported from popular software such as Google Sheets and LibreOffice Calc:
 
-1. Export your document as ``.xlsx`` in your existing software.
+1. Export your document as ``.xlsx`` or ``.ods`` in your existing software.
 2. Save the file to your computer.
 3. Open a new :ref:`app_sheets` document (or an existing one to replace the contents).
 4. |file-o| **File** > |upload| **Import** and select your file.
