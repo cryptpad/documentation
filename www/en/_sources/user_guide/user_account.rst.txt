@@ -292,4 +292,3 @@ On the notifications panel page:
 
 -  |trash|: Delete notifications.
 
-.. XXX Does the trash delete notifications or "hide" them and they are still in the history?

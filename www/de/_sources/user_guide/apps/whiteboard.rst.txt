@@ -16,7 +16,6 @@ Toolbar
 |picture-o| **Insert**: Add an image to the document. The image can be
 chosen in the CryptDrive or uploaded. :badge_user:`Logged in users`
 
-.. XXX add text, undo, redo
 
 Drawing
 -------
@@ -25,6 +24,12 @@ Two modes are available:
 
 -  |paint-brush| Paint mode: add new shapes to the drawing.
 -  |arrows| Select mode: transform existing shapes.
+
+Functions available in both modes:
+
+- |undo| : Undo
+- |repeat| : Redo
+- |font| : Insert a text element in the drawing
 
 To delete everything on the canvas:
 

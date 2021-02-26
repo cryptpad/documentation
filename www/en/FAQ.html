@@ -33,7 +33,8 @@
   <link rel="stylesheet" href="_static/css/cp-overrides.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="How to contribute" href="how_to_contribute.html" /> 
+    <link rel="next" title="User Guide" href="user_guide/index.html" />
+    <link rel="prev" title="CryptPad Documentation" href="index.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -51,9 +52,9 @@
         <div class="wy-side-nav-search">
           
             <a href="index.html" class="icon icon-home">
-              <img src="_static/images/CryptPad_logo.svg" class="logo" alt="Logo"/>
+              <img src="_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">4.3.0</span>
+              <span class="release">Documentation 4.3.0</span>
             </a>
             
 <div role="search">
@@ -84,6 +85,21 @@
             
             
               <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Frequently Asked Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-import-export-my-documents-to-from-another-platform">How to import/export my documents to/from another platform?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#rich-text-document-import-export">Rich text document import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#spreadsheets-import-export">Spreadsheets import/export</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#i-cannot-do-x-with-a-document-i-created">I cannot do X with a document I created</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#can-i-use-cryptpad-on-mobile">Can I use CryptPad on mobile?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#are-you-planning-to-make-an-app">Are you planning to make an app?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#can-cryptpad-sync-documents-to-my-local-filesystem">Can CryptPad sync documents to my local filesystem?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-the-relationship-between-cryptpad-and-onlyoffice">What is the relationship between CryptPad and OnlyOffice?</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="user_guide/index.html">User Guide</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="user_guide/instances.html">CryptPad instances</a></li>
 <li class="toctree-l2"><a class="reference internal" href="user_guide/user_account.html">User Account</a><ul>
@@ -255,21 +271,6 @@
 <li class="toctree-l2"><a class="reference internal" href="how_to_contribute.html#financial-support">Financial support</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Frequently Asked Questions</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#how-to-import-export-my-documents-to-from-another-platform">How to import/export my documents to/from another platform?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#rich-text-document-import-export">Rich text document import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#spreadsheets-import-export">Spreadsheets import/export</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#i-cannot-do-x-with-a-document-i-created">I cannot do X with a document I created</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#can-i-use-cryptpad-on-mobile">Can I use CryptPad on mobile?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#are-you-planning-to-make-an-app">Are you planning to make an app?</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#can-cryptpad-sync-documents-to-my-local-filesystem">Can CryptPad sync documents to my local filesystem?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#what-is-the-relationship-between-cryptpad-and-onlyoffice">What is the relationship between CryptPad and OnlyOffice?</a></li>
-</ul>
-</li>
 </ul>
 
             
@@ -352,14 +353,14 @@
 <h1>Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="how-to-import-export-my-documents-to-from-another-platform">
 <h2>How to import/export my documents to/from another platform?<a class="headerlink" href="#how-to-import-export-my-documents-to-from-another-platform" title="Permalink to this headline">¶</a></h2>
-<p>Making CryptPad compatible with a wide range of document formats is an ongoing challenge for the development team. Unfortunately the technology for converting documents in the browser still has limitations, especially as far private and open source solutions are concerned. While work in this area is in progress, the methods below should help in importing and exporting to/from other widely used software.</p>
+<p>Making CryptPad compatible with a wide range of document formats is an ongoing challenge for the development team. Unfortunately the technology for converting documents in the browser still has limitations, especially as far as private and open source solutions are concerned. While work in this area is in progress, the methods below should help in importing and exporting to/from other widely used software.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Simply copy-pasting content from existing software into CryptPad is an easy first step to try when importing/exporting. Please note that the import/export methods below can improve results significantly.</p>
 </div>
-<p>It is possible to upload <strong>files</strong> to CryptPad for secure storage and sharing. However this does not make every file an editable CryptPad <strong>document</strong>.</p>
+<p>It is possible to upload <strong>files</strong> to CryptPad for secure storage and sharing, however this does not make every file an editable CryptPad <strong>document</strong>.</p>
 <p>Text files uploaded as files can be opened as a Code/Markdown document from the Drive with <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> &gt; <em class="cptools cptools-code"></em> <strong>Open in Code editor</strong>.</p>
-<p>To import any other file type in an editable form, please use the <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> functionality in a CryptPad document.</p>
+<p>To import any other file type in an editable form, please use the <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> functionality in the appropriate CryptPad editor as explained below.</p>
 <div class="section" id="rich-text-document-import-export">
 <h3>Rich text document import/export<a class="headerlink" href="#rich-text-document-import-export" title="Permalink to this headline">¶</a></h3>
 <p>To import rich text documents (Microsoft Word, Google Docs, LibreOffice Writer, etc.), the supported format is HTML:</p>
@@ -373,9 +374,9 @@
 </div>
 <div class="section" id="spreadsheets-import-export">
 <h3>Spreadsheets import/export<a class="headerlink" href="#spreadsheets-import-export" title="Permalink to this headline">¶</a></h3>
-<p>To import spreadsheets, the supported format is <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code>. This is the Microsoft Excel format, but can be exported from other software such as Google Sheets and LibreOffice Calc:</p>
+<p>To import spreadsheets, the supported format are Microsoft Excel <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code> and OpenDocument <code class="docutils literal notranslate"><span class="pre">.ods</span></code>. These can both be exported from popular software such as Google Sheets and LibreOffice Calc:</p>
 <ol class="arabic simple">
-<li><p>Export your document as <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code> in your existing software.</p></li>
+<li><p>Export your document as <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code> or <code class="docutils literal notranslate"><span class="pre">.ods</span></code> in your existing software.</p></li>
 <li><p>Save the file to your computer.</p></li>
 <li><p>Open a new <a class="reference internal" href="user_guide/apps/sheets.html#app-sheets"><span class="std std-ref">Spreadsheet</span></a> document (or an existing one to replace the contents).</p></li>
 <li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> and select your file.</p></li>
@@ -433,8 +434,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="user_guide/index.html" class="btn btn-neutral float-right" title="User Guide" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="how_to_contribute.html" class="btn btn-neutral" title="How to contribute" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+      
+        <a href="index.html" class="btn btn-neutral" title="CryptPad Documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
       
     </div>
   
