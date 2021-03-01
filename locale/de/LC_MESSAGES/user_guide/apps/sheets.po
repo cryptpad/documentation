@@ -5,18 +5,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  CryptPad\n"
+"Project-Id-Version: CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-26 16:41+0000\n"
-"PO-Revision-Date: 2021-02-26 16:38+0000\n"
+"PO-Revision-Date: 2021-02-28 22:05+0000\n"
 "Last-Translator: Jan <janrei.g@googlemail.com>\n"
+"Language-Team: German <http://weblate.cryptpad.fr/projects/user-guide/"
+"application-sheets/de/>\n"
 "Language: de\n"
-"Language-Team: German <http://weblate.cryptpad.fr/projects/user-guide"
-"/application-sheets/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.1\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: ../../user_guide/apps/sheets.rst:5
@@ -58,6 +59,10 @@ msgid ""
 "provides a wide range of functions in a tabbed toolbar. This results in a"
 " double toolbar that can cause confusion:"
 msgstr ""
+"CryptPad integriert OnlyOffice-Tabellen wie die anderen Anwendungen in das "
+"System zur verschlüsselten Zusammenarbeit. OnlyOffice stellt viele "
+"Funktionen in einer Werkzeugleiste mit Registerkarten an. Deswegen werden "
+"zwei Werkzeugleisten angezeigt, was verwirrend sein kann:"
 
 #: ../../user_guide/apps/sheets.rst:29
 msgid ""
@@ -65,6 +70,9 @@ msgid ""
 " (including import/export, history, properties, etc) as well as |share-"
 "alt| **Share** and |unlock-alt| **Access**."
 msgstr ""
+"Die obere **Werkzeugleiste von CryptPad** wird für |file-o| **Datei** ("
+"einschließlich Import/Export, Verlauf, Eigenschaften, etc) verwendet, sowie "
+"für |share-alt| **Teilen** und |unlock-alt| **Zugriff**."
 
 #: ../../user_guide/apps/sheets.rst:30
 msgid ""
@@ -72,10 +80,13 @@ msgid ""
 "spreadsheet document itself, as well as the collaboration modes explained"
 " in the next section."
 msgstr ""
+"Die **Werkzeugleiste von OnlyOffice** wird für die Funktionen bezogen auf "
+"das Tabellendokument an sich verwendet, sowie für den im folgenden Abschnitt "
+"beschriebenen Modus zur Zusammenarbeit."
 
 #: ../../user_guide/apps/sheets.rst:33
 msgid "Undo and collaboration modes"
-msgstr ""
+msgstr "Rückgängig machen und Modi zur Zusammenarbeit"
 
 #: ../../user_guide/apps/sheets.rst:35
 msgid ""
@@ -83,6 +94,9 @@ msgid ""
 "affect how changes are synced between users and whether or not the "
 "**Undo** functionality is available."
 msgstr ""
+"OnlyOffice stellt in Tabellen zwei Modi zur Zusammenarbeit bereit. Sie "
+"beeinflussen, wie Änderungen zwischen den Benutzern synchronisiert werden. "
+"Außerdem hängt von ihnen ab, ob Änderungen rückgängig gemacht werden können."
 
 #: ../../user_guide/apps/sheets.rst:37
 msgid ""
@@ -90,6 +104,9 @@ msgid ""
 "automatically synced with others as they are made. In this mode it is not"
 " possible to undo."
 msgstr ""
+"Der Modus **Schnell** ist standardmäßig aktiviert. Neue Bearbeitungen aller "
+"Benutzer werden sofort mit den anderen Benutzern synchronisiert. In diesem "
+"Modus können Bearbeitungen nicht rückgängig gemacht werden."
 
 #: ../../user_guide/apps/sheets.rst:38
 msgid ""
@@ -100,21 +117,33 @@ msgid ""
 " saved. When a user saves their changes, others are prompted to save in "
 "order to receive the latest edits."
 msgstr ""
+"Im Modus **Formal** können Benutzer ihre Änderungen unabhängig voneinander "
+"vornehmen. Die bearbeiteten Zellen sind für andere Benutzer gesperrt, bis "
+"der entsprechende Benutzer seine Änderungen gespeichert hat. Neue "
+"Bearbeitungen werden erst nach dem Speichern synchronisiert. In diesem Modus "
+"können noch nicht gespeicherte Änderungen wieder rückgängig gemacht werden. "
+"Wenn ein Benutzer seine Änderungen gespeichert hat, werden die anderen "
+"Benutzer aufgefordert ihre Änderungen ebenfalls zu speichern, um die letzten "
+"Bearbeitungen angezeigt zu bekommen."
 
 #: ../../user_guide/apps/sheets.rst:40
 msgid ""
 "When ``Ctrl Z`` is pressed for undo, the application will automatically "
 "suggest switching to **Strict Mode** to enable the undo functionality."
 msgstr ""
+"Wenn ``Strg+Z`` gedrückt wird, um Änderungen rückgängig zu machen, wird die "
+"Anwendung vorschlagen, in den **formalen Modus** zu wechseln."
 
 #: ../../user_guide/apps/sheets.rst:42
 msgid ""
 "To switch back to **Fast mode** use the **Collaboration** tab in the "
 "OnlyOffice toolbar and select **Co-editing Mode** > **Fast**."
 msgstr ""
+"Um in den **schnellen Modus** zurück zu wechseln, verwende **Zusammenarbeit**"
+" in der Werkzeugleiste von OnlyOffice und klicke auf **Modus \"Gemeinsame "
+"Bearbeitung\"** > **Schnell**."
 
 #: ../../user_guide/apps/sheets.rst:45
-#, fuzzy
 msgid ""
 "CryptPad remembers your choice of editing mode on each device for all "
 "documents."
@@ -256,4 +285,3 @@ msgstr ""
 #~ " im Format ``.xslx`` werden derzeit "
 #~ "nur in Chromium und Google Chrome "
 #~ "unterstützt."
-
