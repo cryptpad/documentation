@@ -209,7 +209,7 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Tabellen</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#documentation">Dokumentation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#toolbars">Werkzeugleisten</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#undo-and-collaboration-modes">Undo and collaboration modes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#undo-and-collaboration-modes">Rückgängig machen und Modi zur Zusammenarbeit</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#history">Verlauf</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#printing">Drucken</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#import-export">Import/Export</a></li>
@@ -363,24 +363,25 @@
 </div>
 <div class="section" id="toolbars">
 <h2>Werkzeugleisten<a class="headerlink" href="#toolbars" title="Link zu dieser Überschrift">¶</a></h2>
-<p>CryptPad integrates OnlyOffice spreadsheets into the same encrypted collaboration system as the other applications. Additionally OnlyOffice provides a wide range of functions in a tabbed toolbar. This results in a double toolbar that can cause confusion:</p>
+<p>CryptPad integriert OnlyOffice-Tabellen wie die anderen Anwendungen in das System zur verschlüsselten Zusammenarbeit. OnlyOffice stellt viele Funktionen in einer Werkzeugleiste mit Registerkarten an. Deswegen werden zwei Werkzeugleisten angezeigt, was verwirrend sein kann:</p>
 <ul class="simple">
-<li><p>The topmost <strong>CryptPad toolbar</strong> is used for <em class="fa fa-file-o"></em> <strong>File</strong> operations (including import/export, history, properties, etc) as well as <em class="fa fa-share-alt"></em> <strong>Share</strong> and <em class="fa fa-unlock-alt"></em> <strong>Access</strong>.</p></li>
-<li><p>The <strong>OnlyOffice toolbar</strong> is used for all functionality within the spreadsheet document itself, as well as the collaboration modes explained in the next section.</p></li>
+<li><p>Die obere <strong>Werkzeugleiste von CryptPad</strong> wird für <em class="fa fa-file-o"></em> <strong>Datei</strong> (einschließlich Import/Export, Verlauf, Eigenschaften, etc) verwendet, sowie für <em class="fa fa-share-alt"></em> <strong>Teilen</strong> und <em class="fa fa-unlock-alt"></em> <strong>Zugriff</strong>.</p></li>
+<li><p>Die <strong>Werkzeugleiste von OnlyOffice</strong> wird für die Funktionen bezogen auf das Tabellendokument an sich verwendet, sowie für den im folgenden Abschnitt beschriebenen Modus zur Zusammenarbeit.</p></li>
 </ul>
 </div>
 <div class="section" id="undo-and-collaboration-modes">
-<h2>Undo and collaboration modes<a class="headerlink" href="#undo-and-collaboration-modes" title="Link zu dieser Überschrift">¶</a></h2>
-<p>OnlyOffice provides two collaborative editing modes in spreadsheets that affect how changes are synced between users and whether or not the <strong>Undo</strong> functionality is available.</p>
+<h2>Rückgängig machen und Modi zur Zusammenarbeit<a class="headerlink" href="#undo-and-collaboration-modes" title="Link zu dieser Überschrift">¶</a></h2>
+<img alt="../../_images/app-sheets-collab-mode.png" class="screenshot" src="../../_images/app-sheets-collab-mode.png" />
+<p>OnlyOffice stellt in Tabellen zwei Modi zur Zusammenarbeit bereit. Sie beeinflussen, wie Änderungen zwischen den Benutzern synchronisiert werden. Außerdem hängt von ihnen ab, ob Änderungen rückgängig gemacht werden können.</p>
 <ul class="simple">
-<li><p><strong>Fast Mode</strong> is enabled by default. New edits by all users are automatically synced with others as they are made. In this mode it is not possible to undo.</p></li>
-<li><p><strong>Strict Mode</strong> allows each user to make changes independently. The modified cells are &quot;locked&quot; for others until the author manually saves their changes. New edits are only synced with other users after being saved. In this mode it is possible to undo changes that have not yet been saved. When a user saves their changes, others are prompted to save in order to receive the latest edits.</p></li>
+<li><p>Der Modus <strong>Schnell</strong> ist standardmäßig aktiviert. Neue Bearbeitungen aller Benutzer werden sofort mit den anderen Benutzern synchronisiert. In diesem Modus können Bearbeitungen nicht rückgängig gemacht werden.</p></li>
+<li><p>Im Modus <strong>Formal</strong> können Benutzer ihre Änderungen unabhängig voneinander vornehmen. Die bearbeiteten Zellen sind für andere Benutzer gesperrt, bis der entsprechende Benutzer seine Änderungen gespeichert hat. Neue Bearbeitungen werden erst nach dem Speichern synchronisiert. In diesem Modus können noch nicht gespeicherte Änderungen wieder rückgängig gemacht werden. Wenn ein Benutzer seine Änderungen gespeichert hat, werden die anderen Benutzer aufgefordert ihre Änderungen ebenfalls zu speichern, um die letzten Bearbeitungen angezeigt zu bekommen.</p></li>
 </ul>
-<p>When <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">Z</span></code> is pressed for undo, the application will automatically suggest switching to <strong>Strict Mode</strong> to enable the undo functionality.</p>
-<p>To switch back to <strong>Fast mode</strong> use the <strong>Collaboration</strong> tab in the OnlyOffice toolbar and select <strong>Co-editing Mode</strong> &gt; <strong>Fast</strong>.</p>
+<p>Wenn <code class="docutils literal notranslate"><span class="pre">Strg+Z</span></code> gedrückt wird, um Änderungen rückgängig zu machen, wird die Anwendung vorschlagen, in den <strong>formalen Modus</strong> zu wechseln.</p>
+<p>Um in den <strong>schnellen Modus</strong> zurück zu wechseln, verwende <strong>Zusammenarbeit</strong> in der Werkzeugleiste von OnlyOffice und klicke auf <strong>Modus Gemeinsame Bearbeitung</strong> &gt; <strong>Schnell</strong>.</p>
 <div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
-<p>CryptPad remembers your choice of editing mode on each device for all documents.</p>
+<p>Beachte, dass sich CryptPad den gewählten Bearbeitungsmodus auf dem jeweiligen Gerät für alle Dokumente merkt.</p>
 </div>
 </div>
 <div class="section" id="history">
