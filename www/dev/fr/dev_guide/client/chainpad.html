@@ -1,0 +1,575 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="fr" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ChainPad and Listmap &mdash; Documentation CryptPad 3.23.0</title>
+  
+
+  
+  <link rel="icon" type="image/png" href="../../_static/images/main-favicon.png" id="favicon"/>
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/open-sans.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/cptools.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/fontawesome.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/cp-overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../search.html" />
+    <link rel="next" title="Translation keys" href="translations.html" />
+    <link rel="prev" title="Client architecture" href="architecture.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+            <a href="../../index.html" class="icon icon-home">
+              <img src="../../_static/images/sidebar-logo.png" class="logo" alt="Logo"/>
+              <div class="icon-title">CryptPad</div>
+              <span class="release">3.23.0</span>
+            </a>
+            
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+          
+        </div>
+
+        <div class="wy-side-nav-language-selector">
+        	<p class="caption-text">
+	        	<select id="language-selector-container">
+	        		<option value="en">English</option>
+              <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
+	        	</select>
+        	</p>
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../user_guide/index.html">Guide Utilisateur</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../user_guide/instances.html">Instances CryptPad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../user_guide/user_account.html">Compte utilisateur</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/user_account.html#account-types">Types de comptes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#non-registered-user">Utilisateur non-enregistré</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#logged-in-user">Utilisateur enregistré</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#premium-user">Utilisateur abonné</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/user_account.html#account-management">Gestion du compte</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#registration">Inscription</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#logging-in">Connexion</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/user_account.html#settings">Préférences</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#account">Compte</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#confidentiality">Confidentialité</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#cryptdrive">CryptDrive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#cursor">Curseur</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#rich-text">Documents texte</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#subscription">Abonnement</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/user_account.html#support">Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/user_account.html#notifications">Notifications</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../user_guide/security.html">Sécurité</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/security.html#passwords-for-documents-and-folders">Mot de passe des documents et dossiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/security.html#remote-disconnect">Déconnexion à distance</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../user_guide/drive.html">Drive</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/drive.html#display">Affichage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/drive.html#managing-documents">Gestion des documents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/drive.html#folders">Dossiers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/drive.html#renaming">Renommer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/drive.html#deleting">Supprimer</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/drive.html#cryptdrive-history">Historique du CryptDrive</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/drive.html#tags">Mots-Clés</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/drive.html#templates">Modèles</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../user_guide/collaboration.html">Collaboration / Social</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/collaboration.html#profile">Profil</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/collaboration.html#personal-profile">Profil personnel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/collaboration.html#user-profile">Profil utilisateur</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/collaboration.html#contacts">Contacts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/collaboration.html#add-a-contact">Ajouter un contact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/collaboration.html#manage-contacts">Gérer les contacts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/collaboration.html#chat-with-contacts">Chat avec les contacts</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/collaboration.html#teams">Équipes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/collaboration.html#team-drive">Drive d'équipe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/collaboration.html#team-members">Membres</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/collaboration.html#invite-members">Inviter des membres</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/collaboration.html#roles-and-permissions">Rôles et permissions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/collaboration.html#administration">Administration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/collaboration.html#chat">Chat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/collaboration.html#administration-tab">Onglet Administration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../user_guide/share_and_access.html">Partage / Accès</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/share_and_access.html#share">Partager</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/share_and_access.html#access-rights">Droits d'accès</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/share_and_access.html#sharing-with-contacts">Partager avec des contacts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/share_and_access.html#sharing-a-link">Partager un lien</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/share_and_access.html#embedding">Intégration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/share_and_access.html#shared-folders">Dossiers partagés</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/share_and_access.html#access">Accès</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/share_and_access.html#access-tab">Onglet Accès</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/share_and_access.html#access-list">Liste</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/share_and_access.html#owners">Propriétaires</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../user_guide/applications.html">Applications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/apps/general.html">Général</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/general.html#new-document">Nouveau document</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/general.html#saving">Sauvegarde</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/general.html#make-a-copy">Faire une copie</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/general.html#document-history">Historique des documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/general.html#snapshots">Captures</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/general.html#properties">Propriétés</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/general.html#users-and-chat">Utilisateurs et Chat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/apps/richtext.html">Documents texte</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/richtext.html#toolbar">Barre d'outils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/richtext.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/richtext.html#comments">Commentaires</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/apps/sheets.html">Tableur</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/sheets.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/sheets.html#history">Historique</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/sheets.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/apps/code.html">Code / Markdown</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/code.html#toolbar">Barre d'outils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/code.html#theme">Thème</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/code.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/code.html#markdown">Markdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/code.html#images">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/code.html#lightbox">Galerie</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/apps/slides.html">Présentation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/slides.html#toolbar">Barre d'outils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/slides.html#writing-slides-with-markdown">Rédaction en Markdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/slides.html#theme">Thème</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/slides.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/slides.html#images">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/slides.html#lightbox">Galerie</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/apps/poll.html">Sondage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/poll.html#toolbar">Barre d'outils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/poll.html#edit-mode">Édition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/poll.html#voting">Vote</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/poll.html#export">Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/apps/kanban.html">Kanban</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/kanban.html#organisation">Organisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/kanban.html#columns">Colonnes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/kanban.html#cards">Cartes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/kanban.html#card-editor">Éditeur de carte</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/kanban.html#display">Affichage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/kanban.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/apps/whiteboard.html">Dessin</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/whiteboard.html#toolbar">Barre d'outils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/whiteboard.html#drawing">Dessiner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/whiteboard.html#paint-mode">Mode Pinceau</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/whiteboard.html#select-mode">Mode Sélection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/whiteboard.html#export">Export</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Developer Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../setup.html">Set up a development instance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../setup.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../setup.html#installation">Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../setup.html#configuration">Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../setup.html#caching">Caching</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../setup.html#launching-in-development-mode">Launching in development mode</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../contribute.html">Contribute</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../contribute.html#license">License</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../contribute.html#git">Git</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../contribute.html#pull-requests">Pull requests</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../contribute.html#branches">Branches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../contribute.html#before-contributing">Before contributing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../basics.html">Key elements in CryptPad</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../basics.html#zero-knowledge">Zero-knowledge</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../basics.html#what-our-server-can-see">What our server can see</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../basics.html#content-security-policy-csp-and-security">Content Security Policy (CSP) and security</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../basics.html#customization">Customization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../basics.html#code-rules">Code rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../basics.html#translation-keys">Translation keys</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="../code.html">Code</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../general.html">General information</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../general.html#sandbox">Sandbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../general.html#level-structure">5-level structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../general.html#encryption">Encryption</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../general.html#drive-and-pins-log">Drive and &quot;pins&quot; log</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../general.html#example">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../general.html#registration-login-and-block">Registration, login and block</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../general.html#example-2">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../general.html#client-server-communication-netflux">Client-server communication (Netflux)</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../general.html#server-side">Server side</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../general.html#client-side">Client side</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../general.html#example-3">Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="reference internal" href="../client.html">Client</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="architecture.html">Client architecture</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="architecture.html#worker">Worker</a></li>
+<li class="toctree-l5"><a class="reference internal" href="architecture.html#outer">Outer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="architecture.html#inner">Inner</a></li>
+</ul>
+</li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">ChainPad and Listmap</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#chainpad">ChainPad</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#checkpoints">Checkpoints</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#chainpad-with-javascript-objects">ChainPad with JavaScript objects</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#chainpad-netflux">Chainpad-netflux</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#listmap">Listmap</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="translations.html">Translation keys</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="translations.html#usage">Usage</a></li>
+<li class="toctree-l5"><a class="reference internal" href="translations.html#structure">Structure</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="framework.html">Framework</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="framework.html#www-common-sframe-app-outer-js">www/common/sframe-app-outer.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="framework.html#www-common-sframe-app-framework-js">www/common/sframe-app-framework.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="framework.html#customize-dist-src-less2-include-framework-less">customize.dist/src/less2/include/framework.less</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="worker.html">Worker</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="worker.html#async-store-js">async-store.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="worker.html#store-commands">“Store” commands</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="outer.html">Outer</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-between-levels">Communication between levels</a></li>
+<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-with-inner">Communication with inner</a></li>
+<li class="toctree-l5"><a class="reference internal" href="outer.html#communication-with-worker">Communication with worker</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="inner.html">Inner</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="inner.html#workflow">Workflow</a></li>
+<li class="toctree-l5"><a class="reference internal" href="inner.html#metadata-manager">metadata-manager</a></li>
+<li class="toctree-l5"><a class="reference internal" href="inner.html#ui-modules">UI modules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin_guide/index.html">Guide Administrateur (en cours)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../how_to_contribute.html">Comment contribuer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#spread-the-word">Diffuser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#report-bugs">Signaler des bugs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#translate-cryptpad">Traduire CryptPad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#contribute-to-the-code">Contribuer au code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#financial-support">Soutien financier</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+	<!-- start top banner area (for fundraisers or messages)
+
+	<div style="text-align: center; background-color: #333">
+		<a href="https://krita.org/en/fundraising-2018-campaign/" target="_self" onclick="ga('send', 'event', 'frontpage', 'button', 'Fundraiser 2018');">
+			<img src="https://krita.org/wp-content/themes/krita-org-theme/images/decoration/2018-fundraiser-banner.png" style="max-width: 100%">
+		</a>
+	</div>
+	
+	 end top banner area -->
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">CryptPad</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Index</a> &raquo;</li>
+        
+          <li><a href="../index.html">Developer Guide</a> &raquo;</li>
+        
+          <li><a href="../code.html">Code</a> &raquo;</li>
+        
+          <li><a href="../client.html">Client</a> &raquo;</li>
+        
+      <li>ChainPad and Listmap</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/dev_guide/client/chainpad.rst.txt" rel="nofollow"> 
+             
+              <img src="../../_static/images/source-code.png" />
+             <!-- View page source -->
+
+          </a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="chainpad-and-listmap">
+<h1>ChainPad and Listmap<a class="headerlink" href="#chainpad-and-listmap" title="Lien permanent vers ce titre">¶</a></h1>
+<p>In the database, collaborative documents (i.e. documents that are not static files uploaded by the user) are stored as a series of encrypted &quot;patches&quot; that allow the document to be reconstructed from a starting point. This patch management is handled by our <a class="reference external" href="https://github.com/xwiki-contrib/chainpad">ChainPad library</a>.</p>
+<div class="section" id="chainpad">
+<h2>ChainPad<a class="headerlink" href="#chainpad" title="Lien permanent vers ce titre">¶</a></h2>
+<p>ChainPad is what we could call the basis of CryptPad's &quot;real-time engine&quot;. Starting from the same fixed starting point (which can be empty), several users can open the same document. ChainPad works exclusively with documents in &quot;text&quot; format in theory, but solutions exist in practice for other JavaScript data formats.</p>
+<p>Each user initializes a local ChainPad &quot;object&quot; and fills it with the patch history of the database from a given starting point. The patches contain a set of simple operations to perform on the document (remove X characters and add the &quot;abc&quot; characters at the Y position) and a &quot;parent&quot;. Storing a parent identifier in the patch allows us to rebuild the document with the patches in the correct order. The full set of patches from a starting point (usually an empty string) then allows us to get the latest version of the document.</p>
+<p>Once the document is restored thanks to the history, CryptPad will detect each change made in the application in order to generate a new &quot;local&quot; version of the document and will provide this version to ChainPad. ChainPad will then analyze it in order to find the &quot;differences&quot; between the new version and the previous version. These differences will make it possible to <strong>create a new &quot;patch&quot;</strong> which will be encrypted by CryptPad, sent to other users and stored in the database.</p>
+<p>When <strong>receiving a patch</strong> in real time from another user, ChainPad will try to integrate it into the current document. If unsaved changes (patch not yet created) are in progress by the current user, ChainPad will first merge the local changes with the remote patch before inserting the updated content into the interface. This merge allows users to make many changes simultaneously without losing characters in the content.</p>
+<p>ChainPad also has tools to <strong>manage conflicts</strong>. It knows the order of the patches thanks to the parent, but because of the time it takes for other users to receive a message, this does not prevent two patches from being sent at the same time by two different users. These 2 patches will have the same parent &quot;patch&quot; and will therefore create a &quot;branch&quot; in the patch tree. As the patches are encrypted, the server cannot decide by itself how to resolve these conflicts, so ChainPad will have to deal with them in each user's browser. It is then necessary to ensure that the result obtained by &quot;merging&quot; these 2 patches is identical for all clients. To do this, ChainPad checks in particular the order of the messages received by the server. Two patches can have the same parent, but this does not prevent one of the two patches from arriving first at the server. WebSocket technology guarantees that messages sent by the server to the various clients arrive in the order in which the server sent them. The ChainPads of all users therefore know which patches have the same parent and the order in which to process them, which is enough to achieve the same result everywhere.</p>
+<p>The interactions between CryptPad and ChainPad are summarized in :</p>
+<ul class="simple">
+<li><p>Provide remote patches to ChainPad</p></li>
+<li><p>Indicate to ChainPad any changes made locally.</p></li>
+<li><p>Receive patches from ChainPad related to local changes</p></li>
+<li><p>Retrieve the current state of the ChainPad document</p>
+<ul>
+<li><p>State common to all users, called &quot;authDoc&quot;.</p></li>
+<li><p>Local state (not yet saved/sent), called &quot;userDoc&quot;.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="checkpoints">
+<h2>Checkpoints<a class="headerlink" href="#checkpoints" title="Lien permanent vers ce titre">¶</a></h2>
+<p>In order to avoid having to synchronize the complete history of the document since its creation each time a collaborative document is loaded, ChainPad uses a system of &quot;checkpoints&quot;. Every 50 patches stored in the database, the user creating the patch will in fact create a special patch called a &quot;checkpoint&quot;. This patch is defined by a single operation that deletes the entire document and re-inserts it at the same time. Checkpoints have the particularity that they can be used as starting points for the system. Checkpoints also have a special marking added after encryption that allows the server to identify them as such.</p>
+<p>When a user loads an existing document and asks for the history, the server will only send all patches starting from the penultimate checkpoint (in theory the last checkpoint is sufficient, but the penultimate one makes it easier to solve some problems). This system allows us to save a lot of loading time for documents that are heavily used on the long term. It also allows pad owners to delete the old history by keeping in the database only the messages from the last 2 checkpoints.</p>
+</div>
+<div class="section" id="chainpad-with-javascript-objects">
+<h2>ChainPad with JavaScript objects<a class="headerlink" href="#chainpad-with-javascript-objects" title="Lien permanent vers ce titre">¶</a></h2>
+<p>As mentioned above, ChainPad only works with text documents. This means that the only operations it can perform are to add or remove characters at a given position relative to the beginning of the document. It cannot therefore work with objects or arrays directly, for example using an operation that requires the 3rd element of an array to be changed.</p>
+<p>However, in CryptPad, many applications require to work with objects or arrays. In the &quot;code&quot; application, objects allows us to store the title of the document and its content at the same time. In the drive, this is more obvious because the structure of the drive itself with its organization in folders can be easily represented as a tree in a JavaScript object.</p>
+<p>A <strong>basic solution</strong> would be to say that it is enough to work in ChainPad with the string representation of the object (with <code class="docutils literal notranslate"><span class="pre">JSON.stringify</span></code>) and to transform it back into an object once the work of ChainPad has been done (with <code class="docutils literal notranslate"><span class="pre">JSON.parse</span></code>). The problem with this kind of solution is that conflict management may destroy the document!</p>
+<p>To solve this problem, it is possible to initialize an instance of ChainPad with a <strong>specific algorithm to handle conflicts</strong>, as well as an <strong>algorithm to validate a patch</strong>. When you want to work with an object, for a patch to be valid, <code class="docutils literal notranslate"><span class="pre">JSON.parse()</span></code> must not generate an error. If an error occurs, the patch is simply ignored.</p>
+<p>Each instance of ChainPad works with only one document and it must be initialized with the correct algorithms.</p>
+</div>
+<div class="section" id="chainpad-netflux">
+<h2>Chainpad-netflux<a class="headerlink" href="#chainpad-netflux" title="Lien permanent vers ce titre">¶</a></h2>
+<p>ChainPad allows us to manage patches, either to integrate them into the local document or to generate patches from the local document. In order to work completely in a real-time system, the part that will encrypt these patches, and especially the part that will communicate with the server to broadcast these patches to other users, is missing. To complete chainpad with the missing parts, a <a class="reference external" href="https://github.com/xwiki-labs/chainpad-netflux/">chainpad-netflux</a> library has been created.</p>
+<p>This guide explains the Netflux protocol used by CryptPad to communicate with the server. A WebSocket client and server implementation have been made. The chainpad-netflux library allows to connect a chainpad instance with this client-side Netflux implementation.</p>
+<p>Chainpad-netflux is thus initialized mainly with a &quot;channelId&quot; corresponding to the desired collaborative document, a &quot;crypto&quot; module containing a function to encrypt and a function to decrypt using the keys corresponding to the desired document and a WebSocket address to connect to the server.</p>
+<p>This library will then automatically initialize the Websocket connection to the server:</p>
+<ul class="simple">
+<li><p>Join the channel corresponding to the desired document (with the provided channelId)</p></li>
+<li><p>Create a ChainPad instance</p></li>
+<li><p>Request history from the server</p></li>
+<li><p>Decrypt messages from the history</p></li>
+<li><p>Fill ChainPad with the decrypted history</p></li>
+</ul>
+<p>Other configuration fields of chainpad-netflux then allow us to interact with the chainpad instance and to listen to specific events. Chainpad-netflux sends events as soon as remote patches are received, when changes are made to the user list or when disconnecting from the network. It gives access to the ChainPad instance which allows us to retrieve the current state of the document and to indicate any changes made to the document. As soon as ChainPad generates a patch, it is encrypted by the library and sent to the server automatically.</p>
+</div>
+<div class="section" id="listmap">
+<h2>Listmap<a class="headerlink" href="#listmap" title="Lien permanent vers ce titre">¶</a></h2>
+<p>A use case of ChainPad that is often used in CryptPad corresponds to collaboration on data stored in a JavaScript object. A <a class="reference external" href="https://github.com/xwiki-labs/chainpad-listmap/">chainpad-listmap</a> library has been developed to meet this need in a very simple way. It is based on JavaScript &quot;Proxy&quot; objects.</p>
+<p>JavaScript  Proxies&quot; are an extension of the classical JavaScript objects and arrays which allow us to listen to all the changes made on the object (addition, deletion or modification of an element). In particular, we can execute code for each change made, which in our case allows us to link our Proxy to a ChainPad instance. Each change made to the object will thus be reported to ChainPad, which will analyze the differences compared to the previous version and create a patch.</p>
+<p>This library integrates Chainpad-netflux, detailed above, which provides a Chainpad instance directly connected to the server and which manages the encryption. To use chainpad-listmap, a configuration similar to that of chainpad-netflux must be provided: a &quot;channelId&quot; for the document to retrieve, encryption/decryption functions for the document and a connection address to the server. Chainpad-listmap directly returns a Proxy. The Proxy can be used as any JavaScript object and changing its content in any way will automatically propagate these changes to other users. Events are triggered on this object in several cases: &quot;ready&quot; when the history is synchronized, &quot;change&quot; when an element is added or modified, &quot;remove&quot; when an element is deleted as well as &quot;disconnect&quot; and &quot;reconnect&quot; for network problems.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>user account</strong> (containing the drive), the <strong>shared folders</strong> and the <strong>teams</strong> are all used and stored as a chainpad-listmap document.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="translations.html" class="btn btn-neutral float-right" title="Translation keys" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="architecture.html" class="btn btn-neutral" title="Client architecture" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, CryptPad Team.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a modified <a href="https://github.com/rtfd/sphinx_rtd_theme">RTD theme</a>.<br/>
+  <a href="https://cryptpad.fr" title="CryptPad flagship instance">CryptPad flagship instance</a> |
+  <a href="#" title="The Gitlab instance to edit this pages and collaborate.">Git repository for docs.cryptpad.fr </a>
+  . 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'3.23.0',
+            LANGUAGE:'fr',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/language_data.js"></script>
+      <script type="text/javascript" src="../../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>
