@@ -4,11 +4,11 @@ General information
 Sandbox
 -------
 
-The server configuration indicates 2 different URLs with the fields "httpUnsafeOrigin" and "httpSafeOrigin". By default, on a development instance, they correspond to ``http://localhost:3000/`` (**unsafe**) and ``http://localhost:3001/`` (**safe**). The second (**safe**) is usually not shown to users, it's only used internally within an iframe. Opening CryptPad manually with the safe URL won't provide access to applications.
+The server configuration indicates 2 different URLs with the fields ``httpUnsafeOrigin`` and ``httpSafeOrigin``. By default, on a development instance, they correspond to ``http://localhost:3000/`` (**unsafe**) and ``http://localhost:3001/`` (**safe**). The second (**safe**) is usually not shown to users, it's only used internally within an iframe. Opening CryptPad manually with the safe URL won't provide access to applications.
 
-CryptPad uses a sandboxing system that isolates the user interface from the in-memory content. For user experience reasons, it is necessary to keep in memory all the information of the current user account (drive content, contact list, teams, etc.). The interface, which is the vulnerable part of the structure and could contain flaws, is therefore kept away from this information and receives only data relevant for the current document. This isolation system has been implemented by putting the entire user interface in an iframe taking the whole window and opened on the **safe** URL. The base level (parent of the iframe) contains the sensitive data and is open on the **unsafe** URL.
+CryptPad uses a sandboxing system that isolates the user interface from the in-memory content. For user experience reasons, it is necessary to keep in memory all the information of the current user account (drive content, contact list, teams, etc.). The interface, which is the exposed part of the structure, could contain vulnerabilities and is therefore not "shown" any user information. It receives only data relevant for the current document. This isolation system has been implemented by putting the entire user interface in an iframe that takes up the whole window and that shows the **safe** URL. The base level (parent of the iframe) contains the sensitive data and is open on the **unsafe** URL.
 
-.. note:: In a production system, it's possible to use different sub-domains or even different domains to represent these 2 origins. For example, on the main instance managed by the development team, the unsafe URL is ``https://cryptpad.fr`` and the safe URL is ``https://sandbox.cryptpad.info/.``.
+.. note:: In a production system, it is possible to use different sub-domains or even different domains to represent these 2 origins. For example, on the main instance managed by the development team, the unsafe URL is ``https://cryptpad.fr`` and the safe URL is ``https://sandbox.cryptpad.info/.``.
 
 5-level structure
 -----------------
@@ -26,13 +26,17 @@ CryptPad's code is split in 5 distinct levels, 2 server side and 3 client side.
    -  The iframe containing the user interface, called "inner" in the code, is launched as a daughter of "outer" and uses the "safe" URL. This iframe represents the entire screen visible per the users. No interface element is outside of the iframe. It has only access to the data that needs to be displayed on the screen.
    -  The upper level, called "worker", which manages the connection to the server and keeps all the user account data in memory. This level is loaded in a SharedWorker when the browser supports it (Firefox, Chrome, Edge) with the "unsafe" URL, which means that all the browser's tabs loaded on this CryptPad instance will have access to the same worker. It allows us to load the account data only once for all open tabs and to use only one Websocket connection.
 
-.. image:: /images/dev/5levels.png
+.. figure:: /images/dev/5levels.png
    :class: screenshot
+
+   CryptPad's 5-Level Structure
+
+.. XXX add something about database, or lack thereof
 
 Encryption
 ----------
 
-CryptPad uses several encryption systems adapted to the different use cases. These systems come from the `TweetNaCl <https://github.com/dchest/tweetnacl-js>`__ library.
+CryptPad uses several encryption systems appropriate for different use cases. These systems come from the `TweetNaCl <https://github.com/dchest/tweetnacl-js>`__ library.
 
 -  Documents, user account, static files and group chat
 
@@ -116,11 +120,11 @@ Registration, login and block
 
 A user account is composed of a collaborative document containing the drive and a list of "pins". A third element is also stored for the user accounts in order to manage the password change. Although it is impossible to retrieve your account if the password is forgotten, it is possible to change the password if you still have access to the account.
 
-Contrary to classical systems where the username and the password hash are sent to the server, on CryptPad neither of these 2 pieces of information leave the user's browser. They are instead used as arguments for an `Scrypt key derivation function <https://en.wikipedia.org/wiki/Scrypt>`__ which provides the equivalent of a hash. The difference with a classical hash function is that **Scrypt is deliberately made very expensive in CPU resources** whereas a hash function must be as fast as possible. Since it is used to manage the user's identifiers, making it slow to execute makes it possible to block brute force attacks. In 2020, it takes several seconds to execute the function with a high-end computer.
+Contrary to classical systems where the username and the password hash are sent to the server, on CryptPad neither of these 2 pieces of information leave the user's browser. They are instead used as arguments for an `Scrypt key derivation function <https://en.wikipedia.org/wiki/Scrypt>`__ which provides the equivalent of a hash. The difference with a classical hash function is that **Scrypt is deliberately made very expensive in CPU resources** whereas a hash function must be as fast as possible. Since it is used to manage the user's identifiers, making it slow to execute makes it possible to block brute force attacks. In 2021, it takes several seconds to execute the function with a high-end computer.
 
 Once the function is executed, we get a hash containing a series of bytes that we will use to generate login keys. These keys, an encryption key and a key representing a unique identifier, are used to create or retrieve a **block**. It's an encrypted file stored on the server and containing the real keys of the user account.
 
-In summary, when you **register** to CryptPad, your credentials are used to create a "block". In parallel, access keys to the user account are randomly created (a unique identifier for the account, an encryption key and a pair of signature keys to be able to modify the account data) and are then encrypted and stored in the block. When **logging in**, Scrypt allows us to retrieve the block identifier and to be able to decrypt it, which gives you access to your user account keys.
+In summary, when you **register** on CryptPad, your credentials are used to create a "block". In parallel, access keys to the user account are randomly created (a unique identifier for the account, an encryption key and a pair of signature keys to be able to modify the account data) and are then encrypted and stored in the block. When **logging in**, Scrypt allows us to retrieve the block identifier and to be able to decrypt it, which gives you access to your user account keys.
 
 When a user wants to **change their password**, there is therefore no need to migrate the whole account to a new document, only the "block" will change. Scrypt will indeed give us new login keys to use a new block. This block will be encrypted with a different encrpytion key than the first one, but the decrypted content will be the same: the keys of the user account. The old block is then removed.
 
@@ -193,28 +197,28 @@ Example
    var channelId = "f0b3fa6aaa4a1285f68c3329f4fc9e86";
    Netflux.connect('ws://lcoalhost:3000/cryptpad_websocket').then(function (network) {}
      // on success
-     
+
      network.join(channelId).then(function (channel) {
        // on success
-       
+
        // listen for new messages
        channel.on('message', function (message, senderNetfluxId) {
          console.log('Message received:' + message);
        });
        // send a message
        channel.bcast("Hello world!");
-       
+
      }, function (error) {
        // on error
-       
+
        console.error(error);
-       
+
      });
-     
+
    }, function (error) {
      // on error
-     
+
      console.error(error);
-     
+
    });
 

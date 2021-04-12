@@ -4,7 +4,7 @@ Client
 
 .. toctree::
     :maxdepth: 1
-    :hidden:
+
 
     client/architecture.rst
     client/chainpad.rst

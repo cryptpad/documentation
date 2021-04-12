@@ -4,7 +4,7 @@ Worker
 async-store.js
 --------------
 
-Async-store contains all the functions representing the commands sent by "outer". Its role is to manage the connection to the user account, load the sub-structures linked to this account (shared folders, profile, teams) and load all the modules that extend its use. It creates two main objects, named ``store`` and ``Store``. The first one represents the memory of the worker and stores everything that has been loaded, the second one represents his "muscles" and contains all the functions that can be executed by the commands of "outer". Many modules are loaded to perform specific tasks and are accessible via ``store``.
+Async-store contains all the functions representing the commands sent by "outer". Its role is to manage the connection to the user account, load the sub-structures linked to this account (shared folders, profile, teams) and load all the modules that extend its use. It creates two main objects, named ``store`` and ``Store``. The first one represents the memory of the worker and stores everything that has been loaded, the second one represents its "muscles" and contains all the functions that can be executed by the commands of "outer". Many modules are loaded to perform specific tasks and are accessible via ``store``.
 
 “Store” commands
 ----------------
@@ -19,7 +19,7 @@ Commands that can be executed by async-store include :
 
 -  Authenticated server requests
 
-  -  Modify your "pin log", change a password, destroy an owned pad, recover the remaining storage space for the account, execute administrator commands, etc.
+  -  Modify your "pin log", change a password, destroy an owned document, recover the remaining storage space for the account, execute administrator commands, etc.
   -  Upload a static file to the user drive
   -  The identity of the author is proved to the server with the signature key of the registered user.
 
