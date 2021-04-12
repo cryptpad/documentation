@@ -66,7 +66,7 @@ Chainpad-netflux automatically initializes the Websocket connection to the serve
 Other configuration fields of chainpad-netflux are used to interact with the ChainPad instance and to listen to specific events. Chainpad-netflux sends events as soon as remote patches are received, when changes are made to the user list or when disconnecting from the network. It gives access to the ChainPad instance in order to retrieve the current state of the document and to indicate any changes made. As soon as ChainPad generates a patch, it is encrypted by Chainpad-netflux and sent to the server automatically.
 
 Chainpad-listmap
--------
+-----------------
 
 One use case of ChainPad that is often used in CryptPad is collaboration on data stored in a JavaScript object. The `chainpad-listmap <https://github.com/xwiki-labs/chainpad-listmap/>`__ library has been developed to meet this need in a very simple way. It is based on JavaScript "Proxy" objects.
 
