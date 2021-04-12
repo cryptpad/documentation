@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, CryptPad Team
+# This file is distributed under the same license as the CryptPad package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CryptPad \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-12 16:15+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../dev_guide/client/framework.rst:2
+msgid "Framework"
+msgstr ""
+
+#: ../../dev_guide/client/framework.rst:4
+msgid ""
+"Most of CryptPad's collaborative applications work in a similar way, only"
+" differing in the ways that data is displayed. Therefore, a large part of"
+" their code can be shared. There is already a lot of code common to "
+"several parts of CryptPad, but in the case of collaborative applications,"
+" this goes even further."
+msgstr ""
+
+#: ../../dev_guide/client/framework.rst:6
+msgid "Each application is composed of several files:"
+msgstr ""
+
+#: ../../dev_guide/client/framework.rst:8
+msgid ""
+"``index.html``, the HTML starting point that loads the JavaScript of "
+"\"outer\"."
+msgstr ""
+
+#: ../../dev_guide/client/framework.rst:9
+msgid ""
+"``main.js``, the starting point of the \"outer\" JavaScript, which loads "
+"the \"inner\" iframe and the worker"
+msgstr ""
+
+#: ../../dev_guide/client/framework.rst:10
+msgid "``inner.html``, the HTML starting point of the iframe"
+msgstr ""
+
+#: ../../dev_guide/client/framework.rst:11
+msgid "``inner.js``, the application-specific JavaScript"
+msgstr ""
+
+#: ../../dev_guide/client/framework.rst:12
+msgid "``app-xxxx.less``, for the style of the application"
+msgstr ""
+
+#: ../../dev_guide/client/framework.rst:15
+msgid "sframe-app-outer.js"
+msgstr ""
+
+#: ../../dev_guide/client/framework.rst:17
+msgid ""
+"The ``main.js`` file is the only JavaScript file of \"outer\" that is "
+"specific to the current application. In some cases, it must contain "
+"specific instructions to give more rights to the application or add "
+"special commands for the database. For example, in the Drive application "
+"it is necessary to have access to the complete contents of the drive in "
+"the \"inner\" iframe. So this application is the only one that has full "
+"access to the user account, and this access is provided by the "
+"``main.js`` file."
+msgstr ""
+
+#: ../../dev_guide/client/framework.rst:19
+msgid ""
+"In the case of collaborative applications, no special access is needed "
+"and they all have access to the same database information, that is why "
+"the ``main.js`` file does not exist and is replaced by the ``wwww/common"
+"/sframe-app-outer.js`` file which has exactly the same role but is common"
+" to all collaborative applications."
+msgstr ""
+
+#: ../../dev_guide/client/framework.rst:22
+msgid "sframe-app-framework.js"
+msgstr ""
+
+#: ../../dev_guide/client/framework.rst:24
+msgid ""
+"Inside the iframe, each application needs its own code to display the "
+"data of the collaborative document. The ``inner.js`` file always exists "
+"and loads libraries and tools such as CodeMirror (code, slide, polls), "
+"jKanban (kanban) or CkEditor (rich text). However, a large part of the "
+"code represents elements common to all these applications:"
+msgstr ""
+
+#: ../../dev_guide/client/framework.rst:26
+msgid "Loading the decrypted history to be able to rebuild the document"
+msgstr ""
+
+#: ../../dev_guide/client/framework.rst:27
+msgid ""
+"Loading \"ChainPad\" to create the document and manage real-time editing "
+"via patches"
+msgstr ""
+
+#: ../../dev_guide/client/framework.rst:28
+msgid "Management of disconnections/reconnections"
+msgstr ""
+
+#: ../../dev_guide/client/framework.rst:29
+msgid ""
+"Management of all the specific tools present in the toolbar: history, "
+"export, user list, chat, etc."
+msgstr ""
+
+#: ../../dev_guide/client/framework.rst:31
+msgid ""
+"All these elements are included in ``wwww/common/sframe-app-"
+"framework.js``  which simplifies the creation of a new application by "
+"taking care of all these elements directly and providing simple APIs for "
+"``inner.js``."
+msgstr ""
+
+#: ../../dev_guide/client/framework.rst:33
+msgid "An ``inner.js`` file for a complete application looks something like:"
+msgstr ""
+
+#: ../../dev_guide/client/framework.rst:109
+msgid "framework.less"
+msgstr ""
+
+#: ../../dev_guide/client/framework.rst:111
+msgid ""
+"All style elements common to the different collaborative applications can"
+" be loaded into ``app-xxxx.less`` via a single call. The LESS framework "
+"``customize.dist/src/less2/include/framework.less`` will load the style "
+"of the toolbar, the chat, the different menus, the buttons and the "
+"modals."
+msgstr ""
+
+#: ../../dev_guide/client/framework.rst:113
+msgid ""
+"Two mixins are available in this file, ``.framework_main()`` and "
+"``.framework_min_main()``. The minimal \"min\" version is used for non-"
+"collaborative applications (drive, preferences, profile, support, etc.) "
+"that reuse most of the style elements. The full version adds the chat "
+"style, mentions (for comments), pad creation screen and styles for users'"
+" cursors."
+msgstr ""
+
