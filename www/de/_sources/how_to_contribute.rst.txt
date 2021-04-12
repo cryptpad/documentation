@@ -56,7 +56,7 @@ CryptPad is written in JavaScript and we accept pull requests on `Github <https:
 - Adding a new feature.
 - Building a new application or integrating an existing one to CryptPad's encrypted real-time collaboration.
 
-Please see the :ref:`dev_guide` for more information.
+Please see the :ref:`developer guide <dev_guide>` for more information and details of how to :ref:`contribute code <dev_contribute_code>`.
 
 .. _contribute_financial:
 

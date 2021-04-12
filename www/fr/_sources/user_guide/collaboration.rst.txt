@@ -61,16 +61,17 @@ On CryptPad, using contacts makes collaboration more secure and simple.
 Add a contact
 ~~~~~~~~~~~~~
 
-On the profile page of another user: 
-
-- **Send a contact request**.
-
 By sharing your profile:
 
 1. Copy the link: User menu (avatar at the top-right) > |user-circle|
    **Profile** > |share-alt| **Share**.
 2. Paste and send through the means of your choice (preferably a secure
    mode of cummunication).
+
+On the profile page of another user:
+
+1. Click **Send a contact request**.
+
 
 Manage contacts
 ~~~~~~~~~~~~~~~
