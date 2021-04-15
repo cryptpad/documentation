@@ -13,6 +13,7 @@ This guide explains how to set up a local development environment, the inner wor
     setup.rst
     contribute.rst
     basics.rst
+    database.rst
     code.rst
 
 .. note::
