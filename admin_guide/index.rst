@@ -4,4 +4,4 @@ Administrator Guide
 ================================
 
 .. note::
-    This section is currently in progress. test
+    This section is currently in progress.
