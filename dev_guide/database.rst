@@ -28,7 +28,7 @@ Let's look at an example:
 
 .. XXX link to an example doc, e.g. markdown reference
 
-https://cryptpad.fr/code/#/1/edit/ux7cTLdkhgUoTbMN-NLuvw/SohyLF7Lu6ProATIc-suV662/
+https://cryptpad.fr/code/#/2/code/edit/plpAeHfQ4YO49fczV5erSCgd/
 
 Browsers do not send the information after the ``#`` symbol to the server when loading a page, so it is safe to encode private information there.
 
@@ -36,23 +36,24 @@ The information before ``#`` tells the browser which server to connect to, and w
 
 For example, this part of the URL (`https://cryptpad.fr/code/`) tells the server to load the code editor.
 
-The remaining information (``#/1/edit/ux7cTLdkhgUoTbMN-NLuvw/SohyLF7Lu6ProATIc-suV662/``) is handled with Javascript by the browser.
+The remaining information (``#/2/code/edit/plpAeHfQ4YO49fczV5erSCgd/``) is handled with Javascript by the browser.
 
 There are several pieces of information there, separated by slashes.
 
-
 .. code-block:: javascript
 
-    URL encoding version: 1
+    URL encoding version: 2
     editor mode: edit
-    Channel id: ux7cTLdkhgUoTbMN-NLuvw
-    Encryption key: SohyLF7Lu6ProATIc-suV662
+    Encryption seed: plpAeHfQ4YO49fczV5erSCgd
 
 
 Finding a document
 -------------------
 
 It is possible to run code provided by the CryptPad server in your browser console. To extract the channel id of a document you have open, you can run this snippet:
+
+.. XXX
+Simply go to File > Properties > Document ID
 
 .. code-block:: javascript
 
