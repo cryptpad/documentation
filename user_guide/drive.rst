@@ -37,6 +37,8 @@ turned on in the :ref:`user settings <user_settings_cryptdrive>`.
 Managing documents
 ------------------
 
+.. XXX: clarify here that you can drag and drop between folders etc...
+
 .. _folders:
 
 Folders

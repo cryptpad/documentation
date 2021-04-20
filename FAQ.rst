@@ -1,6 +1,14 @@
 Frequently Asked Questions
 ==========================
 
+.. XXX
+Troubleshooting
+----------------
+- Check in a different browser
+- Deactivate extensions, for example in Firefox go to Help > Restart with addons disabled
+
+
+
 How to import/export my documents to/from another platform?
 -----------------------------------------------------------
 
