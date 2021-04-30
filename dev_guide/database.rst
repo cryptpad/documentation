@@ -34,7 +34,7 @@ Browsers do not send the information after the ``#`` symbol to the server when l
 
 The information before ``#`` tells the browser which server to connect to, and what resources to download.
 
-For example, this part of the URL (`https://cryptpad.fr/code/`) tells the server to load the code editor.
+This part of the URL (`https://cryptpad.fr/code/`) tells the server to load the code editor.
 
 The remaining information (``#/2/code/edit/plpAeHfQ4YO49fczV5erSCgd/``) is handled with Javascript by the browser.
 
