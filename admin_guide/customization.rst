@@ -1,22 +1,62 @@
-Customization
+
+.. _admin_customization:
+
+Instance customization
+=======================
+
+The functionality as well as the look-and-feel of an instance can be customized by copying assets (images, stylesheets, page templates, etc) from ``customize.dist`` to a new ``customize`` folder and modifying them. If a file exists in ``customize``, it will be served to users instead of its namesake in ``customize.dist``.
+
+.. warning::
+
+    The purpose of the ``customize`` directory is to make it easier to upgrade CryptPad while maintaining customizations in place. Occasionally, a major new version may introduce breaking changes or require adjustments in the customizations. Administrators with customized instances are therefore encouraged to **read instructions carefully before each upgrade**.
+
+
+Application config
+------------------
+
+A wide range of settings are available in ``www/common/application_config_internal.js``. To modify them:
+
+#. Make a copy of ``customize.dist/application_config.js`` in the ``customize`` folder.
+#. Copy the default value(s) to modify from ``www/common/application_config_internal.js`` into ``customize/application_config.js``.
+
+
+Restricting guest access
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To disable unregistered use of CryptPad, add the following to ``customize/application_config.js``:
+
+.. code:: javaScript
+
+    AppConfig.registeredOnlyTypes = AppConfig.availablePadTypes;
+
+.. XXX Restricted registration
+..     ------------------------
+.. section, here or elsewhere
+
+Look and feel
 -------------
 
-.. XXX 🚧 section in progress 🚧
+To add a custom logo to the instance's homepage:
 
-.. this should be consolidated with the customization section of the dev guide (will live in the admin guide with dev pointing here)
+#. Add the new logo to ``customize``
+#. Copy ``customize.dist/pages/index.js`` to ``customize/pages/index.js``
+#. In the copy, replace the image `on this line <https://github.com/xwiki-labs/cryptpad/blob/980a2369007a3b6eeb4de105bfcf1cf13e3444ec/customize.dist/pages/index.js#L147>`_ with your custom logo.
 
-.. merge or link: https://docs.cryptpad.fr/en/dev_guide/basics.html#customization
+Many other aspects of CryptPad's interface can be customized, for example the LESS color themes ``colortheme.less`` and ``colortheme-dark.less`` in  ``customize.dist/src/less2/include/``. As with all other elements, make a copy in ``customize`` and edit the values to override the defaults.
 
-.. Below is from GitHub Wiki
 
-You may have noticed a folder called
-```/customize.dist/`` <https://github.com/xwiki-labs/cryptpad/tree/main/customize.dist>`__.
-Files in this directory can be overridden by creating a file with an
-identical name and path at ``/customize/``. The CryptPad web server will
-pick files from the latter first. Editing files will let you change the
-look and feel of CryptPad. Please note this is for advanced users only
-as it can result in incompatibilities with other code either when you
-edit the files or when you update to newer versions of the platform.
+Translations
+-------------
 
-One easy place to get started is
-```/customize/application_config.js`` <Application-config>`__.
+To customize the text of the CryptPad interface in a given language, copy ``customize.dist/messages.xx.js`` to ``customize/translations/messages.xx.js`` where ``xx`` is the locale of the language (use ``messages.js`` to customize English).
+
+In this file, modify the default text using the "Messages" object as follows: ``Messages.key = "Text";``. For all the keys and their associated text please see `www/common/translations/messages.json <https://github.com/xwiki-labs/cryptpad/blob/main/www/common/translations/messages.json>`__ or any of the ``messages.xx.json`` in the same directory for the translated text.
+
+For example, to customize the text about the instance on the home page, the following could be pasted in ``customize/translations/messages.js`` and the text changed to describe the instance.
+
+.. code:: javaScript
+
+    Messages.home_host = "This is an independent community instance of CryptPad.";
+
+For more information on how translations work in CryptPad please see :ref:`dev_translations` in the developer guide.
+
