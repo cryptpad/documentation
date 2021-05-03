@@ -18,25 +18,7 @@ Depending on the version, there may be changes that require special
 consideration. It is therefore highly recommended to read the release
 notes for the specific targetted version before upgrading.
 
-.. XXX Restricted registration
-..     ------------------------
-.. section, here or elsewhere
-
-
-Restricting guest access
--------------------------
-
-.. XXX 🚧 section in progress 🚧
-
-> about the anonymous usage, we have an AppConfig flag `config.disableAnonymousStore`
-it's not preventing anonymous usage, but they can't use the anonymous drive
-
-
-> I don't think disabling anonymous drive is needed if you disable all the apps
-> so you just have to add
-`AppConfig.registeredOnlyTypes = AppConfig.availablePadTypes;`
-> in your customize/application_config.js
-
+.. _admin_database:
 
 Database administration
 -----------------------
@@ -80,6 +62,8 @@ written as indicated in ``cryptpad/config/config.js``.
 
 Locate the following directories to backup or migrate:
 
+.. XXX <!-- decree.ndjson is here [in data/] by default but can be configured to be elsewhere... that's a bad pattern that should be fixed, but backwards compatibility is annoying -->
+
 -  ``data/``
 -  ``datastore/``
 -  ``block/``
@@ -87,6 +71,7 @@ Locate the following directories to backup or migrate:
 -  ``pins/``
 -  ``tasks/``
 -  ``logs/``
+
 
 Additionally, configurations and customizations may be backed up or
 migrated: - ``config/config.js`` - ``customize/`` (or ``customize.dist``
@@ -98,7 +83,7 @@ violating users’ privacy, though this will make metadata available
 (e.g. file creation/modification dates) .
 
 Advanced administration
------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 In the event of a document becoming corrupted, it is possible to delete
 individual sets of changes from the database.

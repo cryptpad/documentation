@@ -31,6 +31,15 @@ requirements as a minimum on the host machine:
 -  2 x86 CPUs
 -  20GB storage (depending on planned usage)
 
+.. warning::
+   CryptPad is engineered to maximise privacy, and to minimize the amount of useful information that can be gained even if the host machine is compromised. However it is up to the administrator(s) to ensure that the host machine is secure. The instructions for this are beyond the scope of this guide but best practices include:
+
+   - Disabling password-based SSH access
+   - Updating the operating system regularly with any security patches
+   - Limiting the number of people who have server access
+   - Avoiding insecure applications running in parallel on the same host
+   - Updating CryptPad itself regularly
+
 Software
 ~~~~~~~~
 
@@ -38,7 +47,8 @@ Before starting the installation, ensure the following software is
 installed:
 
 -  GIT
--  nodejs
+
+-  nodejs (we use node v12.14.0)
 
    -  Using
       `NVM <https://github.com/nvm-sh/nvm#installing-and-updating>`__ is
@@ -80,9 +90,7 @@ Copy the example configuration
    cd cryptpad/config
    cp config.example.js config.js
 
-Please read the configuration file, and modify variables as needed.
-
-.. XXX especially administrator email, httpSafeOrigin
+Please read the configuration file, and modify variables as needed. The `domains <admin_domain_config>`_ are particulalry important.
 
 The server can now be started with
 
@@ -90,6 +98,9 @@ The server can now be started with
 
    cd cryptpad
    node server
+
+The instance is now ready to run but cannot yet be accessed from the
+internet.
 
 Daemonization
 ~~~~~~~~~~~~~
@@ -107,29 +118,12 @@ service, please follow the example
 file.
 
 #.  Save the example as ``cryptpad.service`` in ``/etc/systemd/system/``
-#.  Make necessary adjustments (e.g. nodejs version)
+#.  Make necessary adjustments (e.g. user name, path, nodejs version)
 #.  Enable the service at startup with ``systemctl enable cryptpad``.
 
-foreverjs
-^^^^^^^^^
+Other ways of daemonizing nodejs applications include for example `foreverjs <https://github.com/foreversd/forever>`_ or `pm2 <https://pm2.keymetrics.io/>`_.
 
-If you would like to launch CryptPad as a background process, you can
-use `foreverjs <https://github.com/foreverjs/forever>`__.
-
-The server can be launched either by:
-
--  Navigating to the cryptpad directory and running:
-   ``forever start server.js``
-
-or
-
--  Providing the working directory:
-   ``forever --workingDir /path/to/cryptpad/ start /path/to/cyptpad/server.js``
-
-The instance is now ready to run but cannot be accessed from the
-internet yet.
-
-.. _domains-1:
+.. _admin_domain_config:
 
 Domains
 -------
@@ -147,19 +141,17 @@ computation (like the processing of cryptographic keys) is handled on
 the main domain, while the user-interface is implemented on the sandbox
 domain.
 
-The `example NGINX
+The `example Nginx
 configuration <https://github.com/xwiki-labs/cryptpad/blob/main/docs/example.nginx.conf>`__
 file includes the relevant headers to enable the sandboxing system,
 however, you must configure your instance correctly for it to be
 effective. You will need:
 
 1. two domains or subdomains
-2. to include both domains in ``cryptpad/config/config.js``
-3. to generate an SSL certificate for both domains. The devlopment team
-   uses `acme.sh <https://acme.sh/>`__ and this is reflected in the
-   example config.
+2. to include both domains in ``cryptpad/config/config.js`` as described in `admin_cryptpad_config`
+3. to generate one SSL certificate that covers both domains. The development team uses `acme.sh <https://acme.sh/>`__ and this is reflected in the example config.
 4. to correctly assign both domains and certificates to the relevant
-   variables in the `example NGINX
+   variables in the `example Nginx
    configuration <https://github.com/xwiki-labs/cryptpad/blob/main/docs/example.nginx.conf>`__
 
 .. warning::
@@ -184,7 +176,7 @@ for the following reasons:
 1. Protect traffic with SSL (so your users can reach your instance via
    HTTPS)
 2. Scale to many more users by serving static content with a more
-   scalable webserver instead of the single-threaded NodeJS webserver
+   scalable web-server instead of the single-threaded NodeJS web-server
    that is built-in
 3. Allow the application server to focus exclusively on handling
    websocket connections
@@ -201,7 +193,7 @@ CryptPad is ``1.10.3``.
 
 To configure Nginx for CryptPad:
 
-1. Copy the `CryptPad example NGINX config
+1. Copy the `CryptPad example Nginx config
    file <https://github.com/xwiki-labs/cryptpad/blob/main/docs/example.nginx.conf>`__
    so that it is used/imported by the main Nginx config, for example by
    placing it in ``/etc/nginx/conf.d/cryptpad.conf``.
@@ -209,12 +201,14 @@ To configure Nginx for CryptPad:
 2. Edit the configuration file with the correct domains and paths to
    certificates.
 
-3. Run run ``openssl dhparam -out /etc/nginx/dhparam.pem 4096`` if you
+3. Run ``openssl dhparam -out /etc/nginx/dhparam.pem 4096`` if you
    haven’t done so already on the host machine.
 
 Static assets and pages such as
 ``https://cryptpad.yourdomain.com/index.html`` should now be accessible
 at the main domain.
+
+.. _admin_cryptpad_config:
 
 Configure CryptPad
 ------------------
@@ -271,13 +265,18 @@ the home page. To make this account an instance administrator:
 
 3. Restart CryptPad
 
+.. _admin_support_mailbox:
+
 Configure support mailbox
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To enable the encrypted support ticket system:
+To enable the encrypted support ticket system, use the ``generate-admin-key.js`` script:
 
-.. XXX merge existing dev docs here https://docs.cryptpad.fr/en/dev_guide/setup.html#configuration
+#. ``node ./scripts/generate-admin-keys.js``
+#. Add the **public key** into the ``supportMailboxPublicKey`` field of the configuration file ``cryptpad/config/config.js``
+-  Copy the **private key** in the support section of the control panel (after setting up an administrator account). This private key is the same for all administrator accounts that want to access support.
+
 
 Once the steps above are complete, many day-to-day administration tasks
 such as support and monitoring can be done in the `administration
-panel <admin%20panel%20page>`__.
+panel <admin_panel>`__.

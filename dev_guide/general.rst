@@ -28,6 +28,7 @@ CryptPad's code is split in 5 distinct levels, 2 server side and 3 client side.
 
 .. figure:: /images/dev/5levels.png
    :class: screenshot
+   :alt: CryptPad's 5-level structure
 
    CryptPad's 5-Level Structure
 
@@ -126,6 +127,9 @@ Once the function is executed, we get a hash containing a series of bytes that w
 
 In summary, when you **register** on CryptPad, your credentials are used to create a "block". In parallel, access keys to the user account are randomly created (a unique identifier for the account, an encryption key and a pair of signature keys to be able to modify the account data) and are then encrypted and stored in the block. When **logging in**, Scrypt allows us to retrieve the block identifier and to be able to decrypt it, which gives you access to your user account keys.
 
+.. XXX correct paragraph below. from CryptHack:
+.. But that is not completely right, is it? I thought and that is what I observed on my instance that you don't just change the login block of a user, you also change the drive pad. So a user has a new drive key after changing passwords. Otherwise, that would be a security issue as well.
+
 When a user wants to **change their password**, there is therefore no need to migrate the whole account to a new document, only the "block" will change. Scrypt will indeed give us new login keys to use a new block. This block will be encrypted with a different encrpytion key than the first one, but the decrypted content will be the same: the keys of the user account. The old block is then removed.
 
 In order to allow users to stay connected without having to type their password for each new session, the keys of the block are kept in memory in the **localStorage** of the browser (on the "unsafe" domain). Logging out means deleting these keys from the localStorage.
@@ -142,6 +146,8 @@ Example
 -  User account keys on cryptpad.fr
 
    -  ``"/1/edit/PeWuMBluHImPezK+0IHvtA/4e4242jfxWiKi3JAjtkx-lDt/"``
+
+.. XXX change this v1 hash example
 
 Client-server communication (Netflux)
 -------------------------------------

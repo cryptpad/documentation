@@ -59,8 +59,7 @@ as HTML.
 `Markdown syntax
 guide. <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__
 
-.. XXX
-   add link to markdown examples
+.. XXX add link to markdown examples
 
 Additionally to basic Markdown syntax, the following features are also
 available:
@@ -76,8 +75,7 @@ available:
 -  Mindmaps with `Markmap <https://markmap.js.org/>`__.
 -  Mathematical equations with `Mathjax <https://www.mathjax.org/>`__.
 
-.. XXX
-   say how to use these extensions
+.. XXX say how to use these extensions
    ```mermaid
    ...
    ```

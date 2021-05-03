@@ -1,3 +1,6 @@
+
+.. _admin_panel:
+
 Administration panel
 ====================
 
@@ -9,7 +12,9 @@ The admin interface is available through:
 
 https://your-instance.com/admin/
 
-or with an administrator user [link to where to set this up]
+.. XXX [link to where to set this up]
+
+or with an administrator user
 
 -  **User Menu** (avatar at the top right) > **Administration**
 
@@ -18,6 +23,8 @@ General
 
 Flush HTTP Cache
 ~~~~~~~~~~~~~~~~
+
+.. XXX  <!-- this includes some configuration changes distributed via /api/config -->
 
    Force users to download the latest clientside assets (only if your
    server is in fresh mode)
@@ -48,7 +55,7 @@ User Storage
 
 This section is for managing storage limits on the instance.
 
-.. XXX relationship with the limit set in config?
+.. XXX relationship with the limit set in config? <!-- overrides it on a per-user basis. we should remove configuration of customLimits from the example config... -->
 
 Storage Limit
 ~~~~~~~~~~~~~
@@ -56,8 +63,12 @@ Storage Limit
    Maximum storage limit for CryptDrives (users and teams) when no
    custom rule is applied
 
+.. XXX  <!-- this and other values below also override whatever is in the config -->
+
 Apply a custom limit
 ~~~~~~~~~~~~~~~~~~~~
+
+.. XXX <!-- override -->
 
    Set custom limits for users by using their public key. You can update
    or remove an existing limit.
@@ -89,13 +100,15 @@ Statistics
 -  Disk usage: Amount of storage space consumed by various CryptPad
    resources
 
+.. XXX <!-- can be very expensive to run this on a large instance -->
+
 Disk usage report
 ~~~~~~~~~~~~~~~~~
 
 Support
 -------
 
-[link to how to set up the support mailbox]
+.. XXX [link to how to set up the support mailbox]
 
    Here is the list of tickets sent by users to the support mailbox. All
    the administrators can see the messages and their answers. A closed

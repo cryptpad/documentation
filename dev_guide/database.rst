@@ -52,8 +52,7 @@ Finding a document
 
 It is possible to run code provided by the CryptPad server in your browser console. To extract the channel id of a document you have open, you can run this snippet:
 
-.. XXX
-Simply go to File > Properties > Document ID
+.. XXX Simply go to File > Properties > Document ID
 
 .. code-block:: javascript
 
@@ -72,5 +71,4 @@ If you were to run this on the document corresponding to the URL listed above, i
 
 The corresponding file would be stored on the server, in your CryptPad instance's directory, at ``cryptpad/datastore/bb/bb1edc4cb7648605284db30dfcd2eebf.ndjson``.
 
-
-.. XXX: for more information on administering the database including backups, migration, and more, please see the administrator guide.
+For more information on administering the database including backups, migration, and more, please see :ref:`admin_database` in the administrator guide.
