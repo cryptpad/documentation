@@ -16,7 +16,7 @@ Frequently Asked Questions
 ..   - email to reach you
 
 .. XXX Can you provide a Data processing Agreement (DPA)?
-... users of cryptpad.fr can review the terms on [some page]... otherwise contact the administrators of your instance
+.. users of cryptpad.fr can review the terms on [some page]... otherwise contact the administrators of your instance
 
 
 How to import/export my documents to/from another platform?
