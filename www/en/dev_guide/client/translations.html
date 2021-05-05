@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Translation keys &mdash; CryptPad 4.4.0 documentation</title>
+  <title>Translation keys &mdash; CryptPad 4.5.0 documentation</title>
   
 
   
@@ -54,7 +54,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 4.4.0</span>
+              <span class="release">Documentation 4.5.0</span>
             </a>
             
 <div role="search">
@@ -291,6 +291,12 @@
 <li class="toctree-l3"><a class="reference internal" href="../basics.html#translation-keys">Translation keys</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../database.html">Database</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../database.html#key-points">Key points</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../database.html#understanding-document-urls">Understanding document URLs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../database.html#finding-a-document">Finding a document</a></li>
+</ul>
+</li>
 <li class="toctree-l2 current"><a class="reference internal" href="../code.html">Code</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="../general.html">General information</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../general.html#sandbox">Sandbox</a></li>
@@ -361,7 +367,80 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../admin_guide/index.html">Administrator Guide (in progress)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin_guide/index.html">Administrator Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#prerequisites">Prerequisites</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#domains">Domains</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#hardware">Hardware</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#software">Software</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#install-cryptpad">Install Cryptpad</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configuration">Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#daemonization">Daemonization</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#systemd">Systemd</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#admin-domain-config">Domains</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#install-and-configure-nginx">Install and configure Nginx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#configure-cryptpad">Configure CryptPad</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#diagnostics">Diagnostics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-administrators">Configure administrators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/customization.html">Instance customization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#application-config">Application config</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#restricting-guest-access">Restricting guest access</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#look-and-feel">Look and feel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#translations">Translations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/maintenance.html">Maintenance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/maintenance.html#upgrading-cryptpad">Upgrading CryptPad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/maintenance.html#database-administration">Database administration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/maintenance.html#backup-and-migration">Backup and migration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/maintenance.html#advanced-administration">Advanced administration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/admin_panel.html">Administration panel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#general">General</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#archive-documents">Archive documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#restore-documents">Restore documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#storage-limit">Storage Limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#apply-a-custom-limit">Apply a custom limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#check-account-storage">Check account storage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#list-of-custom-limits">List of custom limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#statistics">Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#support">Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#maintenance">Maintenance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#survey">Survey</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#broadcast-message">Broadcast Message</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#performance">Performance</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../../how_to_contribute.html">How to contribute</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#spread-the-word">Spread the word</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#report-bugs">Report bugs</a></li>
@@ -466,8 +545,7 @@
 <h2>Structure<a class="headerlink" href="#structure" title="Permalink to this headline">¶</a></h2>
 <p>As detailed at the start of this guide, each instance of CryptPad can be customized, for example using bespoke images, logos, styles and static pages. Translation keys are also customizable elements, which makes the structure of the system more complex.</p>
 <p>The keys are first created and translated in JSON files obtained from <a class="reference external" href="https://weblate.cryptpad.fr">Weblate</a>. These files are available in the <code class="docutils literal notranslate"><span class="pre">wwww/common/translations/</span></code> directory. There you can find for example <code class="docutils literal notranslate"><span class="pre">wwww/common/translations/messages.json</span></code> (default English version) or <code class="docutils literal notranslate"><span class="pre">wwww/common/translations/messages.fr.json</span></code> (French version). These files cannot be customized directly because it would create merge conflicts for the instance administrators when upgrading CryptPad to a newer version (one key missing in the default translation file may in some cases make some features unusable).</p>
-<p>In order to allow this customization step, the translation files are loaded in <strong>language modules</strong> present in the <code class="docutils literal notranslate"><span class="pre">customize.dist/translations/</span></code> directory. The English and French versions exist there as <code class="docutils literal notranslate"><span class="pre">customize.dist/translations/messages.js</span></code> and <code class="docutils literal notranslate"><span class="pre">customize.dist/translations/messages.fr.js</span></code>. These language modules load their corresponding JSON file and allow administrators to extend or modify them.</p>
-<p>To customize a file in <code class="docutils literal notranslate"><span class="pre">customize.dist</span></code>, just copy it to a <code class="docutils literal notranslate"><span class="pre">customize</span></code> folder. In our case, administrators who want to customize translations can copy <code class="docutils literal notranslate"><span class="pre">messages.xx.js</span></code> to <code class="docutils literal notranslate"><span class="pre">customize/translations/messages.xx.js</span></code>. They then have access to the &quot;Messages&quot; object corresponding to the chosen language and can directly add, delete or modify existing keys with <code class="docutils literal notranslate"><span class="pre">Messages.key</span> <span class="pre">=</span> <span class="pre">&quot;Text&quot;;</span></code>.</p>
+<p>In order to allow this customization step, the translation files are loaded in <strong>language modules</strong> present in the <code class="docutils literal notranslate"><span class="pre">customize.dist/translations/</span></code> directory. The English and French versions exist there as <code class="docutils literal notranslate"><span class="pre">customize.dist/translations/messages.js</span></code> and <code class="docutils literal notranslate"><span class="pre">customize.dist/translations/messages.fr.js</span></code>. These language modules load their corresponding JSON file and allow administrators to extend or modify them. For more information on how to customize translation keys please see <a class="reference internal" href="../../admin_guide/customization.html#admin-customization"><span class="std std-ref">Instance customization</span></a> in the administrator guide.</p>
 <p>Finally, the file <code class="docutils literal notranslate"><span class="pre">customize.dist/messages.js</span></code> will retrieve the <strong>language module</strong> corresponding to the user's language (English by default). If a string is not translated into the chosen language, the English version will be used instead for this string.</p>
 <img alt="../../_images/translations.png" class="screenshot" src="../../_images/translations.png" />
 </div>
@@ -518,7 +596,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'4.4.0',
+            VERSION:'4.5.0',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

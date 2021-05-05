@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>CryptPad-Instanzen &mdash; CryptPad 4.4.0 Dokumentation</title>
+  <title>CryptPad-Instanzen &mdash; CryptPad 4.5.0 Dokumentation</title>
   
 
   
@@ -54,7 +54,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 4.4.0</span>
+              <span class="release">Documentation 4.5.0</span>
             </a>
             
 <div role="search">
@@ -291,6 +291,12 @@
 <li class="toctree-l3"><a class="reference internal" href="../dev_guide/basics.html#translation-keys">Translation keys</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/database.html">Database</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/database.html#key-points">Key points</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/database.html#understanding-document-urls">Understanding document URLs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/database.html#finding-a-document">Finding a document</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../dev_guide/code.html">Code</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../dev_guide/general.html">General information</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../dev_guide/general.html#sandbox">Sandbox</a></li>
@@ -361,7 +367,80 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">Administrator-Handbuch (in Arbeit)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">Administrator Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../admin_guide/installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#prerequisites">Prerequisites</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#domains">Domains</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#hardware">Hardware</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#software">Software</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#install-cryptpad">Install Cryptpad</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configuration">Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#daemonization">Daemonization</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#systemd">Systemd</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#admin-domain-config">Domains</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#install-and-configure-nginx">Install and configure Nginx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#configure-cryptpad">Configure CryptPad</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#diagnostics">Diagnostics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configure-administrators">Configure administrators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../admin_guide/customization.html">Instance customization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/customization.html#application-config">Application config</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#restricting-guest-access">Restricting guest access</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/customization.html#look-and-feel">Look and feel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/customization.html#translations">Translations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../admin_guide/maintenance.html">Maintenance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/maintenance.html#upgrading-cryptpad">Upgrading CryptPad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/maintenance.html#database-administration">Database administration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/maintenance.html#backup-and-migration">Backup and migration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/maintenance.html#advanced-administration">Advanced administration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../admin_guide/admin_panel.html">Administration panel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#general">General</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#archive-documents">Archive documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#restore-documents">Restore documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#storage-limit">Storage Limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#apply-a-custom-limit">Apply a custom limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#check-account-storage">Check account storage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#list-of-custom-limits">List of custom limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#statistics">Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#support">Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#maintenance">Maintenance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#survey">Survey</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast-message">Broadcast Message</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#performance">Performance</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../how_to_contribute.html">Wie du uns unterstützen kannst</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#spread-the-word">Mache CryptPad bekannt</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#report-bugs">Fehler melden</a></li>
@@ -454,7 +533,7 @@
 <span id="id1"></span><h1>CryptPad-Instanzen<a class="headerlink" href="#cryptpad-instances" title="Link zu dieser Überschrift">¶</a></h1>
 <p>CryptPad ist freie Software. Sie kann von jedem installiert werden, der den Dienst privat oder professionell anbieten möchte.</p>
 <p>Diese Dokumentation wird vom Entwicklungsteam von XWiki SAS in Paris, Frankreich, geschrieben und gepflegt. Das Team bietet die Haupt-Instanz unter <a class="reference external" href="https://cryptpad.fr">cryptpad.fr</a> an, aber es gibt noch viele andere. Diese Dokumentation gilt für alle Instanzen, sofern es nicht ausdrücklich anders erwähnt wird.</p>
-<p>Bitte beachte, dass sich diese Dokumentation stets auf die aktuelle Version von CryptPad bezieht: 4.4.0. Möglicherweise verwenden andere Instanzen ältere Versionen. Jede Instanz kann auch eigene Einstellungen bezüglich Speicherplatz, verfügbaren Anwendungen oder benutzerdefinierten Farben/Stile haben.</p>
+<p>Bitte beachte, dass sich diese Dokumentation stets auf die aktuelle Version von CryptPad bezieht: 4.5.0. Möglicherweise verwenden andere Instanzen ältere Versionen. Jede Instanz kann auch eigene Einstellungen bezüglich Speicherplatz, verfügbaren Anwendungen oder benutzerdefinierten Farben/Stile haben.</p>
 </div>
 
 
@@ -502,7 +581,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'4.4.0',
+            VERSION:'4.5.0',
             LANGUAGE:'de',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

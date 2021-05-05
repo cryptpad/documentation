@@ -1,3 +1,6 @@
+
+.. _dev_instance:
+
 Set up a development instance
 =============================
 
@@ -6,15 +9,20 @@ Prerequisites
 
 Please make sure that the following tools are installed on your system before installing CryptPad:
 
+
 -  GIT
+
 -  nodejs (we use node v12.14.0)
 
-   -  We recommend using `NVM <https://github.com/creationix/nvm>`_ to install nodejs.
+   -  Using
+      `NVM <https://github.com/nvm-sh/nvm#installing-and-updating>`__ is
+      recommended
 
 -  npm
 -  bower
 
-   -  You can install it with ``npm install -g bower`` once npm is installed
+   -  Installed with ``npm install -g bower``
+
 
 Installation
 ------------
@@ -26,7 +34,7 @@ The source code can be found on `GitHub <https://github.com>`__. You must have a
    -  `git clone https://github.com/{YOUR_USER_NAME}/cryptpad.git`
 -  Install the server dependencies with npm  and client dependencies with bower:
 
-::
+.. code:: bash
 
    cd cryptpad
    npm install
@@ -39,7 +47,7 @@ Once everything is installed, you can configure some values before starting the 
 
 -  Make a copy of the default configuration:
 
-::
+.. code:: bash
 
    cd $cryptpath/config
    cp config.example.js config.js
@@ -49,12 +57,7 @@ Once everything is installed, you can configure some values before starting the 
 
    -  ``httpUnsafeOrigin``: if you want to use the development server and the test client on different systems, you have to modify this value to use the network address of the server (example: 'http://192.168.0.10:3000').
    -  ``adminKeys``: if you want to have access to the administration panel in the CryptPad client, you need to create a user account on the instance and add its *Public Signature Key* here.
-   -  ``supportMailboxPublicKey``: if you want to have access to the support panel on the development instance, you need to generate support "keys" using the *generate-admin-key.js* script.
-
-      -  ``node ./scripts/generate-admin-keys.js``
-      -  Add the **public key** into the ``supportMailboxPublicKey`` field of the configuration file
-      -  Copy the **private key** in the support section of the control panel (after setting up an administrator account). This private key is the same for all administrator accounts that want to access support.
-
+   -  ``supportMailboxPublicKey``: to have access to the support panel on the development instance, see :ref:`admin_support_mailbox` in the administrator guide.
    -  ``defaultStorageLimit``: to increase the storage limit of the development instance (50MB by default).
 
 

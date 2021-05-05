@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Set up a development instance &mdash; CryptPad 4.4.0 documentation</title>
+  <title>Set up a development instance &mdash; CryptPad 4.5.0 documentation</title>
   
 
   
@@ -54,7 +54,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 4.4.0</span>
+              <span class="release">Documentation 4.5.0</span>
             </a>
             
 <div role="search">
@@ -291,6 +291,12 @@
 <li class="toctree-l3"><a class="reference internal" href="basics.html#translation-keys">Translation keys</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="database.html">Database</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="database.html#key-points">Key points</a></li>
+<li class="toctree-l3"><a class="reference internal" href="database.html#understanding-document-urls">Understanding document URLs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="database.html#finding-a-document">Finding a document</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="code.html">Code</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="general.html">General information</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="general.html#sandbox">Sandbox</a></li>
@@ -361,7 +367,80 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">Administrator Guide (in progress)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">Administrator Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../admin_guide/installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#prerequisites">Prerequisites</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#domains">Domains</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#hardware">Hardware</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#software">Software</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#install-cryptpad">Install Cryptpad</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configuration">Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#daemonization">Daemonization</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#systemd">Systemd</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#admin-domain-config">Domains</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#install-and-configure-nginx">Install and configure Nginx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#configure-cryptpad">Configure CryptPad</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#diagnostics">Diagnostics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configure-administrators">Configure administrators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../admin_guide/customization.html">Instance customization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/customization.html#application-config">Application config</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#restricting-guest-access">Restricting guest access</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/customization.html#look-and-feel">Look and feel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/customization.html#translations">Translations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../admin_guide/maintenance.html">Maintenance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/maintenance.html#upgrading-cryptpad">Upgrading CryptPad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/maintenance.html#database-administration">Database administration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/maintenance.html#backup-and-migration">Backup and migration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/maintenance.html#advanced-administration">Advanced administration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../admin_guide/admin_panel.html">Administration panel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#general">General</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#archive-documents">Archive documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#restore-documents">Restore documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#storage-limit">Storage Limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#apply-a-custom-limit">Apply a custom limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#check-account-storage">Check account storage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#list-of-custom-limits">List of custom limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#statistics">Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#support">Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#maintenance">Maintenance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#survey">Survey</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast-message">Broadcast Message</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#performance">Performance</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../how_to_contribute.html">How to contribute</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#spread-the-word">Spread the word</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#report-bugs">Report bugs</a></li>
@@ -451,7 +530,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="set-up-a-development-instance">
-<h1>Set up a development instance<a class="headerlink" href="#set-up-a-development-instance" title="Permalink to this headline">¶</a></h1>
+<span id="dev-instance"></span><h1>Set up a development instance<a class="headerlink" href="#set-up-a-development-instance" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h2>
 <p>Please make sure that the following tools are installed on your system before installing CryptPad:</p>
@@ -459,13 +538,15 @@
 <li><p>GIT</p></li>
 <li><p>nodejs (we use node v12.14.0)</p>
 <ul>
-<li><p>We recommend using <a class="reference external" href="https://github.com/creationix/nvm">NVM</a> to install nodejs.</p></li>
+<li><p>Using
+<a class="reference external" href="https://github.com/nvm-sh/nvm#installing-and-updating">NVM</a> is
+recommended</p></li>
 </ul>
 </li>
 <li><p>npm</p></li>
 <li><p>bower</p>
 <ul>
-<li><p>You can install it with <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span> <span class="pre">-g</span> <span class="pre">bower</span></code> once npm is installed</p></li>
+<li><p>Installed with <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span> <span class="pre">-g</span> <span class="pre">bower</span></code></p></li>
 </ul>
 </li>
 </ul>
@@ -479,9 +560,9 @@
 -  <cite>git clone https://github.com/{YOUR_USER_NAME}/cryptpad.git</cite></p></li>
 <li><p>Install the server dependencies with npm  and client dependencies with bower:</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cd</span> <span class="n">cryptpad</span>
-<span class="n">npm</span> <span class="n">install</span>
-<span class="n">bower</span> <span class="n">install</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> cryptpad
+npm install
+bower install
 </pre></div>
 </div>
 </div>
@@ -491,7 +572,7 @@
 <ul class="simple">
 <li><p>Make a copy of the default configuration:</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>cd $cryptpath/config
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> <span class="nv">$cryptpath</span>/config
 cp config.example.js config.js
 </pre></div>
 </div>
@@ -501,13 +582,7 @@ cp config.example.js config.js
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">httpUnsafeOrigin</span></code>: if you want to use the development server and the test client on different systems, you have to modify this value to use the network address of the server (example: '<a class="reference external" href="http://192.168.0.10:3000">http://192.168.0.10:3000</a>').</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">adminKeys</span></code>: if you want to have access to the administration panel in the CryptPad client, you need to create a user account on the instance and add its <em>Public Signature Key</em> here.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">supportMailboxPublicKey</span></code>: if you want to have access to the support panel on the development instance, you need to generate support &quot;keys&quot; using the <em>generate-admin-key.js</em> script.</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">node</span> <span class="pre">./scripts/generate-admin-keys.js</span></code></p></li>
-<li><p>Add the <strong>public key</strong> into the <code class="docutils literal notranslate"><span class="pre">supportMailboxPublicKey</span></code> field of the configuration file</p></li>
-<li><p>Copy the <strong>private key</strong> in the support section of the control panel (after setting up an administrator account). This private key is the same for all administrator accounts that want to access support.</p></li>
-</ul>
-</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">supportMailboxPublicKey</span></code>: to have access to the support panel on the development instance, see <a class="reference internal" href="../admin_guide/installation.html#admin-support-mailbox"><span class="std std-ref">Configure support mailbox</span></a> in the administrator guide.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">defaultStorageLimit</span></code>: to increase the storage limit of the development instance (50MB by default).</p></li>
 </ul>
 </li>
@@ -572,7 +647,7 @@ This means that, for a normal launch of the server, all the code will be cached 
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'4.4.0',
+            VERSION:'4.5.0',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

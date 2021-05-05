@@ -1,0 +1,653 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Instance customization &mdash; CryptPad 4.5.0 documentation</title>
+  
+
+  
+  <link rel="icon" type="image/png" href="../_static/images/main-favicon.png" id="favicon"/>
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/open-sans.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/cptools.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/fontawesome.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/cp-overrides.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Maintenance" href="maintenance.html" />
+    <link rel="prev" title="Installation" href="installation.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+            <a href="../index.html" class="icon icon-home">
+              <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
+              <div class="icon-title">CryptPad</div>
+              <span class="release">Documentation 4.5.0</span>
+            </a>
+            
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+          
+        </div>
+
+        <div class="wy-side-nav-language-selector">
+        	<p class="caption-text">
+	        	<select id="language-selector-container">
+	        		<option value="en">English</option>
+              <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
+	        	</select>
+        	</p>
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">Frequently Asked Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">How to import/export my documents to/from another platform?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">Rich text document import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">Spreadsheets import/export</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-cannot-do-x-with-a-document-i-created">I cannot do X with a document I created</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#can-i-use-cryptpad-on-mobile">Can I use CryptPad on mobile?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#are-you-planning-to-make-an-app">Are you planning to make an app?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#can-cryptpad-sync-documents-to-my-local-filesystem">Can CryptPad sync documents to my local filesystem?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#what-is-the-relationship-between-cryptpad-and-onlyoffice">What is the relationship between CryptPad and OnlyOffice?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../user_guide/index.html">User Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/instances.html">CryptPad instances</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/user_account.html">User Account</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#account-types">Account types</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#non-registered-user">Non-registered user</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#logged-in-user">Logged in user</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#premium-user">Premium user</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#account-management">Account management</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#registration">Registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#logging-in">Logging in</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#settings">Settings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#account">Account</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#confidentiality">Confidentiality</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#appearance">Appearance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#cryptdrive">CryptDrive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#cursor">Cursor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#rich-text">Rich Text</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#subscription">Subscription</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#support">Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#notifications">Notifications</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/security.html">Security</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/security.html#passwords-for-documents-and-folders">Passwords for documents and folders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/security.html#remote-disconnect">Remote Disconnect</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/drive.html">Drive</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/drive.html#display">Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/drive.html#managing-documents">Managing documents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/drive.html#folders">Folders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/drive.html#renaming">Renaming</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/drive.html#deleting">Deleting</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/drive.html#cryptdrive-history">CryptDrive history</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/drive.html#tags">Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/drive.html#templates">Templates</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/collaboration.html">Collaboration / Social</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/collaboration.html#profile">Profile</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#personal-profile">Personal profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#user-profile">User profile</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/collaboration.html#contacts">Contacts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#add-a-contact">Add a contact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#manage-contacts">Manage contacts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#chat-with-contacts">Chat with contacts</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/collaboration.html#teams">Teams</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#team-drive">Team Drive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#team-members">Team members</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#invite-members">Invite members</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#roles-and-permissions">Roles and permissions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#administration">Administration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#chat">Chat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#administration-tab">Administration tab</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/share_and_access.html">Share / Access</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/share_and_access.html#share">Share</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/share_and_access.html#access-rights">Access rights</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/share_and_access.html#sharing-with-contacts">Sharing with contacts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/share_and_access.html#sharing-a-link">Sharing a link</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/share_and_access.html#embedding">Embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/share_and_access.html#shared-folders">Shared folders</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/share_and_access.html#access">Access</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/share_and_access.html#access-tab">Access tab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/share_and_access.html#access-list">Access List</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/share_and_access.html#owners">Owners</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/applications.html">Applications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/general.html">General</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#new-document">New document</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#saving">Saving</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#make-a-copy">Make a copy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#document-history">Document history</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#snapshots">Snapshots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#properties">Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/general.html#users-and-chat">Users and chat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/richtext.html">Rich Text</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/richtext.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/richtext.html#view-settings">View settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/richtext.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/richtext.html#comments">Comments</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/sheets.html">Spreadsheet</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/sheets.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/sheets.html#toolbars">Toolbars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/sheets.html#undo-and-collaboration-modes">Undo and collaboration modes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/sheets.html#history">History</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/sheets.html#printing">Printing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/sheets.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/code.html">Code / Markdown</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/code.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/code.html#theme">Theme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/code.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/code.html#markdown">Markdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/code.html#images">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/code.html#lightbox">Lightbox</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/slides.html">Slides</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/slides.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/slides.html#writing-slides-with-markdown">Writing slides with Markdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/slides.html#theme">Theme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/slides.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/slides.html#images">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/slides.html#lightbox">Lightbox</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/poll.html">Poll</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/poll.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/poll.html#edit-mode">Edit mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/poll.html#voting">Voting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/poll.html#export">Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/kanban.html">Kanban</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/kanban.html#organisation">Organisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/kanban.html#columns">Columns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/kanban.html#cards">Cards</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/kanban.html#card-editor">Card editor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/kanban.html#display">Display</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/kanban.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/whiteboard.html">Whiteboard</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/whiteboard.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/whiteboard.html#drawing">Drawing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Paint mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Select mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/whiteboard.html#export">Export</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../dev_guide/index.html">Developer Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/setup.html">Set up a development instance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/setup.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/setup.html#installation">Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/setup.html#configuration">Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/setup.html#caching">Caching</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/setup.html#launching-in-development-mode">Launching in development mode</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/contribute.html">Contribute Code</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/contribute.html#license">License</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/contribute.html#git">Git</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/contribute.html#pull-requests">Pull requests</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/contribute.html#branches">Branches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/contribute.html#before-contributing">Before contributing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/basics.html">Key elements in CryptPad</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/basics.html#zero-knowledge">Zero-knowledge</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/basics.html#what-our-server-can-see">What our server can see</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/basics.html#content-security-policy-csp-and-security">Content Security Policy (CSP) and security</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/basics.html#customization">Customization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/basics.html#code-rules">Code rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/basics.html#translation-keys">Translation keys</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/database.html">Database</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/database.html#key-points">Key points</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/database.html#understanding-document-urls">Understanding document URLs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/database.html#finding-a-document">Finding a document</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/code.html">Code</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/general.html">General information</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/general.html#sandbox">Sandbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/general.html#level-structure">5-level structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/general.html#encryption">Encryption</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/general.html#drive-and-pins-log">Drive and &quot;pins&quot; log</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/general.html#example">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/general.html#registration-login-and-block">Registration, login and block</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/general.html#example-2">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/general.html#client-server-communication-netflux">Client-server communication (Netflux)</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/general.html#server-side">Server side</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/general.html#client-side">Client side</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/general.html#example-3">Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/client.html">Client</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/architecture.html">Client architecture</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/architecture.html#worker">Worker</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/architecture.html#outer">Outer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/architecture.html#inner">Inner</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/chainpad.html">ChainPad and Listmap</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/chainpad.html#chainpad">ChainPad</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/chainpad.html#checkpoints">Checkpoints</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/chainpad.html#chainpad-with-javascript-objects">ChainPad with JavaScript objects</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/chainpad.html#chainpad-netflux">Chainpad-netflux</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/chainpad.html#chainpad-listmap">Chainpad-listmap</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/translations.html">Translation keys</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/translations.html#usage">Usage</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/translations.html#structure">Structure</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/framework.html">Framework</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/framework.html#sframe-app-outer-js">sframe-app-outer.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/framework.html#sframe-app-framework-js">sframe-app-framework.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/framework.html#framework-less">framework.less</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/worker.html">Worker</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/worker.html#async-store-js">async-store.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/worker.html#store-commands">“Store” commands</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/outer.html">Outer</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/outer.html#communication-between-levels">Communication between levels</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/outer.html#communication-with-inner">Communication with inner</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/outer.html#communication-with-the-worker">Communication with the worker</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/inner.html">Inner</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/inner.html#workflow">Workflow</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/inner.html#metadata-manager">metadata-manager</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/inner.html#ui-modules">UI modules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Administrator Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#prerequisites">Prerequisites</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#domains">Domains</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#hardware">Hardware</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#software">Software</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#install-cryptpad">Install Cryptpad</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#configuration">Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#daemonization">Daemonization</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="installation.html#systemd">Systemd</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#admin-domain-config">Domains</a></li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#install-and-configure-nginx">Install and configure Nginx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="installation.html#configure-cryptpad">Configure CryptPad</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#diagnostics">Diagnostics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#configure-administrators">Configure administrators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#configure-support-mailbox">Configure support mailbox</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Instance customization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#application-config">Application config</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#restricting-guest-access">Restricting guest access</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#look-and-feel">Look and feel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#translations">Translations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="maintenance.html">Maintenance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="maintenance.html#upgrading-cryptpad">Upgrading CryptPad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="maintenance.html#database-administration">Database administration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="maintenance.html#backup-and-migration">Backup and migration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="maintenance.html#advanced-administration">Advanced administration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="admin_panel.html">Administration panel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="admin_panel.html#general">General</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#update-user-quotas">Update user quotas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#archive-documents">Archive documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#restore-documents">Restore documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#close-registration">Close registration</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="admin_panel.html#user-storage">User Storage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#storage-limit">Storage Limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#apply-a-custom-limit">Apply a custom limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#check-account-storage">Check account storage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#list-of-custom-limits">List of custom limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="admin_panel.html#statistics">Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="admin_panel.html#support">Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="admin_panel.html#broadcast">Broadcast</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#maintenance">Maintenance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#survey">Survey</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#broadcast-message">Broadcast Message</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="admin_panel.html#performance">Performance</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../how_to_contribute.html">How to contribute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#spread-the-word">Spread the word</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#report-bugs">Report bugs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#translate-cryptpad">Translate CryptPad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#contribute-to-the-code">Contribute to the code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#financial-support">Financial support</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+	<!-- start top banner area (for fundraisers or messages)
+
+	<div style="text-align: center; background-color: #333">
+		<a href="https://krita.org/en/fundraising-2018-campaign/" target="_self" onclick="ga('send', 'event', 'frontpage', 'button', 'Fundraiser 2018');">
+			<img src="https://krita.org/wp-content/themes/krita-org-theme/images/decoration/2018-fundraiser-banner.png" style="max-width: 100%">
+		</a>
+	</div>
+	
+	 end top banner area -->
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CryptPad</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Index</a> &raquo;</li>
+        
+          <li><a href="index.html">Administrator Guide</a> &raquo;</li>
+        
+      <li>Instance customization</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/admin_guide/customization.rst.txt" rel="nofollow"> 
+             
+              <img src="../_static/images/source-code.png" />
+             <!-- View page source -->
+
+          </a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="instance-customization">
+<span id="admin-customization"></span><h1>Instance customization<a class="headerlink" href="#instance-customization" title="Permalink to this headline">¶</a></h1>
+<p>The functionality as well as the look-and-feel of an instance can be customized by creating a <code class="docutils literal notranslate"><span class="pre">customize</span></code> folder and copying assets to be customized (images, stylesheets, page templates, etc) from <code class="docutils literal notranslate"><span class="pre">customize.dist</span></code> into it. If a file exists in <code class="docutils literal notranslate"><span class="pre">customize</span></code>, it will be served to users instead of its namesake in <code class="docutils literal notranslate"><span class="pre">customize.dist</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The purpose of the <code class="docutils literal notranslate"><span class="pre">customize</span></code> directory is to make it easier to upgrade CryptPad while maintaining customizations in place. Occasionally, a major new version may introduce breaking changes or require adjustments in the customizations. Administrators with customized instances are therefore encouraged to <strong>read instructions carefully before each upgrade</strong>.</p>
+</div>
+<div class="section" id="application-config">
+<h2>Application config<a class="headerlink" href="#application-config" title="Permalink to this headline">¶</a></h2>
+<p>A wide range of settings are available in <code class="docutils literal notranslate"><span class="pre">www/common/application_config_internal.js</span></code>. To modify them:</p>
+<ol class="arabic simple">
+<li><p>Make a copy of <code class="docutils literal notranslate"><span class="pre">customize.dist/application_config.js</span></code> in the <code class="docutils literal notranslate"><span class="pre">customize</span></code> folder.</p></li>
+<li><p>Copy the default value(s) to modify from <code class="docutils literal notranslate"><span class="pre">www/common/application_config_internal.js</span></code> into <code class="docutils literal notranslate"><span class="pre">customize/application_config.js</span></code>.</p></li>
+</ol>
+<div class="section" id="restricting-guest-access">
+<h3>Restricting guest access<a class="headerlink" href="#restricting-guest-access" title="Permalink to this headline">¶</a></h3>
+<p>To disable unregistered use of CryptPad, add the following to <code class="docutils literal notranslate"><span class="pre">customize/application_config.js</span></code>:</p>
+<div class="highlight-javaScript notranslate"><div class="highlight"><pre><span></span><span class="nx">AppConfig</span><span class="p">.</span><span class="nx">registeredOnlyTypes</span> <span class="o">=</span> <span class="nx">AppConfig</span><span class="p">.</span><span class="nx">availablePadTypes</span><span class="p">;</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To close registration of new users on the instance, see <a class="reference internal" href="admin_panel.html#admin-close-registration"><span class="std std-ref">Close registration</span></a> in the admin panel.</p>
+</div>
+</div>
+</div>
+<div class="section" id="look-and-feel">
+<h2>Look and feel<a class="headerlink" href="#look-and-feel" title="Permalink to this headline">¶</a></h2>
+<p>To add a custom logo to the instance's homepage:</p>
+<ol class="arabic simple">
+<li><p>Add the new logo to <code class="docutils literal notranslate"><span class="pre">customize</span></code></p></li>
+<li><p>Copy <code class="docutils literal notranslate"><span class="pre">customize.dist/pages/index.js</span></code> to <code class="docutils literal notranslate"><span class="pre">customize/pages/index.js</span></code></p></li>
+<li><p>In the copy, replace the image <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/blob/980a2369007a3b6eeb4de105bfcf1cf13e3444ec/customize.dist/pages/index.js#L147">on this line</a> with your custom logo.</p></li>
+</ol>
+<p>Many other aspects of CryptPad's interface can be customized, for example the LESS color themes <code class="docutils literal notranslate"><span class="pre">colortheme.less</span></code> and <code class="docutils literal notranslate"><span class="pre">colortheme-dark.less</span></code> in  <code class="docutils literal notranslate"><span class="pre">customize.dist/src/less2/include/</span></code>. As with all other elements, make a copy in <code class="docutils literal notranslate"><span class="pre">customize</span></code> and edit the values to override the defaults.</p>
+</div>
+<div class="section" id="translations">
+<h2>Translations<a class="headerlink" href="#translations" title="Permalink to this headline">¶</a></h2>
+<p>To customize the text of the CryptPad interface in a given language, copy <code class="docutils literal notranslate"><span class="pre">customize.dist/messages.xx.js</span></code> to <code class="docutils literal notranslate"><span class="pre">customize/translations/messages.xx.js</span></code> where <code class="docutils literal notranslate"><span class="pre">xx</span></code> is the locale of the language (use <code class="docutils literal notranslate"><span class="pre">messages.js</span></code> to customize English).</p>
+<p>In this file, modify the default text using the &quot;Messages&quot; object as follows: <code class="docutils literal notranslate"><span class="pre">Messages.key</span> <span class="pre">=</span> <span class="pre">&quot;Text&quot;;</span></code>. For all the keys and their associated text please see <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/blob/main/www/common/translations/messages.json">www/common/translations/messages.json</a> or any of the <code class="docutils literal notranslate"><span class="pre">messages.xx.json</span></code> in the same directory for the translated text.</p>
+<p>For example, to customize the text about the instance on the home page, the following could be pasted in <code class="docutils literal notranslate"><span class="pre">customize/translations/messages.js</span></code> and the text changed to describe the instance.</p>
+<div class="highlight-javaScript notranslate"><div class="highlight"><pre><span></span><span class="nx">Messages</span><span class="p">.</span><span class="nx">home_host</span> <span class="o">=</span> <span class="s2">&quot;This is an independent community instance of CryptPad.&quot;</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>For more information on how translations work in CryptPad please see <a class="reference internal" href="../dev_guide/client/translations.html#dev-translations"><span class="std std-ref">Translation keys</span></a> in the developer guide.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="maintenance.html" class="btn btn-neutral float-right" title="Maintenance" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="installation.html" class="btn btn-neutral" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2021, CryptPad Team.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a modified <a href="https://github.com/rtfd/sphinx_rtd_theme">RTD theme</a>.<br/>
+  <a href="https://cryptpad.fr" title="CryptPad flagship instance">CryptPad flagship instance</a> |
+  <a href="https://github.com/xwiki-labs/cryptpad-documentation" title="The Github repository">Github repository for this documentation.</a>
+  . 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'4.5.0',
+            LANGUAGE:'en',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>
