@@ -59,8 +59,7 @@ as HTML.
 `Markdown syntax
 guide. <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__
 
-.. localised link to markdown tutorial if possible. French here:
-   https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdown/
+.. XXX add link to markdown examples
 
 Additionally to basic Markdown syntax, the following features are also
 available:
@@ -75,6 +74,11 @@ available:
 -  Diagrams with `Mermaid <https://mermaid-js.github.io/mermaid/#/>`__.
 -  Mindmaps with `Markmap <https://markmap.js.org/>`__.
 -  Mathematical equations with `Mathjax <https://www.mathjax.org/>`__.
+
+.. XXX say how to use these extensions
+   ```mermaid
+   ...
+   ```
 
 Images
 ------
