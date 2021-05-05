@@ -1,12 +1,22 @@
 Frequently Asked Questions
 ==========================
 
-.. XXX
-Troubleshooting
-----------------
-- Check in a different browser
-- Deactivate extensions, for example in Firefox go to Help > Restart with addons disabled
+.. XXX Troubleshooting
+.. ----------------
+.. - Check in a different browser
+.. - Deactivate extensions, for example in Firefox go to Help > Restart with addons disabled
 
+.. XXX Cryptocurrency payments
+.. check that this is cryptpad.fr docs rather than cryptpad?
+..
+.. * for yearly plans, Duo and up
+.. * 30% service charge
+.. * for legal reasons we need:
+..   - name and address
+..   - email to reach you
+
+.. XXX Can you provide a Data processing Agreement (DPA)?
+... users of cryptpad.fr can review the terms on [some page]... otherwise contact the administrators of your instance
 
 
 How to import/export my documents to/from another platform?
@@ -54,6 +64,9 @@ To export, use |file-o| **File** > |download| **Export** and choose a format:
 - To use in LibreOffice Calc, select ``.ods``.
 - For cases where no further editing of the data is required after export (presentations, reports, etc), select ``.pdf``.
 - For backup purposes or to share with a user on another CryptPad instance, select ``.bin``.
+
+.. XXX add note about browser support
+.. https://caniuse.com/sharedarraybuffer
 
 I cannot do X with a document I created
 ---------------------------------------
