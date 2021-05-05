@@ -4,12 +4,10 @@
 
 ## Installation 
 
+Using [Poetry](https://python-poetry.org/docs/)
+
 ```bash
-pipenv install
-```
-or
-```bash
-pip install requirements.txt` 
+poetry install
 ```
 
 ## Build
