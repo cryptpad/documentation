@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CryptPad \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-05-05 10:52+0100\n"
+"POT-Creation-Date: 2021-05-05 11:26+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -265,7 +265,7 @@ msgstr ""
 #: ../../admin_guide/installation.rst:151
 msgid ""
 "to include both domains in ``cryptpad/config/config.js`` as described in "
-"`admin_cryptpad_config`"
+"``admin_cryptpad_config``"
 msgstr ""
 
 #: ../../admin_guide/installation.rst:152
@@ -399,16 +399,14 @@ msgid "The Sandbox domain in place of:"
 msgstr ""
 
 #: ../../admin_guide/installation.rst:233
-msgid ""
-"An administrator email (appears on the Contact page "
-"``https://cryptpad.yourdomain.com/contact.html``) in place of:"
+msgid "An administrator email (appears on the Contact page) in place of:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:241
+#: ../../admin_guide/installation.rst:240
 msgid "Diagnostics"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:243
+#: ../../admin_guide/installation.rst:242
 msgid ""
 "CryptPad provides a diagnostics page that runs instance configuration "
 "tests. Visit ``https://cryptpad.yourdomain.com/checkup/`` after "
@@ -416,60 +414,60 @@ msgid ""
 "configured."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:251
+#: ../../admin_guide/installation.rst:250
 msgid "Configure administrators"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:253
+#: ../../admin_guide/installation.rst:252
 msgid ""
 "Once CryptPad is installed, create an account via the Register button on "
 "the home page. To make this account an instance administrator:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:256
+#: ../../admin_guide/installation.rst:255
 msgid ""
 "Copy their public key found in **User Menu** (avatar at the top right) > "
 "**Settings** > **Account** > **Public Signing Key**"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:259
+#: ../../admin_guide/installation.rst:258
 msgid ""
 "Paste this key in ``cryptpad/config/config.js`` in the following array "
 "(uncomment and replace the placeholder):"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:268
+#: ../../admin_guide/installation.rst:267
 msgid "Restart CryptPad"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:273
+#: ../../admin_guide/installation.rst:272
 msgid "Configure support mailbox"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:275
+#: ../../admin_guide/installation.rst:274
 msgid ""
 "To enable the encrypted support ticket system, use the ``generate-admin-"
 "key.js`` script:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:277
+#: ../../admin_guide/installation.rst:276
 msgid "``node ./scripts/generate-admin-keys.js``"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:278
+#: ../../admin_guide/installation.rst:277
 msgid ""
 "Add the **public key** into the ``supportMailboxPublicKey`` field of the "
 "configuration file ``cryptpad/config/config.js``"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:279
+#: ../../admin_guide/installation.rst:278
 msgid ""
 "Copy the **private key** in the support section of the control panel "
 "(after setting up an administrator account). This private key is the same"
 " for all administrator accounts that want to access support."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:282
+#: ../../admin_guide/installation.rst:281
 msgid ""
 "Once the steps above are complete, many day-to-day administration tasks "
 "such as support and monitoring can be done in the `administration panel "
@@ -486,5 +484,18 @@ msgstr ""
 #~ "account). This private key is the "
 #~ "same for all administrator accounts that"
 #~ " want to access support."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "to include both domains in "
+#~ "``cryptpad/config/config.js`` as described in "
+#~ "`admin_cryptpad_config`"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "An administrator email (appears on the"
+#~ " Contact page "
+#~ "``https://cryptpad.yourdomain.com/contact.html``) in place"
+#~ " of:"
 #~ msgstr ""
 
