@@ -1,0 +1,490 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, CryptPad Team
+# This file is distributed under the same license as the CryptPad package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CryptPad \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-05 10:52+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../admin_guide/installation.rst:2
+msgid "Installation"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:4
+msgid ""
+"This guide is about installing a public CryptPad instance available on "
+"the internet. For instructions about installing and running a local "
+"development instance please see the :ref:`dev_guide`."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:8
+msgid ""
+"The development team is available to provide paid support contracts (see "
+"our `organizational plans <https://cryptpad.fr/accounts/#org>`__ for an "
+"idea of our pricing), otherwise, requests for assistance can be directed "
+"to the community in our Matrix/IRC channel."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:14
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:17 ../../admin_guide/installation.rst:129
+msgid "Domains"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:19
+msgid ""
+"2 domains or subdomains are needed to take full advantage of CryptPad’s "
+"security features. Please see the `domains <#domains-1>`__ section below "
+"for more details."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:24
+msgid "Hardware"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:26
+msgid ""
+"The development team uses and recommends the following hardware "
+"requirements as a minimum on the host machine:"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:29
+msgid "Debian 10"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:30
+msgid "2GB RAM"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:31
+msgid "2 x86 CPUs"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:32
+msgid "20GB storage (depending on planned usage)"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:35
+msgid ""
+"CryptPad is engineered to maximise privacy, and to minimize the amount of"
+" useful information that can be gained even if the host machine is "
+"compromised. However it is up to the administrator(s) to ensure that the "
+"host machine is secure. The instructions for this are beyond the scope of"
+" this guide but best practices include:"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:37
+msgid "Disabling password-based SSH access"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:38
+msgid "Updating the operating system regularly with any security patches"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:39
+msgid "Limiting the number of people who have server access"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:40
+msgid "Avoiding insecure applications running in parallel on the same host"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:41
+msgid "Updating CryptPad itself regularly"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:44
+msgid "Software"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:46
+msgid ""
+"Before starting the installation, ensure the following software is "
+"installed:"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:49
+msgid "GIT"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:51
+msgid "nodejs (we use node v12.14.0)"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:53
+msgid ""
+"Using `NVM <https://github.com/nvm-sh/nvm#installing-and-updating>`__ is "
+"recommended"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:57
+msgid "npm"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:58
+msgid "bower"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:60
+msgid "Installed with ``npm install -g bower``"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:63
+msgid "Install Cryptpad"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:66
+msgid ""
+"the development team recommends creating a dedicated user to install and "
+"run CryptPad in production rather than using the root user."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:68
+msgid "Clone the CryptPad repository"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:75
+msgid "Dependencies"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:84
+msgid "Configuration"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:86
+msgid "Copy the example configuration"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:93
+msgid ""
+"Please read the configuration file, and modify variables as needed. The "
+"`domains <admin_domain_config>`_ are particulalry important."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:95
+msgid "The server can now be started with"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:102
+msgid ""
+"The instance is now ready to run but cannot yet be accessed from the "
+"internet."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:106
+msgid "Daemonization"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:108
+msgid ""
+"In production you may want to run CryptPad as a daemon that restarts "
+"automatically."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:112
+msgid "Systemd"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:114
+msgid ""
+"To run CryptPad as a `systemd "
+"<https://www.freedesktop.org/software/systemd/man/systemd.service.html>`__"
+" service, please follow the example `cryptpad.service <https://github.com"
+"/xwiki-labs/cryptpad/blob/main/docs/cryptpad.service>`__ file."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:120
+msgid "Save the example as ``cryptpad.service`` in ``/etc/systemd/system/``"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:121
+msgid "Make necessary adjustments (e.g. user name, path, nodejs version)"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:122
+msgid "Enable the service at startup with ``systemctl enable cryptpad``."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:124
+msgid ""
+"Other ways of daemonizing nodejs applications include for example "
+"`foreverjs <https://github.com/foreversd/forever>`_ or `pm2 "
+"<https://pm2.keymetrics.io/>`_."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:131
+msgid ""
+"You need two domains to take full advantage of CryptPad’s security "
+"features."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:134
+msgid "The main domain on which users access your instance"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:135
+msgid ""
+"A “sandbox” domain or subdomain to which a set of restrictive Content-"
+"Security Policy headers are applied"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:138
+msgid ""
+"The intent of this system is to limit the risk of Cross-Site Scripting "
+"(XSS) vulnerabilities allowing attackers to leak user data. Sensitive "
+"computation (like the processing of cryptographic keys) is handled on the"
+" main domain, while the user-interface is implemented on the sandbox "
+"domain."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:144
+msgid ""
+"The `example Nginx configuration <https://github.com/xwiki-"
+"labs/cryptpad/blob/main/docs/example.nginx.conf>`__ file includes the "
+"relevant headers to enable the sandboxing system, however, you must "
+"configure your instance correctly for it to be effective. You will need:"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:150
+msgid "two domains or subdomains"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:151
+msgid ""
+"to include both domains in ``cryptpad/config/config.js`` as described in "
+"`admin_cryptpad_config`"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:152
+msgid ""
+"to generate one SSL certificate that covers both domains. The development"
+" team uses `acme.sh <https://acme.sh/>`__ and this is reflected in the "
+"example config."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:153
+msgid ""
+"to correctly assign both domains and certificates to the relevant "
+"variables in the `example Nginx configuration <https://github.com/xwiki-"
+"labs/cryptpad/blob/main/docs/example.nginx.conf>`__"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:159
+msgid ""
+"Using CryptPad in production without the sandboxing system may put users’"
+" information at risk."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:161
+msgid ""
+"The development team is not aware of any third-party configurations "
+"(Apache, HAProxy, Lighttpd) that correctly implement the recommended "
+"settings. Use them at your own (and your users’) risk!"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:164
+msgid "Install and configure Nginx"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:166
+msgid ""
+"CryptPad’s application server handles active connections via websocket "
+"and serves static assets (HTML, Javascript, CSS, etc.). This basic "
+"configuration is designed to be very easy to configure for local "
+"development, but it does not protect traffic with SSL or handle many "
+"concurrent users very well."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:172
+msgid ""
+"In a production environment, the development team recommends `Nginx "
+"<https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-"
+"nginx-open-source/>`__ for the following reasons:"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:176
+msgid "Protect traffic with SSL (so your users can reach your instance via HTTPS)"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:178
+msgid ""
+"Scale to many more users by serving static content with a more scalable "
+"web-server instead of the single-threaded NodeJS web-server that is "
+"built-in"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:181
+msgid ""
+"Allow the application server to focus exclusively on handling websocket "
+"connections"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:186
+msgid ""
+"CryptPad cannot run in a subfolder. Make sure you configure your server "
+"to access it through the root domain or a subdomain."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:190
+msgid ""
+"Note that the version of Nginx distributed by your operating system may "
+"not support websockets. The recommended minimum version to serve CryptPad"
+" is ``1.10.3``."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:194
+msgid "To configure Nginx for CryptPad:"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:196
+msgid ""
+"Copy the `CryptPad example Nginx config file <https://github.com/xwiki-"
+"labs/cryptpad/blob/main/docs/example.nginx.conf>`__ so that it is "
+"used/imported by the main Nginx config, for example by placing it in "
+"``/etc/nginx/conf.d/cryptpad.conf``."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:201
+msgid ""
+"Edit the configuration file with the correct domains and paths to "
+"certificates."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:204
+msgid ""
+"Run ``openssl dhparam -out /etc/nginx/dhparam.pem 4096`` if you haven’t "
+"done so already on the host machine."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:207
+msgid ""
+"Static assets and pages such as "
+"``https://cryptpad.yourdomain.com/index.html`` should now be accessible "
+"at the main domain."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:214
+msgid "Configure CryptPad"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:216
+msgid ""
+"To finalise the installation, ensure ``cryptpad/config/config.js`` "
+"contains at least:"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:219
+msgid "The correct domains:"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:221
+msgid "The main domain in place of:"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:227
+msgid "The Sandbox domain in place of:"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:233
+msgid ""
+"An administrator email (appears on the Contact page "
+"``https://cryptpad.yourdomain.com/contact.html``) in place of:"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:241
+msgid "Diagnostics"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:243
+msgid ""
+"CryptPad provides a diagnostics page that runs instance configuration "
+"tests. Visit ``https://cryptpad.yourdomain.com/checkup/`` after "
+"completing all of the steps above to ensure everything is correctly "
+"configured."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:251
+msgid "Configure administrators"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:253
+msgid ""
+"Once CryptPad is installed, create an account via the Register button on "
+"the home page. To make this account an instance administrator:"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:256
+msgid ""
+"Copy their public key found in **User Menu** (avatar at the top right) > "
+"**Settings** > **Account** > **Public Signing Key**"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:259
+msgid ""
+"Paste this key in ``cryptpad/config/config.js`` in the following array "
+"(uncomment and replace the placeholder):"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:268
+msgid "Restart CryptPad"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:273
+msgid "Configure support mailbox"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:275
+msgid ""
+"To enable the encrypted support ticket system, use the ``generate-admin-"
+"key.js`` script:"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:277
+msgid "``node ./scripts/generate-admin-keys.js``"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:278
+msgid ""
+"Add the **public key** into the ``supportMailboxPublicKey`` field of the "
+"configuration file ``cryptpad/config/config.js``"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:279
+msgid ""
+"Copy the **private key** in the support section of the control panel "
+"(after setting up an administrator account). This private key is the same"
+" for all administrator accounts that want to access support."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:282
+msgid ""
+"Once the steps above are complete, many day-to-day administration tasks "
+"such as support and monitoring can be done in the `administration panel "
+"<admin_panel>`__."
+msgstr ""
+
+#~ msgid ""
+#~ "#. Add the **public key** into the"
+#~ " ``supportMailboxPublicKey`` field of the "
+#~ "configuration file ``cryptpad/config/config.js`` -"
+#~ "  Copy the **private key** in the "
+#~ "support section of the control panel "
+#~ "(after setting up an administrator "
+#~ "account). This private key is the "
+#~ "same for all administrator accounts that"
+#~ " want to access support."
+#~ msgstr ""
+

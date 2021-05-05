@@ -37,7 +37,7 @@ Customization
 
 When writing code for CryptPad, it is important to remember that there are many CryptPad instances and that their administrators sometimes want to customize UI elements.
 
-In order to make the upgrade process easier when such modifications are present, the elements that the development team believes can be customized without risk are stored in the ``customize.dist`` folder. Each file stored in this directory can be modified by creating a ``customize`` folder containing a copy of the original file. If a file exists in ``customize``, it will be served to users instead of its namesake in ``customize.dist``. Note that :ref:`dev_translations` can also be customized. For more information please see :ref:`instance_customization` in the administrator guide.
+In order to make the upgrade process easier when such modifications are present, the elements that the development team believes can be customized without risk are stored in the ``customize.dist`` folder. Each file stored in this directory can be modified by creating a ``customize`` folder containing a copy of the original file. If a file exists in ``customize``, it will be served to users instead of its namesake in ``customize.dist``. Note that :ref:`dev_translations` can also be customized. For more information please see :ref:`admin_customization` in the administrator guide.
 
 Most images, logos and LESS style files are therefore placed in ``customize.dist`` so that they can be easily modified. Local changes made in ``customize`` are ignored by Git and cannot be sent as contributions.
 

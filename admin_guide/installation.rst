@@ -276,7 +276,7 @@ To enable the encrypted support ticket system, use the ``generate-admin-key.js``
 
 #. ``node ./scripts/generate-admin-keys.js``
 #. Add the **public key** into the ``supportMailboxPublicKey`` field of the configuration file ``cryptpad/config/config.js``
--  Copy the **private key** in the support section of the control panel (after setting up an administrator account). This private key is the same for all administrator accounts that want to access support.
+#.  Copy the **private key** in the support section of the control panel (after setting up an administrator account). This private key is the same for all administrator accounts that want to access support.
 
 
 Once the steps above are complete, many day-to-day administration tasks

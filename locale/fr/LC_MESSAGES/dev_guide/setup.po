@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CryptPad \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 16:15+0100\n"
+"POT-Creation-Date: 2021-05-05 10:50+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,146 +17,129 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.9.0\n"
 
-#: ../../dev_guide/setup.rst:2
+#: ../../dev_guide/setup.rst:5
 msgid "Set up a development instance"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:5
+#: ../../dev_guide/setup.rst:8
 msgid "Prerequisites"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:7
+#: ../../dev_guide/setup.rst:10
 msgid ""
 "Please make sure that the following tools are installed on your system "
 "before installing CryptPad:"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:9
+#: ../../dev_guide/setup.rst:13
 msgid "GIT"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:10
+#: ../../dev_guide/setup.rst:15
 msgid "nodejs (we use node v12.14.0)"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:12
+#: ../../dev_guide/setup.rst:17
 msgid ""
-"We recommend using `NVM <https://github.com/creationix/nvm>`_ to install "
-"nodejs."
+"Using `NVM <https://github.com/nvm-sh/nvm#installing-and-updating>`__ is "
+"recommended"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:14
+#: ../../dev_guide/setup.rst:21
 msgid "npm"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:15
+#: ../../dev_guide/setup.rst:22
 msgid "bower"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:17
-msgid "You can install it with ``npm install -g bower`` once npm is installed"
+#: ../../dev_guide/setup.rst:24
+msgid "Installed with ``npm install -g bower``"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:20
+#: ../../dev_guide/setup.rst:28
 msgid "Installation"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:22
+#: ../../dev_guide/setup.rst:30
 msgid ""
 "The source code can be found on `GitHub <https://github.com>`__. You must"
 " have an account on this platform in order to contribute."
 msgstr ""
 
-#: ../../dev_guide/setup.rst:24
+#: ../../dev_guide/setup.rst:32
 msgid "Fork the code: https://github.com/xwiki-labs/cryptpad.git"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:25
+#: ../../dev_guide/setup.rst:33
 msgid ""
 "Clone the fork on your system in the desired directory -  `git clone "
 "https://github.com/{YOUR_USER_NAME}/cryptpad.git`"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:27
+#: ../../dev_guide/setup.rst:35
 msgid ""
 "Install the server dependencies with npm  and client dependencies with "
 "bower:"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:36
+#: ../../dev_guide/setup.rst:44
 msgid "Configuration"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:38
+#: ../../dev_guide/setup.rst:46
 msgid ""
 "Once everything is installed, you can configure some values before "
 "starting the server."
 msgstr ""
 
-#: ../../dev_guide/setup.rst:40
+#: ../../dev_guide/setup.rst:48
 msgid "Make a copy of the default configuration:"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:47
+#: ../../dev_guide/setup.rst:55
 msgid ""
 "The `example configuration file <https://github.com/xwiki-"
 "labs/cryptpad/blob/main/config/config.example.js>`__ lists the "
 "configurable values and how to use them."
 msgstr ""
 
-#: ../../dev_guide/setup.rst:48
+#: ../../dev_guide/setup.rst:56
 msgid "For a development instance, the important elements are:"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:50
+#: ../../dev_guide/setup.rst:58
 msgid ""
 "``httpUnsafeOrigin``: if you want to use the development server and the "
 "test client on different systems, you have to modify this value to use "
 "the network address of the server (example: 'http://192.168.0.10:3000')."
 msgstr ""
 
-#: ../../dev_guide/setup.rst:51
+#: ../../dev_guide/setup.rst:59
 msgid ""
 "``adminKeys``: if you want to have access to the administration panel in "
 "the CryptPad client, you need to create a user account on the instance "
 "and add its *Public Signature Key* here."
 msgstr ""
 
-#: ../../dev_guide/setup.rst:52
+#: ../../dev_guide/setup.rst:60
 msgid ""
-"``supportMailboxPublicKey``: if you want to have access to the support "
-"panel on the development instance, you need to generate support \"keys\" "
-"using the *generate-admin-key.js* script."
+"``supportMailboxPublicKey``: to have access to the support panel on the "
+"development instance, see :ref:`admin_support_mailbox` in the "
+"administrator guide."
 msgstr ""
 
-#: ../../dev_guide/setup.rst:54
-msgid "``node ./scripts/generate-admin-keys.js``"
-msgstr ""
-
-#: ../../dev_guide/setup.rst:55
-msgid ""
-"Add the **public key** into the ``supportMailboxPublicKey`` field of the "
-"configuration file"
-msgstr ""
-
-#: ../../dev_guide/setup.rst:56
-msgid ""
-"Copy the **private key** in the support section of the control panel "
-"(after setting up an administrator account). This private key is the same"
-" for all administrator accounts that want to access support."
-msgstr ""
-
-#: ../../dev_guide/setup.rst:58
+#: ../../dev_guide/setup.rst:61
 msgid ""
 "``defaultStorageLimit``: to increase the storage limit of the development"
 " instance (50MB by default)."
 msgstr ""
 
-#: ../../dev_guide/setup.rst:62
+#: ../../dev_guide/setup.rst:65
 msgid "Caching"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:64
+#: ../../dev_guide/setup.rst:67
 msgid ""
 "CryptPad uses a \"cache busting\" system to manage versions of the "
 "JavaScript code and the compiled CSS code. This means that, for a normal "
@@ -166,7 +149,7 @@ msgid ""
 "*development* mode."
 msgstr ""
 
-#: ../../dev_guide/setup.rst:67
+#: ../../dev_guide/setup.rst:70
 msgid ""
 "It is important to note that no \"build\" or \"compilation\" step is "
 "necessary when developing code for CryptPad. The JavaScript files are "
@@ -175,11 +158,46 @@ msgid ""
 "and reload the page on CryptPad."
 msgstr ""
 
-#: ../../dev_guide/setup.rst:71
+#: ../../dev_guide/setup.rst:74
 msgid "Launching in development mode"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:73
+#: ../../dev_guide/setup.rst:76
 msgid "``npm run dev``"
 msgstr ""
+
+#~ msgid ""
+#~ "We recommend using `NVM "
+#~ "<https://github.com/creationix/nvm>`_ to install "
+#~ "nodejs."
+#~ msgstr ""
+
+#~ msgid "You can install it with ``npm install -g bower`` once npm is installed"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``supportMailboxPublicKey``: if you want to"
+#~ " have access to the support panel "
+#~ "on the development instance, you need"
+#~ " to generate support \"keys\" using "
+#~ "the *generate-admin-key.js* script."
+#~ msgstr ""
+
+#~ msgid "``node ./scripts/generate-admin-keys.js``"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Add the **public key** into the "
+#~ "``supportMailboxPublicKey`` field of the "
+#~ "configuration file"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Copy the **private key** in the "
+#~ "support section of the control panel "
+#~ "(after setting up an administrator "
+#~ "account). This private key is the "
+#~ "same for all administrator accounts that"
+#~ " want to access support."
+#~ msgstr ""
 

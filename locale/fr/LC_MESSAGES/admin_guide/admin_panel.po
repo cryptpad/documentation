@@ -1,0 +1,273 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021, CryptPad Team
+# This file is distributed under the same license as the CryptPad package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CryptPad \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-05 10:50+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: ../../admin_guide/admin_panel.rst:5
+msgid "Administration panel"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:7
+msgid ""
+"A number of monitoring and configuration options are available through "
+"the admin panel to administer your instance without needing to open "
+"config files on the server."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:11
+msgid ""
+"The admin panel is available to administrator users (see "
+":ref:`admin_adminusers`)."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:13
+msgid "**User Menu** (avatar at the top right) > |gears| **Administration**"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:15
+msgid "or go to https://your-instance.com/admin/"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:17
+msgid ""
+"This page repeats the comments present on the admin panels and adds a few"
+" clarifications."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:20
+msgid "General"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:23
+msgid "Flush HTTP Cache"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:25
+msgid ""
+"Force users to download the latest clientside assets (only if your server"
+" is in fresh mode)"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:27
+msgid "This includes some configuration changes distributed via ``/api/config``."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:30
+msgid "Update user quotas"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:32
+msgid ""
+"Forcing an update of user storage limits can be done any time, but is "
+"only necessary in the event of an error"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:35
+msgid "Archive documents"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:37
+msgid ""
+"Make a document unavailable without deleting it permanently. It will be "
+"placed in an ‘archive’ directory and deleted after a few days "
+"(configurable in the server configuration file)."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:39
+msgid ""
+"Make a document unavailable, for example for moderation in the case where"
+" a document with innapropriate/illegal content is reported."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:42
+msgid "Restore documents"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:44
+msgid "Restore a document that had previously been archived"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:49
+msgid "Close registration"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:51
+msgid "Do not allow any new users to register"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:54
+msgid "User Storage"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:56
+msgid "This section is for managing storage limits on the instance."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:60
+msgid ""
+"The values set in the admin panel override the defaults or modifications "
+"made to the configuration files."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:64
+msgid "Storage Limit"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:66
+msgid ""
+"Maximum storage limit for CryptDrives (users and teams) when no custom "
+"rule is applied"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:70
+msgid "Apply a custom limit"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:72
+msgid ""
+"Set custom limits for users by using their public key. You can update or "
+"remove an existing limit."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:75
+msgid "Check account storage"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:77
+msgid ""
+"Check the total size of items counted against a user or team’s quota "
+"given their public key."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:80
+msgid "List of custom limits"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:82
+msgid "List all the custom storage limits applied to your instance."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:85
+msgid "Statistics"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:87
+msgid ""
+"Active connections: Number of active websocket connections (and unique IP"
+" addresses connected)"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:90
+msgid "Active pads: Number of unique documents currently being viewed or edited"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:93
+msgid "Open Files: Number of file descriptors currently open on the server"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:95
+msgid "Registered users: Number of users registered on your instance"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:97
+msgid "Disk usage: Amount of storage space consumed by various CryptPad resources"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:102
+msgid ""
+"The disk usage report can be very resource intensive to run on large "
+"instances."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:106
+msgid "Support"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:108
+msgid "To enable the Support mailbox, please see :ref:`admin_support_mailbox`."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:110
+msgid ""
+"List of tickets sent by users to the support mailbox. All the "
+"administrators can see the messages and their answers. A closed ticket "
+"cannot be re-opened. You can only remove (hide) closed tickets, and the "
+"removed tickets are still visible by other administrators."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:112
+msgid "reply to tickets"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:113
+msgid "close tickets"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:114
+msgid "remove closed tickets"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:118
+msgid "Broadcast"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:120
+msgid ""
+"This section offers different ways of sending notifications to all users "
+"on the instance."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:123
+msgid "Maintenance"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:125
+msgid ""
+"Plan a maintenance on this instance and notify all users. Limited to one "
+"active maintenance at a given time."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:128
+msgid "Survey"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:130
+msgid ""
+"Add, update or remove a link to an external survey. Users will receive a "
+"notification and the survey will remain available from the user menu."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:133
+msgid "Broadcast Message"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:135
+msgid ""
+"Send a message to all users on this instance. All existing and new users "
+"will receive it as a notification. Preview messages before sending them "
+"with \"Preview notification\". Preview notifications have a red icon and "
+"are visible only to you."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:138
+msgid "Performance"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:140
+msgid "An overview of the total time spent executing various server-side commands"
+msgstr ""
+
