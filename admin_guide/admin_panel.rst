@@ -8,15 +8,13 @@ A number of monitoring and configuration options are available through
 the admin panel to administer your instance without needing to open
 config files on the server.
 
-The admin interface is available through:
+The admin panel is available to administrator users (see :ref:`admin_adminusers`).
 
-https://your-instance.com/admin/
+- **User Menu** (avatar at the top right) > |gears| **Administration**
 
-.. XXX [link to where to set this up]
+- or go to https://your-instance.com/admin/
 
-or with an administrator user
-
--  **User Menu** (avatar at the top right) > **Administration**
+This page repeats the comments present on the admin panels and adds a few clarifications.
 
 General
 -------
@@ -24,65 +22,64 @@ General
 Flush HTTP Cache
 ~~~~~~~~~~~~~~~~
 
-.. XXX  <!-- this includes some configuration changes distributed via /api/config -->
+Force users to download the latest clientside assets (only if your server is in fresh mode)
 
-   Force users to download the latest clientside assets (only if your
-   server is in fresh mode)
+This includes some configuration changes distributed via ``/api/config``.
 
 Update user quotas
 ~~~~~~~~~~~~~~~~~~
 
-   Forcing an update of user storage limits can be done any time, but is
-   only necessary in the event of an error
+Forcing an update of user storage limits can be done any time, but is only necessary in the event of an error
 
 Archive documents
 ~~~~~~~~~~~~~~~~~
 
-   Make a document unavailable without deleting it permanently. It will
-   be placed in an ‘archive’ directory and deleted after a few days
-   (configurable in the server configuration file).
+Make a document unavailable without deleting it permanently. It will be placed in an ‘archive’ directory and deleted after a few days (configurable in the server configuration file).
 
-Make a document unavailable, for example for moderation in the case
-where a document with innapropriate/illegal content is reported.
+Make a document unavailable, for example for moderation in the case where a document with innapropriate/illegal content is reported.
 
 Restore documents
 ~~~~~~~~~~~~~~~~~
 
-   Restore a document that had previously been archived
+Restore a document that had previously been archived
+
+.. _admin_close_registration:
+
+Close registration
+~~~~~~~~~~~~~~~~~~
+
+Do not allow any new users to register
 
 User Storage
 ------------
 
 This section is for managing storage limits on the instance.
 
-.. XXX relationship with the limit set in config? <!-- overrides it on a per-user basis. we should remove configuration of customLimits from the example config... -->
+.. note::
+
+   The values set in the admin panel override the defaults or modifications made to the configuration files.
+
 
 Storage Limit
 ~~~~~~~~~~~~~
 
-   Maximum storage limit for CryptDrives (users and teams) when no
-   custom rule is applied
+Maximum storage limit for CryptDrives (users and teams) when no custom rule is applied
 
-.. XXX  <!-- this and other values below also override whatever is in the config -->
 
 Apply a custom limit
 ~~~~~~~~~~~~~~~~~~~~
 
-.. XXX <!-- override -->
-
-   Set custom limits for users by using their public key. You can update
-   or remove an existing limit.
+Set custom limits for users by using their public key. You can update or remove an existing limit.
 
 Check account storage
 ~~~~~~~~~~~~~~~~~~~~~
 
-   Check the total size of items counted against a user or team’s quota
-   given their public key.
+Check the total size of items counted against a user or team’s quota given their public key.
 
 List of custom limits
 ~~~~~~~~~~~~~~~~~~~~~
 
-   List all the custom storage limits applied to your instance.
+List all the custom storage limits applied to your instance.
 
 Statistics
 ----------
@@ -100,40 +97,44 @@ Statistics
 -  Disk usage: Amount of storage space consumed by various CryptPad
    resources
 
-.. XXX <!-- can be very expensive to run this on a large instance -->
+.. warning::
 
-Disk usage report
-~~~~~~~~~~~~~~~~~
+   The disk usage report can be very resource intensive to run on large instances.
+
 
 Support
 -------
 
-.. XXX [link to how to set up the support mailbox]
+To enable the Support mailbox, please see :ref:`admin_support_mailbox`.
 
-   Here is the list of tickets sent by users to the support mailbox. All
-   the administrators can see the messages and their answers. A closed
-   ticket cannot be re-opened. You can only remove (hide) closed
-   tickets, and the removed tickets are still visible by other
-   administrators.
+List of tickets sent by users to the support mailbox. All the administrators can see the messages and their answers. A closed ticket cannot be re-opened. You can only remove (hide) closed tickets, and the removed tickets are still visible by other administrators.
 
 -  reply to tickets
 -  close tickets
 -  remove closed tickets
 
-   -  note about how the oldest ticket dictates what gets loaded so if
-      you have a lot of tickets make sure to remove the oldest ones
 
 Broadcast
 ---------
 
+This section offers different ways of sending notifications to all users on the instance.
+
 Maintenance
 ~~~~~~~~~~~
+
+Plan a maintenance on this instance and notify all users. Limited to one active maintenance at a given time.
 
 Survey
 ~~~~~~
 
+Add, update or remove a link to an external survey. Users will receive a notification and the survey will remain available from the user menu.
+
 Broadcast Message
 ~~~~~~~~~~~~~~~~~
 
+Send a message to all users on this instance. All existing and new users will receive it as a notification. Preview messages before sending them with "Preview notification". Preview notifications have a red icon and are visible only to you.
+
 Performance
 -----------
+
+An overview of the total time spent executing various server-side commands

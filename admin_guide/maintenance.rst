@@ -62,8 +62,6 @@ written as indicated in ``cryptpad/config/config.js``.
 
 Locate the following directories to backup or migrate:
 
-.. XXX <!-- decree.ndjson is here [in data/] by default but can be configured to be elsewhere... that's a bad pattern that should be fixed, but backwards compatibility is annoying -->
-
 -  ``data/``
 -  ``datastore/``
 -  ``block/``

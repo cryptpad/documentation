@@ -4,7 +4,7 @@
 Instance customization
 =======================
 
-The functionality as well as the look-and-feel of an instance can be customized by copying assets (images, stylesheets, page templates, etc) from ``customize.dist`` to a new ``customize`` folder and modifying them. If a file exists in ``customize``, it will be served to users instead of its namesake in ``customize.dist``.
+The functionality as well as the look-and-feel of an instance can be customized by creating a ``customize`` folder and copying assets to be customized (images, stylesheets, page templates, etc) from ``customize.dist`` into it. If a file exists in ``customize``, it will be served to users instead of its namesake in ``customize.dist``.
 
 .. warning::
 
@@ -29,9 +29,9 @@ To disable unregistered use of CryptPad, add the following to ``customize/applic
 
     AppConfig.registeredOnlyTypes = AppConfig.availablePadTypes;
 
-.. XXX Restricted registration
-..     ------------------------
-.. section, here or elsewhere
+.. note::
+
+    To close registration of new users on the instance, see :ref:`admin_close_registration`
 
 Look and feel
 -------------

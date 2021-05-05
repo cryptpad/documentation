@@ -26,17 +26,15 @@ Everything that a client needs in order to interact with a CryptPad document is 
 
 Let's look at an example:
 
-.. XXX link to an example doc, e.g. markdown reference
-
 https://cryptpad.fr/code/#/2/code/edit/plpAeHfQ4YO49fczV5erSCgd/
 
 Browsers do not send the information after the ``#`` symbol to the server when loading a page, so it is safe to encode private information there.
 
 The information before ``#`` tells the browser which server to connect to, and what resources to download.
 
-This part of the URL (`https://cryptpad.fr/code/`) tells the server to load the code editor.
+This part of the URL ``https://cryptpad.fr/code/`` tells the server to load the code editor.
 
-The remaining information (``#/2/code/edit/plpAeHfQ4YO49fczV5erSCgd/``) is handled with Javascript by the browser.
+The remaining information ``#/2/code/edit/plpAeHfQ4YO49fczV5erSCgd/`` is handled with Javascript by the browser.
 
 There are several pieces of information there, separated by slashes.
 
@@ -50,9 +48,11 @@ There are several pieces of information there, separated by slashes.
 Finding a document
 -------------------
 
-It is possible to run code provided by the CryptPad server in your browser console. To extract the channel id of a document you have open, you can run this snippet:
+It is possible to run code provided by the CryptPad server in your browser console. To extract the channel id of a document you have open:
 
-.. XXX Simply go to File > Properties > Document ID
+- |file-o| **File** > |info-circle| **Properties** > **Document identifier**
+
+- Alternatively you can run this snippet:
 
 .. code-block:: javascript
 
@@ -66,8 +66,7 @@ It is possible to run code provided by the CryptPad server in your browser conso
         console.log(secret.channel);
     });
 
-
-If you were to run this on the document corresponding to the URL listed above, it would print ``bb1edc4cb7648605284db30dfcd2eebf``.
+Either method will give a channel id that looks similar to  ``bb1edc4cb7648605284db30dfcd2eebf``.
 
 The corresponding file would be stored on the server, in your CryptPad instance's directory, at ``cryptpad/datastore/bb/bb1edc4cb7648605284db30dfcd2eebf.ndjson``.
 

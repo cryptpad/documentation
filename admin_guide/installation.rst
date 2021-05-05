@@ -3,7 +3,7 @@ Installation
 
 This guide is about installing a public CryptPad instance available on
 the internet. For instructions about installing and running a local
-development instance please see the [developer guide].
+development instance please see the :ref:`dev_guide`.
 
 The development team is available to provide paid support contracts (see
 our `organizational plans <https://cryptpad.fr/accounts/#org>`__ for an
@@ -244,6 +244,8 @@ CryptPad provides a diagnostics page that runs instance configuration
 tests. Visit ``https://cryptpad.yourdomain.com/checkup/`` after
 completing all of the steps above to ensure everything is correctly
 configured.
+
+.. _admin_adminusers:
 
 Configure administrators
 ~~~~~~~~~~~~~~~~~~~~~~~~
