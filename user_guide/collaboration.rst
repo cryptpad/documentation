@@ -100,6 +100,11 @@ Write messages in the field at the bottom and send them with
 Load more chat history with |history| or delete the history with
 |eraser|.
 
+.. Calendar
+.. --------
+
+.. XXX 🚧 add calendar section here 🚧
+
 .. _teams:
 
 Teams
