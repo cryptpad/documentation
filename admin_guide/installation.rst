@@ -17,7 +17,7 @@ Domains
 ~~~~~~~
 
 2 domains or subdomains are needed to take full advantage of CryptPad’s
-security features. Please see the `domains <#domains-1>`__ section below
+security features. Please see the :ref:`domains <admin_domain_config>` section below
 for more details.
 
 Hardware
