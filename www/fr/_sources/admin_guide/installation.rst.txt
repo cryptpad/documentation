@@ -17,7 +17,7 @@ Domains
 ~~~~~~~
 
 2 domains or subdomains are needed to take full advantage of CryptPad’s
-security features. Please see the `domains <#domains-1>`__ section below
+security features. Please see the :ref:`domains <admin_domain_config>` section below
 for more details.
 
 Hardware
@@ -90,7 +90,7 @@ Copy the example configuration
    cd cryptpad/config
    cp config.example.js config.js
 
-Please read the configuration file, and modify variables as needed. The `domains <admin_domain_config>`_ are particulalry important.
+Please read the configuration file, and modify variables as needed. The :ref:`domains <admin_domain_config>` are particulalry important.
 
 The server can now be started with
 
