@@ -90,7 +90,7 @@ Copy the example configuration
    cd cryptpad/config
    cp config.example.js config.js
 
-Please read the configuration file, and modify variables as needed. The `domains <admin_domain_config>`_ are particulalry important.
+Please read the configuration file, and modify variables as needed. The :ref:`domains <admin_domain_config>` are particulalry important.
 
 The server can now be started with
 
