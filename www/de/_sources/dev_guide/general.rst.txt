@@ -26,13 +26,11 @@ CryptPad's code is split in 5 distinct levels, 2 server side and 3 client side.
    -  The iframe containing the user interface, called "inner" in the code, is launched as a daughter of "outer" and uses the "safe" URL. This iframe represents the entire screen visible per the users. No interface element is outside of the iframe. It has only access to the data that needs to be displayed on the screen.
    -  The upper level, called "worker", which manages the connection to the server and keeps all the user account data in memory. This level is loaded in a SharedWorker when the browser supports it (Firefox, Chrome, Edge) with the "unsafe" URL, which means that all the browser's tabs loaded on this CryptPad instance will have access to the same worker. It allows us to load the account data only once for all open tabs and to use only one Websocket connection.
 
-.. figure:: /images/dev/5levels.png
-   :class: screenshot
+.. figure:: /images/dev/cp_5level_structure.svg
    :alt: CryptPad's 5-level structure
 
    CryptPad's 5-Level Structure
 
-.. XXX add something about database, or lack thereof
 
 Encryption
 ----------
@@ -130,7 +128,7 @@ In summary, when you **register** on CryptPad, your credentials are used to crea
 .. XXX correct paragraph below. from CryptHack:
 .. But that is not completely right, is it? I thought and that is what I observed on my instance that you don't just change the login block of a user, you also change the drive pad. So a user has a new drive key after changing passwords. Otherwise, that would be a security issue as well.
 
-When a user wants to **change their password**, there is therefore no need to migrate the whole account to a new document, only the "block" will change. Scrypt will indeed give us new login keys to use a new block. This block will be encrypted with a different encrpytion key than the first one, but the decrypted content will be the same: the keys of the user account. The old block is then removed.
+When a user wants to **change their password**, there is therefore no need to migrate the whole account to a new document, only the "block" will change. Scrypt will indeed give us new login keys to use a new block. This block will be encrypted with a different encryption key than the first one, but the decrypted content will be the same: the keys of the user account. The old block is then removed.
 
 In order to allow users to stay connected without having to type their password for each new session, the keys of the block are kept in memory in the **localStorage** of the browser (on the "unsafe" domain). Logging out means deleting these keys from the localStorage.
 

@@ -71,6 +71,9 @@ Fill out the following information:
 
 -  **Username**: This is the name used to log in to CryptPad, it is different from the **Display name** visible by other users. The **Username** cannot be changed once the account is created.
 
+.. note::
+   Unlike many online services, **CryptPad does not require an email address to register**. It is possible to use an email address as a username but it is then used as any other string of characters. As explained below, this username is not visible from the administrators and is never used to communicate about your account (especially not to send "password reset" emails, as these do not exist on CryptPad).
+
 -  **Password**: It is recommended to use a strong password. The password can be changed in :ref:`user settings <user_settings>`.
 
 .. image:: /images/registration-warning.png

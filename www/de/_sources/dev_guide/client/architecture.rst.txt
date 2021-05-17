@@ -12,8 +12,8 @@ The client architecture is split in 3 levels:
 
 Each of the three levels has distinct roles that are detailed in this section.
 
-.. image:: /images/dev/client.png
-   :class: screenshot
+.. figure:: /images/dev/cp_5level_structure.svg
+   :alt: CryptPad structure diagram
 
 
 .. _architecture_worker:

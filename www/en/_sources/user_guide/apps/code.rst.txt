@@ -56,10 +56,14 @@ Markdown: a lightweight syntax that offers basic formatting while
 remaining readable. Markdown is readily converted to other formats such
 as HTML.
 
-`Markdown syntax
-guide. <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__
+For examples of Markdown syntax in CryptPad please see:
 
-.. XXX add link to markdown examples
+|md basic|_
+
+.. |md basic| replace:: |cptools code| **Markdown Guide: Basic Syntax**
+.. _md basic: https://cryptpad.fr/code/#/2/code/view/kmYt1-pxaMlinUl2+YQSLyZetKE2GJo9QtTlCQ8RNks/
+
+
 
 Additionally to basic Markdown syntax, the following features are also
 available:
@@ -71,14 +75,27 @@ available:
 
    -  ``- [x] task`` for a completed task: |check-square| task.
 
+As well as the following extensions:
+
 -  Diagrams with `Mermaid <https://mermaid-js.github.io/mermaid/#/>`__.
 -  Mindmaps with `Markmap <https://markmap.js.org/>`__.
 -  Mathematical equations with `Mathjax <https://www.mathjax.org/>`__.
 
-.. XXX say how to use these extensions
-   ```mermaid
-   ...
+To use an extensions, use it as syntax for a Markdown code block, for example:
+
+.. code:: markdown
+
+   ``` mermaid
+      <!-- your mermaid code -->
    ```
+
+for detailed examples of the extensions in use please see:
+
+|md extensions|_
+
+.. |md extensions| replace:: |cptools code| **Markdown Guide: Extensions**
+.. _md extensions: https://cryptpad.fr/code/#/2/code/view/VJtytDV8tsmlGx0GlR02azrp51A8cl8ivifXf6GQ9RA/
+
 
 Images
 ------

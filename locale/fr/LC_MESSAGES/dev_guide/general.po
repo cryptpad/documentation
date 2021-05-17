@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CryptPad \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 16:15+0100\n"
+"POT-Creation-Date: 2021-05-17 15:30+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,7 +68,7 @@ msgid ""
 " side."
 msgstr ""
 
-#: ../../dev_guide/general.rst:18 ../../dev_guide/general.rst:159
+#: ../../dev_guide/general.rst:18 ../../dev_guide/general.rst:163
 msgid "Server side"
 msgstr ""
 
@@ -88,7 +88,7 @@ msgid ""
 "cores."
 msgstr ""
 
-#: ../../dev_guide/general.rst:23 ../../dev_guide/general.rst:170
+#: ../../dev_guide/general.rst:23 ../../dev_guide/general.rst:174
 msgid "Client side"
 msgstr ""
 
@@ -123,26 +123,26 @@ msgstr ""
 msgid "CryptPad's 5-Level Structure"
 msgstr ""
 
-#: ../../dev_guide/general.rst:37
+#: ../../dev_guide/general.rst:36
 msgid "Encryption"
 msgstr ""
 
-#: ../../dev_guide/general.rst:39
+#: ../../dev_guide/general.rst:38
 msgid ""
 "CryptPad uses several encryption systems appropriate for different use "
 "cases. These systems come from the `TweetNaCl <https://github.com/dchest"
 "/tweetnacl-js>`__ library."
 msgstr ""
 
-#: ../../dev_guide/general.rst:41
+#: ../../dev_guide/general.rst:40
 msgid "Documents, user account, static files and group chat"
 msgstr ""
 
-#: ../../dev_guide/general.rst:43
+#: ../../dev_guide/general.rst:42
 msgid "Symmetrical encryption \"xsalsa20-poly1305\"."
 msgstr ""
 
-#: ../../dev_guide/general.rst:44
+#: ../../dev_guide/general.rst:43
 msgid ""
 "A unique encryption key allows users to encrypt and decrypt the desired "
 "content. This key is derived from the \"hash\" of the URL (the part after"
@@ -151,21 +151,21 @@ msgid ""
 "server doesn't know the encryption keys)."
 msgstr ""
 
-#: ../../dev_guide/general.rst:45
+#: ../../dev_guide/general.rst:44
 msgid ""
 "All users with access to this key can decrypt the \"patches\" allowing "
 "them to rebuild the document or decrypt the chat messages."
 msgstr ""
 
-#: ../../dev_guide/general.rst:47
+#: ../../dev_guide/general.rst:46
 msgid "Read-only access to documents"
 msgstr ""
 
-#: ../../dev_guide/general.rst:49
+#: ../../dev_guide/general.rst:48
 msgid "Signature “ed25519”."
 msgstr ""
 
-#: ../../dev_guide/general.rst:50
+#: ../../dev_guide/general.rst:49
 msgid ""
 "Since the encryption is symmetrical, all users who can read and therefore"
 " decrypt the document can also technically encrypt messages and send "
@@ -173,36 +173,36 @@ msgid ""
 "sending messages."
 msgstr ""
 
-#: ../../dev_guide/general.rst:51
+#: ../../dev_guide/general.rst:50
 msgid ""
 "The edit URL contains a signature in addition to the encryption key. "
 "Editors will therefore be able to \"sign\" messages after encrypting "
 "them."
 msgstr ""
 
-#: ../../dev_guide/general.rst:52
+#: ../../dev_guide/general.rst:51
 msgid ""
 "A \"public\" verification key allows all users (editors **and** readers) "
 "to check if an encrypted message has been signed with the correct signing"
 " key. Messages with an invalid signature are ignored."
 msgstr ""
 
-#: ../../dev_guide/general.rst:53
+#: ../../dev_guide/general.rst:52
 msgid ""
 "When a document is created, the public verification key associated with "
 "this document is sent to the server. Messages with invalid signature are "
 "not stored in the database."
 msgstr ""
 
-#: ../../dev_guide/general.rst:55
+#: ../../dev_guide/general.rst:54
 msgid "Private chat between two users (\"contacts\" application)"
 msgstr ""
 
-#: ../../dev_guide/general.rst:57
+#: ../../dev_guide/general.rst:56
 msgid "Asymmetric encryption \"x25519-xsalsa20-poly1305\"."
 msgstr ""
 
-#: ../../dev_guide/general.rst:58
+#: ../../dev_guide/general.rst:57
 msgid ""
 "When creating a user account, an asymmetric encryption key pair is "
 "generated for the account, as well as a signature key pair. Each of these"
@@ -210,7 +210,7 @@ msgid ""
 "shared with the contacts."
 msgstr ""
 
-#: ../../dev_guide/general.rst:59
+#: ../../dev_guide/general.rst:58
 msgid ""
 "Asymmetric encryption allows to encrypt a message that only a single "
 "other user can decrypt when their public encryption key is known. Using "
@@ -218,27 +218,27 @@ msgid ""
 "message for that user only, as long as he knows our own public key."
 msgstr ""
 
-#: ../../dev_guide/general.rst:60
+#: ../../dev_guide/general.rst:59
 msgid ""
 "Sending a contact request to a user allows us to exchange public keys "
 "needed for this encryption system."
 msgstr ""
 
-#: ../../dev_guide/general.rst:62
+#: ../../dev_guide/general.rst:61
 msgid "Mailbox and notification center"
 msgstr ""
 
-#: ../../dev_guide/general.rst:64
+#: ../../dev_guide/general.rst:63
 msgid "Double asymmetric encryption \"x25519-xsalsa20-poly1305\"."
 msgstr ""
 
-#: ../../dev_guide/general.rst:65
+#: ../../dev_guide/general.rst:64
 msgid ""
 "The notification center works through other users sending us a "
 "\"notification\" when they perform an action concerning our account."
 msgstr ""
 
-#: ../../dev_guide/general.rst:66
+#: ../../dev_guide/general.rst:65
 msgid ""
 "Here we want to be able to send messages to another user in a way where "
 "they have proof of the sender's identity, without the server (or anyone "
@@ -246,7 +246,7 @@ msgid ""
 "recipient via their public keys."
 msgstr ""
 
-#: ../../dev_guide/general.rst:67
+#: ../../dev_guide/general.rst:66
 msgid ""
 "The message is first encrypted asymmetrically using our private key and "
 "the recipient's public key. To be able to read this part, the recipient "
@@ -254,7 +254,7 @@ msgid ""
 "no contact request."
 msgstr ""
 
-#: ../../dev_guide/general.rst:68
+#: ../../dev_guide/general.rst:67
 msgid ""
 "We then add our own public key (unencrypted) to the message (encrypted), "
 "and encrypt the result asymmetrically, this time using a single-use key "
@@ -262,7 +262,7 @@ msgid ""
 " with the public part of the newly generated key."
 msgstr ""
 
-#: ../../dev_guide/general.rst:69
+#: ../../dev_guide/general.rst:68
 msgid ""
 "The recipient can then decrypt a first time with his private key and the "
 "public single-use key. He then has access to a new encrypted content as "
@@ -272,11 +272,11 @@ msgid ""
 " message."
 msgstr ""
 
-#: ../../dev_guide/general.rst:72
+#: ../../dev_guide/general.rst:71
 msgid "Drive and \"pins\" log"
 msgstr ""
 
-#: ../../dev_guide/general.rst:74
+#: ../../dev_guide/general.rst:73
 msgid ""
 "User accounts, including their associated cryptographic keys, drive, "
 "contacts and teams, are stored in the database in the same way as any "
@@ -284,7 +284,7 @@ msgid ""
 "from a pad for anyone who has access to the database."
 msgstr ""
 
-#: ../../dev_guide/general.rst:76
+#: ../../dev_guide/general.rst:75
 msgid ""
 "The \"drive\" part of the account corresponds to a hierarchy of documents"
 " (files and folders), each file being associated with the address of a "
@@ -293,7 +293,7 @@ msgid ""
 "only access is available."
 msgstr ""
 
-#: ../../dev_guide/general.rst:78
+#: ../../dev_guide/general.rst:77
 msgid ""
 "Since the drives are indistinguishable from normal documents, another "
 "system has been implemented to ensure that documents stored in them are "
@@ -301,7 +301,7 @@ msgid ""
 "list**."
 msgstr ""
 
-#: ../../dev_guide/general.rst:80
+#: ../../dev_guide/general.rst:79
 msgid ""
 "The database thus contains a **list of pins** for each registered user, "
 "each list being identified by the **public signature key** of the user "
@@ -311,16 +311,16 @@ msgid ""
 "not present in any pin list."
 msgstr ""
 
-#: ../../dev_guide/general.rst:85 ../../dev_guide/general.rst:136
-#: ../../dev_guide/general.rst:192
+#: ../../dev_guide/general.rst:84 ../../dev_guide/general.rst:138
+#: ../../dev_guide/general.rst:196
 msgid "Example"
 msgstr ""
 
-#: ../../dev_guide/general.rst:119
+#: ../../dev_guide/general.rst:118
 msgid "Registration, login and block"
 msgstr ""
 
-#: ../../dev_guide/general.rst:121
+#: ../../dev_guide/general.rst:120
 msgid ""
 "A user account is composed of a collaborative document containing the "
 "drive and a list of \"pins\". A third element is also stored for the user"
@@ -329,7 +329,7 @@ msgid ""
 "possible to change the password if you still have access to the account."
 msgstr ""
 
-#: ../../dev_guide/general.rst:123
+#: ../../dev_guide/general.rst:122
 msgid ""
 "Contrary to classical systems where the username and the password hash "
 "are sent to the server, on CryptPad neither of these 2 pieces of "
@@ -344,7 +344,7 @@ msgid ""
 "function with a high-end computer."
 msgstr ""
 
-#: ../../dev_guide/general.rst:125
+#: ../../dev_guide/general.rst:124
 msgid ""
 "Once the function is executed, we get a hash containing a series of bytes"
 " that we will use to generate login keys. These keys, an encryption key "
@@ -353,7 +353,7 @@ msgid ""
 "containing the real keys of the user account."
 msgstr ""
 
-#: ../../dev_guide/general.rst:127
+#: ../../dev_guide/general.rst:126
 msgid ""
 "In summary, when you **register** on CryptPad, your credentials are used "
 "to create a \"block\". In parallel, access keys to the user account are "
@@ -364,17 +364,17 @@ msgid ""
 "which gives you access to your user account keys."
 msgstr ""
 
-#: ../../dev_guide/general.rst:129
+#: ../../dev_guide/general.rst:131
 msgid ""
 "When a user wants to **change their password**, there is therefore no "
 "need to migrate the whole account to a new document, only the \"block\" "
 "will change. Scrypt will indeed give us new login keys to use a new "
-"block. This block will be encrypted with a different encrpytion key than "
+"block. This block will be encrypted with a different encryption key than "
 "the first one, but the decrypted content will be the same: the keys of "
 "the user account. The old block is then removed."
 msgstr ""
 
-#: ../../dev_guide/general.rst:131
+#: ../../dev_guide/general.rst:133
 msgid ""
 "In order to allow users to stay connected without having to type their "
 "password for each new session, the keys of the block are kept in memory "
@@ -382,30 +382,30 @@ msgid ""
 "Logging out means deleting these keys from the localStorage."
 msgstr ""
 
-#: ../../dev_guide/general.rst:138
+#: ../../dev_guide/general.rst:140
 msgid "Login keys (block identifier and block encryption key) on cryptpad.fr"
 msgstr ""
 
-#: ../../dev_guide/general.rst:140
+#: ../../dev_guide/general.rst:142
 msgid ""
 "``localStorage.Block_hash = \"https://files.cryptpad.fr/block/c8"
 "/c89FhK8CQfTcoiP073T-RwSgqbY7f--"
 "Naoa3ZH8feLk=#UDYn4ZMy1tLksGtYMPewPewCSPkM+vEbluI7hMIe81U=\"``"
 msgstr ""
 
-#: ../../dev_guide/general.rst:142
+#: ../../dev_guide/general.rst:144
 msgid "User account keys on cryptpad.fr"
 msgstr ""
 
-#: ../../dev_guide/general.rst:144
+#: ../../dev_guide/general.rst:146
 msgid "``\"/1/edit/PeWuMBluHImPezK+0IHvtA/4e4242jfxWiKi3JAjtkx-lDt/\"``"
 msgstr ""
 
-#: ../../dev_guide/general.rst:147
+#: ../../dev_guide/general.rst:151
 msgid "Client-server communication (Netflux)"
 msgstr ""
 
-#: ../../dev_guide/general.rst:149
+#: ../../dev_guide/general.rst:153
 msgid ""
 "Communication between the client and the server is in the vast majority "
 "of cases using a Websocket connection. This connection is based on an "
@@ -416,14 +416,14 @@ msgid ""
 "complete encrypted file)."
 msgstr ""
 
-#: ../../dev_guide/general.rst:151
+#: ../../dev_guide/general.rst:155
 msgid ""
 "With the Netflux protocol, users create a \"network\" which they then use"
 " to perform several types of operations. **The important points** "
 "concerning the implementation of the protocol are:"
 msgstr ""
 
-#: ../../dev_guide/general.rst:153
+#: ../../dev_guide/general.rst:157
 msgid ""
 "Each user is identified by a 32-character hexadecimal string called "
 "**netfluxId**. This identifier is generated by the server and is created "
@@ -434,7 +434,7 @@ msgid ""
 "user between different sessions."
 msgstr ""
 
-#: ../../dev_guide/general.rst:154
+#: ../../dev_guide/general.rst:158
 msgid ""
 "A user can join channels and send messages to them. All members of the "
 "channel receive the messages. Each collaborative document opened on "
@@ -442,7 +442,7 @@ msgid ""
 "identifier."
 msgstr ""
 
-#: ../../dev_guide/general.rst:155
+#: ../../dev_guide/general.rst:159
 msgid ""
 "The channel identifier is also a 32-character hexadecimal string called "
 "**channelId** or **channel**. The channelId associated with a document is"
@@ -450,13 +450,13 @@ msgid ""
 "it."
 msgstr ""
 
-#: ../../dev_guide/general.rst:156
+#: ../../dev_guide/general.rst:160
 msgid ""
 "Users can send direct messages to each other without going through a "
 "channel, as long as they know the \"netfluxId\" of the recipient."
 msgstr ""
 
-#: ../../dev_guide/general.rst:161
+#: ../../dev_guide/general.rst:165
 msgid ""
 "At the server level, Netflux is implemented via the \"chainpad-server\" "
 "NPM module: ``./node_modules/chainpad-server/NetfluxWebsocketSrv.js``. "
@@ -467,7 +467,7 @@ msgid ""
 "other."
 msgstr ""
 
-#: ../../dev_guide/general.rst:163
+#: ../../dev_guide/general.rst:167
 msgid ""
 "**IMPORTANT:** The Netflux protocol does not mention a centralized server"
 " and therefore does not provide a direct solution for storing messages "
@@ -477,7 +477,7 @@ msgid ""
 " protocol."
 msgstr ""
 
-#: ../../dev_guide/general.rst:165
+#: ../../dev_guide/general.rst:169
 msgid ""
 "The **data storage** has been achieved by adding a \"fake\" member in "
 "each channel on the server. As soon as a channel is created/opened by a "
@@ -492,7 +492,7 @@ msgid ""
 "changes."
 msgstr ""
 
-#: ../../dev_guide/general.rst:167
+#: ../../dev_guide/general.rst:171
 msgid ""
 "This fake user is managed by the server but his code is distinct from the"
 " \"Netflux\" part of the server. It represents the whole database and its"
@@ -500,7 +500,7 @@ msgid ""
 "``./lib/historyKeeper.js``."
 msgstr ""
 
-#: ../../dev_guide/general.rst:172
+#: ../../dev_guide/general.rst:176
 msgid ""
 "At the client level, a \"bower\" module manages the Netflux protocol with"
 " simple APIs. The module is located in ``./wwww/bower_components/netflux-"
@@ -508,56 +508,72 @@ msgid ""
 "**network** representing the Websocket connection to the Netflux server."
 msgstr ""
 
-#: ../../dev_guide/general.rst:174
+#: ../../dev_guide/general.rst:178
 msgid ""
 "This \"network\" contains the **list of channels** joined by the user, as"
 " well as the **list of members** present in each channel. It allows us to"
 " perform all the operations allowed by the protocol:"
 msgstr ""
 
-#: ../../dev_guide/general.rst:176
+#: ../../dev_guide/general.rst:180
 msgid ""
 "Join a channel : ``(Promise) network.join(channelId)`` (provides a "
 "``channel`` object)"
 msgstr ""
 
-#: ../../dev_guide/general.rst:177
+#: ../../dev_guide/general.rst:181
 msgid "Send a private message: ``(Promise) network.sendTo(netfluxId, message)``"
 msgstr ""
 
-#: ../../dev_guide/general.rst:178
+#: ../../dev_guide/general.rst:182
 msgid "Get the channels list: ``(Array) network.webChannels``."
 msgstr ""
 
-#: ../../dev_guide/general.rst:179
+#: ../../dev_guide/general.rst:183
 msgid ""
 "Listen to events in a network: ``network.on('message', handler)`` "
 "(events: message, disconnect)"
 msgstr ""
 
-#: ../../dev_guide/general.rst:181
+#: ../../dev_guide/general.rst:185
 msgid "And for each channel obtained from \"network.join\":"
 msgstr ""
 
-#: ../../dev_guide/general.rst:183
+#: ../../dev_guide/general.rst:187
 msgid "Send a message: ``(Promise) channel.bcast(message)``"
 msgstr ""
 
-#: ../../dev_guide/general.rst:184
+#: ../../dev_guide/general.rst:188
 msgid "Leave a channel: ``channel.leave(reason)``"
 msgstr ""
 
-#: ../../dev_guide/general.rst:185
+#: ../../dev_guide/general.rst:189
 msgid ""
 "Listen to eventst: ``channel.on('message', handler)`` (events: message, "
 "join, leave)"
 msgstr ""
 
-#: ../../dev_guide/general.rst:186
+#: ../../dev_guide/general.rst:190
 msgid "Get the channelId: ``(String) channel.id``"
 msgstr ""
 
-#: ../../dev_guide/general.rst:187
+#: ../../dev_guide/general.rst:191
 msgid "Get the members list: ``(Array) channel.members``"
 msgstr ""
+
+#~ msgid ""
+#~ "When a user wants to **change "
+#~ "their password**, there is therefore no"
+#~ " need to migrate the whole account"
+#~ " to a new document, only the "
+#~ "\"block\" will change. Scrypt will "
+#~ "indeed give us new login keys to"
+#~ " use a new block. This block "
+#~ "will be encrypted with a different "
+#~ "encrpytion key than the first one, "
+#~ "but the decrypted content will be "
+#~ "the same: the keys of the user "
+#~ "account. The old block is then "
+#~ "removed."
+#~ msgstr ""
 

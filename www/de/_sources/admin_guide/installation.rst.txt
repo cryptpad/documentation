@@ -8,7 +8,7 @@ development instance please see the :ref:`dev_guide`.
 The development team is available to provide paid support contracts (see
 our `organizational plans <https://cryptpad.fr/accounts/#org>`__ for an
 idea of our pricing), otherwise, requests for assistance can be directed
-to the community in our Matrix/IRC channel.
+to the community in our `Matrix channel <https://app.element.io/#/room/#cryptpad:matrix.xwiki.com>`_.
 
 Prerequisites
 -------------

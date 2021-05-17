@@ -5,20 +5,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: CryptPad\n"
+"Project-Id-Version:  CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-21 14:53+0100\n"
+"POT-Creation-Date: 2021-05-17 15:30+0100\n"
 "PO-Revision-Date: 2020-09-21 13:56+0000\n"
 "Last-Translator: David Benqué <david.benque@xwiki.com>\n"
-"Language-Team: French <http://weblate.cryptpad.fr/projects/user-guide/"
-"application-code/fr/>\n"
 "Language: fr\n"
+"Language-Team: French <http://weblate.cryptpad.fr/projects/user-guide"
+"/application-code/fr/>\n"
+"Plural-Forms: nplurals=2; plural=n > 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.1\n"
-"Generated-By: Babel 2.8.0\n"
+"Generated-By: Babel 2.9.0\n"
 
 #: ../../user_guide/apps/code.rst:5
 msgid "Code / Markdown"
@@ -148,14 +147,14 @@ msgstr ""
 "le HTML."
 
 #: ../../user_guide/apps/code.rst:59
-msgid ""
-"`Markdown syntax guide. <https://github.com/adam-p/markdown-here/wiki"
-"/Markdown-Cheatsheet>`__"
+msgid "For examples of Markdown syntax in CryptPad please see:"
 msgstr ""
-"`Résumé de la syntaxe markdown. <https://blog.wax-o.com/2014/04/tutoriel-"
-"un-guide-pour-bien-commencer-avec-markdown/>`__"
 
-#: ../../user_guide/apps/code.rst:65
+#: ../../user_guide/apps/code.rst:61
+msgid "|md basic|_"
+msgstr ""
+
+#: ../../user_guide/apps/code.rst:68
 msgid ""
 "Additionally to basic Markdown syntax, the following features are also "
 "available:"
@@ -163,39 +162,57 @@ msgstr ""
 "En plus de la syntaxe Markdown de base, les fonctions suivantes sont "
 "disponibles :"
 
-#: ../../user_guide/apps/code.rst:68
+#: ../../user_guide/apps/code.rst:71
 msgid "``[TOC]`` Inserts a table of contents."
 msgstr "``[TOC]`` Insère une table des matières."
 
-#: ../../user_guide/apps/code.rst:69
+#: ../../user_guide/apps/code.rst:72
 msgid "Todo list"
 msgstr "Liste de tâches"
 
-#: ../../user_guide/apps/code.rst:71
+#: ../../user_guide/apps/code.rst:74
 msgid "``- [ ] task`` for a task to do: |square-o| task."
 msgstr "``- [ ] tâche`` pour une tâche à faire : |square-o| tâche."
 
-#: ../../user_guide/apps/code.rst:73
+#: ../../user_guide/apps/code.rst:76
 msgid "``- [x] task`` for a completed task: |check-square| task."
 msgstr "``- [x] tâche`` pour une tâche faite : |check-square| tâche."
 
-#: ../../user_guide/apps/code.rst:75
+#: ../../user_guide/apps/code.rst:78
+msgid "As well as the following extensions:"
+msgstr ""
+
+#: ../../user_guide/apps/code.rst:80
 msgid "Diagrams with `Mermaid <https://mermaid-js.github.io/mermaid/#/>`__."
 msgstr "Diagrammes avec `Mermaid <https://mermaid-js.github.io/mermaid/#/>`__."
 
-#: ../../user_guide/apps/code.rst:76
+#: ../../user_guide/apps/code.rst:81
 msgid "Mindmaps with `Markmap <https://markmap.js.org/>`__."
 msgstr "Mindmaps avec `Markmap <https://markmap.js.org/>`__."
 
-#: ../../user_guide/apps/code.rst:77
+#: ../../user_guide/apps/code.rst:82
 msgid "Mathematical equations with `Mathjax <https://www.mathjax.org/>`__."
 msgstr "Équations mathématiques avec `Mathjax <https://www.mathjax.org/>`__."
 
-#: ../../user_guide/apps/code.rst:80
+#: ../../user_guide/apps/code.rst:84
+msgid ""
+"To use an extensions, use it as syntax for a Markdown code block, for "
+"example:"
+msgstr ""
+
+#: ../../user_guide/apps/code.rst:92
+msgid "for detailed examples of the extensions in use please see:"
+msgstr ""
+
+#: ../../user_guide/apps/code.rst:94
+msgid "|md extensions|_"
+msgstr ""
+
+#: ../../user_guide/apps/code.rst:101
 msgid "Images"
 msgstr "Images"
 
-#: ../../user_guide/apps/code.rst:82
+#: ../../user_guide/apps/code.rst:103
 msgid ""
 "It is strongly advised **not** to insert external images in documents. "
 "The Markdown syntax ``![description](https://site.com/image.jpg)`` is "
@@ -207,7 +224,7 @@ msgstr ""
 " mais elle présente d'importants risques de sécurité. Les images peuvent "
 "en effet être utilisées à des fins malicieuses pour lire vos données."
 
-#: ../../user_guide/apps/code.rst:87
+#: ../../user_guide/apps/code.rst:108
 msgid ""
 "For this reason, CryptPad makes use of ``media-tag`` to insert images "
 "from the CryptDrive. This syntax is more complex but it is managed "
@@ -217,25 +234,25 @@ msgstr ""
 "images de votre CryptDrive. Cette syntaxe est plus complexe, mais elle "
 "est gérée automatiquement par le menu |picture-o| **Insérer**."
 
-#: ../../user_guide/apps/code.rst:92
+#: ../../user_guide/apps/code.rst:113
 msgid "Lightbox"
 msgstr "Galerie"
 
-#: ../../user_guide/apps/code.rst:94
+#: ../../user_guide/apps/code.rst:115
 msgid ""
 "To browse through all images and diagrams in a document using the full "
 "width of the window:"
 msgstr "Pour voir une galerie de toutes les images et diagrammes d'un document :"
 
-#: ../../user_guide/apps/code.rst:97
+#: ../../user_guide/apps/code.rst:118
 msgid "``Double click`` on an image or diagram in the Markdown preview."
 msgstr "``Double-Clic`` sur une image ou un diagramme dans l'aperçu Markdown."
 
-#: ../../user_guide/apps/code.rst:98
+#: ../../user_guide/apps/code.rst:119
 msgid "Navigate with the arrow keys."
 msgstr "Naviguer avec les flêches du clavier."
 
-#: ../../user_guide/apps/code.rst:99
+#: ../../user_guide/apps/code.rst:120
 msgid "Close the light box with |times| or ``Esc``."
 msgstr "Fermer la galerie avec |times| ou ``Échap``."
 
@@ -376,3 +393,12 @@ msgstr "Fermer la galerie avec |times| ou ``Échap``."
 
 #~ msgid "renders as: |check-square| task"
 #~ msgstr ""
+
+#~ msgid ""
+#~ "`Markdown syntax guide. <https://github.com/adam-p"
+#~ "/markdown-here/wiki/Markdown-Cheatsheet>`__"
+#~ msgstr ""
+#~ "`Résumé de la syntaxe markdown. "
+#~ "<https://blog.wax-o.com/2014/04/tutoriel-un-guide-"
+#~ "pour-bien-commencer-avec-markdown/>`__"
+

@@ -98,6 +98,12 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#can-cryptpad-sync-documents-to-my-local-filesystem">Can CryptPad sync documents to my local filesystem?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#what-is-the-relationship-between-cryptpad-and-onlyoffice">What is the relationship between CryptPad and OnlyOffice?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#faq-for-cryptpad-fr">FAQ for cryptpad.fr</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#can-i-pay-for-my-subscription-without-a-card">Can I pay for my subscription without a card?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#do-you-accept-cryptocurrencies-for-subscriptions-and-donations">Do you accept cryptocurrencies for subscriptions and donations?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#can-you-provide-a-data-processing-agreement-dpa">Can you provide a Data processing Agreement (DPA)?</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../user_guide/index.html">User Guide</a><ul>
@@ -151,6 +157,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/collaboration.html#profile">Profile</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#personal-profile">Personal profile</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#user-profile">User profile</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/collaboration.html#calendar">Calendar</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/collaboration.html#share-access">Share &amp; Access</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/collaboration.html#contacts">Contacts</a><ul>
@@ -561,8 +572,7 @@
 </li>
 </ul>
 <div class="figure align-default" id="id3">
-<img alt="CryptPad's 5-level structure" class="screenshot" src="../_images/5levels.png" />
-<p class="caption"><span class="caption-text">CryptPad's 5-Level Structure</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+<img alt="CryptPad's 5-level structure" src="../_images/cp_5level_structure.svg" /><p class="caption"><span class="caption-text">CryptPad's 5-Level Structure</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
 </div>
 </div>
 <div class="section" id="encryption">
@@ -651,7 +661,7 @@
 <p>Contrary to classical systems where the username and the password hash are sent to the server, on CryptPad neither of these 2 pieces of information leave the user's browser. They are instead used as arguments for an <a class="reference external" href="https://en.wikipedia.org/wiki/Scrypt">Scrypt key derivation function</a> which provides the equivalent of a hash. The difference with a classical hash function is that <strong>Scrypt is deliberately made very expensive in CPU resources</strong> whereas a hash function must be as fast as possible. Since it is used to manage the user's identifiers, making it slow to execute makes it possible to block brute force attacks. In 2021, it takes several seconds to execute the function with a high-end computer.</p>
 <p>Once the function is executed, we get a hash containing a series of bytes that we will use to generate login keys. These keys, an encryption key and a key representing a unique identifier, are used to create or retrieve a <strong>block</strong>. It's an encrypted file stored on the server and containing the real keys of the user account.</p>
 <p>In summary, when you <strong>register</strong> on CryptPad, your credentials are used to create a &quot;block&quot;. In parallel, access keys to the user account are randomly created (a unique identifier for the account, an encryption key and a pair of signature keys to be able to modify the account data) and are then encrypted and stored in the block. When <strong>logging in</strong>, Scrypt allows us to retrieve the block identifier and to be able to decrypt it, which gives you access to your user account keys.</p>
-<p>When a user wants to <strong>change their password</strong>, there is therefore no need to migrate the whole account to a new document, only the &quot;block&quot; will change. Scrypt will indeed give us new login keys to use a new block. This block will be encrypted with a different encrpytion key than the first one, but the decrypted content will be the same: the keys of the user account. The old block is then removed.</p>
+<p>When a user wants to <strong>change their password</strong>, there is therefore no need to migrate the whole account to a new document, only the &quot;block&quot; will change. Scrypt will indeed give us new login keys to use a new block. This block will be encrypted with a different encryption key than the first one, but the decrypted content will be the same: the keys of the user account. The old block is then removed.</p>
 <p>In order to allow users to stay connected without having to type their password for each new session, the keys of the block are kept in memory in the <strong>localStorage</strong> of the browser (on the &quot;unsafe&quot; domain). Logging out means deleting these keys from the localStorage.</p>
 <div class="section" id="example-2">
 <span id="id1"></span><h3>Example<a class="headerlink" href="#example-2" title="Permalink to this headline">¶</a></h3>
