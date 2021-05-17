@@ -8,7 +8,7 @@ The CryptDrive is used to store and manage documents. For logged in
 users it is the default landing page on CryptPad. It is also accessible
 from the other pages:
 
--  ``Clic`` on the logo at the top-left.
+-  ``Click`` on the logo at the top-left.
 -  User menu (avatar at the top-right) > |hdd-o| **CryptDrive**.
 
 .. _drive_display:

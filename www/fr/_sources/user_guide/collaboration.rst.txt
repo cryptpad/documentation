@@ -68,8 +68,8 @@ Toolbar
 
 - |plus| **New event**
 - **View** menu (right side): Month, Week, Day
-- |chevron-left| |chevron-right|: move to the next period depending on the view
-- **Today**: click to center the view on today.
+- |chevron-left| |chevron-right|: move to the previous/next period depending on the view
+- **Today**: click to center the view on today
 
 Share & Access
 ~~~~~~~~~~~~~~
