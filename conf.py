@@ -83,6 +83,7 @@ rst_epilog = """
 
 .. role:: badge_user
 .. role:: badge_owner
+.. role:: badge_new
 
 """
 

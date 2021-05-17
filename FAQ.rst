@@ -6,19 +6,6 @@ Frequently Asked Questions
 .. - Check in a different browser
 .. - Deactivate extensions, for example in Firefox go to Help > Restart with addons disabled
 
-.. XXX Cryptocurrency payments
-.. check that this is cryptpad.fr docs rather than cryptpad?
-..
-.. * for yearly plans, Duo and up
-.. * 30% service charge
-.. * for legal reasons we need:
-..   - name and address
-..   - email to reach you
-
-.. XXX Can you provide a Data processing Agreement (DPA)?
-.. users of cryptpad.fr can review the terms on [some page]... otherwise contact the administrators of your instance
-
-
 How to import/export my documents to/from another platform?
 -----------------------------------------------------------
 
@@ -65,8 +52,9 @@ To export, use |file-o| **File** > |download| **Export** and choose a format:
 - For cases where no further editing of the data is required after export (presentations, reports, etc), select ``.pdf``.
 - For backup purposes or to share with a user on another CryptPad instance, select ``.bin``.
 
-.. XXX add note about browser support
-.. https://caniuse.com/sharedarraybuffer
+.. note::
+    Import/export of spreadsheets to various formats is only available in browsers that support specific functionality. Please see the `up-to-date list of supported browsers <https://caniuse.com/sharedarraybuffer>`_.
+
 
 I cannot do X with a document I created
 ---------------------------------------
@@ -111,4 +99,25 @@ What is the relationship between CryptPad and OnlyOffice?
 ---------------------------------------------------------
 
 The CryptPad :ref:`app_sheets` application is an integration of `OnlyOffice Spreadsheets <https://www.onlyoffice.com/en/spreadsheet-editor.aspx>`_. However, this only concerns the client-side code, CryptPad does not make use of the OnlyOffice Document Server. CryptPad's encrypted collaboration, used for spreadsheets and other applications, is completely different from the encryption system used in parts of upstream OnlyOffice. Some of CryptPad's file format conversion tools are based on OnlyOffice code, but substantial work has been done to make it run in the browser rather than on the server, therefore avoiding the need to reveal the contents of users' documents when converting.
+
+FAQ for cryptpad.fr
+-------------------
+
+.. _faq_manual_payments:
+
+Can I pay for my subscription without a card?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+We accept payments by bank transfer, Paypal, or other depending on requests. However, due to the additional work involved in issuing invoices and processing payments manually, this option is limited to yearly plans for our Duo offer and above and incurs a 30% surcharge.
+
+Do you accept cryptocurrencies for subscriptions and donations?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+We accept payments in Bitcoin. These are subject to the :ref:`manual processing surcharges <faq_manual_payments>` as explained in the previous question. Additionally, as a company registered in France, we are legally required to ask for a name and address to issue the invoice to, and an email for communication about your subscription.
+
+Can you provide a Data processing Agreement (DPA)?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+DPAs are a feature of our `Organization Plans <https://cryptpad.fr/accounts/#org>`_, note that a example DPA is available for preview on that page.
+
 

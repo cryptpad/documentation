@@ -49,6 +49,50 @@ On another user’s profile page:
 -  |key| **Copy public key**: Copies the key used by instance
    administrators and on instances that offer subscriptions.
 
+
+Calendar
+--------
+
+:badge_new:`New in version 4.5`
+
+.. figure:: /images/calendar.png
+   :alt: screenshot of the calendar
+   :class: screenshot
+
+To add events, simply click on the desired time/date in the calendar, view (drag for duration). Alternatively use |plus| **New event** in the toolbar.
+
+To edit events, drag them to the new date/time or ``Click`` to open the detailed edit view.
+
+Toolbar
+~~~~~~~
+
+- |plus| **New event**
+- **View** menu (right side): Month, Week, Day
+- |chevron-left| |chevron-right|: move to the next period depending on the view
+- **Today**: click to center the view on today.
+
+Share & Access
+~~~~~~~~~~~~~~
+
+CryptPad calendars work in the same way as any other documents for the purposes of :ref:`sharing <share>` and :ref:`regulating access <access>`.
+
+The |ellipsis-h| menu for each calendar in the sidebar contains the following options:
+
+- |pencil| **Edit** to change the calendar name and color
+- |share-alt| **Share** and |unlock-alt| **Access** function the same way as any other CryptPad document. see :ref:`share_and_access`.
+- |upload| **Import** and |download| **Export** to the standard ``.ics`` format.
+- |info-circle| **Properties**
+- |trash-o| **Delete**
+
+:ref:`teams` can also have calendars available to all members. Simply share a calendar with a team to add it:
+
+|share-alt| **Share** > |address-book| **Contacts** > Select the team
+
+:badge_user:`Logged in users`
+
+When viewing a calendar shared via link, add it to your calendars with: |calendar-plus-o| **Import this calendar**
+
+
 .. _contacts:
 
 Contacts
@@ -100,10 +144,6 @@ Write messages in the field at the bottom and send them with
 Load more chat history with |history| or delete the history with
 |eraser|.
 
-.. Calendar
-.. --------
-
-.. XXX 🚧 add calendar section here 🚧
 
 .. _teams:
 
