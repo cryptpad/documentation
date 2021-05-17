@@ -81,7 +81,7 @@ As well as the following extensions:
 -  Mindmaps with `Markmap <https://markmap.js.org/>`__.
 -  Mathematical equations with `Mathjax <https://www.mathjax.org/>`__.
 
-To use an extensions, use it as syntax for a Markdown code block, for example:
+To use an extension, name it as syntax for a Markdown code block, for example:
 
 .. code:: markdown
 
