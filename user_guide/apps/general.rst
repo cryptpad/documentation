@@ -190,5 +190,5 @@ Interact with users connected to the same document through the user-list
 
 To show/hide these panes:
 
--  |user| n |eye| n for the user-list.
+-  |user| |eye| for the user-list.
 -  |comments| **Chat** for the chat.
