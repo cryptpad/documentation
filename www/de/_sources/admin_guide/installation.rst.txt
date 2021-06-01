@@ -148,7 +148,7 @@ however, you must configure your instance correctly for it to be
 effective. You will need:
 
 1. two domains or subdomains
-2. to include both domains in ``cryptpad/config/config.js`` as described in ``admin_cryptpad_config``
+2. to include both domains in ``cryptpad/config/config.js`` as described in :ref:`admin_cryptpad_config`
 3. to generate one SSL certificate that covers both domains. The development team uses `acme.sh <https://acme.sh/>`__ and this is reflected in the example config.
 4. to correctly assign both domains and certificates to the relevant
    variables in the `example Nginx
