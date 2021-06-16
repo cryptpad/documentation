@@ -159,7 +159,7 @@ class Cptools(Directive):
         node = emphasis(**options)
         return [node]
 
-cptools_icons = ['destroy', 'add-bottom', 'add-top', 'folder-upload', 'folder-no-color', 'slide', 'shared-folder', 'poll', 'file-upload', 'whiteboard', 'todo', 'pad', 'folder-open', 'kanban', 'folder', 'shared-folder-open', 'file', 'contacts', 'code', 'template', 'new-template', 'palette']
+cptools_icons = ['destroy', 'add-bottom', 'add-top', 'folder-upload', 'folder-no-color', 'slide', 'shared-folder', 'poll', 'file-upload', 'whiteboard', 'todo', 'pad', 'folder-open', 'kanban', 'folder', 'shared-folder-open', 'code', 'template', 'new-template', 'palette', 'form-poll', 'form-poll', 'form-poll-maybe', 'form-list-check', 'form-grid-check', 'form-grid-radio', 'form-list-radio', 'form-page-break', 'form-paragraph', 'form-text', 'form-list-ordered']
 
 prolog = '\n'.join(['.. |cptools %s| cptools:: %s' % (icon, icon) for icon in cptools_icons])
 prolog += '\n'
