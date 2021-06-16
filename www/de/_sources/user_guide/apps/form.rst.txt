@@ -1,13 +1,13 @@
 
-.. _app_forms:
+.. _app_form:
 
-Forms
+Form
 =====
 
 :badge_new:`New in version 4.7`
 
 .. note::
-    The Forms application is currently in Beta. This documentation is in the process of being written and translated. A complete guide to the application will be available shortly.
+    The Form application is currently in Beta. This documentation is in the process of being written and translated. A complete guide to the application will be available shortly.
 
 
 .. The following features
