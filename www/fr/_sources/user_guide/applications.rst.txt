@@ -12,6 +12,7 @@ This section starts with general concepts on creating and managing documents on 
     apps/sheets
     apps/code
     apps/slides
+    apps/forms
     apps/poll
     apps/kanban
     apps/whiteboard
