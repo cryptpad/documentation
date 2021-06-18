@@ -38,12 +38,16 @@ Roles
 Forms benefit from the same collaboration and privacy features as the other CryptPad applications. They also have slightly different requirements when it comes to usage, for example someone responding to a form should be able to edit their own answers but not other users' answers or the form itself. For this reason the :ref:`share_access_rights` when sharing a form are different from the other applications. Forms have 3 different roles:
 
 - **Authors**: can edit questions and :ref:`form settings <form_settings>`.
-- **Auditors**: can view responses to the form whether or not they public.
+- **Auditors**: can view responses to the form whether or not they are public.
 - **Participant**: can answer the form and only view responses once they are made public by an author.
 
 To share a form with a specific role, for example to send it to participants, select the role in the |share-alt| **Share** menu before selecting contacts or copying the link.
 
 .. XXX Forms share modal screenshot
+
+.. note::
+
+   The user list, chat, and alerts about users joining the collaborative session are all disabled when a participant is responding to a form. This is to avoid giving the impression that someone is watching while they answer.
 
 Editing a form
 ---------------
@@ -58,7 +62,7 @@ Question types
 |cptools form-text| Text
 +++++++++++++++++++++++++
 
-|cptools form-text| Response: one line of text
+Response: one line of text
 
 Options:
 
@@ -174,6 +178,7 @@ Form Settings
 - Publish responses (private by default): allow anyone who can view the form to view responses.
 
 .. warning::
+
     Once responses are made public they cannot be made private again.
 
 Advanced use-cases
@@ -182,9 +187,9 @@ Advanced use-cases
 Anonymous responses with access list
 +++++++++++++++++++++++++++++++++++++
 
-To conduct an anonymous survey within a known group of users, the anonymous answers feature can be combined with an :ref:`access_list`.
+To conduct an anonymous survey with a known group of users, the anonymous answers feature can be combined with an :ref:`access_list`.
 
-To access the form, participants need to be logged in to an account that is on the access list (either directly or through a :ref:`team <teams>` they are part of.
+To access the form, participants need to be logged in to an account that is on the access list (either directly or through a :ref:`team <teams>` they are part of).
 
 If anonymous answers are allowed on the form, participants are able to answer anonymously while the access list ensures they are coming from a specific group of users.
 
@@ -193,10 +198,3 @@ Import/Export
 
 Exporting the results for analysis outside of CryptPad is not yet available. This is planned for a future release.
 
-
-
-
-
-
-
-.. Answering a form
