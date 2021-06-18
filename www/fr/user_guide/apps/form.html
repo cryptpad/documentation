@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Form &mdash; Documentation CryptPad 4.7.0</title>
+  <title>Formulaire &mdash; Documentation CryptPad 4.7.0</title>
   
 
   
@@ -213,6 +213,11 @@
 <li class="toctree-l3"><a class="reference internal" href="richtext.html">Documents texte</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#toolbar">Barre d'outils</a></li>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#view-settings">Paramètres d'affichage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="richtext.html#editing">Écriture</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="richtext.html#headings">Titres</a></li>
+<li class="toctree-l5"><a class="reference internal" href="richtext.html#paragraphs">Paragraphes</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#import-export">Import/Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#comments">Commentaires</a></li>
 </ul>
@@ -244,12 +249,12 @@
 <li class="toctree-l4"><a class="reference internal" href="slides.html#lightbox">Galerie</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Form</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#roles">Roles</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#editing-a-form">Editing a form</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="#question-types">Question types</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#form-settings">Form Settings</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#advanced-use-cases">Advanced use-cases</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Formulaire</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#roles">Rôles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#editing-a-form">Modifier un formulaire</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#question-types">Types de questions</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#form-settings">Réglages du formulaire</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#advanced-use-cases">Usages avancés</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="#import-export">Import/Export</a></li>
@@ -530,7 +535,7 @@
         
           <li><a href="../applications.html">Applications</a> &raquo;</li>
         
-      <li>Form</li>
+      <li>Formulaire</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -554,142 +559,144 @@
            <div itemprop="articleBody">
             
   <div class="section" id="form">
-<span id="app-form"></span><h1>Form<a class="headerlink" href="#form" title="Lien permanent vers ce titre">¶</a></h1>
-<p><span class="badge-new">New in version 4.7</span></p>
+<span id="app-form"></span><h1>Formulaire<a class="headerlink" href="#form" title="Lien permanent vers ce titre">¶</a></h1>
+<p><span class="badge-new">Nouveau dans la version 4.7</span></p>
+<img alt="preview of the Form application" class="screenshot" src="../../_images/app-form-preview.png" />
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The Form application is currently in Beta. More features are planned for the near future including:</p>
+<p>L'application Form est actuellement en version bêta. D'autres fonctionnalités sont prévues dans un avenir proche, notamment :</p>
 <ul>
 <li><p>import/export</p></li>
-<li><p>better visualization for responses</p></li>
-<li><p>more options</p>
+<li><p>amélioration de la présentation des réponses</p></li>
+<li><p>plus d'options</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>different ways of counting ranked ballots</p></li>
+<li><p>différentes façons de compter les bulletins classés</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p>author notifications</p></li>
+<li><p>notifications pour les auteurs</p></li>
 </ul>
 </div>
 <div class="section" id="roles">
-<h2>Roles<a class="headerlink" href="#roles" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Forms benefit from the same collaboration and privacy features as the other CryptPad applications. They also have slightly different requirements when it comes to usage, for example someone responding to a form should be able to edit their own answers but not other users' answers or the form itself. For this reason the <a class="reference internal" href="../share_and_access.html#share-access-rights"><span class="std std-ref">Droits d'accès</span></a> when sharing a form are different from the other applications. Forms have 3 different roles:</p>
+<h2>Rôles<a class="headerlink" href="#roles" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Les formulaires bénéficient des mêmes fonctionnalités de collaboration et de confidentialité que les autres applications CryptPad. Ils présentent cependant des exigences légèrement différentes en termes d'utilisation. Par exemple, une personne répondant à un formulaire doit pouvoir modifier ses propres réponses, mais pas celles des autres utilisateurs ni le formulaire lui-même. Pour cette raison, les <a class="reference internal" href="../share_and_access.html#share-access-rights"><span class="std std-ref">Droits d'accès</span></a> lors du partage d'un formulaire sont différents des autres applications. Les formulaires ont 3 rôles différents :</p>
 <ul class="simple">
-<li><p><strong>Authors</strong>: can edit questions and <a class="reference internal" href="#form-settings"><span class="std std-ref">form settings</span></a>.</p></li>
-<li><p><strong>Auditors</strong>: can view responses to the form whether or not they are public.</p></li>
-<li><p><strong>Participant</strong>: can answer the form and only view responses once they are made public by an author.</p></li>
+<li><p><strong>Auteur</strong> : peut modifier les questions et <a class="reference internal" href="#form-settings"><span class="std std-ref">les réglages du formulaire</span></a>.</p></li>
+<li><p><strong>Auditeur</strong> : peut consulter les réponses au formulaire, qu'elles soient publiques ou non.</p></li>
+<li><p><strong>Participant</strong> : peut répondre au formulaire et voir les réponses une fois qu'elles sont rendues publiques par un auteur.</p></li>
 </ul>
-<p>To share a form with a specific role, for example to send it to participants, select the role in the <em class="fa fa-share-alt"></em> <strong>Share</strong> menu before selecting contacts or copying the link.</p>
+<p>Pour partager un formulaire avec un rôle donné, par exemple pour l'envoyer à des participants, sélectionnez le rôle dans le menu <em class="fa fa-share-alt"></em> <strong>Partager</strong> avant de sélectionner les contacts ou de copier le lien.</p>
+<img alt="the share menu in the form application, showing the three roles: participant, auditor, and author." class="screenshot" src="../../_images/app-form-share.png" />
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The user list, chat, and alerts about users joining the collaborative session are all disabled when a participant is responding to a form. This is to avoid giving the impression that someone is watching while they answer.</p>
+<p>La liste des utilisateurs, le chat et les alertes concernant les utilisateurs qui rejoignent la session collaborative sont désactivés lorsqu'un participant répond à un formulaire. Ceci afin d'éviter de donner l'impression que quelqu'un les observe pendant qu'ils répondent.</p>
 </div>
 </div>
 <div class="section" id="editing-a-form">
-<h2>Editing a form<a class="headerlink" href="#editing-a-form" title="Lien permanent vers ce titre">¶</a></h2>
-<p>To add a question, use the <em class="fa fa-plus"></em> <strong>Add</strong> menu after the last question, or the <em class="fa fa-plus"></em> between each question.</p>
-<p>To delete a question use the <em class="fa fa-trash-o"></em> <strong>Delete</strong> button on the question to remove.</p>
+<h2>Modifier un formulaire<a class="headerlink" href="#editing-a-form" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Pour ajouter une question, utilisez le menu <em class="fa fa-plus"></em> <strong>Ajouter</strong> après la dernière question, ou le <em class="fa fa-plus"></em> entre chaque question.</p>
+<p>Pour supprimer une question, utilisez le bouton <em class="fa fa-trash-o"></em> <strong>Supprimer</strong> sur la question à effacer.</p>
 <div class="section" id="question-types">
-<h3>Question types<a class="headerlink" href="#question-types" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>Types de questions<a class="headerlink" href="#question-types" title="Lien permanent vers ce titre">¶</a></h3>
 <div class="section" id="cptools-form-text-text">
-<h4><em class="cptools cptools-form-text"></em> Text<a class="headerlink" href="#cptools-form-text-text" title="Lien permanent vers ce titre">¶</a></h4>
-<p>Response: one line of text</p>
-<p>Options:</p>
+<h4><em class="cptools cptools-form-text"></em> Texte<a class="headerlink" href="#cptools-form-text-text" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Réponse : une ligne de texte</p>
+<p>Options :</p>
 <ul class="simple">
-<li><p>Text type: text, number, link or email</p></li>
+<li><p>Type de texte : texte, numéro, lien ou email</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>In the case of link and email, the question is highlighted in red and an error is shown to the user if their response does not fit the required format.</p>
+<p>Dans le cas du lien et de l'e-mail, la question est encadrée en rouge et une erreur est affichée à l'utilisateur si sa réponse ne correspond pas au format requis.</p>
 </div>
 </div>
 <div class="section" id="cptools-form-paragraph-paragraph">
-<h4><em class="cptools cptools-form-paragraph"></em> Paragraph<a class="headerlink" href="#cptools-form-paragraph-paragraph" title="Lien permanent vers ce titre">¶</a></h4>
-<p>Response: multiple lines of text</p>
-<p>Options:</p>
+<h4><em class="cptools cptools-form-paragraph"></em> Paragraphe<a class="headerlink" href="#cptools-form-paragraph-paragraph" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Réponse : plusieurs lignes de texte</p>
+<p>Options :</p>
 <ul class="simple">
-<li><p>Maximum characters: limit (defaults to 1000)</p></li>
+<li><p>Nombre maximum de caractères : limite (1000 par défaut)</p></li>
 </ul>
 </div>
 <div class="section" id="cptools-form-list-radio-choice">
-<h4><em class="cptools cptools-form-list-radio"></em> Choice<a class="headerlink" href="#cptools-form-list-radio-choice" title="Lien permanent vers ce titre">¶</a></h4>
-<p>Response: one choice from the list</p>
-<p>Options:</p>
+<h4><em class="cptools cptools-form-list-radio"></em> Choix<a class="headerlink" href="#cptools-form-list-radio-choice" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Réponse : un choix dans la liste</p>
+<p>Options :</p>
 <ul class="simple">
-<li><p><em class="fa fa-plus"></em> <strong>Add option</strong> button</p></li>
-<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> and drag to re-order options</p></li>
-<li><p>Delete an option with <em class="fa fa-times"></em></p></li>
+<li><p>bouton <em class="fa fa-plus"></em> <strong>Ajouter une option</strong></p></li>
+<li><p>Cliquer sur la poignée <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> et la faire glisser pour réorganiser les options</p></li>
+<li><p>Supprimer une option avec <em class="fa fa-times"></em></p></li>
 </ul>
 </div>
 <div class="section" id="cptools-form-grid-radio-choice-grid">
-<h4><em class="cptools cptools-form-grid-radio"></em> Choice Grid<a class="headerlink" href="#cptools-form-grid-radio-choice-grid" title="Lien permanent vers ce titre">¶</a></h4>
-<p>Response: one option choice per item</p>
-<p>Options:</p>
+<h4><em class="cptools cptools-form-grid-radio"></em> Grille de choix<a class="headerlink" href="#cptools-form-grid-radio-choice-grid" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Réponse : un choix d'option par objet</p>
+<p>Options :</p>
 <ul class="simple">
-<li><p><em class="fa fa-plus"></em> <strong>Add option</strong> and <em class="fa fa-plus"></em> <strong>Add item</strong> buttons</p></li>
-<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> and drag to re-order items and options</p></li>
-<li><p>Delete an item or option with <em class="fa fa-times"></em></p></li>
+<li><p>boutons <em class="fa fa-plus"></em> <strong>Ajouter une option</strong> and <em class="fa fa-plus"></em> <strong>Ajouter un objet</strong></p></li>
+<li><p>Cliquer sur la poignée <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> et la faire glisser pour réorganiser les objets et les options</p></li>
+<li><p>Supprimer un objet ou une option avec <em class="fa fa-times"></em></p></li>
 </ul>
 </div>
 <div class="section" id="cptools-form-list-check-checkbox">
-<h4><em class="cptools cptools-form-list-check"></em> Checkbox<a class="headerlink" href="#cptools-form-list-check-checkbox" title="Lien permanent vers ce titre">¶</a></h4>
-<p>Response: multiple choices from the list</p>
-<p>Options:</p>
+<h4><em class="cptools cptools-form-list-check"></em> Cases<a class="headerlink" href="#cptools-form-list-check-checkbox" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Réponse : choix multiples dans la liste</p>
+<p>Options :</p>
 <ul class="simple">
-<li><p>Maximum selectable options</p></li>
-<li><p><em class="fa fa-plus"></em> <strong>Add option</strong> button</p></li>
-<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> and drag to re-order options</p></li>
-<li><p>Delete an option with <em class="fa fa-times"></em></p></li>
+<li><p>Nombre maximum de réponses</p></li>
+<li><p>bouton <em class="fa fa-plus"></em> <strong>Ajouter une option</strong></p></li>
+<li><p>Cliquer sur la poignée <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> et la faire glisser pour réorganiser les options</p></li>
+<li><p>Supprimer une option avec <em class="fa fa-times"></em></p></li>
 </ul>
 </div>
 <div class="section" id="cptools-form-grid-check-checkbox-grid">
-<h4><em class="cptools cptools-form-grid-check"></em> Checkbox Grid<a class="headerlink" href="#cptools-form-grid-check-checkbox-grid" title="Lien permanent vers ce titre">¶</a></h4>
-<p>Response: multiple choices for each item</p>
-<p>Options:</p>
+<h4><em class="cptools cptools-form-grid-check"></em> Grille de cases<a class="headerlink" href="#cptools-form-grid-check-checkbox-grid" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Réponse : choix multiples pour chaque objet</p>
+<p>Options :</p>
 <ul class="simple">
-<li><p>Maximum selectable options (per item)</p></li>
-<li><p><em class="fa fa-plus"></em> <strong>Add option</strong> and <em class="fa fa-plus"></em> <strong>Add item</strong> buttons</p></li>
-<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> and drag to re-order items and options</p></li>
-<li><p>Delete an item or option with <em class="fa fa-times"></em></p></li>
+<li><p>Nombre maximum de réponses (par objet)</p></li>
+<li><p>boutons <em class="fa fa-plus"></em> <strong>Ajouter une option</strong> and <em class="fa fa-plus"></em> <strong>Ajouter un objet</strong></p></li>
+<li><p>Cliquer sur la poignée <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> et la faire glisser pour réorganiser les objets et les options</p></li>
+<li><p>Supprimer un objet ou une option avec <em class="fa fa-times"></em></p></li>
 </ul>
 </div>
 <div class="section" id="cptools-form-list-ordered-ordered-list">
-<h4><em class="cptools cptools-form-list-ordered"></em> Ordered List<a class="headerlink" href="#cptools-form-list-ordered-ordered-list" title="Lien permanent vers ce titre">¶</a></h4>
-<p>Response: order of preference for the listed options</p>
-<p>Options:</p>
+<h4><em class="cptools cptools-form-list-ordered"></em> Liste ordonnée<a class="headerlink" href="#cptools-form-list-ordered-ordered-list" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Réponse : ordre de préférence pour les options listées</p>
+<p>Options :</p>
 <ul class="simple">
-<li><p><em class="fa fa-plus"></em> <strong>Add option</strong> button</p></li>
-<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> and drag to re-order options</p></li>
-<li><p>Delete an option with <em class="fa fa-times"></em></p></li>
+<li><p>bouton <em class="fa fa-plus"></em> <strong>Ajouter une option</strong></p></li>
+<li><p>Cliquer sur la poignée <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> et la faire glisser pour réorganiser les options</p></li>
+<li><p>Supprimer une option avec <em class="fa fa-times"></em></p></li>
 </ul>
 </div>
 <div class="section" id="cptools-form-poll-poll">
-<h4><em class="cptools cptools-form-poll"></em> Poll<a class="headerlink" href="#cptools-form-poll-poll" title="Lien permanent vers ce titre">¶</a></h4>
-<p>Response: <em class="fa fa-check"></em> Yes, <em class="fa fa-times"></em> No, or <em class="cptools cptools-form-poll-maybe"></em> Acceptable for each of the proposed options</p>
-<p>Option types:</p>
+<h4><em class="cptools cptools-form-poll"></em> Sondage<a class="headerlink" href="#cptools-form-poll-poll" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Réponse : <em class="fa fa-check"></em> Oui, <em class="fa fa-times"></em> Non, <em class="cptools cptools-form-poll-maybe"></em> Acceptable pour chacune des options proposées</p>
+<p>Types d'options :</p>
 <ul>
-<li><p>Text</p>
+<li><p>Texte</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><em class="fa fa-plus"></em> <strong>Add option</strong> button</p></li>
-<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> and drag to re-order options</p></li>
-<li><p>Delete an option with <em class="fa fa-times"></em></p></li>
+<li><p>bouton <em class="fa fa-plus"></em> <strong>Ajouter une option</strong></p></li>
+<li><p>Cliquer sur la poignée <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> et la faire glisser pour réorganiser les options</p></li>
+<li><p>Supprimer une option avec <em class="fa fa-times"></em></p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p>Day</p>
+<li><p>Jour</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Select the date choices by clicking on them in the calendar</p></li>
+<li><p>Sélectionnez les dates souhaitées en cliquant le calendrier</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p>Time</p>
+<li><p>Heure</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Click on an option to select the date and time in the calendar</p></li>
-<li><p>Click &quot;Add multiple dates and times&quot; to select multiple options and use <em class="fa fa-plus"></em> <strong>Add all</strong> to add all of the selected options at once.</p></li>
+<li><p>Cliquer sur une option pour sélectionner la date et l'heure dans le calendrier</p></li>
+<li><p>Cliquer sur &quot;Ajouter plusieurs dates et heures&quot; pour sélectionner plusieurs options puis <em class="fa fa-plus"></em> <strong>Ajouter tout</strong> pour ajouter toutes les options sélectionnées en une seule fois.</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -697,44 +704,44 @@
 </div>
 </div>
 <div class="section" id="form-settings">
-<span id="id1"></span><h3>Form Settings<a class="headerlink" href="#form-settings" title="Lien permanent vers ce titre">¶</a></h3>
+<span id="id1"></span><h3>Réglages du formulaire<a class="headerlink" href="#form-settings" title="Lien permanent vers ce titre">¶</a></h3>
 <ul>
-<li><p>Closing date: date after which the form will be closed to new responses</p>
+<li><p>Date de clôture : date après laquelle le formulaire sera fermé aux nouvelles réponses</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Use the <strong>Set closing date</strong> button to select a date from the calendar</p></li>
-<li><p>If a closing date is set, use <strong>Remove closing date</strong> to remove it.</p></li>
+<li><p>Utiliser le bouton <strong>Date de clôture</strong> pour sélectionner une date dans le calendrier</p></li>
+<li><p>Si une date de clôture est fixée, utiliser <strong>Supprimer la date de clôture</strong> pour la supprimer.</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p>Anonymous answers (blocked by default)</p>
+<li><p>Réponses anonymes (bloquées par défaut)</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Blocked: only users who are logged in to their CryptPad account can respond to the form.</p></li>
-<li><p>Allowed: unregistered users can respond, logged in users can choose to respond anonymously.</p></li>
+<li><p>Bloquées : seuls les utilisateurs qui sont connectés à leur compte CryptPad peuvent répondre au formulaire.</p></li>
+<li><p>Autorisées : les utilisateurs non enregistrés peuvent répondre, les utilisateurs connectés peuvent choisir de répondre de manière anonyme.</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p>Publish responses (private by default): allow anyone who can view the form to view responses.</p></li>
+<li><p>Publier les réponses (privé par défaut) : permet à toute personne pouvant consulter le formulaire de voir les réponses.</p></li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Avertissement</p>
-<p>Once responses are made public they cannot be made private again.</p>
+<p>Une fois que les réponses sont rendues publiques, il est impossible de les rendre à nouveau privées.</p>
 </div>
 </div>
 <div class="section" id="advanced-use-cases">
-<h3>Advanced use-cases<a class="headerlink" href="#advanced-use-cases" title="Lien permanent vers ce titre">¶</a></h3>
+<h3>Usages avancés<a class="headerlink" href="#advanced-use-cases" title="Lien permanent vers ce titre">¶</a></h3>
 <div class="section" id="anonymous-responses-with-access-list">
-<h4>Anonymous responses with access list<a class="headerlink" href="#anonymous-responses-with-access-list" title="Lien permanent vers ce titre">¶</a></h4>
-<p>To conduct an anonymous survey with a known group of users, the anonymous answers feature can be combined with an <a class="reference internal" href="../share_and_access.html#access-list"><span class="std std-ref">Liste</span></a>.</p>
-<p>To access the form, participants need to be logged in to an account that is on the access list (either directly or through a <a class="reference internal" href="../collaboration.html#teams"><span class="std std-ref">team</span></a> they are part of).</p>
-<p>If anonymous answers are allowed on the form, participants are able to answer anonymously while the access list ensures they are coming from a specific group of users.</p>
+<h4>Réponses anonymes avec liste d'accès<a class="headerlink" href="#anonymous-responses-with-access-list" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Pour mener une enquête anonyme auprès d'un groupe d'utilisateurs connu, la fonction de réponses anonymes peut être combinée avec une <a class="reference internal" href="../share_and_access.html#access-list"><span class="std std-ref">Liste</span></a>.</p>
+<p>Pour accéder au formulaire, les participants doivent être connectés à un compte figurant sur la liste d'accès (soit directement, soit par l'intermédiaire d'une <a class="reference internal" href="../collaboration.html#teams"><span class="std std-ref">équipe</span></a> dont ils font partie).</p>
+<p>Si les réponses anonymes sont autorisées sur le formulaire, les participants peuvent répondre de manière anonyme alors que la liste d'accès garantit qu'elles proviennent d'un groupe spécifique d'utilisateurs.</p>
 </div>
 </div>
 </div>
 <div class="section" id="import-export">
 <h2>Import/Export<a class="headerlink" href="#import-export" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Exporting the results for analysis outside of CryptPad is not yet available. This is planned for a future release.</p>
+<p>L'exportation des résultats pour une analyse en dehors de CryptPad n'est pas encore disponible. Ceci est prévu pour une version future.</p>
 </div>
 </div>
 

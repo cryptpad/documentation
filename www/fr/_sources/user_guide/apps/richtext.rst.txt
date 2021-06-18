@@ -35,6 +35,23 @@ To set defaults for these settings, for example to control which sections are vi
 
 |file-o| **File** > |cog| **Document Settings**.
 
+Editing
+--------
+
+Headings
++++++++++
+
+In order for headings to appear in the outline, they must be formatted as such. To format a heading, select the text or place the cursor on the heading line, then either:
+
+- Use the formatting menu in the toolbar (displays "normal" by default) to select the desired heading level.
+
+- Use the keyboard shortcut: ``Ctrl`` + ``Alt`` + the number of the desired heading level.
+
+Paragraphs
+++++++++++
+
+By default the ``Enter`` key creates a new paragraph, adding a line of spacing with the previous paragraph. To add a line-break without adding a new paragraph, use ``Shift`` + ``Enter``.
+
 Import/Export
 -------------
 
