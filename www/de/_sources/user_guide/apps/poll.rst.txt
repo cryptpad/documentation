@@ -10,7 +10,12 @@ where the security of the votes is paramount. To cast a vote, each user
 must have edit rights to the document. This enables each participant to
 **modify and/or delete answers from other participants**.
 
-A complete re-write of this application is planned for late 2020.
+.. warning::
+   The Poll application is deprecated as of version 4.7 (16th June 2021). Existing polls can still be opened and edited, but the creation of new polls is discouraged (although still possible via |file-o| **File** > |files-o| **Make a copy**).
+
+   Note that the same functionality is available in the new :ref:`app_form` application, where the edit rights limitations above have been addressed.
+
+   Future development will be focused on the :ref:`app_form` application.
 
 .. image:: /images/app-poll-preview.png
    :class: screenshot

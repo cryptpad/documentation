@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="../../_static/css/cp-overrides.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Recherche" href="../../search.html" />
-    <link rel="next" title="Sondage" href="poll.html" />
+    <link rel="next" title="Kanban" href="kanban.html" />
     <link rel="prev" title="Présentation" href="slides.html" /> 
 
   
@@ -244,12 +244,15 @@
 <li class="toctree-l4"><a class="reference internal" href="slides.html#lightbox">Galerie</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Form</a></li>
-<li class="toctree-l3"><a class="reference internal" href="poll.html">Sondage</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="poll.html#toolbar">Barre d'outils</a></li>
-<li class="toctree-l4"><a class="reference internal" href="poll.html#edit-mode">Édition</a></li>
-<li class="toctree-l4"><a class="reference internal" href="poll.html#voting">Vote</a></li>
-<li class="toctree-l4"><a class="reference internal" href="poll.html#export">Export</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Form</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#roles">Roles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#editing-a-form">Editing a form</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#question-types">Question types</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#form-settings">Form Settings</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#advanced-use-cases">Advanced use-cases</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#import-export">Import/Export</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="kanban.html">Kanban</a><ul>
@@ -267,6 +270,13 @@
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Mode Pinceau</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Mode Sélection</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="poll.html">Sondage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="poll.html#toolbar">Barre d'outils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="poll.html#edit-mode">Édition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="poll.html#voting">Vote</a></li>
+<li class="toctree-l4"><a class="reference internal" href="poll.html#export">Export</a></li>
 </ul>
 </li>
 </ul>
@@ -548,7 +558,183 @@
 <p><span class="badge-new">New in version 4.7</span></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The Form application is currently in Beta. This documentation is in the process of being written and translated. A complete guide to the application will be available shortly.</p>
+<p>The Form application is currently in Beta. More features are planned for the near future including:</p>
+<ul>
+<li><p>import/export</p></li>
+<li><p>better visualization for responses</p></li>
+<li><p>more options</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>different ways of counting ranked ballots</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>author notifications</p></li>
+</ul>
+</div>
+<div class="section" id="roles">
+<h2>Roles<a class="headerlink" href="#roles" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Forms benefit from the same collaboration and privacy features as the other CryptPad applications. They also have slightly different requirements when it comes to usage, for example someone responding to a form should be able to edit their own answers but not other users' answers or the form itself. For this reason the <a class="reference internal" href="../share_and_access.html#share-access-rights"><span class="std std-ref">Droits d'accès</span></a> when sharing a form are different from the other applications. Forms have 3 different roles:</p>
+<ul class="simple">
+<li><p><strong>Authors</strong>: can edit questions and <a class="reference internal" href="#form-settings"><span class="std std-ref">form settings</span></a>.</p></li>
+<li><p><strong>Auditors</strong>: can view responses to the form whether or not they are public.</p></li>
+<li><p><strong>Participant</strong>: can answer the form and only view responses once they are made public by an author.</p></li>
+</ul>
+<p>To share a form with a specific role, for example to send it to participants, select the role in the <em class="fa fa-share-alt"></em> <strong>Share</strong> menu before selecting contacts or copying the link.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The user list, chat, and alerts about users joining the collaborative session are all disabled when a participant is responding to a form. This is to avoid giving the impression that someone is watching while they answer.</p>
+</div>
+</div>
+<div class="section" id="editing-a-form">
+<h2>Editing a form<a class="headerlink" href="#editing-a-form" title="Lien permanent vers ce titre">¶</a></h2>
+<p>To add a question, use the <em class="fa fa-plus"></em> <strong>Add</strong> menu after the last question, or the <em class="fa fa-plus"></em> between each question.</p>
+<p>To delete a question use the <em class="fa fa-trash-o"></em> <strong>Delete</strong> button on the question to remove.</p>
+<div class="section" id="question-types">
+<h3>Question types<a class="headerlink" href="#question-types" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="section" id="cptools-form-text-text">
+<h4><em class="cptools cptools-form-text"></em> Text<a class="headerlink" href="#cptools-form-text-text" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Response: one line of text</p>
+<p>Options:</p>
+<ul class="simple">
+<li><p>Text type: text, number, link or email</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In the case of link and email, the question is highlighted in red and an error is shown to the user if their response does not fit the required format.</p>
+</div>
+</div>
+<div class="section" id="cptools-form-paragraph-paragraph">
+<h4><em class="cptools cptools-form-paragraph"></em> Paragraph<a class="headerlink" href="#cptools-form-paragraph-paragraph" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Response: multiple lines of text</p>
+<p>Options:</p>
+<ul class="simple">
+<li><p>Maximum characters: limit (defaults to 1000)</p></li>
+</ul>
+</div>
+<div class="section" id="cptools-form-list-radio-choice">
+<h4><em class="cptools cptools-form-list-radio"></em> Choice<a class="headerlink" href="#cptools-form-list-radio-choice" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Response: one choice from the list</p>
+<p>Options:</p>
+<ul class="simple">
+<li><p><em class="fa fa-plus"></em> <strong>Add option</strong> button</p></li>
+<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> and drag to re-order options</p></li>
+<li><p>Delete an option with <em class="fa fa-times"></em></p></li>
+</ul>
+</div>
+<div class="section" id="cptools-form-grid-radio-choice-grid">
+<h4><em class="cptools cptools-form-grid-radio"></em> Choice Grid<a class="headerlink" href="#cptools-form-grid-radio-choice-grid" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Response: one option choice per item</p>
+<p>Options:</p>
+<ul class="simple">
+<li><p><em class="fa fa-plus"></em> <strong>Add option</strong> and <em class="fa fa-plus"></em> <strong>Add item</strong> buttons</p></li>
+<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> and drag to re-order items and options</p></li>
+<li><p>Delete an item or option with <em class="fa fa-times"></em></p></li>
+</ul>
+</div>
+<div class="section" id="cptools-form-list-check-checkbox">
+<h4><em class="cptools cptools-form-list-check"></em> Checkbox<a class="headerlink" href="#cptools-form-list-check-checkbox" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Response: multiple choices from the list</p>
+<p>Options:</p>
+<ul class="simple">
+<li><p>Maximum selectable options</p></li>
+<li><p><em class="fa fa-plus"></em> <strong>Add option</strong> button</p></li>
+<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> and drag to re-order options</p></li>
+<li><p>Delete an option with <em class="fa fa-times"></em></p></li>
+</ul>
+</div>
+<div class="section" id="cptools-form-grid-check-checkbox-grid">
+<h4><em class="cptools cptools-form-grid-check"></em> Checkbox Grid<a class="headerlink" href="#cptools-form-grid-check-checkbox-grid" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Response: multiple choices for each item</p>
+<p>Options:</p>
+<ul class="simple">
+<li><p>Maximum selectable options (per item)</p></li>
+<li><p><em class="fa fa-plus"></em> <strong>Add option</strong> and <em class="fa fa-plus"></em> <strong>Add item</strong> buttons</p></li>
+<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> and drag to re-order items and options</p></li>
+<li><p>Delete an item or option with <em class="fa fa-times"></em></p></li>
+</ul>
+</div>
+<div class="section" id="cptools-form-list-ordered-ordered-list">
+<h4><em class="cptools cptools-form-list-ordered"></em> Ordered List<a class="headerlink" href="#cptools-form-list-ordered-ordered-list" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Response: order of preference for the listed options</p>
+<p>Options:</p>
+<ul class="simple">
+<li><p><em class="fa fa-plus"></em> <strong>Add option</strong> button</p></li>
+<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> and drag to re-order options</p></li>
+<li><p>Delete an option with <em class="fa fa-times"></em></p></li>
+</ul>
+</div>
+<div class="section" id="cptools-form-poll-poll">
+<h4><em class="cptools cptools-form-poll"></em> Poll<a class="headerlink" href="#cptools-form-poll-poll" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Response: <em class="fa fa-check"></em> Yes, <em class="fa fa-times"></em> No, or <em class="cptools cptools-form-poll-maybe"></em> Acceptable for each of the proposed options</p>
+<p>Option types:</p>
+<ul>
+<li><p>Text</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><em class="fa fa-plus"></em> <strong>Add option</strong> button</p></li>
+<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> and drag to re-order options</p></li>
+<li><p>Delete an option with <em class="fa fa-times"></em></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Day</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Select the date choices by clicking on them in the calendar</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Time</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Click on an option to select the date and time in the calendar</p></li>
+<li><p>Click &quot;Add multiple dates and times&quot; to select multiple options and use <em class="fa fa-plus"></em> <strong>Add all</strong> to add all of the selected options at once.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="form-settings">
+<span id="id1"></span><h3>Form Settings<a class="headerlink" href="#form-settings" title="Lien permanent vers ce titre">¶</a></h3>
+<ul>
+<li><p>Closing date: date after which the form will be closed to new responses</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Use the <strong>Set closing date</strong> button to select a date from the calendar</p></li>
+<li><p>If a closing date is set, use <strong>Remove closing date</strong> to remove it.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Anonymous answers (blocked by default)</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Blocked: only users who are logged in to their CryptPad account can respond to the form.</p></li>
+<li><p>Allowed: unregistered users can respond, logged in users can choose to respond anonymously.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Publish responses (private by default): allow anyone who can view the form to view responses.</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Once responses are made public they cannot be made private again.</p>
+</div>
+</div>
+<div class="section" id="advanced-use-cases">
+<h3>Advanced use-cases<a class="headerlink" href="#advanced-use-cases" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="section" id="anonymous-responses-with-access-list">
+<h4>Anonymous responses with access list<a class="headerlink" href="#anonymous-responses-with-access-list" title="Lien permanent vers ce titre">¶</a></h4>
+<p>To conduct an anonymous survey with a known group of users, the anonymous answers feature can be combined with an <a class="reference internal" href="../share_and_access.html#access-list"><span class="std std-ref">Liste</span></a>.</p>
+<p>To access the form, participants need to be logged in to an account that is on the access list (either directly or through a <a class="reference internal" href="../collaboration.html#teams"><span class="std std-ref">team</span></a> they are part of).</p>
+<p>If anonymous answers are allowed on the form, participants are able to answer anonymously while the access list ensures they are coming from a specific group of users.</p>
+</div>
+</div>
+</div>
+<div class="section" id="import-export">
+<h2>Import/Export<a class="headerlink" href="#import-export" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Exporting the results for analysis outside of CryptPad is not yet available. This is planned for a future release.</p>
 </div>
 </div>
 
@@ -560,7 +746,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="poll.html" class="btn btn-neutral float-right" title="Sondage" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="kanban.html" class="btn btn-neutral float-right" title="Kanban" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="slides.html" class="btn btn-neutral" title="Présentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>

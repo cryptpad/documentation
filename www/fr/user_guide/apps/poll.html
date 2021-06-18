@@ -33,8 +33,8 @@
   <link rel="stylesheet" href="../../_static/css/cp-overrides.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Recherche" href="../../search.html" />
-    <link rel="next" title="Kanban" href="kanban.html" />
-    <link rel="prev" title="Form" href="form.html" /> 
+    <link rel="next" title="Developer Guide" href="../../dev_guide/index.html" />
+    <link rel="prev" title="Dessin" href="whiteboard.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -244,12 +244,15 @@
 <li class="toctree-l4"><a class="reference internal" href="slides.html#lightbox">Galerie</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="form.html">Form</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Sondage</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#toolbar">Barre d'outils</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#edit-mode">Édition</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#voting">Vote</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#export">Export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="form.html">Form</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="form.html#roles">Roles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="form.html#editing-a-form">Editing a form</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="form.html#question-types">Question types</a></li>
+<li class="toctree-l5"><a class="reference internal" href="form.html#form-settings">Form Settings</a></li>
+<li class="toctree-l5"><a class="reference internal" href="form.html#advanced-use-cases">Advanced use-cases</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="form.html#import-export">Import/Export</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="kanban.html">Kanban</a><ul>
@@ -267,6 +270,13 @@
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Mode Pinceau</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Mode Sélection</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Sondage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#toolbar">Barre d'outils</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#edit-mode">Édition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#voting">Vote</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#export">Export</a></li>
 </ul>
 </li>
 </ul>
@@ -547,7 +557,12 @@
 <h1>Sondage<a class="headerlink" href="#poll" title="Lien permanent vers ce titre">¶</a></h1>
 <p>L'application Sondage est conçue pour faciliter les décisions dans un petit groupe de personnes de confiance, par exemple pour choisir une date/heure de réunion.</p>
 <p>Elle n'est pas adaptée pour des sondages partagés avec un grand nombre de personnes et/ou qui nécessitent des garanties sur la sécurité du vote. En effet, pour voter chaque participant doit avoir les droits d'édition sur le document. Cela permet de <strong>modifier ou de supprimer les réponses des autres participants</strong>.</p>
-<p>Une refonte complète de cette application est prévue pour fin 2020.</p>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>The Poll application is deprecated as of version 4.7 (16th June 2021). Existing polls can still be opened and edited, but the creation of new polls is discouraged (although still possible via <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-files-o"></em> <strong>Make a copy</strong>).</p>
+<p>Note that the same functionality is available in the new <a class="reference internal" href="form.html#app-form"><span class="std std-ref">Form</span></a> application, where the edit rights limitations above have been addressed.</p>
+<p>Future development will be focused on the <a class="reference internal" href="form.html#app-form"><span class="std std-ref">Form</span></a> application.</p>
+</div>
 <img alt="../../_images/app-poll-preview.png" class="screenshot" src="../../_images/app-poll-preview.png" />
 <div class="section" id="toolbar">
 <h2>Barre d'outils<a class="headerlink" href="#toolbar" title="Lien permanent vers ce titre">¶</a></h2>
@@ -606,10 +621,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="kanban.html" class="btn btn-neutral float-right" title="Kanban" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../../dev_guide/index.html" class="btn btn-neutral float-right" title="Developer Guide" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="form.html" class="btn btn-neutral" title="Form" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="whiteboard.html" class="btn btn-neutral" title="Dessin" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
       
     </div>
   

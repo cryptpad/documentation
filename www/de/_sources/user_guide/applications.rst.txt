@@ -13,6 +13,6 @@ This section starts with general concepts on creating and managing documents on 
     apps/code
     apps/slides
     apps/form
-    apps/poll
     apps/kanban
     apps/whiteboard
+    apps/poll
