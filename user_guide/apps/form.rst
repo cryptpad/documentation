@@ -6,6 +6,10 @@ Form
 
 :badge_new:`New in version 4.7`
 
+.. image:: /images/app-form-preview.png
+   :class: screenshot
+   :alt: preview of the Form application
+
 .. note::
 
     The Form application is currently in Beta. More features are planned for the near future including:
@@ -18,19 +22,6 @@ Form
 
     * author notifications
 
-.. The following features
-
-.. * import/export
-.. * better visualization for responses
-.. * more options
-..     * different ways of counting ranked ballots
-.. * printing
-.. * author notifications
-
-.. .. warning::
-..     Not suitable for elections.
-
-.. XXX: app screenshot
 
 Roles
 -----
@@ -43,7 +34,9 @@ Forms benefit from the same collaboration and privacy features as the other Cryp
 
 To share a form with a specific role, for example to send it to participants, select the role in the |share-alt| **Share** menu before selecting contacts or copying the link.
 
-.. XXX Forms share modal screenshot
+.. image:: /images/app-form-share.png
+   :class: screenshot
+   :alt: the share menu in the form application, showing the three roles: participant, auditor, and author.
 
 .. note::
 
@@ -58,6 +51,8 @@ To delete a question use the |trash-o| **Delete** button on the question to remo
 
 Question types
 ~~~~~~~~~~~~~~~
+
+.. XXX add examples here to demo each type
 
 |cptools form-text| Text
 +++++++++++++++++++++++++
@@ -89,7 +84,7 @@ Response: one choice from the list
 Options:
 
 - |plus| **Add option** button
-- Grab the |ellipsis-v| |ellipsis-v| and drag to re-order options
+- Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order options
 - Delete an option with |times|
 
 |cptools form-grid-radio| Choice Grid
@@ -100,7 +95,7 @@ Response: one option choice per item
 Options:
 
 - |plus| **Add option** and |plus| **Add item** buttons
-- Grab the |ellipsis-v| |ellipsis-v| and drag to re-order items and options
+- Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order items and options
 - Delete an item or option with |times|
 
 |cptools form-list-check| Checkbox
@@ -112,7 +107,7 @@ Options:
 
 - Maximum selectable options
 - |plus| **Add option** button
-- Grab the |ellipsis-v| |ellipsis-v| and drag to re-order options
+- Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order options
 - Delete an option with |times|
 
 |cptools form-grid-check| Checkbox Grid
@@ -124,7 +119,7 @@ Options:
 
 - Maximum selectable options (per item)
 - |plus| **Add option** and |plus| **Add item** buttons
-- Grab the |ellipsis-v| |ellipsis-v| and drag to re-order items and options
+- Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order items and options
 - Delete an item or option with |times|
 
 |cptools form-list-ordered| Ordered List
@@ -135,7 +130,7 @@ Response: order of preference for the listed options
 Options:
 
 - |plus| **Add option** button
-- Grab the |ellipsis-v| |ellipsis-v| and drag to re-order options
+- Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order options
 - Delete an option with |times|
 
 |cptools form-poll| Poll
@@ -148,7 +143,7 @@ Option types:
 - Text
 
    - |plus| **Add option** button
-   - Grab the |ellipsis-v| |ellipsis-v| and drag to re-order options
+   - Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order options
    - Delete an option with |times|
 
 - Day

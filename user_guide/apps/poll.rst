@@ -5,7 +5,7 @@ The Polls application is aimed at the facilitation of decisions in small
 groups of people who trust each other, for example to decide on a
 meeting date/time.
 
-It is not suited for polling a large number of people, or for situation
+It is not suited for polling a large number of people, or for situations
 where the security of the votes is paramount. To cast a vote, each user
 must have edit rights to the document. This enables each participant to
 **modify and/or delete answers from other participants**.
