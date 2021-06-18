@@ -28,8 +28,8 @@ Roles
 
 Forms benefit from the same collaboration and privacy features as the other CryptPad applications. They also have slightly different requirements when it comes to usage, for example someone responding to a form should be able to edit their own answers but not other users' answers or the form itself. For this reason the :ref:`share_access_rights` when sharing a form are different from the other applications. Forms have 3 different roles:
 
-- **Authors**: can edit questions and :ref:`form settings <form_settings>`.
-- **Auditors**: can view responses to the form whether or not they are public.
+- **Author**: can edit questions and :ref:`form settings <form_settings>`.
+- **Auditor**: can view responses to the form whether or not they are public.
 - **Participant**: can answer the form and only view responses once they are made public by an author.
 
 To share a form with a specific role, for example to send it to participants, select the role in the |share-alt| **Share** menu before selecting contacts or copying the link.
