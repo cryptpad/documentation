@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CryptPad \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-16 09:56+0100\n"
+"POT-Creation-Date: 2021-06-18 10:37+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,10 +25,336 @@ msgstr ""
 msgid ":badge_new:`New in version 4.7`"
 msgstr ""
 
-#: ../../user_guide/apps/form.rst:10
+#: ../../user_guide/apps/form.rst:11
 msgid ""
-"The Form application is currently in Beta. This documentation is in the "
-"process of being written and translated. A complete guide to the "
-"application will be available shortly."
+"The Form application is currently in Beta. More features are planned for "
+"the near future including:"
 msgstr ""
+
+#: ../../user_guide/apps/form.rst:13
+msgid "import/export"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:14
+msgid "better visualization for responses"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:15
+msgid "more options"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:17
+msgid "different ways of counting ranked ballots"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:19
+msgid "author notifications"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:36
+msgid "Roles"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:38
+msgid ""
+"Forms benefit from the same collaboration and privacy features as the "
+"other CryptPad applications. They also have slightly different "
+"requirements when it comes to usage, for example someone responding to a "
+"form should be able to edit their own answers but not other users' "
+"answers or the form itself. For this reason the "
+":ref:`share_access_rights` when sharing a form are different from the "
+"other applications. Forms have 3 different roles:"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:40
+msgid "**Authors**: can edit questions and :ref:`form settings <form_settings>`."
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:41
+msgid ""
+"**Auditors**: can view responses to the form whether or not they are "
+"public."
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:42
+msgid ""
+"**Participant**: can answer the form and only view responses once they "
+"are made public by an author."
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:44
+msgid ""
+"To share a form with a specific role, for example to send it to "
+"participants, select the role in the |share-alt| **Share** menu before "
+"selecting contacts or copying the link."
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:50
+msgid ""
+"The user list, chat, and alerts about users joining the collaborative "
+"session are all disabled when a participant is responding to a form. This"
+" is to avoid giving the impression that someone is watching while they "
+"answer."
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:53
+msgid "Editing a form"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:55
+msgid ""
+"To add a question, use the |plus| **Add** menu after the last question, "
+"or the |plus| between each question."
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:57
+msgid ""
+"To delete a question use the |trash-o| **Delete** button on the question "
+"to remove."
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:60
+msgid "Question types"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:63
+msgid "|cptools form-text| Text"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:65
+msgid "Response: one line of text"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:67 ../../user_guide/apps/form.rst:80
+#: ../../user_guide/apps/form.rst:89 ../../user_guide/apps/form.rst:100
+#: ../../user_guide/apps/form.rst:111 ../../user_guide/apps/form.rst:123
+#: ../../user_guide/apps/form.rst:135
+msgid "Options:"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:69
+msgid "Text type: text, number, link or email"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:73
+msgid ""
+"In the case of link and email, the question is highlighted in red and an "
+"error is shown to the user if their response does not fit the required "
+"format."
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:76
+msgid "|cptools form-paragraph| Paragraph"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:78
+msgid "Response: multiple lines of text"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:82
+msgid "Maximum characters: limit (defaults to 1000)"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:85
+msgid "|cptools form-list-radio| Choice"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:87
+msgid "Response: one choice from the list"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:91 ../../user_guide/apps/form.rst:114
+#: ../../user_guide/apps/form.rst:137 ../../user_guide/apps/form.rst:150
+msgid "|plus| **Add option** button"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:92 ../../user_guide/apps/form.rst:115
+#: ../../user_guide/apps/form.rst:138 ../../user_guide/apps/form.rst:151
+msgid "Grab the |ellipsis-v| |ellipsis-v| and drag to re-order options"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:93 ../../user_guide/apps/form.rst:116
+#: ../../user_guide/apps/form.rst:139 ../../user_guide/apps/form.rst:152
+msgid "Delete an option with |times|"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:96
+msgid "|cptools form-grid-radio| Choice Grid"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:98
+msgid "Response: one option choice per item"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:102 ../../user_guide/apps/form.rst:126
+msgid "|plus| **Add option** and |plus| **Add item** buttons"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:103 ../../user_guide/apps/form.rst:127
+msgid "Grab the |ellipsis-v| |ellipsis-v| and drag to re-order items and options"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:104 ../../user_guide/apps/form.rst:128
+msgid "Delete an item or option with |times|"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:107
+msgid "|cptools form-list-check| Checkbox"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:109
+msgid "Response: multiple choices from the list"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:113
+msgid "Maximum selectable options"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:119
+msgid "|cptools form-grid-check| Checkbox Grid"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:121
+msgid "Response: multiple choices for each item"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:125
+msgid "Maximum selectable options (per item)"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:131
+msgid "|cptools form-list-ordered| Ordered List"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:133
+msgid "Response: order of preference for the listed options"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:142
+msgid "|cptools form-poll| Poll"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:144
+msgid ""
+"Response: |check| Yes, |times| No, or |cptools form-poll-maybe| "
+"Acceptable for each of the proposed options"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:146
+msgid "Option types:"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:148
+msgid "Text"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:154
+msgid "Day"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:156
+msgid "Select the date choices by clicking on them in the calendar"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:158
+msgid "Time"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:160
+msgid "Click on an option to select the date and time in the calendar"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:161
+msgid ""
+"Click \"Add multiple dates and times\" to select multiple options and use"
+" |plus| **Add all** to add all of the selected options at once."
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:166
+msgid "Form Settings"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:168
+msgid "Closing date: date after which the form will be closed to new responses"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:170
+msgid "Use the **Set closing date** button to select a date from the calendar"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:171
+msgid "If a closing date is set, use **Remove closing date** to remove it."
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:173
+msgid "Anonymous answers (blocked by default)"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:175
+msgid ""
+"Blocked: only users who are logged in to their CryptPad account can "
+"respond to the form."
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:176
+msgid ""
+"Allowed: unregistered users can respond, logged in users can choose to "
+"respond anonymously."
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:178
+msgid ""
+"Publish responses (private by default): allow anyone who can view the "
+"form to view responses."
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:182
+msgid "Once responses are made public they cannot be made private again."
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:185
+msgid "Advanced use-cases"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:188
+msgid "Anonymous responses with access list"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:190
+msgid ""
+"To conduct an anonymous survey with a known group of users, the anonymous"
+" answers feature can be combined with an :ref:`access_list`."
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:192
+msgid ""
+"To access the form, participants need to be logged in to an account that "
+"is on the access list (either directly or through a :ref:`team <teams>` "
+"they are part of)."
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:194
+msgid ""
+"If anonymous answers are allowed on the form, participants are able to "
+"answer anonymously while the access list ensures they are coming from a "
+"specific group of users."
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:197
+msgid "Import/Export"
+msgstr ""
+
+#: ../../user_guide/apps/form.rst:199
+msgid ""
+"Exporting the results for analysis outside of CryptPad is not yet "
+"available. This is planned for a future release."
+msgstr ""
+
+#~ msgid ""
+#~ "The Form application is currently in "
+#~ "Beta. This documentation is in the "
+#~ "process of being written and translated."
+#~ " A complete guide to the application"
+#~ " will be available shortly."
+#~ msgstr ""
 
