@@ -1,10 +1,10 @@
 
 .. _app_slides:
 
-Slides
-======
+Presentation (Slides)
+=====================
 
-The Slides application in CryptPad is an integration of
+The Presentation (Slides) application in CryptPad is an integration of
 `CodeMirror <https://codemirror.net/>`__.
 
 .. image:: /images/app-slides-preview.png
@@ -60,6 +60,19 @@ Theme
 colors for the presentation.
 
 **Theme**: Color scheme used in the code editor pane.
+
+Example *Custom CSS*
+~~~~~~~~~~~~~~~~~~~~
+
+This example shows using an external font and some (very visible) changes. You can only reference *locally served* files due to security reasons, usually provided by the local admin under the ``/customize/`` directory. 
+
+.. code:: css
+
+ @font-face { font-family: NeuroPolitical; src: url('/customize/fonts/neuropolitical.ttf'); }
+ *  { font-family: NeuroPolitical; }
+ p  { background: #aaf; }
+ ul { background: yellow; }
+
 
 Import/Export
 -------------
