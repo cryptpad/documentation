@@ -271,6 +271,28 @@ the home page. To make this account an instance administrator:
 Configure support mailbox
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Version 4.6.0 and later
+^^^^^^^^^^^^^^^^^^^^^^^
+
+Since version 4.6 the support mailbox can be configured from the :ref:`admin_panel`.
+
+#. With an instance administrator account, visit the ``/admin/#support`` page
+#. Click **Generate Support Keys**
+#. The support mailbox is now active
+
+To allow other administrators to access the support mailbox:
+
+#. Copy the key at the bottom of the support page
+#. Send it to another administrator account
+#. They can use the **Add private key** field on the support page to gain access to the support mailbox
+
+.. note::
+   If the support mailbox is configured through the admin panel, any configuration using the old method detailed below is ignored.
+
+
+Versions older than 4.6.0
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 To enable the encrypted support ticket system, use the ``generate-admin-key.js`` script:
 
 #. ``node ./scripts/generate-admin-keys.js``
