@@ -44,3 +44,13 @@ This option logs out all sessions **except** the one from which it is actiaved.
 * User menu (avatar at the top-right) > |plug| **Log out everywhere**. 
 
 This option logs out all sessions **including** the one from which it is activated.
+
+Remote Content
+--------------
+
+CryptPad blocks images and other remotely hosted content to prevent other users from tracking tracking you.
+
+:badge_user:`Logged in users`
+
+:ref:`An extension <app_code_images>` to our Markdown renderer for including encrypted images hosted through the platform itself.
+

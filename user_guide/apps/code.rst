@@ -96,14 +96,14 @@ for detailed examples of the extensions in use please see:
 .. |md extensions| replace:: |cptools code| **Markdown Guide: Extensions**
 .. _md extensions: https://cryptpad.fr/code/#/2/code/view/VJtytDV8tsmlGx0GlR02azrp51A8cl8ivifXf6GQ9RA/
 
+.. _app_code_images:
 
 Images
 ------
 
 It is strongly advised **not** to insert external images in documents.
 The Markdown syntax ``![description](https://site.com/image.jpg)`` is
-supported but presents security risks. Malicious code can be hidden in
-images and result in data leakage.
+supported but presents security risks.
 
 For this reason, CryptPad makes use of ``media-tag`` to insert images
 from the CryptDrive. This syntax is more complex but it is managed
