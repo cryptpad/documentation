@@ -5,20 +5,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: CryptPad\n"
+"Project-Id-Version:  CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-23 17:03+0100\n"
+"POT-Creation-Date: 2021-07-05 14:54+0100\n"
 "PO-Revision-Date: 2020-09-02 14:10+0000\n"
 "Last-Translator: David Benqué <david.benque@xwiki.com>\n"
-"Language-Team: German <http://weblate.cryptpad.fr/projects/user-guide/"
-"security/de/>\n"
 "Language: de\n"
+"Language-Team: German <http://weblate.cryptpad.fr/projects/user-"
+"guide/security/de/>\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.1\n"
-"Generated-By: Babel 2.8.0\n"
+"Generated-By: Babel 2.9.0\n"
 
 #: ../../user_guide/security.rst:2
 msgid "Security"
@@ -29,6 +28,7 @@ msgid "Passwords for documents and folders"
 msgstr "Passwörter für Dokumente und Ordner"
 
 #: ../../user_guide/security.rst:9 ../../user_guide/security.rst:34
+#: ../../user_guide/security.rst:55
 msgid ":badge_user:`Logged in users`"
 msgstr ":badge_user:`Eingeloggte Benutzer`"
 
@@ -41,9 +41,9 @@ msgid ""
 msgstr ""
 "Wenn du den Link zu einem Dokument oder einem freigegebenen Ordner über "
 "einen unsicheren Kanal (z. B. E-Mail oder SMS) teilst, könnte jemand den "
-"Link abfangen und Zugriff auf deine Daten erhalten. Um dies zu verhindern, "
-"können die :ref:`Eigentümer <owners>` eines Dokuments oder Ordners ein "
-"Passwort hinzufügen."
+"Link abfangen und Zugriff auf deine Daten erhalten. Um dies zu "
+"verhindern, können die :ref:`Eigentümer <owners>` eines Dokuments oder "
+"Ordners ein Passwort hinzufügen."
 
 #: ../../user_guide/security.rst:16
 msgid ""
@@ -53,11 +53,12 @@ msgid ""
 "pad when you share it. The recipient, or yourself, are **not** asked for "
 "it when they open the document."
 msgstr ""
-"Wenn du Dokumente mit deinen Kontakten und Teams direkt auf CryptPad teilst, "
-"wird die Kommunikation verschlüsselt und wir gehen davon aus, dass du ihnen "
-"Zugriff gewähren möchtest. Daher wird das Passwort gespeichert und mit dem "
-"Pad mitgeschickt, wenn du es teilst. Der Empfänger, oder du selbst, werden "
-"**nicht** danach gefragt, wenn sie das Dokument öffnen."
+"Wenn du Dokumente mit deinen Kontakten und Teams direkt auf CryptPad "
+"teilst, wird die Kommunikation verschlüsselt und wir gehen davon aus, "
+"dass du ihnen Zugriff gewähren möchtest. Daher wird das Passwort "
+"gespeichert und mit dem Pad mitgeschickt, wenn du es teilst. Der "
+"Empfänger, oder du selbst, werden **nicht** danach gefragt, wenn sie das "
+"Dokument öffnen."
 
 #: ../../user_guide/security.rst:22
 msgid ""
@@ -92,9 +93,9 @@ msgid ""
 "active CryptPad sessions. This can be done in two ways:"
 msgstr ""
 "In einigen Fällen (Verlust oder Diebstahl eines Gerätes, vergessene "
-"Abmeldung von einer Sitzung auf einem gemeinsam genutzten Computer, usw.) "
-"kann es notwendig sein, alle aktiven CryptPad-Sitzungen zu beenden. Dazu "
-"gibt es zwei Möglichkeiten:"
+"Abmeldung von einer Sitzung auf einem gemeinsam genutzten Computer, usw.)"
+" kann es notwendig sein, alle aktiven CryptPad-Sitzungen zu beenden. Dazu"
+" gibt es zwei Möglichkeiten:"
 
 #: ../../user_guide/security.rst:40
 msgid ""
@@ -123,3 +124,24 @@ msgid ""
 msgstr ""
 "Diese Option loggt dich überall aus, **einschließlich** der gerade "
 "verwendeten Sitzung."
+
+#: ../../user_guide/security.rst:51
+#, fuzzy
+msgid "Remote Content"
+msgstr "Sitzungen beenden"
+
+#: ../../user_guide/security.rst:53
+msgid ""
+"In Markdown editors (:ref:`app_code`, :ref:`app_slides`, "
+":ref:`app_kanban`), CryptPad blocks images and other remotely hosted "
+"content to prevent potential tracking."
+msgstr ""
+
+#: ../../user_guide/security.rst:57
+msgid ""
+"To include images from the CryptDrive or to upload new ones, use the "
+"|picture-o| **Insert** menu. This menu inserts a ``media-tag`` element "
+"that is more complex than Markdown image syntax but is managed "
+"automatically."
+msgstr ""
+

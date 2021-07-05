@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CryptPad \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-16 09:37+0100\n"
+"POT-Creation-Date: 2021-07-05 14:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -445,30 +445,86 @@ msgstr ""
 msgid "Configure support mailbox"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:274
+#: ../../admin_guide/installation.rst:275
+msgid "Version 4.6.0 and later"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:277
+msgid ""
+"Since version 4.6 the support mailbox can be configured from the "
+":ref:`admin_panel`."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:279
+msgid "With an instance administrator account, visit the ``/admin/#support`` page"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:280
+msgid "Click **Generate Support Keys**"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:281
+msgid "The support mailbox is now active"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:282
+msgid ""
+"Flush the cache to access the mailbox:  **General** tab > **Flush HTTP "
+"Cache**"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:284
+msgid "To allow other administrators to access the support mailbox:"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:286
+msgid "Copy the key at the bottom of the support page"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:287
+msgid "Send it to another administrator account"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:288
+msgid ""
+"They can use the **Add private key** field on the support page to gain "
+"access to the support mailbox"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:291
+msgid ""
+"If the support mailbox is configured through the admin panel, any "
+"configuration using the old method detailed below is ignored."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:295
+msgid "Versions older than 4.6.0"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:297
 msgid ""
 "To enable the encrypted support ticket system, use the ``generate-admin-"
 "key.js`` script:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:276
+#: ../../admin_guide/installation.rst:299
 msgid "``node ./scripts/generate-admin-keys.js``"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:277
+#: ../../admin_guide/installation.rst:300
 msgid ""
 "Add the **public key** into the ``supportMailboxPublicKey`` field of the "
 "configuration file ``cryptpad/config/config.js``"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:278
+#: ../../admin_guide/installation.rst:301
 msgid ""
 "Copy the **private key** in the support section of the control panel "
 "(after setting up an administrator account). This private key is the same"
 " for all administrator accounts that want to access support."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:281
+#: ../../admin_guide/installation.rst:304
 msgid ""
 "Once the steps above are complete, many day-to-day administration tasks "
 "such as support and monitoring can be done in the `administration panel "
