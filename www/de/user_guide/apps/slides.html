@@ -33,7 +33,7 @@
   <link rel="stylesheet" href="../../_static/css/cp-overrides.css" type="text/css" />
     <link rel="index" title="Stichwortverzeichnis" href="../../genindex.html" />
     <link rel="search" title="Suche" href="../../search.html" />
-    <link rel="next" title="Form" href="form.html" />
+    <link rel="next" title="Formular" href="form.html" />
     <link rel="prev" title="Code / Markdown" href="code.html" /> 
 
   
@@ -138,6 +138,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../security.html">Sicherheit</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../security.html#passwords-for-documents-and-folders">Passwörter für Dokumente und Ordner</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../security.html#remote-disconnect">Sitzungen beenden</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#remote-content">Remote Content</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../drive.html">Drive</a><ul>
@@ -213,9 +214,9 @@
 <li class="toctree-l3"><a class="reference internal" href="richtext.html">Rich Text</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#toolbar">Werkzeugleiste</a></li>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#view-settings">Einstellungen anzeigen</a></li>
-<li class="toctree-l4"><a class="reference internal" href="richtext.html#editing">Editing</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="richtext.html#headings">Headings</a></li>
-<li class="toctree-l5"><a class="reference internal" href="richtext.html#paragraphs">Paragraphs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="richtext.html#editing">Bearbeiten</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="richtext.html#headings">Überschriften</a></li>
+<li class="toctree-l5"><a class="reference internal" href="richtext.html#paragraphs">Absätze</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#import-export">Import/Export</a></li>
@@ -249,12 +250,12 @@
 <li class="toctree-l4"><a class="reference internal" href="#lightbox">Lightbox</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="form.html">Form</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="form.html#roles">Roles</a></li>
-<li class="toctree-l4"><a class="reference internal" href="form.html#editing-a-form">Editing a form</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="form.html#question-types">Question types</a></li>
-<li class="toctree-l5"><a class="reference internal" href="form.html#form-settings">Form Settings</a></li>
-<li class="toctree-l5"><a class="reference internal" href="form.html#advanced-use-cases">Advanced use-cases</a></li>
+<li class="toctree-l3"><a class="reference internal" href="form.html">Formular</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="form.html#roles">Rollen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="form.html#editing-a-form">Ein Formular bearbeiten</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="form.html#question-types">Fragetypen</a></li>
+<li class="toctree-l5"><a class="reference internal" href="form.html#form-settings">Einstellungen des Formulars</a></li>
+<li class="toctree-l5"><a class="reference internal" href="form.html#advanced-use-cases">Fortgeschrittene Anwendungsfälle</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="form.html#import-export">Import/Export</a></li>
@@ -608,8 +609,10 @@ https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdo
 </div>
 <div class="section" id="images">
 <h2>Bilder<a class="headerlink" href="#images" title="Link zu dieser Überschrift">¶</a></h2>
-<p>Es wird dringenden empfohlen, <strong>keine</strong> externen Bilder in Dokumente einzufügen. Die Markdown-Syntax <code class="docutils literal notranslate"><span class="pre">![description](https://site.com/image.jpg)</span></code> wird unterstützt, birgt aber Sicherheitsrisiken. In Bildern kann bösartiger Code versteckt sein und zu Datenlecks führen.</p>
-<p>Daher wird <code class="docutils literal notranslate"><span class="pre">media-tag</span></code> von CryptPad verwendet, um Bilder aus dem CryptDrive einzufügen. Die Syntax ist komplexer, wird aber automatisch über das Menü <em class="fa fa-picture-o"></em> <strong>Einfügen</strong> erzeugt.</p>
+<p>Markdown syntax to include remote images such as <code class="docutils literal notranslate"><span class="pre">![description](https://site.com/image.jpg)</span></code> is blocked by CryptPad for security reasons.</p>
+<p><span class="badge-user">Logged in users</span></p>
+<p>To insert images from the CryptDrive or upload new ones, use the <em class="fa fa-picture-o"></em> <strong>Insert</strong> menu in the toolbar.</p>
+<p>See <a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">Remote Content</span></a> for more details.</p>
 </div>
 <div class="section" id="lightbox">
 <h2>Lightbox<a class="headerlink" href="#lightbox" title="Link zu dieser Überschrift">¶</a></h2>
@@ -630,7 +633,7 @@ https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdo
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="form.html" class="btn btn-neutral float-right" title="Form" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="form.html" class="btn btn-neutral float-right" title="Formular" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="code.html" class="btn btn-neutral" title="Code / Markdown" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>

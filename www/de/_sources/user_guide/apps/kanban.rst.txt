@@ -1,3 +1,5 @@
+.. _app_kanban:
+
 Kanban
 ======
 
@@ -73,6 +75,7 @@ In the card editor:
 -  Edit the card body using
    `Markdown <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet>`__:
    Italics, bold, links, lists, todo-lists, etc. are supported.
+-  Insert images with the |picture-o| menu in the markdown toolbar (Markdown syntax for remote images is blocked, see :ref:`remote_content`).
 -  Pick a card color.
 -  Add or remove tags to the card.
 -  Delete the card.

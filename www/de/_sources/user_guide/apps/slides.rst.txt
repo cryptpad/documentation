@@ -73,14 +73,13 @@ Import/Export
 Images
 ------
 
-It is strongly advised **not** to insert external images in documents.
-The Markdown syntax ``![description](https://site.com/image.jpg)`` is
-supported but presents security risks. Malicious code can be embedded in
-images and result in data leakage.
+Markdown syntax to include remote images such as ``![description](https://site.com/image.jpg)`` is blocked by CryptPad for security reasons.
 
-For this reason, CryptPad makes use of ``media-tag`` to insert images
-from the CryptDrive. This syntax is more complex but it is managed
-automatically by the |picture-o| **Insert** menu.
+:badge_user:`Logged in users`
+
+To insert images from the CryptDrive or upload new ones, use the |picture-o| **Insert** menu in the toolbar.
+
+See :ref:`remote_content` for more details.
 
 Lightbox
 --------

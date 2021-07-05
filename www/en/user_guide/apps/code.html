@@ -138,6 +138,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../security.html">Security</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../security.html#passwords-for-documents-and-folders">Passwords for documents and folders</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../security.html#remote-disconnect">Remote Disconnect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#remote-content">Remote Content</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../drive.html">Drive</a><ul>
@@ -634,14 +635,11 @@ available:</p>
 <p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/VJtytDV8tsmlGx0GlR02azrp51A8cl8ivifXf6GQ9RA/"><em class="cptools cptools-code"></em> <strong>Markdown Guide: Extensions</strong></a></p>
 </div>
 <div class="section" id="images">
-<h2>Images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h2>
-<p>It is strongly advised <strong>not</strong> to insert external images in documents.
-The Markdown syntax <code class="docutils literal notranslate"><span class="pre">![description](https://site.com/image.jpg)</span></code> is
-supported but presents security risks. Malicious code can be hidden in
-images and result in data leakage.</p>
-<p>For this reason, CryptPad makes use of <code class="docutils literal notranslate"><span class="pre">media-tag</span></code> to insert images
-from the CryptDrive. This syntax is more complex but it is managed
-automatically by the <em class="fa fa-picture-o"></em> <strong>Insert</strong> menu.</p>
+<span id="app-code-images"></span><h2>Images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h2>
+<p>Markdown syntax to include remote images such as <code class="docutils literal notranslate"><span class="pre">![description](https://site.com/image.jpg)</span></code> is blocked by CryptPad for security reasons.</p>
+<p><span class="badge-user">Logged in users</span></p>
+<p>To insert images from the CryptDrive or upload new ones, use the <em class="fa fa-picture-o"></em> <strong>Insert</strong> menu in the toolbar.</p>
+<p>See <a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">Remote Content</span></a> for more details.</p>
 </div>
 <div class="section" id="lightbox">
 <h2>Lightbox<a class="headerlink" href="#lightbox" title="Permalink to this headline">¶</a></h2>
