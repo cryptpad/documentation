@@ -49,6 +49,23 @@ To add a question, use the |plus| **Add** menu after the last question, or the |
 
 To delete a question use the |trash-o| **Delete** button on the question to remove.
 
+Utilities
+~~~~~~~~~~
+
+|cptools form-paragraph| Description
++++++++++++++++++++++++++++++++++++++
+
+Add text to the form using Markdown syntax.
+
+:badge_user:`Logged in users`
+
+To add an image from the CryptDrive or upload a new one, use the |picture-o| icon in the toolbar.
+
+|cptools form-page-break| Page Break
++++++++++++++++++++++++++++++++++++++
+
+Split the form into pages. Only displayed to participants.
+
 Question types
 ~~~~~~~~~~~~~~~
 
@@ -191,5 +208,12 @@ If anonymous answers are allowed on the form, participants are able to answer an
 Import/Export
 -------------
 
-Exporting the results for analysis outside of CryptPad is not yet available. This is planned for a future release.
+:badge_new:`New in version 4.8`
+
+To export responses as a CSV file use the **Export to CSV** button on the responses page.
+
+.. note::
+   2021-07-06 Update: This functionality is under active development and not fully implemented yet. Namely not all question types are well exported.
+
+   Improvements on this are planned for a future release.
 
