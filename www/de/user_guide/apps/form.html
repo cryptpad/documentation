@@ -138,7 +138,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../security.html">Sicherheit</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../security.html#passwords-for-documents-and-folders">Passwörter für Dokumente und Ordner</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../security.html#remote-disconnect">Sitzungen beenden</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../security.html#remote-content">Remote Content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#remote-content">Externer Inhalt</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../drive.html">Drive</a><ul>
@@ -253,6 +253,7 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Formular</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#roles">Rollen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#editing-a-form">Ein Formular bearbeiten</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#utilities">Utilities</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#question-types">Fragetypen</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#form-settings">Einstellungen des Formulars</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#advanced-use-cases">Fortgeschrittene Anwendungsfälle</a></li>
@@ -603,6 +604,19 @@
 <h2>Ein Formular bearbeiten<a class="headerlink" href="#editing-a-form" title="Link zu dieser Überschrift">¶</a></h2>
 <p>Um eine Frage hinzuzufügen, verwende das Menü <em class="fa fa-plus"></em> <strong>Hinzufügen</strong> unterhalb der letzten Frage oder <em class="fa fa-plus"></em> zwischen den Fragen.</p>
 <p>Um eine Frage zu löschen, verwende die Schaltfläche <em class="fa fa-trash-o"></em> <strong>Löschen</strong> bei der zu löschenden Frage.</p>
+<div class="section" id="utilities">
+<h3>Utilities<a class="headerlink" href="#utilities" title="Link zu dieser Überschrift">¶</a></h3>
+<div class="section" id="cptools-form-paragraph-description">
+<h4><em class="cptools cptools-form-paragraph"></em> Description<a class="headerlink" href="#cptools-form-paragraph-description" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Add text to the form using Markdown syntax.</p>
+<p><span class="badge-user">Logged in users</span></p>
+<p>To add an image from the CryptDrive or upload a new one, use the <em class="fa fa-picture-o"></em> icon in the toolbar.</p>
+</div>
+<div class="section" id="cptools-form-page-break-page-break">
+<h4><em class="cptools cptools-form-page-break"></em> Page Break<a class="headerlink" href="#cptools-form-page-break-page-break" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Split the form into pages. Only displayed to participants.</p>
+</div>
+</div>
 <div class="section" id="question-types">
 <h3>Fragetypen<a class="headerlink" href="#question-types" title="Link zu dieser Überschrift">¶</a></h3>
 <div class="section" id="cptools-form-text-text">
@@ -747,7 +761,13 @@
 </div>
 <div class="section" id="import-export">
 <h2>Import/Export<a class="headerlink" href="#import-export" title="Link zu dieser Überschrift">¶</a></h2>
-<p>Der Export der Ergebnisse zur Analyse außerhalb von CryptPad ist noch nicht verfügbar. Dies ist für eine zukünftige Version geplant.</p>
+<p><span class="badge-new">New in version 4.8</span></p>
+<p>To export responses as a CSV file use the <strong>Export to CSV</strong> button on the responses page.</p>
+<div class="admonition note">
+<p class="admonition-title">Bemerkung</p>
+<p>2021-07-06 Update: This functionality is under active development and not fully implemented yet. Not all question types are well exported.</p>
+<p>Improvements on this are planned for a future release.</p>
+</div>
 </div>
 </div>
 
