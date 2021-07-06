@@ -213,7 +213,7 @@ Import/Export
 To export responses as a CSV file use the **Export to CSV** button on the responses page.
 
 .. note::
-   2021-07-06 Update: This functionality is under active development and not fully implemented yet. Namely not all question types are well exported.
+   2021-07-06 Update: This functionality is under active development and not fully implemented yet. Not all question types are well exported.
 
    Improvements on this are planned for a future release.
 
