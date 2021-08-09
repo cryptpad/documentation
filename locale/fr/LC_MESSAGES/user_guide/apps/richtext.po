@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-25 17:16+0000\n"
-"PO-Revision-Date: 2021-02-26 16:38+0000\n"
+"POT-Creation-Date: 2021-06-18 12:32+0100\n"
+"PO-Revision-Date: 2021-06-18 15:50+0000\n"
 "Last-Translator: David Benqué <david.benque@xwiki.com>\n"
 "Language-Team: French <http://weblate.cryptpad.fr/projects/user-guide/"
 "application-richtext/fr/>\n"
@@ -60,8 +60,8 @@ msgid ""
 "The buttons at the top of the editor control the display of text editor "
 "elements."
 msgstr ""
-"Les boutons en haut de l'éditeur contrôlent l'affichage des informations de "
-"l'éditeur de texte."
+"Les boutons en haut de l'éditeur contrôlent l'affichage des informations "
+"de l'éditeur de texte."
 
 #: ../../user_guide/apps/richtext.rst:26
 msgid "|list-ul| : Show/hide the document outline."
@@ -72,19 +72,20 @@ msgid ""
 "|comment| : Show/hide the comments (a red icon when closed indicates that"
 " there are comments)."
 msgstr ""
-"|comment| : Afficher/masquer les commentaires (une icône rouge indique qu'il "
-"y a des commentaires)."
+"|comment| : Afficher/masquer les commentaires (une icône rouge indique "
+"qu'il y a des commentaires)."
 
 #: ../../user_guide/apps/richtext.rst:30
 msgid "|expand| : Use the full width of the window for the text editor."
 msgstr ""
-"|expand| : Utiliser toute la largeur de la fenêtre pour l'éditeur de texte."
+"|expand| : Utiliser toute la largeur de la fenêtre pour l'éditeur de "
+"texte."
 
 #: ../../user_guide/apps/richtext.rst:32
 msgid "|compress| : Use reduced width \"page mode\" for the text editor."
 msgstr ""
-"|compress| : Utiliser le \"mode page\" à largeur réduite pour l'éditeur de "
-"texte."
+"|compress| : Utiliser le \"mode page\" à largeur réduite pour l'éditeur "
+"de texte."
 
 #: ../../user_guide/apps/richtext.rst:34
 msgid ""
@@ -92,60 +93,108 @@ msgid ""
 " are visible when recipients visit a shared link to the document, use the"
 " **Document Settings** dialog:"
 msgstr ""
-"Pour définir des valeurs par défaut pour ces paramètres, par exemple pour "
-"contrôler quelles sections sont visibles lorsque les destinataires visitent "
-"un lien partagé vers le document, utilisez le menu **Paramètres du document**"
-" :"
+"Pour définir des valeurs par défaut pour ces paramètres, par exemple pour"
+" contrôler quelles sections sont visibles lorsque les destinataires "
+"visitent un lien partagé vers le document, utilisez le menu **Paramètres "
+"du document** :"
 
 #: ../../user_guide/apps/richtext.rst:36
 msgid "|file-o| **File** > |cog| **Document Settings**."
 msgstr "|file-o| **Fichier** > |cog| **Paramètres du document**."
 
 #: ../../user_guide/apps/richtext.rst:39
+msgid "Editing"
+msgstr "Écriture"
+
+#: ../../user_guide/apps/richtext.rst:42
+msgid "Headings"
+msgstr "Titres"
+
+#: ../../user_guide/apps/richtext.rst:44
+msgid ""
+"In order for headings to appear in the outline, they must be formatted as"
+" such. To format a heading, select the text or place the cursor on the "
+"heading line, then either:"
+msgstr ""
+"Pour que les titres apparaissent dans le sommaire, ils doivent être formatés "
+"comme tels. Pour mettre en forme un titre, sélectionnez le texte ou placez "
+"le curseur sur la ligne du titre, puis soit :"
+
+#: ../../user_guide/apps/richtext.rst:46
+msgid ""
+"Use the formatting menu in the toolbar (displays \"normal\" by default) "
+"to select the desired heading level."
+msgstr ""
+"Utiliser le menu de formatage de la barre d'outils (affiche \"normal\" par "
+"défaut) pour sélectionner le niveau d'en-tête souhaité."
+
+#: ../../user_guide/apps/richtext.rst:48
+msgid ""
+"Use the keyboard shortcut: ``Ctrl`` + ``Alt`` + the number of the desired"
+" heading level."
+msgstr ""
+"Utiliser le raccourci clavier : ``Ctrl`` + ``Alt`` + le numéro du niveau de "
+"titre souhaité."
+
+#: ../../user_guide/apps/richtext.rst:51
+msgid "Paragraphs"
+msgstr "Paragraphes"
+
+#: ../../user_guide/apps/richtext.rst:53
+msgid ""
+"By default the ``Enter`` key creates a new paragraph, adding a line of "
+"spacing with the previous paragraph. To add a line-break without adding a"
+" new paragraph, use ``Shift`` + ``Enter``."
+msgstr ""
+"Par défaut, la touche ``Entrée`` crée un nouveau paragraphe, ajoutant une "
+"ligne de séparation avec le paragraphe précédent. Pour ajouter un saut de "
+"ligne sans ajouter un nouveau paragraphe, utilisez ``Maj`` + ``Entrée``."
+
+#: ../../user_guide/apps/richtext.rst:56
 msgid "Import/Export"
 msgstr "Import/Export"
 
-#: ../../user_guide/apps/richtext.rst:41
+#: ../../user_guide/apps/richtext.rst:58
 msgid "|file-o| **File** > |upload| **Import**"
 msgstr "|file-o| **Fichier** > |upload| **Importer**"
 
-#: ../../user_guide/apps/richtext.rst:42
+#: ../../user_guide/apps/richtext.rst:59
 msgid "Supported formats: ``.html``."
 msgstr "Formats supportés : ``.html``."
 
-#: ../../user_guide/apps/richtext.rst:44
+#: ../../user_guide/apps/richtext.rst:61
 msgid "|file-o| **File** > |download| **Export**"
 msgstr "|file-o| **Fichier** > |download| **Exporter**"
 
-#: ../../user_guide/apps/richtext.rst:45
+#: ../../user_guide/apps/richtext.rst:62
 msgid "Supported formats: ``.html``, ``.doc``."
 msgstr "Formats supportés : ``.html``, ``.doc``."
 
-#: ../../user_guide/apps/richtext.rst:47
+#: ../../user_guide/apps/richtext.rst:64
 msgid "To print or export a PDF:"
 msgstr "Pour imprimer ou exporter au format PDF :"
 
-#: ../../user_guide/apps/richtext.rst:49
+#: ../../user_guide/apps/richtext.rst:66
 msgid "|file-o| **File** > |print| **Print**."
 msgstr "|file-o| **Fichier** > |print| **Imprimer**."
 
-#: ../../user_guide/apps/richtext.rst:50
+#: ../../user_guide/apps/richtext.rst:67
 msgid "Select your printer or “print to file”."
 msgstr "Sélectionner une imprimante ou un ficher PDF comme destination."
 
-#: ../../user_guide/apps/richtext.rst:53
+#: ../../user_guide/apps/richtext.rst:70
 msgid "Comments"
 msgstr "Commentaires"
 
-#: ../../user_guide/apps/richtext.rst:55
+#: ../../user_guide/apps/richtext.rst:72
 msgid "To comment on a part of the text:"
 msgstr "Pour commenter une partie du texte :"
 
-#: ../../user_guide/apps/richtext.rst:57
+#: ../../user_guide/apps/richtext.rst:74
 msgid "Select the text to comment."
 msgstr "Sélectionner le texte à commenter."
 
-#: ../../user_guide/apps/richtext.rst:58
+#: ../../user_guide/apps/richtext.rst:75
 msgid ""
 "|comment| button, either to the right of the text or in the text editor "
 "toolbar."
@@ -153,27 +202,27 @@ msgstr ""
 "Bouton |comment|, à droite du texte ou dans la barre d'outils de "
 "l'éditeur texte."
 
-#: ../../user_guide/apps/richtext.rst:60
+#: ../../user_guide/apps/richtext.rst:77
 msgid "Write the comment."
 msgstr "Écrire le commentaire."
 
-#: ../../user_guide/apps/richtext.rst:61
+#: ../../user_guide/apps/richtext.rst:78
 msgid "|send-o| **Submit**."
 msgstr "|send-o| **Valider**."
 
-#: ../../user_guide/apps/richtext.rst:63
+#: ../../user_guide/apps/richtext.rst:80
 msgid "Click on a comment to select it, then:"
 msgstr "Cliquer sur un commentaire pour le sélectionner, puis :"
 
-#: ../../user_guide/apps/richtext.rst:65
+#: ../../user_guide/apps/richtext.rst:82
 msgid "|reply| **Reply**: Adds a comment as a response."
 msgstr "|reply| **Répondre** : Ajoute un commentaire en réponse."
 
-#: ../../user_guide/apps/richtext.rst:66
+#: ../../user_guide/apps/richtext.rst:83
 msgid "|check| **Resolve**: Deletes the comment after confirmation."
 msgstr "|check| **Fermer** : Supprime le commentaire après confirmation."
 
-#: ../../user_guide/apps/richtext.rst:68
+#: ../../user_guide/apps/richtext.rst:85
 msgid ""
 "To notify contacts in a comment, mention them with ``@`` and their "
 ":ref:`display name <user_settings_account>`."
@@ -181,15 +230,15 @@ msgstr ""
 "Pour envoyer une notification à un autre utilisateur, vous pouvez les "
 "mentionner avec ``@`` et leur :ref:`nom affiché <user_settings_account>`."
 
-#: ../../user_guide/apps/richtext.rst:71
+#: ../../user_guide/apps/richtext.rst:88
 msgid "You receive notifications when:"
 msgstr "Vous recevrez des notifications dans les cas suivants :"
 
-#: ../../user_guide/apps/richtext.rst:73
+#: ../../user_guide/apps/richtext.rst:90
 msgid "Someone replies to one of your comments."
 msgstr "Quelqu'un répond à l'un de vos commentaires."
 
-#: ../../user_guide/apps/richtext.rst:74
+#: ../../user_guide/apps/richtext.rst:91
 msgid "Someone mentions you in a comment."
 msgstr "Quelqu'un vous mentionne."
 

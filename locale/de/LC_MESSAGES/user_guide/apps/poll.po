@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-23 17:03+0100\n"
-"PO-Revision-Date: 2020-09-01 08:45+0000\n"
+"POT-Creation-Date: 2021-06-18 12:32+0100\n"
+"PO-Revision-Date: 2021-06-23 10:16+0000\n"
 "Last-Translator: Jan <janrei.g@googlemail.com>\n"
 "Language-Team: German <http://weblate.cryptpad.fr/projects/user-guide/"
 "application-poll/de/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.1\n"
-"Generated-By: Babel 2.8.0\n"
+"Generated-By: Babel 2.9.0\n"
 
 #: ../../user_guide/apps/poll.rst:2
 msgid "Poll"
@@ -30,13 +30,13 @@ msgid ""
 "groups of people who trust each other, for example to decide on a meeting"
 " date/time."
 msgstr ""
-"Die Umfrage-Anwendung ist dafür gedacht, kleinen Gruppen die Entscheidung "
-"etwa auf ein Datum oder eine Uhrzeit für ein Treffen zu erleichtern, deren "
-"Mitglieder sich gegenseitig vertrauen."
+"Die Umfrage-Anwendung ist dafür gedacht, kleinen Gruppen die Entscheidung"
+" etwa auf ein Datum oder eine Uhrzeit für ein Treffen zu erleichtern, "
+"deren Mitglieder sich gegenseitig vertrauen."
 
 #: ../../user_guide/apps/poll.rst:8
 msgid ""
-"It is not suited for polling a large number of people, or for situation "
+"It is not suited for polling a large number of people, or for situations "
 "where the security of the votes is paramount. To cast a vote, each user "
 "must have edit rights to the document. This enables each participant to "
 "**modify and/or delete answers from other participants**."
@@ -47,23 +47,46 @@ msgstr ""
 "Dokument haben. Dies ermöglicht es jedem Teilnehmer, **Antworten von anderen "
 "Teilnehmern zu ändern und/oder zu löschen**."
 
-#: ../../user_guide/apps/poll.rst:13
-msgid "A complete re-write of this application is planned for late 2020."
-msgstr "Eine Überarbeitung dieser Anwendung ist für Ende 2020 geplant."
+#: ../../user_guide/apps/poll.rst:14
+msgid ""
+"The Poll application is deprecated as of version 4.7 (16th June 2021). "
+"Existing polls can still be opened and edited, but the creation of new "
+"polls is discouraged (although still possible via |file-o| **File** > "
+"|files-o| **Make a copy**)."
+msgstr ""
+"Diese Anwendung ist seit Version 4.7 (16. Juni 2021) veraltet. Bestehende "
+"Umfragen können weiterhin geöffnet und bearbeitet werden. Allerdings wird "
+"die Erstellung neuer Umfragen nicht empfohlen (es ist weiterhin möglich via "
+"|file-o| **Datei** > |files-o| **Kopie erstellen**)."
 
-#: ../../user_guide/apps/poll.rst:19
+#: ../../user_guide/apps/poll.rst:16
+msgid ""
+"Note that the same functionality is available in the new :ref:`app_form` "
+"application, where the edit rights limitations above have been addressed."
+msgstr ""
+"Beachte, dass die gleiche Funktionalität in der neuen Anwendung "
+":ref:`app_form` verfügbar ist. Dort bestehen die zuvor beschriebenen "
+"Einschränkungen bezüglich Bearbeitungsrechten nicht mehr."
+
+#: ../../user_guide/apps/poll.rst:18
+msgid "Future development will be focused on the :ref:`app_form` application."
+msgstr ""
+"Die zukünftige Entwicklung wird sich auf die Anwendung :ref:`app_form` "
+"konzentrieren."
+
+#: ../../user_guide/apps/poll.rst:24
 msgid "Toolbar"
 msgstr "Werkzeugleiste"
 
-#: ../../user_guide/apps/poll.rst:21
+#: ../../user_guide/apps/poll.rst:26
 msgid ""
 "|pencil| **Edit**: Switch to edit mode to change the poll description and"
 " response options."
 msgstr ""
-"|pencil| **Bearbeiten**: Wechselt zum Bearbeitungsmodus, um Änderungen der "
-"Umfragebeschreibung und Antwortoptionen zu ermöglichen."
+"|pencil| **Bearbeiten**: Wechselt zum Bearbeitungsmodus, um Änderungen "
+"der Umfragebeschreibung und Antwortoptionen zu ermöglichen."
 
-#: ../../user_guide/apps/poll.rst:24
+#: ../../user_guide/apps/poll.rst:29
 msgid ""
 "|check| **Publish**: Save the changes to the poll description and "
 "response options."
@@ -71,101 +94,101 @@ msgstr ""
 "|check| **Veröffentlichen**: Speichert die Umfragebeschreibung und "
 "Antwortoptionen."
 
-#: ../../user_guide/apps/poll.rst:27
+#: ../../user_guide/apps/poll.rst:32
 msgid "In edit mode:"
 msgstr "Im Bearbeitungsmodus:"
 
-#: ../../user_guide/apps/poll.rst:29
+#: ../../user_guide/apps/poll.rst:34
 msgid "|wrench| **Tools**: Show/hide the text editor toolbar."
 msgstr ""
-"|wrench| **Werkzeuge**: Blendet die Werkzeugleiste für den Texteditor ein/"
-"aus."
+"|wrench| **Werkzeuge**: Blendet die Werkzeugleiste für den Texteditor "
+"ein/aus."
 
-#: ../../user_guide/apps/poll.rst:31
+#: ../../user_guide/apps/poll.rst:36
 msgid ""
 "|picture-o| **Insert**: Add an image to the poll description. The image "
 "can be chosen in the CrpytDrive or uploaded. :badge_user:`Logged in "
 "users`"
 msgstr ""
-"|picture-o| **Einfügen**: Fügt ein Bild zur Umfragebeschreibung hinzu. Das "
-"Bild kann aus dem CryptDrive ausgewählt oder hochgeladen werden. "
+"|picture-o| **Einfügen**: Fügt ein Bild zur Umfragebeschreibung hinzu. "
+"Das Bild kann aus dem CryptDrive ausgewählt oder hochgeladen werden. "
 ":badge_user:`Eingeloggte Benutzer`"
 
-#: ../../user_guide/apps/poll.rst:35
+#: ../../user_guide/apps/poll.rst:40
 msgid "Edit mode"
 msgstr "Bearbeitungsmodus"
 
-#: ../../user_guide/apps/poll.rst:37
+#: ../../user_guide/apps/poll.rst:42
 msgid ""
 "The poll description is written in `Markdown <https://github.com/adam-p"
 "/markdown-here/wiki/Markdown-Cheatsheet>`__. Use |picture-o| **Insert** "
 "to add images."
 msgstr ""
-"In der Umfragenbeschreibung kann `Markdown <https://github.com/adam-p/"
-"markdown-here/wiki/Markdown-Cheatsheet>`__ verwendet werden. Benutze "
+"In der Umfragenbeschreibung kann `Markdown <https://github.com/adam-p"
+"/markdown-here/wiki/Markdown-Cheatsheet>`__ verwendet werden. Benutze "
 "|picture-o| **Einfügen**, um Bilder hinzuzufügen."
 
-#: ../../user_guide/apps/poll.rst:41
+#: ../../user_guide/apps/poll.rst:46
 msgid "Response options are added to the left of the table. To add an option:"
 msgstr ""
-"Antwortoptionen werden auf der linken Seite der Tabelle hinzugefügt. Um eine "
-"Option hinzuzufügen:"
+"Antwortoptionen werden auf der linken Seite der Tabelle hinzugefügt. Um "
+"eine Option hinzuzufügen:"
 
-#: ../../user_guide/apps/poll.rst:43
+#: ../../user_guide/apps/poll.rst:48
 msgid "Add a title to the “Option” field."
 msgstr "Füge einen Titel zum Feld \"Option\" hinzu."
 
-#: ../../user_guide/apps/poll.rst:44
+#: ../../user_guide/apps/poll.rst:49
 msgid "``Click`` on |plus| or ``Enter``."
 msgstr "``Klicke`` auf |plus| oder ``Enter``."
 
-#: ../../user_guide/apps/poll.rst:46
+#: ../../user_guide/apps/poll.rst:51
 msgid ""
 "To change an option, ``Click`` on the ✐ to the right of the title. To "
 "delete an option, ``Click`` on |times| to the left of the title."
 msgstr ""
-"Um eine Option zu ändern, ``Klicke`` auf ✐ rechts des Titels. Um eine Option "
-"zu löschen, ``Klicke`` auf |times| links des Titels."
+"Um eine Option zu ändern, ``Klicke`` auf ✐ rechts des Titels. Um eine "
+"Option zu löschen, ``Klicke`` auf |times| links des Titels."
 
-#: ../../user_guide/apps/poll.rst:50
+#: ../../user_guide/apps/poll.rst:55
 msgid "Voting"
 msgstr "Abstimmung"
 
-#: ../../user_guide/apps/poll.rst:52
+#: ../../user_guide/apps/poll.rst:57
 msgid "Each vote is logged in a column of the results table. To add a vote:"
 msgstr ""
-"Jede Stimme wird in einer Spalte der Ergebnistabelle protokolliert. Um eine "
-"Stimme hinzuzufügen:"
+"Jede Stimme wird in einer Spalte der Ergebnistabelle protokolliert. Um "
+"eine Stimme hinzuzufügen:"
 
-#: ../../user_guide/apps/poll.rst:54
+#: ../../user_guide/apps/poll.rst:59
 msgid "Add a name to the column title."
 msgstr "Gib einen Namen im Titel der Spalte ein."
 
-#: ../../user_guide/apps/poll.rst:55
+#: ../../user_guide/apps/poll.rst:60
 msgid "``Click`` on the cells of the options to indicate:"
 msgstr "``Klicke`` in eine Zelle, um zwischen den Optionen zu wechseln:"
 
-#: ../../user_guide/apps/poll.rst:57
+#: ../../user_guide/apps/poll.rst:62
 msgid "✔ Yes"
 msgstr "✔ Ja"
 
-#: ../../user_guide/apps/poll.rst:58
+#: ../../user_guide/apps/poll.rst:63
 msgid "~ Maybe"
 msgstr "~ Vielleicht"
 
-#: ../../user_guide/apps/poll.rst:59
+#: ../../user_guide/apps/poll.rst:64
 msgid "✖ No"
 msgstr "✖ Nein"
 
-#: ../../user_guide/apps/poll.rst:61
+#: ../../user_guide/apps/poll.rst:66
 msgid ""
 "``Click`` on **Submit** at the top of the column to save the vote and add"
 " it to the total count."
 msgstr ""
-"``Klicke`` auf **Bestätigen** im Spaltenkopf, um die Stimmen zu speichern "
-"und zur Auswertung hinzuzufügen."
+"``Klicke`` auf **Bestätigen** im Spaltenkopf, um die Stimmen zu speichern"
+" und zur Auswertung hinzuzufügen."
 
-#: ../../user_guide/apps/poll.rst:64
+#: ../../user_guide/apps/poll.rst:69
 msgid ""
 "Use |lock| to unlock an existing column and edit the name and votes. Use "
 "|unlock| to lock the column."
@@ -173,27 +196,29 @@ msgstr ""
 "Verwende |lock|, um eine Spalte zu entsperren und Name und Stimmen zu "
 "ändern. Verwende |unlock|, um die Spalte zu sperren."
 
-#: ../../user_guide/apps/poll.rst:67
+#: ../../user_guide/apps/poll.rst:72
 msgid "To add a comment to the poll:"
 msgstr "Um ein Kommentar zur Umfrage hinzuzufügen:"
 
-#: ../../user_guide/apps/poll.rst:69
+#: ../../user_guide/apps/poll.rst:74
 msgid "Write your comment in the field labelled “Your comment”."
-msgstr ""
-"Schreibe deinen Kommentar in das mit \"Dein Kommentar\" beschriftete Feld."
+msgstr "Schreibe deinen Kommentar in das mit \"Dein Kommentar\" beschriftete Feld."
 
-#: ../../user_guide/apps/poll.rst:70
+#: ../../user_guide/apps/poll.rst:75
 msgid "**Send**"
 msgstr "**Senden**"
 
-#: ../../user_guide/apps/poll.rst:73
+#: ../../user_guide/apps/poll.rst:78
 msgid "Export"
 msgstr "Export"
 
-#: ../../user_guide/apps/poll.rst:75
+#: ../../user_guide/apps/poll.rst:80
 msgid "|file-o| **File** > |download| **Export**"
 msgstr "|file-o| **Datei** > |download| **Exportieren**"
 
-#: ../../user_guide/apps/poll.rst:76
+#: ../../user_guide/apps/poll.rst:81
 msgid "Supported formats: ``.csv``"
 msgstr "Unterstützte Formate: ``.csv``"
+
+#~ msgid "A complete re-write of this application is planned for late 2020."
+#~ msgstr "Eine Überarbeitung dieser Anwendung ist für Ende 2020 geplant."

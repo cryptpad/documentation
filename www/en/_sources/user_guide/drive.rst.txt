@@ -166,7 +166,7 @@ and their associated documents.
 
 To add or remove tags from a document:
 
--  From the CrytpDrive: ``Right click`` on the document > |hashtag| **Tags**.
+-  From the CryptDrive: ``Right click`` on the document > |hashtag| **Tags**.
 -  From a document: |file-o| **File** > |hashtag| **Tags**.
 
 To manage tags for multiple documents:

@@ -6,6 +6,10 @@ Form
 
 :badge_new:`New in version 4.7`
 
+.. image:: /images/app-form-preview.png
+   :class: screenshot
+   :alt: preview of the Form application
+
 .. note::
 
     The Form application is currently in Beta. More features are planned for the near future including:
@@ -18,32 +22,21 @@ Form
 
     * author notifications
 
-.. The following features
-
-.. * import/export
-.. * better visualization for responses
-.. * more options
-..     * different ways of counting ranked ballots
-.. * printing
-.. * author notifications
-
-.. .. warning::
-..     Not suitable for elections.
-
-.. XXX: app screenshot
 
 Roles
 -----
 
 Forms benefit from the same collaboration and privacy features as the other CryptPad applications. They also have slightly different requirements when it comes to usage, for example someone responding to a form should be able to edit their own answers but not other users' answers or the form itself. For this reason the :ref:`share_access_rights` when sharing a form are different from the other applications. Forms have 3 different roles:
 
-- **Authors**: can edit questions and :ref:`form settings <form_settings>`.
-- **Auditors**: can view responses to the form whether or not they are public.
+- **Author**: can edit questions and :ref:`form settings <form_settings>`.
+- **Auditor**: can view responses to the form whether or not they are public.
 - **Participant**: can answer the form and only view responses once they are made public by an author.
 
 To share a form with a specific role, for example to send it to participants, select the role in the |share-alt| **Share** menu before selecting contacts or copying the link.
 
-.. XXX Forms share modal screenshot
+.. image:: /images/app-form-share.png
+   :class: screenshot
+   :alt: the share menu in the form application, showing the three roles: participant, auditor, and author.
 
 .. note::
 
@@ -56,8 +49,27 @@ To add a question, use the |plus| **Add** menu after the last question, or the |
 
 To delete a question use the |trash-o| **Delete** button on the question to remove.
 
+Utilities
+~~~~~~~~~~
+
+|cptools form-paragraph| Description
++++++++++++++++++++++++++++++++++++++
+
+Add text to the form using Markdown syntax.
+
+:badge_user:`Logged in users`
+
+To add an image from the CryptDrive or upload a new one, use the |picture-o| icon in the toolbar.
+
+|cptools form-page-break| Page Break
++++++++++++++++++++++++++++++++++++++
+
+Split the form into pages. Only displayed to participants.
+
 Question types
 ~~~~~~~~~~~~~~~
+
+.. XXX add examples here to demo each type
 
 |cptools form-text| Text
 +++++++++++++++++++++++++
@@ -89,7 +101,7 @@ Response: one choice from the list
 Options:
 
 - |plus| **Add option** button
-- Grab the |ellipsis-v| |ellipsis-v| and drag to re-order options
+- Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order options
 - Delete an option with |times|
 
 |cptools form-grid-radio| Choice Grid
@@ -100,7 +112,7 @@ Response: one option choice per item
 Options:
 
 - |plus| **Add option** and |plus| **Add item** buttons
-- Grab the |ellipsis-v| |ellipsis-v| and drag to re-order items and options
+- Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order items and options
 - Delete an item or option with |times|
 
 |cptools form-list-check| Checkbox
@@ -112,7 +124,7 @@ Options:
 
 - Maximum selectable options
 - |plus| **Add option** button
-- Grab the |ellipsis-v| |ellipsis-v| and drag to re-order options
+- Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order options
 - Delete an option with |times|
 
 |cptools form-grid-check| Checkbox Grid
@@ -124,7 +136,7 @@ Options:
 
 - Maximum selectable options (per item)
 - |plus| **Add option** and |plus| **Add item** buttons
-- Grab the |ellipsis-v| |ellipsis-v| and drag to re-order items and options
+- Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order items and options
 - Delete an item or option with |times|
 
 |cptools form-list-ordered| Ordered List
@@ -135,7 +147,7 @@ Response: order of preference for the listed options
 Options:
 
 - |plus| **Add option** button
-- Grab the |ellipsis-v| |ellipsis-v| and drag to re-order options
+- Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order options
 - Delete an option with |times|
 
 |cptools form-poll| Poll
@@ -148,7 +160,7 @@ Option types:
 - Text
 
    - |plus| **Add option** button
-   - Grab the |ellipsis-v| |ellipsis-v| and drag to re-order options
+   - Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order options
    - Delete an option with |times|
 
 - Day
@@ -196,5 +208,12 @@ If anonymous answers are allowed on the form, participants are able to answer an
 Import/Export
 -------------
 
-Exporting the results for analysis outside of CryptPad is not yet available. This is planned for a future release.
+:badge_new:`New in version 4.8`
+
+To export responses as a CSV file use the **Export to CSV** button on the responses page.
+
+.. note::
+   2021-07-06 Update: This functionality is under active development and not fully implemented yet. Not all question types are well exported.
+
+   Improvements on this are planned for a future release.
 

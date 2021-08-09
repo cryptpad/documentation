@@ -138,6 +138,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../security.html">Sicherheit</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../security.html#passwords-for-documents-and-folders">Passwörter für Dokumente und Ordner</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../security.html#remote-disconnect">Sitzungen beenden</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#remote-content">Externer Inhalt</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../drive.html">Drive</a><ul>
@@ -213,6 +214,11 @@
 <li class="toctree-l3"><a class="reference internal" href="richtext.html">Rich Text</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#toolbar">Werkzeugleiste</a></li>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#view-settings">Einstellungen anzeigen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="richtext.html#editing">Bearbeiten</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="richtext.html#headings">Überschriften</a></li>
+<li class="toctree-l5"><a class="reference internal" href="richtext.html#paragraphs">Absätze</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#import-export">Import/Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#comments">Kommentare</a></li>
 </ul>
@@ -244,12 +250,13 @@
 <li class="toctree-l4"><a class="reference internal" href="slides.html#lightbox">Lightbox</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="form.html">Form</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="form.html#roles">Roles</a></li>
-<li class="toctree-l4"><a class="reference internal" href="form.html#editing-a-form">Editing a form</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="form.html#question-types">Question types</a></li>
-<li class="toctree-l5"><a class="reference internal" href="form.html#form-settings">Form Settings</a></li>
-<li class="toctree-l5"><a class="reference internal" href="form.html#advanced-use-cases">Advanced use-cases</a></li>
+<li class="toctree-l3"><a class="reference internal" href="form.html">Formular</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="form.html#roles">Rollen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="form.html#editing-a-form">Ein Formular bearbeiten</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="form.html#utilities">Utilities</a></li>
+<li class="toctree-l5"><a class="reference internal" href="form.html#question-types">Fragetypen</a></li>
+<li class="toctree-l5"><a class="reference internal" href="form.html#form-settings">Einstellungen des Formulars</a></li>
+<li class="toctree-l5"><a class="reference internal" href="form.html#advanced-use-cases">Fortgeschrittene Anwendungsfälle</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="form.html#import-export">Import/Export</a></li>
@@ -411,7 +418,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#configure-cryptpad">Configure CryptPad</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#diagnostics">Diagnostics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-administrators">Configure administrators</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#version-4-6-0-and-later">Version 4.6.0 and later</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#versions-older-than-4-6-0">Versions older than 4.6.0</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -459,6 +470,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#performance">Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#network">Network</a></li>
 </ul>
 </li>
 </ul>
@@ -559,9 +571,9 @@
 <p>Sie ist nicht für Umfragen mit einer großen Anzahl von Personen oder für Situationen geeignet, in denen die Sicherheit der Abstimmungen wichtig ist. Um abstimmen zu können, muss jeder Benutzer die Bearbeitungsrechte für das Dokument haben. Dies ermöglicht es jedem Teilnehmer, <strong>Antworten von anderen Teilnehmern zu ändern und/oder zu löschen</strong>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warnung</p>
-<p>The Poll application is deprecated as of version 4.7 (16th June 2021). Existing polls can still be opened and edited, but the creation of new polls is discouraged (although still possible via <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-files-o"></em> <strong>Make a copy</strong>).</p>
-<p>Note that the same functionality is available in the new <a class="reference internal" href="form.html#app-form"><span class="std std-ref">Form</span></a> application, where the edit rights limitations above have been addressed.</p>
-<p>Future development will be focused on the <a class="reference internal" href="form.html#app-form"><span class="std std-ref">Form</span></a> application.</p>
+<p>Diese Anwendung ist seit Version 4.7 (16. Juni 2021) veraltet. Bestehende Umfragen können weiterhin geöffnet und bearbeitet werden. Allerdings wird die Erstellung neuer Umfragen nicht empfohlen (es ist weiterhin möglich via <em class="fa fa-file-o"></em> <strong>Datei</strong> &gt; <em class="fa fa-files-o"></em> <strong>Kopie erstellen</strong>).</p>
+<p>Beachte, dass die gleiche Funktionalität in der neuen Anwendung <a class="reference internal" href="form.html#app-form"><span class="std std-ref">Formular</span></a> verfügbar ist. Dort bestehen die zuvor beschriebenen Einschränkungen bezüglich Bearbeitungsrechten nicht mehr.</p>
+<p>Die zukünftige Entwicklung wird sich auf die Anwendung <a class="reference internal" href="form.html#app-form"><span class="std std-ref">Formular</span></a> konzentrieren.</p>
 </div>
 <img alt="../../_images/app-poll-preview.png" class="screenshot" src="../../_images/app-poll-preview.png" />
 <div class="section" id="toolbar">

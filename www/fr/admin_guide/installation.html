@@ -138,6 +138,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../user_guide/security.html">Sécurité</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/security.html#passwords-for-documents-and-folders">Mot de passe des documents et dossiers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/security.html#remote-disconnect">Déconnexion à distance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/security.html#remote-content">Déconnexion à distance</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../user_guide/drive.html">Drive</a><ul>
@@ -213,6 +214,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/richtext.html">Documents texte</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/richtext.html#toolbar">Barre d'outils</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/richtext.html#view-settings">Paramètres d'affichage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/richtext.html#editing">Écriture</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../user_guide/apps/richtext.html#headings">Titres</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../user_guide/apps/richtext.html#paragraphs">Paragraphes</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/richtext.html#import-export">Import/Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/richtext.html#comments">Commentaires</a></li>
 </ul>
@@ -244,12 +250,13 @@
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/slides.html#lightbox">Galerie</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/form.html">Form</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/form.html#roles">Roles</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/form.html#editing-a-form">Editing a form</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../user_guide/apps/form.html#question-types">Question types</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../user_guide/apps/form.html#form-settings">Form Settings</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../user_guide/apps/form.html#advanced-use-cases">Advanced use-cases</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/form.html">Formulaire</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/form.html#roles">Rôles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/form.html#editing-a-form">Modifier un formulaire</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../user_guide/apps/form.html#utilities">Mise en page</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../user_guide/apps/form.html#question-types">Types de questions</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../user_guide/apps/form.html#form-settings">Réglages du formulaire</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../user_guide/apps/form.html#advanced-use-cases">Usages avancés</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/form.html#import-export">Import/Export</a></li>
@@ -411,7 +418,11 @@
 <li class="toctree-l3"><a class="reference internal" href="#configure-cryptpad">Configure CryptPad</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#diagnostics">Diagnostics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#configure-administrators">Configure administrators</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#configure-support-mailbox">Configure support mailbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#configure-support-mailbox">Configure support mailbox</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#version-4-6-0-and-later">Version 4.6.0 and later</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#versions-older-than-4-6-0">Versions older than 4.6.0</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -459,6 +470,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="admin_panel.html#performance">Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="admin_panel.html#network">Network</a></li>
 </ul>
 </li>
 </ul>
@@ -794,6 +806,28 @@ array (uncomment and replace the placeholder):</p></li>
 </div>
 <div class="section" id="configure-support-mailbox">
 <span id="admin-support-mailbox"></span><h3>Configure support mailbox<a class="headerlink" href="#configure-support-mailbox" title="Lien permanent vers ce titre">¶</a></h3>
+<div class="section" id="version-4-6-0-and-later">
+<h4>Version 4.6.0 and later<a class="headerlink" href="#version-4-6-0-and-later" title="Lien permanent vers ce titre">¶</a></h4>
+<p>Since version 4.6 the support mailbox can be configured from the <a class="reference internal" href="admin_panel.html#admin-panel"><span class="std std-ref">Administration panel</span></a>.</p>
+<ol class="arabic simple">
+<li><p>With an instance administrator account, visit the <code class="docutils literal notranslate"><span class="pre">/admin/#support</span></code> page</p></li>
+<li><p>Click <strong>Generate Support Keys</strong></p></li>
+<li><p>The support mailbox is now active</p></li>
+<li><p>Flush the cache to access the mailbox:  <strong>General</strong> tab &gt; <strong>Flush HTTP Cache</strong></p></li>
+</ol>
+<p>To allow other administrators to access the support mailbox:</p>
+<ol class="arabic simple">
+<li><p>Copy the key at the bottom of the support page</p></li>
+<li><p>Send it to another administrator account</p></li>
+<li><p>They can use the <strong>Add private key</strong> field on the support page to gain access to the support mailbox</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the support mailbox is configured through the admin panel, any configuration using the old method detailed below is ignored.</p>
+</div>
+</div>
+<div class="section" id="versions-older-than-4-6-0">
+<h4>Versions older than 4.6.0<a class="headerlink" href="#versions-older-than-4-6-0" title="Lien permanent vers ce titre">¶</a></h4>
 <p>To enable the encrypted support ticket system, use the <code class="docutils literal notranslate"><span class="pre">generate-admin-key.js</span></code> script:</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">node</span> <span class="pre">./scripts/generate-admin-keys.js</span></code></p></li>
@@ -803,6 +837,7 @@ array (uncomment and replace the placeholder):</p></li>
 <p>Once the steps above are complete, many day-to-day administration tasks
 such as support and monitoring can be done in the <a class="reference external" href="admin_panel">administration
 panel</a>.</p>
+</div>
 </div>
 </div>
 </div>

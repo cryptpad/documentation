@@ -34,7 +34,7 @@
     <link rel="index" title="Stichwortverzeichnis" href="../../genindex.html" />
     <link rel="search" title="Suche" href="../../search.html" />
     <link rel="next" title="Whiteboard" href="whiteboard.html" />
-    <link rel="prev" title="Form" href="form.html" /> 
+    <link rel="prev" title="Formular" href="form.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -138,6 +138,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../security.html">Sicherheit</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../security.html#passwords-for-documents-and-folders">Passwörter für Dokumente und Ordner</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../security.html#remote-disconnect">Sitzungen beenden</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#remote-content">Externer Inhalt</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../drive.html">Drive</a><ul>
@@ -213,6 +214,11 @@
 <li class="toctree-l3"><a class="reference internal" href="richtext.html">Rich Text</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#toolbar">Werkzeugleiste</a></li>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#view-settings">Einstellungen anzeigen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="richtext.html#editing">Bearbeiten</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="richtext.html#headings">Überschriften</a></li>
+<li class="toctree-l5"><a class="reference internal" href="richtext.html#paragraphs">Absätze</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#import-export">Import/Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#comments">Kommentare</a></li>
 </ul>
@@ -244,12 +250,13 @@
 <li class="toctree-l4"><a class="reference internal" href="slides.html#lightbox">Lightbox</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="form.html">Form</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="form.html#roles">Roles</a></li>
-<li class="toctree-l4"><a class="reference internal" href="form.html#editing-a-form">Editing a form</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="form.html#question-types">Question types</a></li>
-<li class="toctree-l5"><a class="reference internal" href="form.html#form-settings">Form Settings</a></li>
-<li class="toctree-l5"><a class="reference internal" href="form.html#advanced-use-cases">Advanced use-cases</a></li>
+<li class="toctree-l3"><a class="reference internal" href="form.html">Formular</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="form.html#roles">Rollen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="form.html#editing-a-form">Ein Formular bearbeiten</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="form.html#utilities">Utilities</a></li>
+<li class="toctree-l5"><a class="reference internal" href="form.html#question-types">Fragetypen</a></li>
+<li class="toctree-l5"><a class="reference internal" href="form.html#form-settings">Einstellungen des Formulars</a></li>
+<li class="toctree-l5"><a class="reference internal" href="form.html#advanced-use-cases">Fortgeschrittene Anwendungsfälle</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="form.html#import-export">Import/Export</a></li>
@@ -411,7 +418,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#configure-cryptpad">Configure CryptPad</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#diagnostics">Diagnostics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-administrators">Configure administrators</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#version-4-6-0-and-later">Version 4.6.0 and later</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#versions-older-than-4-6-0">Versions older than 4.6.0</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -459,6 +470,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#performance">Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#network">Network</a></li>
 </ul>
 </li>
 </ul>
@@ -554,7 +566,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="kanban">
-<h1>Kanban<a class="headerlink" href="#kanban" title="Link zu dieser Überschrift">¶</a></h1>
+<span id="app-kanban"></span><h1>Kanban<a class="headerlink" href="#kanban" title="Link zu dieser Überschrift">¶</a></h1>
 <p>Die Kanban-Anwendung in CryptPad basiert auf <a class="reference external" href="https://www.riccardotartaglia.it/jkanban/">JKanban</a>.</p>
 <img alt="../../_images/app-kanban-preview.png" class="screenshot" src="../../_images/app-kanban-preview.png" />
 <div class="section" id="organisation">
@@ -617,6 +629,7 @@
 <ul class="simple">
 <li><p>Ändere den Titel der Karte.</p></li>
 <li><p>Formatiere den Inhalt der Karte mit <a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown</a>: Kursivschreibung, Fettschreibung, Links, Listen, To-Do-Listen etc. werden unterstützt.</p></li>
+<li><p>Füge Bilder mit <em class="fa fa-picture-o"></em> in der Markdown-Werkzeugleiste ein (Markdown-Syntax für externe Bilder wird blockiert, siehe <a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">Externer Inhalt</span></a>).</p></li>
 <li><p>Wähle eine Farbe für die Karte.</p></li>
 <li><p>Füge Tags hinzu oder entferne sie.</p></li>
 <li><p>Lösche die Karte.</p></li>
@@ -661,7 +674,7 @@
         <a href="whiteboard.html" class="btn btn-neutral float-right" title="Whiteboard" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="form.html" class="btn btn-neutral" title="Form" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="form.html" class="btn btn-neutral" title="Formular" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
       
     </div>
   

@@ -138,6 +138,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../security.html">Security</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../security.html#passwords-for-documents-and-folders">Passwords for documents and folders</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../security.html#remote-disconnect">Remote Disconnect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#remote-content">Remote Content</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../drive.html">Drive</a><ul>
@@ -213,6 +214,11 @@
 <li class="toctree-l3"><a class="reference internal" href="richtext.html">Rich Text</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#toolbar">Toolbar</a></li>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#view-settings">View settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="richtext.html#editing">Editing</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="richtext.html#headings">Headings</a></li>
+<li class="toctree-l5"><a class="reference internal" href="richtext.html#paragraphs">Paragraphs</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#import-export">Import/Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#comments">Comments</a></li>
 </ul>
@@ -247,6 +253,7 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Form</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#roles">Roles</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#editing-a-form">Editing a form</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#utilities">Utilities</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#question-types">Question types</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#form-settings">Form Settings</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#advanced-use-cases">Advanced use-cases</a></li>
@@ -411,7 +418,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#configure-cryptpad">Configure CryptPad</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#diagnostics">Diagnostics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-administrators">Configure administrators</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#version-4-6-0-and-later">Version 4.6.0 and later</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#versions-older-than-4-6-0">Versions older than 4.6.0</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -459,6 +470,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#performance">Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#network">Network</a></li>
 </ul>
 </li>
 </ul>
@@ -556,6 +568,7 @@
   <div class="section" id="form">
 <span id="app-form"></span><h1>Form<a class="headerlink" href="#form" title="Permalink to this headline">¶</a></h1>
 <p><span class="badge-new">New in version 4.7</span></p>
+<img alt="preview of the Form application" class="screenshot" src="../../_images/app-form-preview.png" />
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The Form application is currently in Beta. More features are planned for the near future including:</p>
@@ -576,11 +589,12 @@
 <h2>Roles<a class="headerlink" href="#roles" title="Permalink to this headline">¶</a></h2>
 <p>Forms benefit from the same collaboration and privacy features as the other CryptPad applications. They also have slightly different requirements when it comes to usage, for example someone responding to a form should be able to edit their own answers but not other users' answers or the form itself. For this reason the <a class="reference internal" href="../share_and_access.html#share-access-rights"><span class="std std-ref">Access rights</span></a> when sharing a form are different from the other applications. Forms have 3 different roles:</p>
 <ul class="simple">
-<li><p><strong>Authors</strong>: can edit questions and <a class="reference internal" href="#form-settings"><span class="std std-ref">form settings</span></a>.</p></li>
-<li><p><strong>Auditors</strong>: can view responses to the form whether or not they are public.</p></li>
+<li><p><strong>Author</strong>: can edit questions and <a class="reference internal" href="#form-settings"><span class="std std-ref">form settings</span></a>.</p></li>
+<li><p><strong>Auditor</strong>: can view responses to the form whether or not they are public.</p></li>
 <li><p><strong>Participant</strong>: can answer the form and only view responses once they are made public by an author.</p></li>
 </ul>
 <p>To share a form with a specific role, for example to send it to participants, select the role in the <em class="fa fa-share-alt"></em> <strong>Share</strong> menu before selecting contacts or copying the link.</p>
+<img alt="the share menu in the form application, showing the three roles: participant, auditor, and author." class="screenshot" src="../../_images/app-form-share.png" />
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The user list, chat, and alerts about users joining the collaborative session are all disabled when a participant is responding to a form. This is to avoid giving the impression that someone is watching while they answer.</p>
@@ -590,6 +604,19 @@
 <h2>Editing a form<a class="headerlink" href="#editing-a-form" title="Permalink to this headline">¶</a></h2>
 <p>To add a question, use the <em class="fa fa-plus"></em> <strong>Add</strong> menu after the last question, or the <em class="fa fa-plus"></em> between each question.</p>
 <p>To delete a question use the <em class="fa fa-trash-o"></em> <strong>Delete</strong> button on the question to remove.</p>
+<div class="section" id="utilities">
+<h3>Utilities<a class="headerlink" href="#utilities" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="cptools-form-paragraph-description">
+<h4><em class="cptools cptools-form-paragraph"></em> Description<a class="headerlink" href="#cptools-form-paragraph-description" title="Permalink to this headline">¶</a></h4>
+<p>Add text to the form using Markdown syntax.</p>
+<p><span class="badge-user">Logged in users</span></p>
+<p>To add an image from the CryptDrive or upload a new one, use the <em class="fa fa-picture-o"></em> icon in the toolbar.</p>
+</div>
+<div class="section" id="cptools-form-page-break-page-break">
+<h4><em class="cptools cptools-form-page-break"></em> Page Break<a class="headerlink" href="#cptools-form-page-break-page-break" title="Permalink to this headline">¶</a></h4>
+<p>Split the form into pages. Only displayed to participants.</p>
+</div>
+</div>
 <div class="section" id="question-types">
 <h3>Question types<a class="headerlink" href="#question-types" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="cptools-form-text-text">
@@ -618,7 +645,7 @@
 <p>Options:</p>
 <ul class="simple">
 <li><p><em class="fa fa-plus"></em> <strong>Add option</strong> button</p></li>
-<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> and drag to re-order options</p></li>
+<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> handle and drag to re-order options</p></li>
 <li><p>Delete an option with <em class="fa fa-times"></em></p></li>
 </ul>
 </div>
@@ -628,7 +655,7 @@
 <p>Options:</p>
 <ul class="simple">
 <li><p><em class="fa fa-plus"></em> <strong>Add option</strong> and <em class="fa fa-plus"></em> <strong>Add item</strong> buttons</p></li>
-<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> and drag to re-order items and options</p></li>
+<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> handle and drag to re-order items and options</p></li>
 <li><p>Delete an item or option with <em class="fa fa-times"></em></p></li>
 </ul>
 </div>
@@ -639,7 +666,7 @@
 <ul class="simple">
 <li><p>Maximum selectable options</p></li>
 <li><p><em class="fa fa-plus"></em> <strong>Add option</strong> button</p></li>
-<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> and drag to re-order options</p></li>
+<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> handle and drag to re-order options</p></li>
 <li><p>Delete an option with <em class="fa fa-times"></em></p></li>
 </ul>
 </div>
@@ -650,7 +677,7 @@
 <ul class="simple">
 <li><p>Maximum selectable options (per item)</p></li>
 <li><p><em class="fa fa-plus"></em> <strong>Add option</strong> and <em class="fa fa-plus"></em> <strong>Add item</strong> buttons</p></li>
-<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> and drag to re-order items and options</p></li>
+<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> handle and drag to re-order items and options</p></li>
 <li><p>Delete an item or option with <em class="fa fa-times"></em></p></li>
 </ul>
 </div>
@@ -660,7 +687,7 @@
 <p>Options:</p>
 <ul class="simple">
 <li><p><em class="fa fa-plus"></em> <strong>Add option</strong> button</p></li>
-<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> and drag to re-order options</p></li>
+<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> handle and drag to re-order options</p></li>
 <li><p>Delete an option with <em class="fa fa-times"></em></p></li>
 </ul>
 </div>
@@ -673,7 +700,7 @@
 <blockquote>
 <div><ul class="simple">
 <li><p><em class="fa fa-plus"></em> <strong>Add option</strong> button</p></li>
-<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> and drag to re-order options</p></li>
+<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> handle and drag to re-order options</p></li>
 <li><p>Delete an option with <em class="fa fa-times"></em></p></li>
 </ul>
 </div></blockquote>
@@ -734,7 +761,13 @@
 </div>
 <div class="section" id="import-export">
 <h2>Import/Export<a class="headerlink" href="#import-export" title="Permalink to this headline">¶</a></h2>
-<p>Exporting the results for analysis outside of CryptPad is not yet available. This is planned for a future release.</p>
+<p><span class="badge-new">New in version 4.8</span></p>
+<p>To export responses as a CSV file use the <strong>Export to CSV</strong> button on the responses page.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>2021-07-06 Update: This functionality is under active development and not fully implemented yet. Not all question types are well exported.</p>
+<p>Improvements on this are planned for a future release.</p>
+</div>
 </div>
 </div>
 

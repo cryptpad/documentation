@@ -37,10 +37,23 @@ In some cases (loss or theft of a device, forgotten to log out of a
 session on a shared computer, etc.) it can be necessary to close all
 active CryptPad sessions. This can be done in two ways:
 
-* User menu (avatar at the top-right) > |gear| **Settings** > |lock| **Confidentiality** > **Close remote sessions**. 
+* User menu (avatar at the top-right) > |gear| **Settings** > |lock| **Confidentiality** > **Close remote sessions**.
 
 This option logs out all sessions **except** the one from which it is actiaved.
 
-* User menu (avatar at the top-right) > |plug| **Log out everywhere**. 
+* User menu (avatar at the top-right) > |plug| **Log out everywhere**.
 
 This option logs out all sessions **including** the one from which it is activated.
+
+.. _remote_content:
+
+Remote Content
+--------------
+
+In Markdown editors (:ref:`app_code`, :ref:`app_slides`, :ref:`app_kanban`), CryptPad blocks images and other remotely hosted content to prevent potential tracking.
+
+:badge_user:`Logged in users`
+
+To include images from the CryptDrive or to upload new ones, use the |picture-o| **Insert** menu. This menu inserts a ``media-tag`` element that is more complex than Markdown image syntax but is managed automatically.
+
+

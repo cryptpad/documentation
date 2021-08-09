@@ -87,6 +87,11 @@ We are not planning a dedicated mobile application for the following reasons:
 
 To address these problems, the development team is working on making CryptPad a "Progressive Web App". This means that it can be used on mobile through the web browser, behaving like an application while being the same software that runs on desktop browsers. This has the benefit of turning every CryptPad instance into a web app provider, rather than putting the burden of choosing the right instance on the user.
 
+.. XXX explain that storage is not our primary use-case
+
+.. Is Cryptpad suitable for storing large amounts of data?
+.. --------------------------------------------------------
+
 
 Can CryptPad sync documents to my local filesystem?
 ---------------------------------------------------

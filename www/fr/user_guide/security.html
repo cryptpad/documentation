@@ -138,6 +138,7 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Sécurité</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#passwords-for-documents-and-folders">Mot de passe des documents et dossiers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#remote-disconnect">Déconnexion à distance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remote-content">Déconnexion à distance</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="drive.html">Drive</a><ul>
@@ -213,6 +214,11 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/richtext.html">Documents texte</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/richtext.html#toolbar">Barre d'outils</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/richtext.html#view-settings">Paramètres d'affichage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/richtext.html#editing">Écriture</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apps/richtext.html#headings">Titres</a></li>
+<li class="toctree-l5"><a class="reference internal" href="apps/richtext.html#paragraphs">Paragraphes</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="apps/richtext.html#import-export">Import/Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/richtext.html#comments">Commentaires</a></li>
 </ul>
@@ -244,12 +250,13 @@
 <li class="toctree-l4"><a class="reference internal" href="apps/slides.html#lightbox">Galerie</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="apps/form.html">Form</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="apps/form.html#roles">Roles</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/form.html#editing-a-form">Editing a form</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="apps/form.html#question-types">Question types</a></li>
-<li class="toctree-l5"><a class="reference internal" href="apps/form.html#form-settings">Form Settings</a></li>
-<li class="toctree-l5"><a class="reference internal" href="apps/form.html#advanced-use-cases">Advanced use-cases</a></li>
+<li class="toctree-l3"><a class="reference internal" href="apps/form.html">Formulaire</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/form.html#roles">Rôles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/form.html#editing-a-form">Modifier un formulaire</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apps/form.html#utilities">Mise en page</a></li>
+<li class="toctree-l5"><a class="reference internal" href="apps/form.html#question-types">Types de questions</a></li>
+<li class="toctree-l5"><a class="reference internal" href="apps/form.html#form-settings">Réglages du formulaire</a></li>
+<li class="toctree-l5"><a class="reference internal" href="apps/form.html#advanced-use-cases">Usages avancés</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="apps/form.html#import-export">Import/Export</a></li>
@@ -411,7 +418,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#configure-cryptpad">Configure CryptPad</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#diagnostics">Diagnostics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configure-administrators">Configure administrators</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#version-4-6-0-and-later">Version 4.6.0 and later</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#versions-older-than-4-6-0">Versions older than 4.6.0</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -459,6 +470,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#performance">Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#network">Network</a></li>
 </ul>
 </li>
 </ul>
@@ -577,6 +589,12 @@
 <li><p>Menu utilisateur (avatar en haut à droite) &gt; <em class="fa fa-plug"></em> <strong>Se déconnecter partout</strong>.</p></li>
 </ul>
 <p>Cette option déconnecte toutes les sessions à distance <strong>y compris</strong> celle depuis laquelle elle est activée.</p>
+</div>
+<div class="section" id="remote-content">
+<span id="id2"></span><h2>Déconnexion à distance<a class="headerlink" href="#remote-content" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Dans les éditeurs Markdown (<a class="reference internal" href="apps/code.html#app-code"><span class="std std-ref">Code / Markdown</span></a>, <a class="reference internal" href="apps/slides.html#app-slides"><span class="std std-ref">Présentation</span></a>, <a class="reference internal" href="apps/kanban.html#app-kanban"><span class="std std-ref">Kanban</span></a>), CryptPad bloque les images et autres contenus hébergés à distance pour éviter tout risque de traçage.</p>
+<p><span class="badge-user">Utilisateurs enregistrés</span></p>
+<p>Pour insérer des images à partir du CryptDrive ou pour en ajouter de nouvelles, utiliser le menu <em class="fa fa-picture-o"></em> <strong>Insert</strong>. Ce menu insère un élément <code class="docutils literal notranslate"><span class="pre">media-tag</span></code> qui est plus complexe que la syntaxe d'image Markdown mais qui est géré automatiquement.</p>
 </div>
 </div>
 
