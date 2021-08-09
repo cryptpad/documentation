@@ -41,7 +41,8 @@ import sphinx_fontawesome
 extensions = [
     'recommonmark',
     'sphinx_markdown_tables',
-    'sphinx_fontawesome'
+    'sphinx_fontawesome',
+    'sphinx_sitemap'
 ]
 
 source_suffix = {
@@ -110,6 +111,9 @@ html_theme = "theme"
 html_theme_path = ["_themes"]
 using_rtd_theme = True
 smartquotes = False
+
+html_baseurl = 'https://docs.cryptpad.fr/' # for the generated site-map
+html_extra_path = ["robots.txt"]
 
 html_theme_options = {
     'logo_only': False,
