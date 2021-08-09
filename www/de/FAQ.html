@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Häufig gestellte Fragen &mdash; CryptPad 4.7.0 Dokumentation</title>
+  <title>Häufig gestellte Fragen &mdash; CryptPad 4.9.0 Dokumentation</title>
   
 
   
@@ -54,7 +54,7 @@
             <a href="index.html" class="icon icon-home">
               <img src="_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 4.7.0</span>
+              <span class="release">Documentation 4.9.0</span>
             </a>
             
 <div role="search">
@@ -86,6 +86,7 @@
             
               <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Häufig gestellte Fragen</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#i-forgot-my-password">I forgot my password</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#how-to-import-export-my-documents-to-from-another-platform">Wie kann ich meine Dokumente in andere Plattformen oder von anderen Plattformen importieren/exportieren?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#rich-text-document-import-export">Import/Export von Rich-Text-Dokumenten</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#spreadsheets-import-export">Import/Export von Tabellen</a></li>
@@ -253,7 +254,7 @@
 <li class="toctree-l3"><a class="reference internal" href="user_guide/apps/form.html">Formular</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/apps/form.html#roles">Rollen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/apps/form.html#editing-a-form">Ein Formular bearbeiten</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="user_guide/apps/form.html#utilities">Utilities</a></li>
+<li class="toctree-l5"><a class="reference internal" href="user_guide/apps/form.html#utilities">Werkzeuge</a></li>
 <li class="toctree-l5"><a class="reference internal" href="user_guide/apps/form.html#question-types">Fragetypen</a></li>
 <li class="toctree-l5"><a class="reference internal" href="user_guide/apps/form.html#form-settings">Einstellungen des Formulars</a></li>
 <li class="toctree-l5"><a class="reference internal" href="user_guide/apps/form.html#advanced-use-cases">Fortgeschrittene Anwendungsfälle</a></li>
@@ -563,6 +564,17 @@
             
   <div class="section" id="frequently-asked-questions">
 <h1>Häufig gestellte Fragen<a class="headerlink" href="#frequently-asked-questions" title="Link zu dieser Überschrift">¶</a></h1>
+<div class="section" id="i-forgot-my-password">
+<h2>I forgot my password<a class="headerlink" href="#i-forgot-my-password" title="Link zu dieser Überschrift">¶</a></h2>
+<p>Administrators of a CryptPad instance cannot recover or reset user passwords. This also ensures that they cannot access any user data (e.g. the content of documents).</p>
+<p>If you are still logged in to an account for which you have forgotten the password, you can transfer all of the documents to a new account with the following steps:</p>
+<ol class="arabic simple">
+<li><p>While logged in to the account with the lost password, navigate to: <strong>User Menu</strong> (avatar at the top right) &gt; <em class="fa fa-gear"></em> <strong>Settings</strong> &gt; <em class="fa fa-hdd-o"></em> <strong>CryptDrive</strong></p></li>
+<li><p>Click the <strong>Backup</strong> button to download a file containing the keys to all documents. (note: this is different to <strong>Download my Cryptdrive</strong> that saves the content of all individual documents)</p></li>
+<li><p>In another browser, register a new account with a known password</p></li>
+<li><p>While logged in to the new account: <strong>User Menu</strong> (avatar at the top right) &gt; <em class="fa fa-gear"></em> <strong>Settings</strong> &gt; <em class="fa fa-hdd-o"></em> <strong>CryptDrive</strong> and click the <strong>Restore</strong> button.</p></li>
+</ol>
+</div>
 <div class="section" id="how-to-import-export-my-documents-to-from-another-platform">
 <h2>Wie kann ich meine Dokumente in andere Plattformen oder von anderen Plattformen importieren/exportieren?<a class="headerlink" href="#how-to-import-export-my-documents-to-from-another-platform" title="Link zu dieser Überschrift">¶</a></h2>
 <p>Die Kompatibilität von CryptPad mit einer Vielzahl von Dokumentenformaten ist eine ständige Herausforderung für das Entwicklungsteam. Leider hat die Technologie zur Konvertierung von Dokumenten im Browser noch ihre Grenzen, vor allem in Bezug auf Open-Source-Lösungen und den Datenschutz. Während die Arbeit in diesem Bereich fortgesetzt wird, ermöglichen die unten aufgeführten Methoden den Import und Export von/zu anderer weit verbreiteter Software.</p>
@@ -702,7 +714,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'4.7.0',
+            VERSION:'4.9.0',
             LANGUAGE:'de',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

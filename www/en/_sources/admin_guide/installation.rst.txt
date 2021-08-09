@@ -302,5 +302,5 @@ To enable the encrypted support ticket system, use the ``generate-admin-key.js``
 
 
 Once the steps above are complete, many day-to-day administration tasks
-such as support and monitoring can be done in the `administration
-panel <admin_panel>`__.
+such as support and monitoring can be done in the :ref:`administration
+panel <admin_panel>`.

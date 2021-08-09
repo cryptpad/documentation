@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Foire Aux Questions &mdash; Documentation CryptPad 4.7.0</title>
+  <title>Foire Aux Questions &mdash; Documentation CryptPad 4.9.0</title>
   
 
   
@@ -54,7 +54,7 @@
             <a href="index.html" class="icon icon-home">
               <img src="_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 4.7.0</span>
+              <span class="release">Documentation 4.9.0</span>
             </a>
             
 <div role="search">
@@ -86,6 +86,7 @@
             
               <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Foire Aux Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#i-forgot-my-password">J'ai oublié mon mot de passe</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#how-to-import-export-my-documents-to-from-another-platform">Comment importer/exporter mes documents vers/depuis un autre logiciel ?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#rich-text-document-import-export">Import/export de documents texte</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#spreadsheets-import-export">Import/export de feuilles de calcul</a></li>
@@ -563,6 +564,17 @@
             
   <div class="section" id="frequently-asked-questions">
 <h1>Foire Aux Questions<a class="headerlink" href="#frequently-asked-questions" title="Lien permanent vers ce titre">¶</a></h1>
+<div class="section" id="i-forgot-my-password">
+<h2>J'ai oublié mon mot de passe<a class="headerlink" href="#i-forgot-my-password" title="Lien permanent vers ce titre">¶</a></h2>
+<p>Les administrateurs d'une instance CryptPad n'ont pas la possibilité de restaurer ou de réinitialiser les mots de passe des utilisateurs. Cela garantit également qu'ils ne peuvent pas accéder à leurs données (par exemple, le contenu des documents).</p>
+<p>Si vous êtes toujours connecté à un compte dont vous avez oublié le mot de passe, vous pouvez transférer tous les documents vers un nouveau compte en suivant les étapes suivantes :</p>
+<ol class="arabic simple">
+<li><p>En étant connecté au compte avec le mot de passe perdu, naviguez vers : <strong>Menu utilisateur</strong> (avatar en haut à droite) &gt; <em class="fa fa-gear"></em> <strong>Préférences</strong> &gt; <em class="fa fa-hdd-o"></em> <strong>CryptDrive</strong></p></li>
+<li><p>Cliquez sur le bouton <strong>Sauvegarder</strong> pour télécharger un fichier contenant les clés de tous les documents. (note : ceci est différent de <strong>Télécharger mon Cryptdrive</strong> qui sauvegarde le contenu de tous les documents individuels)</p></li>
+<li><p>Dans un autre navigateur, créez un nouveau compte avec un mot de passe connu</p></li>
+<li><p>En étant connecté au nouveau compte : <strong>Menu utilisateur</strong> (avatar en haut à droite) &gt; <em class="fa fa-gear"></em> <strong>Préférences</strong> &gt; <em class="fa fa-hdd-o"></em> <strong>CryptDrive</strong> et cliquez sur le bouton <strong>Restaurer</strong>.</p></li>
+</ol>
+</div>
 <div class="section" id="how-to-import-export-my-documents-to-from-another-platform">
 <h2>Comment importer/exporter mes documents vers/depuis un autre logiciel ?<a class="headerlink" href="#how-to-import-export-my-documents-to-from-another-platform" title="Lien permanent vers ce titre">¶</a></h2>
 <p>Rendre CryptPad compatible avec une large gamme de formats de documents est un enjeu de taille pour l'équipe de développement. Malheureusement, la technologie qui permet de convertir les documents dans le navigateur a encore des limites, surtout en ce qui concerne le respect de la vie privée. Pendant que le travail dans ce domaine se poursuit, les méthodes ci-dessous permettent d'importer et d'exporter depuis/vers d'autres logiciels largement utilisés.</p>
@@ -702,7 +714,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'4.7.0',
+            VERSION:'4.9.0',
             LANGUAGE:'fr',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

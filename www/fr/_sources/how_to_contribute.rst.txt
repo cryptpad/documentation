@@ -41,7 +41,7 @@ Translate CryptPad
 
 The CryptPad team translates the software in English and French, with many more languages provided by the community. Translating CryptPad—and/or keeping translations up to date as the platform develops—is a much needed effort to make it available to as many people as possible.
 
-To translate CryptPad itself please see the `Translation guide <https://github.com/xwiki-labs/cryptpad/blob/master/customize.dist/translations/README.md>`__.
+To translate CryptPad itself please see the `Translation guide <https://github.com/xwiki-labs/cryptpad/blob/main/customize.dist/translations/README.md>`__.
 
 To translate this documentation please visit the project on `Weblate <https://weblate.cryptpad.fr/projects/user-guide/>`__. To start translating a new language, please `get in touch with the development team <https://cryptpad.fr/contact.html>`__.
 
