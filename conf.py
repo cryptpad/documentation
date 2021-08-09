@@ -113,7 +113,7 @@ using_rtd_theme = True
 smartquotes = False
 
 html_baseurl = 'https://docs.cryptpad.fr/' # for the generated site-map
-html_extra_path = ["robots.txt"]
+#html_extra_path = ["robots.txt"]
 
 html_theme_options = {
     'logo_only': False,
