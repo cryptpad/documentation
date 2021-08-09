@@ -13,4 +13,5 @@ cat LANG | while read ligne ; do
     mkdir www/$ligne
     cp -r _build/html/* www/$ligne/
 done
-
+cp sitemap-index.xml www/
+cp robots.txt www/

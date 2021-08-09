@@ -6,6 +6,19 @@ Frequently Asked Questions
 .. - Check in a different browser
 .. - Deactivate extensions, for example in Firefox go to Help > Restart with addons disabled
 
+I forgot my password
+---------------------
+
+Administrators of a CryptPad instance cannot recover or reset user passwords. This also ensures that they cannot access any user data (e.g. the content of documents).
+
+If you are still logged in to an account for which you have forgotten the password, you can transfer all of the documents to a new account with the following steps:
+
+1. While logged in to the account with the lost password, navigate to: **User Menu** (avatar at the top right) > |gear| **Settings** > |hdd-o| **CryptDrive**
+2. Click the **Backup** button to download a file containing the keys to all documents. (note: this is different to **Download my Cryptdrive** that saves the content of all individual documents)
+3. In another browser, register a new account with a known password
+4. While logged in to the new account: **User Menu** (avatar at the top right) > |gear| **Settings** > |hdd-o| **CryptDrive** and click the **Restore** button.
+
+
 How to import/export my documents to/from another platform?
 -----------------------------------------------------------
 
