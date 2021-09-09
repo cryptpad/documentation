@@ -4,7 +4,6 @@
 Form
 =====
 
-:badge_new:`New in version 4.7`
 
 .. image:: /images/app-form-preview.png
    :class: screenshot
@@ -65,6 +64,15 @@ To add an image from the CryptDrive or upload a new one, use the |picture-o| ico
 +++++++++++++++++++++++++++++++++++++
 
 Split the form into pages. Only displayed to participants.
+
+|cptools form-conditional| Conditional Section
++++++++++++++++++++++++++++++++++++++++++++++++
+
+:badge_new:`New in version 4.11`
+
+|cptools form-list-radio| **Choice** and |cptools form-list-check| **Checkbox** questions can be used to display or hide a section of questions.
+
+
 
 Question types
 ~~~~~~~~~~~~~~~
