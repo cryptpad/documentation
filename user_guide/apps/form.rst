@@ -4,23 +4,10 @@
 Form
 =====
 
-:badge_new:`New in version 4.7`
 
 .. image:: /images/app-form-preview.png
    :class: screenshot
    :alt: preview of the Form application
-
-.. note::
-
-    The Form application is currently in Beta. More features are planned for the near future including:
-
-    * import/export
-    * better visualization for responses
-    * more options
-
-        * different ways of counting ranked ballots
-
-    * author notifications
 
 
 Roles
@@ -66,6 +53,21 @@ To add an image from the CryptDrive or upload a new one, use the |picture-o| ico
 
 Split the form into pages. Only displayed to participants.
 
+|cptools form-conditional| Conditional Section
++++++++++++++++++++++++++++++++++++++++++++++++
+
+:badge_new:`New in version 4.11`
+
+
+|cptools form-list-radio| **Choice** and |cptools form-list-check| **Checkbox** questions can be used to display or hide a section of questions.
+
+1. In the form editor, use the |plus| **Add** buttons between questions, or the list at the bottom of the form, to add a |cptools form-conditional| **Conditional Section**.
+2. Ensure that there is at least one :ref:`form_Q_choice` or :ref:`form_Q_checkbox` before the section (a hint will be displayed if not). Only questions placed *before* the section will be available to use in the conditions.
+3. Add some content (description text, questions) to the section using the |plus| **Add** button or by dragging questions into the section area.
+4. Set some conditions using the selection menus. AND conditions must all be true together, only of the OR conditions needs to be true.
+5. In the participant view, the section will only be displayed if the conditions are true.
+
+
 Question types
 ~~~~~~~~~~~~~~~
 
@@ -93,6 +95,8 @@ Options:
 
 - Maximum characters: limit (defaults to 1000)
 
+.. _form_Q_choice:
+
 |cptools form-list-radio| Choice
 +++++++++++++++++++++++++++++++++
 
@@ -114,6 +118,8 @@ Options:
 - |plus| **Add option** and |plus| **Add item** buttons
 - Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order items and options
 - Delete an item or option with |times|
+
+.. _form_Q_checkbox:
 
 |cptools form-list-check| Checkbox
 ++++++++++++++++++++++++++++++++++++
@@ -177,21 +183,58 @@ Option types:
 Form Settings
 ~~~~~~~~~~~~~~
 
-- Closing date: date after which the form will be closed to new responses
+Use the 3 buttons at the top for easy access to:
+
+- |bar-chart| **Responses** (count): toggles the response page
+- |eye| **Preview form**: Opens the participant link
+- |link| **Copy link**: Copies the participant link
+
+.. note::
+   To share an **author** link to the form (with edit rights), use the :ref:`share` menu in the toolbar.
+
+
+Closing date
++++++++++++++
+
+Date after which the form will be closed to new responses
 
    - Use the **Set closing date** button to select a date from the calendar
    - If a closing date is set, use **Remove closing date** to remove it.
 
-- Anonymous answers (blocked by default)
+Anonymize responses
+++++++++++++++++++++
 
-   - Blocked: only users who are logged in to their CryptPad account can respond to the form.
-   - Allowed: unregistered users can respond, logged in users can choose to respond anonymously.
+All responses are anonymized regardless of whether they are logged in to a CryptPad account. If un-checked, participants can still opt to answer anonymously if guest access is allowed (see below).
 
-- Publish responses (private by default): allow anyone who can view the form to view responses.
+Guest Access
+++++++++++++
+
+ - Blocked: only users who are logged in to their CryptPad account can respond to the form.
+ - Allowed: unregistered users can respond, logged in users can choose to respond anonymously.
+
+Editing after submission
++++++++++++++++++++++++++
+
+- Allowed: participants can modify their responses after submitting them.
+- Blocked: participants can only respond once.
+
+.. note::
+   In the case where editing after submission is allowed at first, used by some participants, and *then* blocked by the form author, only the first submitted responses for all participants are counted. If the setting is later re-enabled, then all responses and modifications are counted.
+
+Publish Responses
+++++++++++++++++++
+
+Allows participants who submit the form to view responses. Once enabled, this setting publishes all past and future responses.
 
 .. warning::
 
     Once responses are made public they cannot be made private again.
+
+Color theme
+++++++++++++
+
+Choose the background and highlight color for the form.
+
 
 Advanced use-cases
 ~~~~~~~~~~~~~~~~~~~
@@ -206,9 +249,9 @@ To access the form, participants need to be logged in to an account that is on t
 If anonymous answers are allowed on the form, participants are able to answer anonymously while the access list ensures they are coming from a specific group of users.
 
 Import/Export
--------------
 
-:badge_new:`New in version 4.8`
+
+
 
 To export responses as a CSV file use the **Export to CSV** button on the responses page.
 

@@ -53,8 +53,6 @@ On another user’s profile page:
 Calendar
 --------
 
-:badge_new:`New in version 4.5`
-
 .. figure:: /images/calendar.png
    :alt: screenshot of the calendar
    :class: screenshot
