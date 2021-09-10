@@ -255,14 +255,10 @@ To access the form, participants need to be logged in to an account that is on t
 If anonymous answers are allowed on the form, participants are able to answer anonymously while the access list ensures they are coming from a specific group of users.
 
 Import/Export
+-------------
+
+To export responses as a CSV file use the |download| **Export to CSV** button on the |bar-chart| **Responses** page.
 
 
 
-
-To export responses as a CSV file use the **Export to CSV** button on the responses page.
-
-.. note::
-   2021-07-06 Update: This functionality is under active development and not fully implemented yet. Not all question types are well exported.
-
-   Improvements on this are planned for a future release.
 
