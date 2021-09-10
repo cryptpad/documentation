@@ -143,8 +143,6 @@ An overview of the total time spent executing various server-side commands
 Network
 --------
 
-:badge_new:`New in version 4.7`
-
 **Validate instance configuration**: CryptPad includes a page which automatically diagnoses common configuration issues and suggests how to correct them if necessary. To visit the page use the **Run Diagnostics** button or visit ``https://your.instance/checkup/``.
 
 The rest of this section includes options about how you and your instance communicate, or not, with the CryptPad development team. This includes:

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Formular &mdash; CryptPad 4.9.0 Dokumentation</title>
+  <title>Formular &mdash; CryptPad 4.11.0 Dokumentation</title>
   
 
   
@@ -54,7 +54,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 4.9.0</span>
+              <span class="release">Documentation 4.11.0</span>
             </a>
             
 <div role="search">
@@ -86,7 +86,7 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Häufig gestellte Fragen</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-forgot-my-password">I forgot my password</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-forgot-my-password">Ich habe mein Passwort vergessen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Wie kann ich meine Dokumente in andere Plattformen oder von anderen Plattformen importieren/exportieren?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#rich-text-document-import-export">Import/Export von Rich-Text-Dokumenten</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#spreadsheets-import-export">Import/Export von Tabellen</a></li>
@@ -111,7 +111,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../instances.html">CryptPad-Instanzen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../user_account.html">Benutzer-Account</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../user_account.html#account-types">Account-Typen</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../user_account.html#non-registered-user">Nicht-registrierte Benutzer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#guest-user">Guest user</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#logged-in-user">Eingeloggte Benutzer</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#premium-user">Premium-Benutzer</a></li>
 </ul>
@@ -260,7 +260,6 @@
 <li class="toctree-l5"><a class="reference internal" href="#advanced-use-cases">Fortgeschrittene Anwendungsfälle</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="#import-export">Import/Export</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="kanban.html">Kanban</a><ul>
@@ -568,24 +567,7 @@
             
   <div class="section" id="form">
 <span id="app-form"></span><h1>Formular<a class="headerlink" href="#form" title="Link zu dieser Überschrift">¶</a></h1>
-<p><span class="badge-new">Neu in Version 4.7</span></p>
 <img alt="preview of the Form application" class="screenshot" src="../../_images/app-form-preview.png" />
-<div class="admonition note">
-<p class="admonition-title">Bemerkung</p>
-<p>Diese Anwendung ist derzeit im Beta-Stadium. Weitere Funktionen sind für die nahe Zukunft geplant, einschließlich:</p>
-<ul>
-<li><p>Import/Export</p></li>
-<li><p>Bessere Darstellung von Antworten</p></li>
-<li><p>Mehr Einstellungsmöglichkeiten</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Verschiedene Auswertungsmöglichkeiten für gewichtete Stimmen</p></li>
-</ul>
-</div></blockquote>
-</li>
-<li><p>Benachrichtigungen des Autors</p></li>
-</ul>
-</div>
 <div class="section" id="roles">
 <h2>Rollen<a class="headerlink" href="#roles" title="Link zu dieser Überschrift">¶</a></h2>
 <p>Formulare profitieren von denselben Funktionen bezüglich Zusammenarbeit und Privatsphäre wie die anderen Anwendungen von CryptPad. Sie haben allerdings etwas andere Anforderungen bei der Nutzung, beispielsweise sollte jemand beim Beantworten eines Formulars nur seine eigenen Antworten bearbeiten können, aber nicht die Antworten anderer Benutzer oder das Formular an sich. Deswegen unterscheiden sich die <a class="reference internal" href="../share_and_access.html#share-access-rights"><span class="std std-ref">Zugriffsrechte</span></a> beim Teilen eines Formulars. Formulare haben drei verschiedene Rollen:</p>
@@ -617,6 +599,18 @@
 <h4><em class="cptools cptools-form-page-break"></em> Seitenumbruch<a class="headerlink" href="#cptools-form-page-break-page-break" title="Link zu dieser Überschrift">¶</a></h4>
 <p>Teilt das Formular auf mehrere Seiten auf. Dies wird nur Teilnehmern angezeigt.</p>
 </div>
+<div class="section" id="cptools-form-conditional-conditional-section">
+<h4><em class="cptools cptools-form-conditional"></em> Conditional Section<a class="headerlink" href="#cptools-form-conditional-conditional-section" title="Link zu dieser Überschrift">¶</a></h4>
+<p><span class="badge-new">New in version 4.11</span></p>
+<p><em class="cptools cptools-form-list-radio"></em> <strong>Choice</strong> and <em class="cptools cptools-form-list-check"></em> <strong>Checkbox</strong> questions can be used to display or hide a section of questions.</p>
+<ol class="arabic simple">
+<li><p>In the form editor, use the <em class="fa fa-plus"></em> <strong>Add</strong> buttons between questions, or the list at the bottom of the form, to add a <em class="cptools cptools-form-conditional"></em> <strong>Conditional Section</strong>.</p></li>
+<li><p>Ensure that there is at least one <a class="reference internal" href="#form-q-choice"><span class="std std-ref"> Einfachauswahl</span></a> or <a class="reference internal" href="#form-q-checkbox"><span class="std std-ref"> Mehrfachauswahl</span></a> before the section (a hint will be displayed if not). Only questions placed <em>before</em> the section will be available to use in the conditions.</p></li>
+<li><p>Add some content (description text, questions) to the section using the <em class="fa fa-plus"></em> <strong>Add</strong> button or by dragging questions into the section area.</p></li>
+<li><p>Set some conditions using the selection menus. AND conditions must all be true together, only of the OR conditions needs to be true.</p></li>
+<li><p>In the participant view, the section will only be displayed if the conditions are true.</p></li>
+</ol>
+</div>
 </div>
 <div class="section" id="question-types">
 <h3>Fragetypen<a class="headerlink" href="#question-types" title="Link zu dieser Überschrift">¶</a></h3>
@@ -641,7 +635,7 @@
 </ul>
 </div>
 <div class="section" id="cptools-form-list-radio-choice">
-<h4><em class="cptools cptools-form-list-radio"></em> Einfachauswahl<a class="headerlink" href="#cptools-form-list-radio-choice" title="Link zu dieser Überschrift">¶</a></h4>
+<span id="form-q-choice"></span><h4><em class="cptools cptools-form-list-radio"></em> Einfachauswahl<a class="headerlink" href="#cptools-form-list-radio-choice" title="Link zu dieser Überschrift">¶</a></h4>
 <p>Antwort: eine Auswahl aus einer Liste</p>
 <p>Optionen:</p>
 <ul class="simple">
@@ -661,7 +655,7 @@
 </ul>
 </div>
 <div class="section" id="cptools-form-list-check-checkbox">
-<h4><em class="cptools cptools-form-list-check"></em> Mehrfachauswahl<a class="headerlink" href="#cptools-form-list-check-checkbox" title="Link zu dieser Überschrift">¶</a></h4>
+<span id="form-q-checkbox"></span><h4><em class="cptools cptools-form-list-check"></em> Mehrfachauswahl<a class="headerlink" href="#cptools-form-list-check-checkbox" title="Link zu dieser Überschrift">¶</a></h4>
 <p>Antwort: mehre Optionen von einer Liste</p>
 <p>Optionen:</p>
 <ul class="simple">
@@ -726,28 +720,65 @@
 </div>
 <div class="section" id="form-settings">
 <span id="id1"></span><h3>Einstellungen des Formulars<a class="headerlink" href="#form-settings" title="Link zu dieser Überschrift">¶</a></h3>
-<ul>
-<li><p>Enddatum: Datum, an dem das Formular für neue Antworten geschlossen wird</p>
+<p>Use the 3 buttons at the top for easy access to:</p>
+<ul class="simple">
+<li><p><em class="fa fa-bar-chart"></em> <strong>Responses</strong> (count): toggles the response page</p></li>
+<li><p><em class="fa fa-eye"></em> <strong>Preview form</strong>: Opens the participant link</p></li>
+<li><p><em class="fa fa-link"></em> <strong>Copy link</strong>: Copies the participant link</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Bemerkung</p>
+<p>To share an <strong>author</strong> link to the form (with edit rights), use the <a class="reference internal" href="../share_and_access.html#share"><span class="std std-ref">Teilen</span></a> menu in the toolbar.</p>
+</div>
+<div class="section" id="closing-date">
+<h4>Closing date<a class="headerlink" href="#closing-date" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Date after which the form will be closed to new responses</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Verwende die Schaltfläche <strong>Enddatum festlegen</strong>, um ein Datum aus dem Kalender auszuwählen</p></li>
 <li><p>Wenn ein Enddatum festgelegt wurde, verwende <strong>Enddatum entfernen</strong>, um es zu entfernen.</p></li>
 </ul>
 </div></blockquote>
-</li>
-<li><p>Anonyme Antworten (standardmäßig blockiert)</p>
+</div>
+<div class="section" id="anonymize-responses">
+<h4>Anonymize responses<a class="headerlink" href="#anonymize-responses" title="Link zu dieser Überschrift">¶</a></h4>
+<p>All responses are anonymized regardless of whether they are logged in to a CryptPad account. If un-checked, participants who are logged-in can still opt to answer anonymously if guest access is allowed (see below).</p>
+</div>
+<div class="section" id="guest-access">
+<h4>Guest Access<a class="headerlink" href="#guest-access" title="Link zu dieser Überschrift">¶</a></h4>
 <blockquote>
 <div><ul class="simple">
 <li><p>Blockiert: nur eingeloggte Benutzer können das Formular beantworten.</p></li>
 <li><p>Erlaubt: nicht registrierte Benutzer können das Formular beantworten und eingeloggte Benutzer können auswählen, anonym zu antworten.</p></li>
 </ul>
 </div></blockquote>
-</li>
-<li><p>Antworten veröffentlichen (standardmäßig privat): erlaubt jedem, der das Formular ansehen kann, die dazugehörigen Antworten anzusehen.</p></li>
+</div>
+<div class="section" id="editing-after-submission">
+<h4>Editing after submission<a class="headerlink" href="#editing-after-submission" title="Link zu dieser Überschrift">¶</a></h4>
+<ul class="simple">
+<li><p>Allowed: participants can modify their responses after submitting them.</p></li>
+<li><p>Blocked: participants can only respond once.</p></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Bemerkung</p>
+<p>In the case where editing after submission is allowed at first, used by some participants, and <em>then</em> blocked by the form author, only the first submitted responses for all participants are counted. If the setting is later re-enabled, then all responses and modifications are counted.</p>
+</div>
+</div>
+<div class="section" id="publish-responses">
+<h4>Publish Responses<a class="headerlink" href="#publish-responses" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Allows participants who submit the form to view responses. Once enabled, this setting publishes all past and future responses.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warnung</p>
 <p>Sobald die Antworten veröffentlicht wurden, können sie nicht wieder auf privat gesetzt werden.</p>
+</div>
+</div>
+<div class="section" id="submit-message">
+<h4>Submit message<a class="headerlink" href="#submit-message" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Add a custom message to be displayed after participants submit the form.</p>
+</div>
+<div class="section" id="color-theme">
+<h4>Color theme<a class="headerlink" href="#color-theme" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Choose the background and highlight color for the form.</p>
 </div>
 </div>
 <div class="section" id="advanced-use-cases">
@@ -757,17 +788,14 @@
 <p>Um eine anonyme Umfrage in einer Gruppe bestimmter Benutzern durchzuführen, kann das Erlauben anonymer Antworten mit einer <a class="reference internal" href="../share_and_access.html#access-list"><span class="std std-ref">Zugriffsliste</span></a> kombiniert werden.</p>
 <p>Um auf das Formular zuzugreifen, müssen sich Teilnehmer in einen Account auf der Zugriffsliste einloggen (entweder direkt oder über ein <a class="reference internal" href="../collaboration.html#teams"><span class="std std-ref">Team</span></a>, dem sie angehören).</p>
 <p>Wenn anonyme Antworten im Formular erlaubt sind, können die Teilnehmer anonym antworten, während die Zugriffsliste sicherstellt, dass sie einer Gruppe bestimmter Benutzer angehören.</p>
-</div>
-</div>
-</div>
-<div class="section" id="import-export">
-<h2>Import/Export<a class="headerlink" href="#import-export" title="Link zu dieser Überschrift">¶</a></h2>
-<p><span class="badge-new">Neu in Version 4.8</span></p>
+<p>Import/Export</p>
 <p>Um die Antworten als CSV-Datei zu exportieren, verwende die Schaltfläche &quot;Als CSV exportieren&quot; auf der Antworten-Seite.</p>
 <div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
 <p>2021-07-06 Update: Diese Funktionalität wird derzeit entwickelt und ist noch nicht vollständig implementiert. Nicht alle Fragetypen werden korrekt exportiert.</p>
 <p>Verbesserungen sind für eine zukünftige Version geplant.</p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -817,7 +845,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'4.9.0',
+            VERSION:'4.11.0',
             LANGUAGE:'de',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

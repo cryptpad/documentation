@@ -15,10 +15,10 @@ Account types
 
 There are three types of accounts on CryptPad:
 
-Non-registered user
-~~~~~~~~~~~~~~~~~~~
+Guest user
+~~~~~~~~~~~
 
-Non-registered users are identified by this avatar (at the top right): |user-secret|
+Non-registered users are identified by an emoji animal or mascot avatar (at the top right).
 
 No personal information is necessary to use CryptPad without
 registering. However, functionality is reduced:
@@ -32,7 +32,7 @@ Logged in user
 ~~~~~~~~~~~~~~
 
 Logged in user are identified by an avatar (at the top right), either
-their profile picture if they have set one or the first letter of their
+their profile picture if they have set one or the first 2 letters of their
 display name.
 
 Registering an account does not require any personal information, only a
