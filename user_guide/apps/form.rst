@@ -233,7 +233,7 @@ Allows participants who submit the form to view responses. Once enabled, this se
 Submit message
 +++++++++++++++
 
-
+Add a custom message to be displayed after participants submit the form.
 
 
 Color theme
