@@ -9,18 +9,6 @@ Form
    :class: screenshot
    :alt: preview of the Form application
 
-.. note::
-
-    The Form application is currently in Beta. More features are planned for the near future including:
-
-    * import/export
-    * better visualization for responses
-    * more options
-
-        * different ways of counting ranked ballots
-
-    * author notifications
-
 
 Roles
 -----
@@ -70,14 +58,13 @@ Split the form into pages. Only displayed to participants.
 
 :badge_new:`New in version 4.11`
 
-.. XXX add screenshot of condition e.g. an "other" question
 
 |cptools form-list-radio| **Choice** and |cptools form-list-check| **Checkbox** questions can be used to display or hide a section of questions.
 
 1. In the form editor, use the |plus| **Add** buttons between questions, or the list at the bottom of the form, to add a |cptools form-conditional| **Conditional Section**.
 2. Ensure that there is at least one :ref:`form_Q_choice` or :ref:`form_Q_checkbox` before the section (a hint will be displayed if not). Only questions placed *before* the section will be available to use in the conditions.
 3. Add some content (description text, questions) to the section using the |plus| **Add** button or by dragging questions into the section area.
-4. Set some conditions using the selection menus (see screenshot above). AND conditions must all be true together, only of the OR conditions needs to be true.
+4. Set some conditions using the selection menus. AND conditions must all be true together, only of the OR conditions needs to be true.
 5. In the participant view, the section will only be displayed if the conditions are true.
 
 
