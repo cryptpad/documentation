@@ -204,7 +204,7 @@ Date after which the form will be closed to new responses
 Anonymize responses
 ++++++++++++++++++++
 
-All responses are anonymized regardless of whether they are logged in to a CryptPad account. If un-checked, participants can still opt to answer anonymously if guest access is allowed (see below).
+All responses are anonymized regardless of whether they are logged in to a CryptPad account. If un-checked, participants who are logged-in can still opt to answer anonymously if guest access is allowed (see below).
 
 Guest Access
 ++++++++++++
@@ -229,6 +229,12 @@ Allows participants who submit the form to view responses. Once enabled, this se
 .. warning::
 
     Once responses are made public they cannot be made private again.
+
+Submit message
++++++++++++++++
+
+
+
 
 Color theme
 ++++++++++++
