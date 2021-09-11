@@ -5,18 +5,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  CryptPad\n"
+"Project-Id-Version: CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-10 16:33+0100\n"
-"PO-Revision-Date: 2021-07-07 12:47+0000\n"
+"PO-Revision-Date: 2021-09-12 03:27+0000\n"
 "Last-Translator: Jan <janrei.g@googlemail.com>\n"
+"Language-Team: German <http://weblate.cryptpad.fr/projects/user-guide/"
+"application-form/de/>\n"
 "Language: de\n"
-"Language-Team: German <http://weblate.cryptpad.fr/projects/user-guide"
-"/application-form/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.1\n"
 "Generated-By: Babel 2.9.0\n"
 
 #: ../../user_guide/apps/form.rst:5
@@ -146,12 +147,11 @@ msgstr ""
 
 #: ../../user_guide/apps/form.rst:57
 msgid "|cptools form-conditional| Conditional Section"
-msgstr ""
+msgstr "|cptools form-conditional| Bedingter Abschnitt"
 
 #: ../../user_guide/apps/form.rst:59
-#, fuzzy
 msgid ":badge_new:`New in version 4.11`"
-msgstr ":badge_new:`Neu in Version 4.8`"
+msgstr ":badge_new:`Neu in Version 4.11`"
 
 #: ../../user_guide/apps/form.rst:62
 msgid ""
@@ -159,6 +159,9 @@ msgid ""
 "**Checkbox** questions can be used to display or hide a section of "
 "questions."
 msgstr ""
+"Die Fragetypen |cptools form-list-radio| **Einfachauswahl** und |cptools "
+"form-list-check| **Mehrfachauswahl** können dazu verwendet werden, einen "
+"Frageabschnitt ein- oder auszublenden."
 
 #: ../../user_guide/apps/form.rst:64
 msgid ""
@@ -166,6 +169,9 @@ msgid ""
 "the list at the bottom of the form, to add a |cptools form-conditional| "
 "**Conditional Section**."
 msgstr ""
+"Nutze im Formular-Editor die Schaltflächen |plus| **Hinzufügen** zwischen "
+"den Fragen oder am Ende des Formulars, um einen |cptools form-conditional| **"
+"Bedingten Abschnitt** hinzufügen."
 
 #: ../../user_guide/apps/form.rst:65
 msgid ""
@@ -174,24 +180,35 @@ msgid ""
 "not). Only questions placed *before* the section will be available to use"
 " in the conditions."
 msgstr ""
+"Stelle sicher, dass zumindest eine :ref:`form_Q_choice` oder "
+":ref:`form_Q_checkbox` vor dem Abschnitt hinzugefügt wurde (andernfalls wird "
+"ein Hinweis angezeigt). Nur *vor* dem Abschnitt platzierte Fragen können in "
+"den Bedingungen verwendet werden."
 
 #: ../../user_guide/apps/form.rst:66
 msgid ""
 "Add some content (description text, questions) to the section using the "
 "|plus| **Add** button or by dragging questions into the section area."
 msgstr ""
+"Füge Inhalte (Beschreibungstext und Fragen) zum Abschnitt hinzu mit der "
+"Schaltfläche |plus| **Hinzufügen** oder durch Ziehen von Fragen in den "
+"Abschnittsbereich."
 
 #: ../../user_guide/apps/form.rst:67
 msgid ""
 "Set some conditions using the selection menus. AND conditions must all be"
 " true together, only of the OR conditions needs to be true."
 msgstr ""
+"Lege Bedingungen über die Auswahlmenüs fest. Es müssen alle UND-Bedingungen "
+"erfüllt sein, während nur eine der ODER-Bedingungen erfüllt sein muss."
 
 #: ../../user_guide/apps/form.rst:68
 msgid ""
 "In the participant view, the section will only be displayed if the "
 "conditions are true."
 msgstr ""
+"In der Teilnehmer-Ansicht wird der Abschnitt nur angezeigt, wenn die "
+"Bedingungen zutreffen."
 
 #: ../../user_guide/apps/form.rst:72
 msgid "Question types"
@@ -371,33 +388,36 @@ msgstr "Einstellungen des Formulars"
 #: ../../user_guide/apps/form.rst:186
 msgid "Use the 3 buttons at the top for easy access to:"
 msgstr ""
+"Verwende die drei Schaltflächen im oberen Bereich für einfachen Zugriff auf:"
 
 #: ../../user_guide/apps/form.rst:188
 msgid "|bar-chart| **Responses** (count): toggles the response page"
 msgstr ""
+"|bar-chart| **Antworten** (Anzahl): Wechselt zur Anworten-Seite und zurück"
 
 #: ../../user_guide/apps/form.rst:189
 msgid "|eye| **Preview form**: Opens the participant link"
-msgstr ""
+msgstr "|eye| **Vorschau**: Öffnet den Link für Teilnehmer"
 
 #: ../../user_guide/apps/form.rst:190
 msgid "|link| **Copy link**: Copies the participant link"
-msgstr ""
+msgstr "|link| **Link kopieren**: Kopiert den Link für Teilnehmer"
 
 #: ../../user_guide/apps/form.rst:193
 msgid ""
 "To share an **author** link to the form (with edit rights), use the "
 ":ref:`share` menu in the toolbar."
 msgstr ""
+"Um einen Link als **Autor** zum Formular zu teilen (mit Berechtigung zum "
+"Bearbeiten), verwende das Menü :ref:`share` in der Werkzeugleiste."
 
 #: ../../user_guide/apps/form.rst:197
 msgid "Closing date"
-msgstr ""
+msgstr "Enddatum"
 
 #: ../../user_guide/apps/form.rst:199
-#, fuzzy
 msgid "Date after which the form will be closed to new responses"
-msgstr "Enddatum: Datum, an dem das Formular für neue Antworten geschlossen wird"
+msgstr "Datum, nach dem das Formular für neue Antworten geschlossen wird"
 
 #: ../../user_guide/apps/form.rst:201
 msgid "Use the **Set closing date** button to select a date from the calendar"
@@ -413,7 +433,7 @@ msgstr ""
 
 #: ../../user_guide/apps/form.rst:205
 msgid "Anonymize responses"
-msgstr ""
+msgstr "Antworten anonymisieren"
 
 #: ../../user_guide/apps/form.rst:207
 msgid ""
@@ -421,10 +441,14 @@ msgid ""
 "a CryptPad account. If un-checked, participants who are logged-in can "
 "still opt to answer anonymously if guest access is allowed (see below)."
 msgstr ""
+"Alle Antworten werden anonymisiert, unabhängig davon, ob die Teilnehmer "
+"eingeloggt sind. Wenn die Option nicht aktiviert ist, können eingeloggte "
+"Teilnehmer trotzdem anonym antworten, wenn der Gastzugriff erlaubt ist ("
+"siehe unten)."
 
 #: ../../user_guide/apps/form.rst:210
 msgid "Guest Access"
-msgstr ""
+msgstr "Gastzugriff"
 
 #: ../../user_guide/apps/form.rst:212
 msgid ""
@@ -442,15 +466,17 @@ msgstr ""
 
 #: ../../user_guide/apps/form.rst:216
 msgid "Editing after submission"
-msgstr ""
+msgstr "Bearbeitung nach Absenden"
 
 #: ../../user_guide/apps/form.rst:218
 msgid "Allowed: participants can modify their responses after submitting them."
 msgstr ""
+"Erlaubt: Teilnehmer können ihre Antworten verändern, nachdem diese "
+"abgesendet wurden."
 
 #: ../../user_guide/apps/form.rst:219
 msgid "Blocked: participants can only respond once."
-msgstr ""
+msgstr "Blockiert: Teilnehmer können nur einmal Antworten absenden."
 
 #: ../../user_guide/apps/form.rst:222
 msgid ""
@@ -459,16 +485,24 @@ msgid ""
 "submitted responses for all participants are counted. If the setting is "
 "later re-enabled, then all responses and modifications are counted."
 msgstr ""
+"Wenn die Bearbeitung nach dem Absenden zunächst erlaubt ist, von einigen "
+"Teilnehmern genutzt wird und *dann* vom Autor des Formulars blockiert wird, "
+"werden nur die ersten abgegebenen Antworten für alle Teilnehmer gezählt. "
+"Wenn die Einstellung später wieder aktiviert wird, werden alle Antworten und "
+"Änderungen gezählt."
 
 #: ../../user_guide/apps/form.rst:225
 msgid "Publish Responses"
-msgstr ""
+msgstr "Antworten veröffentlichen"
 
 #: ../../user_guide/apps/form.rst:227
 msgid ""
 "Allows participants who submit the form to view responses. Once enabled, "
 "this setting publishes all past and future responses."
 msgstr ""
+"Ermöglicht den Teilnehmern, die das Formular absenden, Antworten einzusehen. "
+"Sobald diese Einstellung aktiviert ist, werden alle vergangenen und "
+"zukünftigen Antworten veröffentlicht."
 
 #: ../../user_guide/apps/form.rst:231
 msgid "Once responses are made public they cannot be made private again."
@@ -478,19 +512,21 @@ msgstr ""
 
 #: ../../user_guide/apps/form.rst:234
 msgid "Submit message"
-msgstr ""
+msgstr "Endnachricht"
 
 #: ../../user_guide/apps/form.rst:236
 msgid "Add a custom message to be displayed after participants submit the form."
 msgstr ""
+"Legt eine benutzerdefinierte Nachricht fest, die den Teilnehmern nach "
+"Absenden des Formulars angezeigt wird."
 
 #: ../../user_guide/apps/form.rst:240
 msgid "Color theme"
-msgstr ""
+msgstr "Farbschema"
 
 #: ../../user_guide/apps/form.rst:242
 msgid "Choose the background and highlight color for the form."
-msgstr ""
+msgstr "Lege die Hintergrund- und Akzentfarbe für das Formular fest."
 
 #: ../../user_guide/apps/form.rst:246
 msgid "Advanced use-cases"
@@ -534,13 +570,12 @@ msgid "Import/Export"
 msgstr "Import/Export"
 
 #: ../../user_guide/apps/form.rst:260
-#, fuzzy
 msgid ""
 "To export responses as a CSV file use the |download| **Export to CSV** "
 "button on the |bar-chart| **Responses** page."
 msgstr ""
 "Um die Antworten als CSV-Datei zu exportieren, verwende die Schaltfläche "
-"\"Als CSV exportieren\" auf der Antworten-Seite."
+"|download| ***Als CSV exportieren*** auf der Seite |bar-chart| **Antworten**."
 
 #~ msgid ""
 #~ "The Form application is currently in "
@@ -649,4 +684,3 @@ msgstr ""
 
 #~ msgid "Improvements on this are planned for a future release."
 #~ msgstr "Verbesserungen sind für eine zukünftige Version geplant."
-
