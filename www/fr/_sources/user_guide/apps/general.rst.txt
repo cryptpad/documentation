@@ -37,7 +37,16 @@ created.
 -  **Add a password**: Secure the sharing of the document with a
    :ref:`password <passwords>`. This setting can be changed later in the :ref:`access` menu.
 
--  **Template**: Use a :ref:`template <templates>` as a starting point for the document.
+-  **Template**: Choose to start from a blank document or use a :ref:`template <templates>` as a starting point.
+
+.. note::
+   All templates saved in CryptDrive or in teams that you are part of appear on the creation screen. To save a document as a template:
+
+   - In the open document: |file-o| **File** > |cptools new-template| **Save as template**.
+
+   or
+
+   - In the CryptDrive: Drag the document to the |cptools template| **Templates** folder.
 
 .. _saving:
 

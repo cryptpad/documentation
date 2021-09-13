@@ -111,7 +111,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../instances.html">CryptPad-Instanzen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../user_account.html">Benutzer-Account</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../user_account.html#account-types">Account-Typen</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../user_account.html#guest-user">Guest user</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#guest-user">Gast-Benutzer</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#logged-in-user">Eingeloggte Benutzer</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#premium-user">Premium-Benutzer</a></li>
 </ul>
@@ -601,15 +601,15 @@
 <p>Teilt das Formular auf mehrere Seiten auf. Dies wird nur Teilnehmern angezeigt.</p>
 </div>
 <div class="section" id="cptools-form-conditional-conditional-section">
-<h4><em class="cptools cptools-form-conditional"></em> Conditional Section<a class="headerlink" href="#cptools-form-conditional-conditional-section" title="Link zu dieser Überschrift">¶</a></h4>
-<p><span class="badge-new">New in version 4.11</span></p>
-<p><em class="cptools cptools-form-list-radio"></em> <strong>Choice</strong> and <em class="cptools cptools-form-list-check"></em> <strong>Checkbox</strong> questions can be used to display or hide a section of questions.</p>
+<h4><em class="cptools cptools-form-conditional"></em> Bedingter Abschnitt<a class="headerlink" href="#cptools-form-conditional-conditional-section" title="Link zu dieser Überschrift">¶</a></h4>
+<p><span class="badge-new">Neu in Version 4.11</span></p>
+<p>Die Fragetypen <em class="cptools cptools-form-list-radio"></em> <strong>Einfachauswahl</strong> und <em class="cptools cptools-form-list-check"></em> <strong>Mehrfachauswahl</strong> können dazu verwendet werden, einen Frageabschnitt ein- oder auszublenden.</p>
 <ol class="arabic simple">
-<li><p>In the form editor, use the <em class="fa fa-plus"></em> <strong>Add</strong> buttons between questions, or the list at the bottom of the form, to add a <em class="cptools cptools-form-conditional"></em> <strong>Conditional Section</strong>.</p></li>
-<li><p>Ensure that there is at least one <a class="reference internal" href="#form-q-choice"><span class="std std-ref"> Einfachauswahl</span></a> or <a class="reference internal" href="#form-q-checkbox"><span class="std std-ref"> Mehrfachauswahl</span></a> before the section (a hint will be displayed if not). Only questions placed <em>before</em> the section will be available to use in the conditions.</p></li>
-<li><p>Add some content (description text, questions) to the section using the <em class="fa fa-plus"></em> <strong>Add</strong> button or by dragging questions into the section area.</p></li>
-<li><p>Set some conditions using the selection menus. AND conditions must all be true together, only of the OR conditions needs to be true.</p></li>
-<li><p>In the participant view, the section will only be displayed if the conditions are true.</p></li>
+<li><p>Nutze im Formular-Editor die Schaltflächen <em class="fa fa-plus"></em> <strong>Hinzufügen</strong> zwischen den Fragen oder am Ende des Formulars, um einen <em class="cptools cptools-form-conditional"></em> <strong>Bedingten Abschnitt</strong> hinzufügen.</p></li>
+<li><p>Stelle sicher, dass zumindest eine <a class="reference internal" href="#form-q-choice"><span class="std std-ref"> Einfachauswahl</span></a> oder <a class="reference internal" href="#form-q-checkbox"><span class="std std-ref"> Mehrfachauswahl</span></a> vor dem Abschnitt hinzugefügt wurde (andernfalls wird ein Hinweis angezeigt). Nur <em>vor</em> dem Abschnitt platzierte Fragen können in den Bedingungen verwendet werden.</p></li>
+<li><p>Füge Inhalte (Beschreibungstext und Fragen) zum Abschnitt hinzu mit der Schaltfläche <em class="fa fa-plus"></em> <strong>Hinzufügen</strong> oder durch Ziehen von Fragen in den Abschnittsbereich.</p></li>
+<li><p>Lege Bedingungen über die Auswahlmenüs fest. Es müssen alle UND-Bedingungen erfüllt sein, während nur eine der ODER-Bedingungen erfüllt sein muss.</p></li>
+<li><p>In der Teilnehmer-Ansicht wird der Abschnitt nur angezeigt, wenn die Bedingungen zutreffen.</p></li>
 </ol>
 </div>
 </div>
@@ -721,19 +721,19 @@
 </div>
 <div class="section" id="form-settings">
 <span id="id1"></span><h3>Einstellungen des Formulars<a class="headerlink" href="#form-settings" title="Link zu dieser Überschrift">¶</a></h3>
-<p>Use the 3 buttons at the top for easy access to:</p>
+<p>Verwende die drei Schaltflächen im oberen Bereich für einfachen Zugriff auf:</p>
 <ul class="simple">
-<li><p><em class="fa fa-bar-chart"></em> <strong>Responses</strong> (count): toggles the response page</p></li>
-<li><p><em class="fa fa-eye"></em> <strong>Preview form</strong>: Opens the participant link</p></li>
-<li><p><em class="fa fa-link"></em> <strong>Copy link</strong>: Copies the participant link</p></li>
+<li><p><em class="fa fa-bar-chart"></em> <strong>Antworten</strong> (Anzahl): Wechselt zur Anworten-Seite und zurück</p></li>
+<li><p><em class="fa fa-eye"></em> <strong>Vorschau</strong>: Öffnet den Link für Teilnehmer</p></li>
+<li><p><em class="fa fa-link"></em> <strong>Link kopieren</strong>: Kopiert den Link für Teilnehmer</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
-<p>To share an <strong>author</strong> link to the form (with edit rights), use the <a class="reference internal" href="../share_and_access.html#share"><span class="std std-ref">Teilen</span></a> menu in the toolbar.</p>
+<p>Um einen Link als <strong>Autor</strong> zum Formular zu teilen (mit Berechtigung zum Bearbeiten), verwende das Menü <a class="reference internal" href="../share_and_access.html#share"><span class="std std-ref">Teilen</span></a> in der Werkzeugleiste.</p>
 </div>
 <div class="section" id="closing-date">
-<h4>Closing date<a class="headerlink" href="#closing-date" title="Link zu dieser Überschrift">¶</a></h4>
-<p>Date after which the form will be closed to new responses</p>
+<h4>Enddatum<a class="headerlink" href="#closing-date" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Datum, nach dem das Formular für neue Antworten geschlossen wird</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Verwende die Schaltfläche <strong>Enddatum festlegen</strong>, um ein Datum aus dem Kalender auszuwählen</p></li>
@@ -742,11 +742,11 @@
 </div></blockquote>
 </div>
 <div class="section" id="anonymize-responses">
-<h4>Anonymize responses<a class="headerlink" href="#anonymize-responses" title="Link zu dieser Überschrift">¶</a></h4>
-<p>All responses are anonymized regardless of whether they are logged in to a CryptPad account. If un-checked, participants who are logged-in can still opt to answer anonymously if guest access is allowed (see below).</p>
+<h4>Antworten anonymisieren<a class="headerlink" href="#anonymize-responses" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Alle Antworten werden anonymisiert, unabhängig davon, ob die Teilnehmer eingeloggt sind. Wenn die Option nicht aktiviert ist, können eingeloggte Teilnehmer trotzdem anonym antworten, wenn der Gastzugriff erlaubt ist (siehe unten).</p>
 </div>
 <div class="section" id="guest-access">
-<h4>Guest Access<a class="headerlink" href="#guest-access" title="Link zu dieser Überschrift">¶</a></h4>
+<h4>Gastzugriff<a class="headerlink" href="#guest-access" title="Link zu dieser Überschrift">¶</a></h4>
 <blockquote>
 <div><ul class="simple">
 <li><p>Blockiert: nur eingeloggte Benutzer können das Formular beantworten.</p></li>
@@ -755,31 +755,31 @@
 </div></blockquote>
 </div>
 <div class="section" id="editing-after-submission">
-<h4>Editing after submission<a class="headerlink" href="#editing-after-submission" title="Link zu dieser Überschrift">¶</a></h4>
+<h4>Bearbeitung nach Absenden<a class="headerlink" href="#editing-after-submission" title="Link zu dieser Überschrift">¶</a></h4>
 <ul class="simple">
-<li><p>Allowed: participants can modify their responses after submitting them.</p></li>
-<li><p>Blocked: participants can only respond once.</p></li>
+<li><p>Erlaubt: Teilnehmer können ihre Antworten verändern, nachdem diese abgesendet wurden.</p></li>
+<li><p>Blockiert: Teilnehmer können nur einmal Antworten absenden.</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
-<p>In the case where editing after submission is allowed at first, used by some participants, and <em>then</em> blocked by the form author, only the first submitted responses for all participants are counted. If the setting is later re-enabled, then all responses and modifications are counted.</p>
+<p>Wenn die Bearbeitung nach dem Absenden zunächst erlaubt ist, von einigen Teilnehmern genutzt wird und <em>dann</em> vom Autor des Formulars blockiert wird, werden nur die ersten abgegebenen Antworten für alle Teilnehmer gezählt. Wenn die Einstellung später wieder aktiviert wird, werden alle Antworten und Änderungen gezählt.</p>
 </div>
 </div>
 <div class="section" id="publish-responses">
-<h4>Publish Responses<a class="headerlink" href="#publish-responses" title="Link zu dieser Überschrift">¶</a></h4>
-<p>Allows participants who submit the form to view responses. Once enabled, this setting publishes all past and future responses.</p>
+<h4>Antworten veröffentlichen<a class="headerlink" href="#publish-responses" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Ermöglicht den Teilnehmern, die das Formular absenden, Antworten einzusehen. Sobald diese Einstellung aktiviert ist, werden alle vergangenen und zukünftigen Antworten veröffentlicht.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warnung</p>
 <p>Sobald die Antworten veröffentlicht wurden, können sie nicht wieder auf privat gesetzt werden.</p>
 </div>
 </div>
 <div class="section" id="submit-message">
-<h4>Submit message<a class="headerlink" href="#submit-message" title="Link zu dieser Überschrift">¶</a></h4>
-<p>Add a custom message to be displayed after participants submit the form.</p>
+<h4>Endnachricht<a class="headerlink" href="#submit-message" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Legt eine benutzerdefinierte Nachricht fest, die den Teilnehmern nach Absenden des Formulars angezeigt wird.</p>
 </div>
 <div class="section" id="color-theme">
-<h4>Color theme<a class="headerlink" href="#color-theme" title="Link zu dieser Überschrift">¶</a></h4>
-<p>Choose the background and highlight color for the form.</p>
+<h4>Farbschema<a class="headerlink" href="#color-theme" title="Link zu dieser Überschrift">¶</a></h4>
+<p>Lege die Hintergrund- und Akzentfarbe für das Formular fest.</p>
 </div>
 </div>
 <div class="section" id="advanced-use-cases">
@@ -794,7 +794,7 @@
 </div>
 <div class="section" id="import-export">
 <h2>Import/Export<a class="headerlink" href="#import-export" title="Link zu dieser Überschrift">¶</a></h2>
-<p>To export responses as a CSV file use the <em class="fa fa-download"></em> <strong>Export to CSV</strong> button on the <em class="fa fa-bar-chart"></em> <strong>Responses</strong> page.</p>
+<p>Um die Antworten als CSV-Datei zu exportieren, verwende die Schaltfläche <em class="fa fa-download"></em> <strong>*Als CSV exportieren*</strong> auf der Seite <em class="fa fa-bar-chart"></em> <strong>Antworten</strong>.</p>
 </div>
 </div>
 
