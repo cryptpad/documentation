@@ -104,6 +104,7 @@ html_css_files = [
     'css/open-sans.css',
     'css/cptools.css',
     'css/fontawesome.css',
+    'css/IBM-plex.css',
     'css/cp-overrides.css'
 ]
 
