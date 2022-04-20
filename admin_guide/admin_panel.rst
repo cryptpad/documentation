@@ -50,7 +50,7 @@ Admin contact email
 
 This email address is displayed on the instance contact page
 
-This email may be used by the development team, only if :ref:`_admin_consent_contact` is given, to warn of security vulnerabilities or in other cases for example matters affecting public facing instances listed in the directory
+This email may be used by the development team, only if :ref:`admin_consent_contact` is given, to warn of security vulnerabilities or in other cases for example matters affecting public facing instances listed in the directory
 
 .. _admin_instance_info:
 
@@ -67,7 +67,7 @@ The following fields are used to describe the instance in the :ref:`list of publ
 
 .. note::
 
-This information will be used on the instance front page in a future version of CryptPad
+   This information will be used on the instance front page in a future version of CryptPad
 
 
 User Storage
@@ -203,10 +203,10 @@ If your instance is intended for public use you may opt-in to have it included i
 
 In addition to this setting being enabled, the following criteria are required in order to have an instance listed:
 
-- All :ref:`diagnostic tests <_admin_checkup>` must pass
+- All :ref:`diagnostic tests <admin_checkup>` must pass
 - The version of CryptPad must be up to date within 90 days of the latest release, and at least 4.14
-- Instance information must be provided in the :ref:`General tab <_admin_instance_info>`
-- :ref:`_admin_telemetry_optout` must be enabled
+- Instance information must be provided in the :ref:`General tab <admin_instance_info>`
+- :ref:`admin_telemetry_optout` must be enabled
 
 .. note::
 
@@ -217,7 +217,7 @@ In addition to this setting being enabled, the following criteria are required i
 Consent to contact
 ~~~~~~~~~~~~~~~~~~
 
-**Opt-in** to allow the development team to contact the :ref:`_admin_email` with notifications of serious problems with the software or the instance  configuration. Administrator emails are never shared, sold, or used for marketing purposes.
+**Opt-in** to allow the development team to contact the :ref:`admin_email` with notifications of serious problems with the software or the instance  configuration. Administrator emails are never shared, sold, or used for marketing purposes.
 
 Crowdfunding participation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -230,4 +230,4 @@ Instance purpose
 Indicate the purpose of the instance, this is used to inform the development roadmap
 
 .. note::
-   Instance purpose is only sent to the development team if :ref:`_admin_telemetry_optout` is enabled
+   Instance purpose is only sent to the development team if :ref:`admin_telemetry_optout` is enabled
