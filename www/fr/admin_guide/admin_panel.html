@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Administration panel &mdash; Documentation CryptPad 4.11.0</title>
+  <title>Administration panel &mdash; Documentation CryptPad 4.14.0</title>
   
 
   
@@ -55,7 +55,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 4.11.0</span>
+              <span class="release">Documentation 4.14.0</span>
             </a>
             
 <div role="search">
@@ -451,14 +451,17 @@
 <li class="toctree-l3"><a class="reference internal" href="#general">General</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#flush-http-cache">Flush HTTP Cache</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#update-user-quotas">Update user quotas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#archive-documents">Archive documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#restore-documents">Restore documents</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#close-registration">Close registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#enable-remote-embedding">Enable remote embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#admin-contact-email">Admin contact email</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#instance-information">Instance information</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#user-storage">User Storage</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#storage-limit">Storage Limit</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#apply-a-custom-limit">Apply a custom limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#archive-documents">Archive documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#restore-documents">Restore documents</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#check-account-storage">Check account storage</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#list-of-custom-limits">List of custom limits</a></li>
 </ul>
@@ -472,7 +475,15 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#performance">Performance</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#network">Network</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#network">Network</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#validate-instance-configuration">Validate instance configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#server-telemetry">Server telemetry</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#list-my-instance-in-public-directories">List my instance in public directories</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#consent-to-contact">Consent to contact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#crowdfunding-participation">Crowdfunding participation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#instance-purpose">Instance purpose</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -580,25 +591,38 @@ config files on the server.</p>
 <h2>General<a class="headerlink" href="#general" title="Lien permanent vers ce titre">¶</a></h2>
 <div class="section" id="flush-http-cache">
 <h3>Flush HTTP Cache<a class="headerlink" href="#flush-http-cache" title="Lien permanent vers ce titre">¶</a></h3>
-<p>Force users to download the latest clientside assets (only if your server is in fresh mode)</p>
+<p>Force users to download the latest client-side assets (only if your server is in fresh mode)</p>
 <p>This includes some configuration changes distributed via <code class="docutils literal notranslate"><span class="pre">/api/config</span></code>.</p>
 </div>
 <div class="section" id="update-user-quotas">
 <h3>Update user quotas<a class="headerlink" href="#update-user-quotas" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Forcing an update of user storage limits can be done any time, but is only necessary in the event of an error</p>
 </div>
-<div class="section" id="archive-documents">
-<h3>Archive documents<a class="headerlink" href="#archive-documents" title="Lien permanent vers ce titre">¶</a></h3>
-<p>Make a document unavailable without deleting it permanently. It will be placed in an ‘archive’ directory and deleted after a few days (configurable in the server configuration file).</p>
-<p>Make a document unavailable, for example for moderation in the case where a document with innapropriate/illegal content is reported.</p>
-</div>
-<div class="section" id="restore-documents">
-<h3>Restore documents<a class="headerlink" href="#restore-documents" title="Lien permanent vers ce titre">¶</a></h3>
-<p>Restore a document that had previously been archived</p>
-</div>
 <div class="section" id="close-registration">
 <span id="admin-close-registration"></span><h3>Close registration<a class="headerlink" href="#close-registration" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Do not allow any new users to register</p>
+</div>
+<div class="section" id="enable-remote-embedding">
+<h3>Enable remote embedding<a class="headerlink" href="#enable-remote-embedding" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Allow documents and media from this instance to be embedded on other websites. This will add an &quot;Embed&quot; option to the Share menu. For security reasons applications that use OnlyOffice (Sheets, Document, Presentation) cannot be embedded even if this setting is active</p>
+</div>
+<div class="section" id="admin-contact-email">
+<span id="admin-email"></span><h3>Admin contact email<a class="headerlink" href="#admin-contact-email" title="Lien permanent vers ce titre">¶</a></h3>
+<p>This email address is displayed on the instance contact page</p>
+<p>This email may be used by the development team, only if <a class="reference internal" href="#admin-consent-contact"><span class="std std-ref">Consent to contact</span></a> is given, to warn of security vulnerabilities or in other cases for example matters affecting public facing instances listed in the directory</p>
+</div>
+<div class="section" id="instance-information">
+<span id="admin-instance-info"></span><h3>Instance information<a class="headerlink" href="#instance-information" title="Lien permanent vers ce titre">¶</a></h3>
+<p>The following fields are used to describe the instance in the <a class="reference internal" href="#admin-list-public"><span class="std std-ref">list of public instances</span></a>:</p>
+<ul class="simple">
+<li><p>Instance name (optional, if no name is provided the instance URL is used)</p></li>
+<li><p>Instance description</p></li>
+<li><p>Hosting location (country where the instance's encrypted data is hosted)</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This information will be used on the instance front page in a future version of CryptPad</p>
+</div>
 </div>
 </div>
 <div class="section" id="user-storage">
@@ -615,6 +639,15 @@ config files on the server.</p>
 <div class="section" id="apply-a-custom-limit">
 <h3>Apply a custom limit<a class="headerlink" href="#apply-a-custom-limit" title="Lien permanent vers ce titre">¶</a></h3>
 <p>Set custom limits for users by using their public key. You can update or remove an existing limit.</p>
+</div>
+<div class="section" id="archive-documents">
+<h3>Archive documents<a class="headerlink" href="#archive-documents" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Make a document unavailable without deleting it permanently. It will be placed in an ‘archive’ directory and deleted after a few days (configurable in the server configuration file).</p>
+<p>Make a document unavailable, for example for moderation in the case where a document with inappropriate/illegal content is reported.</p>
+</div>
+<div class="section" id="restore-documents">
+<h3>Restore documents<a class="headerlink" href="#restore-documents" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Restore a document that had previously been archived</p>
 </div>
 <div class="section" id="check-account-storage">
 <h3>Check account storage<a class="headerlink" href="#check-account-storage" title="Lien permanent vers ce titre">¶</a></h3>
@@ -674,15 +707,46 @@ resources</p></li>
 </div>
 <div class="section" id="network">
 <h2>Network<a class="headerlink" href="#network" title="Lien permanent vers ce titre">¶</a></h2>
-<p><strong>Validate instance configuration</strong>: CryptPad includes a page which automatically diagnoses common configuration issues and suggests how to correct them if necessary. To visit the page use the <strong>Run Diagnostics</strong> button or visit <code class="docutils literal notranslate"><span class="pre">https://your.instance/checkup/</span></code>.</p>
-<p>The rest of this section includes options about how you and your instance communicate, or not, with the CryptPad development team. This includes:</p>
+<div class="section" id="validate-instance-configuration">
+<span id="admin-checkup"></span><h3>Validate instance configuration<a class="headerlink" href="#validate-instance-configuration" title="Lien permanent vers ce titre">¶</a></h3>
+<p>CryptPad includes a page which automatically diagnoses common configuration issues and suggests how to correct them if necessary. To visit the page use the <strong>Run Diagnostics</strong> button or visit <code class="docutils literal notranslate"><span class="pre">https://your.instance/checkup/</span></code>.</p>
+<p>The rest of this section includes options about how you and your instance communicate, or not, with the CryptPad development team.</p>
+</div>
+<div class="section" id="server-telemetry">
+<span id="admin-telemetry-optout"></span><h3>Server telemetry<a class="headerlink" href="#server-telemetry" title="Lien permanent vers ce titre">¶</a></h3>
+<p><strong>Opt-out</strong> of daily messages sent from the instance to the development team's server. The purpose of these messages is to count how many third-party instances of CryptPad are in operation and which version of the software they are running. The full content of the messages can be reviewed in CryptPad's server logs</p>
+</div>
+<div class="section" id="list-my-instance-in-public-directories">
+<span id="admin-list-public"></span><h3>List my instance in public directories<a class="headerlink" href="#list-my-instance-in-public-directories" title="Lien permanent vers ce titre">¶</a></h3>
+<p><strong>Opt-in</strong> to have the instance included in the <a class="reference external" href="https://cryptpad.org/instances/">list of public instances</a> on <a class="reference external" href="https://cryptpad.org">the CryptPad project site</a> if it is intended for public use</p>
+<p>In addition to this setting being enabled, the following criteria are required in order to have an instance listed:</p>
 <ul class="simple">
-<li><p>Server telemetry</p></li>
-<li><p>Listing the instance in public directories</p></li>
-<li><p>Consent to be contacted about security updates</p></li>
-<li><p>Promotion of the crowdfunding campaign</p></li>
+<li><p>All <a class="reference internal" href="#admin-checkup"><span class="std std-ref">diagnostic tests</span></a> must pass</p></li>
+<li><p>The version of CryptPad must be up to date within 90 days of the latest release, and at least 4.14</p></li>
+<li><p>Instance information must be provided in the <a class="reference internal" href="#admin-instance-info"><span class="std std-ref">General tab</span></a></p></li>
+<li><p><a class="reference internal" href="#admin-telemetry-optout"><span class="std std-ref">Server telemetry</span></a> must be enabled</p></li>
 </ul>
-<p>For more details visit <code class="docutils literal notranslate"><span class="pre">https://your.instance/admin/#network</span></code></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <a class="reference external" href="https://cryptpad.org/instances/">list of public instances</a> is considered an extension of the CryptPad community. As such, the development team reserves the right to remove instances from the list if their administrators or the groups they represent are in breach of the <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> or for any other reason at their own discretion.</p>
+</div>
+</div>
+<div class="section" id="consent-to-contact">
+<span id="admin-consent-contact"></span><h3>Consent to contact<a class="headerlink" href="#consent-to-contact" title="Lien permanent vers ce titre">¶</a></h3>
+<p><strong>Opt-in</strong> to allow the development team to contact the <a class="reference internal" href="#admin-email"><span class="std std-ref">Admin contact email</span></a> with notifications of serious problems with the software or the instance  configuration. Administrator emails are never shared, sold, or used for marketing purposes.</p>
+</div>
+<div class="section" id="crowdfunding-participation">
+<h3>Crowdfunding participation<a class="headerlink" href="#crowdfunding-participation" title="Lien permanent vers ce titre">¶</a></h3>
+<p><strong>Opt-out</strong> of advertizing CryptPad's crowdfunding campaign on the instance</p>
+</div>
+<div class="section" id="instance-purpose">
+<h3>Instance purpose<a class="headerlink" href="#instance-purpose" title="Lien permanent vers ce titre">¶</a></h3>
+<p>Indicate the purpose of the instance, this is used to inform the development roadmap</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Instance purpose is only sent to the development team if <a class="reference internal" href="#admin-telemetry-optout"><span class="std std-ref">Server telemetry</span></a> is enabled</p>
+</div>
+</div>
 </div>
 </div>
 
@@ -731,7 +795,7 @@ resources</p></li>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'4.11.0',
+            VERSION:'4.14.0',
             LANGUAGE:'fr',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
