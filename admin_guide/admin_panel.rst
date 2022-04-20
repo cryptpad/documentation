@@ -191,15 +191,12 @@ Server telemetry
 
 **Opt-out** of daily messages sent from the instance to the development team's server. The purpose of these messages is to count how many third-party instances of CryptPad are in operation and which version of the software they are running. The full content of the messages can be reviewed in CryptPad's server logs
 
-
-For more details visit ``https://your.instance/admin/#network``
-
 .. _admin_list_public:
 
 List my instance in public directories
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If your instance is intended for public use you may opt-in to have it included in the `list of public instances <https://cryptpad.org/instances/>`_ on `the CryptPad project site <https://cryptpad.org>`_
+**Opt-in** to have the instance included in the `list of public instances <https://cryptpad.org/instances/>`_ on `the CryptPad project site <https://cryptpad.org>`_ if it is intended for public use
 
 In addition to this setting being enabled, the following criteria are required in order to have an instance listed:
 
