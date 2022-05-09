@@ -48,7 +48,7 @@ Many other aspects of CryptPad's interface can be customized, for example the LE
 Translations
 -------------
 
-To customize the text of the CryptPad interface in a given language, copy ``customize.dist/messages.xx.js`` to ``customize/translations/messages.xx.js`` where ``xx`` is the locale of the language (use ``messages.js`` to customize English).
+To customize the text of the CryptPad interface in a given language, copy ``customize.dist/translations/messages.xx.js`` to ``customize/translations/messages.xx.js`` where ``xx`` is the locale of the language (use ``messages.js`` to customize English).
 
 In this file, modify the default text using the "Messages" object as follows: ``Messages.key = "Text";``. For all the keys and their associated text please see `www/common/translations/messages.json <https://github.com/xwiki-labs/cryptpad/blob/main/www/common/translations/messages.json>`__ or any of the ``messages.xx.json`` in the same directory for the translated text.
 
