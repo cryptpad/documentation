@@ -602,9 +602,9 @@
 <p>This part of the URL <code class="docutils literal notranslate"><span class="pre">https://cryptpad.fr/code/</span></code> tells the server to load the code editor.</p>
 <p>The remaining information <code class="docutils literal notranslate"><span class="pre">#/2/code/edit/plpAeHfQ4YO49fczV5erSCgd/</span></code> is handled with Javascript by the browser.</p>
 <p>There are several pieces of information there, separated by slashes.</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">URL</span> <span class="nx">encoding</span> <span class="nx">version</span><span class="o">:</span> <span class="mf">2</span>
-<span class="nx">editor</span> <span class="nx">mode</span><span class="o">:</span> <span class="nx">edit</span>
-<span class="nx">Encryption</span> <span class="nx">seed</span><span class="o">:</span> <span class="nx">plpAeHfQ4YO49fczV5erSCgd</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">URL</span><span class="w"> </span><span class="nx">encoding</span><span class="w"> </span><span class="nx">version</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="w"></span>
+<span class="nx">editor</span><span class="w"> </span><span class="nx">mode</span><span class="o">:</span><span class="w"> </span><span class="nx">edit</span><span class="w"></span>
+<span class="nx">Encryption</span><span class="w"> </span><span class="nx">seed</span><span class="o">:</span><span class="w"> </span><span class="nx">plpAeHfQ4YO49fczV5erSCgd</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -615,15 +615,15 @@
 <li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-info-circle"></em> <strong>Properties</strong> &gt; <strong>Document identifier</strong></p></li>
 <li><p>Alternatively you can run this snippet:</p></li>
 </ul>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">require</span><span class="p">([</span>
-    <span class="s2">&quot;/common/common-hash.js&quot;</span>
-<span class="p">],</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">Hash</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kd">var</span> <span class="nx">url</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">;</span>
-    <span class="kd">var</span> <span class="nx">password</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
-    <span class="kd">var</span> <span class="nx">parsed</span> <span class="o">=</span> <span class="nx">Hash</span><span class="p">.</span><span class="nx">parsePadUrl</span><span class="p">(</span><span class="nx">url</span><span class="p">);</span>
-    <span class="kd">var</span> <span class="nx">secret</span> <span class="o">=</span> <span class="nx">Hash</span><span class="p">.</span><span class="nx">getSecrets</span><span class="p">(</span><span class="nx">parsed</span><span class="p">.</span><span class="nx">type</span><span class="p">,</span> <span class="nx">parsed</span><span class="p">.</span><span class="nx">hash</span><span class="p">,</span> <span class="nx">password</span><span class="p">);</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">secret</span><span class="p">.</span><span class="nx">channel</span><span class="p">);</span>
-<span class="p">});</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">require</span><span class="p">([</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;/common/common-hash.js&quot;</span><span class="w"></span>
+<span class="p">],</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">Hash</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">parsed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Hash</span><span class="p">.</span><span class="nx">parsePadUrl</span><span class="p">(</span><span class="nx">url</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">secret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Hash</span><span class="p">.</span><span class="nx">getSecrets</span><span class="p">(</span><span class="nx">parsed</span><span class="p">.</span><span class="nx">type</span><span class="p">,</span><span class="w"> </span><span class="nx">parsed</span><span class="p">.</span><span class="nx">hash</span><span class="p">,</span><span class="w"> </span><span class="nx">password</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">secret</span><span class="p">.</span><span class="nx">channel</span><span class="p">);</span><span class="w"></span>
+<span class="p">});</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Either method will give a channel id that looks similar to  <code class="docutils literal notranslate"><span class="pre">bb1edc4cb7648605284db30dfcd2eebf</span></code>.</p>
