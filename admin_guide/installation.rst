@@ -304,3 +304,20 @@ To enable the encrypted support ticket system, use the ``generate-admin-key.js``
 Once the steps above are complete, many day-to-day administration tasks
 such as support and monitoring can be done in the :ref:`administration
 panel <admin_panel>`.
+
+Configure Open Graph
+~~~~~~~~~~~~~~~~~~~~
+
+To enable social media link previews, add Open Graph tags to the applications of your CryptPad instance with:
+
+.. code:: bash
+
+    npm run make-opengraph
+    
+For each application, an ``index.html``, customized for your instance, will end up in the directory ``customize/www``.
+Despite this location, **it is not recommended** to perform manual modifications on these pages.
+Indeed, as soon as you will run ``npm run make-opengraph`` again, the ``index.html`` for each application will be overridden.
+
+.. note::
+    Updating to a newer version of the software in the future without re-running this command may result in outdated code.
+
