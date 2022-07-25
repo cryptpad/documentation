@@ -40,7 +40,8 @@ import sphinx_fontawesome
 
 extensions = [
     'recommonmark',
-    'sphinx_markdown_tables',
+    #'sphinx_markdown_tables'
+    # XXX causes an error at build, removing with possible issues with tables?
     'sphinx_fontawesome',
     'sphinx_sitemap'
 ]
@@ -70,8 +71,9 @@ exclude_patterns = [
     'Readme.md',
     'www',
     'www2',
-    '_themes/theme/static/fonts/cptools/Readme.md',
-    'requirements.txt'
+    '_themes/theme/static/fonts/cptools/README.md',
+    'requirements.txt',
+    'robots.txt'
     ]
 
 # -- Substitutions

@@ -10,6 +10,17 @@ Using [Poetry](https://python-poetry.org/docs/)
 poetry install
 ```
 
+or Pip
+```bash
+pip install -r requirements.txt
+```
+
+Keep `requirements.txt` up to date with the Poetry environment by running 
+
+```bash
+poetry export -f requirements.txt --output requirements.txt
+```
+
 ## Build
 
 English `en` is the default language.

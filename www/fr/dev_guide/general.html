@@ -659,34 +659,34 @@
 <p>The database thus contains a <strong>list of pins</strong> for each registered user, each list being identified by the <strong>public signature key</strong> of the user account. This list contains the identifiers of all the collaborative documents stored in the drive of the concerned user. When the server needs to delete documents due to inactivity, it can check that they are not present in any pin list.</p>
 <div class="section" id="example">
 <span id="example-1"></span><h3>Example<a class="headerlink" href="#example" title="Lien permanent vers ce titre">¶</a></h3>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// Drive</span>
-<span class="p">{</span>
-  <span class="s2">&quot;root&quot;</span><span class="o">:</span> <span class="p">{</span>
-    <span class="s2">&quot;Folder&quot;</span><span class="o">:</span> <span class="p">{</span>
-      <span class="s2">&quot;e76245241314a65dacfe13b1c34b4fa7&quot;</span><span class="o">:</span> <span class="mf">842390975368</span>
-    <span class="p">},</span>
-    <span class="s2">&quot;0c1bf2c6be2cd5eaafd2b2bd1a4043ea&quot;</span><span class="o">:</span> <span class="mf">937347739064</span>
-  <span class="p">},</span>
-  <span class="s2">&quot;filesData&quot;</span><span class="o">:</span> <span class="p">{</span>
-    <span class="s2">&quot;937347739064&quot;</span><span class="o">:</span> <span class="p">{</span>
-      <span class="s2">&quot;title&quot;</span><span class="o">:</span> <span class="s2">&quot;Rich text 1&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;atime&quot;</span><span class="o">:</span> <span class="mf">1594892373553</span><span class="p">,</span>
-      <span class="s2">&quot;ctime&quot;</span><span class="o">:</span> <span class="mf">1594892373553</span><span class="p">,</span>
-      <span class="s2">&quot;href&quot;</span><span class="o">:</span> <span class="s2">&quot;http://localhost:3000/pad/#/2/pad/edit/D3YorVnQYakniVbj+fgdq7tx/&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;channel&quot;</span><span class="o">:</span> <span class="s2">&quot;2e44fb409dc333f0008a3bae4a74f032&quot;</span>
-    <span class="p">},</span>
-    <span class="s2">&quot;842390975368&quot;</span><span class="o">:</span> <span class="p">{</span>
-      <span class="s2">&quot;title&quot;</span><span class="o">:</span> <span class="s2">&quot;Markdown document&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;atime&quot;</span><span class="o">:</span> <span class="mf">1594814836987</span><span class="p">,</span>
-      <span class="s2">&quot;ctime&quot;</span><span class="o">:</span> <span class="mf">1594814831653</span><span class="p">,</span>
-      <span class="s2">&quot;href&quot;</span><span class="o">:</span> <span class="s2">&quot;http://localhost:3000/code/#/2/code/edit/0WKVNAeUzgSs+WtIQQmhkwiw/&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;channel&quot;</span><span class="o">:</span> <span class="s2">&quot;f0b3fa6aaa4a1285f68c3329f4fc9e86&quot;</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
-<span class="p">}</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// Drive</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="s2">&quot;root&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;Folder&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="s2">&quot;e76245241314a65dacfe13b1c34b4fa7&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">842390975368</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;0c1bf2c6be2cd5eaafd2b2bd1a4043ea&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">937347739064</span><span class="w"></span>
+<span class="w">  </span><span class="p">},</span><span class="w"></span>
+<span class="w">  </span><span class="s2">&quot;filesData&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;937347739064&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="s2">&quot;title&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Rich text 1&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="s2">&quot;atime&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1594892373553</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="s2">&quot;ctime&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1594892373553</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="s2">&quot;href&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;http://localhost:3000/pad/#/2/pad/edit/D3YorVnQYakniVbj+fgdq7tx/&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="s2">&quot;channel&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;2e44fb409dc333f0008a3bae4a74f032&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;842390975368&quot;</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="s2">&quot;title&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Markdown document&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="s2">&quot;atime&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1594814836987</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="s2">&quot;ctime&quot;</span><span class="o">:</span><span class="w"> </span><span class="mf">1594814831653</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="s2">&quot;href&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;http://localhost:3000/code/#/2/code/edit/0WKVNAeUzgSs+WtIQQmhkwiw/&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="s2">&quot;channel&quot;</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;f0b3fa6aaa4a1285f68c3329f4fc9e86&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 
-<span class="c1">// Pins</span>
-<span class="p">[</span><span class="s2">&quot;2e44fb409dc333f0008a3bae4a74f032&quot;</span><span class="p">,</span> <span class="s2">&quot;f0b3fa6aaa4a1285f68c3329f4fc9e86&quot;</span><span class="p">]</span>
+<span class="c1">// Pins</span><span class="w"></span>
+<span class="p">[</span><span class="s2">&quot;2e44fb409dc333f0008a3bae4a74f032&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;f0b3fa6aaa4a1285f68c3329f4fc9e86&quot;</span><span class="p">]</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
@@ -756,34 +756,34 @@
 </div>
 <div class="section" id="example-3">
 <span id="id2"></span><h3>Example<a class="headerlink" href="#example-3" title="Lien permanent vers ce titre">¶</a></h3>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// Clientside</span>
-<span class="kd">var</span> <span class="nx">channelId</span> <span class="o">=</span> <span class="s2">&quot;f0b3fa6aaa4a1285f68c3329f4fc9e86&quot;</span><span class="p">;</span>
-<span class="nx">Netflux</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="s1">&#39;ws://lcoalhost:3000/cryptpad_websocket&#39;</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">network</span><span class="p">)</span> <span class="p">{}</span>
-  <span class="c1">// on success</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// Clientside</span><span class="w"></span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">channelId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;f0b3fa6aaa4a1285f68c3329f4fc9e86&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="nx">Netflux</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="s1">&#39;ws://lcoalhost:3000/cryptpad_websocket&#39;</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">network</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// on success</span><span class="w"></span>
 
-  <span class="nx">network</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">channelId</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">channel</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// on success</span>
+<span class="w">  </span><span class="nx">network</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">channelId</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">channel</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// on success</span><span class="w"></span>
 
-    <span class="c1">// listen for new messages</span>
-    <span class="nx">channel</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">senderNetfluxId</span><span class="p">)</span> <span class="p">{</span>
-      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Message received:&#39;</span> <span class="o">+</span> <span class="nx">message</span><span class="p">);</span>
-    <span class="p">});</span>
-    <span class="c1">// send a message</span>
-    <span class="nx">channel</span><span class="p">.</span><span class="nx">bcast</span><span class="p">(</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="c1">// listen for new messages</span><span class="w"></span>
+<span class="w">    </span><span class="nx">channel</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">&#39;message&#39;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">message</span><span class="p">,</span><span class="w"> </span><span class="nx">senderNetfluxId</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Message received:&#39;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">message</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">});</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// send a message</span><span class="w"></span>
+<span class="w">    </span><span class="nx">channel</span><span class="p">.</span><span class="nx">bcast</span><span class="p">(</span><span class="s2">&quot;Hello world!&quot;</span><span class="p">);</span><span class="w"></span>
 
-  <span class="p">},</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// on error</span>
+<span class="w">  </span><span class="p">},</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="c1">// on error</span><span class="w"></span>
 
-    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span><span class="w"></span>
 
-  <span class="p">});</span>
+<span class="w">  </span><span class="p">});</span><span class="w"></span>
 
-<span class="p">},</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1">// on error</span>
+<span class="p">},</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">error</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="c1">// on error</span><span class="w"></span>
 
-  <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span><span class="w"></span>
 
-<span class="p">});</span>
+<span class="p">});</span><span class="w"></span>
 </pre></div>
 </div>
 </div>

@@ -607,76 +607,76 @@
 </ul>
 <p>All these elements are included in <code class="docutils literal notranslate"><span class="pre">wwww/common/sframe-app-framework.js</span></code>  which simplifies the creation of a new application by taking care of all these elements directly and providing simple APIs for <code class="docutils literal notranslate"><span class="pre">inner.js</span></code>.</p>
 <p>An <code class="docutils literal notranslate"><span class="pre">inner.js</span></code> file for a complete application looks something like:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// This is the initialization loading the CryptPad libraries</span>
-<span class="nx">define</span><span class="p">([</span>
-    <span class="s1">&#39;jquery&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;/common/sframe-app-framework.js&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;/customize/messages.js&#39;</span><span class="p">,</span> <span class="c1">// translation keys</span>
-    <span class="s1">&#39;less!/myapp/app-myapp.less&#39;</span>
-    <span class="cm">/* Here you can add your own javascript or css to load */</span>
-<span class="p">],</span> <span class="kd">function</span> <span class="p">(</span>
-    <span class="nx">$</span><span class="p">,</span>
-    <span class="nx">Framework</span><span class="p">,</span>
-    <span class="nx">Messages</span><span class="p">)</span> <span class="p">{</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// This is the initialization loading the CryptPad libraries</span><span class="w"></span>
+<span class="nx">define</span><span class="p">([</span><span class="w"></span>
+<span class="w">    </span><span class="s1">&#39;jquery&#39;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="s1">&#39;/common/sframe-app-framework.js&#39;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="s1">&#39;/customize/messages.js&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// translation keys</span><span class="w"></span>
+<span class="w">    </span><span class="s1">&#39;less!/myapp/app-myapp.less&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="cm">/* Here you can add your own javascript or css to load */</span><span class="w"></span>
+<span class="p">],</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="nx">$</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">Framework</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nx">Messages</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 
 
-    <span class="cm">/* Here you can initialize your own functions and objects */</span>
+<span class="w">    </span><span class="cm">/* Here you can initialize your own functions and objects */</span><span class="w"></span>
 
-    <span class="c1">// This is the main initialization loop</span>
-    <span class="kd">var</span> <span class="nx">onFrameworkReady</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">framework</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">// Here you can load the objects or call the functions you have defined</span>
+<span class="w">    </span><span class="c1">// This is the main initialization loop</span><span class="w"></span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">onFrameworkReady</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">framework</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// Here you can load the objects or call the functions you have defined</span><span class="w"></span>
 
-        <span class="c1">// This is the function from which you will receive updates from CryptPad</span>
-        <span class="nx">framework</span><span class="p">.</span><span class="nx">onContentUpdate</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">newContent</span><span class="p">)</span> <span class="p">{</span>
-            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Content should be updated to &quot;</span> <span class="o">+</span> <span class="nx">newContent</span><span class="p">);</span>
-            <span class="c1">// Update the interface to render the new version of the content</span>
-        <span class="p">});</span>
+<span class="w">        </span><span class="c1">// This is the function from which you will receive updates from CryptPad</span><span class="w"></span>
+<span class="w">        </span><span class="nx">framework</span><span class="p">.</span><span class="nx">onContentUpdate</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">newContent</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Content should be updated to &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">newContent</span><span class="p">);</span><span class="w"></span>
+<span class="w">            </span><span class="c1">// Update the interface to render the new version of the content</span><span class="w"></span>
+<span class="w">        </span><span class="p">});</span><span class="w"></span>
 
-        <span class="c1">// This is the function called to get the current state of the data in your app</span>
-        <span class="nx">framework</span><span class="p">.</span><span class="nx">setContentGetter</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-            <span class="c1">// Get the content from your interface and serialize it into a string or object</span>
-            <span class="kd">var</span> <span class="nx">content</span> <span class="o">=</span> <span class="nx">getContent</span><span class="p">();</span>
-            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Content current value is &quot;</span> <span class="o">+</span> <span class="nx">content</span><span class="p">);</span>
-            <span class="k">return</span> <span class="p">{</span>
-                <span class="nx">content</span><span class="o">:</span> <span class="nx">content</span>
-            <span class="p">};</span>
-        <span class="p">});</span>
+<span class="w">        </span><span class="c1">// This is the function called to get the current state of the data in your app</span><span class="w"></span>
+<span class="w">        </span><span class="nx">framework</span><span class="p">.</span><span class="nx">setContentGetter</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="c1">// Get the content from your interface and serialize it into a string or object</span><span class="w"></span>
+<span class="w">            </span><span class="kd">var</span><span class="w"> </span><span class="nx">content</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">getContent</span><span class="p">();</span><span class="w"></span>
+<span class="w">            </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Content current value is &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">content</span><span class="p">);</span><span class="w"></span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="nx">content</span><span class="o">:</span><span class="w"> </span><span class="nx">content</span><span class="w"></span>
+<span class="w">            </span><span class="p">};</span><span class="w"></span>
+<span class="w">        </span><span class="p">});</span><span class="w"></span>
 
-        <span class="c1">// This is called when the history is synced. &quot;onContentUpdate&quot; has already been called with the full content and the loading screen is being removed.</span>
-        <span class="nx">framework</span><span class="p">.</span><span class="nx">onReady</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">newPad</span><span class="p">)</span> <span class="p">{</span>
-            <span class="c1">// Here you can focus any editable part, check the integrity of the current data or intialize some values</span>
-        <span class="p">});</span>
+<span class="w">        </span><span class="c1">// This is called when the history is synced. &quot;onContentUpdate&quot; has already been called with the full content and the loading screen is being removed.</span><span class="w"></span>
+<span class="w">        </span><span class="nx">framework</span><span class="p">.</span><span class="nx">onReady</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">newPad</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="c1">// Here you can focus any editable part, check the integrity of the current data or intialize some values</span><span class="w"></span>
+<span class="w">        </span><span class="p">});</span><span class="w"></span>
 
-        <span class="c1">// When you want to send changes to the collaborative document, you can call framework.localChange()</span>
-        <span class="c1">// framework.localChange() will use the &quot;content getter&quot; defined above to get the current value of your content</span>
-        <span class="c1">// and push it to the other users.</span>
+<span class="w">        </span><span class="c1">// When you want to send changes to the collaborative document, you can call framework.localChange()</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// framework.localChange() will use the &quot;content getter&quot; defined above to get the current value of your content</span><span class="w"></span>
+<span class="w">        </span><span class="c1">// and push it to the other users.</span><span class="w"></span>
 
-        <span class="c1">// Example with a textarea</span>
-        <span class="kd">var</span> <span class="nx">oldVal</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
-        <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;textarea&quot;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;change keyup paste&quot;</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-            <span class="kd">var</span> <span class="nx">currentVal</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span>
-            <span class="k">if</span> <span class="p">(</span><span class="nx">currentVal</span> <span class="o">===</span> <span class="nx">oldVal</span><span class="p">)</span> <span class="p">{</span>
-                <span class="k">return</span><span class="p">;</span> <span class="c1">//check to prevent multiple simultaneous triggers</span>
-            <span class="p">}</span>
-            <span class="nx">oldVal</span> <span class="o">=</span> <span class="nx">currentVal</span><span class="p">;</span>
-            <span class="c1">// action to be performed on textarea changed</span>
-            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Content changed&quot;</span><span class="p">);</span>
-            <span class="c1">// we call back the cryptpad framework to inform data has changes</span>
-            <span class="nx">framework</span><span class="p">.</span><span class="nx">localChange</span><span class="p">();</span>
-        <span class="p">});</span>
+<span class="w">        </span><span class="c1">// Example with a textarea</span><span class="w"></span>
+<span class="w">        </span><span class="kd">var</span><span class="w"> </span><span class="nx">oldVal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">        </span><span class="nx">$</span><span class="p">(</span><span class="s2">&quot;textarea&quot;</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s2">&quot;change keyup paste&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">            </span><span class="kd">var</span><span class="w"> </span><span class="nx">currentVal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">val</span><span class="p">();</span><span class="w"></span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">currentVal</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="nx">oldVal</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">                </span><span class="k">return</span><span class="p">;</span><span class="w"> </span><span class="c1">//check to prevent multiple simultaneous triggers</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">            </span><span class="nx">oldVal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">currentVal</span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="c1">// action to be performed on textarea changed</span><span class="w"></span>
+<span class="w">            </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Content changed&quot;</span><span class="p">);</span><span class="w"></span>
+<span class="w">            </span><span class="c1">// we call back the cryptpad framework to inform data has changes</span><span class="w"></span>
+<span class="w">            </span><span class="nx">framework</span><span class="p">.</span><span class="nx">localChange</span><span class="p">();</span><span class="w"></span>
+<span class="w">        </span><span class="p">});</span><span class="w"></span>
 
-        <span class="c1">// starting the CryptPad framework</span>
-        <span class="nx">framework</span><span class="p">.</span><span class="nx">start</span><span class="p">();</span>
-    <span class="p">};</span>
+<span class="w">        </span><span class="c1">// starting the CryptPad framework</span><span class="w"></span>
+<span class="w">        </span><span class="nx">framework</span><span class="p">.</span><span class="nx">start</span><span class="p">();</span><span class="w"></span>
+<span class="w">    </span><span class="p">};</span><span class="w"></span>
 
-    <span class="c1">// Framework initialization</span>
-    <span class="nx">Framework</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span>
-        <span class="nx">toolbarContainer</span><span class="o">:</span> <span class="s1">&#39;#cme_toolbox&#39;</span><span class="p">,</span>
-        <span class="nx">contentContainer</span><span class="o">:</span> <span class="s1">&#39;#cp-app-miniapp-editor&#39;</span>
-    <span class="p">},</span> <span class="nx">waitFor</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">framework</span><span class="p">)</span> <span class="p">{</span>
-        <span class="nx">onFrameworkReady</span><span class="p">(</span><span class="nx">framework</span><span class="p">);</span>
-    <span class="p">}));</span>
-<span class="p">});</span>
+<span class="w">    </span><span class="c1">// Framework initialization</span><span class="w"></span>
+<span class="w">    </span><span class="nx">Framework</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span><span class="w"></span>
+<span class="w">        </span><span class="nx">toolbarContainer</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#cme_toolbox&#39;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nx">contentContainer</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;#cp-app-miniapp-editor&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="nx">waitFor</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">framework</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nx">onFrameworkReady</span><span class="p">(</span><span class="nx">framework</span><span class="p">);</span><span class="w"></span>
+<span class="w">    </span><span class="p">}));</span><span class="w"></span>
+<span class="p">});</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
