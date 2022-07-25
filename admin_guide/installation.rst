@@ -305,6 +305,8 @@ Once the steps above are complete, many day-to-day administration tasks
 such as support and monitoring can be done in the :ref:`administration
 panel <admin_panel>`.
 
+.. _configure_open_graph:
+
 Configure Open Graph
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -321,3 +323,8 @@ Indeed, as soon as you will run ``npm run make-opengraph`` again, the ``index.ht
 .. note::
     Updating to a newer version of the software in the future without re-running this command may result in outdated code.
 
+Images exception
+^^^^^^^^^^^^^^^^
+
+Images displayed by previews are the only part you are encouraged to customize if you wish to.
+Give a look to the dedicated paragraph about :ref:`preview_images` if you feel interested.

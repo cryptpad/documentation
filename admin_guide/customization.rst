@@ -44,6 +44,24 @@ To add a custom logo to the instance's homepage:
 
 Many other aspects of CryptPad's interface can be customized, for example the LESS color themes ``colortheme.less`` and ``colortheme-dark.less`` in  ``customize.dist/src/less2/include/``. As with all other elements, make a copy in ``customize`` and edit the values to override the defaults.
 
+.. _preview_images:
+
+Preview images
+--------------
+
+Most of CryptPad images can be customized for a specific instance.
+Typical examples are previews from links over social media.
+There are located in ``/customize/images/opengraph_preview/`` and there are only two guidelines to follow to minimize risks of troubles making customizations here:
+
+#. Keep one ``og-defaut.png`` image in the directory mentioned above, for applications which don't come with dedicated preview images.
+#. Name ``og-*appName*.png`` the image relevant to the application named ``*appName*`` (e.g. ``og-pad.png`` for the previews of the ``/pad/`` application).
+
+Otherwise, one may change, remove or add preview images as wanted.
+
+.. note::
+
+    There is no need to run ``npm run make-opengraph`` to update images, only an initial run is needed to :ref:`configure_open_graph` tags.
+
 
 Translations
 -------------
