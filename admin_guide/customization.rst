@@ -33,6 +33,21 @@ To disable unregistered use of CryptPad, add the following to ``customize/applic
 
     To close registration of new users on the instance, see :ref:`admin_close_registration` in the admin panel.
 
+Links to Terms of Service, Privacy Policy and Imprint pages
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Links to these pages are added to ``customize/application_config.js`` and are shown on the instance home page and About menu if provided.
+
+.. code:: javaScript
+
+    // Privacy Policy
+    AppConfig.privacy = 'https://link-to-policy.com';
+    // Terms of Service
+    AppConfig.terms = 'https://link-to-ToS.com';
+    // Imprint / Legal Notice
+    AppConfig.imprint = 'https://link-to-imprint.com';
+
+
 Look and feel
 -------------
 
