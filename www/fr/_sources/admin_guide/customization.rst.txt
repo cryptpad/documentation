@@ -47,6 +47,7 @@ Links to these pages are added to ``customize/application_config.js`` and are sh
     // Imprint / Legal Notice
     AppConfig.imprint = 'https://link-to-imprint.com';
 
+Please restart your CryptPad instance after making these changes.
 
 Look and feel
 -------------
