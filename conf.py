@@ -24,11 +24,11 @@ import docutils.parsers.rst.directives as directives
 # -- Project information -----------------------------------------------------
 
 project = 'CryptPad'
-copyright = '2021, CryptPad Team'
+copyright = '2022, CryptPad Team'
 author = 'CryptPad Team'
 
 # The full version, including alpha/beta/rc tags
-release = '4.14.0'
+release = '5.0'
 
 
 # -- General configuration ---------------------------------------------------

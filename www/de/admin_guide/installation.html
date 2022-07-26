@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Installation &mdash; CryptPad 4.14.0 Dokumentation</title>
+  <title>Installation &mdash; CryptPad 5.0 Dokumentation</title>
   
 
   
@@ -55,7 +55,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 4.14.0</span>
+              <span class="release">Documentation 5.0</span>
             </a>
             
 <div role="search">
@@ -425,6 +425,7 @@
 <li class="toctree-l5"><a class="reference internal" href="#versions-older-than-4-6-0">Versions older than 4.6.0</a></li>
 </ul>
 </li>
+<li class="toctree-l4"><a class="reference internal" href="#configure-open-graph-metadata">Configure Open Graph metadata</a></li>
 </ul>
 </li>
 </ul>
@@ -432,9 +433,13 @@
 <li class="toctree-l2"><a class="reference internal" href="customization.html">Instance customization</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="customization.html#application-config">Application config</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="customization.html#restricting-guest-access">Restricting guest access</a></li>
+<li class="toctree-l4"><a class="reference internal" href="customization.html#links-to-terms-of-service-privacy-policy-and-imprint-pages">Links to Terms of Service, Privacy Policy and Imprint pages</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="customization.html#look-and-feel">Look and feel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="customization.html#look-and-feel">Look and feel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="customization.html#open-graph-preview-images">Open Graph preview images</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="customization.html#translations">Translations</a></li>
 </ul>
 </li>
@@ -662,7 +667,7 @@ bower install
 cp config.example.js config.js
 </pre></div>
 </div>
-<p>Please read the configuration file, and modify variables as needed. The <a class="reference internal" href="#admin-domain-config"><span class="std std-ref">domains</span></a> are particulalry important.</p>
+<p>Please read the configuration file, and modify variables as needed. The <a class="reference internal" href="#admin-domain-config"><span class="std std-ref">domains</span></a> are particularly important.</p>
 <p>The server can now be started with</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> cryptpad
 node server
@@ -852,6 +857,19 @@ such as support and monitoring can be done in the <a class="reference internal" 
 panel</span></a>.</p>
 </div>
 </div>
+<div class="section" id="configure-open-graph-metadata">
+<span id="configure-open-graph"></span><h3>Configure Open Graph metadata<a class="headerlink" href="#configure-open-graph-metadata" title="Link zu dieser Überschrift">¶</a></h3>
+<p>To enable social media link previews, add Open Graph tags to the applications of your CryptPad instance with the following command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>npm run make-opengraph
+</pre></div>
+</div>
+<p>This creates an <code class="docutils literal notranslate"><span class="pre">index.html</span></code> page for each application in the <code class="docutils literal notranslate"><span class="pre">customize/www</span></code> directory. It is <strong>not recommended to perform manual modifications on these pages</strong> as they will be overridden the next time <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">run</span> <span class="pre">make-opengraph</span></code> is run.</p>
+<p>To modify the preview images please see <a class="reference internal" href="customization.html#preview-images"><span class="std std-ref">Open Graph preview images</span></a></p>
+<div class="admonition note">
+<p class="admonition-title">Bemerkung</p>
+<p>Updating to a newer version of the software in the future without re-running this command may result in outdated code.</p>
+</div>
+</div>
 </div>
 </div>
 
@@ -875,7 +893,7 @@ panel</span></a>.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2021, CryptPad Team.
+        &copy; Copyright 2022, CryptPad Team.
 
     </p>
   </div>
@@ -900,7 +918,7 @@ panel</span></a>.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'4.14.0',
+            VERSION:'5.0',
             LANGUAGE:'de',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

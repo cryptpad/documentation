@@ -33,6 +33,21 @@ To disable unregistered use of CryptPad, add the following to ``customize/applic
 
     To close registration of new users on the instance, see :ref:`admin_close_registration` in the admin panel.
 
+Links to Terms of Service, Privacy Policy and Imprint pages
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Links to these pages are added to ``customize/application_config.js`` and are shown on the instance home page and About menu if provided.
+
+.. code:: javaScript
+
+    // Privacy Policy
+    AppConfig.privacy = 'https://link-to-policy.com';
+    // Terms of Service
+    AppConfig.terms = 'https://link-to-ToS.com';
+    // Imprint / Legal Notice
+    AppConfig.imprint = 'https://link-to-imprint.com';
+
+
 Look and feel
 -------------
 
@@ -44,11 +59,18 @@ To add a custom logo to the instance's homepage:
 
 Many other aspects of CryptPad's interface can be customized, for example the LESS color themes ``colortheme.less`` and ``colortheme-dark.less`` in  ``customize.dist/src/less2/include/``. As with all other elements, make a copy in ``customize`` and edit the values to override the defaults.
 
+.. _preview_images:
+
+Open Graph preview images
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Previews when links from the instance are posted to social media include images, these are located in ``/customize.dist/images/opengraph_preview/``. Once :ref:`Open Graph tags have been set up <configure_open_graph>`, the images can be customized by placing modified copies in ``/customize/images/opengraph_preview/`` just like any other image.
+
 
 Translations
 -------------
 
-To customize the text of the CryptPad interface in a given language, copy ``customize.dist/messages.xx.js`` to ``customize/translations/messages.xx.js`` where ``xx`` is the locale of the language (use ``messages.js`` to customize English).
+To customize the text of the CryptPad interface in a given language, copy ``customize.dist/translations/messages.xx.js`` to ``customize/translations/messages.xx.js`` where ``xx`` is the locale of the language (use ``messages.js`` to customize English).
 
 In this file, modify the default text using the "Messages" object as follows: ``Messages.key = "Text";``. For all the keys and their associated text please see `www/common/translations/messages.json <https://github.com/xwiki-labs/cryptpad/blob/main/www/common/translations/messages.json>`__ or any of the ``messages.xx.json`` in the same directory for the translated text.
 

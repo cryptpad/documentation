@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Instance customization &mdash; CryptPad 4.14.0 Dokumentation</title>
+  <title>Instance customization &mdash; CryptPad 5.0 Dokumentation</title>
   
 
   
@@ -55,7 +55,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 4.14.0</span>
+              <span class="release">Documentation 5.0</span>
             </a>
             
 <div role="search">
@@ -425,6 +425,7 @@
 <li class="toctree-l5"><a class="reference internal" href="installation.html#versions-older-than-4-6-0">Versions older than 4.6.0</a></li>
 </ul>
 </li>
+<li class="toctree-l4"><a class="reference internal" href="installation.html#configure-open-graph-metadata">Configure Open Graph metadata</a></li>
 </ul>
 </li>
 </ul>
@@ -432,9 +433,13 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Instance customization</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#application-config">Application config</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#restricting-guest-access">Restricting guest access</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#links-to-terms-of-service-privacy-policy-and-imprint-pages">Links to Terms of Service, Privacy Policy and Imprint pages</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#look-and-feel">Look and feel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#look-and-feel">Look and feel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#open-graph-preview-images">Open Graph preview images</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#translations">Translations</a></li>
 </ul>
 </li>
@@ -601,6 +606,18 @@
 <p>To close registration of new users on the instance, see <a class="reference internal" href="admin_panel.html#admin-close-registration"><span class="std std-ref">Close registration</span></a> in the admin panel.</p>
 </div>
 </div>
+<div class="section" id="links-to-terms-of-service-privacy-policy-and-imprint-pages">
+<h3>Links to Terms of Service, Privacy Policy and Imprint pages<a class="headerlink" href="#links-to-terms-of-service-privacy-policy-and-imprint-pages" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Links to these pages are added to <code class="docutils literal notranslate"><span class="pre">customize/application_config.js</span></code> and are shown on the instance home page and About menu if provided.</p>
+<div class="highlight-javaScript notranslate"><div class="highlight"><pre><span></span><span class="c1">// Privacy Policy</span><span class="w"></span>
+<span class="nx">AppConfig</span><span class="p">.</span><span class="nx">privacy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;https://link-to-policy.com&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="c1">// Terms of Service</span><span class="w"></span>
+<span class="nx">AppConfig</span><span class="p">.</span><span class="nx">terms</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;https://link-to-ToS.com&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="c1">// Imprint / Legal Notice</span><span class="w"></span>
+<span class="nx">AppConfig</span><span class="p">.</span><span class="nx">imprint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;https://link-to-imprint.com&#39;</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
 </div>
 <div class="section" id="look-and-feel">
 <h2>Look and feel<a class="headerlink" href="#look-and-feel" title="Link zu dieser Überschrift">¶</a></h2>
@@ -611,10 +628,14 @@
 <li><p>In the copy, replace the image <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/blob/980a2369007a3b6eeb4de105bfcf1cf13e3444ec/customize.dist/pages/index.js#L147">on this line</a> with your custom logo.</p></li>
 </ol>
 <p>Many other aspects of CryptPad's interface can be customized, for example the LESS color themes <code class="docutils literal notranslate"><span class="pre">colortheme.less</span></code> and <code class="docutils literal notranslate"><span class="pre">colortheme-dark.less</span></code> in  <code class="docutils literal notranslate"><span class="pre">customize.dist/src/less2/include/</span></code>. As with all other elements, make a copy in <code class="docutils literal notranslate"><span class="pre">customize</span></code> and edit the values to override the defaults.</p>
+<div class="section" id="open-graph-preview-images">
+<span id="preview-images"></span><h3>Open Graph preview images<a class="headerlink" href="#open-graph-preview-images" title="Link zu dieser Überschrift">¶</a></h3>
+<p>Previews when links from the instance are posted to social media include images, these are located in <code class="docutils literal notranslate"><span class="pre">/customize.dist/images/opengraph_preview/</span></code>. Once <a class="reference internal" href="installation.html#configure-open-graph"><span class="std std-ref">Open Graph tags have been set up</span></a>, the images can be customized by placing modified copies in <code class="docutils literal notranslate"><span class="pre">/customize/images/opengraph_preview/</span></code> just like any other image.</p>
+</div>
 </div>
 <div class="section" id="translations">
 <h2>Translations<a class="headerlink" href="#translations" title="Link zu dieser Überschrift">¶</a></h2>
-<p>To customize the text of the CryptPad interface in a given language, copy <code class="docutils literal notranslate"><span class="pre">customize.dist/messages.xx.js</span></code> to <code class="docutils literal notranslate"><span class="pre">customize/translations/messages.xx.js</span></code> where <code class="docutils literal notranslate"><span class="pre">xx</span></code> is the locale of the language (use <code class="docutils literal notranslate"><span class="pre">messages.js</span></code> to customize English).</p>
+<p>To customize the text of the CryptPad interface in a given language, copy <code class="docutils literal notranslate"><span class="pre">customize.dist/translations/messages.xx.js</span></code> to <code class="docutils literal notranslate"><span class="pre">customize/translations/messages.xx.js</span></code> where <code class="docutils literal notranslate"><span class="pre">xx</span></code> is the locale of the language (use <code class="docutils literal notranslate"><span class="pre">messages.js</span></code> to customize English).</p>
 <p>In this file, modify the default text using the &quot;Messages&quot; object as follows: <code class="docutils literal notranslate"><span class="pre">Messages.key</span> <span class="pre">=</span> <span class="pre">&quot;Text&quot;;</span></code>. For all the keys and their associated text please see <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/blob/main/www/common/translations/messages.json">www/common/translations/messages.json</a> or any of the <code class="docutils literal notranslate"><span class="pre">messages.xx.json</span></code> in the same directory for the translated text.</p>
 <p>For example, to customize the text about the instance on the home page, the following could be pasted in <code class="docutils literal notranslate"><span class="pre">customize/translations/messages.js</span></code> and the text changed to describe the instance.</p>
 <div class="highlight-javaScript notranslate"><div class="highlight"><pre><span></span><span class="nx">Messages</span><span class="p">.</span><span class="nx">home_host</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;This is an independent community instance of CryptPad.&quot;</span><span class="p">;</span><span class="w"></span>
@@ -644,7 +665,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2021, CryptPad Team.
+        &copy; Copyright 2022, CryptPad Team.
 
     </p>
   </div>
@@ -669,7 +690,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'4.14.0',
+            VERSION:'5.0',
             LANGUAGE:'de',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
