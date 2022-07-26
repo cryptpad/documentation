@@ -46,21 +46,10 @@ Many other aspects of CryptPad's interface can be customized, for example the LE
 
 .. _preview_images:
 
-Preview images
---------------
+Open Graph preview images
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Most of CryptPad images can be customized for a specific instance.
-Typical examples are previews from links over social media.
-There are located in ``/customize/images/opengraph_preview/`` and there are only two guidelines to follow to minimize risks of troubles making customizations here:
-
-#. Keep one ``og-defaut.png`` image in the directory mentioned above, for applications which don't come with dedicated preview images.
-#. Name ``og-*appName*.png`` the image relevant to the application named ``*appName*`` (e.g. ``og-pad.png`` for the previews of the ``/pad/`` application).
-
-Otherwise, one may change, remove or add preview images as wanted.
-
-.. note::
-
-    There is no need to run ``npm run make-opengraph`` to update images, only an initial run is needed to :ref:`configure_open_graph` tags.
+Previews when links from the instance are posted to social media include images, these are located in ``/customize.dist/images/opengraph_preview/``. Once :ref:`Open Graph tags have been set up <configure_open_graph>`, the images can be customized by placing modified copies in ``/customize/images/opengraph_preview/`` just like any other image.
 
 
 Translations

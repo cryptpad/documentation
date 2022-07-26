@@ -90,7 +90,7 @@ Copy the example configuration
    cd cryptpad/config
    cp config.example.js config.js
 
-Please read the configuration file, and modify variables as needed. The :ref:`domains <admin_domain_config>` are particulalry important.
+Please read the configuration file, and modify variables as needed. The :ref:`domains <admin_domain_config>` are particularly important.
 
 The server can now be started with
 
@@ -307,24 +307,20 @@ panel <admin_panel>`.
 
 .. _configure_open_graph:
 
-Configure Open Graph
-~~~~~~~~~~~~~~~~~~~~
+Configure Open Graph metadata
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To enable social media link previews, add Open Graph tags to the applications of your CryptPad instance with:
+To enable social media link previews, add Open Graph tags to the applications of your CryptPad instance with the following command:
 
 .. code:: bash
 
     npm run make-opengraph
-    
-For each application, an ``index.html``, customized for your instance, will end up in the directory ``customize/www``.
-Despite this location, **it is not recommended** to perform manual modifications on these pages.
-Indeed, as soon as you will run ``npm run make-opengraph`` again, the ``index.html`` for each application will be overridden.
+
+This creates an ``index.html`` page for each application in the ``customize/www`` directory. It is **not recommended to perform manual modifications on these pages** as they will be overridden the next time ``npm run make-opengraph`` is run.
+
+To modify the preview images please see :ref:`preview_images`
 
 .. note::
     Updating to a newer version of the software in the future without re-running this command may result in outdated code.
 
-Images exception
-^^^^^^^^^^^^^^^^
 
-Images displayed by previews are the only part you are encouraged to customize if you wish to.
-Give a look to the dedicated paragraph about :ref:`preview_images` if you feel interested.
