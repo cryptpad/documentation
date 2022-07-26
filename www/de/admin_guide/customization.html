@@ -622,13 +622,13 @@
 </div>
 <div class="section" id="look-and-feel">
 <h2>Look and feel<a class="headerlink" href="#look-and-feel" title="Link zu dieser Überschrift">¶</a></h2>
-<p>To add a custom logo to the instance's homepage:</p>
+<p>Many aspects of CryptPad's interface can be customized by copying files from <code class="docutils literal notranslate"><span class="pre">customize.dist</span></code> to your <code class="docutils literal notranslate"><span class="pre">customize</span></code> directory.</p>
+<p>For example to change colors, copy the LESS color themes <code class="docutils literal notranslate"><span class="pre">colortheme.less</span></code> and <code class="docutils literal notranslate"><span class="pre">colortheme-dark.less</span></code> from <code class="docutils literal notranslate"><span class="pre">customize.dist/src/less2/include/</span></code> to <code class="docutils literal notranslate"><span class="pre">customize/src/less2/include/</span></code> and edit the color values.</p>
+<p>To use a custom logo on the instance's homepage:</p>
 <ol class="arabic simple">
-<li><p>Add the new logo to <code class="docutils literal notranslate"><span class="pre">customize</span></code></p></li>
-<li><p>Copy <code class="docutils literal notranslate"><span class="pre">customize.dist/pages/index.js</span></code> to <code class="docutils literal notranslate"><span class="pre">customize/pages/index.js</span></code></p></li>
-<li><p>In the copy, replace the image <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/blob/980a2369007a3b6eeb4de105bfcf1cf13e3444ec/customize.dist/pages/index.js#L147">on this line</a> with your custom logo.</p></li>
+<li><p>Add your SVG logo to <code class="docutils literal notranslate"><span class="pre">customize</span></code></p></li>
+<li><p>Rename the logo <code class="docutils literal notranslate"><span class="pre">CryptPad_logo_hero.svg</span></code></p></li>
 </ol>
-<p>Many other aspects of CryptPad's interface can be customized, for example the LESS color themes <code class="docutils literal notranslate"><span class="pre">colortheme.less</span></code> and <code class="docutils literal notranslate"><span class="pre">colortheme-dark.less</span></code> in  <code class="docutils literal notranslate"><span class="pre">customize.dist/src/less2/include/</span></code>. As with all other elements, make a copy in <code class="docutils literal notranslate"><span class="pre">customize</span></code> and edit the values to override the defaults.</p>
 <div class="section" id="open-graph-preview-images">
 <span id="preview-images"></span><h3>Open Graph preview images<a class="headerlink" href="#open-graph-preview-images" title="Link zu dieser Überschrift">¶</a></h3>
 <p>Previews when links from the instance are posted to social media include images, these are located in <code class="docutils literal notranslate"><span class="pre">/customize.dist/images/opengraph_preview/</span></code>. Once <a class="reference internal" href="installation.html#configure-open-graph"><span class="std std-ref">Open Graph tags have been set up</span></a>, the images can be customized by placing modified copies in <code class="docutils literal notranslate"><span class="pre">/customize/images/opengraph_preview/</span></code> just like any other image.</p>

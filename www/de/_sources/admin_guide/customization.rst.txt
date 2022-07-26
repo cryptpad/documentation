@@ -51,14 +51,15 @@ Please restart your CryptPad instance after making these changes.
 
 Look and feel
 -------------
+Many aspects of CryptPad's interface can be customized by copying files from ``customize.dist`` to your ``customize`` directory.
 
-To add a custom logo to the instance's homepage:
+For example to change colors, copy the LESS color themes ``colortheme.less`` and ``colortheme-dark.less`` from ``customize.dist/src/less2/include/`` to ``customize/src/less2/include/`` and edit the color values.
 
-#. Add the new logo to ``customize``
-#. Copy ``customize.dist/pages/index.js`` to ``customize/pages/index.js``
-#. In the copy, replace the image `on this line <https://github.com/xwiki-labs/cryptpad/blob/980a2369007a3b6eeb4de105bfcf1cf13e3444ec/customize.dist/pages/index.js#L147>`_ with your custom logo.
+To use a custom logo on the instance's homepage:
 
-Many other aspects of CryptPad's interface can be customized, for example the LESS color themes ``colortheme.less`` and ``colortheme-dark.less`` in  ``customize.dist/src/less2/include/``. As with all other elements, make a copy in ``customize`` and edit the values to override the defaults.
+#. Add your SVG logo to ``customize``
+#. Rename the logo ``CryptPad_logo_hero.svg``
+
 
 .. _preview_images:
 
