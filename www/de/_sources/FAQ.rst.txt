@@ -1,10 +1,31 @@
 Frequently Asked Questions
 ==========================
 
-.. XXX Troubleshooting
-.. ----------------
-.. - Check in a different browser
-.. - Deactivate extensions, for example in Firefox go to Help > Restart with addons disabled
+Common Issues
+----------------
+
+If CryptPad is not working as expected there are a few common things to try. Most of these relate to web browsers and extensions that either interfere with CryptPad's security features or disable basic browser functionality.
+
+#. Check the list of extensions below, disable the ones you have installed, if any
+#. Try using your browser in a private window and/or with all extensions disabled
+#. Try using a different browser. We test the latest versions of Firefox, Chromium, and Safari
+#. If the issues persist, please contact support
+
+
+List of extensions known to cause issues with CryptPad
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Librejs
+* Adblock
+* Night Eye
+* uMatrix
+* JShelter
+* AdGuard
+* SuperAgent
+
+.. note::
+    If you identify issues with another extension please `report it to the development team <https://github.com/xwiki-labs/cryptpad/issues/new/choose>`_
+
 
 I forgot my password
 ---------------------

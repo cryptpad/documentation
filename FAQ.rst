@@ -22,6 +22,7 @@ List of extensions known to cause issues with CryptPad
 * JShelter
 * AdGuard
 * SuperAgent
+* Tampermonkey
 * Arkenfox (some configurations)
 
 .. note::
