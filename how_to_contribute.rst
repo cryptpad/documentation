@@ -45,7 +45,7 @@ To translate CryptPad itself please see the `Translation guide <https://github.c
 
 To translate this documentation please visit the project on `Weblate <https://weblate.cryptpad.fr/projects/user-guide/>`__. To start translating a new language, please `get in touch with the development team <https://cryptpad.fr/contact.html>`__.
 
-See the state of the translated languages:
+Current progression on translated languages:
 
 .. image:: https://weblate.cryptpad.fr/widgets/cryptpad/-/app/multi-auto.svg
    :alt: Weblate-widget
