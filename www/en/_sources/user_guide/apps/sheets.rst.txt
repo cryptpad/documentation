@@ -82,7 +82,7 @@ Import/Export
 -------------
 
 | |file-o| **File** > |upload| **Import**.
-| Supported formats: ``.bin`` files exported by this application, Excel ``.xslx``.
+| Supported formats: ``.bin`` files exported by this application, Excel ``.xlsx``.
 
 | |file-o| **File** > |download| **Export**.
-| Supported formats: ``.bin``, Excel ``.xslx``, ``.ods``, ``.csv``, ``.pdf``.
+| Supported formats: ``.bin``, Excel ``.xlsx``, ``.ods``, ``.csv``, ``.pdf``.
