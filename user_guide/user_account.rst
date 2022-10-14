@@ -199,8 +199,6 @@ Rich Text
 
 User settings for the :ref:`app_rich_text` application.
 
-.. XXX remove if we remove the setting
-
 -  **Editor’s maximum width**: Switch between page mode (default) that
    limits the width of the text editor, and using the full width of the
    screen.

@@ -61,6 +61,8 @@ To add events, simply click on the desired time/date in the calendar, view (drag
 
 To edit events, drag them to the new date/time or ``Click`` to open the detailed edit view.
 
+.. XXX TODO 5.2: add recurring events here. Possibly split this into its own "App"?
+
 Toolbar
 ~~~~~~~
 

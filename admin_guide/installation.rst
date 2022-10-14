@@ -323,4 +323,9 @@ To modify the preview images please see :ref:`preview_images`
 .. note::
     Updating to a newer version of the software in the future without re-running this command may result in outdated code.
 
+.. Support
+.. ~~~~~~~~~
+.. XXX TODO pargraph about support for diverging configurations
+
+.. > About commercial support, what to expect from community, etc.
 
