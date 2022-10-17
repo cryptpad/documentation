@@ -71,6 +71,9 @@ Clone the CryptPad repository
 
    git clone https://github.com/xwiki-labs/cryptpad.git cryptpad
 
+.. XXX TODO add git checkout $(git tag -l | grep -v 'v1.*$' | sort -V | tail -n 1)
+.. needed to select the last branch and NOT run CryptPad from main
+
 Dependencies
 ~~~~~~~~~~~~
 
