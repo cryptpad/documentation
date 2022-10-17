@@ -105,6 +105,10 @@ On CryptPad, using contacts makes collaboration more secure and simple.
 Add a contact
 ~~~~~~~~~~~~~
 
+.. XXX TODO clearer instructions
+.. add a 3. Your contact must then click "send a contact request"
+.. add a 4. You get a notification with the request, click accept
+
 By sharing your profile:
 
 1. Copy the link: User menu (avatar at the top-right) > |user-circle|
