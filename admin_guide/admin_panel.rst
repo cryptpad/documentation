@@ -41,6 +41,8 @@ Do not allow any new users to register
 Enable remote embedding
 ~~~~~~~~~~~~~~~~~~~~~~~
 
+.. XXX TODO we need to add mention of vector: on Nginx conf file
+
 Allow documents and media from this instance to be embedded on other websites. This will add an "Embed" option to the Share menu. For security reasons applications that use OnlyOffice (Sheets, Document, Presentation) cannot be embedded even if this setting is active
 
 .. _admin_email:
