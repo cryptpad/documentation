@@ -1,3 +1,6 @@
+
+.. _admin_installation:
+
 Installation
 ============
 
