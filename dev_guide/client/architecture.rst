@@ -67,14 +67,19 @@ When a user encounters a bug in CryptPad, everything usually happens at the clie
 To access the **SharedWorker's console**:
 
 -  In Chrome and Chromium
+
    -  Open the page ``chrome://inspect``
    -  Open the "Shared workers" section
    -  Locate the desired worker and click on "inspect"
+
 -  In Edge (based on Chromium)
+
    -  Open the page ``edge://inspect``
    -  Open the "Shared workers" section
    -  Locate the desired worker and click on "inspect"
+
 -  In Firefox
+
    -  Open the ``about:debugging`` page
    -  Open the "This Firefox" part
    -  Locate the desired worker in "Shared Workers" and click on "Debug"

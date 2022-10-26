@@ -11,8 +11,10 @@ To create a new document:
 
 *  From anywhere on CryptPad: ``Ctrl+e``.
 *  From the CryptDrive:
+
    * |plus| **New** in the toolbar.
    * |plus| **New** at the bottom of the file list/grid.
+   
 *  From a document: |file-o| **File** > |plus| **New**.
 
 .. image:: /images/app-creation-screen.png

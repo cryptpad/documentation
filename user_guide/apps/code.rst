@@ -60,6 +60,7 @@ Additionally to basic Markdown syntax, the following features are also available
 
 -  ``[TOC]`` Inserts a table of contents.
 -  Todo list
+
    -  ``- [ ] task`` for a task to do: |square-o| task.
    -  ``- [x] task`` for a completed task: |check-square| task.
 

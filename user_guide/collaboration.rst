@@ -34,9 +34,7 @@ User profile
 To see the profile of another user:
 
 -  **User list** |users| |eye| of a document where they are connected > ``Click`` on their name,
--  If the user is in your list of :ref:`contacts <contacts>`.
-   User menu (avatar at the top-right) > |address-book| **Contacts** >
-   ``Double click`` on their name in the list.
+-  If the user is in your list of :ref:`contacts <contacts>`. User menu (avatar at the top-right) > |address-book| **Contacts** > ``Double click`` on their name in the list.
 
 On another user’s profile page:
 
@@ -228,11 +226,7 @@ Administration tab
 :badge_owner:`Team owners`
 
 -  **Public signing key**: Used to identify the team on instances that offer subscitpions.
-
 -  **Team name**: Change the name of the team.
-
 -  **Team avatar**: Import/modify an avatar for the team.
-
 -  **Download team drive**: Save the content of all documents in the CryptDrive. When possible, this is done in a format that is readable by other software. Some applications produce files that are only readable by CryptPad.
-
 -  **Team deletion**: Permanently delete the team and all of its documents.

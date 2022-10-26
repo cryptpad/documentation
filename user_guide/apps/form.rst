@@ -160,12 +160,17 @@ Response: |check| Yes, |times| No, or |cptools form-poll-maybe| Acceptable for e
 Option types:
 
 - Text
+
    - |plus| **Add option** button
    - Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order options
    - Delete an option with |times|
+
 - Day
+
    - Select the date choices by clicking on them in the calendar
+
 - Time
+
    - Click on an option to select the date and time in the calendar
    - Click "Add multiple dates and times" to select multiple options and use |plus| **Add all** to add all of the selected options at once.
 

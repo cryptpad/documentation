@@ -44,9 +44,7 @@ Theme
 |gear| **Options**:
 
    - **Layout**: Toggle slide numbers, date, title, and transitions.
-
    - **Background Image**: Displayed on all slides.
-
    - **Custom CSS**: Paste CSS code to customise the presentation’s appearance.
 
 |i-cursor| **Text color**, |square-o| **Background color**: Pick colors for the presentation.

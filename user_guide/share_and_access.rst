@@ -170,18 +170,13 @@ Access tab
 This tab summarises all the modalities of access to the document:
 
 -  **Expiration date**: Date at which the document will be deleted. This date is set at the creation of the document and cannot be modified afterwards.
-
 -  **Password**: Displays if a password has been set. A new password can be set, or an existing password modified.
-
 -  **Owners**: List of all the document’s `owners <#owners>`__.
-
 -  | **Edit rights requests**:
    | **Request edit rights**: For users with read-only access rights.
    | |bell-slash| **Mute access requests for this pad**: Hides edit rights requests for this document. :badge_owner:`Document owners`
-
 -  **Access list**: Displays the `access list <#access-list>`__ and
    indicates if it is enabled.
-
 -  |cptools destroy| **Destroy**: Delete the document permanently.
 
 .. _access_list:

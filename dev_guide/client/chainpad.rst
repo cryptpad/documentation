@@ -23,6 +23,7 @@ The interactions between CryptPad and ChainPad can be summarized as :
 -  Indicate to ChainPad any changes made locally
 -  Receive patches from ChainPad related to local changes
 -  Retrieve the current state of the ChainPad document
+
    -  State common to all users, called "authDoc"
    -  Local state (not yet saved/sent), called "userDoc"
 

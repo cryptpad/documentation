@@ -26,18 +26,25 @@ Two steps take place in parallel:
 Once the user account is loaded, ``sframe-common-outer`` initializes all its "handlers" which manage the events and queries received from "inner". There are many such "handlers" which can be found in the code by searching for  ``sframeChan.on('...', handler);``. They are notably used to:
 
 -  Execute functions related to the "outer" level
+
   -  Change the title of the tab or its icon
   -  Modify the localStorage or modify theStorage session
+
 -  Execute functions related to the keys of the document
+
   -  Change the document password (requires decrypting and re-encrypting the entire content)
   -  Save or modify the pad data in the drive (the URL of the pad is stored in the drive)
   -  Make a copy or make a template of the document (requires access to the decrypted content to re-encrypt it differently)
+
 -  Transfer commands to the worker
+
   -  File Upload
   -  Access to more data
   -  Join a document in order to send and receive patches
   -  Document management actions (rename, delete, access list, owners, etc.)
+
 -  Transfer commands to the worker's modules
+
   -  These commands usually only pass through here, they are not read and are sent directly to the worker
 
 Once all these "handlers" have been registered, ``sframe-common-outer`` declares itself "ready" and, once "inner" declares the same, the script starts the realtime engine (if necessary) creating a new document or joining an existing one.

@@ -39,9 +39,12 @@ Before starting the installation, ensure the following software is installed:
 
 -  GIT
 -  nodejs (we use node v12.14.0)
+
    -  Using `NVM <https://github.com/nvm-sh/nvm#installing-and-updating>`__ is recommended
+
 -  npm
 -  bower
+
    -  Installed with ``npm install -g bower``
 
 Install Cryptpad
