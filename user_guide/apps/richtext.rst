@@ -4,8 +4,7 @@
 Rich Text
 =========
 
-The Rich Text application in CryptPad is an integration of
-`CKEditor <https://ckeditor.com/>`__.
+The Rich Text application in CryptPad is an integration of `CKEditor <https://ckeditor.com/>`__.
 
 .. image:: /images/app-richtext-preview.png
    :class: screenshot
@@ -15,8 +14,7 @@ Toolbar
 
 |wrench| **Tools**: Show/hide the text editor toolbar.
 
-|picture-o| **Insert**: Add an image to the document. The image can be
-chosen in the CrpytDrive or uploaded. :badge_user:`Logged in users`
+|picture-o| **Insert**: Add an image to the document. The image can be chosen in the CrpytDrive or uploaded. :badge_user:`Logged in users`
 
 View settings
 -------------

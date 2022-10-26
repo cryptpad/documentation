@@ -1,3 +1,4 @@
+
 .. _app_kanban:
 
 Kanban
@@ -19,13 +20,11 @@ Move cards/columns:
 Remove a card/column:
 
 -  The |trash| area appears once you are dragging an element.
--  ``Drag`` the card/column to the |trash| Delete area at the bottom
-   of the screen and ``Drop`` the card/column.
+-  ``Drag`` the card/column to the |trash| Delete area at the bottom of the screen and ``Drop`` the card/column.
 
 or
 
--  |pencil| button on the card/column to open the editor > **Delete**
-   and confirm.
+-  |pencil| button on the card/column to open the editor > **Delete** and confirm.
 
 Columns
 -------

@@ -4,11 +4,9 @@
 Form
 =====
 
-
 .. image:: /images/app-form-preview.png
    :class: screenshot
    :alt: preview of the Form application
-
 
 Roles
 -----
@@ -58,7 +56,6 @@ Split the form into pages. Only displayed to participants.
 
 :badge_new:`New in version 4.11`
 
-
 |cptools form-list-radio| **Choice** and |cptools form-list-check| **Checkbox** questions can be used to display or hide a section of questions.
 
 1. In the form editor, use the |plus| **Add** buttons between questions, or the list at the bottom of the form, to add a |cptools form-conditional| **Conditional Section**.
@@ -66,7 +63,6 @@ Split the form into pages. Only displayed to participants.
 3. Add some content (description text, questions) to the section using the |plus| **Add** button or by dragging questions into the section area.
 4. Set some conditions using the selection menus. AND conditions must all be true together, only of the OR conditions needs to be true.
 5. In the participant view, the section will only be displayed if the conditions are true.
-
 
 Question types
 ~~~~~~~~~~~~~~~
@@ -164,17 +160,12 @@ Response: |check| Yes, |times| No, or |cptools form-poll-maybe| Acceptable for e
 Option types:
 
 - Text
-
    - |plus| **Add option** button
    - Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order options
    - Delete an option with |times|
-
 - Day
-
    - Select the date choices by clicking on them in the calendar
-
 - Time
-
    - Click on an option to select the date and time in the calendar
    - Click "Add multiple dates and times" to select multiple options and use |plus| **Add all** to add all of the selected options at once.
 
@@ -191,7 +182,6 @@ Use the 3 buttons at the top for easy access to:
 
 .. note::
    To share an **author** link to the form (with edit rights), use the :ref:`share` menu in the toolbar.
-
 
 Closing date
 +++++++++++++
@@ -235,12 +225,10 @@ Submit message
 
 Add a custom message to be displayed after participants submit the form.
 
-
 Color theme
 ++++++++++++
 
 Choose the background and highlight color for the form.
-
 
 Advanced use-cases
 ~~~~~~~~~~~~~~~~~~~
@@ -258,7 +246,3 @@ Import/Export
 -------------
 
 To export responses as a CSV file use the |download| **Export to CSV** button on the |bar-chart| **Responses** page.
-
-
-
-

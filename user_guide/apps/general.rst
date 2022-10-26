@@ -1,3 +1,4 @@
+
 General
 =======
 
@@ -9,15 +10,10 @@ New document
 To create a new document:
 
 *  From anywhere on CryptPad: ``Ctrl+e``.
-
 *  From the CryptDrive:
-
    * |plus| **New** in the toolbar.
-
    * |plus| **New** at the bottom of the file list/grid.
-
 *  From a document: |file-o| **File** > |plus| **New**.
-
 
 .. image:: /images/app-creation-screen.png
    :class: screenshot
@@ -27,15 +23,11 @@ To create a new document:
 The creation screen offers a number of options when new documents are
 created.
 
--  **Owned pad**: Create the new document as :ref:`owner <owners>`. If the document is
-   created without an owner this setting cannot be modified.
+-  **Owned pad**: Create the new document as :ref:`owner <owners>`. If the document is created without an owner this setting cannot be modified.
 
--  **Expiring pad**: Specify an expiry date after which the document
-   will be destroyed. This setting cannot be modified after the document
-   is created.
+-  **Expiring pad**: Specify an expiry date after which the document will be destroyed. This setting cannot be modified after the document is created.
 
--  **Add a password**: Secure the sharing of the document with a
-   :ref:`password <passwords>`. This setting can be changed later in the :ref:`access` menu.
+-  **Add a password**: Secure the sharing of the document with a :ref:`password <passwords>`. This setting can be changed later in the :ref:`access` menu.
 
 -  **Template**: Choose to start from a blank document or use a :ref:`template <templates>` as a starting point.
 
@@ -53,9 +45,7 @@ created.
 Saving
 ------
 
-Changes to documents are saved automatically. The status line in the
-document toolbar (under the title) confirms that changes have been
-saved.
+Changes to documents are saved automatically. The status line in the document toolbar (under the title) confirms that changes have been saved.
 
 .. _make_a_copy:
 
@@ -81,8 +71,7 @@ Document history
 
    The history toolbar
 
-The history of documents is saved and can be restored if needed. To view and
-restore the history of a document:
+The history of documents is saved and can be restored if needed. To view and restore the history of a document:
 
 1. |file-o| **File** > |history| **History**.
 2. Use the arrows to navigate:
@@ -94,8 +83,7 @@ restore the history of a document:
 3. Restore the displayed version with |check| **Restore** , or close the history without restoring
    with |times| **Close**.
 
-To save storage space, history can be deleted in the document’s
-:ref:`properties <document_properties>` :badge_owner:`Document owners`
+To save storage space, history can be deleted in the document’s :ref:`properties <document_properties>` :badge_owner:`Document owners`
 
 .. note::
    The history functionality works slightly differently in the :ref:`app_sheets` application, due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration. Please refer to :ref:`spreadsheet history <sheets_history>` for further details.
@@ -123,7 +111,6 @@ To create a :ref:`snapshot <snapshots>` from the displayed version of the histor
 - |camera| button in the toolbar.
 - In the dialog, provide a name for the snapshot.
 - |camera| **New Snapshot**
-
 
 .. _snapshots:
 
@@ -161,12 +148,10 @@ To delete a snapshot:
    Snapshots are part of the document's history. If you delete the history in the :ref:`document_properties`
    snapshots will be deleted as well.
 
-
 .. _document_properties:
 
 Properties
 ----------
-
 
 .. image:: /images/modal-properties.png
    :class: screenshot
@@ -185,9 +170,7 @@ Available data:
 -  Dates of creation and last access.
 -  Size.
 
-The document size shows the proportions used for content and for
-history. To save storage space, delete the document’s history with
-**Delete history** and confirm. :badge_owner:`Document owners`
+The document size shows the proportions used for content and for history. To save storage space, delete the document’s history with **Delete history** and confirm. :badge_owner:`Document owners`
 
 .. _document_users_and_chat:
 

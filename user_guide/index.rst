@@ -8,7 +8,6 @@ Welcome to the CryptPad User Guide.
 
 This guide is about using CryptPad to create, store, and collaborate on documents.
 
-
 .. toctree::
     :maxdepth: 1
 

@@ -4,9 +4,7 @@
 Drive
 =====
 
-The CryptDrive is used to store and manage documents. For logged in
-users it is the default landing page on CryptPad. It is also accessible
-from the other pages:
+The CryptDrive is used to store and manage documents. For logged in users it is the default landing page on CryptPad. It is also accessible from the other pages:
 
 -  ``Click`` on the logo at the top-left.
 -  User menu (avatar at the top-right) > |hdd-o| **CryptDrive**.
@@ -16,12 +14,9 @@ from the other pages:
 Display
 -------
 
-Documents in the CryptDrive can be displayed as a |list| list or a
-|th-large| grid. To switch between the two, use the button at the
-right of the CryptDrive toolbar (under the avatar).
+Documents in the CryptDrive can be displayed as a |list| list or a |th-large| grid. To switch between the two, use the button at the right of the CryptDrive toolbar (under the avatar).
 
-In grid mode, CryptPad can display thumbnails of documents. These can be
-turned on in the :ref:`user settings <user_settings_cryptdrive>`.
+In grid mode, CryptPad can display thumbnails of documents. These can be turned on in the :ref:`user settings <user_settings_cryptdrive>`.
 
 .. figure:: /images/drive-grid.png
    :class: screenshot
@@ -32,7 +27,6 @@ turned on in the :ref:`user settings <user_settings_cryptdrive>`.
    :class: screenshot
 
    The CryptDrive in list view.
-
 
 Managing documents
 ------------------
@@ -52,8 +46,7 @@ There are multiple ways to create folders in the CryptDrive:
 -  ``Right click`` > |folder| **New folder**.
 -  ``Ctrl + e`` > |folder| **Folder**.
 
-Once a folder is created, documents can be added to it by dragging them
-from the CryptDrive.
+Once a folder is created, documents can be added to it by dragging them from the CryptDrive.
 
 To change the color of a folder:
 
@@ -66,12 +59,9 @@ To share a folder and all of its contents:
 Renaming
 ~~~~~~~~
 
-There are two ways to rename documents on CryptPad. One changes the
-document title for all users, the other changes it only in your
-CryptDrive.
+There are two ways to rename documents on CryptPad. One changes the document title for all users, the other changes it only in your CryptDrive.
 
-To change the title of a documents for all users that have it in their
-CryptDrive:
+To change the title of a documents for all users that have it in their CryptDrive:
 
 #. ``Click`` on the title or the |pencil| button in the toolbar of the document.
 #. Type the new title.
@@ -83,8 +73,7 @@ To change the title of a document only in your CryptDrive:
 #. Type the new name.
 #. Save with the ``Enter`` key.
 
-The |flag| icon indicates that the title of a document is different in
-your CryptDrive than for other users.
+The |flag| icon indicates that the title of a document is different in your CryptDrive than for other users.
 
 .. _deleting:
 
@@ -106,8 +95,7 @@ To **remove** a document from the CryptDrive.
 -  ``Right click`` > |trash| **Move to trash**
 -  Select the document and press the ``Del`` key.
 
-To **remove** the document from the CryptDrive without storing it in the
-trash first:
+To **remove** the document from the CryptDrive without storing it in the trash first:
 
 - Select the document and press the ``Shift + Del`` keys.
 
@@ -116,9 +104,7 @@ To empty the trash:
 - ``Right click`` on the |trash| **Trash** tab to the left of the CryptDrive > |trash-o| **Empty the trash**.
 - ``Click`` on the |trash| **Trash** tab to access the trash > |trash-o| **Empty the trash**.
 
-If you are an :ref:`owner <owners>` of some documents in the trash when you empty it,
-you are prompted to decide if you want to **remove** or **destroy**
-them.
+If you are an :ref:`owner <owners>` of some documents in the trash when you empty it, you are prompted to decide if you want to **remove** or **destroy** them.
 
 To **destroy** a document without storing it in the trash first:
 
@@ -132,15 +118,11 @@ To **destroy** a document without storing it in the trash first:
 CryptDrive history
 ------------------
 
-The CryptDrive history is saved and can be restored if needed. From the
-CryptDrive:
+The CryptDrive history is saved and can be restored if needed. From the CryptDrive:
 
-1. ``Click`` on the |history| history button at the top-right (under
-   the avatar).
-2. Use the arrows |fast-backward| |step-backward| and |step-forward| |fast-forward| to step through
-   the history.
-3. Restore the displayed version with |check| **Restore**, or exit the history without restoring
-   with |times| **Close**.
+1. ``Click`` on the |history| history button at the top-right (under the avatar).
+2. Use the arrows |fast-backward| |step-backward| and |step-forward| |fast-forward| to step through the history.
+3. Restore the displayed version with |check| **Restore**, or exit the history without restoring with |times| **Close**.
 
 To save storage space the CryptDrive history can be deleted in the :ref:`user settings <user_settings_cryptDrive>`.
 
@@ -155,11 +137,9 @@ Tags
 
 :badge_user:`Logged in users`
 
-Group documents in multiple categories by using tags. Your tags are not
-visible by other users.
+Group documents in multiple categories by using tags. Your tags are not visible by other users.
 
-The |hashtag| **Tags** tab in the CryptDrive displays all tags in use
-and their associated documents.
+The |hashtag| **Tags** tab in the CryptDrive displays all tags in use and their associated documents.
 
 .. image:: /images/modal-tags.png
    :class: screenshot
@@ -174,8 +154,7 @@ To manage tags for multiple documents:
 #. Select the documents with ``Ctrl + Click`` in the CryptDrive.
 #. ``Right click`` on the documents > |hashtag| **Tags**.
 
-Only the tags assigned to all the documents are then displayed. Any tags
-added and/or removed are applied to all the selected documents.
+Only the tags assigned to all the documents are then displayed. Any tags added and/or removed are applied to all the selected documents.
 
 .. _templates:
 
@@ -184,9 +163,7 @@ Templates
 
 :badge_user:`Logged in users`
 
-Templates provide reusable starting points to create documents of a
-similar structure, for example invoices, letterheads, reports, and so
-on.
+Templates provide reusable starting points to create documents of a similar structure, for example invoices, letterheads, reports, and so on.
 
 To create a template:
 
@@ -195,19 +172,14 @@ To create a template:
 
 or
 
-1. In an existing document: |file-o| **File** > |bookmark| **Save as
-   template**.
+1. In an existing document: |file-o| **File** > |bookmark| **Save as template**.
 
 or
 
 1. Create a :ref:`new document <new_document>`.
-2. On the creation screen select |cptools new-template| **New
-   template**.
+2. On the creation screen select |cptools new-template| **New template**.
 
 To use a template:
 
 -  Select the template when creating a :ref:`new document <new_document>`.
--  In an existing document: |file-o| **File** > |upload| **Import a
-   template**.
-   Please note: this option **replaces** the contents of the document
-   with the template.
+-  In an existing document: |file-o| **File** > |upload| **Import a template**. Please note: this option **replaces** the contents of the document with the template.

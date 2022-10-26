@@ -4,8 +4,7 @@
 Whiteboard
 ==========
 
-The Whiteboard application in CryptPad is based on
-`Fabric.js <http://fabricjs.com/>`__.
+The Whiteboard application in CryptPad is based on `FabricJs <https://fabricjs.com>`__.
 
 .. image:: /images/app-whiteboard-preview.png
    :class: screenshot
@@ -13,9 +12,7 @@ The Whiteboard application in CryptPad is based on
 Toolbar
 -------
 
-|picture-o| **Insert**: Add an image to the document. The image can be
-chosen in the CryptDrive or uploaded. :badge_user:`Logged in users`
-
+|picture-o| **Insert**: Add an image to the document. The image can be chosen in the CryptDrive or uploaded. :badge_user:`Logged in users`
 
 Drawing
 -------
@@ -38,12 +35,9 @@ To delete everything on the canvas:
 |paint-brush| Paint mode
 -------------------------
 
-The width and opacity of line are set in the drawing toolbar. The
-preview to the right shows the size and opacity of the paintbrush.
+The width and opacity of line are set in the drawing toolbar. The preview to the right shows the size and opacity of the paintbrush.
 
-Color is selected in the palette in the drawing toolbar. To change a
-color ``Double click`` on it and select a new one using the
-color-picker.
+Color is selected in the palette in the drawing toolbar. To change a color ``Double click`` on it and select a new one using the color-picker.
 
 |arrows| Select mode
 ---------------------
@@ -64,7 +58,6 @@ Export
 | |file-o| **File** > |download| **Export**
 | Supported format: ``.png``
 
-To export an image to the CryptDrive, for example to use it in other
-documents:
+To export an image to the CryptDrive, for example to use it in other documents:
 
 |file-o| **File** >  |file-image-o| **Save as image**
