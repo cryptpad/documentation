@@ -203,7 +203,7 @@ List my instance in public directories
 In addition to this setting being enabled, the following criteria are required in order to have an instance listed:
 
 - All :ref:`diagnostic tests <admin_checkup>` must pass
-- The version of CryptPad must be up to date within 90 days of the latest release, and at least 4.14
+- The version of CryptPad must be up to date within 90 days of `the latest release <https://github.com/xwiki-labs/cryptpad/releases>`_
 - Instance information must be provided in the :ref:`General tab <admin_instance_info>`
 - :ref:`admin_telemetry_optout` must be enabled
 
