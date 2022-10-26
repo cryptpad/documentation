@@ -212,6 +212,8 @@ Guest Access
  - Blocked: only users who are logged in to their CryptPad account can respond to the form.
  - Allowed: unregistered users can respond, logged in users can choose to respond anonymously.
 
+.. XXX TODO: rewrite section below with new setting to submit multiple times, edit, etc
+
 Editing after submission
 +++++++++++++++++++++++++
 
@@ -240,6 +242,13 @@ Color theme
 ++++++++++++
 
 Choose the background and highlight color for the form.
+
+.. XXX TODO
+
+.. Responses
+.. ~~~~~~~~~~
+
+.. notifications for new responses are sent to the form _owner_
 
 
 Advanced use-cases
