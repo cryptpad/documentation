@@ -2,7 +2,7 @@
 .. _drive:
 
 CryptDrive
-=====
+==========
 
 CryptDrive is used to store and manage documents. For logged in users it is the default landing page on CryptPad. It is also accessible from the other pages:
 
@@ -31,8 +31,6 @@ In grid mode, CryptPad can display thumbnails of documents. These can be turned 
 Managing documents
 ------------------
 
-.. XXX: clarify here that you can drag and drop between folders etc...
-
 .. _folders:
 
 Folders
@@ -46,7 +44,7 @@ There are multiple ways to create folders in the drive:
 -  ``Right click`` > |folder| **New folder**.
 -  ``Ctrl + e`` > |folder| **Folder**.
 
-Once a folder is created, documents can be added to it by dragging them from the drive.
+Once a folder is created, documents can be added to it by dragging them from the drive. You can also drag and drop files from one folder to another. Use the convenient left sidebar tree to drop the file in the desired destination.
 
 To change the color of a folder:
 
