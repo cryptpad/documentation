@@ -4,8 +4,7 @@ Maintenance
 Upgrading CryptPad
 ------------------
 
-The basic set of commands to upgrade CryptPad to a new version is as
-follows (assuming CryptPad is installed in ``/var/www/cryptpad``).
+The basic set of commands to upgrade CryptPad to a new version is as follows (assuming CryptPad is installed in ``/var/www/cryptpad``).
 
 .. code:: bash
 
@@ -14,18 +13,14 @@ follows (assuming CryptPad is installed in ``/var/www/cryptpad``).
    npm update
    bower update
 
-Depending on the version, there may be changes that require special
-consideration. It is therefore highly recommended to read the release
-notes for the specific targetted version before upgrading.
+Depending on the version, there may be changes that require special consideration. It is therefore highly recommended to read the release notes for the specific targetted version before upgrading.
 
 .. _admin_database:
 
 Database administration
 -----------------------
 
-CryptPad stores user data on the file system rather than a relational
-database. The paths to different types of data are configurable in
-``cryptpad/config/config.js``:
+CryptPad stores user data on the file system rather than a relational database. The paths to different types of data are configurable in ``cryptpad/config/config.js``:
 
 .. code:: javascript
 
@@ -39,26 +34,18 @@ database. The paths to different types of data are configurable in
    decreePath: './data/decrees',
    logPath: './data/logs',
 
-Each CryptPad document is a “chain” of edits stored in a file in
-``filePath``. To find a specific document in the database, use the
-identifier found in the document properties.
+Each CryptPad document is a “chain” of edits stored in a file in ``filePath``. To find a specific document in the database, use the identifier found in the document properties.
 
-For example the document with identifier
-``bb1edc4cb7648605284db30dfcd2eebf`` can be found at
-``cryptpad/datastore/bb/bb1edc4cb7648605284db30dfcd2eebf.ndjson``.
+For example the document with identifier ``bb1edc4cb7648605284db30dfcd2eebf`` can be found at ``cryptpad/datastore/bb/bb1edc4cb7648605284db30dfcd2eebf.ndjson``.
 
-To fully remove a document from the database, simply remove the file
-using the operating system functionality.
+To fully remove a document from the database, simply remove the file using the operating system functionality.
 
-To completely reset the database and remove all documents, delete the
-entire ``cryptpad/datastore`` folder. The folder will be recreated the
-next time CryptPad starts.
+To completely reset the database and remove all documents, delete the entire ``cryptpad/datastore`` folder. The folder will be recreated the next time CryptPad starts.
 
 Backup and migration
 ~~~~~~~~~~~~~~~~~~~~
 
-To back up or migrate a CryptPad instance, check where data is being
-written as indicated in ``cryptpad/config/config.js``.
+To back up or migrate a CryptPad instance, check where data is being written as indicated in ``cryptpad/config/config.js``.
 
 Locate the following directories to backup or migrate:
 
@@ -70,40 +57,21 @@ Locate the following directories to backup or migrate:
 -  ``tasks/``
 -  ``logs/``
 
+Additionally, configurations and customizations may be backed up or migrated: - ``config/config.js`` - ``customize/`` (or ``customize.dist`` if modifications have been made directly in the source tree)
 
-Additionally, configurations and customizations may be backed up or
-migrated: - ``config/config.js`` - ``customize/`` (or ``customize.dist``
-if modifications have been made directly in the source tree)
-
-The contents of CryptPad’s filesystem database are encrypted, it is
-therefore reasonably safe to back up to a cloud service without
-violating users’ privacy, though this will make metadata available
-(e.g. file creation/modification dates) .
+The contents of CryptPad’s filesystem database are encrypted, it is therefore reasonably safe to back up to a cloud service without violating users’ privacy, though this will make metadata available (e.g. file creation/modification dates).
 
 Advanced administration
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-In the event of a document becoming corrupted, it is possible to delete
-individual sets of changes from the database.
+In the event of a document becoming corrupted, it is possible to delete individual sets of changes from the database.
 
-Locate the relevant channel, or document ID as explained above. Note
-that the document properties can be opened by right clicking the
-document in the drive, if the document cannot be opened.
+Locate the relevant channel, or document ID as explained above. Note that the document properties can be opened by right clicking the document in the drive, if the document cannot be opened.
 
-Open the channel in a text editor. Each line of the file represents a
-set of changes sent by a user, if you delete particular lines from the
-file, those messages will no longer be sent to clients. Note that the
-content of each line contains what seems to be random data: this is
-because all messages are encrypted by clients before being sent to the
-server. This makes it difficult to determine which messages are
-responsible for making a document unrecoverable by other means.
+Open the channel in a text editor. Each line of the file represents a set of changes sent by a user, if you delete particular lines from the file, those messages will no longer be sent to clients. Note that the content of each line contains what seems to be random data: this is because all messages are encrypted by clients before being sent to the server. This makes it difficult to determine which messages are responsible for making a document unrecoverable by other means.
 
-It is quite likely that deleting messages will cause the document to
-become unreadable. If you know that the document was working until very
-recently, you can try removing the most recent messages a few at a time
-until the desired content is recovered.
+It is quite likely that deleting messages will cause the document to become unreadable. If you know that the document was working until very recently, you can try removing the most recent messages a few at a time until the desired content is recovered.
 
 .. warning::
 
-   Making manual modifications to a corrupted file is likely to
-   make matters worse. It is highly recommended to back up the file before attempting manual recovery.
+   Making manual modifications to a corrupted file is likely to make matters worse. It is highly recommended to back up the file before attempting manual recovery.
