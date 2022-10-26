@@ -9,7 +9,6 @@ A number of monitoring and configuration options are available through the admin
 The admin panel is available to administrator users (see :ref:`admin_adminusers`).
 
 - **User Menu** (avatar at the top right) > |gears| **Administration**
-
 - or go to https://your-instance.com/admin/
 
 This page repeats the comments present on the admin panels and adds a few clarifications.
