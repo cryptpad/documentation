@@ -48,7 +48,7 @@ Install Cryptpad
 ----------------
 
 .. note::
-   the development team recommends creating a dedicated user to install and run CryptPad in production rather than using the root user.
+   The development team recommends creating a dedicated user to install and run CryptPad in production rather than using the root user.
 
 Clone the CryptPad repository
 
@@ -56,8 +56,11 @@ Clone the CryptPad repository
 
    git clone https://github.com/xwiki-labs/cryptpad.git cryptpad
 
-.. XXX TODO add git checkout $(git tag -l | grep -v 'v1.*$' | sort -V | tail -n 1)
-.. needed to select the last branch and NOT run CryptPad from main
+Switch to the latest published tag
+
+.. code:: bash
+
+   git checkout $(git tag -l | grep -v 'v1.*$' | sort -V | tail -n 1)
 
 Dependencies
 ~~~~~~~~~~~~
