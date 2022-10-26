@@ -1,3 +1,4 @@
+
 General information
 ###################
 
@@ -16,12 +17,9 @@ CryptPad uses a sandboxing system that isolates the user interface from the in-m
 CryptPad's code is split in 5 distinct levels, 2 server side and 3 client side.
 
 -  Server side
-
    -  The "server" which contains the code launched in the main process. It manages the websocket connections and all calls to the server go through this level.
    -  The "workers" that manage all database connections and scripts that require more CPU resources. The main "server" calls them when it receives certain commands from users. They are launched in separate sub-processes in order to be able to make the most of the available CPU cores.
-
 -  Client side
-
    -  The base level, called "outer" in the code. This level is loaded with the "unsafe" URL (the one visible in the browser address bar) because it has access to sensitive data, including user account encryption keys.
    -  The iframe containing the user interface, called "inner" in the code, is launched as a daughter of "outer" and uses the "safe" URL. This iframe represents the entire screen visible per the users. No interface element is outside of the iframe. It has only access to the data that needs to be displayed on the screen.
    -  The upper level, called "worker", which manages the connection to the server and keeps all the user account data in memory. This level is loaded in a SharedWorker when the browser supports it (Firefox, Chrome, Edge) with the "unsafe" URL, which means that all the browser's tabs loaded on this CryptPad instance will have access to the same worker. It allows us to load the account data only once for all open tabs and to use only one Websocket connection.
@@ -38,28 +36,21 @@ Encryption
 CryptPad uses several encryption systems appropriate for different use cases. These systems come from the `TweetNaCl <https://github.com/dchest/tweetnacl-js>`__ library.
 
 -  Documents, user account, static files and group chat
-
    -  Symmetrical encryption "xsalsa20-poly1305".
    -  A unique encryption key allows users to encrypt and decrypt the desired content. This key is derived from the "hash" of the URL (the part after the #) because this part is never sent to the server by the browser, which makes it possible to respect the Zero-knowledge constraint (the server doesn't know the encryption keys).
    -  All users with access to this key can decrypt the "patches" allowing them to rebuild the document or decrypt the chat messages.
-
 -  Read-only access to documents
-
    -  Signature “ed25519”.
    -  Since the encryption is symmetrical, all users who can read and therefore decrypt the document can also technically encrypt messages and send them. A signature system makes it possible to authorize or to block sending messages.
    -  The edit URL contains a signature in addition to the encryption key. Editors will therefore be able to "sign" messages after encrypting them.
    -  A "public" verification key allows all users (editors **and** readers) to check if an encrypted message has been signed with the correct signing key. Messages with an invalid signature are ignored.
    -  When a document is created, the public verification key associated with this document is sent to the server. Messages with invalid signature are not stored in the database.
-
 -  Private chat between two users ("contacts" application)
-
    -  Asymmetric encryption "x25519-xsalsa20-poly1305".
    -  When creating a user account, an asymmetric encryption key pair is generated for the account, as well as a signature key pair. Each of these pairs contains a private and a public component. The public parts are shared with the contacts.
    -  Asymmetric encryption allows to encrypt a message that only a single other user can decrypt when their public encryption key is known. Using our own private key and the contact's public key, we can encrypt the message for that user only, as long as he knows our own public key.
    -  Sending a contact request to a user allows us to exchange public keys needed for this encryption system.
-
 -  Mailbox and notification center
-
    -  Double asymmetric encryption "x25519-xsalsa20-poly1305".
    -  The notification center works through other users sending us a "notification" when they perform an action concerning our account.
    -  Here we want to be able to send messages to another user in a way where they have proof of the sender's identity, without the server (or anyone with access to the database) being able to identify the sender or recipient via their public keys.
@@ -138,11 +129,8 @@ Example
 ~~~~~~~
 
 -  Login keys (block identifier and block encryption key) on cryptpad.fr
-
    -  ``localStorage.Block_hash = "https://files.cryptpad.fr/block/c8/c89FhK8CQfTcoiP073T-RwSgqbY7f--Naoa3ZH8feLk=#UDYn4ZMy1tLksGtYMPewPewCSPkM+vEbluI7hMIe81U="``
-
 -  User account keys on cryptpad.fr
-
    -  ``"/1/edit/PeWuMBluHImPezK+0IHvtA/4e4242jfxWiKi3JAjtkx-lDt/"``
 
 .. XXX change this v1 hash example
@@ -225,4 +213,3 @@ Example
      console.error(error);
 
    });
-

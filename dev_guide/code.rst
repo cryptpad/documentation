@@ -7,5 +7,3 @@ Code
 
     general.rst
     client.rst
-
-

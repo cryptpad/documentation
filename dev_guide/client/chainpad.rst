@@ -1,3 +1,4 @@
+
 ChainPad and Listmap
 ====================
 
@@ -22,7 +23,6 @@ The interactions between CryptPad and ChainPad can be summarized as :
 -  Indicate to ChainPad any changes made locally
 -  Receive patches from ChainPad related to local changes
 -  Retrieve the current state of the ChainPad document
-
    -  State common to all users, called "authDoc"
    -  Local state (not yet saved/sent), called "userDoc"
 
@@ -75,4 +75,3 @@ JavaScript "Proxies" are an extension of classical JavaScript objects and arrays
 This library integrates Chainpad-netflux, detailed above, which provides a Chainpad instance directly connected to the server and which manages the encryption. To use chainpad-listmap, a configuration similar to that of chainpad-netflux must be provided: a "channelId" for the document to retrieve, encryption/decryption functions for the document and a connection address to the server. Chainpad-listmap directly returns a Proxy. The Proxy can be used as any JavaScript object and changing its content in any way will automatically propagate these changes to other users. Events are triggered on this object in several cases: "ready" when the history is synchronized, "change" when an element is added or modified, "remove" when an element is deleted as well as "disconnect" and "reconnect" for network problems.
 
 .. note:: The **user account** (containing the drive), the **shared folders** and the **teams** are all used and stored as a chainpad-listmap document.
-

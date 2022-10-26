@@ -14,6 +14,3 @@ Client
     client/outer.rst
     client/inner.rst
 
-
-
-

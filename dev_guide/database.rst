@@ -18,7 +18,6 @@ Key points
 * each *channel* is stored within its own file on the server
 * each change to the document is encoded on a single line of that file
 
-
 Understanding document URLs
 ---------------------------
 
@@ -44,14 +43,12 @@ There are several pieces of information there, separated by slashes.
     editor mode: edit
     Encryption seed: plpAeHfQ4YO49fczV5erSCgd
 
-
 Finding a document
 -------------------
 
 It is possible to run code provided by the CryptPad server in your browser console. To extract the channel id of a document you have open:
 
 - |file-o| **File** > |info-circle| **Properties** > **Document identifier**
-
 - Alternatively you can run this snippet:
 
 .. code-block:: javascript
