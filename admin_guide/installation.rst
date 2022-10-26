@@ -20,7 +20,7 @@ The development team uses and recommends the following hardware requirements as 
 
 -  Debian 11
 -  2GB RAM
--  2 x86 CPUs
+-  2 CPUs
 -  20GB storage (depending on planned usage)
 
 .. warning::
