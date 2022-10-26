@@ -67,7 +67,6 @@ The following fields are used to describe the instance in the :ref:`list of publ
 
    This information is used on the instance front page.
 
-
 User Storage
 ------------
 
@@ -77,12 +76,10 @@ This section is for managing storage limits on the instance.
 
    The values set in the admin panel override the defaults or modifications made to the configuration files.
 
-
 Storage Limit
 ~~~~~~~~~~~~~
 
 Maximum storage limit for CryptDrives (users and teams) when no custom rule is applied.
-
 
 Apply a custom limit
 ~~~~~~~~~~~~~~~~~~~~
@@ -114,23 +111,15 @@ List all the custom storage limits applied to your instance.
 Statistics
 ----------
 
--  Active connections: Number of active websocket connections (and
-   unique IP addresses connected)
-
--  Active pads: Number of unique documents currently being viewed or
-   edited
-
+-  Active connections: Number of active websocket connections (and unique IP addresses connected)
+-  Active pads: Number of unique documents currently being viewed or edited
 -  Open Files: Number of file descriptors currently open on the server
-
 -  Registered users: Number of users registered on your instance
-
--  Disk usage: Amount of storage space consumed by various CryptPad
-   resources
+-  Disk usage: Amount of storage space consumed by various CryptPad resources
 
 .. warning::
 
    The disk usage report can be very resource intensive to run on large instances.
-
 
 Support
 -------
@@ -142,7 +131,6 @@ List of tickets sent by users to the support mailbox. All the administrators can
 -  reply to tickets
 -  close tickets
 -  remove closed tickets
-
 
 Broadcast
 ---------
