@@ -11,9 +11,7 @@ Please make sure that the following tools are installed on your system before in
 
 -  GIT
 -  nodejs (we use node v12.14.0)
-   -  Using
-      `NVM <https://github.com/nvm-sh/nvm#installing-and-updating>`__ is
-      recommended
+   -  Using `NVM <https://github.com/nvm-sh/nvm#installing-and-updating>`__ is recommended
 -  npm
 -  bower
    -  Installed with ``npm install -g bower``
