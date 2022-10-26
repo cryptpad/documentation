@@ -151,7 +151,7 @@ In a production environment, the development team recommends `Nginx <https://doc
 
    CryptPad cannot run in a subfolder. Make sure you configure your server to access it through the root domain or a subdomain.
 
-Note that the version of Nginx distributed by your operating system may not support websockets. The recommended minimum version to serve CryptPad is ``1.10.3``.
+Note that the version of Nginx distributed by your operating system may not support websockets. The recommended minimum version to serve CryptPad is ``1.13.0``.
 
 To configure Nginx for CryptPad:
 
