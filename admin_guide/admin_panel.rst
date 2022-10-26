@@ -63,11 +63,9 @@ The following fields are used to describe the instance in the :ref:`list of publ
 - Instance description
 - Hosting location (country where the instance's encrypted data is hosted)
 
-.. XXX remove this and add "this information IS USED on the instance front page..." once we actually use it
-
 .. note::
 
-   This information will be used on the instance front page in a future version of CryptPad.
+   This information is used on the instance front page.
 
 
 User Storage
