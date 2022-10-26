@@ -3,7 +3,7 @@ Installation
 
 This guide is about installing a public CryptPad instance available on the internet. For instructions about installing and running a local development instance please see the :ref:`dev_guide`.
 
-The development team is available to provide paid support contracts (see our `organizational plans <https://cryptpad.fr/accounts/#org>`__ for an idea of our pricing), otherwise, requests for assistance can be directed to the community in our `Matrix channel <https://app.element.io/#/room/#cryptpad:matrix.xwiki.com>`_.
+The development team is available to provide paid support contracts (see our `organizational plans <https://cryptpad.fr/accounts/#org>`__ for an idea of our pricing), otherwise, requests for assistance can be directed to the community in our `forum <https://forum.cryptpad.org>`_ or `admins Matrix channel <https://matrix.to/#/#cryptpad-admins:matrix.xwiki.com>`_.
 
 Prerequisites
 -------------
