@@ -1,3 +1,4 @@
+
 Frequently Asked Questions
 ==========================
 
@@ -10,7 +11,6 @@ If CryptPad is not working as expected there are a few common things to try. Mos
 #. Try using your browser in a private window and/or with all extensions disabled
 #. Try using a different browser. We test the latest versions of Firefox, Chromium, and Safari
 #. If the issues persist, please contact support
-
 
 List of extensions known to cause issues with CryptPad
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -28,7 +28,6 @@ List of extensions known to cause issues with CryptPad
 .. note::
     If you identify issues with another extension please `report it to the development team <https://github.com/xwiki-labs/cryptpad/issues/new/choose>`_
 
-
 I forgot my password
 ---------------------
 
@@ -41,7 +40,6 @@ If you are still logged in to an account for which you have forgotten the passwo
 3. In another browser, register a new account with a known password
 4. While logged in to the new account: **User Menu** (avatar at the top right) > |gear| **Settings** > |hdd-o| **CryptDrive** and click the **Restore** button.
 
-
 How to import/export my documents to/from another platform?
 -----------------------------------------------------------
 
@@ -50,13 +48,11 @@ Making CryptPad compatible with a wide range of document formats is an ongoing c
 .. note::
     Simply copy-pasting content from existing software into CryptPad is an easy first step to try when importing/exporting. Please note that the import/export methods below can improve results significantly.
 
-
 It is possible to upload **files** to CryptPad for secure storage and sharing, however this does not make every file an editable CryptPad **document**.
 
 Text files uploaded as files can be opened as a Code/Markdown document from the Drive with ``Right click`` > |cptools code| **Open in Code editor**.
 
 To import any other file type in an editable form, please use the |file-o| **File** > |upload| **Import** functionality in the appropriate CryptPad editor as explained below.
-
 
 Rich text document import/export
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -91,7 +87,6 @@ To export, use |file-o| **File** > |download| **Export** and choose a format:
 .. note::
     Import/export of spreadsheets to various formats is only available in browsers that support specific functionality. Please see the `up-to-date list of supported browsers <https://caniuse.com/sharedarraybuffer>`_.
 
-
 I cannot do X with a document I created
 ---------------------------------------
 
@@ -105,7 +100,6 @@ Some functionality on CryptPad is restricted to :ref:`document owners <owners>`.
 The ownership of a document is set when :ref:`creating it<new_document>` and cannot be changed afterwards if the document is created without an owner.
 
 The development team is considering removing this distinction in future. In the meantime, the safe default option is to "own" all documents you create in order to retain full control over them, including the ability to destroy them.
-
 
 Can I use CryptPad on mobile?
 -----------------------------
@@ -127,7 +121,6 @@ To address these problems, the development team is working on making CryptPad a 
 
 .. Is Cryptpad suitable for storing large amounts of data?
 .. --------------------------------------------------------
-
 
 Can CryptPad sync documents to my local filesystem?
 ---------------------------------------------------
@@ -160,5 +153,3 @@ Can you provide a Data processing Agreement (DPA)?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 DPAs are a feature of our `Organization Plans <https://cryptpad.fr/accounts/#org>`_, note that a example DPA is available for preview on that page.
-
-
