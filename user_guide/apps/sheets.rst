@@ -78,4 +78,6 @@ Import/Export
 | Supported formats: ``.bin`` files exported by this application, Excel ``.xlsx``.
 
 | |file-o| **File** > |download| **Export**.
-| Supported formats: ``.bin``, Excel ``.xlsx``, ``.ods``, ``.csv``, ``.pdf``.
+| Supported formats: ``.bin``, Excel ``.xlsx``, ``.ods``, ``.pdf``.
+
+.. .csv removed from the supported export formats as it's broken and deactivated

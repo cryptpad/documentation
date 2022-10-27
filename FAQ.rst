@@ -78,7 +78,9 @@ To import spreadsheets, the supported format are Microsoft Excel ``.xlsx`` and O
 
 To export, use |file-o| **File** > |download| **Export** and choose a format:
 
-- The ``.csv`` format is the most widely supported (note that it only contains data and not formatting).
+.. .csv commented out as it's broken and deactivated
+..- The ``.csv`` format is the most widely supported (note that it only contains data and not formatting).
+
 - To use in Microsoft Excel or Google sheets, select ``.xlsx``.
 - To use in LibreOffice Calc, select ``.ods``.
 - For cases where no further editing of the data is required after export (presentations, reports, etc), select ``.pdf``.
