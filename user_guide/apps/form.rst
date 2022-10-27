@@ -205,16 +205,18 @@ Guest Access
  - Blocked: only users who are logged in to their CryptPad account can respond to the form.
  - Allowed: unregistered users can respond, logged in users can choose to respond anonymously.
 
-.. XXX TODO: rewrite section below with new setting to submit multiple times, edit, etc
-
 Editing after submission
 +++++++++++++++++++++++++
 
-- Allowed: participants can modify their responses after submitting them.
-- Blocked: participants can only respond once.
+.. XXX TODO adapt this following paragraph to the latest UI changes
+
+- One time only: participants can answer the form only one time and can't modify or delete their responses after submitting them.
+- One time and edit/delete: participants can answer the form only one time but are allowed modify or delete their responses after submitting them.
+- Multiple times: participants can answer the form multiple times but can't modify or delete their responses after submitting them.
+- Multiple times and edit/delete: participants can answer the form multiple times and are allowed to modify or delete their responses after submitting them.
 
 .. note::
-   In the case where editing after submission is allowed at first, used by some participants, and *then* blocked by the form author, only the first submitted responses for all participants are counted. If the setting is later re-enabled, then all responses and modifications are counted.
+   Please note that if Guest Access is allowed, unregistered users can still answer multiple times a "One time only" form if they open it on a web browser private window, or wipe the browser cookies, etc.
 
 Publish Responses
 ++++++++++++++++++
@@ -235,13 +237,10 @@ Color theme
 
 Choose the background and highlight color for the form.
 
-.. XXX TODO
+Responses
+~~~~~~~~~~
 
-.. Responses
-.. ~~~~~~~~~~
-
-.. notifications for new responses are sent to the form _owner_
-
+Notifications for new responses are sent to the form _owner_ through the integrated notification interface.
 
 Advanced use-cases
 ~~~~~~~~~~~~~~~~~~~
