@@ -102,9 +102,7 @@ Recipients will be able to view the selected version in read-only mode.
 .. warning::
    Sharing a link to a version also gives read-only access to all versions of the document.
 
-.. TODO problem with nested headings messing up the sidebar navigation here
-.. using bold for now, if/when solved put a link to this in snapshots section
-.. .. _snapshot_from_history:
+.. _snapshot_from_history:
 
 **Create a snapshot from history**
 
