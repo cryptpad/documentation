@@ -67,8 +67,6 @@ Split the form into pages. Only displayed to participants.
 Question types
 ~~~~~~~~~~~~~~~
 
-.. XXX add examples here to demo each type
-
 |cptools form-text| Text
 +++++++++++++++++++++++++
 
