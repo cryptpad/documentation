@@ -187,6 +187,10 @@ In addition to this setting being enabled, the following criteria are required i
 - The version of CryptPad must be up to date within 90 days of `the latest release <https://github.com/xwiki-labs/cryptpad/releases>`_
 - Instance information must be provided in the :ref:`General tab <admin_instance_info>`
 - :ref:`admin_telemetry_optout` must be enabled
+- Absence of analytics and third-party trackers
+- A working backup strategy is in place and has been tested
+- At least one other person must have access to the infrastructure
+- Commitment to give users at least 6 months of advance warning in case of shutting down
 
 .. note::
 
