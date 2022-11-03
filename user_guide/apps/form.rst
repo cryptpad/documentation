@@ -53,8 +53,6 @@ Split the form into pages. Only displayed to participants.
 |cptools form-conditional| Conditional Section
 ++++++++++++++++++++++++++++++++++++++++++++++
 
-:badge_new:`New in version 4.11`
-
 |cptools form-list-radio| **Choice** and |cptools form-list-check| **Checkbox** questions can be used to display or hide a section of questions.
 
 1. In the form editor, use the |plus| **Add** buttons between questions, or the list at the bottom of the form, to add a |cptools form-conditional| **Conditional Section**.
@@ -207,7 +205,7 @@ Guest Access
 Editing after submission
 ++++++++++++++++++++++++
 
-.. XXX TODO adapt this following paragraph to the latest UI changes
+:badge_new:`New in version 5.2`
 
 - One time only: participants can answer the form only one time and can't modify or delete their responses after submitting them.
 - One time and edit/delete: participants can answer the form only one time but are allowed modify or delete their responses after submitting them.
