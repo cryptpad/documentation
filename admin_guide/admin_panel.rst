@@ -1,4 +1,3 @@
-
 .. _admin_panel:
 
 Administration panel

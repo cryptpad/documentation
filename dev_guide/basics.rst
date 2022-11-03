@@ -1,4 +1,3 @@
-
 Key elements in CryptPad
 ===============================
 

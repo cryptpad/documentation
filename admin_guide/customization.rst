@@ -1,4 +1,3 @@
-
 .. _admin_customization:
 
 Instance customization

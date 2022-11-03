@@ -1,4 +1,3 @@
-
 .. _dev_contribute_code:
 
 Contribute Code

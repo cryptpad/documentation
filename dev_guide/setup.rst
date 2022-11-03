@@ -1,4 +1,3 @@
-
 .. _dev_instance:
 
 Set up a development instance

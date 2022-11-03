@@ -1,4 +1,3 @@
-
 .. _app_sheets:
 
 Spreadsheet

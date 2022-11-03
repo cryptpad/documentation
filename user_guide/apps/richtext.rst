@@ -1,4 +1,3 @@
-
 .. _app_rich_text:
 
 Rich Text

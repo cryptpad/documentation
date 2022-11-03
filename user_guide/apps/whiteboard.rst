@@ -1,4 +1,3 @@
-
 .. _app_whiteboard:
 
 Whiteboard

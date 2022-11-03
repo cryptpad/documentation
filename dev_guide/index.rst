@@ -1,4 +1,3 @@
-
 .. _dev_guide:
 
 Developer Guide

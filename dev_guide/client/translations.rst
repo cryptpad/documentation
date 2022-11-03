@@ -1,4 +1,3 @@
-
 .. _dev_translations:
 
 Translation keys

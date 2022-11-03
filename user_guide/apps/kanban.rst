@@ -1,4 +1,3 @@
-
 .. _app_kanban:
 
 Kanban
