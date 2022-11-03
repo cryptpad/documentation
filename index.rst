@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 CryptPad Documentation
-==================================================
+======================
 
 Welcome to the CryptPad documentation.
 

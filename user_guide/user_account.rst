@@ -11,7 +11,7 @@ Account types
 There are three types of accounts on CryptPad:
 
 Guest user
-~~~~~~~~~~~
+~~~~~~~~~~
 
 Non-registered users are identified by an emoji animal or mascot avatar (at the top right).
 

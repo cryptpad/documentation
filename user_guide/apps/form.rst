@@ -37,7 +37,7 @@ Utilities
 ~~~~~~~~~~
 
 |cptools form-paragraph| Description
-+++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++
 
 Add text to the form using Markdown syntax.
 
@@ -51,7 +51,7 @@ To add an image from the CryptDrive or upload a new one, use the |picture-o| ico
 Split the form into pages. Only displayed to participants.
 
 |cptools form-conditional| Conditional Section
-+++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++
 
 :badge_new:`New in version 4.11`
 
@@ -64,10 +64,10 @@ Split the form into pages. Only displayed to participants.
 5. In the participant view, the section will only be displayed if the conditions are true.
 
 Question types
-~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~
 
 |cptools form-text| Text
-+++++++++++++++++++++++++
+++++++++++++++++++++++++
 
 Response: one line of text
 
@@ -80,7 +80,7 @@ Options:
     In the case of link and email, the question is highlighted in red and an error is shown to the user if their response does not fit the required format.
 
 |cptools form-paragraph| Paragraph
-+++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
 
 Response: multiple lines of text
 
@@ -91,7 +91,7 @@ Options:
 .. _form_Q_choice:
 
 |cptools form-list-radio| Choice
-+++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++
 
 Response: one choice from the list
 
@@ -102,7 +102,7 @@ Options:
 - Delete an option with |times|
 
 |cptools form-grid-radio| Choice Grid
-+++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++
 
 Response: one option choice per item
 
@@ -115,7 +115,7 @@ Options:
 .. _form_Q_checkbox:
 
 |cptools form-list-check| Checkbox
-++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
 
 Response: multiple choices from the list
 
@@ -127,7 +127,7 @@ Options:
 - Delete an option with |times|
 
 |cptools form-grid-check| Checkbox Grid
-+++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++
 
 Response: multiple choices for each item
 
@@ -139,7 +139,7 @@ Options:
 - Delete an item or option with |times|
 
 |cptools form-list-ordered| Ordered List
-+++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++
 
 Response: order of preference for the listed options
 
@@ -150,7 +150,7 @@ Options:
 - Delete an option with |times|
 
 |cptools form-poll| Poll
-+++++++++++++++++++++++++
+++++++++++++++++++++++++
 
 Response: |check| Yes, |times| No, or |cptools form-poll-maybe| Acceptable for each of the proposed options
 
@@ -174,7 +174,7 @@ Option types:
 .. _form_settings:
 
 Form Settings
-~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
 
 Use the 3 buttons at the top for easy access to:
 
@@ -186,7 +186,7 @@ Use the 3 buttons at the top for easy access to:
    To share an **author** link to the form (with edit rights), use the :ref:`share` menu in the toolbar.
 
 Closing date
-+++++++++++++
+++++++++++++
 
 Date after which the form will be closed to new responses
 
@@ -194,7 +194,7 @@ Date after which the form will be closed to new responses
    - If a closing date is set, use **Remove closing date** to remove it.
 
 Anonymize responses
-++++++++++++++++++++
++++++++++++++++++++
 
 All responses are anonymized regardless of whether they are logged in to a CryptPad account. If un-checked, participants who are logged-in can still opt to answer anonymously if guest access is allowed (see below).
 
@@ -205,7 +205,7 @@ Guest Access
  - Allowed: unregistered users can respond, logged in users can choose to respond anonymously.
 
 Editing after submission
-+++++++++++++++++++++++++
+++++++++++++++++++++++++
 
 .. XXX TODO adapt this following paragraph to the latest UI changes
 
@@ -218,7 +218,7 @@ Editing after submission
    Please note that if Guest Access is allowed, unregistered users can still answer multiple times a "One time only" form if they open it on a web browser private window, or wipe the browser cookies, etc.
 
 Publish Responses
-++++++++++++++++++
++++++++++++++++++
 
 Allows participants who submit the form to view responses. Once enabled, this setting publishes all past and future responses.
 
@@ -227,25 +227,25 @@ Allows participants who submit the form to view responses. Once enabled, this se
     Once responses are made public they cannot be made private again.
 
 Submit message
-+++++++++++++++
+++++++++++++++
 
 Add a custom message to be displayed after participants submit the form.
 
 Color theme
-++++++++++++
++++++++++++
 
 Choose the background and highlight color for the form.
 
 Responses
-~~~~~~~~~~
+~~~~~~~~~
 
 Notifications for new responses are sent to the form _owner_ through the integrated notification interface.
 
 Advanced use-cases
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~
 
 Anonymous responses with access list
-+++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++
 
 To conduct an anonymous survey with a known group of users, the anonymous answers feature can be combined with an :ref:`access_list`.
 

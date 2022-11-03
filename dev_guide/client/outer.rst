@@ -49,7 +49,7 @@ Once the user account is loaded, ``sframe-common-outer`` initializes all its "ha
 Once all these "handlers" have been registered, ``sframe-common-outer`` declares itself "ready" and, once "inner" declares the same, the script starts the realtime engine (if necessary) creating a new document or joining an existing one.
 
 Communication with the worker
--------------------------------
+-----------------------------
 
 ``www/common/cryptpad-common.js``
 

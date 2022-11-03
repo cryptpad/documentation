@@ -62,7 +62,7 @@ Additionally, configurations and customizations may be backed up or migrated: - 
 The contents of CryptPad’s filesystem database are encrypted, it is therefore reasonably safe to back up to a cloud service without violating users’ privacy, though this will make metadata available (e.g. file creation/modification dates).
 
 Advanced administration
-~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
 
 In the event of a document becoming corrupted, it is possible to delete individual sets of changes from the database.
 

@@ -32,14 +32,14 @@ To delete everything on the canvas:
 -  **Clear** button in the drawing toolbar at the bottom.
 
 |paint-brush| Paint mode
--------------------------
+------------------------
 
 The width and opacity of line are set in the drawing toolbar. The preview to the right shows the size and opacity of the paintbrush.
 
 Color is selected in the palette in the drawing toolbar. To change a color ``Double click`` on it and select a new one using the color-picker.
 
 |arrows| Select mode
----------------------
+--------------------
 
 ``Click`` on an element to select it, then:
 

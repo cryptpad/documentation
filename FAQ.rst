@@ -2,7 +2,7 @@ Frequently Asked Questions
 ==========================
 
 Common Issues
-----------------
+-------------
 
 If CryptPad is not working as expected there are a few common things to try. Most of these relate to web browsers and extensions that either interfere with CryptPad's security features or disable basic browser functionality.
 
@@ -12,7 +12,7 @@ If CryptPad is not working as expected there are a few common things to try. Mos
 #. If the issues persist, please contact support
 
 List of extensions known to cause issues with CryptPad
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Librejs
 * Adblock
@@ -28,7 +28,7 @@ List of extensions known to cause issues with CryptPad
     If you identify issues with another extension please `report it to the development team <https://github.com/xwiki-labs/cryptpad/issues/new/choose>`_
 
 I forgot my password
----------------------
+--------------------
 
 Administrators of a CryptPad instance cannot recover or reset user passwords. This also ensures that they cannot access any user data (e.g. the content of documents).
 
@@ -54,7 +54,7 @@ Text files uploaded as files can be opened as a Code/Markdown document from the 
 To import any other file type in an editable form, please use the |file-o| **File** > |upload| **Import** functionality in the appropriate CryptPad editor as explained below.
 
 Rich text document import/export
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To import rich text documents (Microsoft Word, Google Docs, LibreOffice Writer, etc.), the supported format is HTML:
 
@@ -66,7 +66,7 @@ To import rich text documents (Microsoft Word, Google Docs, LibreOffice Writer, 
 To export, use |file-o| **File** > |download| **Export** and select ``.doc`` as the format.
 
 Spreadsheets import/export
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To import spreadsheets, the supported format are Microsoft Excel ``.xlsx`` and OpenDocument ``.ods``. These can both be exported from popular software such as Google Sheets and LibreOffice Calc:
 
@@ -141,16 +141,16 @@ FAQ for cryptpad.fr
 .. _faq_manual_payments:
 
 Can I pay for my subscription without a card?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We accept payments by bank transfer, Paypal, or other depending on requests. However, due to the additional work involved in issuing invoices and processing payments manually, this option is limited to yearly plans for our Duo offer and above and incurs a 30% surcharge.
 
 Do you accept cryptocurrencies for subscriptions and donations?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We accept payments in Bitcoin. These are subject to the :ref:`manual processing surcharges <faq_manual_payments>` as explained in the previous question. Additionally, as a company registered in France, we are legally required to ask for a name and address to issue the invoice to, and an email for communication about your subscription.
 
 Can you provide a Data processing Agreement (DPA)?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 DPAs are a feature of our `Organization Plans <https://cryptpad.fr/accounts/#org>`_, note that a example DPA is available for preview on that page.

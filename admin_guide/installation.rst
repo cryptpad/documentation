@@ -250,7 +250,7 @@ Once the steps above are complete, many day-to-day administration tasks such as 
 .. _configure_open_graph:
 
 Configure Open Graph metadata
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To enable social media link previews, add Open Graph tags to the applications of your CryptPad instance with the following command:
 
@@ -266,7 +266,7 @@ To modify the preview images please see :ref:`preview_images`
     Updating to a newer version of the software in the future without re-running this command may result in outdated code.
 
 Support
-~~~~~~~~~
+~~~~~~~
 
 The development team is available to provide paid support contracts (see our `organizational plans <https://cryptpad.fr/accounts/#org>`__ for an idea of our pricing), otherwise, requests for assistance can be directed to the community.
 

@@ -1,7 +1,7 @@
 .. _user_guide:
 
 User Guide
-================================
+==========
 
 Welcome to the CryptPad User Guide.
 

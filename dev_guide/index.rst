@@ -1,7 +1,7 @@
 .. _dev_guide:
 
 Developer Guide
-================================
+===============
 
 Welcome to the CryptPad Developer Guide.
 

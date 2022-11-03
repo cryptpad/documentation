@@ -113,7 +113,7 @@ To **destroy** a document without storing it in the trash first:
 .. _drive_history:
 
 History
---------
+-------
 
 The drive history is saved and can be restored if needed. From the drive:
 

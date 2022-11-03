@@ -11,7 +11,7 @@ Share / Access
 .. _share:
 
 Share
---------------------
+-----
 
 There are three ways to share a document: :ref:`share_contacts`, :ref:`share_link`, and :ref:`share_embed`. In each case, access rights can be set to authorise the recipient to edit the document, or to only view it.
 

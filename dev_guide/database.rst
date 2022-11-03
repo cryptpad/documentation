@@ -1,7 +1,7 @@
 .. _dev_database:
 
 Database
-=========
+========
 
 CryptPad takes an unusual approach to storing documents on the server. User data is simply stored on the file system rather than a database.
 
@@ -43,7 +43,7 @@ There are several pieces of information there, separated by slashes.
     Encryption seed: plpAeHfQ4YO49fczV5erSCgd
 
 Finding a document
--------------------
+------------------
 
 It is possible to run code provided by the CryptPad server in your browser console. To extract the channel id of a document you have open:
 

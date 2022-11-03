@@ -33,10 +33,10 @@ To set defaults for these settings, for example to control which sections are vi
 |file-o| **File** > |cog| **Document Settings**.
 
 Editing
---------
+-------
 
 Headings
-+++++++++
+++++++++
 
 In order for headings to appear in the outline, they must be formatted as such. To format a heading, select the text or place the cursor on the heading line, then either:
 
