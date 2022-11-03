@@ -50,9 +50,26 @@ Calendar
 
 To add events, simply click on the desired time/date in the calendar, view (drag for duration). Alternatively use |plus| **New event** in the toolbar.
 
-To edit events, drag them to the new date/time or ``Click`` to open the detailed edit view.
+:badge_new:`New in version 5.2`
 
-.. XXX TODO 5.2: add recurring events here. Possibly split this into its own "App"?
+You can now create recurring events, repeat:
+
+- **One time**, default option
+- **Daily**
+- **Weekly**
+- **Monthly**
+- **Yearly**
+- **Daily on weekdays**
+- **Custom**, see below:
+
+   - **Repeat every X days**, weeks, months or years
+   - **Stop repeating**:
+
+      - Never
+      - On a specific date
+      - After X times
+
+To edit events, drag them to the new date/time or ``Click`` to open the detailed edit view.
 
 Toolbar
 ~~~~~~~
