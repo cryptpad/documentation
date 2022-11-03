@@ -1,7 +1,7 @@
 .. _admin_guide:
 
 Administrator Guide
-================================
+===================
 
 Welcome to the CryptPad Administrator Guide.
 
