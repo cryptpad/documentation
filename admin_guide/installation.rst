@@ -215,10 +215,9 @@ Once CryptPad is installed, create an account via the Register button on the hom
 Configure support mailbox
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Version 4.6.0 and later
-^^^^^^^^^^^^^^^^^^^^^^^
+:badge_new:`New in version 4.6`
 
-Since version 4.6 the support mailbox can be configured from the :ref:`admin_panel`.
+The support mailbox can be configured from the :ref:`admin_panel`.
 
 #. With an instance administrator account, visit the ``/admin/#support`` page
 #. Click **Generate Support Keys**
@@ -233,19 +232,6 @@ To allow other administrators to access the support mailbox:
 
 .. note::
    If the support mailbox is configured through the admin panel, any configuration using the old method detailed below is ignored.
-
-
-Versions older than 4.6.0
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-To enable the encrypted support ticket system, use the ``generate-admin-key.js`` script:
-
-#. ``node ./scripts/generate-admin-keys.js``
-#. Add the **public key** into the ``supportMailboxPublicKey`` field of the configuration file ``cryptpad/config/config.js``
-#.  Copy the **private key** in the support section of the control panel (after setting up an administrator account). This private key is the same for all administrator accounts that want to access support.
-
-
-Once the steps above are complete, many day-to-day administration tasks such as support and monitoring can be done in the :ref:`administration panel <admin_panel>`.
 
 .. _configure_open_graph:
 
