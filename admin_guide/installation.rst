@@ -235,16 +235,18 @@ To allow other administrators to access the support mailbox:
 
 .. _configure_open_graph:
 
-Configure Open Graph metadata
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Build static pages & Open Graph metadata
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To enable social media link previews, add Open Graph tags to the applications of your CryptPad instance with the following command:
+:badge_new:`New in version 5.1`
+
+To build some of CryptPad static pages & enable social media link previews, run the following command:
 
 .. code:: bash
 
-    npm run make-opengraph
+    npm run build
 
-This creates an ``index.html`` page for each application in the ``customize/www`` directory. It is **not recommended to perform manual modifications on these pages** as they will be overridden the next time ``npm run make-opengraph`` is run.
+This creates an ``index.html`` page for each application in the ``customize/www`` directory. It is **not recommended to perform manual modifications on these pages** as they will be overridden the next time ``npm run build`` is run.
 
 To modify the preview images please see :ref:`preview_images`
 
