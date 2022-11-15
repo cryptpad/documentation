@@ -16,7 +16,7 @@ Toolbar
 |wrench| **Tools**: Show/hide the text editor toolbar.
 
 |picture-o| **Insert**: Add an image to the document. The image can be
-chosen in the CrpytDrive or uploaded. :badge_user:`Logged in users`
+chosen in the CryptDrive or uploaded. :badge_user:`Logged in users`
 
 |cptools palette| **Theme**: Set colors for the editor, detailed
 :ref:`below <app_code_theme>`.
