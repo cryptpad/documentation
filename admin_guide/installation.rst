@@ -230,9 +230,6 @@ To allow other administrators to access the support mailbox:
 #. Send it to another administrator account
 #. They can use the **Add private key** field on the support page to gain access to the support mailbox
 
-.. note::
-   If the support mailbox is configured through the admin panel, any configuration using the old method detailed below is ignored.
-
 .. _configure_open_graph:
 
 Build static pages & Open Graph metadata
