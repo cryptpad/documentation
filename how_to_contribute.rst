@@ -33,13 +33,11 @@ There are two ways to report bugs or issues:
 
 -  `Github issue tracker <https://github.com/xwiki-labs/cryptpad/issues/new/choose>`__ to file the issue publicly using the bug report template. (A Github account is needed to submit issues)
 
-Contribute to the documentaiton
------------
+Contribute to the documentation
+---------------------------------
 
-If you found an issue with CryptPad documentation, reporting it helps improve the service for everyone.
+If you have corrections, edits, or suggestions for this documentation, you can contribute and help improve the service for everyone. Please send your proposed changes to `the forum <https://forum.cryptpad.org/>`__ or use a `GitHub pull request <https://github.com/xwiki-labs/cryptpad-documentation>`__.
 
-Create Github pull requests on this repository https://github.com/xwiki-labs/cryptpad-documentation (A Github account is needed to submit Pull Requests).
-You will need to first fork the repository and apply your modification to your fork and then submit your pull request to cryptpad-documentation repository for review and merge.
 
 .. _contribute_translation:
 
