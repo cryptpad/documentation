@@ -24,9 +24,9 @@ To create a new document:
 The creation screen offers a number of options when new documents are
 created.
 
--  **Owned pad**: Create the new document as :ref:`owner <owners>`. If the document is created without an owner this setting cannot be modified.
+-  **Owned document**: Create the new document as :ref:`owner <owners>`. If the document is created without an owner this setting cannot be modified.
 
--  **Expiring pad**: Specify an expiry date after which the document will be destroyed. This setting cannot be modified after the document is created.
+-  **Expiring document**: Specify an expiry date after which the document will be destroyed. This setting cannot be modified after the document is created.
 
 -  **Add a password**: Secure the sharing of the document with a :ref:`password <passwords>`. This setting can be changed later in the :ref:`access` menu.
 
