@@ -1,6 +1,36 @@
 Security
 ========
 
+.. _trust:
+
+Trust Assumptions
+-----------------
+
+While CryptPad is end-to-end encrypted and the server has no access to your data, there are still assumptions on whom you need to trust – as for any other (web) application.
+You have to trust the following:
+
+* Your chosen CryptPad instance (e.g., https://cryptpad.fr)
+
+  * to run the code published on GitHub,
+  * to not block your requests, and
+  * to follow its terms of service and privacy policy.
+
+* User's you shared a document with not to forward the sharing link to illegitimate third parties.
+
+Under these assumptions you can be sure that it is technically not possible
+
+* for your chosen CryptPad instance to read or write your documents,
+* for any network adversary such as your Internet Service Provider (ISP) or law enforcement to read or write your documents, and
+* for any other user to read or write your documents.
+
+We maintain a `list of public CryptPad instances <https://cryptpad.org/instances>`_ to let you decide on whom you want to trust.
+
+.. note::
+    CryptPad does only provide a weak form of anonymity. 
+    Your chosen CryptPad instance can see your IP address and your "user agent" (browser and operating system).
+    If you need stronger anonymity guarantees, you can have a look at the `Tor project <https://www.torproject.org>`_.
+
+
 .. _passwords:
 
 Passwords for documents and folders
