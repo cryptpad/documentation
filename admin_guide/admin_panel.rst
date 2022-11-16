@@ -48,7 +48,7 @@ Admin contact email
 
 This email address is displayed on the instance contact page.
 
-This email may be used by the development team, only if :ref:`admin_consent_contact` is given, to warn of security vulnerabilities or in other cases for example matters affecting public facing instances listed in the directory.
+This email may be used by the development team, only if :ref:`admin_consent_contact` is given, to warn of security vulnerabilities or in other cases for example matters affecting public facing instances listed in `the directory <https://cryptpad.org/instances/>`_.
 
 .. _admin_instance_info:
 
