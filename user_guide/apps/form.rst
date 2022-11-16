@@ -237,7 +237,7 @@ Choose the background and highlight color for the form.
 Responses
 ~~~~~~~~~
 
-Notifications for new responses are sent to the form _owner_ through the integrated notification interface.
+Notifications for new responses are sent to the form _owner_ through the integrated notifications.
 
 Advanced use-cases
 ~~~~~~~~~~~~~~~~~~
