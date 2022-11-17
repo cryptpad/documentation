@@ -254,6 +254,10 @@ To modify the preview images please see :ref:`preview_images`
 Support
 ~~~~~~~
 
+.. XXX DB: rewrite:
+..    mention of org plans as reference is weird
+..    link instance pricing page on .org when it is ready
+
 The development team is available to provide paid support contracts (see our `organizational plans <https://cryptpad.fr/accounts/#org>`__ for an idea of our pricing), otherwise, requests for assistance can be directed to the community.
 
 We recommend you to go over our `forum <https://forum.cryptpad.org>`_ and or `admins Matrix channel <https://matrix.to/#/#cryptpad-admins:matrix.xwiki.com>`_.
