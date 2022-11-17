@@ -2,7 +2,7 @@ Frequently Asked Questions
 ==========================
 
 Common Issues
-----------------
+-------------
 
 If CryptPad is not working as expected there are a few common things to try. Most of these relate to web browsers and extensions that either interfere with CryptPad's security features or disable basic browser functionality.
 
@@ -11,9 +11,8 @@ If CryptPad is not working as expected there are a few common things to try. Mos
 #. Try using a different browser. We test the latest versions of Firefox, Chromium, and Safari
 #. If the issues persist, please contact support
 
-
 List of extensions known to cause issues with CryptPad
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * Librejs
 * Adblock
@@ -28,9 +27,8 @@ List of extensions known to cause issues with CryptPad
 .. note::
     If you identify issues with another extension please `report it to the development team <https://github.com/xwiki-labs/cryptpad/issues/new/choose>`_
 
-
 I forgot my password
----------------------
+--------------------
 
 Administrators of a CryptPad instance cannot recover or reset user passwords. This also ensures that they cannot access any user data (e.g. the content of documents).
 
@@ -41,7 +39,6 @@ If you are still logged in to an account for which you have forgotten the passwo
 3. In another browser, register a new account with a known password
 4. While logged in to the new account: **User Menu** (avatar at the top right) > |gear| **Settings** > |hdd-o| **CryptDrive** and click the **Restore** button.
 
-
 How to import/export my documents to/from another platform?
 -----------------------------------------------------------
 
@@ -50,16 +47,14 @@ Making CryptPad compatible with a wide range of document formats is an ongoing c
 .. note::
     Simply copy-pasting content from existing software into CryptPad is an easy first step to try when importing/exporting. Please note that the import/export methods below can improve results significantly.
 
-
 It is possible to upload **files** to CryptPad for secure storage and sharing, however this does not make every file an editable CryptPad **document**.
 
 Text files uploaded as files can be opened as a Code/Markdown document from the Drive with ``Right click`` > |cptools code| **Open in Code editor**.
 
 To import any other file type in an editable form, please use the |file-o| **File** > |upload| **Import** functionality in the appropriate CryptPad editor as explained below.
 
-
 Rich text document import/export
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To import rich text documents (Microsoft Word, Google Docs, LibreOffice Writer, etc.), the supported format is HTML:
 
@@ -71,7 +66,7 @@ To import rich text documents (Microsoft Word, Google Docs, LibreOffice Writer, 
 To export, use |file-o| **File** > |download| **Export** and select ``.doc`` as the format.
 
 Spreadsheets import/export
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To import spreadsheets, the supported format are Microsoft Excel ``.xlsx`` and OpenDocument ``.ods``. These can both be exported from popular software such as Google Sheets and LibreOffice Calc:
 
@@ -82,7 +77,9 @@ To import spreadsheets, the supported format are Microsoft Excel ``.xlsx`` and O
 
 To export, use |file-o| **File** > |download| **Export** and choose a format:
 
-- The ``.csv`` format is the most widely supported (note that it only contains data and not formatting).
+.. .csv commented out as it's broken and deactivated
+.. - The ``.csv`` format is the most widely supported (note that it only contains data and not formatting).
+
 - To use in Microsoft Excel or Google sheets, select ``.xlsx``.
 - To use in LibreOffice Calc, select ``.ods``.
 - For cases where no further editing of the data is required after export (presentations, reports, etc), select ``.pdf``.
@@ -90,7 +87,6 @@ To export, use |file-o| **File** > |download| **Export** and choose a format:
 
 .. note::
     Import/export of spreadsheets to various formats is only available in browsers that support specific functionality. Please see the `up-to-date list of supported browsers <https://caniuse.com/sharedarraybuffer>`_.
-
 
 I cannot do X with a document I created
 ---------------------------------------
@@ -105,7 +101,6 @@ Some functionality on CryptPad is restricted to :ref:`document owners <owners>`.
 The ownership of a document is set when :ref:`creating it<new_document>` and cannot be changed afterwards if the document is created without an owner.
 
 The development team is considering removing this distinction in future. In the meantime, the safe default option is to "own" all documents you create in order to retain full control over them, including the ability to destroy them.
-
 
 Can I use CryptPad on mobile?
 -----------------------------
@@ -128,7 +123,6 @@ To address these problems, the development team is working on making CryptPad a 
 .. Is Cryptpad suitable for storing large amounts of data?
 .. --------------------------------------------------------
 
-
 Can CryptPad sync documents to my local filesystem?
 ---------------------------------------------------
 
@@ -147,18 +141,16 @@ FAQ for cryptpad.fr
 .. _faq_manual_payments:
 
 Can I pay for my subscription without a card?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We accept payments by bank transfer, Paypal, or other depending on requests. However, due to the additional work involved in issuing invoices and processing payments manually, this option is limited to yearly plans for our Duo offer and above and incurs a 30% surcharge.
 
 Do you accept cryptocurrencies for subscriptions and donations?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We accept payments in Bitcoin. These are subject to the :ref:`manual processing surcharges <faq_manual_payments>` as explained in the previous question. Additionally, as a company registered in France, we are legally required to ask for a name and address to issue the invoice to, and an email for communication about your subscription.
 
 Can you provide a Data processing Agreement (DPA)?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 DPAs are a feature of our `Organization Plans <https://cryptpad.fr/accounts/#org>`_, note that a example DPA is available for preview on that page.
-
-

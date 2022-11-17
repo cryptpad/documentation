@@ -1,5 +1,5 @@
 General information
-###################
+===================
 
 Sandbox
 -------
@@ -225,4 +225,3 @@ Example
      console.error(error);
 
    });
-

@@ -66,7 +66,7 @@ Chainpad-netflux automatically initializes the Websocket connection to the serve
 Other configuration fields of chainpad-netflux are used to interact with the ChainPad instance and to listen to specific events. Chainpad-netflux sends events as soon as remote patches are received, when changes are made to the user list or when disconnecting from the network. It gives access to the ChainPad instance in order to retrieve the current state of the document and to indicate any changes made. As soon as ChainPad generates a patch, it is encrypted by Chainpad-netflux and sent to the server automatically.
 
 Chainpad-listmap
------------------
+----------------
 
 One use case of ChainPad that is often used in CryptPad is collaboration on data stored in a JavaScript object. The `chainpad-listmap <https://github.com/xwiki-labs/chainpad-listmap/>`__ library has been developed to meet this need in a very simple way. It is based on JavaScript "Proxy" objects.
 
@@ -75,4 +75,3 @@ JavaScript "Proxies" are an extension of classical JavaScript objects and arrays
 This library integrates Chainpad-netflux, detailed above, which provides a Chainpad instance directly connected to the server and which manages the encryption. To use chainpad-listmap, a configuration similar to that of chainpad-netflux must be provided: a "channelId" for the document to retrieve, encryption/decryption functions for the document and a connection address to the server. Chainpad-listmap directly returns a Proxy. The Proxy can be used as any JavaScript object and changing its content in any way will automatically propagate these changes to other users. Events are triggered on this object in several cases: "ready" when the history is synchronized, "change" when an element is added or modified, "remove" when an element is deleted as well as "disconnect" and "reconnect" for network problems.
 
 .. note:: The **user account** (containing the drive), the **shared folders** and the **teams** are all used and stored as a chainpad-listmap document.
-

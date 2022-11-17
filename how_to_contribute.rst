@@ -1,11 +1,9 @@
-
 .. _how_to_contribute:
 
 How to contribute
 =================
 
 There are various ways to contribute to CryptPad, many of which do not require any coding skills. If you would like to discuss anything listed here, or other ways of contributing, please  `get in touch with the development team <https://cryptpad.fr/contact.html>`__.
-
 
 Spread the word
 ---------------
@@ -14,7 +12,7 @@ The simplest way to help CryptPad is to make the project known. As an Open Sourc
 
 - Using CryptPad and demonstrating it to friends and colleagues, highlighting why privacy is important.
 - Posting about CryptPad on social media.
-- Following and relaying our own communications from our `Blog <https://blog.cryptpad.fr>`__, from `Mastodon <https://social.weho.st/@cryptpad>`__ or `Twitter <https://twitter.com/cryptpad>`__.
+- Following and relaying our own communications from our `Blog <https://blog.cryptpad.org>`__, from `Mastodon <https://fosstodon.org/@cryptpad>`__ or `Twitter <https://twitter.com/cryptpad>`__.
 - Relaying the `CryptPad Crowdfunding <https://opencollective.com/cryptpad>`__.
 - Presenting CryptPad in conferences or meetups, or inviting the team to present.
 
@@ -32,7 +30,6 @@ There are two ways to report bugs or issues:
 - Cryptpad's built in :ref:`support ticket system <user_support>` where you can message instance administrators. These messages are encrypted like everything else on CryptPad.
 
 -  `Github issue tracker <https://github.com/xwiki-labs/cryptpad/issues/new/choose>`__ to file the issue publicly using the bug report template. (A Github account is needed to submit issues)
-
 
 .. _contribute_translation:
 
@@ -77,4 +74,3 @@ Contribute to making CryptPad financially sustainable:
 .. note::
 
     Note to instance owners: cryptpad.fr used to offer a revenue sharing system for subscriptions on self-hosted instances. We have discontinued this possibility at this time. However if you are an instance owner and are interested in such a system we would still be interested to hear from you. In the future we might be interested to restore such a revenue sharing model with large instance owners.
-

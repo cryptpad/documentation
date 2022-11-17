@@ -20,17 +20,15 @@ This module also uses data coming from the "inner" level, and in particular from
 -  the collaborative document "metadata" that are stored in the document itself
 
   -  the title and name of the application
-
-  -  the user list with public data of editors (name, avatar, profile, public keys, mailbox, etc.).
+  -  the user list with public data of editors (name, avatar, profile, public keys, mailbox, etc.)
 
 -  the "private" data coming from the outside levels
 
   -  the "unsafe" origin used in "outer" and the name of the application
   -  the type of hash for collaborative documents: edition or read-only, presentation mode, embed mode, etc.
   -  data about the document itself
-
+  
 -  the "user" data that represents the current user
-
 
 UI modules
 ----------

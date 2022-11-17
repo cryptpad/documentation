@@ -1,17 +1,13 @@
-
 .. _admin_panel:
 
 Administration panel
 ====================
 
-A number of monitoring and configuration options are available through
-the admin panel to administer your instance without needing to open
-config files on the server.
+A number of monitoring and configuration options are available through the admin panel to administer your instance without needing to open config files on the server.
 
 The admin panel is available to administrator users (see :ref:`admin_adminusers`).
 
 - **User Menu** (avatar at the top right) > |gears| **Administration**
-
 - or go to https://your-instance.com/admin/
 
 This page repeats the comments present on the admin panels and adds a few clarifications.
@@ -22,37 +18,37 @@ General
 Flush HTTP Cache
 ~~~~~~~~~~~~~~~~
 
-Force users to download the latest client-side assets (only if your server is in fresh mode)
+Force users to download the latest client-side assets (only if your server is in fresh mode).
 
 This includes some configuration changes distributed via ``/api/config``.
 
 Update user quotas
 ~~~~~~~~~~~~~~~~~~
 
-Forcing an update of user storage limits can be done any time, but is only necessary in the event of an error
+Forcing an update of user storage limits can be done any time, but is only necessary in the event of an error.
 
 .. _admin_close_registration:
 
 Close registration
 ~~~~~~~~~~~~~~~~~~
 
-Do not allow any new users to register
+Do not allow any new users to register.
 
 Enable remote embedding
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-.. XXX TODO we need to add mention of vector: on Nginx conf file
+Allow documents and media from this instance to be embedded on other websites. This will add an "Embed" option to the Share menu. For security reasons applications that use OnlyOffice (Sheets, Document, Presentation) cannot be embedded even if this setting is active.
 
-Allow documents and media from this instance to be embedded on other websites. This will add an "Embed" option to the Share menu. For security reasons applications that use OnlyOffice (Sheets, Document, Presentation) cannot be embedded even if this setting is active
+Please note that by enabling this settings, you will need to adapt your Nginx configuration file, adding ``vector:`` to pass :ref:`diagnostic tests <admin_checkup>`.
 
 .. _admin_email:
 
 Admin contact email
 ~~~~~~~~~~~~~~~~~~~
 
-This email address is displayed on the instance contact page
+This email address is displayed on the instance contact page.
 
-This email may be used by the development team, only if :ref:`admin_consent_contact` is given, to warn of security vulnerabilities or in other cases for example matters affecting public facing instances listed in the directory
+This email may be used by the development team, only if :ref:`admin_consent_contact` is given, to warn of security vulnerabilities or in other cases for example matters affecting public facing instances listed in `the directory <https://cryptpad.org/instances/>`_.
 
 .. _admin_instance_info:
 
@@ -65,12 +61,9 @@ The following fields are used to describe the instance in the :ref:`list of publ
 - Instance description
 - Hosting location (country where the instance's encrypted data is hosted)
 
-.. XXX remove this and add "this information IS USED on the instance front page..." once we actually use it
-
 .. note::
 
-   This information will be used on the instance front page in a future version of CryptPad
-
+   This information is used on the instance front page.
 
 User Storage
 ------------
@@ -81,12 +74,10 @@ This section is for managing storage limits on the instance.
 
    The values set in the admin panel override the defaults or modifications made to the configuration files.
 
-
 Storage Limit
 ~~~~~~~~~~~~~
 
-Maximum storage limit for CryptDrives (users and teams) when no custom rule is applied
-
+Maximum storage limit for CryptDrives (users and teams) when no custom rule is applied.
 
 Apply a custom limit
 ~~~~~~~~~~~~~~~~~~~~
@@ -103,7 +94,7 @@ Make a document unavailable, for example for moderation in the case where a docu
 Restore documents
 ~~~~~~~~~~~~~~~~~
 
-Restore a document that had previously been archived
+Restore a document that had previously been archived.
 
 Check account storage
 ~~~~~~~~~~~~~~~~~~~~~
@@ -118,23 +109,15 @@ List all the custom storage limits applied to your instance.
 Statistics
 ----------
 
--  Active connections: Number of active websocket connections (and
-   unique IP addresses connected)
-
--  Active pads: Number of unique documents currently being viewed or
-   edited
-
+-  Active connections: Number of active websocket connections (and unique IP addresses connected)
+-  Active pads: Number of unique documents currently being viewed or edited
 -  Open Files: Number of file descriptors currently open on the server
-
 -  Registered users: Number of users registered on your instance
-
--  Disk usage: Amount of storage space consumed by various CryptPad
-   resources
+-  Disk usage: Amount of storage space consumed by various CryptPad resources
 
 .. warning::
 
    The disk usage report can be very resource intensive to run on large instances.
-
 
 Support
 -------
@@ -146,7 +129,6 @@ List of tickets sent by users to the support mailbox. All the administrators can
 -  reply to tickets
 -  close tickets
 -  remove closed tickets
-
 
 Broadcast
 ---------
@@ -171,8 +153,7 @@ Send a message to all users on this instance. All existing and new users will re
 Performance
 -----------
 
-An overview of the total time spent executing various server-side commands
-
+An overview of the total time spent executing various server-side commands.
 
 Network
 --------
@@ -191,21 +172,25 @@ The rest of this section includes options about how you and your instance commun
 Server telemetry
 ~~~~~~~~~~~~~~~~
 
-**Opt-out** of daily messages sent from the instance to the development team's server. The purpose of these messages is to count how many third-party instances of CryptPad are in operation and which version of the software they are running. The full content of the messages can be reviewed in CryptPad's server logs
+**Opt-out** of daily messages sent from the instance to the development team's server. The purpose of these messages is to count how many third-party instances of CryptPad are in operation and which version of the software they are running. The full content of the messages can be reviewed in CryptPad's server logs.
 
 .. _admin_list_public:
 
 List my instance in public directories
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Opt-in** to have the instance included in the `list of public instances <https://cryptpad.org/instances/>`_ on `the CryptPad project site <https://cryptpad.org>`_ if it is intended for public use
+**Opt-in** to have the instance included in the `list of public instances <https://cryptpad.org/instances/>`_ on `the CryptPad project site <https://cryptpad.org>`_ if it is intended for public use.
 
 In addition to this setting being enabled, the following criteria are required in order to have an instance listed:
 
 - All :ref:`diagnostic tests <admin_checkup>` must pass
-- The version of CryptPad must be up to date within 90 days of the latest release, and at least 4.14
+- The version of CryptPad must be up to date within 90 days of `the latest release <https://github.com/xwiki-labs/cryptpad/releases>`_
 - Instance information must be provided in the :ref:`General tab <admin_instance_info>`
 - :ref:`admin_telemetry_optout` must be enabled
+- Absence of analytics and third-party trackers
+- A working backup strategy is in place and has been tested
+- At least one other person must have access to the infrastructure
+- Commitment to give users at least 6 months of advance warning in case of shutting down
 
 .. note::
 
@@ -221,12 +206,12 @@ Consent to contact
 Crowdfunding participation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Opt-out** of advertizing CryptPad's crowdfunding campaign on the instance
+**Opt-out** of advertizing CryptPad's crowdfunding campaign on the instance.
 
 Instance purpose
 ~~~~~~~~~~~~~~~~
 
-Indicate the purpose of the instance, this is used to inform the development roadmap
+Indicate the purpose of the instance, this is used to inform the development roadmap.
 
 .. note::
    Instance purpose is only sent to the development team if :ref:`admin_telemetry_optout` is enabled
