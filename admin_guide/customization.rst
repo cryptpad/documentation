@@ -1,15 +1,13 @@
-
 .. _admin_customization:
 
 Instance customization
-=======================
+======================
 
 The functionality as well as the look-and-feel of an instance can be customized by creating a ``customize`` folder and copying assets to be customized (images, stylesheets, page templates, etc) from ``customize.dist`` into it. If a file exists in ``customize``, it will be served to users instead of its namesake in ``customize.dist``.
 
 .. note::
 
     The purpose of the ``customize`` directory is to make it easier to upgrade CryptPad while maintaining customizations in place. Occasionally, a major new version may introduce breaking changes or require adjustments in the customizations. Administrators with customized instances are therefore encouraged to **read instructions carefully before each upgrade**.
-
 
 Application config
 ------------------
@@ -19,9 +17,8 @@ A wide range of settings are available in ``www/common/application_config_intern
 #. Make a copy of ``customize.dist/application_config.js`` in the ``customize`` folder.
 #. Copy the default value(s) to modify from ``www/common/application_config_internal.js`` into ``customize/application_config.js``.
 
-
 Restricting guest access
-~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 To disable unregistered use of CryptPad, add the following to ``customize/application_config.js``:
 
@@ -60,17 +57,15 @@ To use a custom logo on the instance's homepage:
 #. Add your SVG logo to ``customize``
 #. Rename the logo ``CryptPad_logo_hero.svg``
 
-
 .. _preview_images:
 
 Open Graph preview images
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Previews when links from the instance are posted to social media include images, these are located in ``/customize.dist/images/opengraph_preview/``. Once :ref:`Open Graph tags have been set up <configure_open_graph>`, the images can be customized by placing modified copies in ``/customize/images/opengraph_preview/`` just like any other image.
 
-
 Translations
--------------
+------------
 
 To customize the text of the CryptPad interface in a given language, copy ``customize.dist/translations/messages.xx.js`` to ``customize/translations/messages.xx.js`` where ``xx`` is the locale of the language (use ``messages.js`` to customize English).
 
@@ -83,4 +78,3 @@ For example, to customize the text about the instance on the home page, the foll
     Messages.home_host = "This is an independent community instance of CryptPad.";
 
 For more information on how translations work in CryptPad please see :ref:`dev_translations` in the developer guide.
-

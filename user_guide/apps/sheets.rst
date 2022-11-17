@@ -1,23 +1,17 @@
-
 .. _app_sheets:
 
 Spreadsheet
 ===========
 
-The Spreadsheet application in CryptPad is an integration of
-`OnlyOffice <https://www.onlyoffice.com/>`__. To read more about the details of this integration see :ref:`FAQ_OOintegration`.
+The Spreadsheet application in CryptPad is an integration of `OnlyOffice <https://www.onlyoffice.com/>`__. To read more about the details of this integration see :ref:`FAQ_OOintegration`.
 
 .. image:: /images/app-sheets-preview.png
    :class: screenshot
 
-
 Documentation
 -------------
 
-Please refer to the `OnlyOffice
-documentation <https://helpcenter.onlyoffice.com/en/ONLYOFFICE-Editors/ONLYOFFICE-Spreadsheet-Editor/index.aspx>`__
-for a spreadsheet user-guide.
-
+Please refer to the `OnlyOffice documentation <https://helpcenter.onlyoffice.com/en/ONLYOFFICE-Editors/ONLYOFFICE-Spreadsheet-Editor/index.aspx>`__ for a spreadsheet user-guide.
 
 Toolbars
 --------
@@ -44,7 +38,6 @@ To switch back to **Fast mode** use the **Collaboration** tab in the OnlyOffice 
 
 .. note::
    CryptPad remembers your choice of editing mode on each device for all documents.
-
 
 .. _sheets_history:
 
@@ -77,7 +70,6 @@ To print spreadsheets it is recommended to export using one of the formats below
 
 Alternatively the ``.pdf`` export can be used to produce file for print, results may vary depending on the layout of the document.
 
-
 Import/Export
 -------------
 
@@ -85,4 +77,6 @@ Import/Export
 | Supported formats: ``.bin`` files exported by this application, Excel ``.xlsx``.
 
 | |file-o| **File** > |download| **Export**.
-| Supported formats: ``.bin``, Excel ``.xlsx``, ``.ods``, ``.csv``, ``.pdf``.
+| Supported formats: ``.bin``, Excel ``.xlsx``, ``.ods``, ``.pdf``.
+
+.. .csv removed from the supported export formats as it's broken and deactivated

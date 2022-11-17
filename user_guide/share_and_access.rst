@@ -1,21 +1,17 @@
-
 .. _share_and_access:
 
 Share / Access
 ==============
 
-|share-alt| **Share** and |unlock-alt| **Access** are the two menus
-to manage how other users can interact with your documents on CryptPad.
+|share-alt| **Share** and |unlock-alt| **Access** are the two menus to manage how other users can interact with your documents on CryptPad.
 
--  From the document toolbar: |share-alt| **Share** and |unlock-alt|
-   **Access** at the center.
--  From the CryptDrive: ``Right click`` on a document > |share-alt|
-   **Share** or |unlock-alt| **Access**.
+-  From the document toolbar: |share-alt| **Share** and |unlock-alt| **Access** at the center.
+-  From the CryptDrive: ``Right click`` on a document > |share-alt| **Share** or |unlock-alt| **Access**.
 
 .. _share:
 
 Share
---------------------
+-----
 
 There are three ways to share a document: :ref:`share_contacts`, :ref:`share_link`, and :ref:`share_embed`. In each case, access rights can be set to authorise the recipient to edit the document, or to only view it.
 
@@ -27,11 +23,9 @@ Access rights
 There are 4 levels of permissions:
 
 -  **View**: Read-only without editing the document.
--  **Present**: Read-only the rendered output of the document, available
-   in the :ref:`app_code` and :ref:`app_slides` applications.
+-  **Present**: Read-only the rendered output of the document, available in the :ref:`app_code` and :ref:`app_slides` applications.
 -  **Edit**: View and make changes to the document.
--  **View once and self-destruct**: Read-only **one time**. Once the
-   link is opened by a recipient, the document is deleted permanently.
+-  **View once and self-destruct**: Read-only **one time**. Once the link is opened by a recipient, the document is deleted permanently.
 
 .. note::
 
@@ -52,10 +46,8 @@ This is the recommended method for sharing documents securely on CryptPad. When 
 
 To share with one or more contacts:
 
--  |share-alt| **Share** in the document toolbar > |address-book|
-   **Contacts**.
--  ``Right click`` on the document in the CryptDrive > |share-alt|
-   **Share** > |address-book| **Contacts**.
+-  |share-alt| **Share** in the document toolbar > |address-book| **Contacts**.
+-  ``Right click`` on the document in the CryptDrive > |share-alt| **Share** > |address-book| **Contacts**.
 
 Then:
 
@@ -73,14 +65,10 @@ Then:
 Sharing a link
 ~~~~~~~~~~~~~~
 
-The **Link** tab provides links that can be shared through the medium of
-your choice. Depending on how you send the link, this method can present
-security risks. To add a level of security, it is recommended to add a
-:ref:`password <access_tab>` to your document before sharing the link.
+The **Link** tab provides links that can be shared through the medium of your choice. Depending on how you send the link, this method can present security risks. To add a level of security, it is recommended to add a :ref:`password <access_tab>` to your document before sharing the link.
 
 .. image:: /images/modal-share-link.png
    :class: screenshot
-
 
 To copy the link to a document:
 
@@ -109,10 +97,8 @@ Embedding allows for a CryptPad document to be displayed on a web page.
 
 To embed a document:
 
--  From the document : |share-alt| **Share** in the toolbar > |code|
-   **Embed**.
--  From the CryptDrive : ``Right click`` on the document > |share-alt|
-   **Share** > |code| **Embed**.
+-  From the document : |share-alt| **Share** in the toolbar > |code| **Embed**.
+-  From the CryptDrive : ``Right click`` on the document > |share-alt| **Share** > |code| **Embed**.
 
 then
 
@@ -143,8 +129,7 @@ To convert an existing folder into a shared folder:
    :ref:`Owned <owners>` folder.
 3. ``OK`` or press the ``Enter`` key.
 
-Folders are shared in a similar way to documents. To share a folder from
-the CryptDrive:
+Folders are shared in a similar way to documents. To share a folder from the CryptDrive:
 
 1. ``Right click`` on the folder > |share-alt| **Share**.
 2. Choose the `access rights <#access-rights>`__.
@@ -161,7 +146,6 @@ the CryptDrive:
 
    Shared folders have their own history, separate from the :ref:`drive_history`. Restoring the history of the drive does not affect shared folders, conversely the history of a shared folder can be restored without affecting the rest of the drive.
 
-
 .. _access:
 
 Access
@@ -172,8 +156,7 @@ Access
 This menu is used to restrict access to a document or shared folder:
 
 -  From the document: |unlock-alt| **Access**.
--  From the CryptDrive: ``Right click`` on the document or shared folder
-   > |unlock-alt| **Access**.
+-  From the CryptDrive: ``Right click`` on the document or shared folder > |unlock-alt| **Access**.
 
 .. _access_tab:
 
@@ -185,22 +168,14 @@ Access tab
 
 This tab summarises all the modalities of access to the document:
 
--  **Expiration date**: Date at which the document will be deleted. This
-   date is set at the creation of the document and cannot be modified
-   afterwards.
-
--  **Password**: Displays if a password has been set. A new password
-   can be set, or an existing password modified.
-
+-  **Expiration date**: Date at which the document will be deleted. This date is set at the creation of the document and cannot be modified afterwards.
+-  **Password**: Displays if a password has been set. A new password can be set, or an existing password modified.
 -  **Owners**: List of all the document’s `owners <#owners>`__.
-
 -  | **Edit rights requests**:
    | **Request edit rights**: For users with read-only access rights.
    | |bell-slash| **Mute access requests for this pad**: Hides edit rights requests for this document. :badge_owner:`Document owners`
-
 -  **Access list**: Displays the `access list <#access-list>`__ and
    indicates if it is enabled.
-
 -  |cptools destroy| **Destroy**: Delete the document permanently.
 
 .. _access_list:
@@ -214,33 +189,26 @@ Access List
 .. image:: /images/modal-access-list.png
    :class: screenshot
 
-The access list restricts access to a document. Once active, users who
-are not on the list are not able to access the document, even if they
-have it stored in their CryptDrive.
+The access list restricts access to a document. Once active, users who are not on the list are not able to access the document, even if they have it stored in their CryptDrive.
 
-To enable the access list, tick **Enable access list**. The
-`owners <#owners>`__ of the document are on the list by default and
-cannot be removed from it.
+To enable the access list, tick **Enable access list**. The `owners <#owners>`__ of the document are on the list by default and cannot be removed from it.
 
 To add contacts or teams to the list:
 
 1. Select them in the list of contacts on the right.
 2. Add them to the list with the |arrow-left| button.
 
-To remove a user or team from the list use the |times| button next to
-their name.
+To remove a user or team from the list use the |times| button next to their name.
 
 .. _owners:
 
 Owners
 ~~~~~~
 
-
 .. image:: /images/modal-access-owners.png
    :class: screenshot
 
-This tab is used to manage the ownership of the document. Owners of a
-document have the following permissions:
+This tab is used to manage the ownership of the document. Owners of a document have the following permissions:
 
 -  Enable an :ref:`access list <access_list>`.
 -  Enable a password.
@@ -251,10 +219,7 @@ The ownership of a document is set when :ref:`creating it<new_document>`.
 
 .. note::
 
-   If a document is created without owners, no one has permissions to
-   manage its ownership. It cannot be permanently destroyed by anyone,
-   but can be removed from the CryptDrive and will be destroyed
-   automatically after 90 days of inactivity.
+   If a document is created without owners, no one has permissions to manage its ownership. It cannot be permanently destroyed by anyone, but can be removed from the CryptDrive and will be destroyed automatically after 90 days of inactivity.
 
 :badge_owner:`Document owners`
 
