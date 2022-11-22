@@ -48,6 +48,18 @@ You can also add or change the password in the :ref:`access` menu:
 * From the CryptDrive: ``Right click`` > |unlock-alt| **Access**.
 * From the document toolbar: |unlock-alt| **Access**.
 
+.. _verifying_contacts:
+
+Verifying contacts
+------------------
+:badge_user:`Logged in users`
+
+To verify a contact's identity, i.e., that a contact belongs to the person you think, you can compare the public signing keys:
+
+1. Ask your contact to share :ref:`their public key <user_settings_account>` over a secure channel with you.
+2. If this public key matches the one from your contact's :ref:`profile page <another_user_profile>`, you can be sure that the contact belongs to the person at the other end of the secure channel.
+
+
 
 .. _self_destructing_pads:
 

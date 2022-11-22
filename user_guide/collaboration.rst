@@ -27,6 +27,7 @@ Sharing:
 
 - |share-alt| **Share**: Copy a link to your profile.
 
+.. _another_user_profile:
 User profile
 ~~~~~~~~~~~~
 
