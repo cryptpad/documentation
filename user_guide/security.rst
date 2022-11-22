@@ -9,10 +9,10 @@ Trust Assumptions
 While CryptPad is end-to-end encrypted and the server has no access to your data, there are still assumptions on whom you need to trust – as for any other (web) application.
 You have to trust the following:
 
-* Your chosen CryptPad instance (e.g., https://cryptpad.fr)
+* Your chosen CryptPad :href:`instance <cryptpad_instances>`
 
   * to run the code published on GitHub,
-  * to not block your requests, and
+  * to not block your network messages, and
   * to follow its terms of service and privacy policy.
 
 * User's you shared a document with not to forward the sharing link to illegitimate third parties.
@@ -26,10 +26,9 @@ Under these assumptions you can be sure that it is technically not possible
 We maintain a `list of public CryptPad instances <https://cryptpad.org/instances>`_ to let you decide on whom you want to trust.
 
 .. note::
-    CryptPad does only provide a weak form of anonymity. 
+    CryptPad does only provide a weak form of anonymity.
     Your chosen CryptPad instance can see your IP address and your "user agent" (browser and operating system).
     If you need stronger anonymity guarantees, you can have a look at the `Tor project <https://www.torproject.org>`_.
-
 
 .. _passwords:
 
@@ -40,7 +39,7 @@ Passwords for documents and folders
 
 When you share the link to a document or shared folder through an insecure channel (for example email or SMS), someone might intercept the link and gain access to your data. To prevent this from happening, the :ref:`owners <owners>` of a document or folder can add a password.
 
-When you share documents with your contacts and teams directly on CryptPad, communications are encrypted and we assume that you want to give them access. Therefore the password is remembered and sent with the pad when you share it. The recipient, or yourself, are **not** asked for it when they open the document.
+When you :ref:`share documents with your contacts and teams directly on CryptPad <share_contacts>`, communications are encrypted and we assume that you want to give them access. Therefore the password is remembered and sent with the pad when you share it. The recipient, or yourself, are **not** asked for it when they open the document.
 
 You can add a password to a document when you :ref:`create <new_document>` it.
 
@@ -75,7 +74,7 @@ Remote Disconnect
 
 In some cases (loss or theft of a device, forgotten to log out of a session on a shared computer, etc.) it can be necessary to close all active CryptPad sessions. This can be done in two ways:
 
-* User menu (avatar at the top-right) > |gear| **Settings** > |lock| **Confidentiality** > **Close remote sessions**.
+* User menu (avatar at the top-right) > |gear| **Settings** > |lock| **Confidentiality** > **LOG OUT**.
 
 This option logs out all sessions **except** the one from which it is actiaved.
 
