@@ -199,6 +199,8 @@ To invite members to a team:
 
 -  **Personal message**: Message that the recipient will see before they decide to accept the invitation to join the team.
 
+.. _team_roles_and_permissions:
+
 Roles and permissions
 ~~~~~~~~~~~~~~~~~~~~~
 

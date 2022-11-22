@@ -104,3 +104,36 @@ In Markdown editors (:ref:`app_code`, :ref:`app_slides`, :ref:`app_kanban`), Cry
 :badge_user:`Logged in users`
 
 To include images from the CryptDrive or to upload new ones, use the |picture-o| **Insert** menu. This menu inserts a ``media-tag`` element that is more complex than Markdown image syntax but is managed automatically.
+
+
+.. _known_sec_issue:
+
+Known issues
+------------
+
+No unique usernames
+~~~~~~~~~~~~~~~~~~~
+
+Neither the :ref:`account name <user_settings_account>` nor the :ref:`display name <user_settings_account>` is unique in CryptPad.
+This means that you cannot trust usernames to identify people.
+Instead, :ref:`identify your contact <verifying_contacts>` via their public keys.
+
+Edit rights in teams
+~~~~~~~~~~~~~~~~~~~~
+
+Team members with edit access to a teams drive may share this access to other users both inside and outside the team.
+Team members may even convert folders into :ref:`shared folders <shared_folders>` and delegate their access to anybody they want.
+
+You therefore have to be careful with whom you grant edit rights.
+You may also want to
+
+* set the :ref:`role  <team_roles_and_permissions>` of a member to viewer and selectively share edit rights to this person.
+* Use :ref:`access lists <access_list>` to limit the access to a file to specific contacts.
+
+Access of former team members
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The encryption keys for team communication are static.
+This implies that a former team member has the keys.
+A former team member can therefore still decrypt team messages and also has the same access to the team's document as before.
+However, this requires to modify the client source code as the official one does neither store the keys nor decrypt any messages of a team which the user is not part of.
