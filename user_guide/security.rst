@@ -49,6 +49,23 @@ You can also add or change the password in the :ref:`access` menu:
 * From the CryptDrive: ``Right click`` > |unlock-alt| **Access**.
 * From the document toolbar: |unlock-alt| **Access**.
 
+
+.. _self_destructing_pads:
+
+Self-destructing pads
+---------------------
+
+:badge_user:`Logged in users`
+
+Self-destructing pads will be destroyed automatically without the interaction of any user.
+This ensures that sensitive data is not accessible forever.
+
+There are two ways to create self-destructing pads:
+
+* You can set an expiration time during :ref:`creating <new_document>`.
+* You can share a document via a :ref:`view-once-and-self-destruct link<share_access_rights>`.
+
+
 .. _remote_disconnect:
 
 Remote Disconnect
