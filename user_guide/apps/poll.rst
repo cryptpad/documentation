@@ -26,7 +26,7 @@ In edit mode:
 
 |wrench| **Tools**: Show/hide the text editor toolbar.
 
-|picture-o| **Insert**: Add an image to the poll description. The image can be chosen in the CrpytDrive or uploaded. :badge_user:`Logged in users`
+|picture-o| **Insert**: Add an image to the poll description. The image can be chosen in the drive or uploaded. :badge_user:`Logged in users`
 
 Edit mode
 ---------
