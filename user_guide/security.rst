@@ -7,28 +7,29 @@ Trust Assumptions
 -----------------
 
 While CryptPad is end-to-end encrypted and the server has no access to your data, there are still assumptions on whom you need to trust – as for any other (web) application.
-You have to trust the following:
 
-* Your chosen CryptPad :href:`instance <cryptpad_instances>`
+Concretely, you have to trust the following:
+
+* Your chosen CryptPad :ref:`instance <cryptpad_instances>`
 
   * to run the code published on GitHub,
   * to not block your network messages, and
   * to follow its terms of service and privacy policy.
+* Your collaborators not to forward :ref:`sharing links <share_link>` to illegitimate third parties.
 
-* User's you shared a document with not to forward the sharing link to illegitimate third parties.
+Under these assumptions you can be sure that it is technically not possible to read or modify your pads by
 
-Under these assumptions you can be sure that it is technically not possible
+* your chosen CryptPad instance,
+* any powerful adversary that can see your web traffic, or
+* any other user.
 
-* for your chosen CryptPad instance to read or write your documents,
-* for any network adversary such as your Internet Service Provider (ISP) or law enforcement to read or write your documents, and
-* for any other user to read or write your documents.
+We maintain a `list of public CryptPad instances <https://cryptpad.org/instances>`_ to let you better decide on whom you want to trust.
 
-We maintain a `list of public CryptPad instances <https://cryptpad.org/instances>`_ to let you decide on whom you want to trust.
-
-.. note::
+.. warning ::
     CryptPad does only provide a weak form of anonymity.
     Your chosen CryptPad instance can see your IP address and your "user agent" (browser and operating system).
-    If you need stronger anonymity guarantees, you can have a look at the `Tor project <https://www.torproject.org>`_.
+
+    If you need stronger anonymity guarantees, you can access CryptPad via `Tor <https://www.torproject.org>`_.
 
 .. _passwords:
 
@@ -74,7 +75,7 @@ This ensures that sensitive data is not accessible forever.
 There are two ways to create self-destructing pads:
 
 * You can set an expiration time during :ref:`creating <new_document>`.
-* You can share a document via a :ref:`view-once-and-self-destruct link<share_access_rights>`.
+* You can share a pads via a :ref:`view-once-and-self-destruct link<share_access_rights>`.
 
 
 .. _remote_disconnect:
@@ -108,7 +109,7 @@ To include images from the CryptDrive or to upload new ones, use the |picture-o|
 
 .. _known_sec_issue:
 
-Known issues
+Known caveats
 ------------
 
 No unique usernames
@@ -128,12 +129,12 @@ You therefore have to be careful with whom you grant edit rights.
 You may also want to
 
 * set the :ref:`role  <team_roles_and_permissions>` of a member to viewer and selectively share edit rights to this person.
-* Use :ref:`access lists <access_list>` to limit the access to a file to specific contacts.
+* use :ref:`access lists <access_list>` to limit the access to a file to specific contacts.
 
 Access of former team members
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The encryption keys for team communication are static.
-This implies that a former team member has the keys.
-A former team member can therefore still decrypt team messages and also has the same access to the team's document as before.
+The team communication is encrypted with static keys.
+This implies that a former team member still has the keys.
+A former team member can therefore potentially decrypt team messages and can also keep the same access to the team's document as before.
 However, this requires to modify the client source code as the official one does neither store the keys nor decrypt any messages of a team which the user is not part of.
