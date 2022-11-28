@@ -85,6 +85,8 @@ Copy the example configuration
 
 Please read the configuration file, and modify variables as needed. The :ref:`domains <admin_domain_config>` are particularly important.
 
+Please also look at :ref:`admin_customization` as some settings cannot be modified after the deployment.
+
 The server can now be started with
 
 .. code:: bash

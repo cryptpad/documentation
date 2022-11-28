@@ -9,6 +9,8 @@ The functionality as well as the look-and-feel of an instance can be customized 
 
     The purpose of the ``customize`` directory is to make it easier to upgrade CryptPad while maintaining customizations in place. Occasionally, a major new version may introduce breaking changes or require adjustments in the customizations. Administrators with customized instances are therefore encouraged to **read instructions carefully before each upgrade**.
 
+
+
 Application config
 ------------------
 
@@ -45,6 +47,29 @@ Links to these pages are added to ``customize/application_config.js`` and are sh
     AppConfig.imprint = 'https://link-to-imprint.com';
 
 Please restart your CryptPad instance after making these changes.
+
+Security Hardening
+~~~~~~~~~~~~~~~~~~
+
+It is strongly recommended to use a randomly chosen string as a salt for the password hashing.
+This makes it such attackers who want to bruteforce common credentials must do so again on each CryptPad instance that they wish to attack.
+
+.. warning::
+    The ``loginSalt`` should only be set when your CryptPad instance is first created.
+    **Changing it at a later time will break logins for all existing users.**
+
+For this, insert your chosen string in the following line:
+
+.. code:: javaScript
+
+    AppConfig.loginSalt = '';
+
+You may further want to increase the minimum password length.
+For this, modify the following line:
+
+.. code:: javaScript
+
+    AppConfig.minimumPasswordLength = 8;
 
 Look and feel
 -------------
