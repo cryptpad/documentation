@@ -60,8 +60,6 @@ To verify a contact's identity, i.e., that a contact belongs to the person you t
 1. Ask your contact to share :ref:`their public key <user_settings_account>` over a secure channel with you.
 2. If this public key matches the one from your contact's :ref:`profile page <another_user_profile>`, you can be sure that the contact belongs to the person at the other end of the secure channel.
 
-
-
 .. _self_destructing_pads:
 
 Self-destructing pads
@@ -76,7 +74,6 @@ There are two ways to create self-destructing pads:
 
 * You can set an expiration time during :ref:`creating <new_document>`.
 * You can share a pads via a :ref:`view-once-and-self-destruct link<share_access_rights>`.
-
 
 .. _remote_disconnect:
 
@@ -106,11 +103,10 @@ In Markdown editors (:ref:`app_code`, :ref:`app_slides`, :ref:`app_kanban`), Cry
 
 To include images from the CryptDrive or to upload new ones, use the |picture-o| **Insert** menu. This menu inserts a ``media-tag`` element that is more complex than Markdown image syntax but is managed automatically.
 
-
 .. _known_sec_issue:
 
 Known caveats
-------------
+-------------
 
 No unique usernames
 ~~~~~~~~~~~~~~~~~~~

@@ -10,7 +10,6 @@ The functionality as well as the look-and-feel of an instance can be customized 
     The purpose of the ``customize`` directory is to make it easier to upgrade CryptPad while maintaining customizations in place. Occasionally, a major new version may introduce breaking changes or require adjustments in the customizations. Administrators with customized instances are therefore encouraged to **read instructions carefully before each upgrade**.
 
 
-
 Application config
 ------------------
 
