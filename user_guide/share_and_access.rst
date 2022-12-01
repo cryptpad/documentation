@@ -25,7 +25,7 @@ There are 4 levels of permissions:
 -  **View**: Read-only without editing the document.
 -  **Present**: Read-only the rendered output of the document, available in the :ref:`app_code` and :ref:`app_slides` applications.
 -  **Edit**: View and make changes to the document.
--  **View once and self-destruct**: Read-only **one time**. Once the link is opened by a recipient, the document is deleted permanently.
+-  **View once and self-destruct**: Read-only **one time**. Once the link is opened by a recipient, the document is deleted permanently. :badge_user:`Logged in users`
 
 .. note::
 
