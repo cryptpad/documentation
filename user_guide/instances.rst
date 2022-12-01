@@ -9,6 +9,6 @@ This documentation is written and maintained by the development team at XWiki SA
 
 Please note that this documentation is kept up to date with the latest version of CryptPad: |release|. It is possible that other instances are using earlier versions. Each instance can also have specific settings such as storage space, disabled applications, or custom colors/styles.
 
-You can find a list of public CryptPad instances `here <https://cryptpad.org/instances>`_.
+We maintain a `list of public CryptPad instances <https://cryptpad.org/instances>`_.
 
 If you are looking to set up a CryptPad instance please refer to the :ref:`admin_guide`.

@@ -6,18 +6,17 @@ Security
 Trust Assumptions
 -----------------
 
-While CryptPad is end-to-end encrypted and the server has no access to your data, there are still assumptions on whom you need to trust – as for any other (web) application.
+CryptPad is end-to-end encrypted and the server has no access to your data.
+However, as with any other web application, some entities still need to be trusted in order to guarantee security:
 
-Concretely, you have to trust the following:
+* Your chosen CryptPad :ref:`instance <cryptpad_instances>` to
 
-* Your chosen CryptPad :ref:`instance <cryptpad_instances>`
-
-  * to run the code published on GitHub,
-  * to not block your network messages, and
-  * to follow its terms of service and privacy policy.
+  * run the same code as the one published on GitHub,
+  * not block your network messages, and
+  * follow its terms of service and privacy policy.
 * Your collaborators not to forward :ref:`sharing links <share_link>` to illegitimate third parties.
 
-Under these assumptions you can be sure that it is technically not possible to read or modify your pads by
+Under these assumptions you can be sure that it is technically not possible to read or modify your documents by
 
 * your chosen CryptPad instance,
 * any powerful adversary that can see your web traffic, or
@@ -60,20 +59,20 @@ To verify a contact's identity, i.e., that a contact belongs to the person you t
 1. Ask your contact to share :ref:`their public key <user_settings_account>` over a secure channel with you.
 2. If this public key matches the one from your contact's :ref:`profile page <another_user_profile>`, you can be sure that the contact belongs to the person at the other end of the secure channel.
 
-.. _self_destructing_pads:
+.. _self_destructing_documents:
 
-Self-destructing pads
----------------------
+Self-destructing documents
+--------------------------
 
 :badge_user:`Logged in users`
 
-Self-destructing pads will be destroyed automatically without the interaction of any user.
+Self-destructing documents will be destroyed automatically without the interaction of any user.
 This ensures that sensitive data is not accessible forever.
 
-There are two ways to create self-destructing pads:
+There are two ways to create self-destructing documents:
 
 * You can set an expiration time during :ref:`creating <new_document>`.
-* You can share a pads via a :ref:`view-once-and-self-destruct link<share_access_rights>`.
+* You can share a documents via a :ref:`view-once-and-self-destruct link<share_access_rights>`.
 
 .. _remote_disconnect:
 
