@@ -85,7 +85,7 @@ Copy the example configuration
 
 Please read the configuration file, and modify variables as needed. The :ref:`domains <admin_domain_config>` are particularly important.
 
-Please also look at :ref:`admin_customization` as some settings cannot be modified after the deployment.
+As part of the installation process, be sure to read :ref:`admin_customization` and to modify ``customize/application_config.js`` as some settings cannot be changed once user accounts have been created.
 
 The server can now be started with
 
