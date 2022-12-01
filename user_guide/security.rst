@@ -39,7 +39,7 @@ Passwords for documents and folders
 
 When you share the link to a document or shared folder through an insecure channel (for example email or SMS), someone might intercept the link and gain access to your data. To prevent this from happening, the :ref:`owners <owners>` of a document or folder can add a password.
 
-When you :ref:`share documents with your contacts and teams directly on CryptPad <share_contacts>`, communications are encrypted and we assume that you want to give them access. Therefore the password is remembered and sent with the pad when you share it. The recipient, or yourself, are **not** asked for it when they open the document.
+When you :ref:`share documents with your contacts and teams directly on CryptPad <share_contacts>`, communications are encrypted and we assume that you want to give them access. Therefore the password is remembered and sent with the document/folder when you share it. The recipient, or yourself, are **not** asked for it when they open the document.
 
 You can add a password to a document when you :ref:`create <new_document>` it.
 
@@ -72,7 +72,7 @@ This ensures that sensitive data is not accessible forever.
 There are two ways to create self-destructing documents:
 
 * You can set an expiration time during :ref:`creating <new_document>`.
-* You can share a documents via a :ref:`view-once-and-self-destruct link<share_access_rights>`.
+* You can share a document via a :ref:`view-once-and-self-destruct link<share_access_rights>`.
 
 .. _remote_disconnect:
 
