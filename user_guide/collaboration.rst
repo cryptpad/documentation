@@ -27,6 +27,7 @@ Sharing:
 
 - |share-alt| **Share**: Copy a link to your profile.
 
+.. _another_user_profile:
 User profile
 ~~~~~~~~~~~~
 
@@ -197,6 +198,8 @@ To invite members to a team:
 -  **Password**: Protect the link against potiential interception. (optional)
 
 -  **Personal message**: Message that the recipient will see before they decide to accept the invitation to join the team.
+
+.. _team_roles_and_permissions:
 
 Roles and permissions
 ~~~~~~~~~~~~~~~~~~~~~
