@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-06 10:19+0100\n"
-"PO-Revision-Date: 2022-12-07 00:00+0000\n"
+"PO-Revision-Date: 2022-12-07 14:02+0000\n"
 "Last-Translator: Theo von Arx <theo.vonarx@xwiki.com>\n"
 "Language-Team: French <http://weblate.cryptpad.fr/projects/user-guide/"
 "security/fr/>\n"
@@ -309,11 +309,11 @@ msgstr ""
 
 #: ../../user_guide/security.rst:108
 msgid "Known caveats"
-msgstr ""
+msgstr "Limitations connues"
 
 #: ../../user_guide/security.rst:111
 msgid "No unique usernames"
-msgstr ""
+msgstr "Les noms d'utilisateur·ices ne sont pas uniques"
 
 #: ../../user_guide/security.rst:113
 msgid ""
@@ -322,10 +322,13 @@ msgid ""
 "means that you cannot trust usernames to identify people. Instead, "
 ":ref:`identify your contact <verifying_contacts>` via their public keys."
 msgstr ""
+"Ni le :ref:`nom d'utilisateur·ice <user_settings_account>`, ni le :ref `nom "
+"affiché <user_settings_account>` n'est unique dans CryptPad. Par conséquent "
+"vous ne pouvez pas faire confiance au nom pour identifier vos contacts."
 
 #: ../../user_guide/security.rst:118
 msgid "Edit rights in teams"
-msgstr ""
+msgstr "Droits d'édition dans une équipe"
 
 #: ../../user_guide/security.rst:120
 msgid ""
@@ -334,28 +337,39 @@ msgid ""
 "convert folders into :ref:`shared folders <shared_folders>` and delegate "
 "their access to anybody they want."
 msgstr ""
+"Les membres avec le droit d'édition pour le drive d'une équipe peuvent "
+"partager cet accès avec des tiers à l'intérieur comme à l'extérieur. Les "
+"membres d'une équipe peuvent même convertir un dossier existant en :ref:`"
+"dossier partagé <shared_folders>` et déléguer son accès à n'importe qui."
 
 #: ../../user_guide/security.rst:123
 msgid ""
 "You therefore have to be careful with whom you grant edit rights. You may"
 " also want to"
 msgstr ""
+"Vous devez donc faire attention à qui vous déléguez les droits d'accès. Vous "
+"pourriez probablement aussi vouloir"
 
 #: ../../user_guide/security.rst:126
 msgid ""
 "set the :ref:`role  <team_roles_and_permissions>` of a member to viewer "
 "and selectively share edit rights to this person."
 msgstr ""
+"définir le :ref:`rôle   <team_roles_and_permissions>` d'un membre d'une "
+"équipe comme lecteur·ice et partager sélectivement les droits d'édition avec "
+"cette personne."
 
 #: ../../user_guide/security.rst:127
 msgid ""
 "use :ref:`access lists <access_list>` to limit the access to a file to "
 "specific contacts."
 msgstr ""
+"utiliser des :ref:`listes d'accès <team_roles_and_permissions>` pour limiter "
+"l'accès à un document aux contacts sélectionnés."
 
 #: ../../user_guide/security.rst:130
 msgid "Access of former team members"
-msgstr ""
+msgstr "Accès des anciens membres d'une équipe"
 
 #: ../../user_guide/security.rst:132
 msgid ""
@@ -366,6 +380,13 @@ msgid ""
 " the client source code as the official one does neither store the keys "
 "nor decrypt any messages of a team which the user is not part of."
 msgstr ""
+"La communication d'une équipe est chiffrée avec des clés statiques. Ceci "
+"implique que les anciens membres ont encore accès aux clés. Un ancien membre "
+"peut donc potentiellement déchiffrer les messages d'une équipe et peut donc "
+"aussi garder accès aux document de l'équipe. Cependant, cela nécessite de "
+"modifier le code source du client lorsque le client officiel ne stocke ni "
+"les clés, ni déchiffre les messages d'une équipe dont une personne ne fait "
+"pas partie."
 
 #~ msgid "{logged in user}"
 #~ msgstr "{**utilisateur connecté**}"
