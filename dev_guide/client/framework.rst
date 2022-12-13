@@ -100,9 +100,9 @@ An ``inner.js`` file for a complete application looks something like:
        Framework.create({
            toolbarContainer: '#cme_toolbox',
            contentContainer: '#cp-app-miniapp-editor'
-       }, waitFor(function (framework) {
+       }, function (framework) {
            onFrameworkReady(framework);
-       }));
+       });
    });
 
 framework.less
