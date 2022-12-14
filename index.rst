@@ -28,4 +28,4 @@ This site contains 3 guides with information about using CryptPad, installing an
    how_to_contribute
 
 .. image:: /images/shredder_banner_tight.png
-   :class: screenshot
+   :class: cover-image
