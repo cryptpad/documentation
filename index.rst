@@ -14,11 +14,17 @@ This site contains 3 guides with information about using CryptPad, installing an
 
 .. toctree::
    :maxdepth: 1
+   :name: main-menu
 
-   FAQ
    user_guide/index
    dev_guide/index
    admin_guide/index
+
+.. toctree::
+   :maxdepth: 1
+   :name: small-menu
+
+   FAQ
    how_to_contribute
 
 .. image:: /images/shredder_banner_tight.png
