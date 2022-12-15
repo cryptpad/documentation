@@ -44,12 +44,12 @@ Once the user account is loaded, ``sframe-common-outer`` initializes all its "ha
 
 -  Transfer commands to the worker's modules
 
-  -  These commands usually only pass through here, they are not read and are sent directly to the worker.
+  -  These commands usually only pass through here, they are not read and are sent directly to the worker
 
 Once all these "handlers" have been registered, ``sframe-common-outer`` declares itself "ready" and, once "inner" declares the same, the script starts the realtime engine (if necessary) creating a new document or joining an existing one.
 
 Communication with the worker
--------------------------------
+-----------------------------
 
 ``www/common/cryptpad-common.js``
 

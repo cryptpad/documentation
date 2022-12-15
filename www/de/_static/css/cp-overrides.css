@@ -1,3 +1,44 @@
+/* Main menu on index page */
+
+#main-menu > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#main-menu > ul > li {
+    margin: 0;
+    list-style: none;
+}
+
+#main-menu > ul > li > a {
+    display: block;
+    border-radius: 10px;
+    color: #0087ff;
+    border: 1px solid #0087ff;
+    padding: 5px 10px;
+    margin: 0.5rem 0;
+    font-family: "IBM Plex Mono";
+    font-size: 1.5em;
+    line-height: 120%;
+}
+
+#small-menu > ul > li {
+    margin: 0;
+    list-style: none;
+}
+
+#small-menu > ul > li > a {
+    color: #0087ff;
+}
+
+.cover-image {
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+    font-family: "IBM Plex Mono";
+}
 
 /* Notes, Warnings, etc */
 
@@ -41,6 +82,14 @@ h3 {
     padding: 0.15em 0.5em;
 }
 
+.wy-menu-vertical {
+    font-family: "IBM Plex Mono";
+}
+
+.toctree-expand {
+    line-height: 20px !important;
+}
+
 .wy-menu-vertical li.toctree-l4 ul {
     display: none !important;
 }
@@ -49,3 +98,7 @@ h3 {
     display: none !important;
 }
 
+.wy-breadcrumbs {
+    border-radius: 10px;
+    font-family: "IBM Plex Mono";
+}

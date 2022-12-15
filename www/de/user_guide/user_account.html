@@ -5,10 +5,11 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="de" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Benutzer-Account &mdash; CryptPad 5.0 Dokumentation</title>
+  <title>Benutzer-Account &mdash; CryptPad 5.2 Dokumentation</title>
   
 
   
@@ -27,6 +28,8 @@
   
     <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/open-sans.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/cptools.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/fontawesome.css" type="text/css" />
@@ -55,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.0</span>
+              <span class="release">Documentation 5.2</span>
             </a>
             
 <div role="search">
@@ -86,32 +89,6 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">Häufig gestellte Fragen</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#common-issues">Häufige Probleme</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#list-of-extensions-known-to-cause-issues-with-cryptpad">Liste der Erweiterungen, die bekanntermaßen Probleme mit CryptPad verursachen</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-forgot-my-password">Ich habe mein Passwort vergessen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Wie kann ich meine Dokumente in andere Plattformen oder von anderen Plattformen importieren/exportieren?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">Import/Export von Rich-Text-Dokumenten</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">Import/Export von Tabellen</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-cannot-do-x-with-a-document-i-created">Mit dem von mir erstellten Dokument kann ich X nicht machen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#can-i-use-cryptpad-on-mobile">Kann ich CryptPad auf mobilen Geräten verwenden?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#are-you-planning-to-make-an-app">Plant ihr die Entwicklung einer App?</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#can-cryptpad-sync-documents-to-my-local-filesystem">Kann CryptPad die Dokumente mit meinem lokalen Dateisystem synchronisieren?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#what-is-the-relationship-between-cryptpad-and-onlyoffice">In welcher Beziehung stehen CryptPad und OnlyOffice?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#faq-for-cryptpad-fr">Fragen zu cryptpad.fr</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#can-i-pay-for-my-subscription-without-a-card">Kann ich für Abonnements ohne Kreditkarte bezahlen?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#do-you-accept-cryptocurrencies-for-subscriptions-and-donations">Werden Kryptowährungen für Abonnements und Spenden akzeptiert?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#can-you-provide-a-data-processing-agreement-dpa">Wird ein Auftrags­verarbeitungs­vertrag (AVV) bereitgestellt?</a></li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Benutzer-Handbuch</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="instances.html">CryptPad-Instanzen</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Benutzer-Account</a><ul>
@@ -142,12 +119,21 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="security.html">Sicherheit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="security.html#trust-assumptions">Trust Assumptions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="security.html#passwords-for-documents-and-folders">Passwörter für Dokumente und Ordner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#verifying-contacts">Verifying contacts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#self-destructing-documents">Self-destructing documents</a></li>
 <li class="toctree-l3"><a class="reference internal" href="security.html#remote-disconnect">Sitzungen beenden</a></li>
 <li class="toctree-l3"><a class="reference internal" href="security.html#remote-content">Externer Inhalt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#known-caveats">Known caveats</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="security.html#no-unique-usernames">No unique usernames</a></li>
+<li class="toctree-l4"><a class="reference internal" href="security.html#edit-rights-in-teams">Edit rights in teams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="security.html#access-of-former-team-members">Access of former team members</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="drive.html">Drive</a><ul>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="drive.html">CryptDrive</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#display">Anzeige</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#managing-documents">Dokumente verwalten</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="drive.html#folders">Ordner</a></li>
@@ -155,7 +141,7 @@
 <li class="toctree-l4"><a class="reference internal" href="drive.html#deleting">Löschen</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="drive.html#cryptdrive-history">Verlauf des CryptDrives</a></li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#history">History</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#tags">Tags</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#templates">Vorlagen</a></li>
 </ul>
@@ -262,6 +248,7 @@
 <li class="toctree-l5"><a class="reference internal" href="apps/form.html#utilities">Werkzeuge</a></li>
 <li class="toctree-l5"><a class="reference internal" href="apps/form.html#question-types">Fragetypen</a></li>
 <li class="toctree-l5"><a class="reference internal" href="apps/form.html#form-settings">Einstellungen des Formulars</a></li>
+<li class="toctree-l5"><a class="reference internal" href="apps/form.html#responses">Responses</a></li>
 <li class="toctree-l5"><a class="reference internal" href="apps/form.html#advanced-use-cases">Fortgeschrittene Anwendungsfälle</a></li>
 </ul>
 </li>
@@ -290,6 +277,99 @@
 <li class="toctree-l4"><a class="reference internal" href="apps/poll.html#edit-mode">Bearbeitungsmodus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/poll.html#voting">Abstimmung</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/poll.html#export">Export</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">Administrator Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../admin_guide/installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#prerequisites">Prerequisites</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#domains">Domains</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#hardware">Hardware</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#software">Software</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#install-cryptpad">Install Cryptpad</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configuration">Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#daemonization">Daemonization</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#systemd">Systemd</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#admin-domain-config">Domains</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#install-and-configure-nginx">Install and configure Nginx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#configure-cryptpad">Configure CryptPad</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#diagnostics">Diagnostics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configure-administrators">Configure administrators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#build-static-pages-open-graph-metadata">Build static pages &amp; Open Graph metadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#support">Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../admin_guide/customization.html">Instance customization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/customization.html#application-config">Application config</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#restricting-guest-access">Restricting guest access</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#links-to-terms-of-service-privacy-policy-and-imprint-pages">Links to Terms of Service, Privacy Policy and Imprint pages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#security-hardening">Security Hardening</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/customization.html#look-and-feel">Look and feel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#open-graph-preview-images">Open Graph preview images</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/customization.html#translations">Translations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../admin_guide/maintenance.html">Maintenance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/maintenance.html#upgrading-cryptpad">Upgrading CryptPad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/maintenance.html#database-administration">Database administration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/maintenance.html#backup-and-migration">Backup and migration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/maintenance.html#advanced-administration">Advanced administration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../admin_guide/admin_panel.html">Administration panel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#general">General</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#enable-remote-embedding">Enable remote embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#admin-contact-email">Admin contact email</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#instance-information">Instance information</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#storage-limit">Storage Limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#apply-a-custom-limit">Apply a custom limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#archive-documents">Archive documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#restore-documents">Restore documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#check-account-storage">Check account storage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#list-of-custom-limits">List of custom limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#statistics">Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#support">Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#maintenance">Maintenance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#survey">Survey</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast-message">Broadcast Message</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#performance">Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#network">Network</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#validate-instance-configuration">Validate instance configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#server-telemetry">Server telemetry</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#list-my-instance-in-public-directories">List my instance in public directories</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#consent-to-contact">Consent to contact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#crowdfunding-participation">Crowdfunding participation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#instance-purpose">Instance purpose</a></li>
 </ul>
 </li>
 </ul>
@@ -402,97 +482,30 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">Administrator Guide</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../admin_guide/installation.html">Installation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#prerequisites">Prerequisites</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#domains">Domains</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#hardware">Hardware</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#software">Software</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">Häufig gestellte Fragen</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#common-issues">Häufige Probleme</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#list-of-extensions-known-to-cause-issues-with-cryptpad">Liste der Erweiterungen, die bekanntermaßen Probleme mit CryptPad verursachen</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#install-cryptpad">Install Cryptpad</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#dependencies">Dependencies</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configuration">Configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#daemonization">Daemonization</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#systemd">Systemd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-forgot-my-password">Ich habe mein Passwort vergessen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Wie kann ich meine Dokumente in andere Plattformen oder von anderen Plattformen importieren/exportieren?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">Import/Export von Rich-Text-Dokumenten</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">Import/Export von Tabellen</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-cannot-do-x-with-a-document-i-created">Mit dem von mir erstellten Dokument kann ich X nicht machen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#can-i-use-cryptpad-on-mobile">Kann ich CryptPad auf mobilen Geräten verwenden?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#are-you-planning-to-make-an-app">Plant ihr die Entwicklung einer App?</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#admin-domain-config">Domains</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#install-and-configure-nginx">Install and configure Nginx</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#configure-cryptpad">Configure CryptPad</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#diagnostics">Diagnostics</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configure-administrators">Configure administrators</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#version-4-6-0-and-later">Version 4.6.0 and later</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#versions-older-than-4-6-0">Versions older than 4.6.0</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configure-open-graph-metadata">Configure Open Graph metadata</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../admin_guide/customization.html">Instance customization</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/customization.html#application-config">Application config</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#restricting-guest-access">Restricting guest access</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#links-to-terms-of-service-privacy-policy-and-imprint-pages">Links to Terms of Service, Privacy Policy and Imprint pages</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/customization.html#look-and-feel">Look and feel</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#open-graph-preview-images">Open Graph preview images</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/customization.html#translations">Translations</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../admin_guide/maintenance.html">Maintenance</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/maintenance.html#upgrading-cryptpad">Upgrading CryptPad</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/maintenance.html#database-administration">Database administration</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/maintenance.html#backup-and-migration">Backup and migration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/maintenance.html#advanced-administration">Advanced administration</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../admin_guide/admin_panel.html">Administration panel</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#general">General</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#enable-remote-embedding">Enable remote embedding</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#admin-contact-email">Admin contact email</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#instance-information">Instance information</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#storage-limit">Storage Limit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#apply-a-custom-limit">Apply a custom limit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#archive-documents">Archive documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#restore-documents">Restore documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#check-account-storage">Check account storage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#list-of-custom-limits">List of custom limits</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#statistics">Statistics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#support">Support</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#maintenance">Maintenance</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#survey">Survey</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast-message">Broadcast Message</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#performance">Performance</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#network">Network</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#validate-instance-configuration">Validate instance configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#server-telemetry">Server telemetry</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#list-my-instance-in-public-directories">List my instance in public directories</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#consent-to-contact">Consent to contact</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#crowdfunding-participation">Crowdfunding participation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#instance-purpose">Instance purpose</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#can-cryptpad-sync-documents-to-my-local-filesystem">Kann CryptPad die Dokumente mit meinem lokalen Dateisystem synchronisieren?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#what-is-the-relationship-between-cryptpad-and-onlyoffice">In welcher Beziehung stehen CryptPad und OnlyOffice?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#faq-for-cryptpad-fr">Fragen zu cryptpad.fr</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#can-i-pay-for-my-subscription-without-a-card">Kann ich für Abonnements ohne Kreditkarte bezahlen?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#do-you-accept-cryptocurrencies-for-subscriptions-and-donations">Werden Kryptowährungen für Abonnements und Spenden akzeptiert?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#can-you-provide-a-data-processing-agreement-dpa">Wird ein Auftrags­verarbeitungs­vertrag (AVV) bereitgestellt?</a></li>
 </ul>
 </li>
 </ul>
@@ -500,6 +513,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../how_to_contribute.html">Wie du uns unterstützen kannst</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#spread-the-word">Mache CryptPad bekannt</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#report-bugs">Fehler melden</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#contribute-to-the-documentation">Contribute to the documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#translate-cryptpad">CryptPad übersetzen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#contribute-to-the-code">Zum Code beitragen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#financial-support">Finanzielle Unterstützung</a></li>
@@ -585,15 +599,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="user-account">
-<h1>Benutzer-Account<a class="headerlink" href="#user-account" title="Link zu dieser Überschrift">¶</a></h1>
+  <section id="user-account">
+<h1>Benutzer-Account<a class="headerlink" href="#user-account" title="Permalink to this heading">¶</a></h1>
 <p>CryptPad verschlüsselt Daten so, dass diese nur für dich und deine Mitarbeitenden lesbar sind. Aus diesem Grund <strong>können die Administratoren des Dienstes dein Passwort nicht einsehen, abrufen oder zurücksetzen</strong>. Daher ist es wichtig, dass du dir dein Passwort an einem sicheren Ort getrennt von deinem CryptPad-Account notierst.</p>
 <p>CryptPad verwendet die Kombination aus deinem Benutzernamen und Passwort, um dich zu identifizieren. Benutzernamen sind auf CryptPad nicht eindeutig. Es ist möglich, mehrere Konten mit dem gleichen Benutzernamen und verschiedenen Passwörtern zu erstellen.</p>
-<div class="section" id="account-types">
-<h2>Account-Typen<a class="headerlink" href="#account-types" title="Link zu dieser Überschrift">¶</a></h2>
+<section id="account-types">
+<h2>Account-Typen<a class="headerlink" href="#account-types" title="Permalink to this heading">¶</a></h2>
 <p>Es gibt drei Account-Typen auf CryptPad:</p>
-<div class="section" id="guest-user">
-<h3>Gast-Benutzer<a class="headerlink" href="#guest-user" title="Link zu dieser Überschrift">¶</a></h3>
+<section id="guest-user">
+<h3>Gast-Benutzer<a class="headerlink" href="#guest-user" title="Permalink to this heading">¶</a></h3>
 <p>Nicht-registrierte Benutzer werden durch ein Tier- oder Maskottchen-Emoji als Avatar identifiziert (oben rechts).</p>
 <p>Zur Verwendung von CryptPad ohne Registrierung werden keine persönlichen Informationen benötigt. Allerdings ist der Funktionsumfang eingeschränkt:</p>
 <ul class="simple">
@@ -602,11 +616,11 @@
 <li><p>Speicherdauer begrenzt auf drei Monate von Inaktivität (für jedes einzelne Dokument).</p></li>
 <li><p>Dateispeicher nicht verfügbar für Bilder, Videos, PDFs, …</p></li>
 </ul>
-</div>
-<div class="section" id="logged-in-user">
-<h3>Eingeloggte Benutzer<a class="headerlink" href="#logged-in-user" title="Link zu dieser Überschrift">¶</a></h3>
+</section>
+<section id="logged-in-user">
+<h3>Eingeloggte Benutzer<a class="headerlink" href="#logged-in-user" title="Permalink to this heading">¶</a></h3>
 <p>Eingeloggte Benutzer werden durch einen Avatar identifiziert (oben rechts), entweder durch ihr Profilbild, wenn sie eines festgelegt haben, oder durch die ersten beiden Buchstaben ihres Anzeigenamens.</p>
-<p>Die Registrierung eines Accounts erfordert keine persönlichen Informationen, sondern nur einen Benutzernamen und ein Passwort. Zusätzliche Funktionen für angemeldete Benutzer:</p>
+<p>Registering an account does not require any personal information, only a username and password. Additional functionality for logged in users:</p>
 <ul class="simple">
 <li><p>Persönlicher und dauerhafter Speicherplatz für Dokumente.</p></li>
 <li><p>Dateispeicher für Bilder, Videos, PDFs, …</p></li>
@@ -615,9 +629,9 @@
 <li><p>Erstellung von <a class="reference internal" href="collaboration.html#teams"><span class="std std-ref">Teams</span></a>.</p></li>
 <li><p>Einrichtung einer <a class="reference internal" href="collaboration.html#profile"><span class="std std-ref">Profilseite</span></a> und einer Liste von <a class="reference internal" href="collaboration.html#contacts"><span class="std std-ref">Kontakten</span></a> zum <a class="reference internal" href="share_and_access.html#share"><span class="std std-ref">Teilen von Dokumenten</span></a> und <a class="reference internal" href="collaboration.html#chat-contacts"><span class="std std-ref">Chatten</span></a>. Benachrichtigungen für die Interaktion zwischen Kontakten.</p></li>
 </ul>
-</div>
-<div class="section" id="premium-user">
-<h3>Premium-Benutzer<a class="headerlink" href="#premium-user" title="Link zu dieser Überschrift">¶</a></h3>
+</section>
+<section id="premium-user">
+<h3>Premium-Benutzer<a class="headerlink" href="#premium-user" title="Permalink to this heading">¶</a></h3>
 <p>(nur auf cryptpad.fr)</p>
 <ul class="simple">
 <li><p>Mehr Speicherplatz.</p></li>
@@ -625,12 +639,12 @@
 <li><p>Schnellere Antwort vom Administratoren- und Support-Team.</p></li>
 <li><p>Unterstützung der Entwicklung und Zukunftsfähigkeit von CryptPad.</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="account-management">
-<h2>Verwaltung von Accounts<a class="headerlink" href="#account-management" title="Link zu dieser Überschrift">¶</a></h2>
-<div class="section" id="registration">
-<h3>Registrierung<a class="headerlink" href="#registration" title="Link zu dieser Überschrift">¶</a></h3>
+</section>
+</section>
+<section id="account-management">
+<h2>Verwaltung von Accounts<a class="headerlink" href="#account-management" title="Permalink to this heading">¶</a></h2>
+<section id="registration">
+<h3>Registrierung<a class="headerlink" href="#registration" title="Permalink to this heading">¶</a></h3>
 <p>Um einen neuen Account zu registrieren, gehe zur Registrierungsseite: <strong>Registrieren</strong> oben rechts auf der Startseite.</p>
 <img alt="../_images/registration.png" class="screenshot" src="../_images/registration.png" />
 <p>Fülle die folgenden Informationen aus:</p>
@@ -656,21 +670,21 @@
 <ul class="simple">
 <li><p><strong>Die Pads aus deiner anonymen Sitzung importieren</strong>: Sofern du Dokumente als nicht registrierter Benutzer erstellt hast, kannst du sie in deinen Account importieren.</p></li>
 </ul>
-</div>
-<div class="section" id="logging-in">
-<h3>Einloggen<a class="headerlink" href="#logging-in" title="Link zu dieser Überschrift">¶</a></h3>
+</section>
+<section id="logging-in">
+<h3>Einloggen<a class="headerlink" href="#logging-in" title="Permalink to this heading">¶</a></h3>
 <p>Zum Einloggen besuche die Seite <strong>Einloggen</strong> (oben rechts auf der Startseite) und gib deinen Benutzernamen und dein Passwort ein.</p>
 <p>Optional:</p>
 <ul class="simple">
 <li><p><strong>Die Pads aus deiner anonymen Sitzung importieren</strong>: Sofern du Dokumente als nicht registrierter Benutzer erstellt hast, kannst du sie in deinen Account importieren.</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="settings">
-<span id="user-settings"></span><h2>Einstellungen<a class="headerlink" href="#settings" title="Link zu dieser Überschrift">¶</a></h2>
+</section>
+</section>
+<section id="settings">
+<span id="user-settings"></span><h2>Einstellungen<a class="headerlink" href="#settings" title="Permalink to this heading">¶</a></h2>
 <p>Die Einstellungen für den Account befinden sich im Benutzermenü (Avatar oben rechts) &gt; <em class="fa fa-gear"></em> <strong>Einstellungen</strong>.</p>
-<div class="section" id="account">
-<span id="user-settings-account"></span><h3>Account<a class="headerlink" href="#account" title="Link zu dieser Überschrift">¶</a></h3>
+<section id="account">
+<span id="user-settings-account"></span><h3>Account<a class="headerlink" href="#account" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><strong>Kontoname</strong>: Bei der Registrierung gewählter Benutzername . Dieser Name kann nicht geändert werden. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
 <li><p><strong>Öffentlicher Schlüssel zum Unterschreiben</strong>: Wird von Administratoren verwendet und/oder auf Instanzen, die Abonnements anbieten. Dies ist die einzige Information über deinen Account, der für die Administratoren des Dienstes einsehbar ist. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
@@ -680,9 +694,9 @@
 <li><p><strong>Dein Passwort ändern</strong>: Gib dein aktuelles Passwort ein und bestätige dein neues Passwort, indem du es zweimal eingibst. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
 <li><p><strong>Löschung des Accounts</strong>: Option zum Löschen deines Accounts und aller darin gespeicherter Dokumente. Klicke auf <strong>Deinen Account löschen</strong> und bestätige. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
 </ul>
-</div>
-<div class="section" id="confidentiality">
-<span id="user-settings-confidentiality"></span><h3>Vertraulichkeit<a class="headerlink" href="#confidentiality" title="Link zu dieser Überschrift">¶</a></h3>
+</section>
+<section id="confidentiality">
+<span id="user-settings-confidentiality"></span><h3>Vertraulichkeit<a class="headerlink" href="#confidentiality" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><strong>Andere Sitzungen beenden</strong>: Logge dich aus allen Sitzungen aus, abgesehen von der gerade verwendeten Sitzung (siehe auch <a class="reference internal" href="security.html#remote-disconnect"><span class="std std-ref">Sitzungen beenden</span></a>). <span class="badge-user">Eingeloggte Benutzer</span></p></li>
 <li><p><strong>Speichern von Pads im CryptDrive</strong>: Verwaltet, ob Dokumente automatisch in deinem CryptDrive gespeichert werden. Wenn Dokumente keinen <a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">Eigentümer</span></a> haben, werden sie auf deinen verfügbaren Speicherplatz angerechnet.</p>
@@ -698,15 +712,15 @@
 <ul class="simple">
 <li><p><strong>Rückmeldung</strong>: CryptPad kann anonymisierte Rückmeldungen an den Server senden, um die Benutzererfahrung zu verbessern. Der Inhalt von Dokumenten wird niemals geteilt. Diese Option ist standardmäßig deaktiviert.</p></li>
 </ul>
-</div>
-<div class="section" id="appearance">
-<h3>Erscheinungsbild<a class="headerlink" href="#appearance" title="Link zu dieser Überschrift">¶</a></h3>
+</section>
+<section id="appearance">
+<h3>Erscheinungsbild<a class="headerlink" href="#appearance" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><strong>Farbschema</strong>: Legt die Darstellung (Hell oder Dunkel) in CryptPad fest. Standardmäßig werden Einstellungen des Betriebssystems und/oder des Browser angewendet, aber die Darstellung kann auch manuell festgelegt werden.</p></li>
 </ul>
-</div>
-<div class="section" id="cryptdrive">
-<span id="user-settings-cryptdrive"></span><h3>CryptDrive<a class="headerlink" href="#cryptdrive" title="Link zu dieser Überschrift">¶</a></h3>
+</section>
+<section id="cryptdrive">
+<span id="user-settings-cryptdrive"></span><h3>CryptDrive<a class="headerlink" href="#cryptdrive" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><strong>Tipps</strong>: Hilfetexte in der Benutzeroberfläche von CryptPad. Klicke auf <strong>Zurücksetzen</strong>, um sie wieder anzuzeigen, sofern sie ausgeblendet wurden.</p></li>
 <li><p><strong>Duplizierte eigene Pads</strong>: Wenn du ein eigenes Pad in einem geteilten Ordner verschiebst, wird eine Kopie in deinem CryptDrive behalten, damit du die Kontrolle des Dokuments nicht verlierst. Du kannst duplizierte Dateien verbergen. Nur die Version in dem geteilten Ordner wird dann angezeigt, außer sie wurde gelöscht. In diesem Fall, wird das Original an seinem ursprünglichen Ort wieder angezeigt.</p></li>
@@ -720,26 +734,26 @@
 <li><p><strong>Importieren</strong>: Wenn Pads vor dem Einloggen erstellt wurden, können sie in das CryptDrive importiert werden. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
 <li><p><strong>Verlauf löschen</strong>: Der Verlauf des CryptDrives und der Benachrichtigungen kann gelöscht werden, um Speicherplatz zu sparen. Dies betrifft nicht den Verlauf von Dokumenten, der jeweils in den <a class="reference internal" href="apps/general.html#document-properties"><span class="std std-ref">Eigenschaften</span></a> des Dokuments gelöscht werden kann.</p></li>
 </ul>
-</div>
-<div class="section" id="cursor">
-<span id="user-settings-cursor"></span><h3>Cursor<a class="headerlink" href="#cursor" title="Link zu dieser Überschrift">¶</a></h3>
+</section>
+<section id="cursor">
+<span id="user-settings-cursor"></span><h3>Cursor<a class="headerlink" href="#cursor" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><strong>Cursorfarbe</strong>: Ändert die Farbe deines Cursors. Dadurch kannst du bei der gemeinsamen Bearbeitung von Dokumenten identifiziert werden. Es legt auch die Farbe deines Texts fest, wenn <a class="reference internal" href="apps/code.html#app-code-theme"><span class="std std-ref">Autorenfarben</span></a> in Code-Pads aktiviert sind.</p></li>
 <li><p><strong>Meine Cursorposition teilen</strong>: Zeigt oder versteckt die genaue Position deines Cursors für andere Benutzer.</p></li>
 <li><p><strong>Position des Cursors von anderen Nutzern anzeigen (BETA)</strong>: Zeigt oder versteckt die Position der Cursor anderer Benutzer.</p></li>
 </ul>
-</div>
-<div class="section" id="rich-text">
-<span id="user-settings-richtext"></span><h3>Rich Text<a class="headerlink" href="#rich-text" title="Link zu dieser Überschrift">¶</a></h3>
+</section>
+<section id="rich-text">
+<span id="user-settings-richtext"></span><h3>Rich Text<a class="headerlink" href="#rich-text" title="Permalink to this heading">¶</a></h3>
 <p>Einstellungen für Anwendung <a class="reference internal" href="apps/richtext.html#app-rich-text"><span class="std std-ref">Rich Text</span></a>.</p>
 <ul class="simple">
 <li><p><strong>Maximalgröße des Editors</strong>: Schalte um zwischen der Seitenansicht (Standard), die auf die Breite des Texteditors beschränkt ist, und der Ausnutzung der vollen Bildschirmbreite.</p></li>
 <li><p><strong>Rechtschreibprüfung</strong>: Aktiviert die Rechtschreibprüfung in Rich-Text-Pads. Rechtschreibfehler werden rot unterstrichen. Verbesserungsvorschläge sind nach <code class="docutils literal notranslate"><span class="pre">Strg</span> <span class="pre">+</span> <span class="pre">Rechtsklick</span></code> auf das zu korrigierende Wort verfügbar.</p></li>
 <li><p><strong>Kommentar-Benachrichtigungen</strong>: Deaktiviert Benachrichtigungen, wenn ein anderer Benutzer auf deine Kommentare antwortet.</p></li>
 </ul>
-</div>
-<div class="section" id="code">
-<span id="user-settings-code"></span><h3>Code<a class="headerlink" href="#code" title="Link zu dieser Überschrift">¶</a></h3>
+</section>
+<section id="code">
+<span id="user-settings-code"></span><h3>Code<a class="headerlink" href="#code" title="Permalink to this heading">¶</a></h3>
 <p>Einstellungen für die Anwendung <a class="reference internal" href="apps/code.html#app-code"><span class="std std-ref">Code / Markdown</span></a>.</p>
 <ul class="simple">
 <li><p><strong>Einrückung für den Code-Editor (Leerzeichen)</strong>: Wählt die Anzahl von Leerzeichen für jede Einrückungsebene.</p></li>
@@ -748,17 +762,17 @@
 <li><p><strong>Schriftgröße im Code-Editor</strong>: Legt die Schriftgröße im Code-Editor fest.</p></li>
 <li><p><strong>Rechtschreibprüfung</strong>: Unterstreicht Rechtschreibfehler im Code-Editor, Verbesserungsvorschläge sind nach <code class="docutils literal notranslate"><span class="pre">Rechtsklick</span></code> auf das zu korrigierende Wort verfügbar.</p></li>
 </ul>
-</div>
-<div class="section" id="subscription">
-<span id="user-settings-subscription"></span><h3>Abonnement<a class="headerlink" href="#subscription" title="Link zu dieser Überschrift">¶</a></h3>
+</section>
+<section id="subscription">
+<span id="user-settings-subscription"></span><h3>Abonnement<a class="headerlink" href="#subscription" title="Permalink to this heading">¶</a></h3>
 <p>(nur auf cryptpad.fr)</p>
 <ul class="simple">
 <li><p>Leitet zur Account-Seite weiter.</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="support">
-<span id="user-support"></span><h2>Support<a class="headerlink" href="#support" title="Link zu dieser Überschrift">¶</a></h2>
+</section>
+</section>
+<section id="support">
+<span id="user-support"></span><h2>Support<a class="headerlink" href="#support" title="Permalink to this heading">¶</a></h2>
 <p>Support-Tickets stellen einen sicheren Kommunikationskanal zu den Administratoren der CryptPad-Instanz zur Verfügung. Auf die Seite <strong>Support</strong> kann wie folgt zugegriffen werden:</p>
 <ul class="simple">
 <li><p>Benutzermenü (Avatar oben rechts) &gt; <em class="fa fa-life-ring"></em> <strong>Support</strong>.</p></li>
@@ -770,9 +784,9 @@
 <li><p>Geschlossene Tickets <strong>löschen</strong>.</p></li>
 </ul>
 <p><em class="fa fa-life-ring"></em> <strong>Neues Ticket</strong>: Um ein neues Ticket zu erstellen, fülle das Formular mit Titel, Kategorie und Details zu deinem Problem oder deiner Frage aus. Bei Bedarf kannst du einen Anhang hinzufügen, zum Beispiel einen Screenshot und klicke auf <strong>Absenden</strong>.</p>
-</div>
-<div class="section" id="notifications">
-<h2>Benachrichtigungen<a class="headerlink" href="#notifications" title="Link zu dieser Überschrift">¶</a></h2>
+</section>
+<section id="notifications">
+<h2>Benachrichtigungen<a class="headerlink" href="#notifications" title="Permalink to this heading">¶</a></h2>
 <p><span class="badge-user">Eingeloggte Benutzer</span></p>
 <p>CryptPad benachrichtigt dich, wenn ein Kontakt mit dir interagiert. Benachrichtigungen werden bei der Glocke <em class="fa fa-bell-o"></em> neben deinem Avatar (oben rechts) angezeigt. Wenn du ungelesene Benachrichtigungen hast, ist die Glocke ausgefüllt <em class="fa fa-bell"></em> und es wird ein Zähler angezeigt.</p>
 <p><em class="fa fa-bell"></em> Dropdown-Menü der Glocke:</p>
@@ -793,8 +807,8 @@
 </li>
 <li><p><em class="fa fa-trash"></em>: Benachrichtigungen löschen.</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -841,7 +855,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.0',
+            VERSION:'5.2',
             LANGUAGE:'de',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
@@ -849,9 +863,12 @@
             SOURCELINK_SUFFIX: '.txt'
         };
     </script>
+      <script type="text/javascript" src="../_static/documentation_options.js"></script>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/sphinx_highlight.js"></script>
       <script type="text/javascript" src="../_static/translations.js"></script>
 
   

@@ -5,10 +5,11 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Drive &mdash; Documentation CryptPad 5.0</title>
+  <title>CryptDrive &mdash; Documentation CryptPad 5.2</title>
   
 
   
@@ -27,6 +28,8 @@
   
     <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/open-sans.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/cptools.css" type="text/css" />
   <link rel="stylesheet" href="../_static/css/fontawesome.css" type="text/css" />
@@ -55,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.0</span>
+              <span class="release">Documentation 5.2</span>
             </a>
             
 <div role="search">
@@ -86,32 +89,6 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">Foire Aux Questions</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#common-issues">Problèmes courants</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#list-of-extensions-known-to-cause-issues-with-cryptpad">Liste des extensions connues pour causer des problèmes avec CryptPad</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-forgot-my-password">J'ai oublié mon mot de passe</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Comment importer/exporter mes documents vers/depuis un autre logiciel ?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">Import/export de documents texte</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">Import/export de feuilles de calcul</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-cannot-do-x-with-a-document-i-created">Je ne peux pas faire X avec un document que j'ai créé</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#can-i-use-cryptpad-on-mobile">Puis-je utiliser CryptPad sur mobile ?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#are-you-planning-to-make-an-app">Avez vous l'intention de faire une application ?</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#can-cryptpad-sync-documents-to-my-local-filesystem">CryptPad peut-il synchroniser des documents avec mon ordinateur ?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#what-is-the-relationship-between-cryptpad-and-onlyoffice">Quelle est la relation entre CryptPad et OnlyOffice ?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#faq-for-cryptpad-fr">FAQ pour cryptpad.fr</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#can-i-pay-for-my-subscription-without-a-card">Puis-je payer mon abonnement sans utiliser de carte ?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#do-you-accept-cryptocurrencies-for-subscriptions-and-donations">Acceptez-vous les crypto-monnaies pour les abonnements et les dons ?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#can-you-provide-a-data-processing-agreement-dpa">Pouvez-vous fournir un accord de traitement des données (DPA) ?</a></li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Guide Utilisateur</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="instances.html">Instances CryptPad</a></li>
 <li class="toctree-l2"><a class="reference internal" href="user_account.html">Compte utilisateur</a><ul>
@@ -142,12 +119,21 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="security.html">Sécurité</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="security.html#trust-assumptions">Trust Assumptions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="security.html#passwords-for-documents-and-folders">Mot de passe des documents et dossiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#verifying-contacts">Verifying contacts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#self-destructing-documents">Self-destructing documents</a></li>
 <li class="toctree-l3"><a class="reference internal" href="security.html#remote-disconnect">Déconnexion à distance</a></li>
 <li class="toctree-l3"><a class="reference internal" href="security.html#remote-content">Déconnexion à distance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#known-caveats">Known caveats</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="security.html#no-unique-usernames">No unique usernames</a></li>
+<li class="toctree-l4"><a class="reference internal" href="security.html#edit-rights-in-teams">Edit rights in teams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="security.html#access-of-former-team-members">Access of former team members</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Drive</a><ul>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">CryptDrive</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#display">Affichage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#managing-documents">Gestion des documents</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#folders">Dossiers</a></li>
@@ -155,7 +141,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#deleting">Supprimer</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#cryptdrive-history">Historique du CryptDrive</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#history">History</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#tags">Mots-Clés</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#templates">Modèles</a></li>
 </ul>
@@ -262,6 +248,7 @@
 <li class="toctree-l5"><a class="reference internal" href="apps/form.html#utilities">Mise en page</a></li>
 <li class="toctree-l5"><a class="reference internal" href="apps/form.html#question-types">Types de questions</a></li>
 <li class="toctree-l5"><a class="reference internal" href="apps/form.html#form-settings">Réglages du formulaire</a></li>
+<li class="toctree-l5"><a class="reference internal" href="apps/form.html#responses">Responses</a></li>
 <li class="toctree-l5"><a class="reference internal" href="apps/form.html#advanced-use-cases">Usages avancés</a></li>
 </ul>
 </li>
@@ -290,6 +277,99 @@
 <li class="toctree-l4"><a class="reference internal" href="apps/poll.html#edit-mode">Édition</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/poll.html#voting">Vote</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/poll.html#export">Export</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">Administrator Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../admin_guide/installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#prerequisites">Prerequisites</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#domains">Domains</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#hardware">Hardware</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#software">Software</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#install-cryptpad">Install Cryptpad</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configuration">Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#daemonization">Daemonization</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#systemd">Systemd</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#admin-domain-config">Domains</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#install-and-configure-nginx">Install and configure Nginx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#configure-cryptpad">Configure CryptPad</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#diagnostics">Diagnostics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configure-administrators">Configure administrators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#build-static-pages-open-graph-metadata">Build static pages &amp; Open Graph metadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#support">Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../admin_guide/customization.html">Instance customization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/customization.html#application-config">Application config</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#restricting-guest-access">Restricting guest access</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#links-to-terms-of-service-privacy-policy-and-imprint-pages">Links to Terms of Service, Privacy Policy and Imprint pages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#security-hardening">Security Hardening</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/customization.html#look-and-feel">Look and feel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#open-graph-preview-images">Open Graph preview images</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/customization.html#translations">Translations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../admin_guide/maintenance.html">Maintenance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/maintenance.html#upgrading-cryptpad">Upgrading CryptPad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/maintenance.html#database-administration">Database administration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/maintenance.html#backup-and-migration">Backup and migration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/maintenance.html#advanced-administration">Advanced administration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../admin_guide/admin_panel.html">Administration panel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#general">General</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#enable-remote-embedding">Enable remote embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#admin-contact-email">Admin contact email</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#instance-information">Instance information</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#storage-limit">Storage Limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#apply-a-custom-limit">Apply a custom limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#archive-documents">Archive documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#restore-documents">Restore documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#check-account-storage">Check account storage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#list-of-custom-limits">List of custom limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#statistics">Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#support">Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#maintenance">Maintenance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#survey">Survey</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast-message">Broadcast Message</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#performance">Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#network">Network</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#validate-instance-configuration">Validate instance configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#server-telemetry">Server telemetry</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#list-my-instance-in-public-directories">List my instance in public directories</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#consent-to-contact">Consent to contact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#crowdfunding-participation">Crowdfunding participation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#instance-purpose">Instance purpose</a></li>
 </ul>
 </li>
 </ul>
@@ -402,97 +482,30 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">Administrator Guide</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../admin_guide/installation.html">Installation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#prerequisites">Prerequisites</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#domains">Domains</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#hardware">Hardware</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#software">Software</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">Foire Aux Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#common-issues">Problèmes courants</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#list-of-extensions-known-to-cause-issues-with-cryptpad">Liste des extensions connues pour causer des problèmes avec CryptPad</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#install-cryptpad">Install Cryptpad</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#dependencies">Dependencies</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configuration">Configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#daemonization">Daemonization</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#systemd">Systemd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-forgot-my-password">J'ai oublié mon mot de passe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Comment importer/exporter mes documents vers/depuis un autre logiciel ?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">Import/export de documents texte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">Import/export de feuilles de calcul</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-cannot-do-x-with-a-document-i-created">Je ne peux pas faire X avec un document que j'ai créé</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#can-i-use-cryptpad-on-mobile">Puis-je utiliser CryptPad sur mobile ?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#are-you-planning-to-make-an-app">Avez vous l'intention de faire une application ?</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#admin-domain-config">Domains</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#install-and-configure-nginx">Install and configure Nginx</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#configure-cryptpad">Configure CryptPad</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#diagnostics">Diagnostics</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configure-administrators">Configure administrators</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#version-4-6-0-and-later">Version 4.6.0 and later</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#versions-older-than-4-6-0">Versions older than 4.6.0</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configure-open-graph-metadata">Configure Open Graph metadata</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../admin_guide/customization.html">Instance customization</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/customization.html#application-config">Application config</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#restricting-guest-access">Restricting guest access</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#links-to-terms-of-service-privacy-policy-and-imprint-pages">Links to Terms of Service, Privacy Policy and Imprint pages</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/customization.html#look-and-feel">Look and feel</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#open-graph-preview-images">Open Graph preview images</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/customization.html#translations">Translations</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../admin_guide/maintenance.html">Maintenance</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/maintenance.html#upgrading-cryptpad">Upgrading CryptPad</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/maintenance.html#database-administration">Database administration</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/maintenance.html#backup-and-migration">Backup and migration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/maintenance.html#advanced-administration">Advanced administration</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../admin_guide/admin_panel.html">Administration panel</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#general">General</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#enable-remote-embedding">Enable remote embedding</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#admin-contact-email">Admin contact email</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#instance-information">Instance information</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#storage-limit">Storage Limit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#apply-a-custom-limit">Apply a custom limit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#archive-documents">Archive documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#restore-documents">Restore documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#check-account-storage">Check account storage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#list-of-custom-limits">List of custom limits</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#statistics">Statistics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#support">Support</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#maintenance">Maintenance</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#survey">Survey</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast-message">Broadcast Message</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#performance">Performance</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#network">Network</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#validate-instance-configuration">Validate instance configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#server-telemetry">Server telemetry</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#list-my-instance-in-public-directories">List my instance in public directories</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#consent-to-contact">Consent to contact</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#crowdfunding-participation">Crowdfunding participation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#instance-purpose">Instance purpose</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#can-cryptpad-sync-documents-to-my-local-filesystem">CryptPad peut-il synchroniser des documents avec mon ordinateur ?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#what-is-the-relationship-between-cryptpad-and-onlyoffice">Quelle est la relation entre CryptPad et OnlyOffice ?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#faq-for-cryptpad-fr">FAQ pour cryptpad.fr</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#can-i-pay-for-my-subscription-without-a-card">Puis-je payer mon abonnement sans utiliser de carte ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#do-you-accept-cryptocurrencies-for-subscriptions-and-donations">Acceptez-vous les crypto-monnaies pour les abonnements et les dons ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#can-you-provide-a-data-processing-agreement-dpa">Pouvez-vous fournir un accord de traitement des données (DPA) ?</a></li>
 </ul>
 </li>
 </ul>
@@ -500,6 +513,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../how_to_contribute.html">Comment contribuer</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#spread-the-word">Diffuser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#report-bugs">Signaler des bugs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#contribute-to-the-documentation">Contribute to the documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#translate-cryptpad">Traduire CryptPad</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#contribute-to-the-code">Contribuer au code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#financial-support">Soutien financier</a></li>
@@ -562,7 +576,7 @@
         
           <li><a href="index.html">Guide Utilisateur</a> &raquo;</li>
         
-      <li>Drive</li>
+      <li>CryptDrive</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -585,38 +599,42 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="drive">
-<span id="id1"></span><h1>Drive<a class="headerlink" href="#drive" title="Lien permanent vers ce titre">¶</a></h1>
-<p>Le CryptDrive est utilisé pour stocker et organiser les documents. Pour les utilisateurs connectés, le CryptDrive est la page par défaut de CryptPad. Il est aussi accessible depuis les autres pages :</p>
+  <section id="cryptdrive">
+<span id="drive"></span><h1>CryptDrive<a class="headerlink" href="#cryptdrive" title="Lien permanent vers cette rubrique">¶</a></h1>
+<p>CryptDrive is used to store and manage documents. For logged in users it is the default landing page on CryptPad. It is also accessible from the other pages:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur le logo (en haut à gauche).</p></li>
 <li><p>Avatar (en haut à droite) &gt; <em class="fa fa-hdd-o"></em> <strong>CryptDrive</strong>.</p></li>
 </ul>
-<div class="section" id="display">
-<span id="drive-display"></span><h2>Affichage<a class="headerlink" href="#display" title="Lien permanent vers ce titre">¶</a></h2>
-<p>Les documents dans le CryptDrive sont affichés sous forme de <em class="fa fa-list"></em> liste ou de <em class="fa fa-th-large"></em> grille. Pour passer de l'un à l'autre, utiliser le bouton à droite dans la barre d'outils du Drive (sous l'avatar).</p>
+<section id="display">
+<span id="drive-display"></span><h2>Affichage<a class="headerlink" href="#display" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>Documents in the drive can be displayed as a <em class="fa fa-list"></em> list or a <em class="fa fa-th-large"></em> grid. To switch between the two, use the button at the right of the drive toolbar (under the avatar).</p>
 <p>En mode grille CryptPad peut afficher des miniatures des documents, si elles sont activées dans les <a class="reference internal" href="user_account.html#user-settings-cryptdrive"><span class="std std-ref">préférences utilisateur</span></a>.</p>
-<div class="figure align-default" id="id6">
+<figure class="align-default" id="id5">
 <img alt="../_images/drive-grid.png" class="screenshot" src="../_images/drive-grid.png" />
-<p class="caption"><span class="caption-text">Le CryptDrive en mode grille.</span><a class="headerlink" href="#id6" title="Lien permanent vers cette image">¶</a></p>
-</div>
-<div class="figure align-default" id="id7">
+<figcaption>
+<p><span class="caption-text">CryptDrive in grid view.</span><a class="headerlink" href="#id5" title="Lien permanent vers cette image">¶</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id6">
 <img alt="../_images/drive-list.png" class="screenshot" src="../_images/drive-list.png" />
-<p class="caption"><span class="caption-text">Le CryptDrive en mode liste.</span><a class="headerlink" href="#id7" title="Lien permanent vers cette image">¶</a></p>
-</div>
-</div>
-<div class="section" id="managing-documents">
-<h2>Gestion des documents<a class="headerlink" href="#managing-documents" title="Lien permanent vers ce titre">¶</a></h2>
-<div class="section" id="folders">
-<span id="id2"></span><h3>Dossiers<a class="headerlink" href="#folders" title="Lien permanent vers ce titre">¶</a></h3>
+<figcaption>
+<p><span class="caption-text">CryptDrive in list view.</span><a class="headerlink" href="#id6" title="Lien permanent vers cette image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="managing-documents">
+<h2>Gestion des documents<a class="headerlink" href="#managing-documents" title="Lien permanent vers cette rubrique">¶</a></h2>
+<section id="folders">
+<span id="id1"></span><h3>Dossiers<a class="headerlink" href="#folders" title="Lien permanent vers cette rubrique">¶</a></h3>
 <p><span class="badge-user">Utilisateurs enregistrés</span></p>
-<p>Il y a plusieurs manières de créer un dossier dans le CryptDrive :</p>
+<p>There are multiple ways to create folders in the drive:</p>
 <ul class="simple">
 <li><p><em class="fa fa-plus"></em> <strong>Nouveau</strong> dans la barre d'outils du CryptDrive &gt; <em class="fa fa-folder"></em> <strong>Dossier</strong>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> &gt; <em class="fa fa-folder"></em> <strong>Nouveau dossier</strong>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">e</span></code> &gt; <em class="fa fa-folder"></em> <strong>Dossier</strong>.</p></li>
 </ul>
-<p>Une fois le dossier créé, des documents peuvent y être ajoutés en les faisant glisser depuis le CryptDrive.</p>
+<p>Once a folder is created, documents can be added to it by dragging them from the drive. You can also drag and drop files from one folder to another. Use the convenient left sidebar tree to drop the file in the desired destination.</p>
 <p>Pour changer la couleur d'un dossier :</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le dossier &gt; <em class="cptools cptools-palette"></em> <strong>Changer la couleur</strong>.</p></li>
@@ -625,100 +643,100 @@
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le dossier &gt; <em class="fa fa-share-alt"></em> <strong>Partager</strong>. Le dossier sera alors converti en <a class="reference internal" href="share_and_access.html#shared-folders"><span class="std std-ref">dossier partagé</span></a>.</p></li>
 </ul>
-</div>
-<div class="section" id="renaming">
-<h3>Renommer<a class="headerlink" href="#renaming" title="Lien permanent vers ce titre">¶</a></h3>
-<p>Il y a deux manières de renommer un document dans CryptPad. L'une change le titre pour tous les utilisateurs, l'autre uniquement pour vous.</p>
-<p>Pour changer le titre d'un document pour tous les utilisateurs qui ont ce document dans leur CryptDrive :</p>
+</section>
+<section id="renaming">
+<h3>Renommer<a class="headerlink" href="#renaming" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>There are two ways to rename documents on CryptPad. One changes the document title for all users, the other changes it only in your drive.</p>
+<p>To change the title of a documents for all users that have it in their drive:</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur le titre ou sur le bouton <em class="fa fa-pencil"></em> dans la barre d'outils du document.</p></li>
 <li><p>Entrer le nouveau titre.</p></li>
 <li><p>Valider avec le bouton <em class="fa fa-check"></em> ou la touche <code class="docutils literal notranslate"><span class="pre">Entrée</span></code>.</p></li>
 </ol>
-<p>Pour renommer un document uniquement dans votre CryptDrive :</p>
+<p>To change the title of a document only in your drive:</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le document dans votre CryptDrive &gt; <em class="fa fa-pencil"></em> <strong>Renommer</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document in your drive &gt; <em class="fa fa-pencil"></em> <strong>Rename</strong>.</p></li>
 <li><p>Entrer le nouveau titre.</p></li>
 <li><p>Valider avec la touche <code class="docutils literal notranslate"><span class="pre">Entrée</span></code>.</p></li>
 </ol>
-<p>L'icone <em class="fa fa-flag"></em> indique les documents qui ont été renommés dans votre CryptDrive uniquement.</p>
-</div>
-<div class="section" id="deleting">
-<span id="id3"></span><h3>Supprimer<a class="headerlink" href="#deleting" title="Lien permanent vers ce titre">¶</a></h3>
+<p>The <em class="fa fa-flag"></em> icon indicates that the title of a document is different in your drive than for other users.</p>
+</section>
+<section id="deleting">
+<span id="id2"></span><h3>Supprimer<a class="headerlink" href="#deleting" title="Lien permanent vers cette rubrique">¶</a></h3>
 <p>Il y a deux manières de supprimer un document sur CryptPad :</p>
 <ul class="simple">
-<li><p><em class="fa fa-trash"></em> <strong>Supprimer</strong> un document le fait disparaître du CryptDrive mais pas de la base de données. Le document reste dans le CryptDrive d'autres utilisateurs qui l'ont stocké et peut être restauré par l'<a class="reference internal" href="#drive-history"><span class="std std-ref">historique</span></a>.</p></li>
-<li><p><em class="cptools cptools-destroy"></em> <strong>Détruire</strong> un document le supprime de la base de données de manière permanente. Le document est supprimé de tous les CryptDrives où il est stocké, et il ne peut pas être restauré par l'historique. <span class="badge-owner">Propriétaires du document</span></p></li>
+<li><p><em class="fa fa-trash"></em> <strong>Removing</strong> a document means it stops appearing in the drive but remains in the database. The document remains in the drive of other users who have stored it. The document can be recovered in the drive using the <a class="reference internal" href="#drive-history"><span class="std std-ref">history</span></a>.</p></li>
+<li><p><em class="cptools cptools-destroy"></em> <strong>Destroying</strong> a document deletes it from the database permanently. The document is deleted from all drives that store it, and it cannot be recovered using the drive history. <span class="badge-owner">Document owners</span></p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Si un document n'est stocké dans aucun CryptDrive, il est <strong>détruit</strong> dans la base de données après 90 jours d'inactivité (ce délai peut être reglé par les administrateurs du service).</p>
+<p>If a document is not stored in any drive, it is <strong>destroyed</strong> from the database after 90 days (the length of this delay can be set by the service administrators).</p>
 </div>
-<p>Pour <strong>supprimer</strong> un document du CryptDrive.</p>
+<p>To <strong>remove</strong> a document from CryptDrive.</p>
 <ul class="simple">
-<li><p>Faire glisser le document depuis le CryptDrive jusque dans la <em class="fa fa-trash"></em> <strong>Corbeille</strong>.</p></li>
+<li><p>Drag the document from the drive into the <em class="fa fa-trash"></em> <strong>Trash</strong>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> &gt; <em class="fa fa-trash"></em> <strong>Déplacer vers la corbeille</strong></p></li>
 <li><p>Séléctionner le document puis appuyer sur la touche <code class="docutils literal notranslate"><span class="pre">Suppr</span></code>.</p></li>
 </ul>
-<p>Pour <strong>supprimer</strong> directement un document depuis le CryptDrive sans passer par la corbeille :</p>
+<p>To <strong>remove</strong> the document from CryptDrive without storing it in the trash first:</p>
 <ul class="simple">
 <li><p>Selectioner le document puis appuyer sur les touches <code class="docutils literal notranslate"><span class="pre">Maj</span> <span class="pre">+</span> <span class="pre">Suppr</span></code>.</p></li>
 </ul>
 <p>Pour vider la corbeille :</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur l'onglet <em class="fa fa-trash"></em> <strong>Corbeille</strong> à gauche du Drive &gt; <em class="fa fa-trash-o"></em> <strong>Vider la Corbeille</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the <em class="fa fa-trash"></em> <strong>Trash</strong> tab to the left of the drive &gt; <em class="fa fa-trash-o"></em> <strong>Empty the trash</strong>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur l'onglet <em class="fa fa-trash"></em> <strong>Corbeille</strong> pour accéder à la corbeille &gt; <em class="fa fa-trash-o"></em> <strong>Vider la Corbeille</strong>.</p></li>
 </ul>
 <p>Si vous êtes <a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">propriétaire</span></a> de documents dans la corbeille lorsque vous la videz, il vous est demandé si vous souhaitez les <strong>supprimer</strong> ou les <strong>détruire</strong>.</p>
 <p>Pour <strong>détruire</strong> un document sans le stocker dans la corbeille :</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le document dans le CryptDrive &gt; <em class="cptools cptools-destroy"></em> <strong>Détruire</strong>. <span class="badge-owner">Propriétaires du document</span></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document in the drive &gt; <em class="cptools cptools-destroy"></em> <strong>Destroy</strong>. <span class="badge-owner">Document owners</span></p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Une fois détruits, les documents peuvent encore apparaître dans le CryptDrive d'autres utilisateurs. Une fois qu'un document a été ajouté au drive d'un utilisateur, la nature chiffrée de CryptPad ne permet pas de le retirer. Par conséquent, un document détruit peut encore apparaître dans le drive d'un utilisateur s'il l'avait précédemment stocké. Le document ne pourra cependant pas être ouvert.</p>
+<p>Once destroyed, documents may still appear in other user's drives. Once a document has been added to someone's drive, the encrypted nature of CryptPad makes it impossible to take it back. Therefore a destroyed document may still appeared in a user's drive if they had previously stored it. However, they will not be able to open the document.</p>
 </div>
-</div>
-</div>
-<div class="section" id="cryptdrive-history">
-<span id="drive-history"></span><h2>Historique du CryptDrive<a class="headerlink" href="#cryptdrive-history" title="Lien permanent vers ce titre">¶</a></h2>
-<p>L'historique du CryptDrive est sauvegardé et peut être restauré en cas de besoin. Depuis le CryptDrive :</p>
+</section>
+</section>
+<section id="history">
+<span id="drive-history"></span><h2>History<a class="headerlink" href="#history" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>The drive history is saved and can be restored if needed. From the drive:</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur le bouton <em class="fa fa-history"></em> en haut à droite (sous l'avatar).</p></li>
 <li><p>Utiliser les flèches <em class="fa fa-fast-backward"></em> <em class="fa fa-step-backward"></em> et <em class="fa fa-step-forward"></em> <em class="fa fa-fast-forward"></em> pour remonter dans l'historique.</p></li>
 <li><p>Restaurer la version affichée avec <em class="fa fa-check"></em> <strong>Restaurer</strong> ou sortir de l'historique sans restaurer avec <em class="fa fa-times"></em> <strong>Fermer</strong>.</p></li>
 </ol>
-<p>Pour économiser de l'espace de stockage, l'historique du CryptDrive peut être supprimé dans les <a class="reference internal" href="user_account.html#user-settings-cryptdrive"><span class="std std-ref">préférences utilisateur</span></a>.</p>
+<p>To save storage space CryptDrive history can be deleted in the <a class="reference internal" href="user_account.html#user-settings-cryptdrive"><span class="std std-ref">user settings</span></a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Les <a class="reference internal" href="share_and_access.html#shared-folders"><span class="std std-ref">dossiers partagés</span></a> ont leur propre historique, séparé de l'historique du CryptDrive. Restaurer l'historique du drive n'affecte pas les dossiers partagés, inversement l'historique d'un dossier partagé peut être restauré ou supprimé sans affecter le reste du drive.</p>
+<p><a class="reference internal" href="share_and_access.html#shared-folders"><span class="std std-ref">Shared folders</span></a> have their own history, separate from CryptDrive history. Restoring the history of the drive does not affect shared folders, conversely the history of a shared folder can be restored without affecting the rest of the drive.</p>
 </div>
-</div>
-<div class="section" id="tags">
-<span id="id4"></span><h2>Mots-Clés<a class="headerlink" href="#tags" title="Lien permanent vers ce titre">¶</a></h2>
+</section>
+<section id="tags">
+<span id="id3"></span><h2>Mots-Clés<a class="headerlink" href="#tags" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p><span class="badge-user">Utilisateurs enregistrés</span></p>
 <p>Les mots-clés permettent de grouper les documents dans des catégories multiples. Vos mots-clés ne sont pas visibles par d'autres utilisateurs.</p>
-<p>L'onglet <em class="fa fa-hashtag"></em> <strong>Mots-clés</strong> dans le CryptDrive permet de voir tous les mots-clés utilisés et leurs documents associés.</p>
+<p>The <em class="fa fa-hashtag"></em> <strong>Tags</strong> tab in the drive displays all tags in use and their associated documents.</p>
 <img alt="../_images/modal-tags.png" class="screenshot" src="../_images/modal-tags.png" />
 <p>Pour ajouter ou supprimer des mots-clés à un document :</p>
 <ul class="simple">
-<li><p>Dans le CryptDrive : <code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le document&gt; <em class="fa fa-hashtag"></em> <strong>Mots-clés</strong>.</p></li>
+<li><p>From the drive: <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document &gt; <em class="fa fa-hashtag"></em> <strong>Tags</strong>.</p></li>
 <li><p>Dans un document : <em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-hashtag"></em> <strong>Mots-clés</strong>.</p></li>
 </ul>
 <p>Pour gérer les mots-clés de plusieurs documents :</p>
 <ol class="arabic simple">
-<li><p>Sélectionner les documents avec <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">Clic</span></code> dans le CryptDrive.</p></li>
+<li><p>Select the documents with <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">Click</span></code> in CryptDrive.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur les documents &gt; <em class="fa fa-hashtag"></em> <strong>Mots-clés</strong>.</p></li>
 </ol>
 <p>Seuls les mots-clés en commun à tous les documents sélectionnés sont alors affichés. Les ajouts et/ou suppressions de mots-clés sont appliquées à toute la séléction.</p>
-</div>
-<div class="section" id="templates">
-<span id="id5"></span><h2>Modèles<a class="headerlink" href="#templates" title="Lien permanent vers ce titre">¶</a></h2>
+</section>
+<section id="templates">
+<span id="id4"></span><h2>Modèles<a class="headerlink" href="#templates" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p><span class="badge-user">Utilisateurs enregistrés</span></p>
 <p>Les modèles sont des gabarits réutilisables pour créer des documents de même type, par exemple facture, papier à lettre, rapport, etc.</p>
 <p>Créer un modèle :</p>
 <ol class="arabic simple">
-<li><p>Sélectionner l'onglet <em class="cptools cptools-template"></em> <strong>Modèles</strong> dans le CryptDrive.</p></li>
+<li><p>Select the <em class="cptools cptools-template"></em> <strong>Templates</strong> tab in the drive.</p></li>
 <li><p><em class="fa fa-plus"></em> <strong>Nouveau pad</strong> dans la barre d'outils.</p></li>
 </ol>
 <p>ou</p>
@@ -735,8 +753,8 @@
 <li><p>Sélectionner le modèle lors de la création d'un <a class="reference internal" href="apps/general.html#new-document"><span class="std std-ref">nouveau document</span></a>.</p></li>
 <li><p>Dans un document existant : <em class="fa fa-file-o"></em> <strong>Ficher</strong> &gt; <em class="fa fa-upload"></em> <strong>Importer un modèle</strong>. Attention cette option <strong>remplace</strong> le contenu du document avec celui du modèle.</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -783,7 +801,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.0',
+            VERSION:'5.2',
             LANGUAGE:'fr',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
@@ -791,9 +809,12 @@
             SOURCELINK_SUFFIX: '.txt'
         };
     </script>
+      <script type="text/javascript" src="../_static/documentation_options.js"></script>
       <script type="text/javascript" src="../_static/jquery.js"></script>
       <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
       <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/sphinx_highlight.js"></script>
       <script type="text/javascript" src="../_static/translations.js"></script>
 
   

@@ -1,4 +1,3 @@
-
 Client
 ======
 
@@ -13,7 +12,4 @@ Client
     client/worker.rst
     client/outer.rst
     client/inner.rst
-
-
-
 

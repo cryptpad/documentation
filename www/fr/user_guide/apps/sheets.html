@@ -5,10 +5,11 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="fr" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Tableur &mdash; Documentation CryptPad 5.0</title>
+  <title>Tableur &mdash; Documentation CryptPad 5.2</title>
   
 
   
@@ -27,6 +28,8 @@
   
     <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/open-sans.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/cptools.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/fontawesome.css" type="text/css" />
@@ -55,7 +58,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.0</span>
+              <span class="release">Documentation 5.2</span>
             </a>
             
 <div role="search">
@@ -86,32 +89,6 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Foire Aux Questions</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#common-issues">Problèmes courants</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#list-of-extensions-known-to-cause-issues-with-cryptpad">Liste des extensions connues pour causer des problèmes avec CryptPad</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-forgot-my-password">J'ai oublié mon mot de passe</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Comment importer/exporter mes documents vers/depuis un autre logiciel ?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#rich-text-document-import-export">Import/export de documents texte</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#spreadsheets-import-export">Import/export de feuilles de calcul</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-cannot-do-x-with-a-document-i-created">Je ne peux pas faire X avec un document que j'ai créé</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-i-use-cryptpad-on-mobile">Puis-je utiliser CryptPad sur mobile ?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#are-you-planning-to-make-an-app">Avez vous l'intention de faire une application ?</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-cryptpad-sync-documents-to-my-local-filesystem">CryptPad peut-il synchroniser des documents avec mon ordinateur ?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#what-is-the-relationship-between-cryptpad-and-onlyoffice">Quelle est la relation entre CryptPad et OnlyOffice ?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#faq-for-cryptpad-fr">FAQ pour cryptpad.fr</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#can-i-pay-for-my-subscription-without-a-card">Puis-je payer mon abonnement sans utiliser de carte ?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#do-you-accept-cryptocurrencies-for-subscriptions-and-donations">Acceptez-vous les crypto-monnaies pour les abonnements et les dons ?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#can-you-provide-a-data-processing-agreement-dpa">Pouvez-vous fournir un accord de traitement des données (DPA) ?</a></li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Guide Utilisateur</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../instances.html">Instances CryptPad</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../user_account.html">Compte utilisateur</a><ul>
@@ -142,12 +119,21 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../security.html">Sécurité</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#trust-assumptions">Trust Assumptions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../security.html#passwords-for-documents-and-folders">Mot de passe des documents et dossiers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#verifying-contacts">Verifying contacts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#self-destructing-documents">Self-destructing documents</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../security.html#remote-disconnect">Déconnexion à distance</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../security.html#remote-content">Déconnexion à distance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#known-caveats">Known caveats</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../security.html#no-unique-usernames">No unique usernames</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../security.html#edit-rights-in-teams">Edit rights in teams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../security.html#access-of-former-team-members">Access of former team members</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../drive.html">Drive</a><ul>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../drive.html">CryptDrive</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#display">Affichage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#managing-documents">Gestion des documents</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../drive.html#folders">Dossiers</a></li>
@@ -155,7 +141,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../drive.html#deleting">Supprimer</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../drive.html#cryptdrive-history">Historique du CryptDrive</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../drive.html#history">History</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#tags">Mots-Clés</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#templates">Modèles</a></li>
 </ul>
@@ -262,6 +248,7 @@
 <li class="toctree-l5"><a class="reference internal" href="form.html#utilities">Mise en page</a></li>
 <li class="toctree-l5"><a class="reference internal" href="form.html#question-types">Types de questions</a></li>
 <li class="toctree-l5"><a class="reference internal" href="form.html#form-settings">Réglages du formulaire</a></li>
+<li class="toctree-l5"><a class="reference internal" href="form.html#responses">Responses</a></li>
 <li class="toctree-l5"><a class="reference internal" href="form.html#advanced-use-cases">Usages avancés</a></li>
 </ul>
 </li>
@@ -290,6 +277,99 @@
 <li class="toctree-l4"><a class="reference internal" href="poll.html#edit-mode">Édition</a></li>
 <li class="toctree-l4"><a class="reference internal" href="poll.html#voting">Vote</a></li>
 <li class="toctree-l4"><a class="reference internal" href="poll.html#export">Export</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin_guide/index.html">Administrator Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#prerequisites">Prerequisites</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#domains">Domains</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#hardware">Hardware</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#software">Software</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#install-cryptpad">Install Cryptpad</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configuration">Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#daemonization">Daemonization</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#systemd">Systemd</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#admin-domain-config">Domains</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#install-and-configure-nginx">Install and configure Nginx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#configure-cryptpad">Configure CryptPad</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#diagnostics">Diagnostics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-administrators">Configure administrators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#build-static-pages-open-graph-metadata">Build static pages &amp; Open Graph metadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#support">Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/customization.html">Instance customization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#application-config">Application config</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#restricting-guest-access">Restricting guest access</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#links-to-terms-of-service-privacy-policy-and-imprint-pages">Links to Terms of Service, Privacy Policy and Imprint pages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#security-hardening">Security Hardening</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#look-and-feel">Look and feel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#open-graph-preview-images">Open Graph preview images</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#translations">Translations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/maintenance.html">Maintenance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/maintenance.html#upgrading-cryptpad">Upgrading CryptPad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/maintenance.html#database-administration">Database administration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/maintenance.html#backup-and-migration">Backup and migration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/maintenance.html#advanced-administration">Advanced administration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/admin_panel.html">Administration panel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#general">General</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#enable-remote-embedding">Enable remote embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#admin-contact-email">Admin contact email</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#instance-information">Instance information</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#storage-limit">Storage Limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#apply-a-custom-limit">Apply a custom limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#archive-documents">Archive documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#restore-documents">Restore documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#check-account-storage">Check account storage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#list-of-custom-limits">List of custom limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#statistics">Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#support">Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#maintenance">Maintenance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#survey">Survey</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#broadcast-message">Broadcast Message</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#performance">Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#network">Network</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#validate-instance-configuration">Validate instance configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#server-telemetry">Server telemetry</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#list-my-instance-in-public-directories">List my instance in public directories</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#consent-to-contact">Consent to contact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#crowdfunding-participation">Crowdfunding participation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#instance-purpose">Instance purpose</a></li>
 </ul>
 </li>
 </ul>
@@ -402,97 +482,30 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../admin_guide/index.html">Administrator Guide</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/installation.html">Installation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#prerequisites">Prerequisites</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#domains">Domains</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#hardware">Hardware</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#software">Software</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Foire Aux Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#common-issues">Problèmes courants</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#list-of-extensions-known-to-cause-issues-with-cryptpad">Liste des extensions connues pour causer des problèmes avec CryptPad</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#install-cryptpad">Install Cryptpad</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#dependencies">Dependencies</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configuration">Configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#daemonization">Daemonization</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#systemd">Systemd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-forgot-my-password">J'ai oublié mon mot de passe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Comment importer/exporter mes documents vers/depuis un autre logiciel ?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#rich-text-document-import-export">Import/export de documents texte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#spreadsheets-import-export">Import/export de feuilles de calcul</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-cannot-do-x-with-a-document-i-created">Je ne peux pas faire X avec un document que j'ai créé</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-i-use-cryptpad-on-mobile">Puis-je utiliser CryptPad sur mobile ?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#are-you-planning-to-make-an-app">Avez vous l'intention de faire une application ?</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#admin-domain-config">Domains</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#install-and-configure-nginx">Install and configure Nginx</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#configure-cryptpad">Configure CryptPad</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#diagnostics">Diagnostics</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-administrators">Configure administrators</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#version-4-6-0-and-later">Version 4.6.0 and later</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#versions-older-than-4-6-0">Versions older than 4.6.0</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-open-graph-metadata">Configure Open Graph metadata</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/customization.html">Instance customization</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#application-config">Application config</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#restricting-guest-access">Restricting guest access</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#links-to-terms-of-service-privacy-policy-and-imprint-pages">Links to Terms of Service, Privacy Policy and Imprint pages</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#look-and-feel">Look and feel</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#open-graph-preview-images">Open Graph preview images</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#translations">Translations</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/maintenance.html">Maintenance</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/maintenance.html#upgrading-cryptpad">Upgrading CryptPad</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/maintenance.html#database-administration">Database administration</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/maintenance.html#backup-and-migration">Backup and migration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/maintenance.html#advanced-administration">Advanced administration</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/admin_panel.html">Administration panel</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#general">General</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#enable-remote-embedding">Enable remote embedding</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#admin-contact-email">Admin contact email</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#instance-information">Instance information</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#storage-limit">Storage Limit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#apply-a-custom-limit">Apply a custom limit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#archive-documents">Archive documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#restore-documents">Restore documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#check-account-storage">Check account storage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#list-of-custom-limits">List of custom limits</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#statistics">Statistics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#support">Support</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#maintenance">Maintenance</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#survey">Survey</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#broadcast-message">Broadcast Message</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#performance">Performance</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#network">Network</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#validate-instance-configuration">Validate instance configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#server-telemetry">Server telemetry</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#list-my-instance-in-public-directories">List my instance in public directories</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#consent-to-contact">Consent to contact</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#crowdfunding-participation">Crowdfunding participation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#instance-purpose">Instance purpose</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-cryptpad-sync-documents-to-my-local-filesystem">CryptPad peut-il synchroniser des documents avec mon ordinateur ?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#what-is-the-relationship-between-cryptpad-and-onlyoffice">Quelle est la relation entre CryptPad et OnlyOffice ?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#faq-for-cryptpad-fr">FAQ pour cryptpad.fr</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#can-i-pay-for-my-subscription-without-a-card">Puis-je payer mon abonnement sans utiliser de carte ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#do-you-accept-cryptocurrencies-for-subscriptions-and-donations">Acceptez-vous les crypto-monnaies pour les abonnements et les dons ?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#can-you-provide-a-data-processing-agreement-dpa">Pouvez-vous fournir un accord de traitement des données (DPA) ?</a></li>
 </ul>
 </li>
 </ul>
@@ -500,6 +513,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../how_to_contribute.html">Comment contribuer</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#spread-the-word">Diffuser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#report-bugs">Signaler des bugs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#contribute-to-the-documentation">Contribute to the documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#translate-cryptpad">Traduire CryptPad</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#contribute-to-the-code">Contribuer au code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#financial-support">Soutien financier</a></li>
@@ -587,24 +601,24 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="spreadsheet">
-<span id="app-sheets"></span><h1>Tableur<a class="headerlink" href="#spreadsheet" title="Lien permanent vers ce titre">¶</a></h1>
+  <section id="spreadsheet">
+<span id="app-sheets"></span><h1>Tableur<a class="headerlink" href="#spreadsheet" title="Lien permanent vers cette rubrique">¶</a></h1>
 <p>L'application Tableur est une intégration d'<a class="reference external" href="https://www.onlyoffice.com/">OnlyOffice</a>. Pour en savoir plus sur les détails de cette intégration, voir <a class="reference internal" href="../../FAQ.html#faq-oointegration"><span class="std std-ref">Quelle est la relation entre CryptPad et OnlyOffice ?</span></a>.</p>
 <img alt="../../_images/app-sheets-preview.png" class="screenshot" src="../../_images/app-sheets-preview.png" />
-<div class="section" id="documentation">
-<h2>Documentation<a class="headerlink" href="#documentation" title="Lien permanent vers ce titre">¶</a></h2>
+<section id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p>Les fonctionnalités spécifiques du tableur sont documentées dans le <a class="reference external" href="https://helpcenter.onlyoffice.com/fr/ONLYOFFICE-Editors/ONLYOFFICE-Spreadsheet-Editor/index.aspx">manuel OnlyOffice</a>.</p>
-</div>
-<div class="section" id="toolbars">
-<h2>Barres d'outils<a class="headerlink" href="#toolbars" title="Lien permanent vers ce titre">¶</a></h2>
+</section>
+<section id="toolbars">
+<h2>Barres d'outils<a class="headerlink" href="#toolbars" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p>CryptPad intègre les feuilles de calcul OnlyOffice dans le même système de collaboration chiffrée que les autres applications. En complément, OnlyOffice offre un large éventail de fonctions dans une barre d'outils à onglets. Il en résulte une double barre d'outils qui peut prêter à confusion :</p>
 <ul class="simple">
 <li><p>La barre d'outils <strong>CryptPad</strong>, en haut, est utilisée pour les opérations de <em class="fa fa-file-o"></em> <strong>Fichier</strong> (y compris l'import/export, l'historique, les propriétés, etc.) ainsi que pour le <em class="fa fa-share-alt"></em> <strong>Partage</strong> et <em class="fa fa-unlock-alt"></em> <strong>Accès</strong>.</p></li>
 <li><p>La barre d'outils <strong>OnlyOffice</strong> est utilisée pour toutes les fonctionnalités du tableur lui-même, ainsi que pour les modes de collaboration expliqués dans la section suivante.</p></li>
 </ul>
-</div>
-<div class="section" id="undo-and-collaboration-modes">
-<h2>Annulation et modes de collaboration<a class="headerlink" href="#undo-and-collaboration-modes" title="Lien permanent vers ce titre">¶</a></h2>
+</section>
+<section id="undo-and-collaboration-modes">
+<h2>Annulation et modes de collaboration<a class="headerlink" href="#undo-and-collaboration-modes" title="Lien permanent vers cette rubrique">¶</a></h2>
 <img alt="../../_images/app-sheets-collab-mode.png" class="screenshot" src="../../_images/app-sheets-collab-mode.png" />
 <p>OnlyOffice propose deux modes d'édition collaborative dans les feuilles de calcul qui déterminent la façon dont les changements sont synchronisés entre les utilisateurs et si la fonctionnalité <strong>Annuler</strong> est disponible ou non.</p>
 <ul class="simple">
@@ -617,15 +631,17 @@
 <p class="admonition-title">Note</p>
 <p>CryptPad mémorise votre choix de mode d'édition sur chaque appareil pour tous les documents.</p>
 </div>
-</div>
-<div class="section" id="history">
-<span id="sheets-history"></span><h2>Historique<a class="headerlink" href="#history" title="Lien permanent vers ce titre">¶</a></h2>
+</section>
+<section id="history">
+<span id="sheets-history"></span><h2>Historique<a class="headerlink" href="#history" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p>Pour accéder à l'historique de la feuille de calcul, utilisez <em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-history"></em> <strong>Historique</strong> dans la barre d'outils CryptPad.</p>
 <p>En raison de l'intégration de OnlyOffice avec la collaboration chiffrée en temps réel de CryptPad, l'historique du tableur fonctionne différemment que <a class="reference internal" href="general.html#document-history"><span class="std std-ref">dans les autres applications</span></a>.</p>
-<div class="figure align-default" id="id1">
+<figure class="align-default" id="id1">
 <img alt="../../_images/history-toolbar-sheets.png" class="screenshot" src="../../_images/history-toolbar-sheets.png" />
-<p class="caption"><span class="caption-text">La barre d'outils de l'historique du tableur</span><a class="headerlink" href="#id1" title="Lien permanent vers cette image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">La barre d'outils de l'historique du tableur</span><a class="headerlink" href="#id1" title="Lien permanent vers cette image">¶</a></p>
+</figcaption>
+</figure>
 <p>L'historique du tableur permet uniquement de revenir à la version précédente, et de naviguer ensuite entre les modifications suivantes.</p>
 <ul class="simple">
 <li><p><em class="fa fa-fast-backward"></em> version précédente</p></li>
@@ -633,24 +649,24 @@
 <li><p><em class="fa fa-fast-forward"></em> version suivante</p></li>
 </ul>
 <p>La fonctionnalité permettant de restaurer et de partager une version, ainsi que tout ce qui concerne les <a class="reference internal" href="general.html#snapshots"><span class="std std-ref">Captures</span></a>, fonctionne de la même manière que dans <a class="reference internal" href="general.html#document-history"><span class="std std-ref">les autres applications</span></a>.</p>
-</div>
-<div class="section" id="printing">
-<span id="sheets-printing"></span><h2>Impression<a class="headerlink" href="#printing" title="Lien permanent vers ce titre">¶</a></h2>
+</section>
+<section id="printing">
+<span id="sheets-printing"></span><h2>Impression<a class="headerlink" href="#printing" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p>Pour imprimer une feuille de calcul, il est recommandé d'exporter en utilisant un des formats ci-dessous et de gérer la mise en page avec une application de bureau telle que LibreOffice Calc.</p>
 <p>Il est également possible d'utiliser un export &quot;.pdf&quot; pour produire un fichier à imprimer, les résultats peuvent varier en fonction de la mise en page du document.</p>
-</div>
-<div class="section" id="import-export">
-<h2>Import/Export<a class="headerlink" href="#import-export" title="Lien permanent vers ce titre">¶</a></h2>
+</section>
+<section id="import-export">
+<h2>Import/Export<a class="headerlink" href="#import-export" title="Lien permanent vers cette rubrique">¶</a></h2>
 <div class="line-block">
 <div class="line"><em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-upload"></em> <strong>Importer</strong>.</div>
 <div class="line">Formats supportés : Fichiers <code class="docutils literal notranslate"><span class="pre">.bin</span></code> exportés par l'application. Fichiers Excel <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code>.</div>
 </div>
 <div class="line-block">
 <div class="line"><em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-download"></em> <strong>Exporter</strong>.</div>
-<div class="line">Formats supportés : <code class="docutils literal notranslate"><span class="pre">.bin</span></code>, Excel <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code>, <code class="docutils literal notranslate"><span class="pre">.ods</span></code>, <code class="docutils literal notranslate"><span class="pre">.csv</span></code>, <code class="docutils literal notranslate"><span class="pre">.pdf</span></code>.</div>
+<div class="line">Supported formats: <code class="docutils literal notranslate"><span class="pre">.bin</span></code>, Excel <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code>, <code class="docutils literal notranslate"><span class="pre">.ods</span></code>, <code class="docutils literal notranslate"><span class="pre">.pdf</span></code>.</div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -697,7 +713,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'5.0',
+            VERSION:'5.2',
             LANGUAGE:'fr',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
@@ -705,9 +721,12 @@
             SOURCELINK_SUFFIX: '.txt'
         };
     </script>
+      <script type="text/javascript" src="../../_static/documentation_options.js"></script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/sphinx_highlight.js"></script>
       <script type="text/javascript" src="../../_static/translations.js"></script>
 
   

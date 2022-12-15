@@ -5,10 +5,11 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="de" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Formular &mdash; CryptPad 5.0 Dokumentation</title>
+  <title>Formular &mdash; CryptPad 5.2 Dokumentation</title>
   
 
   
@@ -27,6 +28,8 @@
   
     <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/open-sans.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/cptools.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/fontawesome.css" type="text/css" />
@@ -55,7 +58,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.0</span>
+              <span class="release">Documentation 5.2</span>
             </a>
             
 <div role="search">
@@ -86,32 +89,6 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Häufig gestellte Fragen</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#common-issues">Häufige Probleme</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#list-of-extensions-known-to-cause-issues-with-cryptpad">Liste der Erweiterungen, die bekanntermaßen Probleme mit CryptPad verursachen</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-forgot-my-password">Ich habe mein Passwort vergessen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Wie kann ich meine Dokumente in andere Plattformen oder von anderen Plattformen importieren/exportieren?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#rich-text-document-import-export">Import/Export von Rich-Text-Dokumenten</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#spreadsheets-import-export">Import/Export von Tabellen</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-cannot-do-x-with-a-document-i-created">Mit dem von mir erstellten Dokument kann ich X nicht machen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-i-use-cryptpad-on-mobile">Kann ich CryptPad auf mobilen Geräten verwenden?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#are-you-planning-to-make-an-app">Plant ihr die Entwicklung einer App?</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-cryptpad-sync-documents-to-my-local-filesystem">Kann CryptPad die Dokumente mit meinem lokalen Dateisystem synchronisieren?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#what-is-the-relationship-between-cryptpad-and-onlyoffice">In welcher Beziehung stehen CryptPad und OnlyOffice?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#faq-for-cryptpad-fr">Fragen zu cryptpad.fr</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#can-i-pay-for-my-subscription-without-a-card">Kann ich für Abonnements ohne Kreditkarte bezahlen?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#do-you-accept-cryptocurrencies-for-subscriptions-and-donations">Werden Kryptowährungen für Abonnements und Spenden akzeptiert?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#can-you-provide-a-data-processing-agreement-dpa">Wird ein Auftrags­verarbeitungs­vertrag (AVV) bereitgestellt?</a></li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Benutzer-Handbuch</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../instances.html">CryptPad-Instanzen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../user_account.html">Benutzer-Account</a><ul>
@@ -142,12 +119,21 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../security.html">Sicherheit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#trust-assumptions">Trust Assumptions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../security.html#passwords-for-documents-and-folders">Passwörter für Dokumente und Ordner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#verifying-contacts">Verifying contacts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#self-destructing-documents">Self-destructing documents</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../security.html#remote-disconnect">Sitzungen beenden</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../security.html#remote-content">Externer Inhalt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#known-caveats">Known caveats</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../security.html#no-unique-usernames">No unique usernames</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../security.html#edit-rights-in-teams">Edit rights in teams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../security.html#access-of-former-team-members">Access of former team members</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../drive.html">Drive</a><ul>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../drive.html">CryptDrive</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#display">Anzeige</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#managing-documents">Dokumente verwalten</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../drive.html#folders">Ordner</a></li>
@@ -155,7 +141,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../drive.html#deleting">Löschen</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../drive.html#cryptdrive-history">Verlauf des CryptDrives</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../drive.html#history">History</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#tags">Tags</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#templates">Vorlagen</a></li>
 </ul>
@@ -262,6 +248,7 @@
 <li class="toctree-l5"><a class="reference internal" href="#utilities">Werkzeuge</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#question-types">Fragetypen</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#form-settings">Einstellungen des Formulars</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#responses">Responses</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#advanced-use-cases">Fortgeschrittene Anwendungsfälle</a></li>
 </ul>
 </li>
@@ -290,6 +277,99 @@
 <li class="toctree-l4"><a class="reference internal" href="poll.html#edit-mode">Bearbeitungsmodus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="poll.html#voting">Abstimmung</a></li>
 <li class="toctree-l4"><a class="reference internal" href="poll.html#export">Export</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin_guide/index.html">Administrator Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#prerequisites">Prerequisites</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#domains">Domains</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#hardware">Hardware</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#software">Software</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#install-cryptpad">Install Cryptpad</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configuration">Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#daemonization">Daemonization</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#systemd">Systemd</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#admin-domain-config">Domains</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#install-and-configure-nginx">Install and configure Nginx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#configure-cryptpad">Configure CryptPad</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#diagnostics">Diagnostics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-administrators">Configure administrators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#build-static-pages-open-graph-metadata">Build static pages &amp; Open Graph metadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#support">Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/customization.html">Instance customization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#application-config">Application config</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#restricting-guest-access">Restricting guest access</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#links-to-terms-of-service-privacy-policy-and-imprint-pages">Links to Terms of Service, Privacy Policy and Imprint pages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#security-hardening">Security Hardening</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#look-and-feel">Look and feel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#open-graph-preview-images">Open Graph preview images</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#translations">Translations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/maintenance.html">Maintenance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/maintenance.html#upgrading-cryptpad">Upgrading CryptPad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/maintenance.html#database-administration">Database administration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/maintenance.html#backup-and-migration">Backup and migration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/maintenance.html#advanced-administration">Advanced administration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/admin_panel.html">Administration panel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#general">General</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#enable-remote-embedding">Enable remote embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#admin-contact-email">Admin contact email</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#instance-information">Instance information</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#storage-limit">Storage Limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#apply-a-custom-limit">Apply a custom limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#archive-documents">Archive documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#restore-documents">Restore documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#check-account-storage">Check account storage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#list-of-custom-limits">List of custom limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#statistics">Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#support">Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#maintenance">Maintenance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#survey">Survey</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#broadcast-message">Broadcast Message</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#performance">Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#network">Network</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#validate-instance-configuration">Validate instance configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#server-telemetry">Server telemetry</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#list-my-instance-in-public-directories">List my instance in public directories</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#consent-to-contact">Consent to contact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#crowdfunding-participation">Crowdfunding participation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#instance-purpose">Instance purpose</a></li>
 </ul>
 </li>
 </ul>
@@ -402,97 +482,30 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../admin_guide/index.html">Administrator Guide</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/installation.html">Installation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#prerequisites">Prerequisites</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#domains">Domains</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#hardware">Hardware</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#software">Software</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Häufig gestellte Fragen</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#common-issues">Häufige Probleme</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#list-of-extensions-known-to-cause-issues-with-cryptpad">Liste der Erweiterungen, die bekanntermaßen Probleme mit CryptPad verursachen</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#install-cryptpad">Install Cryptpad</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#dependencies">Dependencies</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configuration">Configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#daemonization">Daemonization</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#systemd">Systemd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-forgot-my-password">Ich habe mein Passwort vergessen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Wie kann ich meine Dokumente in andere Plattformen oder von anderen Plattformen importieren/exportieren?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#rich-text-document-import-export">Import/Export von Rich-Text-Dokumenten</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#spreadsheets-import-export">Import/Export von Tabellen</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-cannot-do-x-with-a-document-i-created">Mit dem von mir erstellten Dokument kann ich X nicht machen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-i-use-cryptpad-on-mobile">Kann ich CryptPad auf mobilen Geräten verwenden?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#are-you-planning-to-make-an-app">Plant ihr die Entwicklung einer App?</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#admin-domain-config">Domains</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#install-and-configure-nginx">Install and configure Nginx</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#configure-cryptpad">Configure CryptPad</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#diagnostics">Diagnostics</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-administrators">Configure administrators</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#version-4-6-0-and-later">Version 4.6.0 and later</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#versions-older-than-4-6-0">Versions older than 4.6.0</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-open-graph-metadata">Configure Open Graph metadata</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/customization.html">Instance customization</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#application-config">Application config</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#restricting-guest-access">Restricting guest access</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#links-to-terms-of-service-privacy-policy-and-imprint-pages">Links to Terms of Service, Privacy Policy and Imprint pages</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#look-and-feel">Look and feel</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#open-graph-preview-images">Open Graph preview images</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#translations">Translations</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/maintenance.html">Maintenance</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/maintenance.html#upgrading-cryptpad">Upgrading CryptPad</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/maintenance.html#database-administration">Database administration</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/maintenance.html#backup-and-migration">Backup and migration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/maintenance.html#advanced-administration">Advanced administration</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/admin_panel.html">Administration panel</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#general">General</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#enable-remote-embedding">Enable remote embedding</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#admin-contact-email">Admin contact email</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#instance-information">Instance information</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#storage-limit">Storage Limit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#apply-a-custom-limit">Apply a custom limit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#archive-documents">Archive documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#restore-documents">Restore documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#check-account-storage">Check account storage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#list-of-custom-limits">List of custom limits</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#statistics">Statistics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#support">Support</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#maintenance">Maintenance</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#survey">Survey</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#broadcast-message">Broadcast Message</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#performance">Performance</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#network">Network</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#validate-instance-configuration">Validate instance configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#server-telemetry">Server telemetry</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#list-my-instance-in-public-directories">List my instance in public directories</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#consent-to-contact">Consent to contact</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#crowdfunding-participation">Crowdfunding participation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#instance-purpose">Instance purpose</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-cryptpad-sync-documents-to-my-local-filesystem">Kann CryptPad die Dokumente mit meinem lokalen Dateisystem synchronisieren?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#what-is-the-relationship-between-cryptpad-and-onlyoffice">In welcher Beziehung stehen CryptPad und OnlyOffice?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#faq-for-cryptpad-fr">Fragen zu cryptpad.fr</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#can-i-pay-for-my-subscription-without-a-card">Kann ich für Abonnements ohne Kreditkarte bezahlen?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#do-you-accept-cryptocurrencies-for-subscriptions-and-donations">Werden Kryptowährungen für Abonnements und Spenden akzeptiert?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#can-you-provide-a-data-processing-agreement-dpa">Wird ein Auftrags­verarbeitungs­vertrag (AVV) bereitgestellt?</a></li>
 </ul>
 </li>
 </ul>
@@ -500,6 +513,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../how_to_contribute.html">Wie du uns unterstützen kannst</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#spread-the-word">Mache CryptPad bekannt</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#report-bugs">Fehler melden</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#contribute-to-the-documentation">Contribute to the documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#translate-cryptpad">CryptPad übersetzen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#contribute-to-the-code">Zum Code beitragen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#financial-support">Finanzielle Unterstützung</a></li>
@@ -587,11 +601,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="form">
-<span id="app-form"></span><h1>Formular<a class="headerlink" href="#form" title="Link zu dieser Überschrift">¶</a></h1>
+  <section id="form">
+<span id="app-form"></span><h1>Formular<a class="headerlink" href="#form" title="Permalink to this heading">¶</a></h1>
 <img alt="preview of the Form application" class="screenshot" src="../../_images/app-form-preview.png" />
-<div class="section" id="roles">
-<h2>Rollen<a class="headerlink" href="#roles" title="Link zu dieser Überschrift">¶</a></h2>
+<section id="roles">
+<h2>Rollen<a class="headerlink" href="#roles" title="Permalink to this heading">¶</a></h2>
 <p>Formulare profitieren von denselben Funktionen bezüglich Zusammenarbeit und Privatsphäre wie die anderen Anwendungen von CryptPad. Sie haben allerdings etwas andere Anforderungen bei der Nutzung, beispielsweise sollte jemand beim Beantworten eines Formulars nur seine eigenen Antworten bearbeiten können, aber nicht die Antworten anderer Benutzer oder das Formular an sich. Deswegen unterscheiden sich die <a class="reference internal" href="../share_and_access.html#share-access-rights"><span class="std std-ref">Zugriffsrechte</span></a> beim Teilen eines Formulars. Formulare haben drei verschiedene Rollen:</p>
 <ul class="simple">
 <li><p><strong>Autor</strong>: kann Fragen und <a class="reference internal" href="#form-settings"><span class="std std-ref">Einstellungen des Formulars</span></a> bearbeiten.</p></li>
@@ -604,26 +618,25 @@
 <p class="admonition-title">Bemerkung</p>
 <p>Die Benutzerliste, der Chat und Benachrichtigung über beitretende Benutzer werden bei der Beantwortung von Formularen deaktiviert. Dadurch soll der Eindruck vermieden werden, dass andere Benutzer die Beantwortung beobachten.</p>
 </div>
-</div>
-<div class="section" id="editing-a-form">
-<h2>Ein Formular bearbeiten<a class="headerlink" href="#editing-a-form" title="Link zu dieser Überschrift">¶</a></h2>
+</section>
+<section id="editing-a-form">
+<h2>Ein Formular bearbeiten<a class="headerlink" href="#editing-a-form" title="Permalink to this heading">¶</a></h2>
 <p>Um eine Frage hinzuzufügen, verwende das Menü <em class="fa fa-plus"></em> <strong>Hinzufügen</strong> unterhalb der letzten Frage oder <em class="fa fa-plus"></em> zwischen den Fragen.</p>
 <p>Um eine Frage zu löschen, verwende die Schaltfläche <em class="fa fa-trash-o"></em> <strong>Löschen</strong> bei der zu löschenden Frage.</p>
-<div class="section" id="utilities">
-<h3>Werkzeuge<a class="headerlink" href="#utilities" title="Link zu dieser Überschrift">¶</a></h3>
-<div class="section" id="cptools-form-paragraph-description">
-<h4><em class="cptools cptools-form-paragraph"></em> Beschreibung<a class="headerlink" href="#cptools-form-paragraph-description" title="Link zu dieser Überschrift">¶</a></h4>
+<section id="utilities">
+<h3>Werkzeuge<a class="headerlink" href="#utilities" title="Permalink to this heading">¶</a></h3>
+<section id="cptools-form-paragraph-description">
+<h4><em class="cptools cptools-form-paragraph"></em> Beschreibung<a class="headerlink" href="#cptools-form-paragraph-description" title="Permalink to this heading">¶</a></h4>
 <p>Fügt Text zum Formular hinzu unter Verwendung von Markdown-Syntax.</p>
 <p><span class="badge-user">Eingeloggte Benutzer</span></p>
 <p>Um ein Bild aus dem CryptDrive einzubetten oder ein neues Bild hochzuladen, verwende das Symbol <em class="fa fa-picture-o"></em> in der Werkzeugleiste.</p>
-</div>
-<div class="section" id="cptools-form-page-break-page-break">
-<h4><em class="cptools cptools-form-page-break"></em> Seitenumbruch<a class="headerlink" href="#cptools-form-page-break-page-break" title="Link zu dieser Überschrift">¶</a></h4>
+</section>
+<section id="cptools-form-page-break-page-break">
+<h4><em class="cptools cptools-form-page-break"></em> Seitenumbruch<a class="headerlink" href="#cptools-form-page-break-page-break" title="Permalink to this heading">¶</a></h4>
 <p>Teilt das Formular auf mehrere Seiten auf. Dies wird nur Teilnehmern angezeigt.</p>
-</div>
-<div class="section" id="cptools-form-conditional-conditional-section">
-<h4><em class="cptools cptools-form-conditional"></em> Bedingter Abschnitt<a class="headerlink" href="#cptools-form-conditional-conditional-section" title="Link zu dieser Überschrift">¶</a></h4>
-<p><span class="badge-new">Neu in Version 4.11</span></p>
+</section>
+<section id="cptools-form-conditional-conditional-section">
+<h4><em class="cptools cptools-form-conditional"></em> Bedingter Abschnitt<a class="headerlink" href="#cptools-form-conditional-conditional-section" title="Permalink to this heading">¶</a></h4>
 <p>Die Fragetypen <em class="cptools cptools-form-list-radio"></em> <strong>Einfachauswahl</strong> und <em class="cptools cptools-form-list-check"></em> <strong>Mehrfachauswahl</strong> können dazu verwendet werden, einen Frageabschnitt ein- oder auszublenden.</p>
 <ol class="arabic simple">
 <li><p>Nutze im Formular-Editor die Schaltflächen <em class="fa fa-plus"></em> <strong>Hinzufügen</strong> zwischen den Fragen oder am Ende des Formulars, um einen <em class="cptools cptools-form-conditional"></em> <strong>Bedingten Abschnitt</strong> hinzufügen.</p></li>
@@ -632,12 +645,12 @@
 <li><p>Lege Bedingungen über die Auswahlmenüs fest. Es müssen alle UND-Bedingungen erfüllt sein, während nur eine der ODER-Bedingungen erfüllt sein muss.</p></li>
 <li><p>In der Teilnehmer-Ansicht wird der Abschnitt nur angezeigt, wenn die Bedingungen zutreffen.</p></li>
 </ol>
-</div>
-</div>
-<div class="section" id="question-types">
-<h3>Fragetypen<a class="headerlink" href="#question-types" title="Link zu dieser Überschrift">¶</a></h3>
-<div class="section" id="cptools-form-text-text">
-<h4><em class="cptools cptools-form-text"></em> Text<a class="headerlink" href="#cptools-form-text-text" title="Link zu dieser Überschrift">¶</a></h4>
+</section>
+</section>
+<section id="question-types">
+<h3>Fragetypen<a class="headerlink" href="#question-types" title="Permalink to this heading">¶</a></h3>
+<section id="cptools-form-text-text">
+<h4><em class="cptools cptools-form-text"></em> Text<a class="headerlink" href="#cptools-form-text-text" title="Permalink to this heading">¶</a></h4>
 <p>Antwort: einzeiliger Text</p>
 <p>Optionen:</p>
 <ul class="simple">
@@ -647,17 +660,17 @@
 <p class="admonition-title">Bemerkung</p>
 <p>Bei Link und E-Mail-Adresse wird die Frage rot hervorgehoben und dem Benutzer als Fehler angezeigt, wenn die Antwort nicht zum vorgesehenen Format passt.</p>
 </div>
-</div>
-<div class="section" id="cptools-form-paragraph-paragraph">
-<h4><em class="cptools cptools-form-paragraph"></em> Absatz<a class="headerlink" href="#cptools-form-paragraph-paragraph" title="Link zu dieser Überschrift">¶</a></h4>
+</section>
+<section id="cptools-form-paragraph-paragraph">
+<h4><em class="cptools cptools-form-paragraph"></em> Absatz<a class="headerlink" href="#cptools-form-paragraph-paragraph" title="Permalink to this heading">¶</a></h4>
 <p>Antwort: mehrzeiliger Text</p>
 <p>Optionen:</p>
 <ul class="simple">
 <li><p>Zeichenbegrenzung (standardmäßig 1000)</p></li>
 </ul>
-</div>
-<div class="section" id="cptools-form-list-radio-choice">
-<span id="form-q-choice"></span><h4><em class="cptools cptools-form-list-radio"></em> Einfachauswahl<a class="headerlink" href="#cptools-form-list-radio-choice" title="Link zu dieser Überschrift">¶</a></h4>
+</section>
+<section id="cptools-form-list-radio-choice">
+<span id="form-q-choice"></span><h4><em class="cptools cptools-form-list-radio"></em> Einfachauswahl<a class="headerlink" href="#cptools-form-list-radio-choice" title="Permalink to this heading">¶</a></h4>
 <p>Antwort: eine Auswahl aus einer Liste</p>
 <p>Optionen:</p>
 <ul class="simple">
@@ -665,9 +678,9 @@
 <li><p>Ziehe Fragen an <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em>, um die Reihenfolge zu ändern</p></li>
 <li><p>Lösche eine Option mit <em class="fa fa-times"></em></p></li>
 </ul>
-</div>
-<div class="section" id="cptools-form-grid-radio-choice-grid">
-<h4><em class="cptools cptools-form-grid-radio"></em> Einfachauswahl-Matrix<a class="headerlink" href="#cptools-form-grid-radio-choice-grid" title="Link zu dieser Überschrift">¶</a></h4>
+</section>
+<section id="cptools-form-grid-radio-choice-grid">
+<h4><em class="cptools cptools-form-grid-radio"></em> Einfachauswahl-Matrix<a class="headerlink" href="#cptools-form-grid-radio-choice-grid" title="Permalink to this heading">¶</a></h4>
 <p>Antwort: eine Option pro Eintrag</p>
 <p>Optionen:</p>
 <ul class="simple">
@@ -675,9 +688,9 @@
 <li><p>Ziehe Einträge und Optionen an <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em>, um die Reihenfolge zu ändern</p></li>
 <li><p>Lösche einen Eintrag oder eine Option mit <em class="fa fa-times"></em></p></li>
 </ul>
-</div>
-<div class="section" id="cptools-form-list-check-checkbox">
-<span id="form-q-checkbox"></span><h4><em class="cptools cptools-form-list-check"></em> Mehrfachauswahl<a class="headerlink" href="#cptools-form-list-check-checkbox" title="Link zu dieser Überschrift">¶</a></h4>
+</section>
+<section id="cptools-form-list-check-checkbox">
+<span id="form-q-checkbox"></span><h4><em class="cptools cptools-form-list-check"></em> Mehrfachauswahl<a class="headerlink" href="#cptools-form-list-check-checkbox" title="Permalink to this heading">¶</a></h4>
 <p>Antwort: mehre Optionen von einer Liste</p>
 <p>Optionen:</p>
 <ul class="simple">
@@ -686,9 +699,9 @@
 <li><p>Ziehe Fragen an <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em>, um die Reihenfolge zu ändern</p></li>
 <li><p>Lösche eine Option mit <em class="fa fa-times"></em></p></li>
 </ul>
-</div>
-<div class="section" id="cptools-form-grid-check-checkbox-grid">
-<h4><em class="cptools cptools-form-grid-check"></em> Mehrfachauswahl-Matrix<a class="headerlink" href="#cptools-form-grid-check-checkbox-grid" title="Link zu dieser Überschrift">¶</a></h4>
+</section>
+<section id="cptools-form-grid-check-checkbox-grid">
+<h4><em class="cptools cptools-form-grid-check"></em> Mehrfachauswahl-Matrix<a class="headerlink" href="#cptools-form-grid-check-checkbox-grid" title="Permalink to this heading">¶</a></h4>
 <p>Antwort: mehrere Optionen für jeden Eintrag</p>
 <p>Optionen:</p>
 <ul class="simple">
@@ -697,9 +710,9 @@
 <li><p>Ziehe Einträge und Optionen an <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em>, um die Reihenfolge zu ändern</p></li>
 <li><p>Lösche einen Eintrag oder eine Option mit <em class="fa fa-times"></em></p></li>
 </ul>
-</div>
-<div class="section" id="cptools-form-list-ordered-ordered-list">
-<h4><em class="cptools cptools-form-list-ordered"></em> Geordnete Liste<a class="headerlink" href="#cptools-form-list-ordered-ordered-list" title="Link zu dieser Überschrift">¶</a></h4>
+</section>
+<section id="cptools-form-list-ordered-ordered-list">
+<h4><em class="cptools cptools-form-list-ordered"></em> Geordnete Liste<a class="headerlink" href="#cptools-form-list-ordered-ordered-list" title="Permalink to this heading">¶</a></h4>
 <p>Antwort: Reihenfolge für die aufgeführten Optionen</p>
 <p>Optionen:</p>
 <ul class="simple">
@@ -707,9 +720,9 @@
 <li><p>Ziehe Fragen an <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em>, um die Reihenfolge zu ändern</p></li>
 <li><p>Lösche eine Option mit <em class="fa fa-times"></em></p></li>
 </ul>
-</div>
-<div class="section" id="cptools-form-poll-poll">
-<h4><em class="cptools cptools-form-poll"></em> Umfrage<a class="headerlink" href="#cptools-form-poll-poll" title="Link zu dieser Überschrift">¶</a></h4>
+</section>
+<section id="cptools-form-poll-poll">
+<h4><em class="cptools cptools-form-poll"></em> Umfrage<a class="headerlink" href="#cptools-form-poll-poll" title="Permalink to this heading">¶</a></h4>
 <p>Antwort: <em class="fa fa-check"></em> Ja, <em class="fa fa-times"></em> Nein oder <em class="cptools cptools-form-poll-maybe"></em> Akzeptabel für jede vorgeschlagene Option</p>
 <p>Optionstypen:</p>
 <ul>
@@ -738,10 +751,10 @@
 </div></blockquote>
 </li>
 </ul>
-</div>
-</div>
-<div class="section" id="form-settings">
-<span id="id1"></span><h3>Einstellungen des Formulars<a class="headerlink" href="#form-settings" title="Link zu dieser Überschrift">¶</a></h3>
+</section>
+</section>
+<section id="form-settings">
+<span id="id1"></span><h3>Einstellungen des Formulars<a class="headerlink" href="#form-settings" title="Permalink to this heading">¶</a></h3>
 <p>Verwende die drei Schaltflächen im oberen Bereich für einfachen Zugriff auf:</p>
 <ul class="simple">
 <li><p><em class="fa fa-bar-chart"></em> <strong>Antworten</strong> (Anzahl): Wechselt zur Anworten-Seite und zurück</p></li>
@@ -752,8 +765,8 @@
 <p class="admonition-title">Bemerkung</p>
 <p>Um einen Link als <strong>Autor</strong> zum Formular zu teilen (mit Berechtigung zum Bearbeiten), verwende das Menü <a class="reference internal" href="../share_and_access.html#share"><span class="std std-ref">Teilen</span></a> in der Werkzeugleiste.</p>
 </div>
-<div class="section" id="closing-date">
-<h4>Enddatum<a class="headerlink" href="#closing-date" title="Link zu dieser Überschrift">¶</a></h4>
+<section id="closing-date">
+<h4>Enddatum<a class="headerlink" href="#closing-date" title="Permalink to this heading">¶</a></h4>
 <p>Datum, nach dem das Formular für neue Antworten geschlossen wird</p>
 <blockquote>
 <div><ul class="simple">
@@ -761,63 +774,70 @@
 <li><p>Wenn ein Enddatum festgelegt wurde, verwende <strong>Enddatum entfernen</strong>, um es zu entfernen.</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="anonymize-responses">
-<h4>Antworten anonymisieren<a class="headerlink" href="#anonymize-responses" title="Link zu dieser Überschrift">¶</a></h4>
+</section>
+<section id="anonymize-responses">
+<h4>Antworten anonymisieren<a class="headerlink" href="#anonymize-responses" title="Permalink to this heading">¶</a></h4>
 <p>Alle Antworten werden anonymisiert, unabhängig davon, ob die Teilnehmer eingeloggt sind. Wenn die Option nicht aktiviert ist, können eingeloggte Teilnehmer trotzdem anonym antworten, wenn der Gastzugriff erlaubt ist (siehe unten).</p>
-</div>
-<div class="section" id="guest-access">
-<h4>Gastzugriff<a class="headerlink" href="#guest-access" title="Link zu dieser Überschrift">¶</a></h4>
+</section>
+<section id="guest-access">
+<h4>Gastzugriff<a class="headerlink" href="#guest-access" title="Permalink to this heading">¶</a></h4>
 <blockquote>
 <div><ul class="simple">
 <li><p>Blockiert: nur eingeloggte Benutzer können das Formular beantworten.</p></li>
 <li><p>Erlaubt: nicht registrierte Benutzer können das Formular beantworten und eingeloggte Benutzer können auswählen, anonym zu antworten.</p></li>
 </ul>
 </div></blockquote>
-</div>
-<div class="section" id="editing-after-submission">
-<h4>Bearbeitung nach Absenden<a class="headerlink" href="#editing-after-submission" title="Link zu dieser Überschrift">¶</a></h4>
+</section>
+<section id="editing-after-submission">
+<h4>Bearbeitung nach Absenden<a class="headerlink" href="#editing-after-submission" title="Permalink to this heading">¶</a></h4>
+<p><span class="badge-new">New in version 5.2</span></p>
 <ul class="simple">
-<li><p>Erlaubt: Teilnehmer können ihre Antworten verändern, nachdem diese abgesendet wurden.</p></li>
-<li><p>Blockiert: Teilnehmer können nur einmal Antworten absenden.</p></li>
+<li><p>One time only: participants can answer the form only one time and can't modify or delete their responses after submitting them.</p></li>
+<li><p>One time and edit/delete: participants can answer the form only one time but are allowed modify or delete their responses after submitting them.</p></li>
+<li><p>Multiple times: participants can answer the form multiple times but can't modify or delete their responses after submitting them.</p></li>
+<li><p>Multiple times and edit/delete: participants can answer the form multiple times and are allowed to modify or delete their responses after submitting them.</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
-<p>Wenn die Bearbeitung nach dem Absenden zunächst erlaubt ist, von einigen Teilnehmern genutzt wird und <em>dann</em> vom Autor des Formulars blockiert wird, werden nur die ersten abgegebenen Antworten für alle Teilnehmer gezählt. Wenn die Einstellung später wieder aktiviert wird, werden alle Antworten und Änderungen gezählt.</p>
+<p>Please note that if Guest Access is allowed, unregistered users can still answer multiple times a &quot;One time only&quot; form if they open it on a web browser private window, or wipe the browser cookies, etc.</p>
 </div>
-</div>
-<div class="section" id="publish-responses">
-<h4>Antworten veröffentlichen<a class="headerlink" href="#publish-responses" title="Link zu dieser Überschrift">¶</a></h4>
+</section>
+<section id="publish-responses">
+<h4>Antworten veröffentlichen<a class="headerlink" href="#publish-responses" title="Permalink to this heading">¶</a></h4>
 <p>Ermöglicht den Teilnehmern, die das Formular absenden, Antworten einzusehen. Sobald diese Einstellung aktiviert ist, werden alle vergangenen und zukünftigen Antworten veröffentlicht.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warnung</p>
 <p>Sobald die Antworten veröffentlicht wurden, können sie nicht wieder auf privat gesetzt werden.</p>
 </div>
-</div>
-<div class="section" id="submit-message">
-<h4>Endnachricht<a class="headerlink" href="#submit-message" title="Link zu dieser Überschrift">¶</a></h4>
+</section>
+<section id="submit-message">
+<h4>Endnachricht<a class="headerlink" href="#submit-message" title="Permalink to this heading">¶</a></h4>
 <p>Legt eine benutzerdefinierte Nachricht fest, die den Teilnehmern nach Absenden des Formulars angezeigt wird.</p>
-</div>
-<div class="section" id="color-theme">
-<h4>Farbschema<a class="headerlink" href="#color-theme" title="Link zu dieser Überschrift">¶</a></h4>
+</section>
+<section id="color-theme">
+<h4>Farbschema<a class="headerlink" href="#color-theme" title="Permalink to this heading">¶</a></h4>
 <p>Lege die Hintergrund- und Akzentfarbe für das Formular fest.</p>
-</div>
-</div>
-<div class="section" id="advanced-use-cases">
-<h3>Fortgeschrittene Anwendungsfälle<a class="headerlink" href="#advanced-use-cases" title="Link zu dieser Überschrift">¶</a></h3>
-<div class="section" id="anonymous-responses-with-access-list">
-<h4>Anonyme Antworten mit Zugriffsliste<a class="headerlink" href="#anonymous-responses-with-access-list" title="Link zu dieser Überschrift">¶</a></h4>
+</section>
+</section>
+<section id="responses">
+<h3>Responses<a class="headerlink" href="#responses" title="Permalink to this heading">¶</a></h3>
+<p>Notifications for new responses are sent to the form _owner_ through the integrated notifications.</p>
+</section>
+<section id="advanced-use-cases">
+<h3>Fortgeschrittene Anwendungsfälle<a class="headerlink" href="#advanced-use-cases" title="Permalink to this heading">¶</a></h3>
+<section id="anonymous-responses-with-access-list">
+<h4>Anonyme Antworten mit Zugriffsliste<a class="headerlink" href="#anonymous-responses-with-access-list" title="Permalink to this heading">¶</a></h4>
 <p>Um eine anonyme Umfrage in einer Gruppe bestimmter Benutzern durchzuführen, kann das Erlauben anonymer Antworten mit einer <a class="reference internal" href="../share_and_access.html#access-list"><span class="std std-ref">Zugriffsliste</span></a> kombiniert werden.</p>
 <p>Um auf das Formular zuzugreifen, müssen sich Teilnehmer in einen Account auf der Zugriffsliste einloggen (entweder direkt oder über ein <a class="reference internal" href="../collaboration.html#teams"><span class="std std-ref">Team</span></a>, dem sie angehören).</p>
 <p>Wenn anonyme Antworten im Formular erlaubt sind, können die Teilnehmer anonym antworten, während die Zugriffsliste sicherstellt, dass sie einer Gruppe bestimmter Benutzer angehören.</p>
-</div>
-</div>
-</div>
-<div class="section" id="import-export">
-<h2>Import/Export<a class="headerlink" href="#import-export" title="Link zu dieser Überschrift">¶</a></h2>
+</section>
+</section>
+</section>
+<section id="import-export">
+<h2>Import/Export<a class="headerlink" href="#import-export" title="Permalink to this heading">¶</a></h2>
 <p>Um die Antworten als CSV-Datei zu exportieren, verwende die Schaltfläche <em class="fa fa-download"></em> <strong>*Als CSV exportieren*</strong> auf der Seite <em class="fa fa-bar-chart"></em> <strong>Antworten</strong>.</p>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -864,7 +884,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'5.0',
+            VERSION:'5.2',
             LANGUAGE:'de',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
@@ -872,9 +892,12 @@
             SOURCELINK_SUFFIX: '.txt'
         };
     </script>
+      <script type="text/javascript" src="../../_static/documentation_options.js"></script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/sphinx_highlight.js"></script>
       <script type="text/javascript" src="../../_static/translations.js"></script>
 
   

@@ -1,4 +1,3 @@
-
 .. _dev_translations:
 
 Translation keys
@@ -26,4 +25,3 @@ Finally, the file ``customize.dist/messages.js`` will retrieve the **language mo
 
 .. image:: /images/dev/translations.png
    :class: screenshot
-

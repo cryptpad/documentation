@@ -5,10 +5,11 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>General &mdash; CryptPad 5.0 documentation</title>
+  <title>General &mdash; CryptPad 5.2 documentation</title>
   
 
   
@@ -27,6 +28,8 @@
   
     <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/open-sans.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/cptools.css" type="text/css" />
   <link rel="stylesheet" href="../../_static/css/fontawesome.css" type="text/css" />
@@ -55,7 +58,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.0</span>
+              <span class="release">Documentation 5.2</span>
             </a>
             
 <div role="search">
@@ -86,32 +89,6 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently Asked Questions</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#common-issues">Common Issues</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#list-of-extensions-known-to-cause-issues-with-cryptpad">List of extensions known to cause issues with CryptPad</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-forgot-my-password">I forgot my password</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">How to import/export my documents to/from another platform?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#rich-text-document-import-export">Rich text document import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#spreadsheets-import-export">Spreadsheets import/export</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-cannot-do-x-with-a-document-i-created">I cannot do X with a document I created</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-i-use-cryptpad-on-mobile">Can I use CryptPad on mobile?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#are-you-planning-to-make-an-app">Are you planning to make an app?</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-cryptpad-sync-documents-to-my-local-filesystem">Can CryptPad sync documents to my local filesystem?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#what-is-the-relationship-between-cryptpad-and-onlyoffice">What is the relationship between CryptPad and OnlyOffice?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#faq-for-cryptpad-fr">FAQ for cryptpad.fr</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#can-i-pay-for-my-subscription-without-a-card">Can I pay for my subscription without a card?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#do-you-accept-cryptocurrencies-for-subscriptions-and-donations">Do you accept cryptocurrencies for subscriptions and donations?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#can-you-provide-a-data-processing-agreement-dpa">Can you provide a Data processing Agreement (DPA)?</a></li>
-</ul>
-</li>
-</ul>
-</li>
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">User Guide</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../instances.html">CryptPad instances</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../user_account.html">User Account</a><ul>
@@ -142,12 +119,21 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../security.html">Security</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#trust-assumptions">Trust Assumptions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../security.html#passwords-for-documents-and-folders">Passwords for documents and folders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#verifying-contacts">Verifying contacts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#self-destructing-documents">Self-destructing documents</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../security.html#remote-disconnect">Remote Disconnect</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../security.html#remote-content">Remote Content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#known-caveats">Known caveats</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../security.html#no-unique-usernames">No unique usernames</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../security.html#edit-rights-in-teams">Edit rights in teams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../security.html#access-of-former-team-members">Access of former team members</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../drive.html">Drive</a><ul>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../drive.html">CryptDrive</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#display">Display</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#managing-documents">Managing documents</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../drive.html#folders">Folders</a></li>
@@ -155,7 +141,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../drive.html#deleting">Deleting</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../drive.html#cryptdrive-history">CryptDrive history</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../drive.html#history">History</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#tags">Tags</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#templates">Templates</a></li>
 </ul>
@@ -262,6 +248,7 @@
 <li class="toctree-l5"><a class="reference internal" href="form.html#utilities">Utilities</a></li>
 <li class="toctree-l5"><a class="reference internal" href="form.html#question-types">Question types</a></li>
 <li class="toctree-l5"><a class="reference internal" href="form.html#form-settings">Form Settings</a></li>
+<li class="toctree-l5"><a class="reference internal" href="form.html#responses">Responses</a></li>
 <li class="toctree-l5"><a class="reference internal" href="form.html#advanced-use-cases">Advanced use-cases</a></li>
 </ul>
 </li>
@@ -290,6 +277,99 @@
 <li class="toctree-l4"><a class="reference internal" href="poll.html#edit-mode">Edit mode</a></li>
 <li class="toctree-l4"><a class="reference internal" href="poll.html#voting">Voting</a></li>
 <li class="toctree-l4"><a class="reference internal" href="poll.html#export">Export</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin_guide/index.html">Administrator Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#prerequisites">Prerequisites</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#domains">Domains</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#hardware">Hardware</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#software">Software</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#install-cryptpad">Install Cryptpad</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configuration">Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#daemonization">Daemonization</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#systemd">Systemd</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#admin-domain-config">Domains</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#install-and-configure-nginx">Install and configure Nginx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#configure-cryptpad">Configure CryptPad</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#diagnostics">Diagnostics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-administrators">Configure administrators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#build-static-pages-open-graph-metadata">Build static pages &amp; Open Graph metadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#support">Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/customization.html">Instance customization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#application-config">Application config</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#restricting-guest-access">Restricting guest access</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#links-to-terms-of-service-privacy-policy-and-imprint-pages">Links to Terms of Service, Privacy Policy and Imprint pages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#security-hardening">Security Hardening</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#look-and-feel">Look and feel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#open-graph-preview-images">Open Graph preview images</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#translations">Translations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/maintenance.html">Maintenance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/maintenance.html#upgrading-cryptpad">Upgrading CryptPad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/maintenance.html#database-administration">Database administration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/maintenance.html#backup-and-migration">Backup and migration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/maintenance.html#advanced-administration">Advanced administration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/admin_panel.html">Administration panel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#general">General</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#enable-remote-embedding">Enable remote embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#admin-contact-email">Admin contact email</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#instance-information">Instance information</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#storage-limit">Storage Limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#apply-a-custom-limit">Apply a custom limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#archive-documents">Archive documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#restore-documents">Restore documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#check-account-storage">Check account storage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#list-of-custom-limits">List of custom limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#statistics">Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#support">Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#maintenance">Maintenance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#survey">Survey</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#broadcast-message">Broadcast Message</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#performance">Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#network">Network</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#validate-instance-configuration">Validate instance configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#server-telemetry">Server telemetry</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#list-my-instance-in-public-directories">List my instance in public directories</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#consent-to-contact">Consent to contact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#crowdfunding-participation">Crowdfunding participation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#instance-purpose">Instance purpose</a></li>
 </ul>
 </li>
 </ul>
@@ -402,97 +482,30 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../../admin_guide/index.html">Administrator Guide</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/installation.html">Installation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#prerequisites">Prerequisites</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#domains">Domains</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#hardware">Hardware</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#software">Software</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Frequently Asked Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#common-issues">Common Issues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#list-of-extensions-known-to-cause-issues-with-cryptpad">List of extensions known to cause issues with CryptPad</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#install-cryptpad">Install Cryptpad</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#dependencies">Dependencies</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configuration">Configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#daemonization">Daemonization</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#systemd">Systemd</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-forgot-my-password">I forgot my password</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">How to import/export my documents to/from another platform?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#rich-text-document-import-export">Rich text document import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#spreadsheets-import-export">Spreadsheets import/export</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-cannot-do-x-with-a-document-i-created">I cannot do X with a document I created</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-i-use-cryptpad-on-mobile">Can I use CryptPad on mobile?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#are-you-planning-to-make-an-app">Are you planning to make an app?</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#admin-domain-config">Domains</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#install-and-configure-nginx">Install and configure Nginx</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#configure-cryptpad">Configure CryptPad</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#diagnostics">Diagnostics</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-administrators">Configure administrators</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#version-4-6-0-and-later">Version 4.6.0 and later</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#versions-older-than-4-6-0">Versions older than 4.6.0</a></li>
-</ul>
-</li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-open-graph-metadata">Configure Open Graph metadata</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/customization.html">Instance customization</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#application-config">Application config</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#restricting-guest-access">Restricting guest access</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#links-to-terms-of-service-privacy-policy-and-imprint-pages">Links to Terms of Service, Privacy Policy and Imprint pages</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#look-and-feel">Look and feel</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#open-graph-preview-images">Open Graph preview images</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#translations">Translations</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/maintenance.html">Maintenance</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/maintenance.html#upgrading-cryptpad">Upgrading CryptPad</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/maintenance.html#database-administration">Database administration</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/maintenance.html#backup-and-migration">Backup and migration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/maintenance.html#advanced-administration">Advanced administration</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/admin_panel.html">Administration panel</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#general">General</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#enable-remote-embedding">Enable remote embedding</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#admin-contact-email">Admin contact email</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#instance-information">Instance information</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#storage-limit">Storage Limit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#apply-a-custom-limit">Apply a custom limit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#archive-documents">Archive documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#restore-documents">Restore documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#check-account-storage">Check account storage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#list-of-custom-limits">List of custom limits</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#statistics">Statistics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#support">Support</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#maintenance">Maintenance</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#survey">Survey</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#broadcast-message">Broadcast Message</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#performance">Performance</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#network">Network</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#validate-instance-configuration">Validate instance configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#server-telemetry">Server telemetry</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#list-my-instance-in-public-directories">List my instance in public directories</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#consent-to-contact">Consent to contact</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#crowdfunding-participation">Crowdfunding participation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#instance-purpose">Instance purpose</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-cryptpad-sync-documents-to-my-local-filesystem">Can CryptPad sync documents to my local filesystem?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#what-is-the-relationship-between-cryptpad-and-onlyoffice">What is the relationship between CryptPad and OnlyOffice?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#faq-for-cryptpad-fr">FAQ for cryptpad.fr</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#can-i-pay-for-my-subscription-without-a-card">Can I pay for my subscription without a card?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#do-you-accept-cryptocurrencies-for-subscriptions-and-donations">Do you accept cryptocurrencies for subscriptions and donations?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#can-you-provide-a-data-processing-agreement-dpa">Can you provide a Data processing Agreement (DPA)?</a></li>
 </ul>
 </li>
 </ul>
@@ -500,6 +513,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../how_to_contribute.html">How to contribute</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#spread-the-word">Spread the word</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#report-bugs">Report bugs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#contribute-to-the-documentation">Contribute to the documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#translate-cryptpad">Translate CryptPad</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#contribute-to-the-code">Contribute to the code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#financial-support">Financial support</a></li>
@@ -587,175 +601,169 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="general">
-<h1>General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="new-document">
-<span id="id1"></span><h2>New document<a class="headerlink" href="#new-document" title="Permalink to this headline">¶</a></h2>
-<p>To create a new document:</p>
+  <section id="general">
+<h1>General<a class="headerlink" href="#general" title="Permalink to this heading">¶</a></h1>
+<section id="new-document">
+<span id="id1"></span><h2>New document<a class="headerlink" href="#new-document" title="Permalink to this heading">¶</a></h2>
+<p class="linemarker linemarker-9">To create a new document:</p>
 <ul class="simple">
-<li><p>From anywhere on CryptPad: <code class="docutils literal notranslate"><span class="pre">Ctrl+e</span></code>.</p></li>
-<li><p>From the CryptDrive:</p>
+<li><p class="linemarker linemarker-11">From anywhere on CryptPad: <code class="docutils literal notranslate"><span class="pre">Ctrl+e</span></code>.</p></li>
+<li><p class="linemarker linemarker-12">From the CryptDrive:</p>
 <ul>
-<li><p><em class="fa fa-plus"></em> <strong>New</strong> in the toolbar.</p></li>
-<li><p><em class="fa fa-plus"></em> <strong>New</strong> at the bottom of the file list/grid.</p></li>
+<li><p class="linemarker linemarker-14"><em class="fa fa-plus"></em> <strong>New</strong> in the toolbar.</p></li>
+<li><p class="linemarker linemarker-15"><em class="fa fa-plus"></em> <strong>New</strong> at the bottom of the file list/grid.</p></li>
 </ul>
 </li>
-<li><p>From a document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-plus"></em> <strong>New</strong>.</p></li>
+<li><p class="linemarker linemarker-17">From a document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-plus"></em> <strong>New</strong>.</p></li>
 </ul>
 <img alt="../../_images/app-creation-screen.png" class="screenshot" src="../../_images/app-creation-screen.png" />
-<p><span class="badge-user">Logged in users</span></p>
-<p>The creation screen offers a number of options when new documents are
+<p class="linemarker linemarker-22"><span class="badge-user">Logged in users</span></p>
+<p class="linemarker linemarker-24">The creation screen offers a number of options when new documents are
 created.</p>
 <ul class="simple">
-<li><p><strong>Owned pad</strong>: Create the new document as <a class="reference internal" href="../share_and_access.html#owners"><span class="std std-ref">owner</span></a>. If the document is
-created without an owner this setting cannot be modified.</p></li>
-<li><p><strong>Expiring pad</strong>: Specify an expiry date after which the document
-will be destroyed. This setting cannot be modified after the document
-is created.</p></li>
-<li><p><strong>Add a password</strong>: Secure the sharing of the document with a
-<a class="reference internal" href="../security.html#passwords"><span class="std std-ref">password</span></a>. This setting can be changed later in the <a class="reference internal" href="../share_and_access.html#access"><span class="std std-ref">Access</span></a> menu.</p></li>
-<li><p><strong>Template</strong>: Choose to start from a blank document or use a <a class="reference internal" href="../drive.html#templates"><span class="std std-ref">template</span></a> as a starting point.</p></li>
+<li><p class="linemarker linemarker-27"><strong>Owned document</strong>: Create the new document as <a class="reference internal" href="../share_and_access.html#owners"><span class="std std-ref">owner</span></a>. If the document is created without an owner this setting cannot be modified.</p></li>
+<li><p class="linemarker linemarker-29"><strong>Expiring document</strong>: Specify an expiry date after which the document will be destroyed. This setting cannot be modified after the document is created.</p></li>
+<li><p class="linemarker linemarker-31"><strong>Add a password</strong>: Secure the sharing of the document with a <a class="reference internal" href="../security.html#passwords"><span class="std std-ref">password</span></a>. This setting can be changed later in the <a class="reference internal" href="../share_and_access.html#access"><span class="std std-ref">Access</span></a> menu.</p></li>
+<li><p class="linemarker linemarker-33"><strong>Template</strong>: Choose to start from a blank document or use a <a class="reference internal" href="../drive.html#templates"><span class="std std-ref">template</span></a> as a starting point.</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>All templates saved in CryptDrive or in teams that you are part of appear on the creation screen. To save a document as a template:</p>
+<p class="linemarker linemarker-36">All templates saved in CryptDrive or in teams that you are part of appear on the creation screen. To save a document as a template:</p>
 <ul class="simple">
-<li><p>In the open document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="cptools cptools-new-template"></em> <strong>Save as template</strong>.</p></li>
+<li><p class="linemarker linemarker-38">In the open document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="cptools cptools-new-template"></em> <strong>Save as template</strong>.</p></li>
 </ul>
-<p>or</p>
+<p class="linemarker linemarker-40">or</p>
 <ul class="simple">
-<li><p>In the CryptDrive: Drag the document to the <em class="cptools cptools-template"></em> <strong>Templates</strong> folder.</p></li>
+<li><p class="linemarker linemarker-42">In the CryptDrive: Drag the document to the <em class="cptools cptools-template"></em> <strong>Templates</strong> folder.</p></li>
 </ul>
 </div>
-</div>
-<div class="section" id="saving">
-<span id="id2"></span><h2>Saving<a class="headerlink" href="#saving" title="Permalink to this headline">¶</a></h2>
-<p>Changes to documents are saved automatically. The status line in the
-document toolbar (under the title) confirms that changes have been
-saved.</p>
-</div>
-<div class="section" id="make-a-copy">
-<span id="id3"></span><h2>Make a copy<a class="headerlink" href="#make-a-copy" title="Permalink to this headline">¶</a></h2>
-<p>To duplicate a document:</p>
+</section>
+<section id="saving">
+<span id="id2"></span><h2>Saving<a class="headerlink" href="#saving" title="Permalink to this heading">¶</a></h2>
+<p class="linemarker linemarker-49">Changes to documents are saved automatically. The status line in the document toolbar (under the title) confirms that changes have been saved.</p>
+</section>
+<section id="make-a-copy">
+<span id="id3"></span><h2>Make a copy<a class="headerlink" href="#make-a-copy" title="Permalink to this heading">¶</a></h2>
+<p class="linemarker linemarker-56">To duplicate a document:</p>
 <ul class="simple">
-<li><p>From the document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-clone"></em> <strong>Make a copy</strong>.</p></li>
-<li><p>From the CryptDrive: <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document &gt; <em class="fa fa-clone"></em>
+<li><p class="linemarker linemarker-58">From the document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-clone"></em> <strong>Make a copy</strong>.</p></li>
+<li><p class="linemarker linemarker-59">From the CryptDrive: <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document &gt; <em class="fa fa-clone"></em>
 <strong>Make a copy</strong>.</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration, <strong>Make a copy</strong> is not available in Spreadsheets.</p>
+<p class="linemarker linemarker-63">Due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration, <strong>Make a copy</strong> is not available in Spreadsheets.</p>
 </div>
-</div>
-<div class="section" id="document-history">
-<span id="id4"></span><h2>Document history<a class="headerlink" href="#document-history" title="Permalink to this headline">¶</a></h2>
-<div class="figure align-default" id="id6">
+</section>
+<section id="document-history">
+<span id="id4"></span><h2>Document history<a class="headerlink" href="#document-history" title="Permalink to this heading">¶</a></h2>
+<figure class="align-default" id="id6">
 <img alt="../../_images/history-toolbar-richtext.png" class="screenshot" src="../../_images/history-toolbar-richtext.png" />
-<p class="caption"><span class="caption-text">The history toolbar</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
-</div>
-<p>The history of documents is saved and can be restored if needed. To view and
-restore the history of a document:</p>
+<figcaption>
+<p><span class="caption-text">The history toolbar</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p class="linemarker linemarker-75">The history of documents is saved and can be restored if needed. To view and restore the history of a document:</p>
 <ol class="arabic simple">
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-history"></em> <strong>History</strong>.</p></li>
-<li><p>Use the arrows to navigate:</p>
+<li><p class="linemarker linemarker-77"><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-history"></em> <strong>History</strong>.</p></li>
+<li><p class="linemarker linemarker-78">Use the arrows to navigate:</p>
 <ul class="simple">
-<li><p><em class="fa fa-step-backward"></em> and <em class="fa fa-step-forward"></em> between each edit.</p></li>
-<li><p><em class="fa fa-step-backward"></em> <em class="fa fa-user"></em> and <em class="fa fa-user"></em> <em class="fa fa-step-forward"></em> between each author.</p></li>
-<li><p><em class="fa fa-step-backward"></em> <em class="fa fa-users"></em> and <em class="fa fa-users"></em> <em class="fa fa-step-forward"></em> between each editing session (when the same group of authors was connected to the document).</p></li>
+<li><p class="linemarker linemarker-80"><em class="fa fa-step-backward"></em> and <em class="fa fa-step-forward"></em> between each edit.</p></li>
+<li><p class="linemarker linemarker-81"><em class="fa fa-step-backward"></em> <em class="fa fa-user"></em> and <em class="fa fa-user"></em> <em class="fa fa-step-forward"></em> between each author.</p></li>
+<li><p class="linemarker linemarker-82"><em class="fa fa-step-backward"></em> <em class="fa fa-users"></em> and <em class="fa fa-users"></em> <em class="fa fa-step-forward"></em> between each editing session (when the same group of authors was connected to the document).</p></li>
 </ul>
 </li>
-<li><p>Restore the displayed version with <em class="fa fa-check"></em> <strong>Restore</strong> , or close the history without restoring
+<li><p class="linemarker linemarker-84">Restore the displayed version with <em class="fa fa-check"></em> <strong>Restore</strong> , or close the history without restoring
 with <em class="fa fa-times"></em> <strong>Close</strong>.</p></li>
 </ol>
-<p>To save storage space, history can be deleted in the document’s
-<a class="reference internal" href="#document-properties"><span class="std std-ref">properties</span></a> <span class="badge-owner">Document owners</span></p>
+<p class="linemarker linemarker-87">To save storage space, history can be deleted in the document’s <a class="reference internal" href="#document-properties"><span class="std std-ref">properties</span></a> <span class="badge-owner">Document owners</span></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The history functionality works slightly differently in the <a class="reference internal" href="sheets.html#app-sheets"><span class="std std-ref">Spreadsheet</span></a> application, due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration. Please refer to <a class="reference internal" href="sheets.html#sheets-history"><span class="std std-ref">spreadsheet history</span></a> for further details.</p>
+<p class="linemarker linemarker-90">The history functionality works slightly differently in the <a class="reference internal" href="sheets.html#app-sheets"><span class="std std-ref">Spreadsheet</span></a> application, due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration. Please refer to <a class="reference internal" href="sheets.html#sheets-history"><span class="std std-ref">spreadsheet history</span></a> for further details.</p>
 </div>
-<p><strong>Version Links</strong></p>
-<p>To share a link to the displayed version of the history:</p>
+<p class="linemarker linemarker-92"><strong>Version Links</strong></p>
+<p class="linemarker linemarker-94">To share a link to the displayed version of the history:</p>
 <ul class="simple">
-<li><p><em class="fa fa-share-alt"></em> <strong>Share</strong> in the toolbar.</p></li>
-<li><p>Select <strong>Contacts</strong>, <strong>Link</strong> or <strong>Embed</strong> similarly to when <a class="reference internal" href="../share_and_access.html#share"><span class="std std-ref">sharing a document</span></a>.</p></li>
+<li><p class="linemarker linemarker-96"><em class="fa fa-share-alt"></em> <strong>Share</strong> in the toolbar.</p></li>
+<li><p class="linemarker linemarker-97">Select <strong>Contacts</strong>, <strong>Link</strong> or <strong>Embed</strong> similarly to when <a class="reference internal" href="../share_and_access.html#share"><span class="std std-ref">sharing a document</span></a>.</p></li>
 </ul>
-<p>Recipients will be able to view the selected version in read-only mode.</p>
+<p class="linemarker linemarker-99">Recipients will be able to view the selected version in read-only mode.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Sharing a link to a version also gives read-only access to all versions of the document.</p>
+<p class="linemarker linemarker-102">Sharing a link to a version also gives read-only access to all versions of the document.</p>
 </div>
-<p><strong>Create a snapshot from history</strong></p>
-<p>To create a <a class="reference internal" href="#snapshots"><span class="std std-ref">snapshot</span></a> from the displayed version of the history:</p>
+<p class="linemarker linemarker-106" id="snapshot-from-history"><strong>Create a snapshot from history</strong></p>
+<p class="linemarker linemarker-108">To create a <a class="reference internal" href="#snapshots"><span class="std std-ref">snapshot</span></a> from the displayed version of the history:</p>
 <ul class="simple">
-<li><p><em class="fa fa-camera"></em> button in the toolbar.</p></li>
-<li><p>In the dialog, provide a name for the snapshot.</p></li>
-<li><p><em class="fa fa-camera"></em> <strong>New Snapshot</strong></p></li>
+<li><p class="linemarker linemarker-110"><em class="fa fa-camera"></em> button in the toolbar.</p></li>
+<li><p class="linemarker linemarker-111">In the dialog, provide a name for the snapshot.</p></li>
+<li><p class="linemarker linemarker-112"><em class="fa fa-camera"></em> <strong>New Snapshot</strong></p></li>
 </ul>
-</div>
-<div class="section" id="snapshots">
-<span id="id5"></span><h2>Snapshots<a class="headerlink" href="#snapshots" title="Permalink to this headline">¶</a></h2>
-<div class="figure align-default" id="id7">
+</section>
+<section id="snapshots">
+<span id="id5"></span><h2>Snapshots<a class="headerlink" href="#snapshots" title="Permalink to this heading">¶</a></h2>
+<figure class="align-default" id="id7">
 <img alt="../../_images/snapshots-dialog.png" class="screenshot" src="../../_images/snapshots-dialog.png" />
-<p class="caption"><span class="caption-text">The snapshots dialog</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
-</div>
-<p>Snapshots are specific points in the history of a document that are named for easy reference.</p>
-<p>To create a snapshot from the current state of the document:</p>
+<figcaption>
+<p><span class="caption-text">The snapshots dialog</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<p class="linemarker linemarker-124">Snapshots are specific points in the history of a document that are named for easy reference.</p>
+<p class="linemarker linemarker-126">To create a snapshot from the current state of the document:</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-camera"></em> <strong>Snapshots</strong></p></li>
-<li><p>In the dialog, provide a name for the snapshot.</p></li>
-<li><p><em class="fa fa-camera"></em> <strong>New Snapshot</strong></p></li>
+<li><p class="linemarker linemarker-128"><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-camera"></em> <strong>Snapshots</strong></p></li>
+<li><p class="linemarker linemarker-129">In the dialog, provide a name for the snapshot.</p></li>
+<li><p class="linemarker linemarker-130"><em class="fa fa-camera"></em> <strong>New Snapshot</strong></p></li>
 </ul>
-<p>To create a snapshot from a version in the document's history see <a class="reference internal" href="#document-history"><span class="std std-ref">snapshot from history</span></a> above.</p>
-<p>To view and restore a snapshot:</p>
+<p class="linemarker linemarker-132">To create a snapshot from a version in the document's history see <a class="reference internal" href="#document-history"><span class="std std-ref">snapshot from history</span></a> above.</p>
+<p class="linemarker linemarker-134">To view and restore a snapshot:</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-camera"></em> <strong>Snapshots</strong></p></li>
-<li><p>In the dialog, <code class="docutils literal notranslate"><span class="pre">Click</span></code> on the snapshot in the list and <em class="fa fa-eye"></em> <strong>View</strong>.</p></li>
-<li><p>The snapshot opens in a new window.</p></li>
-<li><p><em class="fa fa-check"></em> <strong>Restore</strong> or <em class="fa fa-times"></em> <strong>Close</strong></p></li>
+<li><p class="linemarker linemarker-136"><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-camera"></em> <strong>Snapshots</strong></p></li>
+<li><p class="linemarker linemarker-137">In the dialog, <code class="docutils literal notranslate"><span class="pre">Click</span></code> on the snapshot in the list and <em class="fa fa-eye"></em> <strong>View</strong>.</p></li>
+<li><p class="linemarker linemarker-138">The snapshot opens in a new window.</p></li>
+<li><p class="linemarker linemarker-139"><em class="fa fa-check"></em> <strong>Restore</strong> or <em class="fa fa-times"></em> <strong>Close</strong></p></li>
 </ul>
-<p>To delete a snapshot:</p>
+<p class="linemarker linemarker-141">To delete a snapshot:</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-camera"></em> <strong>Snapshots</strong></p></li>
-<li><p>In the dialog, <code class="docutils literal notranslate"><span class="pre">Click</span></code> on the snapshot in the list and <em class="fa fa-trash"></em> <strong>Delete</strong>.</p></li>
+<li><p class="linemarker linemarker-143"><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-camera"></em> <strong>Snapshots</strong></p></li>
+<li><p class="linemarker linemarker-144">In the dialog, <code class="docutils literal notranslate"><span class="pre">Click</span></code> on the snapshot in the list and <em class="fa fa-trash"></em> <strong>Delete</strong>.</p></li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Snapshots are part of the document's history. If you delete the history in the <a class="reference internal" href="#document-properties"><span class="std std-ref">Properties</span></a>
+<p class="linemarker linemarker-147">Snapshots are part of the document's history. If you delete the history in the <a class="reference internal" href="#document-properties"><span class="std std-ref">Properties</span></a>
 snapshots will be deleted as well.</p>
 </div>
-</div>
-<div class="section" id="properties">
-<span id="document-properties"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="properties">
+<span id="document-properties"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this heading">¶</a></h2>
 <img alt="../../_images/modal-properties.png" class="screenshot" src="../../_images/modal-properties.png" />
-<p>To access the properties menu:</p>
+<p class="linemarker linemarker-158">To access the properties menu:</p>
 <ul class="simple">
-<li><p>From the document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-info-circle"></em>
+<li><p class="linemarker linemarker-160">From the document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-info-circle"></em>
 <strong>Properties</strong>.</p></li>
-<li><p>From the CryptDrive: <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document &gt;
+<li><p class="linemarker linemarker-162">From the CryptDrive: <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document &gt;
 <em class="fa fa-info-circle"></em> <strong>Properties</strong>.</p></li>
 </ul>
-<p>Available data:</p>
+<p class="linemarker linemarker-165">Available data:</p>
 <ul class="simple">
-<li><p>Document identifier to share with instance administrators in case of an issue. (note that this does not expose the content of of the document).</p></li>
-<li><p>Links to edit and view (depending on your permissions).</p></li>
-<li><p>Dates of creation and last access.</p></li>
-<li><p>Size.</p></li>
+<li><p class="linemarker linemarker-167">Document identifier to share with instance administrators in case of an issue. (note that this does not expose the content of of the document).</p></li>
+<li><p class="linemarker linemarker-168">Links to edit and view (depending on your permissions).</p></li>
+<li><p class="linemarker linemarker-169">Dates of creation and last access.</p></li>
+<li><p class="linemarker linemarker-170">Size.</p></li>
 </ul>
-<p>The document size shows the proportions used for content and for
-history. To save storage space, delete the document’s history with
-<strong>Delete history</strong> and confirm. <span class="badge-owner">Document owners</span></p>
-</div>
-<div class="section" id="users-and-chat">
-<span id="document-users-and-chat"></span><h2>Users and chat<a class="headerlink" href="#users-and-chat" title="Permalink to this headline">¶</a></h2>
-<p>Interact with users connected to the same document through the user-list
+<p class="linemarker linemarker-172">The document size shows the proportions used for content and for history. To save storage space, delete the document’s history with <strong>Delete history</strong> and confirm. <span class="badge-owner">Document owners</span></p>
+</section>
+<section id="users-and-chat">
+<span id="document-users-and-chat"></span><h2>Users and chat<a class="headerlink" href="#users-and-chat" title="Permalink to this heading">¶</a></h2>
+<p class="linemarker linemarker-179">Interact with users connected to the same document through the user-list
 <em class="fa fa-user"></em> <em class="fa fa-eye"></em> and the <em class="fa fa-comments"></em> <strong>Chat</strong>.</p>
-<p>To show/hide these panes:</p>
+<p class="linemarker linemarker-182">To show/hide these panes:</p>
 <ul class="simple">
-<li><p><em class="fa fa-user"></em> <em class="fa fa-eye"></em> for the user-list.</p></li>
-<li><p><em class="fa fa-comments"></em> <strong>Chat</strong> for the chat.</p></li>
+<li><p class="linemarker linemarker-184"><em class="fa fa-user"></em> <em class="fa fa-eye"></em> for the user-list.</p></li>
+<li><p class="linemarker linemarker-185"><em class="fa fa-comments"></em> <strong>Chat</strong> for the chat.</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -802,7 +810,7 @@ history. To save storage space, delete the document’s history with
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'5.0',
+            VERSION:'5.2',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
@@ -810,9 +818,12 @@ history. To save storage space, delete the document’s history with
             SOURCELINK_SUFFIX: '.txt'
         };
     </script>
+      <script type="text/javascript" src="../../_static/documentation_options.js"></script>
       <script type="text/javascript" src="../../_static/jquery.js"></script>
       <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
       <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/sphinx_highlight.js"></script>
 
   
 

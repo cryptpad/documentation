@@ -1,4 +1,3 @@
-
 Client architecture
 ===================
 
@@ -54,13 +53,9 @@ Once the connector is loaded with the desired technology, the exact same code go
 Access to content stored in the server database is done with commands to the worker. This content represents:
 
 -  User account data (name, personal keys, access to the different modules)
-
    -  Drive, shared folders, contacts, team access keys, profile, settings, etc.
-
 -  Team data
-
    -  Drive, shared folders, members, metadata (avatar and team name)
-
 -  Access to documents for each CryptPad tab opened in the browser
 
 Debugging
@@ -72,27 +67,21 @@ To access the **SharedWorker's console**:
 
 -  In Chrome and Chromium
 
-   -  Open the page ``chrome://inspect``.
-
-   -  Open the "Shared workers" section.
-
-   -  Locate the desired worker and click on "inspect".
+   -  Open the page ``chrome://inspect``
+   -  Open the "Shared workers" section
+   -  Locate the desired worker and click on "inspect"
 
 -  In Edge (based on Chromium)
 
-   -  Open the page ``edge://inspect``.
-
-   -  Open the "Shared workers" section.
-
-   -  Locate the desired worker and click on "inspect".
+   -  Open the page ``edge://inspect``
+   -  Open the "Shared workers" section
+   -  Locate the desired worker and click on "inspect"
 
 -  In Firefox
 
-   -  Open the ``about:debugging`` page.
-
-   -  Open the "This Firefox" part.
-
-   -  Locate the desired worker in "Shared Workers" and click on "Debug".
+   -  Open the ``about:debugging`` page
+   -  Open the "This Firefox" part
+   -  Locate the desired worker in "Shared Workers" and click on "Debug"
 
 Outer
 -----
@@ -145,4 +134,3 @@ Content
 ~~~~~~~
 
 The "inner" iframes display the entire user interface. This concerns both elements common to all applications (toolbar, user menu, main actions) and elements common to collaborative documents (access or sharing modals, user list) as well as elements specific to each application (content rendering). The "share", "access", "properties" modals as well as the upload or file selection popups are displayed by the secure iframe. All the rest is in the main iframe.
-

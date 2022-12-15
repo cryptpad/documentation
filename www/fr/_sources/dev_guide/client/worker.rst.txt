@@ -9,7 +9,7 @@ Async-store contains all the functions representing the commands sent by "outer"
 “Store” commands
 ----------------
 
-Commands that can be executed by async-store include :
+Commands that can be executed by async-store include:
 
 -  Initialization
 
@@ -21,12 +21,12 @@ Commands that can be executed by async-store include :
 
   -  Modify your "pin log", change a password, destroy an owned document, recover the remaining storage space for the account, execute administrator commands, etc.
   -  Upload a static file to the user drive
-  -  The identity of the author is proved to the server with the signature key of the registered user.
+  -  The identity of the author is proved to the server with the signature key of the registered user
 
 -  Unauthenticated server requests
 
   -  Retrieve the total size of a document in the database (with its history)
-  -  Retrieve the metadata of a document (list of owners, access list, expiration date, etc.).
+  -  Retrieve the metadata of a document (list of owners, access list, expiration date, etc.)
 
 -  Actions on the user account
 
@@ -37,7 +37,7 @@ Commands that can be executed by async-store include :
 
 -  Actions on the different modules
 
-  -  Each module can receive its own commands, but these first pass through "async-store" which will redistribute it to the concerned modules.
+  -  Each module can receive its own commands, but these first pass through "async-store" which will redistribute it to the concerned modules
 
 -  Collaborative documents
 
@@ -46,7 +46,7 @@ Commands that can be executed by async-store include :
     -  Chainpad-netflux initialization
     -  Send messages to this document's channel
     -  Listen to events on this document's channel
-
+    
   -  Obtain a part of the document history
   -  Change the password of a document
   -  Manage document metadata (access list or owners)
