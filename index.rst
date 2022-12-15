@@ -17,8 +17,8 @@ This site contains 3 guides with information about using CryptPad, installing an
    :name: main-menu
 
    user_guide/index
-   dev_guide/index
    admin_guide/index
+   dev_guide/index
 
 .. toctree::
    :maxdepth: 1
