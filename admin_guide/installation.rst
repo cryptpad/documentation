@@ -142,7 +142,7 @@ Install and configure Nginx
 
 CryptPad’s application server handles active connections via websocket and serves static assets (HTML, Javascript, CSS, etc.). This basic configuration is designed to be very easy to configure for local development, but it does not protect traffic with SSL or handle many concurrent users very well.
 
-In a production environment, the development team recommends `Nginx <https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/>`__ for the following reasons:
+In a production environment, the development team recommends `Nginx <https://nginx.org/en/linux_packages.html#Debian>`__ for the following reasons:
 
 1. Protect traffic with SSL (so your users can reach your instance via HTTPS)
 2. Scale to many more users by serving static content with a more scalable web-server instead of the single-threaded NodeJS web-server that is built-in
@@ -152,7 +152,7 @@ In a production environment, the development team recommends `Nginx <https://doc
 
    CryptPad cannot run in a subfolder. Make sure you configure your server to access it through the root domain or a subdomain.
 
-Note that the version of Nginx distributed by your operating system may not support websockets. The recommended minimum version to serve CryptPad is ``1.13.0``.
+Note that the version of Nginx distributed by your operating system may not support websockets. We recommend and only support `Nginx stable <https://nginx.org/en/download.html>`__.
 
 To configure Nginx for CryptPad:
 
