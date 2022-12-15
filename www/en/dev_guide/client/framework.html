@@ -605,31 +605,31 @@
             
   <section id="framework">
 <h1>Framework<a class="headerlink" href="#framework" title="Permalink to this heading">¶</a></h1>
-<p class="linemarker linemarker-4">Most of CryptPad's collaborative applications work in a similar way, only differing in the ways that data is displayed. Therefore, a large part of their code can be shared. There is already a lot of code common to several parts of CryptPad, but in the case of collaborative applications, this goes even further.</p>
-<p class="linemarker linemarker-6">Each application is composed of several files:</p>
+<p>Most of CryptPad's collaborative applications work in a similar way, only differing in the ways that data is displayed. Therefore, a large part of their code can be shared. There is already a lot of code common to several parts of CryptPad, but in the case of collaborative applications, this goes even further.</p>
+<p>Each application is composed of several files:</p>
 <ul class="simple">
-<li><p class="linemarker linemarker-8"><code class="docutils literal notranslate"><span class="pre">index.html</span></code>, the HTML starting point that loads the JavaScript of &quot;outer&quot;.</p></li>
-<li><p class="linemarker linemarker-9"><code class="docutils literal notranslate"><span class="pre">main.js</span></code>, the starting point of the &quot;outer&quot; JavaScript, which loads the &quot;inner&quot; iframe and the worker</p></li>
-<li><p class="linemarker linemarker-10"><code class="docutils literal notranslate"><span class="pre">inner.html</span></code>, the HTML starting point of the iframe</p></li>
-<li><p class="linemarker linemarker-11"><code class="docutils literal notranslate"><span class="pre">inner.js</span></code>, the application-specific JavaScript</p></li>
-<li><p class="linemarker linemarker-12"><code class="docutils literal notranslate"><span class="pre">app-xxxx.less</span></code>, for the style of the application</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">index.html</span></code>, the HTML starting point that loads the JavaScript of &quot;outer&quot;.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">main.js</span></code>, the starting point of the &quot;outer&quot; JavaScript, which loads the &quot;inner&quot; iframe and the worker</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">inner.html</span></code>, the HTML starting point of the iframe</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">inner.js</span></code>, the application-specific JavaScript</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">app-xxxx.less</span></code>, for the style of the application</p></li>
 </ul>
 <section id="sframe-app-outer-js">
 <h2>sframe-app-outer.js<a class="headerlink" href="#sframe-app-outer-js" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-17">The <code class="docutils literal notranslate"><span class="pre">main.js</span></code> file is the only JavaScript file of &quot;outer&quot; that is specific to the current application. In some cases, it must contain specific instructions to give more rights to the application or add special commands for the database. For example, in the Drive application it is necessary to have access to the complete contents of the drive in the &quot;inner&quot; iframe. So this application is the only one that has full access to the user account, and this access is provided by the <code class="docutils literal notranslate"><span class="pre">main.js</span></code> file.</p>
-<p class="linemarker linemarker-19">In the case of collaborative applications, no special access is needed and they all have access to the same database information, that is why the <code class="docutils literal notranslate"><span class="pre">main.js</span></code> file does not exist and is replaced by the <code class="docutils literal notranslate"><span class="pre">wwww/common/sframe-app-outer.js</span></code> file which has exactly the same role but is common to all collaborative applications.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">main.js</span></code> file is the only JavaScript file of &quot;outer&quot; that is specific to the current application. In some cases, it must contain specific instructions to give more rights to the application or add special commands for the database. For example, in the Drive application it is necessary to have access to the complete contents of the drive in the &quot;inner&quot; iframe. So this application is the only one that has full access to the user account, and this access is provided by the <code class="docutils literal notranslate"><span class="pre">main.js</span></code> file.</p>
+<p>In the case of collaborative applications, no special access is needed and they all have access to the same database information, that is why the <code class="docutils literal notranslate"><span class="pre">main.js</span></code> file does not exist and is replaced by the <code class="docutils literal notranslate"><span class="pre">wwww/common/sframe-app-outer.js</span></code> file which has exactly the same role but is common to all collaborative applications.</p>
 </section>
 <section id="sframe-app-framework-js">
 <h2>sframe-app-framework.js<a class="headerlink" href="#sframe-app-framework-js" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-24">Inside the iframe, each application needs its own code to display the data of the collaborative document. The <code class="docutils literal notranslate"><span class="pre">inner.js</span></code> file always exists and loads libraries and tools such as CodeMirror (code, slide, polls), jKanban (kanban) or CkEditor (rich text). However, a large part of the code represents elements common to all these applications:</p>
+<p>Inside the iframe, each application needs its own code to display the data of the collaborative document. The <code class="docutils literal notranslate"><span class="pre">inner.js</span></code> file always exists and loads libraries and tools such as CodeMirror (code, slide, polls), jKanban (kanban) or CkEditor (rich text). However, a large part of the code represents elements common to all these applications:</p>
 <ul class="simple">
-<li><p class="linemarker linemarker-26">Loading the decrypted history to be able to rebuild the document</p></li>
-<li><p class="linemarker linemarker-27">Loading &quot;ChainPad&quot; to create the document and manage real-time editing via patches</p></li>
-<li><p class="linemarker linemarker-28">Management of disconnections/reconnections</p></li>
-<li><p class="linemarker linemarker-29">Management of all the specific tools present in the toolbar: history, export, user list, chat, etc.</p></li>
+<li><p>Loading the decrypted history to be able to rebuild the document</p></li>
+<li><p>Loading &quot;ChainPad&quot; to create the document and manage real-time editing via patches</p></li>
+<li><p>Management of disconnections/reconnections</p></li>
+<li><p>Management of all the specific tools present in the toolbar: history, export, user list, chat, etc.</p></li>
 </ul>
-<p class="linemarker linemarker-31">All these elements are included in <code class="docutils literal notranslate"><span class="pre">wwww/common/sframe-app-framework.js</span></code>  which simplifies the creation of a new application by taking care of all these elements directly and providing simple APIs for <code class="docutils literal notranslate"><span class="pre">inner.js</span></code>.</p>
-<p class="linemarker linemarker-33">An <code class="docutils literal notranslate"><span class="pre">inner.js</span></code> file for a complete application looks something like:</p>
+<p>All these elements are included in <code class="docutils literal notranslate"><span class="pre">wwww/common/sframe-app-framework.js</span></code>  which simplifies the creation of a new application by taking care of all these elements directly and providing simple APIs for <code class="docutils literal notranslate"><span class="pre">inner.js</span></code>.</p>
+<p>An <code class="docutils literal notranslate"><span class="pre">inner.js</span></code> file for a complete application looks something like:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// This is the initialization loading the CryptPad libraries</span><span class="w"></span>
 <span class="nx">define</span><span class="p">([</span><span class="w"></span>
 <span class="w">    </span><span class="s1">&#39;jquery&#39;</span><span class="p">,</span><span class="w"></span>
@@ -705,8 +705,8 @@
 </section>
 <section id="framework-less">
 <h2>framework.less<a class="headerlink" href="#framework-less" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-111">All style elements common to the different collaborative applications can be loaded into <code class="docutils literal notranslate"><span class="pre">app-xxxx.less</span></code> via a single call. The LESS framework <code class="docutils literal notranslate"><span class="pre">customize.dist/src/less2/include/framework.less</span></code> will load the style of the toolbar, the chat, the different menus, the buttons and the modals.</p>
-<p class="linemarker linemarker-113">Two mixins are available in this file, <code class="docutils literal notranslate"><span class="pre">.framework_main()</span></code> and <code class="docutils literal notranslate"><span class="pre">.framework_min_main()</span></code>. The minimal &quot;min&quot; version is used for non-collaborative applications (drive, preferences, profile, support, etc.) that reuse most of the style elements. The full version adds the chat style, mentions (for comments), pad creation screen and styles for users' cursors.</p>
+<p>All style elements common to the different collaborative applications can be loaded into <code class="docutils literal notranslate"><span class="pre">app-xxxx.less</span></code> via a single call. The LESS framework <code class="docutils literal notranslate"><span class="pre">customize.dist/src/less2/include/framework.less</span></code> will load the style of the toolbar, the chat, the different menus, the buttons and the modals.</p>
+<p>Two mixins are available in this file, <code class="docutils literal notranslate"><span class="pre">.framework_main()</span></code> and <code class="docutils literal notranslate"><span class="pre">.framework_min_main()</span></code>. The minimal &quot;min&quot; version is used for non-collaborative applications (drive, preferences, profile, support, etc.) that reuse most of the style elements. The full version adds the chat style, mentions (for comments), pad creation screen and styles for users' cursors.</p>
 </section>
 </section>
 

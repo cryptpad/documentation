@@ -725,7 +725,7 @@ node server
 <section id="install-and-configure-nginx">
 <h2>Install and configure Nginx<a class="headerlink" href="#install-and-configure-nginx" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p>CryptPad’s application server handles active connections via websocket and serves static assets (HTML, Javascript, CSS, etc.). This basic configuration is designed to be very easy to configure for local development, but it does not protect traffic with SSL or handle many concurrent users very well.</p>
-<p>In a production environment, the development team recommends <a class="reference external" href="https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source/">Nginx</a> for the following reasons:</p>
+<p>In a production environment, the development team recommends <a class="reference external" href="https://nginx.org/en/linux_packages.html#Debian">Nginx</a> for the following reasons:</p>
 <ol class="arabic simple">
 <li><p>Protect traffic with SSL (so your users can reach your instance via HTTPS)</p></li>
 <li><p>Scale to many more users by serving static content with a more scalable web-server instead of the single-threaded NodeJS web-server that is built-in</p></li>
@@ -735,7 +735,7 @@ node server
 <p class="admonition-title">Avertissement</p>
 <p>CryptPad cannot run in a subfolder. Make sure you configure your server to access it through the root domain or a subdomain.</p>
 </div>
-<p>Note that the version of Nginx distributed by your operating system may not support websockets. The recommended minimum version to serve CryptPad is <code class="docutils literal notranslate"><span class="pre">1.13.0</span></code>.</p>
+<p>Note that the version of Nginx distributed by your operating system may not support websockets. We recommend and only support <a class="reference external" href="https://nginx.org/en/download.html">Nginx stable</a>.</p>
 <p>To configure Nginx for CryptPad:</p>
 <ol class="arabic simple">
 <li><p>Copy the <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/blob/main/docs/example.nginx.conf">CryptPad example Nginx config file</a> so that it is used/imported by the main Nginx config, for example by placing it in <code class="docutils literal notranslate"><span class="pre">/etc/nginx/conf.d/cryptpad.conf</span></code>.</p></li>
