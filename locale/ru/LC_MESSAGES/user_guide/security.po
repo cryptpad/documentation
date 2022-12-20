@@ -1,0 +1,299 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, CryptPad Team
+# This file is distributed under the same license as the CryptPad package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CryptPad \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-06 10:19+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../user_guide/security.rst:2
+msgid "Security"
+msgstr ""
+
+#: ../../user_guide/security.rst:7
+msgid "Trust Assumptions"
+msgstr ""
+
+#: ../../user_guide/security.rst:9
+msgid ""
+"CryptPad is end-to-end encrypted and the server has no access to your "
+"data. However, as with any other web application, some entities still "
+"need to be trusted in order to guarantee security:"
+msgstr ""
+
+#: ../../user_guide/security.rst:12
+msgid "Your chosen CryptPad :ref:`instance <cryptpad_instances>` to"
+msgstr ""
+
+#: ../../user_guide/security.rst:14
+msgid "run the same code as the one published on GitHub,"
+msgstr ""
+
+#: ../../user_guide/security.rst:15
+msgid "not block your network messages, and"
+msgstr ""
+
+#: ../../user_guide/security.rst:16
+msgid "follow its terms of service and privacy policy."
+msgstr ""
+
+#: ../../user_guide/security.rst:17
+msgid ""
+"Your collaborators not to forward :ref:`sharing links <share_link>` to "
+"illegitimate third parties."
+msgstr ""
+
+#: ../../user_guide/security.rst:19
+msgid ""
+"Under these assumptions you can be sure that it is technically not "
+"possible to read or modify your documents by"
+msgstr ""
+
+#: ../../user_guide/security.rst:21
+msgid "your chosen CryptPad instance,"
+msgstr ""
+
+#: ../../user_guide/security.rst:22
+msgid "any powerful adversary that can see your web traffic, or"
+msgstr ""
+
+#: ../../user_guide/security.rst:23
+msgid "any other user."
+msgstr ""
+
+#: ../../user_guide/security.rst:25
+msgid ""
+"We maintain a `list of public CryptPad instances "
+"<https://cryptpad.org/instances>`_ to let you better decide on whom you "
+"want to trust."
+msgstr ""
+
+#: ../../user_guide/security.rst:28
+msgid ""
+"CryptPad does only provide a weak form of anonymity. Your chosen CryptPad"
+" instance can see your IP address and your \"user agent\" (browser and "
+"operating system)."
+msgstr ""
+
+#: ../../user_guide/security.rst:31
+msgid ""
+"If you need stronger anonymity guarantees, you can access CryptPad via "
+"`Tor <https://www.torproject.org>`_."
+msgstr ""
+
+#: ../../user_guide/security.rst:36
+msgid "Passwords for documents and folders"
+msgstr ""
+
+#: ../../user_guide/security.rst:38 ../../user_guide/security.rst:55
+#: ../../user_guide/security.rst:67 ../../user_guide/security.rst:82
+#: ../../user_guide/security.rst:101
+msgid ":badge_user:`Logged in users`"
+msgstr ""
+
+#: ../../user_guide/security.rst:40
+msgid ""
+"When you share the link to a document or shared folder through an "
+"insecure channel (for example email or SMS), someone might intercept the "
+"link and gain access to your data. To prevent this from happening, the "
+":ref:`owners <owners>` of a document or folder can add a password."
+msgstr ""
+
+#: ../../user_guide/security.rst:42
+msgid ""
+"When you :ref:`share documents with your contacts and teams directly on "
+"CryptPad <share_contacts>`, communications are encrypted and we assume "
+"that you want to give them access. Therefore the password is remembered "
+"and sent with the document/folder when you share it. The recipient, or "
+"yourself, are **not** asked for it when they open the document."
+msgstr ""
+
+#: ../../user_guide/security.rst:44
+msgid ""
+"You can add a password to a document when you :ref:`create "
+"<new_document>` it."
+msgstr ""
+
+#: ../../user_guide/security.rst:46
+msgid "You can also add or change the password in the :ref:`access` menu:"
+msgstr ""
+
+#: ../../user_guide/security.rst:48
+msgid "From the CryptDrive: ``Right click`` > |unlock-alt| **Access**."
+msgstr ""
+
+#: ../../user_guide/security.rst:49
+msgid "From the document toolbar: |unlock-alt| **Access**."
+msgstr ""
+
+#: ../../user_guide/security.rst:54
+msgid "Verifying contacts"
+msgstr ""
+
+#: ../../user_guide/security.rst:57
+msgid ""
+"To verify a contact's identity, i.e., that a contact belongs to the "
+"person you think, you can compare the public signing keys:"
+msgstr ""
+
+#: ../../user_guide/security.rst:59
+msgid ""
+"Ask your contact to share :ref:`their public key <user_settings_account>`"
+" over a secure channel with you."
+msgstr ""
+
+#: ../../user_guide/security.rst:60
+msgid ""
+"If this public key matches the one from your contact's :ref:`profile page"
+" <another_user_profile>`, you can be sure that the contact belongs to the"
+" person at the other end of the secure channel."
+msgstr ""
+
+#: ../../user_guide/security.rst:65
+msgid "Self-destructing documents"
+msgstr ""
+
+#: ../../user_guide/security.rst:69
+msgid ""
+"Self-destructing documents will be destroyed automatically without the "
+"interaction of any user. This ensures that sensitive data is not "
+"accessible forever."
+msgstr ""
+
+#: ../../user_guide/security.rst:72
+msgid "There are two ways to create self-destructing documents:"
+msgstr ""
+
+#: ../../user_guide/security.rst:74
+msgid "You can set an expiration time during :ref:`creating <new_document>`."
+msgstr ""
+
+#: ../../user_guide/security.rst:75
+msgid ""
+"You can share a document via a :ref:`view-once-and-self-destruct "
+"link<share_access_rights>`."
+msgstr ""
+
+#: ../../user_guide/security.rst:80
+msgid "Remote Disconnect"
+msgstr ""
+
+#: ../../user_guide/security.rst:84
+msgid ""
+"In some cases (loss or theft of a device, forgotten to log out of a "
+"session on a shared computer, etc.) it can be necessary to close all "
+"active CryptPad sessions. This can be done in two ways:"
+msgstr ""
+
+#: ../../user_guide/security.rst:86
+msgid ""
+"User menu (avatar at the top-right) > |gear| **Settings** > |lock| "
+"**Confidentiality** > **LOG OUT**."
+msgstr ""
+
+#: ../../user_guide/security.rst:88
+msgid ""
+"This option logs out all sessions **except** the one from which it is "
+"actiaved."
+msgstr ""
+
+#: ../../user_guide/security.rst:90
+msgid "User menu (avatar at the top-right) > |plug| **Log out everywhere**."
+msgstr ""
+
+#: ../../user_guide/security.rst:92
+msgid ""
+"This option logs out all sessions **including** the one from which it is "
+"activated."
+msgstr ""
+
+#: ../../user_guide/security.rst:97
+msgid "Remote Content"
+msgstr ""
+
+#: ../../user_guide/security.rst:99
+msgid ""
+"In Markdown editors (:ref:`app_code`, :ref:`app_slides`, "
+":ref:`app_kanban`), CryptPad blocks images and other remotely hosted "
+"content to prevent potential tracking."
+msgstr ""
+
+#: ../../user_guide/security.rst:103
+msgid ""
+"To include images from the CryptDrive or to upload new ones, use the "
+"|picture-o| **Insert** menu. This menu inserts a ``media-tag`` element "
+"that is more complex than Markdown image syntax but is managed "
+"automatically."
+msgstr ""
+
+#: ../../user_guide/security.rst:108
+msgid "Known caveats"
+msgstr ""
+
+#: ../../user_guide/security.rst:111
+msgid "No unique usernames"
+msgstr ""
+
+#: ../../user_guide/security.rst:113
+msgid ""
+"Neither the :ref:`account name <user_settings_account>` nor the "
+":ref:`display name <user_settings_account>` is unique in CryptPad. This "
+"means that you cannot trust usernames to identify people. Instead, "
+":ref:`identify your contact <verifying_contacts>` via their public keys."
+msgstr ""
+
+#: ../../user_guide/security.rst:118
+msgid "Edit rights in teams"
+msgstr ""
+
+#: ../../user_guide/security.rst:120
+msgid ""
+"Team members with edit access to a teams drive may share this access to "
+"other users both inside and outside the team. Team members may even "
+"convert folders into :ref:`shared folders <shared_folders>` and delegate "
+"their access to anybody they want."
+msgstr ""
+
+#: ../../user_guide/security.rst:123
+msgid ""
+"You therefore have to be careful with whom you grant edit rights. You may"
+" also want to"
+msgstr ""
+
+#: ../../user_guide/security.rst:126
+msgid ""
+"set the :ref:`role  <team_roles_and_permissions>` of a member to viewer "
+"and selectively share edit rights to this person."
+msgstr ""
+
+#: ../../user_guide/security.rst:127
+msgid ""
+"use :ref:`access lists <access_list>` to limit the access to a file to "
+"specific contacts."
+msgstr ""
+
+#: ../../user_guide/security.rst:130
+msgid "Access of former team members"
+msgstr ""
+
+#: ../../user_guide/security.rst:132
+msgid ""
+"The team communication is encrypted with static keys. This implies that a"
+" former team member still has the keys. A former team member can "
+"therefore potentially decrypt team messages and can also keep the same "
+"access to the team's document as before. However, this requires to modify"
+" the client source code as the official one does neither store the keys "
+"nor decrypt any messages of a team which the user is not part of."
+msgstr ""
+
