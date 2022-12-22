@@ -3,23 +3,27 @@
 # This file is distributed under the same license as the CryptPad package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CryptPad \n"
+"Project-Id-Version: CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-17 16:11+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2022-12-23 19:37+0000\n"
+"Last-Translator: serbul (ifreedomlab.net) <serbul4trsh@gmail.com>\n"
+"Language-Team: Russian <http://weblate.cryptpad.fr/projects/user-guide/"
+"application-sheets/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.1\n"
 "Generated-By: Babel 2.11.0\n"
 
 #: ../../user_guide/apps/sheets.rst:4
 msgid "Spreadsheet"
-msgstr ""
+msgstr "Таблица"
 
 #: ../../user_guide/apps/sheets.rst:6
 msgid ""
@@ -27,10 +31,13 @@ msgid ""
 "<https://www.onlyoffice.com/>`__. To read more about the details of this "
 "integration see :ref:`FAQ_OOintegration`."
 msgstr ""
+"Приложение Таблица в CryptPad представляет собой интеграцию `OnlyOffice "
+"<https://www.onlyoffice.com/>`__. Чтобы узнать больше о деталях этой "
+"интеграции, см.:ref:`FAQ_OOintegration`."
 
 #: ../../user_guide/apps/sheets.rst:12
 msgid "Documentation"
-msgstr ""
+msgstr "Документация"
 
 #: ../../user_guide/apps/sheets.rst:14
 msgid ""
@@ -38,10 +45,14 @@ msgid ""
 "<https://helpcenter.onlyoffice.com/en/ONLYOFFICE-Editors/ONLYOFFICE-"
 "Spreadsheet-Editor/index.aspx>`__ for a spreadsheet user-guide."
 msgstr ""
+"Пожалуйста, обратитесь к `Документации OnlyOffice <https://helpcenter."
+"onlyoffice.com/en/ONLYOFFICE-Editors/ONLYOFFICE-Spreadsheet-Editor/index."
+"aspx>`__ для получения руководства пользователя по работе с электронными "
+"таблицами."
 
 #: ../../user_guide/apps/sheets.rst:17
 msgid "Toolbars"
-msgstr ""
+msgstr "Панели инструментов"
 
 #: ../../user_guide/apps/sheets.rst:19
 msgid ""
@@ -50,6 +61,10 @@ msgid ""
 "provides a wide range of functions in a tabbed toolbar. This results in a"
 " double toolbar that can cause confusion:"
 msgstr ""
+"CryptPad интегрирует электронные таблицы OnlyOffice в ту же зашифрованную "
+"систему совместной работы, что и другие приложения. Кроме того, OnlyOffice "
+"предоставляет широкий спектр функций на панели инструментов с вкладками. Это "
+"приводит к двойной панели инструментов, которая может вызвать путаницу:"
 
 #: ../../user_guide/apps/sheets.rst:21
 msgid ""
@@ -57,6 +72,9 @@ msgid ""
 " (including import/export, history, properties, etc) as well as |share-"
 "alt| **Share** and |unlock-alt| **Access**."
 msgstr ""
+"Самая верхняя **панель инструментов CryptPad** используется для операций с "
+"файлом - |file-o| **Файл** (включая импорт/экспорт, историю, свойства и т. "
+"д.), а также |share-alt| **Поделиться** и |unlock-alt| **Доступ**."
 
 #: ../../user_guide/apps/sheets.rst:22
 msgid ""
@@ -64,10 +82,13 @@ msgid ""
 "spreadsheet document itself, as well as the collaboration modes explained"
 " in the next section."
 msgstr ""
+"**Панель инструментов OnlyOffice** используется для всех функций внутри "
+"самого табличного документа, а также для режимов совместной работы, "
+"описанных в следующем разделе."
 
 #: ../../user_guide/apps/sheets.rst:25
 msgid "Undo and collaboration modes"
-msgstr ""
+msgstr "Режимы отмены правок и совместной работы"
 
 #: ../../user_guide/apps/sheets.rst:30
 msgid ""
@@ -75,6 +96,9 @@ msgid ""
 "affect how changes are synced between users and whether or not the "
 "**Undo** functionality is available."
 msgstr ""
+"OnlyOffice предоставляет два режима совместного редактирования в электронных "
+"таблицах, которые влияют на то, как изменения синхронизируются между "
+"пользователями и доступна ли функция ** Отменить **."
 
 #: ../../user_guide/apps/sheets.rst:32
 msgid ""
@@ -82,6 +106,9 @@ msgid ""
 "automatically synced with others as they are made. In this mode it is not"
 " possible to undo."
 msgstr ""
+"** Быстрый режим ** включен по умолчанию. Новые правки всех пользователей "
+"автоматически синхронизируются с другими по мере их внесения. В этом режиме "
+"отменить его невозможно."
 
 #: ../../user_guide/apps/sheets.rst:33
 msgid ""
@@ -92,34 +119,51 @@ msgid ""
 " saved. When a user saves their changes, others are prompted to save in "
 "order to receive the latest edits."
 msgstr ""
+"** Строгий режим ** позволяет каждому пользователю вносить изменения "
+"независимо. Измененные ячейки 'блокируются' для других до тех пор, пока "
+"автор вручную не сохранит их изменения. Новые изменения синхронизируются с "
+"другими пользователями только после сохранения. В этом режиме можно отменить "
+"изменения, которые еще не были сохранены. Когда пользователь сохраняет свои "
+"изменения, другим пользователям предлагается сохранить их, чтобы получить "
+"последние изменения."
 
 #: ../../user_guide/apps/sheets.rst:35
 msgid ""
 "When ``Ctrl Z`` is pressed for undo, the application will automatically "
 "suggest switching to **Strict Mode** to enable the undo functionality."
 msgstr ""
+"Когда для отмены правки нажимается ``Ctrl Z``, приложение автоматически "
+"предлагает переключиться в **Строгий режим**, чтобы активировать функцию "
+"отмены."
 
 #: ../../user_guide/apps/sheets.rst:37
 msgid ""
 "To switch back to **Fast mode** use the **Collaboration** tab in the "
 "OnlyOffice toolbar and select **Co-editing Mode** > **Fast**."
 msgstr ""
+"Чтобы вернуться в **Быстрый режим**, используйте вкладку **Совместная "
+"работа** на панели инструментов OnlyOffice и выберите **Режим совместного "
+"редактирования** > **Быстрый**."
 
 #: ../../user_guide/apps/sheets.rst:40
 msgid ""
 "CryptPad remembers your choice of editing mode on each device for all "
 "documents."
 msgstr ""
+"CryptPad запоминает выбранный вами режим редактирования на каждом устройстве "
+"для всех документов."
 
 #: ../../user_guide/apps/sheets.rst:45
 msgid "History"
-msgstr ""
+msgstr "История"
 
 #: ../../user_guide/apps/sheets.rst:47
 msgid ""
 "To access the spreadsheet history, use |file-o| **File** > |history| "
 "**History** in the CryptPad toolbar."
 msgstr ""
+"Чтобы получить доступ к истории электронных таблиц, используйте |file-o| "
+"**Файл** > |history| **История** на панели инструментов CryptPad."
 
 #: ../../user_guide/apps/sheets.rst:49
 msgid ""
@@ -127,28 +171,33 @@ msgid ""
 "collaboration, history in speadsheets works differently than :ref:`in the"
 " other applications <document_history>`."
 msgstr ""
+"Из-за интеграции OnlyOffice с зашифрованной совместной работой CryptPad в "
+"режиме реального времени история в электронных таблицах работает иначе, чем "
+":ref:`в других приложениях <document_history>`."
 
 #: ../../user_guide/apps/sheets.rst:54
 msgid "The spreadsheet history toolbar"
-msgstr ""
+msgstr "Панель инструментов истории электронной таблицы"
 
 #: ../../user_guide/apps/sheets.rst:56
 msgid ""
 "History in spreadsheets only allows to jump back to the previous version,"
 " and then move forward through individual edits."
 msgstr ""
+"История в электронных таблицах позволяет только вернуться к предыдущей "
+"версии, а затем перейти к отдельным изменениям в той версии."
 
 #: ../../user_guide/apps/sheets.rst:58
 msgid "|fast-backward| previous version"
-msgstr ""
+msgstr "|fast-backward| предыдущая версия"
 
 #: ../../user_guide/apps/sheets.rst:59
 msgid "|step-forward| step forward one edit"
-msgstr ""
+msgstr "|step-forward| шаг вперед на одну правку"
 
 #: ../../user_guide/apps/sheets.rst:60
 msgid "|fast-forward| next version"
-msgstr ""
+msgstr "|fast-forward| следующая версия"
 
 #: ../../user_guide/apps/sheets.rst:62
 msgid ""
@@ -156,10 +205,13 @@ msgid ""
 "relating to :ref:`snapshots`, works in the same way as in :ref:`the other"
 " applications <document_history>`."
 msgstr ""
+"Функциональность для восстановления и публикации версии, а также все, что "
+"касается :ref:`Снимков`, работает так же, как и в :ref:`других приложениях "
+"<document_history>`."
 
 #: ../../user_guide/apps/sheets.rst:67
 msgid "Printing"
-msgstr ""
+msgstr "Печать"
 
 #: ../../user_guide/apps/sheets.rst:69
 msgid ""
@@ -167,32 +219,39 @@ msgid ""
 "formats below and to handle page layout with a desktop application such "
 "as LibreOffice Calc."
 msgstr ""
+"Для печати электронных таблиц рекомендуется экспортировать их в один из "
+"форматов, указанных ниже, и обрабатывать макет страницы с помощью "
+"настольного приложения, такого как LibreOffice Calc."
 
 #: ../../user_guide/apps/sheets.rst:71
 msgid ""
 "Alternatively the ``.pdf`` export can be used to produce file for print, "
 "results may vary depending on the layout of the document."
 msgstr ""
+"В качестве альтернативы можно использовать экспорт в ``.pdf`` для создания "
+"файла для печати, результаты могут различаться в зависимости от макета "
+"документа."
 
 #: ../../user_guide/apps/sheets.rst:74
 msgid "Import/Export"
-msgstr ""
+msgstr "Импорт/Экспорт"
 
 #: ../../user_guide/apps/sheets.rst:76
 msgid "|file-o| **File** > |upload| **Import**."
-msgstr ""
+msgstr "|file-o| **Файл** > |upload| **Импорт**."
 
 #: ../../user_guide/apps/sheets.rst:77
 msgid ""
 "Supported formats: ``.bin`` files exported by this application, Excel "
 "``.xlsx``."
 msgstr ""
+"Поддерживаемые форматы: файлы ``.bin``, экспортируемые этим приложением, "
+"Excel ``.xlsx``."
 
 #: ../../user_guide/apps/sheets.rst:79
 msgid "|file-o| **File** > |download| **Export**."
-msgstr ""
+msgstr "|file-o| **Файл** > |download| **Экспорт**."
 
 #: ../../user_guide/apps/sheets.rst:80
 msgid "Supported formats: ``.bin``, Excel ``.xlsx``, ``.ods``, ``.pdf``."
-msgstr ""
-
+msgstr "Поддерживаемые форматы: ``.bin``, Excel ``.xlsx``, ``.ods``, ``.pdf``."
