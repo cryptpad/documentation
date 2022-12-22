@@ -3,57 +3,72 @@
 # This file is distributed under the same license as the CryptPad package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CryptPad \n"
+"Project-Id-Version: CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-11-22 10:53+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2022-12-23 19:37+0000\n"
+"Last-Translator: serbul (ifreedomlab.net) <serbul4trsh@gmail.com>\n"
+"Language-Team: Russian <http://weblate.cryptpad.fr/projects/user-guide/"
+"application-code/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.1\n"
 "Generated-By: Babel 2.11.0\n"
 
 #: ../../user_guide/apps/code.rst:4
 msgid "Code / Markdown"
-msgstr ""
+msgstr "Код / Markdown"
 
 #: ../../user_guide/apps/code.rst:6
 msgid ""
 "The Code/Markdown application in CryptPad is an integration of "
 "`CodeMirror <https://codemirror.net/>`__."
 msgstr ""
+"Приложение Код/Markdown в CryptPad представляет собой интеграцию `CodeMirror "
+"<https://codemirror.net/>`__."
 
 #: ../../user_guide/apps/code.rst:12
 msgid "Toolbar"
-msgstr ""
+msgstr "Инструменты"
 
 #: ../../user_guide/apps/code.rst:14
 msgid "|wrench| **Tools**: Show/hide the text editor toolbar."
 msgstr ""
+"|wrench| **Инструменты**: Показать/скрыть панель инструментов текстового "
+"редактора."
 
 #: ../../user_guide/apps/code.rst:16
 msgid ""
 "|picture-o| **Insert**: Add an image to the document. The image can be "
 "chosen in the drive or uploaded. :badge_user:`Logged in users`"
 msgstr ""
+"|picture-o| **Вставить**: добавить изображение в документ. Изображение может "
+"быть выбрано на диске или загружено. :badge_user :`Зарегистрированные "
+"пользователи`"
 
 #: ../../user_guide/apps/code.rst:18
 msgid ""
 "|cptools palette| **Theme**: Set colors for the editor, detailed "
 ":ref:`below <app_code_theme>`."
 msgstr ""
+"|cptools palette| **Тема**: Установите цвета для редактора, подробно :ref:`"
+"ниже <app_code_theme>`."
 
 #: ../../user_guide/apps/code.rst:20
 msgid "|eye| **Preview**: Show/hide the Markdown preview pane."
 msgstr ""
+"|eye| **Предварительный просмотр**: показать/скрыть панель предварительного "
+"просмотра Markdown."
 
 #: ../../user_guide/apps/code.rst:25
 msgid "Theme"
-msgstr ""
+msgstr "Тема"
 
 #: ../../user_guide/apps/code.rst:27
 msgid ""
@@ -61,6 +76,9 @@ msgid ""
 "user with their cursor color (picked in :ref:`user settings "
 "<user_settings_cursor>`). When active:"
 msgstr ""
+"|paint-brush| **Цвета по авторам**: Выделите текст, написанный каждым "
+"пользователем, соответсвуйющим цветом курсора (выбранным в :ref:`настройках "
+"поользователя <user_settings_cursor>`). Когда активно:"
 
 #: ../../user_guide/apps/code.rst:29
 msgid ""
@@ -68,48 +86,57 @@ msgid ""
 " this window, the colors can be turned back on and remain active for "
 "other users."
 msgstr ""
+"|paint-brush| **Скрыть цвета по авторам**, чтобы отключить отображение "
+"цветов в этом окне. Цвета можно снова включить и они останутся активными для "
+"других пользователей."
 
 #: ../../user_guide/apps/code.rst:31
 msgid ""
 "|paint-brush| **Color by author** > **Clear and disable** to turn off the"
 " colors for all users and delete the data."
 msgstr ""
+"|paint-brush| **Цвета по авторам** > **Очистить и отключить**, чтобы "
+"отключить цвета для всех пользователей и удалить данные."
 
 #: ../../user_guide/apps/code.rst:33
 msgid "**Theme**: Color scheme used in the code editor pane."
-msgstr ""
+msgstr "**Тема**: цветовая схема, используемая на панели редактора кода."
 
 #: ../../user_guide/apps/code.rst:35
 msgid "**Language**: Used for syntax highlighting."
-msgstr ""
+msgstr "**Язык**: используется для подсветки синтаксиса."
 
 #: ../../user_guide/apps/code.rst:38
 msgid "Import/Export"
-msgstr ""
+msgstr "Импорт/Экспорт"
 
 #: ../../user_guide/apps/code.rst:40
 msgid "|file-o| **File** > |upload| **Import**."
-msgstr ""
+msgstr "|file-o| **Файл** > |upload| **Импорт**."
 
 #: ../../user_guide/apps/code.rst:41
 msgid ""
 "Supported formats: Any plain text file, the file extension is used to "
 "determine the language."
 msgstr ""
+"Поддерживаемые форматы: любой обычный текстовый файл, расширение файла "
+"используется для определения языка."
 
 #: ../../user_guide/apps/code.rst:43
 msgid "|file-o| **File** > |download| **Export**."
-msgstr ""
+msgstr "|file-o| **Файл** > |download| **Экспорт**."
 
 #: ../../user_guide/apps/code.rst:44
 msgid ""
 "Supported formats: ``.md``, any other extension can be typed for the name"
 " of the exported file."
 msgstr ""
+"Поддерживаемые форматы: ``.md``, для имени экспортируемого файла можно "
+"указать любое другое расширение."
 
 #: ../../user_guide/apps/code.rst:47
 msgid "Markdown"
-msgstr ""
+msgstr "Markdown"
 
 #: ../../user_guide/apps/code.rst:49
 msgid ""
@@ -118,70 +145,79 @@ msgid ""
 "remaining readable. Markdown is readily converted to other formats such "
 "as HTML."
 msgstr ""
+"Приложение Код особенно подходит для написания документов в Markdown: "
+"упрощенный синтаксис, который предлагает базовое форматирование, оставаясь "
+"при этом удобочитаемым. Markdown легко конвертируется в другие форматы, "
+"такие как HTML."
 
 #: ../../user_guide/apps/code.rst:51
 msgid "For examples of Markdown syntax in CryptPad please see:"
-msgstr ""
+msgstr "Примеры синтаксиса Markdown в CryptPad см. в разделе:"
 
 #: ../../user_guide/apps/code.rst:53
 msgid "|md basic|_"
-msgstr ""
+msgstr "|md basic|_"
 
 #: ../../user_guide/apps/code.rst:58
 msgid ""
 "Additionally to basic Markdown syntax, the following features are also "
 "available:"
 msgstr ""
+"В дополнение к базовому синтаксису Markdown также доступны следующие функции:"
 
 #: ../../user_guide/apps/code.rst:60
 msgid "``[TOC]`` Inserts a table of contents."
-msgstr ""
+msgstr "``[TOC]`` Вставляет оглавление."
 
 #: ../../user_guide/apps/code.rst:61
 msgid "Todo list"
-msgstr ""
+msgstr "Список дел"
 
 #: ../../user_guide/apps/code.rst:63
 msgid "``- [ ] task`` for a task to do: |square-o| task."
-msgstr ""
+msgstr "``- [ ] task`` для задачи к выполнению: |square-o| задача."
 
 #: ../../user_guide/apps/code.rst:64
 msgid "``- [x] task`` for a completed task: |check-square| task."
-msgstr ""
+msgstr "``- [x] задача`` для выполненной задачи: |check-square| задача."
 
 #: ../../user_guide/apps/code.rst:66
 msgid "As well as the following extensions:"
-msgstr ""
+msgstr "А также следующие расширения:"
 
 #: ../../user_guide/apps/code.rst:68
 msgid "Diagrams with `Mermaid <https://mermaid-js.github.io/mermaid/#/>`__."
 msgstr ""
+"Диаграммы с помощью`Mermaid <https://mermaid-js.github.io/mermaid/#/>`__."
 
 #: ../../user_guide/apps/code.rst:69
 msgid "Mindmaps with `Markmap <https://markmap.js.org/>`__."
-msgstr ""
+msgstr "Mindmaps с помощью `Markmap <https://markmap.js.org/>`__."
 
 #: ../../user_guide/apps/code.rst:70
 msgid "Mathematical equations with `Mathjax <https://www.mathjax.org/>`__."
 msgstr ""
+"Математические уравнения с помощью `Mathjax <https://www.mathjax.org/>`__."
 
 #: ../../user_guide/apps/code.rst:72
 msgid ""
 "To use an extension, name it as syntax for a Markdown code block, for "
 "example:"
 msgstr ""
+"Чтобы использовать расширение, назовите его как синтаксис для блока кода "
+"Markdown, например:"
 
 #: ../../user_guide/apps/code.rst:80
 msgid "for detailed examples of the extensions in use please see:"
-msgstr ""
+msgstr "подробные примеры используемых расширений см. в разделе:"
 
 #: ../../user_guide/apps/code.rst:82
 msgid "|md extensions|_"
-msgstr ""
+msgstr "|md extensions|_"
 
 #: ../../user_guide/apps/code.rst:90
 msgid "Images"
-msgstr ""
+msgstr "Изображения"
 
 #: ../../user_guide/apps/code.rst:92
 msgid ""
@@ -189,40 +225,48 @@ msgid ""
 "``![description](https://site.com/image.jpg)`` is blocked by CryptPad for"
 " security reasons."
 msgstr ""
+"Синтаксис Markdown для включения удаленных изображений, например "
+"``![description](https://site.com/image.jpg)`, заблокирован CryptPad по "
+"соображениям безопасности."
 
 #: ../../user_guide/apps/code.rst:94
 msgid ":badge_user:`Logged in users`"
-msgstr ""
+msgstr ":badge_user:`Зарегистрированные пользователи`"
 
 #: ../../user_guide/apps/code.rst:96
 msgid ""
 "To insert images from the CryptDrive or upload new ones, use the "
 "|picture-o| **Insert** menu in the toolbar."
 msgstr ""
+"Чтобы вставить изображения из CryptDrive или загрузить новые, используйте "
+"команду |picture-o| **Вставить** меню панели инструментов."
 
 #: ../../user_guide/apps/code.rst:98
 msgid "See :ref:`remote_content` for more details."
-msgstr ""
+msgstr "См. :ref:`remote_content` для более подробной информации."
 
 #: ../../user_guide/apps/code.rst:101
 msgid "Lightbox"
-msgstr ""
+msgstr "Монтажный стол"
 
 #: ../../user_guide/apps/code.rst:103
 msgid ""
 "To browse through all images and diagrams in a document using the full "
 "width of the window:"
 msgstr ""
+"Чтобы просмотреть все изображения и диаграммы в документе, используя всю "
+"ширину окна:"
 
 #: ../../user_guide/apps/code.rst:105
 msgid "``Double click`` on an image or diagram in the Markdown preview."
 msgstr ""
+"``Двойной щелчок`` на изображении или диаграмме в предварительном просмотре "
+"Markdown."
 
 #: ../../user_guide/apps/code.rst:106
 msgid "Navigate with the arrow keys."
-msgstr ""
+msgstr "Перемещайтесь с помощью клавиш со стрелками."
 
 #: ../../user_guide/apps/code.rst:107
 msgid "Close the light box with |times| or ``Esc``."
-msgstr ""
-
+msgstr "Закройте монтажный стол с помощью |times| или ``Esc``."
