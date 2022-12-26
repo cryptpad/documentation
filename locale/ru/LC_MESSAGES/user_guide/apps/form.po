@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-12 13:59+0000\n"
-"PO-Revision-Date: 2022-12-26 00:37+0000\n"
+"PO-Revision-Date: 2022-12-27 01:41+0000\n"
 "Last-Translator: serbul (ifreedomlab.net) <serbul4trsh@gmail.com>\n"
 "Language-Team: Russian <http://weblate.cryptpad.fr/projects/user-guide/"
 "application-form/ru/>\n"
@@ -23,15 +23,15 @@ msgstr ""
 
 #: ../../user_guide/apps/form.rst:4
 msgid "Form"
-msgstr ""
+msgstr "Формы"
 
 #: ../../user_guide/apps/form.rst:-1
 msgid "preview of the Form application"
-msgstr ""
+msgstr "предварительный просмотр приложения Формы"
 
 #: ../../user_guide/apps/form.rst:11
 msgid "Roles"
-msgstr ""
+msgstr "Роли"
 
 #: ../../user_guide/apps/form.rst:13
 msgid ""
@@ -43,22 +43,35 @@ msgid ""
 ":ref:`share_access_rights` when sharing a form are different from the "
 "other applications. Forms have 3 different roles:"
 msgstr ""
+"В Формах используются те же функции совместной работы и конфиденциальности, "
+"что и в других приложениях CryptPad. При этом в них есть свои особенности в "
+"плане использования: например, кто-то, отвечая на форму, должен иметь "
+"возможность редактировать свои собственные ответы, но не ответы других "
+"пользователей или саму форму. По этой причине :ref:`share_access_rights` при "
+"совместном использовании формы отличаются от других приложений. Формы имеют "
+"3 разные роли:"
 
 #: ../../user_guide/apps/form.rst:15
 msgid "**Author**: can edit questions and :ref:`form settings <form_settings>`."
 msgstr ""
+"** Автор **: может редактировать вопросы и :ref:`настройки формы "
+"<form_settings>`."
 
 #: ../../user_guide/apps/form.rst:16
 msgid ""
 "**Auditor**: can view responses to the form whether or not they are "
 "public."
 msgstr ""
+"**Аудитор**: может просматривать ответы на форму независимо от того, "
+"являются ли они общедоступными."
 
 #: ../../user_guide/apps/form.rst:17
 msgid ""
 "**Participant**: can answer the form and only view responses once they "
 "are made public by an author."
 msgstr ""
+"**Участник**: может отвечать на форму и просматривать ответы только после их "
+"публикации автором."
 
 #: ../../user_guide/apps/form.rst:19
 msgid ""
@@ -66,12 +79,17 @@ msgid ""
 "participants, select the role in the |share-alt| **Share** menu before "
 "selecting contacts or copying the link."
 msgstr ""
+"Чтобы поделиться формой с определенной ролью, например, чтобы отправить её "
+"участникам, выберите роль в |share-alt| **Поделиться** перед выбором "
+"контактов или копированием ссылки."
 
 #: ../../user_guide/apps/form.rst:-1
 msgid ""
 "the share menu in the form application, showing the three roles: "
 "participant, auditor, and author."
 msgstr ""
+"меню общего доступа в форме приложения, показывающее три роли: участник, "
+"аудитор и автор."
 
 #: ../../user_guide/apps/form.rst:27
 msgid ""
@@ -80,34 +98,42 @@ msgid ""
 " is to avoid giving the impression that someone is watching while they "
 "answer."
 msgstr ""
+"Список пользователей, чат и оповещения о пользователях, присоединяющихся к "
+"сеансу совместной работы, отключаются, когда участник отвечает на форму. Это "
+"делается для того, чтобы не создавалось впечатление, что кто-то наблюдает, "
+"пока он отвечает."
 
 #: ../../user_guide/apps/form.rst:30
 msgid "Editing a form"
-msgstr ""
+msgstr "Редактирование формы"
 
 #: ../../user_guide/apps/form.rst:32
 msgid ""
 "To add a question, use the |plus| **Add** menu after the last question, "
 "or the |plus| between each question."
 msgstr ""
+"Чтобы добавить вопрос, используйте меню |plus| **Добавить** после последнего "
+"вопроса или |plus| между каждыми двумя вопросами."
 
 #: ../../user_guide/apps/form.rst:34
 msgid ""
 "To delete a question use the |trash-o| **Delete** button on the question "
 "to remove."
 msgstr ""
+"Чтобы удалить вопрос, используйте кнопку |trash-o| **Удалить** на вопросе, "
+"который нужно удалить."
 
 #: ../../user_guide/apps/form.rst:37
 msgid "Utilities"
-msgstr ""
+msgstr "Элементы"
 
 #: ../../user_guide/apps/form.rst:40
 msgid "|cptools form-paragraph| Description"
-msgstr ""
+msgstr "|cptools form-paragraph| Описание"
 
 #: ../../user_guide/apps/form.rst:42
 msgid "Add text to the form using Markdown syntax."
-msgstr ""
+msgstr "Добавьте текст в форму, используя синтаксис Markdown."
 
 #: ../../user_guide/apps/form.rst:44
 msgid ":badge_user:`Logged in users`"
@@ -118,18 +144,20 @@ msgid ""
 "To add an image from the CryptDrive or upload a new one, use the "
 "|picture-o| icon in the toolbar."
 msgstr ""
+"Чтобы добавить изображение из CryptDrive или загрузить новое, используйте "
+"значок |picture-o| на панели инструментов."
 
 #: ../../user_guide/apps/form.rst:49
 msgid "|cptools form-page-break| Page Break"
-msgstr ""
+msgstr "|cptools form-page-break| Разрыв страницы"
 
 #: ../../user_guide/apps/form.rst:51
 msgid "Split the form into pages. Only displayed to participants."
-msgstr ""
+msgstr "Разделите форму на страницы. Отображается только для участников."
 
 #: ../../user_guide/apps/form.rst:54
 msgid "|cptools form-conditional| Conditional Section"
-msgstr ""
+msgstr "|cptools form-conditional| Вариативная часть"
 
 #: ../../user_guide/apps/form.rst:56
 msgid ""
@@ -137,6 +165,9 @@ msgid ""
 "**Checkbox** questions can be used to display or hide a section of "
 "questions."
 msgstr ""
+"|cptools form-list-radio| **Выбор** and |cptools form-list-check| **Флажок** "
+"можно использовать для отображения или скрытия дополнительного раздела с "
+"вопросами."
 
 #: ../../user_guide/apps/form.rst:58
 msgid ""
@@ -144,6 +175,9 @@ msgid ""
 "the list at the bottom of the form, to add a |cptools form-conditional| "
 "**Conditional Section**."
 msgstr ""
+"В редакторе форм чтобы добавить |cptools form-conditional| **Вариативную "
+"часть** - используйте кнопки |plus| **Добавить**между вопросами или список в "
+"нижней части формы."
 
 #: ../../user_guide/apps/form.rst:59
 msgid ""
@@ -152,47 +186,57 @@ msgid ""
 "not). Only questions placed *before* the section will be available to use"
 " in the conditions."
 msgstr ""
+"Убедитесь, что перед разделом стоит хотя бы один :ref:`form_Q_choice` или "
+":ref:`form_Q_checkbox` (в противном случае появится подсказка). Только "
+"вопросы, размещенные *перед* разделом, будут доступны для использования в "
+"условиях."
 
 #: ../../user_guide/apps/form.rst:60
 msgid ""
 "Add some content (description text, questions) to the section using the "
 "|plus| **Add** button or by dragging questions into the section area."
 msgstr ""
+"Добавьте содержимое (текст описания, вопросы) в раздел, используя |plus| "
+"**Добавить** или перетащив вопросы в область раздела."
 
 #: ../../user_guide/apps/form.rst:61
 msgid ""
 "Set some conditions using the selection menus. AND conditions must all be"
 " true together, only of the OR conditions needs to be true."
 msgstr ""
+"Установите некоторые условия, используя меню выбора. Все условия И должны "
+"быть истинными вместе, только одно из условий ИЛИ должно быть истинным."
 
 #: ../../user_guide/apps/form.rst:62
 msgid ""
 "In the participant view, the section will only be displayed if the "
 "conditions are true."
 msgstr ""
+"В отображении для участника опроса раздел будет отображаться только в том "
+"случае, если условия верны."
 
 #: ../../user_guide/apps/form.rst:65
 msgid "Question types"
-msgstr ""
+msgstr "Типы вопросов"
 
 #: ../../user_guide/apps/form.rst:68
 msgid "|cptools form-text| Text"
-msgstr ""
+msgstr "|cptools form-text| Текст"
 
 #: ../../user_guide/apps/form.rst:70
 msgid "Response: one line of text"
-msgstr ""
+msgstr "Ответ: одна строка текста"
 
 #: ../../user_guide/apps/form.rst:72 ../../user_guide/apps/form.rst:85
 #: ../../user_guide/apps/form.rst:96 ../../user_guide/apps/form.rst:107
 #: ../../user_guide/apps/form.rst:120 ../../user_guide/apps/form.rst:132
 #: ../../user_guide/apps/form.rst:144
 msgid "Options:"
-msgstr ""
+msgstr "Варианты:"
 
 #: ../../user_guide/apps/form.rst:74
 msgid "Text type: text, number, link or email"
-msgstr ""
+msgstr "Текстовый тип: текст, число, ссылка или электронная почта"
 
 #: ../../user_guide/apps/form.rst:78
 msgid ""
@@ -200,181 +244,199 @@ msgid ""
 "error is shown to the user if their response does not fit the required "
 "format."
 msgstr ""
+"В случае ссылки и электронной почты вопрос выделяется красным цветом и "
+"пользователю отображается сообщение об ошибке, если его ответ не "
+"соответствует требуемому формату."
 
 #: ../../user_guide/apps/form.rst:81
 msgid "|cptools form-paragraph| Paragraph"
-msgstr ""
+msgstr "|cptools form-paragraph| Абзац"
 
 #: ../../user_guide/apps/form.rst:83
 msgid "Response: multiple lines of text"
-msgstr ""
+msgstr "Ответ: несколько строк текста"
 
 #: ../../user_guide/apps/form.rst:87
 msgid "Maximum characters: limit (defaults to 1000)"
-msgstr ""
+msgstr "Максимальное количество символов: ограничено (по умолчанию 1000)"
 
 #: ../../user_guide/apps/form.rst:92
 msgid "|cptools form-list-radio| Choice"
-msgstr ""
+msgstr "|cptools form-list-radio| Выбор"
 
 #: ../../user_guide/apps/form.rst:94
 msgid "Response: one choice from the list"
-msgstr ""
+msgstr "Ответ: один вариант из списка"
 
 #: ../../user_guide/apps/form.rst:98 ../../user_guide/apps/form.rst:123
 #: ../../user_guide/apps/form.rst:146 ../../user_guide/apps/form.rst:159
 msgid "|plus| **Add option** button"
-msgstr ""
+msgstr "кнопка |plus| **Добавить вариант**"
 
 #: ../../user_guide/apps/form.rst:99 ../../user_guide/apps/form.rst:124
 #: ../../user_guide/apps/form.rst:147 ../../user_guide/apps/form.rst:160
 msgid "Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order options"
 msgstr ""
+"Возьмите рукоятку |ellipsis-v| |ellipsis-v| и перетащите её, чтобы изменить "
+"порядок вариантов"
 
 #: ../../user_guide/apps/form.rst:100 ../../user_guide/apps/form.rst:125
 #: ../../user_guide/apps/form.rst:148 ../../user_guide/apps/form.rst:161
 msgid "Delete an option with |times|"
-msgstr ""
+msgstr "Удалить вариант с помощью |times|"
 
 #: ../../user_guide/apps/form.rst:103
 msgid "|cptools form-grid-radio| Choice Grid"
-msgstr ""
+msgstr "|cptools form-grid-radio| Таблица вариантов"
 
 #: ../../user_guide/apps/form.rst:105
 msgid "Response: one option choice per item"
-msgstr ""
+msgstr "Ответ: один вариант выбора для каждого элемента"
 
 #: ../../user_guide/apps/form.rst:109 ../../user_guide/apps/form.rst:135
 msgid "|plus| **Add option** and |plus| **Add item** buttons"
-msgstr ""
+msgstr "кнопки |plus| **Добавить вариант** и |plus| **Добавить элемент **"
 
 #: ../../user_guide/apps/form.rst:110 ../../user_guide/apps/form.rst:136
 msgid ""
 "Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order items and "
 "options"
 msgstr ""
+"Возьмите рукоятку |ellipsis-v| |ellipsis-v| и перетащите, чтобы изменить "
+"порядок элементов и вариантов"
 
 #: ../../user_guide/apps/form.rst:111 ../../user_guide/apps/form.rst:137
 msgid "Delete an item or option with |times|"
-msgstr ""
+msgstr "Удалить элемент или вариант с помощью |times|"
 
 #: ../../user_guide/apps/form.rst:116
 msgid "|cptools form-list-check| Checkbox"
-msgstr ""
+msgstr "|cptools form-list-check| Флажок"
 
 #: ../../user_guide/apps/form.rst:118
 msgid "Response: multiple choices from the list"
-msgstr ""
+msgstr "Ответ: несколько вариантов из списка"
 
 #: ../../user_guide/apps/form.rst:122
 msgid "Maximum selectable options"
-msgstr ""
+msgstr "Максимальное количество выбираемых вариантов"
 
 #: ../../user_guide/apps/form.rst:128
 msgid "|cptools form-grid-check| Checkbox Grid"
-msgstr ""
+msgstr "|cptools form-grid-check| Таблица флажков"
 
 #: ../../user_guide/apps/form.rst:130
 msgid "Response: multiple choices for each item"
-msgstr ""
+msgstr "Ответ: несколько вариантов для каждого элемента"
 
 #: ../../user_guide/apps/form.rst:134
 msgid "Maximum selectable options (per item)"
-msgstr ""
+msgstr "Максимальное количество выбираемых вариантов (для каждого элемента)"
 
 #: ../../user_guide/apps/form.rst:140
 msgid "|cptools form-list-ordered| Ordered List"
-msgstr ""
+msgstr "|cptools form-list-ordered| Нумерованный список"
 
 #: ../../user_guide/apps/form.rst:142
 msgid "Response: order of preference for the listed options"
-msgstr ""
+msgstr "Ответ: порядок предпочтения перечисленных вариантов"
 
 #: ../../user_guide/apps/form.rst:151
 msgid "|cptools form-poll| Poll"
-msgstr ""
+msgstr "|cptools form-poll| Опрос"
 
 #: ../../user_guide/apps/form.rst:153
 msgid ""
 "Response: |check| Yes, |times| No, or |cptools form-poll-maybe| "
 "Acceptable for each of the proposed options"
 msgstr ""
+"Ответ: |check| Да, |times| Нет, или |cptools form-poll-maybe| Возможно - для "
+"каждого из предложенных вариантов"
 
 #: ../../user_guide/apps/form.rst:155
 msgid "Option types:"
-msgstr ""
+msgstr "Типы вариантов:"
 
 #: ../../user_guide/apps/form.rst:157
 msgid "Text"
-msgstr ""
+msgstr "Текст"
 
 #: ../../user_guide/apps/form.rst:163
 msgid "Day"
-msgstr ""
+msgstr "День"
 
 #: ../../user_guide/apps/form.rst:165
 msgid "Select the date choices by clicking on them in the calendar"
-msgstr ""
+msgstr "Выберите варианты дат, щелкнув их в календаре"
 
 #: ../../user_guide/apps/form.rst:167
 msgid "Time"
-msgstr ""
+msgstr "Время"
 
 #: ../../user_guide/apps/form.rst:169
 msgid "Click on an option to select the date and time in the calendar"
-msgstr ""
+msgstr "Нажмите на вариант, чтобы выбрать дату и время в календаре"
 
 #: ../../user_guide/apps/form.rst:170
 msgid ""
 "Click \"Add multiple dates and times\" to select multiple options and use"
 " |plus| **Add all** to add all of the selected options at once."
 msgstr ""
+"Нажмите «Добавить несколько дат и времени», чтобы выбрать несколько "
+"вариантов и используйте |plus| **Добавить все**, чтобы добавить сразу все "
+"выбранные варианты."
 
 #: ../../user_guide/apps/form.rst:175
 msgid "Form Settings"
-msgstr ""
+msgstr "Настройки формы"
 
 #: ../../user_guide/apps/form.rst:177
 msgid "Use the 3 buttons at the top for easy access to:"
-msgstr ""
+msgstr "Используйте 3 кнопки вверху для быстрого доступа к:"
 
 #: ../../user_guide/apps/form.rst:179
 msgid "|bar-chart| **Responses** (count): toggles the response page"
-msgstr ""
+msgstr "|bar-chart| **Ответы** (количество): переключает на страницу ответов"
 
 #: ../../user_guide/apps/form.rst:180
 msgid "|eye| **Preview form**: Opens the participant link"
-msgstr ""
+msgstr "|eye| **Предварительный просмотр формы**: открывает ссылку участника"
 
 #: ../../user_guide/apps/form.rst:181
 msgid "|link| **Copy link**: Copies the participant link"
-msgstr ""
+msgstr "|link| **Копировать ссылку**: копирует ссылку участника"
 
 #: ../../user_guide/apps/form.rst:184
 msgid ""
 "To share an **author** link to the form (with edit rights), use the "
 ":ref:`share` menu in the toolbar."
 msgstr ""
+"Чтобы поделиться ссылкой **автора** на форму (с правами на редактирование), "
+"используйте меню :ref:`share` на панели инструментов."
 
 #: ../../user_guide/apps/form.rst:187
 msgid "Closing date"
-msgstr ""
+msgstr "Дата окончания"
 
 #: ../../user_guide/apps/form.rst:189
 msgid "Date after which the form will be closed to new responses"
-msgstr ""
+msgstr "Дата, после которой форма будет закрыта для новых ответов"
 
 #: ../../user_guide/apps/form.rst:191
 msgid "Use the **Set closing date** button to select a date from the calendar"
 msgstr ""
+"Используйте кнопку **Установить дату закрытия**, чтобы выбрать дату в "
+"календаре"
 
 #: ../../user_guide/apps/form.rst:192
 msgid "If a closing date is set, use **Remove closing date** to remove it."
 msgstr ""
+"Если установлена дата закрытия, используйте **Удалить дату закрытия**, чтобы "
+"удалить ее."
 
 #: ../../user_guide/apps/form.rst:195
 msgid "Anonymize responses"
-msgstr ""
+msgstr "Анонимизировать ответы"
 
 #: ../../user_guide/apps/form.rst:197
 msgid ""
@@ -382,26 +444,33 @@ msgid ""
 "a CryptPad account. If un-checked, participants who are logged-in can "
 "still opt to answer anonymously if guest access is allowed (see below)."
 msgstr ""
+"Все ответы анонимны, независимо от того, вошли ли они в учетную запись "
+"CryptPad. Если этот флажок не установлен, участники, вошедшие в систему, по-"
+"прежнему могут отвечать анонимно, если разрешен гостевой доступ (см. ниже)."
 
 #: ../../user_guide/apps/form.rst:200
 msgid "Guest Access"
-msgstr ""
+msgstr "Гостевой доступ"
 
 #: ../../user_guide/apps/form.rst:202
 msgid ""
 "Blocked: only users who are logged in to their CryptPad account can "
 "respond to the form."
 msgstr ""
+"Заблокировано: только пользователи, вошедшие в свою учетную запись CryptPad, "
+"могут отвечать на форму."
 
 #: ../../user_guide/apps/form.rst:203
 msgid ""
 "Allowed: unregistered users can respond, logged in users can choose to "
 "respond anonymously."
 msgstr ""
+"Разрешено: незарегистрированные пользователи могут отвечать, вошедшие "
+"пользователи могут отвечать анонимно."
 
 #: ../../user_guide/apps/form.rst:206
 msgid "Editing after submission"
-msgstr ""
+msgstr "Редактирование после отправки"
 
 #: ../../user_guide/apps/form.rst:210
 msgid ":badge_new:`New in version 5.2`"
@@ -412,18 +481,24 @@ msgid ""
 "One time only: participants can answer the form only one time and can't "
 "modify or delete their responses after submitting them."
 msgstr ""
+"Только один раз: участники могут ответить на форму только один раз и не "
+"могут изменить или удалить свои ответы после их отправки."
 
 #: ../../user_guide/apps/form.rst:213
 msgid ""
 "One time and edit/delete: participants can answer the form only one time "
 "but are allowed modify or delete their responses after submitting them."
 msgstr ""
+"Один раз и отредактировать/удалить: участники могут ответить на форму только "
+"один раз, но им разрешено изменять или удалять свои ответы после их отправки."
 
 #: ../../user_guide/apps/form.rst:214
 msgid ""
 "Multiple times: participants can answer the form multiple times but can't"
 " modify or delete their responses after submitting them."
 msgstr ""
+"Многократно: участники могут отвечать на форму несколько раз, но не могут "
+"изменять или удалять свои ответы после их отправки."
 
 #: ../../user_guide/apps/form.rst:215
 msgid ""
@@ -431,6 +506,8 @@ msgid ""
 " times and are allowed to modify or delete their responses after "
 "submitting them."
 msgstr ""
+"Многократно и редактировать/удалять: участники могут отвечать на форму "
+"несколько раз и могут изменять или удалять свои ответы после их отправки."
 
 #: ../../user_guide/apps/form.rst:218
 msgid ""
@@ -438,60 +515,74 @@ msgid ""
 " answer multiple times a \"One time only\" form if they open it on a web "
 "browser private window, or wipe the browser cookies, etc."
 msgstr ""
+"Обратите внимание, что если гостевой доступ разрешен, незарегистрированные "
+"пользователи могут по-прежнему отвечать несколько раз на форму «Только один "
+"раз», если они откроют ее в приватном окне веб-браузера или очистят файлы "
+"cookie браузера и т. д."
 
 #: ../../user_guide/apps/form.rst:221
 msgid "Publish Responses"
-msgstr ""
+msgstr "Опубликовать ответы"
 
 #: ../../user_guide/apps/form.rst:223
 msgid ""
 "Allows participants who submit the form to view responses. Once enabled, "
 "this setting publishes all past and future responses."
 msgstr ""
+"Позволяет участникам, отправившим ответы в форму, просматривать ответы. "
+"После включения этот параметр публикует все прошлые и будущие ответы."
 
 #: ../../user_guide/apps/form.rst:227
 msgid "Once responses are made public they cannot be made private again."
 msgstr ""
+"После того как ответы станут общедоступными, их нельзя снова сделать "
+"приватными."
 
 #: ../../user_guide/apps/form.rst:230
 msgid "Submit message"
-msgstr ""
+msgstr "Финальное сообщение"
 
 #: ../../user_guide/apps/form.rst:232
 msgid "Add a custom message to be displayed after participants submit the form."
 msgstr ""
+"Добавьте особое сообщение, которое будет отображаться после того, как "
+"участники отправят форму."
 
 #: ../../user_guide/apps/form.rst:235
 msgid "Color theme"
-msgstr ""
+msgstr "Цветовая тема"
 
 #: ../../user_guide/apps/form.rst:237
 msgid "Choose the background and highlight color for the form."
-msgstr ""
+msgstr "Выберите фон и цвет выделения для формы."
 
 #: ../../user_guide/apps/form.rst:240
 msgid "Responses"
-msgstr ""
+msgstr "Ответы"
 
 #: ../../user_guide/apps/form.rst:242
 msgid ""
 "Notifications for new responses are sent to the form _owner_ through the "
 "integrated notifications."
 msgstr ""
+"Уведомления о новых ответах отправляются _владельцу_ формы через встроенные "
+"уведомления."
 
 #: ../../user_guide/apps/form.rst:245
 msgid "Advanced use-cases"
-msgstr ""
+msgstr "Расширенные варианты использования"
 
 #: ../../user_guide/apps/form.rst:248
 msgid "Anonymous responses with access list"
-msgstr ""
+msgstr "Анонимные ответы со списком доступа"
 
 #: ../../user_guide/apps/form.rst:250
 msgid ""
 "To conduct an anonymous survey with a known group of users, the anonymous"
 " answers feature can be combined with an :ref:`access_list`."
 msgstr ""
+"Чтобы провести анонимный опрос известной группы пользователей, функцию "
+"анонимных ответов можно объединить с :ref:`access_list`."
 
 #: ../../user_guide/apps/form.rst:252
 msgid ""
@@ -499,6 +590,9 @@ msgid ""
 "is on the access list (either directly or through a :ref:`team <teams>` "
 "they are part of)."
 msgstr ""
+"Чтобы получить доступ к форме, участники должны войти в учетную запись, "
+"которая находится в списке доступа (либо напрямую, либо через :ref:`команду "
+"<teams>`, в которую они входят)."
 
 #: ../../user_guide/apps/form.rst:254
 msgid ""
@@ -506,6 +600,9 @@ msgid ""
 "answer anonymously while the access list ensures they are coming from a "
 "specific group of users."
 msgstr ""
+"Если в форме разрешены анонимные ответы, участники могут отвечать анонимно, "
+"а список доступа гарантирует, что они принадлежат определенной группе "
+"пользователей."
 
 #: ../../user_guide/apps/form.rst:257
 msgid "Import/Export"
@@ -516,3 +613,5 @@ msgid ""
 "To export responses as a CSV file use the |download| **Export to CSV** "
 "button on the |bar-chart| **Responses** page."
 msgstr ""
+"Чтобы экспортировать ответы в виде CSV-файла, используйте кнопку |download| "
+"**Экспорт в CSV** на странице |bar-chart| **Ответы**."
