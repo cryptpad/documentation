@@ -15,6 +15,7 @@ The simplest way to help CryptPad is to make the project known. As an Open Sourc
 - Following and relaying our own communications from our `blog <https://blog.cryptpad.org>`__ or `Mastodon account <https://fosstodon.org/@cryptpad>`__.
 - Relaying the `CryptPad Crowdfunding <https://opencollective.com/cryptpad>`__.
 - Presenting CryptPad in conferences or meetups, or inviting the team to present.
+- Update any public catalog
 
 For examples of past presentations please see the `CryptPad Peertube Channel <https://peertube.xwiki.com/video-channels/cryptpad_channel/videos>`_ with playlists of presentation in `English <https://peertube.xwiki.com/videos/watch/playlist/cfa5d7f1-48cd-4a6b-8594-7d766341e43c>`_ and `French <https://peertube.xwiki.com/videos/watch/playlist/f1d74811-e42f-4059-881f-f93ae47c437a>`_.
 
@@ -32,7 +33,7 @@ There are two ways to report bugs or issues:
 -  `Github issue tracker <https://github.com/xwiki-labs/cryptpad/issues/new/choose>`__ to file the issue publicly using the bug report template. (A Github account is needed to submit issues)
 
 Contribute to the documentation
----------------------------------
+-------------------------------
 
 If you have corrections, edits, or suggestions for this documentation, you can contribute and help improve the service for everyone. Please send your proposed changes to `the forum <https://forum.cryptpad.org/>`__ or use a `GitHub pull request <https://github.com/xwiki-labs/cryptpad-documentation>`__.
 
