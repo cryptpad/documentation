@@ -12,11 +12,11 @@ The simplest way to help CryptPad is to make the project known. As an Open Sourc
 
 - Using CryptPad and demonstrating it to friends and colleagues, highlighting why privacy is important.
 - Posting about CryptPad on social media.
-- Following and relaying our own communications from our `Blog <https://blog.cryptpad.org>`__ or `Mastodon <https://fosstodon.org/@cryptpad>`__.
+- Following and relaying our own communications from our `blog <https://blog.cryptpad.org>`__ or `Mastodon account <https://fosstodon.org/@cryptpad>`__.
 - Relaying the `CryptPad Crowdfunding <https://opencollective.com/cryptpad>`__.
 - Presenting CryptPad in conferences or meetups, or inviting the team to present.
 
-For examples of past presentations please see the `Cryptpad Peertube Channel <https://peertube.xwiki.com/video-channels/cryptpad_channel/videos>`_ with playlists of presentation in `English <https://peertube.xwiki.com/videos/watch/playlist/cfa5d7f1-48cd-4a6b-8594-7d766341e43c>`_ and `French <https://peertube.xwiki.com/videos/watch/playlist/f1d74811-e42f-4059-881f-f93ae47c437a>`_.
+For examples of past presentations please see the `CryptPad Peertube Channel <https://peertube.xwiki.com/video-channels/cryptpad_channel/videos>`_ with playlists of presentation in `English <https://peertube.xwiki.com/videos/watch/playlist/cfa5d7f1-48cd-4a6b-8594-7d766341e43c>`_ and `French <https://peertube.xwiki.com/videos/watch/playlist/f1d74811-e42f-4059-881f-f93ae47c437a>`_.
 
 .. _contribute_bugs:
 
