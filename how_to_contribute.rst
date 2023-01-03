@@ -12,7 +12,7 @@ The simplest way to help CryptPad is to make the project known. As an Open Sourc
 
 - Using CryptPad and demonstrating it to friends and colleagues, highlighting why privacy is important.
 - Posting about CryptPad on social media.
-- Following and relaying our own communications from our `Blog <https://blog.cryptpad.org>`__, from `Mastodon <https://fosstodon.org/@cryptpad>`__ or `Twitter <https://twitter.com/cryptpad>`__.
+- Following and relaying our own communications from our `Blog <https://blog.cryptpad.org>`__ or `Mastodon <https://fosstodon.org/@cryptpad>`__.
 - Relaying the `CryptPad Crowdfunding <https://opencollective.com/cryptpad>`__.
 - Presenting CryptPad in conferences or meetups, or inviting the team to present.
 
