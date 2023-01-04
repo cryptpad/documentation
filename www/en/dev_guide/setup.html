@@ -603,33 +603,33 @@
 <span id="dev-instance"></span><h1>Set up a development instance<a class="headerlink" href="#set-up-a-development-instance" title="Permalink to this heading">¶</a></h1>
 <section id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading">¶</a></h2>
-<p>Please make sure that the following tools are installed on your system before installing CryptPad:</p>
+<p class="linemarker linemarker-9">Please make sure that the following tools are installed on your system before installing CryptPad:</p>
 <ul class="simple">
-<li><p>GIT</p></li>
-<li><p>nodejs (we use node v16.14.2)</p>
+<li><p class="linemarker linemarker-11">GIT</p></li>
+<li><p class="linemarker linemarker-12">nodejs (we use node v16.14.2)</p>
 <ul>
-<li><p>Using <a class="reference external" href="https://github.com/nvm-sh/nvm#installing-and-updating">NVM</a> is recommended</p></li>
+<li><p class="linemarker linemarker-14">Using <a class="reference external" href="https://github.com/nvm-sh/nvm#installing-and-updating">NVM</a> is recommended</p></li>
 </ul>
 </li>
-<li><p>npm</p></li>
-<li><p>bower</p>
+<li><p class="linemarker linemarker-16">npm</p></li>
+<li><p class="linemarker linemarker-17">bower</p>
 <ul>
-<li><p>Installed with <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span> <span class="pre">-g</span> <span class="pre">bower</span></code></p></li>
+<li><p class="linemarker linemarker-19">Installed with <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span> <span class="pre">-g</span> <span class="pre">bower</span></code></p></li>
 </ul>
 </li>
 </ul>
 </section>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">¶</a></h2>
-<p>The source code can be found on <a class="reference external" href="https://github.com">GitHub</a>. You must have an account on this platform in order to contribute.</p>
+<p class="linemarker linemarker-24">The source code can be found on <a class="reference external" href="https://github.com">GitHub</a>. You must have an account on this platform in order to contribute.</p>
 <ul class="simple">
-<li><p>Fork the code: <a class="reference external" href="https://github.com/xwiki-labs/cryptpad.git">https://github.com/xwiki-labs/cryptpad.git</a></p></li>
-<li><p>Clone the fork on your system in the desired directory</p>
+<li><p class="linemarker linemarker-26">Fork the code: <a class="reference external" href="https://github.com/xwiki-labs/cryptpad.git">https://github.com/xwiki-labs/cryptpad.git</a></p></li>
+<li><p class="linemarker linemarker-27">Clone the fork on your system in the desired directory</p>
 <ul>
-<li><p><cite>git clone https://github.com/{YOUR_USER_NAME}/cryptpad.git</cite></p></li>
+<li><p class="linemarker linemarker-29"><cite>git clone https://github.com/{YOUR_USER_NAME}/cryptpad.git</cite></p></li>
 </ul>
 </li>
-<li><p>Install the server dependencies with npm  and client dependencies with bower:</p></li>
+<li><p class="linemarker linemarker-31">Install the server dependencies with npm  and client dependencies with bower:</p></li>
 </ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> cryptpad
 npm install
@@ -639,36 +639,36 @@ bower install
 </section>
 <section id="configuration">
 <h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
-<p>Once everything is installed, you can configure some values before starting the server.</p>
+<p class="linemarker linemarker-42">Once everything is installed, you can configure some values before starting the server.</p>
 <ul class="simple">
-<li><p>Make a copy of the default configuration:</p></li>
+<li><p class="linemarker linemarker-44">Make a copy of the default configuration:</p></li>
 </ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> <span class="nv">$cryptpath</span>/config
 cp config.example.js config.js
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>The <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/blob/main/config/config.example.js">example configuration file</a> lists the configurable values and how to use them.</p></li>
-<li><p>For a development instance, the important elements are:</p>
+<li><p class="linemarker linemarker-51">The <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/blob/main/config/config.example.js">example configuration file</a> lists the configurable values and how to use them.</p></li>
+<li><p class="linemarker linemarker-52">For a development instance, the important elements are:</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">httpUnsafeOrigin</span></code>: if you want to use the development server and the test client on different systems, you have to modify this value to use the network address of the server (example: '<a class="reference external" href="http://192.168.0.10:3000">http://192.168.0.10:3000</a>').</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">adminKeys</span></code>: if you want to have access to the administration panel in the CryptPad client, you need to create a user account on the instance and add its <em>Public Signature Key</em> here.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">supportMailboxPublicKey</span></code>: to have access to the support panel on the development instance, see <a class="reference internal" href="../admin_guide/installation.html#admin-support-mailbox"><span class="std std-ref">Configure support mailbox</span></a> in the administrator guide.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">defaultStorageLimit</span></code>: to increase the storage limit of the development instance (50MB by default).</p></li>
+<li><p class="linemarker linemarker-54"><code class="docutils literal notranslate"><span class="pre">httpUnsafeOrigin</span></code>: if you want to use the development server and the test client on different systems, you have to modify this value to use the network address of the server (example: '<a class="reference external" href="http://192.168.0.10:3000">http://192.168.0.10:3000</a>').</p></li>
+<li><p class="linemarker linemarker-55"><code class="docutils literal notranslate"><span class="pre">adminKeys</span></code>: if you want to have access to the administration panel in the CryptPad client, you need to create a user account on the instance and add its <em>Public Signature Key</em> here.</p></li>
+<li><p class="linemarker linemarker-56"><code class="docutils literal notranslate"><span class="pre">supportMailboxPublicKey</span></code>: to have access to the support panel on the development instance, see <a class="reference internal" href="../admin_guide/installation.html#admin-support-mailbox"><span class="std std-ref">Configure support mailbox</span></a> in the administrator guide.</p></li>
+<li><p class="linemarker linemarker-57"><code class="docutils literal notranslate"><span class="pre">defaultStorageLimit</span></code>: to increase the storage limit of the development instance (50MB by default).</p></li>
 </ul>
 </li>
 </ul>
 </section>
 <section id="caching">
 <h2>Caching<a class="headerlink" href="#caching" title="Permalink to this heading">¶</a></h2>
-<p>CryptPad uses a &quot;cache busting&quot; system to manage versions of the JavaScript code and the compiled CSS code.
+<p class="linemarker linemarker-62">CryptPad uses a &quot;cache busting&quot; system to manage versions of the JavaScript code and the compiled CSS code.
 This means that, for a normal launch of the server, all the code will be cached on first use and the modifications made thereafter to the sources won't be applied in your browser. To avoid this problem, the server must be launched in <em>development</em> mode.</p>
-<p>It is important to note that no &quot;build&quot; or &quot;compilation&quot; step is necessary when developing code for CryptPad. The JavaScript files are loaded &quot;raw&quot; in the browser and the &quot;LESS&quot; code is compiled by the clients' browser directly. To test a modification, just write the code and reload the page on CryptPad.</p>
+<p class="linemarker linemarker-65">It is important to note that no &quot;build&quot; or &quot;compilation&quot; step is necessary when developing code for CryptPad. The JavaScript files are loaded &quot;raw&quot; in the browser and the &quot;LESS&quot; code is compiled by the clients' browser directly. To test a modification, just write the code and reload the page on CryptPad.</p>
 </section>
 <section id="launching-in-development-mode">
 <h2>Launching in development mode<a class="headerlink" href="#launching-in-development-mode" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">run</span> <span class="pre">dev</span></code></p></li>
+<li><p class="linemarker linemarker-70"><code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">run</span> <span class="pre">dev</span></code></p></li>
 </ul>
 </section>
 </section>
