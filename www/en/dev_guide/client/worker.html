@@ -607,77 +607,77 @@
 <h1>Worker<a class="headerlink" href="#worker" title="Permalink to this heading">¶</a></h1>
 <section id="async-store-js">
 <h2>async-store.js<a class="headerlink" href="#async-store-js" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-7">Async-store contains all the functions representing the commands sent by &quot;outer&quot;. Its role is to manage the connection to the user account, load the sub-structures linked to this account (shared folders, profile, teams) and load all the modules that extend its use. It creates two main objects, named <code class="docutils literal notranslate"><span class="pre">store</span></code> and <code class="docutils literal notranslate"><span class="pre">Store</span></code>. The first one represents the memory of the worker and stores everything that has been loaded, the second one represents its &quot;muscles&quot; and contains all the functions that can be executed by the commands of &quot;outer&quot;. Many modules are loaded to perform specific tasks and are accessible via <code class="docutils literal notranslate"><span class="pre">store</span></code>.</p>
+<p>Async-store contains all the functions representing the commands sent by &quot;outer&quot;. Its role is to manage the connection to the user account, load the sub-structures linked to this account (shared folders, profile, teams) and load all the modules that extend its use. It creates two main objects, named <code class="docutils literal notranslate"><span class="pre">store</span></code> and <code class="docutils literal notranslate"><span class="pre">Store</span></code>. The first one represents the memory of the worker and stores everything that has been loaded, the second one represents its &quot;muscles&quot; and contains all the functions that can be executed by the commands of &quot;outer&quot;. Many modules are loaded to perform specific tasks and are accessible via <code class="docutils literal notranslate"><span class="pre">store</span></code>.</p>
 </section>
 <section id="store-commands">
 <h2>“Store” commands<a class="headerlink" href="#store-commands" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-12">Commands that can be executed by async-store include:</p>
+<p>Commands that can be executed by async-store include:</p>
 <ul class="simple">
-<li><p class="linemarker linemarker-14">Initialization</p></li>
+<li><p>Initialization</p></li>
 </ul>
 <blockquote>
 <div><ul class="simple">
-<li><p class="linemarker linemarker-16">Loading user account (via listmap), shared folders and teams</p></li>
-<li><p class="linemarker linemarker-17">Loading of the different modules in the worker</p></li>
-<li><p class="linemarker linemarker-18">Initiating an authenticated session with the server (for registered users)</p></li>
+<li><p>Loading user account (via listmap), shared folders and teams</p></li>
+<li><p>Loading of the different modules in the worker</p></li>
+<li><p>Initiating an authenticated session with the server (for registered users)</p></li>
 </ul>
 </div></blockquote>
 <ul class="simple">
-<li><p class="linemarker linemarker-20">Authenticated server requests</p></li>
+<li><p>Authenticated server requests</p></li>
 </ul>
 <blockquote>
 <div><ul class="simple">
-<li><p class="linemarker linemarker-22">Modify your &quot;pin log&quot;, change a password, destroy an owned document, recover the remaining storage space for the account, execute administrator commands, etc.</p></li>
-<li><p class="linemarker linemarker-23">Upload a static file to the user drive</p></li>
-<li><p class="linemarker linemarker-24">The identity of the author is proved to the server with the signature key of the registered user</p></li>
+<li><p>Modify your &quot;pin log&quot;, change a password, destroy an owned document, recover the remaining storage space for the account, execute administrator commands, etc.</p></li>
+<li><p>Upload a static file to the user drive</p></li>
+<li><p>The identity of the author is proved to the server with the signature key of the registered user</p></li>
 </ul>
 </div></blockquote>
 <ul class="simple">
-<li><p class="linemarker linemarker-26">Unauthenticated server requests</p></li>
+<li><p>Unauthenticated server requests</p></li>
 </ul>
 <blockquote>
 <div><ul class="simple">
-<li><p class="linemarker linemarker-28">Retrieve the total size of a document in the database (with its history)</p></li>
-<li><p class="linemarker linemarker-29">Retrieve the metadata of a document (list of owners, access list, expiration date, etc.)</p></li>
+<li><p>Retrieve the total size of a document in the database (with its history)</p></li>
+<li><p>Retrieve the metadata of a document (list of owners, access list, expiration date, etc.)</p></li>
 </ul>
 </div></blockquote>
 <ul class="simple">
-<li><p class="linemarker linemarker-31">Actions on the user account</p></li>
+<li><p>Actions on the user account</p></li>
 </ul>
 <blockquote>
 <div><ul class="simple">
-<li><p class="linemarker linemarker-33">Storing or retrieving Settings</p></li>
-<li><p class="linemarker linemarker-34">Commands to be performed in the drive</p></li>
-<li><p class="linemarker linemarker-35">Shared folder management</p></li>
-<li><p class="linemarker linemarker-36">Contacts management (add or delete contacts)</p></li>
+<li><p>Storing or retrieving Settings</p></li>
+<li><p>Commands to be performed in the drive</p></li>
+<li><p>Shared folder management</p></li>
+<li><p>Contacts management (add or delete contacts)</p></li>
 </ul>
 </div></blockquote>
 <ul class="simple">
-<li><p class="linemarker linemarker-38">Actions on the different modules</p></li>
+<li><p>Actions on the different modules</p></li>
 </ul>
 <blockquote>
 <div><ul class="simple">
-<li><p class="linemarker linemarker-40">Each module can receive its own commands, but these first pass through &quot;async-store&quot; which will redistribute it to the concerned modules</p></li>
+<li><p>Each module can receive its own commands, but these first pass through &quot;async-store&quot; which will redistribute it to the concerned modules</p></li>
 </ul>
 </div></blockquote>
 <ul class="simple">
-<li><p class="linemarker linemarker-42">Collaborative documents</p></li>
+<li><p>Collaborative documents</p></li>
 </ul>
 <blockquote>
 <div><ul class="simple">
-<li><p class="linemarker linemarker-44">Join a collaborative document</p></li>
+<li><p>Join a collaborative document</p></li>
 </ul>
 <blockquote>
 <div><ul class="simple">
-<li><p class="linemarker linemarker-46">Chainpad-netflux initialization</p></li>
-<li><p class="linemarker linemarker-47">Send messages to this document's channel</p></li>
-<li><p class="linemarker linemarker-48">Listen to events on this document's channel</p></li>
+<li><p>Chainpad-netflux initialization</p></li>
+<li><p>Send messages to this document's channel</p></li>
+<li><p>Listen to events on this document's channel</p></li>
 </ul>
 </div></blockquote>
 <ul class="simple">
-<li><p class="linemarker linemarker-50">Obtain a part of the document history</p></li>
-<li><p class="linemarker linemarker-51">Change the password of a document</p></li>
-<li><p class="linemarker linemarker-52">Manage document metadata (access list or owners)</p></li>
+<li><p>Obtain a part of the document history</p></li>
+<li><p>Change the password of a document</p></li>
+<li><p>Manage document metadata (access list or owners)</p></li>
 </ul>
 </div></blockquote>
 </section>
