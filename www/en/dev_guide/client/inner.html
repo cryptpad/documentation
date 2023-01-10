@@ -606,64 +606,64 @@
             
   <section id="inner">
 <h1>Inner<a class="headerlink" href="#inner" title="Permalink to this heading">¶</a></h1>
-<p>The inner level corresponds to the entire visible interface of CryptPad. It represents an iframe that is completely isolated from the content of the user's account. Each CryptPad application has its own interface, but many elements are common to all applications, with functionality remaining the same in the majority of cases. Only the way the data is displayed changes completely.</p>
+<p class="linemarker linemarker-4">The inner level corresponds to the entire visible interface of CryptPad. It represents an iframe that is completely isolated from the content of the user's account. Each CryptPad application has its own interface, but many elements are common to all applications, with functionality remaining the same in the majority of cases. Only the way the data is displayed changes completely.</p>
 <section id="workflow">
 <h2>Workflow<a class="headerlink" href="#workflow" title="Permalink to this heading">¶</a></h2>
-<p>The JavaScript starting point of the &quot;inner&quot; level corresponds to the <code class="docutils literal notranslate"><span class="pre">inner.js</span></code> file of each application. This file loads all the necessary elements for the iframe to work and manages the data representation in the selected application. Whether the application uses the &quot;framework&quot; system or not, the overall operation remains the same: the sframe-common module loads the communication system with &quot;outer&quot; and initializes different elements.</p>
+<p class="linemarker linemarker-9">The JavaScript starting point of the &quot;inner&quot; level corresponds to the <code class="docutils literal notranslate"><span class="pre">inner.js</span></code> file of each application. This file loads all the necessary elements for the iframe to work and manages the data representation in the selected application. Whether the application uses the &quot;framework&quot; system or not, the overall operation remains the same: the sframe-common module loads the communication system with &quot;outer&quot; and initializes different elements.</p>
 </section>
 <section id="metadata-manager">
 <h2>metadata-manager<a class="headerlink" href="#metadata-manager" title="Permalink to this heading">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">www/common/metadata-manager.js</span></code></p>
-<p>This module allows the levels outside the iframe (worker and outer) to provide data to the iframe. These data are divided into 2 categories: &quot;user&quot; data contain every public elements concerning the current user account and &quot;priv&quot; data contain elements that are private or that are not sent to other users.</p>
-<p>This module also uses data coming from the &quot;inner&quot; level, and in particular from the current collaborative document (when applicable). It can thus provide 3 types of content to any &quot;inner&quot; module requesting it:</p>
+<p class="linemarker linemarker-14"><code class="docutils literal notranslate"><span class="pre">www/common/metadata-manager.js</span></code></p>
+<p class="linemarker linemarker-16">This module allows the levels outside the iframe (worker and outer) to provide data to the iframe. These data are divided into 2 categories: &quot;user&quot; data contain every public elements concerning the current user account and &quot;priv&quot; data contain elements that are private or that are not sent to other users.</p>
+<p class="linemarker linemarker-18">This module also uses data coming from the &quot;inner&quot; level, and in particular from the current collaborative document (when applicable). It can thus provide 3 types of content to any &quot;inner&quot; module requesting it:</p>
 <ul class="simple">
-<li><p>the collaborative document &quot;metadata&quot; that are stored in the document itself</p></li>
+<li><p class="linemarker linemarker-20">the collaborative document &quot;metadata&quot; that are stored in the document itself</p></li>
 </ul>
 <blockquote>
 <div><ul class="simple">
-<li><p>the title and name of the application</p></li>
-<li><p>the user list with public data of editors (name, avatar, profile, public keys, mailbox, etc.)</p></li>
+<li><p class="linemarker linemarker-22">the title and name of the application</p></li>
+<li><p class="linemarker linemarker-23">the user list with public data of editors (name, avatar, profile, public keys, mailbox, etc.)</p></li>
 </ul>
 </div></blockquote>
 <ul class="simple">
-<li><p>the &quot;private&quot; data coming from the outside levels</p></li>
+<li><p class="linemarker linemarker-25">the &quot;private&quot; data coming from the outside levels</p></li>
 </ul>
 <blockquote>
 <div><ul class="simple">
-<li><p>the &quot;unsafe&quot; origin used in &quot;outer&quot; and the name of the application</p></li>
-<li><p>the type of hash for collaborative documents: edition or read-only, presentation mode, embed mode, etc.</p></li>
-<li><p>data about the document itself</p></li>
+<li><p class="linemarker linemarker-27">the &quot;unsafe&quot; origin used in &quot;outer&quot; and the name of the application</p></li>
+<li><p class="linemarker linemarker-28">the type of hash for collaborative documents: edition or read-only, presentation mode, embed mode, etc.</p></li>
+<li><p class="linemarker linemarker-29">data about the document itself</p></li>
 </ul>
 </div></blockquote>
 <ul class="simple">
-<li><p>the &quot;user&quot; data that represents the current user</p></li>
+<li><p class="linemarker linemarker-31">the &quot;user&quot; data that represents the current user</p></li>
 </ul>
 </section>
 <section id="ui-modules">
 <h2>UI modules<a class="headerlink" href="#ui-modules" title="Permalink to this heading">¶</a></h2>
 <section id="common-interface">
 <h3>common-interface<a class="headerlink" href="#common-interface" title="Permalink to this heading">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">www/common/common-interface.js</span></code></p>
-<p>This module allows you to create reusable empty interface elements. The most used are :</p>
+<p class="linemarker linemarker-39"><code class="docutils literal notranslate"><span class="pre">www/common/common-interface.js</span></code></p>
+<p class="linemarker linemarker-41">This module allows you to create reusable empty interface elements. The most used are :</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">UI.alert</span></code>, <code class="docutils literal notranslate"><span class="pre">UI.confirm</span></code>, <code class="docutils literal notranslate"><span class="pre">UI.prompt</span></code>: creates a dialog box similar to the native <code class="docutils literal notranslate"><span class="pre">alert</span></code>, <code class="docutils literal notranslate"><span class="pre">confirm</span></code> and <code class="docutils literal notranslate"><span class="pre">prompt</span></code> but using the CryptPad style and not blocking the thread when it is open.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">UI.log</span></code>: creates a small notification in the bottom-left corner that disappears automatically after a few seconds</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">UI.confirmButton</span></code>: adds a confirmation step &quot;Are you sure?&quot; on the button provided</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">UI.(add|remove|error)LoadingScreen</span></code>: add, remove or modify a loading screen</p></li>
-<li><p>Many tools to create custom windows using the CryptPad styles</p></li>
+<li><p class="linemarker linemarker-43"><code class="docutils literal notranslate"><span class="pre">UI.alert</span></code>, <code class="docutils literal notranslate"><span class="pre">UI.confirm</span></code>, <code class="docutils literal notranslate"><span class="pre">UI.prompt</span></code>: creates a dialog box similar to the native <code class="docutils literal notranslate"><span class="pre">alert</span></code>, <code class="docutils literal notranslate"><span class="pre">confirm</span></code> and <code class="docutils literal notranslate"><span class="pre">prompt</span></code> but using the CryptPad style and not blocking the thread when it is open.</p></li>
+<li><p class="linemarker linemarker-44"><code class="docutils literal notranslate"><span class="pre">UI.log</span></code>: creates a small notification in the bottom-left corner that disappears automatically after a few seconds</p></li>
+<li><p class="linemarker linemarker-45"><code class="docutils literal notranslate"><span class="pre">UI.confirmButton</span></code>: adds a confirmation step &quot;Are you sure?&quot; on the button provided</p></li>
+<li><p class="linemarker linemarker-46"><code class="docutils literal notranslate"><span class="pre">UI.(add|remove|error)LoadingScreen</span></code>: add, remove or modify a loading screen</p></li>
+<li><p class="linemarker linemarker-47">Many tools to create custom windows using the CryptPad styles</p></li>
 </ul>
 </section>
 <section id="common-ui-elements">
 <h3>common-ui-elements<a class="headerlink" href="#common-ui-elements" title="Permalink to this heading">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">www/common/common-ui-elements.js</span></code></p>
-<p>This module provides tools to display elements with pre-existing content, sometimes retrieved directly from outside the iframe:</p>
+<p class="linemarker linemarker-52"><code class="docutils literal notranslate"><span class="pre">www/common/common-ui-elements.js</span></code></p>
+<p class="linemarker linemarker-54">This module provides tools to display elements with pre-existing content, sometimes retrieved directly from outside the iframe:</p>
 <ul class="simple">
-<li><p>Display the pad creation screen</p></li>
-<li><p>Create action buttons for the toolbar with the appropriate style</p></li>
-<li><p>Create a Markdown toolbar (for code, slide, poll and profile applications)</p></li>
-<li><p>Create a &quot;Help / Getting started...&quot; menu for the current application</p></li>
-<li><p>Create a drop-down menu to change the interface language</p></li>
-<li><p>Many other tools ...</p></li>
+<li><p class="linemarker linemarker-56">Display the pad creation screen</p></li>
+<li><p class="linemarker linemarker-57">Create action buttons for the toolbar with the appropriate style</p></li>
+<li><p class="linemarker linemarker-58">Create a Markdown toolbar (for code, slide, poll and profile applications)</p></li>
+<li><p class="linemarker linemarker-59">Create a &quot;Help / Getting started...&quot; menu for the current application</p></li>
+<li><p class="linemarker linemarker-60">Create a drop-down menu to change the interface language</p></li>
+<li><p class="linemarker linemarker-61">Many other tools ...</p></li>
 </ul>
 </section>
 </section>

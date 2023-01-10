@@ -602,32 +602,32 @@
             
   <section id="instance-customization">
 <span id="admin-customization"></span><h1>Instance customization<a class="headerlink" href="#instance-customization" title="Permalink to this heading">¶</a></h1>
-<p>The functionality as well as the look-and-feel of an instance can be customized by creating a <code class="docutils literal notranslate"><span class="pre">customize</span></code> folder and copying assets to be customized (images, stylesheets, page templates, etc) from <code class="docutils literal notranslate"><span class="pre">customize.dist</span></code> into it. If a file exists in <code class="docutils literal notranslate"><span class="pre">customize</span></code>, it will be served to users instead of its namesake in <code class="docutils literal notranslate"><span class="pre">customize.dist</span></code>.</p>
+<p class="linemarker linemarker-6">The functionality as well as the look-and-feel of an instance can be customized by creating a <code class="docutils literal notranslate"><span class="pre">customize</span></code> folder and copying assets to be customized (images, stylesheets, page templates, etc) from <code class="docutils literal notranslate"><span class="pre">customize.dist</span></code> into it. If a file exists in <code class="docutils literal notranslate"><span class="pre">customize</span></code>, it will be served to users instead of its namesake in <code class="docutils literal notranslate"><span class="pre">customize.dist</span></code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The purpose of the <code class="docutils literal notranslate"><span class="pre">customize</span></code> directory is to make it easier to upgrade CryptPad while maintaining customizations in place. Occasionally, a major new version may introduce breaking changes or require adjustments in the customizations. Administrators with customized instances are therefore encouraged to <strong>read instructions carefully before each upgrade</strong>.</p>
+<p class="linemarker linemarker-10">The purpose of the <code class="docutils literal notranslate"><span class="pre">customize</span></code> directory is to make it easier to upgrade CryptPad while maintaining customizations in place. Occasionally, a major new version may introduce breaking changes or require adjustments in the customizations. Administrators with customized instances are therefore encouraged to <strong>read instructions carefully before each upgrade</strong>.</p>
 </div>
 <section id="application-config">
 <h2>Application config<a class="headerlink" href="#application-config" title="Permalink to this heading">¶</a></h2>
-<p>A wide range of settings are available in <code class="docutils literal notranslate"><span class="pre">www/common/application_config_internal.js</span></code>. To modify them:</p>
+<p class="linemarker linemarker-16">A wide range of settings are available in <code class="docutils literal notranslate"><span class="pre">www/common/application_config_internal.js</span></code>. To modify them:</p>
 <ol class="arabic simple">
-<li><p>Make a copy of <code class="docutils literal notranslate"><span class="pre">customize.dist/application_config.js</span></code> in the <code class="docutils literal notranslate"><span class="pre">customize</span></code> folder.</p></li>
-<li><p>Copy the default value(s) to modify from <code class="docutils literal notranslate"><span class="pre">www/common/application_config_internal.js</span></code> into <code class="docutils literal notranslate"><span class="pre">customize/application_config.js</span></code>.</p></li>
+<li><p class="linemarker linemarker-18">Make a copy of <code class="docutils literal notranslate"><span class="pre">customize.dist/application_config.js</span></code> in the <code class="docutils literal notranslate"><span class="pre">customize</span></code> folder.</p></li>
+<li><p class="linemarker linemarker-19">Copy the default value(s) to modify from <code class="docutils literal notranslate"><span class="pre">www/common/application_config_internal.js</span></code> into <code class="docutils literal notranslate"><span class="pre">customize/application_config.js</span></code>.</p></li>
 </ol>
 <section id="restricting-guest-access">
 <h3>Restricting guest access<a class="headerlink" href="#restricting-guest-access" title="Permalink to this heading">¶</a></h3>
-<p>To disable unregistered use of CryptPad, add the following to <code class="docutils literal notranslate"><span class="pre">customize/application_config.js</span></code>:</p>
+<p class="linemarker linemarker-24">To disable unregistered use of CryptPad, add the following to <code class="docutils literal notranslate"><span class="pre">customize/application_config.js</span></code>:</p>
 <div class="highlight-javaScript notranslate"><div class="highlight"><pre><span></span><span class="nx">AppConfig</span><span class="p">.</span><span class="nx">registeredOnlyTypes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">AppConfig</span><span class="p">.</span><span class="nx">availablePadTypes</span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>To close registration of new users on the instance, see <a class="reference internal" href="admin_panel.html#admin-close-registration"><span class="std std-ref">Close registration</span></a> in the admin panel.</p>
+<p class="linemarker linemarker-32">To close registration of new users on the instance, see <a class="reference internal" href="admin_panel.html#admin-close-registration"><span class="std std-ref">Close registration</span></a> in the admin panel.</p>
 </div>
 </section>
 <section id="links-to-terms-of-service-privacy-policy-and-imprint-pages">
 <h3>Links to Terms of Service, Privacy Policy and Imprint pages<a class="headerlink" href="#links-to-terms-of-service-privacy-policy-and-imprint-pages" title="Permalink to this heading">¶</a></h3>
-<p>Links to these pages are added to <code class="docutils literal notranslate"><span class="pre">customize/application_config.js</span></code> and are shown on the instance home page and About menu if provided.</p>
+<p class="linemarker linemarker-37">Links to these pages are added to <code class="docutils literal notranslate"><span class="pre">customize/application_config.js</span></code> and are shown on the instance home page and About menu if provided.</p>
 <div class="highlight-javaScript notranslate"><div class="highlight"><pre><span></span><span class="c1">// Privacy Policy</span><span class="w"></span>
 <span class="nx">AppConfig</span><span class="p">.</span><span class="nx">privacy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;https://link-to-policy.com&#39;</span><span class="p">;</span><span class="w"></span>
 <span class="c1">// Terms of Service</span><span class="w"></span>
@@ -636,22 +636,22 @@
 <span class="nx">AppConfig</span><span class="p">.</span><span class="nx">imprint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;https://link-to-imprint.com&#39;</span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
-<p>Please restart your CryptPad instance after making these changes.</p>
+<p class="linemarker linemarker-48">Please restart your CryptPad instance after making these changes.</p>
 </section>
 <section id="security-hardening">
 <h3>Security Hardening<a class="headerlink" href="#security-hardening" title="Permalink to this heading">¶</a></h3>
-<p>It is strongly recommended to set in <code class="docutils literal notranslate"><span class="pre">www/common/application_config.js</span></code> a randomly chosen string as a salt for the password hashing.
+<p class="linemarker linemarker-53">It is strongly recommended to set in <code class="docutils literal notranslate"><span class="pre">www/common/application_config.js</span></code> a randomly chosen string as a salt for the password hashing.
 This makes it such attackers who want to bruteforce common credentials must do so again on each CryptPad instance that they wish to attack.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>The <code class="docutils literal notranslate"><span class="pre">loginSalt</span></code> should only be set when your CryptPad instance is first created.
+<p class="linemarker linemarker-57">The <code class="docutils literal notranslate"><span class="pre">loginSalt</span></code> should only be set when your CryptPad instance is first created.
 <strong>Changing it at a later time will break logins for all existing users.</strong></p>
 </div>
-<p>For this, insert your chosen string in the following line:</p>
+<p class="linemarker linemarker-60">For this, insert your chosen string in the following line:</p>
 <div class="highlight-javaScript notranslate"><div class="highlight"><pre><span></span><span class="nx">AppConfig</span><span class="p">.</span><span class="nx">loginSalt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
-<p>You may further want to increase the minimum password length.
+<p class="linemarker linemarker-66">You may further want to increase the minimum password length.
 For this, modify the following line:</p>
 <div class="highlight-javaScript notranslate"><div class="highlight"><pre><span></span><span class="nx">AppConfig</span><span class="p">.</span><span class="nx">minimumPasswordLength</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">8</span><span class="p">;</span><span class="w"></span>
 </pre></div>
@@ -660,27 +660,27 @@ For this, modify the following line:</p>
 </section>
 <section id="look-and-feel">
 <h2>Look and feel<a class="headerlink" href="#look-and-feel" title="Permalink to this heading">¶</a></h2>
-<p>Many aspects of CryptPad's interface can be customized by copying files from <code class="docutils literal notranslate"><span class="pre">customize.dist</span></code> to your <code class="docutils literal notranslate"><span class="pre">customize</span></code> directory.</p>
-<p>For example to change colors, copy the LESS color themes <code class="docutils literal notranslate"><span class="pre">colortheme.less</span></code> and <code class="docutils literal notranslate"><span class="pre">colortheme-dark.less</span></code> from <code class="docutils literal notranslate"><span class="pre">customize.dist/src/less2/include/</span></code> to <code class="docutils literal notranslate"><span class="pre">customize/src/less2/include/</span></code> and edit the color values.</p>
-<p>To use a custom logo on the instance's homepage:</p>
+<p class="linemarker linemarker-75">Many aspects of CryptPad's interface can be customized by copying files from <code class="docutils literal notranslate"><span class="pre">customize.dist</span></code> to your <code class="docutils literal notranslate"><span class="pre">customize</span></code> directory.</p>
+<p class="linemarker linemarker-77">For example to change colors, copy the LESS color themes <code class="docutils literal notranslate"><span class="pre">colortheme.less</span></code> and <code class="docutils literal notranslate"><span class="pre">colortheme-dark.less</span></code> from <code class="docutils literal notranslate"><span class="pre">customize.dist/src/less2/include/</span></code> to <code class="docutils literal notranslate"><span class="pre">customize/src/less2/include/</span></code> and edit the color values.</p>
+<p class="linemarker linemarker-79">To use a custom logo on the instance's homepage:</p>
 <ol class="arabic simple">
-<li><p>Add your SVG logo to <code class="docutils literal notranslate"><span class="pre">customize</span></code></p></li>
-<li><p>Rename the logo <code class="docutils literal notranslate"><span class="pre">CryptPad_logo_hero.svg</span></code></p></li>
+<li><p class="linemarker linemarker-81">Add your SVG logo to <code class="docutils literal notranslate"><span class="pre">customize</span></code></p></li>
+<li><p class="linemarker linemarker-82">Rename the logo <code class="docutils literal notranslate"><span class="pre">CryptPad_logo_hero.svg</span></code></p></li>
 </ol>
 <section id="open-graph-preview-images">
 <span id="preview-images"></span><h3>Open Graph preview images<a class="headerlink" href="#open-graph-preview-images" title="Permalink to this heading">¶</a></h3>
-<p>Previews when links from the instance are posted to social media include images, these are located in <code class="docutils literal notranslate"><span class="pre">/customize.dist/images/opengraph_preview/</span></code>. Once <a class="reference internal" href="installation.html#configure-open-graph"><span class="std std-ref">Open Graph tags have been set up</span></a>, the images can be customized by placing modified copies in <code class="docutils literal notranslate"><span class="pre">/customize/images/opengraph_preview/</span></code> just like any other image.</p>
+<p class="linemarker linemarker-89">Previews when links from the instance are posted to social media include images, these are located in <code class="docutils literal notranslate"><span class="pre">/customize.dist/images/opengraph_preview/</span></code>. Once <a class="reference internal" href="installation.html#configure-open-graph"><span class="std std-ref">Open Graph tags have been set up</span></a>, the images can be customized by placing modified copies in <code class="docutils literal notranslate"><span class="pre">/customize/images/opengraph_preview/</span></code> just like any other image.</p>
 </section>
 </section>
 <section id="translations">
 <h2>Translations<a class="headerlink" href="#translations" title="Permalink to this heading">¶</a></h2>
-<p>To customize the text of the CryptPad interface in a given language, copy <code class="docutils literal notranslate"><span class="pre">customize.dist/translations/messages.xx.js</span></code> to <code class="docutils literal notranslate"><span class="pre">customize/translations/messages.xx.js</span></code> where <code class="docutils literal notranslate"><span class="pre">xx</span></code> is the locale of the language (use <code class="docutils literal notranslate"><span class="pre">messages.js</span></code> to customize English).</p>
-<p>In this file, modify the default text using the &quot;Messages&quot; object as follows: <code class="docutils literal notranslate"><span class="pre">Messages.key</span> <span class="pre">=</span> <span class="pre">&quot;Text&quot;;</span></code>. For all the keys and their associated text please see <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/blob/main/www/common/translations/messages.json">www/common/translations/messages.json</a> or any of the <code class="docutils literal notranslate"><span class="pre">messages.xx.json</span></code> in the same directory for the translated text.</p>
-<p>For example, to customize the text about the instance on the home page, the following could be pasted in <code class="docutils literal notranslate"><span class="pre">customize/translations/messages.js</span></code> and the text changed to describe the instance.</p>
+<p class="linemarker linemarker-94">To customize the text of the CryptPad interface in a given language, copy <code class="docutils literal notranslate"><span class="pre">customize.dist/translations/messages.xx.js</span></code> to <code class="docutils literal notranslate"><span class="pre">customize/translations/messages.xx.js</span></code> where <code class="docutils literal notranslate"><span class="pre">xx</span></code> is the locale of the language (use <code class="docutils literal notranslate"><span class="pre">messages.js</span></code> to customize English).</p>
+<p class="linemarker linemarker-96">In this file, modify the default text using the &quot;Messages&quot; object as follows: <code class="docutils literal notranslate"><span class="pre">Messages.key</span> <span class="pre">=</span> <span class="pre">&quot;Text&quot;;</span></code>. For all the keys and their associated text please see <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/blob/main/www/common/translations/messages.json">www/common/translations/messages.json</a> or any of the <code class="docutils literal notranslate"><span class="pre">messages.xx.json</span></code> in the same directory for the translated text.</p>
+<p class="linemarker linemarker-98">For example, to customize the text about the instance on the home page, the following could be pasted in <code class="docutils literal notranslate"><span class="pre">customize/translations/messages.js</span></code> and the text changed to describe the instance.</p>
 <div class="highlight-javaScript notranslate"><div class="highlight"><pre><span></span><span class="nx">Messages</span><span class="p">.</span><span class="nx">home_host</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;This is an independent community instance of CryptPad.&quot;</span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
-<p>For more information on how translations work in CryptPad please see <a class="reference internal" href="../dev_guide/client/translations.html#dev-translations"><span class="std std-ref">Translation keys</span></a> in the developer guide.</p>
+<p class="linemarker linemarker-104">For more information on how translations work in CryptPad please see <a class="reference internal" href="../dev_guide/client/translations.html#dev-translations"><span class="std std-ref">Translation keys</span></a> in the developer guide.</p>
 </section>
 </section>
 
