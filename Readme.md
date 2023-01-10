@@ -71,6 +71,11 @@ sphinx-intl update -p _build/gettext -l fr
 ./build.sh
 ```
 
+### Adding a language
+
+1. add language code to `LANG` and leave an empty line at the end of the file
+2. add the `<option>` to `_themes/theme/layout.html` line 109
+
 ### translated images
 Images for English are in the `/images` folder.  
 To provide localised versions of images, place them in a folder such as `images/fr/`.
