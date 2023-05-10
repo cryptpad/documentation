@@ -110,6 +110,13 @@ Options:
 - Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order items and options
 - Delete an item or option with |times|
 
+|cptools form-date| Date
+++++++++++++++++++++++++
+
+:badge_new:`New in version 5.3`
+
+Response: pick a date and time
+
 .. _form_Q_checkbox:
 
 |cptools form-list-check| Checkbox
