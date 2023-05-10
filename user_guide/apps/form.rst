@@ -191,7 +191,7 @@ Use the 3 buttons at the top for easy access to:
 
 - |bar-chart| **Responses** (count): toggles the response page
 - |eye| **Preview form**: Opens the participant link
-- |link| **Copy link**: Copies the participant link
+- |link| **Copy public link**: Copies the participant link
 
 .. note::
    To share an **author** link to the form (with edit rights), use the :ref:`share` menu in the toolbar.
