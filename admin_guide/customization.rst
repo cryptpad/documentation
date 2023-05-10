@@ -70,6 +70,17 @@ For this, modify the following line:
 
     AppConfig.minimumPasswordLength = 8;
 
+Dark theme switch
+~~~~~~~~~~~~~~~~~
+
+:badge_new:`New in version 5.3`
+
+You can enforce the use of the dark theme on your instance by setting the ``AppConfig.defaultDarkTheme`` variable to true in ``customize/application_config.js``:
+
+.. code:: javaScript
+
+    AppConfig.defaultDarkTheme = 'true';
+
 Look and feel
 -------------
 Many aspects of CryptPad's interface can be customized by copying files from ``customize.dist`` to your ``customize`` directory.
