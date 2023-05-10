@@ -147,6 +147,12 @@ Options:
 - Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order options
 - Delete an option with |times|
 
+:badge_new:`New in version 5.3`
+
+Condorcet:
+
+Since v5.3 responses can show the results with the `Condorcet method <https://en.wikipedia.org/wiki/Condorcet_method>`_. You can select Schulze or Ranked Pairs to display the winner. The details will also show the number of matches won by each candidates.
+
 |cptools form-poll| Poll
 ++++++++++++++++++++++++
 
