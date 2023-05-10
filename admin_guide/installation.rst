@@ -112,6 +112,15 @@ To run CryptPad as a `systemd <https://www.freedesktop.org/software/systemd/man/
 
 Other ways of daemonizing nodejs applications include for example `foreverjs <https://github.com/foreversd/forever>`_ or `pm2 <https://pm2.keymetrics.io/>`_.
 
+FreeBSD
+^^^^^^^
+
+To run CryptPad as a `rc.d <https://man.freebsd.org/cgi/man.cgi?query=rc.d&sektion=8&n=1>`__ unit, please follow the example `rc.d-cryptpad <https://github.com/xwiki-labs/cryptpad/blob/main/docs/rc.d-cryptpad>`__ file.
+
+#. Save the example as ``cryptpad`` in ``/usr/local/etc/rc.d/``
+#. Make necessary adjustments (e.g. user name, path)
+#. Enable the service at startup with ``service cryptpad enable``
+
 .. _admin_domain_config:
 
 Domains
