@@ -110,7 +110,7 @@ Options:
 - Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order items and options
 - Delete an item or option with |times|
 
-|cptools form-date| Date
+|calendar| Date
 ++++++++++++++++++++++++
 
 :badge_new:`New in version 5.3`
