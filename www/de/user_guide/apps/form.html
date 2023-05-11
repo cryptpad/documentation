@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Formular &mdash; CryptPad 5.2 Dokumentation</title>
+  <title>Formular &mdash; CryptPad 5.3 Dokumentation</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.2</span>
+              <span class="release">Documentation 5.3</span>
             </a>
             
 <div role="search">
@@ -78,6 +78,7 @@
               <option value="fr">Français</option>
               <option value="de">Deutsch</option>
               <option value="ru">Русский</option>
+              <option value="jp">日本語</option>
 	        	</select>
         	</p>
         </div>
@@ -249,7 +250,7 @@
 <li class="toctree-l5"><a class="reference internal" href="#utilities">Werkzeuge</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#question-types">Fragetypen</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#form-settings">Einstellungen des Formulars</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#responses">Responses</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#responses">Antworten</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#advanced-use-cases">Fortgeschrittene Anwendungsfälle</a></li>
 </ul>
 </li>
@@ -297,6 +298,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configuration">Configuration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#daemonization">Daemonization</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#systemd">Systemd</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#freebsd">FreeBSD</a></li>
 </ul>
 </li>
 </ul>
@@ -318,6 +320,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#restricting-guest-access">Restricting guest access</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#links-to-terms-of-service-privacy-policy-and-imprint-pages">Links to Terms of Service, Privacy Policy and Imprint pages</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#security-hardening">Security Hardening</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#dark-theme-switch">Dark theme switch</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#look-and-feel">Look and feel</a><ul>
@@ -604,7 +607,7 @@
             
   <section id="form">
 <span id="app-form"></span><h1>Formular<a class="headerlink" href="#form" title="Permalink to this heading">¶</a></h1>
-<img alt="preview of the Form application" class="screenshot" src="../../_images/app-form-preview.png" />
+<img alt="Vorschau der Formular-Anwendung" class="screenshot" src="../../_images/app-form-preview.png" />
 <section id="roles">
 <h2>Rollen<a class="headerlink" href="#roles" title="Permalink to this heading">¶</a></h2>
 <p>Formulare profitieren von denselben Funktionen bezüglich Zusammenarbeit und Privatsphäre wie die anderen Anwendungen von CryptPad. Sie haben allerdings etwas andere Anforderungen bei der Nutzung, beispielsweise sollte jemand beim Beantworten eines Formulars nur seine eigenen Antworten bearbeiten können, aber nicht die Antworten anderer Benutzer oder das Formular an sich. Deswegen unterscheiden sich die <a class="reference internal" href="../share_and_access.html#share-access-rights"><span class="std std-ref">Zugriffsrechte</span></a> beim Teilen eines Formulars. Formulare haben drei verschiedene Rollen:</p>
@@ -614,7 +617,7 @@
 <li><p><strong>Teilnehmer</strong>: kann Fragen im Formular beantworten und Antworten erst nach Veröffentlichung durch den Autor ansehen.</p></li>
 </ul>
 <p>Um ein Formular mit einer bestimmten Rolle zu teilen, beispielsweise um es zu Teilnehmern zu senden, wähle im <em class="fa fa-share-alt"></em> <strong>Teilen</strong> die Rolle aus, bevor du Kontakte auswählst oder den Link kopierst.</p>
-<img alt="the share menu in the form application, showing the three roles: participant, auditor, and author." class="screenshot" src="../../_images/app-form-share.png" />
+<img alt="Teilen-Menü in der Formular-Anwendung mit den drei Rollen: Autor, Auditor und Teilnehmer." class="screenshot" src="../../_images/app-form-share.png" />
 <div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
 <p>Die Benutzerliste, der Chat und Benachrichtigung über beitretende Benutzer werden bei der Beantwortung von Formularen deaktiviert. Dadurch soll der Eindruck vermieden werden, dass andere Benutzer die Beantwortung beobachten.</p>
@@ -690,6 +693,11 @@
 <li><p>Lösche einen Eintrag oder eine Option mit <em class="fa fa-times"></em></p></li>
 </ul>
 </section>
+<section id="calendar-date">
+<h4><em class="fa fa-calendar"></em> Date<a class="headerlink" href="#calendar-date" title="Permalink to this heading">¶</a></h4>
+<p><span class="badge-new">New in version 5.3</span></p>
+<p>Response: pick a date and time</p>
+</section>
 <section id="cptools-form-list-check-checkbox">
 <span id="form-q-checkbox"></span><h4><em class="cptools cptools-form-list-check"></em> Mehrfachauswahl<a class="headerlink" href="#cptools-form-list-check-checkbox" title="Permalink to this heading">¶</a></h4>
 <p>Antwort: mehre Optionen von einer Liste</p>
@@ -721,6 +729,9 @@
 <li><p>Ziehe Fragen an <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em>, um die Reihenfolge zu ändern</p></li>
 <li><p>Lösche eine Option mit <em class="fa fa-times"></em></p></li>
 </ul>
+<p><span class="badge-new">New in version 5.3</span></p>
+<p>Condorcet:</p>
+<p>Since v5.3 responses can show the results with the <a class="reference external" href="https://en.wikipedia.org/wiki/Condorcet_method">Condorcet method</a>. You can select Schulze or Ranked Pairs to display the winner. The details will also show the number of matches won by each candidates.</p>
 </section>
 <section id="cptools-form-poll-poll">
 <h4><em class="cptools cptools-form-poll"></em> Umfrage<a class="headerlink" href="#cptools-form-poll-poll" title="Permalink to this heading">¶</a></h4>
@@ -760,7 +771,7 @@
 <ul class="simple">
 <li><p><em class="fa fa-bar-chart"></em> <strong>Antworten</strong> (Anzahl): Wechselt zur Anworten-Seite und zurück</p></li>
 <li><p><em class="fa fa-eye"></em> <strong>Vorschau</strong>: Öffnet den Link für Teilnehmer</p></li>
-<li><p><em class="fa fa-link"></em> <strong>Link kopieren</strong>: Kopiert den Link für Teilnehmer</p></li>
+<li><p><em class="fa fa-link"></em> <strong>Copy public link</strong>: Copies the participant link</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
@@ -791,16 +802,16 @@
 </section>
 <section id="editing-after-submission">
 <h4>Bearbeitung nach Absenden<a class="headerlink" href="#editing-after-submission" title="Permalink to this heading">¶</a></h4>
-<p><span class="badge-new">New in version 5.2</span></p>
+<p><span class="badge-new">Neu in Version 5.2</span></p>
 <ul class="simple">
-<li><p>One time only: participants can answer the form only one time and can't modify or delete their responses after submitting them.</p></li>
-<li><p>One time and edit/delete: participants can answer the form only one time but are allowed modify or delete their responses after submitting them.</p></li>
-<li><p>Multiple times: participants can answer the form multiple times but can't modify or delete their responses after submitting them.</p></li>
-<li><p>Multiple times and edit/delete: participants can answer the form multiple times and are allowed to modify or delete their responses after submitting them.</p></li>
+<li><p>Einmalig: Teilnehmer können das Formular nur ein einziges Mal beantworten und können ihre Antworten nach dem Absenden nicht mehr ändern oder löschen.</p></li>
+<li><p>Einmalig und Bearbeiten/Löschen: Teilnehmer können das Formular nur einmal beantworten, dürfen aber ihre Antworten nach dem Absenden ändern oder löschen.</p></li>
+<li><p>Mehrmals: Teilnehmer können das Formular mehrmals beantworten, können aber ihre Antworten nach dem Absenden nicht mehr ändern oder löschen.</p></li>
+<li><p>Mehrmals und Bearbeiten/Löschen: Teilnehmer können das Formular mehrmals beantworten und dürfen ihre Antworten nach dem Absenden ändern oder löschen.</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
-<p>Please note that if Guest Access is allowed, unregistered users can still answer multiple times a &quot;One time only&quot; form if they open it on a web browser private window, or wipe the browser cookies, etc.</p>
+<p>Bitte beachte, dass bei erlaubtem Gastzugriff nicht registrierte Nutzer ein Formular mit der Option &quot;Einmalig&quot; mehrfach beantworten können, wenn sie es beispielsweise in einem privaten Fenster des Browsers öffnen oder die Browser-Cookies löschen.</p>
 </div>
 </section>
 <section id="publish-responses">
@@ -821,8 +832,8 @@
 </section>
 </section>
 <section id="responses">
-<h3>Responses<a class="headerlink" href="#responses" title="Permalink to this heading">¶</a></h3>
-<p>Notifications for new responses are sent to the form _owner_ through the integrated notifications.</p>
+<h3>Antworten<a class="headerlink" href="#responses" title="Permalink to this heading">¶</a></h3>
+<p>Benachrichtigungen über neue Antworten werden über die integrierten Benachrichtigungen an den _Eigentümer_ des Formulars gesendet.</p>
 </section>
 <section id="advanced-use-cases">
 <h3>Fortgeschrittene Anwendungsfälle<a class="headerlink" href="#advanced-use-cases" title="Permalink to this heading">¶</a></h3>
@@ -860,7 +871,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2022, CryptPad Team.
+        &copy; Copyright 2023, CryptPad Team.
 
     </p>
   </div>
@@ -885,7 +896,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'5.2',
+            VERSION:'5.3',
             LANGUAGE:'de',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

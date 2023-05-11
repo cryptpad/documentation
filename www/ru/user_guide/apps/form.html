@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Формы &mdash; документация CryptPad 5.2</title>
+  <title>Формы &mdash; документация CryptPad 5.3</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.2</span>
+              <span class="release">Documentation 5.3</span>
             </a>
             
 <div role="search">
@@ -78,6 +78,7 @@
               <option value="fr">Français</option>
               <option value="de">Deutsch</option>
               <option value="ru">Русский</option>
+              <option value="jp">日本語</option>
 	        	</select>
         	</p>
         </div>
@@ -297,6 +298,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configuration">Configuration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#daemonization">Daemonization</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#systemd">Systemd</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#freebsd">FreeBSD</a></li>
 </ul>
 </li>
 </ul>
@@ -318,6 +320,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#restricting-guest-access">Restricting guest access</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#links-to-terms-of-service-privacy-policy-and-imprint-pages">Links to Terms of Service, Privacy Policy and Imprint pages</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#security-hardening">Security Hardening</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#dark-theme-switch">Dark theme switch</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#look-and-feel">Look and feel</a><ul>
@@ -690,6 +693,11 @@
 <li><p>Удалить элемент или вариант с помощью <em class="fa fa-times"></em></p></li>
 </ul>
 </section>
+<section id="calendar-date">
+<h4><em class="fa fa-calendar"></em> Date<a class="headerlink" href="#calendar-date" title="Permalink to this heading">¶</a></h4>
+<p><span class="badge-new">New in version 5.3</span></p>
+<p>Response: pick a date and time</p>
+</section>
 <section id="cptools-form-list-check-checkbox">
 <span id="form-q-checkbox"></span><h4><em class="cptools cptools-form-list-check"></em> Флажок<a class="headerlink" href="#cptools-form-list-check-checkbox" title="Permalink to this heading">¶</a></h4>
 <p>Ответ: несколько вариантов из списка</p>
@@ -721,6 +729,9 @@
 <li><p>Возьмите рукоятку <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> и перетащите её, чтобы изменить порядок вариантов</p></li>
 <li><p>Удалить вариант с помощью <em class="fa fa-times"></em></p></li>
 </ul>
+<p><span class="badge-new">New in version 5.3</span></p>
+<p>Condorcet:</p>
+<p>Since v5.3 responses can show the results with the <a class="reference external" href="https://en.wikipedia.org/wiki/Condorcet_method">Condorcet method</a>. You can select Schulze or Ranked Pairs to display the winner. The details will also show the number of matches won by each candidates.</p>
 </section>
 <section id="cptools-form-poll-poll">
 <h4><em class="cptools cptools-form-poll"></em> Опрос<a class="headerlink" href="#cptools-form-poll-poll" title="Permalink to this heading">¶</a></h4>
@@ -760,7 +771,7 @@
 <ul class="simple">
 <li><p><em class="fa fa-bar-chart"></em> <strong>Ответы</strong> (количество): переключает на страницу ответов</p></li>
 <li><p><em class="fa fa-eye"></em> <strong>Предварительный просмотр формы</strong>: открывает ссылку участника</p></li>
-<li><p><em class="fa fa-link"></em> <strong>Копировать ссылку</strong>: копирует ссылку участника</p></li>
+<li><p><em class="fa fa-link"></em> <strong>Copy public link</strong>: Copies the participant link</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Примечание</p>
@@ -860,7 +871,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2022, CryptPad Team.
+        &copy; Copyright 2023, CryptPad Team.
 
     </p>
   </div>
@@ -885,7 +896,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'5.2',
+            VERSION:'5.3',
             LANGUAGE:'ru',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

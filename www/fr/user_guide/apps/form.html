@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Formulaire &mdash; Documentation CryptPad 5.2</title>
+  <title>Formulaire &mdash; Documentation CryptPad 5.3</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.2</span>
+              <span class="release">Documentation 5.3</span>
             </a>
             
 <div role="search">
@@ -78,6 +78,7 @@
               <option value="fr">Français</option>
               <option value="de">Deutsch</option>
               <option value="ru">Русский</option>
+              <option value="jp">日本語</option>
 	        	</select>
         	</p>
         </div>
@@ -249,7 +250,7 @@
 <li class="toctree-l5"><a class="reference internal" href="#utilities">Mise en page</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#question-types">Types de questions</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#form-settings">Réglages du formulaire</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#responses">Responses</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#responses">Réponses</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#advanced-use-cases">Usages avancés</a></li>
 </ul>
 </li>
@@ -297,6 +298,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configuration">Configuration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#daemonization">Daemonization</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#systemd">Systemd</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#freebsd">FreeBSD</a></li>
 </ul>
 </li>
 </ul>
@@ -318,6 +320,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#restricting-guest-access">Restricting guest access</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#links-to-terms-of-service-privacy-policy-and-imprint-pages">Links to Terms of Service, Privacy Policy and Imprint pages</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#security-hardening">Security Hardening</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#dark-theme-switch">Dark theme switch</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#look-and-feel">Look and feel</a><ul>
@@ -604,20 +607,20 @@
             
   <section id="form">
 <span id="app-form"></span><h1>Formulaire<a class="headerlink" href="#form" title="Lien permanent vers cette rubrique">¶</a></h1>
-<img alt="preview of the Form application" class="screenshot" src="../../_images/app-form-preview.png" />
+<img alt="aperçu de l'application formulaires" class="screenshot" src="../../_images/app-form-preview.png" />
 <section id="roles">
 <h2>Rôles<a class="headerlink" href="#roles" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p>Les formulaires bénéficient des mêmes fonctionnalités de collaboration et de confidentialité que les autres applications CryptPad. Ils présentent cependant des exigences légèrement différentes en termes d'utilisation. Par exemple, une personne répondant à un formulaire doit pouvoir modifier ses propres réponses, mais pas celles des autres utilisateurs ni le formulaire lui-même. Pour cette raison, les <a class="reference internal" href="../share_and_access.html#share-access-rights"><span class="std std-ref">Droits d'accès</span></a> lors du partage d'un formulaire sont différents des autres applications. Les formulaires ont 3 rôles différents :</p>
+<p>Les formulaires bénéficient des mêmes fonctionnalités de collaboration et de confidentialité que les autres applications CryptPad. Ils présentent cependant des exigences légèrement différentes en termes d'utilisation. Par exemple, une personne répondant à un formulaire doit pouvoir modifier ses propres réponses, mais pas celles des autres utilisateur·ices ni le formulaire lui-même. Pour cette raison, les <a class="reference internal" href="../share_and_access.html#share-access-rights"><span class="std std-ref">Droits d'accès</span></a> lors du partage d'un formulaire sont différents des autres applications. Les formulaires ont 3 rôles différents :</p>
 <ul class="simple">
-<li><p><strong>Auteur</strong> : peut modifier les questions et <a class="reference internal" href="#form-settings"><span class="std std-ref">les réglages du formulaire</span></a>.</p></li>
-<li><p><strong>Auditeur</strong> : peut consulter les réponses au formulaire, qu'elles soient publiques ou non.</p></li>
-<li><p><strong>Participant</strong> : peut répondre au formulaire et voir les réponses une fois qu'elles sont rendues publiques par un auteur.</p></li>
+<li><p><strong>Auteur·ice</strong> : peut modifier les questions et <a class="reference internal" href="#form-settings"><span class="std std-ref">les réglages du formulaire</span></a>.</p></li>
+<li><p><strong>Auditeur·ice</strong> : peut consulter les réponses au formulaire, qu'elles soient publiques ou non.</p></li>
+<li><p><strong>Participant·e</strong> : peut répondre au formulaire et voir les réponses une fois qu'elles sont rendues publiques par un·e auteur·ice.</p></li>
 </ul>
-<p>Pour partager un formulaire avec un rôle donné, par exemple pour l'envoyer à des participants, sélectionnez le rôle dans le menu <em class="fa fa-share-alt"></em> <strong>Partager</strong> avant de sélectionner les contacts ou de copier le lien.</p>
-<img alt="the share menu in the form application, showing the three roles: participant, auditor, and author." class="screenshot" src="../../_images/app-form-share.png" />
+<p>Pour partager un formulaire avec un rôle donné, par exemple pour l'envoyer à des participant·es, sélectionnez le rôle dans le menu <em class="fa fa-share-alt"></em> <strong>Partager</strong> avant de sélectionner les contacts ou de copier le lien.</p>
+<img alt="le menu de partage dans l'application formulaires, montrant les trois rôles : participant·e, auditeur·ice et auteur·e." class="screenshot" src="../../_images/app-form-share.png" />
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>La liste des utilisateurs, le chat et les alertes concernant les utilisateurs qui rejoignent la session collaborative sont désactivés lorsqu'un participant répond à un formulaire. Ceci afin d'éviter de donner l'impression que quelqu'un les observe pendant qu'ils répondent.</p>
+<p>La liste des utilisateur·ices, le chat et les alertes concernant les utilisateur·ices qui rejoignent la session collaborative sont désactivés lorsqu'un·e participant·e répond à un formulaire. Ceci afin d'éviter de donner l'impression que quelqu'un les observe pendant qu'ils répondent.</p>
 </div>
 </section>
 <section id="editing-a-form">
@@ -637,14 +640,14 @@
 <p>Diviser le formulaire en pages. Affiché uniquement pour les participants.</p>
 </section>
 <section id="cptools-form-conditional-conditional-section">
-<h4><em class="cptools cptools-form-conditional"></em> Section Conditionelle<a class="headerlink" href="#cptools-form-conditional-conditional-section" title="Lien permanent vers cette rubrique">¶</a></h4>
+<h4><em class="cptools cptools-form-conditional"></em> Section Conditionnelle<a class="headerlink" href="#cptools-form-conditional-conditional-section" title="Lien permanent vers cette rubrique">¶</a></h4>
 <p>Les questions <em class="cptools cptools-form-list-radio"></em> <strong>Choix</strong> et <em class="cptools cptools-form-list-check"></em> <strong>Cases</strong> peuvent être utilisées pour afficher ou masquer une section de questions.</p>
 <ol class="arabic simple">
 <li><p>Dans l'éditeur, utilisez les boutons <em class="fa fa-plus"></em> <strong>Ajouter</strong> entre les questions, ou la liste au bas du formulaire, pour ajouter une <em class="cptools cptools-form-conditional"></em> <strong>Section conditionnelle</strong>.</p></li>
 <li><p>Vérifier qu'au moins une question <a class="reference internal" href="#form-q-choice"><span class="std std-ref"> Choix</span></a> ou <a class="reference internal" href="#form-q-checkbox"><span class="std std-ref"> Cases</span></a> est placée avant la section (un message sera affiché si ce n'es pas le cas). Seules les questions placées <em>avant</em> la section peuvent être utilisées dans les conditions.</p></li>
 <li><p>Ajouter du contenu (texte de description, questions) à la section en utilisant le bouton <em class="fa fa-plus"></em> <strong>Ajouter</strong> ou en faisant glisser les questions dans la zone de la section.</p></li>
 <li><p>Définir certaines conditions à l'aide des menus de sélection. Les conditions ET doivent toutes être vraies ensemble, seule une des conditions OU doit être vraie.</p></li>
-<li><p>Sur la page des participants, la section ne s'affiche que si les conditions sont remplies.</p></li>
+<li><p>Sur la page des participant·es, la section ne s'affiche que si les conditions sont remplies.</p></li>
 </ol>
 </section>
 </section>
@@ -655,11 +658,11 @@
 <p>Réponse : une ligne de texte</p>
 <p>Options :</p>
 <ul class="simple">
-<li><p>Type de texte : texte, numéro, lien ou email</p></li>
+<li><p>Type de texte : texte, numéro, lien ou e-mail</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Dans le cas du lien et de l'e-mail, la question est encadrée en rouge et une erreur est affichée à l'utilisateur si sa réponse ne correspond pas au format requis.</p>
+<p>Dans le cas du lien et de l'e-mail, la question est encadrée en rouge et une erreur est affichée à l'utilisateur·ice si sa réponse ne correspond pas au format requis.</p>
 </div>
 </section>
 <section id="cptools-form-paragraph-paragraph">
@@ -689,6 +692,11 @@
 <li><p>Cliquer sur la poignée <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> et la faire glisser pour réorganiser les objets et les options</p></li>
 <li><p>Supprimer un objet ou une option avec <em class="fa fa-times"></em></p></li>
 </ul>
+</section>
+<section id="calendar-date">
+<h4><em class="fa fa-calendar"></em> Date<a class="headerlink" href="#calendar-date" title="Lien permanent vers cette rubrique">¶</a></h4>
+<p><span class="badge-new">Nouveau dans la version 5.3</span></p>
+<p>Réponse : choisir une date et une heure</p>
 </section>
 <section id="cptools-form-list-check-checkbox">
 <span id="form-q-checkbox"></span><h4><em class="cptools cptools-form-list-check"></em> Cases<a class="headerlink" href="#cptools-form-list-check-checkbox" title="Lien permanent vers cette rubrique">¶</a></h4>
@@ -721,6 +729,9 @@
 <li><p>Cliquer sur la poignée <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> et la faire glisser pour réorganiser les options</p></li>
 <li><p>Supprimer une option avec <em class="fa fa-times"></em></p></li>
 </ul>
+<p><span class="badge-new">Nouveau dans la version 5.3</span></p>
+<p>Condorcet :</p>
+<p>Depuis v5.3 les réponses montrent les résultats avec la <a class="reference external" href="https://fr.wikipedia.org/wiki/M%C3%A9thode_de_Condorcet">méthode Condorcet</a>. Vous pouvez sélectionner Schulze ou Rangement des paires pour afficher lae gagnant·e. Les détails montrent aussi le nombre de match gagnés par chaque candidat·es.</p>
 </section>
 <section id="cptools-form-poll-poll">
 <h4><em class="cptools cptools-form-poll"></em> Sondage<a class="headerlink" href="#cptools-form-poll-poll" title="Lien permanent vers cette rubrique">¶</a></h4>
@@ -760,11 +771,11 @@
 <ul class="simple">
 <li><p><em class="fa fa-bar-chart"></em> <strong>Réponses</strong> (nombre) : consulter la page des réponses</p></li>
 <li><p><em class="fa fa-eye"></em> <strong>Aperçu</strong> : Ouvrir le lien en mode participant</p></li>
-<li><p><em class="fa fa-link"></em> <strong>Copier le lien</strong> : Copier le lien à envoyer aux participants</p></li>
+<li><p><em class="fa fa-link"></em> <strong>Copier le lien public</strong> : Copier le lien à envoyer aux participant·es</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Pour partager un lien <strong>auteur</strong> vers le formulaire (avec des droits de modification), utiliser le menu <a class="reference internal" href="../share_and_access.html#share"><span class="std std-ref">Partager</span></a> de la barre d'outils.</p>
+<p>Pour partager un lien <strong>auteur·ice</strong> vers le formulaire (avec des droits de modification), utiliser le menu <a class="reference internal" href="../share_and_access.html#share"><span class="std std-ref">Partager</span></a> de la barre d'outils.</p>
 </div>
 <section id="closing-date">
 <h4>Date de clôture<a class="headerlink" href="#closing-date" title="Lien permanent vers cette rubrique">¶</a></h4>
@@ -778,34 +789,34 @@
 </section>
 <section id="anonymize-responses">
 <h4>Anonymiser les réponses<a class="headerlink" href="#anonymize-responses" title="Lien permanent vers cette rubrique">¶</a></h4>
-<p>Toutes les réponses sont anonymisées, que les participants soient connectés ou non à un compte CryptPad. Si cette case n'est pas cochée, les participants connectés à un compte peuvent toujours choisir de répondre de manière anonyme si l'accès invité est autorisé (voir ci-dessous).</p>
+<p>Toutes les réponses sont anonymisées, que les participant·es soient connecté·es ou non à un compte CryptPad. Si cette case n'est pas cochée, les participant·es connecté·es à un compte peuvent toujours choisir de répondre de manière anonyme si l'accès invité·e est autorisé·e (voir ci-dessous).</p>
 </section>
 <section id="guest-access">
-<h4>Accès visiteur<a class="headerlink" href="#guest-access" title="Lien permanent vers cette rubrique">¶</a></h4>
+<h4>Accès visiteur·ice<a class="headerlink" href="#guest-access" title="Lien permanent vers cette rubrique">¶</a></h4>
 <blockquote>
 <div><ul class="simple">
-<li><p>Bloquées : seuls les utilisateurs qui sont connectés à leur compte CryptPad peuvent répondre au formulaire.</p></li>
-<li><p>Autorisées : les utilisateurs non enregistrés peuvent répondre, les utilisateurs connectés peuvent choisir de répondre de manière anonyme.</p></li>
+<li><p>Bloquées : seul·es les utilisateur·ices qui sont connecté·es à leur compte CryptPad peuvent répondre au formulaire.</p></li>
+<li><p>Autorisées : les utilisateur·ices non enregistré·es peuvent répondre, les utilisateur·ices connecté·es peuvent choisir de répondre de manière anonyme.</p></li>
 </ul>
 </div></blockquote>
 </section>
 <section id="editing-after-submission">
 <h4>Modifier les réponses après l'envoi<a class="headerlink" href="#editing-after-submission" title="Lien permanent vers cette rubrique">¶</a></h4>
-<p><span class="badge-new">New in version 5.2</span></p>
+<p><span class="badge-new">Nouveau dans la version 5.2</span></p>
 <ul class="simple">
-<li><p>One time only: participants can answer the form only one time and can't modify or delete their responses after submitting them.</p></li>
-<li><p>One time and edit/delete: participants can answer the form only one time but are allowed modify or delete their responses after submitting them.</p></li>
-<li><p>Multiple times: participants can answer the form multiple times but can't modify or delete their responses after submitting them.</p></li>
-<li><p>Multiple times and edit/delete: participants can answer the form multiple times and are allowed to modify or delete their responses after submitting them.</p></li>
+<li><p>Une seule fois : les participant·es peuvent remplir le questionnaire une seule fois et ne peuvent pas modifier ou supprimer leurs réponses après les avoir envoyées.</p></li>
+<li><p>Une seule fois et modifier/supprimer : les participant·es peuvent répondre au questionnaire une seule fois mais sont autorisé·es à modifier ou supprimer leurs réponses après les avoir envoyées.</p></li>
+<li><p>Plusieurs fois : les participant·es peuvent répondre au questionnaire plusieurs fois mais ne sont pas autorisé·es à modifier ou supprimer leurs réponses après les avoir envoyées.</p></li>
+<li><p>Plusieurs fois et modifier/supprimer : les participant·es peuvent répondre plusieurs fois au questionnaire et sont autorisé·es à modifier ou supprimer leurs réponses après les avoir envoyées.</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Please note that if Guest Access is allowed, unregistered users can still answer multiple times a &quot;One time only&quot; form if they open it on a web browser private window, or wipe the browser cookies, etc.</p>
+<p>Veuillez noter que si l'accès invité·e est autorisé, les utilisateur·ices non-enregistré·es peuvent tout de même répondre plusieurs fois à un questionnaire &quot;Une seule fois&quot; si iels ouvrent une fenêtre de navigation privée sur leur navigateur web, ou suppriment les cookies, etc.</p>
 </div>
 </section>
 <section id="publish-responses">
 <h4>Publier les réponses<a class="headerlink" href="#publish-responses" title="Lien permanent vers cette rubrique">¶</a></h4>
-<p>Permet aux participants qui envoient le formulaire de consulter toutes les réponses. Une fois activé, ce paramètre publie les réponses passées et futures.</p>
+<p>Permet aux participant·es qui envoient le formulaire de consulter toutes les réponses. Une fois activé, ce paramètre publie les réponses passées et futures.</p>
 <div class="admonition warning">
 <p class="admonition-title">Avertissement</p>
 <p>Une fois que les réponses sont rendues publiques, il est impossible de les rendre à nouveau privées.</p>
@@ -813,7 +824,7 @@
 </section>
 <section id="submit-message">
 <h4>Message de confirmation<a class="headerlink" href="#submit-message" title="Lien permanent vers cette rubrique">¶</a></h4>
-<p>Ajouter un message personnalisé à afficher après que les participants ont envoyé le formulaire.</p>
+<p>Ajouter un message personnalisé à afficher après que les participant·es ont envoyé le formulaire.</p>
 </section>
 <section id="color-theme">
 <h4>Thème de couleur<a class="headerlink" href="#color-theme" title="Lien permanent vers cette rubrique">¶</a></h4>
@@ -821,16 +832,16 @@
 </section>
 </section>
 <section id="responses">
-<h3>Responses<a class="headerlink" href="#responses" title="Lien permanent vers cette rubrique">¶</a></h3>
-<p>Notifications for new responses are sent to the form _owner_ through the integrated notifications.</p>
+<h3>Réponses<a class="headerlink" href="#responses" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Les notifications concernant de nouvelles réponses sont envoyées à la ou au _propriétaire_ du questionnaire avec le système de notifications intégrées.</p>
 </section>
 <section id="advanced-use-cases">
 <h3>Usages avancés<a class="headerlink" href="#advanced-use-cases" title="Lien permanent vers cette rubrique">¶</a></h3>
 <section id="anonymous-responses-with-access-list">
 <h4>Réponses anonymes avec liste d'accès<a class="headerlink" href="#anonymous-responses-with-access-list" title="Lien permanent vers cette rubrique">¶</a></h4>
-<p>Pour mener une enquête anonyme auprès d'un groupe d'utilisateurs connu, la fonction de réponses anonymes peut être combinée avec une <a class="reference internal" href="../share_and_access.html#access-list"><span class="std std-ref">Liste</span></a>.</p>
-<p>Pour accéder au formulaire, les participants doivent être connectés à un compte figurant sur la liste d'accès (soit directement, soit par l'intermédiaire d'une <a class="reference internal" href="../collaboration.html#teams"><span class="std std-ref">équipe</span></a> dont ils font partie).</p>
-<p>Si les réponses anonymes sont autorisées sur le formulaire, les participants peuvent répondre de manière anonyme alors que la liste d'accès garantit qu'elles proviennent d'un groupe spécifique d'utilisateurs.</p>
+<p>Pour mener une enquête anonyme auprès d'un groupe d'utilisateur·ices connu, la fonction de réponses anonymes peut être combinée avec une <a class="reference internal" href="../share_and_access.html#access-list"><span class="std std-ref">Liste</span></a>.</p>
+<p>Pour accéder au formulaire, les participant·es doivent être connecté·es à un compte figurant sur la liste d'accès (soit directement, soit par l'intermédiaire d'une <a class="reference internal" href="../collaboration.html#teams"><span class="std std-ref">équipe</span></a> dont iels font partie).</p>
+<p>Si les réponses anonymes sont autorisées sur le formulaire, les participant·es peuvent répondre de manière anonyme alors que la liste d'accès garantit qu'elles proviennent d'un groupe spécifique d'utilisateur·ices.</p>
 </section>
 </section>
 </section>
@@ -860,7 +871,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2022, CryptPad Team.
+        &copy; Copyright 2023, CryptPad Team.
 
     </p>
   </div>
@@ -885,7 +896,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'5.2',
+            VERSION:'5.3',
             LANGUAGE:'fr',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

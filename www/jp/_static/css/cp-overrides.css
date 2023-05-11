@@ -1,0 +1,119 @@
+/* Main menu on index page */
+
+#main-menu > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#main-menu > ul > li {
+    margin: 0;
+    list-style: none;
+}
+
+#main-menu > ul > li > a {
+    display: block;
+    border-radius: 10px;
+    color: #0087ff;
+    border: 1px solid #0087ff;
+    padding: 5px 10px;
+    margin: 0.5rem 0;
+    font-family: "IBM Plex Mono";
+    font-size: 1.5em;
+    line-height: 120%;
+}
+
+#small-menu > ul > li {
+    margin: 0;
+    list-style: none;
+}
+
+#small-menu > ul > li > a {
+    color: #0087ff;
+}
+
+.cover-image {
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+    font-family: "IBM Plex Mono";
+}
+
+/* Notes, Warnings, etc */
+
+.rst-content .admonition-title {
+    display: block;
+    font-family: "Open Sans", sans-serif;
+}
+
+.rst-content .admonition-title::before {
+    font-family: "FontAwesome";
+}
+
+/* List fix */
+
+ul.simple {
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+ul.simple li {
+    margin-left: 24px;
+}
+
+ul.simple li p {
+    margin-bottom: 0;
+}
+
+/* Badges for "Logged in users", "Document owners" etc */
+
+.badge-user, .badge-owner, .badge-new {
+    display: inline-block;
+    font-size: 0.8em;
+    background-color: #c2e2f8;
+    padding: 0px 5px;
+}
+
+.badge-owner::before, .badge-user::before {
+    font-family: "FontAwesome";
+}
+
+.badge-user::before {
+    content: " ";
+}
+
+.badge-owner::before {
+    content: " ";
+}
+
+h3 {
+    margin: 40px 0px 15px 0px;
+}
+
+.rst-content code.literal {
+    color: #FF0073;
+    border-color: #ccc;
+    padding: 0.15em 0.5em;
+}
+
+.wy-menu-vertical {
+    font-family: "IBM Plex Mono";
+}
+
+.toctree-expand {
+    line-height: 20px !important;
+}
+
+.wy-menu-vertical li.toctree-l4 ul {
+    display: none !important;
+}
+
+.wy-menu-vertical li.toctree-l4 .toctree-expand {
+    display: none !important;
+}
+
+.wy-breadcrumbs {
+    border-radius: 10px;
+    font-family: "IBM Plex Mono";
+}

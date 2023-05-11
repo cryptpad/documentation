@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Installation &mdash; документация CryptPad 5.2</title>
+  <title>Installation &mdash; документация CryptPad 5.3</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.2</span>
+              <span class="release">Documentation 5.3</span>
             </a>
             
 <div role="search">
@@ -78,6 +78,7 @@
               <option value="fr">Français</option>
               <option value="de">Deutsch</option>
               <option value="ru">Русский</option>
+              <option value="jp">日本語</option>
 	        	</select>
         	</p>
         </div>
@@ -297,6 +298,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#configuration">Configuration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#daemonization">Daemonization</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="#systemd">Systemd</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#freebsd">FreeBSD</a></li>
 </ul>
 </li>
 </ul>
@@ -318,6 +320,7 @@
 <li class="toctree-l4"><a class="reference internal" href="customization.html#restricting-guest-access">Restricting guest access</a></li>
 <li class="toctree-l4"><a class="reference internal" href="customization.html#links-to-terms-of-service-privacy-policy-and-imprint-pages">Links to Terms of Service, Privacy Policy and Imprint pages</a></li>
 <li class="toctree-l4"><a class="reference internal" href="customization.html#security-hardening">Security Hardening</a></li>
+<li class="toctree-l4"><a class="reference internal" href="customization.html#dark-theme-switch">Dark theme switch</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="customization.html#look-and-feel">Look and feel</a><ul>
@@ -700,6 +703,15 @@ node server
 </ol>
 <p>Other ways of daemonizing nodejs applications include for example <a class="reference external" href="https://github.com/foreversd/forever">foreverjs</a> or <a class="reference external" href="https://pm2.keymetrics.io/">pm2</a>.</p>
 </section>
+<section id="freebsd">
+<h4>FreeBSD<a class="headerlink" href="#freebsd" title="Permalink to this heading">¶</a></h4>
+<p>To run CryptPad as a <a class="reference external" href="https://man.freebsd.org/cgi/man.cgi?query=rc.d&amp;sektion=8&amp;n=1">rc.d</a> unit, please follow the example <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/blob/main/docs/rc.d-cryptpad">rc.d-cryptpad</a> file.</p>
+<ol class="arabic simple">
+<li><p>Save the example as <code class="docutils literal notranslate"><span class="pre">cryptpad</span></code> in <code class="docutils literal notranslate"><span class="pre">/usr/local/etc/rc.d/</span></code></p></li>
+<li><p>Make necessary adjustments (e.g. user name, path)</p></li>
+<li><p>Enable the service at startup with <code class="docutils literal notranslate"><span class="pre">service</span> <span class="pre">cryptpad</span> <span class="pre">enable</span></code></p></li>
+</ol>
+</section>
 </section>
 </section>
 <section id="admin-domain-config">
@@ -849,7 +861,7 @@ contains at least:</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2022, CryptPad Team.
+        &copy; Copyright 2023, CryptPad Team.
 
     </p>
   </div>
@@ -874,7 +886,7 @@ contains at least:</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.2',
+            VERSION:'5.3',
             LANGUAGE:'ru',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
