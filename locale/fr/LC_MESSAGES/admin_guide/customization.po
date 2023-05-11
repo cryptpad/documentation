@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CryptPad \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-06 10:19+0100\n"
+"POT-Creation-Date: 2023-05-11 11:35+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Generated-By: Babel 2.11.0\n"
 
 #: ../../admin_guide/customization.rst:4
 msgid "Instance customization"
@@ -123,16 +123,31 @@ msgid ""
 msgstr ""
 
 #: ../../admin_guide/customization.rst:74
+msgid "Dark theme switch"
+msgstr ""
+
+#: ../../admin_guide/customization.rst:76
+msgid ":badge_new:`New in version 5.3`"
+msgstr ""
+
+#: ../../admin_guide/customization.rst:78
+msgid ""
+"You can enforce the use of the dark theme on your instance by setting the"
+" ``AppConfig.defaultDarkTheme`` variable to true in "
+"``customize/application_config.js``:"
+msgstr ""
+
+#: ../../admin_guide/customization.rst:85
 msgid "Look and feel"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:75
+#: ../../admin_guide/customization.rst:86
 msgid ""
 "Many aspects of CryptPad's interface can be customized by copying files "
 "from ``customize.dist`` to your ``customize`` directory."
 msgstr ""
 
-#: ../../admin_guide/customization.rst:77
+#: ../../admin_guide/customization.rst:88
 msgid ""
 "For example to change colors, copy the LESS color themes "
 "``colortheme.less`` and ``colortheme-dark.less`` from "
@@ -140,23 +155,23 @@ msgid ""
 " and edit the color values."
 msgstr ""
 
-#: ../../admin_guide/customization.rst:79
+#: ../../admin_guide/customization.rst:90
 msgid "To use a custom logo on the instance's homepage:"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:81
+#: ../../admin_guide/customization.rst:92
 msgid "Add your SVG logo to ``customize``"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:82
+#: ../../admin_guide/customization.rst:93
 msgid "Rename the logo ``CryptPad_logo_hero.svg``"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:87
+#: ../../admin_guide/customization.rst:98
 msgid "Open Graph preview images"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:89
+#: ../../admin_guide/customization.rst:100
 msgid ""
 "Previews when links from the instance are posted to social media include "
 "images, these are located in "
@@ -166,11 +181,11 @@ msgid ""
 "just like any other image."
 msgstr ""
 
-#: ../../admin_guide/customization.rst:92
+#: ../../admin_guide/customization.rst:103
 msgid "Translations"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:94
+#: ../../admin_guide/customization.rst:105
 msgid ""
 "To customize the text of the CryptPad interface in a given language, copy"
 " ``customize.dist/translations/messages.xx.js`` to "
@@ -178,7 +193,7 @@ msgid ""
 "the language (use ``messages.js`` to customize English)."
 msgstr ""
 
-#: ../../admin_guide/customization.rst:96
+#: ../../admin_guide/customization.rst:107
 msgid ""
 "In this file, modify the default text using the \"Messages\" object as "
 "follows: ``Messages.key = \"Text\";``. For all the keys and their "
@@ -189,14 +204,14 @@ msgid ""
 "text."
 msgstr ""
 
-#: ../../admin_guide/customization.rst:98
+#: ../../admin_guide/customization.rst:109
 msgid ""
 "For example, to customize the text about the instance on the home page, "
 "the following could be pasted in ``customize/translations/messages.js`` "
 "and the text changed to describe the instance."
 msgstr ""
 
-#: ../../admin_guide/customization.rst:104
+#: ../../admin_guide/customization.rst:115
 msgid ""
 "For more information on how translations work in CryptPad please see "
 ":ref:`dev_translations` in the developer guide."
