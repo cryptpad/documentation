@@ -194,17 +194,7 @@ Subscription
 Support
 -------
 
-Support tickets provide a secure communication channel with the administrators of the CryptPad instance. The **Support** page is accessible through:
-
--  User menu (avatar at the top-right) > |life-ring| **Support**.
-
-|envelope-o| **Existing tickets**: Follow up on conversations with the support team.
-
-- **Reply** to a ticket.
-- **Close** it if the issue has been resolved.
-- **Delete** closed tickets.
-
-|life-ring| **New ticket**: To send a new ticket Fill in the form with a title, category, and the details of the problem or question. Add an attachment if needed, for example a screenshot, and click on **Send**.
+Please see the :ref:`dedicated page <support>`.
 
 Notifications
 -------------
