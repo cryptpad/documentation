@@ -196,6 +196,8 @@ Support
 
 Please see the :ref:`dedicated page <support>`.
 
+.. _user_settings_notifications:
+
 Notifications
 -------------
 

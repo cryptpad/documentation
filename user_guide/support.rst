@@ -111,9 +111,9 @@ After typing your request and sending your ticket you are taken back to the exis
 
 It's where you can read the response from your instance administrators to the tickets you created. If needed, you can add more information to your first message by clicking the REPLY blue button. Note that you can add attachments to your message, like a screenshot for example.
 
+When receiving a response to a ticket, a :ref:`notification <user_settings_notifications>` is sent to your account, visible in the bell at the top right.
+
 If your request has been fulfilled you can close the ticket. Or just wait for them to acknowledge your last message and close it themselves. When the ticket is closed it still appears in your existing tickets list. If you want, you can use the red button at the end to remove it.
 
-Notification
-------------
 
-When receiving a response from your instance administrators, a notification is sent to your account. The number next to the bell on the header will increment. When clicking it, you'll see a message telling you that one of your support tickets have been answered.
+
