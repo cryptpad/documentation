@@ -15,8 +15,8 @@ The support page is separated into 3 tabs:
 
 .. _support_debug:
 
-|wrench| Debug data
------------------------
+Debug data
+----------
 
 It shows you the information included in the support tickets you submit. Like everything else, it's all encrypted and only your instance administrators will be able to access this data. Note that doesn't give access to any of your documents.
 
@@ -88,8 +88,8 @@ List the teams you are member off and some information about them.
 
 .. _support_new:
 
-|life-ring| New ticket
-----------------------
+New ticket
+----------
 
 You can create a new ticket by selecting a category, type in a subject and your request. Note that your instance administrator languages are shown at the top of the page. In case of need don't hesitate to use an online translation system.
 
@@ -106,8 +106,8 @@ After typing your request and sending your ticket you are taken back to the exis
 
 .. _support_existing:
 
-|envelope-o| Existing tickets
------------------------------
+Existing tickets
+----------------
 
 It's where you can read the response from your instance administrators to the tickets you created. If needed, you can add more information to your first message by clicking the REPLY blue button. Note that you can add attachments to your message, like a screenshot for example.
 
