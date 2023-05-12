@@ -78,7 +78,7 @@
               <option value="fr">Français</option>
               <option value="de">Deutsch</option>
               <option value="ru">Русский</option>
-              
+              <option value="ja">日本語</option>
 	        	</select>
         	</p>
         </div>
@@ -605,173 +605,173 @@
             
   <section id="administration-panel">
 <span id="admin-panel"></span><h1>Administration panel<a class="headerlink" href="#administration-panel" title="Permalink to this heading">¶</a></h1>
-<p class="linemarker linemarker-6">A number of monitoring and configuration options are available through the admin panel to administer your instance without needing to open config files on the server.</p>
-<p class="linemarker linemarker-8">The admin panel is available to administrator users (see <a class="reference internal" href="installation.html#admin-adminusers"><span class="std std-ref">Configure administrators</span></a>).</p>
+<p>A number of monitoring and configuration options are available through the admin panel to administer your instance without needing to open config files on the server.</p>
+<p>The admin panel is available to administrator users (see <a class="reference internal" href="installation.html#admin-adminusers"><span class="std std-ref">Configure administrators</span></a>).</p>
 <ul class="simple">
-<li><p class="linemarker linemarker-10"><strong>User Menu</strong> (avatar at the top right) &gt; <em class="fa fa-gears"></em> <strong>Administration</strong></p></li>
-<li><p class="linemarker linemarker-11">or go to <a class="reference external" href="https://your-instance.com/admin/">https://your-instance.com/admin/</a></p></li>
+<li><p><strong>User Menu</strong> (avatar at the top right) &gt; <em class="fa fa-gears"></em> <strong>Administration</strong></p></li>
+<li><p>or go to <a class="reference external" href="https://your-instance.com/admin/">https://your-instance.com/admin/</a></p></li>
 </ul>
-<p class="linemarker linemarker-13">This page repeats the comments present on the admin panels and adds a few clarifications.</p>
+<p>This page repeats the comments present on the admin panels and adds a few clarifications.</p>
 <section id="general">
 <h2>General<a class="headerlink" href="#general" title="Permalink to this heading">¶</a></h2>
 <section id="flush-http-cache">
 <h3>Flush HTTP Cache<a class="headerlink" href="#flush-http-cache" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-21">Force users to download the latest client-side assets (only if your server is in fresh mode).</p>
-<p class="linemarker linemarker-23">This includes some configuration changes distributed via <code class="docutils literal notranslate"><span class="pre">/api/config</span></code>.</p>
+<p>Force users to download the latest client-side assets (only if your server is in fresh mode).</p>
+<p>This includes some configuration changes distributed via <code class="docutils literal notranslate"><span class="pre">/api/config</span></code>.</p>
 </section>
 <section id="update-user-quotas">
 <h3>Update user quotas<a class="headerlink" href="#update-user-quotas" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-28">Forcing an update of user storage limits can be done any time, but is only necessary in the event of an error.</p>
+<p>Forcing an update of user storage limits can be done any time, but is only necessary in the event of an error.</p>
 </section>
 <section id="close-registration">
 <span id="admin-close-registration"></span><h3>Close registration<a class="headerlink" href="#close-registration" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-35">Do not allow any new users to register.</p>
+<p>Do not allow any new users to register.</p>
 </section>
 <section id="enable-remote-embedding">
 <h3>Enable remote embedding<a class="headerlink" href="#enable-remote-embedding" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-40">Allow documents and media from this instance to be embedded on other websites. This will add an &quot;Embed&quot; option to the Share menu. For security reasons applications that use OnlyOffice (Sheets, Document, Presentation) cannot be embedded even if this setting is active.</p>
-<p class="linemarker linemarker-42">Please note that by enabling this settings, you will need to adapt your Nginx configuration file, adding <code class="docutils literal notranslate"><span class="pre">vector:</span></code> to pass <a class="reference internal" href="#admin-checkup"><span class="std std-ref">diagnostic tests</span></a>.</p>
+<p>Allow documents and media from this instance to be embedded on other websites. This will add an &quot;Embed&quot; option to the Share menu. For security reasons applications that use OnlyOffice (Sheets, Document, Presentation) cannot be embedded even if this setting is active.</p>
+<p>Please note that by enabling this settings, you will need to adapt your Nginx configuration file, adding <code class="docutils literal notranslate"><span class="pre">vector:</span></code> to pass <a class="reference internal" href="#admin-checkup"><span class="std std-ref">diagnostic tests</span></a>.</p>
 </section>
 <section id="admin-contact-email">
 <span id="admin-email"></span><h3>Admin contact email<a class="headerlink" href="#admin-contact-email" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-49">This email address is displayed on the instance contact page.</p>
-<p class="linemarker linemarker-51">This email may be used by the development team, only if <a class="reference internal" href="#admin-consent-contact"><span class="std std-ref">Consent to contact</span></a> is given, to warn of security vulnerabilities or in other cases for example matters affecting public facing instances listed in <a class="reference external" href="https://cryptpad.org/instances/">the directory</a>.</p>
+<p>This email address is displayed on the instance contact page.</p>
+<p>This email may be used by the development team, only if <a class="reference internal" href="#admin-consent-contact"><span class="std std-ref">Consent to contact</span></a> is given, to warn of security vulnerabilities or in other cases for example matters affecting public facing instances listed in <a class="reference external" href="https://cryptpad.org/instances/">the directory</a>.</p>
 </section>
 <section id="instance-information">
 <span id="admin-instance-info"></span><h3>Instance information<a class="headerlink" href="#instance-information" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-58">The following fields are used to describe the instance in the <a class="reference internal" href="#admin-list-public"><span class="std std-ref">list of public instances</span></a>:</p>
+<p>The following fields are used to describe the instance in the <a class="reference internal" href="#admin-list-public"><span class="std std-ref">list of public instances</span></a>:</p>
 <ul class="simple">
-<li><p class="linemarker linemarker-60">Instance name (optional, if no name is provided the instance URL is used)</p></li>
-<li><p class="linemarker linemarker-61">Instance description</p></li>
-<li><p class="linemarker linemarker-62">Hosting location (country where the instance's encrypted data is hosted)</p></li>
+<li><p>Instance name (optional, if no name is provided the instance URL is used)</p></li>
+<li><p>Instance description</p></li>
+<li><p>Hosting location (country where the instance's encrypted data is hosted)</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p class="linemarker linemarker-66">This information is used on the instance front page.</p>
+<p>This information is used on the instance front page.</p>
 </div>
 </section>
 </section>
 <section id="user-storage">
 <h2>User Storage<a class="headerlink" href="#user-storage" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-71">This section is for managing storage limits on the instance.</p>
+<p>This section is for managing storage limits on the instance.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p class="linemarker linemarker-75">The values set in the admin panel override the defaults or modifications made to the configuration files.</p>
+<p>The values set in the admin panel override the defaults or modifications made to the configuration files.</p>
 </div>
 <section id="storage-limit">
 <h3>Storage Limit<a class="headerlink" href="#storage-limit" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-80">Maximum storage limit for CryptDrives (users and teams) when no custom rule is applied.</p>
+<p>Maximum storage limit for CryptDrives (users and teams) when no custom rule is applied.</p>
 </section>
 <section id="apply-a-custom-limit">
 <h3>Apply a custom limit<a class="headerlink" href="#apply-a-custom-limit" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-85">Set custom limits for users by using their public key. You can update or remove an existing limit.</p>
+<p>Set custom limits for users by using their public key. You can update or remove an existing limit.</p>
 </section>
 <section id="archive-documents">
 <h3>Archive documents<a class="headerlink" href="#archive-documents" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-90">Make a document unavailable without deleting it permanently. It will be placed in an ‘archive’ directory and deleted after a few days (configurable in the server configuration file).</p>
-<p class="linemarker linemarker-92">Make a document unavailable, for example for moderation in the case where a document with inappropriate/illegal content is reported.</p>
+<p>Make a document unavailable without deleting it permanently. It will be placed in an ‘archive’ directory and deleted after a few days (configurable in the server configuration file).</p>
+<p>Make a document unavailable, for example for moderation in the case where a document with inappropriate/illegal content is reported.</p>
 </section>
 <section id="restore-documents">
 <h3>Restore documents<a class="headerlink" href="#restore-documents" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-97">Restore a document that had previously been archived.</p>
+<p>Restore a document that had previously been archived.</p>
 </section>
 <section id="check-account-storage">
 <h3>Check account storage<a class="headerlink" href="#check-account-storage" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-102">Check the total size of items counted against a user or team’s quota given their public key.</p>
+<p>Check the total size of items counted against a user or team’s quota given their public key.</p>
 </section>
 <section id="list-of-custom-limits">
 <h3>List of custom limits<a class="headerlink" href="#list-of-custom-limits" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-107">List all the custom storage limits applied to your instance.</p>
+<p>List all the custom storage limits applied to your instance.</p>
 </section>
 </section>
 <section id="statistics">
 <h2>Statistics<a class="headerlink" href="#statistics" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
-<li><p class="linemarker linemarker-112">Active connections: Number of active websocket connections (and unique IP addresses connected)</p></li>
-<li><p class="linemarker linemarker-113">Active pads: Number of unique documents currently being viewed or edited</p></li>
-<li><p class="linemarker linemarker-114">Open Files: Number of file descriptors currently open on the server</p></li>
-<li><p class="linemarker linemarker-115">Registered users: Number of users registered on your instance</p></li>
-<li><p class="linemarker linemarker-116">Disk usage: Amount of storage space consumed by various CryptPad resources</p></li>
+<li><p>Active connections: Number of active websocket connections (and unique IP addresses connected)</p></li>
+<li><p>Active pads: Number of unique documents currently being viewed or edited</p></li>
+<li><p>Open Files: Number of file descriptors currently open on the server</p></li>
+<li><p>Registered users: Number of users registered on your instance</p></li>
+<li><p>Disk usage: Amount of storage space consumed by various CryptPad resources</p></li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p class="linemarker linemarker-120">The disk usage report can be very resource intensive to run on large instances.</p>
+<p>The disk usage report can be very resource intensive to run on large instances.</p>
 </div>
 </section>
 <section id="support">
 <h2>Support<a class="headerlink" href="#support" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-125">To enable the Support mailbox, please see <a class="reference internal" href="installation.html#admin-support-mailbox"><span class="std std-ref">Configure support mailbox</span></a>.</p>
-<p class="linemarker linemarker-127">List of tickets sent by users to the support mailbox. All the administrators can see the messages and their answers. A closed ticket cannot be re-opened. You can only remove (hide) closed tickets, and the removed tickets are still visible by other administrators.</p>
+<p>To enable the Support mailbox, please see <a class="reference internal" href="installation.html#admin-support-mailbox"><span class="std std-ref">Configure support mailbox</span></a>.</p>
+<p>List of tickets sent by users to the support mailbox. All the administrators can see the messages and their answers. A closed ticket cannot be re-opened. You can only remove (hide) closed tickets, and the removed tickets are still visible by other administrators.</p>
 <ul class="simple">
-<li><p class="linemarker linemarker-129">reply to tickets</p></li>
-<li><p class="linemarker linemarker-130">close tickets</p></li>
-<li><p class="linemarker linemarker-131">remove closed tickets</p></li>
+<li><p>reply to tickets</p></li>
+<li><p>close tickets</p></li>
+<li><p>remove closed tickets</p></li>
 </ul>
 </section>
 <section id="broadcast">
 <h2>Broadcast<a class="headerlink" href="#broadcast" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-136">This section offers different ways of sending notifications to all users on the instance.</p>
+<p>This section offers different ways of sending notifications to all users on the instance.</p>
 <section id="maintenance">
 <h3>Maintenance<a class="headerlink" href="#maintenance" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-141">Plan a maintenance on this instance and notify all users. Limited to one active maintenance at a given time.</p>
+<p>Plan a maintenance on this instance and notify all users. Limited to one active maintenance at a given time.</p>
 </section>
 <section id="survey">
 <h3>Survey<a class="headerlink" href="#survey" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-146">Add, update or remove a link to an external survey. Users will receive a notification and the survey will remain available from the user menu.</p>
+<p>Add, update or remove a link to an external survey. Users will receive a notification and the survey will remain available from the user menu.</p>
 </section>
 <section id="broadcast-message">
 <h3>Broadcast Message<a class="headerlink" href="#broadcast-message" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-151">Send a message to all users on this instance. All existing and new users will receive it as a notification. Preview messages before sending them with &quot;Preview notification&quot;. Preview notifications have a red icon and are visible only to you.</p>
+<p>Send a message to all users on this instance. All existing and new users will receive it as a notification. Preview messages before sending them with &quot;Preview notification&quot;. Preview notifications have a red icon and are visible only to you.</p>
 </section>
 </section>
 <section id="performance">
 <h2>Performance<a class="headerlink" href="#performance" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-156">An overview of the total time spent executing various server-side commands.</p>
+<p>An overview of the total time spent executing various server-side commands.</p>
 </section>
 <section id="network">
 <h2>Network<a class="headerlink" href="#network" title="Permalink to this heading">¶</a></h2>
 <section id="validate-instance-configuration">
 <span id="admin-checkup"></span><h3>Validate instance configuration<a class="headerlink" href="#validate-instance-configuration" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-166">CryptPad includes a page which automatically diagnoses common configuration issues and suggests how to correct them if necessary. To visit the page use the <strong>Run Diagnostics</strong> button or visit <code class="docutils literal notranslate"><span class="pre">https://your.instance/checkup/</span></code>.</p>
-<p class="linemarker linemarker-168">The rest of this section includes options about how you and your instance communicate, or not, with the CryptPad development team.</p>
+<p>CryptPad includes a page which automatically diagnoses common configuration issues and suggests how to correct them if necessary. To visit the page use the <strong>Run Diagnostics</strong> button or visit <code class="docutils literal notranslate"><span class="pre">https://your.instance/checkup/</span></code>.</p>
+<p>The rest of this section includes options about how you and your instance communicate, or not, with the CryptPad development team.</p>
 </section>
 <section id="server-telemetry">
 <span id="admin-telemetry-optout"></span><h3>Server telemetry<a class="headerlink" href="#server-telemetry" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-175"><strong>Opt-out</strong> of daily messages sent from the instance to the development team's server. The purpose of these messages is to count how many third-party instances of CryptPad are in operation and which version of the software they are running. The full content of the messages can be reviewed in CryptPad's server logs.</p>
+<p><strong>Opt-out</strong> of daily messages sent from the instance to the development team's server. The purpose of these messages is to count how many third-party instances of CryptPad are in operation and which version of the software they are running. The full content of the messages can be reviewed in CryptPad's server logs.</p>
 </section>
 <section id="list-my-instance-in-public-directories">
 <span id="admin-list-public"></span><h3>List my instance in public directories<a class="headerlink" href="#list-my-instance-in-public-directories" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-182"><strong>Opt-in</strong> to have the instance included in the <a class="reference external" href="https://cryptpad.org/instances/">list of public instances</a> on <a class="reference external" href="https://cryptpad.org">the CryptPad project site</a> if it is intended for public use.</p>
-<p class="linemarker linemarker-184">In addition to this setting being enabled, the following criteria are required in order to have an instance listed:</p>
+<p><strong>Opt-in</strong> to have the instance included in the <a class="reference external" href="https://cryptpad.org/instances/">list of public instances</a> on <a class="reference external" href="https://cryptpad.org">the CryptPad project site</a> if it is intended for public use.</p>
+<p>In addition to this setting being enabled, the following criteria are required in order to have an instance listed:</p>
 <ul class="simple">
-<li><p class="linemarker linemarker-186">All <a class="reference internal" href="#admin-checkup"><span class="std std-ref">diagnostic tests</span></a> must pass</p></li>
-<li><p class="linemarker linemarker-187">The version of CryptPad must be up to date within 90 days of <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/releases">the latest release</a></p></li>
-<li><p class="linemarker linemarker-188">Instance information must be provided in the <a class="reference internal" href="#admin-instance-info"><span class="std std-ref">General tab</span></a></p></li>
-<li><p class="linemarker linemarker-189"><a class="reference internal" href="#admin-telemetry-optout"><span class="std std-ref">Server telemetry</span></a> must be enabled</p></li>
-<li><p class="linemarker linemarker-190">Absence of analytics and third-party trackers</p></li>
-<li><p class="linemarker linemarker-191">A working backup strategy is in place and has been tested</p></li>
-<li><p class="linemarker linemarker-192">At least one other person must have access to the infrastructure</p></li>
-<li><p class="linemarker linemarker-193">Commitment to give users at least 6 months of advance warning in case of shutting down</p></li>
+<li><p>All <a class="reference internal" href="#admin-checkup"><span class="std std-ref">diagnostic tests</span></a> must pass</p></li>
+<li><p>The version of CryptPad must be up to date within 90 days of <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/releases">the latest release</a></p></li>
+<li><p>Instance information must be provided in the <a class="reference internal" href="#admin-instance-info"><span class="std std-ref">General tab</span></a></p></li>
+<li><p><a class="reference internal" href="#admin-telemetry-optout"><span class="std std-ref">Server telemetry</span></a> must be enabled</p></li>
+<li><p>Absence of analytics and third-party trackers</p></li>
+<li><p>A working backup strategy is in place and has been tested</p></li>
+<li><p>At least one other person must have access to the infrastructure</p></li>
+<li><p>Commitment to give users at least 6 months of advance warning in case of shutting down</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p class="linemarker linemarker-197">The <a class="reference external" href="https://cryptpad.org/instances/">list of public instances</a> is considered an extension of the CryptPad community. As such, the development team reserves the right to remove instances from the list if their administrators or the groups they represent are in breach of the <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> or for any other reason at their own discretion.</p>
+<p>The <a class="reference external" href="https://cryptpad.org/instances/">list of public instances</a> is considered an extension of the CryptPad community. As such, the development team reserves the right to remove instances from the list if their administrators or the groups they represent are in breach of the <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> or for any other reason at their own discretion.</p>
 </div>
 </section>
 <section id="consent-to-contact">
 <span id="admin-consent-contact"></span><h3>Consent to contact<a class="headerlink" href="#consent-to-contact" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-204"><strong>Opt-in</strong> to allow the development team to contact the <a class="reference internal" href="#admin-email"><span class="std std-ref">Admin contact email</span></a> with notifications of serious problems with the software or the instance  configuration. Administrator emails are never shared, sold, or used for marketing purposes.</p>
+<p><strong>Opt-in</strong> to allow the development team to contact the <a class="reference internal" href="#admin-email"><span class="std std-ref">Admin contact email</span></a> with notifications of serious problems with the software or the instance  configuration. Administrator emails are never shared, sold, or used for marketing purposes.</p>
 </section>
 <section id="crowdfunding-participation">
 <h3>Crowdfunding participation<a class="headerlink" href="#crowdfunding-participation" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-209"><strong>Opt-out</strong> of advertizing CryptPad's crowdfunding campaign on the instance.</p>
+<p><strong>Opt-out</strong> of advertizing CryptPad's crowdfunding campaign on the instance.</p>
 </section>
 <section id="instance-purpose">
 <h3>Instance purpose<a class="headerlink" href="#instance-purpose" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-214">Indicate the purpose of the instance, this is used to inform the development roadmap.</p>
+<p>Indicate the purpose of the instance, this is used to inform the development roadmap.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p class="linemarker linemarker-217">Instance purpose is only sent to the development team if <a class="reference internal" href="#admin-telemetry-optout"><span class="std std-ref">Server telemetry</span></a> is enabled</p>
+<p>Instance purpose is only sent to the development team if <a class="reference internal" href="#admin-telemetry-optout"><span class="std std-ref">Server telemetry</span></a> is enabled</p>
 </div>
 </section>
 </section>
