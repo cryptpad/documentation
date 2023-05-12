@@ -194,7 +194,9 @@ Subscription
 Support
 -------
 
-Please see the :ref:`dedicated page <support>`.
+:badge_new:`New in version 5.3`
+
+This section has been moved to its :ref:`dedicated page <support>`.
 
 .. _user_settings_notifications:
 
