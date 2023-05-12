@@ -7,9 +7,6 @@ Support tickets provide a secure communication channel with the administrators o
 
 -  User menu (avatar at the top-right) > |life-ring| **Support**.
 
-.. image:: /images/screenshot-menu-support.png
-   :class: screenshot
-
 The support page is separated into 3 tabs:
 
 - |envelope-o| :ref:`Existing tickets <support_existing>`
@@ -23,10 +20,31 @@ The support page is separated into 3 tabs:
 
 It shows you the information included in the support tickets you submit. Like everything else, it's all encrypted and only your instance administrators will be able to access this data. Note that doesn't give access to any of your documents.
 
-.. image:: /images/screenshot-support-debug-data.png
-   :class: screenshot
+.. code-block:: json
 
-Here is the list of the data shared and its purpose:
+   {
+      "name": "Louise Michel",
+      "accountName": "louise",
+      "drive": "59bf50e995e3e4c1521b68714c90d0da",
+      "channel": "450969c6f83219801fc4d564317d2b4c",
+      "curvePublic": "X3vctTSzpzXiGXTZAH3ZZyGPRQ6XSkP1bL+gpTXd1hc=",
+      "edPublic": "iet4Bjei1m0m6xPxEn18Z+x/MBwVVy/EDoZi/qLNx9s=",
+      "notifications": "b8a8601db2daf07a0e6990e9e24492b0",
+      "quota": {
+         "usage": 20495042,
+         "limit": 1073741824,
+         "plan": ""
+      },
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/112.0",
+      "vendor": "",
+      "appVersion": "5.0 (Macintosh)",
+      "screenWidth": 1470,
+      "screenHeight": 956,
+      "blockLocation": "https://files.cryptpad.fr/block/cs/csbVlBNtg50Lm1elgBkmQsOBXmu7MT38KzSt2ru1OXM=",
+      "teams": []
+   }
+
+Here is the detailed list of the data shared and its purpose:
 
 Names
 ~~~~~
@@ -46,7 +64,7 @@ Public curve & key used for encryption.
 Quota
 ~~~~~
 
-Your total storage and how much is currently taken.
+Your total storage, how much is currently taken and the subscription if you have one.
 
 Web browser
 ~~~~~~~~~~~
@@ -75,10 +93,14 @@ List the teams you are member off and some information about them.
 
 You can create a new ticket by selecting a category, type in a subject and your request. Note that your instance administrator languages are shown at the top of the page. In case of need don't hesitate to use an online translation system.
 
-.. image:: /images/screenshot-support-ticket-subject.png
-   :class: screenshot
-
 After selecting the category, some guidelines are shown. You'll learn what type of information your instance administrators will likely require to be able to help you.
+
+- User account
+- Drive or team
+- Document
+- Report abuse
+- Bug report
+- Other
 
 After typing your request and sending your ticket you are taken back to the existing tickets tab.
 
@@ -87,29 +109,11 @@ After typing your request and sending your ticket you are taken back to the exis
 |envelope-o| Existing tickets
 -----------------------------
 
-Here you see a list of your tickets. You can scroll through them to see the responses from your instance administrators.
+It's where you can read the response from your instance administrators to the tickets you created. If needed, you can add more information to your first message by clicking the REPLY blue button. Note that you can add attachments to your message, like a screenshot for example.
 
-.. image:: /images/screenshot-support-existing-tickets.png
-   :class: screenshot
-
-If needed, you can add more information to your first message by clicking the REPLY blue button.
-
-.. image:: /images/screenshot-support-existing-ticket-response.png
-   :class: screenshot
-
-Going back to your existing tickets tab you can read the response from your instance administrators. If necessary you can answer them and if your request has been fulfilled close the ticket yourself. Or just wait for them to acknowledge your last message and close it themselves.
-
-Note that you can add attachments to your message. Like a screenshot for example.
-
-.. image:: /images/screenshot-support-closed-ticket-remove.png
-   :class: screenshot
-
-When the ticket is closed it still appears in your existing tickets list. If you want, you can use the red button at the end to remove it.
+If your request has been fulfilled you can close the ticket. Or just wait for them to acknowledge your last message and close it themselves. When the ticket is closed it still appears in your existing tickets list. If you want, you can use the red button at the end to remove it.
 
 Notification
 ------------
-
-.. image:: /images/screenshot-notification-response.png
-   :class: screenshot
 
 When receiving a response from your instance administrators, a notification is sent to your account. The number next to the bell on the header will increment. When clicking it, you'll see a message telling you that one of your support tickets have been answered.
