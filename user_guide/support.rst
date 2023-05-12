@@ -13,6 +13,35 @@ The support page is separated into 3 tabs:
 - |life-ring| :ref:`New ticket <support_new>`
 - |wrench| :ref:`Debug data <support_debug>`
 
+.. _support_existing:
+
+Existing tickets
+----------------
+
+It's where you can read the response from your instance administrators to the tickets you created. If needed, you can add more information to your first message by clicking the REPLY blue button. Note that you can add attachments to your message, like a screenshot for example.
+
+When receiving a response to a ticket, a :ref:`notification <user_settings_notifications>` is sent to your account, visible in the bell at the top right.
+
+If your request has been fulfilled you can close the ticket. Or just wait for them to acknowledge your last message and close it themselves. When the ticket is closed it still appears in your existing tickets list. If you want, you can use the red button at the end to remove it.
+
+.. _support_new:
+
+New ticket
+----------
+
+You can create a new ticket by selecting a category, type in a subject and your request. Note that your instance administrator languages are shown at the top of the page. In case of need don't hesitate to use an online translation system.
+
+After selecting the category, some guidelines are shown. You'll learn what type of information your instance administrators will likely require to be able to help you.
+
+- User account
+- Drive or team
+- Document
+- Report abuse
+- Bug report
+- Other
+
+After typing your request and sending your ticket you are taken back to the existing tickets tab.
+
 .. _support_debug:
 
 Debug data
@@ -85,35 +114,4 @@ Teams
 ~~~~~
 
 List the teams you are member off and some information about them.
-
-.. _support_new:
-
-New ticket
-----------
-
-You can create a new ticket by selecting a category, type in a subject and your request. Note that your instance administrator languages are shown at the top of the page. In case of need don't hesitate to use an online translation system.
-
-After selecting the category, some guidelines are shown. You'll learn what type of information your instance administrators will likely require to be able to help you.
-
-- User account
-- Drive or team
-- Document
-- Report abuse
-- Bug report
-- Other
-
-After typing your request and sending your ticket you are taken back to the existing tickets tab.
-
-.. _support_existing:
-
-Existing tickets
-----------------
-
-It's where you can read the response from your instance administrators to the tickets you created. If needed, you can add more information to your first message by clicking the REPLY blue button. Note that you can add attachments to your message, like a screenshot for example.
-
-When receiving a response to a ticket, a :ref:`notification <user_settings_notifications>` is sent to your account, visible in the bell at the top right.
-
-If your request has been fulfilled you can close the ticket. Or just wait for them to acknowledge your last message and close it themselves. When the ticket is closed it still appears in your existing tickets list. If you want, you can use the red button at the end to remove it.
-
-
 
