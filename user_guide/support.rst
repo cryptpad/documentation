@@ -108,7 +108,7 @@ Width & height, allows us understand the kind of device you are using.
 Block location
 ~~~~~~~~~~~~~~
 
-To verify your credentials exists on the server in case of login issue.
+To verify your credentials exist on the server in case of login issue.
 
 Teams
 ~~~~~
