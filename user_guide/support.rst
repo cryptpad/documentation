@@ -113,5 +113,5 @@ To verify your credentials exist on the server in case of login issue.
 Teams
 ~~~~~
 
-List the teams you are member off and some information about them.
+List the teams you are member of and some information about them.
 
