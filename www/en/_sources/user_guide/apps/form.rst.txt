@@ -220,8 +220,6 @@ Editing after submission
 
 .. XXX track this as feature is implemented
 
-:badge_new:`New in version 5.2`
-
 - One time only: participants can answer the form only one time and can't modify or delete their responses after submitting them.
 - One time and edit/delete: participants can answer the form only one time but are allowed modify or delete their responses after submitting them.
 - Multiple times: participants can answer the form multiple times but can't modify or delete their responses after submitting them.

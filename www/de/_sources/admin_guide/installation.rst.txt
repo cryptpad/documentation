@@ -56,7 +56,7 @@ Clone the CryptPad repository
 
 .. code:: bash
 
-   git clone https://github.com/xwiki-labs/cryptpad.git cryptpad
+   git clone https://github.com/cryptpad/cryptpad.git cryptpad
 
 Switch to the latest published tag
 
@@ -104,7 +104,7 @@ In production you may want to run CryptPad as a daemon that restarts automatical
 Systemd
 ^^^^^^^
 
-To run CryptPad as a `systemd <https://www.freedesktop.org/software/systemd/man/systemd.service.html>`__ service, please follow the example `cryptpad.service <https://github.com/xwiki-labs/cryptpad/blob/main/docs/cryptpad.service>`__ file.
+To run CryptPad as a `systemd <https://www.freedesktop.org/software/systemd/man/systemd.service.html>`__ service, please follow the example `cryptpad.service <https://github.com/cryptpad/cryptpad/blob/main/docs/cryptpad.service>`__ file.
 
 #.  Save the example as ``cryptpad.service`` in ``/etc/systemd/system/``
 #.  Make necessary adjustments (e.g. user name, path, nodejs version)
@@ -115,7 +115,7 @@ Other ways of daemonizing nodejs applications include for example `foreverjs <ht
 FreeBSD
 ^^^^^^^
 
-To run CryptPad as a `rc.d <https://man.freebsd.org/cgi/man.cgi?query=rc.d&sektion=8&n=1>`__ unit, please follow the example `rc.d-cryptpad <https://github.com/xwiki-labs/cryptpad/blob/main/docs/rc.d-cryptpad>`__ file.
+To run CryptPad as a `rc.d <https://man.freebsd.org/cgi/man.cgi?query=rc.d&sektion=8&n=1>`__ unit, please follow the example `rc.d-cryptpad <https://github.com/cryptpad/cryptpad/blob/main/docs/rc.d-cryptpad>`__ file.
 
 #. Save the example as ``cryptpad`` in ``/usr/local/etc/rc.d/``
 #. Make necessary adjustments (e.g. user name, path)
@@ -133,12 +133,12 @@ You need two domains to take full advantage of CryptPad’s security features.
 
 The intent of this system is to limit the risk of Cross-Site Scripting (XSS) vulnerabilities allowing attackers to leak user data. Sensitive computation (like the processing of cryptographic keys) is handled on the main domain, while the user-interface is implemented on the sandbox domain.
 
-The `example Nginx configuration <https://github.com/xwiki-labs/cryptpad/blob/main/docs/example.nginx.conf>`__ file includes the relevant headers to enable the sandboxing system, however, you must configure your instance correctly for it to be effective. You will need:
+The `example Nginx configuration <https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf>`__ file includes the relevant headers to enable the sandboxing system, however, you must configure your instance correctly for it to be effective. You will need:
 
 1. two domains or subdomains
 2. to include both domains in ``cryptpad/config/config.js`` as described in :ref:`admin_cryptpad_config`
 3. to generate one SSL certificate that covers both domains. The development team uses `acme.sh <https://acme.sh/>`__ and this is reflected in the example config.
-4. to correctly assign both domains and certificates to the relevant variables in the `example Nginx configuration <https://github.com/xwiki-labs/cryptpad/blob/main/docs/example.nginx.conf>`__
+4. to correctly assign both domains and certificates to the relevant variables in the `example Nginx configuration <https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf>`__
 
 .. warning::
 
@@ -165,7 +165,7 @@ Note that the version of Nginx distributed by your operating system may not supp
 
 To configure Nginx for CryptPad:
 
-1. Copy the `CryptPad example Nginx config file <https://github.com/xwiki-labs/cryptpad/blob/main/docs/example.nginx.conf>`__ so that it is used/imported by the main Nginx config, for example by placing it in ``/etc/nginx/conf.d/cryptpad.conf``.
+1. Copy the `CryptPad example Nginx config file <https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf>`__ so that it is used/imported by the main Nginx config, for example by placing it in ``/etc/nginx/conf.d/cryptpad.conf``.
 2. Edit the configuration file with the correct domains and paths to certificates.
 3. Run ``openssl dhparam -out /etc/nginx/dhparam.pem 4096`` if you haven’t done so already on the host machine.
 
@@ -273,4 +273,4 @@ The development team is available to provide paid support contracts (see our `or
 
 We recommend you to go over our `forum <https://forum.cryptpad.org>`_ and or `admins Matrix channel <https://matrix.to/#/#cryptpad-admins:matrix.xwiki.com>`_.
 
-Note that community support is provided by volunteers, please be aware of what you are asking of them and respect `our Code of Conduct <https://github.com/xwiki-labs/cryptpad/blob/main/CODE_OF_CONDUCT.md>`_ at all time.
+Note that community support is provided by volunteers, please be aware of what you are asking of them and respect `our Code of Conduct <https://github.com/cryptpad/cryptpad/blob/main/CODE_OF_CONDUCT.md>`_ at all time.

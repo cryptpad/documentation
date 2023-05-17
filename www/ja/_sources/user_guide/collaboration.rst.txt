@@ -52,9 +52,7 @@ Calendar
 
 To add events, simply click on the desired time/date in the calendar, view (drag for duration). Alternatively use |plus| **New event** in the toolbar.
 
-:badge_new:`New in version 5.2`
-
-You can now create recurring events, repeat:
+You can create recurring events, repeat:
 
 - **One time**, default option
 - **Daily**
