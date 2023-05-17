@@ -104,7 +104,7 @@ Translations
 
 To customize the text of the CryptPad interface in a given language, copy ``customize.dist/translations/messages.xx.js`` to ``customize/translations/messages.xx.js`` where ``xx`` is the locale of the language (use ``messages.js`` to customize English).
 
-In this file, modify the default text using the "Messages" object as follows: ``Messages.key = "Text";``. For all the keys and their associated text please see `www/common/translations/messages.json <https://github.com/xwiki-labs/cryptpad/blob/main/www/common/translations/messages.json>`__ or any of the ``messages.xx.json`` in the same directory for the translated text.
+In this file, modify the default text using the "Messages" object as follows: ``Messages.key = "Text";``. For all the keys and their associated text please see `www/common/translations/messages.json <https://github.com/cryptpad/cryptpad/blob/main/www/common/translations/messages.json>`__ or any of the ``messages.xx.json`` in the same directory for the translated text.
 
 For example, to customize the text about the instance on the home page, the following could be pasted in ``customize/translations/messages.js`` and the text changed to describe the instance.
 

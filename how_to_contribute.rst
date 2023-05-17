@@ -40,12 +40,12 @@ There are two ways to report bugs or issues:
 
 - Cryptpad's built in :ref:`support ticket system <user_support>` where you can message instance administrators. These messages are encrypted like everything else on CryptPad.
 
--  `Github issue tracker <https://github.com/xwiki-labs/cryptpad/issues/new/choose>`__ to file the issue publicly using the bug report template. (A Github account is needed to submit issues)
+-  `Github issue tracker <https://github.com/cryptpad/cryptpad/issues/new/choose>`__ to file the issue publicly using the bug report template. (A Github account is needed to submit issues)
 
 Contribute to the documentation
 -------------------------------
 
-If you have corrections, edits, or suggestions for this documentation, you can contribute and help improve the service for everyone. Please send your proposed changes to `the forum <https://forum.cryptpad.org/>`__ or use a `GitHub pull request <https://github.com/xwiki-labs/cryptpad-documentation>`__.
+If you have corrections, edits, or suggestions for this documentation, you can contribute and help improve the service for everyone. Please send your proposed changes to `the forum <https://forum.cryptpad.org/>`__ or use a `GitHub pull request <https://github.com/cryptpad/cryptpad-documentation>`__.
 
 
 .. _contribute_translation:
@@ -55,7 +55,7 @@ Translate CryptPad
 
 The CryptPad team translates the software in English and French, with many more languages provided by the community. Translating CryptPad—and/or keeping translations up to date as the platform develops—is a much needed effort to make it available to as many people as possible.
 
-To translate CryptPad itself please see the `Translation guide <https://github.com/xwiki-labs/cryptpad/blob/main/customize.dist/translations/README.md>`__.
+To translate CryptPad itself please see the `Translation guide <https://github.com/cryptpad/cryptpad/blob/main/customize.dist/translations/README.md>`__.
 
 To translate this documentation please visit the project on `Weblate <https://weblate.cryptpad.fr/projects/user-guide/>`__. To start translating a new language, please `get in touch with the development team <https://cryptpad.fr/contact.html>`__.
 
@@ -69,9 +69,9 @@ Current progression on translated languages:
 Contribute to the code
 ----------------------
 
-CryptPad is written in JavaScript and we accept pull requests on `Github <https://github.com/xwiki-labs/cryptpad>`__. Note that the security layer is separated from the application layer, so it is possible to contribute to CryptPad without skills in cryptography. Contributions include, by order of difficulty:
+CryptPad is written in JavaScript and we accept pull requests on `Github <https://github.com/cryptpad/cryptpad>`__. Note that the security layer is separated from the application layer, so it is possible to contribute to CryptPad without skills in cryptography. Contributions include, by order of difficulty:
 
-- Fixing a bug from the `issue tracker <https://github.com/xwiki-labs/cryptpad/issues>`__.
+- Fixing a bug from the `issue tracker <https://github.com/cryptpad/cryptpad/issues>`__.
 - Adding a new feature.
 - Building a new application or integrating an existing one to CryptPad's encrypted real-time collaboration.
 
