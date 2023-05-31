@@ -137,16 +137,16 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="security.html">Sicherheit</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="security.html#trust-assumptions">Trust Assumptions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#trust-assumptions">Vertrauen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="security.html#passwords-for-documents-and-folders">Passwörter für Dokumente und Ordner</a></li>
-<li class="toctree-l3"><a class="reference internal" href="security.html#verifying-contacts">Verifying contacts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="security.html#self-destructing-documents">Self-destructing documents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#verifying-contacts">Kontakte verifizieren</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#self-destructing-documents">Selbst-zerstörende Dokumente</a></li>
 <li class="toctree-l3"><a class="reference internal" href="security.html#remote-disconnect">Sitzungen beenden</a></li>
 <li class="toctree-l3"><a class="reference internal" href="security.html#remote-content">Externer Inhalt</a></li>
-<li class="toctree-l3"><a class="reference internal" href="security.html#known-caveats">Known caveats</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="security.html#no-unique-usernames">No unique usernames</a></li>
-<li class="toctree-l4"><a class="reference internal" href="security.html#edit-rights-in-teams">Edit rights in teams</a></li>
-<li class="toctree-l4"><a class="reference internal" href="security.html#access-of-former-team-members">Access of former team members</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#known-caveats">Bekannte Tücken</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="security.html#no-unique-usernames">Keine einzigartigen Kontonamen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="security.html#edit-rights-in-teams">Bearbeitungsrechte in Teams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="security.html#access-of-former-team-members">Zugriff ehemaliger Team-Mitglieder</a></li>
 </ul>
 </li>
 </ul>
@@ -159,7 +159,7 @@
 <li class="toctree-l4"><a class="reference internal" href="drive.html#deleting">Löschen</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="drive.html#history">History</a></li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#history">Verlauf</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#tags">Tags</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#templates">Vorlagen</a></li>
 </ul>
@@ -646,7 +646,7 @@
 <span id="another-user-profile"></span><h3>Profile anderer Benutzer<a class="headerlink" href="#user-profile" title="Permalink to this heading">¶</a></h3>
 <p>Um das Profil eines anderen Benutzers anzusehen:</p>
 <ul class="simple">
-<li><p><strong>User list</strong> <em class="fa fa-users"></em> <em class="fa fa-eye"></em> of a document where they are connected &gt; <code class="docutils literal notranslate"><span class="pre">Click</span></code> on their name,</p></li>
+<li><p><strong>Benutzerliste</strong> <em class="fa fa-users"></em> <em class="fa fa-eye"></em> eines vom Benutzer gerade verwendeten Dokuments &gt; <code class="docutils literal notranslate"><span class="pre">Klicke</span></code> auf den Namen.</p></li>
 <li><p>Wenn der Benutzer in deiner <a class="reference internal" href="#contacts"><span class="std std-ref">Kontaktliste</span></a> ist: Benutzermenü (Avatar oben rechts) &gt; <em class="fa fa-address-book"></em> <strong>Kontakte</strong> &gt; <code class="docutils literal notranslate"><span class="pre">Doppelklicke</span></code> auf den Namen in der Liste.</p></li>
 </ul>
 <p>Auf der Profilseite eines anderen Benutzers:</p>
@@ -660,27 +660,27 @@
 <section id="calendar">
 <h2>Kalender<a class="headerlink" href="#calendar" title="Permalink to this heading">¶</a></h2>
 <figure class="align-default">
-<img alt="screenshot of the calendar" class="screenshot" src="../_images/calendar.png" />
+<img alt="Screenshot vom Kalender" class="screenshot" src="../_images/calendar.png" />
 </figure>
 <p>Um Ereignisse hinzuzufügen, klicke einfach auf das gewünschte Datum/Zeit im Kalender (ändere Dauer durch Ziehen). Alternativ kannst du <em class="fa fa-plus"></em> <strong>Neues Ereignis</strong> in der Werkzeugleiste verwenden.</p>
 <p>You can create recurring events, repeat:</p>
 <ul>
-<li><p><strong>One time</strong>, default option</p></li>
-<li><p><strong>Daily</strong></p></li>
-<li><p><strong>Weekly</strong></p></li>
-<li><p><strong>Monthly</strong></p></li>
-<li><p><strong>Yearly</strong></p></li>
-<li><p><strong>Daily on weekdays</strong></p></li>
-<li><p><strong>Custom</strong>, see below:</p>
+<li><p><strong>Einmalig</strong>, Standard</p></li>
+<li><p><strong>Täglich</strong></p></li>
+<li><p><strong>Wöchentlich</strong></p></li>
+<li><p><strong>Monatlich</strong></p></li>
+<li><p><strong>Jährlich</strong></p></li>
+<li><p><strong>Täglich an Wochentagen</strong></p></li>
+<li><p><strong>Benutzerdefiniert</strong>, siehe unten:</p>
 <blockquote>
 <div><ul>
-<li><p><strong>Repeat every X days</strong>, weeks, months or years</p></li>
-<li><p><strong>Stop repeating</strong>:</p>
+<li><p><strong>Wiederholen alle X Tage</strong>, Wochen, Monate oder Jahre</p></li>
+<li><p><strong>Wiederholen beenden</strong>:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Never</p></li>
-<li><p>On a specific date</p></li>
-<li><p>After X times</p></li>
+<li><p>Nie</p></li>
+<li><p>An einem bestimmten Datum</p></li>
+<li><p>Nach X Ereignissen</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -725,10 +725,10 @@
 <ol class="arabic simple">
 <li><p>Kopiere den Link: Benutzermenü (Avatar oben rechts) &gt; <em class="fa fa-user-circle"></em> <strong>Profil</strong> &gt; <em class="fa fa-share-alt"></em> <strong>Teilen</strong>.</p></li>
 <li><p>Sende den Link an den Benutzer auf eine Art deiner Wahl (am besten über einen sicheren Kommukationskanal).</p></li>
-<li><p>Your contact must then click <strong>Send a contact request</strong>.</p></li>
-<li><p>You get a notification with the request, click <strong>Accept</strong>.</p></li>
+<li><p>Dein Kontakt muss dann auf <strong>Kontaktanfrage senden</strong> klicken.</p></li>
+<li><p>Du erhältst eine Benachrichtigung mit der Anfrage, klicke auf <strong>Akzeptieren</strong>.</p></li>
 </ol>
-<p>On the profile page of another CryptPad user:</p>
+<p>Auf der Profilseite eines anderen CryptPad-Benutzers:</p>
 <ol class="arabic simple">
 <li><p>Klicke auf <strong>Kontaktanfrage senden</strong>.</p></li>
 </ol>
@@ -890,7 +890,7 @@
   </div>
   Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a modified <a href="https://github.com/rtfd/sphinx_rtd_theme">RTD theme</a>.<br/>
   <a href="https://cryptpad.fr" title="CryptPad flagship instance">CryptPad flagship instance</a> |
-  <a href="https://github.com/cryptpad/cryptpad-documentation" title="The Github repository">Github repository for this documentation.</a>
+  <a href="https://github.com/cryptpad/documentation" title="The Github repository">Github repository for this documentation.</a>
   . 
 
 </footer>

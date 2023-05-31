@@ -91,7 +91,7 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Guide Utilisateur</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Guide Utilisateur·ice</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="instances.html">Instances CryptPad</a></li>
 <li class="toctree-l2"><a class="reference internal" href="user_account.html">Compte utilisateur·ice</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="user_account.html#account-types">Types de comptes</a><ul>
@@ -137,16 +137,16 @@
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Sécurité</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#trust-assumptions">Trust Assumptions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#trust-assumptions">Hypothèse sur la confiance</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#passwords-for-documents-and-folders">Mot de passe des documents et dossiers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#verifying-contacts">Verifying contacts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#self-destructing-documents">Self-destructing documents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verifying-contacts">Vérifier vos contacts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#self-destructing-documents">Documents éphémères</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#remote-disconnect">Déconnexion à distance</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#remote-content">Déconnexion à distance</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#known-caveats">Known caveats</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#no-unique-usernames">No unique usernames</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#edit-rights-in-teams">Edit rights in teams</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#access-of-former-team-members">Access of former team members</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#known-caveats">Limitations connues</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#no-unique-usernames">Les noms d'utilisateur·ices ne sont pas uniques</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#edit-rights-in-teams">Droits d'édition dans une équipe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#access-of-former-team-members">Accès des anciens membres d'une équipe</a></li>
 </ul>
 </li>
 </ul>
@@ -159,7 +159,7 @@
 <li class="toctree-l4"><a class="reference internal" href="drive.html#deleting">Supprimer</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="drive.html#history">History</a></li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#history">Historique</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#tags">Mots-Clés</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#templates">Modèles</a></li>
 </ul>
@@ -167,7 +167,7 @@
 <li class="toctree-l2"><a class="reference internal" href="collaboration.html">Collaboration / Social</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="collaboration.html#profile">Profil</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="collaboration.html#personal-profile">Profil personnel</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collaboration.html#user-profile">Profil utilisateur</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#user-profile">Profil utilisateur·ice</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="collaboration.html#calendar">Agenda</a><ul>
@@ -218,7 +218,7 @@
 <li class="toctree-l4"><a class="reference internal" href="apps/general.html#document-history">Historique des documents</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/general.html#snapshots">Captures</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/general.html#properties">Propriétés</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/general.html#users-and-chat">Utilisateurs et Chat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#users-and-chat">Utilisateur·ices et Chat</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="apps/richtext.html">Documents texte</a><ul>
@@ -594,7 +594,7 @@
     
       <li><a href="../index.html">Index</a> &raquo;</li>
         
-          <li><a href="index.html">Guide Utilisateur</a> &raquo;</li>
+          <li><a href="index.html">Guide Utilisateur·ice</a> &raquo;</li>
         
       <li>Sécurité</li>
     
@@ -622,38 +622,36 @@
   <section id="security">
 <h1>Sécurité<a class="headerlink" href="#security" title="Lien permanent vers cette rubrique">¶</a></h1>
 <section id="trust-assumptions">
-<span id="trust"></span><h2>Trust Assumptions<a class="headerlink" href="#trust-assumptions" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p>CryptPad is end-to-end encrypted and the server has no access to your data.
-However, as with any other web application, some entities still need to be trusted in order to guarantee security:</p>
+<span id="trust"></span><h2>Hypothèse sur la confiance<a class="headerlink" href="#trust-assumptions" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>CryptPad est une suite collaborative chiffrée de bout en bout et open-source, le serveur n'a pas accès à vos données. Néanmoins, comme avec tous les applis web, il y a quelques entités auxquels on doit se fier :</p>
 <ul class="simple">
-<li><p>Your chosen CryptPad <a class="reference internal" href="instances.html#cryptpad-instances"><span class="std std-ref">instance</span></a> to</p>
+<li><p>Votre <a class="reference internal" href="instances.html#cryptpad-instances"><span class="std std-ref">instance</span></a> de CryptPad choisi de</p>
 <ul>
-<li><p>run the same code as the one published on GitHub,</p></li>
-<li><p>not block your network messages, and</p></li>
-<li><p>follow its terms of service and privacy policy.</p></li>
+<li><p>exécuter le même code qui est publié sur GitHub,</p></li>
+<li><p>ne pas bloquer vos messages du réseau, et</p></li>
+<li><p>suivre ses conditions de service et sa politique de protection de la vie privée.</p></li>
 </ul>
 </li>
-<li><p>Your collaborators not to forward <a class="reference internal" href="share_and_access.html#share-link"><span class="std std-ref">sharing links</span></a> to illegitimate third parties.</p></li>
+<li><p>Vos collaborateur·ices de ne pas faire suivre les <a class="reference internal" href="share_and_access.html#share-link"><span class="std std-ref">liens partagés</span></a> avec des tiers illégitimes.</p></li>
 </ul>
-<p>Under these assumptions you can be sure that it is technically not possible to read or modify your documents by</p>
+<p>En supposant les points mentionné ci-dessus, vous pouvez être sûr·e que c'est techniquement impossible de lire ou modifier vos documents pour</p>
 <ul class="simple">
-<li><p>your chosen CryptPad instance,</p></li>
-<li><p>any powerful adversary that can see your web traffic, or</p></li>
-<li><p>any other user.</p></li>
+<li><p>votre instance de CryptPad,</p></li>
+<li><p>n'importe quel·le adversaire fort·e qui peux voire votre trafic web, ou</p></li>
+<li><p>n'importe quel·le autre utilisateur·ice.</p></li>
 </ul>
-<p>We maintain a <a class="reference external" href="https://cryptpad.org/instances">list of public CryptPad instances</a> to let you better decide on whom you want to trust.</p>
+<p>Nous maintenons une <a class="reference external" href="https://cryptpad.org/instances">liste des instances CryptPad publiques</a> pour que vous pouviez décider en qui vous voulez faire confiance.</p>
 <div class="admonition warning">
 <p class="admonition-title">Avertissement</p>
-<p>CryptPad does only provide a weak form of anonymity.
-Your chosen CryptPad instance can see your IP address and your &quot;user agent&quot; (browser and operating system).</p>
-<p>If you need stronger anonymity guarantees, you can access CryptPad via <a class="reference external" href="https://www.torproject.org">Tor</a>.</p>
+<p>CryptPad ne garantis qu'une forme faible d'anonymat. Votre instance de CryptPad peut voire votre adresse IP et votre &quot;user agent&quot; (navigateur et système d'exploitation).</p>
+<p>Si vous avez besoin des garanties d'anonymat plus fortes, vous pouvez accéder CryptPad par <a class="reference external" href="https://www.torproject.org">Tor</a>.</p>
 </div>
 </section>
 <section id="passwords-for-documents-and-folders">
 <span id="passwords"></span><h2>Mot de passe des documents et dossiers<a class="headerlink" href="#passwords-for-documents-and-folders" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p><span class="badge-user">Utilisateurs enregistrés</span></p>
 <p>Quand vous partagez le lien d'un document ou dossier de manière non sécurisée (par exemple par e-mail ou SMS), il se peut que quelqu'un l'intercepte et y accède. Pour éviter cela, les <a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">propriétaires</span></a> d'un document ou dossier peuvent ajouter un mot de passe.</p>
-<p>When you <a class="reference internal" href="share_and_access.html#share-contacts"><span class="std std-ref">share documents with your contacts and teams directly on CryptPad</span></a>, communications are encrypted and we assume that you want to give them access. Therefore the password is remembered and sent with the document/folder when you share it. The recipient, or yourself, are <strong>not</strong> asked for it when they open the document.</p>
+<p>Quand vous <a class="reference internal" href="share_and_access.html#share-contacts"><span class="std std-ref">partagez avec vos contacts ou équipes directement sur CryptPad</span></a>, les communications sont chiffrées et nous partons du principe que vous voulez donner l'accès. C'est pourquoi le mot de passe est alors stocké et envoyé avec le document quand vous le partagez. Les destinataires, ou vous-même, n'ont <strong>pas</strong> à le donner pour ouvrir le document.</p>
 <p>Vous pouvez ajouter un mot de passe à un document lors de sa <a class="reference internal" href="apps/general.html#new-document"><span class="std std-ref">création</span></a>.</p>
 <p>Vous pouvez aussi ajouter ou modifier un mot de passe dans le menu <a class="reference internal" href="share_and_access.html#access"><span class="std std-ref">Accès</span></a> :</p>
 <ul class="simple">
@@ -662,23 +660,22 @@ Your chosen CryptPad instance can see your IP address and your &quot;user agent&
 </ul>
 </section>
 <section id="verifying-contacts">
-<span id="id1"></span><h2>Verifying contacts<a class="headerlink" href="#verifying-contacts" title="Lien permanent vers cette rubrique">¶</a></h2>
+<span id="id1"></span><h2>Vérifier vos contacts<a class="headerlink" href="#verifying-contacts" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p><span class="badge-user">Utilisateurs enregistrés</span></p>
-<p>To verify a contact's identity, i.e., that a contact belongs to the person you think, you can compare the public signing keys:</p>
+<p>Pour vérifier l'identité d'un de vos contacts (que le contact est vraiment la personne que vous pensez), vous pouvez comparer les clés de signature publique :</p>
 <ol class="arabic simple">
-<li><p>Ask your contact to share <a class="reference internal" href="user_account.html#user-settings-account"><span class="std std-ref">their public key</span></a> over a secure channel with you.</p></li>
-<li><p>If this public key matches the one from your contact's <a class="reference internal" href="collaboration.html#another-user-profile"><span class="std std-ref">profile page</span></a>, you can be sure that the contact belongs to the person at the other end of the secure channel.</p></li>
+<li><p>Demandez à votre contact de partager <a class="reference internal" href="user_account.html#user-settings-account"><span class="std std-ref">sa clé publique</span></a> par un canal sécurisé avec vous.</p></li>
+<li><p>Si cette publique clé correspond à laquelle de votre contact <a class="reference internal" href="collaboration.html#another-user-profile"><span class="std std-ref">profile page</span></a>, vous pouvez être sûr·e que le contact correspond à la personne à l'autre bout du canal sécurisé.</p></li>
 </ol>
 </section>
 <section id="self-destructing-documents">
-<span id="id2"></span><h2>Self-destructing documents<a class="headerlink" href="#self-destructing-documents" title="Lien permanent vers cette rubrique">¶</a></h2>
+<span id="id2"></span><h2>Documents éphémères<a class="headerlink" href="#self-destructing-documents" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p><span class="badge-user">Utilisateurs enregistrés</span></p>
-<p>Self-destructing documents will be destroyed automatically without the interaction of any user.
-This ensures that sensitive data is not accessible forever.</p>
-<p>There are two ways to create self-destructing documents:</p>
+<p>Les documents éphémères vont être détruits automatiquement sans interaction des utilisateur·ices.</p>
+<p>Il y a deux méthodes :</p>
 <ul class="simple">
-<li><p>You can set an expiration time during <a class="reference internal" href="apps/general.html#new-document"><span class="std std-ref">creating</span></a>.</p></li>
-<li><p>You can share a document via a <a class="reference internal" href="share_and_access.html#share-access-rights"><span class="std std-ref">view-once-and-self-destruct link</span></a>.</p></li>
+<li><p>Vous pouvez ajouter une durée de vie quand vous <a class="reference internal" href="apps/general.html#new-document"><span class="std std-ref">créez un nouveau document</span></a>.</p></li>
+<li><p>Vous pouvez partager un document par un <a class="reference internal" href="share_and_access.html#share-access-rights"><span class="std std-ref">lien &quot;voire et autodétruire&quot;</span></a>.</p></li>
 </ul>
 </section>
 <section id="remote-disconnect">
@@ -686,11 +683,11 @@ This ensures that sensitive data is not accessible forever.</p>
 <p><span class="badge-user">Utilisateurs enregistrés</span></p>
 <p>Dans certains cas (vol ou perte de matériel, oubli d'une session ouverte sur un ordinateur partagé, etc.) il peut être utile de déconnecter toutes les sessions CryptPad actives. Cela peut être effectué de deux manières :</p>
 <ul class="simple">
-<li><p>User menu (avatar at the top-right) &gt; <em class="fa fa-gear"></em> <strong>Settings</strong> &gt; <em class="fa fa-lock"></em> <strong>Confidentiality</strong> &gt; <strong>LOG OUT</strong>.</p></li>
+<li><p>Menu utilisateur·ice (avatar en haut à droite) &gt; <em class="fa fa-gear"></em> <strong>Préférences</strong> &gt; <em class="fa fa-lock"></em> <strong>Confidentialité</strong> &gt; <strong>SE DÉCONNECTER</strong>.</p></li>
 </ul>
 <p>Cette option déconnecte toutes les sessions à distance <strong>sauf</strong> celle depuis laquelle elle est activée.</p>
 <ul class="simple">
-<li><p>Menu utilisateur (avatar en haut à droite) &gt; <em class="fa fa-plug"></em> <strong>Se déconnecter partout</strong>.</p></li>
+<li><p>Menu utilisateur·ice (avatar en haut à droite) &gt; <em class="fa fa-plug"></em> <strong>Se déconnecter partout</strong>.</p></li>
 </ul>
 <p>Cette option déconnecte toutes les sessions à distance <strong>y compris</strong> celle depuis laquelle elle est activée.</p>
 </section>
@@ -701,30 +698,23 @@ This ensures that sensitive data is not accessible forever.</p>
 <p>Pour insérer des images à partir du CryptDrive ou pour en ajouter de nouvelles, utiliser le menu <em class="fa fa-picture-o"></em> <strong>Insert</strong>. Ce menu insère un élément <code class="docutils literal notranslate"><span class="pre">media-tag</span></code> qui est plus complexe que la syntaxe d'image Markdown mais qui est géré automatiquement.</p>
 </section>
 <section id="known-caveats">
-<span id="known-sec-issue"></span><h2>Known caveats<a class="headerlink" href="#known-caveats" title="Lien permanent vers cette rubrique">¶</a></h2>
+<span id="known-sec-issue"></span><h2>Limitations connues<a class="headerlink" href="#known-caveats" title="Lien permanent vers cette rubrique">¶</a></h2>
 <section id="no-unique-usernames">
-<h3>No unique usernames<a class="headerlink" href="#no-unique-usernames" title="Lien permanent vers cette rubrique">¶</a></h3>
-<p>Neither the <a class="reference internal" href="user_account.html#user-settings-account"><span class="std std-ref">account name</span></a> nor the <a class="reference internal" href="user_account.html#user-settings-account"><span class="std std-ref">display name</span></a> is unique in CryptPad.
-This means that you cannot trust usernames to identify people.
-Instead, <a class="reference internal" href="#verifying-contacts"><span class="std std-ref">identify your contact</span></a> via their public keys.</p>
+<h3>Les noms d'utilisateur·ices ne sont pas uniques<a class="headerlink" href="#no-unique-usernames" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Ni le <a class="reference internal" href="user_account.html#user-settings-account"><span class="std std-ref">nom d'utilisateur·ice</span></a>, ni le <a class="reference internal" href="user_account.html#user-settings-account"><span class="std std-ref">nom affiché</span></a> n'est unique dans CryptPad. Par conséquent vous ne pouvez pas faire confiance au nom pour identifier vos contacts. Veuillez utiliser la clé publique pour <a class="reference internal" href="#verifying-contacts"><span class="std std-ref">identifier vos contacts</span></a>.</p>
 </section>
 <section id="edit-rights-in-teams">
-<h3>Edit rights in teams<a class="headerlink" href="#edit-rights-in-teams" title="Lien permanent vers cette rubrique">¶</a></h3>
-<p>Team members with edit access to a teams drive may share this access to other users both inside and outside the team.
-Team members may even convert folders into <a class="reference internal" href="share_and_access.html#shared-folders"><span class="std std-ref">shared folders</span></a> and delegate their access to anybody they want.</p>
-<p>You therefore have to be careful with whom you grant edit rights.
-You may also want to</p>
+<h3>Droits d'édition dans une équipe<a class="headerlink" href="#edit-rights-in-teams" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Les membres avec le droit d'édition pour le drive d'une équipe peuvent partager cet accès avec des tiers à l'intérieur comme à l'extérieur. Les membres d'une équipe peuvent même convertir un dossier existant en <a class="reference internal" href="share_and_access.html#shared-folders"><span class="std std-ref">dossier partagé</span></a> et déléguer son accès à n'importe qui.</p>
+<p>Vous devez donc faire attention à qui vous déléguez les droits d'accès. Vous pourriez probablement aussi vouloir</p>
 <ul class="simple">
-<li><p>set the <a class="reference internal" href="collaboration.html#team-roles-and-permissions"><span class="std std-ref">role</span></a> of a member to viewer and selectively share edit rights to this person.</p></li>
-<li><p>use <a class="reference internal" href="share_and_access.html#access-list"><span class="std std-ref">access lists</span></a> to limit the access to a file to specific contacts.</p></li>
+<li><p>définir le <a class="reference internal" href="collaboration.html#team-roles-and-permissions"><span class="std std-ref">rôle</span></a> d'un membre d'une équipe comme lecteur·ice et partager sélectivement les droits d'édition avec cette personne.</p></li>
+<li><p>utiliser des <a class="reference internal" href="collaboration.html#team-roles-and-permissions"><span class="std std-ref">listes d'accès</span></a> pour limiter l'accès à un document aux contacts sélectionnés.</p></li>
 </ul>
 </section>
 <section id="access-of-former-team-members">
-<h3>Access of former team members<a class="headerlink" href="#access-of-former-team-members" title="Lien permanent vers cette rubrique">¶</a></h3>
-<p>The team communication is encrypted with static keys.
-This implies that a former team member still has the keys.
-A former team member can therefore potentially decrypt team messages and can also keep the same access to the team's document as before.
-However, this requires to modify the client source code as the official one does neither store the keys nor decrypt any messages of a team which the user is not part of.</p>
+<h3>Accès des anciens membres d'une équipe<a class="headerlink" href="#access-of-former-team-members" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>La communication d'une équipe est chiffrée avec des clés statiques. Ceci implique que les ancien·nes membres ont encore accès aux clés. Un·e ancien·ne membre peut donc potentiellement déchiffrer les messages d'une équipe et peut donc aussi garder accès aux document de l'équipe. Cependant, cela nécessite de modifier le code source du client lorsque le client officiel ne stocke ni les clés, ni déchiffre les messages d'une équipe dont une personne ne fait pas partie.</p>
 </section>
 </section>
 </section>
@@ -755,7 +745,7 @@ However, this requires to modify the client source code as the official one does
   </div>
   Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a modified <a href="https://github.com/rtfd/sphinx_rtd_theme">RTD theme</a>.<br/>
   <a href="https://cryptpad.fr" title="CryptPad flagship instance">CryptPad flagship instance</a> |
-  <a href="https://github.com/cryptpad/cryptpad-documentation" title="The Github repository">Github repository for this documentation.</a>
+  <a href="https://github.com/cryptpad/documentation" title="The Github repository">Github repository for this documentation.</a>
   . 
 
 </footer>

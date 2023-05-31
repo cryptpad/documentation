@@ -45,7 +45,7 @@ There are two ways to report bugs or issues:
 Contribute to the documentation
 -------------------------------
 
-If you have corrections, edits, or suggestions for this documentation, you can contribute and help improve the service for everyone. Please send your proposed changes to `the forum <https://forum.cryptpad.org/>`__ or use a `GitHub pull request <https://github.com/cryptpad/cryptpad-documentation>`__.
+If you have corrections, edits, or suggestions for this documentation, you can contribute and help improve the service for everyone. Please send your proposed changes to `the forum <https://forum.cryptpad.org/>`__ or use a `GitHub pull request <https://github.com/cryptpad/documentation>`__.
 
 
 .. _contribute_translation:

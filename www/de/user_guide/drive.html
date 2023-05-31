@@ -137,16 +137,16 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="security.html">Sicherheit</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="security.html#trust-assumptions">Trust Assumptions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#trust-assumptions">Vertrauen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="security.html#passwords-for-documents-and-folders">Passwörter für Dokumente und Ordner</a></li>
-<li class="toctree-l3"><a class="reference internal" href="security.html#verifying-contacts">Verifying contacts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="security.html#self-destructing-documents">Self-destructing documents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#verifying-contacts">Kontakte verifizieren</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#self-destructing-documents">Selbst-zerstörende Dokumente</a></li>
 <li class="toctree-l3"><a class="reference internal" href="security.html#remote-disconnect">Sitzungen beenden</a></li>
 <li class="toctree-l3"><a class="reference internal" href="security.html#remote-content">Externer Inhalt</a></li>
-<li class="toctree-l3"><a class="reference internal" href="security.html#known-caveats">Known caveats</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="security.html#no-unique-usernames">No unique usernames</a></li>
-<li class="toctree-l4"><a class="reference internal" href="security.html#edit-rights-in-teams">Edit rights in teams</a></li>
-<li class="toctree-l4"><a class="reference internal" href="security.html#access-of-former-team-members">Access of former team members</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#known-caveats">Bekannte Tücken</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="security.html#no-unique-usernames">Keine einzigartigen Kontonamen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="security.html#edit-rights-in-teams">Bearbeitungsrechte in Teams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="security.html#access-of-former-team-members">Zugriff ehemaliger Team-Mitglieder</a></li>
 </ul>
 </li>
 </ul>
@@ -159,7 +159,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#deleting">Löschen</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#history">History</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#history">Verlauf</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#tags">Tags</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#templates">Vorlagen</a></li>
 </ul>
@@ -621,25 +621,25 @@
             
   <section id="cryptdrive">
 <span id="drive"></span><h1>CryptDrive<a class="headerlink" href="#cryptdrive" title="Permalink to this heading">¶</a></h1>
-<p>CryptDrive is used to store and manage documents. For logged in users it is the default landing page on CryptPad. It is also accessible from the other pages:</p>
+<p>Das CryptDrive wird zur Speicherung und Verwaltung von Dokumenten verwendet. Für eingeloggte Benutzer ist es die Standard-Startseite auf CryptPad. Sie ist auch von den anderen Seiten aus zugänglich:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Klicke</span></code> auf das Logo oben links.</p></li>
 <li><p>Benutzermenü (Avatar oben rechts) &gt; <em class="fa fa-hdd-o"></em> <strong>CryptDrive</strong>.</p></li>
 </ul>
 <section id="display">
 <span id="drive-display"></span><h2>Anzeige<a class="headerlink" href="#display" title="Permalink to this heading">¶</a></h2>
-<p>Documents in the drive can be displayed as a <em class="fa fa-list"></em> list or a <em class="fa fa-th-large"></em> grid. To switch between the two, use the button at the right of the drive toolbar (under the avatar).</p>
+<p>Dokumente im CryptDrive können in einer <em class="fa fa-list"></em> Liste oder einer <em class="fa fa-th-large"></em> Kachelansicht angezeigt werden. Um dazwischen umzuschalten, verwende die Schaltfläche rechts in der Werkzeugleiste (unterhalb des Avatars).</p>
 <p>In der Kachelansicht können Vorschaubilder der Dokumente angezeigt werden. Dies kann in den <a class="reference internal" href="user_account.html#user-settings-cryptdrive"><span class="std std-ref">Benutzereinstellungen</span></a> aktiviert werden.</p>
 <figure class="align-default" id="id5">
 <img alt="../_images/drive-grid.png" class="screenshot" src="../_images/drive-grid.png" />
 <figcaption>
-<p><span class="caption-text">CryptDrive in grid view.</span><a class="headerlink" href="#id5" title="Link zu diesem Bild">¶</a></p>
+<p><span class="caption-text">Das CryptDrive in der Kachelansicht.</span><a class="headerlink" href="#id5" title="Link zu diesem Bild">¶</a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="id6">
 <img alt="../_images/drive-list.png" class="screenshot" src="../_images/drive-list.png" />
 <figcaption>
-<p><span class="caption-text">CryptDrive in list view.</span><a class="headerlink" href="#id6" title="Link zu diesem Bild">¶</a></p>
+<p><span class="caption-text">Das CryptDrive in der Listenansicht.</span><a class="headerlink" href="#id6" title="Link zu diesem Bild">¶</a></p>
 </figcaption>
 </figure>
 </section>
@@ -648,13 +648,13 @@
 <section id="folders">
 <span id="id1"></span><h3>Ordner<a class="headerlink" href="#folders" title="Permalink to this heading">¶</a></h3>
 <p><span class="badge-user">Eingeloggte Benutzer</span></p>
-<p>There are multiple ways to create folders in the drive:</p>
+<p>Es gibt mehrere Möglichkeiten, um Ordner im CryptDrive zu erstellen:</p>
 <ul class="simple">
 <li><p><em class="fa fa-plus"></em> <strong>Neu</strong> in der Werkzeugleiste &gt; <em class="fa fa-folder"></em> <strong>Ordner</strong>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Rechtsklick</span></code> &gt; <em class="fa fa-folder"></em> <strong>Neuer Ordner</strong>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Strg</span> <span class="pre">+</span> <span class="pre">e</span></code> &gt; <em class="fa fa-folder"></em> <strong>Ordner</strong>.</p></li>
 </ul>
-<p>Once a folder is created, documents can be added to it by dragging them from the drive. You can also drag and drop files from one folder to another. Use the convenient left sidebar tree to drop the file in the desired destination.</p>
+<p>Sobald ein Ordner erstellt wurde, kannst du ihm Dokumente hinzufügen, indem du sie vom Drive dorthin verschiebst. Du kannst auch Dateien von einem Ordner in einen anderen Ordner ziehen und dort ablegen. Verwende die praktische Baumstruktur in der linken Seitenleiste, um die Datei am gewünschten Speicherort abzulegen.</p>
 <p>Um die Farbe eines Ordners zu ändern:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Rechtsklicke</span></code> auf den Ordner &gt; <em class="cptools cptools-palette"></em> <strong>Farbe ändern</strong>.</p></li>
@@ -666,86 +666,86 @@
 </section>
 <section id="renaming">
 <h3>Umbenennen<a class="headerlink" href="#renaming" title="Permalink to this heading">¶</a></h3>
-<p>There are two ways to rename documents on CryptPad. One changes the document title for all users, the other changes it only in your drive.</p>
-<p>To change the title of a documents for all users that have it in their drive:</p>
+<p>Es gibt zwei Möglichkeiten, Dokumente im CryptDrive umzubenennen. Die eine ändert den Titel für alle Benutzer und die andere nur in deinem CryptDrive.</p>
+<p>Um den Titel eines Dokuments für alle Benutzer zu ändern:</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Klicke</span></code> auf den Titel oder die Schaltfläche <em class="fa fa-pencil"></em> in der Werkzeugleiste im Dokument.</p></li>
 <li><p>Gib den neuen Titel ein.</p></li>
 <li><p>Speichere mit der Schaltfläche <em class="fa fa-check"></em> oder der Taste <code class="docutils literal notranslate"><span class="pre">Enter</span></code>.</p></li>
 </ol>
-<p>To change the title of a document only in your drive:</p>
+<p>Um den Titel eines Dokuments nur in deinem CryptDrive zu ändern:</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document in your drive &gt; <em class="fa fa-pencil"></em> <strong>Rename</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Rechtsklicke</span></code> auf das Dokument in deinem CryptDrive &gt; <em class="fa fa-pencil"></em> <strong>Umbenennen</strong>.</p></li>
 <li><p>Gib den neuen Namen ein.</p></li>
 <li><p>Speichere mit der Taste <code class="docutils literal notranslate"><span class="pre">Enter</span></code>.</p></li>
 </ol>
-<p>The <em class="fa fa-flag"></em> icon indicates that the title of a document is different in your drive than for other users.</p>
+<p>Das Symbol <em class="fa fa-flag"></em> zeigt an, dass sich der Titel des Dokuments in deinem CryptDrive vom Titel in den CryptDrives anderer Benutzer unterscheidet.</p>
 </section>
 <section id="deleting">
 <span id="id2"></span><h3>Löschen<a class="headerlink" href="#deleting" title="Permalink to this heading">¶</a></h3>
 <p>Es gibt zwei Möglichkeiten, um ein Dokument in CryptPad zu löschen:</p>
 <ul class="simple">
-<li><p><em class="fa fa-trash"></em> <strong>Removing</strong> a document means it stops appearing in the drive but remains in the database. The document remains in the drive of other users who have stored it. The document can be recovered in the drive using the <a class="reference internal" href="#drive-history"><span class="std std-ref">history</span></a>.</p></li>
-<li><p><em class="cptools cptools-destroy"></em> <strong>Destroying</strong> a document deletes it from the database permanently. The document is deleted from all drives that store it, and it cannot be recovered using the drive history. <span class="badge-owner">Document owners</span></p></li>
+<li><p><em class="fa fa-trash"></em> <strong>Entfernen</strong> eines Dokuments bedeutet, dass es nicht mehr im CryptDrive angezeigt wird, aber in der Datenbank gespeichert bleibt. Das Dokument verbleibt im CryptDrive anderer Benutzer, die es gespeichert haben. Es kann aus dem <a class="reference internal" href="#drive-history"><span class="std std-ref">Verlauf</span></a> wiederhergestellt werden.</p></li>
+<li><p><em class="cptools cptools-destroy"></em> <strong>Zerstören</strong> eines Dokuments löscht es endgültig aus der Datenbank. Das Dokument wird aus allen CryptDrives entfernt, wo das Dokument gespeichert ist. Es kann nicht aus dem Verlauf wiederhergestellt werden. <span class="badge-owner">Eigentümer von Dokumenten</span></p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
-<p>If a document is not stored in any drive, it is <strong>destroyed</strong> from the database after 90 days (the length of this delay can be set by the service administrators).</p>
+<p>Wenn ein Dokument nicht in zumindest einem CryptDrive gespeichert ist, wird es nach 90 Tagen <strong>zerstört</strong> (diese Zeitspanne kann von den Administratoren des Dienstes festgelegt werden).</p>
 </div>
-<p>To <strong>remove</strong> a document from CryptDrive.</p>
+<p>Um ein Dokument aus dem CryptDrive zu <strong>entfernen</strong>.</p>
 <ul class="simple">
-<li><p>Drag the document from the drive into the <em class="fa fa-trash"></em> <strong>Trash</strong>.</p></li>
+<li><p>Verschiebe ein Dokument im CryptDrive in den <em class="fa fa-trash"></em> <strong>Papierkorb</strong>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Rechtsklick</span></code> &gt; <em class="fa fa-trash"></em> <strong>In den Papierkorb verschieben</strong></p></li>
 <li><p>Wähle ein Dokument aus und drücke die Taste <code class="docutils literal notranslate"><span class="pre">Entf</span></code>.</p></li>
 </ul>
-<p>To <strong>remove</strong> the document from CryptDrive without storing it in the trash first:</p>
+<p>Um ein Dokument aus dem CryptDrive zu <strong>entfernen</strong>, ohne es zunächst im Papierkorb zu speichern:</p>
 <ul class="simple">
 <li><p>Wähle das Dokument aus und drücke die Tasten <code class="docutils literal notranslate"><span class="pre">Umschalt</span> <span class="pre">+</span> <span class="pre">Entf</span></code>.</p></li>
 </ul>
 <p>Um den Papierkorb zu leeren:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the <em class="fa fa-trash"></em> <strong>Trash</strong> tab to the left of the drive &gt; <em class="fa fa-trash-o"></em> <strong>Empty the trash</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Rechtsklicke</span></code> auf die Unterseite <em class="fa fa-trash"></em> <strong>Papierkorb</strong> auf der linken Seite des CryptDrives &gt; <em class="fa fa-trash-o"></em> <strong>Papierkorb leeren</strong>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Klicke</span></code> auf die Unterseite <em class="fa fa-trash"></em> <strong>Papierkorb</strong> &gt; <em class="fa fa-trash-o"></em> <strong>Papierkorb leeren</strong>.</p></li>
 </ul>
 <p>Wenn du ein <a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">Eigentümer</span></a> einiger Dokumente im Papierkorb bist, wird du beim Leeren gefragt, ob du es <strong>entfernen</strong> oder <strong>zerstören</strong> möchtest.</p>
 <p>Um ein Dokument zu <strong>zerstören</strong>, ohne es zunächst im Papierkorb zu speichern:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document in the drive &gt; <em class="cptools cptools-destroy"></em> <strong>Destroy</strong>. <span class="badge-owner">Document owners</span></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Rechtsklicke</span></code> auf das Dokument im CryptDrive &gt; <em class="cptools cptools-destroy"></em> <strong>Zerstören</strong>. <span class="badge-owner">Eigentümer von Dokumenten</span></p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
-<p>Once destroyed, documents may still appear in other user's drives. Once a document has been added to someone's drive, the encrypted nature of CryptPad makes it impossible to take it back. Therefore a destroyed document may still appeared in a user's drive if they had previously stored it. However, they will not be able to open the document.</p>
+<p>Zerstörte Dokumente können weiterhin in CryptDrives anderer Benutzer angezeigt werden. Denn sobald ein Dokument zum Drive eines anderen Benutzers hinzugefügt wurde, macht es die Verschlüsselung von CryptDrive unmöglich, dies zurückzunehmen. Allerdings kann das Dokument nicht mehr geöffnet werden.</p>
 </div>
 </section>
 </section>
 <section id="history">
-<span id="drive-history"></span><h2>History<a class="headerlink" href="#history" title="Permalink to this heading">¶</a></h2>
-<p>The drive history is saved and can be restored if needed. From the drive:</p>
+<span id="drive-history"></span><h2>Verlauf<a class="headerlink" href="#history" title="Permalink to this heading">¶</a></h2>
+<p>Der Verlauf des CryptDrives wird gespeichert und kann bei Bedarf wiederhergestellt werden. Im CryptDrive:</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Klicke</span></code> auf die Verlauf-Schaltfläche <em class="fa fa-history"></em> oben rechts (unterhalb des Avatars).</p></li>
 <li><p>Benutze die Pfeile <em class="fa fa-fast-backward"></em> <em class="fa fa-step-backward"></em> und <em class="fa fa-step-forward"></em> <em class="fa fa-fast-forward"></em>, um dich durch den Verlauf zu bewegen.</p></li>
 <li><p>Stelle die ausgewählte Version mit <em class="fa fa-check"></em> <strong>Wiederherstellen</strong> wieder her oder verlasse den Verlauf ohne Wiederherstellung mit <em class="fa fa-times"></em> <strong>Schließen</strong>.</p></li>
 </ol>
-<p>To save storage space CryptDrive history can be deleted in the <a class="reference internal" href="user_account.html#user-settings-cryptdrive"><span class="std std-ref">user settings</span></a>.</p>
+<p>Um Speicherplatz zu sparen, kann der Verlauf des CryptDrives in den <a class="reference internal" href="user_account.html#user-settings-cryptdrive"><span class="std std-ref">Benutzereinstellungen</span></a> gelöscht werden.</p>
 <div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
-<p><a class="reference internal" href="share_and_access.html#shared-folders"><span class="std std-ref">Shared folders</span></a> have their own history, separate from CryptDrive history. Restoring the history of the drive does not affect shared folders, conversely the history of a shared folder can be restored without affecting the rest of the drive.</p>
+<p><a class="reference internal" href="share_and_access.html#shared-folders"><span class="std std-ref">Geteilte Ordner</span></a> haben ihren eigenen Verlauf, unabhängig vom Verlauf des CryptDrives. Die Wiederherstellung des CryptDrive-Verlaufs beeinflusst geteilte Ordner nicht. Umgekehrt kann der Verlauf eines geteilten Ordners wiederhergestellt werden, ohne andere Teile des CryptDrives zu beeinflussen.</p>
 </div>
 </section>
 <section id="tags">
 <span id="id3"></span><h2>Tags<a class="headerlink" href="#tags" title="Permalink to this heading">¶</a></h2>
 <p><span class="badge-user">Eingeloggte Benutzer</span></p>
 <p>Dokumente können mit Tags in Kategorien zusammengefasst werden. Deine Tags sind nicht für andere Benutzer sichtbar.</p>
-<p>The <em class="fa fa-hashtag"></em> <strong>Tags</strong> tab in the drive displays all tags in use and their associated documents.</p>
+<p>Die Unterseite <em class="fa fa-hashtag"></em> <strong>Tags</strong> im CryptDrive zeigt alle verwendeten Tags und die dazugehörigen Dokumente.</p>
 <img alt="../_images/modal-tags.png" class="screenshot" src="../_images/modal-tags.png" />
 <p>Um Tags zu Dokumenten hinzufügen oder von Dokumenten zu entfernen:</p>
 <ul class="simple">
-<li><p>From the drive: <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document &gt; <em class="fa fa-hashtag"></em> <strong>Tags</strong>.</p></li>
+<li><p>Im CryptDrive: <code class="docutils literal notranslate"><span class="pre">Rechtsklicke</span></code> auf das Dokument &gt; <em class="fa fa-hashtag"></em> <strong>Tags</strong>.</p></li>
 <li><p>Im Dokument: <em class="fa fa-file-o"></em> <strong>Datei</strong> &gt; <em class="fa fa-hashtag"></em> <strong>Tags</strong>.</p></li>
 </ul>
 <p>Um Tags für mehrere Dokumente zu verwalten:</p>
 <ol class="arabic simple">
-<li><p>Select the documents with <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">Click</span></code> in CryptDrive.</p></li>
+<li><p>Wähle mehrere Dokumente im CryptDrive mit <code class="docutils literal notranslate"><span class="pre">Strg</span> <span class="pre">+</span> <span class="pre">Klick</span></code> aus.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Rechtsklicke</span></code> auf die Dokumente &gt; <em class="fa fa-hashtag"></em> <strong>Tags</strong>.</p></li>
 </ol>
 <p>Es werden dann nur die Tags angezeigt, die allen Dokumenten zugeordnet sind. Alle hinzugefügten und/oder entfernten Tags werden auf alle ausgewählten Dokumente angewendet.</p>
@@ -756,7 +756,7 @@
 <p>Vorlagen stellen wiederverwendbare Ausgangspunkte zum Erstellen von Dokumenten mit ähnlicher Struktur dar, z. B. Rechnungen, Briefköpfe, Berichte usw.</p>
 <p>Um eine Vorlage zu erstellen:</p>
 <ol class="arabic simple">
-<li><p>Select the <em class="cptools cptools-template"></em> <strong>Templates</strong> tab in the drive.</p></li>
+<li><p>Wähle die Unterseite <em class="cptools cptools-template"></em> <strong>Vorlagen</strong> im CryptDrive.</p></li>
 <li><p><em class="fa fa-plus"></em> <strong>Neu</strong> in der Werkzeugleiste.</p></li>
 </ol>
 <p>oder</p>
@@ -802,7 +802,7 @@
   </div>
   Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a modified <a href="https://github.com/rtfd/sphinx_rtd_theme">RTD theme</a>.<br/>
   <a href="https://cryptpad.fr" title="CryptPad flagship instance">CryptPad flagship instance</a> |
-  <a href="https://github.com/cryptpad/cryptpad-documentation" title="The Github repository">Github repository for this documentation.</a>
+  <a href="https://github.com/cryptpad/documentation" title="The Github repository">Github repository for this documentation.</a>
   . 
 
 </footer>
