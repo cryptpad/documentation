@@ -23,7 +23,7 @@ Installation
 
 The source code can be found on `GitHub <https://github.com>`__. You must have an account on this platform in order to contribute.
 
--  Fork the code: https://github.com/xwiki-labs/cryptpad.git
+-  Fork the code: https://github.com/cryptpad/cryptpad.git
 -  Clone the fork on your system in the desired directory
 
    -  `git clone https://github.com/{YOUR_USER_NAME}/cryptpad.git`
@@ -48,7 +48,7 @@ Once everything is installed, you can configure some values before starting the 
    cd $cryptpath/config
    cp config.example.js config.js
 
--  The `example configuration file <https://github.com/xwiki-labs/cryptpad/blob/main/config/config.example.js>`__ lists the configurable values and how to use them.
+-  The `example configuration file <https://github.com/cryptpad/cryptpad/blob/main/config/config.example.js>`__ lists the configurable values and how to use them.
 -  For a development instance, the important elements are:
 
    -  ``httpUnsafeOrigin``: if you want to use the development server and the test client on different systems, you have to modify this value to use the network address of the server (example: 'http://192.168.0.10:3000').

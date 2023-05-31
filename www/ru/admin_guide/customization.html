@@ -120,6 +120,22 @@
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#notifications">Уведомления</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/support.html">Support</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/support.html#existing-tickets">Existing tickets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/support.html#new-ticket">New ticket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/support.html#debug-data">Debug data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#names">Names</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#identifiers">Identifiers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#keys">Keys</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#quota">Quota</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#web-browser">Web browser</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#screen">Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#block-location">Block location</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#teams">Teams</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../user_guide/security.html">Безопасность</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/security.html#trust-assumptions">Предположения о доверии</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/security.html#passwords-for-documents-and-folders">Пароли для документов и папок</a></li>
@@ -686,7 +702,7 @@ For this, modify the following line:</p>
 <section id="translations">
 <h2>Translations<a class="headerlink" href="#translations" title="Permalink to this heading">¶</a></h2>
 <p>To customize the text of the CryptPad interface in a given language, copy <code class="docutils literal notranslate"><span class="pre">customize.dist/translations/messages.xx.js</span></code> to <code class="docutils literal notranslate"><span class="pre">customize/translations/messages.xx.js</span></code> where <code class="docutils literal notranslate"><span class="pre">xx</span></code> is the locale of the language (use <code class="docutils literal notranslate"><span class="pre">messages.js</span></code> to customize English).</p>
-<p>In this file, modify the default text using the &quot;Messages&quot; object as follows: <code class="docutils literal notranslate"><span class="pre">Messages.key</span> <span class="pre">=</span> <span class="pre">&quot;Text&quot;;</span></code>. For all the keys and their associated text please see <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/blob/main/www/common/translations/messages.json">www/common/translations/messages.json</a> or any of the <code class="docutils literal notranslate"><span class="pre">messages.xx.json</span></code> in the same directory for the translated text.</p>
+<p>In this file, modify the default text using the &quot;Messages&quot; object as follows: <code class="docutils literal notranslate"><span class="pre">Messages.key</span> <span class="pre">=</span> <span class="pre">&quot;Text&quot;;</span></code>. For all the keys and their associated text please see <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/www/common/translations/messages.json">www/common/translations/messages.json</a> or any of the <code class="docutils literal notranslate"><span class="pre">messages.xx.json</span></code> in the same directory for the translated text.</p>
 <p>For example, to customize the text about the instance on the home page, the following could be pasted in <code class="docutils literal notranslate"><span class="pre">customize/translations/messages.js</span></code> and the text changed to describe the instance.</p>
 <div class="highlight-javaScript notranslate"><div class="highlight"><pre><span></span><span class="nx">Messages</span><span class="p">.</span><span class="nx">home_host</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;This is an independent community instance of CryptPad.&quot;</span><span class="p">;</span><span class="w"></span>
 </pre></div>
@@ -721,7 +737,7 @@ For this, modify the following line:</p>
   </div>
   Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a modified <a href="https://github.com/rtfd/sphinx_rtd_theme">RTD theme</a>.<br/>
   <a href="https://cryptpad.fr" title="CryptPad flagship instance">CryptPad flagship instance</a> |
-  <a href="https://github.com/xwiki-labs/cryptpad-documentation" title="The Github repository">Github repository for this documentation.</a>
+  <a href="https://github.com/cryptpad/cryptpad-documentation" title="The Github repository">Github repository for this documentation.</a>
   . 
 
 </footer>

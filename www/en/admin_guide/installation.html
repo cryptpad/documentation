@@ -120,6 +120,22 @@
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#notifications">Notifications</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/support.html">Support</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/support.html#existing-tickets">Existing tickets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/support.html#new-ticket">New ticket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/support.html#debug-data">Debug data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#names">Names</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#identifiers">Identifiers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#keys">Keys</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#quota">Quota</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#web-browser">Web browser</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#screen">Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#block-location">Block location</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#teams">Teams</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../user_guide/security.html">Security</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/security.html#trust-assumptions">Trust Assumptions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/security.html#passwords-for-documents-and-folders">Passwords for documents and folders</a></li>
@@ -659,7 +675,7 @@
 <p>The development team recommends creating a dedicated user to install and run CryptPad in production rather than using the root user.</p>
 </div>
 <p>Clone the CryptPad repository</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/xwiki-labs/cryptpad.git cryptpad
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/cryptpad/cryptpad.git cryptpad
 </pre></div>
 </div>
 <p>Switch to the latest published tag</p>
@@ -695,7 +711,7 @@ node server
 <p>In production you may want to run CryptPad as a daemon that restarts automatically.</p>
 <section id="systemd">
 <h4>Systemd<a class="headerlink" href="#systemd" title="Permalink to this heading">¶</a></h4>
-<p>To run CryptPad as a <a class="reference external" href="https://www.freedesktop.org/software/systemd/man/systemd.service.html">systemd</a> service, please follow the example <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/blob/main/docs/cryptpad.service">cryptpad.service</a> file.</p>
+<p>To run CryptPad as a <a class="reference external" href="https://www.freedesktop.org/software/systemd/man/systemd.service.html">systemd</a> service, please follow the example <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/docs/cryptpad.service">cryptpad.service</a> file.</p>
 <ol class="arabic simple">
 <li><p>Save the example as <code class="docutils literal notranslate"><span class="pre">cryptpad.service</span></code> in <code class="docutils literal notranslate"><span class="pre">/etc/systemd/system/</span></code></p></li>
 <li><p>Make necessary adjustments (e.g. user name, path, nodejs version)</p></li>
@@ -705,7 +721,7 @@ node server
 </section>
 <section id="freebsd">
 <h4>FreeBSD<a class="headerlink" href="#freebsd" title="Permalink to this heading">¶</a></h4>
-<p>To run CryptPad as a <a class="reference external" href="https://man.freebsd.org/cgi/man.cgi?query=rc.d&amp;sektion=8&amp;n=1">rc.d</a> unit, please follow the example <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/blob/main/docs/rc.d-cryptpad">rc.d-cryptpad</a> file.</p>
+<p>To run CryptPad as a <a class="reference external" href="https://man.freebsd.org/cgi/man.cgi?query=rc.d&amp;sektion=8&amp;n=1">rc.d</a> unit, please follow the example <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/docs/rc.d-cryptpad">rc.d-cryptpad</a> file.</p>
 <ol class="arabic simple">
 <li><p>Save the example as <code class="docutils literal notranslate"><span class="pre">cryptpad</span></code> in <code class="docutils literal notranslate"><span class="pre">/usr/local/etc/rc.d/</span></code></p></li>
 <li><p>Make necessary adjustments (e.g. user name, path)</p></li>
@@ -722,12 +738,12 @@ node server
 <li><p>A “sandbox” domain or subdomain to which a set of restrictive Content-Security Policy headers are applied</p></li>
 </ol>
 <p>The intent of this system is to limit the risk of Cross-Site Scripting (XSS) vulnerabilities allowing attackers to leak user data. Sensitive computation (like the processing of cryptographic keys) is handled on the main domain, while the user-interface is implemented on the sandbox domain.</p>
-<p>The <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/blob/main/docs/example.nginx.conf">example Nginx configuration</a> file includes the relevant headers to enable the sandboxing system, however, you must configure your instance correctly for it to be effective. You will need:</p>
+<p>The <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf">example Nginx configuration</a> file includes the relevant headers to enable the sandboxing system, however, you must configure your instance correctly for it to be effective. You will need:</p>
 <ol class="arabic simple">
 <li><p>two domains or subdomains</p></li>
 <li><p>to include both domains in <code class="docutils literal notranslate"><span class="pre">cryptpad/config/config.js</span></code> as described in <a class="reference internal" href="#admin-cryptpad-config"><span class="std std-ref">Configure CryptPad</span></a></p></li>
 <li><p>to generate one SSL certificate that covers both domains. The development team uses <a class="reference external" href="https://acme.sh/">acme.sh</a> and this is reflected in the example config.</p></li>
-<li><p>to correctly assign both domains and certificates to the relevant variables in the <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/blob/main/docs/example.nginx.conf">example Nginx configuration</a></p></li>
+<li><p>to correctly assign both domains and certificates to the relevant variables in the <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf">example Nginx configuration</a></p></li>
 </ol>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -751,7 +767,7 @@ node server
 <p>Note that the version of Nginx distributed by your operating system may not support websockets. We recommend and only support <a class="reference external" href="https://nginx.org/en/download.html">Nginx stable</a>.</p>
 <p>To configure Nginx for CryptPad:</p>
 <ol class="arabic simple">
-<li><p>Copy the <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/blob/main/docs/example.nginx.conf">CryptPad example Nginx config file</a> so that it is used/imported by the main Nginx config, for example by placing it in <code class="docutils literal notranslate"><span class="pre">/etc/nginx/conf.d/cryptpad.conf</span></code>.</p></li>
+<li><p>Copy the <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf">CryptPad example Nginx config file</a> so that it is used/imported by the main Nginx config, for example by placing it in <code class="docutils literal notranslate"><span class="pre">/etc/nginx/conf.d/cryptpad.conf</span></code>.</p></li>
 <li><p>Edit the configuration file with the correct domains and paths to certificates.</p></li>
 <li><p>Run <code class="docutils literal notranslate"><span class="pre">openssl</span> <span class="pre">dhparam</span> <span class="pre">-out</span> <span class="pre">/etc/nginx/dhparam.pem</span> <span class="pre">4096</span></code> if you haven’t done so already on the host machine.</p></li>
 </ol>
@@ -836,7 +852,7 @@ contains at least:</p>
 <h3>Support<a class="headerlink" href="#support" title="Permalink to this heading">¶</a></h3>
 <p>The development team is available to provide paid support contracts (see our <a class="reference external" href="https://cryptpad.fr/accounts/#org">organizational plans</a> for an idea of our pricing), otherwise, requests for assistance can be directed to the community.</p>
 <p>We recommend you to go over our <a class="reference external" href="https://forum.cryptpad.org">forum</a> and or <a class="reference external" href="https://matrix.to/#/#cryptpad-admins:matrix.xwiki.com">admins Matrix channel</a>.</p>
-<p>Note that community support is provided by volunteers, please be aware of what you are asking of them and respect <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/blob/main/CODE_OF_CONDUCT.md">our Code of Conduct</a> at all time.</p>
+<p>Note that community support is provided by volunteers, please be aware of what you are asking of them and respect <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/CODE_OF_CONDUCT.md">our Code of Conduct</a> at all time.</p>
 </section>
 </section>
 </section>
@@ -867,7 +883,7 @@ contains at least:</p>
   </div>
   Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a modified <a href="https://github.com/rtfd/sphinx_rtd_theme">RTD theme</a>.<br/>
   <a href="https://cryptpad.fr" title="CryptPad flagship instance">CryptPad flagship instance</a> |
-  <a href="https://github.com/xwiki-labs/cryptpad-documentation" title="The Github repository">Github repository for this documentation.</a>
+  <a href="https://github.com/cryptpad/cryptpad-documentation" title="The Github repository">Github repository for this documentation.</a>
   . 
 
 </footer>

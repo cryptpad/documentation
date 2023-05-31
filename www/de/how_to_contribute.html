@@ -119,6 +119,22 @@
 <li class="toctree-l3"><a class="reference internal" href="user_guide/user_account.html#notifications">Benachrichtigungen</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/support.html">Support</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="user_guide/support.html#existing-tickets">Existing tickets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_guide/support.html#new-ticket">Neues Ticket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_guide/support.html#debug-data">Debug data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/support.html#names">Namen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/support.html#identifiers">Identifiers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/support.html#keys">Schlüssel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/support.html#quota">Quota</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/support.html#web-browser">Internetbrowser</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/support.html#screen">Bildschirm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/support.html#block-location">Block location</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/support.html#teams">Teams</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="user_guide/security.html">Sicherheit</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="user_guide/security.html#trust-assumptions">Trust Assumptions</a></li>
 <li class="toctree-l3"><a class="reference internal" href="user_guide/security.html#passwords-for-documents-and-folders">Passwörter für Dokumente und Ordner</a></li>
@@ -632,25 +648,25 @@
 <p>Es gibt zwei Wege, um Fehler oder Probleme zu melden:</p>
 <ul class="simple">
 <li><p>Das in CryptPad integrierte <a class="reference internal" href="user_guide/user_account.html#user-support"><span class="std std-ref">Support-Ticketsystem</span></a>, worüber du Administratoren der Instanz kontaktieren kannst. Diese Nachrichten werden wie alles andere auf CryptPad verschlüsselt.</p></li>
-<li><p>Der <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/issues/new/choose">Issue-Tracker von Github</a>, wo mit Hilfe einer entsprechenden Vorlage öffentliche Problemberichte eingereicht werden können. (Zur Erstellung von Problemberichten ist ein GitHub-Account notwendig.)</p></li>
+<li><p><a class="reference external" href="https://github.com/cryptpad/cryptpad/issues/new/choose">Github issue tracker</a> to file the issue publicly using the bug report template. (A Github account is needed to submit issues)</p></li>
 </ul>
 </section>
 <section id="contribute-to-the-documentation">
 <h2>Zur Dokumentation beitragen<a class="headerlink" href="#contribute-to-the-documentation" title="Permalink to this heading">¶</a></h2>
-<p>Wenn du Korrekturen, Ergänzungen oder Vorschläge für diese Dokumentation hast, kannst du zur Verbesserung des Angebots für alle beitragen. Bitte richte deine Änderungsvorschläge an <a class="reference external" href="https://forum.cryptpad.org/">das Forum</a> oder verwende einen <a class="reference external" href="https://github.com/xwiki-labs/cryptpad-documentation">GitHub pull request</a>.</p>
+<p>If you have corrections, edits, or suggestions for this documentation, you can contribute and help improve the service for everyone. Please send your proposed changes to <a class="reference external" href="https://forum.cryptpad.org/">the forum</a> or use a <a class="reference external" href="https://github.com/cryptpad/cryptpad-documentation">GitHub pull request</a>.</p>
 </section>
 <section id="translate-cryptpad">
 <span id="contribute-translation"></span><h2>CryptPad übersetzen<a class="headerlink" href="#translate-cryptpad" title="Permalink to this heading">¶</a></h2>
 <p>Das CryptPad-Team übersetzt die Software ins Englische und Französische, wobei viele weitere Sprachen von der Community zur Verfügung gestellt werden. Die Übersetzung von CryptPad - und/oder die Aktualisierung der Übersetzungen während der Weiterentwicklung der Plattform - ist ein wichtiger Beitrag, um CryptPad so vielen Menschen wie möglich zugänglich zu machen.</p>
-<p>Um CryptPad selbst zu übersetzen, siehe bitte die <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/blob/main/customize.dist/translations/README.md">Übersetzungsanleitung</a>.</p>
+<p>To translate CryptPad itself please see the <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/customize.dist/translations/README.md">Translation guide</a>.</p>
 <p>Um diese Dokumentation zu übersetzen, besuche bitte das Projekt auf <a class="reference external" href="https://weblate.cryptpad.fr/projects/user-guide/">Weblate</a>. Um die Übersetzung in eine neue Sprache zu beginnen, <a class="reference external" href="https://cryptpad.fr/contact.html">kontaktiere das Entwickler-Team</a>.</p>
 <p>Aktueller Stand der übersetzten Sprachen:</p>
 <img alt="Weblate-Widget" src="https://weblate.cryptpad.fr/widgets/cryptpad/-/app/multi-auto.svg" /></section>
 <section id="contribute-to-the-code">
 <span id="contribute-code"></span><h2>Zum Code beitragen<a class="headerlink" href="#contribute-to-the-code" title="Permalink to this heading">¶</a></h2>
-<p>CryptPad ist in JavaScript geschrieben und wir akzeptieren Pull-Requests auf <a class="reference external" href="https://github.com/xwiki-labs/cryptpad">Github</a>. Beachte, dass die Sicherheitsschicht von der Anwendungsschicht getrennt ist, so dass es möglich ist, ohne kryptographische Kenntnisse zu CryptPad beizutragen. Mögliche Beiträge sind in der Reihenfolge ihres Schwierigkeitsgrades:</p>
+<p>CryptPad is written in JavaScript and we accept pull requests on <a class="reference external" href="https://github.com/cryptpad/cryptpad">Github</a>. Note that the security layer is separated from the application layer, so it is possible to contribute to CryptPad without skills in cryptography. Contributions include, by order of difficulty:</p>
 <ul class="simple">
-<li><p>Behebung eines Fehlers aus dem <a class="reference external" href="https://github.com/xwiki-labs/cryptpad/issues">Issue-Tracker</a>.</p></li>
+<li><p>Fixing a bug from the <a class="reference external" href="https://github.com/cryptpad/cryptpad/issues">issue tracker</a>.</p></li>
 <li><p>Hinzufügen neuer Funktionen.</p></li>
 <li><p>Entwicklung einer neuen Anwendung oder Integration einer existierenden Anwendung in die verschlüsselte Echtzeit-Zusammenarbeit von CryptPad.</p></li>
 </ul>
@@ -695,7 +711,7 @@
   </div>
   Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a modified <a href="https://github.com/rtfd/sphinx_rtd_theme">RTD theme</a>.<br/>
   <a href="https://cryptpad.fr" title="CryptPad flagship instance">CryptPad flagship instance</a> |
-  <a href="https://github.com/xwiki-labs/cryptpad-documentation" title="The Github repository">Github repository for this documentation.</a>
+  <a href="https://github.com/cryptpad/cryptpad-documentation" title="The Github repository">Github repository for this documentation.</a>
   . 
 
 </footer>
