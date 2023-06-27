@@ -193,12 +193,6 @@ contains at least:
 
          httpSafeOrigin: "https://some-other-domain.xyz",
 
--  An administrator email (appears on the Contact page) in place of:
-
-.. code:: javascript
-
-   adminEmail: 'i.did.not.read.my.config@cryptpad.fr',
-
 Diagnostics
 ~~~~~~~~~~~
 
