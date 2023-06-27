@@ -221,8 +221,6 @@ Once CryptPad is installed, create an account via the Register button on the hom
 Configure support mailbox
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-:badge_new:`New in version 4.6`
-
 The support mailbox can be configured from the :ref:`admin_panel`.
 
 #. With an instance administrator account, visit the ``/admin/#support`` page
@@ -240,8 +238,6 @@ To allow other administrators to access the support mailbox:
 
 Build static pages & Open Graph metadata
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-:badge_new:`New in version 5.1`
 
 To build some of CryptPad static pages & enable social media link previews, run the following command:
 
