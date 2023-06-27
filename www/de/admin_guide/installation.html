@@ -121,16 +121,16 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../user_guide/support.html">Support</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../user_guide/support.html#existing-tickets">Existing tickets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/support.html#existing-tickets">Vorhandene Tickets</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/support.html#new-ticket">Neues Ticket</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../user_guide/support.html#debug-data">Debug data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/support.html#debug-data">Daten zur Fehleranalyse</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#names">Namen</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#identifiers">Identifiers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#identifiers">Kennungen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#keys">Schlüssel</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#quota">Quota</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#quota">Speicherplatzbegrenzung</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#web-browser">Internetbrowser</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#screen">Bildschirm</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#block-location">Block location</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#block-location">Block-Position</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/support.html#teams">Teams</a></li>
 </ul>
 </li>
@@ -792,11 +792,7 @@ contains at least:</p>
 </li>
 </ul>
 </li>
-<li><p>An administrator email (appears on the Contact page) in place of:</p></li>
 </ul>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">adminEmail</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;i.did.not.read.my.config@cryptpad.fr&#39;</span><span class="p">,</span><span class="w"></span>
-</pre></div>
-</div>
 <section id="diagnostics">
 <h3>Diagnostics<a class="headerlink" href="#diagnostics" title="Permalink to this heading">¶</a></h3>
 <p>CryptPad provides a diagnostics page that runs instance configuration tests. Visit <code class="docutils literal notranslate"><span class="pre">https://cryptpad.yourdomain.com/checkup/</span></code> after completing all of the steps above to ensure everything is correctly configured.</p>
@@ -819,7 +815,6 @@ contains at least:</p>
 </section>
 <section id="configure-support-mailbox">
 <span id="admin-support-mailbox"></span><h3>Configure support mailbox<a class="headerlink" href="#configure-support-mailbox" title="Permalink to this heading">¶</a></h3>
-<p><span class="badge-new">New in version 4.6</span></p>
 <p>The support mailbox can be configured from the <a class="reference internal" href="admin_panel.html#admin-panel"><span class="std std-ref">Administration panel</span></a>.</p>
 <ol class="arabic simple">
 <li><p>With an instance administrator account, visit the <code class="docutils literal notranslate"><span class="pre">/admin/#support</span></code> page</p></li>
@@ -836,7 +831,6 @@ contains at least:</p>
 </section>
 <section id="build-static-pages-open-graph-metadata">
 <span id="configure-open-graph"></span><h3>Build static pages &amp; Open Graph metadata<a class="headerlink" href="#build-static-pages-open-graph-metadata" title="Permalink to this heading">¶</a></h3>
-<p><span class="badge-new">New in version 5.1</span></p>
 <p>To build some of CryptPad static pages &amp; enable social media link previews, run the following command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>npm run build
 </pre></div>
