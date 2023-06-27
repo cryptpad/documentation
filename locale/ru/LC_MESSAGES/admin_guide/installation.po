@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CryptPad \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-31 12:42+0200\n"
+"POT-Creation-Date: 2023-06-27 13:55+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -429,15 +429,11 @@ msgstr ""
 msgid "The Sandbox domain in place of:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:196
-msgid "An administrator email (appears on the Contact page) in place of:"
-msgstr ""
-
-#: ../../admin_guide/installation.rst:203
+#: ../../admin_guide/installation.rst:197
 msgid "Diagnostics"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:205
+#: ../../admin_guide/installation.rst:199
 msgid ""
 "CryptPad provides a diagnostics page that runs instance configuration "
 "tests. Visit ``https://cryptpad.yourdomain.com/checkup/`` after "
@@ -445,95 +441,87 @@ msgid ""
 "configured."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:210
+#: ../../admin_guide/installation.rst:204
 msgid "Configure administrators"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:212
+#: ../../admin_guide/installation.rst:206
 msgid ""
 "Once CryptPad is installed, create an account via the Register button on "
 "the home page. To make this account an instance administrator:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:214
+#: ../../admin_guide/installation.rst:208
 msgid ""
 "Copy their public key found in **User Menu** (avatar at the top right) > "
 "**Settings** > **Account** > **Public Signing Key**"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:215
+#: ../../admin_guide/installation.rst:209
 msgid ""
 "Paste this key in ``cryptpad/config/config.js`` in the following array "
 "(uncomment and replace the placeholder):"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:223
+#: ../../admin_guide/installation.rst:217
 msgid "Restart CryptPad"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:228
+#: ../../admin_guide/installation.rst:222
 msgid "Configure support mailbox"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:230
-msgid ":badge_new:`New in version 4.6`"
-msgstr ""
-
-#: ../../admin_guide/installation.rst:232
+#: ../../admin_guide/installation.rst:224
 msgid "The support mailbox can be configured from the :ref:`admin_panel`."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:234
+#: ../../admin_guide/installation.rst:226
 msgid "With an instance administrator account, visit the ``/admin/#support`` page"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:235
+#: ../../admin_guide/installation.rst:227
 msgid "Click **Generate Support Keys**"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:236
+#: ../../admin_guide/installation.rst:228
 msgid "The support mailbox is now active"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:237
+#: ../../admin_guide/installation.rst:229
 msgid ""
 "Flush the cache to access the mailbox:  **General** tab > **Flush HTTP "
 "Cache**"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:239
+#: ../../admin_guide/installation.rst:231
 msgid "To allow other administrators to access the support mailbox:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:241
+#: ../../admin_guide/installation.rst:233
 msgid "Copy the key at the bottom of the support page"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:242
+#: ../../admin_guide/installation.rst:234
 msgid "Send it to another administrator account"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:243
+#: ../../admin_guide/installation.rst:235
 msgid ""
 "They can use the **Add private key** field on the support page to gain "
 "access to the support mailbox"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:248
+#: ../../admin_guide/installation.rst:240
 msgid "Build static pages & Open Graph metadata"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:250
-msgid ":badge_new:`New in version 5.1`"
-msgstr ""
-
-#: ../../admin_guide/installation.rst:252
+#: ../../admin_guide/installation.rst:242
 msgid ""
 "To build some of CryptPad static pages & enable social media link "
 "previews, run the following command:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:258
+#: ../../admin_guide/installation.rst:248
 msgid ""
 "This creates an ``index.html`` page for each application in the "
 "``customize/www`` directory. It is **not recommended to perform manual "
@@ -541,21 +529,21 @@ msgid ""
 "``npm run build`` is run."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:260
+#: ../../admin_guide/installation.rst:250
 msgid "To modify the preview images please see :ref:`preview_images`"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:263
+#: ../../admin_guide/installation.rst:253
 msgid ""
 "Updating to a newer version of the software in the future without re-"
 "running this command may result in outdated code."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:266
+#: ../../admin_guide/installation.rst:256
 msgid "Support"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:272
+#: ../../admin_guide/installation.rst:262
 msgid ""
 "The development team is available to provide paid support contracts (see "
 "our `organizational plans <https://cryptpad.fr/accounts/#org>`__ for an "
@@ -563,14 +551,14 @@ msgid ""
 "to the community."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:274
+#: ../../admin_guide/installation.rst:264
 msgid ""
 "We recommend you to go over our `forum <https://forum.cryptpad.org>`_ and"
 " or `admins Matrix channel <https://matrix.to/#/#cryptpad-"
 "admins:matrix.xwiki.com>`_."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:276
+#: ../../admin_guide/installation.rst:266
 msgid ""
 "Note that community support is provided by volunteers, please be aware of"
 " what you are asking of them and respect `our Code of Conduct "
@@ -646,5 +634,14 @@ msgstr ""
 #~ "<https://github.com/xwiki-"
 #~ "labs/cryptpad/blob/main/CODE_OF_CONDUCT.md>`_ at all "
 #~ "time."
+#~ msgstr ""
+
+#~ msgid "An administrator email (appears on the Contact page) in place of:"
+#~ msgstr ""
+
+#~ msgid ":badge_new:`New in version 4.6`"
+#~ msgstr ""
+
+#~ msgid ":badge_new:`New in version 5.1`"
 #~ msgstr ""
 
