@@ -13,7 +13,7 @@ The basic set of commands to upgrade CryptPad to a new version is as follows (as
    npm update
    bower update
 
-Depending on the version, there may be changes that require special consideration. It is therefore highly recommended to read the release notes for the specific targetted version before upgrading.
+Depending on the version, there may be changes that require special consideration. It is therefore highly recommended to read the release notes for the specific targeted version before upgrading.
 
 .. _admin_database:
 
