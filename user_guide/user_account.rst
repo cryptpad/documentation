@@ -93,6 +93,8 @@ Optional:
 Settings
 --------
 
+.. XXX TODO: Refactor to reflect new settings and new categories/organization
+
 The account settings are found in the user menu (avatar at the top right) > |gear| **Settings**.
 
 .. _user_settings_account:
