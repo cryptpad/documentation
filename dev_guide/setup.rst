@@ -14,7 +14,7 @@ Please make sure that the following tools are installed on your system before in
    -  Using `NVM <https://github.com/nvm-sh/nvm#installing-and-updating>`__ is recommended
 
 -  npm
--  bower
+-  bower (if you are running version 5.3.0 and below)
 
    -  Installed with ``npm install -g bower``
 
@@ -28,12 +28,15 @@ The source code can be found on `GitHub <https://github.com>`__. You must have a
 
    -  `git clone https://github.com/{YOUR_USER_NAME}/cryptpad.git`
 
--  Install the server dependencies with npm  and client dependencies with bower:
+-  Install the server dependencies with npm and client dependencies with bower(if version 5.3.0 and below):
 
 .. code:: bash
 
    cd cryptpad
    npm install
+   # version 5.4.0 and above
+   npm run install:components
+   # OR version 5.3.0 and below
    bower install
 
 Configuration
