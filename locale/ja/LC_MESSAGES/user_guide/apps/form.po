@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-31 12:42+0200\n"
-"PO-Revision-Date: 2023-08-01 00:59+0000\n"
+"PO-Revision-Date: 2023-08-05 09:55+0000\n"
 "Last-Translator: Suguru Hirahara <d4bb0a95-96c1-4662-9d31-a5e520a01a09@hostux"
 ".ninja>\n"
 "Language-Team: Japanese <http://weblate.cryptpad.fr/projects/user-guide/"
@@ -27,7 +27,7 @@ msgstr "フォーム"
 
 #: ../../user_guide/apps/form.rst:-1
 msgid "preview of the Form application"
-msgstr ""
+msgstr "フォームアプリケーションの画面"
 
 #: ../../user_guide/apps/form.rst:11
 msgid "Roles"
@@ -43,22 +43,30 @@ msgid ""
 ":ref:`share_access_rights` when sharing a form are different from the "
 "other applications. Forms have 3 different roles:"
 msgstr ""
+"フォームは、他のCryptPadのアプリケーションと同じく、共同作業用・プライバシー"
+"の機能を備えています。またフォームの使用に関しては、少し異なった要件もありま"
+"す。例えば、フォームに回答する人は、他の人の回答やフォーム自体を編集できる代"
+"わりに、ただ自分の回答のみ編集できるのでなければなりません。このため、"
+"フォームを共有する際の :ref:`share_access_rights` は他のアプリケーションの場"
+"合とは異なっています。フォームには、以下の3つの異なる権限があります。"
 
 #: ../../user_guide/apps/form.rst:15
 msgid "**Author**: can edit questions and :ref:`form settings <form_settings>`."
-msgstr ""
+msgstr "**作者**: 質問と :ref:`フォームの設定 <form_settings>` を編集できます。"
 
 #: ../../user_guide/apps/form.rst:16
 msgid ""
 "**Auditor**: can view responses to the form whether or not they are "
 "public."
-msgstr ""
+msgstr "**監察人**: フォームが公開・未公開のどちらの状態でも回答を確認できます。"
 
 #: ../../user_guide/apps/form.rst:17
+#, fuzzy
 msgid ""
 "**Participant**: can answer the form and only view responses once they "
 "are made public by an author."
-msgstr ""
+msgstr "**参加者**: "
+"フォームに回答し、作者が回答を公開したときにのみ回答を確認できます。"
 
 #: ../../user_guide/apps/form.rst:19
 msgid ""
@@ -66,12 +74,16 @@ msgid ""
 "participants, select the role in the |share-alt| **Share** menu before "
 "selecting contacts or copying the link."
 msgstr ""
+"役割を指定してフォームを共有する場合、例えば参加者にフォームを送信する場合は"
+"、|share-alt| **共有**メニューから役割を選択した後で、連絡先を選択、またはリ"
+"ンクをコピーしてください。"
 
 #: ../../user_guide/apps/form.rst:-1
 msgid ""
 "the share menu in the form application, showing the three roles: "
 "participant, auditor, and author."
-msgstr ""
+msgstr "フォームアプリケーションの共有メニュー。参加者、監察人、作者の3つの役割を表示"
+"中。"
 
 #: ../../user_guide/apps/form.rst:27
 msgid ""
@@ -80,6 +92,9 @@ msgid ""
 " is to avoid giving the impression that someone is watching while they "
 "answer."
 msgstr ""
+"参加者がフォームに回答する際には、ユーザーの一覧やチャット、共同セッションに"
+"ユーザーが参加したことの通知が無効に設定されます。これは、誰かが回答時に監視"
+"しているという印象を与えることを防ぐことを狙いとしています。"
 
 #: ../../user_guide/apps/form.rst:30
 msgid "Editing a form"
@@ -89,17 +104,18 @@ msgstr "フォームの編集"
 msgid ""
 "To add a question, use the |plus| **Add** menu after the last question, "
 "or the |plus| between each question."
-msgstr ""
+msgstr "最後の質問の |plus| **追加**メニュー、またはそれぞれの質問の間にある |plus| "
+"から質問を追加できます。"
 
 #: ../../user_guide/apps/form.rst:34
 msgid ""
 "To delete a question use the |trash-o| **Delete** button on the question "
 "to remove."
-msgstr ""
+msgstr "質問は、各質問の |trash-o| **削除**ボタンを使うと削除できます。"
 
 #: ../../user_guide/apps/form.rst:37
 msgid "Utilities"
-msgstr ""
+msgstr "機能"
 
 #: ../../user_guide/apps/form.rst:40
 msgid "|cptools form-paragraph| Description"
@@ -107,7 +123,7 @@ msgstr "|cptools form-paragraph| 説明文"
 
 #: ../../user_guide/apps/form.rst:42
 msgid "Add text to the form using Markdown syntax."
-msgstr ""
+msgstr "マークダウンの構文を使ってフォームに文を追加できます。"
 
 #: ../../user_guide/apps/form.rst:44
 msgid ":badge_user:`Logged in users`"
@@ -118,18 +134,20 @@ msgid ""
 "To add an image from the CryptDrive or upload a new one, use the "
 "|picture-o| icon in the toolbar."
 msgstr ""
+"ツールバーの |picture-o| アイコンから、CryptDriveから画像を追加したり、新しい"
+"画像をアップロードしたりすることができます。"
 
 #: ../../user_guide/apps/form.rst:49
 msgid "|cptools form-page-break| Page Break"
-msgstr ""
+msgstr "|cptools form-page-break| ページ分割"
 
 #: ../../user_guide/apps/form.rst:51
 msgid "Split the form into pages. Only displayed to participants."
-msgstr ""
+msgstr "フォームを複数のページに分割。参加者にのみ表示されます。"
 
 #: ../../user_guide/apps/form.rst:54
 msgid "|cptools form-conditional| Conditional Section"
-msgstr ""
+msgstr "|cptools form-conditional| 条件のセクション"
 
 #: ../../user_guide/apps/form.rst:56
 msgid ""
@@ -137,6 +155,8 @@ msgid ""
 "**Checkbox** questions can be used to display or hide a section of "
 "questions."
 msgstr ""
+"|cptools form-list-radio| **選択肢**と |cptools form-list-check| **チェックボ"
+"ックス**の質問を使うと、質問のセクションを表示したり非表示にしたりできます。"
 
 #: ../../user_guide/apps/form.rst:58
 msgid ""
@@ -144,6 +164,9 @@ msgid ""
 "the list at the bottom of the form, to add a |cptools form-conditional| "
 "**Conditional Section**."
 msgstr ""
+"フォームのエディターで、セクション間の |plus| **追加** "
+"ボタン、またはフォームの一番下にあるリストから、 |cptools form-conditional| "
+"**条件のセクション**を追加してください。"
 
 #: ../../user_guide/apps/form.rst:59
 msgid ""
@@ -152,24 +175,30 @@ msgid ""
 "not). Only questions placed *before* the section will be available to use"
 " in the conditions."
 msgstr ""
+"セクションの前には少なくとも1つの :ref:`form_Q_choice` または :ref:`form_Q_ch"
+"eckbox`を作成してください（そうでない場合はヒントが表示されます）。セクション"
+"の*前*に設定された質問のみが条件に使用できます。"
 
 #: ../../user_guide/apps/form.rst:60
 msgid ""
 "Add some content (description text, questions) to the section using the "
 "|plus| **Add** button or by dragging questions into the section area."
-msgstr ""
+msgstr "|plus| **追加**ボタンを使ったりセクションの領域に質問をドラッグしたりして、説"
+"明文や設問などの内容を追加してください。"
 
 #: ../../user_guide/apps/form.rst:61
 msgid ""
 "Set some conditions using the selection menus. AND conditions must all be"
 " true together, only of the OR conditions needs to be true."
 msgstr ""
+"選択用メニューを使って条件を設定してください。「かつ」の条件は全て満たされて"
+"いなければならず、「または」の条件はどれかが満たされていれば十分です。"
 
 #: ../../user_guide/apps/form.rst:62
 msgid ""
 "In the participant view, the section will only be displayed if the "
 "conditions are true."
-msgstr ""
+msgstr "参加者には、条件が真の場合にのみセクションが表示されます。"
 
 #: ../../user_guide/apps/form.rst:65
 msgid "Question types"
@@ -220,7 +249,7 @@ msgstr "|cptools form-list-radio| 選択肢"
 
 #: ../../user_guide/apps/form.rst:94
 msgid "Response: one choice from the list"
-msgstr ""
+msgstr "回答：リストから1つ選択"
 
 #: ../../user_guide/apps/form.rst:98 ../../user_guide/apps/form.rst:130
 #: ../../user_guide/apps/form.rst:153 ../../user_guide/apps/form.rst:172
@@ -230,7 +259,7 @@ msgstr "|plus| **選択肢を追加**のボタン"
 #: ../../user_guide/apps/form.rst:99 ../../user_guide/apps/form.rst:131
 #: ../../user_guide/apps/form.rst:154 ../../user_guide/apps/form.rst:173
 msgid "Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order options"
-msgstr ""
+msgstr "|ellipsis-v| |ellipsis-v| をつかんでドラッグすると、選択肢を並び替えられます"
 
 #: ../../user_guide/apps/form.rst:100 ../../user_guide/apps/form.rst:132
 #: ../../user_guide/apps/form.rst:155 ../../user_guide/apps/form.rst:174
@@ -253,7 +282,8 @@ msgstr "|plus| **選択肢を追加**と |plus| **項目を追加**のボタン"
 msgid ""
 "Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order items and "
 "options"
-msgstr ""
+msgstr "|ellipsis-v| |ellipsis-v| "
+"をつかんでドラッグすると、項目や選択肢を並び替えられます"
 
 #: ../../user_guide/apps/form.rst:111 ../../user_guide/apps/form.rst:144
 msgid "Delete an item or option with |times|"
@@ -278,11 +308,11 @@ msgstr "|cptools form-list-check| チェックボックス"
 
 #: ../../user_guide/apps/form.rst:125
 msgid "Response: multiple choices from the list"
-msgstr ""
+msgstr "回答: リストから複数選択可"
 
 #: ../../user_guide/apps/form.rst:129
 msgid "Maximum selectable options"
-msgstr ""
+msgstr "選択可能な選択肢の数"
 
 #: ../../user_guide/apps/form.rst:135
 msgid "|cptools form-grid-check| Checkbox Grid"
@@ -290,11 +320,11 @@ msgstr "|cptools form-grid-check| チェックボックス式グリッド"
 
 #: ../../user_guide/apps/form.rst:137
 msgid "Response: multiple choices for each item"
-msgstr ""
+msgstr "回答：各項目に複数の選択肢"
 
 #: ../../user_guide/apps/form.rst:141
 msgid "Maximum selectable options (per item)"
-msgstr ""
+msgstr "選択可能な選択肢の数（各項目につき）"
 
 #: ../../user_guide/apps/form.rst:147
 msgid "|cptools form-list-ordered| Ordered List"
@@ -302,19 +332,23 @@ msgstr "|cptools form-list-ordered| 番号付きリスト"
 
 #: ../../user_guide/apps/form.rst:149
 msgid "Response: order of preference for the listed options"
-msgstr ""
+msgstr "回答：選択肢の一覧の順序"
 
 #: ../../user_guide/apps/form.rst:159
 msgid "Condorcet:"
-msgstr ""
+msgstr "コンドルセ式："
 
 #: ../../user_guide/apps/form.rst:161
+#, fuzzy
 msgid ""
 "Since v5.3 responses can show the results with the `Condorcet method "
 "<https://en.wikipedia.org/wiki/Condorcet_method>`_. You can select "
 "Schulze or Ranked Pairs to display the winner. The details will also show"
 " the number of matches won by each candidates."
 msgstr ""
+"バージョン5.3より回答を `コンドルセ法 <https://en.wikipedia.org/wiki/"
+"Condorcet_method>`_ で表示できます。シュルツェまたはランク付けのペアを選択し"
+"て勝者を表示できます。詳細からは、それぞれの候補が勝利した数を確認できます。"
 
 #: ../../user_guide/apps/form.rst:164
 msgid "|cptools form-poll| Poll"
@@ -324,7 +358,8 @@ msgstr "|cptools form-poll| 投票"
 msgid ""
 "Response: |check| Yes, |times| No, or |cptools form-poll-maybe| "
 "Acceptable for each of the proposed options"
-msgstr ""
+msgstr "回答: それぞれの選択肢に対し |check| はい、|times| いいえ、|cptools form-"
+"poll-maybe| 可のいずれか"
 
 #: ../../user_guide/apps/form.rst:168
 msgid "Option types:"
@@ -340,7 +375,7 @@ msgstr "日"
 
 #: ../../user_guide/apps/form.rst:178
 msgid "Select the date choices by clicking on them in the calendar"
-msgstr ""
+msgstr "カレンダーから日付の選択肢を設定できます"
 
 #: ../../user_guide/apps/form.rst:180
 msgid "Time"
@@ -351,26 +386,28 @@ msgid "Click on an option to select the date and time in the calendar"
 msgstr "選択肢をクリックすると、カレンダーから日時を設定できます"
 
 #: ../../user_guide/apps/form.rst:183
+#, fuzzy
 msgid ""
 "Click \"Add multiple dates and times\" to select multiple options and use"
 " |plus| **Add all** to add all of the selected options at once."
-msgstr ""
+msgstr "\"複数の日時を追加\"をクリックして複数の選択肢を選び、|plus| "
+"**全て追加**から一度に全ての選択肢を追加できます。"
 
 #: ../../user_guide/apps/form.rst:188
 msgid "Form Settings"
-msgstr ""
+msgstr "フォームの設定"
 
 #: ../../user_guide/apps/form.rst:190
 msgid "Use the 3 buttons at the top for easy access to:"
-msgstr ""
+msgstr "上にある3つのボタンから、以下に直接アクセスできます："
 
 #: ../../user_guide/apps/form.rst:192
 msgid "|bar-chart| **Responses** (count): toggles the response page"
-msgstr ""
+msgstr "|bar-chart| **回答**（回答数） : 回答ページの表示を切り替えます"
 
 #: ../../user_guide/apps/form.rst:193
 msgid "|eye| **Preview form**: Opens the participant link"
-msgstr ""
+msgstr "|eye| **フォームをプレビュー**: 参加者用リンクを開きます"
 
 #: ../../user_guide/apps/form.rst:194
 msgid "|link| **Copy public link**: Copies the participant link"
@@ -380,7 +417,8 @@ msgstr "|link| **公開リンクをコピー**: 参加者用リンクをコピ�
 msgid ""
 "To share an **author** link to the form (with edit rights), use the "
 ":ref:`share` menu in the toolbar."
-msgstr ""
+msgstr "フォームの**作者**用のリンク（編集用の権限あり）は、ツールバーの :ref:`共有` "
+"メニューから共有できます。"
 
 #: ../../user_guide/apps/form.rst:200
 msgid "Closing date"
@@ -392,11 +430,11 @@ msgstr "新しい回答の入力を締め切る日時"
 
 #: ../../user_guide/apps/form.rst:204
 msgid "Use the **Set closing date** button to select a date from the calendar"
-msgstr ""
+msgstr "**締切日時を設定**ボタンを押すと、カレンダーから日時を選択できます"
 
 #: ../../user_guide/apps/form.rst:205
 msgid "If a closing date is set, use **Remove closing date** to remove it."
-msgstr ""
+msgstr "締切日時が設定されている場合、**締切日時を削除**から削除できます。"
 
 #: ../../user_guide/apps/form.rst:208
 msgid "Anonymize responses"
@@ -408,6 +446,9 @@ msgid ""
 "a CryptPad account. If un-checked, participants who are logged-in can "
 "still opt to answer anonymously if guest access is allowed (see below)."
 msgstr ""
+"CryptPadにログインしているかどうかに関わらず、全回答が匿名化されます。チェッ"
+"クしていない場合でも、ゲストによるアクセスが許可されていれば、ログイン済のユ"
+"ーザーは匿名で回答することができます（以下を参照）。"
 
 #: ../../user_guide/apps/form.rst:213
 msgid "Guest Access"
@@ -417,13 +458,14 @@ msgstr "ゲストによるアクセス"
 msgid ""
 "Blocked: only users who are logged in to their CryptPad account can "
 "respond to the form."
-msgstr ""
+msgstr "ブロック：CryptPadのアカウントにログインしているユーザーだけが回答できます。"
 
 #: ../../user_guide/apps/form.rst:216
 msgid ""
 "Allowed: unregistered users can respond, logged in users can choose to "
 "respond anonymously."
-msgstr ""
+msgstr "許可：登録していないユーザーも回答できます。ログイン済のユーザーは匿名による"
+"回答を選択できます。"
 
 #: ../../user_guide/apps/form.rst:219
 msgid "Editing after submission"
@@ -433,26 +475,30 @@ msgstr "送信後の編集"
 msgid ""
 "One time only: participants can answer the form only one time and can't "
 "modify or delete their responses after submitting them."
-msgstr ""
+msgstr "一回のみ：参加者はフォームに一度のみ回答できます。送信後に回答を編集したり削"
+"除したりすることはできません。"
 
 #: ../../user_guide/apps/form.rst:224
 msgid ""
 "One time and edit/delete: participants can answer the form only one time "
 "but are allowed modify or delete their responses after submitting them."
-msgstr ""
+msgstr "一回のみ（編集、削除を許可）：参加者はフォームに一度だけ回答できますが、送信"
+"後に回答を編集したり削除したりすることができます。"
 
 #: ../../user_guide/apps/form.rst:225
 msgid ""
 "Multiple times: participants can answer the form multiple times but can't"
 " modify or delete their responses after submitting them."
-msgstr ""
+msgstr "複数回：参加者はフォームに何度も回答できます。送信後に回答を編集したり削除し"
+"たりすることはできません。"
 
 #: ../../user_guide/apps/form.rst:226
 msgid ""
 "Multiple times and edit/delete: participants can answer the form multiple"
 " times and are allowed to modify or delete their responses after "
 "submitting them."
-msgstr ""
+msgstr "複数回（編集、削除を許可）：参加者はフォームに何度も回答できます。送信後に回"
+"答を編集したり削除したりすることができます。"
 
 #: ../../user_guide/apps/form.rst:229
 msgid ""
@@ -460,60 +506,67 @@ msgid ""
 " answer multiple times a \"One time only\" form if they open it on a web "
 "browser private window, or wipe the browser cookies, etc."
 msgstr ""
+"ゲストによるアクセスが許可されている場合、ブラウザーのプライベートウィンドウ"
+"でフォームを開いたり、ブラウザーのクッキーを削除したりすると、"
+"未登録のユーザーは\"一回のみ\"のフォームに何度も回答することができます。"
 
 #: ../../user_guide/apps/form.rst:232
 msgid "Publish Responses"
-msgstr ""
+msgstr "回答を公開"
 
 #: ../../user_guide/apps/form.rst:234
 msgid ""
 "Allows participants who submit the form to view responses. Once enabled, "
 "this setting publishes all past and future responses."
-msgstr ""
+msgstr "フォームに回答を送信した参加者に、結果の閲覧を許可。一度許可すると、これまで"
+"登録された回答も、今後登録される回答もともに公開されます。"
 
 #: ../../user_guide/apps/form.rst:238
 msgid "Once responses are made public they cannot be made private again."
-msgstr ""
+msgstr "いったん回答が公開されると、非公開に戻すことはできません。"
 
 #: ../../user_guide/apps/form.rst:241
 msgid "Submit message"
-msgstr ""
+msgstr "メッセージを送信"
 
 #: ../../user_guide/apps/form.rst:243
 msgid "Add a custom message to be displayed after participants submit the form."
-msgstr ""
+msgstr "参加者がフォームを送信した後で表示されるユーザー定義のメッセージを追加できま"
+"す。"
 
 #: ../../user_guide/apps/form.rst:246
 msgid "Color theme"
-msgstr ""
+msgstr "テーマ色"
 
 #: ../../user_guide/apps/form.rst:248
 msgid "Choose the background and highlight color for the form."
-msgstr ""
+msgstr "フォームの背景色と強調用の色を選択できます。"
 
 #: ../../user_guide/apps/form.rst:251
 msgid "Responses"
-msgstr ""
+msgstr "回答"
 
 #: ../../user_guide/apps/form.rst:253
+#, fuzzy
 msgid ""
 "Notifications for new responses are sent to the form _owner_ through the "
 "integrated notifications."
-msgstr ""
+msgstr "新しい回答に関する通知は、統合された通知からフォームの所有者に送信されます。"
 
 #: ../../user_guide/apps/form.rst:256
 msgid "Advanced use-cases"
-msgstr ""
+msgstr "高度な使用事例"
 
 #: ../../user_guide/apps/form.rst:259
 msgid "Anonymous responses with access list"
-msgstr ""
+msgstr "アクセスリストを使った匿名の回答"
 
 #: ../../user_guide/apps/form.rst:261
 msgid ""
 "To conduct an anonymous survey with a known group of users, the anonymous"
 " answers feature can be combined with an :ref:`access_list`."
-msgstr ""
+msgstr "匿名の回答の機能と :ref:`access_list`を使うと、既知のユーザーのグループを対象"
+"に匿名のアンケートを行うことができます。"
 
 #: ../../user_guide/apps/form.rst:263
 msgid ""
@@ -521,13 +574,18 @@ msgid ""
 "is on the access list (either directly or through a :ref:`team <teams>` "
 "they are part of)."
 msgstr ""
+"フォームへのアクセスには、参加者はアクセスリストにあるアカウントにログインし"
+"ているがあります（直接または属する :ref:`チーム <teams>` のどちらかにて）。"
 
 #: ../../user_guide/apps/form.rst:265
+#, fuzzy
 msgid ""
 "If anonymous answers are allowed on the form, participants are able to "
 "answer anonymously while the access list ensures they are coming from a "
 "specific group of users."
 msgstr ""
+"匿名の回答が許可されている場合、回答が特定のユーザーのグループによるものであ"
+"ることをアクセスリストが保証しつつ、参加者は匿名で回答することができます。"
 
 #: ../../user_guide/apps/form.rst:268
 msgid "Import/Export"
@@ -538,6 +596,8 @@ msgid ""
 "To export responses as a CSV file use the |download| **Export to CSV** "
 "button on the |bar-chart| **Responses** page."
 msgstr ""
+"|bar-chart| **回答**ページの |download| "
+"**CSVにエクスポート**のボタンから、回答をCSVファイルでエクスポートできます。"
 
 #~ msgid "|link| **Copy link**: Copies the participant link"
 #~ msgstr ""
