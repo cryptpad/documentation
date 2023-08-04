@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 13:53+0200\n"
-"PO-Revision-Date: 2023-07-31 09:55+0000\n"
+"PO-Revision-Date: 2023-08-05 09:55+0000\n"
 "Last-Translator: Suguru Hirahara <d4bb0a95-96c1-4662-9d31-a5e520a01a09@hostux"
 ".ninja>\n"
 "Language-Team: Japanese <http://weblate.cryptpad.fr/projects/user-guide/"
@@ -167,7 +167,8 @@ msgstr "履歴のツールバー"
 msgid ""
 "The history of documents is saved and can be restored if needed. To view "
 "and restore the history of a document:"
-msgstr ""
+msgstr "ドキュメントの履歴が保存され、必要な場合にはこれを復元することができます。ド"
+"キュメントの履歴は以下の方法で表示、復元できます。"
 
 #: ../../user_guide/apps/general.rst:74
 msgid "|file-o| **File** > |history| **History**."
@@ -175,27 +176,32 @@ msgstr "|file-o| **ファイル** > |history| **履歴**。"
 
 #: ../../user_guide/apps/general.rst:75
 msgid "Use the arrows to navigate:"
-msgstr ""
+msgstr "矢印マークで前後に移動できます。"
 
 #: ../../user_guide/apps/general.rst:77
 msgid "|step-backward| and |step-forward| between each edit."
-msgstr ""
+msgstr "|step-backward| と |step-forward| で各履歴間を移動できます。"
 
 #: ../../user_guide/apps/general.rst:78
 msgid "|step-backward| |user| and |user| |step-forward| between each author."
-msgstr ""
+msgstr "|step-backward| |user| と |user| |step-forward| "
+"でユーザーの履歴間を移動できます。"
 
 #: ../../user_guide/apps/general.rst:79
+#, fuzzy
 msgid ""
 "|step-backward| |users| and |users| |step-forward| between each editing "
 "session (when the same group of authors was connected to the document)."
 msgstr ""
+"|step-backward| |users| と |users| |step-forward| で各セッションの履歴間を移"
+"動できます（同じ作者のグループがドキュメントに接続している間）。"
 
 #: ../../user_guide/apps/general.rst:81
 msgid ""
 "Restore the displayed version with |check| **Restore** , or close the "
 "history without restoring with |times| **Close**."
-msgstr ""
+msgstr "|check| **復元**で表示中のバージョンを復元できます。|times| "
+"**閉じる**で復元せず履歴を閉じます。"
 
 #: ../../user_guide/apps/general.rst:84
 msgid ""
@@ -213,10 +219,14 @@ msgid ""
 "CryptPad's encrypted real-time collaboration. Please refer to "
 ":ref:`spreadsheet history <sheets_history>` for further details."
 msgstr ""
+"OnlyOfficeと、"
+"暗号化を行うCryptPadのリアルタイムの共同作業が統合されているため "
+":ref:`app_sheets` アプリケーションでは、履歴は少し異なった形で機能します。"
+"詳細は :ref:`スプレッドシートの履歴 <sheets_history>` を確認してください。"
 
 #: ../../user_guide/apps/general.rst:89
 msgid "**Version Links**"
-msgstr ""
+msgstr "**バージョンへのリンク**"
 
 #: ../../user_guide/apps/general.rst:91
 msgid "To share a link to the displayed version of the history:"
@@ -230,17 +240,19 @@ msgstr "ツールバーの |share-alt| **共有**。"
 msgid ""
 "Select **Contacts**, **Link** or **Embed** similarly to when "
 ":ref:`sharing a document <share>`."
-msgstr ""
+msgstr "ref:`ドキュメントを共有 <share>` "
+"する際と同様に、**連絡先**、**リンク**、または**埋め込む**を選択。"
 
 #: ../../user_guide/apps/general.rst:96
 msgid "Recipients will be able to view the selected version in read-only mode."
-msgstr ""
+msgstr "リンクを受け取った人は、選択したバージョンを閲覧モードで表示できます。"
 
 #: ../../user_guide/apps/general.rst:99
 msgid ""
 "Sharing a link to a version also gives read-only access to all versions "
 "of the document."
-msgstr ""
+msgstr "あるバージョンへのリンクを使うと、ドキュメントの全てのバージョンに読み込み専"
+"用でアクセスすることができます。"
 
 #: ../../user_guide/apps/general.rst:103
 msgid "**Create a snapshot from history**"
@@ -250,7 +262,8 @@ msgstr "**履歴からスナップショットを作成**"
 msgid ""
 "To create a :ref:`snapshot <snapshots>` from the displayed version of the"
 " history:"
-msgstr ""
+msgstr "以下の方法で、表示している履歴のバージョンの :ref:`スナップショット "
+"<snapshots>` を作成できます。"
 
 #: ../../user_guide/apps/general.rst:107
 msgid "|camera| button in the toolbar."
@@ -258,7 +271,7 @@ msgstr "ツールバーの |camera| ボタン。"
 
 #: ../../user_guide/apps/general.rst:108 ../../user_guide/apps/general.rst:126
 msgid "In the dialog, provide a name for the snapshot."
-msgstr ""
+msgstr "ダイアログでは、スナップショットの名前を指定してください。"
 
 #: ../../user_guide/apps/general.rst:109 ../../user_guide/apps/general.rst:127
 msgid "|camera| **New Snapshot**"
@@ -273,25 +286,30 @@ msgid "The snapshots dialog"
 msgstr "スナップショットのダイアログ"
 
 #: ../../user_guide/apps/general.rst:121
+#, fuzzy
 msgid ""
 "Snapshots are specific points in the history of a document that are named"
 " for easy reference."
-msgstr ""
+msgstr "スナップショットは、ドキュメントの履歴の特定の地点のことを指します。簡単に参"
+"照できるよう、名前を付けて保存できます。"
 
 #: ../../user_guide/apps/general.rst:123
 msgid "To create a snapshot from the current state of the document:"
-msgstr ""
+msgstr "以下の方法で、ドキュメントの現在の状態のスナップショットを作成できます。"
 
 #: ../../user_guide/apps/general.rst:125 ../../user_guide/apps/general.rst:133
 #: ../../user_guide/apps/general.rst:140
 msgid "|file-o| **File** > |camera| **Snapshots**"
-msgstr ""
+msgstr "|file-o| **ファイル** > |camera| **スナップショット**"
 
 #: ../../user_guide/apps/general.rst:129
 msgid ""
 "To create a snapshot from a version in the document's history see "
 ":ref:`snapshot from history <document_history>` above."
 msgstr ""
+"ドキュメントの履歴のバージョンのスナップショットを作成する方法については、"
+"上記の :ref:`履歴からスナップショットを作成 <document_history>` "
+"を確認してください。"
 
 #: ../../user_guide/apps/general.rst:131
 msgid "To view and restore a snapshot:"
@@ -299,7 +317,8 @@ msgstr "スナップショットは以下の方法で表示、復元できます
 
 #: ../../user_guide/apps/general.rst:134
 msgid "In the dialog, ``Click`` on the snapshot in the list and |eye| **View**."
-msgstr ""
+msgstr "ダイアログ上で、一覧からスナップショットを``クリック``して |eye| "
+"**表示**をクリックしてください。"
 
 #: ../../user_guide/apps/general.rst:135
 msgid "The snapshot opens in a new window."
@@ -307,23 +326,25 @@ msgstr "スナップショットは新しいウィンドウで開きます。"
 
 #: ../../user_guide/apps/general.rst:136
 msgid "|check| **Restore** or |times| **Close**"
-msgstr ""
+msgstr "|check| **復元** または |times| **閉じる**"
 
 #: ../../user_guide/apps/general.rst:138
 msgid "To delete a snapshot:"
-msgstr "スナップショットを削除する方法："
+msgstr "スナップショットは以下の方法で削除できます。"
 
 #: ../../user_guide/apps/general.rst:141
 msgid ""
 "In the dialog, ``Click`` on the snapshot in the list and |trash| "
 "**Delete**."
-msgstr ""
+msgstr "ダイアログ上で、一覧にあるスナップショットを``クリック``し |trash| **削除**。"
 
 #: ../../user_guide/apps/general.rst:144
 msgid ""
 "Snapshots are part of the document's history. If you delete the history "
 "in the :ref:`document_properties` snapshots will be deleted as well."
 msgstr ""
+"スナップショットはドキュメントの履歴の一部です。:ref:`document_properties` "
+"で履歴を削除すると、スナップショットも同時に削除されます。"
 
 #: ../../user_guide/apps/general.rst:150
 msgid "Properties"
@@ -387,19 +408,20 @@ msgstr "ユーザーとチャット"
 msgid ""
 "Interact with users connected to the same document through the user-list "
 "|user| |eye| and the |comments| **Chat**."
-msgstr ""
+msgstr "ユーザー一覧 |user| |eye| と |comments| "
+"**チャット**から、同じドキュメントに接続しているユーザーと交流できます。"
 
 #: ../../user_guide/apps/general.rst:179
 msgid "To show/hide these panes:"
-msgstr ""
+msgstr "それらの枠は以下の方法で表示したり非表示にしたりできます。"
 
 #: ../../user_guide/apps/general.rst:181
 msgid "|user| |eye| for the user-list."
-msgstr ""
+msgstr "ユーザー一覧は |user| |eye| から。"
 
 #: ../../user_guide/apps/general.rst:182
 msgid "|comments| **Chat** for the chat."
-msgstr ""
+msgstr "チャットは |comments| **チャット** から。"
 
 #~ msgid ""
 #~ "Due to the integration of OnlyOffice "
