@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-06 10:19+0100\n"
-"PO-Revision-Date: 2023-07-25 17:55+0000\n"
+"PO-Revision-Date: 2023-08-05 09:55+0000\n"
 "Last-Translator: Suguru Hirahara <d4bb0a95-96c1-4662-9d31-a5e520a01a09@hostux"
 ".ninja>\n"
 "Language-Team: Japanese <http://weblate.cryptpad.fr/projects/user-guide/"
@@ -30,18 +30,23 @@ msgid ""
 "|share-alt| **Share** and |unlock-alt| **Access** are the two menus to "
 "manage how other users can interact with your documents on CryptPad."
 msgstr ""
+"|share-alt| **共有**と |unlock-alt| **アクセス**のメニューから、他のユーザー"
+"がCryptPadのあなたのドキュメントを操作する方法を設定できます。"
 
 #: ../../user_guide/share_and_access.rst:8
 msgid ""
 "From the document toolbar: |share-alt| **Share** and |unlock-alt| "
 "**Access** at the center."
-msgstr ""
+msgstr "ドキュメントのツールバーから：中央にある |share-alt| **共有**と |unlock-alt| "
+"**アクセス**。"
 
 #: ../../user_guide/share_and_access.rst:9
 msgid ""
 "From the CryptDrive: ``Right click`` on a document > |share-alt| "
 "**Share** or |unlock-alt| **Access**."
 msgstr ""
+"CryptDriveから：ドキュメントを``右クリック`` > |share-alt| **共有**または "
+"|unlock-alt| **アクセス**。"
 
 #: ../../user_guide/share_and_access.rst:14
 msgid "Share"
@@ -54,6 +59,9 @@ msgid ""
 "can be set to authorise the recipient to edit the document, or to only "
 "view it."
 msgstr ""
+"ドキュメントは:ref:`share_contacts`、:ref:`share_link`、:ref:`share_embed`の3"
+"つの方法で共有できます。それぞれの方法において、共有する相手にドキュメントの"
+"編集権限を与えるか、あるいは閲覧権限のみを与えるかを設定できます。"
 
 #: ../../user_guide/share_and_access.rst:21
 msgid "Access rights"
@@ -61,7 +69,7 @@ msgstr "アクセス権限"
 
 #: ../../user_guide/share_and_access.rst:23
 msgid "There are 4 levels of permissions:"
-msgstr ""
+msgstr "権限には4つのレベルがあります。"
 
 #: ../../user_guide/share_and_access.rst:25
 msgid "**View**: Read-only without editing the document."
@@ -75,7 +83,7 @@ msgstr ""
 
 #: ../../user_guide/share_and_access.rst:27
 msgid "**Edit**: View and make changes to the document."
-msgstr ""
+msgstr "**編集**：ドキュメントを表示、編集。"
 
 #: ../../user_guide/share_and_access.rst:28
 msgid ""
@@ -83,6 +91,9 @@ msgid ""
 " opened by a recipient, the document is deleted permanently. "
 ":badge_user:`Logged in users`"
 msgstr ""
+"**一度だけ表示した後に自動で削除**：**1回**読み込み専用で共有。リンクを受け取"
+"った相手がリンクを開くと、ドキュメントは完全に削除されます。:badge_user:`ログ"
+"イン済ユーザー`"
 
 #: ../../user_guide/share_and_access.rst:32
 msgid ""
@@ -108,40 +119,45 @@ msgid ""
 " links never leave the encrypted platform of CryptPad. This prevents data"
 " from being leaked to third parties."
 msgstr ""
+"この方法がCryptPadで安全にドキュメントを共有するのに推奨されます。:ref:`連絡"
+"先<contacts>`と直接共有するとき、ドキュメントのリンクはCryptPadを離れることは"
+"なく、第三者にデータが流出することはありません。"
 
 #: ../../user_guide/share_and_access.rst:47
 msgid "To share with one or more contacts:"
-msgstr ""
+msgstr "連絡先とは以下の方法で共有できます。"
 
 #: ../../user_guide/share_and_access.rst:49
 msgid ""
 "|share-alt| **Share** in the document toolbar > |address-book| "
 "**Contacts**."
-msgstr ""
+msgstr "ドキュメントのツールバーの |share-alt| **共有** > |address-book| **連絡先**。"
 
 #: ../../user_guide/share_and_access.rst:50
 msgid ""
 "``Right click`` on the document in the CryptDrive > |share-alt| **Share**"
 " > |address-book| **Contacts**."
 msgstr ""
+"CryptDriveのドキュメントを``右クリック`` > |share-alt| **共有** > |address-"
+"book| **連絡先**。"
 
 #: ../../user_guide/share_and_access.rst:52
 #: ../../user_guide/share_and_access.rst:78
 msgid "Then:"
-msgstr ""
+msgstr "その後、"
 
 #: ../../user_guide/share_and_access.rst:54
 #: ../../user_guide/share_and_access.rst:105
 msgid "Choose the :ref:`access rights <share_access_rights>`."
-msgstr ""
+msgstr ":ref:`アクセス権限 <share_access_rights>`を選択。"
 
 #: ../../user_guide/share_and_access.rst:55
 msgid "Select the contacts or teams to share with."
-msgstr ""
+msgstr "共有する連絡先または連絡先を選択。"
 
 #: ../../user_guide/share_and_access.rst:56
 msgid "**Share** button."
-msgstr "**共有** ボタン。"
+msgstr "**共有**ボタン。"
 
 #: ../../user_guide/share_and_access.rst:60
 msgid ""
@@ -163,37 +179,38 @@ msgstr ""
 
 #: ../../user_guide/share_and_access.rst:73
 msgid "To copy the link to a document:"
-msgstr ""
+msgstr "ドキュメントへのリンクは、以下の方法でコピーできます。"
 
 #: ../../user_guide/share_and_access.rst:75
 msgid "From the document: |share-alt| **Share** in the toolbar > |link| **Link**."
-msgstr ""
+msgstr "ドキュメントから：ツールバーの |share-alt| **共有** > |link| **リンク**。"
 
 #: ../../user_guide/share_and_access.rst:76
 msgid ""
 "From the CryptDrive : ``Right click`` on the document > |share-alt| "
 "**Share** > |link| **Link**."
-msgstr ""
+msgstr "CryptDriveから：ドキュメントを ``右クリック`` > |share-alt| **共有** > |link|"
+" **リンク**。"
 
 #: ../../user_guide/share_and_access.rst:80
 msgid ""
 "Choose the :ref:`access rights <share_access_rights>` and additional "
 "options:"
-msgstr ""
+msgstr ":ref:`アクセス権限 <share_access_rights>`とその他の設定を選択。"
 
 #: ../../user_guide/share_and_access.rst:82
 msgid "**Embed mode** hides the toolbar and user list."
-msgstr ""
+msgstr "**埋め込みモード**はツールバーとユーザー一覧を表示しません。"
 
 #: ../../user_guide/share_and_access.rst:83
 msgid ""
 "**Preview** allows to check what the link will look like before sending "
 "it."
-msgstr ""
+msgstr "**プレビュー**から、リンクを送信する前に内容を確認することができます。"
 
 #: ../../user_guide/share_and_access.rst:85
 msgid "**Copy** the link."
-msgstr ""
+msgstr "リンクを**コピー**。"
 
 #: ../../user_guide/share_and_access.rst:86
 msgid "Send the link."
@@ -201,39 +218,40 @@ msgstr "リンクを送信。"
 
 #: ../../user_guide/share_and_access.rst:91
 msgid "Embedding"
-msgstr ""
+msgstr "埋め込み"
 
 #: ../../user_guide/share_and_access.rst:93
 msgid "Embedding allows for a CryptPad document to be displayed on a web page."
-msgstr ""
+msgstr "埋め込みを行うとCryptPadのドキュメントをウェブページ上に表示できます。"
 
 #: ../../user_guide/share_and_access.rst:98
 msgid "To embed a document:"
-msgstr ""
+msgstr "ドキュメントは以下の方法で埋め込むことができます。"
 
 #: ../../user_guide/share_and_access.rst:100
 msgid ""
 "From the document : |share-alt| **Share** in the toolbar > |code| "
 "**Embed**."
-msgstr ""
+msgstr "ドキュメントから：ツールバーの |share-alt| **共有** > |code| **埋め込む**。"
 
 #: ../../user_guide/share_and_access.rst:101
 msgid ""
 "From the CryptDrive : ``Right click`` on the document > |share-alt| "
 "**Share** > |code| **Embed**."
-msgstr ""
+msgstr "CryptDriveから：ドキュメントを``右クリック`` > |share-alt| **共有** > |code| "
+"**埋め込む**。"
 
 #: ../../user_guide/share_and_access.rst:103
 msgid "then"
-msgstr ""
+msgstr "その後"
 
 #: ../../user_guide/share_and_access.rst:106
 msgid "**Copy** the embed code."
-msgstr ""
+msgstr "埋め込み用のコードを**コピー**。"
 
 #: ../../user_guide/share_and_access.rst:107
 msgid "Paste the code on a web page."
-msgstr ""
+msgstr "コードをウェブページに貼り付ける。"
 
 #: ../../user_guide/share_and_access.rst:112
 msgid "Shared folders"
@@ -241,32 +259,32 @@ msgstr "共有フォルダー"
 
 #: ../../user_guide/share_and_access.rst:116
 msgid "Shared folders are made for sharing a set of documents at once."
-msgstr ""
+msgstr "複数のドキュメントを一度に共有する際に、共有フォルダーを使用できます。"
 
 #: ../../user_guide/share_and_access.rst:118
 msgid "To create a shared folder in the CryptDrive:"
-msgstr ""
+msgstr "CryptDriveで共有フォルダーは以下の方法で作成できます。"
 
 #: ../../user_guide/share_and_access.rst:120
 msgid "``+ New`` > |cptools shared-folder| **Shared folder**."
-msgstr ""
+msgstr "``+ 新規`` > |cptools shared-folder| **共有フォルダー**。"
 
 #: ../../user_guide/share_and_access.rst:121
 msgid "``Ctrl + e`` > |cptools shared-folder| **Shared folder**."
-msgstr ""
+msgstr "``Ctrl + e`` > |cptools shared-folder| **共有フォルダー**。"
 
 #: ../../user_guide/share_and_access.rst:122
 msgid "``Right click`` > |cptools shared-folder| **New shared folder**."
-msgstr ""
+msgstr "``右クリック`` > |cptools shared-folder| **新しい共有フォルダー**。"
 
 #: ../../user_guide/share_and_access.rst:124
 msgid "To convert an existing folder into a shared folder:"
-msgstr ""
+msgstr "既存のフォルダーは以下の方法で共有フォルダーに変換できます。"
 
 #: ../../user_guide/share_and_access.rst:126
 #: ../../user_guide/share_and_access.rst:134
 msgid "``Right click`` on the folder > |share-alt| **Share**."
-msgstr ""
+msgstr "フォルダーを``右クリック`` > |share-alt| **共有**。"
 
 #: ../../user_guide/share_and_access.rst:127
 msgid "Choose the conversion options. Password. :ref:`Owned <owners>` folder."
@@ -280,7 +298,8 @@ msgstr ""
 msgid ""
 "Folders are shared in a similar way to documents. To share a folder from "
 "the CryptDrive:"
-msgstr ""
+msgstr "フォルダーはドキュメントと同様の方法で共有できます。CryptDriveでフォルダーは"
+"以下の方法で共有できます。"
 
 #: ../../user_guide/share_and_access.rst:135
 msgid ""
@@ -315,17 +334,18 @@ msgstr ""
 
 #: ../../user_guide/share_and_access.rst:158
 msgid "From the document: |unlock-alt| **Access**."
-msgstr ""
+msgstr "ドキュメントから：|unlock-alt| **アクセス**。"
 
 #: ../../user_guide/share_and_access.rst:159
 msgid ""
 "From the CryptDrive: ``Right click`` on the document or shared folder > "
 "|unlock-alt| **Access**."
-msgstr ""
+msgstr "CryptDriveから：ドキュメントまたは共有フォルダーを``右クリック`` > |unlock-"
+"alt| **アクセス**。"
 
 #: ../../user_guide/share_and_access.rst:164
 msgid "Access tab"
-msgstr ""
+msgstr "アクセスのタブ"
 
 #: ../../user_guide/share_and_access.rst:169
 msgid "This tab summarises all the modalities of access to the document:"
@@ -370,11 +390,11 @@ msgstr ""
 
 #: ../../user_guide/share_and_access.rst:179
 msgid "|cptools destroy| **Destroy**: Delete the document permanently."
-msgstr ""
+msgstr "|cptools destroy| **完全に削除**: ドキュメントを完全に破棄。"
 
 #: ../../user_guide/share_and_access.rst:184
 msgid "Access List"
-msgstr ""
+msgstr "アクセスリスト"
 
 #: ../../user_guide/share_and_access.rst:186
 #: ../../user_guide/share_and_access.rst:224
@@ -387,6 +407,9 @@ msgid ""
 "are not on the list are not able to access the document, even if they "
 "have it stored in their CryptDrive."
 msgstr ""
+"アクセスリストでは、ドキュメントへのアクセスを制限できます。有効にすると、一"
+"覧にないユーザーは、CryptDriveにドキュメントを保存していても、それにアクセス"
+"することはできなくなります。"
 
 #: ../../user_guide/share_and_access.rst:194
 msgid ""
@@ -397,17 +420,17 @@ msgstr ""
 
 #: ../../user_guide/share_and_access.rst:196
 msgid "To add contacts or teams to the list:"
-msgstr ""
+msgstr "連絡先またはチームは以下の方法で一覧に追加できます。"
 
 #: ../../user_guide/share_and_access.rst:198
 #: ../../user_guide/share_and_access.rst:228
 msgid "Select them in the list of contacts on the right."
-msgstr ""
+msgstr "右側にある連絡先の一覧から選択。"
 
 #: ../../user_guide/share_and_access.rst:199
 #: ../../user_guide/share_and_access.rst:229
 msgid "Add them to the list with the |arrow-left| button."
-msgstr ""
+msgstr "|arrow-left| ボタンでリストに追加。"
 
 #: ../../user_guide/share_and_access.rst:201
 msgid ""
@@ -431,15 +454,15 @@ msgstr ""
 
 #: ../../user_guide/share_and_access.rst:214
 msgid "Enable a password."
-msgstr ""
+msgstr "パスワードを有効にする。"
 
 #: ../../user_guide/share_and_access.rst:215
 msgid "Add or remove other owners."
-msgstr ""
+msgstr "その他の所有者を追加あるいは削除。"
 
 #: ../../user_guide/share_and_access.rst:216
 msgid "Destroy the document."
-msgstr ""
+msgstr "ドキュメントを完全に削除。"
 
 #: ../../user_guide/share_and_access.rst:218
 msgid "The ownership of a document is set when :ref:`creating it<new_document>`."
@@ -455,8 +478,8 @@ msgstr ""
 
 #: ../../user_guide/share_and_access.rst:226
 msgid "To add users or teams as owners:"
-msgstr ""
+msgstr "ユーザーまたはチームは以下の方法で所有者に追加できます。"
 
 #: ../../user_guide/share_and_access.rst:231
 msgid "To remove an owner, use the |times| button next to their name."
-msgstr ""
+msgstr "所有者を削除するには、、名前の隣にある |times| ボタンを使用してください。"
