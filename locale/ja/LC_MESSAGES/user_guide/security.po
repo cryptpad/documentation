@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-06 10:19+0100\n"
-"PO-Revision-Date: 2023-07-25 17:55+0000\n"
+"PO-Revision-Date: 2023-08-05 09:55+0000\n"
 "Last-Translator: Suguru Hirahara <d4bb0a95-96c1-4662-9d31-a5e520a01a09@hostux"
 ".ninja>\n"
 "Language-Team: Japanese <http://weblate.cryptpad.fr/projects/user-guide/"
@@ -27,7 +27,7 @@ msgstr "セキュリティー"
 
 #: ../../user_guide/security.rst:7
 msgid "Trust Assumptions"
-msgstr ""
+msgstr "信頼に関する仮定"
 
 #: ../../user_guide/security.rst:9
 msgid ""
@@ -42,7 +42,7 @@ msgstr ""
 
 #: ../../user_guide/security.rst:14
 msgid "run the same code as the one published on GitHub,"
-msgstr ""
+msgstr "GitHubで公開されているコードと同一のコードを実行していること、"
 
 #: ../../user_guide/security.rst:15
 msgid "not block your network messages, and"
@@ -50,31 +50,33 @@ msgstr ""
 
 #: ../../user_guide/security.rst:16
 msgid "follow its terms of service and privacy policy."
-msgstr ""
+msgstr "利用規約とプライバシーに従っていること。"
 
 #: ../../user_guide/security.rst:17
 msgid ""
 "Your collaborators not to forward :ref:`sharing links <share_link>` to "
 "illegitimate third parties."
-msgstr ""
+msgstr "あなたの共同作業者が :ref:`共有用リンク <share_link>` "
+"を不当な第三者に転送しないこと。"
 
 #: ../../user_guide/security.rst:19
 msgid ""
 "Under these assumptions you can be sure that it is technically not "
 "possible to read or modify your documents by"
-msgstr ""
+msgstr "これらの前提が満たされている場合、あなたのドキュメントを読み取ったり編集した"
+"りすることは技術的に不可能だと確信することができます。"
 
 #: ../../user_guide/security.rst:21
 msgid "your chosen CryptPad instance,"
-msgstr ""
+msgstr "あなたが選択したCryptPadのインスタンス、"
 
 #: ../../user_guide/security.rst:22
 msgid "any powerful adversary that can see your web traffic, or"
-msgstr ""
+msgstr "ウェブトラフィックを見ることができる強力な敵対者、あるいは"
 
 #: ../../user_guide/security.rst:23
 msgid "any other user."
-msgstr ""
+msgstr "その他のユーザーによって。"
 
 #: ../../user_guide/security.rst:25
 msgid ""
@@ -82,6 +84,9 @@ msgid ""
 "<https://cryptpad.org/instances>`_ to let you better decide on whom you "
 "want to trust."
 msgstr ""
+"私たちは、あなたが信頼できるインスタンスについて判断できるよう `"
+"CryptPadの公開インスタンスの一覧 <https://cryptpad.org/instances>`_ "
+"を管理しています。"
 
 #: ../../user_guide/security.rst:28
 msgid ""
@@ -89,16 +94,21 @@ msgid ""
 " instance can see your IP address and your \"user agent\" (browser and "
 "operating system)."
 msgstr ""
+"CryptPadは匿名性を弱い程度にしか保証していません。あなたが選択したCryptPadの"
+"インスタンスは、あなたのIPアドレスと\"ユーザーエージェント\""
+"（ブラウザーとオペレーティングシステム）を確認することができます。"
 
 #: ../../user_guide/security.rst:31
 msgid ""
 "If you need stronger anonymity guarantees, you can access CryptPad via "
 "`Tor <https://www.torproject.org>`_."
 msgstr ""
+"より強い匿名性が必要な場合は、`Tor <https://www.torproject."
+"org>`_を使ってCryptPadにアクセスすることができます。"
 
 #: ../../user_guide/security.rst:36
 msgid "Passwords for documents and folders"
-msgstr ""
+msgstr "ドキュメントとフォルダーのパスワード"
 
 #: ../../user_guide/security.rst:38 ../../user_guide/security.rst:55
 #: ../../user_guide/security.rst:67 ../../user_guide/security.rst:82
@@ -127,7 +137,8 @@ msgstr ""
 msgid ""
 "You can add a password to a document when you :ref:`create "
 "<new_document>` it."
-msgstr ""
+msgstr "ドキュメントを :ref:`作成 <new_document>` "
+"する際に、ドキュメントにアカウントを追加できます。"
 
 #: ../../user_guide/security.rst:46
 msgid "You can also add or change the password in the :ref:`access` menu:"
@@ -135,11 +146,11 @@ msgstr ":ref:`アクセス` メニューからパスワードを追加または�
 
 #: ../../user_guide/security.rst:48
 msgid "From the CryptDrive: ``Right click`` > |unlock-alt| **Access**."
-msgstr ""
+msgstr "CryptDriveから：``右クリック`` > |unlock-alt| **アクセス**。"
 
 #: ../../user_guide/security.rst:49
 msgid "From the document toolbar: |unlock-alt| **Access**."
-msgstr ""
+msgstr "ドキュメントのツールバー：|unlock-alt| **アクセス**。"
 
 #: ../../user_guide/security.rst:54
 msgid "Verifying contacts"
@@ -149,7 +160,8 @@ msgstr "連絡先の認証"
 msgid ""
 "To verify a contact's identity, i.e., that a contact belongs to the "
 "person you think, you can compare the public signing keys:"
-msgstr ""
+msgstr "公開署名鍵を比較することで、連絡先があなたの考える人に実際に属していることを"
+"確認し、連絡先の身元を認証することができます。"
 
 #: ../../user_guide/security.rst:59
 msgid ""
@@ -166,22 +178,23 @@ msgstr ""
 
 #: ../../user_guide/security.rst:65
 msgid "Self-destructing documents"
-msgstr ""
+msgstr "自己破棄ドキュメント"
 
 #: ../../user_guide/security.rst:69
 msgid ""
 "Self-destructing documents will be destroyed automatically without the "
 "interaction of any user. This ensures that sensitive data is not "
 "accessible forever."
-msgstr ""
+msgstr "自己破棄ドキュメントは、ユーザーの指示を必要とせず、自動で完全に削除されます"
+"。これによって、機密データへと完全にアクセスできなくなります。"
 
 #: ../../user_guide/security.rst:72
 msgid "There are two ways to create self-destructing documents:"
-msgstr ""
+msgstr "自己破棄ドキュメントは以下の2つの方法で作成できます。"
 
 #: ../../user_guide/security.rst:74
 msgid "You can set an expiration time during :ref:`creating <new_document>`."
-msgstr ""
+msgstr "ドキュメントの :ref:`作成時 <new_document>` に有効期限を設定。"
 
 #: ../../user_guide/security.rst:75
 msgid ""
