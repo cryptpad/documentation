@@ -115,10 +115,20 @@ Account
 Security & Privacy
 ~~~~~~~~~~~~~~~~~~
 
--  **Close remote sessions**: Log out of all sessions except the one from which this option is activated. (see also :ref:`remote_disconnect`) :badge_user:`Logged in users`
--  **Two-Factor Authentication (2FA)**: Protect your account with an additional verification code provided by an authenticator app of your choice
--  **Change your password**: Change your account's password. Enter your current password, and confirm the new password by typing it twice
--  **Safe links**: When this setting is active, the link in your browser’s address bar does not provide access to the document unless the recipient already has it in their CryptDrive. This setting is active by default. It is highly recommended to keep it active and to use the :ref:`share` menu to copy links to documents.
+- **Close remote sessions**: Log out of all sessions except the one from which this option is activated. (see also :ref:`remote_disconnect`) :badge_user:`Logged in users`
+- **Two-Factor Authentication (2FA)**: Protect your account with an additional verification code provided by an authenticator app of your choice.   :badge_user:`Logged in users` :badge_new:`New in version 5.4` 
+
+  To activate 2FA:
+
+  #. Enter your account password
+  #. Save the recovery code
+  #. Snap the QR code with a 2FA app of your choice (or copy the address and paste into your app)
+  #. Enter the verification code to confirm
+
+
+
+- **Change your password**: Change your account's password. Enter your current password, and confirm the new password by typing it twice
+- **Safe links**: When this setting is active, the link in your browser’s address bar does not provide access to the document unless the recipient already has it in their CryptDrive. This setting is active by default. It is highly recommended to keep it active and to use the :ref:`share` menu to copy links to documents.
 
 CryptPad includes the keys to decrypt your documents in their links. Anyone with access to your browsing history can potentially read your data. This includes intrusive browser extensions and browsers that sync your history across devices. Situations where your browser is visible by others, such as screen-sharing or screenshots, are also potentially risky in terms of leaking access to your documents. Enabling “safe links” prevents the keys from entering your browsing history or being displayed in your address bar whenever possible.
 
