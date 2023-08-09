@@ -46,8 +46,16 @@ Before starting the installation, ensure the following software is installed:
 
    -  Installed with ``npm install -g bower``
 
+- Docker engine (if using Docker, see :ref:`Install with Docker <admin_docker_install>`)
+
+   - See `the official Docker installation guide <https://docs.docker.com/engine/install/debian/>`__
+
+
 Install Cryptpad
 ----------------
+
+Recommended
+~~~~~~~~~~~
 
 .. note::
    The development team recommends creating a dedicated user to install and run CryptPad in production rather than using the root user.
@@ -65,7 +73,7 @@ Switch to the latest published tag
    git checkout $(git tag -l | grep -v 'v1.*$' | sort -V | tail -n 1)
 
 Dependencies
-~~~~~~~~~~~~
+""""""""""""
 
 .. code:: bash
 
@@ -74,7 +82,7 @@ Dependencies
    bower install
 
 Configuration
-~~~~~~~~~~~~~
+"""""""""""""
 
 Copy the example configuration
 
@@ -97,12 +105,12 @@ The server can now be started with
 The instance is now ready to run but cannot yet be accessed from the internet.
 
 Daemonization
-~~~~~~~~~~~~~
+"""""""""""""
 
 In production you may want to run CryptPad as a daemon that restarts automatically.
 
 Systemd
-^^^^^^^
+"""""""
 
 To run CryptPad as a `systemd <https://www.freedesktop.org/software/systemd/man/systemd.service.html>`__ service, please follow the example `cryptpad.service <https://github.com/cryptpad/cryptpad/blob/main/docs/cryptpad.service>`__ file.
 
@@ -113,13 +121,46 @@ To run CryptPad as a `systemd <https://www.freedesktop.org/software/systemd/man/
 Other ways of daemonizing nodejs applications include for example `foreverjs <https://github.com/foreversd/forever>`_ or `pm2 <https://pm2.keymetrics.io/>`_.
 
 FreeBSD
-^^^^^^^
+"""""""
 
 To run CryptPad as a `rc.d <https://man.freebsd.org/cgi/man.cgi?query=rc.d&sektion=8&n=1>`__ unit, please follow the example `rc.d-cryptpad <https://github.com/cryptpad/cryptpad/blob/main/docs/rc.d-cryptpad>`__ file.
 
 #. Save the example as ``cryptpad`` in ``/usr/local/etc/rc.d/``
 #. Make necessary adjustments (e.g. user name, path)
 #. Enable the service at startup with ``service cryptpad enable``
+
+.. _admin_docker_install:
+
+Docker
+~~~~~~
+
+:badge_new:`New in version 5.4`
+
+While we still recommend installing CryptPad without Docker we now officially support it.
+
+We provide the following files in the CryptPad repository:
+
+1. ``.dockerignore`` is useful to remove parts of the repository from the image (avoid making it use too much storage)
+2. ``Dockerfile`` is used to build the Docker image itself
+3. ``docker-entrypoint.sh`` allows to configure a few things (domain names and build static assets)
+4. ``docker-compose.yml`` used to create a container using the image and keep it running
+
+You can build your own Docker image by running this:
+
+.. code:: docker
+
+   docker build -t cryptpad/cryptpad:version-5.4.0 .
+
+Then you can modify ``docker-compose.yml`` with your own values:
+
+- CPAD_MAIN_DOMAIN
+- CPAD_SANDBOX_DOMAIN
+
+When it's done you can run the container with Docker Compose:
+
+.. code:: docker
+
+   docker compose up -d
 
 .. _admin_domain_config:
 
