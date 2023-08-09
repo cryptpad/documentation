@@ -125,8 +125,6 @@ Security & Privacy
   #. Snap the QR code with a 2FA app of your choice (or copy the address and paste into your app)
   #. Enter the verification code to confirm
 
-
-
 - **Change your password**: Change your account's password. Enter your current password, and confirm the new password by typing it twice
 - **Safe links**: When this setting is active, the link in your browser’s address bar does not provide access to the document unless the recipient already has it in their CryptDrive. This setting is active by default. It is highly recommended to keep it active and to use the :ref:`share` menu to copy links to documents.
 

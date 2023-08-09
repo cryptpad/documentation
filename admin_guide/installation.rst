@@ -54,6 +54,8 @@ Before starting the installation, ensure the following software is installed:
 Install Cryptpad
 ----------------
 
+.. _admin_recommended_install:
+
 Recommended
 ~~~~~~~~~~~
 
@@ -136,31 +138,32 @@ Docker
 
 :badge_new:`New in version 5.4`
 
-While we still recommend installing CryptPad without Docker we now officially support it.
+While we still prefer :ref:`the recommended installation method <admin_recommended_install>`, Docker is now officially supported.
 
 We provide the following files in the CryptPad repository:
 
-1. ``.dockerignore`` is useful to remove parts of the repository from the image (avoid making it use too much storage)
-2. ``Dockerfile`` is used to build the Docker image itself
-3. ``docker-entrypoint.sh`` allows to configure a few things (domain names and build static assets)
-4. ``docker-compose.yml`` used to create a container using the image and keep it running
+- ``.dockerignore`` is useful to remove parts of the repository from the image (avoid making it use too much storage)
+- ``Dockerfile`` is used to build the Docker image itself
+- ``docker-entrypoint.sh`` allows to configure a few things (domain names and build static assets)
+- ``docker-compose.yml`` used to create a container using the image and keep it running
 
-You can build your own Docker image by running this:
 
-.. code:: docker
+#. Build your own Docker image
 
-   docker build -t cryptpad/cryptpad:version-5.4.0 .
+   .. code:: docker
 
-Then you can modify ``docker-compose.yml`` with your own values:
+      docker build -t cryptpad/cryptpad:version-5.4.0 .
 
-- CPAD_MAIN_DOMAIN
-- CPAD_SANDBOX_DOMAIN
+#. Modify ``docker-compose.yml`` with your own values
 
-When it's done you can run the container with Docker Compose:
+   - ``CPAD_MAIN_DOMAIN``
+   - ``CPAD_SANDBOX_DOMAIN``
 
-.. code:: docker
+#. Run the container with Docker Compose
 
-   docker compose up -d
+   .. code:: docker
+
+      docker compose up -d
 
 .. _admin_domain_config:
 
