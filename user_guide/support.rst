@@ -1,7 +1,7 @@
+.. _support:
+
 Support
 =======
-
-.. _support:
 
 Support tickets provide a secure communication channel with the administrators of the CryptPad instance. The **Support** page is accessible through:
 
