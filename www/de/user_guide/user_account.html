@@ -107,7 +107,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#settings">Einstellungen</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#account">Account</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#confidentiality">Vertraulichkeit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#security-privacy">Security &amp; Privacy</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#appearance">Erscheinungsbild</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cryptdrive">CryptDrive</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cursor">Cursor</a></li>
@@ -116,7 +116,6 @@
 <li class="toctree-l4"><a class="reference internal" href="#subscription">Abonnement</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#support">Support</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#notifications">Benachrichtigungen</a></li>
 </ul>
 </li>
@@ -282,6 +281,12 @@
 <li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#import-export">Import/Export</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="apps/diagram.html">Diagram</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#toolbars">Toolbars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">Import/Export</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Whiteboard</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">Werkzeugleiste</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">Zeichnen</a></li>
@@ -310,13 +315,15 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#install-cryptpad">Install Cryptpad</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#dependencies">Dependencies</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configuration">Configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#daemonization">Daemonization</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#recommended">Recommended</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#configuration">Configuration</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#daemonization">Daemonization</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#systemd">Systemd</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#freebsd">FreeBSD</a></li>
 </ul>
 </li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#docker">Docker</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#admin-domain-config">Domains</a></li>
@@ -715,22 +722,27 @@
 <li><p><strong>Löschung des Accounts</strong>: Option zum Löschen deines Accounts und aller darin gespeicherter Dokumente. Klicke auf <strong>Deinen Account löschen</strong> und bestätige. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
 </ul>
 </section>
-<section id="confidentiality">
-<span id="user-settings-confidentiality"></span><h3>Vertraulichkeit<a class="headerlink" href="#confidentiality" title="Permalink to this heading">¶</a></h3>
-<ul class="simple">
-<li><p><strong>Andere Sitzungen beenden</strong>: Logge dich aus allen Sitzungen aus, abgesehen von der gerade verwendeten Sitzung (siehe auch <a class="reference internal" href="security.html#remote-disconnect"><span class="std std-ref">Sitzungen beenden</span></a>). <span class="badge-user">Eingeloggte Benutzer</span></p></li>
-<li><p><strong>Speichern von Pads im CryptDrive</strong>: Verwaltet, ob Dokumente automatisch in deinem CryptDrive gespeichert werden. Wenn Dokumente keinen <a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">Eigentümer</span></a> haben, werden sie auf deinen verfügbaren Speicherplatz angerechnet.</p>
+<section id="security-privacy">
+<span id="user-settings-confidentiality"></span><h3>Security &amp; Privacy<a class="headerlink" href="#security-privacy" title="Permalink to this heading">¶</a></h3>
 <ul>
-<li><p><strong>Automatisch</strong>: Alle geöffneten Pads werden in deinem CryptDrive gespeichert.</p></li>
-<li><p><strong>Manuell (immer fragen)</strong>: Wenn du das Pad noch nicht gespeichert hast, wirst du gefragt, ob du es in deinem CryptDrive speichern möchtest.</p></li>
-<li><p><strong>Manuell (nie nachfragen)</strong> Pads werden nicht automatisch in deinem CryptDrive gespeichert. Die Option zum Speichern wird versteckt.</p></li>
-</ul>
+<li><p><strong>Andere Sitzungen beenden</strong>: Logge dich aus allen Sitzungen aus, abgesehen von der gerade verwendeten Sitzung (siehe auch <a class="reference internal" href="security.html#remote-disconnect"><span class="std std-ref">Sitzungen beenden</span></a>). <span class="badge-user">Eingeloggte Benutzer</span></p></li>
+<li><p><strong>Two-Factor Authentication (2FA)</strong>: Protect your account with an additional verification code provided by an authenticator app of your choice.   <span class="badge-user">Logged in users</span> <span class="badge-new">New in version 5.4</span></p>
+<p>To activate 2FA:</p>
+<ol class="arabic simple">
+<li><p>Enter your account password</p></li>
+<li><p>Save the recovery code</p></li>
+<li><p>Snap the QR code with a 2FA app of your choice (or copy the address and paste into your app)</p></li>
+<li><p>Enter the verification code to confirm</p></li>
+</ol>
 </li>
+<li><p><strong>Change your password</strong>: Change your account's password. Enter your current password, and confirm the new password by typing it twice</p></li>
 <li><p><strong>Sichere Links</strong>: Wenn diese Einstellung aktiv ist, ermöglicht der Link in der Adressleiste deines Browsers keinen Zugriff auf das Dokument, es sei denn, der Empfänger hat es bereits in seinem CryptDrive. Diese Einstellung ist standardmäßig aktiv. Es wird dringend empfohlen, sie aktiv zu lassen und das Menü <a class="reference internal" href="share_and_access.html#share"><span class="std std-ref">Teilen</span></a> zu verwenden, um Links zu Dokumenten zu kopieren.</p></li>
 </ul>
 <p>CryptPad fügt den Pad-Links die Schlüssel zum Entschlüsseln der Inhalte hinzu. Jeder, der Zugriff auf den Browserverlauf hat, kann möglicherweise die Daten lesen. Dazu gehören Browsererweiterungen und Browser, die den Verlauf geräteübergreifend synchronisieren. Situationen, in denen dein Browser für andere sichtbar ist, wie z.B. Screen-Sharing oder Screenshots, sind ebenfalls potentiell riskant. Die Aktivierung von &quot;sicheren Links&quot; verhindert, dass die Schlüssel in den Browserverlauf gelangen oder in der Adressleiste angezeigt werden, wann immer dies möglich ist.</p>
 <ul class="simple">
 <li><p><strong>Rückmeldung</strong>: CryptPad kann anonymisierte Rückmeldungen an den Server senden, um die Benutzererfahrung zu verbessern. Der Inhalt von Dokumenten wird niemals geteilt. Diese Option ist standardmäßig deaktiviert.</p></li>
+<li><p><strong>Cache</strong>: CryptPad stores parts of your documents in your browser's memory in order to save network usage and improve loading times. You can disable the cache if your device doesn't have a lot of free storage space. For security reasons, the cache is always cleared when you log out, but you can clear it manually if you want to reclaim storage space on your machine.</p></li>
+<li><p><strong>Destroy all owned documents</strong>: All documents where you are the sole owner will be permanently destroyed</p></li>
 </ul>
 </section>
 <section id="appearance">
@@ -742,7 +754,15 @@
 <section id="cryptdrive">
 <span id="user-settings-cryptdrive"></span><h3>CryptDrive<a class="headerlink" href="#cryptdrive" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
+<li><p><strong>Homepage redirection</strong>: Automatic redirection from the home page to the drive when logged in is no longer enabled by default</p></li>
 <li><p><strong>Tipps</strong>: Hilfetexte in der Benutzeroberfläche von CryptPad. Klicke auf <strong>Zurücksetzen</strong>, um sie wieder anzuzeigen, sofern sie ausgeblendet wurden.</p></li>
+<li><p><strong>Speichern von Pads im CryptDrive</strong>: Verwaltet, ob Dokumente automatisch in deinem CryptDrive gespeichert werden. Wenn Dokumente keinen <a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">Eigentümer</span></a> haben, werden sie auf deinen verfügbaren Speicherplatz angerechnet.</p>
+<ul>
+<li><p><strong>Automatisch</strong>: Alle geöffneten Pads werden in deinem CryptDrive gespeichert.</p></li>
+<li><p><strong>Manuell (immer fragen)</strong>: Wenn du das Pad noch nicht gespeichert hast, wirst du gefragt, ob du es in deinem CryptDrive speichern möchtest.</p></li>
+<li><p><strong>Manuell (nie nachfragen)</strong> Pads werden nicht automatisch in deinem CryptDrive gespeichert. Die Option zum Speichern wird versteckt.</p></li>
+</ul>
+</li>
 <li><p><strong>Duplizierte eigene Pads</strong>: Wenn du ein eigenes Pad in einem geteilten Ordner verschiebst, wird eine Kopie in deinem CryptDrive behalten, damit du die Kontrolle des Dokuments nicht verlierst. Du kannst duplizierte Dateien verbergen. Nur die Version in dem geteilten Ordner wird dann angezeigt, außer sie wurde gelöscht. In diesem Fall, wird das Original an seinem ursprünglichen Ort wieder angezeigt.</p></li>
 <li><p><strong>Vorschaubilder</strong>: Um bei der Orientierung in der <a class="reference internal" href="drive.html#drive-display"><span class="std std-ref">Kachelansicht</span></a> des CryptDrives zu unterstützen, kann CryptPad automatisch Vorschaubilder von Dokumenten erstellen und im Browser speichern. Diese Option ist standardmäßig deaktiviert, da sie den Browser auf weniger leistungsfähigen Computern verlangsamen kann. Die Schaltfläche <strong>Entfernen</strong> löscht alle vorhandenen Vorschaubilder.</p></li>
 <li><p><strong>Backup</strong>: Es gibt zwei Arten von Backups.</p>
@@ -790,11 +810,6 @@
 <li><p>Leitet zur Account-Seite weiter.</p></li>
 </ul>
 </section>
-</section>
-<section id="support">
-<span id="user-support"></span><h2>Support<a class="headerlink" href="#support" title="Permalink to this heading">¶</a></h2>
-<p><span class="badge-new">Neu in Version 5.3</span></p>
-<p>Dieser Abschnitt wurde auf eine <a class="reference internal" href="support.html#id1"><span class="std std-ref">eigene Seite</span></a> verschoben.</p>
 </section>
 <section id="notifications">
 <span id="user-settings-notifications"></span><h2>Benachrichtigungen<a class="headerlink" href="#notifications" title="Permalink to this heading">¶</a></h2>

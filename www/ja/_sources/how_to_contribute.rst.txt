@@ -38,7 +38,7 @@ If you encounter a problem with CryptPad, reporting it helps improve the service
 
 There are two ways to report bugs or issues:
 
-- Cryptpad's built in :ref:`support ticket system <user_support>` where you can message instance administrators. These messages are encrypted like everything else on CryptPad.
+- Cryptpad's built in :ref:`support ticket system <support>` where you can message instance administrators. These messages are encrypted like everything else on CryptPad.
 
 -  `Github issue tracker <https://github.com/cryptpad/cryptpad/issues/new/choose>`__ to file the issue publicly using the bug report template. (A Github account is needed to submit issues)
 

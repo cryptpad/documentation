@@ -107,7 +107,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#settings">Настройки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#account">Учетная запись</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#confidentiality">Конфиденциальность</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#security-privacy">Security &amp; Privacy</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#appearance">Внешний вид</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cryptdrive">CryptDrive</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cursor">Курсор</a></li>
@@ -116,7 +116,6 @@
 <li class="toctree-l4"><a class="reference internal" href="#subscription">Подписка</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#support">Техподдержка</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#notifications">Уведомления</a></li>
 </ul>
 </li>
@@ -282,6 +281,12 @@
 <li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#import-export">Импорт/Экспорт</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="apps/diagram.html">Diagram</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#toolbars">Toolbars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">Import/Export</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Рисунки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">Инструменты</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">Рисование</a></li>
@@ -310,13 +315,15 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#install-cryptpad">Install Cryptpad</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#dependencies">Dependencies</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configuration">Configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#daemonization">Daemonization</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#recommended">Recommended</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#configuration">Configuration</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#daemonization">Daemonization</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#systemd">Systemd</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#freebsd">FreeBSD</a></li>
 </ul>
 </li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#docker">Docker</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#admin-domain-config">Domains</a></li>
@@ -715,22 +722,27 @@
 <li><p><strong>Удаление учетной записи</strong>: возможность навсегда удалить свою учетную запись и все её документы. <strong>Удалить вашу учетную запись</strong> и подтвердите. <span class="badge-user">Зарегистрированные пользователи</span></p></li>
 </ul>
 </section>
-<section id="confidentiality">
-<span id="user-settings-confidentiality"></span><h3>Конфиденциальность<a class="headerlink" href="#confidentiality" title="Permalink to this heading">¶</a></h3>
-<ul class="simple">
-<li><p><strong>Закрытие удаленных сеансов</strong>: выйти из всех сеансов, кроме того, в котором активирована эта опция. (см. также <a class="reference internal" href="security.html#remote-disconnect"><span class="std std-ref">Удаленное отключение</span></a>) <span class="badge-user">Пользователи, вошедшие в систему</span></p></li>
-<li><p><strong>Сохранение документов в CryptDrive</strong>: Определяет, сохранять ли автоматически в Вашем CryptDrive документы, которые Вы посещаете. Если документ, который Вы добавляете в свой CryptDrive, никто не <a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">владеет</span></a> документом, его размер учитывается в Вашей квоте хранилища.</p>
+<section id="security-privacy">
+<span id="user-settings-confidentiality"></span><h3>Security &amp; Privacy<a class="headerlink" href="#security-privacy" title="Permalink to this heading">¶</a></h3>
 <ul>
-<li><p><strong>Автоматически</strong>: все документы, которые Вы посещаете, сохраняются в вашем CryptDrive.</p></li>
-<li><p><strong>Вручную (всегда спрашивать)</strong>: Если Вы еще не сохранили документ, Вас спросят, хотите ли Вы сохранить его в CryptDrive.</p></li>
-<li><p><strong>Вручную (никогда не спрашивать)</strong> Документы не сохраняются автоматически в Вашем Cryptpad. Возможность их сохранения будет скрыта.</p></li>
-</ul>
+<li><p><strong>Закрытие удаленных сеансов</strong>: выйти из всех сеансов, кроме того, в котором активирована эта опция. (см. также <a class="reference internal" href="security.html#remote-disconnect"><span class="std std-ref">Удаленное отключение</span></a>) <span class="badge-user">Пользователи, вошедшие в систему</span></p></li>
+<li><p><strong>Two-Factor Authentication (2FA)</strong>: Protect your account with an additional verification code provided by an authenticator app of your choice.   <span class="badge-user">Logged in users</span> <span class="badge-new">New in version 5.4</span></p>
+<p>To activate 2FA:</p>
+<ol class="arabic simple">
+<li><p>Enter your account password</p></li>
+<li><p>Save the recovery code</p></li>
+<li><p>Snap the QR code with a 2FA app of your choice (or copy the address and paste into your app)</p></li>
+<li><p>Enter the verification code to confirm</p></li>
+</ol>
 </li>
+<li><p><strong>Change your password</strong>: Change your account's password. Enter your current password, and confirm the new password by typing it twice</p></li>
 <li><p><strong>Безопасные ссылки</strong>: когда этот параметр активен, ссылка в адресной строке Вашего браузера не даёт доступ к документу, если только получатель уже не имеет его в своем CryptDrive. Этот параметр активен по умолчанию. Настоятельно рекомендуется оставить его активным и использовать меню <a class="reference internal" href="share_and_access.html#share"><span class="std std-ref">Поделиться</span></a> для копирования ссылок на документы.</p></li>
 </ul>
 <p>CryptPad включает в ссылки на Ваши документы ключи для их расшифровки. Любой, у кого есть доступ к Вашей истории просмотров, потенциально может прочитать Ваши данные. Это включает в себя навязчивые расширения браузера и браузеры, которые синхронизируют Вашу историю на разных устройствах. Ситуации, когда Ваш браузер виден другим, например при совместном использовании экрана или снимках экрана, также потенциально опасны с точки зрения утечки доступа к Вашим документам. Включение «безопасных ссылок» предотвращает попадание ключей в историю посещенных страниц или их отображение в адресной строке, когда это возможно.</p>
 <ul class="simple">
 <li><p><strong>Телеметрия</strong>: CryptPad может отправлять анонимную статистику об использовании на сервер, чтобы улучшить взаимодействие с пользователем. Содержание документов никогда не передается. Эта опция отключена по умолчанию.</p></li>
+<li><p><strong>Cache</strong>: CryptPad stores parts of your documents in your browser's memory in order to save network usage and improve loading times. You can disable the cache if your device doesn't have a lot of free storage space. For security reasons, the cache is always cleared when you log out, but you can clear it manually if you want to reclaim storage space on your machine.</p></li>
+<li><p><strong>Destroy all owned documents</strong>: All documents where you are the sole owner will be permanently destroyed</p></li>
 </ul>
 </section>
 <section id="appearance">
@@ -742,7 +754,15 @@
 <section id="cryptdrive">
 <span id="user-settings-cryptdrive"></span><h3>CryptDrive<a class="headerlink" href="#cryptdrive" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
+<li><p><strong>Homepage redirection</strong>: Automatic redirection from the home page to the drive when logged in is no longer enabled by default</p></li>
 <li><p><strong>Подсказки</strong>: справочные сообщения в интерфейсе CryptPad. Нажмите <strong>Сбросить</strong>, чтобы снова отобразить их, если они были скрыты.</p></li>
+<li><p><strong>Сохранение документов в CryptDrive</strong>: Определяет, сохранять ли автоматически в Вашем CryptDrive документы, которые Вы посещаете. Если документ, который Вы добавляете в свой CryptDrive, никто не <a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">владеет</span></a> документом, его размер учитывается в Вашей квоте хранилища.</p>
+<ul>
+<li><p><strong>Автоматически</strong>: все документы, которые Вы посещаете, сохраняются в вашем CryptDrive.</p></li>
+<li><p><strong>Вручную (всегда спрашивать)</strong>: Если Вы еще не сохранили документ, Вас спросят, хотите ли Вы сохранить его в CryptDrive.</p></li>
+<li><p><strong>Вручную (никогда не спрашивать)</strong> Документы не сохраняются автоматически в Вашем Cryptpad. Возможность их сохранения будет скрыта.</p></li>
+</ul>
+</li>
 <li><p><strong>Дубликаты собственных документов</strong>: Когда Вы помещаете свои документы в общую папку, копия сохраняется в Вашем CryptDrive, чтобы удостовериться, что Вы всё ещё имеете контроль над ними. Вы можете скрыть продублированные файлы. Будет отображена только публичная версия документа (если она не удалена), иначе будет отображена оригинальная версия и место, где она была сохранена последний раз.</p></li>
 <li><p><strong>Миниатюры</strong>: чтобы упростить навигацию по CryptDrive в <a class="reference internal" href="drive.html#drive-display"><span class="std std-ref">режиме сетки</span></a>, CryptPad может создавать миниатюры документов и сохранять их в браузере. Эта опция отключена по умолчанию, поскольку она может замедлять работу браузера на менее мощных компьютерах. Кнопка <strong>Очистить</strong> удаляет все существующие миниатюры.</p></li>
 <li><p><strong>Резервное копирование</strong>: доступны два типа резервных копий.</p>
@@ -790,11 +810,6 @@
 <li><p>Перенаправляет на страницу аккаунта.</p></li>
 </ul>
 </section>
-</section>
-<section id="support">
-<span id="user-support"></span><h2>Техподдержка<a class="headerlink" href="#support" title="Permalink to this heading">¶</a></h2>
-<p><span class="badge-new">Новое в версии 5.3</span></p>
-<p>Этот раздел был перемещен на <a class="reference internal" href="support.html#id1"><span class="std std-ref">специальную страницу его поддержки</span></a>.</p>
 </section>
 <section id="notifications">
 <span id="user-settings-notifications"></span><h2>Уведомления<a class="headerlink" href="#notifications" title="Permalink to this heading">¶</a></h2>

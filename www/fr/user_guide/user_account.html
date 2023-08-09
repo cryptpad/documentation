@@ -107,7 +107,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#settings">Préférences</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#account">Compte</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#confidentiality">Confidentialité</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#security-privacy">Security &amp; Privacy</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#appearance">Apparence</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cryptdrive">CryptDrive</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cursor">Curseur</a></li>
@@ -116,7 +116,6 @@
 <li class="toctree-l4"><a class="reference internal" href="#subscription">Abonnement</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#support">Support</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#notifications">Notifications</a></li>
 </ul>
 </li>
@@ -282,6 +281,12 @@
 <li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#import-export">Import/Export</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="apps/diagram.html">Diagram</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#toolbars">Toolbars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">Import/Export</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Dessin</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">Barre d'outils</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">Dessiner</a></li>
@@ -310,13 +315,15 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#install-cryptpad">Install Cryptpad</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#dependencies">Dependencies</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configuration">Configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#daemonization">Daemonization</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#recommended">Recommended</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#configuration">Configuration</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#daemonization">Daemonization</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#systemd">Systemd</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#freebsd">FreeBSD</a></li>
 </ul>
 </li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#docker">Docker</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#admin-domain-config">Domains</a></li>
@@ -715,22 +722,27 @@
 <li><p><strong>Suppression du compte</strong> : Option pour supprimer définitivement votre compte et ses documents. Pour supprimer votre compte, cliquez sur <strong>Suppression du compte</strong> puis confirmez. <span class="badge-user">Utilisateurs enregistrés</span></p></li>
 </ul>
 </section>
-<section id="confidentiality">
-<span id="user-settings-confidentiality"></span><h3>Confidentialité<a class="headerlink" href="#confidentiality" title="Lien permanent vers cette rubrique">¶</a></h3>
-<ul class="simple">
-<li><p><strong>Fermer les autres sessions</strong> : Vous déconnecte de toutes les autres sessions où vous êtes connecté sauf celle où vous activez cette fonctionnalité. (voir aussi <a class="reference internal" href="security.html#remote-disconnect"><span class="std std-ref">Déconnexion à distance</span></a>) <span class="badge-user">Utilisateurs enregistrés</span></p></li>
-<li><p><strong>Stockage des pads dans CryptDrive</strong> : Gère si les documents que vous visitez sont automatiquement ajoutés à votre CryptDrive. Si personne n'est <a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">propriétaire</span></a> d'un pad que vous ajoutez à votre CryptDrive, il compte alors dans votre espace de stockage.</p>
+<section id="security-privacy">
+<span id="user-settings-confidentiality"></span><h3>Security &amp; Privacy<a class="headerlink" href="#security-privacy" title="Lien permanent vers cette rubrique">¶</a></h3>
 <ul>
-<li><p><strong>Automatique</strong> : sauvegarder tous les pads que vous visitez dans votre CryptDrive, sans action de votre part.</p></li>
-<li><p><strong>Manuel (toujours demander)</strong> : ne pas sauvegarder et afficher un message pour sauvegarder ou non chaque document.</p></li>
-<li><p><strong>Manuel (ne pas demander)</strong> : ne pas sauvegarder et ne pas afficher de message.</p></li>
-</ul>
+<li><p><strong>Fermer les autres sessions</strong> : Vous déconnecte de toutes les autres sessions où vous êtes connecté sauf celle où vous activez cette fonctionnalité. (voir aussi <a class="reference internal" href="security.html#remote-disconnect"><span class="std std-ref">Déconnexion à distance</span></a>) <span class="badge-user">Utilisateurs enregistrés</span></p></li>
+<li><p><strong>Two-Factor Authentication (2FA)</strong>: Protect your account with an additional verification code provided by an authenticator app of your choice.   <span class="badge-user">Logged in users</span> <span class="badge-new">New in version 5.4</span></p>
+<p>To activate 2FA:</p>
+<ol class="arabic simple">
+<li><p>Enter your account password</p></li>
+<li><p>Save the recovery code</p></li>
+<li><p>Snap the QR code with a 2FA app of your choice (or copy the address and paste into your app)</p></li>
+<li><p>Enter the verification code to confirm</p></li>
+</ol>
 </li>
+<li><p><strong>Change your password</strong>: Change your account's password. Enter your current password, and confirm the new password by typing it twice</p></li>
 <li><p><strong>Liens Sécurisés</strong> : Quand cette option est activée, le lien dans la barre d'adresse de votre navigateur ne donne pas accès au pad si le destinataire ne l'a pas déjà dans son CryptDrive. Cette fonction est activée par défaut. Il est vivement recommandé de la laisser activée et d'utiliser le menu <a class="reference internal" href="share_and_access.html#share"><span class="std std-ref">Partager</span></a> pour copier les liens de vos documents.</p></li>
 </ul>
 <p>CryptPad inclut dans ses liens les clés permettant de déchiffrer vos documents. Toute personne ayant accès à votre historique de navigation peut potentiellement lire vos données. Cela inclut les extensions de navigateur intrusives et les navigateurs qui synchronisent votre historique entre les appareils. Toute situation dans laquelle votre navigateur est visible par d'autres est potentiellement à risque, par exemple le partage d'écran en vidéoconférence ou la capture d'écran. L'activation des &quot;liens sécurisés&quot; empêche les clés d'entrer dans votre historique de navigation ou d'être affichées dans votre barre d'adresse quand cela est possible.</p>
 <ul class="simple">
 <li><p><strong>Retour d'expérience</strong> : CryptPad peut envoyer des retours d'expérience anonymisés très limités vers le serveur, en vue d'améliorer l'expérience des utilisateurs. Le contenu de vos documents n'est jamais partagé. Cette option est désactivée par défaut.</p></li>
+<li><p><strong>Cache</strong>: CryptPad stores parts of your documents in your browser's memory in order to save network usage and improve loading times. You can disable the cache if your device doesn't have a lot of free storage space. For security reasons, the cache is always cleared when you log out, but you can clear it manually if you want to reclaim storage space on your machine.</p></li>
+<li><p><strong>Destroy all owned documents</strong>: All documents where you are the sole owner will be permanently destroyed</p></li>
 </ul>
 </section>
 <section id="appearance">
@@ -742,7 +754,15 @@
 <section id="cryptdrive">
 <span id="user-settings-cryptdrive"></span><h3>CryptDrive<a class="headerlink" href="#cryptdrive" title="Lien permanent vers cette rubrique">¶</a></h3>
 <ul class="simple">
+<li><p><strong>Homepage redirection</strong>: Automatic redirection from the home page to the drive when logged in is no longer enabled by default</p></li>
 <li><p><strong>Astuces</strong> : Messages d'aide dans l'interface CryptPad. Pour les ré-afficher s'ils ont été fermés, cliquez sur <strong>Réinitialiser</strong>.</p></li>
+<li><p><strong>Stockage des pads dans CryptDrive</strong> : Gère si les documents que vous visitez sont automatiquement ajoutés à votre CryptDrive. Si personne n'est <a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">propriétaire</span></a> d'un pad que vous ajoutez à votre CryptDrive, il compte alors dans votre espace de stockage.</p>
+<ul>
+<li><p><strong>Automatique</strong> : sauvegarder tous les pads que vous visitez dans votre CryptDrive, sans action de votre part.</p></li>
+<li><p><strong>Manuel (toujours demander)</strong> : ne pas sauvegarder et afficher un message pour sauvegarder ou non chaque document.</p></li>
+<li><p><strong>Manuel (ne pas demander)</strong> : ne pas sauvegarder et ne pas afficher de message.</p></li>
+</ul>
+</li>
 <li><p><strong>Doublons des pads dont vous êtes propriétaire</strong> : Quand vous déplacez un pad dont vous êtes la·e propriétaire dans un dossier partagé, une copie est créée dans votre CryptDrive pour s'assurer que vous puissiez garder le contrôle de ce pad. Vous pouvez choisir de cacher ces doublons. Seule la version partagée sera affichée, jusqu'à sa suppression, auquel cas la version originale dans votre CryptDrive redeviendra visible.</p></li>
 <li><p><strong>Miniatures</strong> : Pour aider à la navigation du CryptDrive en <a class="reference internal" href="drive.html#drive-display"><span class="std std-ref">mode grille</span></a>, CryptPad peut créer des miniatures des documents et les stocker dans le navigateur. Cette option est désactivée par défaut car elle peut ralentir le navigateur pour les ordinateurs moins performants. Le bouton <strong>Nettoyer</strong> supprime toutes les miniatures existantes.</p></li>
 <li><p><strong>Sauvegarde</strong> : Deux types de sauvegarde sont disponibles.</p>
@@ -790,11 +810,6 @@
 <li><p>Redirige vers la page d'abonnement.</p></li>
 </ul>
 </section>
-</section>
-<section id="support">
-<span id="user-support"></span><h2>Support<a class="headerlink" href="#support" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p><span class="badge-new">Nouveau en version 5.3</span></p>
-<p>Cette section a été déplacée vers sa <a class="reference internal" href="support.html#id1"><span class="std std-ref">page dédiée</span></a>.</p>
 </section>
 <section id="notifications">
 <span id="user-settings-notifications"></span><h2>Notifications<a class="headerlink" href="#notifications" title="Lien permanent vers cette rubrique">¶</a></h2>

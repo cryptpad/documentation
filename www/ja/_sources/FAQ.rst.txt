@@ -105,7 +105,7 @@ The development team is considering removing this distinction in future. In the 
 Can I use CryptPad on mobile?
 -----------------------------
 
-CryptPad is engineered to work as well as possible on small screens. Depending on your device performance it should be possible to use CryptPad on mobile. Work to make CryptPad more responsive was undertaken in 2020, if you notice areas that need improvement in this regard, please contact :ref:`user_support` or submit an `issue on Github <https://github.com/cryptpad/cryptpad/issues/new/choose>`_.
+CryptPad is engineered to work as well as possible on small screens. Depending on your device performance it should be possible to use CryptPad on mobile. Work to make CryptPad more responsive was undertaken in 2020, if you notice areas that need improvement in this regard, please contact :ref:`support` or submit an `issue on Github <https://github.com/cryptpad/cryptpad/issues/new/choose>`_.
 
 Are you planning to make an app?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
