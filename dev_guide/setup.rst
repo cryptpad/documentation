@@ -9,10 +9,10 @@ Prerequisites
 Please make sure that the following tools are installed on your system before installing CryptPad:
 
 -  GIT
--  nodejs (we use node v16.14.2)
+-  nodejs (we use the official NodeJs LTS release)
 
-   -  Using `NVM <https://github.com/nvm-sh/nvm#installing-and-updating>`__ is recommended
-
+   -  Using `nodesource <https://github.com/nodesource/distributions#using-debian-as-root-4>`__ is recommended
+   
 -  npm
 -  bower
 
