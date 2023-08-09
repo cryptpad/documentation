@@ -9,14 +9,12 @@ Prerequisites
 Please make sure that the following tools are installed on your system before installing CryptPad:
 
 -  GIT
--  nodejs (we use the official NodeJs LTS release)
+-  Nodejs (we use the official NodeJs LTS release)
 
    -  Using `nodesource <https://github.com/nodesource/distributions#using-debian-as-root-4>`__ is recommended
-   
--  npm
--  bower
 
-   -  Installed with ``npm install -g bower``
+-  NPM
+
 
 Installation
 ------------
@@ -28,13 +26,13 @@ The source code can be found on `GitHub <https://github.com>`__. You must have a
 
    -  `git clone https://github.com/{YOUR_USER_NAME}/cryptpad.git`
 
--  Install the server dependencies with npm  and client dependencies with bower:
+-  Install the server dependencies with npm and client dependencies:
 
 .. code:: bash
 
    cd cryptpad
    npm install
-   bower install
+   npm run install:components
 
 Configuration
 -------------

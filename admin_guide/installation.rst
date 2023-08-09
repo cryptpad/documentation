@@ -37,14 +37,12 @@ Before starting the installation, ensure the following software is installed:
 
 -  GIT
 
--  nodejs (we use the official NodeJs LTS release)
+-  Nodejs (we use the official NodeJs LTS release)
 
    -  Using `nodesource <https://github.com/nodesource/distributions#using-debian-as-root-4>`__ is recommended
 
--  npm
--  bower
+-  NPM
 
-   -  Installed with ``npm install -g bower``
 
 - Docker engine (if using Docker, see :ref:`Install with Docker <admin_docker_install>`)
 
@@ -81,7 +79,7 @@ Dependencies
 
    cd cryptpad
    npm install
-   bower install
+   npm run install:components
 
 Configuration
 """""""""""""
