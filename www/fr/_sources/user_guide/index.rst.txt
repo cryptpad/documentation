@@ -12,6 +12,7 @@ This guide is about using CryptPad to create, store, and collaborate on document
 
     instances
     user_account
+    support
     security
     drive
     collaboration

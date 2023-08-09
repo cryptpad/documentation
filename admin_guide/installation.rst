@@ -37,17 +37,25 @@ Before starting the installation, ensure the following software is installed:
 
 -  GIT
 
--  nodejs (we use node v16.14.2)
+-  Nodejs (we use the official NodeJs LTS release)
 
-   -  Using `NVM <https://github.com/nvm-sh/nvm#installing-and-updating>`__ is recommended
+   -  Using `nodesource <https://github.com/nodesource/distributions#using-debian-as-root-4>`__ is recommended
 
--  npm
--  bower
+-  NPM
 
-   -  Installed with ``npm install -g bower``
+
+- Docker engine (if using Docker, see :ref:`Install with Docker <admin_docker_install>`)
+
+   - See `the official Docker installation guide <https://docs.docker.com/engine/install/debian/>`__
+
 
 Install Cryptpad
 ----------------
+
+.. _admin_recommended_install:
+
+Recommended
+~~~~~~~~~~~
 
 .. note::
    The development team recommends creating a dedicated user to install and run CryptPad in production rather than using the root user.
@@ -56,7 +64,7 @@ Clone the CryptPad repository
 
 .. code:: bash
 
-   git clone https://github.com/xwiki-labs/cryptpad.git cryptpad
+   git clone https://github.com/cryptpad/cryptpad.git cryptpad
 
 Switch to the latest published tag
 
@@ -65,16 +73,16 @@ Switch to the latest published tag
    git checkout $(git tag -l | grep -v 'v1.*$' | sort -V | tail -n 1)
 
 Dependencies
-~~~~~~~~~~~~
+""""""""""""
 
 .. code:: bash
 
    cd cryptpad
    npm install
-   bower install
+   npm run install:components
 
 Configuration
-~~~~~~~~~~~~~
+"""""""""""""
 
 Copy the example configuration
 
@@ -97,20 +105,63 @@ The server can now be started with
 The instance is now ready to run but cannot yet be accessed from the internet.
 
 Daemonization
-~~~~~~~~~~~~~
+"""""""""""""
 
 In production you may want to run CryptPad as a daemon that restarts automatically.
 
 Systemd
-^^^^^^^
+"""""""
 
-To run CryptPad as a `systemd <https://www.freedesktop.org/software/systemd/man/systemd.service.html>`__ service, please follow the example `cryptpad.service <https://github.com/xwiki-labs/cryptpad/blob/main/docs/cryptpad.service>`__ file.
+To run CryptPad as a `systemd <https://www.freedesktop.org/software/systemd/man/systemd.service.html>`__ service, please follow the example `cryptpad.service <https://github.com/cryptpad/cryptpad/blob/main/docs/cryptpad.service>`__ file.
 
 #.  Save the example as ``cryptpad.service`` in ``/etc/systemd/system/``
 #.  Make necessary adjustments (e.g. user name, path, nodejs version)
 #.  Enable the service at startup with ``systemctl enable cryptpad``.
 
 Other ways of daemonizing nodejs applications include for example `foreverjs <https://github.com/foreversd/forever>`_ or `pm2 <https://pm2.keymetrics.io/>`_.
+
+FreeBSD
+"""""""
+
+To run CryptPad as a `rc.d <https://man.freebsd.org/cgi/man.cgi?query=rc.d&sektion=8&n=1>`__ unit, please follow the example `rc.d-cryptpad <https://github.com/cryptpad/cryptpad/blob/main/docs/rc.d-cryptpad>`__ file.
+
+#. Save the example as ``cryptpad`` in ``/usr/local/etc/rc.d/``
+#. Make necessary adjustments (e.g. user name, path)
+#. Enable the service at startup with ``service cryptpad enable``
+
+.. _admin_docker_install:
+
+Docker
+~~~~~~
+
+:badge_new:`New in version 5.4`
+
+While we still prefer :ref:`the recommended installation method <admin_recommended_install>`, Docker is now officially supported.
+
+We provide the following files in the CryptPad repository:
+
+- ``.dockerignore`` is useful to remove parts of the repository from the image (avoid making it use too much storage)
+- ``Dockerfile`` is used to build the Docker image itself
+- ``docker-entrypoint.sh`` allows to configure a few things (domain names and build static assets)
+- ``docker-compose.yml`` used to create a container using the image and keep it running
+
+
+#. Build your own Docker image
+
+   .. code:: docker
+
+      docker build -t cryptpad/cryptpad:version-5.4.0 .
+
+#. Modify ``docker-compose.yml`` with your own values
+
+   - ``CPAD_MAIN_DOMAIN``
+   - ``CPAD_SANDBOX_DOMAIN``
+
+#. Run the container with Docker Compose
+
+   .. code:: docker
+
+      docker compose up -d
 
 .. _admin_domain_config:
 
@@ -124,12 +175,12 @@ You need two domains to take full advantage of CryptPad’s security features.
 
 The intent of this system is to limit the risk of Cross-Site Scripting (XSS) vulnerabilities allowing attackers to leak user data. Sensitive computation (like the processing of cryptographic keys) is handled on the main domain, while the user-interface is implemented on the sandbox domain.
 
-The `example Nginx configuration <https://github.com/xwiki-labs/cryptpad/blob/main/docs/example.nginx.conf>`__ file includes the relevant headers to enable the sandboxing system, however, you must configure your instance correctly for it to be effective. You will need:
+The `example Nginx configuration <https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf>`__ file includes the relevant headers to enable the sandboxing system, however, you must configure your instance correctly for it to be effective. You will need:
 
 1. two domains or subdomains
 2. to include both domains in ``cryptpad/config/config.js`` as described in :ref:`admin_cryptpad_config`
 3. to generate one SSL certificate that covers both domains. The development team uses `acme.sh <https://acme.sh/>`__ and this is reflected in the example config.
-4. to correctly assign both domains and certificates to the relevant variables in the `example Nginx configuration <https://github.com/xwiki-labs/cryptpad/blob/main/docs/example.nginx.conf>`__
+4. to correctly assign both domains and certificates to the relevant variables in the `example Nginx configuration <https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf>`__
 
 .. warning::
 
@@ -156,7 +207,7 @@ Note that the version of Nginx distributed by your operating system may not supp
 
 To configure Nginx for CryptPad:
 
-1. Copy the `CryptPad example Nginx config file <https://github.com/xwiki-labs/cryptpad/blob/main/docs/example.nginx.conf>`__ so that it is used/imported by the main Nginx config, for example by placing it in ``/etc/nginx/conf.d/cryptpad.conf``.
+1. Copy the `CryptPad example Nginx config file <https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf>`__ so that it is used/imported by the main Nginx config, for example by placing it in ``/etc/nginx/conf.d/cryptpad.conf``.
 2. Edit the configuration file with the correct domains and paths to certificates.
 3. Run ``openssl dhparam -out /etc/nginx/dhparam.pem 4096`` if you haven’t done so already on the host machine.
 
@@ -183,12 +234,6 @@ contains at least:
       .. code:: javascript
 
          httpSafeOrigin: "https://some-other-domain.xyz",
-
--  An administrator email (appears on the Contact page) in place of:
-
-.. code:: javascript
-
-   adminEmail: 'i.did.not.read.my.config@cryptpad.fr',
 
 Diagnostics
 ~~~~~~~~~~~
@@ -218,8 +263,6 @@ Once CryptPad is installed, create an account via the Register button on the hom
 Configure support mailbox
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-:badge_new:`New in version 4.6`
-
 The support mailbox can be configured from the :ref:`admin_panel`.
 
 #. With an instance administrator account, visit the ``/admin/#support`` page
@@ -237,8 +280,6 @@ To allow other administrators to access the support mailbox:
 
 Build static pages & Open Graph metadata
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-:badge_new:`New in version 5.1`
 
 To build some of CryptPad static pages & enable social media link previews, run the following command:
 
@@ -264,4 +305,4 @@ The development team is available to provide paid support contracts (see our `or
 
 We recommend you to go over our `forum <https://forum.cryptpad.org>`_ and or `admins Matrix channel <https://matrix.to/#/#cryptpad-admins:matrix.xwiki.com>`_.
 
-Note that community support is provided by volunteers, please be aware of what you are asking of them and respect `our Code of Conduct <https://github.com/xwiki-labs/cryptpad/blob/main/CODE_OF_CONDUCT.md>`_ at all time.
+Note that community support is provided by volunteers, please be aware of what you are asking of them and respect `our Code of Conduct <https://github.com/cryptpad/cryptpad/blob/main/CODE_OF_CONDUCT.md>`_ at all time.

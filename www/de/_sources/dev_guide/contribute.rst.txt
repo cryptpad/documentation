@@ -16,7 +16,7 @@ The CryptPad source code is freely available under the `AGPLv3 <https://www.gnu.
 Git
 ~~~
 
-The source code is `published on GitHub <https://github.com/xwiki-labs/cryptpad>`_.
+The source code is `published on GitHub <https://github.com/cryptpad/cryptpad>`_.
 
 Pull requests
 ^^^^^^^^^^^^^

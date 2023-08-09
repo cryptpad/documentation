@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'cptools';
-  src:  url('../fonts/cptools/cptools.eot?6tk5ck');
-  src:  url('../fonts/cptools/cptools.eot?6tk5ck#iefix') format('embedded-opentype'),
-    url('../fonts/cptools/cptools.ttf?6tk5ck') format('truetype'),
-    url('../fonts/cptools/cptools.woff?6tk5ck') format('woff'),
-    url('../fonts/cptools/cptools.svg?6tk5ck#cptools') format('svg');
+  src:  url('../fonts/cptools/cptools.eot?pmxg4b');
+  src:  url('../fonts/cptools/cptools.eot?pmxg4b#iefix') format('embedded-opentype'),
+    url('../fonts/cptools/cptools.ttf?pmxg4b') format('truetype'),
+    url('../fonts/cptools/cptools.woff?pmxg4b') format('woff'),
+    url('../fonts/cptools/cptools.svg?pmxg4b#cptools') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -13,7 +13,6 @@
 .cptools {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'cptools' !important;
-  display: inline-block;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -26,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.cptools-drive:before {
+  content: "\e920";
+}
 .cptools-form-conditional:before {
   content: "\e900";
 }

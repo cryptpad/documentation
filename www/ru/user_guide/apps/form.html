@@ -1,0 +1,946 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ru" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ru" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Формы &mdash; документация CryptPad 5.3</title>
+  
+
+  
+  <link rel="icon" type="image/png" href="../../_static/images/main-favicon.png" id="favicon"/>
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/open-sans.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/cptools.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/fontawesome.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/IBM-plex.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/css/cp-overrides.css" type="text/css" />
+    <link rel="index" title="Алфавитный указатель" href="../../genindex.html" />
+    <link rel="search" title="Поиск" href="../../search.html" />
+    <link rel="next" title="Канбан" href="kanban.html" />
+    <link rel="prev" title="Слайды" href="slides.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+            <a href="../../index.html" class="icon icon-home">
+              <img src="../../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
+              <div class="icon-title">CryptPad</div>
+              <span class="release">Documentation 5.3</span>
+            </a>
+            
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+          
+        </div>
+
+        <div class="wy-side-nav-language-selector">
+        	<p class="caption-text">
+	        	<select id="language-selector-container">
+	        		<option value="en">English</option>
+              <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
+              <option value="ru">Русский</option>
+              <option value="ja">日本語</option>
+	        	</select>
+        	</p>
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Руководство пользователя</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../instances.html">Инстансы CryptPad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user_account.html">Учетная запись пользователя</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_account.html#account-types">Типы учетных записей</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#guest-user">Гость</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#logged-in-user">Вошедший в систему пользователь</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#premium-user">Премиум пользователь</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_account.html#account-management">Управление учетными записями</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#registration">Регистрация</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#logging-in">Вход в систему</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_account.html#settings">Настройки</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#account">Учетная запись</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#confidentiality">Конфиденциальность</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#appearance">Внешний вид</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#cryptdrive">CryptDrive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#cursor">Курсор</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#rich-text">Документ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#code">Код</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#subscription">Подписка</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_account.html#support">Техподдержка</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_account.html#notifications">Уведомления</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../support.html">Техподдержка</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../support.html#existing-tickets">Существующие обращения</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../support.html#new-ticket">Новое обращение</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../support.html#debug-data">Отладочные данные</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../support.html#names">Имена</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../support.html#identifiers">Идентификаторы</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../support.html#keys">Ключи</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../support.html#quota">Квота</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../support.html#web-browser">Веб-браузер</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../support.html#screen">Экран</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../support.html#block-location">Расположение блока</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../support.html#teams">Команды</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../security.html">Безопасность</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#trust-assumptions">Предположения о доверии</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#passwords-for-documents-and-folders">Пароли для документов и папок</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#verifying-contacts">Проверка контактов</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#self-destructing-documents">Самоуничтожающиеся документы</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#remote-disconnect">Удаленное отключение</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#remote-content">Удаленно Размещенный Контент</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#known-caveats">Известные проблемы</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../security.html#no-unique-usernames">Имена пользователей не уникальны</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../security.html#edit-rights-in-teams">Права на изменения в командах</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../security.html#access-of-former-team-members">Доступ бывших членов команды</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../drive.html">CryptDrive</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../drive.html#display">Отображение</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../drive.html#managing-documents">Управление документами</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../drive.html#folders">Папки</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../drive.html#renaming">Переименование</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../drive.html#deleting">Удаление</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../drive.html#history">История</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../drive.html#tags">Теги</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../drive.html#templates">Шаблоны</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../collaboration.html">Совместная работа / Взаимодействие</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../collaboration.html#profile">Профиль</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#personal-profile">Личный профиль</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#user-profile">Профиль пользователя</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../collaboration.html#calendar">Календарь</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#toolbar">Инструменты</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#share-access">Поделиться и Доступ</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../collaboration.html#contacts">Контакты</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#add-a-contact">Добавить контакт</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#manage-contacts">Управление контактами</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#chat-with-contacts">Чат с контактами</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../collaboration.html#teams">Команды</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#team-drive">Диск команды</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#team-members">Члены команды</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#invite-members">Пригласить участников</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#roles-and-permissions">Роли и разрешения</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#administration">Администрирование</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#chat">Чат</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#administration-tab">Вкладка Администрирование</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../share_and_access.html">Поделиться / Доступ</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../share_and_access.html#share">Поделиться</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../share_and_access.html#access-rights">Права доступа</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../share_and_access.html#sharing-with-contacts">Поделиться с контактами</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../share_and_access.html#sharing-a-link">Поделиться ссылкой</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../share_and_access.html#embedding">Встраивание в веб-страницы</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../share_and_access.html#shared-folders">Общие папки</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../share_and_access.html#access">Доступ</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../share_and_access.html#access-tab">Вкладка «Доступ»</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../share_and_access.html#access-list">Список доступа</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../share_and_access.html#owners">Владельцы</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="reference internal" href="../applications.html">Приложения</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="general.html">Общая информация</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="general.html#new-document">Новый документ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="general.html#saving">Сохранение</a></li>
+<li class="toctree-l4"><a class="reference internal" href="general.html#make-a-copy">Создание копии</a></li>
+<li class="toctree-l4"><a class="reference internal" href="general.html#document-history">История документа</a></li>
+<li class="toctree-l4"><a class="reference internal" href="general.html#snapshots">Снимки</a></li>
+<li class="toctree-l4"><a class="reference internal" href="general.html#properties">Свойства</a></li>
+<li class="toctree-l4"><a class="reference internal" href="general.html#users-and-chat">Пользователи и чат</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="richtext.html">Документ</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="richtext.html#toolbar">Инструменты</a></li>
+<li class="toctree-l4"><a class="reference internal" href="richtext.html#view-settings">Настройки отображения</a></li>
+<li class="toctree-l4"><a class="reference internal" href="richtext.html#editing">Редактирование</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="richtext.html#headings">Заголовки</a></li>
+<li class="toctree-l5"><a class="reference internal" href="richtext.html#paragraphs">Параграфы</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="richtext.html#import-export">Импорт/Экспорт</a></li>
+<li class="toctree-l4"><a class="reference internal" href="richtext.html#comments">Комментарии</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sheets.html">Таблица</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#documentation">Документация</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#toolbars">Панели инструментов</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#undo-and-collaboration-modes">Режимы отмены правок и совместной работы</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#history">История</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#printing">Печать</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#import-export">Импорт/Экспорт</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="code.html">Код / Markdown</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="code.html#toolbar">Инструменты</a></li>
+<li class="toctree-l4"><a class="reference internal" href="code.html#theme">Тема</a></li>
+<li class="toctree-l4"><a class="reference internal" href="code.html#import-export">Импорт/Экспорт</a></li>
+<li class="toctree-l4"><a class="reference internal" href="code.html#markdown">Markdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="code.html#images">Изображения</a></li>
+<li class="toctree-l4"><a class="reference internal" href="code.html#lightbox">Монтажный стол</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="slides.html">Слайды</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="slides.html#toolbar">Инструменты</a></li>
+<li class="toctree-l4"><a class="reference internal" href="slides.html#writing-slides-with-markdown">Создание слайдов с помощью Markdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="slides.html#theme">Тема</a></li>
+<li class="toctree-l4"><a class="reference internal" href="slides.html#import-export">Импорт/Экспорт</a></li>
+<li class="toctree-l4"><a class="reference internal" href="slides.html#images">Изображения</a></li>
+<li class="toctree-l4"><a class="reference internal" href="slides.html#lightbox">Монтажный стол</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Формы</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#roles">Роли</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#editing-a-form">Редактирование формы</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#utilities">Элементы</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#question-types">Типы вопросов</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#form-settings">Настройки формы</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#responses">Ответы</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#advanced-use-cases">Расширенные варианты использования</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#import-export">Импорт/Экспорт</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="kanban.html">Канбан</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="kanban.html#organisation">Упорядочивание</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kanban.html#columns">Столбцы</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kanban.html#cards">Карточки</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kanban.html#card-editor">Редактор карточки</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kanban.html#display">Отображение</a></li>
+<li class="toctree-l4"><a class="reference internal" href="kanban.html#import-export">Импорт/Экспорт</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Рисунки</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Инструменты</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Рисование</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Режим рисования</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Режим выбора</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Экспорт</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="poll.html">Опрос</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="poll.html#toolbar">Инструменты</a></li>
+<li class="toctree-l4"><a class="reference internal" href="poll.html#edit-mode">Режим редактирования</a></li>
+<li class="toctree-l4"><a class="reference internal" href="poll.html#voting">Voting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="poll.html#export">Экспорт</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../admin_guide/index.html">Administrator Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#prerequisites">Prerequisites</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#domains">Domains</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#hardware">Hardware</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#software">Software</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#install-cryptpad">Install Cryptpad</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configuration">Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#daemonization">Daemonization</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#systemd">Systemd</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#freebsd">FreeBSD</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#admin-domain-config">Domains</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#install-and-configure-nginx">Install and configure Nginx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#configure-cryptpad">Configure CryptPad</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#diagnostics">Diagnostics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-administrators">Configure administrators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#build-static-pages-open-graph-metadata">Build static pages &amp; Open Graph metadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#support">Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/customization.html">Instance customization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#application-config">Application config</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#restricting-guest-access">Restricting guest access</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#links-to-terms-of-service-privacy-policy-and-imprint-pages">Links to Terms of Service, Privacy Policy and Imprint pages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#security-hardening">Security Hardening</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#dark-theme-switch">Dark theme switch</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#look-and-feel">Look and feel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/customization.html#open-graph-preview-images">Open Graph preview images</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/customization.html#translations">Translations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/maintenance.html">Maintenance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/maintenance.html#upgrading-cryptpad">Upgrading CryptPad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/maintenance.html#database-administration">Database administration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/maintenance.html#backup-and-migration">Backup and migration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/maintenance.html#advanced-administration">Advanced administration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../admin_guide/admin_panel.html">Administration panel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#general">General</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#enable-remote-embedding">Enable remote embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#admin-contact-email">Admin contact email</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#instance-information">Instance information</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#storage-limit">Storage Limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#apply-a-custom-limit">Apply a custom limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#archive-documents">Archive documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#restore-documents">Restore documents</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#check-account-storage">Check account storage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#list-of-custom-limits">List of custom limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#statistics">Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#support">Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#maintenance">Maintenance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#survey">Survey</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#broadcast-message">Broadcast Message</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#performance">Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#network">Network</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#validate-instance-configuration">Validate instance configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#server-telemetry">Server telemetry</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#list-my-instance-in-public-directories">List my instance in public directories</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#consent-to-contact">Consent to contact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#crowdfunding-participation">Crowdfunding participation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#instance-purpose">Instance purpose</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../dev_guide/index.html">Developer Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../dev_guide/setup.html">Set up a development instance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/setup.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/setup.html#installation">Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/setup.html#configuration">Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/setup.html#caching">Caching</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/setup.html#launching-in-development-mode">Launching in development mode</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../dev_guide/contribute.html">Contribute Code</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/contribute.html#license">License</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/contribute.html#git">Git</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../dev_guide/contribute.html#pull-requests">Pull requests</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../dev_guide/contribute.html#branches">Branches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../dev_guide/contribute.html#before-contributing">Before contributing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../dev_guide/basics.html">Key elements in CryptPad</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/basics.html#zero-knowledge">Zero-knowledge</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../dev_guide/basics.html#what-our-server-can-see">What our server can see</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/basics.html#content-security-policy-csp-and-security">Content Security Policy (CSP) and security</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/basics.html#customization">Customization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/basics.html#code-rules">Code rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/basics.html#translation-keys">Translation keys</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../dev_guide/database.html">Database</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/database.html#key-points">Key points</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/database.html#understanding-document-urls">Understanding document URLs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/database.html#finding-a-document">Finding a document</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../dev_guide/code.html">Code</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/general.html">General information</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../dev_guide/general.html#sandbox">Sandbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../dev_guide/general.html#level-structure">5-level structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../dev_guide/general.html#encryption">Encryption</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../dev_guide/general.html#drive-and-pins-log">Drive and &quot;pins&quot; log</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/general.html#example">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../dev_guide/general.html#registration-login-and-block">Registration, login and block</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/general.html#example-2">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../dev_guide/general.html#client-server-communication-netflux">Client-server communication (Netflux)</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/general.html#server-side">Server side</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/general.html#client-side">Client side</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/general.html#example-3">Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/client.html">Client</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../dev_guide/client/architecture.html">Client architecture</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/client/architecture.html#worker">Worker</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/client/architecture.html#outer">Outer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/client/architecture.html#inner">Inner</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../dev_guide/client/chainpad.html">ChainPad and Listmap</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/client/chainpad.html#chainpad">ChainPad</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/client/chainpad.html#checkpoints">Checkpoints</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/client/chainpad.html#chainpad-with-javascript-objects">ChainPad with JavaScript objects</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/client/chainpad.html#chainpad-netflux">Chainpad-netflux</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/client/chainpad.html#chainpad-listmap">Chainpad-listmap</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../dev_guide/client/translations.html">Translation keys</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/client/translations.html#usage">Usage</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/client/translations.html#structure">Structure</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../dev_guide/client/framework.html">Framework</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/client/framework.html#sframe-app-outer-js">sframe-app-outer.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/client/framework.html#sframe-app-framework-js">sframe-app-framework.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/client/framework.html#framework-less">framework.less</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../dev_guide/client/worker.html">Worker</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/client/worker.html#async-store-js">async-store.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/client/worker.html#store-commands">“Store” commands</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../dev_guide/client/outer.html">Outer</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/client/outer.html#communication-between-levels">Communication between levels</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/client/outer.html#communication-with-inner">Communication with inner</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/client/outer.html#communication-with-the-worker">Communication with the worker</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../../dev_guide/client/inner.html">Inner</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/client/inner.html#workflow">Workflow</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/client/inner.html#metadata-manager">metadata-manager</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../dev_guide/client/inner.html#ui-modules">UI modules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">Часто задаваемые вопросы</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#common-issues">Общие проблемы</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#list-of-extensions-known-to-cause-issues-with-cryptpad">Список расширений, которые, как известно, вызывают проблемы с CryptPad</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-forgot-my-password">Я забыл свой пароль</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Как импортировать/экспортировать мои документы на/с другую(ой) платформу(ы)?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#rich-text-document-import-export">Импорт/экспорт форматированных текстовых документов</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#spreadsheets-import-export">Импорт/экспорт электронных таблиц</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-cannot-do-x-with-a-document-i-created">Я не могу сделать X с документом, который я создал</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-i-use-cryptpad-on-mobile">Могу ли я использовать CryptPad на мобильном телефоне?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#are-you-planning-to-make-an-app">Вы планируете сделать приложение?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-cryptpad-sync-documents-to-my-local-filesystem">Может ли CryptPad синхронизировать документы с моей локальной файловой системой?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#what-is-the-relationship-between-cryptpad-and-onlyoffice">Какова связь между CryptPad и OnlyOffice?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#faq-for-cryptpad-fr">Часто задаваемые вопросы по cryptpad.fr</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#can-i-pay-for-my-subscription-without-a-card">Могу ли я оплатить подписку без карты?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#do-you-accept-cryptocurrencies-for-subscriptions-and-donations">Принимаете ли вы криптовалюты для подписки и пожертвований?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#can-you-provide-a-data-processing-agreement-dpa">Можете ли вы предоставить Соглашение об обработке данных (DPA)?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../how_to_contribute.html">Как внести свой вклад</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#spread-the-word">Расскажите другим</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#report-bugs">Сообщить об ошибках</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#contribute-to-the-documentation">Внесите свой вклад в документацию</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#translate-cryptpad">Перевести CryptPad</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#contribute-to-the-code">Внесите свой вклад в код</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#financial-support">Финансовая поддержка</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+	<!-- start top banner area (for fundraisers or messages)
+
+	<div style="text-align: center; background-color: #333">
+		<a href="https://krita.org/en/fundraising-2018-campaign/" target="_self" onclick="ga('send', 'event', 'frontpage', 'button', 'Fundraiser 2018');">
+			<img src="https://krita.org/wp-content/themes/krita-org-theme/images/decoration/2018-fundraiser-banner.png" style="max-width: 100%">
+		</a>
+	</div>
+	
+	 end top banner area -->
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">CryptPad</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Алфавитный указатель</a> &raquo;</li>
+        
+          <li><a href="../index.html">Руководство пользователя</a> &raquo;</li>
+        
+          <li><a href="../applications.html">Приложения</a> &raquo;</li>
+        
+      <li>Формы</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/user_guide/apps/form.rst.txt" rel="nofollow"> 
+             
+              <img src="../../_static/images/source-code.png" />
+             <!-- View page source -->
+
+          </a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="form">
+<span id="app-form"></span><h1>Формы<a class="headerlink" href="#form" title="Permalink to this heading">¶</a></h1>
+<img alt="предварительный просмотр приложения Формы" class="screenshot" src="../../_images/app-form-preview.png" />
+<section id="roles">
+<h2>Роли<a class="headerlink" href="#roles" title="Permalink to this heading">¶</a></h2>
+<p>В Формах используются те же функции совместной работы и конфиденциальности, что и в других приложениях CryptPad. При этом в них есть свои особенности в плане использования: например, кто-то, отвечая на форму, должен иметь возможность редактировать свои собственные ответы, но не ответы других пользователей или саму форму. По этой причине <a class="reference internal" href="../share_and_access.html#share-access-rights"><span class="std std-ref">Права доступа</span></a> при совместном использовании формы отличаются от других приложений. Формы имеют 3 разные роли:</p>
+<ul class="simple">
+<li><p><strong>Автор</strong>: может редактировать вопросы и <a class="reference internal" href="#form-settings"><span class="std std-ref">настройки формы</span></a>.</p></li>
+<li><p><strong>Аудитор</strong>: может просматривать ответы на форму независимо от того, являются ли они общедоступными.</p></li>
+<li><p><strong>Участник</strong>: может отвечать на форму и просматривать ответы только после их публикации автором.</p></li>
+</ul>
+<p>Чтобы поделиться формой с определенной ролью, например, чтобы отправить её участникам, выберите роль в <em class="fa fa-share-alt"></em> <strong>Поделиться</strong> перед выбором контактов или копированием ссылки.</p>
+<img alt="меню общего доступа в форме приложения, показывающее три роли: участник, аудитор и автор." class="screenshot" src="../../_images/app-form-share.png" />
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
+<p>Список пользователей, чат и оповещения о пользователях, присоединяющихся к сеансу совместной работы, отключаются, когда участник отвечает на форму. Это делается для того, чтобы не создавалось впечатление, что кто-то наблюдает, пока он отвечает.</p>
+</div>
+</section>
+<section id="editing-a-form">
+<h2>Редактирование формы<a class="headerlink" href="#editing-a-form" title="Permalink to this heading">¶</a></h2>
+<p>Чтобы добавить вопрос, используйте меню <em class="fa fa-plus"></em> <strong>Добавить</strong> после последнего вопроса или <em class="fa fa-plus"></em> между каждыми двумя вопросами.</p>
+<p>Чтобы удалить вопрос, используйте кнопку <em class="fa fa-trash-o"></em> <strong>Удалить</strong> на вопросе, который нужно удалить.</p>
+<section id="utilities">
+<h3>Элементы<a class="headerlink" href="#utilities" title="Permalink to this heading">¶</a></h3>
+<section id="cptools-form-paragraph-description">
+<h4><em class="cptools cptools-form-paragraph"></em> Описание<a class="headerlink" href="#cptools-form-paragraph-description" title="Permalink to this heading">¶</a></h4>
+<p>Добавьте текст в форму, используя синтаксис Markdown.</p>
+<p><span class="badge-user">Зарегистрированные пользователи</span></p>
+<p>Чтобы добавить изображение из CryptDrive или загрузить новое, используйте значок <em class="fa fa-picture-o"></em> на панели инструментов.</p>
+</section>
+<section id="cptools-form-page-break-page-break">
+<h4><em class="cptools cptools-form-page-break"></em> Разрыв страницы<a class="headerlink" href="#cptools-form-page-break-page-break" title="Permalink to this heading">¶</a></h4>
+<p>Разделите форму на страницы. Отображается только для участников.</p>
+</section>
+<section id="cptools-form-conditional-conditional-section">
+<h4><em class="cptools cptools-form-conditional"></em> Вариативная часть<a class="headerlink" href="#cptools-form-conditional-conditional-section" title="Permalink to this heading">¶</a></h4>
+<p><em class="cptools cptools-form-list-radio"></em> <strong>Выбор</strong> and <em class="cptools cptools-form-list-check"></em> <strong>Флажок</strong> можно использовать для отображения или скрытия дополнительного раздела с вопросами.</p>
+<ol class="arabic simple">
+<li><p>В редакторе форм чтобы добавить <em class="cptools cptools-form-conditional"></em> <strong>Вариативную часть</strong> - используйте кнопки <em class="fa fa-plus"></em> <strong>Добавить</strong> между вопросами или список в нижней части формы.</p></li>
+<li><p>Убедитесь, что перед разделом стоит хотя бы один <a class="reference internal" href="#form-q-choice"><span class="std std-ref"> Выбор</span></a> или <a class="reference internal" href="#form-q-checkbox"><span class="std std-ref"> Флажок</span></a> (в противном случае появится подсказка). Только вопросы, размещенные <em>перед</em> разделом, будут доступны для использования в условиях.</p></li>
+<li><p>Добавьте содержимое (текст описания, вопросы) в раздел, используя <em class="fa fa-plus"></em> <strong>Добавить</strong> или перетащив вопросы в область раздела.</p></li>
+<li><p>Установите некоторые условия, используя меню выбора. Все условия И должны быть истинными вместе, только одно из условий ИЛИ должно быть истинным.</p></li>
+<li><p>В отображении для участника опроса раздел будет отображаться только в том случае, если условия верны.</p></li>
+</ol>
+</section>
+</section>
+<section id="question-types">
+<h3>Типы вопросов<a class="headerlink" href="#question-types" title="Permalink to this heading">¶</a></h3>
+<section id="cptools-form-text-text">
+<h4><em class="cptools cptools-form-text"></em> Текст<a class="headerlink" href="#cptools-form-text-text" title="Permalink to this heading">¶</a></h4>
+<p>Ответ: одна строка текста</p>
+<p>Варианты:</p>
+<ul class="simple">
+<li><p>Текстовый тип: текст, число, ссылка или электронная почта</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
+<p>В случае ссылки и электронной почты вопрос выделяется красным цветом и пользователю отображается сообщение об ошибке, если его ответ не соответствует требуемому формату.</p>
+</div>
+</section>
+<section id="cptools-form-paragraph-paragraph">
+<h4><em class="cptools cptools-form-paragraph"></em> Абзац<a class="headerlink" href="#cptools-form-paragraph-paragraph" title="Permalink to this heading">¶</a></h4>
+<p>Ответ: несколько строк текста</p>
+<p>Варианты:</p>
+<ul class="simple">
+<li><p>Максимальное количество символов: ограничено (по умолчанию 1000)</p></li>
+</ul>
+</section>
+<section id="cptools-form-list-radio-choice">
+<span id="form-q-choice"></span><h4><em class="cptools cptools-form-list-radio"></em> Выбор<a class="headerlink" href="#cptools-form-list-radio-choice" title="Permalink to this heading">¶</a></h4>
+<p>Ответ: один вариант из списка</p>
+<p>Варианты:</p>
+<ul class="simple">
+<li><p>кнопка <em class="fa fa-plus"></em> <strong>Добавить вариант</strong></p></li>
+<li><p>Возьмите рукоятку <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> и перетащите её, чтобы изменить порядок вариантов</p></li>
+<li><p>Удалить вариант с помощью <em class="fa fa-times"></em></p></li>
+</ul>
+</section>
+<section id="cptools-form-grid-radio-choice-grid">
+<h4><em class="cptools cptools-form-grid-radio"></em> Таблица вариантов<a class="headerlink" href="#cptools-form-grid-radio-choice-grid" title="Permalink to this heading">¶</a></h4>
+<p>Ответ: один вариант выбора для каждого элемента</p>
+<p>Варианты:</p>
+<ul class="simple">
+<li><p>кнопки <em class="fa fa-plus"></em> <strong>Добавить вариант</strong> и <em class="fa fa-plus"></em> <strong>Добавить элемент</strong></p></li>
+<li><p>Возьмите рукоятку <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> и перетащите, чтобы изменить порядок элементов и вариантов</p></li>
+<li><p>Удалить элемент или вариант с помощью <em class="fa fa-times"></em></p></li>
+</ul>
+</section>
+<section id="calendar-date">
+<h4><em class="fa fa-calendar"></em> Дата<a class="headerlink" href="#calendar-date" title="Permalink to this heading">¶</a></h4>
+<p><span class="badge-new">Новое в версии 5.3</span></p>
+<p>Ответ: выберите дату и время</p>
+</section>
+<section id="cptools-form-list-check-checkbox">
+<span id="form-q-checkbox"></span><h4><em class="cptools cptools-form-list-check"></em> Флажок<a class="headerlink" href="#cptools-form-list-check-checkbox" title="Permalink to this heading">¶</a></h4>
+<p>Ответ: несколько вариантов из списка</p>
+<p>Варианты:</p>
+<ul class="simple">
+<li><p>Максимальное количество выбираемых вариантов</p></li>
+<li><p>кнопка <em class="fa fa-plus"></em> <strong>Добавить вариант</strong></p></li>
+<li><p>Возьмите рукоятку <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> и перетащите её, чтобы изменить порядок вариантов</p></li>
+<li><p>Удалить вариант с помощью <em class="fa fa-times"></em></p></li>
+</ul>
+</section>
+<section id="cptools-form-grid-check-checkbox-grid">
+<h4><em class="cptools cptools-form-grid-check"></em> Таблица флажков<a class="headerlink" href="#cptools-form-grid-check-checkbox-grid" title="Permalink to this heading">¶</a></h4>
+<p>Ответ: несколько вариантов для каждого элемента</p>
+<p>Варианты:</p>
+<ul class="simple">
+<li><p>Максимальное количество выбираемых вариантов (для каждого элемента)</p></li>
+<li><p>кнопки <em class="fa fa-plus"></em> <strong>Добавить вариант</strong> и <em class="fa fa-plus"></em> <strong>Добавить элемент</strong></p></li>
+<li><p>Возьмите рукоятку <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> и перетащите, чтобы изменить порядок элементов и вариантов</p></li>
+<li><p>Удалить элемент или вариант с помощью <em class="fa fa-times"></em></p></li>
+</ul>
+</section>
+<section id="cptools-form-list-ordered-ordered-list">
+<h4><em class="cptools cptools-form-list-ordered"></em> Нумерованный список<a class="headerlink" href="#cptools-form-list-ordered-ordered-list" title="Permalink to this heading">¶</a></h4>
+<p>Ответ: порядок предпочтения перечисленных вариантов</p>
+<p>Варианты:</p>
+<ul class="simple">
+<li><p>кнопка <em class="fa fa-plus"></em> <strong>Добавить вариант</strong></p></li>
+<li><p>Возьмите рукоятку <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> и перетащите её, чтобы изменить порядок вариантов</p></li>
+<li><p>Удалить вариант с помощью <em class="fa fa-times"></em></p></li>
+</ul>
+<p><span class="badge-new">Новое в версии 5.3</span></p>
+<p>Кондорсе:</p>
+<p>Начиная с версии 5.3, ответы могут отображать результаты с помощью <a class="reference external" href="https://en.wikipedia.org/wiki/Condorcet_method">метода Кондорсе</a>. Вы можете выбрать Schulze или Ranked Pairs, чтобы отобразить победителя. В деталях также будет указано количество матчей, выигранных каждым кандидатом.</p>
+</section>
+<section id="cptools-form-poll-poll">
+<h4><em class="cptools cptools-form-poll"></em> Опрос<a class="headerlink" href="#cptools-form-poll-poll" title="Permalink to this heading">¶</a></h4>
+<p>Ответ: <em class="fa fa-check"></em> Да, <em class="fa fa-times"></em> Нет, или <em class="cptools cptools-form-poll-maybe"></em> Возможно - для каждого из предложенных вариантов</p>
+<p>Типы вариантов:</p>
+<ul>
+<li><p>Текст</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>кнопка <em class="fa fa-plus"></em> <strong>Добавить вариант</strong></p></li>
+<li><p>Возьмите рукоятку <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> и перетащите её, чтобы изменить порядок вариантов</p></li>
+<li><p>Удалить вариант с помощью <em class="fa fa-times"></em></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>День</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Выберите варианты дат, щелкнув их в календаре</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Время</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Нажмите на вариант, чтобы выбрать дату и время в календаре</p></li>
+<li><p>Нажмите «Добавить несколько дат и времени», чтобы выбрать несколько вариантов и используйте <em class="fa fa-plus"></em> <strong>Добавить все</strong>, чтобы добавить сразу все выбранные варианты.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</section>
+</section>
+<section id="form-settings">
+<span id="id1"></span><h3>Настройки формы<a class="headerlink" href="#form-settings" title="Permalink to this heading">¶</a></h3>
+<p>Используйте 3 кнопки вверху для быстрого доступа к:</p>
+<ul class="simple">
+<li><p><em class="fa fa-bar-chart"></em> <strong>Ответы</strong> (количество): переключает на страницу ответов</p></li>
+<li><p><em class="fa fa-eye"></em> <strong>Предварительный просмотр формы</strong>: открывает ссылку участника</p></li>
+<li><p><em class="fa fa-link"></em> <strong>Copy public link</strong>: Copies the participant link</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
+<p>Чтобы поделиться ссылкой <strong>автора</strong> на форму (с правами на редактирование), используйте меню <a class="reference internal" href="../share_and_access.html#share"><span class="std std-ref">Поделиться</span></a> на панели инструментов.</p>
+</div>
+<section id="closing-date">
+<h4>Дата окончания<a class="headerlink" href="#closing-date" title="Permalink to this heading">¶</a></h4>
+<p>Дата, после которой форма будет закрыта для новых ответов</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Используйте кнопку <strong>Установить дату закрытия</strong>, чтобы выбрать дату в календаре</p></li>
+<li><p>Если установлена дата закрытия, используйте <strong>Удалить дату закрытия</strong>, чтобы удалить ее.</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="anonymize-responses">
+<h4>Анонимизировать ответы<a class="headerlink" href="#anonymize-responses" title="Permalink to this heading">¶</a></h4>
+<p>Все ответы анонимны, независимо от того, вошли ли они в учетную запись CryptPad. Если этот флажок не установлен, участники, вошедшие в систему, по-прежнему могут отвечать анонимно, если разрешен гостевой доступ (см. ниже).</p>
+</section>
+<section id="guest-access">
+<h4>Гостевой доступ<a class="headerlink" href="#guest-access" title="Permalink to this heading">¶</a></h4>
+<blockquote>
+<div><ul class="simple">
+<li><p>Заблокировано: только пользователи, вошедшие в свою учетную запись CryptPad, могут отвечать на форму.</p></li>
+<li><p>Разрешено: незарегистрированные пользователи могут отвечать, вошедшие пользователи могут отвечать анонимно.</p></li>
+</ul>
+</div></blockquote>
+</section>
+<section id="editing-after-submission">
+<h4>Редактирование после отправки<a class="headerlink" href="#editing-after-submission" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>Только один раз: участники могут ответить на форму только один раз и не могут изменить или удалить свои ответы после их отправки.</p></li>
+<li><p>Один раз и отредактировать/удалить: участники могут ответить на форму только один раз, но им разрешено изменять или удалять свои ответы после их отправки.</p></li>
+<li><p>Многократно: участники могут отвечать на форму несколько раз, но не могут изменять или удалять свои ответы после их отправки.</p></li>
+<li><p>Многократно и редактировать/удалять: участники могут отвечать на форму несколько раз и могут изменять или удалять свои ответы после их отправки.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
+<p>Обратите внимание, что если гостевой доступ разрешен, незарегистрированные пользователи могут по-прежнему отвечать несколько раз на форму «Только один раз», если они откроют ее в приватном окне веб-браузера или очистят файлы cookie браузера и т. д.</p>
+</div>
+</section>
+<section id="publish-responses">
+<h4>Опубликовать ответы<a class="headerlink" href="#publish-responses" title="Permalink to this heading">¶</a></h4>
+<p>Позволяет участникам, отправившим ответы в форму, просматривать ответы. После включения этот параметр публикует все прошлые и будущие ответы.</p>
+<div class="admonition warning">
+<p class="admonition-title">Предупреждение</p>
+<p>После того как ответы станут общедоступными, их нельзя снова сделать приватными.</p>
+</div>
+</section>
+<section id="submit-message">
+<h4>Финальное сообщение<a class="headerlink" href="#submit-message" title="Permalink to this heading">¶</a></h4>
+<p>Добавьте особое сообщение, которое будет отображаться после того, как участники отправят форму.</p>
+</section>
+<section id="color-theme">
+<h4>Цветовая тема<a class="headerlink" href="#color-theme" title="Permalink to this heading">¶</a></h4>
+<p>Выберите фон и цвет выделения для формы.</p>
+</section>
+</section>
+<section id="responses">
+<h3>Ответы<a class="headerlink" href="#responses" title="Permalink to this heading">¶</a></h3>
+<p>Уведомления о новых ответах отправляются _владельцу_ формы через встроенные уведомления.</p>
+</section>
+<section id="advanced-use-cases">
+<h3>Расширенные варианты использования<a class="headerlink" href="#advanced-use-cases" title="Permalink to this heading">¶</a></h3>
+<section id="anonymous-responses-with-access-list">
+<h4>Анонимные ответы со списком доступа<a class="headerlink" href="#anonymous-responses-with-access-list" title="Permalink to this heading">¶</a></h4>
+<p>Чтобы провести анонимный опрос известной группы пользователей, функцию анонимных ответов можно объединить с <a class="reference internal" href="../share_and_access.html#access-list"><span class="std std-ref">Список доступа</span></a>.</p>
+<p>Чтобы получить доступ к форме, участники должны войти в учетную запись, которая находится в списке доступа (либо напрямую, либо через <a class="reference internal" href="../collaboration.html#teams"><span class="std std-ref">команду</span></a>, в которую они входят).</p>
+<p>Если в форме разрешены анонимные ответы, участники могут отвечать анонимно, а список доступа гарантирует, что они принадлежат определенной группе пользователей.</p>
+</section>
+</section>
+</section>
+<section id="import-export">
+<h2>Импорт/Экспорт<a class="headerlink" href="#import-export" title="Permalink to this heading">¶</a></h2>
+<p>Чтобы экспортировать ответы в виде CSV-файла, используйте кнопку <em class="fa fa-download"></em> <strong>Экспорт в CSV</strong> на странице <em class="fa fa-bar-chart"></em> <strong>Ответы</strong>.</p>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="kanban.html" class="btn btn-neutral float-right" title="Канбан" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="slides.html" class="btn btn-neutral" title="Слайды" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2023, CryptPad Team.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a modified <a href="https://github.com/rtfd/sphinx_rtd_theme">RTD theme</a>.<br/>
+  <a href="https://cryptpad.fr" title="CryptPad flagship instance">CryptPad flagship instance</a> |
+  <a href="https://github.com/cryptpad/documentation" title="The Github repository">Github repository for this documentation.</a>
+  . 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'5.3',
+            LANGUAGE:'ru',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/documentation_options.js"></script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/sphinx_highlight.js"></script>
+      <script type="text/javascript" src="../../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

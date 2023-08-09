@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, CryptPad Team
+# This file is distributed under the same license as the CryptPad package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CryptPad \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-12 12:38+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../dev_guide/client/worker.rst:2
+msgid "Worker"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:5
+msgid "async-store.js"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:7
+msgid ""
+"Async-store contains all the functions representing the commands sent by "
+"\"outer\". Its role is to manage the connection to the user account, load"
+" the sub-structures linked to this account (shared folders, profile, "
+"teams) and load all the modules that extend its use. It creates two main "
+"objects, named ``store`` and ``Store``. The first one represents the "
+"memory of the worker and stores everything that has been loaded, the "
+"second one represents its \"muscles\" and contains all the functions that"
+" can be executed by the commands of \"outer\". Many modules are loaded to"
+" perform specific tasks and are accessible via ``store``."
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:10
+msgid "“Store” commands"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:12
+msgid "Commands that can be executed by async-store include:"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:14
+msgid "Initialization"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:16
+msgid "Loading user account (via listmap), shared folders and teams"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:17
+msgid "Loading of the different modules in the worker"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:18
+msgid "Initiating an authenticated session with the server (for registered users)"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:20
+msgid "Authenticated server requests"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:22
+msgid ""
+"Modify your \"pin log\", change a password, destroy an owned document, "
+"recover the remaining storage space for the account, execute "
+"administrator commands, etc."
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:23
+msgid "Upload a static file to the user drive"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:24
+msgid ""
+"The identity of the author is proved to the server with the signature key"
+" of the registered user"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:26
+msgid "Unauthenticated server requests"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:28
+msgid "Retrieve the total size of a document in the database (with its history)"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:29
+msgid ""
+"Retrieve the metadata of a document (list of owners, access list, "
+"expiration date, etc.)"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:31
+msgid "Actions on the user account"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:33
+msgid "Storing or retrieving Settings"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:34
+msgid "Commands to be performed in the drive"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:35
+msgid "Shared folder management"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:36
+msgid "Contacts management (add or delete contacts)"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:38
+msgid "Actions on the different modules"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:40
+msgid ""
+"Each module can receive its own commands, but these first pass through "
+"\"async-store\" which will redistribute it to the concerned modules"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:42
+msgid "Collaborative documents"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:44
+msgid "Join a collaborative document"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:46
+msgid "Chainpad-netflux initialization"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:47
+msgid "Send messages to this document's channel"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:48
+msgid "Listen to events on this document's channel"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:50
+msgid "Obtain a part of the document history"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:51
+msgid "Change the password of a document"
+msgstr ""
+
+#: ../../dev_guide/client/worker.rst:52
+msgid "Manage document metadata (access list or owners)"
+msgstr ""
+

@@ -1,0 +1,144 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, CryptPad Team
+# This file is distributed under the same license as the CryptPad package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CryptPad \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-17 16:11+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../dev_guide/database.rst:4
+msgid "Database"
+msgstr ""
+
+#: ../../dev_guide/database.rst:6
+msgid ""
+"CryptPad takes an unusual approach to storing documents on the server. "
+"User data is simply stored on the file system rather than a database."
+msgstr ""
+
+#: ../../dev_guide/database.rst:9
+msgid "Key points"
+msgstr ""
+
+#: ../../dev_guide/database.rst:11
+msgid ""
+"Each CryptPad document has information stored on the server in a location"
+" determined by a channel id"
+msgstr ""
+
+#: ../../dev_guide/database.rst:12
+msgid ""
+"The content of each document is encrypted using the encryption key, so "
+"that the server cannot read it"
+msgstr ""
+
+#: ../../dev_guide/database.rst:13
+msgid ""
+"Clients send the channel id to the server to: * get the latest "
+"information about a document * subscribe to ongoing updates while they "
+"are connected * modify the contents of the document"
+msgstr ""
+
+#: ../../dev_guide/database.rst:17
+msgid "each *channel* is stored within its own file on the server"
+msgstr ""
+
+#: ../../dev_guide/database.rst:18
+msgid "each change to the document is encoded on a single line of that file"
+msgstr ""
+
+#: ../../dev_guide/database.rst:21
+msgid "Understanding document URLs"
+msgstr ""
+
+#: ../../dev_guide/database.rst:23
+msgid ""
+"Everything that a client needs in order to interact with a CryptPad "
+"document is stored in its URL."
+msgstr ""
+
+#: ../../dev_guide/database.rst:25
+msgid "Let's look at an example:"
+msgstr ""
+
+#: ../../dev_guide/database.rst:27
+msgid "https://cryptpad.fr/code/#/2/code/edit/plpAeHfQ4YO49fczV5erSCgd/"
+msgstr ""
+
+#: ../../dev_guide/database.rst:29
+msgid ""
+"Browsers do not send the information after the ``#`` symbol to the server"
+" when loading a page, so it is safe to encode private information there."
+msgstr ""
+
+#: ../../dev_guide/database.rst:31
+msgid ""
+"The information before ``#`` tells the browser which server to connect "
+"to, and what resources to download."
+msgstr ""
+
+#: ../../dev_guide/database.rst:33
+msgid ""
+"This part of the URL ``https://cryptpad.fr/code/`` tells the server to "
+"load the code editor."
+msgstr ""
+
+#: ../../dev_guide/database.rst:35
+msgid ""
+"The remaining information ``#/2/code/edit/plpAeHfQ4YO49fczV5erSCgd/`` is "
+"handled with Javascript by the browser."
+msgstr ""
+
+#: ../../dev_guide/database.rst:37
+msgid "There are several pieces of information there, separated by slashes."
+msgstr ""
+
+#: ../../dev_guide/database.rst:46
+msgid "Finding a document"
+msgstr ""
+
+#: ../../dev_guide/database.rst:48
+msgid ""
+"It is possible to run code provided by the CryptPad server in your "
+"browser console. To extract the channel id of a document you have open:"
+msgstr ""
+
+#: ../../dev_guide/database.rst:50
+msgid "|file-o| **File** > |info-circle| **Properties** > **Document identifier**"
+msgstr ""
+
+#: ../../dev_guide/database.rst:51
+msgid "Alternatively you can run this snippet:"
+msgstr ""
+
+#: ../../dev_guide/database.rst:65
+msgid ""
+"Either method will give a channel id that looks similar to  "
+"``bb1edc4cb7648605284db30dfcd2eebf``."
+msgstr ""
+
+#: ../../dev_guide/database.rst:67
+msgid ""
+"The corresponding file would be stored on the server, in your CryptPad "
+"instance's directory, at "
+"``cryptpad/datastore/bb/bb1edc4cb7648605284db30dfcd2eebf.ndjson``."
+msgstr ""
+
+#: ../../dev_guide/database.rst:69
+msgid ""
+"For more information on administering the database including backups, "
+"migration, and more, please see :ref:`admin_database` in the "
+"administrator guide."
+msgstr ""
+

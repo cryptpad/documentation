@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Compte utilisateur &mdash; Documentation CryptPad 5.2</title>
+  <title>Compte utilisateur·ice &mdash; Documentation CryptPad 5.3</title>
   
 
   
@@ -37,7 +37,7 @@
   <link rel="stylesheet" href="../_static/css/cp-overrides.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
-    <link rel="next" title="Sécurité" href="security.html" />
+    <link rel="next" title="Support" href="support.html" />
     <link rel="prev" title="Instances CryptPad" href="instances.html" /> 
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.2</span>
+              <span class="release">Documentation 5.3</span>
             </a>
             
 <div role="search">
@@ -77,6 +77,8 @@
 	        		<option value="en">English</option>
               <option value="fr">Français</option>
               <option value="de">Deutsch</option>
+              <option value="ru">Русский</option>
+              <option value="ja">日本語</option>
 	        	</select>
         	</p>
         </div>
@@ -89,13 +91,13 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Guide Utilisateur</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Guide Utilisateur·ice</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="instances.html">Instances CryptPad</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Compte utilisateur</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Compte utilisateur·ice</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#account-types">Types de comptes</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#guest-user">Visiteur</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#logged-in-user">Utilisateur enregistré</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#premium-user">Utilisateur abonné</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#guest-user">Visiteur·ice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#logged-in-user">Utilisateur·ice enregistré·e</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#premium-user">Utilisateur·ice abonné·e</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#account-management">Gestion du compte</a><ul>
@@ -118,17 +120,33 @@
 <li class="toctree-l3"><a class="reference internal" href="#notifications">Notifications</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="support.html">Support</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="support.html#existing-tickets">Tickets existants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="support.html#new-ticket">Nouveau ticket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="support.html#debug-data">Diagnostic</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="support.html#names">Noms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="support.html#identifiers">Identifiants</a></li>
+<li class="toctree-l4"><a class="reference internal" href="support.html#keys">Clés</a></li>
+<li class="toctree-l4"><a class="reference internal" href="support.html#quota">Quota</a></li>
+<li class="toctree-l4"><a class="reference internal" href="support.html#web-browser">Navigateur web</a></li>
+<li class="toctree-l4"><a class="reference internal" href="support.html#screen">Écran</a></li>
+<li class="toctree-l4"><a class="reference internal" href="support.html#block-location">Block location</a></li>
+<li class="toctree-l4"><a class="reference internal" href="support.html#teams">Équipes</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="security.html">Sécurité</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="security.html#trust-assumptions">Trust Assumptions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#trust-assumptions">Hypothèse sur la confiance</a></li>
 <li class="toctree-l3"><a class="reference internal" href="security.html#passwords-for-documents-and-folders">Mot de passe des documents et dossiers</a></li>
-<li class="toctree-l3"><a class="reference internal" href="security.html#verifying-contacts">Verifying contacts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="security.html#self-destructing-documents">Self-destructing documents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#verifying-contacts">Vérifier vos contacts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#self-destructing-documents">Documents éphémères</a></li>
 <li class="toctree-l3"><a class="reference internal" href="security.html#remote-disconnect">Déconnexion à distance</a></li>
 <li class="toctree-l3"><a class="reference internal" href="security.html#remote-content">Déconnexion à distance</a></li>
-<li class="toctree-l3"><a class="reference internal" href="security.html#known-caveats">Known caveats</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="security.html#no-unique-usernames">No unique usernames</a></li>
-<li class="toctree-l4"><a class="reference internal" href="security.html#edit-rights-in-teams">Edit rights in teams</a></li>
-<li class="toctree-l4"><a class="reference internal" href="security.html#access-of-former-team-members">Access of former team members</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#known-caveats">Limitations connues</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="security.html#no-unique-usernames">Les noms d'utilisateur·ices ne sont pas uniques</a></li>
+<li class="toctree-l4"><a class="reference internal" href="security.html#edit-rights-in-teams">Droits d'édition dans une équipe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="security.html#access-of-former-team-members">Accès des anciens membres d'une équipe</a></li>
 </ul>
 </li>
 </ul>
@@ -141,7 +159,7 @@
 <li class="toctree-l4"><a class="reference internal" href="drive.html#deleting">Supprimer</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="drive.html#history">History</a></li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#history">Historique</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#tags">Mots-Clés</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#templates">Modèles</a></li>
 </ul>
@@ -149,7 +167,7 @@
 <li class="toctree-l2"><a class="reference internal" href="collaboration.html">Collaboration / Social</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="collaboration.html#profile">Profil</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="collaboration.html#personal-profile">Profil personnel</a></li>
-<li class="toctree-l4"><a class="reference internal" href="collaboration.html#user-profile">Profil utilisateur</a></li>
+<li class="toctree-l4"><a class="reference internal" href="collaboration.html#user-profile">Profil utilisateur·ice</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="collaboration.html#calendar">Agenda</a><ul>
@@ -200,7 +218,7 @@
 <li class="toctree-l4"><a class="reference internal" href="apps/general.html#document-history">Historique des documents</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/general.html#snapshots">Captures</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/general.html#properties">Propriétés</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/general.html#users-and-chat">Utilisateurs et Chat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#users-and-chat">Utilisateur·ices et Chat</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="apps/richtext.html">Documents texte</a><ul>
@@ -248,7 +266,7 @@
 <li class="toctree-l5"><a class="reference internal" href="apps/form.html#utilities">Mise en page</a></li>
 <li class="toctree-l5"><a class="reference internal" href="apps/form.html#question-types">Types de questions</a></li>
 <li class="toctree-l5"><a class="reference internal" href="apps/form.html#form-settings">Réglages du formulaire</a></li>
-<li class="toctree-l5"><a class="reference internal" href="apps/form.html#responses">Responses</a></li>
+<li class="toctree-l5"><a class="reference internal" href="apps/form.html#responses">Réponses</a></li>
 <li class="toctree-l5"><a class="reference internal" href="apps/form.html#advanced-use-cases">Usages avancés</a></li>
 </ul>
 </li>
@@ -296,6 +314,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configuration">Configuration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#daemonization">Daemonization</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#systemd">Systemd</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#freebsd">FreeBSD</a></li>
 </ul>
 </li>
 </ul>
@@ -317,6 +336,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#restricting-guest-access">Restricting guest access</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#links-to-terms-of-service-privacy-policy-and-imprint-pages">Links to Terms of Service, Privacy Policy and Imprint pages</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#security-hardening">Security Hardening</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#dark-theme-switch">Dark theme switch</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/customization.html#look-and-feel">Look and feel</a><ul>
@@ -513,7 +533,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../how_to_contribute.html">Comment contribuer</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#spread-the-word">Diffuser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#report-bugs">Signaler des bugs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#contribute-to-the-documentation">Contribute to the documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#contribute-to-the-documentation">Contribuer à la documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#translate-cryptpad">Traduire CryptPad</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#contribute-to-the-code">Contribuer au code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#financial-support">Soutien financier</a></li>
@@ -574,9 +594,9 @@
     
       <li><a href="../index.html">Index</a> &raquo;</li>
         
-          <li><a href="index.html">Guide Utilisateur</a> &raquo;</li>
+          <li><a href="index.html">Guide Utilisateur·ice</a> &raquo;</li>
         
-      <li>Compte utilisateur</li>
+      <li>Compte utilisateur·ice</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -600,15 +620,15 @@
            <div itemprop="articleBody">
             
   <section id="user-account">
-<h1>Compte utilisateur<a class="headerlink" href="#user-account" title="Lien permanent vers cette rubrique">¶</a></h1>
-<p>CryptPad chiffre vos données, elles ne sont lisibles que par vous et vos collaborateurs. Pour cette raison <strong>les administrateurs du service ne peuvent pas voir ou changer votre mot de passe</strong>. Il est donc important de le sauvegarder dans un endroit sécurisé, hors de votre compte CryptPad.</p>
-<p>CryptPad utilise la combinaison de votre nom d'utilisateur et de votre mot de passe pour vous identifier. Les noms d'utilisateurs ne sont pas uniques sur CryptPad, il est possible de créer plusieurs comptes avec le même nom d'utilisateur et des mots de passe différents.</p>
+<h1>Compte utilisateur·ice<a class="headerlink" href="#user-account" title="Lien permanent vers cette rubrique">¶</a></h1>
+<p>CryptPad chiffre vos données, elles ne sont lisibles que par vous et vos collaborateurs. Pour cette raison <strong>les administrateur·ices du service ne peuvent pas voir ou changer votre mot de passe</strong>. Il est donc important de le sauvegarder dans un endroit sécurisé, hors de votre compte CryptPad.</p>
+<p>CryptPad utilise la combinaison de votre nom d'utilisateur·ice et de votre mot de passe pour vous identifier. Les noms d'utilisateur·ices ne sont pas uniques sur CryptPad, il est possible de créer plusieurs comptes avec le même nom d'utilisateur·ice et des mots de passe différents.</p>
 <section id="account-types">
 <h2>Types de comptes<a class="headerlink" href="#account-types" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p>Il existe trois types d'utilisateurs sur CryptPad :</p>
 <section id="guest-user">
-<h3>Visiteur<a class="headerlink" href="#guest-user" title="Lien permanent vers cette rubrique">¶</a></h3>
-<p>Les utilisateurs non enregistrés sont identifiés par un avatar émoji d'un animal ou mascotte (en haut à droite).</p>
+<h3>Visiteur·ice<a class="headerlink" href="#guest-user" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Les utilisateur·ices non enregistré·es sont identifié·es par un avatar émoji d'un animal ou mascotte (en haut à droite).</p>
 <p>Aucune information personnelle n'est demandée pour utiliser CryptPad de manière non-enregistrée. Les fonctionnalités sont cependant réduites :</p>
 <ul class="simple">
 <li><p>Accès à toutes les applications.</p></li>
@@ -618,9 +638,9 @@
 </ul>
 </section>
 <section id="logged-in-user">
-<h3>Utilisateur enregistré<a class="headerlink" href="#logged-in-user" title="Lien permanent vers cette rubrique">¶</a></h3>
-<p>Les utilisateurs enregistrés ont comme avatar (en haut à droite) leur photo de profil ou les deux premières lettres de leur nom affiché.</p>
-<p>Registering an account does not require any personal information, only a username and password. Additional functionality for logged in users:</p>
+<h3>Utilisateur·ice enregistré·e<a class="headerlink" href="#logged-in-user" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Les utilisateur·ices enregistré·es ont comme avatar (en haut à droite) leur photo de profil ou les deux premières lettres de leur nom affiché.</p>
+<p>Enregistrer un compte ne nécessite pas de données personnelles, seulement un nom d'utilisateur·ice et un mot de passe sont demandés. Les fonctionnalités additionnelles sont les suivantes :</p>
 <ul class="simple">
 <li><p>Espace de stockage personnel et permanent.</p></li>
 <li><p>Stockage de fichiers images/vidéos/PDF/etc…</p></li>
@@ -631,7 +651,7 @@
 </ul>
 </section>
 <section id="premium-user">
-<h3>Utilisateur abonné<a class="headerlink" href="#premium-user" title="Lien permanent vers cette rubrique">¶</a></h3>
+<h3>Utilisateur·ice abonné·e<a class="headerlink" href="#premium-user" title="Lien permanent vers cette rubrique">¶</a></h3>
 <p>(uniquement sur cryptpad.fr)</p>
 <ul class="simple">
 <li><p>Augmentation de l'espace de stockage.</p></li>
@@ -649,19 +669,19 @@
 <img alt="../_images/registration.png" class="screenshot" src="../_images/registration.png" />
 <p>Remplir les informations suivantes :</p>
 <ul class="simple">
-<li><p><strong>Nom d'utilisateur</strong> : Le nom utilisé pour vous connecter sur CryptPad, différent du <strong>Nom affiché</strong> visible par les autres utilisateurs. Le <strong>Nom d'utilisateur</strong> ne peut pas être changé une fois le compte créé.</p></li>
+<li><p><strong>Nom d'utilisateur·ice</strong> : Le nom utilisé pour vous connecter sur CryptPad, différent du <strong>Nom affiché</strong> visible par les autres utilisateur·ices. Le <strong>Nom d'utilisateur·ice</strong> ne peut pas être changé une fois le compte créé.</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Contrairement à de nombreux services en ligne, <strong>CryptPad ne nécessite pas d'adresse électronique pour s'inscrire</strong>. Il est possible d'utiliser une adresse électronique comme nom d'utilisateur, mais elle est alors utilisée comme n'importe quelle autre chaîne de caractères. Comme expliqué ci-dessous, ce nom d'utilisateur n'est pas visible par les administrateurs et n'est jamais utilisé pour communiquer au sujet de votre compte (en particulier, les e-mails de récupération de mot de passe n'existent pas sur CryptPad).</p>
+<p>Contrairement à de nombreux services en ligne, <strong>CryptPad ne nécessite pas d'adresse électronique pour s'inscrire</strong>. Il est possible d'utiliser une adresse électronique comme nom d'utilisateur·ice, mais elle est alors utilisée comme n'importe quelle autre chaîne de caractères. Comme expliqué ci-dessous, ce nom d'utilisateur·ice n'est pas visible par les administrateur·ices et n'est jamais utilisé pour communiquer au sujet de votre compte (en particulier, les e-mails de récupération de mot de passe n'existent pas sur CryptPad).</p>
 </div>
 <ul class="simple">
-<li><p><strong>Mot de passe</strong> : Il est conseillé d'utiliser un mot de passe complexe. Le mot de passe peut être changé dans les <a class="reference internal" href="#user-settings"><span class="std std-ref">préférences utilisateur</span></a>.</p></li>
+<li><p><strong>Mot de passe</strong> : Il est conseillé d'utiliser un mot de passe complexe. Le mot de passe peut être changé dans les <a class="reference internal" href="#user-settings"><span class="std std-ref">préférences utilisateur·ice</span></a>.</p></li>
 </ul>
 <img alt="../_images/registration-warning.png" class="screenshot" src="../_images/registration-warning.png" />
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
-<p>Important : Les administrateurs du service CryptPad ne peuvent pas voir ou retrouver votre mot de passe s'il est perdu ou oublié.</p>
+<p>Important : Les administrateur·ices du service CryptPad ne peuvent pas voir ou retrouver votre mot de passe s'il est perdu ou oublié.</p>
 </div>
 <ul class="simple">
 <li><p><strong>Conditions d'utilisation</strong> : Lire et accepter les conditions d'utilisation du service.</p></li>
@@ -673,7 +693,7 @@
 </section>
 <section id="logging-in">
 <h3>Connexion<a class="headerlink" href="#logging-in" title="Lien permanent vers cette rubrique">¶</a></h3>
-<p>Pour vous connecter sur votre compte, rendez-vous sur la page de <strong>Connexion</strong> (en haut à droite sur la page d’accueil) et remplissez le nom d'utilisateur et le mot de passe choisis à l'inscription.</p>
+<p>Pour vous connecter sur votre compte, rendez-vous sur la page de <strong>Connexion</strong> (en haut à droite sur la page d’accueil) et remplissez le nom d'utilisateur·ice et le mot de passe choisis à l'inscription.</p>
 <p>Optionnel :</p>
 <ul class="simple">
 <li><p><strong>Importer les pads de votre session anonyme</strong> : Si vous avez créé des documents lors d'une session anonyme, vous pouvez les importer dans votre compte.</p></li>
@@ -682,13 +702,13 @@
 </section>
 <section id="settings">
 <span id="user-settings"></span><h2>Préférences<a class="headerlink" href="#settings" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p>Les réglages du compte sont accessibles par le menu utilisateur (avatar en haut à droite) &gt; <em class="fa fa-gear"></em> <strong>Préférences</strong>.</p>
+<p>Les réglages du compte sont accessibles par le menu utilisateur·ice (avatar en haut à droite) &gt; <em class="fa fa-gear"></em> <strong>Préférences</strong>.</p>
 <section id="account">
 <span id="user-settings-account"></span><h3>Compte<a class="headerlink" href="#account" title="Lien permanent vers cette rubrique">¶</a></h3>
 <ul class="simple">
-<li><p><strong>Nom d'utilisateur</strong> : Nom utilisé lors de votre inscription. Ce nom n'est pas modifiable. <span class="badge-user">Utilisateurs enregistrés</span></p></li>
-<li><p><strong>Clé publique de signature</strong> : Utilisée par les administrateurs d'instance et/ou sur les instances avec abonnement. C'est la seule donnée concernant votre compte qui est visible par les administrateurs du service. <span class="badge-user">Utilisateurs enregistrés</span></p></li>
-<li><p><strong>Nom affiché</strong> : Nom affiché aux autres utilisateurs, par exemple lorsque vous collaborez sur un document. Pour modifier ce nom tapez le nouveau nom et cliquez sur <strong>Sauver</strong>. <span class="badge-user">Utilisateurs enregistrés</span></p></li>
+<li><p><strong>Nom d'utilisateur·ice</strong> : Nom utilisé lors de votre inscription. Ce nom n'est pas modifiable. <span class="badge-user">Utilisateurs enregistrés</span></p></li>
+<li><p><strong>Clé publique de signature</strong> : Utilisée par les administrateur·ices d'instance et/ou sur les instances avec abonnement. C'est la seule donnée concernant votre compte qui est visible par les administrateur·ices du service. <span class="badge-user">Utilisateurs enregistrés</span></p></li>
+<li><p><strong>Nom affiché</strong> : Nom affiché aux autres utilisateur·ices, par exemple lorsque vous collaborez sur un document. Pour modifier ce nom tapez le nouveau nom et cliquez sur <strong>Sauver</strong>. <span class="badge-user">Utilisateurs enregistrés</span></p></li>
 <li><p><strong>Langue</strong> : Langue utilisée dans l'interface de CryptPad. Pour changer de langue, en choisir une dans le menu déroulant. CryptPad est traduit en anglais et en français par l'équipe de développement, et dans d'autres langues par la <a class="reference internal" href="../how_to_contribute.html#contribute-translation"><span class="std std-ref">communauté</span></a>. Certaines traductions peuvent être incomplètes et/ou comporter des erreurs.</p></li>
 <li><p><strong>Limite de téléchargement automatique</strong> : Taille maximale en mégaoctets (Mo) pour le chargement automatique des pièces jointes (images, vidéos, PDF) intégrés dans les documents. Les pièces jointes dont la taille est supérieure à la taille spécifiée peuvent être chargées manuellement. Utilisez &quot;-1&quot; pour toujours charger automatiquement les pièces jointes.</p></li>
 <li><p><strong>Changer de mot de passe</strong> : Entrez votre mot de passe actuel et confirmez le nouveau mot de passe en le tapant deux fois. <span class="badge-user">Utilisateurs enregistrés</span></p></li>
@@ -723,7 +743,7 @@
 <span id="user-settings-cryptdrive"></span><h3>CryptDrive<a class="headerlink" href="#cryptdrive" title="Lien permanent vers cette rubrique">¶</a></h3>
 <ul class="simple">
 <li><p><strong>Astuces</strong> : Messages d'aide dans l'interface CryptPad. Pour les ré-afficher s'ils ont été fermés, cliquez sur <strong>Réinitialiser</strong>.</p></li>
-<li><p><strong>Doublons des pads dont vous êtes propriétaire</strong> : Quand vous déplacez un pad dont vous êtes le propriétaire dans un dossier partagé, une copie est créée dans votre CryptDrive pour s'assurer que vous puissiez garder le contrôle de ce pad. Vous pouvez choisir de cacher ces doublons. Seule la version partagée sera affichée, jusqu'à sa suppression, auquel cas la version originale dans votre CryptDrive redeviendra visible.</p></li>
+<li><p><strong>Doublons des pads dont vous êtes propriétaire</strong> : Quand vous déplacez un pad dont vous êtes la·e propriétaire dans un dossier partagé, une copie est créée dans votre CryptDrive pour s'assurer que vous puissiez garder le contrôle de ce pad. Vous pouvez choisir de cacher ces doublons. Seule la version partagée sera affichée, jusqu'à sa suppression, auquel cas la version originale dans votre CryptDrive redeviendra visible.</p></li>
 <li><p><strong>Miniatures</strong> : Pour aider à la navigation du CryptDrive en <a class="reference internal" href="drive.html#drive-display"><span class="std std-ref">mode grille</span></a>, CryptPad peut créer des miniatures des documents et les stocker dans le navigateur. Cette option est désactivée par défaut car elle peut ralentir le navigateur pour les ordinateurs moins performants. Le bouton <strong>Nettoyer</strong> supprime toutes les miniatures existantes.</p></li>
 <li><p><strong>Sauvegarde</strong> : Deux types de sauvegarde sont disponibles.</p>
 <ul>
@@ -738,23 +758,23 @@
 <section id="cursor">
 <span id="user-settings-cursor"></span><h3>Curseur<a class="headerlink" href="#cursor" title="Lien permanent vers cette rubrique">¶</a></h3>
 <ul class="simple">
-<li><p><strong>Couleur du curseur</strong> : Changer la couleur de votre curseur. Celle-ci vous identifie dans les sessions collaboratives. Elle détermine la couleur de votre texte quand <a class="reference internal" href="apps/code.html#app-code-theme"><span class="std std-ref">Couleurs par auteurs</span></a> est activé dans les documents Code.</p></li>
-<li><p><strong>Partager la position de mon curseur</strong> : Afficher ou cacher la position exacte de votre curseur aux autres utilisateurs.</p></li>
-<li><p><strong>Afficher les curseurs des autres utilisateurs (BÊTA)</strong> : Afficher ou cacher la position des curseurs des autres utilisateurs.</p></li>
+<li><p><strong>Couleur du curseur</strong> : Changer la couleur de votre curseur. Celle-ci vous identifie dans les sessions collaboratives. Elle détermine la couleur de votre texte quand <a class="reference internal" href="apps/code.html#app-code-theme"><span class="std std-ref">Couleurs par auteur·ices</span></a> est activé dans les documents Code.</p></li>
+<li><p><strong>Partager la position de mon curseur</strong> : Afficher ou cacher la position exacte de votre curseur aux autres utilisateur·ices.</p></li>
+<li><p><strong>Afficher les curseurs des autres utilisateurs (BÊTA)</strong> : Afficher ou cacher la position des curseurs des autres utilisateur·ices.</p></li>
 </ul>
 </section>
 <section id="rich-text">
 <span id="user-settings-richtext"></span><h3>Documents texte<a class="headerlink" href="#rich-text" title="Lien permanent vers cette rubrique">¶</a></h3>
-<p>Réglages utilisateur pour l'application <a class="reference internal" href="apps/richtext.html#app-rich-text"><span class="std std-ref">Documents texte</span></a>.</p>
+<p>Réglages utilisateur·ice pour l'application <a class="reference internal" href="apps/richtext.html#app-rich-text"><span class="std std-ref">Documents texte</span></a>.</p>
 <ul class="simple">
 <li><p><strong>Largeur de l'éditeur de texte</strong> : Passer du mode page (par défaut) qui limite la largeur de l'éditeur de texte, au mode plein-écran qui utilise toute la largeur de l'écran.</p></li>
 <li><p><strong>Vérification orthographique</strong> : Activer la vérification orthographique dans l'éditeur de texte. Les fautes sont soulignées et des propositions de corrections sont disponibles en faisant <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">Clic</span> <span class="pre">droit</span></code> sur le mot à corriger.</p></li>
-<li><p><strong>Notifications de commentaires</strong> : Désactiver les notifications lorsqu'un autre utilisateur répond à vos commentaires.</p></li>
+<li><p><strong>Notifications de commentaires</strong> : Désactiver les notifications lorsqu'un·e autre utilisateur·ice répond à vos commentaires.</p></li>
 </ul>
 </section>
 <section id="code">
 <span id="user-settings-code"></span><h3>Code<a class="headerlink" href="#code" title="Lien permanent vers cette rubrique">¶</a></h3>
-<p>Réglages utilisateur pour l'application <a class="reference internal" href="apps/code.html#app-code"><span class="std std-ref">Code / Markdown</span></a>.</p>
+<p>Réglages utilisateur·ice pour l'application <a class="reference internal" href="apps/code.html#app-code"><span class="std std-ref">Code / Markdown</span></a>.</p>
 <ul class="simple">
 <li><p><strong>Indentation dans l'éditeur de code (nombre d'espaces)</strong> : Choisir le nombre d'espaces insérées par niveau d'indentation.</p></li>
 <li><p><strong>Utiliser des tabulations au lieu d'espaces</strong> : Insérer des tabulations plutôt que des espaces avec la touche <code class="docutils literal notranslate"><span class="pre">Tab</span></code>.</p></li>
@@ -773,20 +793,11 @@
 </section>
 <section id="support">
 <span id="user-support"></span><h2>Support<a class="headerlink" href="#support" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p>Les tickets de support permettent de communiquer de manière sécurisée avec les administrateurs de l'instance CryptPad. Pour accéder à la page <strong>Support</strong> :</p>
-<ul class="simple">
-<li><p>Menu utilisateur (avatar en haut à droite) &gt; <em class="fa fa-life-ring"></em> <strong>Support</strong>.</p></li>
-</ul>
-<p><em class="fa fa-envelope-o"></em> <strong>Tickets existants</strong> : Suivre vos conversations avec l'équipe de support.</p>
-<ul class="simple">
-<li><p><strong>Répondre</strong> à un ticket.</p></li>
-<li><p><strong>Fermer</strong> un ticket si le problème est résolu.</p></li>
-<li><p><strong>Supprimer</strong> les tickets fermés.</p></li>
-</ul>
-<p><em class="fa fa-life-ring"></em> <strong>Nouveau ticket</strong> : Renseigner un titre, une catégorie et le détail du problème ou de la question dans les champs prévus à cet effet. Ajouter une pièce jointe si besoin, par exemple une capture d'écran, puis cliquer sur <strong>Envoyer</strong>.</p>
+<p><span class="badge-new">Nouveau en version 5.3</span></p>
+<p>Cette section a été déplacée vers sa <a class="reference internal" href="support.html#id1"><span class="std std-ref">page dédiée</span></a>.</p>
 </section>
 <section id="notifications">
-<h2>Notifications<a class="headerlink" href="#notifications" title="Lien permanent vers cette rubrique">¶</a></h2>
+<span id="user-settings-notifications"></span><h2>Notifications<a class="headerlink" href="#notifications" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p><span class="badge-user">Utilisateurs enregistrés</span></p>
 <p>CryptPad vous notifie lorsque vos contacts interagissent avec vous. Les notifications sont affichées par la cloche <em class="fa fa-bell-o"></em> à côté de l'avatar (en haut à droite). Si vous avez des notifications non lues, la cloche est pleine <em class="fa fa-bell"></em> et un compte est affiché.</p>
 <p>Menu déroulant en cliquant sur la cloche <em class="fa fa-bell"></em> :</p>
@@ -818,7 +829,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="security.html" class="btn btn-neutral float-right" title="Sécurité" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="support.html" class="btn btn-neutral float-right" title="Support" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="instances.html" class="btn btn-neutral" title="Instances CryptPad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
@@ -830,13 +841,13 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2022, CryptPad Team.
+        &copy; Copyright 2023, CryptPad Team.
 
     </p>
   </div>
   Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a modified <a href="https://github.com/rtfd/sphinx_rtd_theme">RTD theme</a>.<br/>
   <a href="https://cryptpad.fr" title="CryptPad flagship instance">CryptPad flagship instance</a> |
-  <a href="https://github.com/xwiki-labs/cryptpad-documentation" title="The Github repository">Github repository for this documentation.</a>
+  <a href="https://github.com/cryptpad/documentation" title="The Github repository">Github repository for this documentation.</a>
   . 
 
 </footer>
@@ -855,7 +866,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.2',
+            VERSION:'5.3',
             LANGUAGE:'fr',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

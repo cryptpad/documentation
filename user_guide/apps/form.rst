@@ -110,6 +110,11 @@ Options:
 - Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order items and options
 - Delete an item or option with |times|
 
+|calendar| Date
+++++++++++++++++++++++++
+
+Response: pick a date and time
+
 .. _form_Q_checkbox:
 
 |cptools form-list-check| Checkbox
@@ -147,6 +152,10 @@ Options:
 - Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order options
 - Delete an option with |times|
 
+Condorcet:
+
+Since v5.3 responses can show the results with the `Condorcet method <https://en.wikipedia.org/wiki/Condorcet_method>`_. You can select Schulze or Ranked Pairs to display the winner. The details will also show the number of matches won by each candidates.
+
 |cptools form-poll| Poll
 ++++++++++++++++++++++++
 
@@ -178,7 +187,7 @@ Use the 3 buttons at the top for easy access to:
 
 - |bar-chart| **Responses** (count): toggles the response page
 - |eye| **Preview form**: Opens the participant link
-- |link| **Copy link**: Copies the participant link
+- |link| **Copy public link**: Copies the participant link
 
 .. note::
    To share an **author** link to the form (with edit rights), use the :ref:`share` menu in the toolbar.
@@ -206,8 +215,6 @@ Editing after submission
 ++++++++++++++++++++++++
 
 .. XXX track this as feature is implemented
-
-:badge_new:`New in version 5.2`
 
 - One time only: participants can answer the form only one time and can't modify or delete their responses after submitting them.
 - One time and edit/delete: participants can answer the form only one time but are allowed modify or delete their responses after submitting them.

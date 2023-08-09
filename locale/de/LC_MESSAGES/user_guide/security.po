@@ -5,18 +5,19 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version:  CryptPad\n"
+"Project-Id-Version: CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-12-06 10:19+0100\n"
-"PO-Revision-Date: 2021-07-05 21:46+0000\n"
-"Last-Translator: Jan <janrei.g@googlemail.com>\n"
+"PO-Revision-Date: 2022-12-21 16:39+0000\n"
+"Last-Translator: David Benqué <david.benque@xwiki.com>\n"
+"Language-Team: German <http://weblate.cryptpad.fr/projects/user-guide/"
+"security/de/>\n"
 "Language: de\n"
-"Language-Team: German <http://weblate.cryptpad.fr/projects/user-"
-"guide/security/de/>\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.1\n"
 "Generated-By: Babel 2.10.3\n"
 
 #: ../../user_guide/security.rst:2
@@ -25,7 +26,7 @@ msgstr "Sicherheit"
 
 #: ../../user_guide/security.rst:7
 msgid "Trust Assumptions"
-msgstr ""
+msgstr "Vertrauen"
 
 #: ../../user_guide/security.rst:9
 msgid ""
@@ -33,46 +34,54 @@ msgid ""
 "data. However, as with any other web application, some entities still "
 "need to be trusted in order to guarantee security:"
 msgstr ""
+"CryptPad ist Ende-zu-Ende verschlüsselt und der Server hat keinen Zugriff "
+"auf deine Daten. Trotzdem gibt es - wie mit jeder anderen Webanwendung auch -"
+" einige Komponenten, die vertrauenswürdig sein müssen, um Sicherheit zu "
+"garantieren:"
 
 #: ../../user_guide/security.rst:12
 msgid "Your chosen CryptPad :ref:`instance <cryptpad_instances>` to"
-msgstr ""
+msgstr "Deiner gewählten CryptPad :ref:`Instanz <cryptpad_instances>`, dass"
 
 #: ../../user_guide/security.rst:14
 msgid "run the same code as the one published on GitHub,"
-msgstr ""
+msgstr "sie den selben Code laufen lässt, der auf GitHub publiziert ist,"
 
 #: ../../user_guide/security.rst:15
 msgid "not block your network messages, and"
-msgstr ""
+msgstr "deine Netzwerknachrichten nicht blockiert, und dass"
 
 #: ../../user_guide/security.rst:16
 msgid "follow its terms of service and privacy policy."
-msgstr ""
+msgstr "sie den Nutzungsbedingungen und Datenschutzerklärungen folgt."
 
 #: ../../user_guide/security.rst:17
 msgid ""
 "Your collaborators not to forward :ref:`sharing links <share_link>` to "
 "illegitimate third parties."
 msgstr ""
+"Deinen Mitschreibenden, dass sie die :ref:`geteilten Links <share_link>` "
+"nicht an unberechtigte Dritte weitergeben."
 
 #: ../../user_guide/security.rst:19
 msgid ""
 "Under these assumptions you can be sure that it is technically not "
 "possible to read or modify your documents by"
 msgstr ""
+"Unter diesen Annahmen kannst du sicher sein, dass es technisch nicht möglich "
+"ist, deine Dokumente zu lesen oder zu bearbeiten. Und zwar weder"
 
 #: ../../user_guide/security.rst:21
 msgid "your chosen CryptPad instance,"
-msgstr ""
+msgstr "für den Server,"
 
 #: ../../user_guide/security.rst:22
 msgid "any powerful adversary that can see your web traffic, or"
-msgstr ""
+msgstr "mächtigen Gegenspielende, die deinen Netzwerkverkehr sehen können,"
 
 #: ../../user_guide/security.rst:23
 msgid "any other user."
-msgstr ""
+msgstr "noch für alle anderen Benutzenden."
 
 #: ../../user_guide/security.rst:25
 msgid ""
@@ -80,6 +89,8 @@ msgid ""
 "<https://cryptpad.org/instances>`_ to let you better decide on whom you "
 "want to trust."
 msgstr ""
+"Wir pflegen eine `Liste mit öffentlichen CryptPad-Instanzen <https://cryptpad"
+".org/instances>`_ , damit du entscheiden kannst, wem du vertrauen möchtest."
 
 #: ../../user_guide/security.rst:28
 msgid ""
@@ -87,12 +98,17 @@ msgid ""
 " instance can see your IP address and your \"user agent\" (browser and "
 "operating system)."
 msgstr ""
+"CryptPad bietet nur eine schwache Form von Anonymität an. Deine gewählte "
+"CryptPad-Instanz kann sowohl deine IP-Adresse als auch deinen \"User Agent\" "
+"(Browse-Name und Betriebssystem) sehen."
 
 #: ../../user_guide/security.rst:31
 msgid ""
 "If you need stronger anonymity guarantees, you can access CryptPad via "
 "`Tor <https://www.torproject.org>`_."
 msgstr ""
+"Falls du bessere Anonymität brauchst, kannst du CryptPad via `Tor "
+"<https://www.torproject.org>`_ erreichen."
 
 #: ../../user_guide/security.rst:36
 msgid "Passwords for documents and folders"
@@ -118,7 +134,6 @@ msgstr ""
 "Ordners ein Passwort hinzufügen."
 
 #: ../../user_guide/security.rst:42
-#, fuzzy
 msgid ""
 "When you :ref:`share documents with your contacts and teams directly on "
 "CryptPad <share_contacts>`, communications are encrypted and we assume "
@@ -126,12 +141,12 @@ msgid ""
 "and sent with the document/folder when you share it. The recipient, or "
 "yourself, are **not** asked for it when they open the document."
 msgstr ""
-"Wenn du Dokumente mit deinen Kontakten und Teams direkt auf CryptPad "
-"teilst, wird die Kommunikation verschlüsselt und wir gehen davon aus, "
-"dass du ihnen Zugriff gewähren möchtest. Daher wird das Passwort "
-"gespeichert und mit dem Pad mitgeschickt, wenn du es teilst. Der "
-"Empfänger, oder du selbst, werden **nicht** danach gefragt, wenn sie das "
-"Dokument öffnen."
+"Wenn du :ref:`Dokumente mit deinen Kontakten und Teams direkt auf CryptPad "
+"teilst <share_contacts>`, wird die Kommunikation verschlüsselt und wir gehen "
+"davon aus, dass du ihnen Zugriff gewähren möchtest. Daher wird das Passwort "
+"gespeichert und mit dem Pad mitgeschickt, wenn du es teilst. Der Empfänger, "
+"oder du selbst, werden **nicht** danach gefragt, wenn sie das Dokument "
+"öffnen."
 
 #: ../../user_guide/security.rst:44
 msgid ""
@@ -157,19 +172,25 @@ msgstr "Werkzeugleiste im Dokument: |unlock-alt| **Zugriff**."
 
 #: ../../user_guide/security.rst:54
 msgid "Verifying contacts"
-msgstr ""
+msgstr "Kontakte verifizieren"
 
 #: ../../user_guide/security.rst:57
 msgid ""
 "To verify a contact's identity, i.e., that a contact belongs to the "
 "person you think, you can compare the public signing keys:"
 msgstr ""
+"Um die Identität eines Kontakts zu verifizieren (d.h. dass der Kontakt "
+"wirklich zu jener Person gehört, die du denkst), kannst du die öffentlichen "
+"Signierschlüssel vergleichen:"
 
 #: ../../user_guide/security.rst:59
 msgid ""
 "Ask your contact to share :ref:`their public key <user_settings_account>`"
 " over a secure channel with you."
 msgstr ""
+"Frage deine Kontakte, :ref:`ihren öffentlichen Schlüssel "
+"<user_settings_account>` über einen sicheren Kommunikationskanal mit dir zu "
+"teilen."
 
 #: ../../user_guide/security.rst:60
 msgid ""
@@ -177,10 +198,13 @@ msgid ""
 " <another_user_profile>`, you can be sure that the contact belongs to the"
 " person at the other end of the secure channel."
 msgstr ""
+"Falls der öffentliche Schlüssel mit :ref:`dem deines Kontakts "
+"<another_user_profile>` übereinstimmt, kannst du dir sicher sein, dass der "
+"Kontakt zur Person am anderen Ende des sicheren Kommunikationskanal gehört."
 
 #: ../../user_guide/security.rst:65
 msgid "Self-destructing documents"
-msgstr ""
+msgstr "Selbst-zerstörende Dokumente"
 
 #: ../../user_guide/security.rst:69
 msgid ""
@@ -188,23 +212,27 @@ msgid ""
 "interaction of any user. This ensures that sensitive data is not "
 "accessible forever."
 msgstr ""
+"Selbst-zerstörende Dokumente werden automatisch ohne die Interaktion von "
+"Benutzenden gelöscht. Dies stellt sicher, dass sensible Daten nicht für "
+"immer zugänglich sind."
 
 #: ../../user_guide/security.rst:72
 msgid "There are two ways to create self-destructing documents:"
-msgstr ""
+msgstr "Es gibt zwei Möglichkeiten, selbst-zerstörende Dokumente zu erstellen:"
 
 #: ../../user_guide/security.rst:74
-#, fuzzy
 msgid "You can set an expiration time during :ref:`creating <new_document>`."
 msgstr ""
 "Du kannst bei der :ref:`Erstellung <new_document>` von Dokumenten ein "
-"Passwort hinzufügen."
+"Ablaufdatum hinzufügen."
 
 #: ../../user_guide/security.rst:75
 msgid ""
 "You can share a document via a :ref:`view-once-and-self-destruct "
 "link<share_access_rights>`."
 msgstr ""
+"Du kannst ein Dokument über einen Link :ref:`\"Einmal ansehen mit "
+"Selbstzerstörung\" <share_access_rights>` teilen."
 
 #: ../../user_guide/security.rst:80
 msgid "Remote Disconnect"
@@ -222,7 +250,6 @@ msgstr ""
 " gibt es zwei Möglichkeiten:"
 
 #: ../../user_guide/security.rst:86
-#, fuzzy
 msgid ""
 "User menu (avatar at the top-right) > |gear| **Settings** > |lock| "
 "**Confidentiality** > **LOG OUT**."
@@ -278,11 +305,11 @@ msgstr ""
 
 #: ../../user_guide/security.rst:108
 msgid "Known caveats"
-msgstr ""
+msgstr "Bekannte Tücken"
 
 #: ../../user_guide/security.rst:111
 msgid "No unique usernames"
-msgstr ""
+msgstr "Keine einzigartigen Kontonamen"
 
 #: ../../user_guide/security.rst:113
 msgid ""
@@ -291,10 +318,15 @@ msgid ""
 "means that you cannot trust usernames to identify people. Instead, "
 ":ref:`identify your contact <verifying_contacts>` via their public keys."
 msgstr ""
+"Weder der :ref:`Kontoname <user_settings_account>` noch der :ref:`"
+"Anzeigename <user_settings_account>` ist einzigartig in CryptPad. Dies "
+"bedeutet, dass du diesen Namen nicht vertrauen kannst, um Kontakte zu "
+"identifizieren. Nutze dazu die :ref:`Identifikation über ihre öffentlichen "
+"Signierschlüssel <verifying_contacts>`."
 
 #: ../../user_guide/security.rst:118
 msgid "Edit rights in teams"
-msgstr ""
+msgstr "Bearbeitungsrechte in Teams"
 
 #: ../../user_guide/security.rst:120
 msgid ""
@@ -303,28 +335,38 @@ msgid ""
 "convert folders into :ref:`shared folders <shared_folders>` and delegate "
 "their access to anybody they want."
 msgstr ""
+"Team-Mitglieder mit Bearbeitungszugriff auf ein Team-Drive können diesen "
+"Zugriff mit Personen innerhalb und außerhalb des Teams teilen. Team-"
+"Mitglieder können sogar Ordner in :ref:`geteilte Ordner <shared_folders>` "
+"konvertieren und so ihre Zugriffsrechte mit allen möglichen Personen teilen."
 
 #: ../../user_guide/security.rst:123
 msgid ""
 "You therefore have to be careful with whom you grant edit rights. You may"
 " also want to"
 msgstr ""
+"Du musst darum vorsichtig sein, wem du Bearbeitungsrechte gewährst. "
+"Möglicherweise willst du auch"
 
 #: ../../user_guide/security.rst:126
 msgid ""
 "set the :ref:`role  <team_roles_and_permissions>` of a member to viewer "
 "and selectively share edit rights to this person."
 msgstr ""
+"die :ref:`Rolle <team_roles_and_permissions>` eines Mitglieds auf Betrachter "
+"setzen und selektiv Bearbeitungsrechte pro Dokument mit dieser Person teilen."
 
 #: ../../user_guide/security.rst:127
 msgid ""
 "use :ref:`access lists <access_list>` to limit the access to a file to "
 "specific contacts."
 msgstr ""
+"Eine :ref:`Zugriffsliste <access_list>` erstellen, um den Zugriff auf ein "
+"Dokument auf ausgewählte Kontakte zu beschränken."
 
 #: ../../user_guide/security.rst:130
 msgid "Access of former team members"
-msgstr ""
+msgstr "Zugriff ehemaliger Team-Mitglieder"
 
 #: ../../user_guide/security.rst:132
 msgid ""
@@ -335,4 +377,10 @@ msgid ""
 " the client source code as the official one does neither store the keys "
 "nor decrypt any messages of a team which the user is not part of."
 msgstr ""
-
+"Die Kommunikation innerhalb eines Teams ist mit statischen Schlüsseln "
+"verschlüsselt. Ein ehemaliges Team-Mitglied hat also auch nach Verlassen des "
+"Teams weiterhin Zugriff auf die Schlüssel. Darum kann ein ehemaliges "
+"Mitglied potenziell Nachrichten eines Teams lesen und hat dadurch weiterhin "
+"Zugriff auf die Dokumente eines Teams. Dafür ist jedoch eine Modifizierung "
+"der Software notwendig, da die offizielle Software weder die Schlüssel "
+"speichert, noch Nachrichten eines ehemaligen Teams entschlüsselt."

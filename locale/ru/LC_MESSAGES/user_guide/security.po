@@ -1,0 +1,380 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2022, CryptPad Team
+# This file is distributed under the same license as the CryptPad package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: CryptPad\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-06 10:19+0100\n"
+"PO-Revision-Date: 2023-01-08 20:01+0000\n"
+"Last-Translator: serbul (ifreedomlab.net) <serbul4trsh@gmail.com>\n"
+"Language-Team: Russian <http://weblate.cryptpad.fr/projects/user-guide/"
+"security/ru/>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.1\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../user_guide/security.rst:2
+msgid "Security"
+msgstr "Безопасность"
+
+#: ../../user_guide/security.rst:7
+msgid "Trust Assumptions"
+msgstr "Предположения о доверии"
+
+#: ../../user_guide/security.rst:9
+msgid ""
+"CryptPad is end-to-end encrypted and the server has no access to your "
+"data. However, as with any other web application, some entities still "
+"need to be trusted in order to guarantee security:"
+msgstr ""
+"CryptPad полностью зашифрован, и сервер не имеет доступа к вашим данным. "
+"Однако, как и в случае с любым другим веб-приложением, некоторые объекты все "
+"же должны быть доверенными, чтобы гарантировать безопасность:"
+
+#: ../../user_guide/security.rst:12
+msgid "Your chosen CryptPad :ref:`instance <cryptpad_instances>` to"
+msgstr "Выбранный вами CryptPad :ref:`экземпляр <cryptpad_instances>` на"
+
+#: ../../user_guide/security.rst:14
+msgid "run the same code as the one published on GitHub,"
+msgstr "работает на том же коде, что опубликован на GitHub,"
+
+#: ../../user_guide/security.rst:15
+msgid "not block your network messages, and"
+msgstr "не блокирует Ваши сетевые сообщения, и"
+
+#: ../../user_guide/security.rst:16
+msgid "follow its terms of service and privacy policy."
+msgstr ""
+"следует его условиям предоставления услуг и политике конфиденциальности."
+
+#: ../../user_guide/security.rst:17
+msgid ""
+"Your collaborators not to forward :ref:`sharing links <share_link>` to "
+"illegitimate third parties."
+msgstr ""
+"Ваши партнёры не пересылают :ref:`ссылки общего доступа <share_link>` "
+"несогласованным третьим лицам."
+
+#: ../../user_guide/security.rst:19
+msgid ""
+"Under these assumptions you can be sure that it is technically not "
+"possible to read or modify your documents by"
+msgstr ""
+"При этих предположениях Вы можете быть уверены, что технически невозможно "
+"прочитать или изменить Ваши документы"
+
+#: ../../user_guide/security.rst:21
+msgid "your chosen CryptPad instance,"
+msgstr "выбранному вами экземпляру CryptPad,"
+
+#: ../../user_guide/security.rst:22
+msgid "any powerful adversary that can see your web traffic, or"
+msgstr ""
+"любому хорошо оснащённому злоумышленнику, который может видеть Ваш веб-"
+"трафик, или"
+
+#: ../../user_guide/security.rst:23
+msgid "any other user."
+msgstr "любому другому пользователю."
+
+#: ../../user_guide/security.rst:25
+msgid ""
+"We maintain a `list of public CryptPad instances "
+"<https://cryptpad.org/instances>`_ to let you better decide on whom you "
+"want to trust."
+msgstr ""
+"Мы поддерживаем `список общедоступных экземпляров CryptPad <https://cryptpad."
+"org/instances>`, чтобы Вы могли лучше решить, кому Вы хотите доверять."
+
+#: ../../user_guide/security.rst:28
+msgid ""
+"CryptPad does only provide a weak form of anonymity. Your chosen CryptPad"
+" instance can see your IP address and your \"user agent\" (browser and "
+"operating system)."
+msgstr ""
+"CryptPad обеспечивает лишь слабую форму анонимности. Выбранный Вами "
+"экземпляр CryptPad может видеть Ваш IP-адрес и Ваш \"user agent\" (браузер и "
+"операционную систему)."
+
+#: ../../user_guide/security.rst:31
+msgid ""
+"If you need stronger anonymity guarantees, you can access CryptPad via "
+"`Tor <https://www.torproject.org>`_."
+msgstr ""
+"Если Вам нужны более надежные гарантии анонимности, Вы можете получить "
+"доступ к CryptPad через `Tor <https://www.torproject.org>`_."
+
+#: ../../user_guide/security.rst:36
+msgid "Passwords for documents and folders"
+msgstr "Пароли для документов и папок"
+
+#: ../../user_guide/security.rst:38 ../../user_guide/security.rst:55
+#: ../../user_guide/security.rst:67 ../../user_guide/security.rst:82
+#: ../../user_guide/security.rst:101
+msgid ":badge_user:`Logged in users`"
+msgstr ":badge_user:`Зарегистрированные пользователи`"
+
+#: ../../user_guide/security.rst:40
+msgid ""
+"When you share the link to a document or shared folder through an "
+"insecure channel (for example email or SMS), someone might intercept the "
+"link and gain access to your data. To prevent this from happening, the "
+":ref:`owners <owners>` of a document or folder can add a password."
+msgstr ""
+"Когда Вы делитесь ссылкой на документ или общую папку по небезопасному "
+"каналу (например, по электронной почте или SMS), кто-то может перехватить "
+"ссылку и получить доступ к Вашим данным. Чтобы этого не произошло, :ref:`"
+"владельцы <owners>` документа или папки могут добавить пароль."
+
+#: ../../user_guide/security.rst:42
+msgid ""
+"When you :ref:`share documents with your contacts and teams directly on "
+"CryptPad <share_contacts>`, communications are encrypted and we assume "
+"that you want to give them access. Therefore the password is remembered "
+"and sent with the document/folder when you share it. The recipient, or "
+"yourself, are **not** asked for it when they open the document."
+msgstr ""
+"Когда Вы :ref:`делитесь документами со своими контактами и командами "
+"непосредственно на CryptPad <share_contacts>`, переписка зашифрована, и мы "
+"предполагаем, что Вы хотите предоставить им доступ. Поэтому пароль "
+"запоминается и отправляется вместе с документом/папкой, когда Вы "
+"предоставляете им общий доступ. У получателя или у Вас самих пароль **не** "
+"запрашивается при открытии документа."
+
+#: ../../user_guide/security.rst:44
+msgid ""
+"You can add a password to a document when you :ref:`create "
+"<new_document>` it."
+msgstr ""
+"Вы можете добавить пароль к документу когда Вы :ref:`создаёте <new_document>`"
+" его."
+
+#: ../../user_guide/security.rst:46
+msgid "You can also add or change the password in the :ref:`access` menu:"
+msgstr "Вы также можете добавить или изменить пароль в меню :ref:`access`:"
+
+#: ../../user_guide/security.rst:48
+msgid "From the CryptDrive: ``Right click`` > |unlock-alt| **Access**."
+msgstr ""
+"Из CryptDrive: ``Щелкните правой кнопкой мыши`` > |unlock-alt| **Доступ**."
+
+#: ../../user_guide/security.rst:49
+msgid "From the document toolbar: |unlock-alt| **Access**."
+msgstr "На панели инструментов документа: |unlock-alt| **Доступ**."
+
+#: ../../user_guide/security.rst:54
+msgid "Verifying contacts"
+msgstr "Проверка контактов"
+
+#: ../../user_guide/security.rst:57
+msgid ""
+"To verify a contact's identity, i.e., that a contact belongs to the "
+"person you think, you can compare the public signing keys:"
+msgstr ""
+"Чтобы проверить личность контакта, т.е. что контакт это тот самый человек, "
+"кому Вы хотите написать - Вы можете сравнить открытые ключи подписи:"
+
+#: ../../user_guide/security.rst:59
+msgid ""
+"Ask your contact to share :ref:`their public key <user_settings_account>`"
+" over a secure channel with you."
+msgstr ""
+"Попросите контакт поделиться с Вами :ref:`своим открытым ключом "
+"<user_settings_account>` по доверенному каналу."
+
+#: ../../user_guide/security.rst:60
+msgid ""
+"If this public key matches the one from your contact's :ref:`profile page"
+" <another_user_profile>`, you can be sure that the contact belongs to the"
+" person at the other end of the secure channel."
+msgstr ""
+"Если этот публичный ключ совпадает с ключом на странице :ref:`профиля Вашего "
+"контакта <another_user_profile>`, Вы можете быть уверены, что контакт "
+"принадлежит человеку на другом конце защищенного канала."
+
+#: ../../user_guide/security.rst:65
+msgid "Self-destructing documents"
+msgstr "Самоуничтожающиеся документы"
+
+#: ../../user_guide/security.rst:69
+msgid ""
+"Self-destructing documents will be destroyed automatically without the "
+"interaction of any user. This ensures that sensitive data is not "
+"accessible forever."
+msgstr ""
+"Самоуничтожающиеся документы будут уничтожены автоматически без участия "
+"пользователя. Это гарантирует, что конфиденциальные данные не будут доступны "
+"навсегда."
+
+#: ../../user_guide/security.rst:72
+msgid "There are two ways to create self-destructing documents:"
+msgstr "Существует два способа создания самоуничтожающихся документов:"
+
+#: ../../user_guide/security.rst:74
+msgid "You can set an expiration time during :ref:`creating <new_document>`."
+msgstr ""
+"Вы можете установить срок действия во время :ref:`создания <new_document>`."
+
+#: ../../user_guide/security.rst:75
+msgid ""
+"You can share a document via a :ref:`view-once-and-self-destruct "
+"link<share_access_rights>`."
+msgstr ""
+"Вы можете поделиться документом через ссылку :ref:`показать-один-раз-и-"
+"самоуничтожиться <share_access_rights>`."
+
+#: ../../user_guide/security.rst:80
+msgid "Remote Disconnect"
+msgstr "Удаленное отключение"
+
+#: ../../user_guide/security.rst:84
+msgid ""
+"In some cases (loss or theft of a device, forgotten to log out of a "
+"session on a shared computer, etc.) it can be necessary to close all "
+"active CryptPad sessions. This can be done in two ways:"
+msgstr ""
+"В некоторых случаях (потеря или кража устройства, забытыли выйти из сеанса "
+"на общем компьютере и т. д.) может потребоваться закрыть все активные сеансы "
+"CryptPad. Это можно сделать двумя способами:"
+
+#: ../../user_guide/security.rst:86
+msgid ""
+"User menu (avatar at the top-right) > |gear| **Settings** > |lock| "
+"**Confidentiality** > **LOG OUT**."
+msgstr ""
+"Меню пользователя (аватар вверху справа) > |gear| **Настройки** > |lock| "
+"**Конфиденциальность** > **ВЫЙТИ**."
+
+#: ../../user_guide/security.rst:88
+msgid ""
+"This option logs out all sessions **except** the one from which it is "
+"actiaved."
+msgstr ""
+"Эта опция отключает все сеансы, **кроме** того, в котором она активирована."
+
+#: ../../user_guide/security.rst:90
+msgid "User menu (avatar at the top-right) > |plug| **Log out everywhere**."
+msgstr "Меню пользователя (аватар вверху справа) > |plug| **Выйти везде**."
+
+#: ../../user_guide/security.rst:92
+msgid ""
+"This option logs out all sessions **including** the one from which it is "
+"activated."
+msgstr ""
+"Этот вариант отключает все сеансы, **включая** тот, из которого он запущен."
+
+#: ../../user_guide/security.rst:97
+msgid "Remote Content"
+msgstr "Удаленно Размещенный Контент"
+
+#: ../../user_guide/security.rst:99
+msgid ""
+"In Markdown editors (:ref:`app_code`, :ref:`app_slides`, "
+":ref:`app_kanban`), CryptPad blocks images and other remotely hosted "
+"content to prevent potential tracking."
+msgstr ""
+"В редакторах Markdown (:ref:`app_code`, :ref:`app_slides`, :ref:`app_kanban`)"
+" CryptPad блокирует изображения и другой удаленно размещенный контент, чтобы "
+"предотвратить потенциальное отслеживание."
+
+#: ../../user_guide/security.rst:103
+msgid ""
+"To include images from the CryptDrive or to upload new ones, use the "
+"|picture-o| **Insert** menu. This menu inserts a ``media-tag`` element "
+"that is more complex than Markdown image syntax but is managed "
+"automatically."
+msgstr ""
+"Чтобы включить изображения из CryptDrive или загрузить новые, используйте "
+"|picture-o| **Вставить** меню. Это меню вставляет элемент ``media-tag``, "
+"который является более сложным, чем синтаксис изображения Markdown, но "
+"управляется автоматически."
+
+#: ../../user_guide/security.rst:108
+msgid "Known caveats"
+msgstr "Известные проблемы"
+
+#: ../../user_guide/security.rst:111
+msgid "No unique usernames"
+msgstr "Имена пользователей не уникальны"
+
+#: ../../user_guide/security.rst:113
+msgid ""
+"Neither the :ref:`account name <user_settings_account>` nor the "
+":ref:`display name <user_settings_account>` is unique in CryptPad. This "
+"means that you cannot trust usernames to identify people. Instead, "
+":ref:`identify your contact <verifying_contacts>` via their public keys."
+msgstr ""
+"Ни :ref:`имя учетной записи <user_settings_account>`, ни :ref:`отображаемое "
+"имя <user_settings_account>` не являются уникальными в CryptPad. Это "
+"означает, что Вы не можете доверять именам пользователей для идентификации "
+"людей. Вместо этого :ref:`идентифицируйте свои контакты <verifying_contacts>`"
+" с помощью их открытых ключей."
+
+#: ../../user_guide/security.rst:118
+msgid "Edit rights in teams"
+msgstr "Права на изменения в командах"
+
+#: ../../user_guide/security.rst:120
+msgid ""
+"Team members with edit access to a teams drive may share this access to "
+"other users both inside and outside the team. Team members may even "
+"convert folders into :ref:`shared folders <shared_folders>` and delegate "
+"their access to anybody they want."
+msgstr ""
+"Члены команды с доступом к редактированию диска команды могут делиться этим "
+"доступом с другими пользователями как внутри, так и за пределами команды. "
+"Члены команды могут даже преобразовать папки в :ref:`общие папки "
+"<shared_folders>` и передать свой доступ кому угодно."
+
+#: ../../user_guide/security.rst:123
+msgid ""
+"You therefore have to be careful with whom you grant edit rights. You may"
+" also want to"
+msgstr ""
+"Поэтому Вы должны быть осторожны с тем, кому Вы предоставляете права "
+"редактирования. Вы также можете захотеть"
+
+#: ../../user_guide/security.rst:126
+msgid ""
+"set the :ref:`role  <team_roles_and_permissions>` of a member to viewer "
+"and selectively share edit rights to this person."
+msgstr ""
+"установить члену команды :ref:`роль <team_roles_and_permissions>` на "
+"читателя и выборочно поделиться правами редактирования с этим человеком."
+
+#: ../../user_guide/security.rst:127
+msgid ""
+"use :ref:`access lists <access_list>` to limit the access to a file to "
+"specific contacts."
+msgstr ""
+"использовать :ref:`списки доступа <access_list>`, чтобы ограничить доступ к "
+"файлу лишь определенными контактами."
+
+#: ../../user_guide/security.rst:130
+msgid "Access of former team members"
+msgstr "Доступ бывших членов команды"
+
+#: ../../user_guide/security.rst:132
+msgid ""
+"The team communication is encrypted with static keys. This implies that a"
+" former team member still has the keys. A former team member can "
+"therefore potentially decrypt team messages and can also keep the same "
+"access to the team's document as before. However, this requires to modify"
+" the client source code as the official one does neither store the keys "
+"nor decrypt any messages of a team which the user is not part of."
+msgstr ""
+"Переписка команды зашифрована статическими ключами. Это означает, что у "
+"бывшего члена команды все еще есть ключи. Таким образом, бывший член команды "
+"потенциально может расшифровать сообщения команды, а также иметь тот же "
+"доступ к документу команды, что и раньше. Однако это требует изменения "
+"исходного кода клиента, так как официальный не хранит ключи и не "
+"расшифровывает никаких сообщений команды, в которую пользователь не входит."

@@ -93,6 +93,8 @@ Optional:
 Settings
 --------
 
+.. XXX TODO: Refactor to reflect new settings and new categories/organization
+
 The account settings are found in the user menu (avatar at the top right) > |gear| **Settings**.
 
 .. _user_settings_account:
@@ -110,21 +112,27 @@ Account
 
 .. _user_settings_confidentiality:
 
-Confidentiality
-~~~~~~~~~~~~~~~
+Security & Privacy
+~~~~~~~~~~~~~~~~~~
 
--  **Close remote sessions**: Log out of all sessions except the one from which this option is activated. (see also :ref:`remote_disconnect`) :badge_user:`Logged in users`
--  **Pad storage in CryptDrive**: Manages if documents you visit are automatically stored in your CryptDrive. If no one :ref:`owns <owners>` a document you add to your CryptDrive, it counts against your storage quota.
+- **Close remote sessions**: Log out of all sessions except the one from which this option is activated. (see also :ref:`remote_disconnect`) :badge_user:`Logged in users`
+- **Two-Factor Authentication (2FA)**: Protect your account with an additional verification code provided by an authenticator app of your choice.   :badge_user:`Logged in users` :badge_new:`New in version 5.4` 
 
-   -  **Automatic**: All the pads you visit are stored in your CryptDrive.
-   -  **Manual (always ask)**: If you have not stored a pad yet, you will be asked if you want to store them in your CryptDrive.
-   -  **Manual (never ask)** Pads are not stored automatically in your Cryptpad. The option to store them will be hidden.
+  To activate 2FA:
 
--  **Safe links**: When this setting is active, the link in your browser’s address bar does not provide access to the document unless the recipient already has it in their CryptDrive. This setting is active by default. It is highly recommended to keep it active and to use the :ref:`share` menu to copy links to documents.
+  #. Enter your account password
+  #. Save the recovery code
+  #. Snap the QR code with a 2FA app of your choice (or copy the address and paste into your app)
+  #. Enter the verification code to confirm
+
+- **Change your password**: Change your account's password. Enter your current password, and confirm the new password by typing it twice
+- **Safe links**: When this setting is active, the link in your browser’s address bar does not provide access to the document unless the recipient already has it in their CryptDrive. This setting is active by default. It is highly recommended to keep it active and to use the :ref:`share` menu to copy links to documents.
 
 CryptPad includes the keys to decrypt your documents in their links. Anyone with access to your browsing history can potentially read your data. This includes intrusive browser extensions and browsers that sync your history across devices. Situations where your browser is visible by others, such as screen-sharing or screenshots, are also potentially risky in terms of leaking access to your documents. Enabling “safe links” prevents the keys from entering your browsing history or being displayed in your address bar whenever possible.
 
 -  **Feedback**: CryptPad can send anonymised usage feedback to the server in order to improve the user experience. The content of documents is never shared. This option is disabled by default.
+-  **Cache**: CryptPad stores parts of your documents in your browser's memory in order to save network usage and improve loading times. You can disable the cache if your device doesn't have a lot of free storage space. For security reasons, the cache is always cleared when you log out, but you can clear it manually if you want to reclaim storage space on your machine.
+-  **Destroy all owned documents**: All documents where you are the sole owner will be permanently destroyed
 
 Appearance
 ~~~~~~~~~~
@@ -136,7 +144,14 @@ Appearance
 CryptDrive
 ~~~~~~~~~~
 
+-  **Homepage redirection**: Automatic redirection from the home page to the drive when logged in is no longer enabled by default
 -  **Tips**: Help messages in the CryptPad interface. Click on **Reset** to display them again if they have been dismissed.
+-  **Pad storage in CryptDrive**: Manages if documents you visit are automatically stored in your CryptDrive. If no one :ref:`owns <owners>` a document you add to your CryptDrive, it counts against your storage quota.
+
+   -  **Automatic**: All the pads you visit are stored in your CryptDrive.
+   -  **Manual (always ask)**: If you have not stored a pad yet, you will be asked if you want to store them in your CryptDrive.
+   -  **Manual (never ask)** Pads are not stored automatically in your Cryptpad. The option to store them will be hidden.
+
 -  **Duplicated owned pads**: When you move your owned pads to a shared folder, a copy is kept in your CryptDrive to ensure that you retain your control over it. You can hide duplicated files. Only the shared version will be visible, unless deleted, in which case the original will be displayed in its previous location.
 -  **Thumbnails**: To help navigating the CryptDrive in :ref:`grid mode <drive_display>`, CryptPad can create thumbnails of documents and store them in the browser. This option is turned off by default because it can slow down the browser on less powerful computers. The **Clean** button deletes all existing thumbnails.
 -  **Backup**: Two types of backups are available.
@@ -189,22 +204,7 @@ Subscription
 
 -  Redirects to the account page.
 
-.. _user_support:
-
-Support
--------
-
-Support tickets provide a secure communication channel with the administrators of the CryptPad instance. The **Support** page is accessible through:
-
--  User menu (avatar at the top-right) > |life-ring| **Support**.
-
-|envelope-o| **Existing tickets**: Follow up on conversations with the support team.
-
-- **Reply** to a ticket.
-- **Close** it if the issue has been resolved.
-- **Delete** closed tickets.
-
-|life-ring| **New ticket**: To send a new ticket Fill in the form with a title, category, and the details of the problem or question. Add an attachment if needed, for example a screenshot, and click on **Send**.
+.. _user_settings_notifications:
 
 Notifications
 -------------

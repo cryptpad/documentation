@@ -179,22 +179,23 @@ Server telemetry
 List my instance in public directories
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Opt-in** to have the instance included in the `list of public instances <https://cryptpad.org/instances/>`_ on `the CryptPad project site <https://cryptpad.org>`_ if it is intended for public use.
+**Opt-in** to have the instance included in the `list of public instances <https://cryptpad.org/instances/>`_ on `the CryptPad project site <https://cryptpad.org>`_ if it is intended for public use. We add public instances to our `uptime monitoring <https://uptime.cryptpad.org/status/public-instances>`_ and encourage administrators to follow updates.
 
 In addition to this setting being enabled, the following criteria are required in order to have an instance listed:
 
 - All :ref:`diagnostic tests <admin_checkup>` must pass
-- The version of CryptPad must be up to date within 90 days of `the latest release <https://github.com/xwiki-labs/cryptpad/releases>`_
+- The version of CryptPad must be up to date within 90 days of `the latest release <https://github.com/cryptpad/cryptpad/releases>`_
 - Instance information must be provided in the :ref:`General tab <admin_instance_info>`
 - :ref:`admin_telemetry_optout` must be enabled
 - Absence of analytics and third-party trackers
+- Reasonable uptime, ±99% average availability on the previous 30 days
 - A working backup strategy is in place and has been tested
 - At least one other person must have access to the infrastructure
 - Commitment to give users at least 6 months of advance warning in case of shutting down
 
 .. note::
 
-   The `list of public instances <https://cryptpad.org/instances/>`_ is considered an extension of the CryptPad community. As such, the development team reserves the right to remove instances from the list if their administrators or the groups they represent are in breach of the `Code of Conduct <https://github.com/xwiki-labs/cryptpad/blob/main/CODE_OF_CONDUCT.md>`_ or for any other reason at their own discretion.
+   The `list of public instances <https://cryptpad.org/instances/>`_ is considered an extension of the CryptPad community. As such, the development team reserves the right to remove instances from the list if their administrators or the groups they represent are in breach of the `Code of Conduct <https://github.com/cryptpad/cryptpad/blob/main/CODE_OF_CONDUCT.md>`_ or for any other reason at their own discretion.
 
 .. _admin_consent_contact:
 
