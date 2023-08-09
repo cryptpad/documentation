@@ -4,9 +4,9 @@ General information
 Sandbox
 -------
 
-The server configuration indicates 2 different URLs with the fields ``httpUnsafeOrigin`` and ``httpSafeOrigin``. By default, on a development instance, they correspond to ``http://localhost:3000/`` (**unsafe**) and ``http://localhost:3001/`` (**safe**). The second (**safe**) is usually not shown to users, it's only used internally within an iframe. Opening CryptPad manually with the safe URL won't provide access to applications.
+CryptPad uses a sandboxing system that isolates the user interface from the in-memory content. For user experience reasons, it is necessary to keep in memory all the information of the current user account (drive content, contact list, teams, etc.). The interface, which is the exposed part of the structure, could contain vulnerabilities and is therefore not "shown" any user information. It receives only data relevant for the current document. This isolation system has been implemented by putting the entire user interface in an iframe that takes up the whole window and that shows the **safe** URL. The base level (parent of the iframe) contains the sensitive data and is opened on the **unsafe** URL.
 
-CryptPad uses a sandboxing system that isolates the user interface from the in-memory content. For user experience reasons, it is necessary to keep in memory all the information of the current user account (drive content, contact list, teams, etc.). The interface, which is the exposed part of the structure, could contain vulnerabilities and is therefore not "shown" any user information. It receives only data relevant for the current document. This isolation system has been implemented by putting the entire user interface in an iframe that takes up the whole window and that shows the **safe** URL. The base level (parent of the iframe) contains the sensitive data and is open on the **unsafe** URL.
+The server configuration indicates two different URLs with the fields ``httpUnsafeOrigin`` and ``httpSafeOrigin``. By default, on a development instance, they correspond to ``http://localhost:3000/`` (**unsafe**) and ``http://localhost:3001/`` (**safe**). The second (**safe**) is usually not shown to users, it's only used internally within an iframe. Opening CryptPad manually with the safe URL won't provide access to applications.
 
 .. note:: In a production system, it is possible to use different sub-domains or even different domains to represent these 2 origins. For example, on the main instance managed by the development team, the unsafe URL is ``https://cryptpad.fr`` and the safe URL is ``https://sandbox.cryptpad.info/.``.
 
@@ -17,14 +17,14 @@ CryptPad's code is split in 5 distinct levels, 2 server side and 3 client side.
 
 -  Server side
 
-   -  The "server" which contains the code launched in the main process. It manages the websocket connections and all calls to the server go through this level.
-   -  The "workers" that manage all database connections and scripts that require more CPU resources. The main "server" calls them when it receives certain commands from users. They are launched in separate sub-processes in order to be able to make the most of the available CPU cores.
+   -  The **server** which contains the code launched in the main process. It manages the websocket connections and all calls to the server go through this level.
+   -  The **workers** that manage all database connections and scripts that require more CPU resources. The main **server** calls them when it receives certain commands from users. They are launched in separate sub-processes in order to be able to make the most of the available CPU cores.
 
 -  Client side
 
-   -  The base level, called "outer" in the code. This level is loaded with the "unsafe" URL (the one visible in the browser address bar) because it has access to sensitive data, including user account encryption keys.
-   -  The iframe containing the user interface, called "inner" in the code, is launched as a daughter of "outer" and uses the "safe" URL. This iframe represents the entire screen visible per the users. No interface element is outside of the iframe. It has only access to the data that needs to be displayed on the screen.
-   -  The upper level, called "worker", which manages the connection to the server and keeps all the user account data in memory. This level is loaded in a SharedWorker when the browser supports it (Firefox, Chrome, Edge) with the "unsafe" URL, which means that all the browser's tabs loaded on this CryptPad instance will have access to the same worker. It allows us to load the account data only once for all open tabs and to use only one Websocket connection.
+   -  The base level, called **outer** in the code. This level is loaded with the **unsafe** URL (the one visible in the browser address bar) because it has access to sensitive data, including user account encryption keys.
+   -  The iframe containing the user interface, called **inner** in the code, is launched as a daughter of **outer** and uses the **safe** URL. This iframe represents the entire screen visible by the users. No interface element is outside of the iframe. It has only access to the data that needs to be displayed on the screen.
+   -  The upper level, called **worker**, which manages the connection to the server and keeps all the user account data in memory. This level is loaded in a SharedWorker when the browser supports it (Firefox, Chrome, Edge) with the **unsafe** URL, which means that all the browser's tabs loaded on this CryptPad instance will have access to the same worker. It allows us to load the account data only once for all open tabs and to use only one Websocket connection.
 
 .. figure:: /images/dev/cp_5level_structure.svg
    :alt: CryptPad's 5-level structure
@@ -47,7 +47,7 @@ CryptPad uses several encryption systems appropriate for different use cases. Th
 
    -  Signature “ed25519”.
    -  Since the encryption is symmetrical, all users who can read and therefore decrypt the document can also technically encrypt messages and send them. A signature system makes it possible to authorize or to block sending messages.
-   -  The edit URL contains a signature in addition to the encryption key. Editors will therefore be able to "sign" messages after encrypting them.
+   -  The edit URL contains a signature in addition to the encryption key. Editors will therefore be able to sign messages after encrypting them.
    -  A "public" verification key allows all users (editors **and** readers) to check if an encrypted message has been signed with the correct signing key. Messages with an invalid signature are ignored.
    -  When a document is created, the public verification key associated with this document is sent to the server. Messages with invalid signature are not stored in the database.
 
@@ -152,12 +152,12 @@ Client-server communication (Netflux)
 
 Communication between the client and the server is in the vast majority of cases using a Websocket connection. This connection is based on an implementation of the `Netflux <https://github.com/xwiki-labs/netflux-spec2/blob/master/specification.md>`__ protocol. Exceptions are static files (images, videos, pdf, etc.) and block files that are stored in encrypted format and are retrieved by users with XHR (downloading the complete encrypted file).
 
-With the Netflux protocol, users create a "network" which they then use to perform several types of operations. **The important points** concerning the implementation of the protocol are:
+With the Netflux protocol, users create a **network** which they then use to perform several types of operations. The important points concerning the implementation of the protocol are:
 
 -  Each user is identified by a 32-character hexadecimal string called **netfluxId**. This identifier is generated by the server and is created for each Websocket connection. A user who opens CryptPad from 2 different browsers at the same time will have a netfluxId for each browser (for each connection to the server). This identifier therefore changes with each new connection, no mechanism exists to preserve the identifier of a user between different sessions.
 -  A user can join channels and send messages to them. All members of the channel receive the messages. Each collaborative document opened on CryptPad is represented by a channel on the server with a unique identifier.
 -  The channel identifier is also a 32-character hexadecimal string called **channelId** or **channel**. The channelId associated with a document is derived from its URL, so that it is known to all users having access to it.
--  Users can send direct messages to each other without going through a channel, as long as they know the "netfluxId" of the recipient.
+-  Users can send direct messages to each other without going through a channel, as long as they know the **netfluxId** of the recipient.
 
 Server side
 ~~~~~~~~~~~
@@ -173,16 +173,16 @@ The **data storage** has been achieved by adding a "fake" member in each channel
 Client side
 ~~~~~~~~~~~
 
-At the client level, a module manages the Netflux protocol with simple APIs. The module is located in ``./wwww/components/netflux-websocket/netflux-client.js``. Once loaded, it allows us to create a **network** representing the Websocket connection to the Netflux server.
+At the client level, a JavaScript module manages the Netflux protocol with simple APIs. The module is located in ``./wwww/components/netflux-websocket/netflux-client.js``. Once loaded, it allows us to create a **network** representing the Websocket connection to the Netflux server.
 
-This "network" contains the **list of channels** joined by the user, as well as the **list of members** present in each channel. It allows us to perform all the operations allowed by the protocol:
+This network contains the **list of channels** joined by the user, as well as the **list of members** present in each channel. It allows us to perform all the operations allowed by the protocol:
 
 -  Join a channel : ``(Promise) network.join(channelId)`` (provides a ``channel`` object)
 -  Send a private message: ``(Promise) network.sendTo(netfluxId, message)``
 -  Get the channels list: ``(Array) network.webChannels``.
 -  Listen to events in a network: ``network.on('message', handler)`` (events: message, disconnect)
 
-And for each channel obtained from "network.join":
+And for each channel obtained from ``network.join``:
 
 -  Send a message: ``(Promise) channel.bcast(message)``
 -  Leave a channel: ``channel.leave(reason)``
