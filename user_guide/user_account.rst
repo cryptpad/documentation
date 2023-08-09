@@ -191,15 +191,6 @@ Subscription
 
 -  Redirects to the account page.
 
-.. _user_support:
-
-Support
--------
-
-:badge_new:`New in version 5.3`
-
-This section has been moved to its :ref:`dedicated page <support>`.
-
 .. _user_settings_notifications:
 
 Notifications
