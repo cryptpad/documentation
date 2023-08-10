@@ -4,7 +4,7 @@ Worker
 async-store.js
 --------------
 
-Async-store contains all the functions representing the commands sent by "outer". Its role is to manage the connection to the user account, load the sub-structures linked to this account (shared folders, profile, teams) and load all the modules that extend its use. It creates two main objects, named ``store`` and ``Store``. The first one represents the memory of the worker and stores everything that has been loaded, the second one represents its "muscles" and contains all the functions that can be executed by the commands of "outer". Many modules are loaded to perform specific tasks and are accessible via ``store``.
+**Async-store** contains all the functions representing the commands sent by **outer**. Its role is to manage the connection to the user account, load the sub-structures linked to this account (shared folders, profile, teams) and load all the modules that extend its use. It creates two main objects, named ``store`` and ``Store``. The first one represents the memory of the worker and stores everything that has been loaded, the second one represents its "muscles" and contains all the functions that can be executed by the commands of **outer**. Many modules are loaded to perform specific tasks and are accessible via ``store``.
 
 “Store” commands
 ----------------
@@ -37,7 +37,7 @@ Commands that can be executed by async-store include:
 
 -  Actions on the different modules
 
-  -  Each module can receive its own commands, but these first pass through "async-store" which will redistribute it to the concerned modules
+  -  Each module can receive its own commands, but these first pass through **async-store** which will redistribute it to the concerned modules
 
 -  Collaborative documents
 

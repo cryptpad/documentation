@@ -113,8 +113,6 @@ Options:
 |calendar| Date
 ++++++++++++++++++++++++
 
-:badge_new:`New in version 5.3`
-
 Response: pick a date and time
 
 .. _form_Q_checkbox:
@@ -153,8 +151,6 @@ Options:
 - |plus| **Add option** button
 - Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order options
 - Delete an option with |times|
-
-:badge_new:`New in version 5.3`
 
 Condorcet:
 

@@ -107,7 +107,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../user_guide/user_account.html#settings">設定</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#account">Account</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#confidentiality">Confidentiality</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#security-privacy">Security &amp; Privacy</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#appearance">Appearance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#cryptdrive">CryptDrive</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#cursor">Cursor</a></li>
@@ -116,7 +116,6 @@
 <li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#subscription">定額利用</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../user_guide/user_account.html#support">サポート</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../user_guide/user_account.html#notifications">通知</a></li>
 </ul>
 </li>
@@ -282,6 +281,12 @@
 <li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/kanban.html#import-export">Import/Export</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/apps/diagram.html">Diagram</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/diagram.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/diagram.html#toolbars">Toolbars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/diagram.html#import-export">Import/Export</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../user_guide/apps/whiteboard.html">ホワイトボード</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/whiteboard.html#toolbar">ツールバー</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user_guide/apps/whiteboard.html#drawing">Drawing</a></li>
@@ -310,13 +315,15 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#install-cryptpad">Install Cryptpad</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#dependencies">Dependencies</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configuration">Configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#daemonization">Daemonization</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#recommended">Recommended</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#configuration">Configuration</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#daemonization">Daemonization</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#systemd">Systemd</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../../admin_guide/installation.html#freebsd">FreeBSD</a></li>
 </ul>
 </li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#docker">Docker</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#admin-domain-config">Domains</a></li>
@@ -627,8 +634,8 @@
 <h1>Client architecture<a class="headerlink" href="#client-architecture" title="この見出しへのパーマリンク">¶</a></h1>
 <p>The client architecture is split in 3 levels:</p>
 <ul class="simple">
-<li><p>The <strong>worker</strong> is common to all CryptPad tabs opened in the same browser and each tab contains its own &quot;outer&quot; and iframes.</p></li>
 <li><p><strong>Outer</strong> corresponds to the base level, i.e. the HTML file loaded first by the browser.</p></li>
+<li><p>The <strong>worker</strong> is common to all CryptPad tabs opened in the same browser and each tab contains its own <strong>outer</strong> and <strong>iframes</strong>.</p></li>
 <li><p>Two <strong>iframes</strong> are loaded per tab, the first one containing the whole application interface, the second one containing the interface elements that must display confidential data.</p></li>
 </ul>
 <p>Each of the three levels has distinct roles that are detailed in this section.</p>
@@ -638,14 +645,14 @@
 <span id="architecture-worker"></span><h2>Worker<a class="headerlink" href="#worker" title="この見出しへのパーマリンク">¶</a></h2>
 <section id="workflow">
 <h3>Workflow<a class="headerlink" href="#workflow" title="この見出しへのパーマリンク">¶</a></h3>
-<p>The worker is the unique WebSocket link with the server for all CryptPad tabs. SharedWorker technology allows a single &quot;Webworker&quot; to be shared between all the tabs opened on the same origin, with many advantages:</p>
+<p>The worker is the unique WebSocket link with the server for all CryptPad tabs. [SharedWorker](<a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/SharedWorker">https://developer.mozilla.org/en-US/docs/Web/API/SharedWorker</a>) technology allows a single [Web Worker](<a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/API/Worker">https://developer.mozilla.org/en-US/docs/Web/API/Worker</a>) to be shared between all the tabs opened on the same origin, with many advantages:</p>
 <ul class="simple">
 <li><p>Gain in resources on the client (memory, CPU and network saved by avoiding the repetition of tasks)</p></li>
 <li><p>Gain in resources on the server (only one connection with each client)</p></li>
-<li><p>The &quot;workers&quot; represent code executed in a different thread from the main tab, allowing heavier calculations to be performed without slowing down the page.</p></li>
+<li><p>The <strong>workers</strong> represent code executed in a different thread from the main tab, allowing heavier calculations to be performed without slowing down the page.</p></li>
 </ul>
 <p>Please note that not all browsers have implemented SharedWorkers. They are only available on Firefox and Chromium-based browsers. Internet Explorer as well as older versions of Edge do not support them but the newer versions of Edge are based on Chromium and allow it. Apple refuses to develop them for Safari.</p>
-<p>For these obsolete browsers, the system automatically switches to classic &quot;WebWorkers&quot;, i.e. 1 worker per tab. This still allows the use of a separate thread for heavier calculations, but it strongly slows down the loading of tabs when the user account contains a lot of data. Finally, if the WebWorkers have been disabled in the browser, a last-resort system is in place to perform the work of the worker in the main tab at the &quot;outer&quot; level. This has no impact on the functioning of the code but does not benefit from the advantages of the workers.</p>
+<p>For these obsolete browsers, the system automatically switches to classic Web Workers, i.e. 1 worker per tab. This still allows the use of a separate thread for heavier calculations, but it strongly slows down the loading of tabs when the user account contains a lot of data. Finally, if the WebWorkers have been disabled in the browser, a last-resort system is in place to perform the work of the worker in the main tab at the <strong>outer</strong> level. This has no impact on the functioning of the code but does not benefit from the advantages of the workers.</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>It is possible to easily disable the use of workers in CryptPad. This can facilitate debugging in some cases, since the Shared Workers console is not easily accessible. To do this, simply enter <code class="docutils literal notranslate"><span class="pre">localStorage.CryptPad_noWorkers</span> <span class="pre">=</span> <span class="pre">&quot;1&quot;</span></code> in the JavaScript console of the browser. To re-enable the Shared Workers, you must then delete or change the value of this key in localStorage.</p>
@@ -653,7 +660,7 @@
 </section>
 <section id="content">
 <h3>Content<a class="headerlink" href="#content" title="この見出しへのパーマリンク">¶</a></h3>
-<p>The &quot;worker&quot; level is opened from the &quot;outer&quot; level, once initial checks have been performed. It's the &quot;outer&quot; code that decides which type of worker it can use (SharedWorker, WebWorker or nothing). It then initializes the worker with the &quot;connector&quot; corresponding to this type of worker:</p>
+<p>The <strong>worker</strong> level is opened from the <strong>outer</strong> level, once initial checks have been performed. It's the <strong>outer</strong> code that decides which type of worker it can use (SharedWorker, WebWorker or nothing). It then initializes the worker with the &quot;connector&quot; corresponding to this type of worker:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">www/common/outer/sharedworker.js</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">www/common/outer/webworker.js</span></code></p></li>
@@ -661,9 +668,9 @@
 </ul>
 <p>Once the connector is loaded with the desired technology, the exact same code governs all 3 types of systems.</p>
 <ol class="arabic simple">
-<li><p>An <strong>asynchronous communication channel</strong> is first initialized with the &quot;outer&quot; level to receive commands and send events.</p></li>
+<li><p>An <strong>asynchronous communication channel</strong> is first initialized with the <strong>outer</strong> level to receive commands and send events.</p></li>
 <li><p>A file <code class="docutils literal notranslate"><span class="pre">wwww/common/outer/store-rpc.js</span></code> translates text commands into functions to be called.</p></li>
-<li><p>A Store object is created in <cite>wwww/common/outer/async-store.js</cite>. It contains the functions corresponding to the commands and loads all the modules necessary for the worker to function.</p></li>
+<li><p>A Store object is created in <code class="docutils literal notranslate"><span class="pre">www/common/outer/async-store.js</span></code>. It contains the functions corresponding to the commands and loads all the modules necessary for the worker to function.</p></li>
 </ol>
 <p>Access to content stored in the server database is done with commands to the worker. This content represents:</p>
 <ul class="simple">
@@ -676,7 +683,7 @@
 </section>
 <section id="debugging">
 <h3>Debugging<a class="headerlink" href="#debugging" title="この見出しへのパーマリンク">¶</a></h3>
-<p>When a user encounters a bug in CryptPad, everything usually happens at the client level and no data is transmitted to the server. The JavaScript console can then detect any error that may have occurred in the code, but this console only concerns the current tab, i.e. it is limited to the &quot;outer&quot; and &quot;inner&quot; levels and it is not possible to access the &quot;SharedWorker&quot; level directly.</p>
+<p>When a user encounters a bug in CryptPad, everything usually happens at the client level and no data is transmitted to the server. The JavaScript console can then detect any error that may have occurred in the code, but this console only concerns the current tab, i.e. it is limited to the <strong>outer</strong> and <strong>inner</strong> levels and it is not possible to access the &quot;SharedWorker&quot; level directly.</p>
 <p>To access the <strong>SharedWorker's console</strong>:</p>
 <ul class="simple">
 <li><p>In Chrome and Chromium</p>
@@ -707,31 +714,31 @@
 <h2>Outer<a class="headerlink" href="#outer" title="この見出しへのパーマリンク">¶</a></h2>
 <section id="fonctionnement-1">
 <span id="id1"></span><h3>Workflow<a class="headerlink" href="#fonctionnement-1" title="この見出しへのパーマリンク">¶</a></h3>
-<p>The level called &quot;outer&quot; is the base level, corresponding to the HTML file loaded by the browser. Its name comes from the fact that the code is located outside of the iframe.</p>
-<p>Each application starts with its own file &quot;index.html&quot;. This file will load the basic JavaScript code, usually located in a &quot;main.js&quot; file for the application. Here we try to initialize the different levels as quickly as possible because the &quot;outer&quot; level doesn't display any interface and displaying a white screen is not interesting for the user.</p>
-<p>The &quot;main.js&quot; file of each application will then start loading the main code, common to all applications at the &quot;outer&quot; level. The first part is located in <code class="docutils literal notranslate"><span class="pre">wwww/common/sframe-common-outer.js</span></code>. This is the module that will handle the communication between the &quot;outer&quot; and &quot;inner&quot; levels. In the same way as for the worker, these 2 levels can send commands or events to each other.</p>
-<p>This module will also load <code class="docutils literal notranslate"><span class="pre">wwww/common/cryptpad-common.js</span></code> which represents the communication between the &quot;outer&quot; and &quot;worker&quot; levels. &quot;Cryptpad-common&quot; will first choose the best type of worker available in the browser. It will initialize it, create a communication channel and then send the main command to load the user account.</p>
+<p>The level called <strong>outer</strong> is the base level, corresponding to the HTML file loaded by the browser. Its name comes from the fact that the code is located outside of the iframe.</p>
+<p>Each application starts with its own file &quot;index.html&quot;. This file will load the basic JavaScript code, usually located in a &quot;main.js&quot; file for the application. Here we try to initialize the different levels as quickly as possible because the <strong>outer</strong> level doesn't display any interface and displaying a white screen is not interesting for the user.</p>
+<p>The &quot;main.js&quot; file of each application will then start loading the main code, common to all applications at the <strong>outer</strong> level. The first part is located in <code class="docutils literal notranslate"><span class="pre">wwww/common/sframe-common-outer.js</span></code>. This is the module that will handle the communication between the <strong>outer</strong> and <strong>inner</strong> levels. In the same way as for the worker, these 2 levels can send commands or events to each other.</p>
+<p>This module will also load <code class="docutils literal notranslate"><span class="pre">wwww/common/cryptpad-common.js</span></code> which represents the communication between the <strong>outer</strong> and <strong>worker</strong> levels. &quot;Cryptpad-common&quot; will first choose the best type of worker available in the browser. It will initialize it, create a communication channel and then send the main command to load the user account.</p>
 <p>Once the user account is loaded by the worker, &quot;sframe-common-outer&quot; will be able to start loading the document (if applicable) or the content of the selected application.</p>
-<p>The &quot;outer&quot; level thus functions as an intermediary between the interface and the &quot;local database&quot;.</p>
+<p>The <strong>outer</strong> level thus functions as an intermediary between the interface and the &quot;local database&quot;.</p>
 </section>
 <section id="contenu-1">
 <span id="id2"></span><h3>Content<a class="headerlink" href="#contenu-1" title="この見出しへのパーマリンク">¶</a></h3>
-<p>The tasks performed by &quot;outer&quot; are not limited to initializing content and transmitting messages. The code is based on the principle that several CryptPad tabs will be opened in the browser. The SharedWorker performs regular tasks in a thread common to all these tabs, but this thread must not be overloaded at the risk of slowing down all the tabs. This is why, when a tab wants to access a collaborative document, the recovery of the encrypted content is done by the &quot;worker&quot;, but the <strong>decryption</strong> itself is done in &quot;outer&quot;.</p>
-<p>The &quot;outer&quot; level also handles some document operations requiring encryption like changing the password of a document or making a copy of it.</p>
+<p>The tasks performed by <strong>outer</strong> are not limited to initializing content and transmitting messages. The code is based on the principle that several CryptPad tabs will be opened in the browser. The SharedWorker performs regular tasks in a thread common to all these tabs, but this thread must not be overloaded at the risk of slowing down all the tabs. This is why, when a tab wants to access a collaborative document, the recovery of the encrypted content is done by the <strong>worker</strong>, but the decryption itself is done in <strong>outer</strong>.</p>
+<p>The <strong>outer</strong> level also handles some document operations requiring encryption like changing the password of a document or making a copy of it.</p>
 </section>
 </section>
 <section id="inner">
 <h2>Inner<a class="headerlink" href="#inner" title="この見出しへのパーマリンク">¶</a></h2>
 <section id="fonctionnement-2">
 <span id="id3"></span><h3>Workflow<a class="headerlink" href="#fonctionnement-2" title="この見出しへのパーマリンク">¶</a></h3>
-<p>When a new tab is opened, &quot;outer&quot; will load the main &quot;inner&quot; iframe as soon as possible. Each application has its own page &quot;inner.html&quot; which represents the starting point of the iframe. This file will then load the basic code of the application &quot;inner.js&quot;, which will be responsible for opening all the necessary modules. Most of the modules being common to all applications, the &quot;inner.js&quot; file is often the only file specific to a given application.</p>
-<p>The important elements loaded by &quot;inner.js&quot; are about the communication with &quot;outer&quot;, the common interface elements (toolbar, reusable menus, etc.) but also the whole style of the application. The style is loaded by a &quot;.less&quot; file specific to the application from &quot;inner.js&quot;. The less files are compiled to CSS directly in the client's browser. This allows for the full use of advanced LESS functions, for example mixins, without worrying about adding a build step.</p>
-<p>The purpose of the main &quot;inner&quot; iframe is to work with a different domain (or HTTP origin), which benefits from additional &quot;cross-domain&quot; protections. This iframe is the only part of the system that displays an interface where users interact with each other, which makes it particularly vulnerable in case of a code flaw. Isolating it, on the one hand within an iframe, and on the other hand with a different domain, makes it possible to protect all data that is not directly displayed in the document. It is in fact <strong>impossible to recover the keys of the current document</strong> from the &quot;inner&quot; iframe. Only the decrypted content is accessible, as well as the public data of the user and the current users of the pad.</p>
-<p>To display sensitive data such as the document link, password, or owners, the share or access modals are opened in a separate iframe, called &quot;secure-iframe&quot;. This secure iframe has access to sensitive data, but it has no direct contact with themain &quot;inner&quot; iframe. All possible exchanges between the main iframe (which displays the open application) and the secure iframe (which displays sensitive data) are done through &quot;outer&quot;. These two iframes are both daughters of &quot;outer&quot; and therefore cannot access each other's data which preserves the sandbox behavior.</p>
+<p>When a new tab is opened, <strong>outer</strong> will load the main <strong>inner</strong> iframe as soon as possible. Each application has its own page &quot;inner.html&quot; which represents the starting point of the iframe. This file will then load the basic code of the application &quot;inner.js&quot;, which will be responsible for opening all the necessary modules. Most of the modules being common to all applications, the &quot;inner.js&quot; file is often the only file specific to a given application.</p>
+<p>The important elements loaded by &quot;inner.js&quot; are about the communication with <strong>outer</strong>, the common interface elements (toolbar, reusable menus, etc.) but also the whole style of the application. The style is loaded by a &quot;.less&quot; file specific to the application from &quot;inner.js&quot;. The less files are compiled to CSS directly in the client's browser. This allows for the full use of advanced LESS functions, for example mixins, without worrying about adding a build step.</p>
+<p>The purpose of the main <strong>inner</strong> iframe is to work with a different domain (or HTTP origin), which benefits from additional &quot;cross-domain&quot; protections. This iframe is the only part of the system that displays an interface where users interact with each other, which makes it particularly vulnerable in case of a code flaw. Isolating it, on the one hand within an iframe, and on the other hand with a different domain, makes it possible to protect all data that is not directly displayed in the document. It is in fact <strong>impossible to recover the keys of the current document</strong> from the <strong>inner</strong> iframe. Only the decrypted content is accessible, as well as the public data of the user and the current users of the pad.</p>
+<p>To display sensitive data such as the document link, password, or owners, the share or access modals are opened in a separate iframe, called &quot;secure-iframe&quot;. This secure iframe has access to sensitive data, but it has no direct contact with the main <strong>inner</strong> iframe. All possible exchanges between the main iframe (which displays the opened application) and the secure iframe (which displays sensitive data) are done through <strong>outer</strong>. These two iframes are both daughters of <strong>outer</strong> and therefore cannot access each other's data which preserves the sandbox behavior.</p>
 </section>
 <section id="contenu-2">
 <span id="id4"></span><h3>Content<a class="headerlink" href="#contenu-2" title="この見出しへのパーマリンク">¶</a></h3>
-<p>The &quot;inner&quot; iframes display the entire user interface. This concerns both elements common to all applications (toolbar, user menu, main actions) and elements common to collaborative documents (access or sharing modals, user list) as well as elements specific to each application (content rendering). The &quot;share&quot;, &quot;access&quot;, &quot;properties&quot; modals as well as the upload or file selection popups are displayed by the secure iframe. All the rest is in the main iframe.</p>
+<p>The <strong>inner</strong> iframes display the entire user interface. This concerns both elements common to all applications (toolbar, user menu, main actions) and elements common to collaborative documents (access or sharing modals, user list) as well as elements specific to each application (content rendering). The &quot;share&quot;, &quot;access&quot;, &quot;properties&quot; modals as well as the upload or file selection popups are displayed by the secure iframe. All the rest is in the main iframe.</p>
 </section>
 </section>
 </section>

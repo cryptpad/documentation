@@ -107,7 +107,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#settings">Настройки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#account">Учетная запись</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#confidentiality">Конфиденциальность</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#security-privacy">Security &amp; Privacy</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#appearance">Внешний вид</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#cryptdrive">CryptDrive</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#cursor">Курсор</a></li>
@@ -116,7 +116,6 @@
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#subscription">Подписка</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#support">Техподдержка</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#notifications">Уведомления</a></li>
 </ul>
 </li>
@@ -282,6 +281,12 @@
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/kanban.html#import-export">Импорт/Экспорт</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/diagram.html">Diagram</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/diagram.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/diagram.html#toolbars">Toolbars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/diagram.html#import-export">Import/Export</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/whiteboard.html">Рисунки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/whiteboard.html#toolbar">Инструменты</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/whiteboard.html#drawing">Рисование</a></li>
@@ -310,13 +315,15 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#install-cryptpad">Install Cryptpad</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#dependencies">Dependencies</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#configuration">Configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#daemonization">Daemonization</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#recommended">Recommended</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#dependencies">Dependencies</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#configuration">Configuration</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#daemonization">Daemonization</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#systemd">Systemd</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#freebsd">FreeBSD</a></li>
 </ul>
 </li>
+<li class="toctree-l4"><a class="reference internal" href="#docker">Docker</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#admin-domain-config">Domains</a></li>
@@ -652,24 +659,28 @@
 <section id="software">
 <h3>Software<a class="headerlink" href="#software" title="Permalink to this heading">¶</a></h3>
 <p>Before starting the installation, ensure the following software is installed:</p>
-<ul class="simple">
-<li><p>GIT</p></li>
-<li><p>nodejs (we use node v16.14.2)</p>
 <ul>
-<li><p>Using <a class="reference external" href="https://github.com/nvm-sh/nvm#installing-and-updating">NVM</a> is recommended</p></li>
+<li><p>GIT</p></li>
+<li><p>Nodejs (we use the official NodeJs LTS release)</p>
+<ul class="simple">
+<li><p>Using <a class="reference external" href="https://github.com/nodesource/distributions#using-debian-as-root-4">nodesource</a> is recommended</p></li>
 </ul>
 </li>
-<li><p>npm</p></li>
-<li><p>bower</p>
-<ul>
-<li><p>Installed with <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span> <span class="pre">-g</span> <span class="pre">bower</span></code></p></li>
+<li><p>NPM</p></li>
+<li><p>Docker engine (if using Docker, see <a class="reference internal" href="#admin-docker-install"><span class="std std-ref">Install with Docker</span></a>)</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>See <a class="reference external" href="https://docs.docker.com/engine/install/debian/">the official Docker installation guide</a></p></li>
 </ul>
+</div></blockquote>
 </li>
 </ul>
 </section>
 </section>
 <section id="install-cryptpad">
 <h2>Install Cryptpad<a class="headerlink" href="#install-cryptpad" title="Permalink to this heading">¶</a></h2>
+<section id="recommended">
+<span id="admin-recommended-install"></span><h3>Recommended<a class="headerlink" href="#recommended" title="Permalink to this heading">¶</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Примечание</p>
 <p>The development team recommends creating a dedicated user to install and run CryptPad in production rather than using the root user.</p>
@@ -683,15 +694,15 @@
 </pre></div>
 </div>
 <section id="dependencies">
-<h3>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this heading">¶</a></h3>
+<h4>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this heading">¶</a></h4>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> cryptpad
 npm install
-bower install
+npm run install:components
 </pre></div>
 </div>
 </section>
 <section id="configuration">
-<h3>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h3>
+<h4>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h4>
 <p>Copy the example configuration</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> cryptpad/config
 cp config.example.js config.js
@@ -707,8 +718,9 @@ node server
 <p>The instance is now ready to run but cannot yet be accessed from the internet.</p>
 </section>
 <section id="daemonization">
-<h3>Daemonization<a class="headerlink" href="#daemonization" title="Permalink to this heading">¶</a></h3>
+<h4>Daemonization<a class="headerlink" href="#daemonization" title="Permalink to this heading">¶</a></h4>
 <p>In production you may want to run CryptPad as a daemon that restarts automatically.</p>
+</section>
 <section id="systemd">
 <h4>Systemd<a class="headerlink" href="#systemd" title="Permalink to this heading">¶</a></h4>
 <p>To run CryptPad as a <a class="reference external" href="https://www.freedesktop.org/software/systemd/man/systemd.service.html">systemd</a> service, please follow the example <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/docs/cryptpad.service">cryptpad.service</a> file.</p>
@@ -728,6 +740,36 @@ node server
 <li><p>Enable the service at startup with <code class="docutils literal notranslate"><span class="pre">service</span> <span class="pre">cryptpad</span> <span class="pre">enable</span></code></p></li>
 </ol>
 </section>
+</section>
+<section id="docker">
+<span id="admin-docker-install"></span><h3>Docker<a class="headerlink" href="#docker" title="Permalink to this heading">¶</a></h3>
+<p><span class="badge-new">New in version 5.4</span></p>
+<p>While we still prefer <a class="reference internal" href="#admin-recommended-install"><span class="std std-ref">the recommended installation method</span></a>, Docker is now officially supported.</p>
+<p>We provide the following files in the CryptPad repository:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">.dockerignore</span></code> is useful to remove parts of the repository from the image (avoid making it use too much storage)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Dockerfile</span></code> is used to build the Docker image itself</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">docker-entrypoint.sh</span></code> allows to configure a few things (domain names and build static assets)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">docker-compose.yml</span></code> used to create a container using the image and keep it running</p></li>
+</ul>
+<ol class="arabic">
+<li><p>Build your own Docker image</p>
+<div class="highlight-docker notranslate"><div class="highlight"><pre><span></span>docker build -t cryptpad/cryptpad:version-5.4.0 .
+</pre></div>
+</div>
+</li>
+<li><p>Modify <code class="docutils literal notranslate"><span class="pre">docker-compose.yml</span></code> with your own values</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">CPAD_MAIN_DOMAIN</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">CPAD_SANDBOX_DOMAIN</span></code></p></li>
+</ul>
+</li>
+<li><p>Run the container with Docker Compose</p>
+<div class="highlight-docker notranslate"><div class="highlight"><pre><span></span>docker compose up -d
+</pre></div>
+</div>
+</li>
+</ol>
 </section>
 </section>
 <section id="admin-domain-config">
