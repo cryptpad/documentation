@@ -16,7 +16,7 @@ Hardware
 
 The development team uses and recommends the following hardware requirements as a minimum on the host machine:
 
--  Debian 11
+-  Debian 12
 -  2GB RAM
 -  2 CPUs
 -  20GB storage (depending on planned usage)
