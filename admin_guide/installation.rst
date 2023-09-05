@@ -155,6 +155,12 @@ We provide the following files in the CryptPad repository:
    - ``CPAD_MAIN_DOMAIN``
    - ``CPAD_SANDBOX_DOMAIN``
 
+#. Set appropriate permissions
+
+   .. code:: bash
+
+      sudo chown -R 4001:4001 data customize
+
 #. Run the container with Docker Compose
 
    .. code:: docker
@@ -204,7 +210,7 @@ To configure Nginx for CryptPad:
 
    - `Basic example <https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf>`__ for small and midsize instances, where everything is processed by NodeJS
    - `Advanced example <https://github.com/cryptpad/cryptpad/blob/main/docs/example-advanced.nginx.conf>`__ for big instances, where Nginx handle static content and only websocket connections are processed by NodeJS
-   
+
 2. Edit the configuration file with the correct domains and paths to certificates.
 3. Run ``openssl dhparam -out /etc/nginx/dhparam.pem 4096`` if you haven’t done so already on the host machine.
 
