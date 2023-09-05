@@ -148,7 +148,7 @@ We provide the following files in the CryptPad repository:
 
    .. code:: docker
 
-      docker build -t cryptpad/cryptpad:version-5.4.0 .
+      docker build -t cryptpad/cryptpad:version-5.5.0 .
 
 #. Modify ``docker-compose.yml`` with your own values
 
