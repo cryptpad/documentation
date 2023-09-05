@@ -179,7 +179,7 @@ The `example Nginx configuration <https://github.com/cryptpad/cryptpad/blob/main
 
 1. two domains or subdomains
 2. to include both domains in ``cryptpad/config/config.js`` as described in :ref:`admin_cryptpad_config`
-3. to generate one SSL certificate that covers both domains. The development team uses `acme.sh <https://acme.sh/>`__ and this is reflected in the example config.
+3. to generate one TLS certificate that covers both domains. The development team uses `acme.sh <https://acme.sh/>`__ and this is reflected in the example config.
 4. to correctly assign both domains and certificates to the relevant variables in the `example Nginx configuration <https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf>`__
 
 .. warning::
@@ -191,11 +191,11 @@ The `example Nginx configuration <https://github.com/cryptpad/cryptpad/blob/main
 Install and configure Nginx
 ---------------------------
 
-CryptPad’s application server handles active connections via websocket and serves static assets (HTML, Javascript, CSS, etc.). This basic configuration is designed to be very easy to configure for local development, but it does not protect traffic with SSL or handle many concurrent users very well.
+CryptPad’s application server handles active connections via websocket and serves static assets (HTML, Javascript, CSS, etc.). This basic configuration is designed to be very easy to configure for local development, but it does not protect traffic with TLS or handle many concurrent users very well.
 
 In a production environment, the development team recommends `Nginx <https://nginx.org/en/linux_packages.html#Debian>`__ for the following reasons:
 
-1. Protect traffic with SSL (so your users can reach your instance via HTTPS)
+1. Protect traffic with TLS (so your users can reach your instance via HTTPS)
 2. Scale to many more users by serving static content with a more scalable web-server instead of the single-threaded NodeJS web-server that is built-in
 3. Allow the application server to focus exclusively on handling websocket connections
 
