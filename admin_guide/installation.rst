@@ -134,8 +134,6 @@ To run CryptPad as a `rc.d <https://man.freebsd.org/cgi/man.cgi?query=rc.d&sekti
 Docker
 ~~~~~~
 
-:badge_new:`New in version 5.4`
-
 While we still prefer :ref:`the recommended installation method <admin_recommended_install>`, Docker is now officially supported.
 
 We provide the following files in the CryptPad repository:
