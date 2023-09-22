@@ -1,0 +1,191 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, CryptPad Team
+# This file is distributed under the same license as the CryptPad package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CryptPad \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-22 11:26+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../dev_guide/client/outer.rst:2
+msgid "Outer"
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:4
+msgid ""
+"The \"outer\" level represents the starting point of the CryptPad code. "
+"Except for the initial HTML file loaded by the browser, this level is "
+"entirely made of JavaScript code. It is split into two main files, which "
+"are connected to the iframe inner for one and to the worker for the "
+"other. The APIs used to communicate are the same in both cases."
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:7
+msgid "Communication between levels"
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:9
+msgid ""
+"The communication is done using ``wwww/common/outer/worker-channel.js``, "
+"a mini-library developed in CryptPad. This library allows two systems to "
+"send \"query\" and \"event\" messages to each other. A \"query\" consists"
+" of sending data and waiting for a response, while an \"event\" is just "
+"sending data."
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:11
+msgid ""
+"This library automatically manages callbacks for received answers and "
+"allows each party to indicate when it is ready to communicate. The way "
+"messages are sent is managed outside the library thanks to a "
+"``sendMessage`` function that is provided as an argument. If it is a "
+"query, a callback is included with the data."
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:14
+msgid "Communication with inner"
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:16
+msgid "``www/common/sframe-common-outer.js``"
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:18
+msgid ""
+"This is one of the first main JavaScript files loaded by all CryptPad "
+"applications. It is loaded just after the creation of the inner iframe "
+"and will first proceed to the installation of a communication channel "
+"between these two levels. Once this channel is created, it will load the "
+"second main JavaScript file which will manage the \"worker\" side. This "
+"is also the only file that has direct access to the keys contained in the"
+" URL of the document."
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:20
+msgid "Two steps take place in parallel:"
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:22
+msgid "loading the user account in the worker"
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:23
+msgid "loading the application interface in the inner iframe"
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:25
+msgid ""
+"Once the user account is loaded, ``sframe-common-outer`` initializes all "
+"its \"handlers\" which manage the events and queries received from "
+"\"inner\". There are many such \"handlers\" which can be found in the "
+"code by searching for  ``sframeChan.on('...', handler);``. They are "
+"notably used to:"
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:27
+msgid "Execute functions related to the \"outer\" level"
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:29
+msgid "Change the title of the tab or its icon"
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:30
+msgid "Modify the localStorage or modify theStorage session"
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:32
+msgid "Execute functions related to the keys of the document"
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:34
+msgid ""
+"Change the document password (requires decrypting and re-encrypting the "
+"entire content)"
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:35
+msgid ""
+"Save or modify the pad data in the drive (the URL of the pad is stored in"
+" the drive)"
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:36
+msgid ""
+"Make a copy or make a template of the document (requires access to the "
+"decrypted content to re-encrypt it differently)"
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:38
+msgid "Transfer commands to the worker"
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:40
+msgid "File Upload"
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:41
+msgid "Access to more data"
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:42
+msgid "Join a document in order to send and receive patches"
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:43
+msgid "Document management actions (rename, delete, access list, owners, etc.)"
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:45
+msgid "Transfer commands to the worker's modules"
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:47
+msgid ""
+"These commands usually only pass through here, they are not read and are "
+"sent directly to the worker"
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:49
+msgid ""
+"Once all these \"handlers\" have been registered, ``sframe-common-outer``"
+" declares itself \"ready\" and, once \"inner\" declares the same, the "
+"script starts the realtime engine (if necessary) creating a new document "
+"or joining an existing one."
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:52
+msgid "Communication with the worker"
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:54
+msgid "``www/common/cryptpad-common.js``"
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:56
+msgid ""
+"The main role of this file is to create a communication channel with the "
+"worker and to initialize it for the user account. The keys of the account"
+"  have been extracted from the localStorage beforehand. Once the user "
+"account and all the modules are loaded, the worker sends a signal to "
+"cryptpad-common which allows the sframe-common-outer script to continue."
+msgstr ""
+
+#: ../../dev_guide/client/outer.rst:58
+msgid ""
+"Apart from this user account loading process, ``cryptpad-common`` keeps a"
+" privileged contact with the worker. This allows it to perform some tasks"
+" specific to the current tab but which require access to the worker's "
+"data."
+msgstr ""
+
