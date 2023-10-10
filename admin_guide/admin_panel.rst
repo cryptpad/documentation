@@ -162,7 +162,22 @@ Send a message to all users on this instance. All existing and new users will re
 Performance
 -----------
 
-An overview of the total time spent executing various server-side commands.
+This section is dedicated to available measurments for checking resources consumption.
+
+Performance
+~~~~~~~~~~~
+
+An overview of the total time spent executing various server-side commands
+
+Measure disk performance
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+If enabled, a JSON API endpoint will be exposed under /api/profiling. This keeps a running measurement of disk I/O within the time window set below. This setting can impact server performance and may reveal sensitive data. It is recommended that you leave this setting disabled unless you know what you are doing. 
+
+Disk performance measurement window
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you have enabled disk performance measurements then the duration of the window can be configured below.
 
 Network
 --------
