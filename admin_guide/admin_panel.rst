@@ -198,6 +198,11 @@ Server telemetry
 
 **Opt-out** of daily messages sent from the instance to the development team's server. The purpose of these messages is to count how many third-party instances of CryptPad are in operation and which version of the software they are running. The full content of the messages can be reviewed in CryptPad's server logs.
 
+Statistical aggregation
+~~~~~~~~~~~~~~~~~~~~~~~
+
+You may opt-in to providing additional usage metrics to the developers, such as the approximate number of registered and daily users for your instance.
+
 .. _admin_list_public:
 
 List my instance in public directories
