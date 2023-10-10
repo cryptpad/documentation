@@ -117,8 +117,9 @@ Users can copy recovery data on the 2FA recovery page /recovery/ and email it to
 Statistics
 ----------
 
+-  Launch time: Date and time at which the server was launched
 -  Active connections: Number of active websocket connections (and unique IP addresses connected)
--  Active pads: Number of unique documents currently being viewed or edited
+-  Active documents: Number of unique documents currently being viewed or edited
 -  Open Files: Number of file descriptors currently open on the server
 -  Registered users: Number of users registered on your instance
 -  Disk usage: Amount of storage space consumed by various CryptPad resources
