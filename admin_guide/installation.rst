@@ -76,7 +76,7 @@ Dependencies
 .. code:: bash
 
    cd cryptpad
-   npm install
+   npm ci
    npm run install:components
 
 Configuration
