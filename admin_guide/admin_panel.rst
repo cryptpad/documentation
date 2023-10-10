@@ -84,25 +84,8 @@ Apply a custom limit
 
 Set custom limits for users by using their public key. You can update or remove an existing limit.
 
-Archive documents
-~~~~~~~~~~~~~~~~~
-
-Make a document unavailable without deleting it permanently. It will be placed in an ‘archive’ directory and deleted after a few days (configurable in the server configuration file).
-
-Make a document unavailable, for example for moderation in the case where a document with inappropriate/illegal content is reported.
-
-Restore documents
-~~~~~~~~~~~~~~~~~
-
-Restore a document that had previously been archived.
-
-Check account storage
-~~~~~~~~~~~~~~~~~~~~~
-
-Check the total size of items counted against a user or team’s quota given their public key.
-
-List of custom limits
-~~~~~~~~~~~~~~~~~~~~~
+Custom limits
+~~~~~~~~~~~~~
 
 List all the custom storage limits applied to your instance.
 
