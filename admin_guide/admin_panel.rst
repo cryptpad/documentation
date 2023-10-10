@@ -89,6 +89,31 @@ Custom limits
 
 List all the custom storage limits applied to your instance.
 
+Database
+--------
+
+This section is dedicated for the database management. You will find moderation tools and specific information about the accounts registered.
+
+Account information
+~~~~~~~~~~~~~~~~~~~
+
+Enter a user's public key to fetch data about their account.
+
+Document information
+~~~~~~~~~~~~~~~~~~~~
+
+Query a document or file via its id or URL
+
+Login-block information
+~~~~~~~~~~~~~~~~~~~~~~~
+
+The login block is what allows an account to log in to CryptPad with the combination of username + password
+
+2FA Recovery
+~~~~~~~~~~~~
+
+Users can copy recovery data on the 2FA recovery page /recovery/ and email it to the instance administrators. Paste recovery data below to disable 2FA for an account
+
 Statistics
 ----------
 
