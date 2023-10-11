@@ -26,8 +26,6 @@ audio,
 canvas,
 video {
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
 }
 
 audio:not([controls]) {
@@ -202,7 +200,6 @@ input[type="reset"],
 input[type="submit"] {
     cursor: pointer;
     -webkit-appearance: button;
-    *overflow: visible;
 }
 
 button[disabled],
@@ -214,8 +211,6 @@ input[type="checkbox"],
 input[type="radio"] {
     box-sizing: border-box;
     padding: 0;
-    *width: 13px;
-    *height: 13px;
 }
 
 input[type="search"] {
@@ -438,9 +433,6 @@ textarea,
     -webkit-font-smoothing: antialiased;
 }
 
-.clearfix {
-    *zoom: 1;
-}
 
 .clearfix::before,
 .clearfix::after {
@@ -1198,7 +1190,6 @@ button {
     cursor: pointer;
     line-height: normal;
     -webkit-appearance: button;
-    *overflow: visible;
 }
 
 button::-moz-focus-inner,
@@ -1229,7 +1220,6 @@ button[disabled] {
     box-shadow: 0 1px 2px -1px rgba(255, 255, 255, 0.5) inset, 0 -2px 0 0 rgba(0, 0, 0, 0.1) inset;
     outline-none: false;
     vertical-align: middle;
-    *display: inline;
     zoom: 1;
     -webkit-user-drag: none;
     -webkit-user-select: none;
@@ -1387,7 +1377,6 @@ button[disabled] {
 
 .wy-btn-group {
     margin-bottom: 24px;
-    *zoom: 1;
 }
 
 .wy-btn-group::before,
@@ -1519,8 +1508,6 @@ button[disabled] {
 .wy-form-aligned .wy-help-inline,
 .wy-form-aligned label {
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
     vertical-align: middle;
 }
 
@@ -1573,11 +1560,9 @@ textarea {
 
 .wy-control-group {
     margin-bottom: 24px;
-    *zoom: 1;
     max-width: 68em;
     margin-left: auto;
     margin-right: auto;
-    *zoom: 1;
 }
 
 .wy-control-group::before,
@@ -1776,7 +1761,6 @@ input[type="submit"] {
     -webkit-appearance: button;
     cursor: pointer;
     font-family: "Open Sans", sans-serif;
-    *overflow: visible;
 }
 
 input[type="text"],
@@ -1821,8 +1805,6 @@ input[type="radio"] {
     box-sizing: border-box;
     padding: 0;
     margin-right: 0.3125em;
-    *height: 13px;
-    *width: 13px;
 }
 
 input[type="search"] {
@@ -1968,8 +1950,6 @@ input[type="checkbox"][disabled] {
 
 .wy-form-message-inline {
     display: inline-block;
-    *display: inline;
-    *zoom: 1;
     vertical-align: middle;
 }
 
@@ -2686,7 +2666,6 @@ ul > li {
 
 
 .wy-breadcrumbs {
-    *zoom: 1;
     background: #f3f3f3;
     padding: 0.2em 1em;
     margin-bottom: 1em;
@@ -2765,9 +2744,6 @@ ul > li {
     text-decoration: none;
 }
 
-.wy-menu-horiz {
-    *zoom: 1;
-}
 
 .wy-menu-horiz::before,
 .wy-menu-horiz::after {
@@ -3169,7 +3145,6 @@ select#language-selector-container option {
     line-height: 50px;
     text-align: center;
     font-size: 100%;
-    *zoom: 1;
 }
 
 .wy-nav-top::before,
@@ -3249,9 +3224,6 @@ footer span.commit .rst-content tt,
     color: gray;
 }
 
-.rst-footer-buttons {
-    *zoom: 1;
-}
 
 .rst-footer-buttons::before,
 .rst-footer-buttons::after {
@@ -3270,7 +3242,6 @@ footer span.commit .rst-content tt,
 
 .rst-breadcrumbs-buttons {
     margin-top: 12px;
-    *zoom: 1;
 }
 
 .rst-breadcrumbs-buttons::before,
@@ -3404,7 +3375,6 @@ footer span.commit .rst-content tt,
     font-size: 90%;
     cursor: pointer;
     color: #27ae60;
-    *zoom: 1;
 }
 
 .rst-versions .rst-current-version::before,
