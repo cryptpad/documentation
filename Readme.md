@@ -39,7 +39,7 @@ View the result in `/_build/html/`
 
 ## Translations
 
-If you are interested in translating this documentation, you can use our [Weblate project](https://weblate.cryptpad.fr/projects/user-guide/) for the user guide. If your language is not listed, please [contact the development team](https://cryptpad.fr/contact.html) to add it.
+If you are interested in translating this documentation, you can use our [Weblate project](https://weblate.cryptpad.org/projects/user-guide/) for the user guide. If your language is not listed, please [contact the development team](https://cryptpad.fr/contact.html) to add it.
 
 To add a new language
 ```

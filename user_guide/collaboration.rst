@@ -241,7 +241,7 @@ Administration tab
 
 :badge_owner:`Team owners`
 
--  **Public signing key**: Used to identify the team on instances that offer subscitpions.
+-  **Public signing key**: Used to identify the team on instances that offer subscriptions.
 -  **Team name**: Change the name of the team.
 -  **Team avatar**: Import/modify an avatar for the team.
 -  **Download team drive**: Save the content of all documents in the CryptDrive. When possible, this is done in a format that is readable by other software. Some applications produce files that are only readable by CryptPad.

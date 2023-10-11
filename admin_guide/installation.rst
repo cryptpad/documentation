@@ -16,7 +16,7 @@ Hardware
 
 The development team uses and recommends the following hardware requirements as a minimum on the host machine:
 
--  Debian 11
+-  Debian 12
 -  2GB RAM
 -  2 CPUs
 -  20GB storage (depending on planned usage)
@@ -132,8 +132,6 @@ To run CryptPad as a `rc.d <https://man.freebsd.org/cgi/man.cgi?query=rc.d&sekti
 Docker
 ~~~~~~
 
-:badge_new:`New in version 5.4`
-
 While we still prefer :ref:`the recommended installation method <admin_recommended_install>`, Docker is now officially supported.
 
 We provide the following files in the CryptPad repository:
@@ -148,12 +146,18 @@ We provide the following files in the CryptPad repository:
 
    .. code:: docker
 
-      docker build -t cryptpad/cryptpad:version-5.4.0 .
+      docker build -t cryptpad/cryptpad:version-5.5.0 .
 
 #. Modify ``docker-compose.yml`` with your own values
 
    - ``CPAD_MAIN_DOMAIN``
    - ``CPAD_SANDBOX_DOMAIN``
+
+#. Set appropriate permissions
+
+   .. code:: bash
+
+      sudo chown -R 4001:4001 data customize
 
 #. Run the container with Docker Compose
 
@@ -173,29 +177,24 @@ You need two domains to take full advantage of CryptPad’s security features.
 
 The intent of this system is to limit the risk of Cross-Site Scripting (XSS) vulnerabilities allowing attackers to leak user data. Sensitive computation (like the processing of cryptographic keys) is handled on the main domain, while the user-interface is implemented on the sandbox domain.
 
-The `example Nginx configuration <https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf>`__ file includes the relevant headers to enable the sandboxing system, however, you must configure your instance correctly for it to be effective. You will need:
+The `example Nginx configuration <https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf>`__ file includes the relevant entries to enable the sandboxing system, however, you must configure your instance correctly for it to be effective. You will need:
 
 1. two domains or subdomains
 2. to include both domains in ``cryptpad/config/config.js`` as described in :ref:`admin_cryptpad_config`
-3. to generate one SSL certificate that covers both domains. The development team uses `acme.sh <https://acme.sh/>`__ and this is reflected in the example config.
-4. to correctly assign both domains and certificates to the relevant variables in the `example Nginx configuration <https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf>`__
+3. to generate one TLS certificate that covers both domains. The development team uses `acme.sh <https://acme.sh/>`__ and this is reflected in the example config.
+4. to correctly assign both domains and certificates to the `example Nginx configuration <https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf>`__
 
 .. warning::
 
    Using CryptPad in production without the sandboxing system may put users’ information at risk.
 
-   The development team is not aware of any third-party configurations (Apache, HAProxy, Lighttpd) that correctly implement the recommended settings. Use them at your own (and your users’) risk!
-
 Install and configure Nginx
 ---------------------------
 
-CryptPad’s application server handles active connections via websocket and serves static assets (HTML, Javascript, CSS, etc.). This basic configuration is designed to be very easy to configure for local development, but it does not protect traffic with SSL or handle many concurrent users very well.
+CryptPad’s application server handles active connections via websocket and serves static assets (HTML, Javascript, CSS, etc.). This basic configuration is designed to be very easy to configure for small to midsize instances (up to 3000 concurrent users). In a production environment, the development team recommends `Nginx <https://nginx.org/en/linux_packages.html#Debian>`__ with our `advanced example configuration <https://github.com/cryptpad/cryptpad/blob/main/docs/example-advanced.nginx.conf>`__ for the following reasons:
 
-In a production environment, the development team recommends `Nginx <https://nginx.org/en/linux_packages.html#Debian>`__ for the following reasons:
-
-1. Protect traffic with SSL (so your users can reach your instance via HTTPS)
-2. Scale to many more users by serving static content with a more scalable web-server instead of the single-threaded NodeJS web-server that is built-in
-3. Allow the application server to focus exclusively on handling websocket connections
+1. Scale to many more users by serving static content with a more scalable web-server instead of the single-threaded NodeJS web-server that is built-in
+2. Allow the application server to focus exclusively on handling websocket connections
 
 .. warning::
 
@@ -205,7 +204,11 @@ Note that the version of Nginx distributed by your operating system may not supp
 
 To configure Nginx for CryptPad:
 
-1. Copy the `CryptPad example Nginx config file <https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf>`__ so that it is used/imported by the main Nginx config, for example by placing it in ``/etc/nginx/conf.d/cryptpad.conf``.
+1. Copy the example config file so that it is used/imported by the main Nginx config, for example by placing it in ``/etc/nginx/conf.d/cryptpad.conf``
+
+   - `Basic example <https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf>`__ for small and midsize instances, where everything is processed by NodeJS
+   - `Advanced example <https://github.com/cryptpad/cryptpad/blob/main/docs/example-advanced.nginx.conf>`__ for big instances, where Nginx handle static content and only websocket connections are processed by NodeJS
+
 2. Edit the configuration file with the correct domains and paths to certificates.
 3. Run ``openssl dhparam -out /etc/nginx/dhparam.pem 4096`` if you haven’t done so already on the host machine.
 
