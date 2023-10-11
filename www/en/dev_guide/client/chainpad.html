@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>ChainPad and Listmap &mdash; CryptPad 5.4 documentation</title>
+  <title>ChainPad and Listmap &mdash; CryptPad 5.5 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.4</span>
+              <span class="release">Documentation 5.5</span>
             </a>
             
 <div role="search">
@@ -368,10 +368,14 @@
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#storage-limit">Storage Limit</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#apply-a-custom-limit">Apply a custom limit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#archive-documents">Archive documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#restore-documents">Restore documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#check-account-storage">Check account storage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#list-of-custom-limits">List of custom limits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#custom-limits">Custom limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#database">Database</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#account-information">Account information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#document-information">Document information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#login-block-information">Login-block information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#fa-recovery">2FA Recovery</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#statistics">Statistics</a></li>
@@ -382,10 +386,16 @@
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#broadcast-message">Broadcast Message</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#performance">Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#performance">Performance</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#id1">Performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#measure-disk-performance">Measure disk performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#disk-performance-measurement-window">Disk performance measurement window</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#network">Network</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#validate-instance-configuration">Validate instance configuration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#server-telemetry">Server telemetry</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#statistical-aggregation">Statistical aggregation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#list-my-instance-in-public-directories">List my instance in public directories</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#consent-to-contact">Consent to contact</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#crowdfunding-participation">Crowdfunding participation</a></li>
@@ -625,63 +635,63 @@
             
   <section id="chainpad-and-listmap">
 <h1>ChainPad and Listmap<a class="headerlink" href="#chainpad-and-listmap" title="Permalink to this heading">¶</a></h1>
-<p class="linemarker linemarker-4">In the database, collaborative documents (i.e. documents that are not static files uploaded by the user) are stored as a series of encrypted &quot;patches&quot; that allow the document to be reconstructed from a starting point. This patch management is handled by our <a class="reference external" href="https://github.com/xwiki-contrib/chainpad">ChainPad library</a>.</p>
+<p>In the database, collaborative documents (i.e. documents that are not static files uploaded by the user) are stored as a series of encrypted &quot;patches&quot; that allow the document to be reconstructed from a starting point. This patch management is handled by our <a class="reference external" href="https://github.com/xwiki-contrib/chainpad">ChainPad library</a>.</p>
 <section id="chainpad">
 <h2>ChainPad<a class="headerlink" href="#chainpad" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-9">ChainPad is the basis of CryptPad's &quot;real-time engine&quot;. Starting from the same fixed starting point (which can be empty), several users can open the same document. ChainPad works exclusively with documents in &quot;text&quot; format in theory, but solutions exist in practice for other JavaScript data formats.</p>
-<p class="linemarker linemarker-11">Each user initializes a local ChainPad &quot;object&quot; and fills it with the patch history of the database from a given starting point. The patches contain a set of simple operations to perform on the document (e.g. &quot;remove X characters and add 'abc' at the Y position&quot;) as well as a &quot;parent&quot;. Storing a parent identifier in the patch allows for the document to be re-built with the patches in the correct order. Applying the full set of patches from a starting point (usually an empty string) produces the latest version of the document.</p>
-<p class="linemarker linemarker-13">Once the document is restored, CryptPad detects each change made in the application in order to generate a new &quot;local&quot; version of the document and provides this version to ChainPad. ChainPad then analyzes it, finding all the differences between the new version and the previous version. These differences are used to <strong>create a new &quot;patch&quot;</strong> that is encrypted by CryptPad, sent to other users, and stored in the database.</p>
-<p class="linemarker linemarker-15">When <strong>receiving a patch</strong> in real time from another user, ChainPad tries to integrate it into the current document. If unsaved changes (patch not yet created) are in progress by the current user, ChainPad first merges the local changes with the remote patch before inserting the updated content into the interface. This merge allows users to make many changes simultaneously without losing characters in the content.</p>
-<p class="linemarker linemarker-17">ChainPad also includes tools to <strong>manage conflicts</strong>. While the order of the patches is known, thanks to the parent identifier, the delay for all users to receive patches can result in two users sending patches with the same parent at the same time. This creates a &quot;fork&quot; in the patch tree. As the patches are encrypted, the server cannot determine how to resolve these conflicts. ChainPad has to handle them in each user's browser. To ensure that the result of &quot;merging&quot; the branching patches is identical for all users, ChainPad checks the order of the messages received by the server. Two patches can have the same parent, but one of these patches still reaches the server before the other. WebSocket technology guarantees that messages sent by the server to the various clients arrive in the order in which the server sent them. The ChainPads of all users therefore know which patches have the same parent and the order in which to process them, which is enough to achieve the same result everywhere.</p>
-<p class="linemarker linemarker-19">The interactions between CryptPad and ChainPad can be summarized as :</p>
+<p>ChainPad is the basis of CryptPad's &quot;real-time engine&quot;. Starting from the same fixed starting point (which can be empty), several users can open the same document. ChainPad works exclusively with documents in &quot;text&quot; format in theory, but solutions exist in practice for other JavaScript data formats.</p>
+<p>Each user initializes a local ChainPad &quot;object&quot; and fills it with the patch history of the database from a given starting point. The patches contain a set of simple operations to perform on the document (e.g. &quot;remove X characters and add 'abc' at the Y position&quot;) as well as a &quot;parent&quot;. Storing a parent identifier in the patch allows for the document to be re-built with the patches in the correct order. Applying the full set of patches from a starting point (usually an empty string) produces the latest version of the document.</p>
+<p>Once the document is restored, CryptPad detects each change made in the application in order to generate a new &quot;local&quot; version of the document and provides this version to ChainPad. ChainPad then analyzes it, finding all the differences between the new version and the previous version. These differences are used to <strong>create a new &quot;patch&quot;</strong> that is encrypted by CryptPad, sent to other users, and stored in the database.</p>
+<p>When <strong>receiving a patch</strong> in real time from another user, ChainPad tries to integrate it into the current document. If unsaved changes (patch not yet created) are in progress by the current user, ChainPad first merges the local changes with the remote patch before inserting the updated content into the interface. This merge allows users to make many changes simultaneously without losing characters in the content.</p>
+<p>ChainPad also includes tools to <strong>manage conflicts</strong>. While the order of the patches is known, thanks to the parent identifier, the delay for all users to receive patches can result in two users sending patches with the same parent at the same time. This creates a &quot;fork&quot; in the patch tree. As the patches are encrypted, the server cannot determine how to resolve these conflicts. ChainPad has to handle them in each user's browser. To ensure that the result of &quot;merging&quot; the branching patches is identical for all users, ChainPad checks the order of the messages received by the server. Two patches can have the same parent, but one of these patches still reaches the server before the other. WebSocket technology guarantees that messages sent by the server to the various clients arrive in the order in which the server sent them. The ChainPads of all users therefore know which patches have the same parent and the order in which to process them, which is enough to achieve the same result everywhere.</p>
+<p>The interactions between CryptPad and ChainPad can be summarized as :</p>
 <ul class="simple">
-<li><p class="linemarker linemarker-21">Provide remote patches to ChainPad</p></li>
-<li><p class="linemarker linemarker-22">Indicate to ChainPad any changes made locally</p></li>
-<li><p class="linemarker linemarker-23">Receive patches from ChainPad related to local changes</p></li>
-<li><p class="linemarker linemarker-24">Retrieve the current state of the ChainPad document</p>
+<li><p>Provide remote patches to ChainPad</p></li>
+<li><p>Indicate to ChainPad any changes made locally</p></li>
+<li><p>Receive patches from ChainPad related to local changes</p></li>
+<li><p>Retrieve the current state of the ChainPad document</p>
 <ul>
-<li><p class="linemarker linemarker-26">State common to all users, called &quot;authDoc&quot;</p></li>
-<li><p class="linemarker linemarker-27">Local state (not yet saved/sent), called &quot;userDoc&quot;</p></li>
+<li><p>State common to all users, called &quot;authDoc&quot;</p></li>
+<li><p>Local state (not yet saved/sent), called &quot;userDoc&quot;</p></li>
 </ul>
 </li>
 </ul>
 </section>
 <section id="checkpoints">
 <h2>Checkpoints<a class="headerlink" href="#checkpoints" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-32">In order to avoid having to synchronize the complete history of the document since its creation each time a collaborative document is loaded, ChainPad uses a system of <strong>checkpoints</strong>. Every 50 patches stored in the database, the user creating the patch will in fact create a special patch called a checkpoint. Such a patch consists in a single operation that deletes the entire document and re-inserts it at the same time. Checkpoints have the particularity that they can be used as starting points for the system. Checkpoints also have a special marking added after encryption that allows the server to identify them as such.</p>
-<p class="linemarker linemarker-34">When a user loads an existing document and asks for its history, the server will only send all patches starting from the penultimate checkpoint (in theory the last checkpoint is sufficient, but the penultimate one makes it easier to solve some problems). This system saves considerable loading time for documents that are heavily used over long periods of time. It also allows document owners to delete the old history, only keeping the messages from the last two checkpoints in the database.</p>
+<p>In order to avoid having to synchronize the complete history of the document since its creation each time a collaborative document is loaded, ChainPad uses a system of <strong>checkpoints</strong>. Every 50 patches stored in the database, the user creating the patch will in fact create a special patch called a checkpoint. Such a patch consists in a single operation that deletes the entire document and re-inserts it at the same time. Checkpoints have the particularity that they can be used as starting points for the system. Checkpoints also have a special marking added after encryption that allows the server to identify them as such.</p>
+<p>When a user loads an existing document and asks for its history, the server will only send all patches starting from the penultimate checkpoint (in theory the last checkpoint is sufficient, but the penultimate one makes it easier to solve some problems). This system saves considerable loading time for documents that are heavily used over long periods of time. It also allows document owners to delete the old history, only keeping the messages from the last two checkpoints in the database.</p>
 </section>
 <section id="chainpad-with-javascript-objects">
 <h2>ChainPad with JavaScript objects<a class="headerlink" href="#chainpad-with-javascript-objects" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-39">As mentioned above, ChainPad only works with text documents. This means that the only operations it can perform are to add or remove characters at a given position relative to the beginning of the document. Therefore, ChainPad cannot work with objects or arrays directly, for example using an operation that requires the 3rd element of an array to be changed.</p>
-<p class="linemarker linemarker-41">However, many CryptPad applications require to work with objects or arrays. In the Code/Markdown application for example, objects are used to store the title of the document and its content at the same time. In the drive, this is more obvious because the structure of the drive itself with its organization in folders can be easily represented as a tree in a JavaScript object.</p>
-<p class="linemarker linemarker-43">A <strong>basic solution</strong> would be for ChainPad to work with the string representation of the object (with <code class="docutils literal notranslate"><span class="pre">JSON.stringify</span></code>) and to transform it back into an object once the work of ChainPad has been done (with <code class="docutils literal notranslate"><span class="pre">JSON.parse</span></code>). The problem with this kind of solution is that conflict management may destroy the document!</p>
-<p class="linemarker linemarker-45">To solve this problem, it is possible to initialize an instance of ChainPad with a <strong>specific algorithm to handle conflicts</strong>, as well as an <strong>algorithm to validate a patch</strong>. When you want to work with an object, for a patch to be valid, <code class="docutils literal notranslate"><span class="pre">JSON.parse()</span></code> must not generate an error. If an error occurs, the patch is simply ignored.</p>
-<p class="linemarker linemarker-47">Each instance of ChainPad works with only one document and it must be initialized with the correct algorithm: <code class="docutils literal notranslate"><span class="pre">SmartJSONTransformer</span></code> or <code class="docutils literal notranslate"><span class="pre">NaiveJSONTransformer</span></code>.</p>
+<p>As mentioned above, ChainPad only works with text documents. This means that the only operations it can perform are to add or remove characters at a given position relative to the beginning of the document. Therefore, ChainPad cannot work with objects or arrays directly, for example using an operation that requires the 3rd element of an array to be changed.</p>
+<p>However, many CryptPad applications require to work with objects or arrays. In the Code/Markdown application for example, objects are used to store the title of the document and its content at the same time. In the drive, this is more obvious because the structure of the drive itself with its organization in folders can be easily represented as a tree in a JavaScript object.</p>
+<p>A <strong>basic solution</strong> would be for ChainPad to work with the string representation of the object (with <code class="docutils literal notranslate"><span class="pre">JSON.stringify</span></code>) and to transform it back into an object once the work of ChainPad has been done (with <code class="docutils literal notranslate"><span class="pre">JSON.parse</span></code>). The problem with this kind of solution is that conflict management may destroy the document!</p>
+<p>To solve this problem, it is possible to initialize an instance of ChainPad with a <strong>specific algorithm to handle conflicts</strong>, as well as an <strong>algorithm to validate a patch</strong>. When you want to work with an object, for a patch to be valid, <code class="docutils literal notranslate"><span class="pre">JSON.parse()</span></code> must not generate an error. If an error occurs, the patch is simply ignored.</p>
+<p>Each instance of ChainPad works with only one document and it must be initialized with the correct algorithm: <code class="docutils literal notranslate"><span class="pre">SmartJSONTransformer</span></code> or <code class="docutils literal notranslate"><span class="pre">NaiveJSONTransformer</span></code>.</p>
 </section>
 <section id="chainpad-netflux">
 <h2>Chainpad-netflux<a class="headerlink" href="#chainpad-netflux" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-52">ChainPad allows for the management of patches, either to integrate them into the local document or to generate patches from the local document. To form a real-time system, a missing element needs to encrypt these patches and communicate with the server to broadcast them to other users. The <a class="reference external" href="https://github.com/xwiki-labs/chainpad-netflux/">chainpad-netflux</a> library addresses this need.</p>
-<p class="linemarker linemarker-54">This section explains the Netflux protocol used by CryptPad to communicate with the server, though a WebSocket client and server implementation. The chainpad-netflux library connects a ChainPad instance with this client-side Netflux implementation.</p>
-<p class="linemarker linemarker-56">Chainpad-netflux is initialized with a &quot;channelId&quot; corresponding to the desired collaborative document, a &quot;crypto&quot; module containing a function to encrypt and a function to decrypt using the keys corresponding to the desired document, and a WebSocket address to connect to the server.</p>
-<p class="linemarker linemarker-58">Chainpad-netflux automatically initializes the Websocket connection to the server:</p>
+<p>ChainPad allows for the management of patches, either to integrate them into the local document or to generate patches from the local document. To form a real-time system, a missing element needs to encrypt these patches and communicate with the server to broadcast them to other users. The <a class="reference external" href="https://github.com/xwiki-labs/chainpad-netflux/">chainpad-netflux</a> library addresses this need.</p>
+<p>This section explains the Netflux protocol used by CryptPad to communicate with the server, though a WebSocket client and server implementation. The chainpad-netflux library connects a ChainPad instance with this client-side Netflux implementation.</p>
+<p>Chainpad-netflux is initialized with a &quot;channelId&quot; corresponding to the desired collaborative document, a &quot;crypto&quot; module containing a function to encrypt and a function to decrypt using the keys corresponding to the desired document, and a WebSocket address to connect to the server.</p>
+<p>Chainpad-netflux automatically initializes the Websocket connection to the server:</p>
 <ul class="simple">
-<li><p class="linemarker linemarker-60">Join the channel corresponding to the desired document (with the provided channelId)</p></li>
-<li><p class="linemarker linemarker-61">Create a ChainPad instance</p></li>
-<li><p class="linemarker linemarker-62">Request history from the server</p></li>
-<li><p class="linemarker linemarker-63">Decrypt messages from the history</p></li>
-<li><p class="linemarker linemarker-64">Fill ChainPad with the decrypted history</p></li>
+<li><p>Join the channel corresponding to the desired document (with the provided channelId)</p></li>
+<li><p>Create a ChainPad instance</p></li>
+<li><p>Request history from the server</p></li>
+<li><p>Decrypt messages from the history</p></li>
+<li><p>Fill ChainPad with the decrypted history</p></li>
 </ul>
-<p class="linemarker linemarker-66">Other configuration fields of chainpad-netflux are used to interact with the ChainPad instance and to listen to specific events. Chainpad-netflux sends events as soon as remote patches are received, when changes are made to the user list or when disconnecting from the network. It gives access to the ChainPad instance in order to retrieve the current state of the document and to indicate any changes made. As soon as ChainPad generates a patch, it is encrypted by Chainpad-netflux and sent to the server automatically.</p>
+<p>Other configuration fields of chainpad-netflux are used to interact with the ChainPad instance and to listen to specific events. Chainpad-netflux sends events as soon as remote patches are received, when changes are made to the user list or when disconnecting from the network. It gives access to the ChainPad instance in order to retrieve the current state of the document and to indicate any changes made. As soon as ChainPad generates a patch, it is encrypted by Chainpad-netflux and sent to the server automatically.</p>
 </section>
 <section id="chainpad-listmap">
 <h2>Chainpad-listmap<a class="headerlink" href="#chainpad-listmap" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-71">One use case of ChainPad that is often used in CryptPad is collaboration on data stored in a JavaScript object. The <a class="reference external" href="https://github.com/xwiki-labs/chainpad-listmap/">chainpad-listmap</a> library has been developed to meet this need in a very simple way. It is based on JavaScript &quot;Proxy&quot; objects.</p>
-<p class="linemarker linemarker-73">JavaScript &quot;Proxies&quot; are an extension of classical JavaScript objects and arrays that enables listening to all the changes made on the object (addition, deletion or modification of an element). Additionally, code can be executed for each change made, which allows for a Proxy to be linked to a ChainPad instance. Each change made to the object will thus be reported to ChainPad, which will analyze the differences compared to the previous version and create a patch.</p>
-<p class="linemarker linemarker-75">This library integrates Chainpad-netflux, detailed above, which provides a Chainpad instance directly connected to the server and which manages the encryption. To use chainpad-listmap, a configuration similar to that of chainpad-netflux must be provided: a &quot;channelId&quot; for the document to retrieve, encryption/decryption functions for the document and a connection address to the server. Chainpad-listmap directly returns a Proxy. The Proxy can be used as any JavaScript object and changing its content in any way will automatically propagate these changes to other users. Events are triggered on this object in several cases: &quot;ready&quot; when the history is synchronized, &quot;change&quot; when an element is added or modified, &quot;remove&quot; when an element is deleted as well as &quot;disconnect&quot; and &quot;reconnect&quot; for network problems.</p>
+<p>One use case of ChainPad that is often used in CryptPad is collaboration on data stored in a JavaScript object. The <a class="reference external" href="https://github.com/xwiki-labs/chainpad-listmap/">chainpad-listmap</a> library has been developed to meet this need in a very simple way. It is based on JavaScript &quot;Proxy&quot; objects.</p>
+<p>JavaScript &quot;Proxies&quot; are an extension of classical JavaScript objects and arrays that enables listening to all the changes made on the object (addition, deletion or modification of an element). Additionally, code can be executed for each change made, which allows for a Proxy to be linked to a ChainPad instance. Each change made to the object will thus be reported to ChainPad, which will analyze the differences compared to the previous version and create a patch.</p>
+<p>This library integrates Chainpad-netflux, detailed above, which provides a Chainpad instance directly connected to the server and which manages the encryption. To use chainpad-listmap, a configuration similar to that of chainpad-netflux must be provided: a &quot;channelId&quot; for the document to retrieve, encryption/decryption functions for the document and a connection address to the server. Chainpad-listmap directly returns a Proxy. The Proxy can be used as any JavaScript object and changing its content in any way will automatically propagate these changes to other users. Events are triggered on this object in several cases: &quot;ready&quot; when the history is synchronized, &quot;change&quot; when an element is added or modified, &quot;remove&quot; when an element is deleted as well as &quot;disconnect&quot; and &quot;reconnect&quot; for network problems.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p class="linemarker linemarker-77">The <strong>user account</strong> (containing the drive), the <strong>shared folders</strong> and the <strong>teams</strong> are all used and stored as a chainpad-listmap document.</p>
+<p>The <strong>user account</strong> (containing the drive), the <strong>shared folders</strong> and the <strong>teams</strong> are all used and stored as a chainpad-listmap document.</p>
 </div>
 </section>
 </section>
@@ -731,7 +741,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'5.4',
+            VERSION:'5.5',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

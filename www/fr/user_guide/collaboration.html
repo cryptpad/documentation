@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Collaboration / Social &mdash; Documentation CryptPad 5.4</title>
+  <title>Collaboration / Social &mdash; Documentation CryptPad 5.5</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.4</span>
+              <span class="release">Documentation 5.5</span>
             </a>
             
 <div role="search">
@@ -368,10 +368,14 @@
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#storage-limit">Storage Limit</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#apply-a-custom-limit">Apply a custom limit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#archive-documents">Archive documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#restore-documents">Restore documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#check-account-storage">Check account storage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#list-of-custom-limits">List of custom limits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#custom-limits">Custom limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#database">Database</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#account-information">Account information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#document-information">Document information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#login-block-information">Login-block information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#fa-recovery">2FA Recovery</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#statistics">Statistics</a></li>
@@ -382,10 +386,16 @@
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast-message">Broadcast Message</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#performance">Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#performance">Performance</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#id1">Performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#measure-disk-performance">Measure disk performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#disk-performance-measurement-window">Disk performance measurement window</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#network">Network</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#validate-instance-configuration">Validate instance configuration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#server-telemetry">Server telemetry</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#statistical-aggregation">Statistical aggregation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#list-my-instance-in-public-directories">List my instance in public directories</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#consent-to-contact">Consent to contact</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#crowdfunding-participation">Crowdfunding participation</a></li>
@@ -623,7 +633,7 @@
 <h1>Collaboration / Social<a class="headerlink" href="#collaboration-social" title="Lien permanent vers cette rubrique">¶</a></h1>
 <section id="profile">
 <span id="id1"></span><h2>Profil<a class="headerlink" href="#profile" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p><span class="badge-user">Utilisateurs enregistrés</span></p>
+<p><span class="badge-user">Utilisateur·ices enregistré·es</span></p>
 <p>Chaque utilisateur·ice enregistré·e sur CryptPad a une page de profil. Celle-ci est accessible dans le menu utilisateur·ice :</p>
 <ul class="simple">
 <li><p>Menu utilisateur·ice (avatar en haut à droite) &gt; <em class="fa fa-user-circle"></em> <strong>Profil</strong>.</p></li>
@@ -663,7 +673,7 @@
 <img alt="capture d'écran du calendrier" class="screenshot" src="../_images/calendar.png" />
 </figure>
 <p>Pour ajouter un événement, cliquer sur l'heure ou la date souhaitée dans la vue du calendrier (faire glisser pour la durée). Ou utiliser <em class="fa fa-plus"></em> <strong>Nouvel événement</strong> dans la barre d'outils.</p>
-<p>You can create recurring events, repeat:</p>
+<p>Vous pouvez maintenant créer des événements récurrents, répéter :</p>
 <ul>
 <li><p><strong>Une fois</strong>, option par défaut</p></li>
 <li><p><strong>Chaque jour</strong></p></li>
@@ -711,13 +721,13 @@
 </ul>
 <p>Les <a class="reference internal" href="#teams"><span class="std std-ref">Équipes</span></a> peuvent également disposer de calendriers accessibles à tou·tes les membres. Il suffit de partager un calendrier avec une équipe pour l'ajouter :</p>
 <p><em class="fa fa-share-alt"></em> <strong>Partager</strong> &gt; <em class="fa fa-address-book"></em> <strong>Contacts</strong> &gt; Sélectionner l'équipe</p>
-<p><span class="badge-user">Utilisateurs enregistrés</span></p>
+<p><span class="badge-user">Utilisateur·ices enregistré·es</span></p>
 <p>Lorsque vous consultez un calendrier partagé via un lien, ajoutez-le à vos calendriers avec : <em class="fa fa-calendar-plus-o"></em> <strong>Importer ce calendrier</strong></p>
 </section>
 </section>
 <section id="contacts">
 <span id="id2"></span><h2>Contacts<a class="headerlink" href="#contacts" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p><span class="badge-user">Utilisateurs enregistrés</span></p>
+<p><span class="badge-user">Utilisateur·ices enregistré·es</span></p>
 <p>Les contacts CryptPad simplifient et sécurisent la collaboration.</p>
 <section id="add-a-contact">
 <h3>Ajouter un contact<a class="headerlink" href="#add-a-contact" title="Lien permanent vers cette rubrique">¶</a></h3>
@@ -755,7 +765,7 @@
 </section>
 <section id="teams">
 <span id="id3"></span><h2>Équipes<a class="headerlink" href="#teams" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p><span class="badge-user">Utilisateurs enregistrés</span></p>
+<p><span class="badge-user">Utilisateur·ices enregistré·es</span></p>
 <p>Les équipes CryptPad sont des espaces partagés entre plusieurs utilisateur·ices. Une équipe possède son propre stockage CryptDrive, un chat et une liste de membres dont l'accès peut être régulé.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -854,7 +864,7 @@
 <h3>Onglet Administration<a class="headerlink" href="#administration-tab" title="Lien permanent vers cette rubrique">¶</a></h3>
 <p><span class="badge-owner">Propriétaires de l'équipe</span></p>
 <ul class="simple">
-<li><p><strong>Clé publique de signature</strong> : Utilisée pour identifier l'équipe sur les instances avec abonnements.</p></li>
+<li><p><strong>Public signing key</strong>: Used to identify the team on instances that offer subscriptions.</p></li>
 <li><p><strong>Nom de l'équipe</strong> : Changer le nom de l'équipe.</p></li>
 <li><p><strong>Avatar de l'équipe</strong> : Importer/modifier un avatar pour l'équipe.</p></li>
 <li><p><strong>Télécharger le drive de l'équipe</strong> : Sauvegarde le contenu de tous les documents dans le CryptDrive de l'équipe. Quand cela est possible, des fichiers lisibles par d'autres logiciels sont téléchargés. Certaines applications produisent des fichiers qui ne sont lisibles que par CryptPad.</p></li>
@@ -909,7 +919,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.4',
+            VERSION:'5.5',
             LANGUAGE:'fr',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

@@ -84,33 +84,42 @@ Apply a custom limit
 
 Set custom limits for users by using their public key. You can update or remove an existing limit.
 
-Archive documents
-~~~~~~~~~~~~~~~~~
-
-Make a document unavailable without deleting it permanently. It will be placed in an ‘archive’ directory and deleted after a few days (configurable in the server configuration file).
-
-Make a document unavailable, for example for moderation in the case where a document with inappropriate/illegal content is reported.
-
-Restore documents
-~~~~~~~~~~~~~~~~~
-
-Restore a document that had previously been archived.
-
-Check account storage
-~~~~~~~~~~~~~~~~~~~~~
-
-Check the total size of items counted against a user or team’s quota given their public key.
-
-List of custom limits
-~~~~~~~~~~~~~~~~~~~~~
+Custom limits
+~~~~~~~~~~~~~
 
 List all the custom storage limits applied to your instance.
+
+Database
+--------
+
+This section is dedicated for the database management. You will find moderation tools and specific information about the accounts registered.
+
+Account information
+~~~~~~~~~~~~~~~~~~~
+
+Enter a user's public key to fetch data about their account.
+
+Document information
+~~~~~~~~~~~~~~~~~~~~
+
+Query a document or file via its id or URL
+
+Login-block information
+~~~~~~~~~~~~~~~~~~~~~~~
+
+The login block is what allows an account to log in to CryptPad with the combination of username + password
+
+2FA Recovery
+~~~~~~~~~~~~
+
+Users can copy recovery data on the 2FA recovery page /recovery/ and email it to the instance administrators. Paste recovery data below to disable 2FA for an account
 
 Statistics
 ----------
 
+-  Launch time: Date and time at which the server was launched
 -  Active connections: Number of active websocket connections (and unique IP addresses connected)
--  Active pads: Number of unique documents currently being viewed or edited
+-  Active documents: Number of unique documents currently being viewed or edited
 -  Open Files: Number of file descriptors currently open on the server
 -  Registered users: Number of users registered on your instance
 -  Disk usage: Amount of storage space consumed by various CryptPad resources
@@ -153,7 +162,22 @@ Send a message to all users on this instance. All existing and new users will re
 Performance
 -----------
 
-An overview of the total time spent executing various server-side commands.
+This section is dedicated to available measurments for checking resources consumption.
+
+Performance
+~~~~~~~~~~~
+
+An overview of the total time spent executing various server-side commands
+
+Measure disk performance
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+If enabled, a JSON API endpoint will be exposed under /api/profiling. This keeps a running measurement of disk I/O within the time window set below. This setting can impact server performance and may reveal sensitive data. It is recommended that you leave this setting disabled unless you know what you are doing. 
+
+Disk performance measurement window
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you have enabled disk performance measurements then the duration of the window can be configured below.
 
 Network
 --------
@@ -173,6 +197,11 @@ Server telemetry
 ~~~~~~~~~~~~~~~~
 
 **Opt-out** of daily messages sent from the instance to the development team's server. The purpose of these messages is to count how many third-party instances of CryptPad are in operation and which version of the software they are running. The full content of the messages can be reviewed in CryptPad's server logs.
+
+Statistical aggregation
+~~~~~~~~~~~~~~~~~~~~~~~
+
+You may opt-in to providing additional usage metrics to the developers, such as the approximate number of registered and daily users for your instance.
 
 .. _admin_list_public:
 

@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Set up a development instance &mdash; CryptPad 5.4 documentation</title>
+  <title>Set up a development instance &mdash; CryptPad 5.5 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.4</span>
+              <span class="release">Documentation 5.5</span>
             </a>
             
 <div role="search">
@@ -368,10 +368,14 @@
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#storage-limit">Storage Limit</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#apply-a-custom-limit">Apply a custom limit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#archive-documents">Archive documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#restore-documents">Restore documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#check-account-storage">Check account storage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#list-of-custom-limits">List of custom limits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#custom-limits">Custom limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#database">Database</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#account-information">Account information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#document-information">Document information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#login-block-information">Login-block information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#fa-recovery">2FA Recovery</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#statistics">Statistics</a></li>
@@ -382,10 +386,16 @@
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast-message">Broadcast Message</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#performance">Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#performance">Performance</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#id1">Performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#measure-disk-performance">Measure disk performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#disk-performance-measurement-window">Disk performance measurement window</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#network">Network</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#validate-instance-configuration">Validate instance configuration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#server-telemetry">Server telemetry</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#statistical-aggregation">Statistical aggregation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#list-my-instance-in-public-directories">List my instance in public directories</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#consent-to-contact">Consent to contact</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#crowdfunding-participation">Crowdfunding participation</a></li>
@@ -623,28 +633,30 @@
 <span id="dev-instance"></span><h1>Set up a development instance<a class="headerlink" href="#set-up-a-development-instance" title="Permalink to this heading">¶</a></h1>
 <section id="prerequisites">
 <h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-9">Please make sure that the following tools are installed on your system before installing CryptPad:</p>
+<p>Please make sure that the following tools are installed on your system before installing CryptPad:</p>
 <ul class="simple">
-<li><p class="linemarker linemarker-11">GIT</p></li>
-<li><p class="linemarker linemarker-12">Nodejs (we use the official NodeJs LTS release)</p>
+<li><p>GIT</p></li>
+<li><p>Nodejs (we use the official NodeJs LTS release)</p>
 <ul>
-<li><p class="linemarker linemarker-14">Using <a class="reference external" href="https://github.com/nodesource/distributions#using-debian-as-root-4">nodesource</a> is recommended</p></li>
+<li><p>Using <a class="reference external" href="https://github.com/nodesource/distributions#using-debian-as-root-4">nodesource</a> for Linux</p></li>
+<li><p>Using <a class="reference external" href="https://nodejs.org/en/download/package-manager#alternatives-2">homebrew</a> for macOS</p></li>
+<li><p>Using <a class="reference external" href="https://nodejs.org/en/download">the official Windows installer</a> for Windows</p></li>
 </ul>
 </li>
-<li><p class="linemarker linemarker-16">NPM</p></li>
+<li><p>NPM</p></li>
 </ul>
 </section>
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-22">The source code can be found on <a class="reference external" href="https://github.com">GitHub</a>. You must have an account on this platform in order to contribute.</p>
+<p>The source code can be found on <a class="reference external" href="https://github.com">GitHub</a>. You must have an account on this platform in order to contribute.</p>
 <ul class="simple">
-<li><p class="linemarker linemarker-24">Fork the code: <a class="reference external" href="https://github.com/cryptpad/cryptpad.git">https://github.com/cryptpad/cryptpad.git</a></p></li>
-<li><p class="linemarker linemarker-25">Clone the fork on your system in the desired directory</p>
+<li><p>Fork the code: <a class="reference external" href="https://github.com/cryptpad/cryptpad.git">https://github.com/cryptpad/cryptpad.git</a></p></li>
+<li><p>Clone the fork on your system in the desired directory</p>
 <ul>
-<li><p class="linemarker linemarker-27"><cite>git clone https://github.com/{YOUR_USER_NAME}/cryptpad.git</cite></p></li>
+<li><p><cite>git clone https://github.com/{YOUR_USER_NAME}/cryptpad.git</cite></p></li>
 </ul>
 </li>
-<li><p class="linemarker linemarker-29">Install the server dependencies with npm and client dependencies:</p></li>
+<li><p>Install the server dependencies with npm and client dependencies:</p></li>
 </ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> cryptpad
 npm install
@@ -654,36 +666,36 @@ npm run install:components
 </section>
 <section id="configuration">
 <h2>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-40">Once everything is installed, you can configure some values before starting the server.</p>
+<p>Once everything is installed, you can configure some values before starting the server.</p>
 <ul class="simple">
-<li><p class="linemarker linemarker-42">Make a copy of the default configuration:</p></li>
+<li><p>Make a copy of the default configuration:</p></li>
 </ul>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> <span class="nv">$cryptpath</span>/config
 cp config.example.js config.js
 </pre></div>
 </div>
 <ul class="simple">
-<li><p class="linemarker linemarker-49">The <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/config/config.example.js">example configuration file</a> lists the configurable values and how to use them.</p></li>
-<li><p class="linemarker linemarker-50">For a development instance, the important elements are:</p>
+<li><p>The <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/config/config.example.js">example configuration file</a> lists the configurable values and how to use them.</p></li>
+<li><p>For a development instance, the important elements are:</p>
 <ul>
-<li><p class="linemarker linemarker-52"><code class="docutils literal notranslate"><span class="pre">httpUnsafeOrigin</span></code>: if you want to use the development server and the test client on different systems, you have to modify this value to use the network address of the server (example: '<a class="reference external" href="http://192.168.0.10:3000">http://192.168.0.10:3000</a>').</p></li>
-<li><p class="linemarker linemarker-53"><code class="docutils literal notranslate"><span class="pre">adminKeys</span></code>: if you want to have access to the administration panel in the CryptPad client, you need to create a user account on the instance and add its <em>Public Signature Key</em> here.</p></li>
-<li><p class="linemarker linemarker-54"><code class="docutils literal notranslate"><span class="pre">supportMailboxPublicKey</span></code>: to have access to the support panel on the development instance, see <a class="reference internal" href="../admin_guide/installation.html#admin-support-mailbox"><span class="std std-ref">Configure support mailbox</span></a> in the administrator guide.</p></li>
-<li><p class="linemarker linemarker-55"><code class="docutils literal notranslate"><span class="pre">defaultStorageLimit</span></code>: to increase the storage limit of the development instance (50MB by default).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">httpUnsafeOrigin</span></code>: if you want to use the development server and the test client on different systems, you have to modify this value to use the network address of the server (example: '<a class="reference external" href="http://192.168.0.10:3000">http://192.168.0.10:3000</a>').</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">adminKeys</span></code>: if you want to have access to the administration panel in the CryptPad client, you need to create a user account on the instance and add its <em>Public Signature Key</em> here.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">supportMailboxPublicKey</span></code>: to have access to the support panel on the development instance, see <a class="reference internal" href="../admin_guide/installation.html#admin-support-mailbox"><span class="std std-ref">Configure support mailbox</span></a> in the administrator guide.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">defaultStorageLimit</span></code>: to increase the storage limit of the development instance (50MB by default).</p></li>
 </ul>
 </li>
 </ul>
 </section>
 <section id="caching">
 <h2>Caching<a class="headerlink" href="#caching" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-60">CryptPad uses a &quot;cache busting&quot; system to manage versions of the JavaScript code and the compiled CSS code.
+<p>CryptPad uses a &quot;cache busting&quot; system to manage versions of the JavaScript code and the compiled CSS code.
 This means that, for a normal launch of the server, all the code will be cached on first use and the modifications made thereafter to the sources won't be applied in your browser. To avoid this problem, the server must be launched in <em>development</em> mode.</p>
-<p class="linemarker linemarker-63">It is important to note that no &quot;build&quot; or &quot;compilation&quot; step is necessary when developing code for CryptPad. The JavaScript files are loaded &quot;raw&quot; in the browser and the &quot;LESS&quot; code is compiled by the clients' browser directly. To test a modification, just write the code and reload the page on CryptPad.</p>
+<p>It is important to note that no &quot;build&quot; or &quot;compilation&quot; step is necessary when developing code for CryptPad. The JavaScript files are loaded &quot;raw&quot; in the browser and the &quot;LESS&quot; code is compiled by the clients' browser directly. To test a modification, just write the code and reload the page on CryptPad.</p>
 </section>
 <section id="launching-in-development-mode">
 <h2>Launching in development mode<a class="headerlink" href="#launching-in-development-mode" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
-<li><p class="linemarker linemarker-68"><code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">run</span> <span class="pre">dev</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">run</span> <span class="pre">dev</span></code></p></li>
 </ul>
 </section>
 </section>
@@ -733,7 +745,7 @@ This means that, for a normal launch of the server, all the code will be cached 
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.4',
+            VERSION:'5.5',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

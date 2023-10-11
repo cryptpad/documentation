@@ -11,7 +11,9 @@ Please make sure that the following tools are installed on your system before in
 -  GIT
 -  Nodejs (we use the official NodeJs LTS release)
 
-   -  Using `nodesource <https://github.com/nodesource/distributions#using-debian-as-root-4>`__ is recommended
+   -  Using `nodesource <https://github.com/nodesource/distributions#using-debian-as-root-4>`__ for Linux
+   -  Using `homebrew <https://nodejs.org/en/download/package-manager#alternatives-2>`__ for macOS
+   -  Using `the official Windows installer <https://nodejs.org/en/download>`__ for Windows
 
 -  NPM
 

@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Administration panel &mdash; CryptPad 5.4 Dokumentation</title>
+  <title>Administration panel &mdash; CryptPad 5.5 Dokumentation</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.4</span>
+              <span class="release">Documentation 5.5</span>
             </a>
             
 <div role="search">
@@ -368,10 +368,14 @@
 <li class="toctree-l3"><a class="reference internal" href="#user-storage">User Storage</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#storage-limit">Storage Limit</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#apply-a-custom-limit">Apply a custom limit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#archive-documents">Archive documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#restore-documents">Restore documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#check-account-storage">Check account storage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#list-of-custom-limits">List of custom limits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#custom-limits">Custom limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#database">Database</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#account-information">Account information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#document-information">Document information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#login-block-information">Login-block information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fa-recovery">2FA Recovery</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#statistics">Statistics</a></li>
@@ -382,10 +386,16 @@
 <li class="toctree-l4"><a class="reference internal" href="#broadcast-message">Broadcast Message</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#performance">Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#performance">Performance</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">Performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#measure-disk-performance">Measure disk performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#disk-performance-measurement-window">Disk performance measurement window</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#network">Network</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#validate-instance-configuration">Validate instance configuration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#server-telemetry">Server telemetry</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#statistical-aggregation">Statistical aggregation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#list-my-instance-in-public-directories">List my instance in public directories</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#consent-to-contact">Consent to contact</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#crowdfunding-participation">Crowdfunding participation</a></li>
@@ -682,29 +692,37 @@
 <h3>Apply a custom limit<a class="headerlink" href="#apply-a-custom-limit" title="Permalink to this heading">¶</a></h3>
 <p>Set custom limits for users by using their public key. You can update or remove an existing limit.</p>
 </section>
-<section id="archive-documents">
-<h3>Archive documents<a class="headerlink" href="#archive-documents" title="Permalink to this heading">¶</a></h3>
-<p>Make a document unavailable without deleting it permanently. It will be placed in an ‘archive’ directory and deleted after a few days (configurable in the server configuration file).</p>
-<p>Make a document unavailable, for example for moderation in the case where a document with inappropriate/illegal content is reported.</p>
-</section>
-<section id="restore-documents">
-<h3>Restore documents<a class="headerlink" href="#restore-documents" title="Permalink to this heading">¶</a></h3>
-<p>Restore a document that had previously been archived.</p>
-</section>
-<section id="check-account-storage">
-<h3>Check account storage<a class="headerlink" href="#check-account-storage" title="Permalink to this heading">¶</a></h3>
-<p>Check the total size of items counted against a user or team’s quota given their public key.</p>
-</section>
-<section id="list-of-custom-limits">
-<h3>List of custom limits<a class="headerlink" href="#list-of-custom-limits" title="Permalink to this heading">¶</a></h3>
+<section id="custom-limits">
+<h3>Custom limits<a class="headerlink" href="#custom-limits" title="Permalink to this heading">¶</a></h3>
 <p>List all the custom storage limits applied to your instance.</p>
+</section>
+</section>
+<section id="database">
+<h2>Database<a class="headerlink" href="#database" title="Permalink to this heading">¶</a></h2>
+<p>This section is dedicated for the database management. You will find moderation tools and specific information about the accounts registered.</p>
+<section id="account-information">
+<h3>Account information<a class="headerlink" href="#account-information" title="Permalink to this heading">¶</a></h3>
+<p>Enter a user's public key to fetch data about their account.</p>
+</section>
+<section id="document-information">
+<h3>Document information<a class="headerlink" href="#document-information" title="Permalink to this heading">¶</a></h3>
+<p>Query a document or file via its id or URL</p>
+</section>
+<section id="login-block-information">
+<h3>Login-block information<a class="headerlink" href="#login-block-information" title="Permalink to this heading">¶</a></h3>
+<p>The login block is what allows an account to log in to CryptPad with the combination of username + password</p>
+</section>
+<section id="fa-recovery">
+<h3>2FA Recovery<a class="headerlink" href="#fa-recovery" title="Permalink to this heading">¶</a></h3>
+<p>Users can copy recovery data on the 2FA recovery page /recovery/ and email it to the instance administrators. Paste recovery data below to disable 2FA for an account</p>
 </section>
 </section>
 <section id="statistics">
 <h2>Statistics<a class="headerlink" href="#statistics" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
+<li><p>Launch time: Date and time at which the server was launched</p></li>
 <li><p>Active connections: Number of active websocket connections (and unique IP addresses connected)</p></li>
-<li><p>Active pads: Number of unique documents currently being viewed or edited</p></li>
+<li><p>Active documents: Number of unique documents currently being viewed or edited</p></li>
 <li><p>Open Files: Number of file descriptors currently open on the server</p></li>
 <li><p>Registered users: Number of users registered on your instance</p></li>
 <li><p>Disk usage: Amount of storage space consumed by various CryptPad resources</p></li>
@@ -742,7 +760,19 @@
 </section>
 <section id="performance">
 <h2>Performance<a class="headerlink" href="#performance" title="Permalink to this heading">¶</a></h2>
-<p>An overview of the total time spent executing various server-side commands.</p>
+<p>This section is dedicated to available measurments for checking resources consumption.</p>
+<section id="id1">
+<h3>Performance<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h3>
+<p>An overview of the total time spent executing various server-side commands</p>
+</section>
+<section id="measure-disk-performance">
+<h3>Measure disk performance<a class="headerlink" href="#measure-disk-performance" title="Permalink to this heading">¶</a></h3>
+<p>If enabled, a JSON API endpoint will be exposed under /api/profiling. This keeps a running measurement of disk I/O within the time window set below. This setting can impact server performance and may reveal sensitive data. It is recommended that you leave this setting disabled unless you know what you are doing.</p>
+</section>
+<section id="disk-performance-measurement-window">
+<h3>Disk performance measurement window<a class="headerlink" href="#disk-performance-measurement-window" title="Permalink to this heading">¶</a></h3>
+<p>If you have enabled disk performance measurements then the duration of the window can be configured below.</p>
+</section>
 </section>
 <section id="network">
 <h2>Network<a class="headerlink" href="#network" title="Permalink to this heading">¶</a></h2>
@@ -754,6 +784,10 @@
 <section id="server-telemetry">
 <span id="admin-telemetry-optout"></span><h3>Server telemetry<a class="headerlink" href="#server-telemetry" title="Permalink to this heading">¶</a></h3>
 <p><strong>Opt-out</strong> of daily messages sent from the instance to the development team's server. The purpose of these messages is to count how many third-party instances of CryptPad are in operation and which version of the software they are running. The full content of the messages can be reviewed in CryptPad's server logs.</p>
+</section>
+<section id="statistical-aggregation">
+<h3>Statistical aggregation<a class="headerlink" href="#statistical-aggregation" title="Permalink to this heading">¶</a></h3>
+<p>You may opt-in to providing additional usage metrics to the developers, such as the approximate number of registered and daily users for your instance.</p>
 </section>
 <section id="list-my-instance-in-public-directories">
 <span id="admin-list-public"></span><h3>List my instance in public directories<a class="headerlink" href="#list-my-instance-in-public-directories" title="Permalink to this heading">¶</a></h3>
@@ -839,7 +873,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.4',
+            VERSION:'5.5',
             LANGUAGE:'de',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

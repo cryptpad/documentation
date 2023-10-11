@@ -57,11 +57,11 @@ The CryptPad team translates the software in English and French, with many more 
 
 To translate CryptPad itself please see the `Translation guide <https://github.com/cryptpad/cryptpad/blob/main/customize.dist/translations/README.md>`__.
 
-To translate this documentation please visit the project on `Weblate <https://weblate.cryptpad.fr/projects/user-guide/>`__. To start translating a new language, please `get in touch with the development team <https://cryptpad.fr/contact.html>`__.
+To translate this documentation please visit the project on `Weblate <https://weblate.cryptpad.org/projects/user-guide/>`__. To start translating a new language, please `get in touch with the development team <https://cryptpad.fr/contact.html>`__.
 
 Current progression on translated languages:
 
-.. image:: https://weblate.cryptpad.fr/widgets/cryptpad/-/app/multi-auto.svg
+.. image:: https://weblate.cryptpad.org/widgets/cryptpad/-/app/multi-auto.svg
    :alt: Weblate-widget
 
 .. _contribute_code:

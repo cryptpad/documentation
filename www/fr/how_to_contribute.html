@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Comment contribuer &mdash; Documentation CryptPad 5.4</title>
+  <title>Comment contribuer &mdash; Documentation CryptPad 5.5</title>
   
 
   
@@ -57,7 +57,7 @@
             <a href="index.html" class="icon icon-home">
               <img src="_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.4</span>
+              <span class="release">Documentation 5.5</span>
             </a>
             
 <div role="search">
@@ -367,10 +367,14 @@
 <li class="toctree-l3"><a class="reference internal" href="admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#storage-limit">Storage Limit</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#apply-a-custom-limit">Apply a custom limit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#archive-documents">Archive documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#restore-documents">Restore documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#check-account-storage">Check account storage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#list-of-custom-limits">List of custom limits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#custom-limits">Custom limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="admin_guide/admin_panel.html#database">Database</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#account-information">Account information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#document-information">Document information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#login-block-information">Login-block information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#fa-recovery">2FA Recovery</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="admin_guide/admin_panel.html#statistics">Statistics</a></li>
@@ -381,10 +385,16 @@
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#broadcast-message">Broadcast Message</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="admin_guide/admin_panel.html#performance">Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="admin_guide/admin_panel.html#performance">Performance</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#id1">Performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#measure-disk-performance">Measure disk performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#disk-performance-measurement-window">Disk performance measurement window</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="admin_guide/admin_panel.html#network">Network</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#validate-instance-configuration">Validate instance configuration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#server-telemetry">Server telemetry</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#statistical-aggregation">Statistical aggregation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#list-my-instance-in-public-directories">List my instance in public directories</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#consent-to-contact">Consent to contact</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#crowdfunding-participation">Crowdfunding participation</a></li>
@@ -647,26 +657,26 @@
 <p>Si vous rencontrez un problème avec CryptPad, le signaler permet d'améliorer le service pour tous. Lorsque vous signalez un problème, veuillez fournir autant d'informations que possible sur les conditions dans lesquelles le problème s'est produit, sur ce que vous attendiez et sur ce qui s'est passé à la place. Ces détails aident l'équipe à reproduire l'erreur, ce qui est la première étape pour la corriger.</p>
 <p>Il existe deux façons de signaler des bugs ou des problèmes :</p>
 <ul class="simple">
-<li><p>Cryptpad's built in <a class="reference internal" href="user_guide/support.html#support"><span class="std std-ref">support ticket system</span></a> where you can message instance administrators. These messages are encrypted like everything else on CryptPad.</p></li>
-<li><p><a class="reference external" href="https://github.com/cryptpad/cryptpad/issues/new/choose">Github issue tracker</a> to file the issue publicly using the bug report template. (A Github account is needed to submit issues)</p></li>
+<li><p>Le système de <span class="xref std std-ref">tickets de support</span> intégré à CryptPad, pour communiquer avec les administrateur·ices de votre instance. Ces messages sont chiffrés comme le reste de la plateforme.</p></li>
+<li><p><a class="reference external" href="https://github.com/cryptpad/cryptpad/issues/new/choose">Signaler sur Github</a> avec un rapport public en utilisant le modèle fourni. (Un compte Github est nécessaire)</p></li>
 </ul>
 </section>
 <section id="contribute-to-the-documentation">
 <h2>Contribuer à la documentation<a class="headerlink" href="#contribute-to-the-documentation" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p>If you have corrections, edits, or suggestions for this documentation, you can contribute and help improve the service for everyone. Please send your proposed changes to <a class="reference external" href="https://forum.cryptpad.org/">the forum</a> or use a <a class="reference external" href="https://github.com/cryptpad/documentation">GitHub pull request</a>.</p>
+<p>Si vous avez des corrections, éditions ou suggestions concernant cette documentation, vous pouvez contribuer et ainsi aider à améliorer le service pour tout le monde. Partagez vos changements sur <a class="reference external" href="https://forum.cryptpad.org/">le forum</a> ou dans <a class="reference external" href="https://github.com/cryptpad/documentation">une pull request GitHub</a>.</p>
 </section>
 <section id="translate-cryptpad">
 <span id="contribute-translation"></span><h2>Traduire CryptPad<a class="headerlink" href="#translate-cryptpad" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p>L'équipe de développement traduit CryptPad en anglais et en français, de nombreuses autres langues étant fournies par la communauté. La traduction et/ou la mise à jour des traductions au fur et à mesure du développement de la plateforme est une tâche cruciale pour rendre CryptPad accessible au plus grand nombre.</p>
-<p>To translate CryptPad itself please see the <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/customize.dist/translations/README.md">Translation guide</a>.</p>
-<p>Pour traduire cette documentation, veuillez consulter le projet sur <a class="reference external" href="https://weblate.cryptpad.fr/projects/user-guide/">Weblate</a>. Pour commencer à traduire une nouvelle langue, veuillez <a class="reference external" href="https://cryptpad.fr/contact.html">contacter l'équipe de développement</a>.</p>
+<p>Pour traduire CryptPad, veuillez consulter le <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/customize.dist/translations/README.md">guide de traduction</a>.</p>
+<p>To translate this documentation please visit the project on <a class="reference external" href="https://weblate.cryptpad.org/projects/user-guide/">Weblate</a>. To start translating a new language, please <a class="reference external" href="https://cryptpad.fr/contact.html">get in touch with the development team</a>.</p>
 <p>Progression actuelle des langues traduites :</p>
-<img alt="widget Weblate" src="https://weblate.cryptpad.fr/widgets/cryptpad/-/app/multi-auto.svg" /></section>
+<img alt="widget Weblate" src="https://weblate.cryptpad.org/widgets/cryptpad/-/app/multi-auto.svg" /></section>
 <section id="contribute-to-the-code">
 <span id="contribute-code"></span><h2>Contribuer au code<a class="headerlink" href="#contribute-to-the-code" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p>CryptPad is written in JavaScript and we accept pull requests on <a class="reference external" href="https://github.com/cryptpad/cryptpad">Github</a>. Note that the security layer is separated from the application layer, so it is possible to contribute to CryptPad without skills in cryptography. Contributions include, by order of difficulty:</p>
+<p>CryptPad est écrit en JavaScript et nous acceptons les contributions sur <a class="reference external" href="https://github.com/cryptpad/cryptpad">Github</a>. Notez que la couche sécurité est séparée de la couche application, il est donc possible de contribuer à CryptPad sans compétences en cryptographie. Les contributions incluent, par ordre de difficulté :</p>
 <ul class="simple">
-<li><p>Fixing a bug from the <a class="reference external" href="https://github.com/cryptpad/cryptpad/issues">issue tracker</a>.</p></li>
+<li><p>Corriger un bug signalé sur <a class="reference external" href="https://github.com/cryptpad/cryptpad/issues">Github</a>.</p></li>
 <li><p>Ajouter une fonctionnalité.</p></li>
 <li><p>Construire une nouvelle application ou intégrer une application existante à la collaboration chiffrée en temps réel de CryptPad.</p></li>
 </ul>
@@ -730,7 +740,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'5.4',
+            VERSION:'5.5',
             LANGUAGE:'fr',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

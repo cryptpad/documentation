@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Installation &mdash; документация CryptPad 5.4</title>
+  <title>Installation &mdash; документация CryptPad 5.5</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.4</span>
+              <span class="release">Documentation 5.5</span>
             </a>
             
 <div role="search">
@@ -368,10 +368,14 @@
 <li class="toctree-l3"><a class="reference internal" href="admin_panel.html#user-storage">User Storage</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="admin_panel.html#storage-limit">Storage Limit</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_panel.html#apply-a-custom-limit">Apply a custom limit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#archive-documents">Archive documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#restore-documents">Restore documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#check-account-storage">Check account storage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#list-of-custom-limits">List of custom limits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#custom-limits">Custom limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="admin_panel.html#database">Database</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#account-information">Account information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#document-information">Document information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#login-block-information">Login-block information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#fa-recovery">2FA Recovery</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="admin_panel.html#statistics">Statistics</a></li>
@@ -382,10 +386,16 @@
 <li class="toctree-l4"><a class="reference internal" href="admin_panel.html#broadcast-message">Broadcast Message</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="admin_panel.html#performance">Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="admin_panel.html#performance">Performance</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#id1">Performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#measure-disk-performance">Measure disk performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#disk-performance-measurement-window">Disk performance measurement window</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="admin_panel.html#network">Network</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="admin_panel.html#validate-instance-configuration">Validate instance configuration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_panel.html#server-telemetry">Server telemetry</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#statistical-aggregation">Statistical aggregation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_panel.html#list-my-instance-in-public-directories">List my instance in public directories</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_panel.html#consent-to-contact">Consent to contact</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_panel.html#crowdfunding-participation">Crowdfunding participation</a></li>
@@ -632,7 +642,7 @@
 <h3>Hardware<a class="headerlink" href="#hardware" title="Permalink to this heading">¶</a></h3>
 <p>The development team uses and recommends the following hardware requirements as a minimum on the host machine:</p>
 <ul class="simple">
-<li><p>Debian 11</p></li>
+<li><p>Debian 12</p></li>
 <li><p>2GB RAM</p></li>
 <li><p>2 CPUs</p></li>
 <li><p>20GB storage (depending on planned usage)</p></li>
@@ -654,12 +664,11 @@
 <p>Before starting the installation, ensure the following software is installed:</p>
 <ul>
 <li><p>GIT</p></li>
-<li><p>Nodejs (we use the official NodeJs LTS release)</p>
+<li><p>Nodejs with NPM included (we use the official NodeJs LTS release)</p>
 <ul class="simple">
 <li><p>Using <a class="reference external" href="https://github.com/nodesource/distributions#using-debian-as-root-4">nodesource</a> is recommended</p></li>
 </ul>
 </li>
-<li><p>NPM</p></li>
 <li><p>Docker engine (if using Docker, see <a class="reference internal" href="#admin-docker-install"><span class="std std-ref">Install with Docker</span></a>)</p>
 <blockquote>
 <div><ul class="simple">
@@ -689,7 +698,7 @@
 <section id="dependencies">
 <h4>Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this heading">¶</a></h4>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> cryptpad
-npm install
+npm ci
 npm run install:components
 </pre></div>
 </div>
@@ -736,7 +745,6 @@ node server
 </section>
 <section id="docker">
 <span id="admin-docker-install"></span><h3>Docker<a class="headerlink" href="#docker" title="Permalink to this heading">¶</a></h3>
-<p><span class="badge-new">New in version 5.4</span></p>
 <p>While we still prefer <a class="reference internal" href="#admin-recommended-install"><span class="std std-ref">the recommended installation method</span></a>, Docker is now officially supported.</p>
 <p>We provide the following files in the CryptPad repository:</p>
 <ul class="simple">
@@ -747,7 +755,7 @@ node server
 </ul>
 <ol class="arabic">
 <li><p>Build your own Docker image</p>
-<div class="highlight-docker notranslate"><div class="highlight"><pre><span></span>docker build -t cryptpad/cryptpad:version-5.4.0 .
+<div class="highlight-docker notranslate"><div class="highlight"><pre><span></span>docker build -t cryptpad/cryptpad:version-5.5.0 .
 </pre></div>
 </div>
 </li>
@@ -756,6 +764,11 @@ node server
 <li><p><code class="docutils literal notranslate"><span class="pre">CPAD_MAIN_DOMAIN</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">CPAD_SANDBOX_DOMAIN</span></code></p></li>
 </ul>
+</li>
+<li><p>Set appropriate permissions</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo chown -R <span class="m">4001</span>:4001 data customize
+</pre></div>
+</div>
 </li>
 <li><p>Run the container with Docker Compose</p>
 <div class="highlight-docker notranslate"><div class="highlight"><pre><span></span>docker compose up -d
@@ -773,25 +786,22 @@ node server
 <li><p>A “sandbox” domain or subdomain to which a set of restrictive Content-Security Policy headers are applied</p></li>
 </ol>
 <p>The intent of this system is to limit the risk of Cross-Site Scripting (XSS) vulnerabilities allowing attackers to leak user data. Sensitive computation (like the processing of cryptographic keys) is handled on the main domain, while the user-interface is implemented on the sandbox domain.</p>
-<p>The <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf">example Nginx configuration</a> file includes the relevant headers to enable the sandboxing system, however, you must configure your instance correctly for it to be effective. You will need:</p>
+<p>The <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf">example Nginx configuration</a> file includes the relevant entries to enable the sandboxing system, however, you must configure your instance correctly for it to be effective. You will need:</p>
 <ol class="arabic simple">
 <li><p>two domains or subdomains</p></li>
 <li><p>to include both domains in <code class="docutils literal notranslate"><span class="pre">cryptpad/config/config.js</span></code> as described in <a class="reference internal" href="#admin-cryptpad-config"><span class="std std-ref">Configure CryptPad</span></a></p></li>
-<li><p>to generate one SSL certificate that covers both domains. The development team uses <a class="reference external" href="https://acme.sh/">acme.sh</a> and this is reflected in the example config.</p></li>
-<li><p>to correctly assign both domains and certificates to the relevant variables in the <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf">example Nginx configuration</a></p></li>
+<li><p>to generate one TLS certificate that covers both domains. The development team uses <a class="reference external" href="https://acme.sh/">acme.sh</a> and this is reflected in the example config.</p></li>
+<li><p>to correctly assign both domains and certificates to the <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf">example Nginx configuration</a></p></li>
 </ol>
 <div class="admonition warning">
 <p class="admonition-title">Предупреждение</p>
 <p>Using CryptPad in production without the sandboxing system may put users’ information at risk.</p>
-<p>The development team is not aware of any third-party configurations (Apache, HAProxy, Lighttpd) that correctly implement the recommended settings. Use them at your own (and your users’) risk!</p>
 </div>
 </section>
 <section id="install-and-configure-nginx">
 <h2>Install and configure Nginx<a class="headerlink" href="#install-and-configure-nginx" title="Permalink to this heading">¶</a></h2>
-<p>CryptPad’s application server handles active connections via websocket and serves static assets (HTML, Javascript, CSS, etc.). This basic configuration is designed to be very easy to configure for local development, but it does not protect traffic with SSL or handle many concurrent users very well.</p>
-<p>In a production environment, the development team recommends <a class="reference external" href="https://nginx.org/en/linux_packages.html#Debian">Nginx</a> for the following reasons:</p>
+<p>CryptPad’s application server handles active connections via websocket and serves static assets (HTML, Javascript, CSS, etc.). This basic configuration is designed to be very easy to configure for small to midsize instances (up to 3000 concurrent users). In a production environment, the development team recommends <a class="reference external" href="https://nginx.org/en/linux_packages.html#Debian">Nginx</a> with our <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/docs/example-advanced.nginx.conf">advanced example configuration</a> for the following reasons:</p>
 <ol class="arabic simple">
-<li><p>Protect traffic with SSL (so your users can reach your instance via HTTPS)</p></li>
 <li><p>Scale to many more users by serving static content with a more scalable web-server instead of the single-threaded NodeJS web-server that is built-in</p></li>
 <li><p>Allow the application server to focus exclusively on handling websocket connections</p></li>
 </ol>
@@ -802,7 +812,12 @@ node server
 <p>Note that the version of Nginx distributed by your operating system may not support websockets. We recommend and only support <a class="reference external" href="https://nginx.org/en/download.html">Nginx stable</a>.</p>
 <p>To configure Nginx for CryptPad:</p>
 <ol class="arabic simple">
-<li><p>Copy the <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf">CryptPad example Nginx config file</a> so that it is used/imported by the main Nginx config, for example by placing it in <code class="docutils literal notranslate"><span class="pre">/etc/nginx/conf.d/cryptpad.conf</span></code>.</p></li>
+<li><p>Copy the example config file so that it is used/imported by the main Nginx config, for example by placing it in <code class="docutils literal notranslate"><span class="pre">/etc/nginx/conf.d/cryptpad.conf</span></code></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf">Basic example</a> for small and midsize instances, where everything is processed by NodeJS</p></li>
+<li><p><a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/docs/example-advanced.nginx.conf">Advanced example</a> for big instances, where Nginx handle static content and only websocket connections are processed by NodeJS</p></li>
+</ul>
+</li>
 <li><p>Edit the configuration file with the correct domains and paths to certificates.</p></li>
 <li><p>Run <code class="docutils literal notranslate"><span class="pre">openssl</span> <span class="pre">dhparam</span> <span class="pre">-out</span> <span class="pre">/etc/nginx/dhparam.pem</span> <span class="pre">4096</span></code> if you haven’t done so already on the host machine.</p></li>
 </ol>
@@ -931,7 +946,7 @@ contains at least:</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.4',
+            VERSION:'5.5',
             LANGUAGE:'ru',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

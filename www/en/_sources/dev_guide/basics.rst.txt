@@ -54,6 +54,6 @@ Several important points concerning the code are to be respected as much as poss
 Translation keys
 ----------------
 
-CryptPad is officially translated (by the development team) into English (default language) and French. Many other languages are available, but translations are made by the community via our `Weblate platform <https://weblate.cryptpad.fr>`__.
+CryptPad is officially translated (by the development team) into English (default language) and French. Many other languages are available, but translations are made by the community via our `Weblate platform <https://weblate.cryptpad.org>`__.
 
 :ref:`dev_translations` must be added manually by the development team to Weblate. To make it easier to merge contributions into the main branch, we ask contributor **not to add their new translation keys directly into the translation files**. The requested translation keys can be listed either in the "pull request" message or as a comment in the code directly. It's also preferable to add at least either an English or a French version of the text.

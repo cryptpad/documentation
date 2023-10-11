@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Frequently Asked Questions &mdash; CryptPad 5.4 documentation</title>
+  <title>Frequently Asked Questions &mdash; CryptPad 5.5 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="index.html" class="icon icon-home">
               <img src="_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.4</span>
+              <span class="release">Documentation 5.5</span>
             </a>
             
 <div role="search">
@@ -368,10 +368,14 @@
 <li class="toctree-l3"><a class="reference internal" href="admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#storage-limit">Storage Limit</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#apply-a-custom-limit">Apply a custom limit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#archive-documents">Archive documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#restore-documents">Restore documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#check-account-storage">Check account storage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#list-of-custom-limits">List of custom limits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#custom-limits">Custom limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="admin_guide/admin_panel.html#database">Database</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#account-information">Account information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#document-information">Document information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#login-block-information">Login-block information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#fa-recovery">2FA Recovery</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="admin_guide/admin_panel.html#statistics">Statistics</a></li>
@@ -382,10 +386,16 @@
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#broadcast-message">Broadcast Message</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="admin_guide/admin_panel.html#performance">Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="admin_guide/admin_panel.html#performance">Performance</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#id1">Performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#measure-disk-performance">Measure disk performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#disk-performance-measurement-window">Disk performance measurement window</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="admin_guide/admin_panel.html#network">Network</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#validate-instance-configuration">Validate instance configuration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#server-telemetry">Server telemetry</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#statistical-aggregation">Statistical aggregation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#list-my-instance-in-public-directories">List my instance in public directories</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#consent-to-contact">Consent to contact</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#crowdfunding-participation">Crowdfunding participation</a></li>
@@ -621,132 +631,132 @@
 <h1>Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Permalink to this heading">¶</a></h1>
 <section id="common-issues">
 <h2>Common Issues<a class="headerlink" href="#common-issues" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-7">If CryptPad is not working as expected there are a few common things to try. Most of these relate to web browsers and extensions that either interfere with CryptPad's security features or disable basic browser functionality.</p>
+<p>If CryptPad is not working as expected there are a few common things to try. Most of these relate to web browsers and extensions that either interfere with CryptPad's security features or disable basic browser functionality.</p>
 <ol class="arabic simple">
-<li><p class="linemarker linemarker-9">Check the list of extensions below, disable the ones you have installed, if any</p></li>
-<li><p class="linemarker linemarker-10">Try using your browser in a private window and/or with all extensions disabled</p></li>
-<li><p class="linemarker linemarker-11">Try using a different browser. We recommend the latest versions of Firefox or Chromium</p></li>
-<li><p class="linemarker linemarker-12">If the issues persist, please contact support</p></li>
+<li><p>Check the list of extensions below, disable the ones you have installed, if any</p></li>
+<li><p>Try using your browser in a private window and/or with all extensions disabled</p></li>
+<li><p>Try using a different browser. We recommend the latest versions of Firefox or Chromium</p></li>
+<li><p>If the issues persist, please contact support</p></li>
 </ol>
 <section id="list-of-extensions-known-to-cause-issues-with-cryptpad">
 <h3>List of extensions known to cause issues with CryptPad<a class="headerlink" href="#list-of-extensions-known-to-cause-issues-with-cryptpad" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
-<li><p class="linemarker linemarker-17">Librejs</p></li>
-<li><p class="linemarker linemarker-18">Adblock</p></li>
-<li><p class="linemarker linemarker-19">Night Eye</p></li>
-<li><p class="linemarker linemarker-20">uMatrix</p></li>
-<li><p class="linemarker linemarker-21">JShelter</p></li>
-<li><p class="linemarker linemarker-22">AdGuard</p></li>
-<li><p class="linemarker linemarker-23">SuperAgent</p></li>
-<li><p class="linemarker linemarker-24">Tampermonkey</p></li>
-<li><p class="linemarker linemarker-25">Arkenfox (some configurations)</p></li>
+<li><p>Librejs</p></li>
+<li><p>Adblock</p></li>
+<li><p>Night Eye</p></li>
+<li><p>uMatrix</p></li>
+<li><p>JShelter</p></li>
+<li><p>AdGuard</p></li>
+<li><p>SuperAgent</p></li>
+<li><p>Tampermonkey</p></li>
+<li><p>Arkenfox (some configurations)</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p class="linemarker linemarker-28">If you identify issues with another extension please <a class="reference external" href="https://github.com/cryptpad/cryptpad/issues/new/choose">report it to the development team</a></p>
+<p>If you identify issues with another extension please <a class="reference external" href="https://github.com/cryptpad/cryptpad/issues/new/choose">report it to the development team</a></p>
 </div>
 </section>
 </section>
 <section id="i-forgot-my-password">
 <h2>I forgot my password<a class="headerlink" href="#i-forgot-my-password" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-33">Administrators of a CryptPad instance cannot recover or reset user passwords. This also ensures that they cannot access any user data (e.g. the content of documents).</p>
-<p class="linemarker linemarker-35">If you are still logged in to an account for which you have forgotten the password, you can transfer all of the documents to a new account with the following steps:</p>
+<p>Administrators of a CryptPad instance cannot recover or reset user passwords. This also ensures that they cannot access any user data (e.g. the content of documents).</p>
+<p>If you are still logged in to an account for which you have forgotten the password, you can transfer all of the documents to a new account with the following steps:</p>
 <ol class="arabic simple">
-<li><p class="linemarker linemarker-37">While logged in to the account with the lost password, navigate to: <strong>User Menu</strong> (avatar at the top right) &gt; <em class="fa fa-gear"></em> <strong>Settings</strong> &gt; <em class="fa fa-hdd-o"></em> <strong>CryptDrive</strong></p></li>
-<li><p class="linemarker linemarker-38">Click the <strong>Backup</strong> button to download a file containing the keys to all documents. (note: this is different to <strong>Download my Cryptdrive</strong> that saves the content of all individual documents)</p></li>
-<li><p class="linemarker linemarker-39">In another browser, register a new account with a known password</p></li>
-<li><p class="linemarker linemarker-40">While logged in to the new account: <strong>User Menu</strong> (avatar at the top right) &gt; <em class="fa fa-gear"></em> <strong>Settings</strong> &gt; <em class="fa fa-hdd-o"></em> <strong>CryptDrive</strong> and click the <strong>Restore</strong> button.</p></li>
+<li><p>While logged in to the account with the lost password, navigate to: <strong>User Menu</strong> (avatar at the top right) &gt; <em class="fa fa-gear"></em> <strong>Settings</strong> &gt; <em class="fa fa-hdd-o"></em> <strong>CryptDrive</strong></p></li>
+<li><p>Click the <strong>Backup</strong> button to download a file containing the keys to all documents. (note: this is different to <strong>Download my Cryptdrive</strong> that saves the content of all individual documents)</p></li>
+<li><p>In another browser, register a new account with a known password</p></li>
+<li><p>While logged in to the new account: <strong>User Menu</strong> (avatar at the top right) &gt; <em class="fa fa-gear"></em> <strong>Settings</strong> &gt; <em class="fa fa-hdd-o"></em> <strong>CryptDrive</strong> and click the <strong>Restore</strong> button.</p></li>
 </ol>
 </section>
 <section id="how-to-import-export-my-documents-to-from-another-platform">
 <h2>How to import/export my documents to/from another platform?<a class="headerlink" href="#how-to-import-export-my-documents-to-from-another-platform" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-45">Making CryptPad compatible with a wide range of document formats is an ongoing challenge for the development team. Unfortunately the technology for converting documents in the browser still has limitations, especially as far as private and open source solutions are concerned. While work in this area is in progress, the methods below should help in importing and exporting to/from other widely used software.</p>
+<p>Making CryptPad compatible with a wide range of document formats is an ongoing challenge for the development team. Unfortunately the technology for converting documents in the browser still has limitations, especially as far as private and open source solutions are concerned. While work in this area is in progress, the methods below should help in importing and exporting to/from other widely used software.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p class="linemarker linemarker-48">Simply copy-pasting content from existing software into CryptPad is an easy first step to try when importing/exporting. Please note that the import/export methods below can improve results significantly.</p>
+<p>Simply copy-pasting content from existing software into CryptPad is an easy first step to try when importing/exporting. Please note that the import/export methods below can improve results significantly.</p>
 </div>
-<p class="linemarker linemarker-50">It is possible to upload <strong>files</strong> to CryptPad for secure storage and sharing, however this does not make every file an editable CryptPad <strong>document</strong>.</p>
-<p class="linemarker linemarker-52">Text files uploaded as files can be opened as a Code/Markdown document from the Drive with <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> &gt; <em class="cptools cptools-code"></em> <strong>Open in Code editor</strong>.</p>
-<p class="linemarker linemarker-54">To import any other file type in an editable form, please use the <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> functionality in the appropriate CryptPad editor as explained below.</p>
+<p>It is possible to upload <strong>files</strong> to CryptPad for secure storage and sharing, however this does not make every file an editable CryptPad <strong>document</strong>.</p>
+<p>Text files uploaded as files can be opened as a Code/Markdown document from the Drive with <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> &gt; <em class="cptools cptools-code"></em> <strong>Open in Code editor</strong>.</p>
+<p>To import any other file type in an editable form, please use the <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> functionality in the appropriate CryptPad editor as explained below.</p>
 <section id="rich-text-document-import-export">
 <h3>Rich text document import/export<a class="headerlink" href="#rich-text-document-import-export" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-59">To import rich text documents (Microsoft Word, Google Docs, LibreOffice Writer, etc.), the supported format is HTML:</p>
+<p>To import rich text documents (Microsoft Word, Google Docs, LibreOffice Writer, etc.), the supported format is HTML:</p>
 <ol class="arabic simple">
-<li><p class="linemarker linemarker-61">Export your document as HTML in your existing software.</p></li>
-<li><p class="linemarker linemarker-62">Save the file to your computer.</p></li>
-<li><p class="linemarker linemarker-63">Open a new <a class="reference internal" href="user_guide/apps/richtext.html#app-rich-text"><span class="std std-ref">Rich Text</span></a> document on CryptPad (or an existing one to replace the contents).</p></li>
-<li><p class="linemarker linemarker-64"><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> and select your file.</p></li>
+<li><p>Export your document as HTML in your existing software.</p></li>
+<li><p>Save the file to your computer.</p></li>
+<li><p>Open a new <a class="reference internal" href="user_guide/apps/richtext.html#app-rich-text"><span class="std std-ref">Rich Text</span></a> document on CryptPad (or an existing one to replace the contents).</p></li>
+<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> and select your file.</p></li>
 </ol>
-<p class="linemarker linemarker-66">To export, use <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-download"></em> <strong>Export</strong> and select <code class="docutils literal notranslate"><span class="pre">.doc</span></code> as the format.</p>
+<p>To export, use <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-download"></em> <strong>Export</strong> and select <code class="docutils literal notranslate"><span class="pre">.doc</span></code> as the format.</p>
 </section>
 <section id="spreadsheets-import-export">
 <h3>Spreadsheets import/export<a class="headerlink" href="#spreadsheets-import-export" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-71">To import spreadsheets, the supported format are Microsoft Excel <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code> and OpenDocument <code class="docutils literal notranslate"><span class="pre">.ods</span></code>. These can both be exported from popular software such as Google Sheets and LibreOffice Calc:</p>
+<p>To import spreadsheets, the supported format are Microsoft Excel <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code> and OpenDocument <code class="docutils literal notranslate"><span class="pre">.ods</span></code>. These can both be exported from popular software such as Google Sheets and LibreOffice Calc:</p>
 <ol class="arabic simple">
-<li><p class="linemarker linemarker-73">Export your document as <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code> or <code class="docutils literal notranslate"><span class="pre">.ods</span></code> in your existing software.</p></li>
-<li><p class="linemarker linemarker-74">Save the file to your computer.</p></li>
-<li><p class="linemarker linemarker-75">Open a new <a class="reference internal" href="user_guide/apps/sheets.html#app-sheets"><span class="std std-ref">Spreadsheet</span></a> document (or an existing one to replace the contents).</p></li>
-<li><p class="linemarker linemarker-76"><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> and select your file.</p></li>
+<li><p>Export your document as <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code> or <code class="docutils literal notranslate"><span class="pre">.ods</span></code> in your existing software.</p></li>
+<li><p>Save the file to your computer.</p></li>
+<li><p>Open a new <a class="reference internal" href="user_guide/apps/sheets.html#app-sheets"><span class="std std-ref">Spreadsheet</span></a> document (or an existing one to replace the contents).</p></li>
+<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> and select your file.</p></li>
 </ol>
-<p class="linemarker linemarker-78">To export, use <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-download"></em> <strong>Export</strong> and choose a format:</p>
+<p>To export, use <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-download"></em> <strong>Export</strong> and choose a format:</p>
 <ul class="simple">
-<li><p class="linemarker linemarker-83">To use in Microsoft Excel or Google sheets, select <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code>.</p></li>
-<li><p class="linemarker linemarker-84">To use in LibreOffice Calc, select <code class="docutils literal notranslate"><span class="pre">.ods</span></code>.</p></li>
-<li><p class="linemarker linemarker-85">For cases where no further editing of the data is required after export (presentations, reports, etc), select <code class="docutils literal notranslate"><span class="pre">.pdf</span></code>.</p></li>
-<li><p class="linemarker linemarker-86">For backup purposes or to share with a user on another CryptPad instance, select <code class="docutils literal notranslate"><span class="pre">.bin</span></code>.</p></li>
+<li><p>To use in Microsoft Excel or Google sheets, select <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code>.</p></li>
+<li><p>To use in LibreOffice Calc, select <code class="docutils literal notranslate"><span class="pre">.ods</span></code>.</p></li>
+<li><p>For cases where no further editing of the data is required after export (presentations, reports, etc), select <code class="docutils literal notranslate"><span class="pre">.pdf</span></code>.</p></li>
+<li><p>For backup purposes or to share with a user on another CryptPad instance, select <code class="docutils literal notranslate"><span class="pre">.bin</span></code>.</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p class="linemarker linemarker-89">Import/export of spreadsheets to various formats is only available in browsers that support specific functionality. Please see the <a class="reference external" href="https://caniuse.com/sharedarraybuffer">up-to-date list of supported browsers</a>.</p>
+<p>Import/export of spreadsheets to various formats is only available in browsers that support specific functionality. Please see the <a class="reference external" href="https://caniuse.com/sharedarraybuffer">up-to-date list of supported browsers</a>.</p>
 </div>
 </section>
 </section>
 <section id="i-cannot-do-x-with-a-document-i-created">
 <h2>I cannot do X with a document I created<a class="headerlink" href="#i-cannot-do-x-with-a-document-i-created" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-94">Some functionality on CryptPad is restricted to <a class="reference internal" href="user_guide/share_and_access.html#owners"><span class="std std-ref">document owners</span></a>. This includes:</p>
+<p>Some functionality on CryptPad is restricted to <a class="reference internal" href="user_guide/share_and_access.html#owners"><span class="std std-ref">document owners</span></a>. This includes:</p>
 <ul class="simple">
-<li><p class="linemarker linemarker-96">Enabling an <a class="reference internal" href="user_guide/share_and_access.html#access-list"><span class="std std-ref">access list</span></a>.</p></li>
-<li><p class="linemarker linemarker-97">Enabling a password.</p></li>
-<li><p class="linemarker linemarker-98">Adding or removing other owners.</p></li>
-<li><p class="linemarker linemarker-99">Destroying the document.</p></li>
+<li><p>Enabling an <a class="reference internal" href="user_guide/share_and_access.html#access-list"><span class="std std-ref">access list</span></a>.</p></li>
+<li><p>Enabling a password.</p></li>
+<li><p>Adding or removing other owners.</p></li>
+<li><p>Destroying the document.</p></li>
 </ul>
-<p class="linemarker linemarker-101">The ownership of a document is set when <a class="reference internal" href="user_guide/apps/general.html#new-document"><span class="std std-ref">creating it</span></a> and cannot be changed afterwards if the document is created without an owner.</p>
-<p class="linemarker linemarker-103">The development team is considering removing this distinction in future. In the meantime, the safe default option is to &quot;own&quot; all documents you create in order to retain full control over them, including the ability to destroy them.</p>
+<p>The ownership of a document is set when <a class="reference internal" href="user_guide/apps/general.html#new-document"><span class="std std-ref">creating it</span></a> and cannot be changed afterwards if the document is created without an owner.</p>
+<p>The development team is considering removing this distinction in future. In the meantime, the safe default option is to &quot;own&quot; all documents you create in order to retain full control over them, including the ability to destroy them.</p>
 </section>
 <section id="can-i-use-cryptpad-on-mobile">
 <h2>Can I use CryptPad on mobile?<a class="headerlink" href="#can-i-use-cryptpad-on-mobile" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-108">CryptPad is engineered to work as well as possible on small screens. Depending on your device performance it should be possible to use CryptPad on mobile. Work to make CryptPad more responsive was undertaken in 2020, if you notice areas that need improvement in this regard, please contact <a class="reference internal" href="user_guide/support.html#support"><span class="std std-ref">Support</span></a> or submit an <a class="reference external" href="https://github.com/cryptpad/cryptpad/issues/new/choose">issue on Github</a>.</p>
+<p>CryptPad is engineered to work as well as possible on small screens. Depending on your device performance it should be possible to use CryptPad on mobile. Work to make CryptPad more responsive was undertaken in 2020, if you notice areas that need improvement in this regard, please contact <a class="reference internal" href="user_guide/support.html#support"><span class="std std-ref">Support</span></a> or submit an <a class="reference external" href="https://github.com/cryptpad/cryptpad/issues/new/choose">issue on Github</a>.</p>
 <section id="are-you-planning-to-make-an-app">
 <h3>Are you planning to make an app?<a class="headerlink" href="#are-you-planning-to-make-an-app" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-113">We are not planning a dedicated mobile application for the following reasons:</p>
+<p>We are not planning a dedicated mobile application for the following reasons:</p>
 <ul class="simple">
-<li><p class="linemarker linemarker-115">It would dramatically increase the amount of code that has to be developed and maintained, effectively creating other &quot;versions&quot; of CryptPad for iOS and Android.</p></li>
-<li><p class="linemarker linemarker-117">CryptPad is open source and can be hosted by anyone who wants to offer the service. Therefore, users of a mobile application would have to specify which <a class="reference internal" href="user_guide/instances.html#cryptpad-instances"><span class="std std-ref">CryptPad instance</span></a> they want to connect to, which would be confusing. To complicate things further, each instance may be running a different version of the software, depending on whether or not the latest updates were applied by the administrators.</p></li>
+<li><p>It would dramatically increase the amount of code that has to be developed and maintained, effectively creating other &quot;versions&quot; of CryptPad for iOS and Android.</p></li>
+<li><p>CryptPad is open source and can be hosted by anyone who wants to offer the service. Therefore, users of a mobile application would have to specify which <a class="reference internal" href="user_guide/instances.html#cryptpad-instances"><span class="std std-ref">CryptPad instance</span></a> they want to connect to, which would be confusing. To complicate things further, each instance may be running a different version of the software, depending on whether or not the latest updates were applied by the administrators.</p></li>
 </ul>
-<p class="linemarker linemarker-119">To address these problems, the development team is working on making CryptPad a &quot;Progressive Web App&quot;. This means that it can be used on mobile through the web browser, behaving like an application while being the same software that runs on desktop browsers. This has the benefit of turning every CryptPad instance into a web app provider, rather than putting the burden of choosing the right instance on the user.</p>
+<p>To address these problems, the development team is working on making CryptPad a &quot;Progressive Web App&quot;. This means that it can be used on mobile through the web browser, behaving like an application while being the same software that runs on desktop browsers. This has the benefit of turning every CryptPad instance into a web app provider, rather than putting the burden of choosing the right instance on the user.</p>
 </section>
 </section>
 <section id="can-cryptpad-sync-documents-to-my-local-filesystem">
 <h2>Can CryptPad sync documents to my local filesystem?<a class="headerlink" href="#can-cryptpad-sync-documents-to-my-local-filesystem" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-129">The way encryption is currently used in CryptPad does not allow syncing with the local file system. This is a regularly requested feature however, so the development team hopes to make it available in future.</p>
+<p>The way encryption is currently used in CryptPad does not allow syncing with the local file system. This is a regularly requested feature however, so the development team hopes to make it available in future.</p>
 </section>
 <section id="what-is-the-relationship-between-cryptpad-and-onlyoffice">
 <span id="faq-oointegration"></span><h2>What is the relationship between CryptPad and OnlyOffice?<a class="headerlink" href="#what-is-the-relationship-between-cryptpad-and-onlyoffice" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-136">The CryptPad <a class="reference internal" href="user_guide/apps/sheets.html#app-sheets"><span class="std std-ref">Spreadsheet</span></a> application is an integration of <a class="reference external" href="https://www.onlyoffice.com/en/spreadsheet-editor.aspx">OnlyOffice Spreadsheets</a>. However, this only concerns the client-side code, CryptPad does not make use of the OnlyOffice Document Server. CryptPad's encrypted collaboration, used for spreadsheets and other applications, is completely different from the encryption system used in parts of upstream OnlyOffice. Some of CryptPad's file format conversion tools are based on OnlyOffice code, but substantial work has been done to make it run in the browser rather than on the server, therefore avoiding the need to reveal the contents of users' documents when converting.</p>
+<p>The CryptPad <a class="reference internal" href="user_guide/apps/sheets.html#app-sheets"><span class="std std-ref">Spreadsheet</span></a> application is an integration of <a class="reference external" href="https://www.onlyoffice.com/en/spreadsheet-editor.aspx">OnlyOffice Spreadsheets</a>. However, this only concerns the client-side code, CryptPad does not make use of the OnlyOffice Document Server. CryptPad's encrypted collaboration, used for spreadsheets and other applications, is completely different from the encryption system used in parts of upstream OnlyOffice. Some of CryptPad's file format conversion tools are based on OnlyOffice code, but substantial work has been done to make it run in the browser rather than on the server, therefore avoiding the need to reveal the contents of users' documents when converting.</p>
 </section>
 <section id="faq-for-cryptpad-fr">
 <h2>FAQ for cryptpad.fr<a class="headerlink" href="#faq-for-cryptpad-fr" title="Permalink to this heading">¶</a></h2>
 <section id="can-i-pay-for-my-subscription-without-a-card">
 <span id="faq-manual-payments"></span><h3>Can I pay for my subscription without a card?<a class="headerlink" href="#can-i-pay-for-my-subscription-without-a-card" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-146">We accept payments by bank transfer, Paypal, or other depending on requests. However, due to the additional work involved in issuing invoices and processing payments manually, this option is limited to yearly plans for our Duo offer and above and incurs a 30% surcharge.</p>
+<p>We accept payments by bank transfer, Paypal, or other depending on requests. However, due to the additional work involved in issuing invoices and processing payments manually, this option is limited to yearly plans for our Duo offer and above and incurs a 30% surcharge.</p>
 </section>
 <section id="do-you-accept-cryptocurrencies-for-subscriptions-and-donations">
 <h3>Do you accept cryptocurrencies for subscriptions and donations?<a class="headerlink" href="#do-you-accept-cryptocurrencies-for-subscriptions-and-donations" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-151">We accept payments in Bitcoin. These are subject to the <a class="reference internal" href="#faq-manual-payments"><span class="std std-ref">manual processing surcharges</span></a> as explained in the previous question. Additionally, as a company registered in France, we are legally required to ask for a name and address to issue the invoice to, and an email for communication about your subscription.</p>
+<p>We accept payments in Bitcoin. These are subject to the <a class="reference internal" href="#faq-manual-payments"><span class="std std-ref">manual processing surcharges</span></a> as explained in the previous question. Additionally, as a company registered in France, we are legally required to ask for a name and address to issue the invoice to, and an email for communication about your subscription.</p>
 </section>
 <section id="can-you-provide-a-data-processing-agreement-dpa">
 <h3>Can you provide a Data processing Agreement (DPA)?<a class="headerlink" href="#can-you-provide-a-data-processing-agreement-dpa" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-156">DPAs are a feature of our <a class="reference external" href="https://cryptpad.fr/accounts/#org">Organization Plans</a>, note that a example DPA is available for preview on that page.</p>
+<p>DPAs are a feature of our <a class="reference external" href="https://cryptpad.fr/accounts/#org">Organization Plans</a>, note that a example DPA is available for preview on that page.</p>
 </section>
 </section>
 </section>
@@ -796,7 +806,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'5.4',
+            VERSION:'5.5',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

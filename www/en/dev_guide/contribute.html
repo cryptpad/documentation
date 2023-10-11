@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Contribute Code &mdash; CryptPad 5.4 documentation</title>
+  <title>Contribute Code &mdash; CryptPad 5.5 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.4</span>
+              <span class="release">Documentation 5.5</span>
             </a>
             
 <div role="search">
@@ -368,10 +368,14 @@
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#storage-limit">Storage Limit</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#apply-a-custom-limit">Apply a custom limit</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#archive-documents">Archive documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#restore-documents">Restore documents</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#check-account-storage">Check account storage</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#list-of-custom-limits">List of custom limits</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#custom-limits">Custom limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#database">Database</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#account-information">Account information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#document-information">Document information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#login-block-information">Login-block information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#fa-recovery">2FA Recovery</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#statistics">Statistics</a></li>
@@ -382,10 +386,16 @@
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast-message">Broadcast Message</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#performance">Performance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#performance">Performance</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#id1">Performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#measure-disk-performance">Measure disk performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#disk-performance-measurement-window">Disk performance measurement window</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#network">Network</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#validate-instance-configuration">Validate instance configuration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#server-telemetry">Server telemetry</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#statistical-aggregation">Statistical aggregation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#list-my-instance-in-public-directories">List my instance in public directories</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#consent-to-contact">Consent to contact</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#crowdfunding-participation">Crowdfunding participation</a></li>
@@ -621,33 +631,33 @@
             
   <section id="contribute-code">
 <span id="dev-contribute-code"></span><h1>Contribute Code<a class="headerlink" href="#contribute-code" title="Permalink to this heading">¶</a></h1>
-<p class="linemarker linemarker-6">For any code contribution to CryptPad, you should remember the following elements.</p>
+<p>For any code contribution to CryptPad, you should remember the following elements.</p>
 <section id="license">
 <h2>License<a class="headerlink" href="#license" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-11">The CryptPad source code is freely available under the <a class="reference external" href="https://www.gnu.org/licenses/agpl-3.0.fr.html">AGPLv3</a> license. Please note the following points:</p>
+<p>The CryptPad source code is freely available under the <a class="reference external" href="https://www.gnu.org/licenses/agpl-3.0.fr.html">AGPLv3</a> license. Please note the following points:</p>
 <ul class="simple">
-<li><p class="linemarker linemarker-13">This license allows the re-use and modification of the code, but the modifications must also be made available under the same license.</p></li>
-<li><p class="linemarker linemarker-14">Any library included in the project as part of a contribution must be compatible with this license.</p></li>
+<li><p>This license allows the re-use and modification of the code, but the modifications must also be made available under the same license.</p></li>
+<li><p>Any library included in the project as part of a contribution must be compatible with this license.</p></li>
 </ul>
 </section>
 <section id="git">
 <h2>Git<a class="headerlink" href="#git" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-19">The source code is <a class="reference external" href="https://github.com/cryptpad/cryptpad">published on GitHub</a>.</p>
+<p>The source code is <a class="reference external" href="https://github.com/cryptpad/cryptpad">published on GitHub</a>.</p>
 <section id="pull-requests">
 <h3>Pull requests<a class="headerlink" href="#pull-requests" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-24">The development team accepts contributions in the form of &quot;pull requests&quot;. All requests are considered but the response time can vary according to the complexity of the changes made and the current workload of the team.</p>
+<p>The development team accepts contributions in the form of &quot;pull requests&quot;. All requests are considered but the response time can vary according to the complexity of the changes made and the current workload of the team.</p>
 </section>
 <section id="branches">
 <h3>Branches<a class="headerlink" href="#branches" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-29">Contributions can be based on the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch which is updated with each release and contains stable code. Experienced contributors can also work on the <code class="docutils literal notranslate"><span class="pre">staging</span></code> branch which usually contains code planned for the next release and/or under development. This code may be unstable, so the use of this branch is usually discouraged.</p>
+<p>Contributions can be based on the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch which is updated with each release and contains stable code. Experienced contributors can also work on the <code class="docutils literal notranslate"><span class="pre">staging</span></code> branch which usually contains code planned for the next release and/or under development. This code may be unstable, so the use of this branch is usually discouraged.</p>
 </section>
 <section id="before-contributing">
 <h3>Before contributing<a class="headerlink" href="#before-contributing" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-34">Before sending the &quot;pull request&quot; to GitHub, it is important to:</p>
+<p>Before sending the &quot;pull request&quot; to GitHub, it is important to:</p>
 <ul class="simple">
-<li><p class="linemarker linemarker-36">Test the code</p></li>
-<li><p class="linemarker linemarker-37">Ensure compliance with coding rules using the <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">run</span> <span class="pre">lint</span></code> command to list syntax errors and inconsistencies</p></li>
-<li><p class="linemarker linemarker-38">Describe the changes and why they were made in the message</p></li>
+<li><p>Test the code</p></li>
+<li><p>Ensure compliance with coding rules using the <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">run</span> <span class="pre">lint</span></code> command to list syntax errors and inconsistencies</p></li>
+<li><p>Describe the changes and why they were made in the message</p></li>
 </ul>
 </section>
 </section>
@@ -698,7 +708,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.4',
+            VERSION:'5.5',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
