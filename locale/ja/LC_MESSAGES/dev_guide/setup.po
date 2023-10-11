@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CryptPad \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-10 12:41+0100\n"
+"POT-Creation-Date: 2023-10-11 13:22+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,96 +42,108 @@ msgstr ""
 #: ../../dev_guide/setup.rst:14
 msgid ""
 "Using `nodesource <https://github.com/nodesource/distributions#using-"
-"debian-as-root-4>`__ is recommended"
+"debian-as-root-4>`__ for Linux"
+msgstr ""
+
+#: ../../dev_guide/setup.rst:15
+msgid ""
+"Using `homebrew <https://nodejs.org/en/download/package-"
+"manager#alternatives-2>`__ for macOS"
 msgstr ""
 
 #: ../../dev_guide/setup.rst:16
+msgid ""
+"Using `the official Windows installer <https://nodejs.org/en/download>`__"
+" for Windows"
+msgstr ""
+
+#: ../../dev_guide/setup.rst:18
 msgid "NPM"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:20
+#: ../../dev_guide/setup.rst:22
 msgid "Installation"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:22
+#: ../../dev_guide/setup.rst:24
 msgid ""
 "The source code can be found on `GitHub <https://github.com>`__. You must"
 " have an account on this platform in order to contribute."
 msgstr ""
 
-#: ../../dev_guide/setup.rst:24
+#: ../../dev_guide/setup.rst:26
 msgid "Fork the code: https://github.com/cryptpad/cryptpad.git"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:25
+#: ../../dev_guide/setup.rst:27
 msgid "Clone the fork on your system in the desired directory"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:27
+#: ../../dev_guide/setup.rst:29
 msgid "`git clone https://github.com/{YOUR_USER_NAME}/cryptpad.git`"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:29
+#: ../../dev_guide/setup.rst:31
 msgid "Install the server dependencies with npm and client dependencies:"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:38
+#: ../../dev_guide/setup.rst:40
 msgid "Configuration"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:40
+#: ../../dev_guide/setup.rst:42
 msgid ""
 "Once everything is installed, you can configure some values before "
 "starting the server."
 msgstr ""
 
-#: ../../dev_guide/setup.rst:42
+#: ../../dev_guide/setup.rst:44
 msgid "Make a copy of the default configuration:"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:49
+#: ../../dev_guide/setup.rst:51
 msgid ""
 "The `example configuration file "
 "<https://github.com/cryptpad/cryptpad/blob/main/config/config.example.js>`__"
 " lists the configurable values and how to use them."
 msgstr ""
 
-#: ../../dev_guide/setup.rst:50
+#: ../../dev_guide/setup.rst:52
 msgid "For a development instance, the important elements are:"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:52
+#: ../../dev_guide/setup.rst:54
 msgid ""
 "``httpUnsafeOrigin``: if you want to use the development server and the "
 "test client on different systems, you have to modify this value to use "
 "the network address of the server (example: 'http://192.168.0.10:3000')."
 msgstr ""
 
-#: ../../dev_guide/setup.rst:53
+#: ../../dev_guide/setup.rst:55
 msgid ""
 "``adminKeys``: if you want to have access to the administration panel in "
 "the CryptPad client, you need to create a user account on the instance "
 "and add its *Public Signature Key* here."
 msgstr ""
 
-#: ../../dev_guide/setup.rst:54
+#: ../../dev_guide/setup.rst:56
 msgid ""
 "``supportMailboxPublicKey``: to have access to the support panel on the "
 "development instance, see :ref:`admin_support_mailbox` in the "
 "administrator guide."
 msgstr ""
 
-#: ../../dev_guide/setup.rst:55
+#: ../../dev_guide/setup.rst:57
 msgid ""
 "``defaultStorageLimit``: to increase the storage limit of the development"
 " instance (50MB by default)."
 msgstr ""
 
-#: ../../dev_guide/setup.rst:58
+#: ../../dev_guide/setup.rst:60
 msgid "Caching"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:60
+#: ../../dev_guide/setup.rst:62
 msgid ""
 "CryptPad uses a \"cache busting\" system to manage versions of the "
 "JavaScript code and the compiled CSS code. This means that, for a normal "
@@ -141,7 +153,7 @@ msgid ""
 "*development* mode."
 msgstr ""
 
-#: ../../dev_guide/setup.rst:63
+#: ../../dev_guide/setup.rst:65
 msgid ""
 "It is important to note that no \"build\" or \"compilation\" step is "
 "necessary when developing code for CryptPad. The JavaScript files are "
@@ -150,11 +162,11 @@ msgid ""
 "and reload the page on CryptPad."
 msgstr ""
 
-#: ../../dev_guide/setup.rst:66
+#: ../../dev_guide/setup.rst:68
 msgid "Launching in development mode"
 msgstr ""
 
-#: ../../dev_guide/setup.rst:68
+#: ../../dev_guide/setup.rst:70
 msgid "``npm run dev``"
 msgstr ""
 
@@ -189,5 +201,11 @@ msgstr ""
 #~ msgid ""
 #~ "Install the server dependencies with npm"
 #~ "  and client dependencies with bower:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Using `nodesource "
+#~ "<https://github.com/nodesource/distributions#using-debian-"
+#~ "as-root-4>`__ is recommended"
 #~ msgstr ""
 
