@@ -56,7 +56,7 @@ To import any other file type in an editable form, please use the |file-o| **Fil
 Import/export is not visible in the File menu
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For spreadsheets and advanced document processing, Cryptpad integrated OnlyOffice. As a result, there are two File-menus at the same screen. Please make sure to check in both menus, when looking for import/ export.
+For spreadsheets and advanced document processing, Cryptpad integrated OnlyOffice. As a result, there are two File-menus at the same screen. Please make sure to check in both menus, when looking for import/export.
 
 .. note::
     See the `warning note <https://docs.cryptpad.org/en/user_guide/apps/sheets.html#toolbars>`_ in our Spreadsheet application documentation.
