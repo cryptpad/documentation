@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Foire Aux Questions &mdash; Documentation CryptPad 5.5</title>
+  <title>Foire Aux Questions &mdash; Documentation CryptPad 5.6.0</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="index.html" class="icon icon-home">
               <img src="_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.5</span>
+              <span class="release">Documentation 5.6.0</span>
             </a>
             
 <div role="search">
@@ -521,6 +521,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#i-forgot-my-password">J'ai oublié mon mot de passe</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#how-to-import-export-my-documents-to-from-another-platform">Comment importer/exporter mes documents vers/depuis un autre logiciel ?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#import-export-is-not-visible-in-the-file-menu">Import/export is not visible in the File menu</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#rich-text-document-import-export">Import/export de documents texte</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#spreadsheets-import-export">Import/export de feuilles de calcul</a></li>
 </ul>
@@ -653,7 +654,7 @@
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you identify issues with another extension please <a class="reference external" href="https://github.com/cryptpad/cryptpad/issues/new/choose">report it to the development team</a></p>
+<p>Si vous identifiez des problèmes avec une autre extension, veuillez le <a class="reference external" href="https://github.com/cryptpad/cryptpad/issues/new/choose">reporter à l'équipe de développement</a></p>
 </div>
 </section>
 </section>
@@ -678,6 +679,14 @@
 <p>Il est possible d'importer des <strong>fichiers</strong> sur CryptPad pour un stockage et un partage sécurisés, mais cela ne fait pas de chaque fichier un <strong>document</strong> modifiable par les applications CryptPad.</p>
 <p>Les fichiers texte importés peuvent être ouverts en tant que document Code/Markdown depuis le Drive avec <code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> &gt; <em class="cptools cptools-code"></em> <strong>Ouvrir dans l'application Code</strong>.</p>
 <p>Pour importer tout autre type de fichier dans une forme modifiable, veuillez utiliser la fonctionnalité <em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-upload"></em> <strong>Importer</strong> dans l'application CryptPad appropriée, comme expliqué ci-dessous.</p>
+<section id="import-export-is-not-visible-in-the-file-menu">
+<h3>Import/export is not visible in the File menu<a class="headerlink" href="#import-export-is-not-visible-in-the-file-menu" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>For spreadsheets and advanced document processing, Cryptpad integrates OnlyOffice. As a result, there are two toolbars each with their own File menu on the same screen. Please make sure to check in both menus, when looking for import/export.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>See the <a class="reference external" href="https://docs.cryptpad.org/en/user_guide/apps/sheets.html#toolbars">warning note</a> in our Spreadsheet application documentation.</p>
+</div>
+</section>
 <section id="rich-text-document-import-export">
 <h3>Import/export de documents texte<a class="headerlink" href="#rich-text-document-import-export" title="Lien permanent vers cette rubrique">¶</a></h3>
 <p>Pour importer des documents texte (Microsoft Word, Google Docs, LibreOffice Writer, etc.), le format compatible est HTML :</p>
@@ -725,7 +734,7 @@
 </section>
 <section id="can-i-use-cryptpad-on-mobile">
 <h2>Puis-je utiliser CryptPad sur mobile ?<a class="headerlink" href="#can-i-use-cryptpad-on-mobile" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p>CryptPad is engineered to work as well as possible on small screens. Depending on your device performance it should be possible to use CryptPad on mobile. Work to make CryptPad more responsive was undertaken in 2020, if you notice areas that need improvement in this regard, please contact <a class="reference internal" href="user_guide/support.html#support"><span class="std std-ref">Support</span></a> or submit an <a class="reference external" href="https://github.com/cryptpad/cryptpad/issues/new/choose">issue on Github</a>.</p>
+<p>CryptPad est conçu pour fonctionner le mieux possible sur les petits écrans. En fonction des performances de votre appareil, il devrait être possible d'utiliser CryptPad sur un téléphone portable. Des travaux visant à améliorer cet usage ont été entrepris en 2020. Si vous remarquez des points à améliorer à cet égard, veuillez contacter <a class="reference internal" href="user_guide/support.html#support"><span class="std std-ref">Support</span></a> ou le <a class="reference external" href="https://github.com/cryptpad/cryptpad/issues/new/choose">signaler sur Github</a>.</p>
 <section id="are-you-planning-to-make-an-app">
 <h3>Avez vous l'intention de faire une application ?<a class="headerlink" href="#are-you-planning-to-make-an-app" title="Lien permanent vers cette rubrique">¶</a></h3>
 <p>Nous ne prévoyons pas d'application mobile pour les raisons suivantes :</p>
@@ -785,10 +794,10 @@
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a modified <a href="https://github.com/rtfd/sphinx_rtd_theme">RTD theme</a>.<br/>
+  Built with <a href="https://sphinx-doc.org/">Sphinx</a> using a modified <a href="https://github.com/rtfd/sphinx_rtd_theme">RTD theme</a>.<br/>
   <a href="https://cryptpad.fr" title="CryptPad flagship instance">CryptPad flagship instance</a> |
-  <a href="https://github.com/cryptpad/documentation" title="The Github repository">Github repository for this documentation.</a>
-  . 
+  <a href="https://github.com/cryptpad/documentation" title="The GitHub repository">GitHub repository for this documentation</a>.
+   
 
 </footer>
 
@@ -806,7 +815,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'5.5',
+            VERSION:'5.6.0',
             LANGUAGE:'fr',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

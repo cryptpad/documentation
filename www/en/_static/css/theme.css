@@ -198,6 +198,7 @@ input[type="reset"],
 input[type="submit"] {
     cursor: pointer;
     -webkit-appearance: button;
+    appearance: button;
 }
 
 button[disabled],
@@ -213,6 +214,7 @@ input[type="radio"] {
 
 input[type="search"] {
     -webkit-appearance: textfield;
+    appearance: textfield;
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
@@ -1186,6 +1188,7 @@ button {
     cursor: pointer;
     line-height: normal;
     -webkit-appearance: button;
+    appearance: button;
 }
 
 button::-moz-focus-inner,
@@ -1214,7 +1217,7 @@ button[disabled] {
     font-weight: normal;
     font-family: "Open Sans", sans-serif;
     box-shadow: 0 1px 2px -1px rgba(255, 255, 255, 0.5) inset, 0 -2px 0 0 rgba(0, 0, 0, 0.1) inset;
-    outline-none: false;
+    /* outline-none: false; */
     vertical-align: middle;
     zoom: 1;
     -webkit-user-drag: none;
@@ -1508,7 +1511,7 @@ button[disabled] {
 }
 
 .wy-form-aligned .wy-control-group > label {
-    display: inline-block;
+    /* display: inline-block; */
     vertical-align: middle;
     width: 10em;
     margin: 6px 12px 0 0;
@@ -1753,6 +1756,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
     -webkit-appearance: button;
+    appearance: button;
     cursor: pointer;
     font-family: "Open Sans", sans-serif;
 }
@@ -1772,6 +1776,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"] {
     -webkit-appearance: none;
+    appearance: none;
     padding: 6px;
     display: inline-block;
     border: 1px solid #ccc;
@@ -2391,10 +2396,6 @@ input[type="checkbox"][disabled] {
     margin-bottom: 0 !important;
 }
 
-.wy-table-responsive table td,
-.wy-table-responsive table th {
-
-}
 
 a {
     color: #0087ff;
@@ -3319,8 +3320,7 @@ footer span.commit .rst-content tt,
 }
 
 @media screen and (min-width: 1100px) {
-    .wy-nav-content-wrap {
-    }
+
 
     .wy-nav-content {
         margin: 0;
@@ -3553,7 +3553,8 @@ footer span.commit .rst-content tt,
 
 
 img.screenshot {
-    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.44);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.44);
 }
 
 .rst-content abbr[title] {
