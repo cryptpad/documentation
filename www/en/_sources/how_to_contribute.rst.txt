@@ -64,6 +64,28 @@ Current progression on translated languages:
 .. image:: https://weblate.cryptpad.org/widgets/cryptpad/-/app/multi-auto.svg
    :alt: Weblate-widget
 
+Community translation program
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+CryptPad translations are a volunteer community effort. We are not able to offer financial compensation for translation work, but we offer free premium benefits on `CryptPad.fr <https://cryptpad.fr/accounts/>`__ as a token of gratitude (increased storage and priority support).
+
+Terms
+"""""
+
+Translator commitment
+
+- Make an account on our `Weblate instance <https://weblate.cryptpad.org>`__ and use it for all translation work
+- Bring and/or maintain a language at or near 100% translated status
+- Keep the translation up to date as we release new versions of CryptPad approximately 4 times per year (the amount of work will depend on the functionality in each release)
+
+CryptPad development team commitment
+
+- Enable a free `Personal plan <https://cryptpad.fr/accounts/#subscribe>`__ on CryptPad.fr for each translator as long as the translator commitments are met 
+- Provide guidance and support in the `CryptPad Translations matrix channel <https://matrix.to/#/#cryptpad-translations:matrix.xwiki.com>`__
+- Host and maintain the Weblate instance incl. all tools, glossary, etc
+
+This program has so far been used only with individual translators, if you are translating as a group please contact the development team.
+
 .. _contribute_code:
 
 Contribute to the code
