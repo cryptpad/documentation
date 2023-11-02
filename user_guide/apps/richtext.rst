@@ -74,7 +74,7 @@ To comment on a part of the text:
 3. Write the comment.
 4. |send-o| **Submit**.
 
-Click on a comment to select it, then: 
+``Click`` on a comment to select it, then: 
 
 - |reply| **Reply**: Adds a comment as a response. 
 - |check| **Resolve**: Deletes the comment after confirmation.

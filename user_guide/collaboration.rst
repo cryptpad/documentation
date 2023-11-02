@@ -117,11 +117,11 @@ By sharing your profile:
 1. Copy the link: User menu (avatar at the top-right) > |user-circle| **Profile** > |share-alt| **Share**.
 2. Paste and send through the means of your choice (preferably a secure mode of cummunication).
 3. Your contact must then click **Send a contact request**.
-4. You get a notification with the request, click **Accept**.
+4. You get a notification with the request, ``Click`` **Accept**.
 
 On the profile page of another CryptPad user:
 
-1. Click **Send a contact request**.
+1. ``Click`` **Send a contact request**.
 
 Manage contacts
 ~~~~~~~~~~~~~~~

@@ -267,7 +267,7 @@ Configure support mailbox
 The support mailbox can be configured from the :ref:`admin_panel`.
 
 #. With an instance administrator account, visit the ``/admin/#support`` page
-#. Click **Generate Support Keys**
+#. ``Click`` **Generate Support Keys**
 #. The support mailbox is now active
 #. Flush the cache to access the mailbox:  **General** tab > **Flush HTTP Cache**
 
