@@ -69,7 +69,7 @@ You can create recurring events, repeat:
       - On a specific date
       - After X times
 
-To edit events, drag them to the new date/time or ``Click`` to open the detailed edit view.
+To edit events, drag them to the new date/time or click to open the detailed edit view.
 
 Toolbar
 ~~~~~~~
@@ -141,7 +141,7 @@ All contacts are listed at the left of the window. For each contact:
 Chat with contacts
 ~~~~~~~~~~~~~~~~~~
 
-On the Contacts page, ``Click`` on a contact in the list to open the chat with them in the main window.
+On the Contacts page, click on a contact in the list to open the chat with them in the main window.
 
 Write messages in the field at the bottom and send them with |paper-plane| or ``Enter``.
 
