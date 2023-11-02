@@ -69,7 +69,10 @@ You can create recurring events, repeat:
       - On a specific date
       - After X times
 
-To edit events, drag them to the new date/time or ``Click`` to open the detailed edit view.
+To edit events, drag them to the new date/time or alternatively:
+
+1. ``Click`` on the event to open the detailed view.
+2. ``Click`` on |pencil| **Edit** to open the edition form.
 
 Toolbar
 ~~~~~~~
