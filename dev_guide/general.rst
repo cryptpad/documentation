@@ -173,7 +173,7 @@ The **data storage** has been achieved by adding a "fake" member in each channel
 Client side
 ~~~~~~~~~~~
 
-At the client level, a JavaScript module manages the Netflux protocol with simple APIs. The module is located in ``./wwww/components/netflux-websocket/netflux-client.js``. Once loaded, it allows us to create a **network** representing the Websocket connection to the Netflux server.
+At the client level, a JavaScript module manages the Netflux protocol with simple APIs. The module is located in ``./www/components/netflux-websocket/netflux-client.js``. Once loaded, it allows us to create a **network** representing the Websocket connection to the Netflux server.
 
 This network contains the **list of channels** joined by the user, as well as the **list of members** present in each channel. It allows us to perform all the operations allowed by the protocol:
 
