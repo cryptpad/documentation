@@ -39,14 +39,14 @@ CryptPad uses several encryption systems appropriate for different use cases. Th
 
 -  Documents, user account, static files and group chat
 
-   -  Symmetrical encryption "xsalsa20-poly1305".
+   -  Symmetric encryption "xsalsa20-poly1305".
    -  A unique encryption key allows users to encrypt and decrypt the desired content. This key is derived from the "hash" of the URL (the part after the #) because this part is never sent to the server by the browser, which makes it possible to respect the Zero-knowledge constraint (the server doesn't know the encryption keys).
    -  All users with access to this key can decrypt the "patches" allowing them to rebuild the document or decrypt the chat messages.
 
 -  Read-only access to documents
 
    -  Signature “ed25519”.
-   -  Since the encryption is symmetrical, all users who can read and therefore decrypt the document can also technically encrypt messages and send them. A signature system makes it possible to authorize or to block sending messages.
+   -  Since the encryption is symmetric, all users who can read and therefore decrypt the document can also technically encrypt messages and send them. A signature system makes it possible to authorize or to block sending messages.
    -  The edit URL contains a signature in addition to the encryption key. Editors will therefore be able to sign messages after encrypting them.
    -  A "public" verification key allows all users (editors **and** readers) to check if an encrypted message has been signed with the correct signing key. Messages with an invalid signature are ignored.
    -  When a document is created, the public verification key associated with this document is sent to the server. Messages with invalid signature are not stored in the database.
