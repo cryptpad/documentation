@@ -47,7 +47,7 @@ The **worker** level is opened from the **outer** level, once initial checks hav
 Once the connector is loaded with the desired technology, the exact same code governs all 3 types of systems.
 
 1. An **asynchronous communication channel** is first initialized with the **outer** level to receive commands and send events.
-2. A file ``wwww/common/outer/store-rpc.js`` translates text commands into functions to be called.
+2. A file ``www/common/outer/store-rpc.js`` translates text commands into functions to be called.
 3. A Store object is created in ``www/common/outer/async-store.js``. It contains the functions corresponding to the commands and loads all the modules necessary for the worker to function.
 
 Access to content stored in the server database is done with commands to the worker. This content represents:
@@ -95,9 +95,9 @@ The level called **outer** is the base level, corresponding to the HTML file loa
 
 Each application starts with its own file "index.html". This file will load the basic JavaScript code, usually located in a "main.js" file for the application. Here we try to initialize the different levels as quickly as possible because the **outer** level doesn't display any interface and displaying a white screen is not interesting for the user.
 
-The "main.js" file of each application will then start loading the main code, common to all applications at the **outer** level. The first part is located in ``wwww/common/sframe-common-outer.js``. This is the module that will handle the communication between the **outer** and **inner** levels. In the same way as for the worker, these 2 levels can send commands or events to each other.
+The "main.js" file of each application will then start loading the main code, common to all applications at the **outer** level. The first part is located in ``www/common/sframe-common-outer.js``. This is the module that will handle the communication between the **outer** and **inner** levels. In the same way as for the worker, these 2 levels can send commands or events to each other.
 
-This module will also load ``wwww/common/cryptpad-common.js`` which represents the communication between the **outer** and **worker** levels. "Cryptpad-common" will first choose the best type of worker available in the browser. It will initialize it, create a communication channel and then send the main command to load the user account.
+This module will also load ``www/common/cryptpad-common.js`` which represents the communication between the **outer** and **worker** levels. "Cryptpad-common" will first choose the best type of worker available in the browser. It will initialize it, create a communication channel and then send the main command to load the user account.
 
 Once the user account is loaded by the worker, "sframe-common-outer" will be able to start loading the document (if applicable) or the content of the selected application.
 

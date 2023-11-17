@@ -16,7 +16,7 @@ sframe-app-outer.js
 
 The ``main.js`` file is the only JavaScript file of "outer" that is specific to the current application. In some cases, it must contain specific instructions to give more rights to the application or add special commands for the database. For example, in the Drive application it is necessary to have access to the complete contents of the drive in the "inner" iframe. So this application is the only one that has full access to the user account, and this access is provided by the ``main.js`` file.
 
-In the case of collaborative applications, no special access is needed and they all have access to the same database information, that is why the ``main.js`` file does not exist and is replaced by the ``wwww/common/sframe-app-outer.js`` file which has exactly the same role but is common to all collaborative applications.
+In the case of collaborative applications, no special access is needed and they all have access to the same database information, that is why the ``main.js`` file does not exist and is replaced by the ``www/common/sframe-app-outer.js`` file which has exactly the same role but is common to all collaborative applications.
 
 sframe-app-framework.js
 -----------------------
@@ -28,7 +28,7 @@ Inside the iframe, each application needs its own code to display the data of th
 -  Management of disconnections/reconnections
 -  Management of all the specific tools present in the toolbar: history, export, user list, chat, etc.
 
-All these elements are included in ``wwww/common/sframe-app-framework.js``  which simplifies the creation of a new application by taking care of all these elements directly and providing simple APIs for ``inner.js``.
+All these elements are included in ``www/common/sframe-app-framework.js``  which simplifies the creation of a new application by taking care of all these elements directly and providing simple APIs for ``inner.js``.
 
 An ``inner.js`` file for a complete application looks something like:
 
