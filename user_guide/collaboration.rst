@@ -69,7 +69,7 @@ You can create recurring events, repeat:
       - On a specific date
       - After X times
 
-To edit events, drag them to the new date/time or ``Click`` to open the detailed edit view.
+To edit events, drag them to the new date/time or click to open the detailed edit view.
 
 Toolbar
 ~~~~~~~
@@ -117,11 +117,11 @@ By sharing your profile:
 1. Copy the link: User menu (avatar at the top-right) > |user-circle| **Profile** > |share-alt| **Share**.
 2. Paste and send through the means of your choice (preferably a secure mode of cummunication).
 3. Your contact must then click **Send a contact request**.
-4. You get a notification with the request, click **Accept**.
+4. You get a notification with the request, ``Click`` **Accept**.
 
 On the profile page of another CryptPad user:
 
-1. Click **Send a contact request**.
+1. ``Click`` **Send a contact request**.
 
 Manage contacts
 ~~~~~~~~~~~~~~~
@@ -141,7 +141,7 @@ All contacts are listed at the left of the window. For each contact:
 Chat with contacts
 ~~~~~~~~~~~~~~~~~~
 
-On the Contacts page, ``Click`` on a contact in the list to open the chat with them in the main window.
+On the Contacts page, click on a contact in the list to open the chat with them in the main window.
 
 Write messages in the field at the bottom and send them with |paper-plane| or ``Enter``.
 
