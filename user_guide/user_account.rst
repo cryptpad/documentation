@@ -21,6 +21,7 @@ No personal information is necessary to use CryptPad without registering. Howeve
 -  Sharing and collaborating on documents.
 -  Storage limited to 3 months of inactivity (counted per document).
 -  File storage unavailable for images/videos/PDF/etc…
+-  Limited access to :ref:`calendars <calendar>` (link-shared calendars only).
 
 Logged in user
 ~~~~~~~~~~~~~~
@@ -35,6 +36,7 @@ Registering an account does not require any personal information, only a usernam
 -  Organisation of documents in :ref:`folders <folders>`, :ref:`shared folders <shared_folders>`, or with :ref:`tags <tags>` and :ref:`templates <templates>`.
 -  Creation of :ref:`teams <teams>`.
 -  Customisation of the :ref:`profile <profile>` page and a list of :ref:`contacts <contacts>` to :ref:`share documents <share>` and :ref:`chat <chat_contacts>` with. Notifications for interactions between contacts.
+-  Creation and management of :ref:`calendars <calendar>`.
 
 Premium user
 ~~~~~~~~~~~~
