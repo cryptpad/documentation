@@ -228,7 +228,7 @@ On the notifications panel page:
 
    -  |bars| All.
    -  |user| Contact Requests.
-   -  |cptools pad| Shared with me.
+   -  |cptools richtext| Shared with me.
    -  |archive| History.
 
 -  |trash|: Delete notifications.
