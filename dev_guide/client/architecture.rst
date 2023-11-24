@@ -23,7 +23,7 @@ Worker
 Workflow
 ~~~~~~~~
 
-The worker is the unique WebSocket link with the server for all CryptPad tabs. [SharedWorker](https://developer.mozilla.org/en-US/docs/Web/API/SharedWorker) technology allows a single [Web Worker](https://developer.mozilla.org/en-US/docs/Web/API/Worker) to be shared between all the tabs opened on the same origin, with many advantages:
+The worker is the unique WebSocket link with the server for all CryptPad tabs. `SharedWorker <https://developer.mozilla.org/en-US/docs/Web/API/SharedWorker>`_ technology allows a single `Web Worker <https://developer.mozilla.org/en-US/docs/Web/API/Worker>`_ to be shared between all the tabs opened on the same origin, with many advantages:
 
 -  Gain in resources on the client (memory, CPU and network saved by avoiding the repetition of tasks)
 -  Gain in resources on the server (only one connection with each client)
@@ -53,9 +53,13 @@ Once the connector is loaded with the desired technology, the exact same code go
 Access to content stored in the server database is done with commands to the worker. This content represents:
 
 -  User account data (name, personal keys, access to the different modules)
+
    -  Drive, shared folders, contacts, team access keys, profile, settings, etc.
+
 -  Team data
+
    -  Drive, shared folders, members, metadata (avatar and team name)
+
 -  Access to documents for each CryptPad tab opened in the browser
 
 Debugging
