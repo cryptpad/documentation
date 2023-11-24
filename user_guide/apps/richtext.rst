@@ -53,10 +53,10 @@ Import/Export
 -------------
 
 | |file-o| **File** > |upload| **Import**
-| Supported formats: ``.html``.
+| Supported formats: ``.html``, ``.md``.
 
 | |file-o| **File** > |download| **Export**
-| Supported formats: ``.html``, ``.doc``.
+| Supported formats: ``.html``, ``.doc``, ``.md``.
 
 To print or export a PDF:
 
