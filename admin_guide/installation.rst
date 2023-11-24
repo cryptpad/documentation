@@ -35,7 +35,7 @@ Software
 
 Before starting the installation, ensure the following software is installed:
 
--  GIT
+-  Git
 
 -  Nodejs with NPM included (we use the official NodeJs LTS release)
 
