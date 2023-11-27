@@ -29,7 +29,7 @@ The worker is the unique WebSocket link with the server for all CryptPad tabs. `
 -  Gain in resources on the server (only one connection with each client)
 -  The **workers** represent code executed in a different thread from the main tab, allowing heavier calculations to be performed without slowing down the page.
 
-Please note that not all browsers have implemented SharedWorkers. They are only available on Firefox and Chromium-based browsers. Internet Explorer as well as older versions of Edge do not support them but the newer versions of Edge are based on Chromium and allow it. Apple refuses to develop them for Safari.
+Please note that not all browsers have implemented SharedWorkers. They are only available on Firefox and Chromium-based browsers. Internet Explorer as well as older versions of Edge do not support them but the newer versions of Edge are based on Chromium and allow it. Safari only supports them for recent versions as well (version 16 or newer).
 
 For these obsolete browsers, the system automatically switches to classic Web Workers, i.e. 1 worker per tab. This still allows the use of a separate thread for heavier calculations, but it strongly slows down the loading of tabs when the user account contains a lot of data. Finally, if the WebWorkers have been disabled in the browser, a last-resort system is in place to perform the work of the worker in the main tab at the **outer** level. This has no impact on the functioning of the code but does not benefit from the advantages of the workers.
 
