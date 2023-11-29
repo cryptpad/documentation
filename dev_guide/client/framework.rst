@@ -69,14 +69,16 @@ An ``inner.js`` file for a complete application looks something like:
                };
            });
 
-           // This is called when the history is synced. "onContentUpdate" has already been called with the full content and the loading screen is being removed.
+           // This is called when the history is synced. "onContentUpdate" has already been called with the
+           // full content and the loading screen is being removed.
            framework.onReady(function (newPad) {
-               // Here you can focus any editable part, check the integrity of the current data or initialize some values
+               // Here you can focus any editable part, check the integrity of the current data or initialize
+               // some values
            });
 
            // When you want to send changes to the collaborative document, you can call framework.localChange()
-           // framework.localChange() will use the "content getter" defined above to get the current value of your content
-           // and push it to the other users.
+           // framework.localChange() will use the "content getter" defined above to get the current value of
+           // your content and push it to the other users.
 
            // Example with a textarea
            var oldVal = "";
