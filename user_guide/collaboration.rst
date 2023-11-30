@@ -43,6 +43,8 @@ On another user’s profile page:
 -  |bell-slash| **Mute**: Blocks notifications and messages from this user. They will not know that they have been muted.
 -  |key| **Copy public key**: Copies the key used by instance administrators and on instances that offer subscriptions.
 
+.. _calendar:
+
 Calendar
 --------
 

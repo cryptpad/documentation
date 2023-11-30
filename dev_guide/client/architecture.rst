@@ -23,13 +23,13 @@ Worker
 Workflow
 ~~~~~~~~
 
-The worker is the unique WebSocket link with the server for all CryptPad tabs. [SharedWorker](https://developer.mozilla.org/en-US/docs/Web/API/SharedWorker) technology allows a single [Web Worker](https://developer.mozilla.org/en-US/docs/Web/API/Worker) to be shared between all the tabs opened on the same origin, with many advantages:
+The worker is the unique WebSocket link with the server for all CryptPad tabs. `SharedWorker <https://developer.mozilla.org/en-US/docs/Web/API/SharedWorker>`_ technology allows a single `Web Worker <https://developer.mozilla.org/en-US/docs/Web/API/Worker>`_ to be shared between all the tabs opened on the same origin, with many advantages:
 
 -  Gain in resources on the client (memory, CPU and network saved by avoiding the repetition of tasks)
 -  Gain in resources on the server (only one connection with each client)
 -  The **workers** represent code executed in a different thread from the main tab, allowing heavier calculations to be performed without slowing down the page.
 
-Please note that not all browsers have implemented SharedWorkers. They are only available on Firefox and Chromium-based browsers. Internet Explorer as well as older versions of Edge do not support them but the newer versions of Edge are based on Chromium and allow it. Apple refuses to develop them for Safari.
+Please note that not all browsers have implemented SharedWorkers. They are only available on Firefox and Chromium-based browsers. Internet Explorer as well as older versions of Edge do not support them but the newer versions of Edge are based on Chromium and allow it. Safari only supports them for recent versions as well (version 16 or newer).
 
 For these obsolete browsers, the system automatically switches to classic Web Workers, i.e. 1 worker per tab. This still allows the use of a separate thread for heavier calculations, but it strongly slows down the loading of tabs when the user account contains a lot of data. Finally, if the WebWorkers have been disabled in the browser, a last-resort system is in place to perform the work of the worker in the main tab at the **outer** level. This has no impact on the functioning of the code but does not benefit from the advantages of the workers.
 
@@ -53,9 +53,13 @@ Once the connector is loaded with the desired technology, the exact same code go
 Access to content stored in the server database is done with commands to the worker. This content represents:
 
 -  User account data (name, personal keys, access to the different modules)
+
    -  Drive, shared folders, contacts, team access keys, profile, settings, etc.
+
 -  Team data
+
    -  Drive, shared folders, members, metadata (avatar and team name)
+
 -  Access to documents for each CryptPad tab opened in the browser
 
 Debugging
