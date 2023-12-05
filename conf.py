@@ -73,7 +73,8 @@ exclude_patterns = [
     'www2',
     '_themes/theme/static/fonts/cptools/README.md',
     'requirements.txt',
-    'robots.txt'
+    'robots.txt',
+    'SECURITY.md'
     ]
 
 # -- Substitutions
