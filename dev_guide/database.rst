@@ -11,9 +11,10 @@ Key points
 * Each CryptPad document has information stored on the server in a location determined by a channel id
 * The content of each document is encrypted using the encryption key, so that the server cannot read it
 * Clients send the channel id to the server to:
-  * get the latest information about a document
-  * subscribe to ongoing updates while they are connected
-  * modify the contents of the document
+
+    * get the latest information about a document
+    * subscribe to ongoing updates while they are connected
+    * modify the contents of the document
 * each *channel* is stored within its own file on the server
 * each change to the document is encoded on a single line of that file
 

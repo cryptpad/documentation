@@ -85,7 +85,7 @@ In some cases (loss or theft of a device, forgotten to log out of a session on a
 
 * User menu (avatar at the top-right) > |gear| **Settings** > |lock| **Confidentiality** > **LOG OUT**.
 
-This option logs out all sessions **except** the one from which it is actiaved.
+This option logs out all sessions **except** the one from which it is activated.
 
 * User menu (avatar at the top-right) > |plug| **Log out everywhere**.
 
