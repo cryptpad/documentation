@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-16 10:49+0100\n"
+"POT-Creation-Date: 2023-12-05 14:37+0000\n"
 "PO-Revision-Date: 2023-07-25 17:55+0000\n"
 "Last-Translator: Suguru Hirahara "
 "<d4bb0a95-96c1-4662-9d31-a5e520a01a09@hostux.ninja>\n"
@@ -98,61 +98,69 @@ msgstr "Tampermonkey"
 msgid "Arkenfox (some configurations)"
 msgstr "Arkenfox (いくつかの設定)"
 
-#: ../../FAQ.rst:28
+#: ../../FAQ.rst:26
+msgid "Loom"
+msgstr ""
+
+#: ../../FAQ.rst:27
+msgid "MozBar"
+msgstr ""
+
+#: ../../FAQ.rst:30
 msgid ""
 "If you identify issues with another extension please `report it to the "
 "development team "
 "<https://github.com/cryptpad/cryptpad/issues/new/choose>`_"
 msgstr ""
 
-#: ../../FAQ.rst:31
+#: ../../FAQ.rst:33
 msgid "I forgot my password"
 msgstr "パスワードを紛失した場合"
 
-#: ../../FAQ.rst:33
+#: ../../FAQ.rst:35
 msgid ""
 "Administrators of a CryptPad instance cannot recover or reset user "
 "passwords. This also ensures that they cannot access any user data (e.g. "
 "the content of documents)."
 msgstr "CryptPadのインスタンスの管理者に、ユーザーのパスワードを復元したり再設定したりすることはできません。これはまた、管理者がドキュメントなどユーザーのデータにアクセスできないことを保証するものです。"
 
-#: ../../FAQ.rst:35
+#: ../../FAQ.rst:37
 msgid ""
 "If you are still logged in to an account for which you have forgotten the"
 " password, you can transfer all of the documents to a new account with "
 "the following steps:"
 msgstr "パスワードを紛失したアカウントにまだログインしている場合、以下のステップで全ドキュメントを新しいアカウントに移行できます。"
 
-#: ../../FAQ.rst:37
+#: ../../FAQ.rst:39
 msgid ""
 "While logged in to the account with the lost password, navigate to: "
 "**User Menu** (avatar at the top right) > |gear| **Settings** > |hdd-o| "
 "**CryptDrive**"
 msgstr ""
 
-#: ../../FAQ.rst:38
+#: ../../FAQ.rst:40
 msgid ""
 "Click the **Backup** button to download a file containing the keys to all"
 " documents. (note: this is different to **Download my Cryptdrive** that "
 "saves the content of all individual documents)"
 msgstr ""
 
-#: ../../FAQ.rst:39
+#: ../../FAQ.rst:41
 msgid "In another browser, register a new account with a known password"
 msgstr ""
 
-#: ../../FAQ.rst:40
+#: ../../FAQ.rst:42
 msgid ""
 "While logged in to the new account: **User Menu** (avatar at the top "
 "right) > |gear| **Settings** > |hdd-o| **CryptDrive** and click the "
 "**Restore** button."
 msgstr ""
 
-#: ../../FAQ.rst:43
+#: ../../FAQ.rst:45
 msgid "How to import/export my documents to/from another platform?"
 msgstr ""
 
-#: ../../FAQ.rst:45
+#: ../../FAQ.rst:47
 msgid ""
 "Making CryptPad compatible with a wide range of document formats is an "
 "ongoing challenge for the development team. Unfortunately the technology "
@@ -162,39 +170,39 @@ msgid ""
 " exporting to/from other widely used software."
 msgstr ""
 
-#: ../../FAQ.rst:48
+#: ../../FAQ.rst:50
 msgid ""
 "Simply copy-pasting content from existing software into CryptPad is an "
 "easy first step to try when importing/exporting. Please note that the "
 "import/export methods below can improve results significantly."
 msgstr ""
 
-#: ../../FAQ.rst:50
+#: ../../FAQ.rst:52
 msgid ""
 "It is possible to upload **files** to CryptPad for secure storage and "
 "sharing, however this does not make every file an editable CryptPad "
 "**document**."
 msgstr ""
 
-#: ../../FAQ.rst:52
+#: ../../FAQ.rst:54
 msgid ""
 "Text files uploaded as files can be opened as a Code/Markdown document "
 "from the Drive with ``Right click`` > |cptools code| **Open in Code "
 "editor**."
 msgstr ""
 
-#: ../../FAQ.rst:54
+#: ../../FAQ.rst:56
 msgid ""
 "To import any other file type in an editable form, please use the "
 "|file-o| **File** > |upload| **Import** functionality in the appropriate "
 "CryptPad editor as explained below."
 msgstr ""
 
-#: ../../FAQ.rst:57
+#: ../../FAQ.rst:59
 msgid "Import/export is not visible in the File menu"
 msgstr ""
 
-#: ../../FAQ.rst:59
+#: ../../FAQ.rst:61
 msgid ""
 "For spreadsheets and advanced document processing, Cryptpad integrates "
 "OnlyOffice. As a result, there are two toolbars each with their own File "
@@ -202,135 +210,135 @@ msgid ""
 "looking for import/export."
 msgstr ""
 
-#: ../../FAQ.rst:62
+#: ../../FAQ.rst:64
 msgid ""
 "See the `warning note "
 "<https://docs.cryptpad.org/en/user_guide/apps/sheets.html#toolbars>`_ in "
 "our Spreadsheet application documentation."
 msgstr ""
 
-#: ../../FAQ.rst:65
+#: ../../FAQ.rst:67
 msgid "Rich text document import/export"
 msgstr ""
 
-#: ../../FAQ.rst:67
+#: ../../FAQ.rst:69
 msgid ""
 "To import rich text documents (Microsoft Word, Google Docs, LibreOffice "
 "Writer, etc.), the supported format is HTML:"
 msgstr ""
 
-#: ../../FAQ.rst:69
+#: ../../FAQ.rst:71
 msgid "Export your document as HTML in your existing software."
 msgstr ""
 
-#: ../../FAQ.rst:70 ../../FAQ.rst:82
+#: ../../FAQ.rst:72 ../../FAQ.rst:84
 msgid "Save the file to your computer."
 msgstr "ファイルをあなたのコンピューターに保存。"
 
-#: ../../FAQ.rst:71
+#: ../../FAQ.rst:73
 msgid ""
 "Open a new :ref:`app_rich_text` document on CryptPad (or an existing one "
 "to replace the contents)."
 msgstr ""
 
-#: ../../FAQ.rst:72 ../../FAQ.rst:84
+#: ../../FAQ.rst:74 ../../FAQ.rst:86
 msgid "|file-o| **File** > |upload| **Import** and select your file."
 msgstr ""
 
-#: ../../FAQ.rst:74
+#: ../../FAQ.rst:76
 msgid ""
 "To export, use |file-o| **File** > |download| **Export** and select "
 "``.doc`` as the format."
 msgstr ""
 
-#: ../../FAQ.rst:77
+#: ../../FAQ.rst:79
 msgid "Spreadsheets import/export"
 msgstr ""
 
-#: ../../FAQ.rst:79
+#: ../../FAQ.rst:81
 msgid ""
 "To import spreadsheets, the supported format are Microsoft Excel "
 "``.xlsx`` and OpenDocument ``.ods``. These can both be exported from "
 "popular software such as Google Sheets and LibreOffice Calc:"
 msgstr ""
 
-#: ../../FAQ.rst:81
+#: ../../FAQ.rst:83
 msgid "Export your document as ``.xlsx`` or ``.ods`` in your existing software."
 msgstr ""
 
-#: ../../FAQ.rst:83
+#: ../../FAQ.rst:85
 msgid ""
 "Open a new :ref:`app_sheets` document (or an existing one to replace the "
 "contents)."
 msgstr ""
 
-#: ../../FAQ.rst:86
+#: ../../FAQ.rst:88
 msgid ""
 "To export, use |file-o| **File** > |download| **Export** and choose a "
 "format:"
 msgstr ""
 
-#: ../../FAQ.rst:91
+#: ../../FAQ.rst:93
 msgid "To use in Microsoft Excel or Google sheets, select ``.xlsx``."
 msgstr ""
 
-#: ../../FAQ.rst:92
+#: ../../FAQ.rst:94
 msgid "To use in LibreOffice Calc, select ``.ods``."
 msgstr ""
 
-#: ../../FAQ.rst:93
+#: ../../FAQ.rst:95
 msgid ""
 "For cases where no further editing of the data is required after export "
 "(presentations, reports, etc), select ``.pdf``."
 msgstr ""
 
-#: ../../FAQ.rst:94
+#: ../../FAQ.rst:96
 msgid ""
 "For backup purposes or to share with a user on another CryptPad instance,"
 " select ``.bin``."
 msgstr ""
 
-#: ../../FAQ.rst:97
+#: ../../FAQ.rst:99
 msgid ""
 "Import/export of spreadsheets to various formats is only available in "
 "browsers that support specific functionality. Please see the `up-to-date "
 "list of supported browsers <https://caniuse.com/sharedarraybuffer>`_."
 msgstr ""
 
-#: ../../FAQ.rst:100
+#: ../../FAQ.rst:102
 msgid "I cannot do X with a document I created"
 msgstr ""
 
-#: ../../FAQ.rst:102
+#: ../../FAQ.rst:104
 msgid ""
 "Some functionality on CryptPad is restricted to :ref:`document owners "
 "<owners>`. This includes:"
 msgstr ""
 
-#: ../../FAQ.rst:104
+#: ../../FAQ.rst:106
 msgid "Enabling an :ref:`access list <access_list>`."
 msgstr ""
 
-#: ../../FAQ.rst:105
+#: ../../FAQ.rst:107
 msgid "Enabling a password."
 msgstr ""
 
-#: ../../FAQ.rst:106
+#: ../../FAQ.rst:108
 msgid "Adding or removing other owners."
 msgstr ""
 
-#: ../../FAQ.rst:107
+#: ../../FAQ.rst:109
 msgid "Destroying the document."
 msgstr ""
 
-#: ../../FAQ.rst:109
+#: ../../FAQ.rst:111
 msgid ""
 "The ownership of a document is set when :ref:`creating it<new_document>` "
 "and cannot be changed afterwards if the document is created without an "
 "owner."
 msgstr ""
 
-#: ../../FAQ.rst:111
+#: ../../FAQ.rst:113
 msgid ""
 "The development team is considering removing this distinction in future. "
 "In the meantime, the safe default option is to \"own\" all documents you "
@@ -338,11 +346,11 @@ msgid ""
 "to destroy them."
 msgstr ""
 
-#: ../../FAQ.rst:114
+#: ../../FAQ.rst:116
 msgid "Can I use CryptPad on mobile?"
 msgstr ""
 
-#: ../../FAQ.rst:116
+#: ../../FAQ.rst:118
 msgid ""
 "CryptPad is engineered to work as well as possible on small screens. "
 "Depending on your device performance it should be possible to use "
@@ -352,24 +360,24 @@ msgid ""
 "<https://github.com/cryptpad/cryptpad/issues/new/choose>`_."
 msgstr ""
 
-#: ../../FAQ.rst:119
+#: ../../FAQ.rst:121
 msgid "Are you planning to make an app?"
 msgstr ""
 
-#: ../../FAQ.rst:121
+#: ../../FAQ.rst:123
 msgid ""
 "We are not planning a dedicated mobile application for the following "
 "reasons:"
 msgstr ""
 
-#: ../../FAQ.rst:123
+#: ../../FAQ.rst:125
 msgid ""
 "It would dramatically increase the amount of code that has to be "
 "developed and maintained, effectively creating other \"versions\" of "
 "CryptPad for iOS and Android."
 msgstr ""
 
-#: ../../FAQ.rst:125
+#: ../../FAQ.rst:127
 msgid ""
 "CryptPad is open source and can be hosted by anyone who wants to offer "
 "the service. Therefore, users of a mobile application would have to "
@@ -379,7 +387,7 @@ msgid ""
 " whether or not the latest updates were applied by the administrators."
 msgstr ""
 
-#: ../../FAQ.rst:127
+#: ../../FAQ.rst:129
 msgid ""
 "To address these problems, the development team is working on making "
 "CryptPad a \"Progressive Web App\". This means that it can be used on "
@@ -389,22 +397,22 @@ msgid ""
 "putting the burden of choosing the right instance on the user."
 msgstr ""
 
-#: ../../FAQ.rst:135
+#: ../../FAQ.rst:137
 msgid "Can CryptPad sync documents to my local filesystem?"
 msgstr ""
 
-#: ../../FAQ.rst:137
+#: ../../FAQ.rst:139
 msgid ""
 "The way encryption is currently used in CryptPad does not allow syncing "
 "with the local file system. This is a regularly requested feature "
 "however, so the development team hopes to make it available in future."
 msgstr ""
 
-#: ../../FAQ.rst:142
+#: ../../FAQ.rst:144
 msgid "What is the relationship between CryptPad and OnlyOffice?"
 msgstr ""
 
-#: ../../FAQ.rst:144
+#: ../../FAQ.rst:146
 msgid ""
 "The CryptPad :ref:`app_sheets` application is an integration of "
 "`OnlyOffice Spreadsheets <https://www.onlyoffice.com/en/spreadsheet-"
@@ -418,15 +426,15 @@ msgid ""
 " to reveal the contents of users' documents when converting."
 msgstr ""
 
-#: ../../FAQ.rst:147
+#: ../../FAQ.rst:149
 msgid "FAQ for cryptpad.fr"
 msgstr ""
 
-#: ../../FAQ.rst:152
+#: ../../FAQ.rst:154
 msgid "Can I pay for my subscription without a card?"
 msgstr ""
 
-#: ../../FAQ.rst:154
+#: ../../FAQ.rst:156
 #, python-format
 msgid ""
 "We accept payments by bank transfer, Paypal, or other depending on "
@@ -435,11 +443,11 @@ msgid ""
 "yearly plans for our Duo offer and above and incurs a 30% surcharge."
 msgstr ""
 
-#: ../../FAQ.rst:157
+#: ../../FAQ.rst:159
 msgid "Do you accept cryptocurrencies for subscriptions and donations?"
 msgstr ""
 
-#: ../../FAQ.rst:159
+#: ../../FAQ.rst:161
 msgid ""
 "We accept payments in Bitcoin. These are subject to the :ref:`manual "
 "processing surcharges <faq_manual_payments>` as explained in the previous"
@@ -448,11 +456,11 @@ msgid ""
 "and an email for communication about your subscription."
 msgstr ""
 
-#: ../../FAQ.rst:162
+#: ../../FAQ.rst:164
 msgid "Can you provide a Data processing Agreement (DPA)?"
 msgstr ""
 
-#: ../../FAQ.rst:164
+#: ../../FAQ.rst:166
 msgid ""
 "DPAs are a feature of our `Organization Plans "
 "<https://cryptpad.fr/accounts/#org>`_, note that a example DPA is "

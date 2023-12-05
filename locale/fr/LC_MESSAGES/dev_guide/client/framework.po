@@ -8,14 +8,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CryptPad \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 16:15+0100\n"
+"POT-Creation-Date: 2023-12-05 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.9.0\n"
+"Generated-By: Babel 2.11.0\n"
 
 #: ../../dev_guide/client/framework.rst:2
 msgid "Framework"
@@ -78,7 +78,7 @@ msgstr ""
 msgid ""
 "In the case of collaborative applications, no special access is needed "
 "and they all have access to the same database information, that is why "
-"the ``main.js`` file does not exist and is replaced by the ``wwww/common"
+"the ``main.js`` file does not exist and is replaced by the ``www/common"
 "/sframe-app-outer.js`` file which has exactly the same role but is common"
 " to all collaborative applications."
 msgstr ""
@@ -118,21 +118,20 @@ msgstr ""
 
 #: ../../dev_guide/client/framework.rst:31
 msgid ""
-"All these elements are included in ``wwww/common/sframe-app-"
-"framework.js``  which simplifies the creation of a new application by "
-"taking care of all these elements directly and providing simple APIs for "
-"``inner.js``."
+"All these elements are included in ``www/common/sframe-app-framework.js``"
+"  which simplifies the creation of a new application by taking care of "
+"all these elements directly and providing simple APIs for ``inner.js``."
 msgstr ""
 
 #: ../../dev_guide/client/framework.rst:33
 msgid "An ``inner.js`` file for a complete application looks something like:"
 msgstr ""
 
-#: ../../dev_guide/client/framework.rst:109
+#: ../../dev_guide/client/framework.rst:111
 msgid "framework.less"
 msgstr ""
 
-#: ../../dev_guide/client/framework.rst:111
+#: ../../dev_guide/client/framework.rst:113
 msgid ""
 "All style elements common to the different collaborative applications can"
 " be loaded into ``app-xxxx.less`` via a single call. The LESS framework "
@@ -141,7 +140,7 @@ msgid ""
 "modals."
 msgstr ""
 
-#: ../../dev_guide/client/framework.rst:113
+#: ../../dev_guide/client/framework.rst:115
 msgid ""
 "Two mixins are available in this file, ``.framework_main()`` and "
 "``.framework_min_main()``. The minimal \"min\" version is used for non-"
@@ -150,4 +149,26 @@ msgid ""
 "style, mentions (for comments), pad creation screen and styles for users'"
 " cursors."
 msgstr ""
+
+#~ msgid ""
+#~ "In the case of collaborative "
+#~ "applications, no special access is "
+#~ "needed and they all have access to"
+#~ " the same database information, that "
+#~ "is why the ``main.js`` file does "
+#~ "not exist and is replaced by the"
+#~ " ``wwww/common/sframe-app-outer.js`` file "
+#~ "which has exactly the same role "
+#~ "but is common to all collaborative "
+#~ "applications."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "All these elements are included in "
+#~ "``wwww/common/sframe-app-framework.js``  which "
+#~ "simplifies the creation of a new "
+#~ "application by taking care of all "
+#~ "these elements directly and providing "
+#~ "simple APIs for ``inner.js``."
+#~ msgstr ""
 
