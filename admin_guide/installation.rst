@@ -165,6 +165,18 @@ We provide the following files in the CryptPad repository:
 
       docker compose up -d
 
+Note that you'll still need to follow the CryptPad configuration steps, especially :ref:`admin_adminusers`. To do that you can mount your ``config.js`` file as a Docker volume.
+
+   .. code:: docker
+      
+      volumes:
+      - ./data/blob:/cryptpad/blob
+      - ./data/block:/cryptpad/block
+      - ./customize:/cryptpad/customize
+      - ./data/data:/cryptpad/data
+      - ./data/files:/cryptpad/datastore
+      - ./config/config.js:/cryptpad/config/config.js
+
 .. _admin_domain_config:
 
 Domains
