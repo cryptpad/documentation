@@ -54,6 +54,9 @@ Calendar
 
 To add events, simply click on the desired time/date in the calendar, view (drag for duration). Alternatively use |plus| **New event** in the toolbar.
 
+It then opens an event creation form where a **Title** is mandatory. You can optionally specify a **Location** and a **Description**.
+The **Description** field supports the Markdown syntax to format its content.
+
 You can create recurring events, repeat:
 
 - **One time**, default option
@@ -71,7 +74,10 @@ You can create recurring events, repeat:
       - On a specific date
       - After X times
 
-To edit events, drag them to the new date/time or click to open the detailed edit view.
+To edit events, drag them to the new date/time or alternatively:
+
+1. ``Click`` on the event to open the detailed view.
+2. ``Click`` on |pencil| **Edit** to open the edition form.
 
 Toolbar
 ~~~~~~~
@@ -93,6 +99,9 @@ The |ellipsis-h| menu for each calendar in the sidebar contains the following op
 - |upload| **Import** and |download| **Export** to the standard ``.ics`` format.
 - |info-circle| **Properties**
 - |trash-o| **Delete**
+
+.. note::
+   When exporting a calendar, the descriptions of events are exported in Markdown.
 
 :ref:`teams` can also have calendars available to all members. Simply share a calendar with a team to add it:
 
