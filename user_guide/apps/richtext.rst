@@ -49,6 +49,10 @@ Paragraphs
 
 By default the ``Enter`` key creates a new paragraph, adding a line of spacing with the previous paragraph. To add a line-break without adding a new paragraph, use ``Shift`` + ``Enter``.
 
+.. note::
+   
+   Take a look at the `CKEditor documentation <https://ckeditor.com/docs/ckeditor4/latest/features/shortcuts.html>`__ for a complete list of the available shortcuts.
+
 Import/Export
 -------------
 
