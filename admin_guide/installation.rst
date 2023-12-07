@@ -187,6 +187,10 @@ You need two domains to take full advantage of CryptPad’s security features.
 1. The main domain on which users access your instance
 2. A “sandbox” domain or subdomain to which a set of restrictive Content-Security Policy headers are applied
 
+.. warning::
+
+   Using CryptPad in production without the sandboxing system may put users’ information at risk.
+
 The intent of this system is to limit the risk of Cross-Site Scripting (XSS) vulnerabilities allowing attackers to leak user data. Sensitive computation (like the processing of cryptographic keys) is handled on the main domain, while the user-interface is implemented on the sandbox domain.
 
 The `example Nginx configuration <https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf>`__ file includes the relevant entries to enable the sandboxing system, however, you must configure your instance correctly for it to be effective. You will need:
@@ -196,9 +200,9 @@ The `example Nginx configuration <https://github.com/cryptpad/cryptpad/blob/main
 3. to generate one TLS certificate that covers both domains. The development team uses `acme.sh <https://acme.sh/>`__ and this is reflected in the example config.
 4. to correctly assign both domains and certificates to the `example Nginx configuration <https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf>`__
 
-.. warning::
-
-   Using CryptPad in production without the sandboxing system may put users’ information at risk.
+.. note::
+   
+   Thanks to community contributions, example configuration files for other reverse proxies than Nginx are also available in the `docs folder <https://github.com/cryptpad/cryptpad/tree/main/docs>`__. Please be aware that those are community supported and not officialy supported by the development team.
 
 Install and configure Nginx
 ---------------------------
