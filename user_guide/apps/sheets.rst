@@ -3,7 +3,7 @@
 Spreadsheet
 ===========
 
-The Spreadsheet application in CryptPad is an integration of `OnlyOffice <https://www.onlyoffice.com/>`__. To read more about the details of this integration see :ref:`FAQ_OOintegration`.
+The Spreadsheet application in CryptPad is an integration of `OnlyOffice <https://www.onlyoffice.com/>`__. To read more about the details of this integration see :ref:`FAQ_OOintegration`
 
 .. image:: /images/app-sheets-preview.png
    :class: screenshot
