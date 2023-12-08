@@ -92,6 +92,19 @@ To use a custom logo on the instance's homepage:
 #. Add your SVG logo to ``customize``
 #. Rename the logo ``CryptPad_logo_hero.svg``
 
+Files you may be interested in:
+
+- ``index.html`` is the main page
+- ``main.js`` contains javascript for the home page
+- ``application_config.js`` allows you to modify settings used by the various applications
+- ``messages.js`` contains functions for applying translations to various pages
+- look inside ``/translations/`` for the rest of the files which contain translated strings
+- ``/share/`` implements an iframe RPC which allows multiple domains to access the same localStorage
+- ``/src/`` contains source files for html and css (in the form of html templates and .less stylesheets)
+
+All other content which is placed in this directory will be referencable at the ``/customize/``
+URL location.
+
 .. _preview_images:
 
 Open Graph preview images
