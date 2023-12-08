@@ -90,12 +90,35 @@ Optional:
 
 -  **Import pads from your anonymous session**: If you have created documents as a non-registered user you can import them into your account.
 
+Notifications
+-------------
+
+:badge_user:`Logged in users`
+
+CryptPad notifies you when your contacts interact with you. Notifications are displayed by the bell |bell-o| next to the avatar (at the top-right). If you have unread notifications, the bell is filled |bell| and a count is displayed.
+
+|bell| Bell drop down menu:
+
+-  Browse unread notifications.
+-  Delete a notification with |times|.
+-  **Open notifications panel**: View all notifications and notification
+   history.
+
+On the notifications panel page:
+
+-  Select the type of notification to view:
+
+   -  |bars| All.
+   -  |user| Contact Requests.
+   -  |cptools richtext| Shared with me.
+   -  |archive| History.
+
+-  |trash|: Delete notifications.
+
 .. _user_settings:
 
 Settings
 --------
-
-.. XXX TODO: Refactor to reflect new settings and new categories/organization
 
 The account settings are found in the user menu (avatar at the top right) > |gear| **Settings**.
 
@@ -109,7 +132,6 @@ Account
 -  **Display Name**: Name displayed to other users, for example when you collaborate on documents. To change this name enter a new name and click on **Save**. :badge_user:`Logged in users`
 -  **Language**: Language used in the CryptPad interface. To change the language of CryptPad pick a new language in the drop-down menu. CryptPad is translated in English and French by the development team, and in other languages by the :ref:`community <contribute_translation>`. Some translations can be incomplete and/or contain errors.
 - **Automatic Download limit**: Maximum size in megabytes (MB) for automatically loading media elements (images, videos, pdf) embedded into documents. Elements bigger than the specified size can be loaded manually. Use "-1" to always load the media elements automatically.
--  **Change your password**: Enter your current password and confirm the new password by typing it twice. :badge_user:`Logged in users`
 -  **Account deletion**: Option to permanently delete your account and all of its documents. **Delete your account** and confirm. :badge_user:`Logged in users`
 
 .. _user_settings_confidentiality:
@@ -183,6 +205,7 @@ User settings for the :ref:`app_rich_text` application.
 -  **Editor’s maximum width**: Switch between page mode (default) that limits the width of the text editor, and using the full width of the screen.
 -  **Spellcheck**: Enable spellcheck in Rich Text documents. Spelling errors are underlined and suggested corrections are available through ``Ctrl + Right click`` on the word to correct.
 -  **Comment notifications**: Disable notifications when another user replies to one of your comments.
+-  **Open links on first click**: Open embedded links on click without the preview popup.
 
 .. _user_settings_code:
 
@@ -197,6 +220,24 @@ User settings for the :ref:`app_code` application.
 -  **Font size in the code editor**: Set the size of text in the code editor.
 -  **Spellcheck**: Underline spelling mistakes in the code editor, correction suggestions are available through ``Right click`` on the word to correct.
 
+.. _user_settings_kanban:
+
+Kanban
+~~~~~~
+
+User settings for the :ref:`app_kanban` application.
+
+-  **Tag filter**: How you want the tag filter to act when selecting multiple tags: only show cards containing all the selected tags (AND) or show cards containing any of the selected tags (OR).
+
+.. _user_settings_notifications:
+
+Notifications
+~~~~~~~~~~~~~
+
+User settings for the notifications.
+
+-  **Calendar notifications**: Enable/disable all notifications for upcoming calendar events.
+
 .. _user_settings_subscription:
 
 Subscription
@@ -205,30 +246,3 @@ Subscription
 (only on cryptpad.fr)
 
 -  Redirects to the account page.
-
-.. _user_settings_notifications:
-
-Notifications
--------------
-
-:badge_user:`Logged in users`
-
-CryptPad notifies you when your contacts interact with you. Notifications are displayed by the bell |bell-o| next to the avatar (at the top-right). If you have unread notifications, the bell is filled |bell| and a count is displayed.
-
-|bell| Bell drop down menu:
-
--  Browse unread notifications.
--  Delete a notification with |times|.
--  **Open notifications panel**: View all notifications and notification
-   history.
-
-On the notifications panel page:
-
--  Select the type of notification to view:
-
-   -  |bars| All.
-   -  |user| Contact Requests.
-   -  |cptools richtext| Shared with me.
-   -  |archive| History.
-
--  |trash|: Delete notifications.
