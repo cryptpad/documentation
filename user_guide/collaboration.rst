@@ -54,7 +54,11 @@ Calendar
 
 To add events, simply click on the desired time/date in the calendar, view (drag for duration). Alternatively use |plus| **New event** in the toolbar.
 
-It then opens an event creation form where a **Title** is mandatory. You can optionally specify a **Location** and a **Description**.
+It then opens an event creation form where a **Title** is mandatory.
+
+:badge_new:`New in version 5.6`
+
+You can optionally specify a **Location** and a **Description**.
 The **Description** field supports the Markdown syntax to format its content.
 
 You can create recurring events, repeat:
