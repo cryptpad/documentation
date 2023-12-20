@@ -263,4 +263,14 @@ If anonymous answers are allowed on the form, participants are able to answer an
 Import/Export
 -------------
 
-To export responses as a CSV file use the |download| **Export to CSV** button on the |bar-chart| **Responses** page.
+Form documents themselves can be exported and imported in ``JSON`` format.
+
+To export responses, from the |bar-chart| **Responses** page, you have two possibilities:
+
+#. as a CSV or JSON file use the |download| **EXPORT** button
+
+#. as a Spreadsheet that can be added to your drive with the **EXPORT TO SHEET** button
+
+.. note::
+   
+   The Spreadsheet document will automatically be populated with the data from your form at the time you create it. However, due to how end-to-end encryption works, the spreadsheet content won't be automatically updated with new responses as they arrive.
