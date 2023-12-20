@@ -1,0 +1,158 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, CryptPad Team
+# This file is distributed under the same license as the CryptPad package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CryptPad \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-20 16:09+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../dev_guide/translations.rst:2
+msgid "Adding Translations"
+msgstr ""
+
+#: ../../dev_guide/translations.rst:4
+msgid ""
+"To illustrate the process of translating, this guide will make an "
+"english-pirate translation of CryptPad. We'll assume that you have a work"
+" locally-installed, properly functioning installation of CryptPad. If you"
+" don't have CryptPad installed locally, start by following the steps in "
+":ref:`dev_instance`."
+msgstr ""
+
+#: ../../dev_guide/translations.rst:7
+msgid "Getting started"
+msgstr ""
+
+#: ../../dev_guide/translations.rst:9
+msgid ""
+"Once everything is working, copy the default (English) source file "
+"``/www/common/translations/messages.js`` to a file named according to "
+"your language's `ISO 639-1 Code "
+"<https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes>`__, like "
+"``/www/common/translations/messages.fr.js``. There is no ISO 639-1 "
+"language code for English-pirate, so we'll just call it "
+"``messages.pirate.js``."
+msgstr ""
+
+#: ../../dev_guide/translations.rst:19
+msgid "Including your translation"
+msgstr ""
+
+#: ../../dev_guide/translations.rst:21
+msgid ""
+"To include your translation in the list, you'll need to add it to "
+"``/customize.dist/messages.js``. There are comments indicating what to "
+"modify in three places:"
+msgstr ""
+
+#: ../../dev_guide/translations.rst:41
+msgid "We need to modify that map to include our translation:"
+msgstr ""
+
+#: ../../dev_guide/translations.rst:60
+msgid ""
+"Just add your module in a similar fashion to the existing translations, "
+"save your changes, and close ``/customize.dist/messages.js``."
+msgstr ""
+
+#: ../../dev_guide/translations.rst:63
+msgid ""
+"You also need to add a customizable version of you translation. To do so,"
+" make a copy of the file ``/customize.dist/translations/messages.js`` "
+"with your translation name (``messages.pirate.js`` in our case), and "
+"change its content to load the correct language file:"
+msgstr ""
+
+#: ../../dev_guide/translations.rst:81
+msgid "That's all!"
+msgstr ""
+
+#: ../../dev_guide/translations.rst:84
+msgid "Actually translating content"
+msgstr ""
+
+#: ../../dev_guide/translations.rst:86
+msgid ""
+"Now we can go back to our file, "
+"``/www/common/translations/messages.pirate.js`` and start to add our "
+"Pirate-language customizations."
+msgstr ""
+
+#: ../../dev_guide/translations.rst:88
+msgid ""
+"Open the translation file you created in "
+"``/customize.dist/translations/``. You should see something like:"
+msgstr ""
+
+#: ../../dev_guide/translations.rst:98
+msgid "Now you just need to work through this file, updating the strings like so:"
+msgstr ""
+
+#: ../../dev_guide/translations.rst:107
+msgid ""
+"It's important that you modify just the string, and not the variable name"
+" which is used to access its content. For instance, changing "
+"``main_title`` to ``mainTitle`` would make the translated string "
+"inaccessible to the rest of the codebase."
+msgstr ""
+
+#: ../../dev_guide/translations.rst:110
+msgid ""
+"If a key is not found in your translation, the default English version of"
+" that key will be used. This is to make sure that buttons and other "
+"interface elements are not empty, but it's obviously not ideal."
+msgstr ""
+
+#: ../../dev_guide/translations.rst:114
+msgid "Verifying Your Translations"
+msgstr ""
+
+#: ../../dev_guide/translations.rst:116
+msgid ""
+"It's advisable to save your translation file frequently, and reload "
+"CryptPad in your browser to check that there are no errors in your "
+"translation file. If there are any errors in your code, the file will "
+"fail to parse, and the page will no load correctly."
+msgstr ""
+
+#: ../../dev_guide/translations.rst:119
+msgid ""
+"Checking frequently will make it easier to know which change caused the "
+"error."
+msgstr ""
+
+#: ../../dev_guide/translations.rst:121
+msgid ""
+"Additionally, we advise using the apps and visiting the various pages, to"
+" make sure that your translations make sense in context."
+msgstr ""
+
+#: ../../dev_guide/translations.rst:123
+msgid ""
+"When you're happy with your translation file, you can visit "
+"http://localhost:3000/assert/translations/ to view CryptPad's tests. "
+"These tests will check to make sure that your translation has an entry "
+"for every entry in the default English translation."
+msgstr ""
+
+#: ../../dev_guide/translations.rst:128
+msgid "Deleting a translation"
+msgstr ""
+
+#: ../../dev_guide/translations.rst:130
+msgid ""
+"When a key is nolonger used (such as presentSuccess) you can delete it "
+"using this bash one-liner."
+msgstr ""
+
