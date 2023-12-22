@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Form &mdash; CryptPad 5.5.0 dokumentáció</title>
+  <title>Form &mdash; CryptPad 5.6.0 dokumentáció</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.5.0</span>
+              <span class="release">Documentation 5.6.0</span>
             </a>
             
 <div role="search">
@@ -105,6 +105,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#logging-in">Logging in</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../user_account.html#notifications">Notifications</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_account.html#settings">Settings</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#account">Account</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#security-privacy">Security &amp; Privacy</a></li>
@@ -113,10 +114,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#cursor">Cursor</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#rich-text">Rich Text</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#kanban">Kanban</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#user-settings-notifications">Notifications</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#subscription">Subscription</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../user_account.html#notifications">Notifications</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../support.html">Support</a><ul>
@@ -510,6 +512,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../dev_guide/translations.html">Adding Translations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#including-your-translation">Including your translation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#actually-translating-content">Actually translating content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#verifying-your-translations">Verifying Your Translations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#deleting-a-translation">Deleting a translation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -688,8 +698,8 @@
 <h3>Question types<a class="headerlink" href="#question-types" title="Permalink to this heading">¶</a></h3>
 <section id="cptools-form-text-text">
 <h4><em class="cptools cptools-form-text"></em> Text<a class="headerlink" href="#cptools-form-text-text" title="Permalink to this heading">¶</a></h4>
-<p>Response: one line of text</p>
-<p>Options:</p>
+<p><strong>Response</strong>: one line of text</p>
+<p><strong>Options</strong>:</p>
 <ul class="simple">
 <li><p>Text type: text, number, link or email</p></li>
 </ul>
@@ -700,16 +710,16 @@
 </section>
 <section id="cptools-form-paragraph-paragraph">
 <h4><em class="cptools cptools-form-paragraph"></em> Paragraph<a class="headerlink" href="#cptools-form-paragraph-paragraph" title="Permalink to this heading">¶</a></h4>
-<p>Response: multiple lines of text</p>
-<p>Options:</p>
+<p><strong>Response</strong>: multiple lines of text</p>
+<p><strong>Options</strong>:</p>
 <ul class="simple">
 <li><p>Maximum characters: limit (defaults to 1000)</p></li>
 </ul>
 </section>
 <section id="cptools-form-list-radio-choice">
 <span id="form-q-choice"></span><h4><em class="cptools cptools-form-list-radio"></em> Choice<a class="headerlink" href="#cptools-form-list-radio-choice" title="Permalink to this heading">¶</a></h4>
-<p>Response: one choice from the list</p>
-<p>Options:</p>
+<p><strong>Response</strong>: one choice from the list</p>
+<p><strong>Options</strong>:</p>
 <ul class="simple">
 <li><p><em class="fa fa-plus"></em> <strong>Add option</strong> button</p></li>
 <li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> handle and drag to re-order options</p></li>
@@ -718,8 +728,8 @@
 </section>
 <section id="cptools-form-grid-radio-choice-grid">
 <h4><em class="cptools cptools-form-grid-radio"></em> Choice Grid<a class="headerlink" href="#cptools-form-grid-radio-choice-grid" title="Permalink to this heading">¶</a></h4>
-<p>Response: one option choice per item</p>
-<p>Options:</p>
+<p><strong>Response</strong>: one option choice per item</p>
+<p><strong>Options</strong>:</p>
 <ul class="simple">
 <li><p><em class="fa fa-plus"></em> <strong>Add option</strong> and <em class="fa fa-plus"></em> <strong>Add item</strong> buttons</p></li>
 <li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> handle and drag to re-order items and options</p></li>
@@ -728,12 +738,12 @@
 </section>
 <section id="calendar-date">
 <h4><em class="fa fa-calendar"></em> Date<a class="headerlink" href="#calendar-date" title="Permalink to this heading">¶</a></h4>
-<p>Response: pick a date and time</p>
+<p><strong>Response</strong>: pick a date and time</p>
 </section>
 <section id="cptools-form-list-check-checkbox">
 <span id="form-q-checkbox"></span><h4><em class="cptools cptools-form-list-check"></em> Checkbox<a class="headerlink" href="#cptools-form-list-check-checkbox" title="Permalink to this heading">¶</a></h4>
-<p>Response: multiple choices from the list</p>
-<p>Options:</p>
+<p><strong>Response</strong>: multiple choices from the list</p>
+<p><strong>Options</strong>:</p>
 <ul class="simple">
 <li><p>Maximum selectable options</p></li>
 <li><p><em class="fa fa-plus"></em> <strong>Add option</strong> button</p></li>
@@ -743,8 +753,8 @@
 </section>
 <section id="cptools-form-grid-check-checkbox-grid">
 <h4><em class="cptools cptools-form-grid-check"></em> Checkbox Grid<a class="headerlink" href="#cptools-form-grid-check-checkbox-grid" title="Permalink to this heading">¶</a></h4>
-<p>Response: multiple choices for each item</p>
-<p>Options:</p>
+<p><strong>Response</strong>: multiple choices for each item</p>
+<p><strong>Options</strong>:</p>
 <ul class="simple">
 <li><p>Maximum selectable options (per item)</p></li>
 <li><p><em class="fa fa-plus"></em> <strong>Add option</strong> and <em class="fa fa-plus"></em> <strong>Add item</strong> buttons</p></li>
@@ -754,20 +764,20 @@
 </section>
 <section id="cptools-form-list-ordered-ordered-list">
 <h4><em class="cptools cptools-form-list-ordered"></em> Ordered List<a class="headerlink" href="#cptools-form-list-ordered-ordered-list" title="Permalink to this heading">¶</a></h4>
-<p>Response: order of preference for the listed options</p>
-<p>Options:</p>
+<p><strong>Response</strong>: order of preference for the listed options</p>
+<p><strong>Options</strong>:</p>
 <ul class="simple">
 <li><p><em class="fa fa-plus"></em> <strong>Add option</strong> button</p></li>
 <li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> handle and drag to re-order options</p></li>
 <li><p>Delete an option with <em class="fa fa-times"></em></p></li>
 </ul>
-<p>Condorcet:</p>
+<p><strong>Condorcet</strong>:</p>
 <p>Since v5.3 responses can show the results with the <a class="reference external" href="https://en.wikipedia.org/wiki/Condorcet_method">Condorcet method</a>. You can select Schulze or Ranked Pairs to display the winner. The details will also show the number of matches won by each candidates.</p>
 </section>
 <section id="cptools-form-poll-poll">
 <h4><em class="cptools cptools-form-poll"></em> Poll<a class="headerlink" href="#cptools-form-poll-poll" title="Permalink to this heading">¶</a></h4>
-<p>Response: <em class="fa fa-check"></em> Yes, <em class="fa fa-times"></em> No, or <em class="cptools cptools-form-poll-maybe"></em> Acceptable for each of the proposed options</p>
-<p>Option types:</p>
+<p><strong>Response</strong>: <em class="fa fa-check"></em> Yes, <em class="fa fa-times"></em> No, or <em class="cptools cptools-form-poll-maybe"></em> Acceptable for each of the proposed options</p>
+<p><strong>Option types</strong>:</p>
 <ul>
 <li><p>Text</p>
 <blockquote>
@@ -877,7 +887,16 @@
 </section>
 <section id="import-export">
 <h2>Import/Export<a class="headerlink" href="#import-export" title="Permalink to this heading">¶</a></h2>
-<p>To export responses as a CSV file use the <em class="fa fa-download"></em> <strong>Export to CSV</strong> button on the <em class="fa fa-bar-chart"></em> <strong>Responses</strong> page.</p>
+<p>Form documents themselves can be exported and imported in <code class="docutils literal notranslate"><span class="pre">JSON</span></code> format.</p>
+<p>To export responses, from the <em class="fa fa-bar-chart"></em> <strong>Responses</strong> page, you have two possibilities:</p>
+<ol class="arabic simple">
+<li><p>as a CSV or JSON file use the <em class="fa fa-download"></em> <strong>EXPORT</strong> button</p></li>
+<li><p>as a Spreadsheet that can be added to your drive with the <strong>EXPORT TO SHEET</strong> button</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Megjegyzés</p>
+<p>The Spreadsheet document will automatically be populated with the data from your form at the time you create it. However, due to how end-to-end encryption works, the spreadsheet content won't be automatically updated with new responses as they arrive.</p>
+</div>
 </section>
 </section>
 
@@ -926,7 +945,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'5.5.0',
+            VERSION:'5.6.0',
             LANGUAGE:'hu',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

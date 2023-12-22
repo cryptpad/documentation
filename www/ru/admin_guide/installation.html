@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Installation &mdash; документация CryptPad 5.5.0</title>
+  <title>Installation &mdash; документация CryptPad 5.6.0</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.5.0</span>
+              <span class="release">Documentation 5.6.0</span>
             </a>
             
 <div role="search">
@@ -105,6 +105,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#logging-in">Вход в систему</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#notifications">Уведомления</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#settings">Настройки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#account">Учетная запись</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#security-privacy">Security &amp; Privacy</a></li>
@@ -113,10 +114,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#cursor">Курсор</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#rich-text">Документ</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#code">Код</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#kanban">Kanban</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#user-settings-notifications">Уведомления</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#subscription">Подписка</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#notifications">Уведомления</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../user_guide/support.html">Техподдержка</a><ul>
@@ -510,6 +512,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/translations.html">Adding Translations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#including-your-translation">Including your translation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#actually-translating-content">Actually translating content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#verifying-your-translations">Verifying Your Translations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#deleting-a-translation">Deleting a translation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -670,7 +680,7 @@
 <h3>Software<a class="headerlink" href="#software" title="Permalink to this heading">¶</a></h3>
 <p>Before starting the installation, ensure the following software is installed:</p>
 <ul>
-<li><p>GIT</p></li>
+<li><p>Git</p></li>
 <li><p>Nodejs with NPM included (we use the official NodeJs LTS release)</p>
 <ul class="simple">
 <li><p>Using <a class="reference external" href="https://github.com/nodesource/distributions#using-debian-as-root-4">nodesource</a> is recommended</p></li>
@@ -762,7 +772,7 @@ node server
 </ul>
 <ol class="arabic">
 <li><p>Build your own Docker image</p>
-<div class="highlight-docker notranslate"><div class="highlight"><pre><span></span>docker build -t cryptpad/cryptpad:version-5.5.0 .
+<div class="highlight-docker notranslate"><div class="highlight"><pre><span></span>docker build -t cryptpad/cryptpad:version-5.6.0 .
 </pre></div>
 </div>
 </li>
@@ -783,6 +793,18 @@ node server
 </div>
 </li>
 </ol>
+<p>Note that you'll still need to follow the CryptPad configuration steps, especially <a class="reference internal" href="#admin-adminusers"><span class="std std-ref">Configure administrators</span></a>. To do that you can mount your <code class="docutils literal notranslate"><span class="pre">config.js</span></code> file as a Docker volume.</p>
+<blockquote>
+<div><div class="highlight-docker notranslate"><div class="highlight"><pre><span></span>volumes:
+- ./data/blob:/cryptpad/blob
+- ./data/block:/cryptpad/block
+- ./customize:/cryptpad/customize
+- ./data/data:/cryptpad/data
+- ./data/files:/cryptpad/datastore
+- ./config/config.js:/cryptpad/config/config.js
+</pre></div>
+</div>
+</div></blockquote>
 </section>
 </section>
 <section id="admin-domain-config">
@@ -792,6 +814,10 @@ node server
 <li><p>The main domain on which users access your instance</p></li>
 <li><p>A “sandbox” domain or subdomain to which a set of restrictive Content-Security Policy headers are applied</p></li>
 </ol>
+<div class="admonition warning">
+<p class="admonition-title">Предупреждение</p>
+<p>Using CryptPad in production without the sandboxing system may put users’ information at risk.</p>
+</div>
 <p>The intent of this system is to limit the risk of Cross-Site Scripting (XSS) vulnerabilities allowing attackers to leak user data. Sensitive computation (like the processing of cryptographic keys) is handled on the main domain, while the user-interface is implemented on the sandbox domain.</p>
 <p>The <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf">example Nginx configuration</a> file includes the relevant entries to enable the sandboxing system, however, you must configure your instance correctly for it to be effective. You will need:</p>
 <ol class="arabic simple">
@@ -800,9 +826,9 @@ node server
 <li><p>to generate one TLS certificate that covers both domains. The development team uses <a class="reference external" href="https://acme.sh/">acme.sh</a> and this is reflected in the example config.</p></li>
 <li><p>to correctly assign both domains and certificates to the <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf">example Nginx configuration</a></p></li>
 </ol>
-<div class="admonition warning">
-<p class="admonition-title">Предупреждение</p>
-<p>Using CryptPad in production without the sandboxing system may put users’ information at risk.</p>
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
+<p>Thanks to community contributions, example configuration files for other reverse proxies than Nginx are also available in the <a class="reference external" href="https://github.com/cryptpad/cryptpad/tree/main/docs">docs folder</a>. Please be aware that those are community supported and not officialy supported by the development team.</p>
 </div>
 </section>
 <section id="install-and-configure-nginx">
@@ -875,7 +901,7 @@ contains at least:</p>
 <p>The support mailbox can be configured from the <a class="reference internal" href="admin_panel.html#admin-panel"><span class="std std-ref">Administration panel</span></a>.</p>
 <ol class="arabic simple">
 <li><p>With an instance administrator account, visit the <code class="docutils literal notranslate"><span class="pre">/admin/#support</span></code> page</p></li>
-<li><p>Click <strong>Generate Support Keys</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> <strong>Generate Support Keys</strong></p></li>
 <li><p>The support mailbox is now active</p></li>
 <li><p>Flush the cache to access the mailbox:  <strong>General</strong> tab &gt; <strong>Flush HTTP Cache</strong></p></li>
 </ol>
@@ -953,7 +979,7 @@ contains at least:</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.5.0',
+            VERSION:'5.6.0',
             LANGUAGE:'ru',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

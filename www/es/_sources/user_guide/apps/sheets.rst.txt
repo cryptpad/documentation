@@ -3,7 +3,7 @@
 Spreadsheet
 ===========
 
-The Spreadsheet application in CryptPad is an integration of `OnlyOffice <https://www.onlyoffice.com/>`__. To read more about the details of this integration see :ref:`FAQ_OOintegration`.
+The Spreadsheet application in CryptPad is an integration of `OnlyOffice <https://www.onlyoffice.com/>`__. To read more about the details of this integration see :ref:`FAQ_OOintegration`
 
 .. image:: /images/app-sheets-preview.png
    :class: screenshot
@@ -12,6 +12,10 @@ Documentation
 -------------
 
 Please refer to the `OnlyOffice documentation <https://helpcenter.onlyoffice.com/en/ONLYOFFICE-Editors/ONLYOFFICE-Spreadsheet-Editor/index.aspx>`__ for a spreadsheet user-guide.
+
+.. note::
+   
+   Due to various security implications, `OnlyOffice plugins <https://helpcenter.onlyoffice.com/ONLYOFFICE-Editors/Editors-User-Guides/AllEditors/Plugin-manager.aspx>`__, also `macros <https://api.onlyoffice.com/plugin/macros>`__, aren't available on CryptPad. 
 
 Toolbars
 --------

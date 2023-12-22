@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Compte utilisateur·ice &mdash; Documentation CryptPad 5.5.0</title>
+  <title>Compte utilisateur·ice &mdash; Documentation CryptPad 5.6.0</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.5.0</span>
+              <span class="release">Documentation 5.6.0</span>
             </a>
             
 <div role="search">
@@ -105,18 +105,20 @@
 <li class="toctree-l4"><a class="reference internal" href="#logging-in">Connexion</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#notifications">Notifications</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#settings">Préférences</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#account">Compte</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#security-privacy">Security &amp; Privacy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#security-privacy">Sécurité et confidentialité</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#appearance">Apparence</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cryptdrive">CryptDrive</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cursor">Curseur</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rich-text">Documents texte</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kanban">Kanban</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#user-settings-notifications">Notifications</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#subscription">Abonnement</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#notifications">Notifications</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="support.html">Support</a><ul>
@@ -510,6 +512,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/translations.html">Adding Translations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#including-your-translation">Including your translation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#actually-translating-content">Actually translating content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#verifying-your-translations">Verifying Your Translations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#deleting-a-translation">Deleting a translation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -521,7 +531,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-forgot-my-password">J'ai oublié mon mot de passe</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Comment importer/exporter mes documents vers/depuis un autre logiciel ?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#import-export-is-not-visible-in-the-file-menu">Import/export is not visible in the File menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#import-export-is-not-visible-in-the-file-menu">Import/export n'est pas visible depuis le menu Fichier</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">Import/export de documents texte</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">Import/export de feuilles de calcul</a></li>
 </ul>
@@ -546,8 +556,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#report-bugs">Signaler des bugs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#contribute-to-the-documentation">Contribuer à la documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#translate-cryptpad">Traduire CryptPad</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../how_to_contribute.html#community-translation-program">Community translation program</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../how_to_contribute.html#terms">Terms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../how_to_contribute.html#community-translation-program">Programme de traduction communautaire</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../how_to_contribute.html#terms">Conditions</a></li>
 </ul>
 </li>
 </ul>
@@ -652,6 +662,7 @@
 <li><p>Collaboration et partage de documents.</p></li>
 <li><p>Durée de stockage limitée à 3 mois d'inactivité (pour chaque document).</p></li>
 <li><p>Stockage de fichiers indisponible pour les images/vidéos/PDF/etc…</p></li>
+<li><p>Limiter l'accès à <a class="reference internal" href="collaboration.html#calendar"><span class="std std-ref">calendars</span></a> (calendriers à lien partagés uniquement).</p></li>
 </ul>
 </section>
 <section id="logged-in-user">
@@ -665,6 +676,7 @@
 <li><p>Organisation de vos documents en <a class="reference internal" href="drive.html#folders"><span class="std std-ref">dossiers</span></a>, <a class="reference internal" href="share_and_access.html#shared-folders"><span class="std std-ref">dossiers partagés</span></a>, en leur assignant des <a class="reference internal" href="drive.html#tags"><span class="std std-ref">mots-clés</span></a> ou en sauvegardant des <a class="reference internal" href="drive.html#templates"><span class="std std-ref">modèles</span></a>.</p></li>
 <li><p>Création d'<a class="reference internal" href="collaboration.html#teams"><span class="std std-ref">équipes</span></a>.</p></li>
 <li><p>Personnalisation de la page de <a class="reference internal" href="collaboration.html#profile"><span class="std std-ref">profil</span></a> et ajout de <a class="reference internal" href="collaboration.html#contacts"><span class="std std-ref">contacts</span></a> pour le <a class="reference internal" href="share_and_access.html#share"><span class="std std-ref">partage de documents</span></a> et <a class="reference internal" href="collaboration.html#chat-contacts"><span class="std std-ref">chat</span></a>. Notifications pour les interactions entre contacts.</p></li>
+<li><p>Création et gestion de <a class="reference internal" href="collaboration.html#calendar"><span class="std std-ref">calendars</span></a>.</p></li>
 </ul>
 </section>
 <section id="premium-user">
@@ -717,6 +729,29 @@
 </ul>
 </section>
 </section>
+<section id="notifications">
+<h2>Notifications<a class="headerlink" href="#notifications" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p><span class="badge-user">Utilisateur·ices enregistré·es</span></p>
+<p>CryptPad vous notifie lorsque vos contacts interagissent avec vous. Les notifications sont affichées par la cloche <em class="fa fa-bell-o"></em> à côté de l'avatar (en haut à droite). Si vous avez des notifications non lues, la cloche est pleine <em class="fa fa-bell"></em> et un compte est affiché.</p>
+<p>Menu déroulant en cliquant sur la cloche <em class="fa fa-bell"></em> :</p>
+<ul class="simple">
+<li><p>Consulter les notifications non lues.</p></li>
+<li><p>Supprimer une notification avec <em class="fa fa-times"></em>.</p></li>
+<li><p><strong>Ouvrir le panneau de notifications</strong> : Consulter toutes les notifications et l'historique des notifications reçues.</p></li>
+</ul>
+<p>Sur la page du panneau de notifications :</p>
+<ul class="simple">
+<li><p>Sélectionner le type de notifications à consulter :</p>
+<ul>
+<li><p><em class="fa fa-bars"></em> Toutes.</p></li>
+<li><p><em class="fa fa-user"></em> Demandes de contact.</p></li>
+<li><p><em class="cptools cptools-richtext"></em> Partagés avec moi.</p></li>
+<li><p><em class="fa fa-archive"></em> Historique.</p></li>
+</ul>
+</li>
+<li><p><em class="fa fa-trash"></em> : Supprimer les notifications.</p></li>
+</ul>
+</section>
 <section id="settings">
 <span id="user-settings"></span><h2>Préférences<a class="headerlink" href="#settings" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p>Les réglages du compte sont accessibles par le menu utilisateur·ice (avatar en haut à droite) &gt; <em class="fa fa-gear"></em> <strong>Préférences</strong>.</p>
@@ -728,31 +763,30 @@
 <li><p><strong>Nom affiché</strong> : Nom affiché aux autres utilisateur·ices, par exemple lorsque vous collaborez sur un document. Pour modifier ce nom tapez le nouveau nom et cliquez sur <strong>Sauver</strong>. <span class="badge-user">Utilisateurs enregistrés</span></p></li>
 <li><p><strong>Langue</strong> : Langue utilisée dans l'interface de CryptPad. Pour changer de langue, en choisir une dans le menu déroulant. CryptPad est traduit en anglais et en français par l'équipe de développement, et dans d'autres langues par la <a class="reference internal" href="../how_to_contribute.html#contribute-translation"><span class="std std-ref">communauté</span></a>. Certaines traductions peuvent être incomplètes et/ou comporter des erreurs.</p></li>
 <li><p><strong>Limite de téléchargement automatique</strong> : Taille maximale en mégaoctets (Mo) pour le chargement automatique des pièces jointes (images, vidéos, PDF) intégrés dans les documents. Les pièces jointes dont la taille est supérieure à la taille spécifiée peuvent être chargées manuellement. Utilisez &quot;-1&quot; pour toujours charger automatiquement les pièces jointes.</p></li>
-<li><p><strong>Changer de mot de passe</strong> : Entrez votre mot de passe actuel et confirmez le nouveau mot de passe en le tapant deux fois. <span class="badge-user">Utilisateurs enregistrés</span></p></li>
 <li><p><strong>Suppression du compte</strong> : Option pour supprimer définitivement votre compte et ses documents. Pour supprimer votre compte, cliquez sur <strong>Suppression du compte</strong> puis confirmez. <span class="badge-user">Utilisateurs enregistrés</span></p></li>
 </ul>
 </section>
 <section id="security-privacy">
-<span id="user-settings-confidentiality"></span><h3>Security &amp; Privacy<a class="headerlink" href="#security-privacy" title="Lien permanent vers cette rubrique">¶</a></h3>
+<span id="user-settings-confidentiality"></span><h3>Sécurité et confidentialité<a class="headerlink" href="#security-privacy" title="Lien permanent vers cette rubrique">¶</a></h3>
 <ul>
 <li><p><strong>Fermer les autres sessions</strong> : Vous déconnecte de toutes les autres sessions où vous êtes connecté sauf celle où vous activez cette fonctionnalité. (voir aussi <a class="reference internal" href="security.html#remote-disconnect"><span class="std std-ref">Déconnexion à distance</span></a>) <span class="badge-user">Utilisateurs enregistrés</span></p></li>
-<li><p><strong>Two-Factor Authentication (2FA)</strong>: Protect your account with an additional verification code provided by an authenticator app of your choice.   <span class="badge-user">Logged in users</span> <span class="badge-new">New in version 5.4</span></p>
-<p>To activate 2FA:</p>
+<li><p><strong>Authentification à deux facteurs (2FA)</strong> : Protège votre compte avec un code de vérification additionnel généré par une l'application d'authentification de votre choix. :badge_user :<cite>Logged in users</cite> :badge_new :<cite>New in version 5.4</cite></p>
+<p>Pour activer 2FA :</p>
 <ol class="arabic simple">
-<li><p>Enter your account password</p></li>
-<li><p>Save the recovery code</p></li>
-<li><p>Snap the QR code with a 2FA app of your choice (or copy the address and paste into your app)</p></li>
-<li><p>Enter the verification code to confirm</p></li>
+<li><p>Entrez le mot de passe de votre compte</p></li>
+<li><p>Sauvegardez le code de récupération</p></li>
+<li><p>Scannez le QR code avec l'application 2FA de votre choix (ou copiez l'adresse dans votre application)</p></li>
+<li><p>Entrez le code de vérification pour confirmer</p></li>
 </ol>
 </li>
-<li><p><strong>Change your password</strong>: Change your account's password. Enter your current password, and confirm the new password by typing it twice</p></li>
+<li><p><strong>Changer de mot de passe</strong> : Entrez votre mot de passe actuel de votre compte et confirmez le nouveau mot de passe en le tapant deux fois</p></li>
 <li><p><strong>Liens Sécurisés</strong> : Quand cette option est activée, le lien dans la barre d'adresse de votre navigateur ne donne pas accès au pad si le destinataire ne l'a pas déjà dans son CryptDrive. Cette fonction est activée par défaut. Il est vivement recommandé de la laisser activée et d'utiliser le menu <a class="reference internal" href="share_and_access.html#share"><span class="std std-ref">Partager</span></a> pour copier les liens de vos documents.</p></li>
 </ul>
 <p>CryptPad inclut dans ses liens les clés permettant de déchiffrer vos documents. Toute personne ayant accès à votre historique de navigation peut potentiellement lire vos données. Cela inclut les extensions de navigateur intrusives et les navigateurs qui synchronisent votre historique entre les appareils. Toute situation dans laquelle votre navigateur est visible par d'autres est potentiellement à risque, par exemple le partage d'écran en vidéoconférence ou la capture d'écran. L'activation des &quot;liens sécurisés&quot; empêche les clés d'entrer dans votre historique de navigation ou d'être affichées dans votre barre d'adresse quand cela est possible.</p>
 <ul class="simple">
 <li><p><strong>Retour d'expérience</strong> : CryptPad peut envoyer des retours d'expérience anonymisés très limités vers le serveur, en vue d'améliorer l'expérience des utilisateurs. Le contenu de vos documents n'est jamais partagé. Cette option est désactivée par défaut.</p></li>
-<li><p><strong>Cache</strong>: CryptPad stores parts of your documents in your browser's memory in order to save network usage and improve loading times. You can disable the cache if your device doesn't have a lot of free storage space. For security reasons, the cache is always cleared when you log out, but you can clear it manually if you want to reclaim storage space on your machine.</p></li>
-<li><p><strong>Destroy all owned documents</strong>: All documents where you are the sole owner will be permanently destroyed</p></li>
+<li><p><strong>Cache</strong> : CryptPad enregistre certaines parties de votre document dans la mémoire de votre navigateur afin de limiter l'usage de bande passante et améliorer les temps de chargement. Vous pouvez désactiver le cache si votre appareil n'a pas assez d'espace de stockage libre. Pour des raisons de sécurité, le cache est purgé à chaque déconnexion,vous pouvez cependant le vider manuellement si vous voulez récupérer de l'espace de stockage sur votre machine.</p></li>
+<li><p><strong>Détruire vos documents</strong> : Tous les documents dont vous êtes l'unique propriétaire seront détruits de manière irréversible</p></li>
 </ul>
 </section>
 <section id="appearance">
@@ -764,7 +798,7 @@
 <section id="cryptdrive">
 <span id="user-settings-cryptdrive"></span><h3>CryptDrive<a class="headerlink" href="#cryptdrive" title="Lien permanent vers cette rubrique">¶</a></h3>
 <ul class="simple">
-<li><p><strong>Homepage redirection</strong>: Automatic redirection from the home page to the drive when logged in is no longer enabled by default</p></li>
+<li><p><strong>Redirection depuis la page d'accueil</strong> : La redirection de la page d'accueil vers le drive lors de la connexion n'est plus automatique</p></li>
 <li><p><strong>Astuces</strong> : Messages d'aide dans l'interface CryptPad. Pour les ré-afficher s'ils ont été fermés, cliquez sur <strong>Réinitialiser</strong>.</p></li>
 <li><p><strong>Stockage des pads dans CryptDrive</strong> : Gère si les documents que vous visitez sont automatiquement ajoutés à votre CryptDrive. Si personne n'est <a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">propriétaire</span></a> d'un pad que vous ajoutez à votre CryptDrive, il compte alors dans votre espace de stockage.</p>
 <ul>
@@ -800,6 +834,7 @@
 <li><p><strong>Largeur de l'éditeur de texte</strong> : Passer du mode page (par défaut) qui limite la largeur de l'éditeur de texte, au mode plein-écran qui utilise toute la largeur de l'écran.</p></li>
 <li><p><strong>Vérification orthographique</strong> : Activer la vérification orthographique dans l'éditeur de texte. Les fautes sont soulignées et des propositions de corrections sont disponibles en faisant <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">Clic</span> <span class="pre">droit</span></code> sur le mot à corriger.</p></li>
 <li><p><strong>Notifications de commentaires</strong> : Désactiver les notifications lorsqu'un·e autre utilisateur·ice répond à vos commentaires.</p></li>
+<li><p><strong>Open links on first click</strong>: Open embedded links on click without the preview popup.</p></li>
 </ul>
 </section>
 <section id="code">
@@ -813,6 +848,20 @@
 <li><p><strong>Vérification orthographique</strong> : Souligner les fautes d’orthographe dans l'éditeur de code. Des suggestions de correction sont disponibles en faisant <code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le mot à corriger.</p></li>
 </ul>
 </section>
+<section id="kanban">
+<span id="user-settings-kanban"></span><h3>Kanban<a class="headerlink" href="#kanban" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>User settings for the <a class="reference internal" href="apps/kanban.html#app-kanban"><span class="std std-ref">Kanban</span></a> application.</p>
+<ul class="simple">
+<li><p><strong>Tag filter</strong>: How you want the tag filter to act when selecting multiple tags: only show cards containing all the selected tags (AND) or show cards containing any of the selected tags (OR).</p></li>
+</ul>
+</section>
+<section id="user-settings-notifications">
+<span id="id1"></span><h3>Notifications<a class="headerlink" href="#user-settings-notifications" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>User settings for the notifications.</p>
+<ul class="simple">
+<li><p><strong>Calendar notifications</strong>: Enable/disable all notifications for upcoming calendar events.</p></li>
+</ul>
+</section>
 <section id="subscription">
 <span id="user-settings-subscription"></span><h3>Abonnement<a class="headerlink" href="#subscription" title="Lien permanent vers cette rubrique">¶</a></h3>
 <p>(uniquement sur cryptpad.fr)</p>
@@ -820,29 +869,6 @@
 <li><p>Redirige vers la page d'abonnement.</p></li>
 </ul>
 </section>
-</section>
-<section id="notifications">
-<span id="user-settings-notifications"></span><h2>Notifications<a class="headerlink" href="#notifications" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p><span class="badge-user">Utilisateurs enregistrés</span></p>
-<p>CryptPad vous notifie lorsque vos contacts interagissent avec vous. Les notifications sont affichées par la cloche <em class="fa fa-bell-o"></em> à côté de l'avatar (en haut à droite). Si vous avez des notifications non lues, la cloche est pleine <em class="fa fa-bell"></em> et un compte est affiché.</p>
-<p>Menu déroulant en cliquant sur la cloche <em class="fa fa-bell"></em> :</p>
-<ul class="simple">
-<li><p>Consulter les notifications non lues.</p></li>
-<li><p>Supprimer une notification avec <em class="fa fa-times"></em>.</p></li>
-<li><p><strong>Ouvrir le panneau de notifications</strong> : Consulter toutes les notifications et l'historique des notifications reçues.</p></li>
-</ul>
-<p>Sur la page du panneau de notifications :</p>
-<ul class="simple">
-<li><p>Sélectionner le type de notifications à consulter :</p>
-<ul>
-<li><p><em class="fa fa-bars"></em> Toutes.</p></li>
-<li><p><em class="fa fa-user"></em> Demandes de contact.</p></li>
-<li><p><em class="cptools cptools-pad"></em> Documents partagés avec moi.</p></li>
-<li><p><em class="fa fa-archive"></em> Historique.</p></li>
-</ul>
-</li>
-<li><p><em class="fa fa-trash"></em> : Supprimer les notifications.</p></li>
-</ul>
 </section>
 </section>
 
@@ -891,7 +917,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.5.0',
+            VERSION:'5.6.0',
             LANGUAGE:'fr',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

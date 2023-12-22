@@ -2511,8 +2511,12 @@ legend {
 p {
     line-height: 24px;
     margin: 0;
-    font-size: 16px;
+    font-size: 1.1em;
     margin-bottom: 24px;
+}
+
+.wy-nav-content a {
+    font-size: 100%;
 }
 
 h1 {
@@ -3177,6 +3181,7 @@ select#language-selector-container option {
     margin-left: 300px;
     background: #fcfcfc;
     min-height: 100%;
+    max-width: 100ch;
 }
 
 .wy-nav-content {

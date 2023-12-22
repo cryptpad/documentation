@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Général &mdash; Documentation CryptPad 5.5.0</title>
+  <title>Général &mdash; Documentation CryptPad 5.6.0</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.5.0</span>
+              <span class="release">Documentation 5.6.0</span>
             </a>
             
 <div role="search">
@@ -105,18 +105,20 @@
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#logging-in">Connexion</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../user_account.html#notifications">Notifications</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_account.html#settings">Préférences</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#account">Compte</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../user_account.html#security-privacy">Security &amp; Privacy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#security-privacy">Sécurité et confidentialité</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#appearance">Apparence</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#cryptdrive">CryptDrive</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#cursor">Curseur</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#rich-text">Documents texte</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#kanban">Kanban</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#user-settings-notifications">Notifications</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#subscription">Abonnement</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../user_account.html#notifications">Notifications</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../support.html">Support</a><ul>
@@ -510,6 +512,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../dev_guide/translations.html">Adding Translations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#including-your-translation">Including your translation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#actually-translating-content">Actually translating content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#verifying-your-translations">Verifying Your Translations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#deleting-a-translation">Deleting a translation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -521,7 +531,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-forgot-my-password">J'ai oublié mon mot de passe</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Comment importer/exporter mes documents vers/depuis un autre logiciel ?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#import-export-is-not-visible-in-the-file-menu">Import/export is not visible in the File menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#import-export-is-not-visible-in-the-file-menu">Import/export n'est pas visible depuis le menu Fichier</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#rich-text-document-import-export">Import/export de documents texte</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#spreadsheets-import-export">Import/export de feuilles de calcul</a></li>
 </ul>
@@ -546,8 +556,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#report-bugs">Signaler des bugs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#contribute-to-the-documentation">Contribuer à la documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#translate-cryptpad">Traduire CryptPad</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../how_to_contribute.html#community-translation-program">Community translation program</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../how_to_contribute.html#terms">Terms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../how_to_contribute.html#community-translation-program">Programme de traduction communautaire</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../how_to_contribute.html#terms">Conditions</a></li>
 </ul>
 </li>
 </ul>
@@ -654,7 +664,7 @@
 <li><p>Depuis un document : <em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-plus"></em> <strong>Nouveau</strong>.</p></li>
 </ul>
 <img alt="../../_images/app-creation-screen.png" class="screenshot" src="../../_images/app-creation-screen.png" />
-<p><span class="badge-user">Utilisateurs enregistrés</span></p>
+<p><span class="badge-user">Utilisateur·ices enregistré·es</span></p>
 <p>L'écran de création permet de paramétrer un nouveau document.</p>
 <ul class="simple">
 <li><p><strong>Être propriétaire de ce document</strong> : Créer le nouveau document en tant que <a class="reference internal" href="../share_and_access.html#owners"><span class="std std-ref">propriétaire</span></a>. Si le document est créé sans propriétaire, ce réglage ne peut pas être modifié.</p></li>
@@ -685,6 +695,14 @@
 <li><p>Depuis le document à dupliquer : <em class="fa fa-file-o"></em> <strong>Ficher</strong> &gt; <em class="fa fa-clone"></em> <strong>Créer une copie</strong>.</p></li>
 <li><p>Depuis le CryptDrive : <code class="docutils literal notranslate"><span class="pre">Clic-Droit</span></code> sur le document à dupliquer &gt; <em class="fa fa-clone"></em> <strong>Créer une copie</strong>.</p></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Make a copy can be used to purge history from a file, for example if you want to redact content from the history and/or make it completely unavailable.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Avertissement</p>
+<p>Beware, an important caveat of using Make a copy is that you'll have to share again the document with your contacts or the persons you sent the link to.</p>
+</div>
 </section>
 <section id="document-history">
 <span id="id4"></span><h2>Historique des documents<a class="headerlink" href="#document-history" title="Lien permanent vers cette rubrique">¶</a></h2>
@@ -836,7 +854,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'5.5.0',
+            VERSION:'5.6.0',
             LANGUAGE:'fr',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

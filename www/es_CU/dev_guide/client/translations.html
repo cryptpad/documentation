@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Translation keys &mdash; documentación de CryptPad - 5.5.0</title>
+  <title>Translation keys &mdash; documentación de CryptPad - 5.6.0</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.5.0</span>
+              <span class="release">Documentation 5.6.0</span>
             </a>
             
 <div role="search">
@@ -105,6 +105,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#logging-in">Logging in</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/user_account.html#notifications">Notifications</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../user_guide/user_account.html#settings">Settings</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#account">Account</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#security-privacy">Security &amp; Privacy</a></li>
@@ -113,10 +114,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#cursor">Cursor</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#rich-text">Rich Text</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#kanban">Kanban</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#user-settings-notifications">Notifications</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#subscription">Subscription</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../user_guide/user_account.html#notifications">Notifications</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../user_guide/support.html">Support</a><ul>
@@ -510,6 +512,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../translations.html">Adding Translations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../translations.html#getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../translations.html#including-your-translation">Including your translation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../translations.html#actually-translating-content">Actually translating content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../translations.html#verifying-your-translations">Verifying Your Translations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../translations.html#deleting-a-translation">Deleting a translation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -651,7 +661,7 @@
 <section id="structure">
 <h2>Structure<a class="headerlink" href="#structure" title="Enlace permanente a este encabezado">¶</a></h2>
 <p>As detailed at the start of this guide, each instance of CryptPad can be customized, for example using bespoke images, logos, styles and static pages. Translation keys are also customizable elements, which makes the structure of the system more complex.</p>
-<p>The keys are first created and translated in JSON files obtained from <a class="reference external" href="https://weblate.cryptpad.org">Weblate</a>. These files are available in the <code class="docutils literal notranslate"><span class="pre">wwww/common/translations/</span></code> directory. There you can find for example <code class="docutils literal notranslate"><span class="pre">wwww/common/translations/messages.json</span></code> (default English version) or <code class="docutils literal notranslate"><span class="pre">wwww/common/translations/messages.fr.json</span></code> (French version). These files cannot be customized directly because it would create merge conflicts for the instance administrators when upgrading CryptPad to a newer version (one key missing in the default translation file may in some cases make some features unusable).</p>
+<p>The keys are first created and translated in JSON files obtained from <a class="reference external" href="https://weblate.cryptpad.org">Weblate</a>. These files are available in the <code class="docutils literal notranslate"><span class="pre">www/common/translations/</span></code> directory. There you can find for example <code class="docutils literal notranslate"><span class="pre">www/common/translations/messages.json</span></code> (default English version) or <code class="docutils literal notranslate"><span class="pre">www/common/translations/messages.fr.json</span></code> (French version). These files cannot be customized directly because it would create merge conflicts for the instance administrators when upgrading CryptPad to a newer version (one key missing in the default translation file may in some cases make some features unusable).</p>
 <p>In order to allow this customization step, the translation files are loaded in <strong>language modules</strong> present in the <code class="docutils literal notranslate"><span class="pre">customize.dist/translations/</span></code> directory. The English and French versions exist there as <code class="docutils literal notranslate"><span class="pre">customize.dist/translations/messages.js</span></code> and <code class="docutils literal notranslate"><span class="pre">customize.dist/translations/messages.fr.js</span></code>. These language modules load their corresponding JSON file and allow administrators to extend or modify them. For more information on how to customize translation keys please see <a class="reference internal" href="../../admin_guide/customization.html#admin-customization"><span class="std std-ref">Instance customization</span></a> in the administrator guide.</p>
 <p>Finally, the file <code class="docutils literal notranslate"><span class="pre">customize.dist/messages.js</span></code> will retrieve the <strong>language module</strong> corresponding to the user's language (English by default). If a string is not translated into the chosen language, the English version will be used instead for this string.</p>
 <img alt="../../_images/translations.png" class="screenshot" src="../../_images/translations.png" />
@@ -703,7 +713,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'5.5.0',
+            VERSION:'5.6.0',
             LANGUAGE:'es-CU',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

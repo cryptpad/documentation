@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Formular &mdash; CryptPad 5.5.0 Dokumentation</title>
+  <title>Formular &mdash; CryptPad 5.6.0 Dokumentation</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.5.0</span>
+              <span class="release">Documentation 5.6.0</span>
             </a>
             
 <div role="search">
@@ -105,18 +105,20 @@
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#logging-in">Einloggen</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../user_account.html#notifications">Benachrichtigungen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_account.html#settings">Einstellungen</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#account">Account</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../user_account.html#security-privacy">Security &amp; Privacy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#security-privacy">Sicherheit &amp; Datenschutz</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#appearance">Erscheinungsbild</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#cryptdrive">CryptDrive</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#cursor">Cursor</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#rich-text">Rich Text</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#kanban">Kanban</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#user-settings-notifications">Benachrichtigungen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#subscription">Abonnement</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../user_account.html#notifications">Benachrichtigungen</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../support.html">Support</a><ul>
@@ -510,6 +512,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../dev_guide/translations.html">Adding Translations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#including-your-translation">Including your translation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#actually-translating-content">Actually translating content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#verifying-your-translations">Verifying Your Translations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#deleting-a-translation">Deleting a translation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -546,8 +556,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#report-bugs">Fehler melden</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#contribute-to-the-documentation">Zur Dokumentation beitragen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#translate-cryptpad">CryptPad übersetzen</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../how_to_contribute.html#community-translation-program">Community translation program</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../how_to_contribute.html#terms">Terms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../how_to_contribute.html#community-translation-program">Community-Übersetzungsprogramm</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../how_to_contribute.html#terms">Bedingungen</a></li>
 </ul>
 </li>
 </ul>
@@ -649,7 +659,7 @@
 <li><p><strong>Auditor</strong>: kann Antworten unabhängig davon ansehen, ob sie öffentlich sind oder nicht.</p></li>
 <li><p><strong>Teilnehmer</strong>: kann Fragen im Formular beantworten und Antworten erst nach Veröffentlichung durch den Autor ansehen.</p></li>
 </ul>
-<p>Um ein Formular mit einer bestimmten Rolle zu teilen, beispielsweise um es zu Teilnehmern zu senden, wähle im <em class="fa fa-share-alt"></em> <strong>Teilen</strong> die Rolle aus, bevor du Kontakte auswählst oder den Link kopierst.</p>
+<p>Um ein Formular mit einer bestimmten Rolle zu teilen, beispielsweise um es zu Teilnehmern zu senden, wähle im Menü <em class="fa fa-share-alt"></em> <strong>Teilen</strong> die Rolle aus, bevor du Kontakte auswählst oder den Link kopierst.</p>
 <img alt="Teilen-Menü in der Formular-Anwendung mit den drei Rollen: Autor, Auditor und Teilnehmer." class="screenshot" src="../../_images/app-form-share.png" />
 <div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
@@ -688,8 +698,8 @@
 <h3>Fragetypen<a class="headerlink" href="#question-types" title="Permalink to this heading">¶</a></h3>
 <section id="cptools-form-text-text">
 <h4><em class="cptools cptools-form-text"></em> Text<a class="headerlink" href="#cptools-form-text-text" title="Permalink to this heading">¶</a></h4>
-<p>Antwort: einzeiliger Text</p>
-<p>Optionen:</p>
+<p><strong>Antwort</strong>: einzeiliger Text</p>
+<p><strong>Optionen</strong>:</p>
 <ul class="simple">
 <li><p>Texttyp: Text, Zahl, Link oder E-Mail-Adresse</p></li>
 </ul>
@@ -700,16 +710,16 @@
 </section>
 <section id="cptools-form-paragraph-paragraph">
 <h4><em class="cptools cptools-form-paragraph"></em> Absatz<a class="headerlink" href="#cptools-form-paragraph-paragraph" title="Permalink to this heading">¶</a></h4>
-<p>Antwort: mehrzeiliger Text</p>
-<p>Optionen:</p>
+<p><strong>Antwort</strong>: mehrzeiliger Text</p>
+<p><strong>Optionen</strong>:</p>
 <ul class="simple">
 <li><p>Zeichenbegrenzung (standardmäßig 1000)</p></li>
 </ul>
 </section>
 <section id="cptools-form-list-radio-choice">
 <span id="form-q-choice"></span><h4><em class="cptools cptools-form-list-radio"></em> Einfachauswahl<a class="headerlink" href="#cptools-form-list-radio-choice" title="Permalink to this heading">¶</a></h4>
-<p>Antwort: eine Auswahl aus einer Liste</p>
-<p>Optionen:</p>
+<p><strong>Antwort</strong>: eine Auswahl aus einer Liste</p>
+<p><strong>Optionen</strong>:</p>
 <ul class="simple">
 <li><p>Schaltfläche <em class="fa fa-plus"></em> <strong>Option hinzufügen</strong></p></li>
 <li><p>Ziehe Fragen an <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em>, um die Reihenfolge zu ändern</p></li>
@@ -718,8 +728,8 @@
 </section>
 <section id="cptools-form-grid-radio-choice-grid">
 <h4><em class="cptools cptools-form-grid-radio"></em> Einfachauswahl-Matrix<a class="headerlink" href="#cptools-form-grid-radio-choice-grid" title="Permalink to this heading">¶</a></h4>
-<p>Antwort: eine Option pro Eintrag</p>
-<p>Optionen:</p>
+<p><strong>Antwort</strong>: eine Option pro Eintrag</p>
+<p><strong>Optionen</strong>:</p>
 <ul class="simple">
 <li><p>Schaltflächen <em class="fa fa-plus"></em> <strong>Option hinzufügen</strong> und <em class="fa fa-plus"></em> <strong>Eintrag hinzufügen</strong></p></li>
 <li><p>Ziehe Einträge und Optionen an <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em>, um die Reihenfolge zu ändern</p></li>
@@ -728,12 +738,12 @@
 </section>
 <section id="calendar-date">
 <h4><em class="fa fa-calendar"></em> Datum<a class="headerlink" href="#calendar-date" title="Permalink to this heading">¶</a></h4>
-<p>Antwort: wähle ein Datum und eine Uhrzeit</p>
+<p><strong>Antwort</strong>: wähle ein Datum und eine Uhrzeit</p>
 </section>
 <section id="cptools-form-list-check-checkbox">
 <span id="form-q-checkbox"></span><h4><em class="cptools cptools-form-list-check"></em> Mehrfachauswahl<a class="headerlink" href="#cptools-form-list-check-checkbox" title="Permalink to this heading">¶</a></h4>
-<p>Antwort: mehre Optionen von einer Liste</p>
-<p>Optionen:</p>
+<p><strong>Antwort</strong>: mehre Optionen von einer Liste</p>
+<p><strong>Optionen</strong>:</p>
 <ul class="simple">
 <li><p>Maximal auswählbare Optionen</p></li>
 <li><p>Schaltfläche <em class="fa fa-plus"></em> <strong>Option hinzufügen</strong></p></li>
@@ -743,8 +753,8 @@
 </section>
 <section id="cptools-form-grid-check-checkbox-grid">
 <h4><em class="cptools cptools-form-grid-check"></em> Mehrfachauswahl-Matrix<a class="headerlink" href="#cptools-form-grid-check-checkbox-grid" title="Permalink to this heading">¶</a></h4>
-<p>Antwort: mehrere Optionen für jeden Eintrag</p>
-<p>Optionen:</p>
+<p><strong>Antwort</strong>: mehrere Optionen für jeden Eintrag</p>
+<p><strong>Optionen</strong>:</p>
 <ul class="simple">
 <li><p>Maximal auswählbare Optionen (pro Eintrag)</p></li>
 <li><p>Schaltflächen <em class="fa fa-plus"></em> <strong>Option hinzufügen</strong> und <em class="fa fa-plus"></em> <strong>Eintrag hinzufügen</strong></p></li>
@@ -754,20 +764,20 @@
 </section>
 <section id="cptools-form-list-ordered-ordered-list">
 <h4><em class="cptools cptools-form-list-ordered"></em> Geordnete Liste<a class="headerlink" href="#cptools-form-list-ordered-ordered-list" title="Permalink to this heading">¶</a></h4>
-<p>Antwort: Reihenfolge für die aufgeführten Optionen</p>
-<p>Optionen:</p>
+<p><strong>Antwort</strong>: Reihenfolge für die aufgeführten Optionen</p>
+<p><strong>Optionen</strong>:</p>
 <ul class="simple">
 <li><p>Schaltfläche <em class="fa fa-plus"></em> <strong>Option hinzufügen</strong></p></li>
 <li><p>Ziehe Fragen an <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em>, um die Reihenfolge zu ändern</p></li>
 <li><p>Lösche eine Option mit <em class="fa fa-times"></em></p></li>
 </ul>
-<p>Condorcet:</p>
+<p><strong>Condorcet</strong>:</p>
 <p>Seit Version 5.3 können Antworten mit einer <a class="reference external" href="https://de.wikipedia.org/wiki/Condorcet-Methode">Condorcet-Methode</a> ausgewertet werden. Du kannst Schulze oder Ranked Pairs wählen, um den Sieger anzuzeigen. In den Details wird auch die Anzahl der von den einzelnen Kandidaten gewonnenen Vergleiche angezeigt.</p>
 </section>
 <section id="cptools-form-poll-poll">
 <h4><em class="cptools cptools-form-poll"></em> Umfrage<a class="headerlink" href="#cptools-form-poll-poll" title="Permalink to this heading">¶</a></h4>
-<p>Antwort: <em class="fa fa-check"></em> Ja, <em class="fa fa-times"></em> Nein oder <em class="cptools cptools-form-poll-maybe"></em> Akzeptabel für jede vorgeschlagene Option</p>
-<p>Optionstypen:</p>
+<p><strong>Antwort</strong>: <em class="fa fa-check"></em> Ja, <em class="fa fa-times"></em> Nein oder <em class="cptools cptools-form-poll-maybe"></em> Akzeptabel für jede vorgeschlagene Option</p>
+<p><strong>Optionstypen</strong>:</p>
 <ul>
 <li><p>Text</p>
 <blockquote>
@@ -877,7 +887,16 @@
 </section>
 <section id="import-export">
 <h2>Import/Export<a class="headerlink" href="#import-export" title="Permalink to this heading">¶</a></h2>
-<p>Um die Antworten als CSV-Datei zu exportieren, verwende die Schaltfläche <em class="fa fa-download"></em> <strong>*Als CSV exportieren*</strong> auf der Seite <em class="fa fa-bar-chart"></em> <strong>Antworten</strong>.</p>
+<p>Form documents themselves can be exported and imported in <code class="docutils literal notranslate"><span class="pre">JSON</span></code> format.</p>
+<p>To export responses, from the <em class="fa fa-bar-chart"></em> <strong>Responses</strong> page, you have two possibilities:</p>
+<ol class="arabic simple">
+<li><p>as a CSV or JSON file use the <em class="fa fa-download"></em> <strong>EXPORT</strong> button</p></li>
+<li><p>as a Spreadsheet that can be added to your drive with the <strong>EXPORT TO SHEET</strong> button</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Bemerkung</p>
+<p>The Spreadsheet document will automatically be populated with the data from your form at the time you create it. However, due to how end-to-end encryption works, the spreadsheet content won't be automatically updated with new responses as they arrive.</p>
+</div>
 </section>
 </section>
 
@@ -926,7 +945,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'5.5.0',
+            VERSION:'5.6.0',
             LANGUAGE:'de',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

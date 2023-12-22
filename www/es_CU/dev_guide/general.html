@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>General information &mdash; documentación de CryptPad - 5.5.0</title>
+  <title>General information &mdash; documentación de CryptPad - 5.6.0</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.5.0</span>
+              <span class="release">Documentation 5.6.0</span>
             </a>
             
 <div role="search">
@@ -105,6 +105,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#logging-in">Logging in</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#notifications">Notifications</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#settings">Settings</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#account">Account</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#security-privacy">Security &amp; Privacy</a></li>
@@ -113,10 +114,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#cursor">Cursor</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#rich-text">Rich Text</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#kanban">Kanban</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#user-settings-notifications">Notifications</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#subscription">Subscription</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#notifications">Notifications</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../user_guide/support.html">Support</a><ul>
@@ -510,6 +512,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="translations.html">Adding Translations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="translations.html#getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="translations.html#including-your-translation">Including your translation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="translations.html#actually-translating-content">Actually translating content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="translations.html#verifying-your-translations">Verifying Your Translations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="translations.html#deleting-a-translation">Deleting a translation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -679,15 +689,15 @@
 <ul class="simple">
 <li><p>Documents, user account, static files and group chat</p>
 <ul>
-<li><p>Symmetrical encryption &quot;xsalsa20-poly1305&quot;.</p></li>
-<li><p>A unique encryption key allows users to encrypt and decrypt the desired content. This key is derived from the &quot;hash&quot; of the URL (the part after the #) because this part is never sent to the server by the browser, which makes it possible to respect the Zero-knowledge constraint (the server doesn't know the encryption keys).</p></li>
+<li><p>Symmetric authenticated encryption &quot;xsalsa20-poly1305&quot;.</p></li>
+<li><p>A unique encryption key allows users to encrypt and decrypt the desired content. This key is derived from the &quot;hash&quot; in the URL (the part after the #) because this part is never sent to the server by the browser, which makes it possible to respect the Zero-knowledge constraint (the server doesn't know the encryption keys).</p></li>
 <li><p>All users with access to this key can decrypt the &quot;patches&quot; allowing them to rebuild the document or decrypt the chat messages.</p></li>
 </ul>
 </li>
 <li><p>Read-only access to documents</p>
 <ul>
 <li><p>Signature “ed25519”.</p></li>
-<li><p>Since the encryption is symmetrical, all users who can read and therefore decrypt the document can also technically encrypt messages and send them. A signature system makes it possible to authorize or to block sending messages.</p></li>
+<li><p>Since the encryption is symmetric, all users who can read and therefore decrypt the document can also technically encrypt messages and send them. A digital signature system makes it possible to authorize or to block sending messages.</p></li>
 <li><p>The edit URL contains a signature in addition to the encryption key. Editors will therefore be able to sign messages after encrypting them.</p></li>
 <li><p>A &quot;public&quot; verification key allows all users (editors <strong>and</strong> readers) to check if an encrypted message has been signed with the correct signing key. Messages with an invalid signature are ignored.</p></li>
 <li><p>When a document is created, the public verification key associated with this document is sent to the server. Messages with invalid signature are not stored in the database.</p></li>
@@ -799,7 +809,7 @@
 </section>
 <section id="client-side">
 <h3>Client side<a class="headerlink" href="#client-side" title="Enlace permanente a este encabezado">¶</a></h3>
-<p>At the client level, a JavaScript module manages the Netflux protocol with simple APIs. The module is located in <code class="docutils literal notranslate"><span class="pre">./wwww/components/netflux-websocket/netflux-client.js</span></code>. Once loaded, it allows us to create a <strong>network</strong> representing the Websocket connection to the Netflux server.</p>
+<p>At the client level, a JavaScript module manages the Netflux protocol with simple APIs. The module is located in <code class="docutils literal notranslate"><span class="pre">./www/components/netflux-websocket/netflux-client.js</span></code>. Once loaded, it allows us to create a <strong>network</strong> representing the Websocket connection to the Netflux server.</p>
 <p>This network contains the <strong>list of channels</strong> joined by the user, as well as the <strong>list of members</strong> present in each channel. It allows us to perform all the operations allowed by the protocol:</p>
 <ul class="simple">
 <li><p>Join a channel : <code class="docutils literal notranslate"><span class="pre">(Promise)</span> <span class="pre">network.join(channelId)</span></code> (provides a <code class="docutils literal notranslate"><span class="pre">channel</span></code> object)</p></li>
@@ -897,7 +907,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.5.0',
+            VERSION:'5.6.0',
             LANGUAGE:'es-CU',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

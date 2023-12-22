@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Instance customization &mdash; documentación de CryptPad - 5.5.0</title>
+  <title>Instance customization &mdash; documentación de CryptPad - 5.6.0</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.5.0</span>
+              <span class="release">Documentation 5.6.0</span>
             </a>
             
 <div role="search">
@@ -105,6 +105,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#logging-in">Logging in</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#notifications">Notifications</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#settings">Settings</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#account">Account</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#security-privacy">Security &amp; Privacy</a></li>
@@ -113,10 +114,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#cursor">Cursor</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#rich-text">Rich Text</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#kanban">Kanban</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#user-settings-notifications">Notifications</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#subscription">Subscription</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#notifications">Notifications</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../user_guide/support.html">Support</a><ul>
@@ -510,6 +512,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/translations.html">Adding Translations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#including-your-translation">Including your translation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#actually-translating-content">Actually translating content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#verifying-your-translations">Verifying Your Translations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#deleting-a-translation">Deleting a translation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -695,7 +705,6 @@ For this, modify the following line:</p>
 </section>
 <section id="dark-theme-switch">
 <h3>Dark theme switch<a class="headerlink" href="#dark-theme-switch" title="Enlace permanente a este encabezado">¶</a></h3>
-<p><span class="badge-new">New in version 5.3</span></p>
 <p>You can enforce the use of the dark theme on your instance by setting the <code class="docutils literal notranslate"><span class="pre">AppConfig.defaultDarkTheme</span></code> variable to true in <code class="docutils literal notranslate"><span class="pre">customize/application_config.js</span></code>:</p>
 <div class="highlight-javaScript notranslate"><div class="highlight"><pre><span></span><span class="nx">AppConfig</span><span class="p">.</span><span class="nx">defaultDarkTheme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;true&#39;</span><span class="p">;</span><span class="w"></span>
 </pre></div>
@@ -711,6 +720,18 @@ For this, modify the following line:</p>
 <li><p>Add your SVG logo to <code class="docutils literal notranslate"><span class="pre">customize</span></code></p></li>
 <li><p>Rename the logo <code class="docutils literal notranslate"><span class="pre">CryptPad_logo_hero.svg</span></code></p></li>
 </ol>
+<p>Files you may be interested in:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">index.html</span></code> is the main page</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">main.js</span></code> contains javascript for the home page</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">application_config.js</span></code> allows you to modify settings used by the various applications</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">messages.js</span></code> contains functions for applying translations to various pages</p></li>
+<li><p>look inside <code class="docutils literal notranslate"><span class="pre">/translations/</span></code> for the rest of the files which contain translated strings</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/share/</span></code> implements an iframe RPC which allows multiple domains to access the same localStorage</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/src/</span></code> contains source files for html and css (in the form of html templates and .less stylesheets)</p></li>
+</ul>
+<p>All other content which is placed in this directory will be referencable at the <code class="docutils literal notranslate"><span class="pre">/customize/</span></code>
+URL location.</p>
 <section id="open-graph-preview-images">
 <span id="preview-images"></span><h3>Open Graph preview images<a class="headerlink" href="#open-graph-preview-images" title="Enlace permanente a este encabezado">¶</a></h3>
 <p>Previews when links from the instance are posted to social media include images, these are located in <code class="docutils literal notranslate"><span class="pre">/customize.dist/images/opengraph_preview/</span></code>. Once <a class="reference internal" href="installation.html#configure-open-graph"><span class="std std-ref">Open Graph tags have been set up</span></a>, the images can be customized by placing modified copies in <code class="docutils literal notranslate"><span class="pre">/customize/images/opengraph_preview/</span></code> just like any other image.</p>
@@ -773,7 +794,7 @@ For this, modify the following line:</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.5.0',
+            VERSION:'5.6.0',
             LANGUAGE:'es-CU',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

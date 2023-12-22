@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Outer &mdash; documentación de CryptPad - 5.5.0</title>
+  <title>Outer &mdash; documentación de CryptPad - 5.6.0</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.5.0</span>
+              <span class="release">Documentation 5.6.0</span>
             </a>
             
 <div role="search">
@@ -105,6 +105,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#logging-in">Logging in</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/user_account.html#notifications">Notifications</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../user_guide/user_account.html#settings">Settings</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#account">Account</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#security-privacy">Security &amp; Privacy</a></li>
@@ -113,10 +114,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#cursor">Cursor</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#rich-text">Rich Text</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#kanban">Kanban</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#user-settings-notifications">Notifications</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../user_guide/user_account.html#subscription">Subscription</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../../user_guide/user_account.html#notifications">Notifications</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../user_guide/support.html">Support</a><ul>
@@ -510,6 +512,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../translations.html">Adding Translations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../translations.html#getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../translations.html#including-your-translation">Including your translation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../translations.html#actually-translating-content">Actually translating content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../translations.html#verifying-your-translations">Verifying Your Translations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../translations.html#deleting-a-translation">Deleting a translation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -645,7 +655,7 @@
 <p>The &quot;outer&quot; level represents the starting point of the CryptPad code. Except for the initial HTML file loaded by the browser, this level is entirely made of JavaScript code. It is split into two main files, which are connected to the iframe inner for one and to the worker for the other. The APIs used to communicate are the same in both cases.</p>
 <section id="communication-between-levels">
 <h2>Communication between levels<a class="headerlink" href="#communication-between-levels" title="Enlace permanente a este encabezado">¶</a></h2>
-<p>The communication is done using <code class="docutils literal notranslate"><span class="pre">wwww/common/outer/worker-channel.js</span></code>, a mini-library developed in CryptPad. This library allows two systems to send &quot;query&quot; and &quot;event&quot; messages to each other. A &quot;query&quot; consists of sending data and waiting for a response, while an &quot;event&quot; is just sending data.</p>
+<p>The communication is done using <code class="docutils literal notranslate"><span class="pre">www/common/outer/worker-channel.js</span></code>, a mini-library developed in CryptPad. This library allows two systems to send &quot;query&quot; and &quot;event&quot; messages to each other. A &quot;query&quot; consists of sending data and waiting for a response, while an &quot;event&quot; is just sending data.</p>
 <p>This library automatically manages callbacks for received answers and allows each party to indicate when it is ready to communicate. The way messages are sent is managed outside the library thanks to a <code class="docutils literal notranslate"><span class="pre">sendMessage</span></code> function that is provided as an argument. If it is a query, a callback is included with the data.</p>
 </section>
 <section id="communication-with-inner">
@@ -751,7 +761,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'5.5.0',
+            VERSION:'5.6.0',
             LANGUAGE:'es',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

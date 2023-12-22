@@ -59,6 +59,14 @@ To duplicate a document:
 -  From the CryptDrive: ``Right click`` on the document > |clone|
    **Make a copy**.
 
+.. note::
+   
+   Make a copy can be used to purge history from a file, for example if you want to redact content from the history and/or make it completely unavailable.
+
+.. warning::
+
+   Beware, an important caveat of using Make a copy is that you'll have to share again the document with your contacts or the persons you sent the link to.
+
 .. _document_history:
 
 Document history

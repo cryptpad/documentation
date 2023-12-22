@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Tabellen &mdash; CryptPad 5.5.0 Dokumentation</title>
+  <title>Tabellen &mdash; CryptPad 5.6.0 Dokumentation</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.5.0</span>
+              <span class="release">Documentation 5.6.0</span>
             </a>
             
 <div role="search">
@@ -105,18 +105,20 @@
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#logging-in">Einloggen</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../user_account.html#notifications">Benachrichtigungen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_account.html#settings">Einstellungen</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#account">Account</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../user_account.html#security-privacy">Security &amp; Privacy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#security-privacy">Sicherheit &amp; Datenschutz</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#appearance">Erscheinungsbild</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#cryptdrive">CryptDrive</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#cursor">Cursor</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#rich-text">Rich Text</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#kanban">Kanban</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#user-settings-notifications">Benachrichtigungen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#subscription">Abonnement</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../user_account.html#notifications">Benachrichtigungen</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../support.html">Support</a><ul>
@@ -510,6 +512,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../dev_guide/translations.html">Adding Translations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#including-your-translation">Including your translation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#actually-translating-content">Actually translating content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#verifying-your-translations">Verifying Your Translations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#deleting-a-translation">Deleting a translation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -546,8 +556,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#report-bugs">Fehler melden</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#contribute-to-the-documentation">Zur Dokumentation beitragen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#translate-cryptpad">CryptPad übersetzen</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../how_to_contribute.html#community-translation-program">Community translation program</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../how_to_contribute.html#terms">Terms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../how_to_contribute.html#community-translation-program">Community-Übersetzungsprogramm</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../how_to_contribute.html#terms">Bedingungen</a></li>
 </ul>
 </li>
 </ul>
@@ -640,15 +650,19 @@
             
   <section id="spreadsheet">
 <span id="app-sheets"></span><h1>Tabellen<a class="headerlink" href="#spreadsheet" title="Permalink to this heading">¶</a></h1>
-<p>Die Tabellen-Anwendung in CryptPad ist eine Integration von <a class="reference external" href="https://www.onlyoffice.com/">OnlyOffice</a>. Siehe <a class="reference internal" href="../../FAQ.html#faq-oointegration"><span class="std std-ref">In welcher Beziehung stehen CryptPad und OnlyOffice?</span></a> für weitere Information.</p>
+<p>The Spreadsheet application in CryptPad is an integration of <a class="reference external" href="https://www.onlyoffice.com/">OnlyOffice</a>. To read more about the details of this integration see <a class="reference internal" href="../../FAQ.html#faq-oointegration"><span class="std std-ref">In welcher Beziehung stehen CryptPad und OnlyOffice?</span></a></p>
 <img alt="../../_images/app-sheets-preview.png" class="screenshot" src="../../_images/app-sheets-preview.png" />
 <section id="documentation">
 <h2>Dokumentation<a class="headerlink" href="#documentation" title="Permalink to this heading">¶</a></h2>
 <p>Eine Anleitung zur Verwendung von Tabellen findest du in der <a class="reference external" href="https://helpcenter.onlyoffice.com/de/ONLYOFFICE-Editors/ONLYOFFICE-Spreadsheet-Editor/index.aspx">OnlyOffice-Dokumentation</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Bemerkung</p>
+<p>Due to various security implications, <a class="reference external" href="https://helpcenter.onlyoffice.com/ONLYOFFICE-Editors/Editors-User-Guides/AllEditors/Plugin-manager.aspx">OnlyOffice plugins</a>, also <a class="reference external" href="https://api.onlyoffice.com/plugin/macros">macros</a>, aren't available on CryptPad.</p>
+</div>
 </section>
 <section id="toolbars">
 <h2>Werkzeugleisten<a class="headerlink" href="#toolbars" title="Permalink to this heading">¶</a></h2>
-<p>CryptPad integriert OnlyOffice-Tabellen wie die anderen Anwendungen in das System zur verschlüsselten Zusammenarbeit. OnlyOffice stellt viele Funktionen in einer Werkzeugleiste mit Registerkarten an. Deswegen werden zwei Werkzeugleisten angezeigt, was verwirrend sein kann:</p>
+<p>CryptPad integriert OnlyOffice-Tabellen wie die anderen Anwendungen in das System zur verschlüsselten Zusammenarbeit. OnlyOffice stellt viele Funktionen in einer Werkzeugleiste mit Registerkarten bereit. Deswegen werden zwei Werkzeugleisten angezeigt, was verwirrend sein kann:</p>
 <ul class="simple">
 <li><p>Die obere <strong>Werkzeugleiste von CryptPad</strong> wird für <em class="fa fa-file-o"></em> <strong>Datei</strong> (einschließlich Import/Export, Verlauf, Eigenschaften, etc) verwendet, sowie für <em class="fa fa-share-alt"></em> <strong>Teilen</strong> und <em class="fa fa-unlock-alt"></em> <strong>Zugriff</strong>.</p></li>
 <li><p>Die <strong>Werkzeugleiste von OnlyOffice</strong> wird für die Funktionen bezogen auf das Tabellendokument an sich verwendet, sowie für den im folgenden Abschnitt beschriebenen Modus zur Zusammenarbeit.</p></li>
@@ -750,7 +764,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'5.5.0',
+            VERSION:'5.6.0',
             LANGUAGE:'de',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>フォーム &mdash; CryptPad 5.5.0 ドキュメント</title>
+  <title>フォーム &mdash; CryptPad 5.6.0 ドキュメント</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.5.0</span>
+              <span class="release">Documentation 5.6.0</span>
             </a>
             
 <div role="search">
@@ -105,6 +105,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#logging-in">ログイン</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../user_account.html#notifications">通知</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_account.html#settings">設定</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#account">アカウント</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#security-privacy">Security &amp; Privacy</a></li>
@@ -113,10 +114,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#cursor">カーソル</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#rich-text">リッチテキスト</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#code">コード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#kanban">Kanban</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#user-settings-notifications">通知</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#subscription">定額利用</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../user_account.html#notifications">通知</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../support.html">サポート</a><ul>
@@ -510,6 +512,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../dev_guide/translations.html">Adding Translations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#including-your-translation">Including your translation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#actually-translating-content">Actually translating content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#verifying-your-translations">Verifying Your Translations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../dev_guide/translations.html#deleting-a-translation">Deleting a translation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -688,8 +698,8 @@
 <h3>質問の種類<a class="headerlink" href="#question-types" title="この見出しへのパーマリンク">¶</a></h3>
 <section id="cptools-form-text-text">
 <h4><em class="cptools cptools-form-text"></em> 文<a class="headerlink" href="#cptools-form-text-text" title="この見出しへのパーマリンク">¶</a></h4>
-<p>回答：1行の文</p>
-<p>選択肢：</p>
+<p><strong>Response</strong>: one line of text</p>
+<p><strong>Options</strong>:</p>
 <ul class="simple">
 <li><p>テキストの種類：文、番号、リンク、または電子メールアドレス</p></li>
 </ul>
@@ -700,16 +710,16 @@
 </section>
 <section id="cptools-form-paragraph-paragraph">
 <h4><em class="cptools cptools-form-paragraph"></em> 段落<a class="headerlink" href="#cptools-form-paragraph-paragraph" title="この見出しへのパーマリンク">¶</a></h4>
-<p>回答: 複数行の文</p>
-<p>選択肢：</p>
+<p><strong>Response</strong>: multiple lines of text</p>
+<p><strong>Options</strong>:</p>
 <ul class="simple">
 <li><p>最大文字数の制限（既定で1000字）</p></li>
 </ul>
 </section>
 <section id="cptools-form-list-radio-choice">
 <span id="form-q-choice"></span><h4><em class="cptools cptools-form-list-radio"></em> 選択肢<a class="headerlink" href="#cptools-form-list-radio-choice" title="この見出しへのパーマリンク">¶</a></h4>
-<p>回答：リストから1つ選択</p>
-<p>選択肢：</p>
+<p><strong>Response</strong>: one choice from the list</p>
+<p><strong>Options</strong>:</p>
 <ul class="simple">
 <li><p><em class="fa fa-plus"></em> <strong>選択肢を追加</strong>のボタン</p></li>
 <li><p><em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> をつかんでドラッグすると、選択肢を並び替えられます</p></li>
@@ -718,8 +728,8 @@
 </section>
 <section id="cptools-form-grid-radio-choice-grid">
 <h4><em class="cptools cptools-form-grid-radio"></em> 選択式グリッド<a class="headerlink" href="#cptools-form-grid-radio-choice-grid" title="この見出しへのパーマリンク">¶</a></h4>
-<p>回答：1項目につき選択肢を1つ選択</p>
-<p>選択肢：</p>
+<p><strong>Response</strong>: one option choice per item</p>
+<p><strong>Options</strong>:</p>
 <ul class="simple">
 <li><p><em class="fa fa-plus"></em> <strong>選択肢を追加</strong>と <em class="fa fa-plus"></em> <strong>項目を追加</strong>のボタン</p></li>
 <li><p><em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> をつかんでドラッグすると、項目や選択肢を並び替えられます</p></li>
@@ -728,12 +738,12 @@
 </section>
 <section id="calendar-date">
 <h4><em class="fa fa-calendar"></em> 日付<a class="headerlink" href="#calendar-date" title="この見出しへのパーマリンク">¶</a></h4>
-<p>回答：日時を選択</p>
+<p><strong>Response</strong>: pick a date and time</p>
 </section>
 <section id="cptools-form-list-check-checkbox">
 <span id="form-q-checkbox"></span><h4><em class="cptools cptools-form-list-check"></em> チェックボックス<a class="headerlink" href="#cptools-form-list-check-checkbox" title="この見出しへのパーマリンク">¶</a></h4>
-<p>回答: リストから複数選択可</p>
-<p>選択肢：</p>
+<p><strong>Response</strong>: multiple choices from the list</p>
+<p><strong>Options</strong>:</p>
 <ul class="simple">
 <li><p>選択可能な選択肢の数</p></li>
 <li><p><em class="fa fa-plus"></em> <strong>選択肢を追加</strong>のボタン</p></li>
@@ -743,8 +753,8 @@
 </section>
 <section id="cptools-form-grid-check-checkbox-grid">
 <h4><em class="cptools cptools-form-grid-check"></em> チェックボックス式グリッド<a class="headerlink" href="#cptools-form-grid-check-checkbox-grid" title="この見出しへのパーマリンク">¶</a></h4>
-<p>回答：各項目に複数の選択肢</p>
-<p>選択肢：</p>
+<p><strong>Response</strong>: multiple choices for each item</p>
+<p><strong>Options</strong>:</p>
 <ul class="simple">
 <li><p>選択可能な選択肢の数（各項目につき）</p></li>
 <li><p><em class="fa fa-plus"></em> <strong>選択肢を追加</strong>と <em class="fa fa-plus"></em> <strong>項目を追加</strong>のボタン</p></li>
@@ -754,20 +764,20 @@
 </section>
 <section id="cptools-form-list-ordered-ordered-list">
 <h4><em class="cptools cptools-form-list-ordered"></em> 番号付きリスト<a class="headerlink" href="#cptools-form-list-ordered-ordered-list" title="この見出しへのパーマリンク">¶</a></h4>
-<p>回答：選択肢の一覧の順序</p>
-<p>選択肢：</p>
+<p><strong>Response</strong>: order of preference for the listed options</p>
+<p><strong>Options</strong>:</p>
 <ul class="simple">
 <li><p><em class="fa fa-plus"></em> <strong>選択肢を追加</strong>のボタン</p></li>
 <li><p><em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> をつかんでドラッグすると、選択肢を並び替えられます</p></li>
 <li><p><em class="fa fa-times"></em> で選択肢を削除</p></li>
 </ul>
-<p>コンドルセ式：</p>
+<p><strong>Condorcet</strong>:</p>
 <p>バージョン5.3より回答を <a class="reference external" href="https://en.wikipedia.org/wiki/Condorcet_method">コンドルセ法</a> で表示できます。シュルツェまたはランク付けのペアを選択して勝者を表示できます。詳細からは、それぞれの候補が勝利した数を確認できます。</p>
 </section>
 <section id="cptools-form-poll-poll">
 <h4><em class="cptools cptools-form-poll"></em> 投票<a class="headerlink" href="#cptools-form-poll-poll" title="この見出しへのパーマリンク">¶</a></h4>
-<p>回答: それぞれの選択肢に対し <em class="fa fa-check"></em> はい、<em class="fa fa-times"></em> いいえ、<em class="cptools cptools-form-poll-maybe"></em> 可のいずれか</p>
-<p>選択肢の種類：</p>
+<p><strong>Response</strong>: <em class="fa fa-check"></em> Yes, <em class="fa fa-times"></em> No, or <em class="cptools cptools-form-poll-maybe"></em> Acceptable for each of the proposed options</p>
+<p><strong>Option types</strong>:</p>
 <ul>
 <li><p>文</p>
 <blockquote>
@@ -877,7 +887,16 @@
 </section>
 <section id="import-export">
 <h2>インポート/エクスポート<a class="headerlink" href="#import-export" title="この見出しへのパーマリンク">¶</a></h2>
-<p><em class="fa fa-bar-chart"></em> <strong>回答</strong>ページの <em class="fa fa-download"></em> <strong>CSVにエクスポート</strong>のボタンから、回答をCSVファイルでエクスポートできます。</p>
+<p>Form documents themselves can be exported and imported in <code class="docutils literal notranslate"><span class="pre">JSON</span></code> format.</p>
+<p>To export responses, from the <em class="fa fa-bar-chart"></em> <strong>Responses</strong> page, you have two possibilities:</p>
+<ol class="arabic simple">
+<li><p>as a CSV or JSON file use the <em class="fa fa-download"></em> <strong>EXPORT</strong> button</p></li>
+<li><p>as a Spreadsheet that can be added to your drive with the <strong>EXPORT TO SHEET</strong> button</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>The Spreadsheet document will automatically be populated with the data from your form at the time you create it. However, due to how end-to-end encryption works, the spreadsheet content won't be automatically updated with new responses as they arrive.</p>
+</div>
 </section>
 </section>
 
@@ -926,7 +945,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'5.5.0',
+            VERSION:'5.6.0',
             LANGUAGE:'ja',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

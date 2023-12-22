@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Comment contribuer &mdash; Documentation CryptPad 5.5.0</title>
+  <title>Comment contribuer &mdash; Documentation CryptPad 5.6.0</title>
   
 
   
@@ -57,7 +57,7 @@
             <a href="index.html" class="icon icon-home">
               <img src="_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.5.0</span>
+              <span class="release">Documentation 5.6.0</span>
             </a>
             
 <div role="search">
@@ -104,18 +104,20 @@
 <li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#logging-in">Connexion</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="user_guide/user_account.html#notifications">Notifications</a></li>
 <li class="toctree-l3"><a class="reference internal" href="user_guide/user_account.html#settings">Préférences</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#account">Compte</a></li>
-<li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#security-privacy">Security &amp; Privacy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#security-privacy">Sécurité et confidentialité</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#appearance">Apparence</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#cryptdrive">CryptDrive</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#cursor">Curseur</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#rich-text">Documents texte</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#kanban">Kanban</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#user-settings-notifications">Notifications</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#subscription">Abonnement</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="user_guide/user_account.html#notifications">Notifications</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="user_guide/support.html">Support</a><ul>
@@ -509,6 +511,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="dev_guide/translations.html">Adding Translations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide/translations.html#getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide/translations.html#including-your-translation">Including your translation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide/translations.html#actually-translating-content">Actually translating content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide/translations.html#verifying-your-translations">Verifying Your Translations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dev_guide/translations.html#deleting-a-translation">Deleting a translation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -520,7 +530,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="FAQ.html#i-forgot-my-password">J'ai oublié mon mot de passe</a></li>
 <li class="toctree-l2"><a class="reference internal" href="FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Comment importer/exporter mes documents vers/depuis un autre logiciel ?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="FAQ.html#import-export-is-not-visible-in-the-file-menu">Import/export is not visible in the File menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FAQ.html#import-export-is-not-visible-in-the-file-menu">Import/export n'est pas visible depuis le menu Fichier</a></li>
 <li class="toctree-l3"><a class="reference internal" href="FAQ.html#rich-text-document-import-export">Import/export de documents texte</a></li>
 <li class="toctree-l3"><a class="reference internal" href="FAQ.html#spreadsheets-import-export">Import/export de feuilles de calcul</a></li>
 </ul>
@@ -545,8 +555,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#report-bugs">Signaler des bugs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#contribute-to-the-documentation">Contribuer à la documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#translate-cryptpad">Traduire CryptPad</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#community-translation-program">Community translation program</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#terms">Terms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#community-translation-program">Programme de traduction communautaire</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#terms">Conditions</a></li>
 </ul>
 </li>
 </ul>
@@ -676,26 +686,26 @@
 <span id="contribute-translation"></span><h2>Traduire CryptPad<a class="headerlink" href="#translate-cryptpad" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p>L'équipe de développement traduit CryptPad en anglais et en français, de nombreuses autres langues étant fournies par la communauté. La traduction et/ou la mise à jour des traductions au fur et à mesure du développement de la plateforme est une tâche cruciale pour rendre CryptPad accessible au plus grand nombre.</p>
 <p>Pour traduire CryptPad, veuillez consulter le <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/customize.dist/translations/README.md">guide de traduction</a>.</p>
-<p>To translate this documentation please visit the project on <a class="reference external" href="https://weblate.cryptpad.org/projects/user-guide/">Weblate</a>. To start translating a new language, please <a class="reference external" href="https://cryptpad.fr/contact.html">get in touch with the development team</a>.</p>
+<p>Pour traduire cette documentation, veuillez accéder au projet sur <a class="reference external" href="https://weblate.cryptpad.org/projects/user-guide/">Weblate</a>. Pour commencer à traduire un nouveau langage, veuillez <a class="reference external" href="https://cryptpad.fr/contact.html">contacter l'équipe de développement</a>.</p>
 <p>Progression actuelle des langues traduites :</p>
 <img alt="widget Weblate" src="https://weblate.cryptpad.org/widgets/cryptpad/-/app/multi-auto.svg" /><section id="community-translation-program">
-<h3>Community translation program<a class="headerlink" href="#community-translation-program" title="Lien permanent vers cette rubrique">¶</a></h3>
-<p>CryptPad translations are a volunteer community effort. We are not able to offer financial compensation for translation work, but we offer free premium benefits on <a class="reference external" href="https://cryptpad.fr/accounts/">CryptPad.fr</a> as a token of gratitude (increased storage and priority support).</p>
+<h3>Programme de traduction communautaire<a class="headerlink" href="#community-translation-program" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>La traduction de CryptPad est un effort communautaire. Nous ne sommes pas en mesure d'offrir une contrepartie financière pour le travail de traduction, nous offrons cependant un compte premium Personnel sur <a class="reference external" href="https://cryptpad.fr/accounts/">CryptPad.fr</a> en gage de notre gratitude (plus de stockage et support prioritaire).</p>
 <section id="terms">
-<h4>Terms<a class="headerlink" href="#terms" title="Lien permanent vers cette rubrique">¶</a></h4>
-<p>Translator commitment</p>
+<h4>Conditions<a class="headerlink" href="#terms" title="Lien permanent vers cette rubrique">¶</a></h4>
+<p>Engagement de lae contributeur·ice</p>
 <ul class="simple">
-<li><p>Make an account on our <a class="reference external" href="https://weblate.cryptpad.org">Weblate instance</a> and use it for all translation work</p></li>
-<li><p>Bring and/or maintain a language at or near 100% translated status</p></li>
-<li><p>Keep the translation up to date as we release new versions of CryptPad approximately 4 times per year (the amount of work will depend on the functionality in each release)</p></li>
+<li><p>Créer un compte sur notre <a class="reference external" href="https://weblate.cryptpad.org">instance Weblate</a> et l'utiliser pour le travail de traduction</p></li>
+<li><p>Approcher ou maintenir un langage à (ou suffisamment proche de) 100% du statut de traduction</p></li>
+<li><p>Garder la traduction à jour au fur et à mesure que nous publions de nouvelles version de CryptPad approximativement 4 fois par an (le volume de travail dépendra des fonctionnalités ajoutées dans chaque version)</p></li>
 </ul>
-<p>CryptPad development team commitment</p>
+<p>Engagement de l'équipe de développement CryptPad</p>
 <ul class="simple">
-<li><p>Enable a free <a class="reference external" href="https://cryptpad.fr/accounts/#subscribe">Personal plan</a> on CryptPad.fr for each translator as long as the translator commitments are met</p></li>
-<li><p>Provide guidance and support in the <a class="reference external" href="https://matrix.to/#/#cryptpad-translations:matrix.xwiki.com">CryptPad Translations matrix channel</a></p></li>
-<li><p>Host and maintain the Weblate instance incl. all tools, glossary, etc</p></li>
+<li><p>Assigner gratuitement un <a class="reference external" href="https://cryptpad.fr/accounts/#subscribe">compte Personnel</a> sur CryptPad.fr pour chaque traducteur·ice tant qu'iel tiens ses engagements</p></li>
+<li><p>Fournir des conseils et de l'aide sur le <a class="reference external" href="https://matrix.to/#/#cryptpad-translations:matrix.xwiki.com">salon matrix CryptPad Translations</a></p></li>
+<li><p>Héberger et maintenir l'instance Weblate incluant l'ensemble des outils, glossaires, etc</p></li>
 </ul>
-<p>This program has so far been used only with individual translators, if you are translating as a group please contact the development team.</p>
+<p>Ce programme a jusqu'à présent été uniquement utilisé pour des traducteur·ices individuel·les, si vous faites parti d'un groupe de traduction, veuillez contacter l'équipe de développement.</p>
 </section>
 </section>
 </section>
@@ -767,7 +777,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'5.5.0',
+            VERSION:'5.6.0',
             LANGUAGE:'fr',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

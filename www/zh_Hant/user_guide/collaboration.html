@@ -1,0 +1,982 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="zh-Hant" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="zh-Hant" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Collaboration / Social &mdash; CryptPad 5.6.0 文档</title>
+  
+
+  
+  <link rel="icon" type="image/png" href="../_static/images/main-favicon.png" id="favicon"/>
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/open-sans.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/cptools.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/fontawesome.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/IBM-plex.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/cp-overrides.css" type="text/css" />
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="Share / Access" href="share_and_access.html" />
+    <link rel="prev" title="CryptDrive" href="drive.html" /> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+            <a href="../index.html" class="icon icon-home">
+              <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
+              <div class="icon-title">CryptPad</div>
+              <span class="release">Documentation 5.6.0</span>
+            </a>
+            
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+          
+        </div>
+
+        <div class="wy-side-nav-language-selector">
+        	<p class="caption-text">
+	        	<select id="language-selector-container">
+	        		<option value="en">English</option>
+              <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
+              <option value="ru">Русский</option>
+              <option value="ja">日本語</option>
+	        	</select>
+        	</p>
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">User Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="instances.html">CryptPad instances</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_account.html">User Account</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="user_account.html#account-types">Account types</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#guest-user">Guest user</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#logged-in-user">Logged in user</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#premium-user">Premium user</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="user_account.html#account-management">Account management</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#registration">Registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#logging-in">Logging in</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="user_account.html#notifications">Notifications</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_account.html#settings">Settings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#account">Account</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#security-privacy">Security &amp; Privacy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#appearance">Appearance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#cryptdrive">CryptDrive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#cursor">Cursor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#rich-text">Rich Text</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#kanban">Kanban</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#user-settings-notifications">Notifications</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#subscription">Subscription</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="support.html">Support</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="support.html#existing-tickets">Existing tickets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="support.html#new-ticket">New ticket</a></li>
+<li class="toctree-l3"><a class="reference internal" href="support.html#debug-data">Debug data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="support.html#names">Names</a></li>
+<li class="toctree-l4"><a class="reference internal" href="support.html#identifiers">Identifiers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="support.html#keys">Keys</a></li>
+<li class="toctree-l4"><a class="reference internal" href="support.html#quota">Quota</a></li>
+<li class="toctree-l4"><a class="reference internal" href="support.html#web-browser">Web browser</a></li>
+<li class="toctree-l4"><a class="reference internal" href="support.html#screen">Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="support.html#block-location">Block location</a></li>
+<li class="toctree-l4"><a class="reference internal" href="support.html#teams">Teams</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="security.html">Security</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="security.html#trust-assumptions">Trust Assumptions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#passwords-for-documents-and-folders">Passwords for documents and folders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#verifying-contacts">Verifying contacts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#self-destructing-documents">Self-destructing documents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#remote-disconnect">Remote Disconnect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#remote-content">Remote Content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="security.html#known-caveats">Known caveats</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="security.html#no-unique-usernames">No unique usernames</a></li>
+<li class="toctree-l4"><a class="reference internal" href="security.html#edit-rights-in-teams">Edit rights in teams</a></li>
+<li class="toctree-l4"><a class="reference internal" href="security.html#access-of-former-team-members">Access of former team members</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="drive.html">CryptDrive</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#display">Display</a></li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#managing-documents">Managing documents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="drive.html#folders">Folders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="drive.html#renaming">Renaming</a></li>
+<li class="toctree-l4"><a class="reference internal" href="drive.html#deleting">Deleting</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#history">History</a></li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#tags">Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#templates">Templates</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Collaboration / Social</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#profile">Profile</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#personal-profile">Personal profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#user-profile">User profile</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#calendar">Calendar</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#share-access">Share &amp; Access</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#contacts">Contacts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#add-a-contact">Add a contact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#manage-contacts">Manage contacts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#chat-with-contacts">Chat with contacts</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#teams">Teams</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#team-drive">Team Drive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#team-members">Team members</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#invite-members">Invite members</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#roles-and-permissions">Roles and permissions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#administration">Administration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#chat">Chat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#administration-tab">Administration tab</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="share_and_access.html">Share / Access</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="share_and_access.html#share">Share</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#access-rights">Access rights</a></li>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#sharing-with-contacts">Sharing with contacts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#sharing-a-link">Sharing a link</a></li>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#embedding">Embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#shared-folders">Shared folders</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="share_and_access.html#access">Access</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#access-tab">Access tab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#access-list">Access List</a></li>
+<li class="toctree-l4"><a class="reference internal" href="share_and_access.html#owners">Owners</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="applications.html">Applications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="apps/general.html">General</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#new-document">New document</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#saving">Saving</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#make-a-copy">Make a copy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#document-history">Document history</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#snapshots">Snapshots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#properties">Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/general.html#users-and-chat">Users and chat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/richtext.html">Rich Text</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/richtext.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/richtext.html#view-settings">View settings</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/richtext.html#editing">Editing</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apps/richtext.html#headings">Headings</a></li>
+<li class="toctree-l5"><a class="reference internal" href="apps/richtext.html#paragraphs">Paragraphs</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="apps/richtext.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/richtext.html#comments">Comments</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/sheets.html">Spreadsheet</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/sheets.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/sheets.html#toolbars">Toolbars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/sheets.html#undo-and-collaboration-modes">Undo and collaboration modes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/sheets.html#history">History</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/sheets.html#printing">Printing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/sheets.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/code.html">Code / Markdown</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#theme">Theme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#markdown">Markdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#images">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/code.html#lightbox">Lightbox</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/slides.html">Slides</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/slides.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/slides.html#writing-slides-with-markdown">Writing slides with Markdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/slides.html#theme">Theme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/slides.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/slides.html#images">Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/slides.html#lightbox">Lightbox</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/form.html">Form</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/form.html#roles">Roles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/form.html#editing-a-form">Editing a form</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apps/form.html#utilities">Utilities</a></li>
+<li class="toctree-l5"><a class="reference internal" href="apps/form.html#question-types">Question types</a></li>
+<li class="toctree-l5"><a class="reference internal" href="apps/form.html#form-settings">Form Settings</a></li>
+<li class="toctree-l5"><a class="reference internal" href="apps/form.html#responses">Responses</a></li>
+<li class="toctree-l5"><a class="reference internal" href="apps/form.html#advanced-use-cases">Advanced use-cases</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="apps/form.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/kanban.html">Kanban</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#organisation">Organisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#columns">Columns</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#cards">Cards</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#card-editor">Card editor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#display">Display</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/diagram.html">Diagram</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#toolbars">Toolbars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Whiteboard</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">Toolbar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">Drawing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Paint mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Select mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#export">Export</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">Administrator Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../admin_guide/installation.html">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#prerequisites">Prerequisites</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#domains">Domains</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#hardware">Hardware</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#software">Software</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#install-cryptpad">Install Cryptpad</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#recommended">Recommended</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#configuration">Configuration</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#daemonization">Daemonization</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#systemd">Systemd</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#freebsd">FreeBSD</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#docker">Docker</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#admin-domain-config">Domains</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#install-and-configure-nginx">Install and configure Nginx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#configure-cryptpad">Configure CryptPad</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#diagnostics">Diagnostics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configure-administrators">Configure administrators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#build-static-pages-open-graph-metadata">Build static pages &amp; Open Graph metadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#support">Support</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../admin_guide/customization.html">Instance customization</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/customization.html#application-config">Application config</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#restricting-guest-access">Restricting guest access</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#links-to-terms-of-service-privacy-policy-and-imprint-pages">Links to Terms of Service, Privacy Policy and Imprint pages</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#security-hardening">Security Hardening</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#dark-theme-switch">Dark theme switch</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/customization.html#look-and-feel">Look and feel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/customization.html#open-graph-preview-images">Open Graph preview images</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/customization.html#translations">Translations</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../admin_guide/maintenance.html">Maintenance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/maintenance.html#upgrading-cryptpad">Upgrading CryptPad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/maintenance.html#database-administration">Database administration</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/maintenance.html#backup-and-migration">Backup and migration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/maintenance.html#advanced-administration">Advanced administration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../admin_guide/admin_panel.html">Administration panel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#general">General</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#enable-remote-embedding">Enable remote embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#admin-contact-email">Admin contact email</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#instance-information">Instance information</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#storage-limit">Storage Limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#apply-a-custom-limit">Apply a custom limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#custom-limits">Custom limits</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#database">Database</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#account-information">Account information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#document-information">Document information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#login-block-information">Login-block information</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#fa-recovery">2FA Recovery</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#statistics">Statistics</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#support">Support</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#maintenance">Maintenance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#survey">Survey</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast-message">Broadcast Message</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#performance">Performance</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#id1">Performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#measure-disk-performance">Measure disk performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#disk-performance-measurement-window">Disk performance measurement window</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#network">Network</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#validate-instance-configuration">Validate instance configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#server-telemetry">Server telemetry</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#statistical-aggregation">Statistical aggregation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#list-my-instance-in-public-directories">List my instance in public directories</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#consent-to-contact">Consent to contact</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#crowdfunding-participation">Crowdfunding participation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#instance-purpose">Instance purpose</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../dev_guide/index.html">Developer Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/setup.html">Set up a development instance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/setup.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/setup.html#installation">Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/setup.html#configuration">Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/setup.html#caching">Caching</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/setup.html#launching-in-development-mode">Launching in development mode</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/contribute.html">Contribute Code</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/contribute.html#license">License</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/contribute.html#git">Git</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/contribute.html#pull-requests">Pull requests</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/contribute.html#branches">Branches</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/contribute.html#before-contributing">Before contributing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/basics.html">Key elements in CryptPad</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/basics.html#zero-knowledge">Zero-knowledge</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/basics.html#what-our-server-can-see">What our server can see</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/basics.html#content-security-policy-csp-and-security">Content Security Policy (CSP) and security</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/basics.html#customization">Customization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/basics.html#code-rules">Code rules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/basics.html#translation-keys">Translation keys</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/database.html">Database</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/database.html#key-points">Key points</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/database.html#understanding-document-urls">Understanding document URLs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/database.html#finding-a-document">Finding a document</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/code.html">Code</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/general.html">General information</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/general.html#sandbox">Sandbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/general.html#level-structure">5-level structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/general.html#encryption">Encryption</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/general.html#drive-and-pins-log">Drive and &quot;pins&quot; log</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/general.html#example">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/general.html#registration-login-and-block">Registration, login and block</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/general.html#example-2">Example</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/general.html#client-server-communication-netflux">Client-server communication (Netflux)</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/general.html#server-side">Server side</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/general.html#client-side">Client side</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/general.html#example-3">Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/client.html">Client</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/architecture.html">Client architecture</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/architecture.html#worker">Worker</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/architecture.html#outer">Outer</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/architecture.html#inner">Inner</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/chainpad.html">ChainPad and Listmap</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/chainpad.html#chainpad">ChainPad</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/chainpad.html#checkpoints">Checkpoints</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/chainpad.html#chainpad-with-javascript-objects">ChainPad with JavaScript objects</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/chainpad.html#chainpad-netflux">Chainpad-netflux</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/chainpad.html#chainpad-listmap">Chainpad-listmap</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/translations.html">Translation keys</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/translations.html#usage">Usage</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/translations.html#structure">Structure</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/framework.html">Framework</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/framework.html#sframe-app-outer-js">sframe-app-outer.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/framework.html#sframe-app-framework-js">sframe-app-framework.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/framework.html#framework-less">framework.less</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/worker.html">Worker</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/worker.html#async-store-js">async-store.js</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/worker.html#store-commands">“Store” commands</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/outer.html">Outer</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/outer.html#communication-between-levels">Communication between levels</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/outer.html#communication-with-inner">Communication with inner</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/outer.html#communication-with-the-worker">Communication with the worker</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../dev_guide/client/inner.html">Inner</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/inner.html#workflow">Workflow</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/inner.html#metadata-manager">metadata-manager</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../dev_guide/client/inner.html#ui-modules">UI modules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/translations.html">Adding Translations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#including-your-translation">Including your translation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#actually-translating-content">Actually translating content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#verifying-your-translations">Verifying Your Translations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#deleting-a-translation">Deleting a translation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../FAQ.html">Frequently Asked Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#common-issues">Common Issues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#list-of-extensions-known-to-cause-issues-with-cryptpad">List of extensions known to cause issues with CryptPad</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-forgot-my-password">I forgot my password</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">How to import/export my documents to/from another platform?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#import-export-is-not-visible-in-the-file-menu">Import/export is not visible in the File menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">Rich text document import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">Spreadsheets import/export</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-cannot-do-x-with-a-document-i-created">I cannot do X with a document I created</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#can-i-use-cryptpad-on-mobile">Can I use CryptPad on mobile?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#are-you-planning-to-make-an-app">Are you planning to make an app?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#can-cryptpad-sync-documents-to-my-local-filesystem">Can CryptPad sync documents to my local filesystem?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#what-is-the-relationship-between-cryptpad-and-onlyoffice">What is the relationship between CryptPad and OnlyOffice?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#faq-for-cryptpad-fr">FAQ for cryptpad.fr</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#can-i-pay-for-my-subscription-without-a-card">Can I pay for my subscription without a card?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#do-you-accept-cryptocurrencies-for-subscriptions-and-donations">Do you accept cryptocurrencies for subscriptions and donations?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#can-you-provide-a-data-processing-agreement-dpa">Can you provide a Data processing Agreement (DPA)?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../how_to_contribute.html">How to contribute</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#spread-the-word">Spread the word</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#report-bugs">Report bugs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#contribute-to-the-documentation">Contribute to the documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#translate-cryptpad">Translate CryptPad</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../how_to_contribute.html#community-translation-program">Community translation program</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../how_to_contribute.html#terms">Terms</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#contribute-to-the-code">Contribute to the code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#financial-support">Financial support</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+	<!-- start top banner area (for fundraisers or messages)
+
+	<div style="text-align: center; background-color: #333">
+		<a href="https://krita.org/en/fundraising-2018-campaign/" target="_self" onclick="ga('send', 'event', 'frontpage', 'button', 'Fundraiser 2018');">
+			<img src="https://krita.org/wp-content/themes/krita-org-theme/images/decoration/2018-fundraiser-banner.png" style="max-width: 100%">
+		</a>
+	</div>
+	
+	 end top banner area -->
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CryptPad</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">索引</a> &raquo;</li>
+        
+          <li><a href="index.html">User Guide</a> &raquo;</li>
+        
+      <li>Collaboration / Social</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/user_guide/collaboration.rst.txt" rel="nofollow"> 
+             
+              <img src="../_static/images/source-code.png" />
+             <!-- View page source -->
+
+          </a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="collaboration-social">
+<h1>Collaboration / Social<a class="headerlink" href="#collaboration-social" title="此标题的永久链接">¶</a></h1>
+<section id="profile">
+<span id="id1"></span><h2>Profile<a class="headerlink" href="#profile" title="此标题的永久链接">¶</a></h2>
+<p><span class="badge-user">Logged in users</span></p>
+<p>Each registered user on CryptPad has a profile page accessible from the user menu:</p>
+<ul class="simple">
+<li><p>User menu (avatar at the top-right) &gt; <em class="fa fa-user-circle"></em> <strong>Profile</strong>.</p></li>
+</ul>
+<section id="personal-profile">
+<h3>Personal profile<a class="headerlink" href="#personal-profile" title="此标题的永久链接">¶</a></h3>
+<p>The following elements can be customised on the profile page:</p>
+<ul class="simple">
+<li><p>Avatar with <em class="fa fa-upload"></em> <strong>Upload a new avatar</strong>.</p></li>
+<li><p>Description with <em class="fa fa-pencil"></em> <strong>Add a description</strong>.</p></li>
+<li><p>Website with <strong>Add a link to your website</strong>.</p></li>
+</ul>
+<p>Sharing:</p>
+<ul class="simple">
+<li><p><strong>View my profile</strong>: Preview the profile page as it appears to other users.</p></li>
+<li><p><em class="fa fa-share-alt"></em> <strong>Share</strong>: Copy a link to your profile.</p></li>
+</ul>
+</section>
+<section id="user-profile">
+<span id="another-user-profile"></span><h3>User profile<a class="headerlink" href="#user-profile" title="此标题的永久链接">¶</a></h3>
+<p>To see the profile of another user:</p>
+<ul class="simple">
+<li><p><strong>User list</strong> <em class="fa fa-users"></em> <em class="fa fa-eye"></em> of a document where they are connected &gt; <code class="docutils literal notranslate"><span class="pre">Click</span></code> on their name,</p></li>
+<li><p>If the user is in your list of <a class="reference internal" href="#contacts"><span class="std std-ref">contacts</span></a>. User menu (avatar at the top-right) &gt; <em class="fa fa-address-book"></em> <strong>Contacts</strong> &gt; <code class="docutils literal notranslate"><span class="pre">Double</span> <span class="pre">click</span></code> on their name in the list.</p></li>
+</ul>
+<p>On another user’s profile page:</p>
+<ul class="simple">
+<li><p><strong>Send a contact request</strong>: Adds this user to your <a class="reference internal" href="#contacts"><span class="std std-ref">contacts</span></a> once they have approved the request.</p></li>
+<li><p><em class="fa fa-bell-slash"></em> <strong>Mute</strong>: Blocks notifications and messages from this user. They will not know that they have been muted.</p></li>
+<li><p><em class="fa fa-key"></em> <strong>Copy public key</strong>: Copies the key used by instance administrators and on instances that offer subscriptions.</p></li>
+</ul>
+</section>
+</section>
+<section id="calendar">
+<span id="id2"></span><h2>Calendar<a class="headerlink" href="#calendar" title="此标题的永久链接">¶</a></h2>
+<figure class="align-default">
+<img alt="screenshot of the calendar" class="screenshot" src="../_images/calendar.png" />
+</figure>
+<p>To add events, simply click on the desired time/date in the calendar, view (drag for duration). Alternatively use <em class="fa fa-plus"></em> <strong>New event</strong> in the toolbar.</p>
+<p>It then opens an event creation form where a <strong>Title</strong> is mandatory.</p>
+<p><span class="badge-new">New in version 5.6</span></p>
+<p>You can optionally specify a <strong>Location</strong> and a <strong>Description</strong>.
+The <strong>Description</strong> field supports the Markdown syntax to format its content.</p>
+<p>You can create recurring events, repeat:</p>
+<ul>
+<li><p><strong>One time</strong>, default option</p></li>
+<li><p><strong>Daily</strong></p></li>
+<li><p><strong>Weekly</strong></p></li>
+<li><p><strong>Monthly</strong></p></li>
+<li><p><strong>Yearly</strong></p></li>
+<li><p><strong>Daily on weekdays</strong></p></li>
+<li><p><strong>Custom</strong>, see below:</p>
+<blockquote>
+<div><ul>
+<li><p><strong>Repeat every X days</strong>, weeks, months or years</p></li>
+<li><p><strong>Stop repeating</strong>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Never</p></li>
+<li><p>On a specific date</p></li>
+<li><p>After X times</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>To edit events, drag them to the new date/time or alternatively:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on the event to open the detailed view.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on <em class="fa fa-pencil"></em> <strong>Edit</strong> to open the edition form.</p></li>
+</ol>
+<section id="toolbar">
+<h3>Toolbar<a class="headerlink" href="#toolbar" title="此标题的永久链接">¶</a></h3>
+<ul class="simple">
+<li><p><em class="fa fa-plus"></em> <strong>New event</strong></p></li>
+<li><p><strong>View</strong> menu (right side): Month, Week, Day</p></li>
+<li><p><em class="fa fa-chevron-left"></em> <em class="fa fa-chevron-right"></em>: move to the previous/next period depending on the view</p></li>
+<li><p><strong>Today</strong>: click to center the view on today</p></li>
+</ul>
+</section>
+<section id="share-access">
+<h3>Share &amp; Access<a class="headerlink" href="#share-access" title="此标题的永久链接">¶</a></h3>
+<p>CryptPad calendars work in the same way as any other documents for the purposes of <a class="reference internal" href="share_and_access.html#share"><span class="std std-ref">sharing</span></a> and <a class="reference internal" href="share_and_access.html#access"><span class="std std-ref">regulating access</span></a>.</p>
+<p>The <em class="fa fa-ellipsis-h"></em> menu for each calendar in the sidebar contains the following options:</p>
+<ul class="simple">
+<li><p><em class="fa fa-pencil"></em> <strong>Edit</strong> to change the calendar name and color</p></li>
+<li><p><em class="fa fa-share-alt"></em> <strong>Share</strong> and <em class="fa fa-unlock-alt"></em> <strong>Access</strong> function the same way as any other CryptPad document. see <a class="reference internal" href="share_and_access.html#share-and-access"><span class="std std-ref">Share / Access</span></a>.</p></li>
+<li><p><em class="fa fa-upload"></em> <strong>Import</strong> and <em class="fa fa-download"></em> <strong>Export</strong> to the standard <code class="docutils literal notranslate"><span class="pre">.ics</span></code> format.</p></li>
+<li><p><em class="fa fa-info-circle"></em> <strong>Properties</strong></p></li>
+<li><p><em class="fa fa-trash-o"></em> <strong>Delete</strong></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>When exporting a calendar, the descriptions of events are exported in Markdown.</p>
+</div>
+<p><a class="reference internal" href="#teams"><span class="std std-ref">Teams</span></a> can also have calendars available to all members. Simply share a calendar with a team to add it:</p>
+<p><em class="fa fa-share-alt"></em> <strong>Share</strong> &gt; <em class="fa fa-address-book"></em> <strong>Contacts</strong> &gt; Select the team</p>
+<p><span class="badge-user">Logged in users</span></p>
+<p>When viewing a calendar shared via link, add it to your calendars with: <em class="fa fa-calendar-plus-o"></em> <strong>Import this calendar</strong></p>
+</section>
+</section>
+<section id="contacts">
+<span id="id3"></span><h2>Contacts<a class="headerlink" href="#contacts" title="此标题的永久链接">¶</a></h2>
+<p><span class="badge-user">Logged in users</span></p>
+<p>On CryptPad, using contacts makes collaboration more secure and simple.</p>
+<section id="add-a-contact">
+<h3>Add a contact<a class="headerlink" href="#add-a-contact" title="此标题的永久链接">¶</a></h3>
+<p>By sharing your profile:</p>
+<ol class="arabic simple">
+<li><p>Copy the link: User menu (avatar at the top-right) &gt; <em class="fa fa-user-circle"></em> <strong>Profile</strong> &gt; <em class="fa fa-share-alt"></em> <strong>Share</strong>.</p></li>
+<li><p>Paste and send through the means of your choice (preferably a secure mode of cummunication).</p></li>
+<li><p>Your contact must then click <strong>Send a contact request</strong>.</p></li>
+<li><p>You get a notification with the request, <code class="docutils literal notranslate"><span class="pre">Click</span></code> <strong>Accept</strong>.</p></li>
+</ol>
+<p>On the profile page of another CryptPad user:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> <strong>Send a contact request</strong>.</p></li>
+</ol>
+</section>
+<section id="manage-contacts">
+<h3>Manage contacts<a class="headerlink" href="#manage-contacts" title="此标题的永久链接">¶</a></h3>
+<p>To access the Contacts page:</p>
+<ul class="simple">
+<li><p>User menu (avatar at the top-right) &gt; <em class="fa fa-address-book"></em> <strong>Contacts</strong>.</p></li>
+</ul>
+<p>All contacts are listed at the left of the window. For each contact:</p>
+<ul class="simple">
+<li><p><em class="fa fa-bell-slash"></em>: Mute messages and notifications.</p></li>
+<li><p><em class="fa fa-user-times"></em>: Remove.</p></li>
+<li><p><em class="fa fa-circle"></em>: Indicates that this contact is online.</p></li>
+</ul>
+</section>
+<section id="chat-with-contacts">
+<span id="chat-contacts"></span><h3>Chat with contacts<a class="headerlink" href="#chat-with-contacts" title="此标题的永久链接">¶</a></h3>
+<p>On the Contacts page, click on a contact in the list to open the chat with them in the main window.</p>
+<p>Write messages in the field at the bottom and send them with <em class="fa fa-paper-plane"></em> or <code class="docutils literal notranslate"><span class="pre">Enter</span></code>.</p>
+<p>Load more chat history with <em class="fa fa-history"></em> or delete the history with <em class="fa fa-eraser"></em>.</p>
+</section>
+</section>
+<section id="teams">
+<span id="id4"></span><h2>Teams<a class="headerlink" href="#teams" title="此标题的永久链接">¶</a></h2>
+<p><span class="badge-user">Logged in users</span></p>
+<p>CryptPad teams are shared spaces between a group of users. A team has its own CryptDrive, chat, and a list of members with roles and permissions.</p>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<p>The number of teams a CryptPad user can join used to be limited to 3 for performance reasons. This has now been increased to 5 as we have added details to the loading screen that show how long teams take to load. This allows users to negotiate the tradeoff between number of teams and increased loading time.</p>
+</div>
+<p>To create a team:</p>
+<ol class="arabic simple">
+<li><p>User menu (avatar at the top-right) &gt; <em class="fa fa-users"></em> <strong>Teams</strong>.</p></li>
+<li><p><em class="fa fa-plus-circle"></em> <strong>New</strong>.</p></li>
+</ol>
+<p>To open an existing team:</p>
+<ol class="arabic simple">
+<li><p>User menu (avatar at the top-right) &gt; <em class="fa fa-users"></em> <strong>Teams</strong>.</p></li>
+<li><p><em class="fa fa-list"></em> <strong>Teams</strong> &gt; <strong>Open</strong> button on the desired team.</p></li>
+</ol>
+<section id="team-drive">
+<h3>Team Drive<a class="headerlink" href="#team-drive" title="此标题的永久链接">¶</a></h3>
+<p>The team storage space is similar to the <a class="reference internal" href="drive.html#drive"><span class="std std-ref">CryptDrive</span></a> but shared between members of the team.</p>
+</section>
+<section id="team-members">
+<h3>Team members<a class="headerlink" href="#team-members" title="此标题的永久链接">¶</a></h3>
+<p>To manage the members of a team, go to the <em class="fa fa-users"></em> <strong>Members</strong> tab.</p>
+</section>
+<section id="invite-members">
+<h3>Invite members<a class="headerlink" href="#invite-members" title="此标题的永久链接">¶</a></h3>
+<p>To invite members to a team:</p>
+<ul class="simple">
+<li><p><em class="fa fa-users"></em> <strong>Members</strong> tab &gt; <strong>Invite members</strong>.</p></li>
+</ul>
+<p><em class="fa fa-address-book"></em> <strong>Contacts</strong> tab: Select CryptPad contacts to invite them to the team. Invitees receive an invite notification and can confirm they want to join the team.</p>
+<p><em class="fa fa-link"></em> <strong>Link</strong> tab: Copy a link to send through the means of your choice (preferably a secure mode of cummunication). This link is single-use only. It becomes invalid after someone first uses it to join the team.</p>
+<ul class="simple">
+<li><p><strong>Temporary name</strong>: Used to identify the invite link in the list of pending invitations.</p></li>
+<li><p><strong>Password</strong>: Protect the link against potiential interception. (optional)</p></li>
+<li><p><strong>Personal message</strong>: Message that the recipient will see before they decide to accept the invitation to join the team.</p></li>
+</ul>
+</section>
+<section id="roles-and-permissions">
+<span id="team-roles-and-permissions"></span><h3>Roles and permissions<a class="headerlink" href="#roles-and-permissions" title="此标题的永久链接">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Role</p></th>
+<th class="head"><p>View</p></th>
+<th class="head"><p>Edit</p></th>
+<th class="head"><p>Manage members</p></th>
+<th class="head"><p>Manage team</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Viewers</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Members</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-even"><td><p>Admins</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>❌</p></td>
+</tr>
+<tr class="row-odd"><td><p>Owners</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+<td><p>✅</p></td>
+</tr>
+</tbody>
+</table>
+<p>Permissions:</p>
+<p>View: access folders and pads (read-only).</p>
+<p>Edit: create, modify, and delete folders and pads.</p>
+<p>Manage Members: invite and revoke members, change member roles up to Admin.</p>
+<p>Manage Team: change team name and avatar, add or remove Owners, change team subscription, delete team.</p>
+</section>
+<section id="administration">
+<h3>Administration<a class="headerlink" href="#administration" title="此标题的永久链接">¶</a></h3>
+<p>Each member’s role can be changed in the team roster. Team admins and owners can manage members of equal or lower role. For each member:</p>
+<div class="line-block">
+<div class="line"><em class="fa fa-angle-double-up"></em> : Promote to higher role.</div>
+<div class="line"><em class="fa fa-angle-double-down"></em>: Demote to lower role.</div>
+<div class="line"><em class="fa fa-times"></em>: Kick from the team.</div>
+</div>
+</section>
+<section id="chat">
+<h3>Chat<a class="headerlink" href="#chat" title="此标题的永久链接">¶</a></h3>
+<p>The team chat is similar to the chat with <a class="reference internal" href="#contacts"><span class="std std-ref">contacts</span></a> except shared between all members of the team.</p>
+</section>
+<section id="administration-tab">
+<h3>Administration tab<a class="headerlink" href="#administration-tab" title="此标题的永久链接">¶</a></h3>
+<p><span class="badge-owner">Team owners</span></p>
+<ul class="simple">
+<li><p><strong>Public signing key</strong>: Used to identify the team on instances that offer subscriptions.</p></li>
+<li><p><strong>Team name</strong>: Change the name of the team.</p></li>
+<li><p><strong>Team avatar</strong>: Import/modify an avatar for the team.</p></li>
+<li><p><strong>Download team drive</strong>: Save the content of all documents in the CryptDrive. When possible, this is done in a format that is readable by other software. Some applications produce files that are only readable by CryptPad.</p></li>
+<li><p><strong>Team deletion</strong>: Permanently delete the team and all of its documents.</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="share_and_access.html" class="btn btn-neutral float-right" title="Share / Access" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="drive.html" class="btn btn-neutral" title="CryptDrive" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2023, CryptPad Team.
+
+    </p>
+  </div>
+  Built with <a href="https://sphinx-doc.org/">Sphinx</a> using a modified <a href="https://github.com/rtfd/sphinx_rtd_theme">RTD theme</a>.<br/>
+  <a href="https://cryptpad.fr" title="CryptPad flagship instance">CryptPad flagship instance</a> |
+  <a href="https://github.com/cryptpad/documentation" title="The GitHub repository">GitHub repository for this documentation</a>.
+   
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'5.6.0',
+            LANGUAGE:'zh-Hant',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/documentation_options.js"></script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/sphinx_highlight.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          
+          SphinxRtdTheme.Navigation.enableSticky();
+          
+      });
+  </script> 
+
+</body>
+</html>

@@ -67,9 +67,9 @@ Question types
 |cptools form-text| Text
 ++++++++++++++++++++++++
 
-Response: one line of text
+**Response**: one line of text
 
-Options:
+**Options**:
 
 - Text type: text, number, link or email
 
@@ -80,9 +80,9 @@ Options:
 |cptools form-paragraph| Paragraph
 ++++++++++++++++++++++++++++++++++
 
-Response: multiple lines of text
+**Response**: multiple lines of text
 
-Options:
+**Options**:
 
 - Maximum characters: limit (defaults to 1000)
 
@@ -91,9 +91,9 @@ Options:
 |cptools form-list-radio| Choice
 ++++++++++++++++++++++++++++++++
 
-Response: one choice from the list
+**Response**: one choice from the list
 
-Options:
+**Options**:
 
 - |plus| **Add option** button
 - Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order options
@@ -102,9 +102,9 @@ Options:
 |cptools form-grid-radio| Choice Grid
 +++++++++++++++++++++++++++++++++++++
 
-Response: one option choice per item
+**Response**: one option choice per item
 
-Options:
+**Options**:
 
 - |plus| **Add option** and |plus| **Add item** buttons
 - Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order items and options
@@ -113,16 +113,16 @@ Options:
 |calendar| Date
 ++++++++++++++++++++++++
 
-Response: pick a date and time
+**Response**: pick a date and time
 
 .. _form_Q_checkbox:
 
 |cptools form-list-check| Checkbox
 ++++++++++++++++++++++++++++++++++
 
-Response: multiple choices from the list
+**Response**: multiple choices from the list
 
-Options:
+**Options**:
 
 - Maximum selectable options
 - |plus| **Add option** button
@@ -132,9 +132,9 @@ Options:
 |cptools form-grid-check| Checkbox Grid
 +++++++++++++++++++++++++++++++++++++++
 
-Response: multiple choices for each item
+**Response**: multiple choices for each item
 
-Options:
+**Options**:
 
 - Maximum selectable options (per item)
 - |plus| **Add option** and |plus| **Add item** buttons
@@ -144,24 +144,24 @@ Options:
 |cptools form-list-ordered| Ordered List
 ++++++++++++++++++++++++++++++++++++++++
 
-Response: order of preference for the listed options
+**Response**: order of preference for the listed options
 
-Options:
+**Options**:
 
 - |plus| **Add option** button
 - Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order options
 - Delete an option with |times|
 
-Condorcet:
+**Condorcet**:
 
 Since v5.3 responses can show the results with the `Condorcet method <https://en.wikipedia.org/wiki/Condorcet_method>`_. You can select Schulze or Ranked Pairs to display the winner. The details will also show the number of matches won by each candidates.
 
 |cptools form-poll| Poll
 ++++++++++++++++++++++++
 
-Response: |check| Yes, |times| No, or |cptools form-poll-maybe| Acceptable for each of the proposed options
+**Response**: |check| Yes, |times| No, or |cptools form-poll-maybe| Acceptable for each of the proposed options
 
-Option types:
+**Option types**:
 
 - Text
 
@@ -263,4 +263,14 @@ If anonymous answers are allowed on the form, participants are able to answer an
 Import/Export
 -------------
 
-To export responses as a CSV file use the |download| **Export to CSV** button on the |bar-chart| **Responses** page.
+Form documents themselves can be exported and imported in ``JSON`` format.
+
+To export responses, from the |bar-chart| **Responses** page, you have two possibilities:
+
+#. as a CSV or JSON file use the |download| **EXPORT** button
+
+#. as a Spreadsheet that can be added to your drive with the **EXPORT TO SHEET** button
+
+.. note::
+   
+   The Spreadsheet document will automatically be populated with the data from your form at the time you create it. However, due to how end-to-end encryption works, the spreadsheet content won't be automatically updated with new responses as they arrive.

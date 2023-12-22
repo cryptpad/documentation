@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Учетная запись пользователя &mdash; документация CryptPad 5.5.0</title>
+  <title>Учетная запись пользователя &mdash; документация CryptPad 5.6.0</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.5.0</span>
+              <span class="release">Documentation 5.6.0</span>
             </a>
             
 <div role="search">
@@ -105,6 +105,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#logging-in">Вход в систему</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#notifications">Уведомления</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#settings">Настройки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#account">Учетная запись</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#security-privacy">Security &amp; Privacy</a></li>
@@ -113,10 +114,11 @@
 <li class="toctree-l4"><a class="reference internal" href="#cursor">Курсор</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rich-text">Документ</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#code">Код</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kanban">Kanban</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#user-settings-notifications">Уведомления</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#subscription">Подписка</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#notifications">Уведомления</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="support.html">Техподдержка</a><ul>
@@ -510,6 +512,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/translations.html">Adding Translations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#including-your-translation">Including your translation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#actually-translating-content">Actually translating content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#verifying-your-translations">Verifying Your Translations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#deleting-a-translation">Deleting a translation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -652,6 +662,7 @@
 <li><p>Совместное использование и совместная работа над документами.</p></li>
 <li><p>Срок хранения документов ограничен 3 месяцами бездействия (учитывается для каждого документа).</p></li>
 <li><p>Хранилище файлов недоступно для изображений/видео/PDF/ и т.д. …</p></li>
+<li><p>Limited access to <a class="reference internal" href="collaboration.html#calendar"><span class="std std-ref">calendars</span></a> (link-shared calendars only).</p></li>
 </ul>
 </section>
 <section id="logged-in-user">
@@ -665,6 +676,7 @@
 <li><p>Организация документов в <a class="reference internal" href="drive.html#folders"><span class="std std-ref">папки</span></a>, <a class="reference internal" href="share_and_access.html#shared-folders"><span class="std std-ref">общие папки</span></a>, или с помощью <a class="reference internal" href="drive.html#tags"><span class="std std-ref">тегов</span></a> и <a class="reference internal" href="drive.html#templates"><span class="std std-ref">шаблонов</span></a>.</p></li>
 <li><p>Создание <a class="reference internal" href="collaboration.html#teams"><span class="std std-ref">команд</span></a>.</p></li>
 <li><p>Настройка страницы <a class="reference internal" href="collaboration.html#profile"><span class="std std-ref">профиля</span></a> и списка <a class="reference internal" href="collaboration.html#contacts"><span class="std std-ref">контактов</span></a> для <a class="reference internal" href="share_and_access.html#share"><span class="std std-ref">общего доступа</span></a> к документам и <a class="reference internal" href="collaboration.html#chat-contacts"><span class="std std-ref">чата</span></a>. Уведомления о взаимодействиях между контактами.</p></li>
+<li><p>Creation and management of <a class="reference internal" href="collaboration.html#calendar"><span class="std std-ref">calendars</span></a>.</p></li>
 </ul>
 </section>
 <section id="premium-user">
@@ -717,6 +729,29 @@
 </ul>
 </section>
 </section>
+<section id="notifications">
+<h2>Уведомления<a class="headerlink" href="#notifications" title="Permalink to this heading">¶</a></h2>
+<p><span class="badge-user">Зарегистрированные пользователи</span></p>
+<p>CryptPad уведомляет Вас, когда Ваши контакты взаимодействуют с Вами. Уведомления отображаются с помощью колокольчика <em class="fa fa-bell-o"></em> рядом с аватаркой (вверху справа). Если у Вас есть непрочитанные уведомления, колокольчик закрашен <em class="fa fa-bell"></em> и отображается их количество.</p>
+<p><em class="fa fa-bell"></em> Выпадающее меню колокольчика:</p>
+<ul class="simple">
+<li><p>Просмотреть непрочитанные уведомления.</p></li>
+<li><p>Удалить уведомление с помощью <em class="fa fa-times"></em>.</p></li>
+<li><p><strong>Открыть панель уведомлений</strong>: просмотреть все уведомления и историю уведомлений.</p></li>
+</ul>
+<p>На странице панели уведомлений:</p>
+<ul class="simple">
+<li><p>Выберите, уведомления какого типа показать:</p>
+<ul>
+<li><p><em class="fa fa-bars"></em> Все.</p></li>
+<li><p><em class="fa fa-user"></em> Запросы на Контакт.</p></li>
+<li><p><em class="cptools cptools-richtext"></em> Shared with me.</p></li>
+<li><p><em class="fa fa-archive"></em> История.</p></li>
+</ul>
+</li>
+<li><p><em class="fa fa-trash"></em>: Удалить уведомления.</p></li>
+</ul>
+</section>
 <section id="settings">
 <span id="user-settings"></span><h2>Настройки<a class="headerlink" href="#settings" title="Permalink to this heading">¶</a></h2>
 <p>Настройки учетной записи находятся в меню пользователя (аватар вверху справа) &gt; <em class="fa fa-gear"></em> <strong>Настройки</strong>.</p>
@@ -728,7 +763,6 @@
 <li><p><strong>Отображаемое имя</strong>: имя, отображаемое другим пользователям, например, при совместной работе над документами. Чтобы изменить это имя, введите новое имя и нажмите <strong>Сохранить</strong>. <span class="badge-user">Зарегистрированные пользователи</span></p></li>
 <li><p><strong>Язык</strong>: язык, используемый в интерфейсе CryptPad. Чтобы изменить язык CryptPad, выберите новый язык в раскрывающемся меню. CryptPad переводится на английский и французский языки командой разработчиков, а на другие языки — <a class="reference internal" href="../how_to_contribute.html#contribute-translation"><span class="std std-ref">сообществом</span></a>. Некоторые переводы могут быть неполными и/или содержать ошибки.</p></li>
 <li><p><strong>Лимит автоматического скачивания</strong>: максимальный размер в мегабайтах (МБ) для автоматической загрузки мультимедийных элементов (изображений, видео, PDF), встроенных в документы. Элементы больше указанного размера можно загрузить вручную. Используйте «-1», чтобы всегда автоматически загружать элементы мультимедиа.</p></li>
-<li><p><strong>Изменить пароль</strong>: введите свой текущий пароль и подтвердите новый пароль, введя его дважды. <span class="badge-user">Зарегистрированные пользователи</span></p></li>
 <li><p><strong>Удаление учетной записи</strong>: возможность навсегда удалить свою учетную запись и все её документы. <strong>Удалить вашу учетную запись</strong> и подтвердите. <span class="badge-user">Зарегистрированные пользователи</span></p></li>
 </ul>
 </section>
@@ -800,6 +834,7 @@
 <li><p><strong>Максимальная ширина редактора</strong>: переключение между режимом страницы (по умолчанию), который ограничивает ширину текстового редактора, и использованием полной ширины экрана.</p></li>
 <li><p><strong>Проверка орфографии</strong>: включите проверку орфографии в документах с форматированным текстом. Орфографические ошибки подчеркнуты, а предлагаемые исправления доступны через <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">щелчок</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по слову, которое нужно исправить.</p></li>
 <li><p><strong>Уведомления о комментариях</strong>: отключите уведомления о том, что другой пользователь ответил на один из Ваших комментариев.</p></li>
+<li><p><strong>Open links on first click</strong>: Open embedded links on click without the preview popup.</p></li>
 </ul>
 </section>
 <section id="code">
@@ -813,6 +848,20 @@
 <li><p><strong>Проверка орфографии</strong>: подчеркивать орфографические ошибки в редакторе кода, предложения по исправлению доступны, если <code class="docutils literal notranslate"><span class="pre">щелкнуть</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по слову, которое нужно исправить.</p></li>
 </ul>
 </section>
+<section id="kanban">
+<span id="user-settings-kanban"></span><h3>Kanban<a class="headerlink" href="#kanban" title="Permalink to this heading">¶</a></h3>
+<p>User settings for the <a class="reference internal" href="apps/kanban.html#app-kanban"><span class="std std-ref">Канбан</span></a> application.</p>
+<ul class="simple">
+<li><p><strong>Tag filter</strong>: How you want the tag filter to act when selecting multiple tags: only show cards containing all the selected tags (AND) or show cards containing any of the selected tags (OR).</p></li>
+</ul>
+</section>
+<section id="user-settings-notifications">
+<span id="id1"></span><h3>Уведомления<a class="headerlink" href="#user-settings-notifications" title="Permalink to this heading">¶</a></h3>
+<p>User settings for the notifications.</p>
+<ul class="simple">
+<li><p><strong>Calendar notifications</strong>: Enable/disable all notifications for upcoming calendar events.</p></li>
+</ul>
+</section>
 <section id="subscription">
 <span id="user-settings-subscription"></span><h3>Подписка<a class="headerlink" href="#subscription" title="Permalink to this heading">¶</a></h3>
 <p>(только на cryptpad.fr)</p>
@@ -820,29 +869,6 @@
 <li><p>Перенаправляет на страницу аккаунта.</p></li>
 </ul>
 </section>
-</section>
-<section id="notifications">
-<span id="user-settings-notifications"></span><h2>Уведомления<a class="headerlink" href="#notifications" title="Permalink to this heading">¶</a></h2>
-<p><span class="badge-user">Зарегистрированные пользователи</span></p>
-<p>CryptPad уведомляет Вас, когда Ваши контакты взаимодействуют с Вами. Уведомления отображаются с помощью колокольчика <em class="fa fa-bell-o"></em> рядом с аватаркой (вверху справа). Если у Вас есть непрочитанные уведомления, колокольчик закрашен <em class="fa fa-bell"></em> и отображается их количество.</p>
-<p><em class="fa fa-bell"></em> Выпадающее меню колокольчика:</p>
-<ul class="simple">
-<li><p>Просмотреть непрочитанные уведомления.</p></li>
-<li><p>Удалить уведомление с помощью <em class="fa fa-times"></em>.</p></li>
-<li><p><strong>Открыть панель уведомлений</strong>: просмотреть все уведомления и историю уведомлений.</p></li>
-</ul>
-<p>На странице панели уведомлений:</p>
-<ul class="simple">
-<li><p>Выберите, уведомления какого типа показать:</p>
-<ul>
-<li><p><em class="fa fa-bars"></em> Все.</p></li>
-<li><p><em class="fa fa-user"></em> Запросы на Контакт.</p></li>
-<li><p><em class="cptools cptools-pad"></em> Со мной чем-то поделились.</p></li>
-<li><p><em class="fa fa-archive"></em> История.</p></li>
-</ul>
-</li>
-<li><p><em class="fa fa-trash"></em>: Удалить уведомления.</p></li>
-</ul>
 </section>
 </section>
 
@@ -891,7 +917,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.5.0',
+            VERSION:'5.6.0',
             LANGUAGE:'ru',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

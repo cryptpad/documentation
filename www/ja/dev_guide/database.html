@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Database &mdash; CryptPad 5.5.0 ドキュメント</title>
+  <title>Database &mdash; CryptPad 5.6.0 ドキュメント</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.5.0</span>
+              <span class="release">Documentation 5.6.0</span>
             </a>
             
 <div role="search">
@@ -105,6 +105,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#logging-in">ログイン</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#notifications">通知</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#settings">設定</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#account">アカウント</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#security-privacy">Security &amp; Privacy</a></li>
@@ -113,10 +114,11 @@
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#cursor">カーソル</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#rich-text">リッチテキスト</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#code">コード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#kanban">Kanban</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#user-settings-notifications">通知</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#subscription">定額利用</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#notifications">通知</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../user_guide/support.html">サポート</a><ul>
@@ -510,6 +512,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="translations.html">Adding Translations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="translations.html#getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="translations.html#including-your-translation">Including your translation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="translations.html#actually-translating-content">Actually translating content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="translations.html#verifying-your-translations">Verifying Your Translations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="translations.html#deleting-a-translation">Deleting a translation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -641,13 +651,18 @@
 <p>CryptPad takes an unusual approach to storing documents on the server. User data is simply stored on the file system rather than a database.</p>
 <section id="key-points">
 <h2>Key points<a class="headerlink" href="#key-points" title="この見出しへのパーマリンク">¶</a></h2>
-<ul class="simple">
+<ul>
 <li><p>Each CryptPad document has information stored on the server in a location determined by a channel id</p></li>
 <li><p>The content of each document is encrypted using the encryption key, so that the server cannot read it</p></li>
-<li><p>Clients send the channel id to the server to:
-* get the latest information about a document
-* subscribe to ongoing updates while they are connected
-* modify the contents of the document</p></li>
+<li><p>Clients send the channel id to the server to:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>get the latest information about a document</p></li>
+<li><p>subscribe to ongoing updates while they are connected</p></li>
+<li><p>modify the contents of the document</p></li>
+</ul>
+</div></blockquote>
+</li>
 <li><p>each <em>channel</em> is stored within its own file on the server</p></li>
 <li><p>each change to the document is encoded on a single line of that file</p></li>
 </ul>
@@ -737,7 +752,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.5.0',
+            VERSION:'5.6.0',
             LANGUAGE:'ja',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

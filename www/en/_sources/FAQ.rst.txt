@@ -23,6 +23,8 @@ List of extensions known to cause issues with CryptPad
 * SuperAgent
 * Tampermonkey
 * Arkenfox (some configurations)
+* Loom
+* MozBar
 
 .. note::
     If you identify issues with another extension please `report it to the development team <https://github.com/cryptpad/cryptpad/issues/new/choose>`_

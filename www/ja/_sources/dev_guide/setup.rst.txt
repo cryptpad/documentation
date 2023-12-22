@@ -8,7 +8,7 @@ Prerequisites
 
 Please make sure that the following tools are installed on your system before installing CryptPad:
 
--  GIT
+-  Git
 -  Nodejs (we use the official NodeJs LTS release)
 
    -  Using `nodesource <https://github.com/nodesource/distributions#using-debian-as-root-4>`__ for Linux

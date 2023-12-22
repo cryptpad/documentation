@@ -112,7 +112,7 @@ The login block is what allows an account to log in to CryptPad with the combina
 2FA Recovery
 ~~~~~~~~~~~~
 
-Users can copy recovery data on the 2FA recovery page /recovery/ and email it to the instance administrators. Paste recovery data below to disable 2FA for an account
+Users can copy recovery data on the 2FA recovery page https://your-instance.com/recovery/ in the "*Forgot recovery code*" section and email it to the instance administrators. Paste recovery data below to disable 2FA for an account
 
 Statistics
 ----------

@@ -6,7 +6,7 @@ The "outer" level represents the starting point of the CryptPad code. Except for
 Communication between levels
 ----------------------------
 
-The communication is done using ``wwww/common/outer/worker-channel.js``, a mini-library developed in CryptPad. This library allows two systems to send "query" and "event" messages to each other. A "query" consists of sending data and waiting for a response, while an "event" is just sending data.
+The communication is done using ``www/common/outer/worker-channel.js``, a mini-library developed in CryptPad. This library allows two systems to send "query" and "event" messages to each other. A "query" consists of sending data and waiting for a response, while an "event" is just sending data.
 
 This library automatically manages callbacks for received answers and allows each party to indicate when it is ready to communicate. The way messages are sent is managed outside the library thanks to a ``sendMessage`` function that is provided as an argument. If it is a query, a callback is included with the data.
 

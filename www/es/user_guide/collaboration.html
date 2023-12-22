@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Collaboration / Social &mdash; documentación de CryptPad - 5.5.0</title>
+  <title>Collaboration / Social &mdash; documentación de CryptPad - 5.6.0</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.5.0</span>
+              <span class="release">Documentation 5.6.0</span>
             </a>
             
 <div role="search">
@@ -105,6 +105,7 @@
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#logging-in">Logging in</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="user_account.html#notifications">Notifications</a></li>
 <li class="toctree-l3"><a class="reference internal" href="user_account.html#settings">Settings</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#account">Account</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#security-privacy">Security &amp; Privacy</a></li>
@@ -113,10 +114,11 @@
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#cursor">Cursor</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#rich-text">Rich Text</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#kanban">Kanban</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#user-settings-notifications">Notifications</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#subscription">Subscription</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="user_account.html#notifications">Notifications</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="support.html">Support</a><ul>
@@ -510,6 +512,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/translations.html">Adding Translations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#including-your-translation">Including your translation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#actually-translating-content">Actually translating content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#verifying-your-translations">Verifying Your Translations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#deleting-a-translation">Deleting a translation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -675,11 +685,15 @@
 </section>
 </section>
 <section id="calendar">
-<h2>Calendar<a class="headerlink" href="#calendar" title="Enlace permanente a este encabezado">¶</a></h2>
+<span id="id2"></span><h2>Calendar<a class="headerlink" href="#calendar" title="Enlace permanente a este encabezado">¶</a></h2>
 <figure class="align-default">
 <img alt="screenshot of the calendar" class="screenshot" src="../_images/calendar.png" />
 </figure>
 <p>To add events, simply click on the desired time/date in the calendar, view (drag for duration). Alternatively use <em class="fa fa-plus"></em> <strong>New event</strong> in the toolbar.</p>
+<p>It then opens an event creation form where a <strong>Title</strong> is mandatory.</p>
+<p><span class="badge-new">New in version 5.6</span></p>
+<p>You can optionally specify a <strong>Location</strong> and a <strong>Description</strong>.
+The <strong>Description</strong> field supports the Markdown syntax to format its content.</p>
 <p>You can create recurring events, repeat:</p>
 <ul>
 <li><p><strong>One time</strong>, default option</p></li>
@@ -705,7 +719,11 @@
 </div></blockquote>
 </li>
 </ul>
-<p>To edit events, drag them to the new date/time or <code class="docutils literal notranslate"><span class="pre">Click</span></code> to open the detailed edit view.</p>
+<p>To edit events, drag them to the new date/time or alternatively:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on the event to open the detailed view.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on <em class="fa fa-pencil"></em> <strong>Edit</strong> to open the edition form.</p></li>
+</ol>
 <section id="toolbar">
 <h3>Toolbar<a class="headerlink" href="#toolbar" title="Enlace permanente a este encabezado">¶</a></h3>
 <ul class="simple">
@@ -726,6 +744,10 @@
 <li><p><em class="fa fa-info-circle"></em> <strong>Properties</strong></p></li>
 <li><p><em class="fa fa-trash-o"></em> <strong>Delete</strong></p></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>When exporting a calendar, the descriptions of events are exported in Markdown.</p>
+</div>
 <p><a class="reference internal" href="#teams"><span class="std std-ref">Teams</span></a> can also have calendars available to all members. Simply share a calendar with a team to add it:</p>
 <p><em class="fa fa-share-alt"></em> <strong>Share</strong> &gt; <em class="fa fa-address-book"></em> <strong>Contacts</strong> &gt; Select the team</p>
 <p><span class="badge-user">Logged in users</span></p>
@@ -733,7 +755,7 @@
 </section>
 </section>
 <section id="contacts">
-<span id="id2"></span><h2>Contacts<a class="headerlink" href="#contacts" title="Enlace permanente a este encabezado">¶</a></h2>
+<span id="id3"></span><h2>Contacts<a class="headerlink" href="#contacts" title="Enlace permanente a este encabezado">¶</a></h2>
 <p><span class="badge-user">Logged in users</span></p>
 <p>On CryptPad, using contacts makes collaboration more secure and simple.</p>
 <section id="add-a-contact">
@@ -743,11 +765,11 @@
 <li><p>Copy the link: User menu (avatar at the top-right) &gt; <em class="fa fa-user-circle"></em> <strong>Profile</strong> &gt; <em class="fa fa-share-alt"></em> <strong>Share</strong>.</p></li>
 <li><p>Paste and send through the means of your choice (preferably a secure mode of cummunication).</p></li>
 <li><p>Your contact must then click <strong>Send a contact request</strong>.</p></li>
-<li><p>You get a notification with the request, click <strong>Accept</strong>.</p></li>
+<li><p>You get a notification with the request, <code class="docutils literal notranslate"><span class="pre">Click</span></code> <strong>Accept</strong>.</p></li>
 </ol>
 <p>On the profile page of another CryptPad user:</p>
 <ol class="arabic simple">
-<li><p>Click <strong>Send a contact request</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> <strong>Send a contact request</strong>.</p></li>
 </ol>
 </section>
 <section id="manage-contacts">
@@ -765,13 +787,13 @@
 </section>
 <section id="chat-with-contacts">
 <span id="chat-contacts"></span><h3>Chat with contacts<a class="headerlink" href="#chat-with-contacts" title="Enlace permanente a este encabezado">¶</a></h3>
-<p>On the Contacts page, <code class="docutils literal notranslate"><span class="pre">Click</span></code> on a contact in the list to open the chat with them in the main window.</p>
+<p>On the Contacts page, click on a contact in the list to open the chat with them in the main window.</p>
 <p>Write messages in the field at the bottom and send them with <em class="fa fa-paper-plane"></em> or <code class="docutils literal notranslate"><span class="pre">Enter</span></code>.</p>
 <p>Load more chat history with <em class="fa fa-history"></em> or delete the history with <em class="fa fa-eraser"></em>.</p>
 </section>
 </section>
 <section id="teams">
-<span id="id3"></span><h2>Teams<a class="headerlink" href="#teams" title="Enlace permanente a este encabezado">¶</a></h2>
+<span id="id4"></span><h2>Teams<a class="headerlink" href="#teams" title="Enlace permanente a este encabezado">¶</a></h2>
 <p><span class="badge-user">Logged in users</span></p>
 <p>CryptPad teams are shared spaces between a group of users. A team has its own CryptDrive, chat, and a list of members with roles and permissions.</p>
 <div class="admonition note">
@@ -926,7 +948,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.5.0',
+            VERSION:'5.6.0',
             LANGUAGE:'es',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

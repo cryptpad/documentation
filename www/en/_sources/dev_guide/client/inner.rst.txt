@@ -56,6 +56,6 @@ This module provides tools to display elements with pre-existing content, someti
 -  Display the pad creation screen
 -  Create action buttons for the toolbar with the appropriate style
 -  Create a Markdown toolbar (for code, slide, poll and profile applications)
--  Create a "Help / Getting started..." menu for the current application
+-  Create a "|question| Help / Getting started..." menu for the current application
 -  Create a drop-down menu to change the interface language
 -  Many other tools ...

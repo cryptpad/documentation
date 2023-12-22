@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>User Account &mdash; documentación de CryptPad - 5.5.0</title>
+  <title>User Account &mdash; documentación de CryptPad - 5.6.0</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.5.0</span>
+              <span class="release">Documentation 5.6.0</span>
             </a>
             
 <div role="search">
@@ -105,6 +105,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#logging-in">Logging in</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#notifications">Notifications</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#settings">Settings</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#account">Account</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#security-privacy">Security &amp; Privacy</a></li>
@@ -113,10 +114,11 @@
 <li class="toctree-l4"><a class="reference internal" href="#cursor">Cursor</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#rich-text">Rich Text</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#kanban">Kanban</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#user-settings-notifications">Notifications</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#subscription">Subscription</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#notifications">Notifications</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="support.html">Support</a><ul>
@@ -510,6 +512,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/translations.html">Adding Translations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#including-your-translation">Including your translation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#actually-translating-content">Actually translating content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#verifying-your-translations">Verifying Your Translations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#deleting-a-translation">Deleting a translation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -652,6 +662,7 @@
 <li><p>Sharing and collaborating on documents.</p></li>
 <li><p>Storage limited to 3 months of inactivity (counted per document).</p></li>
 <li><p>File storage unavailable for images/videos/PDF/etc…</p></li>
+<li><p>Limited access to <a class="reference internal" href="collaboration.html#calendar"><span class="std std-ref">calendars</span></a> (link-shared calendars only).</p></li>
 </ul>
 </section>
 <section id="logged-in-user">
@@ -665,6 +676,7 @@
 <li><p>Organisation of documents in <a class="reference internal" href="drive.html#folders"><span class="std std-ref">folders</span></a>, <a class="reference internal" href="share_and_access.html#shared-folders"><span class="std std-ref">shared folders</span></a>, or with <a class="reference internal" href="drive.html#tags"><span class="std std-ref">tags</span></a> and <a class="reference internal" href="drive.html#templates"><span class="std std-ref">templates</span></a>.</p></li>
 <li><p>Creation of <a class="reference internal" href="collaboration.html#teams"><span class="std std-ref">teams</span></a>.</p></li>
 <li><p>Customisation of the <a class="reference internal" href="collaboration.html#profile"><span class="std std-ref">profile</span></a> page and a list of <a class="reference internal" href="collaboration.html#contacts"><span class="std std-ref">contacts</span></a> to <a class="reference internal" href="share_and_access.html#share"><span class="std std-ref">share documents</span></a> and <a class="reference internal" href="collaboration.html#chat-contacts"><span class="std std-ref">chat</span></a> with. Notifications for interactions between contacts.</p></li>
+<li><p>Creation and management of <a class="reference internal" href="collaboration.html#calendar"><span class="std std-ref">calendars</span></a>.</p></li>
 </ul>
 </section>
 <section id="premium-user">
@@ -717,6 +729,30 @@
 </ul>
 </section>
 </section>
+<section id="notifications">
+<h2>Notifications<a class="headerlink" href="#notifications" title="Enlace permanente a este encabezado">¶</a></h2>
+<p><span class="badge-user">Logged in users</span></p>
+<p>CryptPad notifies you when your contacts interact with you. Notifications are displayed by the bell <em class="fa fa-bell-o"></em> next to the avatar (at the top-right). If you have unread notifications, the bell is filled <em class="fa fa-bell"></em> and a count is displayed.</p>
+<p><em class="fa fa-bell"></em> Bell drop down menu:</p>
+<ul class="simple">
+<li><p>Browse unread notifications.</p></li>
+<li><p>Delete a notification with <em class="fa fa-times"></em>.</p></li>
+<li><p><strong>Open notifications panel</strong>: View all notifications and notification
+history.</p></li>
+</ul>
+<p>On the notifications panel page:</p>
+<ul class="simple">
+<li><p>Select the type of notification to view:</p>
+<ul>
+<li><p><em class="fa fa-bars"></em> All.</p></li>
+<li><p><em class="fa fa-user"></em> Contact Requests.</p></li>
+<li><p><em class="cptools cptools-richtext"></em> Shared with me.</p></li>
+<li><p><em class="fa fa-archive"></em> History.</p></li>
+</ul>
+</li>
+<li><p><em class="fa fa-trash"></em>: Delete notifications.</p></li>
+</ul>
+</section>
 <section id="settings">
 <span id="user-settings"></span><h2>Settings<a class="headerlink" href="#settings" title="Enlace permanente a este encabezado">¶</a></h2>
 <p>The account settings are found in the user menu (avatar at the top right) &gt; <em class="fa fa-gear"></em> <strong>Settings</strong>.</p>
@@ -728,7 +764,6 @@
 <li><p><strong>Display Name</strong>: Name displayed to other users, for example when you collaborate on documents. To change this name enter a new name and click on <strong>Save</strong>. <span class="badge-user">Logged in users</span></p></li>
 <li><p><strong>Language</strong>: Language used in the CryptPad interface. To change the language of CryptPad pick a new language in the drop-down menu. CryptPad is translated in English and French by the development team, and in other languages by the <a class="reference internal" href="../how_to_contribute.html#contribute-translation"><span class="std std-ref">community</span></a>. Some translations can be incomplete and/or contain errors.</p></li>
 <li><p><strong>Automatic Download limit</strong>: Maximum size in megabytes (MB) for automatically loading media elements (images, videos, pdf) embedded into documents. Elements bigger than the specified size can be loaded manually. Use &quot;-1&quot; to always load the media elements automatically.</p></li>
-<li><p><strong>Change your password</strong>: Enter your current password and confirm the new password by typing it twice. <span class="badge-user">Logged in users</span></p></li>
 <li><p><strong>Account deletion</strong>: Option to permanently delete your account and all of its documents. <strong>Delete your account</strong> and confirm. <span class="badge-user">Logged in users</span></p></li>
 </ul>
 </section>
@@ -800,6 +835,7 @@
 <li><p><strong>Editor’s maximum width</strong>: Switch between page mode (default) that limits the width of the text editor, and using the full width of the screen.</p></li>
 <li><p><strong>Spellcheck</strong>: Enable spellcheck in Rich Text documents. Spelling errors are underlined and suggested corrections are available through <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">Right</span> <span class="pre">click</span></code> on the word to correct.</p></li>
 <li><p><strong>Comment notifications</strong>: Disable notifications when another user replies to one of your comments.</p></li>
+<li><p><strong>Open links on first click</strong>: Open embedded links on click without the preview popup.</p></li>
 </ul>
 </section>
 <section id="code">
@@ -813,6 +849,20 @@
 <li><p><strong>Spellcheck</strong>: Underline spelling mistakes in the code editor, correction suggestions are available through <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the word to correct.</p></li>
 </ul>
 </section>
+<section id="kanban">
+<span id="user-settings-kanban"></span><h3>Kanban<a class="headerlink" href="#kanban" title="Enlace permanente a este encabezado">¶</a></h3>
+<p>User settings for the <a class="reference internal" href="apps/kanban.html#app-kanban"><span class="std std-ref">Kanban</span></a> application.</p>
+<ul class="simple">
+<li><p><strong>Tag filter</strong>: How you want the tag filter to act when selecting multiple tags: only show cards containing all the selected tags (AND) or show cards containing any of the selected tags (OR).</p></li>
+</ul>
+</section>
+<section id="user-settings-notifications">
+<span id="id1"></span><h3>Notifications<a class="headerlink" href="#user-settings-notifications" title="Enlace permanente a este encabezado">¶</a></h3>
+<p>User settings for the notifications.</p>
+<ul class="simple">
+<li><p><strong>Calendar notifications</strong>: Enable/disable all notifications for upcoming calendar events.</p></li>
+</ul>
+</section>
 <section id="subscription">
 <span id="user-settings-subscription"></span><h3>Subscription<a class="headerlink" href="#subscription" title="Enlace permanente a este encabezado">¶</a></h3>
 <p>(only on cryptpad.fr)</p>
@@ -820,30 +870,6 @@
 <li><p>Redirects to the account page.</p></li>
 </ul>
 </section>
-</section>
-<section id="notifications">
-<span id="user-settings-notifications"></span><h2>Notifications<a class="headerlink" href="#notifications" title="Enlace permanente a este encabezado">¶</a></h2>
-<p><span class="badge-user">Logged in users</span></p>
-<p>CryptPad notifies you when your contacts interact with you. Notifications are displayed by the bell <em class="fa fa-bell-o"></em> next to the avatar (at the top-right). If you have unread notifications, the bell is filled <em class="fa fa-bell"></em> and a count is displayed.</p>
-<p><em class="fa fa-bell"></em> Bell drop down menu:</p>
-<ul class="simple">
-<li><p>Browse unread notifications.</p></li>
-<li><p>Delete a notification with <em class="fa fa-times"></em>.</p></li>
-<li><p><strong>Open notifications panel</strong>: View all notifications and notification
-history.</p></li>
-</ul>
-<p>On the notifications panel page:</p>
-<ul class="simple">
-<li><p>Select the type of notification to view:</p>
-<ul>
-<li><p><em class="fa fa-bars"></em> All.</p></li>
-<li><p><em class="fa fa-user"></em> Contact Requests.</p></li>
-<li><p><em class="cptools cptools-pad"></em> Shared with me.</p></li>
-<li><p><em class="fa fa-archive"></em> History.</p></li>
-</ul>
-</li>
-<li><p><em class="fa fa-trash"></em>: Delete notifications.</p></li>
-</ul>
 </section>
 </section>
 
@@ -892,7 +918,7 @@ history.</p></li>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.5.0',
+            VERSION:'5.6.0',
             LANGUAGE:'es-CU',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

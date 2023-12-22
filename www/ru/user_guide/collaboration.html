@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Совместная работа / Взаимодействие &mdash; документация CryptPad 5.5.0</title>
+  <title>Совместная работа / Взаимодействие &mdash; документация CryptPad 5.6.0</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.5.0</span>
+              <span class="release">Documentation 5.6.0</span>
             </a>
             
 <div role="search">
@@ -105,6 +105,7 @@
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#logging-in">Вход в систему</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="user_account.html#notifications">Уведомления</a></li>
 <li class="toctree-l3"><a class="reference internal" href="user_account.html#settings">Настройки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#account">Учетная запись</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#security-privacy">Security &amp; Privacy</a></li>
@@ -113,10 +114,11 @@
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#cursor">Курсор</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#rich-text">Документ</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#code">Код</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#kanban">Kanban</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#user-settings-notifications">Уведомления</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#subscription">Подписка</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="user_account.html#notifications">Уведомления</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="support.html">Техподдержка</a><ul>
@@ -510,6 +512,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/translations.html">Adding Translations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#including-your-translation">Including your translation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#actually-translating-content">Actually translating content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#verifying-your-translations">Verifying Your Translations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#deleting-a-translation">Deleting a translation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -675,11 +685,15 @@
 </section>
 </section>
 <section id="calendar">
-<h2>Календарь<a class="headerlink" href="#calendar" title="Permalink to this heading">¶</a></h2>
+<span id="id2"></span><h2>Календарь<a class="headerlink" href="#calendar" title="Permalink to this heading">¶</a></h2>
 <figure class="align-default">
 <img alt="скриншот календаря" class="screenshot" src="../_images/calendar.png" />
 </figure>
 <p>Чтобы добавить события, просто нажмите на нужное время/дату в календаре, просмотрите (перетащите для продолжительности). В качестве альтернативы используйте <em class="fa fa-plus"></em> <strong>Новое событие</strong> на панели инструментов.</p>
+<p>It then opens an event creation form where a <strong>Title</strong> is mandatory.</p>
+<p><span class="badge-new">New in version 5.6</span></p>
+<p>You can optionally specify a <strong>Location</strong> and a <strong>Description</strong>.
+The <strong>Description</strong> field supports the Markdown syntax to format its content.</p>
 <p>You can create recurring events, repeat:</p>
 <ul>
 <li><p><strong>Один раз</strong>, вариант по умолчанию</p></li>
@@ -705,7 +719,11 @@
 </div></blockquote>
 </li>
 </ul>
-<p>Чтобы отредактировать события, перетащите их на новую дату/время или <code class="docutils literal notranslate"><span class="pre">Щелкните</span></code>, чтобы открыть подробное представление редактирования.</p>
+<p>To edit events, drag them to the new date/time or alternatively:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on the event to open the detailed view.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on <em class="fa fa-pencil"></em> <strong>Edit</strong> to open the edition form.</p></li>
+</ol>
 <section id="toolbar">
 <h3>Инструменты<a class="headerlink" href="#toolbar" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
@@ -726,6 +744,10 @@
 <li><p><em class="fa fa-info-circle"></em> <strong>Свойства</strong></p></li>
 <li><p><em class="fa fa-trash-o"></em> <strong>Удалить</strong></p></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
+<p>When exporting a calendar, the descriptions of events are exported in Markdown.</p>
+</div>
 <p><a class="reference internal" href="#teams"><span class="std std-ref">Команды</span></a> также могут иметь календари, доступные для всех участников. Просто поделитесь календарем с командой, чтобы добавить его:</p>
 <p><em class="fa fa-share-alt"></em> <strong>Share</strong> &gt; <em class="fa fa-address-book"></em> <strong>Contacts</strong> &gt; Select the team</p>
 <p><span class="badge-user">Зарегистрированные пользователи</span></p>
@@ -733,7 +755,7 @@
 </section>
 </section>
 <section id="contacts">
-<span id="id2"></span><h2>Контакты<a class="headerlink" href="#contacts" title="Permalink to this heading">¶</a></h2>
+<span id="id3"></span><h2>Контакты<a class="headerlink" href="#contacts" title="Permalink to this heading">¶</a></h2>
 <p><span class="badge-user">Зарегистрированные пользователи</span></p>
 <p>В CryptPad использование контактов делает совместную работу более безопасной и простой.</p>
 <section id="add-a-contact">
@@ -743,11 +765,11 @@
 <li><p>Скопируйте ссылку: Меню пользователя (аватарка в правом верхнем углу) &gt; <em class="fa fa-user-circle"></em> <strong>Профиль</strong> &gt; <em class="fa fa-share-alt"></em> <strong>Поделиться</strong>.</p></li>
 <li><p>Вставьте и отправьте с помощью средств по вашему выбору (предпочтительно безопасный режим обмена данными).</p></li>
 <li><p>Затем ваш контакт должен нажать <strong>Отправить запрос на контакт</strong>.</p></li>
-<li><p>Вы получите уведомление с запросом, нажмите <strong>Принять</strong>.</p></li>
+<li><p>You get a notification with the request, <code class="docutils literal notranslate"><span class="pre">Click</span></code> <strong>Accept</strong>.</p></li>
 </ol>
 <p>На странице профиля другого пользователя CryptPad:</p>
 <ol class="arabic simple">
-<li><p>Нажмите <strong>Отправить запрос на контакт</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> <strong>Send a contact request</strong>.</p></li>
 </ol>
 </section>
 <section id="manage-contacts">
@@ -765,13 +787,13 @@
 </section>
 <section id="chat-with-contacts">
 <span id="chat-contacts"></span><h3>Чат с контактами<a class="headerlink" href="#chat-with-contacts" title="Permalink to this heading">¶</a></h3>
-<p>На странице Контакты <code class="docutils literal notranslate"><span class="pre">Нажмите</span></code> на контакт в списке, чтобы открыть чат с ним в главном окне.</p>
+<p>On the Contacts page, click on a contact in the list to open the chat with them in the main window.</p>
 <p>Пишите сообщения в поле внизу и отправляйте их с помощью <em class="fa fa-paper-plane"></em> или <code class="docutils literal notranslate"><span class="pre">Enter</span></code>.</p>
 <p>Загрузите больше истории чата с помощью <em class="fa fa-history"></em> или удалите историю с помощью <em class="fa fa-eraser"></em>.</p>
 </section>
 </section>
 <section id="teams">
-<span id="id3"></span><h2>Команды<a class="headerlink" href="#teams" title="Permalink to this heading">¶</a></h2>
+<span id="id4"></span><h2>Команды<a class="headerlink" href="#teams" title="Permalink to this heading">¶</a></h2>
 <p><span class="badge-user">Зарегистрированные пользователи</span></p>
 <p>Команды CryptPad — это общие пространства для группы пользователей. У команды есть свой CryptDrive, чат и список участников с ролями и разрешениями.</p>
 <div class="admonition note">
@@ -926,7 +948,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.5.0',
+            VERSION:'5.6.0',
             LANGUAGE:'ru',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

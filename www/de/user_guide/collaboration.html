@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Zusammenarbeit &mdash; CryptPad 5.5.0 Dokumentation</title>
+  <title>Zusammenarbeit &mdash; CryptPad 5.6.0 Dokumentation</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.5.0</span>
+              <span class="release">Documentation 5.6.0</span>
             </a>
             
 <div role="search">
@@ -105,18 +105,20 @@
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#logging-in">Einloggen</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="user_account.html#notifications">Benachrichtigungen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="user_account.html#settings">Einstellungen</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#account">Account</a></li>
-<li class="toctree-l4"><a class="reference internal" href="user_account.html#security-privacy">Security &amp; Privacy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#security-privacy">Sicherheit &amp; Datenschutz</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#appearance">Erscheinungsbild</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#cryptdrive">CryptDrive</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#cursor">Cursor</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#rich-text">Rich Text</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#kanban">Kanban</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#user-settings-notifications">Benachrichtigungen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#subscription">Abonnement</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="user_account.html#notifications">Benachrichtigungen</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="support.html">Support</a><ul>
@@ -510,6 +512,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/translations.html">Adding Translations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#including-your-translation">Including your translation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#actually-translating-content">Actually translating content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#verifying-your-translations">Verifying Your Translations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#deleting-a-translation">Deleting a translation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -546,8 +556,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#report-bugs">Fehler melden</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#contribute-to-the-documentation">Zur Dokumentation beitragen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#translate-cryptpad">CryptPad übersetzen</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../how_to_contribute.html#community-translation-program">Community translation program</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../how_to_contribute.html#terms">Terms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../how_to_contribute.html#community-translation-program">Community-Übersetzungsprogramm</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../how_to_contribute.html#terms">Bedingungen</a></li>
 </ul>
 </li>
 </ul>
@@ -675,11 +685,15 @@
 </section>
 </section>
 <section id="calendar">
-<h2>Kalender<a class="headerlink" href="#calendar" title="Permalink to this heading">¶</a></h2>
+<span id="id2"></span><h2>Kalender<a class="headerlink" href="#calendar" title="Permalink to this heading">¶</a></h2>
 <figure class="align-default">
 <img alt="Screenshot vom Kalender" class="screenshot" src="../_images/calendar.png" />
 </figure>
 <p>Um Ereignisse hinzuzufügen, klicke einfach auf das gewünschte Datum/Zeit im Kalender (ändere Dauer durch Ziehen). Alternativ kannst du <em class="fa fa-plus"></em> <strong>Neues Ereignis</strong> in der Werkzeugleiste verwenden.</p>
+<p>It then opens an event creation form where a <strong>Title</strong> is mandatory.</p>
+<p><span class="badge-new">New in version 5.6</span></p>
+<p>You can optionally specify a <strong>Location</strong> and a <strong>Description</strong>.
+The <strong>Description</strong> field supports the Markdown syntax to format its content.</p>
 <p>Du kannst sich wiederholende Ereignisse erstellen:</p>
 <ul>
 <li><p><strong>Einmalig</strong>, Standard</p></li>
@@ -705,7 +719,11 @@
 </div></blockquote>
 </li>
 </ul>
-<p>Um Ereignisse zu bearbeiten, ziehe sie zum neuen Datum/Zeit oder <code class="docutils literal notranslate"><span class="pre">klicke</span></code> zum Öffnen des Bearbeiten-Dialogs.</p>
+<p>To edit events, drag them to the new date/time or alternatively:</p>
+<ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on the event to open the detailed view.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on <em class="fa fa-pencil"></em> <strong>Edit</strong> to open the edition form.</p></li>
+</ol>
 <section id="toolbar">
 <h3>Werkzeugleiste<a class="headerlink" href="#toolbar" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
@@ -726,6 +744,10 @@
 <li><p><em class="fa fa-info-circle"></em> <strong>Eigenschaften</strong></p></li>
 <li><p><em class="fa fa-trash-o"></em> <strong>Löschen</strong></p></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Bemerkung</p>
+<p>When exporting a calendar, the descriptions of events are exported in Markdown.</p>
+</div>
 <p><a class="reference internal" href="#teams"><span class="std std-ref">Teams</span></a> können ebenfalls einen Kalender haben, der für alle Mitglieder sichtbar ist. Teile einfach einen Kalender mit einem Team, um ihn hinzuzufügen:</p>
 <p><em class="fa fa-share-alt"></em> <strong>Teilen</strong> &gt; <em class="fa fa-address-book"></em> <strong>Kontakte</strong> &gt; Wähle das Team aus</p>
 <p><span class="badge-user">Eingeloggte Benutzer</span></p>
@@ -733,7 +755,7 @@
 </section>
 </section>
 <section id="contacts">
-<span id="id2"></span><h2>Kontakte<a class="headerlink" href="#contacts" title="Permalink to this heading">¶</a></h2>
+<span id="id3"></span><h2>Kontakte<a class="headerlink" href="#contacts" title="Permalink to this heading">¶</a></h2>
 <p><span class="badge-user">Eingeloggte Benutzer</span></p>
 <p>Mit Kontakten auf CryptPad ist die Zusammenarbeit sicherer und einfacher.</p>
 <section id="add-a-contact">
@@ -743,11 +765,11 @@
 <li><p>Kopiere den Link: Benutzermenü (Avatar oben rechts) &gt; <em class="fa fa-user-circle"></em> <strong>Profil</strong> &gt; <em class="fa fa-share-alt"></em> <strong>Teilen</strong>.</p></li>
 <li><p>Sende den Link an den Benutzer auf eine Art deiner Wahl (am besten über einen sicheren Kommukationskanal).</p></li>
 <li><p>Dein Kontakt muss dann auf <strong>Kontaktanfrage senden</strong> klicken.</p></li>
-<li><p>Du erhältst eine Benachrichtigung mit der Anfrage, klicke auf <strong>Akzeptieren</strong>.</p></li>
+<li><p>Du erhältst eine Benachrichtigung mit der Anfrage, <code class="docutils literal notranslate"><span class="pre">klicke</span></code> auf <strong>Akzeptieren</strong>.</p></li>
 </ol>
 <p>Auf der Profilseite eines anderen CryptPad-Benutzers:</p>
 <ol class="arabic simple">
-<li><p>Klicke auf <strong>Kontaktanfrage senden</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Klicke</span></code> auf <strong>Kontaktanfrage senden</strong>.</p></li>
 </ol>
 </section>
 <section id="manage-contacts">
@@ -765,13 +787,13 @@
 </section>
 <section id="chat-with-contacts">
 <span id="chat-contacts"></span><h3>Mit Kontakten chatten<a class="headerlink" href="#chat-with-contacts" title="Permalink to this heading">¶</a></h3>
-<p>Auf der Kontakte-Seite, <code class="docutils literal notranslate"><span class="pre">klicke</span></code> auf einen Kontakt, um einen Chat mit diesem Benutzer im Hauptfenster zu öffnen.</p>
+<p>Auf der Kontakte-Seite klicke auf einen Kontakt, um einen Chat mit diesem Benutzer im Hauptfenster zu öffnen.</p>
 <p>Schreibe Nachrichten im Feld unten und sende sie mit <em class="fa fa-paper-plane"></em> oder <code class="docutils literal notranslate"><span class="pre">Enter</span></code> ab.</p>
 <p>Lade weiteren Chat-Verlauf mit <em class="fa fa-history"></em> oder lösche den Verlauf mit <em class="fa fa-eraser"></em>.</p>
 </section>
 </section>
 <section id="teams">
-<span id="id3"></span><h2>Teams<a class="headerlink" href="#teams" title="Permalink to this heading">¶</a></h2>
+<span id="id4"></span><h2>Teams<a class="headerlink" href="#teams" title="Permalink to this heading">¶</a></h2>
 <p><span class="badge-user">Eingeloggte Benutzer</span></p>
 <p>Teams auf CryptPad sind geteilte Arbeitsbereiche für Benutzergruppen. Ein Team hat ein eigenes CryptDrive, einen Chat, eine Mitgliederliste mit Rollen und Zugriffsrechten.</p>
 <div class="admonition note">
@@ -926,7 +948,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.5.0',
+            VERSION:'5.6.0',
             LANGUAGE:'de',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

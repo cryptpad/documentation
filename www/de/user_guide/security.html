@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Sicherheit &mdash; CryptPad 5.5.0 Dokumentation</title>
+  <title>Sicherheit &mdash; CryptPad 5.6.0 Dokumentation</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.5.0</span>
+              <span class="release">Documentation 5.6.0</span>
             </a>
             
 <div role="search">
@@ -105,18 +105,20 @@
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#logging-in">Einloggen</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="user_account.html#notifications">Benachrichtigungen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="user_account.html#settings">Einstellungen</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#account">Account</a></li>
-<li class="toctree-l4"><a class="reference internal" href="user_account.html#security-privacy">Security &amp; Privacy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#security-privacy">Sicherheit &amp; Datenschutz</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#appearance">Erscheinungsbild</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#cryptdrive">CryptDrive</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#cursor">Cursor</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#rich-text">Rich Text</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#code">Code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#kanban">Kanban</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#user-settings-notifications">Benachrichtigungen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#subscription">Abonnement</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="user_account.html#notifications">Benachrichtigungen</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="support.html">Support</a><ul>
@@ -510,6 +512,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../dev_guide/translations.html">Adding Translations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#getting-started">Getting started</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#including-your-translation">Including your translation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#actually-translating-content">Actually translating content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#verifying-your-translations">Verifying Your Translations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../dev_guide/translations.html#deleting-a-translation">Deleting a translation</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -546,8 +556,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#report-bugs">Fehler melden</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#contribute-to-the-documentation">Zur Dokumentation beitragen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../how_to_contribute.html#translate-cryptpad">CryptPad übersetzen</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../how_to_contribute.html#community-translation-program">Community translation program</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../how_to_contribute.html#terms">Terms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../how_to_contribute.html#community-translation-program">Community-Übersetzungsprogramm</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../how_to_contribute.html#terms">Bedingungen</a></li>
 </ul>
 </li>
 </ul>
@@ -640,11 +650,11 @@
 <h1>Sicherheit<a class="headerlink" href="#security" title="Permalink to this heading">¶</a></h1>
 <section id="trust-assumptions">
 <span id="trust"></span><h2>Vertrauen<a class="headerlink" href="#trust-assumptions" title="Permalink to this heading">¶</a></h2>
-<p>CryptPad ist Ende-zu-Ende verschlüsselt und der Server hat keinen Zugriff auf deine Daten. Trotzdem gibt es - wie mit jeder anderen Webanwendung auch - einige Komponenten, die vertrauenswürdig sein müssen, um Sicherheit zu garantieren:</p>
+<p>CryptPad ist Ende-zu-Ende verschlüsselt und der Server hat keinen Zugriff auf deine Daten. Trotzdem gibt es – wie mit jeder anderen Webanwendung auch – einige Komponenten, die vertrauenswürdig sein müssen, um Sicherheit zu garantieren:</p>
 <ul class="simple">
-<li><p>Deiner gewählten CryptPad <a class="reference internal" href="instances.html#cryptpad-instances"><span class="std std-ref">Instanz</span></a>, dass</p>
+<li><p>Deiner gewählten <a class="reference internal" href="instances.html#cryptpad-instances"><span class="std std-ref">CryptPad-Instanz</span></a>, dass</p>
 <ul>
-<li><p>sie den selben Code laufen lässt, der auf GitHub publiziert ist,</p></li>
+<li><p>sie den Code laufen lässt, der auf GitHub publiziert ist,</p></li>
 <li><p>deine Netzwerknachrichten nicht blockiert, und dass</p></li>
 <li><p>sie den Nutzungsbedingungen und Datenschutzerklärungen folgt.</p></li>
 </ul>
@@ -654,13 +664,13 @@
 <p>Unter diesen Annahmen kannst du sicher sein, dass es technisch nicht möglich ist, deine Dokumente zu lesen oder zu bearbeiten. Und zwar weder</p>
 <ul class="simple">
 <li><p>für den Server,</p></li>
-<li><p>mächtigen Gegenspielende, die deinen Netzwerkverkehr sehen können,</p></li>
-<li><p>noch für alle anderen Benutzenden.</p></li>
+<li><p>für mächtige Gegenspieler, die deinen Netzwerkverkehr sehen können, noch</p></li>
+<li><p>für alle anderen Benutzer.</p></li>
 </ul>
-<p>Wir pflegen eine <a class="reference external" href="https://cryptpad.org/instances">Liste mit öffentlichen CryptPad-Instanzen</a> , damit du entscheiden kannst, wem du vertrauen möchtest.</p>
+<p>Wir pflegen eine <a class="reference external" href="https://cryptpad.org/instances">Liste mit öffentlichen CryptPad-Instanzen</a>, damit du entscheiden kannst, wem du vertrauen möchtest.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warnung</p>
-<p>CryptPad bietet nur eine schwache Form von Anonymität an. Deine gewählte CryptPad-Instanz kann sowohl deine IP-Adresse als auch deinen &quot;User Agent&quot; (Browse-Name und Betriebssystem) sehen.</p>
+<p>CryptPad bietet nur eine schwache Form von Anonymität an. Deine gewählte CryptPad-Instanz kann sowohl deine IP-Adresse als auch deinen &quot;User Agent&quot; (Browser und Betriebssystem) sehen.</p>
 <p>Falls du bessere Anonymität brauchst, kannst du CryptPad via <a class="reference external" href="https://www.torproject.org">Tor</a> erreichen.</p>
 </div>
 </section>
@@ -781,7 +791,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.5.0',
+            VERSION:'5.6.0',
             LANGUAGE:'de',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
