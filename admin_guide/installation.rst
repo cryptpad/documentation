@@ -91,8 +91,7 @@ Copy the example configuration
 
 .. code:: bash
 
-   cd config
-   cp config.example.js config.js
+   cp config/config.example.js config/config.js
 
 Please read the configuration file, and modify variables as needed. The :ref:`domains <admin_domain_config>` are particularly important.
 
