@@ -64,6 +64,12 @@ Clone the CryptPad repository
 
    git clone https://github.com/cryptpad/cryptpad.git cryptpad
 
+Move to the newly cloned repository
+
+.. code:: bash
+
+   cd cryptpad
+
 Switch to the latest published tag
 
 .. code:: bash
@@ -75,7 +81,6 @@ Dependencies
 
 .. code:: bash
 
-   cd cryptpad
    npm ci
    npm run install:components
 
@@ -86,7 +91,7 @@ Copy the example configuration
 
 .. code:: bash
 
-   cd cryptpad/config
+   cd config
    cp config.example.js config.js
 
 Please read the configuration file, and modify variables as needed. The :ref:`domains <admin_domain_config>` are particularly important.
@@ -97,7 +102,6 @@ The server can now be started with
 
 .. code:: bash
 
-   cd cryptpad
    node server
 
 The instance is now ready to run but cannot yet be accessed from the internet.
