@@ -74,7 +74,7 @@ Switch to the latest published tag
 
 .. code:: bash
 
-   git checkout $(git tag -l | grep -v 'v1.*$' | sort -V | tail -n 1)
+   git checkout 5.6.0
 
 Dependencies
 """"""""""""
