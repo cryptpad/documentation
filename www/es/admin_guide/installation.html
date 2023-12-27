@@ -708,14 +708,17 @@
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/cryptpad/cryptpad.git cryptpad
 </pre></div>
 </div>
+<p>Move to the newly cloned repository</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> cryptpad
+</pre></div>
+</div>
 <p>Switch to the latest published tag</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout <span class="k">$(</span>git tag -l <span class="p">|</span> grep -v <span class="s1">&#39;v1.*$&#39;</span> <span class="p">|</span> sort -V <span class="p">|</span> tail -n <span class="m">1</span><span class="k">)</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout <span class="m">5</span>.6.0
 </pre></div>
 </div>
 <section id="dependencies">
 <h4>Dependencies<a class="headerlink" href="#dependencies" title="Enlace permanente a este encabezado">¶</a></h4>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> cryptpad
-npm ci
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>npm ci
 npm run install:components
 </pre></div>
 </div>
@@ -723,15 +726,13 @@ npm run install:components
 <section id="configuration">
 <h4>Configuration<a class="headerlink" href="#configuration" title="Enlace permanente a este encabezado">¶</a></h4>
 <p>Copy the example configuration</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> cryptpad/config
-cp config.example.js config.js
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cp config/config.example.js config/config.js
 </pre></div>
 </div>
 <p>Please read the configuration file, and modify variables as needed. The <a class="reference internal" href="#admin-domain-config"><span class="std std-ref">domains</span></a> are particularly important.</p>
 <p>As part of the installation process, be sure to read <a class="reference internal" href="customization.html#admin-customization"><span class="std std-ref">Instance customization</span></a> and to modify <code class="docutils literal notranslate"><span class="pre">customize/application_config.js</span></code> as some settings cannot be changed once user accounts have been created.</p>
 <p>The server can now be started with</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> cryptpad
-node server
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>node server
 </pre></div>
 </div>
 <p>The instance is now ready to run but cannot yet be accessed from the internet.</p>
