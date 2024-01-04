@@ -222,7 +222,6 @@ In addition to this setting being enabled, the following criteria are required i
 - A working backup strategy is in place and has been tested
 - At least one other person must have access to the infrastructure
 - Commitment to give users at least 6 months of advance warning in case of shutting down
-- cryptpad.TLD domains aren't allowed as they imply a relationship with the development team and copyright holder (XWiki SAS), please use a subdomain instead
 
 .. note::
 
