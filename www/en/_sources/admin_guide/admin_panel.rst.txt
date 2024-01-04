@@ -212,8 +212,8 @@ List my instance in public directories
 
 In addition to this setting being enabled, the following criteria are required in order to have an instance listed:
 
-- cryptpad.TLD domains aren't allowed, please use a subdomain instead
 - All :ref:`diagnostic tests <admin_checkup>` must pass
+- Must not use a domain such as cryptpad.TLD as they imply a relationship with the development team and copyright holder (XWiki SAS), please use a subdomain instead
 - The version of CryptPad must be up to date within 90 days of `the latest release <https://github.com/cryptpad/cryptpad/releases>`_
 - Instance information must be provided in the :ref:`General tab <admin_instance_info>`
 - :ref:`admin_telemetry_optout` must be enabled
@@ -222,6 +222,7 @@ In addition to this setting being enabled, the following criteria are required i
 - A working backup strategy is in place and has been tested
 - At least one other person must have access to the infrastructure
 - Commitment to give users at least 6 months of advance warning in case of shutting down
+- cryptpad.TLD domains aren't allowed as they imply a relationship with the development team and copyright holder (XWiki SAS), please use a subdomain instead
 
 .. note::
 
