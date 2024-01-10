@@ -79,7 +79,7 @@ Fill out the following information:
 
 Optional:
 
--  **Import pads from your anonymous session**: If you have created documents as a non-registered user you can import them into your account.
+-  **Import documents from your anonymous session**: If you have created documents as a non-registered user you can import them into your account.
 
 Logging in
 ~~~~~~~~~~
@@ -88,7 +88,7 @@ To log in to CryptPad visit the **log in** page (at the top right of the home pa
 
 Optional:
 
--  **Import pads from your anonymous session**: If you have created documents as a non-registered user you can import them into your account.
+-  **Import documents from your anonymous session**: If you have created documents as a non-registered user you can import them into your account.
 
 Notifications
 -------------
@@ -170,20 +170,20 @@ CryptDrive
 
 -  **Homepage redirection**: Automatic redirection from the home page to the drive when logged in is no longer enabled by default
 -  **Tips**: Help messages in the CryptPad interface. Click on **Reset** to display them again if they have been dismissed.
--  **Pad storage in CryptDrive**: Manages if documents you visit are automatically stored in your CryptDrive. If no one :ref:`owns <owners>` a document you add to your CryptDrive, it counts against your storage quota.
+-  **Document storage in CryptDrive**: Manages if documents you visit are automatically stored in your CryptDrive. If no one :ref:`owns <owners>` a document you add to your CryptDrive, it counts against your storage quota.
 
-   -  **Automatic**: All the pads you visit are stored in your CryptDrive.
-   -  **Manual (always ask)**: If you have not stored a pad yet, you will be asked if you want to store them in your CryptDrive.
-   -  **Manual (never ask)** Pads are not stored automatically in your Cryptpad. The option to store them will be hidden.
+   -  **Automatic**: All the documents you visit are stored in your CryptDrive.
+   -  **Manual (always ask)**: If you have not stored a document yet, you will be asked if you want to store them in your CryptDrive.
+   -  **Manual (never ask)** Documents are not stored automatically in your Cryptpad. The option to store them will be hidden.
 
--  **Duplicated owned pads**: When you move your owned pads to a shared folder, a copy is kept in your CryptDrive to ensure that you retain your control over it. You can hide duplicated files. Only the shared version will be visible, unless deleted, in which case the original will be displayed in its previous location.
+-  **Duplicated owned documents**: When you move your owned documents to a shared folder, a copy is kept in your CryptDrive to ensure that you retain your control over it. You can hide duplicated files. Only the shared version will be visible, unless deleted, in which case the original will be displayed in its previous location.
 -  **Thumbnails**: To help navigating the CryptDrive in :ref:`grid mode <drive_display>`, CryptPad can create thumbnails of documents and store them in the browser. This option is turned off by default because it can slow down the browser on less powerful computers. The **Clean** button deletes all existing thumbnails.
 -  **Backup**: Two types of backups are available.
 
    -  **Backup** only saves the keys of documents in the CryptDrive, not their content. This option is designed to save access to documents and **Restore** it in another session.
    -  **Download my CryptDrive** saves the content of all documents in the CryptDrive. When possible, this is done in a format that is readable by other software. Some applications produce files that are only readable by CryptPad.
 
--  **Import**: If pads have been created as a non-registered user prior to logging in, they can be imported to the CryptDrive. :badge_user:`Logged in users`
+-  **Import**: If documents have been created as a non-registered user prior to logging in, they can be imported to the CryptDrive. :badge_user:`Logged in users`
 -  **Delete History**: The history of the CryptDrive and notifications can be deleted to save storage space. This does not affect the history of documents, which can be deleted individually in the :ref:`properties <document_properties>` dialog.
 
 .. _user_settings_cursor:

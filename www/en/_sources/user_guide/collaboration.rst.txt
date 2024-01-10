@@ -229,9 +229,9 @@ Owners  ✅    ✅    ✅              ✅
 
 Permissions:
 
-View: access folders and pads (read-only).
+View: access folders and documents (read-only).
 
-Edit: create, modify, and delete folders and pads.
+Edit: create, modify, and delete folders and documents.
 
 Manage Members: invite and revoke members, change member roles up to Admin.
 
