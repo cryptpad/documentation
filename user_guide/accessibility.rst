@@ -2,16 +2,17 @@
 Accessibility
 ==============
 
+:badge_new:`New in version 5.7`
 
-CryptPad is committed to achieving compliance with the Web Content Accessibility Guidelines (WCAG). We understand the importance of creating an inclusive digital experience and are actively working to meet the WCAG standards. We are currently working to ensure that our website meets the WCAG 2.1 AA guidelines.
-To see how we are working to improve accessibility, or if you have any suggestions, please check the `GitHub project <https://github.com/orgs/cryptpad/projects/5>`__ for accessibility.
+CryptPad is committed to achieving compliance with the Web Content Accessibility Guidelines (WCAG). The development team understands the importance of creating a usable and inclusive experience and is actively working to meet the WCAG 2.1 AA standard. To check on the details and status of this work please see the `Accessibility project on GitHub <https://github.com/orgs/cryptpad/projects/5>`__.
+
+We welcome contributions towards a more accessible CryptPad. User feedback is crucial to identifying issues and use-case, and of course we also appreciate code patches to solve these problems. For either you can get in touch through the following channels:
+
+- `Email <mailto:a11y@cryptpad.org>`__
+- `CryptPad Forum <https://forum.cryptpad.org/t/accessibility>`__
+- `Matrix chat <https://matrix.to/#/#cryptpad-accessibility:matrix.xwiki.com>`__
+- `GitHub issues <https://github.com/cryptpad/cryptpad/issues/new/choose>`__
 
 
-Feedback
---------
-How to give feedback to the team
-
-- a11y@cryptpad.org
-- Matrix channel
-- GitHub issues
-
+.. note::
+    This new section will be extended in future updates to include keyboard shortcuts, accessibility settings, and any other relevant information.
