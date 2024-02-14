@@ -27,12 +27,6 @@ Update user quotas
 
 Forcing an update of user storage limits can be done any time, but is only necessary in the event of an error.
 
-.. _admin_close_registration:
-
-Close registration
-~~~~~~~~~~~~~~~~~~
-
-Do not allow any new users to register.
 
 Enable remote embedding
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -64,6 +58,27 @@ The following fields are used to describe the instance in the :ref:`list of publ
 .. note::
 
    This information is used on the instance front page.
+
+
+User Directory
+--------------
+
+.. _admin_close_registration:
+
+Close registration
+~~~~~~~~~~~~~~~~~~
+
+Do not allow any new users to register.
+
+Invitation Links
+~~~~~~~~~~~~~~~~
+
+
+User Directory
+~~~~~~~~~~~~~~
+
+
+
 
 User Storage
 ------------
