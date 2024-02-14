@@ -35,6 +35,11 @@ Allow documents and media from this instance to be embedded on other websites. T
 
 Please note that by enabling this settings, you will need to adapt your Nginx configuration file, adding ``vector:`` to pass :ref:`diagnostic tests <admin_checkup>`.
 
+Mandatory Two-Factor Authentication
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Tick the box so all users on this instance will be asked to set up two-factor authentication to log in to their account.
+
 .. _admin_email:
 
 Admin contact email
