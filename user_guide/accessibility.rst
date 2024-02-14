@@ -1,4 +1,4 @@
-==============
+
 Accessibility
 ==============
 
@@ -7,7 +7,11 @@ CryptPad is committed to achieving compliance with the Web Content Accessibility
 To see how we are working to improve accessibility, or if you have any suggestions, please check the `GitHub project <https://github.com/orgs/cryptpad/projects/5>`__ for accessibility.
 
 
-.. toctree::
-    :maxdepth: 1
+Feedback
+--------
+How to give feedback to the team
 
-    accessibility/toolbar
+- a11y@cryptpad.org
+- Matrix channel
+- GitHub issues
+
