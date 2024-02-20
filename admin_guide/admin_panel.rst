@@ -78,11 +78,12 @@ Do not allow any new users to register.
 Invitation Links
 ~~~~~~~~~~~~~~~~
 
+Invitation links create one account each, even if registration is closed. User name and email are for your identification purposes only. CryptPad will not email the invitation link (or anything else), please copy the link and send it using the secure channel of your choice.
 
 User Directory
 ~~~~~~~~~~~~~~
 
-
+List of known accounts on this instance. Select options to add invited accounts automatically, or enter information manually using the form.
 
 
 User Storage
