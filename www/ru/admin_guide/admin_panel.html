@@ -299,6 +299,10 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/accessibility.html">Accessibility</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/accessibility.html#feedback-channels">Feedback channels</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Administrator Guide</a><ul class="current">
@@ -361,10 +365,16 @@
 <li class="toctree-l3"><a class="reference internal" href="#general">General</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#flush-http-cache">Flush HTTP Cache</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#update-user-quotas">Update user quotas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#close-registration">Close registration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#enable-remote-embedding">Enable remote embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mandatory-two-factor-authentication">Mandatory Two-Factor Authentication</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#admin-contact-email">Admin contact email</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#instance-information">Instance information</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#user-directory">User Directory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#close-registration">Close registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#invitation-links">Invitation Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id1">User Directory</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#user-storage">User Storage</a><ul>
@@ -389,7 +399,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#performance">Performance</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id1">Performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Performance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#measure-disk-performance">Measure disk performance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#disk-performance-measurement-window">Disk performance measurement window</a></li>
 </ul>
@@ -666,14 +676,14 @@
 <h3>Update user quotas<a class="headerlink" href="#update-user-quotas" title="Permalink to this heading">¶</a></h3>
 <p>Forcing an update of user storage limits can be done any time, but is only necessary in the event of an error.</p>
 </section>
-<section id="close-registration">
-<span id="admin-close-registration"></span><h3>Close registration<a class="headerlink" href="#close-registration" title="Permalink to this heading">¶</a></h3>
-<p>Do not allow any new users to register.</p>
-</section>
 <section id="enable-remote-embedding">
 <h3>Enable remote embedding<a class="headerlink" href="#enable-remote-embedding" title="Permalink to this heading">¶</a></h3>
 <p>Allow documents and media from this instance to be embedded on other websites. This will add an &quot;Embed&quot; option to the Share menu. For security reasons applications that use OnlyOffice (Sheets, Document, Presentation) cannot be embedded even if this setting is active.</p>
 <p>Please note that by enabling this settings, you will need to adapt your Nginx configuration file, adding <code class="docutils literal notranslate"><span class="pre">vector:</span></code> to pass <a class="reference internal" href="#admin-checkup"><span class="std std-ref">diagnostic tests</span></a>.</p>
+</section>
+<section id="mandatory-two-factor-authentication">
+<h3>Mandatory Two-Factor Authentication<a class="headerlink" href="#mandatory-two-factor-authentication" title="Permalink to this heading">¶</a></h3>
+<p>Tick the box so all users on this instance will be asked to set up two-factor authentication to log in to their account.</p>
 </section>
 <section id="admin-contact-email">
 <span id="admin-email"></span><h3>Admin contact email<a class="headerlink" href="#admin-contact-email" title="Permalink to this heading">¶</a></h3>
@@ -692,6 +702,21 @@
 <p class="admonition-title">Примечание</p>
 <p>This information is used on the instance front page.</p>
 </div>
+</section>
+</section>
+<section id="user-directory">
+<h2>User Directory<a class="headerlink" href="#user-directory" title="Permalink to this heading">¶</a></h2>
+<section id="close-registration">
+<span id="admin-close-registration"></span><h3>Close registration<a class="headerlink" href="#close-registration" title="Permalink to this heading">¶</a></h3>
+<p>Do not allow any new users to register.</p>
+</section>
+<section id="invitation-links">
+<h3>Invitation Links<a class="headerlink" href="#invitation-links" title="Permalink to this heading">¶</a></h3>
+<p>Invitation links create one account each, even if registration is closed. User name and email are for your identification purposes only. CryptPad will not email the invitation link (or anything else), please copy the link and send it using the secure channel of your choice.</p>
+</section>
+<section id="id1">
+<h3>User Directory<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h3>
+<p>List of known accounts on this instance. Select options to add invited accounts automatically, or enter information manually using the form.</p>
 </section>
 </section>
 <section id="user-storage">
@@ -778,8 +803,8 @@
 <section id="performance">
 <h2>Performance<a class="headerlink" href="#performance" title="Permalink to this heading">¶</a></h2>
 <p>This section is dedicated to available measurments for checking resources consumption.</p>
-<section id="id1">
-<h3>Performance<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h3>
+<section id="id2">
+<h3>Performance<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h3>
 <p>An overview of the total time spent executing various server-side commands</p>
 </section>
 <section id="measure-disk-performance">

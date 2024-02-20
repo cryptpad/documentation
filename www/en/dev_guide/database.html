@@ -299,6 +299,10 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/accessibility.html">Accessibility</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/accessibility.html#feedback-channels">Feedback channels</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">Administrator Guide</a><ul>
@@ -361,10 +365,16 @@
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#general">General</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#enable-remote-embedding">Enable remote embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#mandatory-two-factor-authentication">Mandatory Two-Factor Authentication</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#admin-contact-email">Admin contact email</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#instance-information">Instance information</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#user-directory">User Directory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#invitation-links">Invitation Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#id1">User Directory</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
@@ -389,7 +399,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#performance">Performance</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#id1">Performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#id2">Performance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#measure-disk-performance">Measure disk performance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#disk-performance-measurement-window">Disk performance measurement window</a></li>
 </ul>
@@ -648,35 +658,35 @@
             
   <section id="database">
 <span id="dev-database"></span><h1>Database<a class="headerlink" href="#database" title="Permalink to this heading">¶</a></h1>
-<p>CryptPad takes an unusual approach to storing documents on the server. User data is simply stored on the file system rather than a database.</p>
+<p class="linemarker linemarker-6">CryptPad takes an unusual approach to storing documents on the server. User data is simply stored on the file system rather than a database.</p>
 <section id="key-points">
 <h2>Key points<a class="headerlink" href="#key-points" title="Permalink to this heading">¶</a></h2>
 <ul>
-<li><p>Each CryptPad document has information stored on the server in a location determined by a channel id</p></li>
-<li><p>The content of each document is encrypted using the encryption key, so that the server cannot read it</p></li>
-<li><p>Clients send the channel id to the server to:</p>
+<li><p class="linemarker linemarker-11">Each CryptPad document has information stored on the server in a location determined by a channel id</p></li>
+<li><p class="linemarker linemarker-12">The content of each document is encrypted using the encryption key, so that the server cannot read it</p></li>
+<li><p class="linemarker linemarker-13">Clients send the channel id to the server to:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>get the latest information about a document</p></li>
-<li><p>subscribe to ongoing updates while they are connected</p></li>
-<li><p>modify the contents of the document</p></li>
+<li><p class="linemarker linemarker-15">get the latest information about a document</p></li>
+<li><p class="linemarker linemarker-16">subscribe to ongoing updates while they are connected</p></li>
+<li><p class="linemarker linemarker-17">modify the contents of the document</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p>each <em>channel</em> is stored within its own file on the server</p></li>
-<li><p>each change to the document is encoded on a single line of that file</p></li>
+<li><p class="linemarker linemarker-18">each <em>channel</em> is stored within its own file on the server</p></li>
+<li><p class="linemarker linemarker-19">each change to the document is encoded on a single line of that file</p></li>
 </ul>
 </section>
 <section id="understanding-document-urls">
 <h2>Understanding document URLs<a class="headerlink" href="#understanding-document-urls" title="Permalink to this heading">¶</a></h2>
-<p>Everything that a client needs in order to interact with a CryptPad document is stored in its URL.</p>
-<p>Let's look at an example:</p>
-<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/edit/plpAeHfQ4YO49fczV5erSCgd/">https://cryptpad.fr/code/#/2/code/edit/plpAeHfQ4YO49fczV5erSCgd/</a></p>
-<p>Browsers do not send the information after the <code class="docutils literal notranslate"><span class="pre">#</span></code> symbol to the server when loading a page, so it is safe to encode private information there.</p>
-<p>The information before <code class="docutils literal notranslate"><span class="pre">#</span></code> tells the browser which server to connect to, and what resources to download.</p>
-<p>This part of the URL <code class="docutils literal notranslate"><span class="pre">https://cryptpad.fr/code/</span></code> tells the server to load the code editor.</p>
-<p>The remaining information <code class="docutils literal notranslate"><span class="pre">#/2/code/edit/plpAeHfQ4YO49fczV5erSCgd/</span></code> is handled with Javascript by the browser.</p>
-<p>There are several pieces of information there, separated by slashes.</p>
+<p class="linemarker linemarker-24">Everything that a client needs in order to interact with a CryptPad document is stored in its URL.</p>
+<p class="linemarker linemarker-26">Let's look at an example:</p>
+<p class="linemarker linemarker-28"><a class="reference external" href="https://cryptpad.fr/code/#/2/code/edit/plpAeHfQ4YO49fczV5erSCgd/">https://cryptpad.fr/code/#/2/code/edit/plpAeHfQ4YO49fczV5erSCgd/</a></p>
+<p class="linemarker linemarker-30">Browsers do not send the information after the <code class="docutils literal notranslate"><span class="pre">#</span></code> symbol to the server when loading a page, so it is safe to encode private information there.</p>
+<p class="linemarker linemarker-32">The information before <code class="docutils literal notranslate"><span class="pre">#</span></code> tells the browser which server to connect to, and what resources to download.</p>
+<p class="linemarker linemarker-34">This part of the URL <code class="docutils literal notranslate"><span class="pre">https://cryptpad.fr/code/</span></code> tells the server to load the code editor.</p>
+<p class="linemarker linemarker-36">The remaining information <code class="docutils literal notranslate"><span class="pre">#/2/code/edit/plpAeHfQ4YO49fczV5erSCgd/</span></code> is handled with Javascript by the browser.</p>
+<p class="linemarker linemarker-38">There are several pieces of information there, separated by slashes.</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">URL</span><span class="w"> </span><span class="nx">encoding</span><span class="w"> </span><span class="nx">version</span><span class="o">:</span><span class="w"> </span><span class="mf">2</span><span class="w"></span>
 <span class="nx">editor</span><span class="w"> </span><span class="nx">mode</span><span class="o">:</span><span class="w"> </span><span class="nx">edit</span><span class="w"></span>
 <span class="nx">Encryption</span><span class="w"> </span><span class="nx">seed</span><span class="o">:</span><span class="w"> </span><span class="nx">plpAeHfQ4YO49fczV5erSCgd</span><span class="w"></span>
@@ -685,10 +695,10 @@
 </section>
 <section id="finding-a-document">
 <h2>Finding a document<a class="headerlink" href="#finding-a-document" title="Permalink to this heading">¶</a></h2>
-<p>It is possible to run code provided by the CryptPad server in your browser console. To extract the channel id of a document you have open:</p>
+<p class="linemarker linemarker-49">It is possible to run code provided by the CryptPad server in your browser console. To extract the channel id of a document you have open:</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-info-circle"></em> <strong>Properties</strong> &gt; <strong>Document identifier</strong></p></li>
-<li><p>Alternatively you can run this snippet:</p></li>
+<li><p class="linemarker linemarker-51"><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-info-circle"></em> <strong>Properties</strong> &gt; <strong>Document identifier</strong></p></li>
+<li><p class="linemarker linemarker-52">Alternatively you can run this snippet:</p></li>
 </ul>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">require</span><span class="p">([</span><span class="w"></span>
 <span class="w">    </span><span class="s2">&quot;/common/common-hash.js&quot;</span><span class="w"></span>
@@ -701,9 +711,9 @@
 <span class="p">});</span><span class="w"></span>
 </pre></div>
 </div>
-<p>Either method will give a channel id that looks similar to  <code class="docutils literal notranslate"><span class="pre">bb1edc4cb7648605284db30dfcd2eebf</span></code>.</p>
-<p>The corresponding file would be stored on the server, in your CryptPad instance's directory, at <code class="docutils literal notranslate"><span class="pre">cryptpad/datastore/bb/bb1edc4cb7648605284db30dfcd2eebf.ndjson</span></code>.</p>
-<p>For more information on administering the database including backups, migration, and more, please see <a class="reference internal" href="../admin_guide/maintenance.html#admin-database"><span class="std std-ref">Database administration</span></a> in the administrator guide.</p>
+<p class="linemarker linemarker-66">Either method will give a channel id that looks similar to  <code class="docutils literal notranslate"><span class="pre">bb1edc4cb7648605284db30dfcd2eebf</span></code>.</p>
+<p class="linemarker linemarker-68">The corresponding file would be stored on the server, in your CryptPad instance's directory, at <code class="docutils literal notranslate"><span class="pre">cryptpad/datastore/bb/bb1edc4cb7648605284db30dfcd2eebf.ndjson</span></code>.</p>
+<p class="linemarker linemarker-70">For more information on administering the database including backups, migration, and more, please see <a class="reference internal" href="../admin_guide/maintenance.html#admin-database"><span class="std std-ref">Database administration</span></a> in the administrator guide.</p>
 </section>
 </section>
 

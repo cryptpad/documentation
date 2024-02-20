@@ -299,6 +299,10 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../accessibility.html">Accessibility</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../accessibility.html#feedback-channels">Feedback channels</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../admin_guide/index.html">Administrator Guide</a><ul>
@@ -361,10 +365,16 @@
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#general">General</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#enable-remote-embedding">Enable remote embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#mandatory-two-factor-authentication">Mandatory Two-Factor Authentication</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#admin-contact-email">Admin contact email</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#instance-information">Instance information</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#user-directory">User Directory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#invitation-links">Invitation Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#id1">User Directory</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
@@ -389,7 +399,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#performance">Performance</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#id1">Performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#id2">Performance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#measure-disk-performance">Measure disk performance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#disk-performance-measurement-window">Disk performance measurement window</a></li>
 </ul>
@@ -650,61 +660,61 @@
             
   <section id="spreadsheet">
 <span id="app-sheets"></span><h1>Spreadsheet<a class="headerlink" href="#spreadsheet" title="Permalink to this heading">¶</a></h1>
-<p>The Spreadsheet application in CryptPad is an integration of <a class="reference external" href="https://www.onlyoffice.com/">OnlyOffice</a>. To read more about the details of this integration see <a class="reference internal" href="../../FAQ.html#faq-oointegration"><span class="std std-ref">What is the relationship between CryptPad and OnlyOffice?</span></a></p>
+<p class="linemarker linemarker-6">The Spreadsheet application in CryptPad is an integration of <a class="reference external" href="https://www.onlyoffice.com/">OnlyOffice</a>. To read more about the details of this integration see <a class="reference internal" href="../../FAQ.html#faq-oointegration"><span class="std std-ref">What is the relationship between CryptPad and OnlyOffice?</span></a></p>
 <img alt="../../_images/app-sheets-preview.png" class="screenshot" src="../../_images/app-sheets-preview.png" />
 <section id="documentation">
 <h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this heading">¶</a></h2>
-<p>Please refer to the <a class="reference external" href="https://helpcenter.onlyoffice.com/en/ONLYOFFICE-Editors/ONLYOFFICE-Spreadsheet-Editor/index.aspx">OnlyOffice documentation</a> for a spreadsheet user-guide.</p>
+<p class="linemarker linemarker-14">Please refer to the <a class="reference external" href="https://helpcenter.onlyoffice.com/en/ONLYOFFICE-Editors/ONLYOFFICE-Spreadsheet-Editor/index.aspx">OnlyOffice documentation</a> for a spreadsheet user-guide.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Due to various security implications, <a class="reference external" href="https://helpcenter.onlyoffice.com/ONLYOFFICE-Editors/Editors-User-Guides/AllEditors/Plugin-manager.aspx">OnlyOffice plugins</a>, also <a class="reference external" href="https://api.onlyoffice.com/plugin/macros">macros</a>, aren't available on CryptPad.</p>
+<p class="linemarker linemarker-18">Due to various security implications, <a class="reference external" href="https://helpcenter.onlyoffice.com/ONLYOFFICE-Editors/Editors-User-Guides/AllEditors/Plugin-manager.aspx">OnlyOffice plugins</a>, also <a class="reference external" href="https://api.onlyoffice.com/plugin/macros">macros</a>, aren't available on CryptPad.</p>
 </div>
 </section>
 <section id="toolbars">
 <h2>Toolbars<a class="headerlink" href="#toolbars" title="Permalink to this heading">¶</a></h2>
-<p>CryptPad integrates OnlyOffice spreadsheets into the same encrypted collaboration system as the other applications. Additionally OnlyOffice provides a wide range of functions in a tabbed toolbar. This results in a double toolbar that can cause confusion:</p>
+<p class="linemarker linemarker-23">CryptPad integrates OnlyOffice spreadsheets into the same encrypted collaboration system as the other applications. Additionally OnlyOffice provides a wide range of functions in a tabbed toolbar. This results in a double toolbar that can cause confusion:</p>
 <ul class="simple">
-<li><p>The topmost <strong>CryptPad toolbar</strong> is used for <em class="fa fa-file-o"></em> <strong>File</strong> operations (including import/export, history, properties, etc) as well as <em class="fa fa-share-alt"></em> <strong>Share</strong> and <em class="fa fa-unlock-alt"></em> <strong>Access</strong>.</p></li>
-<li><p>The <strong>OnlyOffice toolbar</strong> is used for all functionality within the spreadsheet document itself, as well as the collaboration modes explained in the next section.</p></li>
+<li><p class="linemarker linemarker-25">The topmost <strong>CryptPad toolbar</strong> is used for <em class="fa fa-file-o"></em> <strong>File</strong> operations (including import/export, history, properties, etc) as well as <em class="fa fa-share-alt"></em> <strong>Share</strong> and <em class="fa fa-unlock-alt"></em> <strong>Access</strong>.</p></li>
+<li><p class="linemarker linemarker-26">The <strong>OnlyOffice toolbar</strong> is used for all functionality within the spreadsheet document itself, as well as the collaboration modes explained in the next section.</p></li>
 </ul>
 </section>
 <section id="undo-and-collaboration-modes">
 <h2>Undo and collaboration modes<a class="headerlink" href="#undo-and-collaboration-modes" title="Permalink to this heading">¶</a></h2>
 <img alt="../../_images/app-sheets-collab-mode.png" class="screenshot" src="../../_images/app-sheets-collab-mode.png" />
-<p>OnlyOffice provides two collaborative editing modes in spreadsheets that affect how changes are synced between users and whether or not the <strong>Undo</strong> functionality is available.</p>
+<p class="linemarker linemarker-34">OnlyOffice provides two collaborative editing modes in spreadsheets that affect how changes are synced between users and whether or not the <strong>Undo</strong> functionality is available.</p>
 <ul class="simple">
-<li><p><strong>Fast Mode</strong> is enabled by default. New edits by all users are automatically synced with others as they are made. In this mode it is not possible to undo.</p></li>
-<li><p><strong>Strict Mode</strong> allows each user to make changes independently. The modified cells are &quot;locked&quot; for others until the author manually saves their changes. New edits are only synced with other users after being saved. In this mode it is possible to undo changes that have not yet been saved. When a user saves their changes, others are prompted to save in order to receive the latest edits.</p></li>
+<li><p class="linemarker linemarker-36"><strong>Fast Mode</strong> is enabled by default. New edits by all users are automatically synced with others as they are made. In this mode it is not possible to undo.</p></li>
+<li><p class="linemarker linemarker-37"><strong>Strict Mode</strong> allows each user to make changes independently. The modified cells are &quot;locked&quot; for others until the author manually saves their changes. New edits are only synced with other users after being saved. In this mode it is possible to undo changes that have not yet been saved. When a user saves their changes, others are prompted to save in order to receive the latest edits.</p></li>
 </ul>
-<p>When <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">Z</span></code> is pressed for undo, the application will automatically suggest switching to <strong>Strict Mode</strong> to enable the undo functionality.</p>
-<p>To switch back to <strong>Fast mode</strong> use the <strong>Collaboration</strong> tab in the OnlyOffice toolbar and select <strong>Co-editing Mode</strong> &gt; <strong>Fast</strong>.</p>
+<p class="linemarker linemarker-39">When <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">Z</span></code> is pressed for undo, the application will automatically suggest switching to <strong>Strict Mode</strong> to enable the undo functionality.</p>
+<p class="linemarker linemarker-41">To switch back to <strong>Fast mode</strong> use the <strong>Collaboration</strong> tab in the OnlyOffice toolbar and select <strong>Co-editing Mode</strong> &gt; <strong>Fast</strong>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>CryptPad remembers your choice of editing mode on each device for all documents.</p>
+<p class="linemarker linemarker-44">CryptPad remembers your choice of editing mode on each device for all documents.</p>
 </div>
 </section>
 <section id="history">
 <span id="sheets-history"></span><h2>History<a class="headerlink" href="#history" title="Permalink to this heading">¶</a></h2>
-<p>To access the spreadsheet history, use <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-history"></em> <strong>History</strong> in the CryptPad toolbar.</p>
-<p>Due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration, history in speadsheets works differently than <a class="reference internal" href="general.html#document-history"><span class="std std-ref">in the other applications</span></a>.</p>
+<p class="linemarker linemarker-51">To access the spreadsheet history, use <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-history"></em> <strong>History</strong> in the CryptPad toolbar.</p>
+<p class="linemarker linemarker-53">Due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration, history in speadsheets works differently than <a class="reference internal" href="general.html#document-history"><span class="std std-ref">in the other applications</span></a>.</p>
 <figure class="align-default" id="id1">
 <img alt="../../_images/history-toolbar-sheets.png" class="screenshot" src="../../_images/history-toolbar-sheets.png" />
 <figcaption>
 <p><span class="caption-text">The spreadsheet history toolbar</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<p>History in spreadsheets only allows to jump back to the previous version, and then move forward through individual edits.</p>
+<p class="linemarker linemarker-60">History in spreadsheets only allows to jump back to the previous version, and then move forward through individual edits.</p>
 <ul class="simple">
-<li><p><em class="fa fa-fast-backward"></em> previous version</p></li>
-<li><p><em class="fa fa-step-forward"></em> step forward one edit</p></li>
-<li><p><em class="fa fa-fast-forward"></em> next version</p></li>
+<li><p class="linemarker linemarker-62"><em class="fa fa-fast-backward"></em> previous version</p></li>
+<li><p class="linemarker linemarker-63"><em class="fa fa-step-forward"></em> step forward one edit</p></li>
+<li><p class="linemarker linemarker-64"><em class="fa fa-fast-forward"></em> next version</p></li>
 </ul>
-<p>The functionality to restore and share a version, as well as everything relating to <a class="reference internal" href="general.html#snapshots"><span class="std std-ref">Snapshots</span></a>, works in the same way as in <a class="reference internal" href="general.html#document-history"><span class="std std-ref">the other applications</span></a>.</p>
+<p class="linemarker linemarker-66">The functionality to restore and share a version, as well as everything relating to <a class="reference internal" href="general.html#snapshots"><span class="std std-ref">Snapshots</span></a>, works in the same way as in <a class="reference internal" href="general.html#document-history"><span class="std std-ref">the other applications</span></a>.</p>
 </section>
 <section id="printing">
 <span id="sheets-printing"></span><h2>Printing<a class="headerlink" href="#printing" title="Permalink to this heading">¶</a></h2>
-<p>To print spreadsheets it is recommended to export using one of the formats below and to handle page layout with a desktop application such as LibreOffice Calc.</p>
-<p>Alternatively the <code class="docutils literal notranslate"><span class="pre">.pdf</span></code> export can be used to produce file for print, results may vary depending on the layout of the document.</p>
+<p class="linemarker linemarker-73">To print spreadsheets it is recommended to export using one of the formats below and to handle page layout with a desktop application such as LibreOffice Calc.</p>
+<p class="linemarker linemarker-75">Alternatively the <code class="docutils literal notranslate"><span class="pre">.pdf</span></code> export can be used to produce file for print, results may vary depending on the layout of the document.</p>
 </section>
 <section id="import-export">
 <h2>Import/Export<a class="headerlink" href="#import-export" title="Permalink to this heading">¶</a></h2>

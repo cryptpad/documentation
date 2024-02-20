@@ -140,7 +140,7 @@ Security & Privacy
 ~~~~~~~~~~~~~~~~~~
 
 - **Close remote sessions**: Log out of all sessions except the one from which this option is activated. (see also :ref:`remote_disconnect`) :badge_user:`Logged in users`
-- **Two-Factor Authentication (2FA)**: Protect your account with an additional verification code provided by an authenticator app of your choice.   :badge_user:`Logged in users` :badge_new:`New in version 5.4` 
+- **Two-Factor Authentication (2FA)**: Protect your account with an additional verification code provided by an authenticator app of your choice.   :badge_user:`Logged in users`
 
   To activate 2FA:
 
