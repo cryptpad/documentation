@@ -299,6 +299,10 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../../user_guide/accessibility.html">Accessibility</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../user_guide/accessibility.html#feedback-channels">Feedback channels</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../admin_guide/index.html">Administrator Guide</a><ul>
@@ -361,10 +365,16 @@
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#general">General</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#enable-remote-embedding">Enable remote embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#mandatory-two-factor-authentication">Mandatory Two-Factor Authentication</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#admin-contact-email">Admin contact email</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#instance-information">Instance information</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#user-directory">User Directory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#invitation-links">Invitation Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#id1">User Directory</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
@@ -389,7 +399,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#performance">Performance</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#id1">Performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#id2">Performance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#measure-disk-performance">Measure disk performance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#disk-performance-measurement-window">Disk performance measurement window</a></li>
 </ul>
@@ -652,67 +662,67 @@
             
   <section id="outer">
 <h1>Outer<a class="headerlink" href="#outer" title="Permalink to this heading">¶</a></h1>
-<p>The &quot;outer&quot; level represents the starting point of the CryptPad code. Except for the initial HTML file loaded by the browser, this level is entirely made of JavaScript code. It is split into two main files, which are connected to the iframe inner for one and to the worker for the other. The APIs used to communicate are the same in both cases.</p>
+<p class="linemarker linemarker-4">The &quot;outer&quot; level represents the starting point of the CryptPad code. Except for the initial HTML file loaded by the browser, this level is entirely made of JavaScript code. It is split into two main files, which are connected to the iframe inner for one and to the worker for the other. The APIs used to communicate are the same in both cases.</p>
 <section id="communication-between-levels">
 <h2>Communication between levels<a class="headerlink" href="#communication-between-levels" title="Permalink to this heading">¶</a></h2>
-<p>The communication is done using <code class="docutils literal notranslate"><span class="pre">www/common/outer/worker-channel.js</span></code>, a mini-library developed in CryptPad. This library allows two systems to send &quot;query&quot; and &quot;event&quot; messages to each other. A &quot;query&quot; consists of sending data and waiting for a response, while an &quot;event&quot; is just sending data.</p>
-<p>This library automatically manages callbacks for received answers and allows each party to indicate when it is ready to communicate. The way messages are sent is managed outside the library thanks to a <code class="docutils literal notranslate"><span class="pre">sendMessage</span></code> function that is provided as an argument. If it is a query, a callback is included with the data.</p>
+<p class="linemarker linemarker-9">The communication is done using <code class="docutils literal notranslate"><span class="pre">www/common/outer/worker-channel.js</span></code>, a mini-library developed in CryptPad. This library allows two systems to send &quot;query&quot; and &quot;event&quot; messages to each other. A &quot;query&quot; consists of sending data and waiting for a response, while an &quot;event&quot; is just sending data.</p>
+<p class="linemarker linemarker-11">This library automatically manages callbacks for received answers and allows each party to indicate when it is ready to communicate. The way messages are sent is managed outside the library thanks to a <code class="docutils literal notranslate"><span class="pre">sendMessage</span></code> function that is provided as an argument. If it is a query, a callback is included with the data.</p>
 </section>
 <section id="communication-with-inner">
 <h2>Communication with inner<a class="headerlink" href="#communication-with-inner" title="Permalink to this heading">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">www/common/sframe-common-outer.js</span></code></p>
-<p>This is one of the first main JavaScript files loaded by all CryptPad applications. It is loaded just after the creation of the inner iframe and will first proceed to the installation of a communication channel between these two levels. Once this channel is created, it will load the second main JavaScript file which will manage the &quot;worker&quot; side. This is also the only file that has direct access to the keys contained in the URL of the document.</p>
-<p>Two steps take place in parallel:</p>
+<p class="linemarker linemarker-16"><code class="docutils literal notranslate"><span class="pre">www/common/sframe-common-outer.js</span></code></p>
+<p class="linemarker linemarker-18">This is one of the first main JavaScript files loaded by all CryptPad applications. It is loaded just after the creation of the inner iframe and will first proceed to the installation of a communication channel between these two levels. Once this channel is created, it will load the second main JavaScript file which will manage the &quot;worker&quot; side. This is also the only file that has direct access to the keys contained in the URL of the document.</p>
+<p class="linemarker linemarker-20">Two steps take place in parallel:</p>
 <ul class="simple">
-<li><p>loading the user account in the worker</p></li>
-<li><p>loading the application interface in the inner iframe</p></li>
+<li><p class="linemarker linemarker-22">loading the user account in the worker</p></li>
+<li><p class="linemarker linemarker-23">loading the application interface in the inner iframe</p></li>
 </ul>
-<p>Once the user account is loaded, <code class="docutils literal notranslate"><span class="pre">sframe-common-outer</span></code> initializes all its &quot;handlers&quot; which manage the events and queries received from &quot;inner&quot;. There are many such &quot;handlers&quot; which can be found in the code by searching for  <code class="docutils literal notranslate"><span class="pre">sframeChan.on('...',</span> <span class="pre">handler);</span></code>. They are notably used to:</p>
+<p class="linemarker linemarker-25">Once the user account is loaded, <code class="docutils literal notranslate"><span class="pre">sframe-common-outer</span></code> initializes all its &quot;handlers&quot; which manage the events and queries received from &quot;inner&quot;. There are many such &quot;handlers&quot; which can be found in the code by searching for  <code class="docutils literal notranslate"><span class="pre">sframeChan.on('...',</span> <span class="pre">handler);</span></code>. They are notably used to:</p>
 <ul class="simple">
-<li><p>Execute functions related to the &quot;outer&quot; level</p></li>
+<li><p class="linemarker linemarker-27">Execute functions related to the &quot;outer&quot; level</p></li>
 </ul>
 <blockquote>
 <div><ul class="simple">
-<li><p>Change the title of the tab or its icon</p></li>
-<li><p>Modify the localStorage or modify theStorage session</p></li>
+<li><p class="linemarker linemarker-29">Change the title of the tab or its icon</p></li>
+<li><p class="linemarker linemarker-30">Modify the localStorage or modify theStorage session</p></li>
 </ul>
 </div></blockquote>
 <ul class="simple">
-<li><p>Execute functions related to the keys of the document</p></li>
+<li><p class="linemarker linemarker-32">Execute functions related to the keys of the document</p></li>
 </ul>
 <blockquote>
 <div><ul class="simple">
-<li><p>Change the document password (requires decrypting and re-encrypting the entire content)</p></li>
-<li><p>Save or modify the pad data in the drive (the URL of the pad is stored in the drive)</p></li>
-<li><p>Make a copy or make a template of the document (requires access to the decrypted content to re-encrypt it differently)</p></li>
+<li><p class="linemarker linemarker-34">Change the document password (requires decrypting and re-encrypting the entire content)</p></li>
+<li><p class="linemarker linemarker-35">Save or modify the pad data in the drive (the URL of the pad is stored in the drive)</p></li>
+<li><p class="linemarker linemarker-36">Make a copy or make a template of the document (requires access to the decrypted content to re-encrypt it differently)</p></li>
 </ul>
 </div></blockquote>
 <ul class="simple">
-<li><p>Transfer commands to the worker</p></li>
+<li><p class="linemarker linemarker-38">Transfer commands to the worker</p></li>
 </ul>
 <blockquote>
 <div><ul class="simple">
-<li><p>File Upload</p></li>
-<li><p>Access to more data</p></li>
-<li><p>Join a document in order to send and receive patches</p></li>
-<li><p>Document management actions (rename, delete, access list, owners, etc.)</p></li>
+<li><p class="linemarker linemarker-40">File Upload</p></li>
+<li><p class="linemarker linemarker-41">Access to more data</p></li>
+<li><p class="linemarker linemarker-42">Join a document in order to send and receive patches</p></li>
+<li><p class="linemarker linemarker-43">Document management actions (rename, delete, access list, owners, etc.)</p></li>
 </ul>
 </div></blockquote>
 <ul class="simple">
-<li><p>Transfer commands to the worker's modules</p></li>
+<li><p class="linemarker linemarker-45">Transfer commands to the worker's modules</p></li>
 </ul>
 <blockquote>
 <div><ul class="simple">
-<li><p>These commands usually only pass through here, they are not read and are sent directly to the worker</p></li>
+<li><p class="linemarker linemarker-47">These commands usually only pass through here, they are not read and are sent directly to the worker</p></li>
 </ul>
 </div></blockquote>
-<p>Once all these &quot;handlers&quot; have been registered, <code class="docutils literal notranslate"><span class="pre">sframe-common-outer</span></code> declares itself &quot;ready&quot; and, once &quot;inner&quot; declares the same, the script starts the realtime engine (if necessary) creating a new document or joining an existing one.</p>
+<p class="linemarker linemarker-49">Once all these &quot;handlers&quot; have been registered, <code class="docutils literal notranslate"><span class="pre">sframe-common-outer</span></code> declares itself &quot;ready&quot; and, once &quot;inner&quot; declares the same, the script starts the realtime engine (if necessary) creating a new document or joining an existing one.</p>
 </section>
 <section id="communication-with-the-worker">
 <h2>Communication with the worker<a class="headerlink" href="#communication-with-the-worker" title="Permalink to this heading">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">www/common/cryptpad-common.js</span></code></p>
-<p>The main role of this file is to create a communication channel with the worker and to initialize it for the user account. The keys of the account  have been extracted from the localStorage beforehand. Once the user account and all the modules are loaded, the worker sends a signal to cryptpad-common which allows the sframe-common-outer script to continue.</p>
-<p>Apart from this user account loading process, <code class="docutils literal notranslate"><span class="pre">cryptpad-common</span></code> keeps a privileged contact with the worker. This allows it to perform some tasks specific to the current tab but which require access to the worker's data.</p>
+<p class="linemarker linemarker-54"><code class="docutils literal notranslate"><span class="pre">www/common/cryptpad-common.js</span></code></p>
+<p class="linemarker linemarker-56">The main role of this file is to create a communication channel with the worker and to initialize it for the user account. The keys of the account  have been extracted from the localStorage beforehand. Once the user account and all the modules are loaded, the worker sends a signal to cryptpad-common which allows the sframe-common-outer script to continue.</p>
+<p class="linemarker linemarker-58">Apart from this user account loading process, <code class="docutils literal notranslate"><span class="pre">cryptpad-common</span></code> keeps a privileged contact with the worker. This allows it to perform some tasks specific to the current tab but which require access to the worker's data.</p>
 </section>
 </section>
 

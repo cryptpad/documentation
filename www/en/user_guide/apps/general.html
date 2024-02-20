@@ -299,6 +299,10 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../accessibility.html">Accessibility</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../accessibility.html#feedback-channels">Feedback channels</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../admin_guide/index.html">Administrator Guide</a><ul>
@@ -361,10 +365,16 @@
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#general">General</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#enable-remote-embedding">Enable remote embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#mandatory-two-factor-authentication">Mandatory Two-Factor Authentication</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#admin-contact-email">Admin contact email</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#instance-information">Instance information</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#user-directory">User Directory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#invitation-links">Invitation Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#id1">User Directory</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
@@ -389,7 +399,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#performance">Performance</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#id1">Performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#id2">Performance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#measure-disk-performance">Measure disk performance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#disk-performance-measurement-window">Disk performance measurement window</a></li>
 </ul>
@@ -652,58 +662,58 @@
 <h1>General<a class="headerlink" href="#general" title="Permalink to this heading">¶</a></h1>
 <section id="new-document">
 <span id="id1"></span><h2>New document<a class="headerlink" href="#new-document" title="Permalink to this heading">¶</a></h2>
-<p>To create a new document:</p>
+<p class="linemarker linemarker-9">To create a new document:</p>
 <ul class="simple">
-<li><p>From anywhere on CryptPad: <code class="docutils literal notranslate"><span class="pre">Ctrl+e</span></code>.</p></li>
-<li><p>From the CryptDrive:</p>
+<li><p class="linemarker linemarker-11">From anywhere on CryptPad: <code class="docutils literal notranslate"><span class="pre">Ctrl+e</span></code>.</p></li>
+<li><p class="linemarker linemarker-12">From the CryptDrive:</p>
 <ul>
-<li><p><em class="fa fa-plus"></em> <strong>New</strong> in the toolbar.</p></li>
-<li><p><em class="fa fa-plus"></em> <strong>New</strong> at the bottom of the file list/grid.</p></li>
+<li><p class="linemarker linemarker-14"><em class="fa fa-plus"></em> <strong>New</strong> in the toolbar.</p></li>
+<li><p class="linemarker linemarker-15"><em class="fa fa-plus"></em> <strong>New</strong> at the bottom of the file list/grid.</p></li>
 </ul>
 </li>
-<li><p>From a document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-plus"></em> <strong>New</strong>.</p></li>
+<li><p class="linemarker linemarker-17">From a document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-plus"></em> <strong>New</strong>.</p></li>
 </ul>
 <img alt="../../_images/app-creation-screen.png" class="screenshot" src="../../_images/app-creation-screen.png" />
-<p><span class="badge-user">Logged in users</span></p>
-<p>The creation screen offers a number of options when new documents are
+<p class="linemarker linemarker-22"><span class="badge-user">Logged in users</span></p>
+<p class="linemarker linemarker-24">The creation screen offers a number of options when new documents are
 created.</p>
 <ul class="simple">
-<li><p><strong>Owned document</strong>: Create the new document as <a class="reference internal" href="../share_and_access.html#owners"><span class="std std-ref">owner</span></a>. If the document is created without an owner this setting cannot be modified.</p></li>
-<li><p><strong>Expiring document</strong>: Specify an expiry date after which the document will be destroyed. This setting cannot be modified after the document is created.</p></li>
-<li><p><strong>Add a password</strong>: Secure the sharing of the document with a <a class="reference internal" href="../security.html#passwords"><span class="std std-ref">password</span></a>. This setting can be changed later in the <a class="reference internal" href="../share_and_access.html#access"><span class="std std-ref">Access</span></a> menu.</p></li>
-<li><p><strong>Template</strong>: Choose to start from a blank document or use a <a class="reference internal" href="../drive.html#templates"><span class="std std-ref">template</span></a> as a starting point.</p></li>
+<li><p class="linemarker linemarker-27"><strong>Owned document</strong>: Create the new document as <a class="reference internal" href="../share_and_access.html#owners"><span class="std std-ref">owner</span></a>. If the document is created without an owner this setting cannot be modified.</p></li>
+<li><p class="linemarker linemarker-29"><strong>Expiring document</strong>: Specify an expiry date after which the document will be destroyed. This setting cannot be modified after the document is created.</p></li>
+<li><p class="linemarker linemarker-31"><strong>Add a password</strong>: Secure the sharing of the document with a <a class="reference internal" href="../security.html#passwords"><span class="std std-ref">password</span></a>. This setting can be changed later in the <a class="reference internal" href="../share_and_access.html#access"><span class="std std-ref">Access</span></a> menu.</p></li>
+<li><p class="linemarker linemarker-33"><strong>Template</strong>: Choose to start from a blank document or use a <a class="reference internal" href="../drive.html#templates"><span class="std std-ref">template</span></a> as a starting point.</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>All templates saved in CryptDrive or in teams that you are part of appear on the creation screen. To save a document as a template:</p>
+<p class="linemarker linemarker-36">All templates saved in CryptDrive or in teams that you are part of appear on the creation screen. To save a document as a template:</p>
 <ul class="simple">
-<li><p>In the open document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="cptools cptools-new-template"></em> <strong>Save as template</strong>.</p></li>
+<li><p class="linemarker linemarker-38">In the open document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="cptools cptools-new-template"></em> <strong>Save as template</strong>.</p></li>
 </ul>
-<p>or</p>
+<p class="linemarker linemarker-40">or</p>
 <ul class="simple">
-<li><p>In the CryptDrive: Drag the document to the <em class="cptools cptools-template"></em> <strong>Templates</strong> folder.</p></li>
+<li><p class="linemarker linemarker-42">In the CryptDrive: Drag the document to the <em class="cptools cptools-template"></em> <strong>Templates</strong> folder.</p></li>
 </ul>
 </div>
 </section>
 <section id="saving">
 <span id="id2"></span><h2>Saving<a class="headerlink" href="#saving" title="Permalink to this heading">¶</a></h2>
-<p>Changes to documents are saved automatically. The status line in the document toolbar (under the title) confirms that changes have been saved.</p>
+<p class="linemarker linemarker-49">Changes to documents are saved automatically. The status line in the document toolbar (under the title) confirms that changes have been saved.</p>
 </section>
 <section id="make-a-copy">
 <span id="id3"></span><h2>Make a copy<a class="headerlink" href="#make-a-copy" title="Permalink to this heading">¶</a></h2>
-<p>To duplicate a document:</p>
+<p class="linemarker linemarker-56">To duplicate a document:</p>
 <ul class="simple">
-<li><p>From the document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-clone"></em> <strong>Make a copy</strong>.</p></li>
-<li><p>From the CryptDrive: <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document &gt; <em class="fa fa-clone"></em>
+<li><p class="linemarker linemarker-58">From the document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-clone"></em> <strong>Make a copy</strong>.</p></li>
+<li><p class="linemarker linemarker-59">From the CryptDrive: <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document &gt; <em class="fa fa-clone"></em>
 <strong>Make a copy</strong>.</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Make a copy can be used to purge history from a file, for example if you want to redact content from the history and/or make it completely unavailable.</p>
+<p class="linemarker linemarker-64">Make a copy can be used to purge history from a file, for example if you want to redact content from the history and/or make it completely unavailable.</p>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Beware, an important caveat of using Make a copy is that you'll have to share again the document with your contacts or the persons you sent the link to.</p>
+<p class="linemarker linemarker-68">Beware, an important caveat of using Make a copy is that you'll have to share again the document with your contacts or the persons you sent the link to.</p>
 </div>
 </section>
 <section id="document-history">
@@ -714,41 +724,41 @@ created.</p>
 <p><span class="caption-text">The history toolbar</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<p>The history of documents is saved and can be restored if needed. To view and restore the history of a document:</p>
+<p class="linemarker linemarker-80">The history of documents is saved and can be restored if needed. To view and restore the history of a document:</p>
 <ol class="arabic simple">
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-history"></em> <strong>History</strong>.</p></li>
-<li><p>Use the arrows to navigate:</p>
+<li><p class="linemarker linemarker-82"><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-history"></em> <strong>History</strong>.</p></li>
+<li><p class="linemarker linemarker-83">Use the arrows to navigate:</p>
 <ul class="simple">
-<li><p><em class="fa fa-step-backward"></em> and <em class="fa fa-step-forward"></em> between each edit.</p></li>
-<li><p><em class="fa fa-step-backward"></em> <em class="fa fa-user"></em> and <em class="fa fa-user"></em> <em class="fa fa-step-forward"></em> between each author.</p></li>
-<li><p><em class="fa fa-step-backward"></em> <em class="fa fa-users"></em> and <em class="fa fa-users"></em> <em class="fa fa-step-forward"></em> between each editing session (when the same group of authors was connected to the document).</p></li>
+<li><p class="linemarker linemarker-85"><em class="fa fa-step-backward"></em> and <em class="fa fa-step-forward"></em> between each edit.</p></li>
+<li><p class="linemarker linemarker-86"><em class="fa fa-step-backward"></em> <em class="fa fa-user"></em> and <em class="fa fa-user"></em> <em class="fa fa-step-forward"></em> between each author.</p></li>
+<li><p class="linemarker linemarker-87"><em class="fa fa-step-backward"></em> <em class="fa fa-users"></em> and <em class="fa fa-users"></em> <em class="fa fa-step-forward"></em> between each editing session (when the same group of authors was connected to the document).</p></li>
 </ul>
 </li>
-<li><p>Restore the displayed version with <em class="fa fa-check"></em> <strong>Restore</strong> , or close the history without restoring
+<li><p class="linemarker linemarker-89">Restore the displayed version with <em class="fa fa-check"></em> <strong>Restore</strong> , or close the history without restoring
 with <em class="fa fa-times"></em> <strong>Close</strong>.</p></li>
 </ol>
-<p>To save storage space, history can be deleted in the document’s <a class="reference internal" href="#document-properties"><span class="std std-ref">properties</span></a> <span class="badge-owner">Document owners</span></p>
+<p class="linemarker linemarker-92">To save storage space, history can be deleted in the document’s <a class="reference internal" href="#document-properties"><span class="std std-ref">properties</span></a> <span class="badge-owner">Document owners</span></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The history functionality works slightly differently in the <a class="reference internal" href="sheets.html#app-sheets"><span class="std std-ref">Spreadsheet</span></a> application, due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration. Please refer to <a class="reference internal" href="sheets.html#sheets-history"><span class="std std-ref">spreadsheet history</span></a> for further details.</p>
+<p class="linemarker linemarker-95">The history functionality works slightly differently in the <a class="reference internal" href="sheets.html#app-sheets"><span class="std std-ref">Spreadsheet</span></a> application, due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration. Please refer to <a class="reference internal" href="sheets.html#sheets-history"><span class="std std-ref">spreadsheet history</span></a> for further details.</p>
 </div>
-<p><strong>Version Links</strong></p>
-<p>To share a link to the displayed version of the history:</p>
+<p class="linemarker linemarker-97"><strong>Version Links</strong></p>
+<p class="linemarker linemarker-99">To share a link to the displayed version of the history:</p>
 <ul class="simple">
-<li><p><em class="fa fa-share-alt"></em> <strong>Share</strong> in the toolbar.</p></li>
-<li><p>Select <strong>Contacts</strong>, <strong>Link</strong> or <strong>Embed</strong> similarly to when <a class="reference internal" href="../share_and_access.html#share"><span class="std std-ref">sharing a document</span></a>.</p></li>
+<li><p class="linemarker linemarker-101"><em class="fa fa-share-alt"></em> <strong>Share</strong> in the toolbar.</p></li>
+<li><p class="linemarker linemarker-102">Select <strong>Contacts</strong>, <strong>Link</strong> or <strong>Embed</strong> similarly to when <a class="reference internal" href="../share_and_access.html#share"><span class="std std-ref">sharing a document</span></a>.</p></li>
 </ul>
-<p>Recipients will be able to view the selected version in read-only mode.</p>
+<p class="linemarker linemarker-104">Recipients will be able to view the selected version in read-only mode.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Sharing a link to a version also gives read-only access to all versions of the document.</p>
+<p class="linemarker linemarker-107">Sharing a link to a version also gives read-only access to all versions of the document.</p>
 </div>
-<p id="snapshot-from-history"><strong>Create a snapshot from history</strong></p>
-<p>To create a <a class="reference internal" href="#snapshots"><span class="std std-ref">snapshot</span></a> from the displayed version of the history:</p>
+<p class="linemarker linemarker-111" id="snapshot-from-history"><strong>Create a snapshot from history</strong></p>
+<p class="linemarker linemarker-113">To create a <a class="reference internal" href="#snapshots"><span class="std std-ref">snapshot</span></a> from the displayed version of the history:</p>
 <ul class="simple">
-<li><p><em class="fa fa-camera"></em> button in the toolbar.</p></li>
-<li><p>In the dialog, provide a name for the snapshot.</p></li>
-<li><p><em class="fa fa-camera"></em> <strong>New Snapshot</strong></p></li>
+<li><p class="linemarker linemarker-115"><em class="fa fa-camera"></em> button in the toolbar.</p></li>
+<li><p class="linemarker linemarker-116">In the dialog, provide a name for the snapshot.</p></li>
+<li><p class="linemarker linemarker-117"><em class="fa fa-camera"></em> <strong>New Snapshot</strong></p></li>
 </ul>
 </section>
 <section id="snapshots">
@@ -759,59 +769,59 @@ with <em class="fa fa-times"></em> <strong>Close</strong>.</p></li>
 <p><span class="caption-text">The snapshots dialog</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
 </figcaption>
 </figure>
-<p>Snapshots are specific points in the history of a document that are named for easy reference.</p>
-<p>To create a snapshot from the current state of the document:</p>
+<p class="linemarker linemarker-129">Snapshots are specific points in the history of a document that are named for easy reference.</p>
+<p class="linemarker linemarker-131">To create a snapshot from the current state of the document:</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-camera"></em> <strong>Snapshots</strong></p></li>
-<li><p>In the dialog, provide a name for the snapshot.</p></li>
-<li><p><em class="fa fa-camera"></em> <strong>New Snapshot</strong></p></li>
+<li><p class="linemarker linemarker-133"><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-camera"></em> <strong>Snapshots</strong></p></li>
+<li><p class="linemarker linemarker-134">In the dialog, provide a name for the snapshot.</p></li>
+<li><p class="linemarker linemarker-135"><em class="fa fa-camera"></em> <strong>New Snapshot</strong></p></li>
 </ul>
-<p>To create a snapshot from a version in the document's history see <a class="reference internal" href="#document-history"><span class="std std-ref">snapshot from history</span></a> above.</p>
-<p>To view and restore a snapshot:</p>
+<p class="linemarker linemarker-137">To create a snapshot from a version in the document's history see <a class="reference internal" href="#document-history"><span class="std std-ref">snapshot from history</span></a> above.</p>
+<p class="linemarker linemarker-139">To view and restore a snapshot:</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-camera"></em> <strong>Snapshots</strong></p></li>
-<li><p>In the dialog, <code class="docutils literal notranslate"><span class="pre">Click</span></code> on the snapshot in the list and <em class="fa fa-eye"></em> <strong>View</strong>.</p></li>
-<li><p>The snapshot opens in a new window.</p></li>
-<li><p><em class="fa fa-check"></em> <strong>Restore</strong> or <em class="fa fa-times"></em> <strong>Close</strong></p></li>
+<li><p class="linemarker linemarker-141"><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-camera"></em> <strong>Snapshots</strong></p></li>
+<li><p class="linemarker linemarker-142">In the dialog, <code class="docutils literal notranslate"><span class="pre">Click</span></code> on the snapshot in the list and <em class="fa fa-eye"></em> <strong>View</strong>.</p></li>
+<li><p class="linemarker linemarker-143">The snapshot opens in a new window.</p></li>
+<li><p class="linemarker linemarker-144"><em class="fa fa-check"></em> <strong>Restore</strong> or <em class="fa fa-times"></em> <strong>Close</strong></p></li>
 </ul>
-<p>To delete a snapshot:</p>
+<p class="linemarker linemarker-146">To delete a snapshot:</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-camera"></em> <strong>Snapshots</strong></p></li>
-<li><p>In the dialog, <code class="docutils literal notranslate"><span class="pre">Click</span></code> on the snapshot in the list and <em class="fa fa-trash"></em> <strong>Delete</strong>.</p></li>
+<li><p class="linemarker linemarker-148"><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-camera"></em> <strong>Snapshots</strong></p></li>
+<li><p class="linemarker linemarker-149">In the dialog, <code class="docutils literal notranslate"><span class="pre">Click</span></code> on the snapshot in the list and <em class="fa fa-trash"></em> <strong>Delete</strong>.</p></li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Snapshots are part of the document's history. If you delete the history in the <a class="reference internal" href="#document-properties"><span class="std std-ref">Properties</span></a>
+<p class="linemarker linemarker-152">Snapshots are part of the document's history. If you delete the history in the <a class="reference internal" href="#document-properties"><span class="std std-ref">Properties</span></a>
 snapshots will be deleted as well.</p>
 </div>
 </section>
 <section id="properties">
 <span id="document-properties"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this heading">¶</a></h2>
 <img alt="../../_images/modal-properties.png" class="screenshot" src="../../_images/modal-properties.png" />
-<p>To access the properties menu:</p>
+<p class="linemarker linemarker-163">To access the properties menu:</p>
 <ul class="simple">
-<li><p>From the document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-info-circle"></em>
+<li><p class="linemarker linemarker-165">From the document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-info-circle"></em>
 <strong>Properties</strong>.</p></li>
-<li><p>From the CryptDrive: <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document &gt;
+<li><p class="linemarker linemarker-167">From the CryptDrive: <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document &gt;
 <em class="fa fa-info-circle"></em> <strong>Properties</strong>.</p></li>
 </ul>
-<p>Available data:</p>
+<p class="linemarker linemarker-170">Available data:</p>
 <ul class="simple">
-<li><p>Document identifier to share with instance administrators in case of an issue. (note that this does not expose the content of of the document).</p></li>
-<li><p>Links to edit and view (depending on your permissions).</p></li>
-<li><p>Dates of creation and last access.</p></li>
-<li><p>Size.</p></li>
+<li><p class="linemarker linemarker-172">Document identifier to share with instance administrators in case of an issue. (note that this does not expose the content of of the document).</p></li>
+<li><p class="linemarker linemarker-173">Links to edit and view (depending on your permissions).</p></li>
+<li><p class="linemarker linemarker-174">Dates of creation and last access.</p></li>
+<li><p class="linemarker linemarker-175">Size.</p></li>
 </ul>
-<p>The document size shows the proportions used for content and for history. To save storage space, delete the document’s history with <strong>Delete history</strong> and confirm. <span class="badge-owner">Document owners</span></p>
+<p class="linemarker linemarker-177">The document size shows the proportions used for content and for history. To save storage space, delete the document’s history with <strong>Delete history</strong> and confirm. <span class="badge-owner">Document owners</span></p>
 </section>
 <section id="users-and-chat">
 <span id="document-users-and-chat"></span><h2>Users and chat<a class="headerlink" href="#users-and-chat" title="Permalink to this heading">¶</a></h2>
-<p>Interact with users connected to the same document through the user-list
+<p class="linemarker linemarker-184">Interact with users connected to the same document through the user-list
 <em class="fa fa-user"></em> <em class="fa fa-eye"></em> and the <em class="fa fa-comments"></em> <strong>Chat</strong>.</p>
-<p>To show/hide these panes:</p>
+<p class="linemarker linemarker-187">To show/hide these panes:</p>
 <ul class="simple">
-<li><p><em class="fa fa-user"></em> <em class="fa fa-eye"></em> for the user-list.</p></li>
-<li><p><em class="fa fa-comments"></em> <strong>Chat</strong> for the chat.</p></li>
+<li><p class="linemarker linemarker-189"><em class="fa fa-user"></em> <em class="fa fa-eye"></em> for the user-list.</p></li>
+<li><p class="linemarker linemarker-190"><em class="fa fa-comments"></em> <strong>Chat</strong> for the chat.</p></li>
 </ul>
 </section>
 </section>
