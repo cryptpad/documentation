@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>General information &mdash; CryptPad 5.6.0 documentation</title>
+  <title>General information &mdash; CryptPad 5.7.0 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.6.0</span>
+              <span class="release">Documentation 5.7.0</span>
             </a>
             
 <div role="search">
@@ -662,28 +662,28 @@
 <h1>General information<a class="headerlink" href="#general-information" title="Permalink to this heading">¶</a></h1>
 <section id="sandbox">
 <h2>Sandbox<a class="headerlink" href="#sandbox" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-7">CryptPad uses a sandboxing system that isolates the user interface from the in-memory content. For user experience reasons, it is necessary to keep in memory all the information of the current user account (drive content, contact list, teams, etc.). The interface, which is the exposed part of the structure, could contain vulnerabilities and is therefore not &quot;shown&quot; any user information. It receives only data relevant for the current document. This isolation system has been implemented by putting the entire user interface in an iframe that takes up the whole window and that shows the <strong>safe</strong> URL. The base level (parent of the iframe) contains the sensitive data and is opened on the <strong>unsafe</strong> URL.</p>
-<p class="linemarker linemarker-9">The server configuration indicates two different URLs with the fields <code class="docutils literal notranslate"><span class="pre">httpUnsafeOrigin</span></code> and <code class="docutils literal notranslate"><span class="pre">httpSafeOrigin</span></code>. By default, on a development instance, they correspond to <code class="docutils literal notranslate"><span class="pre">http://localhost:3000/</span></code> (<strong>unsafe</strong>) and <code class="docutils literal notranslate"><span class="pre">http://localhost:3001/</span></code> (<strong>safe</strong>). The second (<strong>safe</strong>) is usually not shown to users, it's only used internally within an iframe. Opening CryptPad manually with the safe URL won't provide access to applications.</p>
+<p>CryptPad uses a sandboxing system that isolates the user interface from the in-memory content. For user experience reasons, it is necessary to keep in memory all the information of the current user account (drive content, contact list, teams, etc.). The interface, which is the exposed part of the structure, could contain vulnerabilities and is therefore not &quot;shown&quot; any user information. It receives only data relevant for the current document. This isolation system has been implemented by putting the entire user interface in an iframe that takes up the whole window and that shows the <strong>safe</strong> URL. The base level (parent of the iframe) contains the sensitive data and is opened on the <strong>unsafe</strong> URL.</p>
+<p>The server configuration indicates two different URLs with the fields <code class="docutils literal notranslate"><span class="pre">httpUnsafeOrigin</span></code> and <code class="docutils literal notranslate"><span class="pre">httpSafeOrigin</span></code>. By default, on a development instance, they correspond to <code class="docutils literal notranslate"><span class="pre">http://localhost:3000/</span></code> (<strong>unsafe</strong>) and <code class="docutils literal notranslate"><span class="pre">http://localhost:3001/</span></code> (<strong>safe</strong>). The second (<strong>safe</strong>) is usually not shown to users, it's only used internally within an iframe. Opening CryptPad manually with the safe URL won't provide access to applications.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p class="linemarker linemarker-11">In a production system, it is possible to use different sub-domains or even different domains to represent these 2 origins. For example, on the main instance managed by the development team, the unsafe URL is <code class="docutils literal notranslate"><span class="pre">https://cryptpad.fr</span></code> and the safe URL is <code class="docutils literal notranslate"><span class="pre">https://sandbox.cryptpad.info/.</span></code>.</p>
+<p>In a production system, it is possible to use different sub-domains or even different domains to represent these 2 origins. For example, on the main instance managed by the development team, the unsafe URL is <code class="docutils literal notranslate"><span class="pre">https://cryptpad.fr</span></code> and the safe URL is <code class="docutils literal notranslate"><span class="pre">https://sandbox.cryptpad.info/.</span></code>.</p>
 </div>
 </section>
 <section id="level-structure">
 <h2>5-level structure<a class="headerlink" href="#level-structure" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-16">CryptPad's code is split in 5 distinct levels, 2 server side and 3 client side.</p>
+<p>CryptPad's code is split in 5 distinct levels, 2 server side and 3 client side.</p>
 <ul class="simple">
-<li><p class="linemarker linemarker-18">Server side</p>
+<li><p>Server side</p>
 <ul>
-<li><p class="linemarker linemarker-20">The <strong>server</strong> which contains the code launched in the main process. It manages the websocket connections and all calls to the server go through this level.</p></li>
-<li><p class="linemarker linemarker-21">The <strong>workers</strong> that manage all database connections and scripts that require more CPU resources. The main <strong>server</strong> calls them when it receives certain commands from users. They are launched in separate sub-processes in order to be able to make the most of the available CPU cores.</p></li>
+<li><p>The <strong>server</strong> which contains the code launched in the main process. It manages the websocket connections and all calls to the server go through this level.</p></li>
+<li><p>The <strong>workers</strong> that manage all database connections and scripts that require more CPU resources. The main <strong>server</strong> calls them when it receives certain commands from users. They are launched in separate sub-processes in order to be able to make the most of the available CPU cores.</p></li>
 </ul>
 </li>
-<li><p class="linemarker linemarker-23">Client side</p>
+<li><p>Client side</p>
 <ul>
-<li><p class="linemarker linemarker-25">The base level, called <strong>outer</strong> in the code. This level is loaded with the <strong>unsafe</strong> URL (the one visible in the browser address bar) because it has access to sensitive data, including user account encryption keys.</p></li>
-<li><p class="linemarker linemarker-26">The iframe containing the user interface, called <strong>inner</strong> in the code, is launched as a daughter of <strong>outer</strong> and uses the <strong>safe</strong> URL. This iframe represents the entire screen visible by the users. No interface element is outside of the iframe. It has only access to the data that needs to be displayed on the screen.</p></li>
-<li><p class="linemarker linemarker-27">The upper level, called <strong>worker</strong>, which manages the connection to the server and keeps all the user account data in memory. This level is loaded in a SharedWorker when the browser supports it (Firefox, Chrome, Edge) with the <strong>unsafe</strong> URL, which means that all the browser's tabs loaded on this CryptPad instance will have access to the same worker. It allows us to load the account data only once for all open tabs and to use only one Websocket connection.</p></li>
+<li><p>The base level, called <strong>outer</strong> in the code. This level is loaded with the <strong>unsafe</strong> URL (the one visible in the browser address bar) because it has access to sensitive data, including user account encryption keys.</p></li>
+<li><p>The iframe containing the user interface, called <strong>inner</strong> in the code, is launched as a daughter of <strong>outer</strong> and uses the <strong>safe</strong> URL. This iframe represents the entire screen visible by the users. No interface element is outside of the iframe. It has only access to the data that needs to be displayed on the screen.</p></li>
+<li><p>The upper level, called <strong>worker</strong>, which manages the connection to the server and keeps all the user account data in memory. This level is loaded in a SharedWorker when the browser supports it (Firefox, Chrome, Edge) with the <strong>unsafe</strong> URL, which means that all the browser's tabs loaded on this CryptPad instance will have access to the same worker. It allows us to load the account data only once for all open tabs and to use only one Websocket connection.</p></li>
 </ul>
 </li>
 </ul>
@@ -695,50 +695,50 @@
 </section>
 <section id="encryption">
 <h2>Encryption<a class="headerlink" href="#encryption" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-38">CryptPad uses several encryption systems appropriate for different use cases. These systems come from the <a class="reference external" href="https://github.com/dchest/tweetnacl-js">TweetNaCl</a> library.</p>
+<p>CryptPad uses several encryption systems appropriate for different use cases. These systems come from the <a class="reference external" href="https://github.com/dchest/tweetnacl-js">TweetNaCl</a> library.</p>
 <ul class="simple">
-<li><p class="linemarker linemarker-40">Documents, user account, static files and group chat</p>
+<li><p>Documents, user account, static files and group chat</p>
 <ul>
-<li><p class="linemarker linemarker-42">Symmetric authenticated encryption &quot;xsalsa20-poly1305&quot;.</p></li>
-<li><p class="linemarker linemarker-43">A unique encryption key allows users to encrypt and decrypt the desired content. This key is derived from the &quot;hash&quot; in the URL (the part after the #) because this part is never sent to the server by the browser, which makes it possible to respect the Zero-knowledge constraint (the server doesn't know the encryption keys).</p></li>
-<li><p class="linemarker linemarker-44">All users with access to this key can decrypt the &quot;patches&quot; allowing them to rebuild the document or decrypt the chat messages.</p></li>
+<li><p>Symmetric authenticated encryption &quot;xsalsa20-poly1305&quot;.</p></li>
+<li><p>A unique encryption key allows users to encrypt and decrypt the desired content. This key is derived from the &quot;hash&quot; in the URL (the part after the #) because this part is never sent to the server by the browser, which makes it possible to respect the Zero-knowledge constraint (the server doesn't know the encryption keys).</p></li>
+<li><p>All users with access to this key can decrypt the &quot;patches&quot; allowing them to rebuild the document or decrypt the chat messages.</p></li>
 </ul>
 </li>
-<li><p class="linemarker linemarker-46">Read-only access to documents</p>
+<li><p>Read-only access to documents</p>
 <ul>
-<li><p class="linemarker linemarker-48">Signature “ed25519”.</p></li>
-<li><p class="linemarker linemarker-49">Since the encryption is symmetric, all users who can read and therefore decrypt the document can also technically encrypt messages and send them. A digital signature system makes it possible to authorize or to block sending messages.</p></li>
-<li><p class="linemarker linemarker-50">The edit URL contains a signature in addition to the encryption key. Editors will therefore be able to sign messages after encrypting them.</p></li>
-<li><p class="linemarker linemarker-51">A &quot;public&quot; verification key allows all users (editors <strong>and</strong> readers) to check if an encrypted message has been signed with the correct signing key. Messages with an invalid signature are ignored.</p></li>
-<li><p class="linemarker linemarker-52">When a document is created, the public verification key associated with this document is sent to the server. Messages with invalid signature are not stored in the database.</p></li>
+<li><p>Signature “ed25519”.</p></li>
+<li><p>Since the encryption is symmetric, all users who can read and therefore decrypt the document can also technically encrypt messages and send them. A digital signature system makes it possible to authorize or to block sending messages.</p></li>
+<li><p>The edit URL contains a signature in addition to the encryption key. Editors will therefore be able to sign messages after encrypting them.</p></li>
+<li><p>A &quot;public&quot; verification key allows all users (editors <strong>and</strong> readers) to check if an encrypted message has been signed with the correct signing key. Messages with an invalid signature are ignored.</p></li>
+<li><p>When a document is created, the public verification key associated with this document is sent to the server. Messages with invalid signature are not stored in the database.</p></li>
 </ul>
 </li>
-<li><p class="linemarker linemarker-54">Private chat between two users (&quot;contacts&quot; application)</p>
+<li><p>Private chat between two users (&quot;contacts&quot; application)</p>
 <ul>
-<li><p class="linemarker linemarker-56">Asymmetric encryption &quot;x25519-xsalsa20-poly1305&quot;.</p></li>
-<li><p class="linemarker linemarker-57">When creating a user account, an asymmetric encryption key pair is generated for the account, as well as a signature key pair. Each of these pairs contains a private and a public component. The public parts are shared with the contacts.</p></li>
-<li><p class="linemarker linemarker-58">Asymmetric encryption allows to encrypt a message that only a single other user can decrypt when their public encryption key is known. Using our own private key and the contact's public key, we can encrypt the message for that user only, as long as he knows our own public key.</p></li>
-<li><p class="linemarker linemarker-59">Sending a contact request to a user allows us to exchange public keys needed for this encryption system.</p></li>
+<li><p>Asymmetric encryption &quot;x25519-xsalsa20-poly1305&quot;.</p></li>
+<li><p>When creating a user account, an asymmetric encryption key pair is generated for the account, as well as a signature key pair. Each of these pairs contains a private and a public component. The public parts are shared with the contacts.</p></li>
+<li><p>Asymmetric encryption allows to encrypt a message that only a single other user can decrypt when their public encryption key is known. Using our own private key and the contact's public key, we can encrypt the message for that user only, as long as he knows our own public key.</p></li>
+<li><p>Sending a contact request to a user allows us to exchange public keys needed for this encryption system.</p></li>
 </ul>
 </li>
-<li><p class="linemarker linemarker-61">Mailbox and notification center</p>
+<li><p>Mailbox and notification center</p>
 <ul>
-<li><p class="linemarker linemarker-63">Double asymmetric encryption &quot;x25519-xsalsa20-poly1305&quot;.</p></li>
-<li><p class="linemarker linemarker-64">The notification center works through other users sending us a &quot;notification&quot; when they perform an action concerning our account.</p></li>
-<li><p class="linemarker linemarker-65">Here we want to be able to send messages to another user in a way where they have proof of the sender's identity, without the server (or anyone with access to the database) being able to identify the sender or recipient via their public keys.</p></li>
-<li><p class="linemarker linemarker-66">The message is first encrypted asymmetrically using our private key and the recipient's public key. To be able to read this part, the recipient must know our public key, which is not necessarily the case if there was no contact request.</p></li>
-<li><p class="linemarker linemarker-67">We then add our own public key (unencrypted) to the message (encrypted), and encrypt the result asymmetrically, this time using a single-use key pair generated for the occasion. We then send the newly encrypted message with the public part of the newly generated key.</p></li>
-<li><p class="linemarker linemarker-68">The recipient can then decrypt a first time with his private key and the public single-use key. He then has access to a new encrypted content as well as our true public key. Finally, he can decrypt the real message using his private key and our public key. If this user already knew our public key, then he has cryptographic proof that we are the sender of the message.</p></li>
+<li><p>Double asymmetric encryption &quot;x25519-xsalsa20-poly1305&quot;.</p></li>
+<li><p>The notification center works through other users sending us a &quot;notification&quot; when they perform an action concerning our account.</p></li>
+<li><p>Here we want to be able to send messages to another user in a way where they have proof of the sender's identity, without the server (or anyone with access to the database) being able to identify the sender or recipient via their public keys.</p></li>
+<li><p>The message is first encrypted asymmetrically using our private key and the recipient's public key. To be able to read this part, the recipient must know our public key, which is not necessarily the case if there was no contact request.</p></li>
+<li><p>We then add our own public key (unencrypted) to the message (encrypted), and encrypt the result asymmetrically, this time using a single-use key pair generated for the occasion. We then send the newly encrypted message with the public part of the newly generated key.</p></li>
+<li><p>The recipient can then decrypt a first time with his private key and the public single-use key. He then has access to a new encrypted content as well as our true public key. Finally, he can decrypt the real message using his private key and our public key. If this user already knew our public key, then he has cryptographic proof that we are the sender of the message.</p></li>
 </ul>
 </li>
 </ul>
 </section>
 <section id="drive-and-pins-log">
 <h2>Drive and &quot;pins&quot; log<a class="headerlink" href="#drive-and-pins-log" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-73">User accounts, including their associated cryptographic keys, drive, contacts and teams, are stored in the database in the same way as any CryptPad collaborative document. Encryption makes it indistinguishable from a pad for anyone who has access to the database.</p>
-<p class="linemarker linemarker-75">The &quot;drive&quot; part of the account corresponds to a hierarchy of documents (files and folders), each file being associated with the address of a collaborative document. The read-only and edit addresses are stored separately so that documents can be added to the drive even if only read-only access is available.</p>
-<p class="linemarker linemarker-77">Since the drives are indistinguishable from normal documents, another system has been implemented to ensure that documents stored in them are not deleted for inactivity for registered users. This is the <strong>pin list</strong>.</p>
-<p class="linemarker linemarker-79">The database thus contains a <strong>list of pins</strong> for each registered user, each list being identified by the <strong>public signature key</strong> of the user account. This list contains the identifiers of all the collaborative documents stored in the drive of the concerned user. When the server needs to delete documents due to inactivity, it can check that they are not present in any pin list.</p>
+<p>User accounts, including their associated cryptographic keys, drive, contacts and teams, are stored in the database in the same way as any CryptPad collaborative document. Encryption makes it indistinguishable from a pad for anyone who has access to the database.</p>
+<p>The &quot;drive&quot; part of the account corresponds to a hierarchy of documents (files and folders), each file being associated with the address of a collaborative document. The read-only and edit addresses are stored separately so that documents can be added to the drive even if only read-only access is available.</p>
+<p>Since the drives are indistinguishable from normal documents, another system has been implemented to ensure that documents stored in them are not deleted for inactivity for registered users. This is the <strong>pin list</strong>.</p>
+<p>The database thus contains a <strong>list of pins</strong> for each registered user, each list being identified by the <strong>public signature key</strong> of the user account. This list contains the identifiers of all the collaborative documents stored in the drive of the concerned user. When the server needs to delete documents due to inactivity, it can check that they are not present in any pin list.</p>
 <section id="example">
 <span id="example-1"></span><h3>Example<a class="headerlink" href="#example" title="Permalink to this heading">¶</a></h3>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="c1">// Drive</span><span class="w"></span>
@@ -775,23 +775,23 @@
 </section>
 <section id="registration-login-and-block">
 <h2>Registration, login and block<a class="headerlink" href="#registration-login-and-block" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-120">A user account is composed of a collaborative document containing the drive and a list of &quot;pins&quot;. A third element is also stored for the user accounts in order to manage the password change. Although it is impossible to retrieve your account if the password is forgotten, it is possible to change the password if you still have access to the account.</p>
-<p class="linemarker linemarker-122">Contrary to classical systems where the username and the password hash are sent to the server, on CryptPad neither of these 2 pieces of information leave the user's browser. They are instead used as arguments for an <a class="reference external" href="https://en.wikipedia.org/wiki/Scrypt">Scrypt key derivation function</a> which provides the equivalent of a hash. The difference with a classical hash function is that <strong>Scrypt is deliberately made very expensive in CPU resources</strong> whereas a hash function must be as fast as possible. Since it is used to manage the user's identifiers, making it slow to execute makes it possible to block brute force attacks. In 2021, it takes several seconds to execute the function with a high-end computer.</p>
-<p class="linemarker linemarker-124">Once the function is executed, we get a hash containing a series of bytes that we will use to generate login keys. These keys, an encryption key and a key representing a unique identifier, are used to create or retrieve a <strong>block</strong>. It's an encrypted file stored on the server and containing the real keys of the user account.</p>
-<p class="linemarker linemarker-126">In summary, when you <strong>register</strong> on CryptPad, your credentials are used to create a &quot;block&quot;. In parallel, access keys to the user account are randomly created (a unique identifier for the account, an encryption key and a pair of signature keys to be able to modify the account data) and are then encrypted and stored in the block. When <strong>logging in</strong>, Scrypt allows us to retrieve the block identifier and to be able to decrypt it, which gives you access to your user account keys.</p>
-<p class="linemarker linemarker-131">When a user wants to <strong>change their password</strong>, there is therefore no need to migrate the whole account to a new document, only the &quot;block&quot; will change. Scrypt will indeed give us new login keys to use a new block. This block will be encrypted with a different encryption key than the first one, but the decrypted content will be the same: the keys of the user account. The old block is then removed.</p>
-<p class="linemarker linemarker-133">In order to allow users to stay connected without having to type their password for each new session, the keys of the block are kept in memory in the <strong>localStorage</strong> of the browser (on the &quot;unsafe&quot; domain). Logging out means deleting these keys from the localStorage.</p>
+<p>A user account is composed of a collaborative document containing the drive and a list of &quot;pins&quot;. A third element is also stored for the user accounts in order to manage the password change. Although it is impossible to retrieve your account if the password is forgotten, it is possible to change the password if you still have access to the account.</p>
+<p>Contrary to classical systems where the username and the password hash are sent to the server, on CryptPad neither of these 2 pieces of information leave the user's browser. They are instead used as arguments for an <a class="reference external" href="https://en.wikipedia.org/wiki/Scrypt">Scrypt key derivation function</a> which provides the equivalent of a hash. The difference with a classical hash function is that <strong>Scrypt is deliberately made very expensive in CPU resources</strong> whereas a hash function must be as fast as possible. Since it is used to manage the user's identifiers, making it slow to execute makes it possible to block brute force attacks. In 2021, it takes several seconds to execute the function with a high-end computer.</p>
+<p>Once the function is executed, we get a hash containing a series of bytes that we will use to generate login keys. These keys, an encryption key and a key representing a unique identifier, are used to create or retrieve a <strong>block</strong>. It's an encrypted file stored on the server and containing the real keys of the user account.</p>
+<p>In summary, when you <strong>register</strong> on CryptPad, your credentials are used to create a &quot;block&quot;. In parallel, access keys to the user account are randomly created (a unique identifier for the account, an encryption key and a pair of signature keys to be able to modify the account data) and are then encrypted and stored in the block. When <strong>logging in</strong>, Scrypt allows us to retrieve the block identifier and to be able to decrypt it, which gives you access to your user account keys.</p>
+<p>When a user wants to <strong>change their password</strong>, there is therefore no need to migrate the whole account to a new document, only the &quot;block&quot; will change. Scrypt will indeed give us new login keys to use a new block. This block will be encrypted with a different encryption key than the first one, but the decrypted content will be the same: the keys of the user account. The old block is then removed.</p>
+<p>In order to allow users to stay connected without having to type their password for each new session, the keys of the block are kept in memory in the <strong>localStorage</strong> of the browser (on the &quot;unsafe&quot; domain). Logging out means deleting these keys from the localStorage.</p>
 <section id="example-2">
 <span id="id1"></span><h3>Example<a class="headerlink" href="#example-2" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
-<li><p class="linemarker linemarker-140">Login keys (block identifier and block encryption key) on cryptpad.fr</p>
+<li><p>Login keys (block identifier and block encryption key) on cryptpad.fr</p>
 <ul>
-<li><p class="linemarker linemarker-142"><code class="docutils literal notranslate"><span class="pre">localStorage.Block_hash</span> <span class="pre">=</span> <span class="pre">&quot;https://files.cryptpad.fr/block/c8/c89FhK8CQfTcoiP073T-RwSgqbY7f--Naoa3ZH8feLk=#UDYn4ZMy1tLksGtYMPewPewCSPkM+vEbluI7hMIe81U=&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">localStorage.Block_hash</span> <span class="pre">=</span> <span class="pre">&quot;https://files.cryptpad.fr/block/c8/c89FhK8CQfTcoiP073T-RwSgqbY7f--Naoa3ZH8feLk=#UDYn4ZMy1tLksGtYMPewPewCSPkM+vEbluI7hMIe81U=&quot;</span></code></p></li>
 </ul>
 </li>
-<li><p class="linemarker linemarker-144">User account keys on cryptpad.fr</p>
+<li><p>User account keys on cryptpad.fr</p>
 <ul>
-<li><p class="linemarker linemarker-146"><code class="docutils literal notranslate"><span class="pre">&quot;/1/edit/PeWuMBluHImPezK+0IHvtA/4e4242jfxWiKi3JAjtkx-lDt/&quot;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;/1/edit/PeWuMBluHImPezK+0IHvtA/4e4242jfxWiKi3JAjtkx-lDt/&quot;</span></code></p></li>
 </ul>
 </li>
 </ul>
@@ -799,41 +799,41 @@
 </section>
 <section id="client-server-communication-netflux">
 <h2>Client-server communication (Netflux)<a class="headerlink" href="#client-server-communication-netflux" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-153">Communication between the client and the server is in the vast majority of cases using a Websocket connection. This connection is based on an implementation of the <a class="reference external" href="https://github.com/xwiki-labs/netflux-spec2/blob/master/specification.md">Netflux</a> protocol. Exceptions are static files (images, videos, pdf, etc.) and block files that are stored in encrypted format and are retrieved by users with XHR (downloading the complete encrypted file).</p>
-<p class="linemarker linemarker-155">With the Netflux protocol, users create a <strong>network</strong> which they then use to perform several types of operations. The important points concerning the implementation of the protocol are:</p>
+<p>Communication between the client and the server is in the vast majority of cases using a Websocket connection. This connection is based on an implementation of the <a class="reference external" href="https://github.com/xwiki-labs/netflux-spec2/blob/master/specification.md">Netflux</a> protocol. Exceptions are static files (images, videos, pdf, etc.) and block files that are stored in encrypted format and are retrieved by users with XHR (downloading the complete encrypted file).</p>
+<p>With the Netflux protocol, users create a <strong>network</strong> which they then use to perform several types of operations. The important points concerning the implementation of the protocol are:</p>
 <ul class="simple">
-<li><p class="linemarker linemarker-157">Each user is identified by a 32-character hexadecimal string called <strong>netfluxId</strong>. This identifier is generated by the server and is created for each Websocket connection. A user who opens CryptPad from 2 different browsers at the same time will have a netfluxId for each browser (for each connection to the server). This identifier therefore changes with each new connection, no mechanism exists to preserve the identifier of a user between different sessions.</p></li>
-<li><p class="linemarker linemarker-158">A user can join channels and send messages to them. All members of the channel receive the messages. Each collaborative document opened on CryptPad is represented by a channel on the server with a unique identifier.</p></li>
-<li><p class="linemarker linemarker-159">The channel identifier is also a 32-character hexadecimal string called <strong>channelId</strong> or <strong>channel</strong>. The channelId associated with a document is derived from its URL, so that it is known to all users having access to it.</p></li>
-<li><p class="linemarker linemarker-160">Users can send direct messages to each other without going through a channel, as long as they know the <strong>netfluxId</strong> of the recipient.</p></li>
+<li><p>Each user is identified by a 32-character hexadecimal string called <strong>netfluxId</strong>. This identifier is generated by the server and is created for each Websocket connection. A user who opens CryptPad from 2 different browsers at the same time will have a netfluxId for each browser (for each connection to the server). This identifier therefore changes with each new connection, no mechanism exists to preserve the identifier of a user between different sessions.</p></li>
+<li><p>A user can join channels and send messages to them. All members of the channel receive the messages. Each collaborative document opened on CryptPad is represented by a channel on the server with a unique identifier.</p></li>
+<li><p>The channel identifier is also a 32-character hexadecimal string called <strong>channelId</strong> or <strong>channel</strong>. The channelId associated with a document is derived from its URL, so that it is known to all users having access to it.</p></li>
+<li><p>Users can send direct messages to each other without going through a channel, as long as they know the <strong>netfluxId</strong> of the recipient.</p></li>
 </ul>
 <section id="server-side">
 <h3>Server side<a class="headerlink" href="#server-side" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-165">At the server level, Netflux is implemented via the &quot;chainpad-server&quot; NPM module: <code class="docutils literal notranslate"><span class="pre">./node_modules/chainpad-server/NetfluxWebsocketSrv.js</span></code>. This module creates the Websocket server and listens to incoming connections and client requests. It creates and keeps in memory the channels and their members as long as there is at least one member left in the channel. It also relay private messages sent by members to each other.</p>
-<p class="linemarker linemarker-167"><strong>IMPORTANT:</strong> The Netflux protocol does not mention a centralized server and therefore does not provide a direct solution for storing messages sent to the channels. The centralized server used in CryptPad is the result of a <strong>Websocket</strong> implementation of the protocol. The data storage part has been realized without modifying the rules imposed by the protocol.</p>
-<p class="linemarker linemarker-169">The <strong>data storage</strong> has been achieved by adding a &quot;fake&quot; member in each channel on the server. As soon as a channel is created/opened by a user, a special user named <strong>history keeper</strong> joins it. This user receives all encrypted messages broadcasted to the channel like any other member and stores them in a database. When a user joins a room (i.e. he opens a document), his browser will send a <strong>direct message</strong> to the <strong>history keeper</strong> member to ask for the history of the document. <strong>History keeper</strong> will send the part of the history necessary to rebuild the last version of the document. Once synchronized, the user will receive all new changes in real time and will be able to send his own changes.</p>
+<p>At the server level, Netflux is implemented via the &quot;chainpad-server&quot; NPM module: <code class="docutils literal notranslate"><span class="pre">./node_modules/chainpad-server/NetfluxWebsocketSrv.js</span></code>. This module creates the Websocket server and listens to incoming connections and client requests. It creates and keeps in memory the channels and their members as long as there is at least one member left in the channel. It also relay private messages sent by members to each other.</p>
+<p><strong>IMPORTANT:</strong> The Netflux protocol does not mention a centralized server and therefore does not provide a direct solution for storing messages sent to the channels. The centralized server used in CryptPad is the result of a <strong>Websocket</strong> implementation of the protocol. The data storage part has been realized without modifying the rules imposed by the protocol.</p>
+<p>The <strong>data storage</strong> has been achieved by adding a &quot;fake&quot; member in each channel on the server. As soon as a channel is created/opened by a user, a special user named <strong>history keeper</strong> joins it. This user receives all encrypted messages broadcasted to the channel like any other member and stores them in a database. When a user joins a room (i.e. he opens a document), his browser will send a <strong>direct message</strong> to the <strong>history keeper</strong> member to ask for the history of the document. <strong>History keeper</strong> will send the part of the history necessary to rebuild the last version of the document. Once synchronized, the user will receive all new changes in real time and will be able to send his own changes.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p class="linemarker linemarker-171">This fake user is managed by the server but his code is distinct from the &quot;Netflux&quot; part of the server. It represents the whole database and its code is separated in many files. Its code is located in <code class="docutils literal notranslate"><span class="pre">./lib/historyKeeper.js</span></code>.</p>
+<p>This fake user is managed by the server but his code is distinct from the &quot;Netflux&quot; part of the server. It represents the whole database and its code is separated in many files. Its code is located in <code class="docutils literal notranslate"><span class="pre">./lib/historyKeeper.js</span></code>.</p>
 </div>
 </section>
 <section id="client-side">
 <h3>Client side<a class="headerlink" href="#client-side" title="Permalink to this heading">¶</a></h3>
-<p class="linemarker linemarker-176">At the client level, a JavaScript module manages the Netflux protocol with simple APIs. The module is located in <code class="docutils literal notranslate"><span class="pre">./www/components/netflux-websocket/netflux-client.js</span></code>. Once loaded, it allows us to create a <strong>network</strong> representing the Websocket connection to the Netflux server.</p>
-<p class="linemarker linemarker-178">This network contains the <strong>list of channels</strong> joined by the user, as well as the <strong>list of members</strong> present in each channel. It allows us to perform all the operations allowed by the protocol:</p>
+<p>At the client level, a JavaScript module manages the Netflux protocol with simple APIs. The module is located in <code class="docutils literal notranslate"><span class="pre">./www/components/netflux-websocket/netflux-client.js</span></code>. Once loaded, it allows us to create a <strong>network</strong> representing the Websocket connection to the Netflux server.</p>
+<p>This network contains the <strong>list of channels</strong> joined by the user, as well as the <strong>list of members</strong> present in each channel. It allows us to perform all the operations allowed by the protocol:</p>
 <ul class="simple">
-<li><p class="linemarker linemarker-180">Join a channel : <code class="docutils literal notranslate"><span class="pre">(Promise)</span> <span class="pre">network.join(channelId)</span></code> (provides a <code class="docutils literal notranslate"><span class="pre">channel</span></code> object)</p></li>
-<li><p class="linemarker linemarker-181">Send a private message: <code class="docutils literal notranslate"><span class="pre">(Promise)</span> <span class="pre">network.sendTo(netfluxId,</span> <span class="pre">message)</span></code></p></li>
-<li><p class="linemarker linemarker-182">Get the channels list: <code class="docutils literal notranslate"><span class="pre">(Array)</span> <span class="pre">network.webChannels</span></code>.</p></li>
-<li><p class="linemarker linemarker-183">Listen to events in a network: <code class="docutils literal notranslate"><span class="pre">network.on('message',</span> <span class="pre">handler)</span></code> (events: message, disconnect)</p></li>
+<li><p>Join a channel : <code class="docutils literal notranslate"><span class="pre">(Promise)</span> <span class="pre">network.join(channelId)</span></code> (provides a <code class="docutils literal notranslate"><span class="pre">channel</span></code> object)</p></li>
+<li><p>Send a private message: <code class="docutils literal notranslate"><span class="pre">(Promise)</span> <span class="pre">network.sendTo(netfluxId,</span> <span class="pre">message)</span></code></p></li>
+<li><p>Get the channels list: <code class="docutils literal notranslate"><span class="pre">(Array)</span> <span class="pre">network.webChannels</span></code>.</p></li>
+<li><p>Listen to events in a network: <code class="docutils literal notranslate"><span class="pre">network.on('message',</span> <span class="pre">handler)</span></code> (events: message, disconnect)</p></li>
 </ul>
-<p class="linemarker linemarker-185">And for each channel obtained from <code class="docutils literal notranslate"><span class="pre">network.join</span></code>:</p>
+<p>And for each channel obtained from <code class="docutils literal notranslate"><span class="pre">network.join</span></code>:</p>
 <ul class="simple">
-<li><p class="linemarker linemarker-187">Send a message: <code class="docutils literal notranslate"><span class="pre">(Promise)</span> <span class="pre">channel.bcast(message)</span></code></p></li>
-<li><p class="linemarker linemarker-188">Leave a channel: <code class="docutils literal notranslate"><span class="pre">channel.leave(reason)</span></code></p></li>
-<li><p class="linemarker linemarker-189">Listen to eventst: <code class="docutils literal notranslate"><span class="pre">channel.on('message',</span> <span class="pre">handler)</span></code> (events: message, join, leave)</p></li>
-<li><p class="linemarker linemarker-190">Get the channelId: <code class="docutils literal notranslate"><span class="pre">(String)</span> <span class="pre">channel.id</span></code></p></li>
-<li><p class="linemarker linemarker-191">Get the members list: <code class="docutils literal notranslate"><span class="pre">(Array)</span> <span class="pre">channel.members</span></code></p></li>
+<li><p>Send a message: <code class="docutils literal notranslate"><span class="pre">(Promise)</span> <span class="pre">channel.bcast(message)</span></code></p></li>
+<li><p>Leave a channel: <code class="docutils literal notranslate"><span class="pre">channel.leave(reason)</span></code></p></li>
+<li><p>Listen to eventst: <code class="docutils literal notranslate"><span class="pre">channel.on('message',</span> <span class="pre">handler)</span></code> (events: message, join, leave)</p></li>
+<li><p>Get the channelId: <code class="docutils literal notranslate"><span class="pre">(String)</span> <span class="pre">channel.id</span></code></p></li>
+<li><p>Get the members list: <code class="docutils literal notranslate"><span class="pre">(Array)</span> <span class="pre">channel.members</span></code></p></li>
 </ul>
 </section>
 <section id="example-3">
@@ -892,7 +892,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2023, CryptPad Team.
+        &copy; Copyright 2024, CryptPad Team.
 
     </p>
   </div>
@@ -917,7 +917,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.6.0',
+            VERSION:'5.7.0',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

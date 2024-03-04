@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Често Задавани Въпроси &mdash; CryptPad 5.6.0 documentation</title>
+  <title>Често Задавани Въпроси &mdash; CryptPad 5.7.0 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="index.html" class="icon icon-home">
               <img src="_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.6.0</span>
+              <span class="release">Documentation 5.7.0</span>
             </a>
             
 <div role="search">
@@ -540,10 +540,10 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#i-forgot-my-password">Забравих паролата си</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#how-to-import-export-my-documents-to-from-another-platform">How to import/export my documents to/from another platform?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#import-export-is-not-visible-in-the-file-menu">Import/export is not visible in the File menu</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#rich-text-document-import-export">Rich text document import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#spreadsheets-import-export">Spreadsheets import/export</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-import-export-my-documents-to-from-another-platform">Как да импортирам/експортирам моите документи към/от друга платформа?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#import-export-is-not-visible-in-the-file-menu">Импортиране/експортиране не се вижда в менюто Файл</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rich-text-document-import-export">Импорт/експорт на текстов документ (RTF)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#spreadsheets-import-export">Импортиране/експортиране на електронни таблици</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#i-cannot-do-x-with-a-document-i-created">I cannot do X with a document I created</a></li>
@@ -698,42 +698,42 @@
 </ol>
 </section>
 <section id="how-to-import-export-my-documents-to-from-another-platform">
-<h2>How to import/export my documents to/from another platform?<a class="headerlink" href="#how-to-import-export-my-documents-to-from-another-platform" title="Permalink to this heading">¶</a></h2>
-<p>Making CryptPad compatible with a wide range of document formats is an ongoing challenge for the development team. Unfortunately the technology for converting documents in the browser still has limitations, especially as far as private and open source solutions are concerned. While work in this area is in progress, the methods below should help in importing and exporting to/from other widely used software.</p>
+<h2>Как да импортирам/експортирам моите документи към/от друга платформа?<a class="headerlink" href="#how-to-import-export-my-documents-to-from-another-platform" title="Permalink to this heading">¶</a></h2>
+<p>Да направим CryptPad съвместим с широк набор от формати на документи е постоянно предизвикателство за разработващия екип. За съжаление технологията за конвертиране на документите в браузъра все още има ограничения, особено що се отнася до частни решения и решения с отворен код. Докато работата в тази област е в ход, методите по-долу трябва да помогнат при импортиране и експортиране към/от друг широко използван софтуер.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Simply copy-pasting content from existing software into CryptPad is an easy first step to try when importing/exporting. Please note that the import/export methods below can improve results significantly.</p>
+<p>Копиране и поставяне на съдържание от съществуващ софтуер в CryptPad е лесна първа стъпка, която да опитате при импортиране/експортиране. Обърнете внимание, че методите за импортиране/експортиране по-долу могат значително да подобрят резултатите.</p>
 </div>
-<p>It is possible to upload <strong>files</strong> to CryptPad for secure storage and sharing, however this does not make every file an editable CryptPad <strong>document</strong>.</p>
-<p>Text files uploaded as files can be opened as a Code/Markdown document from the Drive with <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> &gt; <em class="cptools cptools-code"></em> <strong>Open in Code editor</strong>.</p>
-<p>To import any other file type in an editable form, please use the <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> functionality in the appropriate CryptPad editor as explained below.</p>
+<p>Възможно е да качвате <strong>файлове</strong> в CryptPad за сигурно съхранение и споделяне, но това не прави всеки файл редактируем <strong>документ</strong> на CryptPad.</p>
+<p>Текстовите файлове, качени като файлове, могат да бъдат отворени като документ с код/ Маркдаун с <code class="docutils literal notranslate"><span class="pre">Щракване</span> <span class="pre">с</span> <span class="pre">десен</span> <span class="pre">бутон</span></code> &gt; <em class="cptools cptools-code"></em> <strong>Отворете в редактор на код</strong>.</p>
+<p>За да импортирате всеки друг тип файл в редактируема форма, използвайте <em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-upload"></em> Функция <strong>Импортиране</strong> в съответния редактор на CryptPad, както е обяснено по-долу.</p>
 <section id="import-export-is-not-visible-in-the-file-menu">
-<h3>Import/export is not visible in the File menu<a class="headerlink" href="#import-export-is-not-visible-in-the-file-menu" title="Permalink to this heading">¶</a></h3>
-<p>For spreadsheets and advanced document processing, Cryptpad integrates OnlyOffice. As a result, there are two toolbars each with their own File menu on the same screen. Please make sure to check in both menus, when looking for import/export.</p>
+<h3>Импортиране/експортиране не се вижда в менюто Файл<a class="headerlink" href="#import-export-is-not-visible-in-the-file-menu" title="Permalink to this heading">¶</a></h3>
+<p>За електронни таблици и разширена обработка на документи Cryptpad интегрира OnlyOffice. В резултат на това има две ленти с инструменти, всяка със собствено меню Файл на същия екран. Не забравяйте да проверите и в двете менюта, когато търсите импортиране/експортиране.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>See the <a class="reference external" href="https://docs.cryptpad.org/en/user_guide/apps/sheets.html#toolbars">warning note</a> in our Spreadsheet application documentation.</p>
+<p>Вижте <a class="reference external" href="https://docs.cryptpad.org/en/user_guide/apps/sheets.html#toolbars">предупредителната бележка</a> в документацията на нашето приложение за електронни таблици.</p>
 </div>
 </section>
 <section id="rich-text-document-import-export">
-<h3>Rich text document import/export<a class="headerlink" href="#rich-text-document-import-export" title="Permalink to this heading">¶</a></h3>
-<p>To import rich text documents (Microsoft Word, Google Docs, LibreOffice Writer, etc.), the supported format is HTML:</p>
+<h3>Импорт/експорт на текстов документ (RTF)<a class="headerlink" href="#rich-text-document-import-export" title="Permalink to this heading">¶</a></h3>
+<p>За да импортирате документи с форматиран текст (Microsoft Word, Google Docs, LibreOffice Writer и др.), поддържаният формат е HTML:</p>
 <ol class="arabic simple">
-<li><p>Export your document as HTML in your existing software.</p></li>
-<li><p>Save the file to your computer.</p></li>
-<li><p>Open a new <a class="reference internal" href="user_guide/apps/richtext.html#app-rich-text"><span class="std std-ref">Rich Text</span></a> document on CryptPad (or an existing one to replace the contents).</p></li>
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> and select your file.</p></li>
+<li><p>Експортирайте документа си като HTML с наличния ви софтуер.</p></li>
+<li><p>Запазване на файла на компютъра ви.</p></li>
+<li><p>Отворете нов <a class="reference internal" href="user_guide/apps/richtext.html#app-rich-text"><span class="std std-ref">Rich Text</span></a> документ на CryptPad (или съществуващ, за да замените съдържанието).</p></li>
+<li><p><em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-upload"></em> <strong>Импортиране</strong> и избиране на файла ви.</p></li>
 </ol>
-<p>To export, use <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-download"></em> <strong>Export</strong> and select <code class="docutils literal notranslate"><span class="pre">.doc</span></code> as the format.</p>
+<p>За да експортирате, използвайте <em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-download"></em> <strong>Експортиране</strong> и избиране на <code class="docutils literal notranslate"><span class="pre">.doc</span></code> като формат.</p>
 </section>
 <section id="spreadsheets-import-export">
-<h3>Spreadsheets import/export<a class="headerlink" href="#spreadsheets-import-export" title="Permalink to this heading">¶</a></h3>
-<p>To import spreadsheets, the supported format are Microsoft Excel <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code> and OpenDocument <code class="docutils literal notranslate"><span class="pre">.ods</span></code>. These can both be exported from popular software such as Google Sheets and LibreOffice Calc:</p>
+<h3>Импортиране/експортиране на електронни таблици<a class="headerlink" href="#spreadsheets-import-export" title="Permalink to this heading">¶</a></h3>
+<p>За импортиране на електронни таблици поддържаните формати за Microsoft Excel <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code> и за OpenDocument <code class="docutils literal notranslate"><span class="pre">.ods</span></code>. И двата могат да бъдат експортирани от Google Sheets и LibreOffice Calc:</p>
 <ol class="arabic simple">
-<li><p>Export your document as <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code> or <code class="docutils literal notranslate"><span class="pre">.ods</span></code> in your existing software.</p></li>
-<li><p>Save the file to your computer.</p></li>
-<li><p>Open a new <a class="reference internal" href="user_guide/apps/sheets.html#app-sheets"><span class="std std-ref">Spreadsheet</span></a> document (or an existing one to replace the contents).</p></li>
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> and select your file.</p></li>
+<li><p>Експортирайте документа си като <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code> или <a href="#id1"><span class="problematic" id="id2">``</span></a>.ods``с наличния ви софтуер.</p></li>
+<li><p>Запазване на файла на компютъра ви.</p></li>
+<li><p>Отворете нов <a class="reference internal" href="user_guide/apps/sheets.html#app-sheets"><span class="std std-ref">Spreadsheet</span></a> документ (или съществуващ, за да замените съдържанието).</p></li>
+<li><p><em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-upload"></em> <strong>Импортиране</strong> и избиране на файла ви.</p></li>
 </ol>
 <p>To export, use <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-download"></em> <strong>Export</strong> and choose a format:</p>
 <ul class="simple">
@@ -818,7 +818,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2023, CryptPad Team.
+        &copy; Copyright 2024, CryptPad Team.
 
     </p>
   </div>
@@ -843,7 +843,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'5.6.0',
+            VERSION:'5.7.0',
             LANGUAGE:'bg',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Adding Translations &mdash; CryptPad 5.6.0 documentation</title>
+  <title>Adding Translations &mdash; CryptPad 5.7.0 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.6.0</span>
+              <span class="release">Documentation 5.7.0</span>
             </a>
             
 <div role="search">
@@ -658,10 +658,10 @@
             
   <section id="adding-translations">
 <h1>Adding Translations<a class="headerlink" href="#adding-translations" title="Permalink to this heading">¶</a></h1>
-<p class="linemarker linemarker-4">To illustrate the process of translating, this guide will make an english-pirate translation of CryptPad. We'll assume that you have a work locally-installed, properly functioning installation of CryptPad. If you don't have CryptPad installed locally, start by following the steps in <a class="reference internal" href="setup.html#dev-instance"><span class="std std-ref">Set up a development instance</span></a>.</p>
+<p>To illustrate the process of translating, this guide will make an english-pirate translation of CryptPad. We'll assume that you have a work locally-installed, properly functioning installation of CryptPad. If you don't have CryptPad installed locally, start by following the steps in <a class="reference internal" href="setup.html#dev-instance"><span class="std std-ref">Set up a development instance</span></a>.</p>
 <section id="getting-started">
 <h2>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-9">Once everything is working, copy the default (English) source file <code class="docutils literal notranslate"><span class="pre">/www/common/translations/messages.js</span></code> to a file named according to your language's <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO 639-1 Code</a>, like <code class="docutils literal notranslate"><span class="pre">/www/common/translations/messages.fr.js</span></code>.
+<p>Once everything is working, copy the default (English) source file <code class="docutils literal notranslate"><span class="pre">/www/common/translations/messages.js</span></code> to a file named according to your language's <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO 639-1 Code</a>, like <code class="docutils literal notranslate"><span class="pre">/www/common/translations/messages.fr.js</span></code>.
 There is no ISO 639-1 language code for English-pirate, so we'll just call it <code class="docutils literal notranslate"><span class="pre">messages.pirate.js</span></code>.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> www/common/translations/
 cp messages.js messages.pirate.js
@@ -670,7 +670,7 @@ cp messages.js messages.pirate.js
 </section>
 <section id="including-your-translation">
 <h2>Including your translation<a class="headerlink" href="#including-your-translation" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-21">To include your translation in the list, you'll need to add it to <code class="docutils literal notranslate"><span class="pre">/customize.dist/messages.js</span></code>.
+<p>To include your translation in the list, you'll need to add it to <code class="docutils literal notranslate"><span class="pre">/customize.dist/messages.js</span></code>.
 There are comments indicating what to modify in three places:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="c1">// add your module to this map so it gets used</span><span class="w"></span>
@@ -687,7 +687,7 @@ There are comments indicating what to modify in three places:</p>
 <span class="p">};</span><span class="w"></span>
 </pre></div>
 </div>
-<p class="linemarker linemarker-41">We need to modify that map to include our translation:</p>
+<p>We need to modify that map to include our translation:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="c1">// add your module to this map so it gets used</span><span class="w"></span>
 <span class="c1">// please use the translated name of your language (&quot;Français&quot; and not &quot;French&quot;)</span><span class="w"></span>
@@ -704,8 +704,8 @@ There are comments indicating what to modify in three places:</p>
 <span class="p">};</span><span class="w"></span>
 </pre></div>
 </div>
-<p class="linemarker linemarker-60">Just add your module in a similar fashion to the existing translations, save your changes, and close <code class="docutils literal notranslate"><span class="pre">/customize.dist/messages.js</span></code>.</p>
-<p class="linemarker linemarker-63">You also need to add a customizable version of you translation. To do so, make a copy of the file <code class="docutils literal notranslate"><span class="pre">/customize.dist/translations/messages.js</span></code> with your translation name (<code class="docutils literal notranslate"><span class="pre">messages.pirate.js</span></code> in our case), and change its content to load the correct language file:</p>
+<p>Just add your module in a similar fashion to the existing translations, save your changes, and close <code class="docutils literal notranslate"><span class="pre">/customize.dist/messages.js</span></code>.</p>
+<p>You also need to add a customizable version of you translation. To do so, make a copy of the file <code class="docutils literal notranslate"><span class="pre">/customize.dist/translations/messages.js</span></code> with your translation name (<code class="docutils literal notranslate"><span class="pre">messages.pirate.js</span></code> in our case), and change its content to load the correct language file:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="cm">/*</span>
 <span class="cm">* You can override the translation text using this file.</span>
 <span class="cm">* The recommended method is to make a copy of this file (/customize.dist/translations/messages.{LANG}.js)</span>
@@ -720,12 +720,12 @@ There are comments indicating what to modify in three places:</p>
 <span class="p">});</span><span class="w"></span>
 </pre></div>
 </div>
-<p class="linemarker linemarker-81">That's all!</p>
+<p>That's all!</p>
 </section>
 <section id="actually-translating-content">
 <h2>Actually translating content<a class="headerlink" href="#actually-translating-content" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-86">Now we can go back to our file, <code class="docutils literal notranslate"><span class="pre">/www/common/translations/messages.pirate.js</span></code> and start to add our Pirate-language customizations.</p>
-<p class="linemarker linemarker-88">Open the translation file you created in <code class="docutils literal notranslate"><span class="pre">/customize.dist/translations/</span></code>.
+<p>Now we can go back to our file, <code class="docutils literal notranslate"><span class="pre">/www/common/translations/messages.pirate.js</span></code> and start to add our Pirate-language customizations.</p>
+<p>Open the translation file you created in <code class="docutils literal notranslate"><span class="pre">/customize.dist/translations/</span></code>.
 You should see something like:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">define</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span><span class="w"></span>
@@ -733,30 +733,30 @@ You should see something like:</p>
 <span class="w">    </span><span class="nx">out</span><span class="p">.</span><span class="nx">main_title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;CryptPad: Zero Knowledge, Collaborative Real Time Editing&quot;</span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
-<p class="linemarker linemarker-98">Now you just need to work through this file, updating the strings like so:</p>
+<p>Now you just need to work through this file, updating the strings like so:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">define</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span><span class="w"></span>
 
 <span class="w">    </span><span class="nx">out</span><span class="p">.</span><span class="nx">main_title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;CryptPad: Knowledge lost at sea while ye scribble with yer mateys&quot;</span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
-<p class="linemarker linemarker-107">It's important that you modify just the string, and not the variable name which is used to access its content.
+<p>It's important that you modify just the string, and not the variable name which is used to access its content.
 For instance, changing <code class="docutils literal notranslate"><span class="pre">main_title</span></code> to <code class="docutils literal notranslate"><span class="pre">mainTitle</span></code> would make the translated string inaccessible to the rest of the codebase.</p>
-<p class="linemarker linemarker-110">If a key is not found in your translation, the default English version of that key will be used.
+<p>If a key is not found in your translation, the default English version of that key will be used.
 This is to make sure that buttons and other interface elements are not empty, but it's obviously not ideal.</p>
 </section>
 <section id="verifying-your-translations">
 <h2>Verifying Your Translations<a class="headerlink" href="#verifying-your-translations" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-116">It's advisable to save your translation file frequently, and reload CryptPad in your browser to check that there are no errors in your translation file.
+<p>It's advisable to save your translation file frequently, and reload CryptPad in your browser to check that there are no errors in your translation file.
 If there are any errors in your code, the file will fail to parse, and the page will no load correctly.</p>
-<p class="linemarker linemarker-119">Checking frequently will make it easier to know which change caused the error.</p>
-<p class="linemarker linemarker-121">Additionally, we advise using the apps and visiting the various pages, to make sure that your translations make sense in context.</p>
-<p class="linemarker linemarker-123">When you're happy with your translation file, you can visit <a class="reference external" href="http://localhost:3000/assert/translations/">http://localhost:3000/assert/translations/</a> to view CryptPad's tests.
+<p>Checking frequently will make it easier to know which change caused the error.</p>
+<p>Additionally, we advise using the apps and visiting the various pages, to make sure that your translations make sense in context.</p>
+<p>When you're happy with your translation file, you can visit <a class="reference external" href="http://localhost:3000/assert/translations/">http://localhost:3000/assert/translations/</a> to view CryptPad's tests.
 These tests will check to make sure that your translation has an entry for every entry in the default English translation.</p>
 </section>
 <section id="deleting-a-translation">
 <h2>Deleting a translation<a class="headerlink" href="#deleting-a-translation" title="Permalink to this heading">¶</a></h2>
-<p class="linemarker linemarker-130">When a key is nolonger used (such as presentSuccess) you can delete it using this bash one-liner.</p>
+<p>When a key is nolonger used (such as presentSuccess) you can delete it using this bash one-liner.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span> <span class="nb">export</span> <span class="nv">KEY</span><span class="o">=</span>presentSuccess <span class="o">&amp;&amp;</span> grep -nr <span class="s2">&quot;</span><span class="nv">$KEY</span><span class="s2">&quot;</span> ./www/common/translations/ <span class="p">|</span> sed <span class="s1">&#39;s/:.*$//&#39;</span> <span class="p">|</span> <span class="k">while</span> <span class="nb">read</span> x<span class="p">;</span> <span class="k">do</span> sed -i -e <span class="s2">&quot;/out\.</span><span class="nv">$KEY</span><span class="s2"> =/d&quot;</span> <span class="nv">$x</span><span class="p">;</span> <span class="k">done</span> <span class="o">)</span>
 </pre></div>
 </div>
@@ -783,7 +783,7 @@ These tests will check to make sure that your translation has an entry for every
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2023, CryptPad Team.
+        &copy; Copyright 2024, CryptPad Team.
 
     </p>
   </div>
@@ -808,7 +808,7 @@ These tests will check to make sure that your translation has an entry for every
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.6.0',
+            VERSION:'5.7.0',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
