@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Бяла дъска &mdash; CryptPad 5.6.0 documentation</title>
+  <title>Бяла дъска &mdash; CryptPad 5.7.0 documentation</title>
   
 
   
@@ -37,7 +37,7 @@
   <link rel="stylesheet" href="../../_static/css/cp-overrides.css" type="text/css" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Administrator Guide" href="../../admin_guide/index.html" />
+    <link rel="next" title="Accessibility" href="../accessibility.html" />
     <link rel="prev" title="Diagram" href="diagram.html" /> 
 
   
@@ -58,7 +58,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.6.0</span>
+              <span class="release">Documentation 5.7.0</span>
             </a>
             
 <div role="search">
@@ -263,8 +263,8 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="form.html">Форма</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="form.html#roles">Роли</a></li>
-<li class="toctree-l4"><a class="reference internal" href="form.html#editing-a-form">Editing a form</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="form.html#utilities">Utilities</a></li>
+<li class="toctree-l4"><a class="reference internal" href="form.html#editing-a-form">Редактиране на форма</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="form.html#utilities">Помощни програми</a></li>
 <li class="toctree-l5"><a class="reference internal" href="form.html#question-types">Question types</a></li>
 <li class="toctree-l5"><a class="reference internal" href="form.html#form-settings">Form Settings</a></li>
 <li class="toctree-l5"><a class="reference internal" href="form.html#responses">Responses</a></li>
@@ -297,6 +297,10 @@
 <li class="toctree-l4"><a class="reference internal" href="#export">Export</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../accessibility.html">Accessibility</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../accessibility.html#feedback-channels">Feedback channels</a></li>
 </ul>
 </li>
 </ul>
@@ -361,10 +365,16 @@
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#general">General</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#enable-remote-embedding">Enable remote embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#mandatory-two-factor-authentication">Mandatory Two-Factor Authentication</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#admin-contact-email">Admin contact email</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#instance-information">Instance information</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#user-directory">User Directory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#invitation-links">Invitation Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#id1">User Directory</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
@@ -389,7 +399,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#performance">Performance</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#id1">Performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#id2">Performance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#measure-disk-performance">Measure disk performance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#disk-performance-measurement-window">Disk performance measurement window</a></li>
 </ul>
@@ -530,10 +540,10 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-forgot-my-password">Забравих паролата си</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">How to import/export my documents to/from another platform?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#import-export-is-not-visible-in-the-file-menu">Import/export is not visible in the File menu</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#rich-text-document-import-export">Rich text document import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#spreadsheets-import-export">Spreadsheets import/export</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Как да импортирам/експортирам моите документи към/от друга платформа?</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#import-export-is-not-visible-in-the-file-menu">Импортиране/експортиране не се вижда в менюто Файл</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#rich-text-document-import-export">Импорт/експорт на текстов документ (RTF)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#spreadsheets-import-export">Импортиране/експортиране на електронни таблици</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-cannot-do-x-with-a-document-i-created">I cannot do X with a document I created</a></li>
@@ -711,7 +721,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../admin_guide/index.html" class="btn btn-neutral float-right" title="Administrator Guide" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../accessibility.html" class="btn btn-neutral float-right" title="Accessibility" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="diagram.html" class="btn btn-neutral" title="Diagram" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
@@ -723,7 +733,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2023, CryptPad Team.
+        &copy; Copyright 2024, CryptPad Team.
 
     </p>
   </div>
@@ -748,7 +758,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'5.6.0',
+            VERSION:'5.7.0',
             LANGUAGE:'bg',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

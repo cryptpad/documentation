@@ -27,12 +27,6 @@ Update user quotas
 
 Forcing an update of user storage limits can be done any time, but is only necessary in the event of an error.
 
-.. _admin_close_registration:
-
-Close registration
-~~~~~~~~~~~~~~~~~~
-
-Do not allow any new users to register.
 
 Enable remote embedding
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -40,6 +34,11 @@ Enable remote embedding
 Allow documents and media from this instance to be embedded on other websites. This will add an "Embed" option to the Share menu. For security reasons applications that use OnlyOffice (Sheets, Document, Presentation) cannot be embedded even if this setting is active.
 
 Please note that by enabling this settings, you will need to adapt your Nginx configuration file, adding ``vector:`` to pass :ref:`diagnostic tests <admin_checkup>`.
+
+Mandatory Two-Factor Authentication
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Tick the box so all users on this instance will be asked to set up two-factor authentication to log in to their account.
 
 .. _admin_email:
 
@@ -64,6 +63,28 @@ The following fields are used to describe the instance in the :ref:`list of publ
 .. note::
 
    This information is used on the instance front page.
+
+
+User Directory
+--------------
+
+.. _admin_close_registration:
+
+Close registration
+~~~~~~~~~~~~~~~~~~
+
+Do not allow any new users to register.
+
+Invitation Links
+~~~~~~~~~~~~~~~~
+
+Invitation links create one account each, even if registration is closed. User name and email are for your identification purposes only. CryptPad will not email the invitation link (or anything else), please copy the link and send it using the secure channel of your choice.
+
+User Directory
+~~~~~~~~~~~~~~
+
+List of known accounts on this instance. Select options to add invited accounts automatically, or enter information manually using the form.
+
 
 User Storage
 ------------

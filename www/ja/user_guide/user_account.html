@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>ユーザーアカウント &mdash; CryptPad 5.6.0 ドキュメント</title>
+  <title>ユーザーアカウント &mdash; CryptPad 5.7.0 ドキュメント</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.6.0</span>
+              <span class="release">Documentation 5.7.0</span>
             </a>
             
 <div role="search">
@@ -283,7 +283,7 @@
 <li class="toctree-l4"><a class="reference internal" href="apps/kanban.html#import-export">インポート/エクスポート</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="apps/diagram.html">Diagram</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="apps/diagram.html">ダイヤグラム</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#documentation">Documentation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#toolbars">Toolbars</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">Import/Export</a></li>
@@ -297,6 +297,10 @@
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#export">エクスポート</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="accessibility.html">Accessibility</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="accessibility.html#feedback-channels">Feedback channels</a></li>
 </ul>
 </li>
 </ul>
@@ -361,10 +365,16 @@
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#general">General</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#enable-remote-embedding">Enable remote embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#mandatory-two-factor-authentication">Mandatory Two-Factor Authentication</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#admin-contact-email">Admin contact email</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#instance-information">Instance information</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#user-directory">User Directory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#invitation-links">Invitation Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#id1">User Directory</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
@@ -389,7 +399,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#performance">Performance</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#id1">Performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#id2">Performance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#measure-disk-performance">Measure disk performance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#disk-performance-measurement-window">Disk performance measurement window</a></li>
 </ul>
@@ -771,7 +781,7 @@ history.</p></li>
 <span id="user-settings-confidentiality"></span><h3>Security &amp; Privacy<a class="headerlink" href="#security-privacy" title="この見出しへのパーマリンク">¶</a></h3>
 <ul>
 <li><p><strong>Close remote sessions</strong>: Log out of all sessions except the one from which this option is activated. (see also <a class="reference internal" href="security.html#remote-disconnect"><span class="std std-ref">遠隔切断</span></a>) <span class="badge-user">Logged in users</span></p></li>
-<li><p><strong>Two-Factor Authentication (2FA)</strong>: Protect your account with an additional verification code provided by an authenticator app of your choice.   <span class="badge-user">Logged in users</span> <span class="badge-new">New in version 5.4</span></p>
+<li><p><strong>Two-Factor Authentication (2FA)</strong>: Protect your account with an additional verification code provided by an authenticator app of your choice.   <span class="badge-user">Logged in users</span></p>
 <p>To activate 2FA:</p>
 <ol class="arabic simple">
 <li><p>Enter your account password</p></li>
@@ -804,8 +814,8 @@ history.</p></li>
 <li><p><strong>Document storage in CryptDrive</strong>: Manages if documents you visit are automatically stored in your CryptDrive. If no one <a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">owns</span></a> a document you add to your CryptDrive, it counts against your storage quota.</p>
 <ul>
 <li><p><strong>Automatic</strong>: All the documents you visit are stored in your CryptDrive.</p></li>
-<li><p><strong>Manual (always ask)</strong>: If you have not stored a document yet, you will be asked if you want to store them in your CryptDrive.</p></li>
-<li><p><strong>Manual (never ask)</strong> Documents are not stored automatically in your Cryptpad. The option to store them will be hidden.</p></li>
+<li><p><strong>手動（常に確認）</strong>: 保存していないドキュメントにアクセスした際、CryptDriveに保存するかどうかを確認します。</p></li>
+<li><p><strong>手動（確認しない）</strong>: ドキュメントはCryptPadに自動で保存されません。保存オプションは表示されません。</p></li>
 </ul>
 </li>
 <li><p><strong>Duplicated owned documents</strong>: When you move your owned documents to a shared folder, a copy is kept in your CryptDrive to ensure that you retain your control over it. You can hide duplicated files. Only the shared version will be visible, unless deleted, in which case the original will be displayed in its previous location.</p></li>
@@ -893,7 +903,7 @@ history.</p></li>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2023, CryptPad Team.
+        &copy; Copyright 2024, CryptPad Team.
 
     </p>
   </div>
@@ -918,7 +928,7 @@ history.</p></li>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.6.0',
+            VERSION:'5.7.0',
             LANGUAGE:'ja',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

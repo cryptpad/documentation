@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Zusammenarbeit &mdash; CryptPad 5.6.0 Dokumentation</title>
+  <title>Zusammenarbeit &mdash; CryptPad 5.7.0 Dokumentation</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.6.0</span>
+              <span class="release">Documentation 5.7.0</span>
             </a>
             
 <div role="search">
@@ -299,6 +299,10 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="accessibility.html">Zugänglichkeit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="accessibility.html#feedback-channels">Feedback-Kanäle</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">Administrator Guide</a><ul>
@@ -361,10 +365,16 @@
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#general">General</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#enable-remote-embedding">Enable remote embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#mandatory-two-factor-authentication">Mandatory Two-Factor Authentication</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#admin-contact-email">Admin contact email</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#instance-information">Instance information</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#user-directory">User Directory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#invitation-links">Invitation Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#id1">User Directory</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
@@ -389,7 +399,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#performance">Performance</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#id1">Performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#id2">Performance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#measure-disk-performance">Measure disk performance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#disk-performance-measurement-window">Disk performance measurement window</a></li>
 </ul>
@@ -689,11 +699,9 @@
 <figure class="align-default">
 <img alt="Screenshot vom Kalender" class="screenshot" src="../_images/calendar.png" />
 </figure>
-<p>Um Ereignisse hinzuzufügen, klicke einfach auf das gewünschte Datum/Zeit im Kalender (ändere Dauer durch Ziehen). Alternativ kannst du <em class="fa fa-plus"></em> <strong>Neues Ereignis</strong> in der Werkzeugleiste verwenden.</p>
-<p>It then opens an event creation form where a <strong>Title</strong> is mandatory.</p>
-<p><span class="badge-new">New in version 5.6</span></p>
-<p>You can optionally specify a <strong>Location</strong> and a <strong>Description</strong>.
-The <strong>Description</strong> field supports the Markdown syntax to format its content.</p>
+<p>Um Ereignisse hinzuzufügen, klicke einfach auf das gewünschte Datum/Zeit im Kalender (lege die Dauer durch Ziehen fest). Alternativ kannst du <em class="fa fa-plus"></em> <strong>Neues Ereignis</strong> in der Werkzeugleiste verwenden.</p>
+<p>Daraufhin wird ein Formular zur Erstellung eines Ereignisses geöffnet, in dem ein <strong>Titel</strong> angegeben werden muss.</p>
+<p>Du kannst optional einen <strong>Ort</strong> und eine <strong>Beschreibung</strong> angeben. Das Feld <strong>Beschreibung</strong> unterstützt die Markdown-Syntax zur Formatierung seines Inhalts.</p>
 <p>Du kannst sich wiederholende Ereignisse erstellen:</p>
 <ul>
 <li><p><strong>Einmalig</strong>, Standard</p></li>
@@ -719,10 +727,10 @@ The <strong>Description</strong> field supports the Markdown syntax to format it
 </div></blockquote>
 </li>
 </ul>
-<p>To edit events, drag them to the new date/time or alternatively:</p>
+<p>Um Ereignisse zu bearbeiten, ziehe sie zum neuen Datum/Zeit. Alternativ:</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on the event to open the detailed view.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on <em class="fa fa-pencil"></em> <strong>Edit</strong> to open the edition form.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Klicke</span></code> auf das Ereignis, um die Detailansicht zu öffnen.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Klicke</span></code> auf <em class="fa fa-pencil"></em> <strong>Bearbeiten</strong>, um das Bearbeitungsformular zu öffnen.</p></li>
 </ol>
 <section id="toolbar">
 <h3>Werkzeugleiste<a class="headerlink" href="#toolbar" title="Permalink to this heading">¶</a></h3>
@@ -746,7 +754,7 @@ The <strong>Description</strong> field supports the Markdown syntax to format it
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
-<p>When exporting a calendar, the descriptions of events are exported in Markdown.</p>
+<p>Beim Exportieren eines Kalenders werden die Beschreibungen der Ereignisse in Markdown exportiert.</p>
 </div>
 <p><a class="reference internal" href="#teams"><span class="std std-ref">Teams</span></a> können ebenfalls einen Kalender haben, der für alle Mitglieder sichtbar ist. Teile einfach einen Kalender mit einem Team, um ihn hinzuzufügen:</p>
 <p><em class="fa fa-share-alt"></em> <strong>Teilen</strong> &gt; <em class="fa fa-address-book"></em> <strong>Kontakte</strong> &gt; Wähle das Team aus</p>
@@ -871,8 +879,8 @@ The <strong>Description</strong> field supports the Markdown syntax to format it
 </tbody>
 </table>
 <p>Zugriffsrechte:</p>
-<p>View: access folders and documents (read-only).</p>
-<p>Edit: create, modify, and delete folders and documents.</p>
+<p>Ansehen: auf Ordner und Dokumente zugreifen (nur lesen).</p>
+<p>Bearbeiten: Ordner und Dokumente erstellen, ändern und löschen.</p>
 <p>Mitglieder verwalten: Mitglieder einladen und entfernen, Rollen bis hin zum Admin ändern.</p>
 <p>Team verwalten: Name und Avatar ändern, Eigentümer hinzufügen oder entfernen, Abonnement des Teams ändern, Team löschen.</p>
 </section>
@@ -923,7 +931,7 @@ The <strong>Description</strong> field supports the Markdown syntax to format it
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2023, CryptPad Team.
+        &copy; Copyright 2024, CryptPad Team.
 
     </p>
   </div>
@@ -948,7 +956,7 @@ The <strong>Description</strong> field supports the Markdown syntax to format it
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.6.0',
+            VERSION:'5.7.0',
             LANGUAGE:'de',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

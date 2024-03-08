@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Как внести свой вклад &mdash; документация CryptPad 5.6.0</title>
+  <title>Как внести свой вклад &mdash; документация CryptPad 5.7.0</title>
   
 
   
@@ -57,7 +57,7 @@
             <a href="index.html" class="icon icon-home">
               <img src="_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.6.0</span>
+              <span class="release">Documentation 5.7.0</span>
             </a>
             
 <div role="search">
@@ -107,13 +107,13 @@
 <li class="toctree-l3"><a class="reference internal" href="user_guide/user_account.html#notifications">Уведомления</a></li>
 <li class="toctree-l3"><a class="reference internal" href="user_guide/user_account.html#settings">Настройки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#account">Учетная запись</a></li>
-<li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#security-privacy">Security &amp; Privacy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#security-privacy">Безопасность и Конфиденциальность</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#appearance">Внешний вид</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#cryptdrive">CryptDrive</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#cursor">Курсор</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#rich-text">Документ</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#code">Код</a></li>
-<li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#kanban">Kanban</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#kanban">Канбан</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#user-settings-notifications">Уведомления</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#subscription">Подписка</a></li>
 </ul>
@@ -298,6 +298,10 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/accessibility.html">Доступность</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="user_guide/accessibility.html#feedback-channels">Каналы обратной связи</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="admin_guide/index.html">Administrator Guide</a><ul>
@@ -360,10 +364,16 @@
 <li class="toctree-l3"><a class="reference internal" href="admin_guide/admin_panel.html#general">General</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#close-registration">Close registration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#enable-remote-embedding">Enable remote embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#mandatory-two-factor-authentication">Mandatory Two-Factor Authentication</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#admin-contact-email">Admin contact email</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#instance-information">Instance information</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="admin_guide/admin_panel.html#user-directory">User Directory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#close-registration">Close registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#invitation-links">Invitation Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#id1">User Directory</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
@@ -388,7 +398,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="admin_guide/admin_panel.html#performance">Performance</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#id1">Performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#id2">Performance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#measure-disk-performance">Measure disk performance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#disk-performance-measurement-window">Disk performance measurement window</a></li>
 </ul>
@@ -530,7 +540,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="FAQ.html#i-forgot-my-password">Я забыл свой пароль</a></li>
 <li class="toctree-l2"><a class="reference internal" href="FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Как импортировать/экспортировать мои документы на/с другую(ой) платформу(ы)?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="FAQ.html#import-export-is-not-visible-in-the-file-menu">Import/export is not visible in the File menu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="FAQ.html#import-export-is-not-visible-in-the-file-menu">Импорт/экспорт не отображается в меню «Файл»</a></li>
 <li class="toctree-l3"><a class="reference internal" href="FAQ.html#rich-text-document-import-export">Импорт/экспорт форматированных текстовых документов</a></li>
 <li class="toctree-l3"><a class="reference internal" href="FAQ.html#spreadsheets-import-export">Импорт/экспорт электронных таблиц</a></li>
 </ul>
@@ -555,8 +565,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#report-bugs">Сообщить об ошибках</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#contribute-to-the-documentation">Внесите свой вклад в документацию</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#translate-cryptpad">Перевести CryptPad</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#community-translation-program">Community translation program</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#terms">Terms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#community-translation-program">Программа перевода сообщества</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#terms">Условия</a></li>
 </ul>
 </li>
 </ul>
@@ -674,46 +684,46 @@
 <p>Если вы столкнетесь с проблемой с CryptPad, извещение разработчиков о ней поможет улучшить сервис для всех. При составлении отчета о проблеме, пожалуйста, предоставьте как можно больше информации об условиях, в которых возникла проблема, о том, что Вы ожидали, и что произошло вместо этого. Эти сведения помогают команде воспроизвести ошибку, что является первым шагом к ее исправлению.</p>
 <p>Существует два способа сообщить об ошибках или проблемах:</p>
 <ul class="simple">
-<li><p>Cryptpad's built in <a class="reference internal" href="user_guide/support.html#support"><span class="std std-ref">support ticket system</span></a> where you can message instance administrators. These messages are encrypted like everything else on CryptPad.</p></li>
-<li><p><a class="reference external" href="https://github.com/cryptpad/cryptpad/issues/new/choose">Github issue tracker</a> to file the issue publicly using the bug report template. (A Github account is needed to submit issues)</p></li>
+<li><p>Встроенная в Cryptpad <a class="reference internal" href="user_guide/support.html#support"><span class="std std-ref">система тикетов службы поддержки</span></a>, где Вы можете отправлять сообщения администраторам инстансов. Эти сообщения зашифрованы, как и все остальное на CryptPad.</p></li>
+<li><p><a class="reference external" href="https://github.com/cryptpad/cryptpad/issues/new/choose">Отслеживание проблем на Github</a> чтобы опубликовать проблему публично, используя шаблон отчёта об ошибке. (Для отправки информации о проблеме необходима учётная запись Github)</p></li>
 </ul>
 </section>
 <section id="contribute-to-the-documentation">
 <h2>Внесите свой вклад в документацию<a class="headerlink" href="#contribute-to-the-documentation" title="Permalink to this heading">¶</a></h2>
-<p>If you have corrections, edits, or suggestions for this documentation, you can contribute and help improve the service for everyone. Please send your proposed changes to <a class="reference external" href="https://forum.cryptpad.org/">the forum</a> or use a <a class="reference external" href="https://github.com/cryptpad/documentation">GitHub pull request</a>.</p>
+<p>Если у Вас есть исправления, изменения или предложения по этой документации, Вы можете внести свой вклад и помочь улучшить сервис для всех. Пожалуйста, присылайте свои предлагаемые изменения на <a class="reference external" href="https://forum.cryptpad.org/">форум</a> или используйте <a class="reference external" href="https://github.com/cryptpad/documentation">pull request на GitHub</a>.</p>
 </section>
 <section id="translate-cryptpad">
 <span id="contribute-translation"></span><h2>Перевести CryptPad<a class="headerlink" href="#translate-cryptpad" title="Permalink to this heading">¶</a></h2>
 <p>Команда CryptPad переводит программное обеспечение на английский и французский языки, а сообщество переводит на другие языки. Перевод CryptPad и / или поддержка переводов в актуальном состоянии по мере развития платформы — это крайне необходимые усилия, чтобы сделать ее доступной для как можно большего числа людей.</p>
-<p>To translate CryptPad itself please see the <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/customize.dist/translations/README.md">Translation guide</a>.</p>
-<p>To translate this documentation please visit the project on <a class="reference external" href="https://weblate.cryptpad.org/projects/user-guide/">Weblate</a>. To start translating a new language, please <a class="reference external" href="https://cryptpad.fr/contact.html">get in touch with the development team</a>.</p>
+<p>Чтобы самостоятельно переводить CryptPad, пожалуйста, ознакомьтесь с <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/customize.dist/translations/README.md">Руководством по переводу</a>.</p>
+<p>Чтобы переводить эту документацию, пожалуйста, посетите проект на <a class="reference external" href="https://cryptpad.fr/contact.html">Weblate &lt;https://weblate.cryptpad.org/projects/user-guide/&gt; `__. Чтобы начать перевод на новый язык, пожалуйста, `свяжитесь с командой разработчиков</a>.</p>
 <p>Текущий прогресс в переводе на другие языки:</p>
 <img alt="Weblate-виджет" src="https://weblate.cryptpad.org/widgets/cryptpad/-/app/multi-auto.svg" /><section id="community-translation-program">
-<h3>Community translation program<a class="headerlink" href="#community-translation-program" title="Permalink to this heading">¶</a></h3>
-<p>CryptPad translations are a volunteer community effort. We are not able to offer financial compensation for translation work, but we offer free premium benefits on <a class="reference external" href="https://cryptpad.fr/accounts/">CryptPad.fr</a> as a token of gratitude (increased storage and priority support).</p>
+<h3>Программа перевода сообщества<a class="headerlink" href="#community-translation-program" title="Permalink to this heading">¶</a></h3>
+<p>Переводы CryptPad осуществляются сообществом волонтеров. Мы не можем предложить финансовую компенсацию за работу переводчика, но мы предлагаем бесплатные привилегии премиум-класса на <a class="reference external" href="https://cryptpad.fr/accounts/">CryptPad.fr</a> в знак благодарности (увеличенное хранилище и приоритетная поддержка).</p>
 <section id="terms">
-<h4>Terms<a class="headerlink" href="#terms" title="Permalink to this heading">¶</a></h4>
-<p>Translator commitment</p>
+<h4>Условия<a class="headerlink" href="#terms" title="Permalink to this heading">¶</a></h4>
+<p>Обязательства переводчика</p>
 <ul class="simple">
-<li><p>Make an account on our <a class="reference external" href="https://weblate.cryptpad.org">Weblate instance</a> and use it for all translation work</p></li>
-<li><p>Bring and/or maintain a language at or near 100% translated status</p></li>
-<li><p>Keep the translation up to date as we release new versions of CryptPad approximately 4 times per year (the amount of work will depend on the functionality in each release)</p></li>
+<li><p>Создайте учетную запись на нашем <cite>экземпляре Weblate &lt;https://weblate.cryptpad.org&gt;</cite> __ и используйте его для всех работ по переводу</p></li>
+<li><p>Перевести и/или поддерживать перевод на язык в состоянии, близком к 100%</p></li>
+<li><p>Поддерживайте перевод в актуальном состоянии, поскольку мы выпускаем новые версии CryptPad примерно 4 раза в год (объем работы будет зависеть от функциональности в каждом выпуске)</p></li>
 </ul>
-<p>CryptPad development team commitment</p>
+<p>Обязательства команды разработчиков CryptPad</p>
 <ul class="simple">
-<li><p>Enable a free <a class="reference external" href="https://cryptpad.fr/accounts/#subscribe">Personal plan</a> on CryptPad.fr for each translator as long as the translator commitments are met</p></li>
-<li><p>Provide guidance and support in the <a class="reference external" href="https://matrix.to/#/#cryptpad-translations:matrix.xwiki.com">CryptPad Translations matrix channel</a></p></li>
-<li><p>Host and maintain the Weblate instance incl. all tools, glossary, etc</p></li>
+<li><p>Включать бесплатно <cite>тариф Персональный &lt;https://cryptpad.fr/accounts/#subscribe&gt;</cite> __ на CryptPad.fr для каждого переводчика при условии выполнения обязательств по переводу</p></li>
+<li><p>Предоставлять советы и поддержку на <a class="reference external" href="https://matrix.to/#/#cryptpad-translations:matrix.xwiki.com">matrix канале «CryptPad Translations»</a></p></li>
+<li><p>Развернуть и поддерживать экземпляр Weblate, включая все инструменты, глоссарий и т.д.</p></li>
 </ul>
-<p>This program has so far been used only with individual translators, if you are translating as a group please contact the development team.</p>
+<p>Эта программа до сих пор использовалась только с отдельными переводчиками. Если вы переводите группой, свяжитесь с командой разработчиков.</p>
 </section>
 </section>
 </section>
 <section id="contribute-to-the-code">
 <span id="contribute-code"></span><h2>Внесите свой вклад в код<a class="headerlink" href="#contribute-to-the-code" title="Permalink to this heading">¶</a></h2>
-<p>CryptPad is written in JavaScript and we accept pull requests on <a class="reference external" href="https://github.com/cryptpad/cryptpad">Github</a>. Note that the security layer is separated from the application layer, so it is possible to contribute to CryptPad without skills in cryptography. Contributions include, by order of difficulty:</p>
+<p>CryptPad написан на JavaScript, и мы принимаем pull requests на <a class="reference external" href="https://github.com/cryptpad/cryptpad">Github</a>. Обратите внимание, что слой безопасности (security layer) отделен от слоя приложения (application layer), поэтому можно вносить свой вклад в CryptPad без навыков криптографии. Вклады включают в себя, в порядке сложности:</p>
 <ul class="simple">
-<li><p>Fixing a bug from the <a class="reference external" href="https://github.com/cryptpad/cryptpad/issues">issue tracker</a>.</p></li>
+<li><p>Исправление ошибки из списка <a class="reference external" href="https://github.com/cryptpad/cryptpad/issues">issue tracker</a>.</p></li>
 <li><p>Добавление новой функции.</p></li>
 <li><p>Создание нового приложения или интеграция существующего с системой зашифрованной совместной работы CryptPad в режиме реального времени.</p></li>
 </ul>
@@ -752,7 +762,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2023, CryptPad Team.
+        &copy; Copyright 2024, CryptPad Team.
 
     </p>
   </div>
@@ -777,7 +787,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'5.6.0',
+            VERSION:'5.7.0',
             LANGUAGE:'ru',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

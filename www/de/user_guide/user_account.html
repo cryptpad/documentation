@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Benutzer-Account &mdash; CryptPad 5.6.0 Dokumentation</title>
+  <title>Benutzer-Account &mdash; CryptPad 5.7.0 Dokumentation</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.6.0</span>
+              <span class="release">Documentation 5.7.0</span>
             </a>
             
 <div role="search">
@@ -299,6 +299,10 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="accessibility.html">Zugänglichkeit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="accessibility.html#feedback-channels">Feedback-Kanäle</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../admin_guide/index.html">Administrator Guide</a><ul>
@@ -361,10 +365,16 @@
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#general">General</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#enable-remote-embedding">Enable remote embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#mandatory-two-factor-authentication">Mandatory Two-Factor Authentication</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#admin-contact-email">Admin contact email</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#instance-information">Instance information</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#user-directory">User Directory</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#close-registration">Close registration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#invitation-links">Invitation Links</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#id1">User Directory</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#user-storage">User Storage</a><ul>
@@ -389,7 +399,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#performance">Performance</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#id1">Performance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#id2">Performance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#measure-disk-performance">Measure disk performance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#disk-performance-measurement-window">Disk performance measurement window</a></li>
 </ul>
@@ -717,7 +727,7 @@
 </ul>
 <p>Optional:</p>
 <ul class="simple">
-<li><p><strong>Import documents from your anonymous session</strong>: If you have created documents as a non-registered user you can import them into your account.</p></li>
+<li><p><strong>Dokumente aus deiner Gast-Sitzung importieren</strong>: Sofern du Dokumente als nicht registrierter Benutzer erstellt hast, kannst du sie in deinen Account importieren.</p></li>
 </ul>
 </section>
 <section id="logging-in">
@@ -725,7 +735,7 @@
 <p>Zum Einloggen besuche die Seite <strong>Einloggen</strong> (oben rechts auf der Startseite) und gib deinen Benutzernamen und dein Passwort ein.</p>
 <p>Optional:</p>
 <ul class="simple">
-<li><p><strong>Import documents from your anonymous session</strong>: If you have created documents as a non-registered user you can import them into your account.</p></li>
+<li><p><strong>Dokumente aus deiner Gast-Sitzung importieren</strong>: Sofern du Dokumente als nicht registrierter Benutzer erstellt hast, kannst du sie in deinen Account importieren.</p></li>
 </ul>
 </section>
 </section>
@@ -770,7 +780,7 @@
 <span id="user-settings-confidentiality"></span><h3>Sicherheit &amp; Datenschutz<a class="headerlink" href="#security-privacy" title="Permalink to this heading">¶</a></h3>
 <ul>
 <li><p><strong>Andere Sitzungen beenden</strong>: Logge dich aus allen Sitzungen aus, abgesehen von der gerade verwendeten Sitzung (siehe auch <a class="reference internal" href="security.html#remote-disconnect"><span class="std std-ref">Sitzungen beenden</span></a>). <span class="badge-user">Eingeloggte Benutzer</span></p></li>
-<li><p><strong>Zwei-Faktor-Authentifizierung (2FA)</strong>: Schütze deinen Account mit einem zusätzlichen Verifizierungscode, der von einer Authentifizierungs-App deiner Wahl erzeugt wird.   <span class="badge-user">Eingeloggte Benutzer</span> <span class="badge-new">Neu in Version 5.4</span></p>
+<li><p><strong>Zwei-Faktor-Authentifizierung (2FA)</strong>: Schütze deinen Account mit einem zusätzlichen Verifizierungscode, der von einer Authentifizierungs-App deiner Wahl erzeugt wird.   <span class="badge-user">Eingeloggte Benutzer</span></p>
 <p>Um 2FA zu aktivieren:</p>
 <ol class="arabic simple">
 <li><p>Gib dein Account-Passwort ein</p></li>
@@ -800,14 +810,14 @@
 <ul class="simple">
 <li><p><strong>Weiterleitung von Hauptseite</strong>: Die automatische Weiterleitung für eingeloggte Benutzer von der Hauptseite zum Drive ist nicht mehr standardmäßig aktiviert</p></li>
 <li><p><strong>Tipps</strong>: Hilfetexte in der Benutzeroberfläche von CryptPad. Klicke auf <strong>Zurücksetzen</strong>, um sie wieder anzuzeigen, sofern sie ausgeblendet wurden.</p></li>
-<li><p><strong>Document storage in CryptDrive</strong>: Manages if documents you visit are automatically stored in your CryptDrive. If no one <a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">owns</span></a> a document you add to your CryptDrive, it counts against your storage quota.</p>
+<li><p><strong>Speicherung von Dokumenten im CryptDrive</strong>: Verwaltet, ob Dokumente automatisch in deinem CryptDrive gespeichert werden. Wenn Dokumente keinen <a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">Eigentümer</span></a> haben, werden sie auf deinen verfügbaren Speicherplatz angerechnet.</p>
 <ul>
-<li><p><strong>Automatic</strong>: All the documents you visit are stored in your CryptDrive.</p></li>
-<li><p><strong>Manual (always ask)</strong>: If you have not stored a document yet, you will be asked if you want to store them in your CryptDrive.</p></li>
-<li><p><strong>Manual (never ask)</strong> Documents are not stored automatically in your Cryptpad. The option to store them will be hidden.</p></li>
+<li><p><strong>Automatisch</strong>: Alle geöffneten Dokumente werden in deinem CryptDrive gespeichert.</p></li>
+<li><p><strong>Manuell (immer fragen)</strong>: Wenn du das Dokument noch nicht gespeichert hast, wirst du gefragt, ob du es in deinem CryptDrive speichern möchtest.</p></li>
+<li><p><strong>Manuell (nie nachfragen)</strong> Dokumente werden nicht automatisch in deinem CryptDrive gespeichert. Die Option zum Speichern wird versteckt.</p></li>
 </ul>
 </li>
-<li><p><strong>Duplicated owned documents</strong>: When you move your owned documents to a shared folder, a copy is kept in your CryptDrive to ensure that you retain your control over it. You can hide duplicated files. Only the shared version will be visible, unless deleted, in which case the original will be displayed in its previous location.</p></li>
+<li><p><strong>Duplizierte eigene Dokumente</strong>: Wenn du ein eigenes Dokument in einem geteilten Ordner verschiebst, wird eine Kopie in deinem CryptDrive behalten, damit du die Kontrolle des Dokuments nicht verlierst. Du kannst duplizierte Dateien verbergen. Nur die Version in dem geteilten Ordner wird dann angezeigt, außer sie wurde gelöscht. In diesem Fall wird das Original an seinem ursprünglichen Ort wieder angezeigt.</p></li>
 <li><p><strong>Vorschaubilder</strong>: Um bei der Orientierung in der <a class="reference internal" href="drive.html#drive-display"><span class="std std-ref">Kachelansicht</span></a> des CryptDrives zu unterstützen, kann CryptPad automatisch Vorschaubilder von Dokumenten erstellen und im Browser speichern. Diese Option ist standardmäßig deaktiviert, da sie den Browser auf weniger leistungsfähigen Computern verlangsamen kann. Die Schaltfläche <strong>Entfernen</strong> löscht alle vorhandenen Vorschaubilder.</p></li>
 <li><p><strong>Backup</strong>: Es gibt zwei Arten von Backups.</p>
 <ul>
@@ -815,7 +825,7 @@
 <li><p><strong>Mein CryptDrive herunterladen</strong> speichert den Inhalt aller Dokumente im CryptDrive. Wenn möglich, geschieht dies in einem für andere Software lesbaren Format. Einige Anwendungen speichern die Dokumente in einem Format, das nur für CryptPad lesbar ist.</p></li>
 </ul>
 </li>
-<li><p><strong>Import</strong>: If documents have been created as a non-registered user prior to logging in, they can be imported to the CryptDrive. <span class="badge-user">Logged in users</span></p></li>
+<li><p><strong>Importieren</strong>: Wenn Dokumente vor dem Einloggen erstellt wurden, können sie in das CryptDrive importiert werden. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
 <li><p><strong>Verlauf löschen</strong>: Der Verlauf des CryptDrives und der Benachrichtigungen kann gelöscht werden, um Speicherplatz zu sparen. Dies betrifft nicht den Verlauf von Dokumenten, der jeweils in den <a class="reference internal" href="apps/general.html#document-properties"><span class="std std-ref">Eigenschaften</span></a> des Dokuments gelöscht werden kann.</p></li>
 </ul>
 </section>
@@ -834,7 +844,7 @@
 <li><p><strong>Maximalgröße des Editors</strong>: Schalte um zwischen der Seitenansicht (Standard), die auf die Breite des Texteditors beschränkt ist, und der Ausnutzung der vollen Bildschirmbreite.</p></li>
 <li><p><strong>Rechtschreibprüfung</strong>: Aktiviert die Rechtschreibprüfung in Rich-Text-Pads. Rechtschreibfehler werden rot unterstrichen. Verbesserungsvorschläge sind nach <code class="docutils literal notranslate"><span class="pre">Strg</span> <span class="pre">+</span> <span class="pre">Rechtsklick</span></code> auf das zu korrigierende Wort verfügbar.</p></li>
 <li><p><strong>Kommentar-Benachrichtigungen</strong>: Deaktiviert Benachrichtigungen, wenn ein anderer Benutzer auf deine Kommentare antwortet.</p></li>
-<li><p><strong>Open links on first click</strong>: Open embedded links on click without the preview popup.</p></li>
+<li><p><strong>Links direkt öffnen</strong>: Eingebettete Links werden beim Anklicken ohne Vorschaufenster geöffnet.</p></li>
 </ul>
 </section>
 <section id="code">
@@ -850,16 +860,16 @@
 </section>
 <section id="kanban">
 <span id="user-settings-kanban"></span><h3>Kanban<a class="headerlink" href="#kanban" title="Permalink to this heading">¶</a></h3>
-<p>User settings for the <a class="reference internal" href="apps/kanban.html#app-kanban"><span class="std std-ref">Kanban</span></a> application.</p>
+<p>Einstellungen für die Anwendung <a class="reference internal" href="apps/kanban.html#app-kanban"><span class="std std-ref">Kanban</span></a>.</p>
 <ul class="simple">
-<li><p><strong>Tag filter</strong>: How you want the tag filter to act when selecting multiple tags: only show cards containing all the selected tags (AND) or show cards containing any of the selected tags (OR).</p></li>
+<li><p><strong>Tag-Filter</strong>: Wähle aus, wie sich der Tag-Filter bei der Auswahl mehrerer Tags verhalten soll: nur Karten mit allen ausgewählten Tags anzeigen (UND) oder Karten mit irgendeinem der ausgewählten Tags anzeigen (ODER).</p></li>
 </ul>
 </section>
 <section id="user-settings-notifications">
 <span id="id1"></span><h3>Benachrichtigungen<a class="headerlink" href="#user-settings-notifications" title="Permalink to this heading">¶</a></h3>
-<p>User settings for the notifications.</p>
+<p>Einstellungen für Benachrichtigungen.</p>
 <ul class="simple">
-<li><p><strong>Calendar notifications</strong>: Enable/disable all notifications for upcoming calendar events.</p></li>
+<li><p><strong>Kalenderbenachrichtigungen</strong>: Alle Benachrichtigungen für zukünftige Kalenderereignisse aktivieren/deaktivieren.</p></li>
 </ul>
 </section>
 <section id="subscription">
@@ -892,7 +902,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2023, CryptPad Team.
+        &copy; Copyright 2024, CryptPad Team.
 
     </p>
   </div>
@@ -917,7 +927,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.6.0',
+            VERSION:'5.7.0',
             LANGUAGE:'de',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
