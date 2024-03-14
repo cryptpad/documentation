@@ -53,7 +53,6 @@ Locate the following directories to backup or migrate:
 -  ``datastore/``
 -  ``block/``
 -  ``blob/``
--  ``logs/``
 
 Additionally, configurations and customizations may be backed up or migrated: - ``config/config.js`` - ``customize/`` (or ``customize.dist`` if modifications have been made directly in the source tree)
 
