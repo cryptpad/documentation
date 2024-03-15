@@ -22,35 +22,51 @@ We welcome contributions that make CryptPad more accessible. User feedback is cr
 Keyboard Shortcuts
 ------------------
 
-The toolbar is designed for easy navigation using keyboard shortcuts, ensuring a seamless and efficient experience for users with diverse needs.
-
-Toolbar Shortcuts
+General Shortcuts
 *****************
-
-.. |kbd-tab| replace:: :kbd:`Tab`
-.. |kbd-enter| replace:: :kbd:`Enter`
-.. |kbd-delete| replace:: :kbd:`Del`
-.. |kbd-up| replace:: :kbd:`↑`
-.. |kbd-down| replace:: :kbd:`↓`
-.. |kbd-esc| replace:: :kbd:`Esc`
-
 
 .. list-table::
    :widths: 15 45
    :header-rows: 1
 
    * - Shortcut
-     - Description
-   * - |kbd-tab|
-     - Allow easy navigation between elements
-   * - |kbd-enter|
-     - Activate dropdown elements
-   * - |kbd-delete|
-     - Enable users to remove notifications from the notifications dropdown
-   * - |kbd-esc|
-     - Close current dropdown
-   * - |kbd-up| and |kbd-down| keys
-     - Allow users to navigate through all the dropdowns
+     - Action
+   * - :kbd:`Tab`
+     - Navigate through the focusable elements
+   * - :kbd:`Tab + Shift`
+     - Navigate backwards through the focusable elements
+   * - :kbd:`Enter`
+     - Click on the focused element
+
+Drive Shortcuts
+***************
+
+.. list-table::
+   :widths: 15 45
+   :header-rows: 1
+
+   * - Shortcut
+     - Action
+   * - :kbd:`Ctrl + E`
+     - Create a new document
+   * - :kbd:`↑` and :kbd:`↓` keys
+     - Navigate through content in the drive
+
+Toolbar Shortcuts
+*****************
+
+.. list-table::
+   :widths: 15 45
+   :header-rows: 1
+
+   * - Shortcut
+     - Action
+   * - :kbd:`Del`
+     - Remove notification from the notifications menu
+   * - :kbd:`Esc`
+     - Close menu when it is open
+   * - :kbd:`↑` and :kbd:`↓` keys
+     - Navigate through items inside a menu
    * - Search Functionality
-     - Locate specific elements within a dropdown menu by typing the first letter
+     - Locate specific elements within a menu by typing the first letter
 
