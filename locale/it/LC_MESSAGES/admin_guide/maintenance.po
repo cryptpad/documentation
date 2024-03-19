@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, CryptPad Team
+# This file is distributed under the same license as the CryptPad package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CryptPad \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-19 16:01+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.11.0\n"
+
+#: ../../admin_guide/maintenance.rst:2
+msgid "Maintenance"
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:5
+msgid "Upgrading CryptPad"
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:7
+msgid ""
+"The basic set of commands to upgrade CryptPad to a new version is as "
+"follows (assuming CryptPad is installed in ``/var/www/cryptpad``)."
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:16
+msgid ""
+"Depending on the version, there may be changes that require special "
+"consideration. It is therefore highly recommended to read the release "
+"notes for the specific targeted version before upgrading."
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:21
+msgid "Database administration"
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:23
+msgid ""
+"CryptPad stores user data on the file system rather than a relational "
+"database. The paths to different types of data are configurable in "
+"``cryptpad/config/config.js``:"
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:37
+msgid ""
+"Each CryptPad document is a “chain” of edits stored in a file in "
+"``filePath``. To find a specific document in the database, use the "
+"identifier found in the document properties."
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:39
+msgid ""
+"For example the document with identifier "
+"``bb1edc4cb7648605284db30dfcd2eebf`` can be found at "
+"``cryptpad/datastore/bb/bb1edc4cb7648605284db30dfcd2eebf.ndjson``."
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:41
+msgid ""
+"To fully remove a document from the database, simply remove the file "
+"using the operating system functionality."
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:43
+msgid ""
+"To completely reset the database and remove all documents, delete the "
+"entire ``cryptpad/datastore`` folder. The folder will be recreated the "
+"next time CryptPad starts."
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:46
+msgid "Backup and migration"
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:48
+msgid ""
+"To back up or migrate a CryptPad instance, check where data is being "
+"written as indicated in ``cryptpad/config/config.js``."
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:50
+msgid "Locate the following directories to backup or migrate:"
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:52
+msgid "``data/``"
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:53
+msgid "``datastore/``"
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:54
+msgid "``block/``"
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:55
+msgid "``blob/``"
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:56
+msgid "``pins/``"
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:57
+msgid "``tasks/``"
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:58
+msgid "``logs/``"
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:60
+msgid ""
+"Additionally, configurations and customizations may be backed up or "
+"migrated: - ``config/config.js`` - ``customize/`` (or ``customize.dist`` "
+"if modifications have been made directly in the source tree)"
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:62
+msgid ""
+"The contents of CryptPad’s filesystem database are encrypted, it is "
+"therefore reasonably safe to back up to a cloud service without violating"
+" users’ privacy, though this will make metadata available (e.g. file "
+"creation/modification dates)."
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:65
+msgid "Advanced administration"
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:67
+msgid ""
+"In the event of a document becoming corrupted, it is possible to delete "
+"individual sets of changes from the database."
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:69
+msgid ""
+"Locate the relevant channel, or document ID as explained above. Note that"
+" the document properties can be opened by right clicking the document in "
+"the drive, if the document cannot be opened."
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:71
+msgid ""
+"Open the channel in a text editor. Each line of the file represents a set"
+" of changes sent by a user, if you delete particular lines from the file,"
+" those messages will no longer be sent to clients. Note that the content "
+"of each line contains what seems to be random data: this is because all "
+"messages are encrypted by clients before being sent to the server. This "
+"makes it difficult to determine which messages are responsible for making"
+" a document unrecoverable by other means."
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:73
+msgid ""
+"It is quite likely that deleting messages will cause the document to "
+"become unreadable. If you know that the document was working until very "
+"recently, you can try removing the most recent messages a few at a time "
+"until the desired content is recovered."
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:77
+msgid ""
+"Making manual modifications to a corrupted file is likely to make matters"
+" worse. It is highly recommended to back up the file before attempting "
+"manual recovery."
+msgstr ""
+
