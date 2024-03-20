@@ -107,6 +107,10 @@ User Directory
 
 List of known accounts on this instance. Select options to add invited accounts automatically, or enter information manually using the form.
 
+You can toggle the two following options (enabled by default):
+
+- Automatically store invited users
+- Automatically store SSO users
 
 User Storage
 ------------
