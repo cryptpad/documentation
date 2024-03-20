@@ -64,6 +64,28 @@ The following fields are used to describe the instance in the :ref:`list of publ
 
    This information is used on the instance front page.
 
+Customize
+---------
+
+Upload Logo
+~~~~~~~~~~~
+
+Browse local files on your computer to upload a logo for your CryptPad instance. Maximum size is 200KB. File formats supported are:
+
+- SVG
+- PNG
+- JPG
+
+Click **RESTORE DEFAULT** button to restore the official CryptPad logo instead of the customized one.
+
+Main color
+~~~~~~~~~~
+
+Change the main color of your CryptPad instance. Please pick a color with good contrast with the rest of CryptPad.
+
+Use the color picker to select the color you want then click the **CHANGE COLOR** button. You can **RESTORE DEFAULT** with the red button.
+
+You can see the preview of the color selected with a link and the two kind of buttons in CryptPad.
 
 User Directory
 --------------
