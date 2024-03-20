@@ -1,3 +1,5 @@
+.. _support_panel:
+
 Support panel
 =============
 
@@ -8,12 +10,14 @@ Open
 
 This page shows the current open tickets.
 
+.. _support_anonymously:
+
 Answer anonymously
 ~~~~~~~~~~~~~~~~~~
 
 Check this option to reply as "The Support Team" instead of your own username.
 
-	.. note ::
+.. note ::
 
 	It can be useful when handling moderation cases, where you don't want to reveal your Display name (defined in your :ref:`user_settings_account`).
 
@@ -55,6 +59,8 @@ Disable notifications
 
 Check this option to disable notifications on new or updated ticket.
 
+.. _support_prerecorded:
+
 Prerecorded messages
 ~~~~~~~~~~~~~~~~~~~~
 
@@ -69,4 +75,13 @@ Open a ticket for a user
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 Create a ticket for a user. They will receive a CryptPad notification to warn them. You can copy their user data from an existing support ticket, using the Copy button in the user data.
+
+1. Fill in the user data in the dedicated text field area.
+2. Give a title to your support ticket in the **New ticket** text area
+3. Insert one or multiples :ref:`support_prerecorded`
+4. Edit your message
+5. Add an attachement if needed
+6. Check as whom you'll be sending the ticket, for example if you :ref:`support_anonymously`
+7. ``Click SEND``
+
 
