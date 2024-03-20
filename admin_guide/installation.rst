@@ -97,6 +97,14 @@ Please read the configuration file, and modify variables as needed. The :ref:`do
 
 As part of the installation process, be sure to read :ref:`admin_customization` and to modify ``customize/application_config.js`` as some settings cannot be changed once user accounts have been created.
 
+Regarding storage, data retention is set by default to:
+
+- 90 days for documents not "pinned" by any registered user
+- 15 days for deleted data that is first archived prior to final deletion
+- 365 days for inactive accounts
+
+You can also setup a dedicated CRON job for the user running the CryptPad service to run the ``scripts/evict-inactive.js`` at the time of your choice. Note that you'll need to set ``disableIntegratedEviction`` to ``true`` in that case.
+
 The server can now be started with
 
 .. code:: bash
