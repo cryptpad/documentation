@@ -74,7 +74,7 @@ Switch to the latest published tag
 
 .. code:: bash
 
-   git checkout 5.6.0
+   git checkout 5.8.0
 
 Dependencies
 """"""""""""
