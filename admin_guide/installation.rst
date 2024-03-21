@@ -84,6 +84,15 @@ Dependencies
    npm ci
    npm run install:components
 
+OnlyOffice (optional)
+"""""""""""""""""""""
+
+Since version 5.8 OnlyOffice is not bundled with CryptPad anymore. You can install/update OnlyOffice by running the installation script we provide:
+
+.. code:: bash
+
+   ./install-onlyoffice.sh
+
 Configuration
 """""""""""""
 
@@ -163,12 +172,14 @@ We provide the following files in the CryptPad repository:
 
    - ``CPAD_MAIN_DOMAIN``
    - ``CPAD_SANDBOX_DOMAIN``
+   - ``CPAD_INSTALL_ONLYOFFICE``
 
 #. Set appropriate permissions
 
    .. code:: bash
 
-      sudo chown -R 4001:4001 data customize
+      mkdir -p data customize onlyoffice-dist onlyoffice-conf
+      sudo chown -R 4001:4001 data customize onlyoffice-dist onlyoffice-conf
 
 #. Run the container with Docker Compose
 
@@ -186,6 +197,8 @@ Note that you'll still need to follow the CryptPad configuration steps, especial
       - ./customize:/cryptpad/customize
       - ./data/data:/cryptpad/data
       - ./data/files:/cryptpad/datastore
+      - ./onlyoffice-dist:/cryptpad/www/common/onlyoffice/dist
+      - ./onlyoffice-conf:/cryptpad/onlyoffice-conf
       - ./config/config.js:/cryptpad/config/config.js
 
 .. _admin_domain_config:
