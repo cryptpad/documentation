@@ -87,7 +87,9 @@ Dependencies
 OnlyOffice (optional)
 """""""""""""""""""""
 
-Since version 5.8 OnlyOffice is not bundled with CryptPad anymore. You can install/update OnlyOffice by running the installation script we provide:
+:badge_new:`New in version 5.8`
+
+OnlyOffice is not bundled with CryptPad anymore. You can install/update OnlyOffice by running the installation script we provide:
 
 .. code:: bash
 
