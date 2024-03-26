@@ -28,7 +28,7 @@ copyright = '2024, CryptPad Team'
 author = 'CryptPad Team'
 
 # The full version, including alpha/beta/rc tags
-release = '2024.03.0'
+release = '2024.3.0'
 
 
 # -- General configuration ---------------------------------------------------
