@@ -74,7 +74,7 @@ Switch to the latest published tag
 
 .. code:: bash
 
-   git checkout 5.8.0
+   git checkout 2024.03.0
 
 Dependencies
 """"""""""""
@@ -87,7 +87,7 @@ Dependencies
 OnlyOffice (optional)
 """""""""""""""""""""
 
-:badge_new:`New in version 5.8`
+:badge_new:`New in version 2024.03.0`
 
 OnlyOffice is not bundled with CryptPad anymore. You can install/update OnlyOffice by running the installation script we provide:
 
@@ -168,7 +168,7 @@ We provide the following files in the CryptPad repository:
 
    .. code:: docker
 
-      docker build -t cryptpad/cryptpad:version-5.8.0 .
+      docker build -t cryptpad/cryptpad:version-2024.03.0 .
 
 #. Modify ``docker-compose.yml`` with your own values
 
