@@ -27,7 +27,6 @@ Update user quotas
 
 Forcing an update of user storage limits can be done any time, but is only necessary in the event of an error.
 
-
 Enable remote embedding
 ~~~~~~~~~~~~~~~~~~~~~~~
 
