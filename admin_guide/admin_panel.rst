@@ -178,13 +178,15 @@ Statistics
 Support
 -------
 
-To enable the Support mailbox, please see :ref:`admin_support_mailbox`.
+Initialize support
+~~~~~~~~~~~~~~~~~~
 
-List of tickets sent by users to the support mailbox. All the administrators can see the messages and their answers. A closed ticket cannot be re-opened. You can only remove (hide) closed tickets, and the removed tickets are still visible by other administrators.
+Create or update the support keys.
 
--  reply to tickets
--  close tickets
--  remove closed tickets
+Manage support team
+~~~~~~~~~~~~~~~~~~~
+
+Add and remove people from the instance support team.
 
 Broadcast
 ---------
