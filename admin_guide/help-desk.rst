@@ -3,7 +3,7 @@
 Help-desk
 =========
 
-The help-desk is the place where you handle support requests sent by your users. Considering you have enabled the functionalities in the :ref:`admin_panel`.
+The help-desk is the place where you handle support requests sent by your users. Considering you have enabled the functionality in the :ref:`admin_panel`.
 
 Inbox
 -----
