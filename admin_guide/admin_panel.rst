@@ -12,32 +12,24 @@ The admin panel is available to administrator users (see :ref:`admin_adminusers`
 
 This page repeats the comments present on the admin panels and adds a few clarifications.
 
+.. _admin_instance_info:
+
 General
 -------
 
-Flush HTTP Cache
-~~~~~~~~~~~~~~~~
+.. note::
 
-Force users to download the latest client-side assets (only if your server is in fresh mode).
+   The following fields are used to describe the instance in the :ref:`list of public instances <admin_list_public>` and is shown on your instance front page.
 
-This includes some configuration changes distributed via ``/api/config``.
+Instance name
+~~~~~~~~~~~~~
 
-Update user quotas
-~~~~~~~~~~~~~~~~~~
+The name displayed for this instance
 
-Forcing an update of user storage limits can be done any time, but is only necessary in the event of an error.
+Instance description
+~~~~~~~~~~~~~~~~~~~~
 
-Enable remote embedding
-~~~~~~~~~~~~~~~~~~~~~~~
-
-Allow documents and media from this instance to be embedded on other websites. This will add an "Embed" option to the Share menu. For security reasons applications that use OnlyOffice (Sheets, Document, Presentation) cannot be embedded even if this setting is active.
-
-Please note that by enabling this settings, you will need to adapt your Nginx configuration file, adding ``vector:`` to pass :ref:`diagnostic tests <admin_checkup>`.
-
-Mandatory Two-Factor Authentication
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Tick the box so all users on this instance will be asked to set up two-factor authentication to log in to their account.
+The descriptive text displayed for this instance
 
 .. _admin_email:
 
@@ -48,20 +40,17 @@ This email address is displayed on the instance contact page.
 
 This email may be used by the development team, only if :ref:`admin_consent_contact` is given, to warn of security vulnerabilities or in other cases for example matters affecting public facing instances listed in `the directory <https://cryptpad.org/instances/>`_.
 
-.. _admin_instance_info:
+Hosting location
+~~~~~~~~~~~~~~~~
 
-Instance information
-~~~~~~~~~~~~~~~~~~~~
+The country where this instance's encrypted data is hosted.
 
-The following fields are used to describe the instance in the :ref:`list of public instances <admin_list_public>`:
+Flush HTTP Cache
+~~~~~~~~~~~~~~~~
 
-- Instance name (optional, if no name is provided the instance URL is used)
-- Instance description
-- Hosting location (country where the instance's encrypted data is hosted)
+Force users to download the latest client-side assets (only if your server is in fresh mode).
 
-.. note::
-
-   This information is used on the instance front page.
+This includes some configuration changes distributed via ``/api/config``.
 
 Customize
 ---------
@@ -85,6 +74,41 @@ Change the main color of your CryptPad instance. Please pick a color with good c
 Use the color picker to select the color you want then click the **CHANGE COLOR** button. You can **RESTORE DEFAULT** with the red button.
 
 You can see the preview of the color selected with a link and the two kind of buttons in CryptPad.
+
+Broadcast
+---------
+
+This section offers different ways of sending notifications to all users on the instance.
+
+Maintenance
+~~~~~~~~~~~
+
+Plan a maintenance on this instance and notify all users. Limited to one active maintenance at a given time.
+
+Survey
+~~~~~~
+
+Add, update or remove a link to an external survey. Users will receive a notification and the survey will remain available from the user menu.
+
+Broadcast Message
+~~~~~~~~~~~~~~~~~
+
+Send a message to all users on this instance. All existing and new users will receive it as a notification. Preview messages before sending them with "Preview notification". Preview notifications have a red icon and are visible only to you.
+
+Security
+--------
+
+Enable remote embedding
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Allow documents and media from this instance to be embedded on other websites. This will add an "Embed" option to the Share menu. For security reasons applications that use OnlyOffice (Sheets, Document, Presentation) cannot be embedded even if this setting is active.
+
+Please note that by enabling this settings, you will need to adapt your Nginx configuration file, adding ``vector:`` to pass :ref:`diagnostic tests <admin_checkup>`.
+
+Mandatory Two-Factor Authentication
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Tick the box so all users on this instance will be asked to set up two-factor authentication to log in to their account.
 
 User Directory
 --------------
@@ -110,6 +134,19 @@ You can toggle the two following options (enabled by default):
 
 - Automatically store invited users
 - Automatically store SSO users
+
+Support
+-------
+
+Initialize support
+~~~~~~~~~~~~~~~~~~
+
+Create or update the support keys.
+
+Manage support team
+~~~~~~~~~~~~~~~~~~~
+
+Add and remove people from the instance support team.
 
 User Storage
 ------------
@@ -173,39 +210,6 @@ Statistics
 .. warning::
 
    The disk usage report can be very resource intensive to run on large instances.
-
-Support
--------
-
-Initialize support
-~~~~~~~~~~~~~~~~~~
-
-Create or update the support keys.
-
-Manage support team
-~~~~~~~~~~~~~~~~~~~
-
-Add and remove people from the instance support team.
-
-Broadcast
----------
-
-This section offers different ways of sending notifications to all users on the instance.
-
-Maintenance
-~~~~~~~~~~~
-
-Plan a maintenance on this instance and notify all users. Limited to one active maintenance at a given time.
-
-Survey
-~~~~~~
-
-Add, update or remove a link to an external survey. Users will receive a notification and the survey will remain available from the user menu.
-
-Broadcast Message
-~~~~~~~~~~~~~~~~~
-
-Send a message to all users on this instance. All existing and new users will receive it as a notification. Preview messages before sending them with "Preview notification". Preview notifications have a red icon and are visible only to you.
 
 Performance
 -----------
