@@ -135,19 +135,6 @@ You can toggle the two following options (enabled by default):
 - Automatically store invited users
 - Automatically store SSO users
 
-Support
--------
-
-Initialize support
-~~~~~~~~~~~~~~~~~~
-
-Create or update the support keys.
-
-Manage support team
-~~~~~~~~~~~~~~~~~~~
-
-Add and remove people from the instance support team.
-
 User Storage
 ------------
 
@@ -196,6 +183,19 @@ The login block is what allows an account to log in to CryptPad with the combina
 ~~~~~~~~~~~~
 
 Users can copy recovery data on the 2FA recovery page https://your-instance.com/recovery/ in the "*Forgot recovery code*" section and email it to the instance administrators. Paste recovery data below to disable 2FA for an account
+
+Support
+-------
+
+Initialize support
+~~~~~~~~~~~~~~~~~~
+
+Create or update the support keys.
+
+Manage support team
+~~~~~~~~~~~~~~~~~~~
+
+Add and remove people from the instance support team.
 
 Statistics
 ----------
