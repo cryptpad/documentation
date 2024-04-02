@@ -26,7 +26,7 @@ General Shortcuts
 *****************
 
 .. list-table::
-   :widths: 15 45
+   :widths: 10 35
    :header-rows: 1
 
    * - Shortcut
@@ -37,18 +37,20 @@ General Shortcuts
      - Navigate backwards through the focusable elements
    * - :kbd:`Enter`
      - Click on the focused element
+   * - :kbd:`Ctrl + e`
+     - Create a new document
 
 Drive Shortcuts
 ***************
 
 .. list-table::
-   :widths: 15 45
+   :widths: 10 35
    :header-rows: 1
 
    * - Shortcut
      - Action
-   * - :kbd:`Ctrl + E`
-     - Create a new document
+   * - :kbd:`Enter`
+     - Open drive file or folder
    * - :kbd:`↑` and :kbd:`↓` keys
      - Navigate through content in the drive
 
@@ -56,17 +58,19 @@ Toolbar Shortcuts
 *****************
 
 .. list-table::
-   :widths: 15 45
+   :widths: 10 35
    :header-rows: 1
 
    * - Shortcut
      - Action
-   * - :kbd:`Del`
-     - Remove notification from the notifications menu
-   * - :kbd:`Esc`
-     - Close menu when it is open
+   * - :kbd:`Enter`
+     - Click on the focused element to open a menu/menu item
    * - :kbd:`↑` and :kbd:`↓` keys
      - Navigate through items inside a menu
+   * - :kbd:`Esc`
+     - Close menu when it is open
+   * - :kbd:`Del`
+     - Remove notification from the notifications menu
    * - Search Functionality
      - Locate specific elements within a menu by typing the first letter
 

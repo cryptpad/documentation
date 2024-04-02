@@ -8,7 +8,7 @@ New document
 
 To create a new document:
 
-*  From anywhere on CryptPad: ``Ctrl+e``.
+*  From anywhere on CryptPad: :kbd:`Ctrl+e`.
 *  From the CryptDrive:
 
    * |plus| **New** in the toolbar.

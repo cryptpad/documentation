@@ -41,7 +41,7 @@ There are multiple ways to create folders in the drive:
 
 -  |plus| **New** in the toolbar > |folder| **Folder**.
 -  ``Right click`` > |folder| **New folder**.
--  ``Ctrl + e`` > |folder| **Folder**.
+-  :kbd:`Ctrl + e` > |folder| **Folder**.
 
 Once a folder is created, documents can be added to it by dragging them from the drive. You can also drag and drop files from one folder to another. Use the convenient left sidebar tree to drop the file in the desired destination.
 
@@ -62,13 +62,13 @@ To change the title of a documents for all users that have it in their drive:
 
 #. ``Click`` on the title or the |pencil| button in the toolbar of the document.
 #. Type the new title.
-#. Save with the |check| button or ``Enter`` key.
+#. Save with the |check| button or :kbd:`Enter` key.
 
 To change the title of a document only in your drive:
 
 #. ``Right click`` on the document in your drive > |pencil| **Rename**.
 #. Type the new name.
-#. Save with the ``Enter`` key.
+#. Save with the :kbd:`Enter` key.
 
 The |flag| icon indicates that the title of a document is different in your drive than for other users.
 
@@ -90,11 +90,11 @@ To **remove** a document from CryptDrive.
 
 -  Drag the document from the drive into the |trash| **Trash**.
 -  ``Right click`` > |trash| **Move to trash**
--  Select the document and press the ``Del`` key.
+-  Select the document and press the :kbd:`Del` key.
 
 To **remove** the document from CryptDrive without storing it in the trash first:
 
-- Select the document and press the ``Shift + Del`` keys.
+- Select the document and press the :kbd:`Shift + Del` keys.
 
 To empty the trash:
 
@@ -148,7 +148,7 @@ To add or remove tags from a document:
 
 To manage tags for multiple documents:
 
-#. Select the documents with ``Ctrl + Click`` in CryptDrive.
+#. Select the documents with :kbd:`Ctrl` + ``Click`` in CryptDrive.
 #. ``Right click`` on the documents > |hashtag| **Tags**.
 
 Only the tags assigned to all the documents are then displayed. Any tags added and/or removed are applied to all the selected documents.
