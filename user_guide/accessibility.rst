@@ -22,55 +22,42 @@ We welcome contributions that make CryptPad more accessible. User feedback is cr
 Keyboard Shortcuts
 ------------------
 
-General Shortcuts
-*****************
+General Shortcuts:
+------------------
++--------------------+---------------------------------------------------+
+| Shortcut           | Action                                            |
++====================+===================================================+
+| :kbd:`Ctrl + e`    | Create a new document                             |
++--------------------+---------------------------------------------------+
+| :kbd:`Tab`         | Navigate through the focusable elements           |
++--------------------+---------------------------------------------------+
+| :kbd:`Tab + Shift` | Navigate backwards through the focusable elements |
++--------------------+---------------------------------------------------+
+| :kbd:`Enter`       | Click on the focused element                      |
++--------------------+---------------------------------------------------+
 
-.. list-table::
-   :widths: 10 35
-   :header-rows: 1
+Drive Shortcuts:
+----------------
++---------------------------------+-----------------------------------------+
+| Shortcut                        | Action                                  |
++=================================+=========================================+
+| :kbd:`↑` and :kbd:`↓` keys      | Navigate through content in the drive   |
++---------------------------------+-----------------------------------------+
+| :kbd:`Enter`                    | Open drive file or folder               |
++---------------------------------+-----------------------------------------+
 
-   * - Shortcut
-     - Action
-   * - :kbd:`Tab`
-     - Navigate through the focusable elements
-   * - :kbd:`Tab + Shift`
-     - Navigate backwards through the focusable elements
-   * - :kbd:`Enter`
-     - Click on the focused element
-   * - :kbd:`Ctrl + e`
-     - Create a new document
-
-Drive Shortcuts
-***************
-
-.. list-table::
-   :widths: 10 35
-   :header-rows: 1
-
-   * - Shortcut
-     - Action
-   * - :kbd:`Enter`
-     - Open drive file or folder
-   * - :kbd:`↑` and :kbd:`↓` keys
-     - Navigate through content in the drive
-
-Toolbar Shortcuts
-*****************
-
-.. list-table::
-   :widths: 10 35
-   :header-rows: 1
-
-   * - Shortcut
-     - Action
-   * - :kbd:`Enter`
-     - Click on the focused element to open a menu/menu item
-   * - :kbd:`↑` and :kbd:`↓` keys
-     - Navigate through items inside a menu
-   * - :kbd:`Esc`
-     - Close menu when it is open
-   * - :kbd:`Del`
-     - Remove notification from the notifications menu
-   * - Search Functionality
-     - Locate specific elements within a menu by typing the first letter
-
+Toolbar Shortcuts:
+------------------
++----------------------------+-------------------------------------------------------------------+
+| Shortcut                   | Action                                                            |
++============================+===================================================================+
+| :kbd:`Enter`               | Click on the focused element to open a menu                       |
++----------------------------+-------------------------------------------------------------------+
+| :kbd:`↑` and :kbd:`↓` keys | Navigate through items inside a menu                              |
++----------------------------+-------------------------------------------------------------------+
+| :kbd:`Esc`                 | Close menu                                                        |
++----------------------------+-------------------------------------------------------------------+
+| :kbd:`Del`                 | Remove notification from the notifications menu                   |
++----------------------------+-------------------------------------------------------------------+
+| Search Functionality       | Locate specific elements within a menu by typing the first letter |
++----------------------------+-------------------------------------------------------------------+
