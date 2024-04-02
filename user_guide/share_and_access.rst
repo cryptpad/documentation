@@ -118,7 +118,7 @@ Shared folders are made for sharing a set of documents at once.
 To create a shared folder in the CryptDrive:
 
 -  ``+ New`` > |cptools shared-folder| **Shared folder**.
--  ``Ctrl + e`` > |cptools shared-folder| **Shared folder**.
+-  :kbd:`Ctrl + e` > |cptools shared-folder| **Shared folder**.
 -  ``Right click`` > |cptools shared-folder| **New shared folder**.
 
 To convert an existing folder into a shared folder:
@@ -127,7 +127,7 @@ To convert an existing folder into a shared folder:
 2. Choose the conversion options.
    Password.
    :ref:`Owned <owners>` folder.
-3. ``OK`` or press the ``Enter`` key.
+3. ``OK`` or press the :kbd:`Enter` key.
 
 Folders are shared in a similar way to documents. To share a folder from the CryptDrive:
 

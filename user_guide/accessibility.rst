@@ -1,4 +1,3 @@
-
 Accessibility
 ==============
 
@@ -14,6 +13,62 @@ We welcome contributions that make CryptPad more accessible. User feedback is cr
 - `Matrix chat <https://matrix.to/#/#cryptpad-accessibility:matrix.xwiki.com>`__
 - `GitHub issues <https://github.com/cryptpad/cryptpad/issues/new/choose>`__
 
-
 .. note::
     This new section will be extended in future updates to include keyboard shortcuts, accessibility settings, and any other relevant information.
+
+
+Keyboard Shortcuts
+------------------
+
+General Shortcuts
+*****************
+
+.. list-table::
+   :widths: 10 35
+   :header-rows: 1
+
+   * - Shortcut
+     - Action
+   * - :kbd:`Ctrl + e`
+     - Create a new document
+   * - :kbd:`Tab`
+     - Navigate through the focusable elements
+   * - :kbd:`Tab + Shift`
+     - Navigate backwards through the focusable elements
+   * - :kbd:`Enter`
+     - Click on the focused element
+
+Drive Shortcuts
+***************
+
+.. list-table::
+   :widths: 10 35
+   :header-rows: 1
+
+   * - Shortcut
+     - Action
+   * - :kbd:`↑` and :kbd:`↓` keys
+     - Navigate through content in the drive
+   * - :kbd:`Enter`
+     - Open drive file or folder
+
+Toolbar Shortcuts
+*****************
+
+.. list-table::
+   :widths: 10 35
+   :header-rows: 1
+
+   * - Shortcut
+     - Action
+   * - :kbd:`Enter`
+     - Click on the focused element to open a menu
+   * - :kbd:`↑` and :kbd:`↓` keys
+     - Navigate through items inside a menu
+   * - :kbd:`Esc`
+     - Close menu
+   * - :kbd:`Del`
+     - Remove notification from the notifications menu
+   * - Search Functionality
+     - Locate specific elements within a menu by typing the first letter
+
