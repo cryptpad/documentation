@@ -1,6 +1,8 @@
 Accessibility
 ==============
 
+:badge_new:`New in version 5.7`
+
 CryptPad is committed to achieving compliance with the Web Content Accessibility Guidelines (WCAG). The development team understands the importance of creating a usable and inclusive experience and is actively working to meet the WCAG 2.1 AA standard. To check on the details and status of this work please see the `Accessibility project on GitHub <https://github.com/orgs/cryptpad/projects/5>`__.
 
 Feedback channels
@@ -20,55 +22,42 @@ We welcome contributions that make CryptPad more accessible. User feedback is cr
 Keyboard Shortcuts
 ------------------
 
-General Shortcuts
-*****************
+General Shortcuts:
+------------------
++--------------------+---------------------------------------------------+
+| Shortcut           | Action                                            |
++====================+===================================================+
+| :kbd:`Ctrl + e`    | Create a new document                             |
++--------------------+---------------------------------------------------+
+| :kbd:`Tab`         | Navigate through the focusable elements           |
++--------------------+---------------------------------------------------+
+| :kbd:`Tab + Shift` | Navigate backwards through the focusable elements |
++--------------------+---------------------------------------------------+
+| :kbd:`Enter`       | Click on the focused element                      |
++--------------------+---------------------------------------------------+
 
-.. list-table::
-   :widths: 10 35
-   :header-rows: 1
+Drive Shortcuts:
+----------------
++---------------------------------+-----------------------------------------+
+| Shortcut                        | Action                                  |
++=================================+=========================================+
+| :kbd:`↑` and :kbd:`↓` keys      | Navigate through content in the drive   |
++---------------------------------+-----------------------------------------+
+| :kbd:`Enter`                    | Open drive file or folder               |
++---------------------------------+-----------------------------------------+
 
-   * - Shortcut
-     - Action
-   * - :kbd:`Ctrl + e`
-     - Create a new document
-   * - :kbd:`Tab`
-     - Navigate through the focusable elements
-   * - :kbd:`Tab + Shift`
-     - Navigate backwards through the focusable elements
-   * - :kbd:`Enter`
-     - Click on the focused element
-
-Drive Shortcuts
-***************
-
-.. list-table::
-   :widths: 10 35
-   :header-rows: 1
-
-   * - Shortcut
-     - Action
-   * - :kbd:`↑` and :kbd:`↓` keys
-     - Navigate through content in the drive
-   * - :kbd:`Enter`
-     - Open drive file or folder
-
-Toolbar Shortcuts
-*****************
-
-.. list-table::
-   :widths: 10 35
-   :header-rows: 1
-
-   * - Shortcut
-     - Action
-   * - :kbd:`Enter`
-     - Click on the focused element to open a menu
-   * - :kbd:`↑` and :kbd:`↓` keys
-     - Navigate through items inside a menu
-   * - :kbd:`Esc`
-     - Close menu
-   * - :kbd:`Del`
-     - Remove notification from the notifications menu
-   * - Search Functionality
-     - Locate specific elements within a menu by typing the first letter
-
+Toolbar Shortcuts:
+------------------
++----------------------------+-------------------------------------------------------------------+
+| Shortcut                   | Action                                                            |
++============================+===================================================================+
+| :kbd:`Enter`               | Click on the focused element to open a menu                       |
++----------------------------+-------------------------------------------------------------------+
+| :kbd:`↑` and :kbd:`↓` keys | Navigate through items inside a menu                              |
++----------------------------+-------------------------------------------------------------------+
+| :kbd:`Esc`                 | Close menu                                                        |
++----------------------------+-------------------------------------------------------------------+
+| :kbd:`Del`                 | Remove notification from the notifications menu                   |
++----------------------------+-------------------------------------------------------------------+
+| Search Functionality       | Locate specific elements within a menu by typing the first letter |
++----------------------------+-------------------------------------------------------------------+
