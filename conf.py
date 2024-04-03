@@ -108,7 +108,8 @@ html_css_files = [
     'css/cptools.css',
     'css/fontawesome.css',
     'css/IBM-plex.css',
-    'css/cp-overrides.css'
+    'css/cp-overrides.css',
+    'css/custom.css'
 ]
 
 html_theme = "theme"
