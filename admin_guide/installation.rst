@@ -89,7 +89,7 @@ OnlyOffice (optional)
 
 :badge_new:`New in version 2024.3.0`
 
-OnlyOffice is not bundled with CryptPad anymore. You can install/update OnlyOffice by running the installation script we provide:
+OnlyOffice applications (Spreasheet, Document, and Presentation) are not bundled with CryptPad anymore. You can install/update OnlyOffice by running the installation script provided:
 
 .. code:: bash
 
@@ -192,7 +192,7 @@ We provide the following files in the CryptPad repository:
 Note that you'll still need to follow the CryptPad configuration steps, especially :ref:`admin_adminusers`. To do that you can mount your ``config.js`` file as a Docker volume.
 
    .. code:: docker
-      
+
       volumes:
       - ./data/blob:/cryptpad/blob
       - ./data/block:/cryptpad/block
