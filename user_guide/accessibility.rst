@@ -31,7 +31,7 @@ General Shortcuts
 +--------------------+---------------------------------------------------+
 | :kbd:`Tab`         | Navigate through the focusable elements           |
 +--------------------+---------------------------------------------------+
-| :kbd:`Tab + Shift` | Navigate backwards through the focusable elements |
+| :kbd:`Shift + Tab` | Navigate backwards through the focusable elements |
 +--------------------+---------------------------------------------------+
 | :kbd:`Enter`       | Click on the focused element                      |
 +--------------------+---------------------------------------------------+
