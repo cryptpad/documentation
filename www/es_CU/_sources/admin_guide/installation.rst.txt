@@ -74,7 +74,7 @@ Switch to the latest published tag
 
 .. code:: bash
 
-   git checkout 5.6.0
+   git checkout 2024.3.0
 
 Dependencies
 """"""""""""
@@ -83,6 +83,17 @@ Dependencies
 
    npm ci
    npm run install:components
+
+OnlyOffice (optional)
+"""""""""""""""""""""
+
+:badge_new:`New in version 2024.3.0`
+
+OnlyOffice applications (Spreasheet, Document, and Presentation) are not bundled with CryptPad anymore. You can install/update OnlyOffice by running the installation script provided:
+
+.. code:: bash
+
+   ./install-onlyoffice.sh
 
 Configuration
 """""""""""""
@@ -96,6 +107,14 @@ Copy the example configuration
 Please read the configuration file, and modify variables as needed. The :ref:`domains <admin_domain_config>` are particularly important.
 
 As part of the installation process, be sure to read :ref:`admin_customization` and to modify ``customize/application_config.js`` as some settings cannot be changed once user accounts have been created.
+
+Regarding storage, data retention is set by default to:
+
+- 90 days for documents not "pinned" by any registered user
+- 15 days for deleted data that is first archived prior to final deletion
+- 365 days for inactive accounts
+
+You can also setup a dedicated CRON job for the user running the CryptPad service to run the ``scripts/evict-inactive.js`` at the time of your choice. Note that you'll need to set ``disableIntegratedEviction`` to ``true`` in that case.
 
 The server can now be started with
 
@@ -149,18 +168,20 @@ We provide the following files in the CryptPad repository:
 
    .. code:: docker
 
-      docker build -t cryptpad/cryptpad:version-5.6.0 .
+      docker build -t cryptpad/cryptpad:version-2024.3.0 .
 
 #. Modify ``docker-compose.yml`` with your own values
 
    - ``CPAD_MAIN_DOMAIN``
    - ``CPAD_SANDBOX_DOMAIN``
+   - ``CPAD_INSTALL_ONLYOFFICE``
 
 #. Set appropriate permissions
 
    .. code:: bash
 
-      sudo chown -R 4001:4001 data customize
+      mkdir -p data customize onlyoffice-dist onlyoffice-conf
+      sudo chown -R 4001:4001 data customize onlyoffice-dist onlyoffice-conf
 
 #. Run the container with Docker Compose
 
@@ -171,13 +192,15 @@ We provide the following files in the CryptPad repository:
 Note that you'll still need to follow the CryptPad configuration steps, especially :ref:`admin_adminusers`. To do that you can mount your ``config.js`` file as a Docker volume.
 
    .. code:: docker
-      
+
       volumes:
       - ./data/blob:/cryptpad/blob
       - ./data/block:/cryptpad/block
       - ./customize:/cryptpad/customize
       - ./data/data:/cryptpad/data
       - ./data/files:/cryptpad/datastore
+      - ./onlyoffice-dist:/cryptpad/www/common/onlyoffice/dist
+      - ./onlyoffice-conf:/cryptpad/onlyoffice-conf
       - ./config/config.js:/cryptpad/config/config.js
 
 .. _admin_domain_config:

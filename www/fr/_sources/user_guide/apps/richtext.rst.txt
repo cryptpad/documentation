@@ -42,12 +42,12 @@ In order for headings to appear in the outline, they must be formatted as such. 
 
 - Use the formatting menu in the toolbar (displays "normal" by default) to select the desired heading level.
 
-- Use the keyboard shortcut: ``Ctrl`` + ``Alt`` + the number of the desired heading level.
+- Use the keyboard shortcut: :kbd:`Ctrl` + :kbd:`Alt` + the number of the desired heading level.
 
 Paragraphs
 ++++++++++
 
-By default the ``Enter`` key creates a new paragraph, adding a line of spacing with the previous paragraph. To add a line-break without adding a new paragraph, use ``Shift`` + ``Enter``.
+By default the :kbd:`Enter` key creates a new paragraph, adding a line of spacing with the previous paragraph. To add a line-break without adding a new paragraph, use :kbd:`Shift + Enter`.
 
 .. note::
    

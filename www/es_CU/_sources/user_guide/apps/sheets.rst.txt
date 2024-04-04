@@ -36,7 +36,7 @@ OnlyOffice provides two collaborative editing modes in spreadsheets that affect 
 - **Fast Mode** is enabled by default. New edits by all users are automatically synced with others as they are made. In this mode it is not possible to undo.
 - **Strict Mode** allows each user to make changes independently. The modified cells are "locked" for others until the author manually saves their changes. New edits are only synced with other users after being saved. In this mode it is possible to undo changes that have not yet been saved. When a user saves their changes, others are prompted to save in order to receive the latest edits.
 
-When ``Ctrl Z`` is pressed for undo, the application will automatically suggest switching to **Strict Mode** to enable the undo functionality.
+When :kbd:`Ctrl + Z` is pressed for undo, the application will automatically suggest switching to **Strict Mode** to enable the undo functionality.
 
 To switch back to **Fast mode** use the **Collaboration** tab in the OnlyOffice toolbar and select **Co-editing Mode** > **Fast**.
 

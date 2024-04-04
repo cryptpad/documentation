@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Administration panel &mdash; Documentation CryptPad 5.7.0</title>
+  <title>Administration panel &mdash; Documentation CryptPad 2024.3.0</title>
   
 
   
@@ -37,7 +37,7 @@
   <link rel="stylesheet" href="../_static/css/cp-overrides.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Recherche" href="../search.html" />
-    <link rel="next" title="Developer Guide" href="../dev_guide/index.html" />
+    <link rel="next" title="Help-desk" href="help-desk.html" />
     <link rel="prev" title="Maintenance" href="maintenance.html" /> 
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.7.0</span>
+              <span class="release">Documentation 2024.3.0</span>
             </a>
             
 <div role="search">
@@ -301,6 +301,12 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../user_guide/accessibility.html">Accessibilité</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/accessibility.html#feedback-channels">Moyens de retours d'information</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/accessibility.html#keyboard-shortcuts">Keyboard Shortcuts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/accessibility.html#general-shortcuts">General Shortcuts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/accessibility.html#drive-shortcuts">Drive Shortcuts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/accessibility.html#toolbar-shortcuts">Toolbar Shortcuts</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -316,6 +322,7 @@
 <li class="toctree-l3"><a class="reference internal" href="installation.html#install-cryptpad">Install Cryptpad</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="installation.html#recommended">Recommended</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l5"><a class="reference internal" href="installation.html#onlyoffice-optional">OnlyOffice (optional)</a></li>
 <li class="toctree-l5"><a class="reference internal" href="installation.html#configuration">Configuration</a></li>
 <li class="toctree-l5"><a class="reference internal" href="installation.html#daemonization">Daemonization</a></li>
 <li class="toctree-l5"><a class="reference internal" href="installation.html#systemd">Systemd</a></li>
@@ -363,12 +370,27 @@
 </li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Administration panel</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#general">General</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#instance-name">Instance name</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#instance-description">Instance description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#admin-contact-email">Admin contact email</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#hosting-location">Hosting location</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#flush-http-cache">Flush HTTP Cache</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#update-user-quotas">Update user quotas</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#customize">Customize</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#upload-logo">Upload Logo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#main-color">Main color</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#broadcast">Broadcast</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#maintenance">Maintenance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#survey">Survey</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#broadcast-message">Broadcast Message</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#security">Security</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#enable-remote-embedding">Enable remote embedding</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#mandatory-two-factor-authentication">Mandatory Two-Factor Authentication</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#admin-contact-email">Admin contact email</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#instance-information">Instance information</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#user-directory">User Directory</a><ul>
@@ -390,14 +412,12 @@
 <li class="toctree-l4"><a class="reference internal" href="#fa-recovery">2FA Recovery</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#statistics">Statistics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#support">Support</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#broadcast">Broadcast</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#maintenance">Maintenance</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#survey">Survey</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#broadcast-message">Broadcast Message</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#support">Support</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#initialize-support">Initialize support</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#manage-support-team">Manage support team</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#statistics">Statistics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#performance">Performance</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id2">Performance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#measure-disk-performance">Measure disk performance</a></li>
@@ -412,6 +432,33 @@
 <li class="toctree-l4"><a class="reference internal" href="#consent-to-contact">Consent to contact</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#crowdfunding-participation">Crowdfunding participation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#instance-purpose">Instance purpose</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="help-desk.html">Help-desk</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="help-desk.html#inbox">Inbox</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="help-desk.html#filter-by-tag">Filter by tag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="help-desk.html#premium-tickets">Premium tickets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="help-desk.html#unanswered-tickets">Unanswered tickets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="help-desk.html#answered-tickets">Answered tickets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="help-desk.html#archived-tickets">Archived tickets</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="help-desk.html#closed">Closed</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="help-desk.html#id1">Filter by tag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="help-desk.html#closed-tickets">Closed tickets</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="help-desk.html#search">Search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="help-desk.html#new-ticket">New ticket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="help-desk.html#open-a-ticket-for-a-user">Open a ticket for a user</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="help-desk.html#settings">Settings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="help-desk.html#answer-anonymously">Answer anonymously</a></li>
+<li class="toctree-l4"><a class="reference internal" href="help-desk.html#disable-notifications">Disable notifications</a></li>
+<li class="toctree-l4"><a class="reference internal" href="help-desk.html#snippets">Snippets</a></li>
 </ul>
 </li>
 </ul>
@@ -666,16 +713,71 @@
 </ul>
 <p>This page repeats the comments present on the admin panels and adds a few clarifications.</p>
 <section id="general">
-<h2>General<a class="headerlink" href="#general" title="Lien permanent vers cette rubrique">¶</a></h2>
+<span id="admin-instance-info"></span><h2>General<a class="headerlink" href="#general" title="Lien permanent vers cette rubrique">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The following fields are used to describe the instance in the <a class="reference internal" href="#admin-list-public"><span class="std std-ref">list of public instances</span></a> and is shown on your instance front page.</p>
+</div>
+<section id="instance-name">
+<h3>Instance name<a class="headerlink" href="#instance-name" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>The name displayed for this instance</p>
+</section>
+<section id="instance-description">
+<h3>Instance description<a class="headerlink" href="#instance-description" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>The descriptive text displayed for this instance</p>
+</section>
+<section id="admin-contact-email">
+<span id="admin-email"></span><h3>Admin contact email<a class="headerlink" href="#admin-contact-email" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>This email address is displayed on the instance contact page.</p>
+<p>This email may be used by the development team, only if <a class="reference internal" href="#admin-consent-contact"><span class="std std-ref">Consent to contact</span></a> is given, to warn of security vulnerabilities or in other cases for example matters affecting public facing instances listed in <a class="reference external" href="https://cryptpad.org/instances/">the directory</a>.</p>
+</section>
+<section id="hosting-location">
+<h3>Hosting location<a class="headerlink" href="#hosting-location" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>The country where this instance's encrypted data is hosted.</p>
+</section>
 <section id="flush-http-cache">
 <h3>Flush HTTP Cache<a class="headerlink" href="#flush-http-cache" title="Lien permanent vers cette rubrique">¶</a></h3>
 <p>Force users to download the latest client-side assets (only if your server is in fresh mode).</p>
 <p>This includes some configuration changes distributed via <code class="docutils literal notranslate"><span class="pre">/api/config</span></code>.</p>
 </section>
-<section id="update-user-quotas">
-<h3>Update user quotas<a class="headerlink" href="#update-user-quotas" title="Lien permanent vers cette rubrique">¶</a></h3>
-<p>Forcing an update of user storage limits can be done any time, but is only necessary in the event of an error.</p>
 </section>
+<section id="customize">
+<h2>Customize<a class="headerlink" href="#customize" title="Lien permanent vers cette rubrique">¶</a></h2>
+<section id="upload-logo">
+<h3>Upload Logo<a class="headerlink" href="#upload-logo" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Browse local files on your computer to upload a logo for your CryptPad instance. Maximum size is 200KB. File formats supported are:</p>
+<ul class="simple">
+<li><p>SVG</p></li>
+<li><p>PNG</p></li>
+<li><p>JPG</p></li>
+</ul>
+<p>Click <strong>RESTORE DEFAULT</strong> button to restore the official CryptPad logo instead of the customized one.</p>
+</section>
+<section id="main-color">
+<h3>Main color<a class="headerlink" href="#main-color" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Change the main color of your CryptPad instance. Please pick a color with good contrast with the rest of CryptPad.</p>
+<p>Use the color picker to select the color you want then click the <strong>CHANGE COLOR</strong> button. You can <strong>RESTORE DEFAULT</strong> with the red button.</p>
+<p>You can see the preview of the color selected with a link and the two kind of buttons in CryptPad.</p>
+</section>
+</section>
+<section id="broadcast">
+<h2>Broadcast<a class="headerlink" href="#broadcast" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>This section offers different ways of sending notifications to all users on the instance.</p>
+<section id="maintenance">
+<h3>Maintenance<a class="headerlink" href="#maintenance" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Plan a maintenance on this instance and notify all users. Limited to one active maintenance at a given time.</p>
+</section>
+<section id="survey">
+<h3>Survey<a class="headerlink" href="#survey" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Add, update or remove a link to an external survey. Users will receive a notification and the survey will remain available from the user menu.</p>
+</section>
+<section id="broadcast-message">
+<h3>Broadcast Message<a class="headerlink" href="#broadcast-message" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Send a message to all users on this instance. All existing and new users will receive it as a notification. Preview messages before sending them with &quot;Preview notification&quot;. Preview notifications have a red icon and are visible only to you.</p>
+</section>
+</section>
+<section id="security">
+<h2>Security<a class="headerlink" href="#security" title="Lien permanent vers cette rubrique">¶</a></h2>
 <section id="enable-remote-embedding">
 <h3>Enable remote embedding<a class="headerlink" href="#enable-remote-embedding" title="Lien permanent vers cette rubrique">¶</a></h3>
 <p>Allow documents and media from this instance to be embedded on other websites. This will add an &quot;Embed&quot; option to the Share menu. For security reasons applications that use OnlyOffice (Sheets, Document, Presentation) cannot be embedded even if this setting is active.</p>
@@ -684,24 +786,6 @@
 <section id="mandatory-two-factor-authentication">
 <h3>Mandatory Two-Factor Authentication<a class="headerlink" href="#mandatory-two-factor-authentication" title="Lien permanent vers cette rubrique">¶</a></h3>
 <p>Tick the box so all users on this instance will be asked to set up two-factor authentication to log in to their account.</p>
-</section>
-<section id="admin-contact-email">
-<span id="admin-email"></span><h3>Admin contact email<a class="headerlink" href="#admin-contact-email" title="Lien permanent vers cette rubrique">¶</a></h3>
-<p>This email address is displayed on the instance contact page.</p>
-<p>This email may be used by the development team, only if <a class="reference internal" href="#admin-consent-contact"><span class="std std-ref">Consent to contact</span></a> is given, to warn of security vulnerabilities or in other cases for example matters affecting public facing instances listed in <a class="reference external" href="https://cryptpad.org/instances/">the directory</a>.</p>
-</section>
-<section id="instance-information">
-<span id="admin-instance-info"></span><h3>Instance information<a class="headerlink" href="#instance-information" title="Lien permanent vers cette rubrique">¶</a></h3>
-<p>The following fields are used to describe the instance in the <a class="reference internal" href="#admin-list-public"><span class="std std-ref">list of public instances</span></a>:</p>
-<ul class="simple">
-<li><p>Instance name (optional, if no name is provided the instance URL is used)</p></li>
-<li><p>Instance description</p></li>
-<li><p>Hosting location (country where the instance's encrypted data is hosted)</p></li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This information is used on the instance front page.</p>
-</div>
 </section>
 </section>
 <section id="user-directory">
@@ -717,6 +801,11 @@
 <section id="id1">
 <h3>User Directory<a class="headerlink" href="#id1" title="Lien permanent vers cette rubrique">¶</a></h3>
 <p>List of known accounts on this instance. Select options to add invited accounts automatically, or enter information manually using the form.</p>
+<p>You can toggle the two following options (enabled by default):</p>
+<ul class="simple">
+<li><p>Automatically store invited users</p></li>
+<li><p>Automatically store SSO users</p></li>
+</ul>
 </section>
 </section>
 <section id="user-storage">
@@ -759,6 +848,17 @@
 <p>Users can copy recovery data on the 2FA recovery page <a class="reference external" href="https://your-instance.com/recovery/">https://your-instance.com/recovery/</a> in the &quot;<em>Forgot recovery code</em>&quot; section and email it to the instance administrators. Paste recovery data below to disable 2FA for an account</p>
 </section>
 </section>
+<section id="support">
+<h2>Support<a class="headerlink" href="#support" title="Lien permanent vers cette rubrique">¶</a></h2>
+<section id="initialize-support">
+<h3>Initialize support<a class="headerlink" href="#initialize-support" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Create or update the support keys.</p>
+</section>
+<section id="manage-support-team">
+<h3>Manage support team<a class="headerlink" href="#manage-support-team" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Add and remove people from the instance support team.</p>
+</section>
+</section>
 <section id="statistics">
 <h2>Statistics<a class="headerlink" href="#statistics" title="Lien permanent vers cette rubrique">¶</a></h2>
 <ul class="simple">
@@ -773,32 +873,6 @@
 <p class="admonition-title">Avertissement</p>
 <p>The disk usage report can be very resource intensive to run on large instances.</p>
 </div>
-</section>
-<section id="support">
-<h2>Support<a class="headerlink" href="#support" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p>To enable the Support mailbox, please see <a class="reference internal" href="installation.html#admin-support-mailbox"><span class="std std-ref">Configure support mailbox</span></a>.</p>
-<p>List of tickets sent by users to the support mailbox. All the administrators can see the messages and their answers. A closed ticket cannot be re-opened. You can only remove (hide) closed tickets, and the removed tickets are still visible by other administrators.</p>
-<ul class="simple">
-<li><p>reply to tickets</p></li>
-<li><p>close tickets</p></li>
-<li><p>remove closed tickets</p></li>
-</ul>
-</section>
-<section id="broadcast">
-<h2>Broadcast<a class="headerlink" href="#broadcast" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p>This section offers different ways of sending notifications to all users on the instance.</p>
-<section id="maintenance">
-<h3>Maintenance<a class="headerlink" href="#maintenance" title="Lien permanent vers cette rubrique">¶</a></h3>
-<p>Plan a maintenance on this instance and notify all users. Limited to one active maintenance at a given time.</p>
-</section>
-<section id="survey">
-<h3>Survey<a class="headerlink" href="#survey" title="Lien permanent vers cette rubrique">¶</a></h3>
-<p>Add, update or remove a link to an external survey. Users will receive a notification and the survey will remain available from the user menu.</p>
-</section>
-<section id="broadcast-message">
-<h3>Broadcast Message<a class="headerlink" href="#broadcast-message" title="Lien permanent vers cette rubrique">¶</a></h3>
-<p>Send a message to all users on this instance. All existing and new users will receive it as a notification. Preview messages before sending them with &quot;Preview notification&quot;. Preview notifications have a red icon and are visible only to you.</p>
-</section>
 </section>
 <section id="performance">
 <h2>Performance<a class="headerlink" href="#performance" title="Lien permanent vers cette rubrique">¶</a></h2>
@@ -879,7 +953,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../dev_guide/index.html" class="btn btn-neutral float-right" title="Developer Guide" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="help-desk.html" class="btn btn-neutral float-right" title="Help-desk" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="maintenance.html" class="btn btn-neutral" title="Maintenance" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
@@ -916,7 +990,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.7.0',
+            VERSION:'2024.3.0',
             LANGUAGE:'fr',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

@@ -36,13 +36,13 @@ Change the title of a column:
 
 1. ``Click`` on the column title.
 2. Type the new title.
-3. ``Enter``
+3. :kbd:`Enter`
 
 The column title and color can be changed in the column editor:
 
 1. |pencil| button next to the column title.
 2. Change the title and/or pick a color.
-3. **Close**, ``Esc`` or ``Enter``
+3. **Close**, :kbd:`Esc` or :kbd:`Enter`
 
 Cards
 -----
@@ -56,7 +56,7 @@ Change the title of a card:
 
 1. ``Click`` on the card title.
 2. Type the new title.
-3. ``Enter``
+3. :kbd:`Enter`
 
 The title of a card can also be modified in the card editor (see below).
 

@@ -48,7 +48,7 @@ Color is selected in the palette in the drawing toolbar. To change a color doubl
 
 To delete a selected element:
 
-- ``Del`` key.
+- :kbd:`Del` key.
 - |trash| button in the drawing toolbar.
 
 Export

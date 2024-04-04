@@ -203,7 +203,7 @@ Rich Text
 User settings for the :ref:`app_rich_text` application.
 
 -  **Editor’s maximum width**: Switch between page mode (default) that limits the width of the text editor, and using the full width of the screen.
--  **Spellcheck**: Enable spellcheck in Rich Text documents. Spelling errors are underlined and suggested corrections are available through ``Ctrl + Right click`` on the word to correct.
+-  **Spellcheck**: Enable spellcheck in Rich Text documents. Spelling errors are underlined and suggested corrections are available through :kbd:`Ctrl` + ``Right click`` on the word to correct.
 -  **Comment notifications**: Disable notifications when another user replies to one of your comments.
 -  **Open links on first click**: Open embedded links on click without the preview popup.
 
@@ -215,7 +215,7 @@ Code
 User settings for the :ref:`app_code` application.
 
 -  **Code editor indentation (spaces)**: Choose the number of spaces for each level of indentation.
--  **Indent using tabs (instead of spaces)**: Insert tabs rather than spaces with the ``Tab`` key.
+-  **Indent using tabs (instead of spaces)**: Insert tabs rather than spaces with the :kbd:`Tab` key.
 -  **Auto-close brackets**: Automatically insert a closing character ``)`` when brackets are opened with ``(`` (also works with ``[``, ``'``, ``"``).
 -  **Font size in the code editor**: Set the size of text in the code editor.
 -  **Spellcheck**: Underline spelling mistakes in the code editor, correction suggestions are available through ``Right click`` on the word to correct.

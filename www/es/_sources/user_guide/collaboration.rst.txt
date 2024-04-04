@@ -156,7 +156,7 @@ Chat with contacts
 
 On the Contacts page, click on a contact in the list to open the chat with them in the main window.
 
-Write messages in the field at the bottom and send them with |paper-plane| or ``Enter``.
+Write messages in the field at the bottom and send them with |paper-plane| or :kbd:`Enter`.
 
 Load more chat history with |history| or delete the history with |eraser|.
 

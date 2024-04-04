@@ -12,8 +12,38 @@ The admin panel is available to administrator users (see :ref:`admin_adminusers`
 
 This page repeats the comments present on the admin panels and adds a few clarifications.
 
+.. _admin_instance_info:
+
 General
 -------
+
+.. note::
+
+   The following fields are used to describe the instance in the :ref:`list of public instances <admin_list_public>` and is shown on your instance front page.
+
+Instance name
+~~~~~~~~~~~~~
+
+The name displayed for this instance
+
+Instance description
+~~~~~~~~~~~~~~~~~~~~
+
+The descriptive text displayed for this instance
+
+.. _admin_email:
+
+Admin contact email
+~~~~~~~~~~~~~~~~~~~
+
+This email address is displayed on the instance contact page.
+
+This email may be used by the development team, only if :ref:`admin_consent_contact` is given, to warn of security vulnerabilities or in other cases for example matters affecting public facing instances listed in `the directory <https://cryptpad.org/instances/>`_.
+
+Hosting location
+~~~~~~~~~~~~~~~~
+
+The country where this instance's encrypted data is hosted.
 
 Flush HTTP Cache
 ~~~~~~~~~~~~~~~~
@@ -22,11 +52,51 @@ Force users to download the latest client-side assets (only if your server is in
 
 This includes some configuration changes distributed via ``/api/config``.
 
-Update user quotas
-~~~~~~~~~~~~~~~~~~
+Customize
+---------
 
-Forcing an update of user storage limits can be done any time, but is only necessary in the event of an error.
+Upload Logo
+~~~~~~~~~~~
 
+Browse local files on your computer to upload a logo for your CryptPad instance. Maximum size is 200KB. File formats supported are:
+
+- SVG
+- PNG
+- JPG
+
+Click **RESTORE DEFAULT** button to restore the official CryptPad logo instead of the customized one.
+
+Main color
+~~~~~~~~~~
+
+Change the main color of your CryptPad instance. Please pick a color with good contrast with the rest of CryptPad.
+
+Use the color picker to select the color you want then click the **CHANGE COLOR** button. You can **RESTORE DEFAULT** with the red button.
+
+You can see the preview of the color selected with a link and the two kind of buttons in CryptPad.
+
+Broadcast
+---------
+
+This section offers different ways of sending notifications to all users on the instance.
+
+Maintenance
+~~~~~~~~~~~
+
+Plan a maintenance on this instance and notify all users. Limited to one active maintenance at a given time.
+
+Survey
+~~~~~~
+
+Add, update or remove a link to an external survey. Users will receive a notification and the survey will remain available from the user menu.
+
+Broadcast Message
+~~~~~~~~~~~~~~~~~
+
+Send a message to all users on this instance. All existing and new users will receive it as a notification. Preview messages before sending them with "Preview notification". Preview notifications have a red icon and are visible only to you.
+
+Security
+--------
 
 Enable remote embedding
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -39,31 +109,6 @@ Mandatory Two-Factor Authentication
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Tick the box so all users on this instance will be asked to set up two-factor authentication to log in to their account.
-
-.. _admin_email:
-
-Admin contact email
-~~~~~~~~~~~~~~~~~~~
-
-This email address is displayed on the instance contact page.
-
-This email may be used by the development team, only if :ref:`admin_consent_contact` is given, to warn of security vulnerabilities or in other cases for example matters affecting public facing instances listed in `the directory <https://cryptpad.org/instances/>`_.
-
-.. _admin_instance_info:
-
-Instance information
-~~~~~~~~~~~~~~~~~~~~
-
-The following fields are used to describe the instance in the :ref:`list of public instances <admin_list_public>`:
-
-- Instance name (optional, if no name is provided the instance URL is used)
-- Instance description
-- Hosting location (country where the instance's encrypted data is hosted)
-
-.. note::
-
-   This information is used on the instance front page.
-
 
 User Directory
 --------------
@@ -85,6 +130,10 @@ User Directory
 
 List of known accounts on this instance. Select options to add invited accounts automatically, or enter information manually using the form.
 
+You can toggle the two following options (enabled by default):
+
+- Automatically store invited users
+- Automatically store SSO users
 
 User Storage
 ------------
@@ -135,6 +184,19 @@ The login block is what allows an account to log in to CryptPad with the combina
 
 Users can copy recovery data on the 2FA recovery page https://your-instance.com/recovery/ in the "*Forgot recovery code*" section and email it to the instance administrators. Paste recovery data below to disable 2FA for an account
 
+Support
+-------
+
+Initialize support
+~~~~~~~~~~~~~~~~~~
+
+Create or update the support keys.
+
+Manage support team
+~~~~~~~~~~~~~~~~~~~
+
+Add and remove people from the instance support team.
+
 Statistics
 ----------
 
@@ -148,37 +210,6 @@ Statistics
 .. warning::
 
    The disk usage report can be very resource intensive to run on large instances.
-
-Support
--------
-
-To enable the Support mailbox, please see :ref:`admin_support_mailbox`.
-
-List of tickets sent by users to the support mailbox. All the administrators can see the messages and their answers. A closed ticket cannot be re-opened. You can only remove (hide) closed tickets, and the removed tickets are still visible by other administrators.
-
--  reply to tickets
--  close tickets
--  remove closed tickets
-
-Broadcast
----------
-
-This section offers different ways of sending notifications to all users on the instance.
-
-Maintenance
-~~~~~~~~~~~
-
-Plan a maintenance on this instance and notify all users. Limited to one active maintenance at a given time.
-
-Survey
-~~~~~~
-
-Add, update or remove a link to an external survey. Users will receive a notification and the survey will remain available from the user menu.
-
-Broadcast Message
-~~~~~~~~~~~~~~~~~
-
-Send a message to all users on this instance. All existing and new users will receive it as a notification. Preview messages before sending them with "Preview notification". Preview notifications have a red icon and are visible only to you.
 
 Performance
 -----------

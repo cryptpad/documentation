@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Adding Translations &mdash; CryptPad 5.7.0 Dokumentation</title>
+  <title>Adding Translations &mdash; CryptPad 2024.3.0 Dokumentation</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 5.7.0</span>
+              <span class="release">Documentation 2024.3.0</span>
             </a>
             
 <div role="search">
@@ -301,6 +301,12 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../user_guide/accessibility.html">Zugänglichkeit</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/accessibility.html#feedback-channels">Feedback-Kanäle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/accessibility.html#keyboard-shortcuts">Keyboard Shortcuts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/accessibility.html#general-shortcuts">General Shortcuts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/accessibility.html#drive-shortcuts">Drive Shortcuts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/accessibility.html#toolbar-shortcuts">Toolbar Shortcuts</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -316,6 +322,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/installation.html#install-cryptpad">Install Cryptpad</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/installation.html#recommended">Recommended</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#dependencies">Dependencies</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#onlyoffice-optional">OnlyOffice (optional)</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#configuration">Configuration</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#daemonization">Daemonization</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../admin_guide/installation.html#systemd">Systemd</a></li>
@@ -363,12 +370,27 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../admin_guide/admin_panel.html">Administration panel</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#general">General</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#instance-name">Instance name</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#instance-description">Instance description</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#admin-contact-email">Admin contact email</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#hosting-location">Hosting location</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#flush-http-cache">Flush HTTP Cache</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#update-user-quotas">Update user quotas</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#customize">Customize</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#upload-logo">Upload Logo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#main-color">Main color</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#maintenance">Maintenance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#survey">Survey</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast-message">Broadcast Message</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#security">Security</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#enable-remote-embedding">Enable remote embedding</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#mandatory-two-factor-authentication">Mandatory Two-Factor Authentication</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#admin-contact-email">Admin contact email</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#instance-information">Instance information</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#user-directory">User Directory</a><ul>
@@ -390,14 +412,12 @@
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#fa-recovery">2FA Recovery</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#statistics">Statistics</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#support">Support</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#maintenance">Maintenance</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#survey">Survey</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast-message">Broadcast Message</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#support">Support</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#initialize-support">Initialize support</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#manage-support-team">Manage support team</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#statistics">Statistics</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#performance">Performance</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#id2">Performance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#measure-disk-performance">Measure disk performance</a></li>
@@ -412,6 +432,33 @@
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#consent-to-contact">Consent to contact</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#crowdfunding-participation">Crowdfunding participation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#instance-purpose">Instance purpose</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../admin_guide/help-desk.html">Help-desk</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/help-desk.html#inbox">Inbox</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/help-desk.html#filter-by-tag">Filter by tag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/help-desk.html#premium-tickets">Premium tickets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/help-desk.html#unanswered-tickets">Unanswered tickets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/help-desk.html#answered-tickets">Answered tickets</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/help-desk.html#archived-tickets">Archived tickets</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/help-desk.html#closed">Closed</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/help-desk.html#id1">Filter by tag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/help-desk.html#closed-tickets">Closed tickets</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/help-desk.html#search">Search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/help-desk.html#new-ticket">New ticket</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/help-desk.html#open-a-ticket-for-a-user">Open a ticket for a user</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/help-desk.html#settings">Settings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/help-desk.html#answer-anonymously">Answer anonymously</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/help-desk.html#disable-notifications">Disable notifications</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/help-desk.html#snippets">Snippets</a></li>
 </ul>
 </li>
 </ul>
@@ -808,7 +855,7 @@ These tests will check to make sure that your translation has an entry for every
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'5.7.0',
+            VERSION:'2024.3.0',
             LANGUAGE:'de',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

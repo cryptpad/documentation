@@ -77,4 +77,4 @@ To browse through all images and diagrams in a document using the full width of 
 
 1. ``Double click`` on an image or diagram in the Markdown preview.
 2. Navigate with the arrow keys.
-3. Close the light box with |times| or ``Esc``.
+3. Close the light box with |times| or :kbd:`Esc`.
