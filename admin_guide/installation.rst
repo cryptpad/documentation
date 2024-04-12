@@ -231,13 +231,12 @@ After that, you can check out the different OnlyOffice versions CryptPad uses:
    git worktree add www/common/onlyoffice/dist/v6 abd8a309
    git worktree add www/common/onlyoffice/dist/v7 9d8b914a
 
-To install x2t, needed for document conversions, you should download `x2t.zip` from https://github.com/cryptpad/onlyoffice-x2t-wasm/releases, and extract its contents into `www/common/onlyoffice/dist/v7/x2t/`.
+To install x2t, needed for document conversions, you should download `x2t.zip` from https://github.com/cryptpad/onlyoffice-x2t-wasm/releases, and extract its contents into `www/common/onlyoffice/dist/x2t/`.
 
 If you want to upgrade OnlyOffice, you need to update the `onlyoffice-builds` repository. Call this inside the `onlyoffice-builds/` folder:
 
 .. code:: bash
 
-   cd onlyoffice-builds
    git fetch --all
 
 After that, you can update the different OnlyOffice versions. Check https://github.com/cryptpad/cryptpad/blob/staging/install-onlyoffice.sh#L31, if the commit hash of a version has changed. If it has changed, check out the updated commit hash. For example:
