@@ -4,16 +4,10 @@ Maintenance
 Upgrading CryptPad
 ------------------
 
-The basic set of commands to upgrade CryptPad to a new version is as follows (assuming CryptPad is installed in ``/var/www/cryptpad``).
+To upgrade your CryptPad instance, please follow the indications provided in the Upgrade notes section of the `releases published on GitHub <https://github.com/cryptpad/cryptpad/releases>`__.
 
-.. code:: bash
-
-   cd /var/www/cryptpad
-   git pull
-   npm update
-   npm run install:components
-
-Depending on the version, there may be changes that require special consideration. It is therefore highly recommended to read the release notes for the specific targeted version before upgrading.
+.. note::
+    If you are upgrading from an oldest release than the latest one, please read the upgrade notes of all versions between yours and the previous ones to avoid configuration issues (e.g. you are on 5.5.0 and want to upgrade to 2024.3.0, you'll need to upgrade to 5.6.0 and 5.7.0 before)
 
 .. _admin_database:
 
