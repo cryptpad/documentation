@@ -87,8 +87,6 @@ Dependencies
 OnlyOffice (optional)
 """""""""""""""""""""
 
-:badge_new:`New in version 2024.3.0`
-
 OnlyOffice applications (Spreasheet, Document, and Presentation) are not bundled with CryptPad anymore. You can install/update OnlyOffice by running the installation script provided:
 
 .. code:: bash
