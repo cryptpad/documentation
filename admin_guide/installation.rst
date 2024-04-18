@@ -106,14 +106,6 @@ Please read the configuration file, and modify variables as needed. The :ref:`do
 
 As part of the installation process, be sure to read :ref:`admin_customization` and to modify ``customize/application_config.js`` as some settings cannot be changed once user accounts have been created.
 
-Regarding storage, data retention is set by default to:
-
-- 90 days for documents not "pinned" by any registered user
-- 15 days for deleted data that is first archived prior to final deletion
-- 365 days for inactive accounts
-
-You can also setup a dedicated CRON job for the user running the CryptPad service to run the ``scripts/evict-inactive.js`` at the time of your choice. Note that you'll need to set ``disableIntegratedEviction`` to ``true`` in that case.
-
 The server can now be started with
 
 .. code:: bash
@@ -121,6 +113,32 @@ The server can now be started with
    node server
 
 The instance is now ready to run but cannot yet be accessed from the internet.
+
+Regarding storage, data retention is set by default to:
+
+- 90 days for documents not "pinned" by any registered user
+- 15 days for deleted data that is first archived prior to final deletion
+- 365 days for inactive accounts
+
+You can also setup a dedicated cron job to run the ``scripts/evict-inactive.js`` script. Its purpose is to move all the users destroyed & inactive (according to the ``inactiveTime`` setttings) files to the archive directory.
+
+.. note::
+
+   Note that you'll need to set ``disableIntegratedEviction`` to ``true`` in that case.
+
+Use the ``crontab -e`` command to set up a daily cron job, starting every day at 00h00:
+
+.. code:: bash
+
+   0 0 * * * "/usr/bin/node cryptpad/scripts/evict-inactive.js" > /dev/null
+
+Then you'll likely want to do the same for ``scripts/evict-archival.js``. Which will clean the archive directory by permanently remove files that have been archived for more than ``archiveRetentionTime`` days.
+
+Again, use the ``crontab -e`` command to set up a weekly cron job, starting every Sunday at 00h00:
+
+.. code:: bash
+
+   0 0 * * 0 "/usr/bin/node cryptpad/scripts/evict-archived.js" > /dev/null
 
 Daemonization
 """""""""""""
