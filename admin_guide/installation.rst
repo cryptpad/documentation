@@ -84,14 +84,18 @@ Dependencies
    npm ci
    npm run install:components
 
+.. _admin_install_onlyoffice:
+
 OnlyOffice (optional)
 """""""""""""""""""""
 
-OnlyOffice applications (Spreasheet, Document, and Presentation) are not bundled with CryptPad anymore. You can install/update OnlyOffice by running the installation script provided:
+OnlyOffice applications (Spreadsheet, Document, and Presentation) are not bundled with CryptPad anymore. You can install/update OnlyOffice by running the installation script provided:
 
 .. code:: bash
 
    ./install-onlyoffice.sh
+
+If you can not or do not want to use this script, it is also possible to :ref:`install OnlyOffice manually <admin_install_onlyoffice_manually>`.
 
 Configuration
 """""""""""""
@@ -218,6 +222,45 @@ Note that you'll still need to follow the CryptPad configuration steps, especial
       - ./onlyoffice-dist:/cryptpad/www/common/onlyoffice/dist
       - ./onlyoffice-conf:/cryptpad/onlyoffice-conf
       - ./config/config.js:/cryptpad/config/config.js
+
+.. _admin_install_onlyoffice_manually:
+
+Install OnlyOffice manually
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+It is easier to use the :ref:`script <admin_install_onlyoffice>` to install OnlyOffice. However, it is also possible to install OnlyOffice manually.
+
+For the first installation you need to clone `onlyoffice-builds` into your `cryptpad` folder:
+
+.. code:: bash
+
+   git clone --bare https://github.com/cryptpad/onlyoffice-builds.git
+
+After that, you can check out the different OnlyOffice versions CryptPad uses:
+
+.. code:: bash
+
+   git worktree add www/common/onlyoffice/dist/v1 4f370beb
+   git worktree add www/common/onlyoffice/dist/v2b d9da72fd
+   git worktree add www/common/onlyoffice/dist/v4 6ebc6938
+   git worktree add www/common/onlyoffice/dist/v5 88a356f0
+   git worktree add www/common/onlyoffice/dist/v6 abd8a309
+   git worktree add www/common/onlyoffice/dist/v7 9d8b914a
+
+To install x2t, needed for document conversions, you should download `x2t.zip` from https://github.com/cryptpad/onlyoffice-x2t-wasm/releases, and extract its contents into `www/common/onlyoffice/dist/x2t/`.
+
+If you want to upgrade OnlyOffice, you need to update the `onlyoffice-builds` repository. Call this inside the `onlyoffice-builds/` folder:
+
+.. code:: bash
+
+   git fetch --all
+
+After that, you can update the different OnlyOffice versions. Check https://github.com/cryptpad/cryptpad/blob/staging/install-onlyoffice.sh#L31, if the commit hash of a version has changed. If it has changed, check out the updated commit hash. For example:
+
+.. code:: bash
+
+   cd www/common/onlyoffice/dist/v7
+   git checkout 9d8b914a
 
 .. _admin_domain_config:
 
