@@ -1,0 +1,372 @@
+/* Main menu on index page */
+
+#main-menu > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#main-menu > ul > li {
+    margin: 0;
+    list-style: none;
+}
+
+#main-menu > ul > li > a {
+    display: block;
+    border-radius: 10px;
+    color: #0087ff;
+    border: 1px solid #0087ff;
+    padding: 5px 10px;
+    margin: 0.5rem 0;
+    font-family: "IBM Plex Mono";
+    font-size: 1.5em;
+    line-height: 120%;
+}
+
+#small-menu > ul > li {
+    margin: 0;
+    list-style: none;
+}
+
+#small-menu > ul > li > a {
+    color: #0087ff;
+}
+
+.cover-image {
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+    font-family: "IBM Plex Mono";
+}
+
+/* Notes, Warnings, etc */
+
+.rst-content .admonition-title {
+    display: block;
+    font-family: "Open Sans", sans-serif;
+}
+
+.rst-content .admonition-title::before {
+    font-family: "FontAwesome";
+}
+
+/* List fix */
+
+ul.simple {
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+ul.simple li {
+    margin-left: 24px;
+}
+
+ul.simple li p {
+    margin-bottom: 0;
+}
+
+/* Badges for "Logged in users", "Document owners" etc */
+
+.badge-user, .badge-owner, .badge-new {
+    display: inline-block;
+    font-size: 0.8em;
+    background-color: #c2e2f8;
+    padding: 0px 5px;
+}
+
+.badge-owner::before, .badge-user::before {
+    font-family: "FontAwesome";
+}
+
+.badge-user::before {
+    content: " ";
+}
+
+.badge-owner::before {
+    content: " ";
+}
+
+h3 {
+    margin: 40px 0px 15px 0px;
+}
+
+.rst-content code.literal {
+    color: #FF0073;
+    border-color: #ccc;
+    padding: 0.15em 0.5em;
+}
+
+.wy-menu-vertical {
+    font-family: "IBM Plex Mono";
+}
+
+.toctree-expand {
+    line-height: 20px !important;
+}
+
+.wy-menu-vertical li.toctree-l4 ul {
+    display: none !important;
+}
+
+.wy-menu-vertical li.toctree-l4 .toctree-expand {
+    display: none !important;
+}
+
+.wy-breadcrumbs {
+    border-radius: 10px;
+    font-family: "IBM Plex Mono";
+}
+
+/* Kbd style */
+kbd {
+    font-family: monospace, serif;
+    _font-family: courier new, monospace;
+    font-size: 1em
+}
+
+html.writer-html5 .rst-content dl.option-list kbd {
+    font-size: .9rem
+}
+
+.rst-content kbd {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, Courier, monospace
+}
+
+.rst-content :not(dl.option-list) > :not(dt):not(kbd):not(.kbd) > .kbd, .rst-content :not(dl.option-list) > :not(dt):not(kbd):not(.kbd) > kbd {
+    color: inherit;
+    font-size: 80%;
+    background-color: #fff;
+    border: 1px solid #a6a6a6;
+    border-radius: 4px;
+    box-shadow: 0 2px grey;
+    padding: 2.4px 6px;
+    margin: auto 0
+}
+
+
+/* Table style */
+.rst-content .wy-table td p,
+.rst-content .wy-table td ul,
+.rst-content .wy-table th p,
+.rst-content .wy-table th ul,
+.rst-content table.docutils td p,
+.rst-content table.docutils td ul,
+.rst-content table.docutils th p,
+.rst-content table.docutils th ul,
+.rst-content table.field-list td p,
+.rst-content table.field-list td ul,
+.rst-content table.field-list th p,
+.rst-content table.field-list th ul {
+    font-size: inherit
+}
+
+.rst-content table > caption .headerlink:focus, .rst-content table > caption:hover .headerlink {
+    opacity: 1
+}
+
+.rst-content p a {
+    overflow-wrap: anywhere;
+}
+
+.rst-content .wy-table td p,
+.rst-content .wy-table td ul,
+.rst-content .wy-table th p,
+.rst-content .wy-table th ul,
+.rst-content table.docutils td p,
+.rst-content table.docutils td ul,
+.rst-content table.docutils th p,
+.rst-content table.docutils th ul,
+.rst-content table.field-list td p,
+.rst-content table.field-list td ul,
+.rst-content table.field-list th p,
+.rst-content table.field-list th ul {
+    font-size: inherit;
+}
+
+.rst-content table > caption .headerlink:after {
+    font-size: 12px;
+}
+
+.rst-content table.docutils th {
+    border: 1px solid #e1e4e5;
+}
+
+.rst-content table.docutils td > p,
+.rst-content table.docutils th > p {
+    line-height: 1rem;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+.rst-content table.docutils td .last,
+.rst-content table.docutils td .last > :last-child {
+    margin-bottom: 0;
+}
+
+.rst-content table.field-list,
+.rst-content table.field-list td {
+    border: none;
+}
+
+.rst-content table.field-list td p {
+    line-height: inherit;
+}
+
+.rst-content table.field-list td > strong {
+    display: inline-block;
+}
+
+.rst-content table.field-list .field-name {
+    padding-right: 10px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.rst-content table.field-list .field-body {
+    text-align: left;
+}
+
+.rst-content dl {
+    margin-bottom: 24px;
+}
+
+.rst-content dl dt {
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.rst-content dl ol,
+.rst-content dl p,
+.rst-content dl table,
+.rst-content dl ul {
+    margin-bottom: 12px;
+}
+
+.rst-content dl dd {
+    margin: 0 0 12px 24px;
+    line-height: 24px;
+}
+
+.rst-content dl dd > ol:last-child,
+.rst-content dl dd > p:last-child,
+.rst-content dl dd > table:last-child,
+.rst-content dl dd > ul:last-child {
+    margin-bottom: 0;
+}
+
+.rst-content table.docutils td,
+.rst-content table.docutils th,
+.rst-content table.field-list td,
+.rst-content table.field-list th,
+.wy-table td,
+.wy-table th {
+    font-size: 90%;
+    margin: 0;
+    overflow: visible;
+    padding: 8px 16px;
+}
+
+.rst-content table.docutils td:first-child,
+.rst-content table.docutils th:first-child,
+.rst-content table.field-list td:first-child,
+.rst-content table.field-list th:first-child,
+.wy-table td:first-child,
+.wy-table th:first-child {
+    border-left-width: 0;
+}
+
+.rst-content table.docutils thead,
+.rst-content table.field-list thead,
+.wy-table thead {
+    color: #000;
+    text-align: left;
+    vertical-align: bottom;
+    white-space: nowrap;
+}
+
+.rst-content table.docutils thead th,
+.rst-content table.field-list thead th,
+.wy-table thead th {
+    font-weight: 700;
+    border-bottom: 2px solid #e1e4e5;
+}
+
+.rst-content table.docutils td,
+.rst-content table.field-list td,
+.wy-table td {
+    background-color: transparent;
+    vertical-align: middle;
+}
+
+.rst-content table.docutils td p,
+.rst-content table.field-list td p,
+.wy-table td p {
+    line-height: 18px;
+}
+
+.rst-content table.docutils td p:last-child,
+.rst-content table.field-list td p:last-child,
+.wy-table td p:last-child {
+    margin-bottom: 0;
+}
+
+.rst-content table.docutils .wy-table-cell-min,
+.rst-content table.field-list .wy-table-cell-min,
+.wy-table .wy-table-cell-min {
+    width: 1%;
+    padding-right: 0;
+}
+
+.rst-content table.docutils td,
+.wy-table-bordered-all td {
+    border-bottom: 1px solid #e1e4e5;
+    border-left: 1px solid #e1e4e5;
+}
+
+.rst-content table.docutils tbody > tr:last-child td,
+.wy-table-bordered-all tbody > tr:last-child td {
+    border-bottom-width: 0;
+}
+
+.wy-table-bordered {
+    border: 1px solid #e1e4e5;
+}
+
+.wy-table-bordered-rows td {
+    border-bottom: 1px solid #e1e4e5;
+}
+
+.wy-table-bordered-rows tbody > tr:last-child td {
+    border-bottom-width: 0;
+}
+
+.wy-table-horizontal td,
+.wy-table-horizontal th {
+    border-width: 0 0 1px;
+    border-bottom: 1px solid #e1e4e5;
+}
+
+.wy-table-horizontal tbody > tr:last-child td {
+    border-bottom-width: 0;
+}
+
+.wy-table-responsive {
+    margin-bottom: 24px;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.wy-table-responsive table {
+    margin-bottom: 0 !important;
+}
+
+.wy-table-responsive table td,
+.wy-table-responsive table th {
+    white-space: nowrap;
+}
+
+.rst-content table.docutils td .last,
+.rst-content table.docutils td .last > :last-child {
+    margin-bottom: 0;
+}
