@@ -146,6 +146,20 @@ What is the relationship between CryptPad and OnlyOffice?
 
 The CryptPad :ref:`app_sheets` application is an integration of `OnlyOffice Spreadsheets <https://www.onlyoffice.com/en/spreadsheet-editor.aspx>`_. However, this only concerns the client-side code, CryptPad does not make use of the OnlyOffice Document Server. CryptPad's encrypted collaboration, used for spreadsheets and other applications, is completely different from the encryption system used in parts of upstream OnlyOffice. Some of CryptPad's file format conversion tools are based on OnlyOffice code, but substantial work has been done to make it run in the browser rather than on the server, therefore avoiding the need to reveal the contents of users' documents when converting.
 
+How Secure is CryptPad?
+-----------------------
+
+CryptPad aims at protecting the identity of its users and their content from us and external threats. However this security is not absolute and requires that *good practices* are followed by the users and that the instance you connect to is trustworthy to deliver the correct code. Explanations and recommendations are available in `our blog <https://blog.cryptpad.org/2024/03/14/Most-Secure-CryptPad-Usage/>`_.
+
+To summarize the key points:
+
+- The instance administrators are assumed to be *honest-but-curious*, meaning that even though they play by the rule, they try to get as much information as they can from what they can perceive. We maintain a list of `CryptPad public instances <https://cryptpad.org/instances>`_ for which we verified that they are up to date and well configured;
+- The communication channels cannot be trusted and can be *actively malicious*: external threat are able to tamper, replay or drop messages. This should not alter the security of CryptPad;
+- The users you share your document are *honest* as once you send your content, they are trusted not to leak it. However, your *identity* remains oblivious to them in a weak form of anonymity: they have access to your public key and your display name;
+
+    - Therefore, the *share link* should be considered *as sensitive as a passphrase*. To add another layer of security, we recommend to add a password to your files. If you have an account, it is stored in your CryptDrive (which is considered secure) and the access remains seamless. However, external users finding the link still need the file password to access it.
+- The full edition history and different collaborators are visible upon sharing a document. If you want to keep it secret, the best way (so far) is to make a copy of the document before sharing its content.
+
 FAQ for cryptpad.fr
 -------------------
 
