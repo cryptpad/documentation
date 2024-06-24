@@ -13,6 +13,12 @@ The basic set of commands to upgrade CryptPad to a new version is as follows (as
    npm update
    npm run install:components
 
+If OnlyOffice is installed, it also needs to be upgraded:
+
+.. code:: bash
+
+   ./install-onlyoffice.sh
+
 Depending on the version, there may be changes that require special consideration. It is therefore highly recommended to read the release notes for the specific targeted version before upgrading.
 
 .. _admin_database:
