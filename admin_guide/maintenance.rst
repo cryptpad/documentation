@@ -6,6 +6,12 @@ Upgrading CryptPad
 
 To upgrade your CryptPad instance, please follow the indications provided in the Upgrade notes section of the `releases published on GitHub <https://github.com/cryptpad/cryptpad/releases>`__.
 
+If OnlyOffice is installed, it also needs to be upgraded:
+
+.. code:: bash
+
+   ./install-onlyoffice.sh
+
 .. note::
     If you are upgrading from an oldest release than the latest one, please read the upgrade notes of all versions between yours and the previous ones to avoid configuration issues (e.g. you are on 5.5.0 and want to upgrade to 2024.3.0, you'll need to upgrade to 5.6.0 and 5.7.0 before)
 
