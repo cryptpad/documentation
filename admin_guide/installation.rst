@@ -84,16 +84,18 @@ Dependencies
    npm ci
    npm run install:components
 
+.. _admin_install_onlyoffice:
+
 OnlyOffice (optional)
 """""""""""""""""""""
 
-:badge_new:`New in version 2024.3.0`
-
-OnlyOffice applications (Spreasheet, Document, and Presentation) are not bundled with CryptPad anymore. You can install/update OnlyOffice by running the installation script provided:
+OnlyOffice applications (Spreadsheet, Document, and Presentation) are not bundled with CryptPad anymore. You can install/update OnlyOffice by running the installation script provided:
 
 .. code:: bash
 
    ./install-onlyoffice.sh
+
+If you can not or do not want to use this script, it is also possible to :ref:`install OnlyOffice manually <admin_install_onlyoffice_manually>`.
 
 Configuration
 """""""""""""
@@ -108,14 +110,6 @@ Please read the configuration file, and modify variables as needed. The :ref:`do
 
 As part of the installation process, be sure to read :ref:`admin_customization` and to modify ``customize/application_config.js`` as some settings cannot be changed once user accounts have been created.
 
-Regarding storage, data retention is set by default to:
-
-- 90 days for documents not "pinned" by any registered user
-- 15 days for deleted data that is first archived prior to final deletion
-- 365 days for inactive accounts
-
-You can also setup a dedicated CRON job for the user running the CryptPad service to run the ``scripts/evict-inactive.js`` at the time of your choice. Note that you'll need to set ``disableIntegratedEviction`` to ``true`` in that case.
-
 The server can now be started with
 
 .. code:: bash
@@ -123,6 +117,32 @@ The server can now be started with
    node server
 
 The instance is now ready to run but cannot yet be accessed from the internet.
+
+Regarding storage, data retention is set by default to:
+
+- 90 days for documents not "pinned" by any registered user
+- 15 days for deleted data that is first archived prior to final deletion
+- 365 days for inactive accounts
+
+You can also setup a dedicated cron job to run the ``scripts/evict-inactive.js`` script. Its purpose is to move all the users destroyed & inactive (according to the ``inactiveTime`` setttings) files to the archive directory.
+
+.. note::
+
+   Note that you'll need to set ``disableIntegratedEviction`` to ``true`` in that case.
+
+Use the ``crontab -e`` command to set up a daily cron job, starting every day at 00h00:
+
+.. code:: bash
+
+   0 0 * * * "/usr/bin/node cryptpad/scripts/evict-inactive.js" > /dev/null
+
+Then you'll likely want to do the same for ``scripts/evict-archivad.js``. Which will clean the archive directory by permanently remove files that have been archived for more than ``archiveRetentionTime`` days.
+
+Again, use the ``crontab -e`` command to set up a weekly cron job, starting every Sunday at 00h00:
+
+.. code:: bash
+
+   0 0 * * 0 "/usr/bin/node cryptpad/scripts/evict-archived.js" > /dev/null
 
 Daemonization
 """""""""""""
@@ -202,6 +222,45 @@ Note that you'll still need to follow the CryptPad configuration steps, especial
       - ./onlyoffice-dist:/cryptpad/www/common/onlyoffice/dist
       - ./onlyoffice-conf:/cryptpad/onlyoffice-conf
       - ./config/config.js:/cryptpad/config/config.js
+
+.. _admin_install_onlyoffice_manually:
+
+Install OnlyOffice manually
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+It is easier to use the :ref:`script <admin_install_onlyoffice>` to install OnlyOffice. However, it is also possible to install OnlyOffice manually.
+
+For the first installation you need to clone `onlyoffice-builds` into your `cryptpad` folder:
+
+.. code:: bash
+
+   git clone --bare https://github.com/cryptpad/onlyoffice-builds.git
+
+After that, you can check out the different OnlyOffice versions CryptPad uses:
+
+.. code:: bash
+
+   git worktree add www/common/onlyoffice/dist/v1 4f370beb
+   git worktree add www/common/onlyoffice/dist/v2b d9da72fd
+   git worktree add www/common/onlyoffice/dist/v4 6ebc6938
+   git worktree add www/common/onlyoffice/dist/v5 88a356f0
+   git worktree add www/common/onlyoffice/dist/v6 abd8a309
+   git worktree add www/common/onlyoffice/dist/v7 9d8b914a
+
+To install x2t, needed for document conversions, you should download `x2t.zip` from https://github.com/cryptpad/onlyoffice-x2t-wasm/releases, and extract its contents into `www/common/onlyoffice/dist/x2t/`.
+
+If you want to upgrade OnlyOffice, you need to update the `onlyoffice-builds` repository. Call this inside the `onlyoffice-builds/` folder:
+
+.. code:: bash
+
+   git fetch --all
+
+After that, you can update the different OnlyOffice versions. Check https://github.com/cryptpad/cryptpad/blob/staging/install-onlyoffice.sh#L31, if the commit hash of a version has changed. If it has changed, check out the updated commit hash. For example:
+
+.. code:: bash
+
+   cd www/common/onlyoffice/dist/v7
+   git checkout 9d8b914a
 
 .. _admin_domain_config:
 
