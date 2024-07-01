@@ -116,6 +116,12 @@ The server can now be started with
 
    node server
 
+You will get as result an installation URL with a unique token for setting up your instance.
+
+.. note::
+   
+   Don't use it just yet. Note it down, you'll need it later at the :ref:`admin_instance_setup`
+
 The instance is now ready to run but cannot yet be accessed from the internet.
 
 Regarding storage, data retention is set by default to:
@@ -337,17 +343,19 @@ contains at least:
 
          httpSafeOrigin: "https://some-other-domain.xyz",
 
-Diagnostics
-~~~~~~~~~~~
+.. _admin_instance_setup:
 
-CryptPad provides a diagnostics page that runs instance configuration tests. Visit ``https://cryptpad.yourdomain.com/checkup/`` after completing all of the steps above to ensure everything is correctly configured.
+Setup your instance
+~~~~~~~~~~~~~~~~~~~
+
+Once CryptPad is installed, create an account via the Register button on the home page.
 
 .. _admin_adminusers:
 
-Configure administrators
+Add other administrators
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-Once CryptPad is installed, create an account via the Register button on the home page. To make this account an instance administrator:
+To make this account an instance administrator:
 
 1. Copy their public key found in **User Menu** (avatar at the top right) > **Settings** > **Account** > **Public Signing Key**
 2. Paste this key in ``cryptpad/config/config.js`` in the following array (uncomment and replace the placeholder):
@@ -394,7 +402,13 @@ This creates an ``index.html`` page for each application in the ``customize/www`
 To modify the preview images please see :ref:`preview_images`
 
 .. note::
+
     Updating to a newer version of the software in the future without re-running this command may result in outdated code.
+
+Diagnostics
+~~~~~~~~~~~
+
+CryptPad provides a diagnostics page that runs instance configuration tests. Visit ``https://cryptpad.yourdomain.com/checkup/`` after completing all of the steps above to ensure everything is correctly configured.
 
 Support
 ~~~~~~~
