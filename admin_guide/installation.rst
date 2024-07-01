@@ -360,8 +360,6 @@ Then you can add a logo of your choice (200KB maximum size), change the instance
 .. image:: /images/instance_setup_customize.png
    :class: screenshot
 
-
-
 The next step is about chosing the applications to enable (all by default).
 
 .. image:: /images/instance_setup_apps.png
