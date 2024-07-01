@@ -348,7 +348,13 @@ contains at least:
 Setup your instance
 ~~~~~~~~~~~~~~~~~~~
 
-Once CryptPad is installed, create an account via the Register button on the home page.
+Once CryptPad is installed, use the URL with the token generated when you ran the server for the first time to start the oonboarding workflow.
+
+Once the first admin account is created, the onboarding guides you to configure the name, description, visual identity of the instance, which applications are available, and enable extra security features.
+
+.. note::
+
+   All these options can be changed later on in the administration panel.
 
 .. _admin_adminusers:
 
