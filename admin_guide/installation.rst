@@ -348,9 +348,32 @@ contains at least:
 Setup your instance
 ~~~~~~~~~~~~~~~~~~~
 
-Once CryptPad is installed, use the URL with the token generated when you ran the server for the first time to start the oonboarding workflow.
+Once CryptPad is installed, use the URL with the token generated when you ran the server for the first time to start the onboarding workflow.
 
-Once the first admin account is created, the onboarding guides you to configure the name, description, visual identity of the instance, which applications are available, and enable extra security features.
+First, create your administrator account.
+
+.. image:: /images/instance_setup_admin.png
+   :class: screenshot
+
+Then you can add a logo of your choice (200KB maximum size), change the instance title, description and choose an accent color.
+
+.. image:: /images/instance_setup_customize.png
+   :class: screenshot
+
+
+
+The next step is about chosing the applications to enable (all by default).
+
+.. image:: /images/instance_setup_apps.png
+   :class: screenshot
+
+The last step let you enable two options:
+
+- Mandatory Two-Factor Authentication
+- Close registration
+
+.. image:: /images/instance_setup_options.png
+   :class: screenshot
 
 .. note::
 
