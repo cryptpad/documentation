@@ -66,10 +66,10 @@ Browse local files on your computer to upload a logo for your CryptPad instance.
 
 Click **RESTORE DEFAULT** button to restore the official CryptPad logo instead of the customized one.
 
-Main color
-~~~~~~~~~~
+Accent color
+~~~~~~~~~~~~
 
-Change the main color of your CryptPad instance. Please pick a color with good contrast with the rest of CryptPad.
+Change the accent color of your CryptPad instance. Please ensure text and buttons are readable with sufficient contrast in both light and dark themes.
 
 Use the color picker to select the color you want then click the **CHANGE COLOR** button. You can **RESTORE DEFAULT** with the red button.
 
@@ -79,6 +79,11 @@ Broadcast
 ---------
 
 This section offers different ways of sending notifications to all users on the instance.
+
+Homepage notice
+~~~~~~~~~~~~~~~
+
+An optional message to display on the home page.
 
 Maintenance
 ~~~~~~~~~~~
@@ -109,6 +114,15 @@ Mandatory Two-Factor Authentication
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Tick the box so all users on this instance will be asked to set up two-factor authentication to log in to their account.
+
+Applications
+------------
+
+Instance applications
+~~~~~~~~~~~~~~~~~~~~~
+
+Choose which apps to enable on this instance. Enable or disable the ones you want and hit the **SAVE** button.
+
 
 User Directory
 --------------

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CryptPad \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-11 13:22+0100\n"
+"POT-Creation-Date: 2024-07-02 11:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,15 +27,21 @@ msgstr ""
 
 #: ../../admin_guide/maintenance.rst:7
 msgid ""
-"The basic set of commands to upgrade CryptPad to a new version is as "
-"follows (assuming CryptPad is installed in ``/var/www/cryptpad``)."
+"To upgrade your CryptPad instance, please follow the indications provided"
+" in the Upgrade notes section of the `releases published on GitHub "
+"<https://github.com/cryptpad/cryptpad/releases>`__."
+msgstr ""
+
+#: ../../admin_guide/maintenance.rst:9
+msgid "If OnlyOffice is installed, it also needs to be upgraded:"
 msgstr ""
 
 #: ../../admin_guide/maintenance.rst:16
 msgid ""
-"Depending on the version, there may be changes that require special "
-"consideration. It is therefore highly recommended to read the release "
-"notes for the specific targeted version before upgrading."
+"If you are upgrading from an oldest release than the latest one, please "
+"read the upgrade notes of all versions between yours and the previous "
+"ones to avoid configuration issues (e.g. you are on 5.5.0 and want to "
+"upgrade to 2024.3.0, you'll need to upgrade to 5.6.0 and 5.7.0 before)"
 msgstr ""
 
 #: ../../admin_guide/maintenance.rst:21
@@ -106,26 +112,14 @@ msgstr ""
 msgid "``blob/``"
 msgstr ""
 
-#: ../../admin_guide/maintenance.rst:56
-msgid "``pins/``"
-msgstr ""
-
 #: ../../admin_guide/maintenance.rst:57
-msgid "``tasks/``"
-msgstr ""
-
-#: ../../admin_guide/maintenance.rst:58
-msgid "``logs/``"
-msgstr ""
-
-#: ../../admin_guide/maintenance.rst:60
 msgid ""
 "Additionally, configurations and customizations may be backed up or "
 "migrated: - ``config/config.js`` - ``customize/`` (or ``customize.dist`` "
 "if modifications have been made directly in the source tree)"
 msgstr ""
 
-#: ../../admin_guide/maintenance.rst:62
+#: ../../admin_guide/maintenance.rst:59
 msgid ""
 "The contents of CryptPad’s filesystem database are encrypted, it is "
 "therefore reasonably safe to back up to a cloud service without violating"
@@ -133,24 +127,24 @@ msgid ""
 "creation/modification dates)."
 msgstr ""
 
-#: ../../admin_guide/maintenance.rst:65
+#: ../../admin_guide/maintenance.rst:62
 msgid "Advanced administration"
 msgstr ""
 
-#: ../../admin_guide/maintenance.rst:67
+#: ../../admin_guide/maintenance.rst:64
 msgid ""
 "In the event of a document becoming corrupted, it is possible to delete "
 "individual sets of changes from the database."
 msgstr ""
 
-#: ../../admin_guide/maintenance.rst:69
+#: ../../admin_guide/maintenance.rst:66
 msgid ""
 "Locate the relevant channel, or document ID as explained above. Note that"
 " the document properties can be opened by right clicking the document in "
 "the drive, if the document cannot be opened."
 msgstr ""
 
-#: ../../admin_guide/maintenance.rst:71
+#: ../../admin_guide/maintenance.rst:68
 msgid ""
 "Open the channel in a text editor. Each line of the file represents a set"
 " of changes sent by a user, if you delete particular lines from the file,"
@@ -161,7 +155,7 @@ msgid ""
 " a document unrecoverable by other means."
 msgstr ""
 
-#: ../../admin_guide/maintenance.rst:73
+#: ../../admin_guide/maintenance.rst:70
 msgid ""
 "It is quite likely that deleting messages will cause the document to "
 "become unreadable. If you know that the document was working until very "
@@ -169,7 +163,7 @@ msgid ""
 "until the desired content is recovered."
 msgstr ""
 
-#: ../../admin_guide/maintenance.rst:77
+#: ../../admin_guide/maintenance.rst:74
 msgid ""
 "Making manual modifications to a corrupted file is likely to make matters"
 " worse. It is highly recommended to back up the file before attempting "
@@ -193,5 +187,30 @@ msgstr ""
 #~ "recommended to read the release notes"
 #~ " for the specific targetted version "
 #~ "before upgrading."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The basic set of commands to "
+#~ "upgrade CryptPad to a new version "
+#~ "is as follows (assuming CryptPad is "
+#~ "installed in ``/var/www/cryptpad``)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Depending on the version, there may "
+#~ "be changes that require special "
+#~ "consideration. It is therefore highly "
+#~ "recommended to read the release notes"
+#~ " for the specific targeted version "
+#~ "before upgrading."
+#~ msgstr ""
+
+#~ msgid "``pins/``"
+#~ msgstr ""
+
+#~ msgid "``tasks/``"
+#~ msgstr ""
+
+#~ msgid "``logs/``"
 #~ msgstr ""
 

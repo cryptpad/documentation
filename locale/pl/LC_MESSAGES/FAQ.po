@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CryptPad \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-19 14:14+0200\n"
+"POT-Creation-Date: 2024-07-02 11:56+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -428,14 +428,74 @@ msgid ""
 msgstr ""
 
 #: ../../FAQ.rst:150
-msgid "FAQ for cryptpad.fr"
+msgid "How Secure is CryptPad?"
 msgstr ""
 
-#: ../../FAQ.rst:155
-msgid "Can I pay for my subscription without a card?"
+#: ../../FAQ.rst:152
+msgid ""
+"CryptPad aims at protecting the identity of its users and their content "
+"from us and external threats. However, this security is not absolute and "
+"requires that *good practices* are followed by the users and that the "
+"instance you access to is trustworthy. Explanations and recommendations "
+"are available in `our blog <https://blog.cryptpad.org/2024/03/14/Most-"
+"Secure-CryptPad-Usage/>`_."
+msgstr ""
+
+#: ../../FAQ.rst:154
+msgid "To summarize the key points:"
+msgstr ""
+
+#: ../../FAQ.rst:156
+msgid ""
+"The instance administrators are assumed to be *honest-but-curious*, "
+"meaning that even though they play by the rule, they try to get as much "
+"information as they can from what they can perceive. We maintain a list "
+"of `CryptPad public instances <https://cryptpad.org/instances>`_ for "
+"which we verified that they are up-to-date and well configured;"
 msgstr ""
 
 #: ../../FAQ.rst:157
+msgid ""
+"The communication channels cannot be trusted and can be *actively "
+"malicious*: external threat are able to tamper, replay or drop messages. "
+"This should not alter the security of CryptPad;"
+msgstr ""
+
+#: ../../FAQ.rst:158
+msgid ""
+"The users you share your document are *honest* as once you send your "
+"content, they are trusted not to leak it. However, your *identity* "
+"remains oblivious to them in a weak form of anonymity: they have access "
+"to your public key and your display name;"
+msgstr ""
+
+#: ../../FAQ.rst:160
+msgid ""
+"Therefore, the *share link* should be considered *as sensitive as a "
+"passphrase*. To add another layer of security, we recommend adding a "
+"password to your files. If you have an account, it is stored in your "
+"CryptDrive (which is considered secure) and the access remains seamless. "
+"However, external users finding the link still need the file password to "
+"access it."
+msgstr ""
+
+#: ../../FAQ.rst:161
+msgid ""
+"The full edition history and different collaborators are visible upon "
+"sharing a document. If you want to keep it secret, the best way (so far) "
+"is to make then share a copy of the document, which will start anew with "
+"a fresh history."
+msgstr ""
+
+#: ../../FAQ.rst:164
+msgid "FAQ for cryptpad.fr"
+msgstr ""
+
+#: ../../FAQ.rst:169
+msgid "Can I pay for my subscription without a card?"
+msgstr ""
+
+#: ../../FAQ.rst:171
 #, python-format
 msgid ""
 "We accept payments by bank transfer, Paypal, or other depending on "
@@ -444,11 +504,11 @@ msgid ""
 "yearly plans for our Duo offer and above and incurs a 30% surcharge."
 msgstr ""
 
-#: ../../FAQ.rst:160
+#: ../../FAQ.rst:174
 msgid "Do you accept cryptocurrencies for subscriptions and donations?"
 msgstr ""
 
-#: ../../FAQ.rst:162
+#: ../../FAQ.rst:176
 msgid ""
 "We accept payments in Bitcoin. These are subject to the :ref:`manual "
 "processing surcharges <faq_manual_payments>` as explained in the previous"
@@ -457,11 +517,11 @@ msgid ""
 "and an email for communication about your subscription."
 msgstr ""
 
-#: ../../FAQ.rst:165
+#: ../../FAQ.rst:179
 msgid "Can you provide a Data processing Agreement (DPA)?"
 msgstr ""
 
-#: ../../FAQ.rst:167
+#: ../../FAQ.rst:181
 msgid ""
 "DPAs are a feature of our `Organization Plans "
 "<https://cryptpad.fr/accounts/#org>`_, note that a example DPA is "

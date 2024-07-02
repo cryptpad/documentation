@@ -330,15 +330,17 @@
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="#docker">Docker</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#install-onlyoffice-manually">Install OnlyOffice manually</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#admin-domain-config">Domains</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#install-and-configure-nginx">Install and configure Nginx</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#configure-cryptpad">Configure CryptPad</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#diagnostics">Diagnostics</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#configure-administrators">Configure administrators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#setup-your-instance">Setup your instance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#add-other-administrators">Add other administrators</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#configure-support-mailbox">Configure support mailbox</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#build-static-pages-open-graph-metadata">Build static pages &amp; Open Graph metadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#diagnostics">Diagnostics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#support">Support</a></li>
 </ul>
 </li>
@@ -379,10 +381,11 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="admin_panel.html#customize">Customize</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="admin_panel.html#upload-logo">Upload Logo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#main-color">Main color</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#accent-color">Accent color</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="admin_panel.html#broadcast">Broadcast</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#homepage-notice">Homepage notice</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_panel.html#maintenance">Maintenance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_panel.html#survey">Survey</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_panel.html#broadcast-message">Broadcast Message</a></li>
@@ -391,6 +394,10 @@
 <li class="toctree-l3"><a class="reference internal" href="admin_panel.html#security">Security</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="admin_panel.html#enable-remote-embedding">Enable remote embedding</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_panel.html#mandatory-two-factor-authentication">Mandatory Two-Factor Authentication</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="admin_panel.html#applications">Applications</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#instance-applications">Instance applications</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="admin_panel.html#user-directory">User Directory</a><ul>
@@ -600,6 +607,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#can-cryptpad-sync-documents-to-my-local-filesystem">Can CryptPad sync documents to my local filesystem?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#what-is-the-relationship-between-cryptpad-and-onlyoffice">What is the relationship between CryptPad and OnlyOffice?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-secure-is-cryptpad">How Secure is CryptPad?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#faq-for-cryptpad-fr">FAQ for cryptpad.fr</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#can-i-pay-for-my-subscription-without-a-card">Can I pay for my subscription without a card?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#do-you-accept-cryptocurrencies-for-subscriptions-and-donations">Do you accept cryptocurrencies for subscriptions and donations?</a></li>
@@ -770,7 +778,7 @@
 </pre></div>
 </div>
 <p>Switch to the latest published tag</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout <span class="m">2024</span>.3.0
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout <span class="m">2024</span>.6.0
 </pre></div>
 </div>
 <section id="dependencies">
@@ -781,12 +789,12 @@ npm run install:components
 </div>
 </section>
 <section id="onlyoffice-optional">
-<h4>OnlyOffice (optional)<a class="headerlink" href="#onlyoffice-optional" title="Permalink to this heading">¶</a></h4>
-<p><a href="#id1"><span class="problematic" id="id2">:badge_new:`New in version 2024.3.0`</span></a></p>
-<p>OnlyOffice applications (Spreasheet, Document, and Presentation) are not bundled with CryptPad anymore. You can install/update OnlyOffice by running the installation script provided:</p>
+<span id="admin-install-onlyoffice"></span><h4>OnlyOffice (optional)<a class="headerlink" href="#onlyoffice-optional" title="Permalink to this heading">¶</a></h4>
+<p>OnlyOffice applications (Spreadsheet, Document, and Presentation) are not bundled with CryptPad anymore. You can install/update OnlyOffice by running the installation script provided:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./install-onlyoffice.sh
 </pre></div>
 </div>
+<p>If you can not or do not want to use this script, it is also possible to <a class="reference internal" href="#admin-install-onlyoffice-manually"><span class="std std-ref">install OnlyOffice manually</span></a>.</p>
 </section>
 <section id="configuration">
 <h4>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading">¶</a></h4>
@@ -796,18 +804,36 @@ npm run install:components
 </div>
 <p>Please read the configuration file, and modify variables as needed. The <a class="reference internal" href="#admin-domain-config"><span class="std std-ref">domains</span></a> are particularly important.</p>
 <p>As part of the installation process, be sure to read <a class="reference internal" href="customization.html#admin-customization"><span class="std std-ref">Instance customization</span></a> and to modify <code class="docutils literal notranslate"><span class="pre">customize/application_config.js</span></code> as some settings cannot be changed once user accounts have been created.</p>
+<p>The server can now be started with</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>node server
+</pre></div>
+</div>
+<p>You will get as result an installation URL with a unique token for setting up your instance.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Don't use it just yet. Note it down, you'll need it later at the <a class="reference internal" href="#admin-instance-setup"><span class="std std-ref">Setup your instance</span></a></p>
+</div>
+<p>The instance is now ready to run but cannot yet be accessed from the internet.</p>
 <p>Regarding storage, data retention is set by default to:</p>
 <ul class="simple">
 <li><p>90 days for documents not &quot;pinned&quot; by any registered user</p></li>
 <li><p>15 days for deleted data that is first archived prior to final deletion</p></li>
 <li><p>365 days for inactive accounts</p></li>
 </ul>
-<p>You can also setup a dedicated CRON job for the user running the CryptPad service to run the <code class="docutils literal notranslate"><span class="pre">scripts/evict-inactive.js</span></code> at the time of your choice. Note that you'll need to set <code class="docutils literal notranslate"><span class="pre">disableIntegratedEviction</span></code> to <code class="docutils literal notranslate"><span class="pre">true</span></code> in that case.</p>
-<p>The server can now be started with</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>node server
+<p>You can also setup a dedicated cron job to run the <code class="docutils literal notranslate"><span class="pre">scripts/evict-inactive.js</span></code> script. Its purpose is to move all the users destroyed &amp; inactive (according to the <code class="docutils literal notranslate"><span class="pre">inactiveTime</span></code> setttings) files to the archive directory.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that you'll need to set <code class="docutils literal notranslate"><span class="pre">disableIntegratedEviction</span></code> to <code class="docutils literal notranslate"><span class="pre">true</span></code> in that case.</p>
+</div>
+<p>Use the <code class="docutils literal notranslate"><span class="pre">crontab</span> <span class="pre">-e</span></code> command to set up a daily cron job, starting every day at 00h00:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">0</span> <span class="m">0</span> * * * <span class="s2">&quot;/usr/bin/node cryptpad/scripts/evict-inactive.js&quot;</span> &gt; /dev/null
 </pre></div>
 </div>
-<p>The instance is now ready to run but cannot yet be accessed from the internet.</p>
+<p>Then you'll likely want to do the same for <code class="docutils literal notranslate"><span class="pre">scripts/evict-archivad.js</span></code>. Which will clean the archive directory by permanently remove files that have been archived for more than <code class="docutils literal notranslate"><span class="pre">archiveRetentionTime</span></code> days.</p>
+<p>Again, use the <code class="docutils literal notranslate"><span class="pre">crontab</span> <span class="pre">-e</span></code> command to set up a weekly cron job, starting every Sunday at 00h00:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">0</span> <span class="m">0</span> * * <span class="m">0</span> <span class="s2">&quot;/usr/bin/node cryptpad/scripts/evict-archived.js&quot;</span> &gt; /dev/null
+</pre></div>
+</div>
 </section>
 <section id="daemonization">
 <h4>Daemonization<a class="headerlink" href="#daemonization" title="Permalink to this heading">¶</a></h4>
@@ -868,7 +894,7 @@ sudo chown -R <span class="m">4001</span>:4001 data customize onlyoffice-dist on
 </div>
 </li>
 </ol>
-<p>Note that you'll still need to follow the CryptPad configuration steps, especially <a class="reference internal" href="#admin-adminusers"><span class="std std-ref">Configure administrators</span></a>. To do that you can mount your <code class="docutils literal notranslate"><span class="pre">config.js</span></code> file as a Docker volume.</p>
+<p>Note that you'll still need to follow the CryptPad configuration steps, especially <a class="reference internal" href="#admin-adminusers"><span class="std std-ref">Add other administrators</span></a>. To do that you can mount your <code class="docutils literal notranslate"><span class="pre">config.js</span></code> file as a Docker volume.</p>
 <blockquote>
 <div><div class="highlight-docker notranslate"><div class="highlight"><pre><span></span>volumes:
 - ./data/blob:/cryptpad/blob
@@ -883,9 +909,36 @@ sudo chown -R <span class="m">4001</span>:4001 data customize onlyoffice-dist on
 </div>
 </div></blockquote>
 </section>
+<section id="install-onlyoffice-manually">
+<span id="admin-install-onlyoffice-manually"></span><h3>Install OnlyOffice manually<a class="headerlink" href="#install-onlyoffice-manually" title="Permalink to this heading">¶</a></h3>
+<p>It is easier to use the <a class="reference internal" href="#admin-install-onlyoffice"><span class="std std-ref">script</span></a> to install OnlyOffice. However, it is also possible to install OnlyOffice manually.</p>
+<p>For the first installation you need to clone <cite>onlyoffice-builds</cite> into your <cite>cryptpad</cite> folder:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone --bare https://github.com/cryptpad/onlyoffice-builds.git
+</pre></div>
+</div>
+<p>After that, you can check out the different OnlyOffice versions CryptPad uses:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git worktree add www/common/onlyoffice/dist/v1 4f370beb
+git worktree add www/common/onlyoffice/dist/v2b d9da72fd
+git worktree add www/common/onlyoffice/dist/v4 6ebc6938
+git worktree add www/common/onlyoffice/dist/v5 88a356f0
+git worktree add www/common/onlyoffice/dist/v6 abd8a309
+git worktree add www/common/onlyoffice/dist/v7 9d8b914a
+</pre></div>
+</div>
+<p>To install x2t, needed for document conversions, you should download <cite>x2t.zip</cite> from <a class="reference external" href="https://github.com/cryptpad/onlyoffice-x2t-wasm/releases">https://github.com/cryptpad/onlyoffice-x2t-wasm/releases</a>, and extract its contents into <cite>www/common/onlyoffice/dist/x2t/</cite>.</p>
+<p>If you want to upgrade OnlyOffice, you need to update the <cite>onlyoffice-builds</cite> repository. Call this inside the <cite>onlyoffice-builds/</cite> folder:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git fetch --all
+</pre></div>
+</div>
+<p>After that, you can update the different OnlyOffice versions. Check <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/staging/install-onlyoffice.sh#L31">https://github.com/cryptpad/cryptpad/blob/staging/install-onlyoffice.sh#L31</a>, if the commit hash of a version has changed. If it has changed, check out the updated commit hash. For example:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> www/common/onlyoffice/dist/v7
+git checkout 9d8b914a
+</pre></div>
+</div>
+</section>
 </section>
 <section id="admin-domain-config">
-<span id="id3"></span><h2>Domains<a class="headerlink" href="#admin-domain-config" title="Permalink to this heading">¶</a></h2>
+<span id="id1"></span><h2>Domains<a class="headerlink" href="#admin-domain-config" title="Permalink to this heading">¶</a></h2>
 <p>You need two domains to take full advantage of CryptPad’s security features.</p>
 <ol class="arabic simple">
 <li><p>The main domain on which users access your instance</p></li>
@@ -953,13 +1006,29 @@ contains at least:</p>
 </ul>
 </li>
 </ul>
-<section id="diagnostics">
-<h3>Diagnostics<a class="headerlink" href="#diagnostics" title="Permalink to this heading">¶</a></h3>
-<p>CryptPad provides a diagnostics page that runs instance configuration tests. Visit <code class="docutils literal notranslate"><span class="pre">https://cryptpad.yourdomain.com/checkup/</span></code> after completing all of the steps above to ensure everything is correctly configured.</p>
+<section id="setup-your-instance">
+<span id="admin-instance-setup"></span><h3>Setup your instance<a class="headerlink" href="#setup-your-instance" title="Permalink to this heading">¶</a></h3>
+<p>Once CryptPad is installed, use the URL with the token generated when you ran the server for the first time to start the onboarding workflow.</p>
+<p>First, create your administrator account.</p>
+<img alt="../_images/instance_setup_admin.png" class="screenshot" src="../_images/instance_setup_admin.png" />
+<p>Then you can add a logo of your choice (200KB maximum size), change the instance title, description and choose an accent color.</p>
+<img alt="../_images/instance_setup_customize.png" class="screenshot" src="../_images/instance_setup_customize.png" />
+<p>The next step is about chosing the applications to enable (all by default).</p>
+<img alt="../_images/instance_setup_apps.png" class="screenshot" src="../_images/instance_setup_apps.png" />
+<p>The last step let you enable two options:</p>
+<ul class="simple">
+<li><p>Mandatory Two-Factor Authentication</p></li>
+<li><p>Close registration</p></li>
+</ul>
+<img alt="../_images/instance_setup_options.png" class="screenshot" src="../_images/instance_setup_options.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All these options can be changed later on in the administration panel.</p>
+</div>
 </section>
-<section id="configure-administrators">
-<span id="admin-adminusers"></span><h3>Configure administrators<a class="headerlink" href="#configure-administrators" title="Permalink to this heading">¶</a></h3>
-<p>Once CryptPad is installed, create an account via the Register button on the home page. To make this account an instance administrator:</p>
+<section id="add-other-administrators">
+<span id="admin-adminusers"></span><h3>Add other administrators<a class="headerlink" href="#add-other-administrators" title="Permalink to this heading">¶</a></h3>
+<p>To make this account an instance administrator:</p>
 <ol class="arabic simple">
 <li><p>Copy their public key found in <strong>User Menu</strong> (avatar at the top right) &gt; <strong>Settings</strong> &gt; <strong>Account</strong> &gt; <strong>Public Signing Key</strong></p></li>
 <li><p>Paste this key in <code class="docutils literal notranslate"><span class="pre">cryptpad/config/config.js</span></code> in the following array (uncomment and replace the placeholder):</p></li>
@@ -1001,6 +1070,10 @@ contains at least:</p>
 <p class="admonition-title">Note</p>
 <p>Updating to a newer version of the software in the future without re-running this command may result in outdated code.</p>
 </div>
+</section>
+<section id="diagnostics">
+<h3>Diagnostics<a class="headerlink" href="#diagnostics" title="Permalink to this heading">¶</a></h3>
+<p>CryptPad provides a diagnostics page that runs instance configuration tests. Visit <code class="docutils literal notranslate"><span class="pre">https://cryptpad.yourdomain.com/checkup/</span></code> after completing all of the steps above to ensure everything is correctly configured.</p>
 </section>
 <section id="support">
 <h3>Support<a class="headerlink" href="#support" title="Permalink to this heading">¶</a></h3>

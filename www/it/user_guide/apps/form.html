@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Form &mdash; CryptPad 2024.3.0 documentazione</title>
+  <title>Modulo &mdash; CryptPad 2024.3.0 documentazione</title>
   
 
   
@@ -261,8 +261,8 @@
 <li class="toctree-l4"><a class="reference internal" href="slides.html#lightbox">Lightbox</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Form</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#roles">Roles</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Modulo</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#roles">Ruoli</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#editing-a-form">Editing a form</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="#utilities">Utilities</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#question-types">Question types</a></li>
@@ -330,15 +330,17 @@
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#docker">Docker</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#install-onlyoffice-manually">Install OnlyOffice manually</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#admin-domain-config">Domains</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#install-and-configure-nginx">Install and configure Nginx</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#configure-cryptpad">Configure CryptPad</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#diagnostics">Diagnostics</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-administrators">Configure administrators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#setup-your-instance">Setup your instance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#add-other-administrators">Add other administrators</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#build-static-pages-open-graph-metadata">Build static pages &amp; Open Graph metadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#diagnostics">Diagnostics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#support">Support</a></li>
 </ul>
 </li>
@@ -379,10 +381,11 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#customize">Customize</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#upload-logo">Upload Logo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#main-color">Main color</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#accent-color">Accent color</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#homepage-notice">Homepage notice</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#maintenance">Maintenance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#survey">Survey</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#broadcast-message">Broadcast Message</a></li>
@@ -391,6 +394,10 @@
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#security">Security</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#enable-remote-embedding">Enable remote embedding</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#mandatory-two-factor-authentication">Mandatory Two-Factor Authentication</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#applications">Applications</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/admin_panel.html#instance-applications">Instance applications</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/admin_panel.html#user-directory">User Directory</a><ul>
@@ -600,6 +607,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-cryptpad-sync-documents-to-my-local-filesystem">Can CryptPad sync documents to my local filesystem?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#what-is-the-relationship-between-cryptpad-and-onlyoffice">What is the relationship between CryptPad and OnlyOffice?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-secure-is-cryptpad">How Secure is CryptPad?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#faq-for-cryptpad-fr">FAQ for cryptpad.fr</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#can-i-pay-for-my-subscription-without-a-card">Can I pay for my subscription without a card?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#do-you-accept-cryptocurrencies-for-subscriptions-and-donations">Do you accept cryptocurrencies for subscriptions and donations?</a></li>
@@ -682,7 +690,7 @@
         
           <li><a href="../applications.html">Applications</a> &raquo;</li>
         
-      <li>Form</li>
+      <li>Modulo</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -706,10 +714,10 @@
            <div itemprop="articleBody">
             
   <section id="form">
-<span id="app-form"></span><h1>Form<a class="headerlink" href="#form" title="Permalink to this heading">¶</a></h1>
-<img alt="preview of the Form application" class="screenshot" src="../../_images/app-form-preview.png" />
+<span id="app-form"></span><h1>Modulo<a class="headerlink" href="#form" title="Permalink to this heading">¶</a></h1>
+<img alt="anteprima dell'app Moduli" class="screenshot" src="../../_images/app-form-preview.png" />
 <section id="roles">
-<h2>Roles<a class="headerlink" href="#roles" title="Permalink to this heading">¶</a></h2>
+<h2>Ruoli<a class="headerlink" href="#roles" title="Permalink to this heading">¶</a></h2>
 <p>Forms benefit from the same collaboration and privacy features as the other CryptPad applications. They also have slightly different requirements when it comes to usage, for example someone responding to a form should be able to edit their own answers but not other users' answers or the form itself. For this reason the <a class="reference internal" href="../share_and_access.html#share-access-rights"><span class="std std-ref">Access rights</span></a> when sharing a form are different from the other applications. Forms have 3 different roles:</p>
 <ul class="simple">
 <li><p><strong>Author</strong>: can edit questions and <a class="reference internal" href="#form-settings"><span class="std std-ref">form settings</span></a>.</p></li>
