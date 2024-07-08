@@ -3,27 +3,30 @@
 # This file is distributed under the same license as the CryptPad package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CryptPad \n"
+"Project-Id-Version: CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-05 14:37+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2024-07-09 01:58+0000\n"
+"Last-Translator: Mirel Gonzalez <arong7@gmail.com>\n"
+"Language-Team: Spanish (Cuba) <https://weblate.cryptpad.org/projects/"
+"user-guide/security/es_CU/>\n"
+"Language: es_CU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.6\n"
 "Generated-By: Babel 2.11.0\n"
 
 #: ../../user_guide/security.rst:2
 msgid "Security"
-msgstr ""
+msgstr "Seguridad"
 
 #: ../../user_guide/security.rst:7
 msgid "Trust Assumptions"
-msgstr ""
+msgstr "Suposiciones de confianza"
 
 #: ../../user_guide/security.rst:9
 msgid ""
@@ -31,46 +34,54 @@ msgid ""
 "data. However, as with any other web application, some entities still "
 "need to be trusted in order to guarantee security:"
 msgstr ""
+"CryptPad está cifrado de extremo a extremo y el servidor no tiene acceso a "
+"tus datos. Sin embargo, como ocurre con cualquier otra aplicación web, hay "
+"entidades en las que es necesario confiar para garantizar la seguridad:"
 
 #: ../../user_guide/security.rst:12
 msgid "Your chosen CryptPad :ref:`instance <cryptpad_instances>` to"
 msgstr ""
+"Tu instancia de CryptPad escogida :ref:`instance <cryptpad_instances>` para"
 
 #: ../../user_guide/security.rst:14
 msgid "run the same code as the one published on GitHub,"
-msgstr ""
+msgstr "ejecutar el mismo código que el publicado en GitHub,"
 
 #: ../../user_guide/security.rst:15
 msgid "not block your network messages, and"
-msgstr ""
+msgstr "no bloquear los mensajes de tu red, y"
 
 #: ../../user_guide/security.rst:16
 msgid "follow its terms of service and privacy policy."
-msgstr ""
+msgstr "seguir sus términos de servicio y política de privacidad."
 
 #: ../../user_guide/security.rst:17
 msgid ""
 "Your collaborators not to forward :ref:`sharing links <share_link>` to "
 "illegitimate third parties."
 msgstr ""
+"Que tus colaboradores no compartan los :ref:`enlaces divulgables "
+"<share_link>` con terceros ilegítimos."
 
 #: ../../user_guide/security.rst:19
 msgid ""
 "Under these assumptions you can be sure that it is technically not "
 "possible to read or modify your documents by"
 msgstr ""
+"Bajo estas premisas, puedes estar seguro de que técnicamente no es posible "
+"leer o modificar tus documentos por"
 
 #: ../../user_guide/security.rst:21
 msgid "your chosen CryptPad instance,"
-msgstr ""
+msgstr "tu instancia elegida de CryptPad,"
 
 #: ../../user_guide/security.rst:22
 msgid "any powerful adversary that can see your web traffic, or"
-msgstr ""
+msgstr "cualquier adversario poderoso que pueda ver tu tráfico en la red, o"
 
 #: ../../user_guide/security.rst:23
 msgid "any other user."
-msgstr ""
+msgstr "cualquier otro usuario."
 
 #: ../../user_guide/security.rst:25
 msgid ""
@@ -78,6 +89,8 @@ msgid ""
 "<https://cryptpad.org/instances>`_ to let you better decide on whom you "
 "want to trust."
 msgstr ""
+"Mantenemos una `lista de instancias públicas de CryptPad <https://cryptpad."
+"org/instances>`_ para ayudarte a decidir mejor en quién confiar."
 
 #: ../../user_guide/security.rst:28
 msgid ""
@@ -85,22 +98,27 @@ msgid ""
 " instance can see your IP address and your \"user agent\" (browser and "
 "operating system)."
 msgstr ""
+"CryptPad solo cuenta con una forma débil de anonimato. Tu instancia elegida "
+"de CryptPad puede ver tu dirección IP y tu \"user agent\" (navegador y "
+"sistema operativo)."
 
 #: ../../user_guide/security.rst:31
 msgid ""
 "If you need stronger anonymity guarantees, you can access CryptPad via "
 "`Tor <https://www.torproject.org>`_."
 msgstr ""
+"Si necesitas garantías de anonimato más fuertes, puedes acceder a CryptPad a "
+"través de `Tor <https://www.torproject.org>`_."
 
 #: ../../user_guide/security.rst:36
 msgid "Passwords for documents and folders"
-msgstr ""
+msgstr "Contraseñas para documentos y carpetas"
 
 #: ../../user_guide/security.rst:38 ../../user_guide/security.rst:55
 #: ../../user_guide/security.rst:67 ../../user_guide/security.rst:82
 #: ../../user_guide/security.rst:101
 msgid ":badge_user:`Logged in users`"
-msgstr ""
+msgstr ":badge_user:`Usuarios conectados`"
 
 #: ../../user_guide/security.rst:40
 msgid ""
@@ -109,6 +127,11 @@ msgid ""
 "link and gain access to your data. To prevent this from happening, the "
 ":ref:`owners <owners>` of a document or folder can add a password."
 msgstr ""
+"Cuando compartes el enlace a un documento o carpeta compartida a través de "
+"un canal inseguro (por ejemplo, correo electrónico o SMS), alguien podría "
+"interceptar el enlace y obtener acceso a tus datos. Para evitar que esto "
+"suceda, los :ref:`propietarios <owners>` de un documento o carpeta pueden "
+"añadir una contraseña."
 
 #: ../../user_guide/security.rst:42
 msgid ""
@@ -118,40 +141,52 @@ msgid ""
 "and sent with the document/folder when you share it. The recipient, or "
 "yourself, are **not** asked for it when they open the document."
 msgstr ""
+"Cuando :ref:`compartes documentos con tus contactos y equipos directamente "
+"en CryptPad <share_contacts>`, las comunicaciones están cifradas y asumimos "
+"que deseas darles acceso. Por lo tanto, la contraseña se guarda y se envía "
+"con el documento/carpeta cuando lo compartes. Al destinatario, o a ti mismo, "
+"**no** se les pide cuando abren el documento."
 
 #: ../../user_guide/security.rst:44
 msgid ""
 "You can add a password to a document when you :ref:`create "
 "<new_document>` it."
 msgstr ""
+"Puedes agregar una contraseña a un documento cuando lo :ref:`creas "
+"<new_document>`."
 
 #: ../../user_guide/security.rst:46
 msgid "You can also add or change the password in the :ref:`access` menu:"
 msgstr ""
+"También puedes añadir o cambiar la contraseña en el menú de :ref:`acceso`:"
 
 #: ../../user_guide/security.rst:48
 msgid "From the CryptDrive: ``Right click`` > |unlock-alt| **Access**."
-msgstr ""
+msgstr "Desde el CryptDrive: ``Click derecho`` > |unlock-alt| **Acceso**."
 
 #: ../../user_guide/security.rst:49
 msgid "From the document toolbar: |unlock-alt| **Access**."
-msgstr ""
+msgstr "Desde la barra de herramientas del documento: |unlock-alt| **Acceso**."
 
 #: ../../user_guide/security.rst:54
 msgid "Verifying contacts"
-msgstr ""
+msgstr "Verificando contactos"
 
 #: ../../user_guide/security.rst:57
 msgid ""
 "To verify a contact's identity, i.e., that a contact belongs to the "
 "person you think, you can compare the public signing keys:"
 msgstr ""
+"Para verificar la identidad de un contacto asegúrate de que pertenece a la "
+"persona que crees, puedes comparar las claves públicas de firma:"
 
 #: ../../user_guide/security.rst:59
 msgid ""
 "Ask your contact to share :ref:`their public key <user_settings_account>`"
 " over a secure channel with you."
 msgstr ""
+"Pídele a tu contacto que comparta :ref:`su clave pública "
+"<user_settings_account>` contigo a través de un canal seguro."
 
 #: ../../user_guide/security.rst:60
 msgid ""
@@ -159,10 +194,13 @@ msgid ""
 " <another_user_profile>`, you can be sure that the contact belongs to the"
 " person at the other end of the secure channel."
 msgstr ""
+"Si esta clave pública coincide con la de la :ref:`página de perfil "
+"<another_user_profile>` de tu contacto, puedes estar seguro de que el "
+"contacto pertenece a la persona al otro lado del canal seguro."
 
 #: ../../user_guide/security.rst:65
 msgid "Self-destructing documents"
-msgstr ""
+msgstr "Documentos autodestructivos"
 
 #: ../../user_guide/security.rst:69
 msgid ""
@@ -170,24 +208,31 @@ msgid ""
 "interaction of any user. This ensures that sensitive data is not "
 "accessible forever."
 msgstr ""
+"Los documentos autodestructivos se destruirán automáticamente sin la "
+"intervención de ningún usuario. Esto asegura que los datos sensibles no sean "
+"accesibles para siempre."
 
 #: ../../user_guide/security.rst:72
 msgid "There are two ways to create self-destructing documents:"
-msgstr ""
+msgstr "Existen dos formas de crear documentos autodestructivos:"
 
 #: ../../user_guide/security.rst:74
 msgid "You can set an expiration time during :ref:`creating <new_document>`."
 msgstr ""
+"Puedes establecer un tiempo de expiración durante la :ref:`creación "
+"<new_document>`."
 
 #: ../../user_guide/security.rst:75
 msgid ""
 "You can share a document via a :ref:`view-once-and-self-destruct "
 "link<share_access_rights>`."
 msgstr ""
+"Puedes compartir un documento mediante un :ref:`enlace de ver-una-vez-y-"
+"autodestrucción <share_access_rights>`."
 
 #: ../../user_guide/security.rst:80
 msgid "Remote Disconnect"
-msgstr ""
+msgstr "Desconexión remota"
 
 #: ../../user_guide/security.rst:84
 msgid ""
@@ -195,32 +240,43 @@ msgid ""
 "session on a shared computer, etc.) it can be necessary to close all "
 "active CryptPad sessions. This can be done in two ways:"
 msgstr ""
+"En algunos casos (pérdida o robo de un dispositivo, olvido de cerrar sesión "
+"en un equipo compartido, etc.) puede ser necesario cerrar todas las sesiones "
+"activas de CryptPad. Esto se puede hacer de dos formas:"
 
 #: ../../user_guide/security.rst:86
 msgid ""
 "User menu (avatar at the top-right) > |gear| **Settings** > |lock| "
 "**Confidentiality** > **LOG OUT**."
 msgstr ""
+"Menu del usuario (Avatar en la parte superior derecha) > |gear| **Ajustes** "
+"> |lock| **Confidencialidad** > **CERRAR**."
 
 #: ../../user_guide/security.rst:88
 msgid ""
 "This option logs out all sessions **except** the one from which it is "
 "activated."
 msgstr ""
+"Esta opción cierra todas las sesiones **excepto** la que está activa al "
+"momento de usarla."
 
 #: ../../user_guide/security.rst:90
 msgid "User menu (avatar at the top-right) > |plug| **Log out everywhere**."
 msgstr ""
+"Menú del usuario (Avatar en la parte superior derecha) > |plug| **Cerrar "
+"sesión en todas partes**."
 
 #: ../../user_guide/security.rst:92
 msgid ""
 "This option logs out all sessions **including** the one from which it is "
 "activated."
 msgstr ""
+"Esta opción cierra todas las sesiones **incluyendo** aquella desde la cual "
+"se activa."
 
 #: ../../user_guide/security.rst:97
 msgid "Remote Content"
-msgstr ""
+msgstr "Contenido remoto"
 
 #: ../../user_guide/security.rst:99
 msgid ""
@@ -228,6 +284,9 @@ msgid ""
 ":ref:`app_kanban`), CryptPad blocks images and other remotely hosted "
 "content to prevent potential tracking."
 msgstr ""
+"En los editores Markdown (:ref:`app_code`, :ref:`app_slides`, "
+":ref:`app_kanban`) CryptPad bloquea las imágenes y otros contenidos alojados "
+"remotamente para evitar posibles rastreos."
 
 #: ../../user_guide/security.rst:103
 msgid ""
@@ -236,14 +295,18 @@ msgid ""
 "that is more complex than Markdown image syntax but is managed "
 "automatically."
 msgstr ""
+"Para incluir imágenes desde CryptDrive o cargar nuevas, utiliza el menú "
+"**Insertar** |picture-o|. Este menú inserta un elemento ``media-tag`` que es "
+"más complejo que la sintaxis de imagen en Markdown pero se gestiona "
+"automáticamente."
 
 #: ../../user_guide/security.rst:108
 msgid "Known caveats"
-msgstr ""
+msgstr "Problemas conocidos"
 
 #: ../../user_guide/security.rst:111
 msgid "No unique usernames"
-msgstr ""
+msgstr "Los nombres de usuarios pueden repetirse"
 
 #: ../../user_guide/security.rst:113
 msgid ""
@@ -252,10 +315,15 @@ msgid ""
 "means that you cannot trust usernames to identify people. Instead, "
 ":ref:`identify your contact <verifying_contacts>` via their public keys."
 msgstr ""
+"Ni :ref:`el nombre de la cuenta <user_settings_account>` ni el :ref:`nombre "
+"que se muestra <user_settings_account>` son únicos en CryptPad. Esto "
+"significa que no puedes confiar en los nombres de usuario para identificar a "
+"las personas. En su lugar, :ref:`identifica tu contacto <verifying_contacts>`"
+" por medio de las llaves públicas."
 
 #: ../../user_guide/security.rst:118
 msgid "Edit rights in teams"
-msgstr ""
+msgstr "Permisos de edición en equipos"
 
 #: ../../user_guide/security.rst:120
 msgid ""
@@ -264,28 +332,40 @@ msgid ""
 "convert folders into :ref:`shared folders <shared_folders>` and delegate "
 "their access to anybody they want."
 msgstr ""
+"Los miembros del equipo con acceso de edición a una unidad de equipos pueden "
+"compartir este acceso con otros usuarios, tanto dentro como fuera del "
+"equipo. Los miembros del equipo incluso pueden convertir carpetas en :ref:`"
+"carpetas compartidas <carpetas compartidas>` y delegar su acceso a cualquier "
+"persona que deseen."
 
 #: ../../user_guide/security.rst:123
 msgid ""
 "You therefore have to be careful with whom you grant edit rights. You may"
 " also want to"
 msgstr ""
+"Por lo tanto, deben tener cuidado con a quién se otorga derechos de edición. "
+"Es posible que también deseen"
 
 #: ../../user_guide/security.rst:126
 msgid ""
 "set the :ref:`role  <team_roles_and_permissions>` of a member to viewer "
 "and selectively share edit rights to this person."
 msgstr ""
+"establecer el :ref:`rol  <team_roles_and_permissions>` de un miembro como "
+"observador y compartir selectivamente los derechos de edición con esta "
+"persona."
 
 #: ../../user_guide/security.rst:127
 msgid ""
 "use :ref:`access lists <access_list>` to limit the access to a file to "
 "specific contacts."
 msgstr ""
+"usa :ref:`lista de acceso <access_list>` para limitar el acceso de contactos "
+"específicos a un archivo."
 
 #: ../../user_guide/security.rst:130
 msgid "Access of former team members"
-msgstr ""
+msgstr "Acceso de ex miembros del equipo"
 
 #: ../../user_guide/security.rst:132
 msgid ""
@@ -296,10 +376,17 @@ msgid ""
 " the client source code as the official one does neither store the keys "
 "nor decrypt any messages of a team which the user is not part of."
 msgstr ""
+"La comunicación del equipo está encriptada con claves estáticas. Esto "
+"implica que un ex miembro del equipo podría seguir teniendo acceso a las "
+"claves. Por lo tanto, un ex miembro del equipo podría potencialmente "
+"desencriptar los mensajes del equipo y mantener el mismo acceso a los "
+"documentos del equipo que tenía antes. Sin embargo, para lograr esto, "
+"necesitaría modificar el código fuente del cliente, ya que el programa "
+"oficial no almacena las claves ni desencripta mensajes de equipos a los que "
+"el usuario no pertenece."
 
 #~ msgid ""
 #~ "This option logs out all sessions "
 #~ "**except** the one from which it "
 #~ "is actiaved."
 #~ msgstr ""
-
