@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-19 14:14+0200\n"
-"PO-Revision-Date: 2024-07-11 05:54+0000\n"
+"PO-Revision-Date: 2024-07-16 18:12+0000\n"
 "Last-Translator: Mirel Gonzalez <arong7@gmail.com>\n"
 "Language-Team: Spanish (Cuba) <https://weblate.cryptpad.org/projects/"
 "user-guide/share_and_access/es_CU/>\n"
@@ -67,25 +67,27 @@ msgstr ""
 
 #: ../../user_guide/share_and_access.rst:21
 msgid "Access rights"
-msgstr ""
+msgstr "Derechos de acceso"
 
 #: ../../user_guide/share_and_access.rst:23
 msgid "There are 4 levels of permissions:"
-msgstr ""
+msgstr "Existen 4 niveles de permisos:"
 
 #: ../../user_guide/share_and_access.rst:25
 msgid "**View**: Read-only without editing the document."
-msgstr ""
+msgstr "**Ver**: Solo lectura, sin posibilidad de editar el documento."
 
 #: ../../user_guide/share_and_access.rst:26
 msgid ""
 "**Present**: Read-only the rendered output of the document, available in "
 "the :ref:`app_code` and :ref:`app_slides` applications."
 msgstr ""
+"**Presentar**: Solo lectura del contenido renderizado del documento, "
+"disponible en :ref:`app_code` y :ref:`app_slides` aplicaciones."
 
 #: ../../user_guide/share_and_access.rst:27
 msgid "**Edit**: View and make changes to the document."
-msgstr ""
+msgstr "**Editar**: Ver y realizar cambios en el documento."
 
 #: ../../user_guide/share_and_access.rst:28
 msgid ""
@@ -93,6 +95,9 @@ msgid ""
 " opened by a recipient, the document is deleted permanently. "
 ":badge_user:`Logged in users`"
 msgstr ""
+"**Ver una vez y autodestruir**: Solo lectura **una vez**. Una vez que el "
+"enlace es abierto por el destinatario, el documento se elimina de manera "
+"permanente. :badge_user:`Logged in users`"
 
 #: ../../user_guide/share_and_access.rst:32
 msgid ""
@@ -100,16 +105,19 @@ msgid ""
 "rights, the “edit link” is shown in the document’s properties even if the"
 " user is in View mode."
 msgstr ""
+"Si un documento ya está almacenado en el CryptDrive de un usuario con "
+"derechos de edición, el \"enlace de edición\" se muestra en las propiedades "
+"del documento aunque el usuario esté en modo vista."
 
 #: ../../user_guide/share_and_access.rst:37
 msgid "Sharing with contacts"
-msgstr ""
+msgstr "Compartir con contactos"
 
 #: ../../user_guide/share_and_access.rst:39
 #: ../../user_guide/share_and_access.rst:114
 #: ../../user_guide/share_and_access.rst:154
 msgid ":badge_user:`Logged in users`"
-msgstr ":badge_user:`Usuarios conectados`"
+msgstr ":badge_user:`Logged in users`"
 
 #: ../../user_guide/share_and_access.rst:41
 msgid ""
@@ -118,50 +126,60 @@ msgid ""
 " links never leave the encrypted platform of CryptPad. This prevents data"
 " from being leaked to third parties."
 msgstr ""
+"Este es el método recomendado para compartir documentos de manera segura en "
+"CryptPad. Cuando se comparten directamente con :ref:`contacts <contacts>`, "
+"los enlaces de documentos nunca salen de la plataforma cifrada de CryptPad. "
+"Esto evita que los datos se filtren a terceros."
 
 #: ../../user_guide/share_and_access.rst:47
 msgid "To share with one or more contacts:"
-msgstr ""
+msgstr "Para compartir con uno o más contactos:"
 
 #: ../../user_guide/share_and_access.rst:49
 msgid ""
 "|share-alt| **Share** in the document toolbar > |address-book| "
 "**Contacts**."
 msgstr ""
+"|share-alt| **Compartir** en la barra de herramientas del documento > "
+"|address-book| **Contactos**."
 
 #: ../../user_guide/share_and_access.rst:50
 msgid ""
 "``Right click`` on the document in the CryptDrive > |share-alt| **Share**"
 " > |address-book| **Contacts**."
 msgstr ""
+"``Right click`` en el documento en CryptDrive > |share-alt| **Compartir** > "
+"|address-book| **Contactos**."
 
 #: ../../user_guide/share_and_access.rst:52
 #: ../../user_guide/share_and_access.rst:78
 msgid "Then:"
-msgstr ""
+msgstr "Entonces:"
 
 #: ../../user_guide/share_and_access.rst:54
 #: ../../user_guide/share_and_access.rst:105
 msgid "Choose the :ref:`access rights <share_access_rights>`."
-msgstr ""
+msgstr "Selecciona :ref:`access rights <share_access_rights>`."
 
 #: ../../user_guide/share_and_access.rst:55
 msgid "Select the contacts or teams to share with."
-msgstr ""
+msgstr "Selecciona los contactos o equipos con los que deseas compartir."
 
 #: ../../user_guide/share_and_access.rst:56
 msgid "**Share** button."
-msgstr ""
+msgstr "**Compartir** botón."
 
 #: ../../user_guide/share_and_access.rst:60
 msgid ""
 "When sharing with contacts, they receive a notification. When sharing "
 "with a team, the document is added directly to the team’s CryptDrive."
 msgstr ""
+"Al compartir con contactos, ellos reciben una notificación. Al compartir con "
+"un equipo, el documento se añade directamente al CryptDrive del equipo."
 
 #: ../../user_guide/share_and_access.rst:66
 msgid "Sharing a link"
-msgstr ""
+msgstr "Compartir un enlace"
 
 #: ../../user_guide/share_and_access.rst:68
 msgid ""
@@ -170,127 +188,151 @@ msgid ""
 "security risks. To add a level of security, it is recommended to add a "
 ":ref:`password <access_tab>` to your document before sharing the link."
 msgstr ""
+"La pestaña **enlace** proporciona enlaces que se pueden compartir a través "
+"del medio que prefieras. Dependiendo de cómo envíes el enlace, este método "
+"puede presentar riesgos de seguridad. Para añadir un nivel de seguridad, se "
+"recomienda agregar una :ref:`password <access_tab>` a tu documento antes de "
+"compartir el enlace."
 
 #: ../../user_guide/share_and_access.rst:73
 msgid "To copy the link to a document:"
-msgstr ""
+msgstr "Para copiar el enlace a un documento:"
 
 #: ../../user_guide/share_and_access.rst:75
 msgid "From the document: |share-alt| **Share** in the toolbar > |link| **Link**."
 msgstr ""
+"Desde el documento: |share-alt| **Compartir** en la barra de herramientas > "
+"|link| **Enlace**."
 
 #: ../../user_guide/share_and_access.rst:76
 msgid ""
 "From the CryptDrive : ``Right click`` on the document > |share-alt| "
 "**Share** > |link| **Link**."
 msgstr ""
+"Desde CryptDrive : ``Right click`` en el documento > |share-alt| "
+"**Compartir** > |link| **Enlace**."
 
 #: ../../user_guide/share_and_access.rst:80
 msgid ""
 "Choose the :ref:`access rights <share_access_rights>` and additional "
 "options:"
 msgstr ""
+"Seleccionar :ref:`access rights <share_access_rights>` y opciones "
+"adicionales:"
 
 #: ../../user_guide/share_and_access.rst:82
 msgid "**Embed mode** hides the toolbar and user list."
 msgstr ""
+"**Modo de incrustación** oculta la barra de herramientas y la lista de "
+"usuarios."
 
 #: ../../user_guide/share_and_access.rst:83
 msgid ""
 "**Preview** allows to check what the link will look like before sending "
 "it."
 msgstr ""
+"**Vista previa** permite verificar cómo se verá el enlace antes de enviarlo."
 
 #: ../../user_guide/share_and_access.rst:85
 msgid "**Copy** the link."
-msgstr ""
+msgstr "**Copiar** el enlace."
 
 #: ../../user_guide/share_and_access.rst:86
 msgid "Send the link."
-msgstr ""
+msgstr "Enviar el enlace."
 
 #: ../../user_guide/share_and_access.rst:91
 msgid "Embedding"
-msgstr ""
+msgstr "Incrustar"
 
 #: ../../user_guide/share_and_access.rst:93
 msgid "Embedding allows for a CryptPad document to be displayed on a web page."
 msgstr ""
+"Incrustar permite que un documento de CryptPad se muestre en una página web."
 
 #: ../../user_guide/share_and_access.rst:98
 msgid "To embed a document:"
-msgstr ""
+msgstr "Para incrustar un documento:"
 
 #: ../../user_guide/share_and_access.rst:100
 msgid ""
 "From the document : |share-alt| **Share** in the toolbar > |code| "
 "**Embed**."
 msgstr ""
+"Desde el documento : |share-alt| **Compartir** en la barra de herramientas > "
+"|code| **Incrustar**."
 
 #: ../../user_guide/share_and_access.rst:101
 msgid ""
 "From the CryptDrive : ``Right click`` on the document > |share-alt| "
 "**Share** > |code| **Embed**."
 msgstr ""
+"Desde CryptDrive : ``Right click`` en el documento > |share-alt| "
+"**Compartir** > |code| **Incrustar**."
 
 #: ../../user_guide/share_and_access.rst:103
 msgid "then"
-msgstr ""
+msgstr "entonces"
 
 #: ../../user_guide/share_and_access.rst:106
 msgid "**Copy** the embed code."
-msgstr ""
+msgstr "**Copiar** el código incrustado."
 
 #: ../../user_guide/share_and_access.rst:107
 msgid "Paste the code on a web page."
-msgstr ""
+msgstr "Pega el código en una página web."
 
 #: ../../user_guide/share_and_access.rst:112
 msgid "Shared folders"
-msgstr ""
+msgstr "Carpetas compartidas"
 
 #: ../../user_guide/share_and_access.rst:116
 msgid "Shared folders are made for sharing a set of documents at once."
 msgstr ""
+"Las carpetas compartidas están diseñadas para compartir un conjunto de "
+"documentos a la vez."
 
 #: ../../user_guide/share_and_access.rst:118
 msgid "To create a shared folder in the CryptDrive:"
-msgstr ""
+msgstr "Para crear una carpeta compartida en CryptDrive:"
 
 #: ../../user_guide/share_and_access.rst:120
 msgid "``+ New`` > |cptools shared-folder| **Shared folder**."
-msgstr ""
+msgstr "``+ New`` > |cptools shared-folder| **carpeta compartida**."
 
 #: ../../user_guide/share_and_access.rst:121
 msgid ":kbd:`Ctrl + e` > |cptools shared-folder| **Shared folder**."
-msgstr ""
+msgstr ":kbd:`Ctrl + e` > |cptools shared-folder| **Carpeta compartida**."
 
 #: ../../user_guide/share_and_access.rst:122
 msgid "``Right click`` > |cptools shared-folder| **New shared folder**."
-msgstr ""
+msgstr "``Right click`` > |cptools shared-folder| **Nueva carpeta compartida**."
 
 #: ../../user_guide/share_and_access.rst:124
 msgid "To convert an existing folder into a shared folder:"
-msgstr ""
+msgstr "Para convertir una carpeta existente en una carpeta compartida:"
 
 #: ../../user_guide/share_and_access.rst:126
 #: ../../user_guide/share_and_access.rst:134
 msgid "``Right click`` on the folder > |share-alt| **Share**."
-msgstr ""
+msgstr "``Right click`` en la carpeta > |share-alt| **Compartir**."
 
 #: ../../user_guide/share_and_access.rst:127
 msgid "Choose the conversion options. Password. :ref:`Owned <owners>` folder."
 msgstr ""
+"Elige las opciones de conversión. Contraseña. :ref:`Owned <owners>` carpeta."
 
 #: ../../user_guide/share_and_access.rst:130
 msgid "``OK`` or press the :kbd:`Enter` key."
-msgstr ""
+msgstr "``OK`` o presiona :kbd:`Enter` clave."
 
 #: ../../user_guide/share_and_access.rst:132
 msgid ""
 "Folders are shared in a similar way to documents. To share a folder from "
 "the CryptDrive:"
 msgstr ""
+"Las carpetas se comparten de manera similar a los documentos. Para compartir "
+"una carpeta desde el CryptDrive:"
 
 #: ../../user_guide/share_and_access.rst:135
 msgid ""
@@ -298,6 +340,9 @@ msgid ""
 "without editing the contents of the folder. **Edit**: View and make "
 "changes to the folder."
 msgstr ""
+"Selecciona la **Vista** `access rights <#access-rights>`__. : Solo lectura "
+"sin editar el contenido de la carpeta. **Editar**: Ver y realizar cambios en "
+"la carpeta."
 
 #: ../../user_guide/share_and_access.rst:138
 msgid ""
@@ -306,6 +351,11 @@ msgid ""
 "Copy a link to send through the medium of your choice. |code| **Embed**: "
 "Copy code to include the folder on a web page."
 msgstr ""
+"Se disponen de tres pestañas: |address-book| **Contactos**: El método "
+"recomendado para compartir de forma segura con contactos y equipos en "
+"CryptPad.|link| **Enlace**: Copia un enlace para enviarlo a través del medio "
+"de tu elección. |code| **Embed**: Copia el código para incluir una carpeta "
+"en una página web."
 
 #: ../../user_guide/share_and_access.rst:147
 msgid ""
@@ -314,14 +364,20 @@ msgid ""
 "shared folders, conversely the history of a shared folder can be restored"
 " without affecting the rest of the drive."
 msgstr ""
+"Las carpetas compartidas tienen su propia historia, separada del "
+":ref:`drive_history`. Restaurar el historial del disco no afecta a las "
+"carpetas compartidas; el historial de una carpeta compartida puede "
+"restaurarse sin afectar al resto del disco."
 
 #: ../../user_guide/share_and_access.rst:152
 msgid "Access"
-msgstr ""
+msgstr "Acceso"
 
 #: ../../user_guide/share_and_access.rst:156
 msgid "This menu is used to restrict access to a document or shared folder:"
 msgstr ""
+"Este menú se utiliza para restringir el acceso a un documento o carpeta "
+"compartida:"
 
 #: ../../user_guide/share_and_access.rst:158
 msgid "From the document: |unlock-alt| **Access**."
