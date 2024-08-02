@@ -74,7 +74,7 @@ Switch to the latest published tag
 
 .. code:: bash
 
-   git checkout 2024.6.0
+   git checkout 2024.6.1
 
 Dependencies
 """"""""""""
