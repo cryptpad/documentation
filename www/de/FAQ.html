@@ -301,10 +301,10 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="user_guide/accessibility.html">Zugänglichkeit</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="user_guide/accessibility.html#feedback-channels">Feedback-Kanäle</a></li>
-<li class="toctree-l3"><a class="reference internal" href="user_guide/accessibility.html#keyboard-shortcuts">Keyboard Shortcuts</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="user_guide/accessibility.html#general-shortcuts">General Shortcuts</a></li>
-<li class="toctree-l4"><a class="reference internal" href="user_guide/accessibility.html#drive-shortcuts">Drive Shortcuts</a></li>
-<li class="toctree-l4"><a class="reference internal" href="user_guide/accessibility.html#toolbar-shortcuts">Toolbar Shortcuts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_guide/accessibility.html#keyboard-shortcuts">Tastenkombinationen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/accessibility.html#general-shortcuts">Allgemein</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/accessibility.html#drive-shortcuts">Drive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/accessibility.html#toolbar-shortcuts">Werkzeugleiste</a></li>
 </ul>
 </li>
 </ul>
@@ -607,7 +607,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#can-cryptpad-sync-documents-to-my-local-filesystem">Kann CryptPad die Dokumente mit meinem lokalen Dateisystem synchronisieren?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#what-is-the-relationship-between-cryptpad-and-onlyoffice">In welcher Beziehung stehen CryptPad und OnlyOffice?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#how-secure-is-cryptpad">How Secure is CryptPad?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-secure-is-cryptpad">Wie sicher ist CryptPad?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#faq-for-cryptpad-fr">Fragen zu cryptpad.fr</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#can-i-pay-for-my-subscription-without-a-card">Kann ich für Abonnements ohne Kreditkarte bezahlen?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#do-you-accept-cryptocurrencies-for-subscriptions-and-donations">Werden Kryptowährungen für Abonnements und Spenden akzeptiert?</a></li>
@@ -838,20 +838,20 @@
 <p>Die Anwendung <a class="reference internal" href="user_guide/apps/sheets.html#app-sheets"><span class="std std-ref">Tabellen</span></a> in CryptPad ist eine Integration der <a class="reference external" href="https://www.onlyoffice.com/de/spreadsheet-editor.aspx">Tabellen von OnlyOffice</a>. Allerdings betrifft dies nur den clientseitigen Code. CryptPad verwendet nicht den Document Server von OnlyOffice. Die verschlüsselte Zusammenarbeit von CryptPad, die von Tabellen und anderen Anwendungen verwendet wird, unterscheidet sich deutlich vom Verschlüsselungssystem von OnlyOffice. Die Werkzeuge in CryptPad zur Dateikonvertierung basieren teilweise auf OnlyOffice-Code. Es wurde jedoch viel Arbeit darin investiert, dies im Browser und nicht auf dem Server auszuführen. Dadurch wird vermieden, dass während beim Konvertieren der Inhalt von Dokumenten offengelegt werden muss.</p>
 </section>
 <section id="how-secure-is-cryptpad">
-<h2>How Secure is CryptPad?<a class="headerlink" href="#how-secure-is-cryptpad" title="Permalink to this heading">¶</a></h2>
-<p>CryptPad aims at protecting the identity of its users and their content from us and external threats. However, this security is not absolute and requires that <em>good practices</em> are followed by the users and that the instance you access to is trustworthy. Explanations and recommendations are available in <a class="reference external" href="https://blog.cryptpad.org/2024/03/14/Most-Secure-CryptPad-Usage/">our blog</a>.</p>
-<p>To summarize the key points:</p>
+<h2>Wie sicher ist CryptPad?<a class="headerlink" href="#how-secure-is-cryptpad" title="Permalink to this heading">¶</a></h2>
+<p>CryptPad hat das Ziel, die Identität seiner Benutzer und deren Inhalte vor uns und externen Bedrohungen zu schützen. Diese Sicherheit ist jedoch nicht absolut und setzt voraus, dass die Benutzer <em>gute Praktiken</em> anwenden und dass die verwendete Instanz vertrauenswürdig ist. Erklärungen und Empfehlungen findest du in <a class="reference external" href="https://blog.cryptpad.org/2024/03/14/Most-Secure-CryptPad-Usage/">unserem Blog</a>.</p>
+<p>Um die wichtigsten Punkte zusammenzufassen:</p>
 <ul>
-<li><p>The instance administrators are assumed to be <em>honest-but-curious</em>, meaning that even though they play by the rule, they try to get as much information as they can from what they can perceive. We maintain a list of <a class="reference external" href="https://cryptpad.org/instances">CryptPad public instances</a> for which we verified that they are up-to-date and well configured;</p></li>
-<li><p>The communication channels cannot be trusted and can be <em>actively malicious</em>: external threat are able to tamper, replay or drop messages. This should not alter the security of CryptPad;</p></li>
-<li><p>The users you share your document are <em>honest</em> as once you send your content, they are trusted not to leak it. However, your <em>identity</em> remains oblivious to them in a weak form of anonymity: they have access to your public key and your display name;</p>
+<li><p>Bei den Administratoren der Instanzen wird davon ausgegangen, dass sie <em>ehrlich, aber neugierig</em> sind. Dies bedeutet, dass sie, obwohl sie sich an die Regeln halten, versuchen, so viele Informationen wie möglich aus dem zu erhalten, was sie beobachten können. Wir führen eine <a class="reference external" href="https://cryptpad.org/instances">Liste der öffentlichen CryptPad-Instanzen</a>, bei denen wir uns vergewissert haben, dass sie aktuell und korrekt konfiguriert sind.</p></li>
+<li><p>Die Kommunikationskanäle sind nicht vertrauenswürdig und können <em>aktiv böswillig</em> sein: Externe Bedrohungen sind in der Lage, Nachrichten zu verfälschen, zu wiederholen oder zu löschen. Dies sollte die Sicherheit von CryptPad nicht beeinträchtigen.</p></li>
+<li><p>Die Nutzer, mit denen du dein Dokument teilst, sind <em>ehrlich</em>. Es wird darauf vertraut, dass sie es nicht weitergegeben werden. Deine <em>Identität</em> bleibt ihnen jedoch in einer schwachen Form der Anonymität verborgen: Sie haben Zugang zu deinem öffentlichen Schlüssel und deinem Anzeigenamen.</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Therefore, the <em>share link</em> should be considered <em>as sensitive as a passphrase</em>. To add another layer of security, we recommend adding a password to your files. If you have an account, it is stored in your CryptDrive (which is considered secure) and the access remains seamless. However, external users finding the link still need the file password to access it.</p></li>
+<li><p>Daher sollte der <em>Teilen-Link</em> als <em>so vertraulich wie eine Passphrase</em> betrachtet werden. Um eine weitere Sicherheitsebene hinzuzufügen, empfehlen wir, ein Passwort zu deinen Dateien hinzuzufügen. Wenn du einen Account hast, wird es in deinem CryptDrive gespeichert (das als sicher gilt) und der Zugriff bleibt nahtlos möglich. Externe Benutzer, die den Link finden, benötigen jedoch weiterhin das Passwort für den Zugriff auf die Datei.</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p>The full edition history and different collaborators are visible upon sharing a document. If you want to keep it secret, the best way (so far) is to make then share a copy of the document, which will start anew with a fresh history.</p></li>
+<li><p>Bei der Freigabe eines Dokuments sind der gesamte Bearbeitungsverlauf und die verschiedenen Mitwirkenden sichtbar. Wenn du diese Informationen geheim halten möchtest, ist es (bisher) am besten, eine Kopie des Dokuments zu erstellen und diese dann zu teilen. Dadurch wird der Verlauf zurückgesetzt.</p></li>
 </ul>
 </section>
 <section id="faq-for-cryptpad-fr">

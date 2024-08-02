@@ -301,10 +301,10 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="user_guide/accessibility.html">Доступность</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="user_guide/accessibility.html#feedback-channels">Каналы обратной связи</a></li>
-<li class="toctree-l3"><a class="reference internal" href="user_guide/accessibility.html#keyboard-shortcuts">Keyboard Shortcuts</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="user_guide/accessibility.html#general-shortcuts">General Shortcuts</a></li>
-<li class="toctree-l4"><a class="reference internal" href="user_guide/accessibility.html#drive-shortcuts">Drive Shortcuts</a></li>
-<li class="toctree-l4"><a class="reference internal" href="user_guide/accessibility.html#toolbar-shortcuts">Toolbar Shortcuts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_guide/accessibility.html#keyboard-shortcuts">Горячие Клавиши</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/accessibility.html#general-shortcuts">Общие сочетания клавиш</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/accessibility.html#drive-shortcuts">Горячие клавиши Drive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/accessibility.html#toolbar-shortcuts">Сочетания клавиш на панели инструментов</a></li>
 </ul>
 </li>
 </ul>
@@ -607,7 +607,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#can-cryptpad-sync-documents-to-my-local-filesystem">Может ли CryptPad синхронизировать документы с моей локальной файловой системой?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#what-is-the-relationship-between-cryptpad-and-onlyoffice">Какова связь между CryptPad и OnlyOffice?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#how-secure-is-cryptpad">How Secure is CryptPad?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-secure-is-cryptpad">Насколько безопасен CryptPad?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#faq-for-cryptpad-fr">Часто задаваемые вопросы по cryptpad.fr</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#can-i-pay-for-my-subscription-without-a-card">Могу ли я оплатить подписку без карты?</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#do-you-accept-cryptocurrencies-for-subscriptions-and-donations">Принимаете ли вы криптовалюты для подписки и пожертвований?</a></li>
@@ -734,7 +734,7 @@
 <li><p>Arkenfox (некоторые конфигурации)</p></li>
 <li><p>Loom</p></li>
 <li><p>MozBar</p></li>
-<li><p>Adblocker Stands</p></li>
+<li><p>Stands AdBlocker</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Примечание</p>
@@ -838,20 +838,20 @@
 <p>Приложение CryptPad <a class="reference internal" href="user_guide/apps/sheets.html#app-sheets"><span class="std std-ref">Таблица</span></a> представляет собой интеграцию <a class="reference external" href="https://www.onlyoffice.com/ru/spreadsheet-editor.aspx">электронных таблиц OnlyOffice</a>. Однако это касается только клиентского кода, CryptPad не использует сервер документов OnlyOffice. Зашифрованная совместная работа CryptPad, используемая для электронных таблиц и других приложений, полностью отличается от системы шифрования, используемой в частях вышестоящего OnlyOffice. Некоторые инструменты преобразования форматов файлов CryptPad основаны на коде OnlyOffice, но была проделана значительная работа, чтобы заставить их работать в браузере, а не на сервере, что позволяет избежать необходимости раскрывать содержимое пользовательских документов при преобразовании.</p>
 </section>
 <section id="how-secure-is-cryptpad">
-<h2>How Secure is CryptPad?<a class="headerlink" href="#how-secure-is-cryptpad" title="Permalink to this heading">¶</a></h2>
-<p>CryptPad aims at protecting the identity of its users and their content from us and external threats. However, this security is not absolute and requires that <em>good practices</em> are followed by the users and that the instance you access to is trustworthy. Explanations and recommendations are available in <a class="reference external" href="https://blog.cryptpad.org/2024/03/14/Most-Secure-CryptPad-Usage/">our blog</a>.</p>
-<p>To summarize the key points:</p>
+<h2>Насколько безопасен CryptPad?<a class="headerlink" href="#how-secure-is-cryptpad" title="Permalink to this heading">¶</a></h2>
+<p>CryptPad стремится защитить личность своих пользователей и их контент от нас и от внешних угроз. Однако эта безопасность не является абсолютной и требует, чтобы пользователи соблюдали <em>хорошие практики</em> и чтобы экземпляр, к которому Вы подключаетесь, был надёжным. Пояснения и рекомендации доступны в <a class="reference external" href="https://blog.cryptpad.org/2024/03/14/Most-Secure-CryptPad-Usage/">нашем блоге</a>.</p>
+<p>Подведем итоги ключевых моментов:</p>
 <ul>
-<li><p>The instance administrators are assumed to be <em>honest-but-curious</em>, meaning that even though they play by the rule, they try to get as much information as they can from what they can perceive. We maintain a list of <a class="reference external" href="https://cryptpad.org/instances">CryptPad public instances</a> for which we verified that they are up-to-date and well configured;</p></li>
-<li><p>The communication channels cannot be trusted and can be <em>actively malicious</em>: external threat are able to tamper, replay or drop messages. This should not alter the security of CryptPad;</p></li>
-<li><p>The users you share your document are <em>honest</em> as once you send your content, they are trusted not to leak it. However, your <em>identity</em> remains oblivious to them in a weak form of anonymity: they have access to your public key and your display name;</p>
+<li><p>Предполагается, что администраторы экземпляров <em>честны, но любопытны</em>. Это означает, что, хотя они и играют по правилам, они стараются получить как можно больше информации из того, что они могут воспринимать. Мы ведем список <a class="reference external" href="https://cryptpad.org/instances">публичных экземпляров CryptPad</a>, для которых мы проверили, что они актуальны и хорошо настроены;</p></li>
+<li><p>Каналам связи нельзя доверять, и они могут быть <em>активно вредоносными</em>: внешняя угроза способна подделать, воспроизвести или удалить сообщения. Это не должно повлиять на безопасность CryptPad;</p></li>
+<li><p>Пользователи, с которым Вы делитесь своим документом, должны быть <em>честны</em>, поскольку, как только Вы отправляете свой контент, Вы полагаетесь на них, что они не передадут его третьим лицам. Однако Ваша <em>личность</em> остаётся для них некоторой загадкой: у них есть доступ к Вашему открытому ключу и Вашему отображаемому имени пользователя;</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Therefore, the <em>share link</em> should be considered <em>as sensitive as a passphrase</em>. To add another layer of security, we recommend adding a password to your files. If you have an account, it is stored in your CryptDrive (which is considered secure) and the access remains seamless. However, external users finding the link still need the file password to access it.</p></li>
+<li><p>Следовательно, ссылку <em>поделиться</em> следует рассматривать как &quot;настолько же конфиденциальную, каковой является кодовая фраза*. Чтобы добавить ещё один уровень безопасности, мы рекомендуем добавить пароль к Вашим файлам. Если у Вас есть учётная запись, они хранятся в Вашем CryptDrive (который считается безопасным), и доступ к ним остаётся беспрепятственным. Однако внешним пользователям, если они каким-то образом найдут ссылку, по-прежнему требуется пароль файла для доступа к нему.</p></li>
 </ul>
 </div></blockquote>
 </li>
-<li><p>The full edition history and different collaborators are visible upon sharing a document. If you want to keep it secret, the best way (so far) is to make then share a copy of the document, which will start anew with a fresh history.</p></li>
+<li><p>Полная история изменений и сведения о различных соавторах видны после публикации документа. Если Вы хотите сохранить это в секрете, лучший способ (на данный момент) — создать копию документа, а затем поделиться ею, имеющей чистую историю изменений.</p></li>
 </ul>
 </section>
 <section id="faq-for-cryptpad-fr">
