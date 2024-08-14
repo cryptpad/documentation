@@ -97,7 +97,7 @@ msgid ""
 "Limited access to :ref:`calendars <calendar>` (link-shared calendars "
 "only)."
 msgstr ""
-"Acceso limitado a :ref:`calendarios <calendario>` (solo calendarios "
+"Acceso limitado a :ref:`calendarios <calendar>` (solo calendarios "
 "compartidos por enlace)."
 
 #: ../../user_guide/user_account.rst:27
@@ -138,7 +138,7 @@ msgid ""
 ":ref:`access list <access_list>`."
 msgstr ""
 "Más opciones para administrar documentos como :ref:`propietario "
-"<propietarios>`: agregue una :ref:`contraseña <access_tab>`, una :ref:`fecha "
+"<owners>`: agregue una :ref:`contraseña <access_tab>`, una :ref:`fecha "
 "de vencimiento <access_tab>` o una :ref:`lista de acceso <access_list >`."
 
 #: ../../user_guide/user_account.rst:36
@@ -147,13 +147,13 @@ msgid ""
 "folders <shared_folders>`, or with :ref:`tags <tags>` and :ref:`templates"
 " <templates>`."
 msgstr ""
-"Organización de documentos en :ref:`carpetas <carpetas>`, :ref:`carpetas "
-"compartidas <carpetas compartidas>`, o con :ref:`tags <etiquetas>` y :ref:`"
-"templates <plantillas>`."
+"Organización de documentos en :ref:`carpetas <folders>`, :ref:`carpetas "
+"compartidas <shared_folders>`, o con :ref:`etiquetas <tags>` y :ref:`"
+"plantillas <templates>`."
 
 #: ../../user_guide/user_account.rst:37
 msgid "Creation of :ref:`teams <teams>`."
-msgstr "Creación de :ref:`equipos <equipos>`."
+msgstr "Creación de :ref:`equipos <teams>`."
 
 #: ../../user_guide/user_account.rst:38
 msgid ""
@@ -163,12 +163,12 @@ msgid ""
 "contacts."
 msgstr ""
 "Personalización de la página :ref:`profile <profile>` y una lista de :ref:`"
-"contactos <contactos>` para :ref:`compartir documentos <share>` y :ref:`chat "
+"contactos <contacts>` para :ref:`compartir documentos <share>` y :ref:`chat "
 "<chat_contacts>` con. Notificaciones de interacciones entre contactos."
 
 #: ../../user_guide/user_account.rst:39
 msgid "Creation and management of :ref:`calendars <calendar>`."
-msgstr "Creación y gestión de :ref:`calendarios <calendario>`."
+msgstr "Creación y gestión de :ref:`calendarios <calendar>`."
 
 #: ../../user_guide/user_account.rst:42
 msgid "Premium user"
@@ -250,8 +250,7 @@ msgid ""
 "can be changed in :ref:`user settings <user_settings>`."
 msgstr ""
 "**Contraseña**: Se recomienda utilizar una contraseña segura. La contraseña "
-"se puede cambiar en :ref:`configuración de usuario <configuración de "
-"usuario>`."
+"se puede cambiar en :ref:`configuración de usuario <user_settings>`."
 
 #: ../../user_guide/user_account.rst:76
 msgid ""
@@ -308,11 +307,11 @@ msgstr ""
 "CryptPad te notifica cuando tus contactos interactúan contigo. Las "
 "notificaciones se muestran mediante la campana |bell-o| al lado del avatar ("
 "en la parte superior derecha). Si tienes notificaciones sin leer, se llena "
-"la campana |campana| y se muestra un recuento."
+"la campana |bell| y se muestra un recuento."
 
 #: ../../user_guide/user_account.rst:100
 msgid "|bell| Bell drop down menu:"
-msgstr "|campana| Menú desplegable de campana:"
+msgstr "|bell| Menú desplegable de campana:"
 
 #: ../../user_guide/user_account.rst:102
 msgid "Browse unread notifications."
@@ -340,23 +339,23 @@ msgstr "Seleccione el tipo de notificación para ver:"
 
 #: ../../user_guide/user_account.rst:111
 msgid "|bars| All."
-msgstr "|barras| Todo."
+msgstr "|bars| Todo."
 
 #: ../../user_guide/user_account.rst:112
 msgid "|user| Contact Requests."
-msgstr "|usuario| Solicitudes de contacto."
+msgstr "|user| Solicitudes de contacto."
 
 #: ../../user_guide/user_account.rst:113
 msgid "|cptools richtext| Shared with me."
-msgstr "|texto enriquecido de cptools| Comparte conmigo."
+msgstr "|cptools richtext| Comparte conmigo."
 
 #: ../../user_guide/user_account.rst:114
 msgid "|archive| History."
-msgstr "|archivo| Historia."
+msgstr "|archive| Historia."
 
 #: ../../user_guide/user_account.rst:116
 msgid "|trash|: Delete notifications."
-msgstr "|papelera|: Elimina notificaciones."
+msgstr "|trash|: Elimina notificaciones."
 
 #: ../../user_guide/user_account.rst:121
 msgid "Settings"
@@ -380,7 +379,7 @@ msgid ""
 "changed. :badge_user:`Logged in users`"
 msgstr ""
 "**Nombre de cuenta**: Nombre de usuario elegido al registrarse. Este nombre "
-"no se puede cambiar. :usuario de insignia:`Usuarios registrados`"
+"no se puede cambiar. :badge_user:`Logged in users`"
 
 #: ../../user_guide/user_account.rst:131
 msgid ""
@@ -392,7 +391,7 @@ msgstr ""
 "**Clave de firma pública**: utilizada por administradores de instancias y/o "
 "en instancias que ofrecen suscripciones. Estos son los únicos datos sobre su "
 "cuenta que están disponibles para los administradores del servicio. "
-":badge_user:`Usuarios registrados`"
+":badge_user:`Logged in users`"
 
 #: ../../user_guide/user_account.rst:132
 msgid ""
@@ -402,8 +401,7 @@ msgid ""
 msgstr ""
 "**Nombre para mostrar**: nombre que se muestra a otros usuarios, por "
 "ejemplo, cuando colabora en documentos. Para cambiar este nombre, ingrese un "
-"nombre nuevo y haga clic en **Guardar**. :usuario de insignia:`Usuarios "
-"registrados`"
+"nombre nuevo y haga clic en **Guardar**. :badge_user:`Logged in users`"
 
 #: ../../user_guide/user_account.rst:133
 msgid ""
@@ -439,8 +437,7 @@ msgid ""
 ":badge_user:`Logged in users`"
 msgstr ""
 "**Eliminación de cuenta**: Opción para eliminar permanentemente su cuenta y "
-"todos sus documentos. **Elimina tu cuenta** y confirma. :usuario de "
-"insignia:`Usuarios registrados`"
+"todos sus documentos. **Elimina tu cuenta** y confirma. :badge_user:`Logged in users`"
 
 #: ../../user_guide/user_account.rst:140
 msgid "Security & Privacy"
@@ -453,8 +450,8 @@ msgid ""
 ":badge_user:`Logged in users`"
 msgstr ""
 "**Cerrar sesiones remotas**: Cierra sesión en todas las sesiones excepto en "
-"aquella en la que está activada esta opción. (ver también :ref:`desconexión "
-"remota`) :usuario con insignia:`Usuarios registrados`"
+"aquella en la que está activada esta opción. (ver también :ref:`remote_disconnect`) "
+":badge_user:`Logged in users`"
 
 #: ../../user_guide/user_account.rst:143
 msgid ""
@@ -464,7 +461,7 @@ msgid ""
 msgstr ""
 "**Autenticación de dos factores (2FA)**: proteja su cuenta con un código de "
 "verificación adicional proporcionado por una aplicación de autenticación de "
-"su elección.   :usuario de insignia:`Usuarios registrados`"
+"su elección.   :badge_user:`Logged in users`"
 
 #: ../../user_guide/user_account.rst:145
 msgid "To activate 2FA:"
@@ -613,7 +610,7 @@ msgid ""
 msgstr ""
 "**Almacenamiento de documentos en CryptDrive**: administra si los documentos "
 "que visita se almacenan automáticamente en su CryptDrive. Si nadie :ref:`"
-"posee <propietarios>` un documento que usted agrega a su CryptDrive, cuenta "
+"posee <owners>` un documento que usted agrega a su CryptDrive, cuenta "
 "para su cuota de almacenamiento."
 
 #: ../../user_guide/user_account.rst:175
@@ -753,7 +750,7 @@ msgstr "Texto enriquecido"
 
 #: ../../user_guide/user_account.rst:203
 msgid "User settings for the :ref:`app_rich_text` application."
-msgstr "Configuración de usuario para la aplicación :ref:`app rich_text`."
+msgstr "Configuración de usuario para la aplicación :ref:`app_rich_text`."
 
 #: ../../user_guide/user_account.rst:205
 msgid ""
