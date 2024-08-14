@@ -22,12 +22,13 @@ List of extensions known to cause issues with CryptPad
 * AdGuard
 * SuperAgent
 * Tampermonkey
-* Arkenfox (some configurations)
+* Arkenfox
 * Loom
 * MozBar
 * Adblocker Stands
 * Emoji keyboard emojis for chrome
 * PAYBACK Internet Assistent (PIA)
+* User-Agent Switcher and Manager
 
 .. note::
     If you identify issues with another extension please `report it to the development team <https://github.com/cryptpad/cryptpad/issues/new/choose>`_
