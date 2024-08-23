@@ -75,10 +75,11 @@
         	<p class="caption-text">
 	        	<select id="language-selector-container">
 	        		<option value="en">English</option>
-              <option value="fr">Français</option>
-              <option value="de">Deutsch</option>
-              <option value="ru">Русский</option>
-              <option value="ja">日本語</option>
+              			<option value="fr">Français</option>
+              			<option value="de">Deutsch</option>
+              			<option value="ru">Русский</option>
+              			<option value="ja">日本語</option>
+	      			<option value="es_CU">Español cubano</option>
 	        	</select>
         	</p>
         </div>
@@ -283,10 +284,10 @@
 <li class="toctree-l4"><a class="reference internal" href="kanban.html#import-export">Импорт/Экспорт</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="diagram.html">Diagram</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="diagram.html#documentation">Documentation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="diagram.html#toolbars">Toolbars</a></li>
-<li class="toctree-l4"><a class="reference internal" href="diagram.html#import-export">Import/Export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="diagram.html">Диаграмма</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="diagram.html#documentation">Документация</a></li>
+<li class="toctree-l4"><a class="reference internal" href="diagram.html#toolbars">Панели инструментов</a></li>
+<li class="toctree-l4"><a class="reference internal" href="diagram.html#import-export">Импорт/Экспорт</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Рисунки</a><ul>
@@ -763,8 +764,8 @@
 <h3>Типы вопросов<a class="headerlink" href="#question-types" title="Permalink to this heading">¶</a></h3>
 <section id="cptools-form-text-text">
 <h4><em class="cptools cptools-form-text"></em> Текст<a class="headerlink" href="#cptools-form-text-text" title="Permalink to this heading">¶</a></h4>
-<p><strong>Response</strong>: one line of text</p>
-<p><strong>Options</strong>:</p>
+<p><strong>Ответ</strong>: одна строка текста</p>
+<p><strong>Варианты</strong>:</p>
 <ul class="simple">
 <li><p>Текстовый тип: текст, число, ссылка или электронная почта</p></li>
 </ul>
@@ -775,16 +776,16 @@
 </section>
 <section id="cptools-form-paragraph-paragraph">
 <h4><em class="cptools cptools-form-paragraph"></em> Абзац<a class="headerlink" href="#cptools-form-paragraph-paragraph" title="Permalink to this heading">¶</a></h4>
-<p><strong>Response</strong>: multiple lines of text</p>
-<p><strong>Options</strong>:</p>
+<p><strong>Ответ</strong>: несколько строк текста</p>
+<p><strong>Варианты</strong>:</p>
 <ul class="simple">
 <li><p>Максимальное количество символов: ограничено (по умолчанию 1000)</p></li>
 </ul>
 </section>
 <section id="cptools-form-list-radio-choice">
 <span id="form-q-choice"></span><h4><em class="cptools cptools-form-list-radio"></em> Выбор<a class="headerlink" href="#cptools-form-list-radio-choice" title="Permalink to this heading">¶</a></h4>
-<p><strong>Response</strong>: one choice from the list</p>
-<p><strong>Options</strong>:</p>
+<p><strong>Ответ</strong>: один вариант из списка</p>
+<p><strong>Варианты</strong>:</p>
 <ul class="simple">
 <li><p>кнопка <em class="fa fa-plus"></em> <strong>Добавить вариант</strong></p></li>
 <li><p>Возьмите рукоятку <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> и перетащите её, чтобы изменить порядок вариантов</p></li>
@@ -793,8 +794,8 @@
 </section>
 <section id="cptools-form-grid-radio-choice-grid">
 <h4><em class="cptools cptools-form-grid-radio"></em> Таблица вариантов<a class="headerlink" href="#cptools-form-grid-radio-choice-grid" title="Permalink to this heading">¶</a></h4>
-<p><strong>Response</strong>: one option choice per item</p>
-<p><strong>Options</strong>:</p>
+<p><strong>Ответ</strong>: один вариант выбора для каждого элемента</p>
+<p><strong>Варианты</strong>:</p>
 <ul class="simple">
 <li><p>кнопки <em class="fa fa-plus"></em> <strong>Добавить вариант</strong> и <em class="fa fa-plus"></em> <strong>Добавить элемент</strong></p></li>
 <li><p>Возьмите рукоятку <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> и перетащите, чтобы изменить порядок элементов и вариантов</p></li>
@@ -803,12 +804,12 @@
 </section>
 <section id="calendar-date">
 <h4><em class="fa fa-calendar"></em> Дата<a class="headerlink" href="#calendar-date" title="Permalink to this heading">¶</a></h4>
-<p><strong>Response</strong>: pick a date and time</p>
+<p><strong>Ответ</strong>: выберите дату и время</p>
 </section>
 <section id="cptools-form-list-check-checkbox">
 <span id="form-q-checkbox"></span><h4><em class="cptools cptools-form-list-check"></em> Флажок<a class="headerlink" href="#cptools-form-list-check-checkbox" title="Permalink to this heading">¶</a></h4>
-<p><strong>Response</strong>: multiple choices from the list</p>
-<p><strong>Options</strong>:</p>
+<p><strong>Ответ</strong>: несколько вариантов из списка</p>
+<p><strong>Варианты</strong>:</p>
 <ul class="simple">
 <li><p>Максимальное количество выбираемых вариантов</p></li>
 <li><p>кнопка <em class="fa fa-plus"></em> <strong>Добавить вариант</strong></p></li>
@@ -818,8 +819,8 @@
 </section>
 <section id="cptools-form-grid-check-checkbox-grid">
 <h4><em class="cptools cptools-form-grid-check"></em> Таблица флажков<a class="headerlink" href="#cptools-form-grid-check-checkbox-grid" title="Permalink to this heading">¶</a></h4>
-<p><strong>Response</strong>: multiple choices for each item</p>
-<p><strong>Options</strong>:</p>
+<p><strong>Ответ</strong>: несколько вариантов для каждого элемента</p>
+<p><strong>Варианты</strong>:</p>
 <ul class="simple">
 <li><p>Максимальное количество выбираемых вариантов (для каждого элемента)</p></li>
 <li><p>кнопки <em class="fa fa-plus"></em> <strong>Добавить вариант</strong> и <em class="fa fa-plus"></em> <strong>Добавить элемент</strong></p></li>
@@ -829,20 +830,20 @@
 </section>
 <section id="cptools-form-list-ordered-ordered-list">
 <h4><em class="cptools cptools-form-list-ordered"></em> Нумерованный список<a class="headerlink" href="#cptools-form-list-ordered-ordered-list" title="Permalink to this heading">¶</a></h4>
-<p><strong>Response</strong>: order of preference for the listed options</p>
-<p><strong>Options</strong>:</p>
+<p><strong>Ответ</strong>: отсортировать перечисленные варианты по своему вкусу</p>
+<p><strong>Варианты</strong>:</p>
 <ul class="simple">
 <li><p>кнопка <em class="fa fa-plus"></em> <strong>Добавить вариант</strong></p></li>
 <li><p>Возьмите рукоятку <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> и перетащите её, чтобы изменить порядок вариантов</p></li>
 <li><p>Удалить вариант с помощью <em class="fa fa-times"></em></p></li>
 </ul>
-<p><strong>Condorcet</strong>:</p>
+<p><strong>Кондорсе</strong>:</p>
 <p>Начиная с версии 5.3, ответы могут отображать результаты с помощью <a class="reference external" href="https://en.wikipedia.org/wiki/Condorcet_method">метода Кондорсе</a>. Вы можете выбрать Schulze или Ranked Pairs, чтобы отобразить победителя. В деталях также будет указано количество матчей, выигранных каждым кандидатом.</p>
 </section>
 <section id="cptools-form-poll-poll">
 <h4><em class="cptools cptools-form-poll"></em> Опрос<a class="headerlink" href="#cptools-form-poll-poll" title="Permalink to this heading">¶</a></h4>
-<p><strong>Response</strong>: <em class="fa fa-check"></em> Yes, <em class="fa fa-times"></em> No, or <em class="cptools cptools-form-poll-maybe"></em> Acceptable for each of the proposed options</p>
-<p><strong>Option types</strong>:</p>
+<p><strong>Ответ</strong>: <em class="fa fa-check"></em> Да, <em class="fa fa-times"></em> Нет, или <em class="cptools cptools-form-poll-maybe"></em> Возможно - для каждого из предложенных вариантов</p>
+<p><strong>Варианты типов</strong>:</p>
 <ul>
 <li><p>Текст</p>
 <blockquote>
@@ -877,7 +878,7 @@
 <ul class="simple">
 <li><p><em class="fa fa-bar-chart"></em> <strong>Ответы</strong> (количество): переключает на страницу ответов</p></li>
 <li><p><em class="fa fa-eye"></em> <strong>Предварительный просмотр формы</strong>: открывает ссылку участника</p></li>
-<li><p><em class="fa fa-link"></em> <strong>Copy public link</strong>: Copies the participant link</p></li>
+<li><p><em class="fa fa-link"></em> <strong>Копировать публичную ссылку</strong>: копирует ссылку участника</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Примечание</p>
@@ -952,15 +953,15 @@
 </section>
 <section id="import-export">
 <h2>Импорт/Экспорт<a class="headerlink" href="#import-export" title="Permalink to this heading">¶</a></h2>
-<p>Form documents themselves can be exported and imported in <code class="docutils literal notranslate"><span class="pre">JSON</span></code> format.</p>
-<p>To export responses, from the <em class="fa fa-bar-chart"></em> <strong>Responses</strong> page, you have two possibilities:</p>
+<p>Сами документы форм можно экспортировать и импортировать в формате <code class="docutils literal notranslate"><span class="pre">JSON</span></code>.</p>
+<p>Чтобы экспортировать ответы, из <em class="fa fa-bar-chart"></em> на странице <strong>Ответы</strong> у Вас есть две возможности:</p>
 <ol class="arabic simple">
-<li><p>as a CSV or JSON file use the <em class="fa fa-download"></em> <strong>EXPORT</strong> button</p></li>
-<li><p>as a Spreadsheet that can be added to your drive with the <strong>EXPORT TO SHEET</strong> button</p></li>
+<li><p>в виде файла CSV или JSON используйте кнопку <em class="fa fa-download"></em> <strong>ЭКСПОРТ</strong></p></li>
+<li><p>как Таблица, которую можно добавить на Диск с помощью кнопки <strong>ЭКСПОРТИРОВАТЬ В ЛИСТ</strong></p></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Примечание</p>
-<p>The Spreadsheet document will automatically be populated with the data from your form at the time you create it. However, due to how end-to-end encryption works, the spreadsheet content won't be automatically updated with new responses as they arrive.</p>
+<p>Документ электронной таблицы будет автоматически заполнен данными из Вашей формы в момент её создания. Однако из-за особенностей работы сквозного шифрования содержимое электронной таблицы не будет автоматически обновляться новыми ответами по мере их поступления.</p>
 </div>
 </section>
 </section>
