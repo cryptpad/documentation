@@ -380,7 +380,7 @@ The last step let you enable two options:
 Add other administrators
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-To make this account an instance administrator:
+To make an account instance administrator:
 
 1. Copy their public key found in **User Menu** (avatar at the top right) > **Settings** > **Account** > **Public Signing Key**
 2. Paste this key in ``cryptpad/config/config.js`` in the following array (uncomment and replace the placeholder):
