@@ -41,11 +41,9 @@ Before starting the installation, ensure the following software is installed:
 
    -  Using `nodesource <https://github.com/nodesource/distributions#using-debian-as-root-4>`__ is recommended
 
-
 - Docker engine (if using Docker, see :ref:`Install with Docker <admin_docker_install>`)
 
    - See `the official Docker installation guide <https://docs.docker.com/engine/install/debian/>`__
-
 
 Install Cryptpad
 ----------------
