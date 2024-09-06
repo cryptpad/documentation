@@ -395,21 +395,20 @@ To make an account instance administrator:
 
 .. _admin_support_mailbox:
 
-Configure support mailbox
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Configure support help-desk
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The support mailbox can be configured from the :ref:`admin_panel`.
+The support help-desk can be configured from the :ref:`admin_panel`.
 
 #. With an instance administrator account, visit the ``/admin/#support`` page
-#. ``Click`` **Generate Support Keys**
-#. The support mailbox is now active
-#. Flush the cache to access the mailbox:  **General** tab > **Flush HTTP Cache**
+#. ``Click`` **INITIALIZE HELP-DESK ON THIS INSTANCE**
+#. The help-desk is now active
 
-To allow other administrators to access the support mailbox:
+To add other people to the instance support team:
 
-#. Copy the key at the bottom of the support page
-#. Send it to another administrator account
-#. They can use the **Add private key** field on the support page to gain access to the support mailbox
+#. Add them to your contact list
+#. Choose from the list shown below
+#. ``Click`` **ADD**
 
 .. _configure_open_graph:
 
