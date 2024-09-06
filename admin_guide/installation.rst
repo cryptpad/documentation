@@ -410,6 +410,8 @@ To add other people to the instance support team:
 #. Choose from the list shown below
 #. ``Click`` **ADD**
 
+To remove someone from the instance support team, simply ``click`` the cross at the end left of their display name.
+
 .. _configure_open_graph:
 
 Build static pages & Open Graph metadata
