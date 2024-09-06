@@ -291,7 +291,7 @@ The `example Nginx configuration <https://github.com/cryptpad/cryptpad/blob/main
 
 .. note::
    
-   Thanks to community contributions, example configuration files for other reverse proxies than Nginx are also available in the `docs folder <https://github.com/cryptpad/cryptpad/tree/main/docs>`__. Please be aware that those are community supported and not officialy supported by the development team.
+   Thanks to community contributions, example configuration files for other reverse proxies than Nginx are also available in the `docs/community <https://github.com/cryptpad/cryptpad/tree/main/docs/community>`__ folder. Please be aware that those are only community supported and not officialy endorsed by the development team.
 
 Install and configure Nginx
 ---------------------------
