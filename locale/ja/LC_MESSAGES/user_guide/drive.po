@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-19 14:14+0200\n"
-"PO-Revision-Date: 2024-09-09 09:44+0000\n"
+"PO-Revision-Date: 2024-09-10 14:55+0000\n"
 "Last-Translator: Suguru Hirahara <shirahara@users.noreply.weblate.cryptpad."
 "org>\n"
 "Language-Team: Japanese <https://weblate.cryptpad.org/projects/user-guide/"
@@ -50,20 +50,25 @@ msgid ""
 "grid. To switch between the two, use the button at the right of the drive"
 " toolbar (under the avatar)."
 msgstr ""
+"ドライブのドキュメントは |list| リストまたは |th-large| グリッドで表示できま"
+"す。表示を切り替える際は、ドライブのツールバーの右（アバターの下）にあるボタ"
+"ンを使ってください。"
 
 #: ../../user_guide/drive.rst:18
 msgid ""
 "In grid mode, CryptPad can display thumbnails of documents. These can be "
 "turned on in the :ref:`user settings <user_settings_cryptdrive>`."
 msgstr ""
+"グリッドモードでは、ドキュメントのサムネイルを表示するよう設定できます。"
+"これは\\ :ref:`ユーザー設定 <user_settings_cryptdrive>`\\ で有効にできます。"
 
 #: ../../user_guide/drive.rst:23
 msgid "CryptDrive in grid view."
-msgstr ""
+msgstr "CryptDriveをグリッド表示。"
 
 #: ../../user_guide/drive.rst:28
 msgid "CryptDrive in list view."
-msgstr ""
+msgstr "CryptDriveを一覧表示。"
 
 #: ../../user_guide/drive.rst:31
 msgid "Managing documents"
@@ -91,9 +96,8 @@ msgid "``Right click`` > |folder| **New folder**."
 msgstr "``右クリック`` > |folder| **新しいフォルダー**。"
 
 #: ../../user_guide/drive.rst:44
-#, fuzzy
 msgid ":kbd:`Ctrl + e` > |folder| **Folder**."
-msgstr "``Ctrl + e`` > |folder| **フォルダー**。"
+msgstr ":kbd:`Ctrl + e` > |folder| **フォルダー**。"
 
 #: ../../user_guide/drive.rst:46
 msgid ""
@@ -102,6 +106,10 @@ msgid ""
 "another. Use the convenient left sidebar tree to drop the file in the "
 "desired destination."
 msgstr ""
+"フォルダーを作成すると、ドライブからドキュメントをドラッグしてフォルダーに追"
+"加することができます。フォルダーを別のフォルダーにドラッグアンドドロップする"
+"こともできます。また、左にあるサイドバーのツリーで、好きな場所にファイルをド"
+"ロップできます。"
 
 #: ../../user_guide/drive.rst:48
 msgid "To change the color of a folder:"
@@ -120,6 +128,8 @@ msgid ""
 "``Right click`` on the folder > |share-alt| **Share**. The folder will "
 "then be converted into a :ref:`shared folder <shared_folders>`."
 msgstr ""
+"フォルダーを ``右クリック`` > |share-alt| **共有**\\ 。フォルダーは\\ :ref:`"
+"共有フォルダー <shared_folders>`\\ に変換されます。"
 
 #: ../../user_guide/drive.rst:57
 msgid "Renaming"
@@ -154,15 +164,16 @@ msgstr "新しいタイトルを入力。"
 
 #: ../../user_guide/drive.rst:65
 msgid "Save with the |check| button or :kbd:`Enter` key."
-msgstr ""
+msgstr "|check| ボタン、または :kbd:`Enter` キーで保存。"
 
 #: ../../user_guide/drive.rst:67
 msgid "To change the title of a document only in your drive:"
-msgstr ""
+msgstr "あなたのドライブでのみドキュメントのタイトルを変更する場合は、"
 
 #: ../../user_guide/drive.rst:69
 msgid "``Right click`` on the document in your drive > |pencil| **Rename**."
-msgstr ""
+msgstr "あなたのドライブのドキュメントを ``右クリック`` > |pencil| **名前を変更**\\ "
+"。"
 
 #: ../../user_guide/drive.rst:70
 msgid "Type the new name."
@@ -170,13 +181,14 @@ msgstr "新しい名前を入力。"
 
 #: ../../user_guide/drive.rst:71
 msgid "Save with the :kbd:`Enter` key."
-msgstr ""
+msgstr ":kbd:`Enter` キーで保存。"
 
 #: ../../user_guide/drive.rst:73
 msgid ""
 "The |flag| icon indicates that the title of a document is different in "
 "your drive than for other users."
-msgstr ""
+msgstr "|flag| のアイコンは、ドキュメントのタイトルがあなたのドライブと他のユーザーの"
+"ドライブとの間で異なっていることを示しています。"
 
 #: ../../user_guide/drive.rst:78
 msgid "Deleting"
@@ -184,7 +196,7 @@ msgstr "削除"
 
 #: ../../user_guide/drive.rst:80
 msgid "There are two ways of deleting a document on CryptPad:"
-msgstr ""
+msgstr "CryptPadでドキュメントを削除するには2つの方法があります。"
 
 #: ../../user_guide/drive.rst:82
 msgid ""
@@ -193,6 +205,10 @@ msgid ""
 "users who have stored it. The document can be recovered in the drive "
 "using the :ref:`history <drive_history>`."
 msgstr ""
+"|trash| ドキュメントを\\ **削除**\\ すると、ドキュメントはドライブには表示さ"
+"れなくなりますが、データベースには残っています。ドキュメントは、それを保存し"
+"た他のユーザーのドライブには残ります。ドキュメントは\\ :ref:`履歴 "
+"<drive_history>`\\ を使えば復元することができます。"
 
 #: ../../user_guide/drive.rst:83
 msgid ""
@@ -201,6 +217,10 @@ msgid ""
 "it cannot be recovered using the drive history. :badge_owner:`Document "
 "owners`"
 msgstr ""
+"|cptools destroy| ドキュメントを\\ **破棄（完全に削除）**\\ すると、ドキュメ"
+"ントはデータベースから完全に削除されます。ドキュメントは、それを保存した全て"
+"のドライブから削除され、ドライブの履歴から復元することはできません。:badge_ow"
+"ner:`ドキュメントの所有者`"
 
 #: ../../user_guide/drive.rst:87
 msgid ""
@@ -208,18 +228,21 @@ msgid ""
 "database after 90 days (the length of this delay can be set by the "
 "service administrators)."
 msgstr ""
+"ドキュメントがどのドライブにも保存されていない場合、"
+"ドキュメントは90日後にデータベースから\\ **完全に削除**\\ "
+"されます（この長さはサービスの管理者が設定できます）。"
 
 #: ../../user_guide/drive.rst:89
 msgid "To **remove** a document from CryptDrive."
-msgstr ""
+msgstr "ドキュメントをCryptDriveから\\ **削除**\\ するには、"
 
 #: ../../user_guide/drive.rst:91
 msgid "Drag the document from the drive into the |trash| **Trash**."
-msgstr ""
+msgstr "ドキュメントをドライブから |trash| **ごみ箱**\\ にドラッグ。"
 
 #: ../../user_guide/drive.rst:92
 msgid "``Right click`` > |trash| **Move to trash**"
-msgstr "``右クリック`` > |trash| **ゴミ箱に移動**"
+msgstr "``右クリック`` > |trash| **ごみ箱に移動**"
 
 #: ../../user_guide/drive.rst:93
 msgid "Select the document and press the :kbd:`Del` key."
@@ -229,7 +252,7 @@ msgstr "ドキュメントを選択し、 :kbd:`Del` キーを押す。"
 msgid ""
 "To **remove** the document from CryptDrive without storing it in the "
 "trash first:"
-msgstr "ゴミ箱に移動せずにドキュメントをCryptDriveから\\ **削除**\\ する方法："
+msgstr "ごみ箱に移動せずにドキュメントをCryptDriveから\\ **削除**\\ する場合は、"
 
 #: ../../user_guide/drive.rst:97
 msgid "Select the document and press the :kbd:`Shift + Del` keys."
@@ -237,19 +260,21 @@ msgstr "ドキュメントを選択して :kbd:`Shift + Del` のキーを押す�
 
 #: ../../user_guide/drive.rst:99
 msgid "To empty the trash:"
-msgstr "ゴミ箱を空にする方法："
+msgstr "ごみ箱を空にするには、"
 
 #: ../../user_guide/drive.rst:101
 msgid ""
 "``Right click`` on the |trash| **Trash** tab to the left of the drive > "
 "|trash-o| **Empty the trash**."
-msgstr ""
+msgstr "ドライブの左にある |trash| **ごみ箱** のタブを ``右クリック`` > |trash-o| "
+"**ごみ箱を空にする**\\ 。"
 
 #: ../../user_guide/drive.rst:102
 msgid ""
 "``Click`` on the |trash| **Trash** tab to access the trash > |trash-o| "
 "**Empty the trash**."
-msgstr ""
+msgstr "|trash| **ごみ箱**\\ タブを ``クリック`` してごみ箱を開く > |trash-o| "
+"**ごみ箱を空にする**\\ 。"
 
 #: ../../user_guide/drive.rst:104
 msgid ""
@@ -257,16 +282,21 @@ msgid ""
 "you empty it, you are prompted to decide if you want to **remove** or "
 "**destroy** them."
 msgstr ""
+"ごみ箱を空にする際、あなたがごみ箱のドキュメントの\\ :ref:`所有者 <owners>`\\"
+" である場合、それらのドキュメントを\\ **削除**\\ するか\\ "
+"**破棄（完全に削除）**\\ するかを選択するよう求められます。"
 
 #: ../../user_guide/drive.rst:106
 msgid "To **destroy** a document without storing it in the trash first:"
-msgstr ""
+msgstr "ドキュメントをごみ箱に移さずそのまま\\ **完全に削除**\\ するには、"
 
 #: ../../user_guide/drive.rst:108
 msgid ""
 "``Right click`` on the document in the drive > |cptools destroy| "
 "**Destroy**. :badge_owner:`Document owners`"
 msgstr ""
+"ドライブのドキュメントを ``右クリック`` > |cptools destroy| **完全に削除**\\ "
+"。 :badge_owner:`ドキュメントの所有者`"
 
 #: ../../user_guide/drive.rst:111
 msgid ""
@@ -276,6 +306,11 @@ msgid ""
 "document may still appeared in a user's drive if they had previously "
 "stored it. However, they will not be able to open the document."
 msgstr ""
+"完全に削除した場合でも、ドキュメントは他のユーザーのドライブに現れる可能性が"
+"あります。ドキュメントが第三者のドライブにいったん追加されると、CryptPadの暗"
+"号化の性質上、それを取り戻すことは不可能です。ドキュメントを以前保存したユー"
+"ザーのドライブに、完全に削除されたドキュメントが現れる可能性があるのはそのた"
+"めです。それでも、第三者がそのドキュメントを開くことは不可能です。"
 
 #: ../../user_guide/drive.rst:116
 msgid "History"
@@ -283,31 +318,37 @@ msgstr "履歴"
 
 #: ../../user_guide/drive.rst:118
 msgid "The drive history is saved and can be restored if needed. From the drive:"
-msgstr ""
+msgstr "ドライブの履歴は保存され、必要な際に復元できます。ドライブから復元するには、"
 
 #: ../../user_guide/drive.rst:120
 msgid ""
 "``Click`` on the |history| history button at the top-right (under the "
 "avatar)."
-msgstr ""
+msgstr "右上（アバターの下）にある |history| 履歴ボタンを ``クリック``\\ 。"
 
 #: ../../user_guide/drive.rst:121
 msgid ""
 "Use the arrows |fast-backward| |step-backward| and |step-forward| |fast-"
 "forward| to step through the history."
 msgstr ""
+"矢印 |fast-backward| |step-backward| と |step-forward| |fast-forward| "
+"で履歴を確認できます。"
 
 #: ../../user_guide/drive.rst:122
 msgid ""
 "Restore the displayed version with |check| **Restore**, or exit the "
 "history without restoring with |times| **Close**."
 msgstr ""
+"表示されているバージョンを |check| **復元**\\ で復元するか、 |times| "
+"**閉じる**\\ で復元せず履歴の確認を終了できます。"
 
 #: ../../user_guide/drive.rst:124
 msgid ""
 "To save storage space CryptDrive history can be deleted in the :ref:`user"
 " settings <user_settings_cryptDrive>`."
 msgstr ""
+"ストレージ容量の節約に、CryptDriveの履歴は\\ :ref:`ユーザー設定 "
+"<user_settings_cryptDrive>`\\ で削除できます。"
 
 #: ../../user_guide/drive.rst:128
 msgid ""
@@ -316,6 +357,10 @@ msgid ""
 "affect shared folders, conversely the history of a shared folder can be "
 "restored without affecting the rest of the drive."
 msgstr ""
+":ref:`共有フォルダー <shared_folders>`\\ には、CryptDriveの履歴とは別に、固有"
+"の履歴が設定されます。ドライブの履歴を復元しても共有フォルダーの履歴に対する"
+"影響はなく、逆にまた、共有フォルダーの履歴を復元してもドライブの履歴に対する"
+"影響はありません。"
 
 #: ../../user_guide/drive.rst:133
 msgid "Tags"
@@ -325,43 +370,46 @@ msgstr "タグ"
 msgid ""
 "Group documents in multiple categories by using tags. Your tags are not "
 "visible by other users."
-msgstr ""
+msgstr "タグを使えば、ドキュメントを複数のカテゴリーにまとめることができます。設定し"
+"たタグは他のユーザーには表示されません。"
 
 #: ../../user_guide/drive.rst:139
 msgid ""
 "The |hashtag| **Tags** tab in the drive displays all tags in use and "
 "their associated documents."
-msgstr ""
+msgstr "ドライブの |hashtag| **タグ**\\ "
+"のタブでは、使用中の全てのタグと、タグ付けされたドキュメントが表示されます。"
 
 #: ../../user_guide/drive.rst:144
 msgid "To add or remove tags from a document:"
-msgstr ""
+msgstr "ドキュメントでタグを追加・削除するには、"
 
 #: ../../user_guide/drive.rst:146
 msgid "From the drive: ``Right click`` on the document > |hashtag| **Tags**."
-msgstr ""
+msgstr "ドライブからは、ドキュメントを ``右クリック`` > |hashtag| **タグ**\\ 。"
 
 #: ../../user_guide/drive.rst:147
 msgid "From a document: |file-o| **File** > |hashtag| **Tags**."
-msgstr ""
+msgstr "ドキュメントからは、 |file-o| **ファイル** > |hashtag| **タグ**\\ 。"
 
 #: ../../user_guide/drive.rst:149
 msgid "To manage tags for multiple documents:"
-msgstr ""
+msgstr "複数のドキュメントのタグを管理するには、"
 
 #: ../../user_guide/drive.rst:151
 msgid "Select the documents with :kbd:`Ctrl` + ``Click`` in CryptDrive."
-msgstr ""
+msgstr "CryptDriveで :kbd:`Ctrl` + ``クリック`` してドキュメントを選択。"
 
 #: ../../user_guide/drive.rst:152
 msgid "``Right click`` on the documents > |hashtag| **Tags**."
-msgstr ""
+msgstr "ドキュメントで ``右クリック`` > |hashtag| **タグ**\\ 。"
 
 #: ../../user_guide/drive.rst:154
 msgid ""
 "Only the tags assigned to all the documents are then displayed. Any tags "
 "added and/or removed are applied to all the selected documents."
-msgstr ""
+msgstr "その後、全てのドキュメントに付けられているタグだけが表示されます。タグを追加"
+"、削除すると、選択した全てのドキュメントに適用されます。"
 
 #: ../../user_guide/drive.rst:159
 msgid "Templates"
@@ -371,15 +419,16 @@ msgstr "テンプレート"
 msgid ""
 "Templates provide reusable starting points to create documents of a "
 "similar structure, for example invoices, letterheads, reports, and so on."
-msgstr ""
+msgstr "テンプレートは、請求書やレターヘッド、報告書など、基本的な構造を共有している"
+"文書を作成する際のひな型として利用することができます。"
 
 #: ../../user_guide/drive.rst:165
 msgid "To create a template:"
-msgstr ""
+msgstr "テンプレートを作成するには、"
 
 #: ../../user_guide/drive.rst:167
 msgid "Select the |cptools template| **Templates** tab in the drive."
-msgstr ""
+msgstr "ドライブの |cptools template| **テンプレート**\\ タブを選択。"
 
 #: ../../user_guide/drive.rst:168
 msgid "|plus| **New** in the toolbar."
@@ -393,24 +442,24 @@ msgstr "または"
 msgid ""
 "In an existing document: |file-o| **File** > |bookmark| **Save as "
 "template**."
-msgstr ""
+msgstr "既存のドキュメントで、 |file-o| **ファイル** > |bookmark| "
+"**テンプレートとして保存**\\ 。"
 
 #: ../../user_guide/drive.rst:176
 msgid "Create a :ref:`new document <new_document>`."
-msgstr ""
+msgstr ":ref:`新しいドキュメント <new_document>`\\ を作成。"
 
 #: ../../user_guide/drive.rst:177
 msgid "On the creation screen select |cptools new-template| **New template**."
-msgstr ""
+msgstr "作成画面で |cptools new-template| **新しいテンプレート**\\ を選択。"
 
 #: ../../user_guide/drive.rst:179
-#, fuzzy
 msgid "To use a template:"
-msgstr "テンプレートを使用するには:"
+msgstr "テンプレートを使用するには、"
 
 #: ../../user_guide/drive.rst:181
 msgid "Select the template when creating a :ref:`new document <new_document>`."
-msgstr ""
+msgstr ":ref:`新しいドキュメント <new_document>`\\ を作成する際にテンプレートを選択。"
 
 #: ../../user_guide/drive.rst:182
 msgid ""
@@ -418,6 +467,9 @@ msgid ""
 "template**. Please note: this option **replaces** the contents of the "
 "document with the template."
 msgstr ""
+"既存のドキュメントで、 |file-o| **ファイル** > |upload| "
+"**テンプレートをインポート**\\ 。注意："
+"このオプションはドキュメントの内容をテンプレートで\\ **置き換えます**\\ 。"
 
 #~ msgid "Save with the |check| button or ``Enter`` key."
 #~ msgstr ""
