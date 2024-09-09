@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-19 14:14+0200\n"
-"PO-Revision-Date: 2024-09-09 13:57+0000\n"
+"PO-Revision-Date: 2024-09-10 14:55+0000\n"
 "Last-Translator: Suguru Hirahara <shirahara@users.noreply.weblate.cryptpad."
 "org>\n"
 "Language-Team: Japanese <https://weblate.cryptpad.org/projects/user-guide/"
@@ -74,11 +74,12 @@ msgstr "共有："
 msgid ""
 "**View my profile**: Preview the profile page as it appears to other "
 "users."
-msgstr ""
+msgstr "**プロフィールを表示**\\ "
+"：他のユーザーに表示される形でプロフィールのページをプレビュー。"
 
 #: ../../user_guide/collaboration.rst:28
 msgid "|share-alt| **Share**: Copy a link to your profile."
-msgstr ""
+msgstr "|share-alt| **共有**\\ ：あなたのプロフィールへのリンクをコピー。"
 
 #: ../../user_guide/collaboration.rst:33
 msgid "User profile"
@@ -86,13 +87,15 @@ msgstr "ユーザーのプロフィール"
 
 #: ../../user_guide/collaboration.rst:35
 msgid "To see the profile of another user:"
-msgstr ""
+msgstr "他のユーザーのプロフィールを表示する方法："
 
 #: ../../user_guide/collaboration.rst:37
+#, fuzzy
 msgid ""
 "**User list** |users| |eye| of a document where they are connected > "
 "``Click`` on their name,"
-msgstr ""
+msgstr "接続しているドキュメントの**ユーザー一覧** |users| |eye| > ユーザーの名前を "
+"``クリック`` 、"
 
 #: ../../user_guide/collaboration.rst:38
 msgid ""
@@ -100,36 +103,43 @@ msgid ""
 "(avatar at the top-right) > |address-book| **Contacts** > ``Double "
 "click`` on their name in the list."
 msgstr ""
+"ユーザーがあなたの\\ :ref:`連絡先 <contacts>`\\ "
+"リストに含まれている場合、ユーザーメニュー（右上のアバター） > |address-book|"
+" **連絡先** > リストの名前を ``ダブルクリック`` 。"
 
 #: ../../user_guide/collaboration.rst:40
 msgid "On another user’s profile page:"
-msgstr ""
+msgstr "他のユーザーのプロフィールページで、"
 
 #: ../../user_guide/collaboration.rst:42
 msgid ""
 "**Send a contact request**: Adds this user to your :ref:`contacts "
 "<contacts>` once they have approved the request."
 msgstr ""
+"**連絡先のリクエストを送信**\\ ：ユーザーがリクエストを承諾したら、"
+"ユーザーはあなたの\\ :ref:`連絡先 <contacts>`\\ に登録されます。"
 
 #: ../../user_guide/collaboration.rst:43
 msgid ""
 "|bell-slash| **Mute**: Blocks notifications and messages from this user. "
 "They will not know that they have been muted."
-msgstr ""
+msgstr "|bell-slash| **ミュート**\\ ：このユーザーからの通知とメッセージをブロック。"
+"ミュートされていることは相手には伝わりません。"
 
 #: ../../user_guide/collaboration.rst:44
 msgid ""
 "|key| **Copy public key**: Copies the key used by instance administrators"
 " and on instances that offer subscriptions."
-msgstr ""
+msgstr "|key| **公開鍵をコピー** \\： インスタンスの管理人が、定期利用を提供している"
+"インスタンスで使っている鍵をコピー。"
 
 #: ../../user_guide/collaboration.rst:49
 msgid "Calendar"
-msgstr ""
+msgstr "カレンダー"
 
 #: ../../user_guide/collaboration.rst:-1
 msgid "screenshot of the calendar"
-msgstr ""
+msgstr "カレンダーのスクリーンショット"
 
 #: ../../user_guide/collaboration.rst:55
 msgid ""
@@ -137,24 +147,27 @@ msgid ""
 "view (drag for duration). Alternatively use |plus| **New event** in the "
 "toolbar."
 msgstr ""
+"予定を追加するには、カレンダービューの日時をクリックしてください（ドラッグで"
+"長さを指定）。ツールバーの |plus| **新しいイベント**\\ でも追加できます。"
 
 #: ../../user_guide/collaboration.rst:57
 msgid "It then opens an event creation form where a **Title** is mandatory."
-msgstr ""
+msgstr "予定の作成フォームが開きます。**タイトル**\\ の入力は必須です。"
 
 #: ../../user_guide/collaboration.rst:59
 msgid ""
 "You can optionally specify a **Location** and a **Description**. The "
 "**Description** field supports the Markdown syntax to format its content."
-msgstr ""
+msgstr "**場所**\\ と\\ **説明文**\\ も指定できます。\\ **説明文**\\ "
+"の欄ではマークダウンの記法で内容を装飾できます。"
 
 #: ../../user_guide/collaboration.rst:62
 msgid "You can create recurring events, repeat:"
-msgstr ""
+msgstr "繰り返しのイベントを作成できます。繰り返しの間隔は以下から選択できます。"
 
 #: ../../user_guide/collaboration.rst:64
 msgid "**One time**, default option"
-msgstr ""
+msgstr "**一度のみ**。既定の選択肢"
 
 #: ../../user_guide/collaboration.rst:65
 msgid "**Daily**"
@@ -174,11 +187,11 @@ msgstr "**毎年**"
 
 #: ../../user_guide/collaboration.rst:69
 msgid "**Daily on weekdays**"
-msgstr ""
+msgstr "**毎日（平日）**"
 
 #: ../../user_guide/collaboration.rst:70
 msgid "**Custom**, see below:"
-msgstr ""
+msgstr "**ユーザー定義**。以下を参照。"
 
 #: ../../user_guide/collaboration.rst:72
 msgid "**Repeat every X days**, weeks, months or years"
@@ -202,15 +215,15 @@ msgstr ""
 
 #: ../../user_guide/collaboration.rst:79
 msgid "To edit events, drag them to the new date/time or alternatively:"
-msgstr ""
+msgstr "イベントを編集するには、イベントを新しい日時にドラッグするか、または"
 
 #: ../../user_guide/collaboration.rst:81
 msgid "``Click`` on the event to open the detailed view."
-msgstr ""
+msgstr "イベントを ``クリック`` して詳細画面を表示。"
 
 #: ../../user_guide/collaboration.rst:82
 msgid "``Click`` on |pencil| **Edit** to open the edition form."
-msgstr ""
+msgstr "|pencil| **編集**\\ を ``クリック`` して編集用フォームを開く。"
 
 #: ../../user_guide/collaboration.rst:85
 msgid "Toolbar"
@@ -236,7 +249,7 @@ msgstr ""
 
 #: ../../user_guide/collaboration.rst:93
 msgid "Share & Access"
-msgstr ""
+msgstr "共有とアクセス"
 
 #: ../../user_guide/collaboration.rst:95
 msgid ""
@@ -268,7 +281,7 @@ msgstr ""
 
 #: ../../user_guide/collaboration.rst:102
 msgid "|info-circle| **Properties**"
-msgstr ""
+msgstr "|info-circle| **プロパティー**"
 
 #: ../../user_guide/collaboration.rst:103
 msgid "|trash-o| **Delete**"
