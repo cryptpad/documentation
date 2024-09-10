@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-19 14:14+0200\n"
-"PO-Revision-Date: 2024-09-10 14:55+0000\n"
+"PO-Revision-Date: 2024-09-11 15:55+0000\n"
 "Last-Translator: Suguru Hirahara <shirahara@users.noreply.weblate.cryptpad."
 "org>\n"
 "Language-Team: Japanese <https://weblate.cryptpad.org/projects/user-guide/"
@@ -90,12 +90,11 @@ msgid "To see the profile of another user:"
 msgstr "他のユーザーのプロフィールを表示する方法："
 
 #: ../../user_guide/collaboration.rst:37
-#, fuzzy
 msgid ""
 "**User list** |users| |eye| of a document where they are connected > "
 "``Click`` on their name,"
-msgstr "接続しているドキュメントの**ユーザー一覧** |users| |eye| > ユーザーの名前を "
-"``クリック`` 、"
+msgstr "同時に利用しているドキュメントの**ユーザー一覧** |users| |eye| > "
+"ユーザーの名前を ``クリック`` 、"
 
 #: ../../user_guide/collaboration.rst:38
 msgid ""
@@ -130,7 +129,7 @@ msgstr "|bell-slash| **ミュート**\\ ：このユーザーからの通知と�
 msgid ""
 "|key| **Copy public key**: Copies the key used by instance administrators"
 " and on instances that offer subscriptions."
-msgstr "|key| **公開鍵をコピー** \\： インスタンスの管理人が、定期利用を提供している"
+msgstr "|key| **公開鍵をコピー** \\： インスタンスの管理者が、定期利用を提供している"
 "インスタンスで使っている鍵をコピー。"
 
 #: ../../user_guide/collaboration.rst:49
@@ -195,23 +194,23 @@ msgstr "**ユーザー定義**。以下を参照。"
 
 #: ../../user_guide/collaboration.rst:72
 msgid "**Repeat every X days**, weeks, months or years"
-msgstr ""
+msgstr "**指定した日数**\\ 、週、月、または年数にわたって繰り返す"
 
 #: ../../user_guide/collaboration.rst:73
 msgid "**Stop repeating**:"
-msgstr ""
+msgstr "**繰り返しを停止**："
 
 #: ../../user_guide/collaboration.rst:75
 msgid "Never"
-msgstr ""
+msgstr "無期限"
 
 #: ../../user_guide/collaboration.rst:76
 msgid "On a specific date"
-msgstr ""
+msgstr "指定した日付"
 
 #: ../../user_guide/collaboration.rst:77
 msgid "After X times"
-msgstr ""
+msgstr "設定回数の経過後"
 
 #: ../../user_guide/collaboration.rst:79
 msgid "To edit events, drag them to the new date/time or alternatively:"
@@ -235,17 +234,17 @@ msgstr "|plus| **新しいイベント**"
 
 #: ../../user_guide/collaboration.rst:88
 msgid "**View** menu (right side): Month, Week, Day"
-msgstr ""
+msgstr "**表示**\\ メニュー（右側）：月、週、日"
 
 #: ../../user_guide/collaboration.rst:89
 msgid ""
 "|chevron-left| |chevron-right|: move to the previous/next period "
 "depending on the view"
-msgstr ""
+msgstr "|chevron-left| |chevron-right|: 表示に応じて以前または次の期間に移動"
 
 #: ../../user_guide/collaboration.rst:90
 msgid "**Today**: click to center the view on today"
-msgstr ""
+msgstr "**今日**\\ ：クリックすると今日を中央に表示"
 
 #: ../../user_guide/collaboration.rst:93
 msgid "Share & Access"
@@ -256,28 +255,35 @@ msgid ""
 "CryptPad calendars work in the same way as any other documents for the "
 "purposes of :ref:`sharing <share>` and :ref:`regulating access <access>`."
 msgstr ""
+"CryptPadのカレンダーは\\ :ref:`共有 <share>`\\ や\\ :ref:`アクセス制限 "
+"<access>`\\ に関して他のドキュメントと同様の形で機能します。"
 
 #: ../../user_guide/collaboration.rst:97
 msgid ""
 "The |ellipsis-h| menu for each calendar in the sidebar contains the "
 "following options:"
-msgstr ""
+msgstr "サイドバーの各カレンダーの |ellipsis-h| "
+"メニューには以下の設定項目があります。"
 
 #: ../../user_guide/collaboration.rst:99
 msgid "|pencil| **Edit** to change the calendar name and color"
-msgstr ""
+msgstr "|pencil| **編集**\\ 。カレンダーの名前と色を変更"
 
 #: ../../user_guide/collaboration.rst:100
 msgid ""
 "|share-alt| **Share** and |unlock-alt| **Access** function the same way "
 "as any other CryptPad document. see :ref:`share_and_access`."
 msgstr ""
+"|share-alt| **共有**\\ と |unlock-alt| **アクセス**\\ "
+"の機能はCryptPadの他のドキュメントと同じ形で機能します。\\ "
+":ref:`share_and_access`\\ を参照。"
 
 #: ../../user_guide/collaboration.rst:101
 msgid ""
 "|upload| **Import** and |download| **Export** to the standard ``.ics`` "
 "format."
-msgstr ""
+msgstr "標準の ``.ics`` フォーマットで |upload| **インポート**\\ と |download| "
+"**エクスポート**\\ 。"
 
 #: ../../user_guide/collaboration.rst:102
 msgid "|info-circle| **Properties**"
@@ -291,23 +297,28 @@ msgstr "|trash-o| **削除**"
 msgid ""
 "When exporting a calendar, the descriptions of events are exported in "
 "Markdown."
-msgstr ""
+msgstr "カレンダーをエクスポートする際、イベントの説明文はマークダウンでエクスポート"
+"されます。"
 
 #: ../../user_guide/collaboration.rst:108
 msgid ""
 ":ref:`teams` can also have calendars available to all members. Simply "
 "share a calendar with a team to add it:"
-msgstr ""
+msgstr ":ref:`チーム`\\ はメンバー全員が利用できるカレンダーを設定することもできます"
+"。追加するカレンダーをチームと共有してください。"
 
 #: ../../user_guide/collaboration.rst:110
 msgid "|share-alt| **Share** > |address-book| **Contacts** > Select the team"
-msgstr ""
+msgstr "|share-alt| **共有** > |address-book| **連絡先** > チームを選択"
 
 #: ../../user_guide/collaboration.rst:114
 msgid ""
 "When viewing a calendar shared via link, add it to your calendars with: "
 "|calendar-plus-o| **Import this calendar**"
 msgstr ""
+"リンクで共有されているカレンダーを閲覧している場合は、 |calendar-plus-o| "
+"**カレンダーをインポート**\\ "
+"で、閲覧中のカレンダーを自分のカレンダーに追加できます。"
 
 #: ../../user_guide/collaboration.rst:119
 msgid "Contacts"
@@ -315,7 +326,7 @@ msgstr "連絡先"
 
 #: ../../user_guide/collaboration.rst:123
 msgid "On CryptPad, using contacts makes collaboration more secure and simple."
-msgstr ""
+msgstr "CryptPadでは、連絡先機能を使うと共同作業がより安全でシンプルになります。"
 
 #: ../../user_guide/collaboration.rst:126
 msgid "Add a contact"
@@ -323,35 +334,38 @@ msgstr "連絡先を追加"
 
 #: ../../user_guide/collaboration.rst:128
 msgid "By sharing your profile:"
-msgstr ""
+msgstr "プロフィールを共有する場合："
 
 #: ../../user_guide/collaboration.rst:130
 msgid ""
 "Copy the link: User menu (avatar at the top-right) > |user-circle| "
 "**Profile** > |share-alt| **Share**."
 msgstr ""
+"リンクをコピー：ユーザーメニュー（右上のアバター）> |user-circle| "
+"**プロフィール** > |share-alt| **共有**\\ 。"
 
 #: ../../user_guide/collaboration.rst:131
 msgid ""
 "Paste and send through the means of your choice (preferably a secure mode"
 " of cummunication)."
-msgstr ""
+msgstr "リンクを貼り付けて、任意の方法（安全な通信経路が望ましい）で送信。"
 
 #: ../../user_guide/collaboration.rst:132
 msgid "Your contact must then click **Send a contact request**."
-msgstr ""
+msgstr "その後、送信先の相手は\\ **連絡先のリクエストを送信**\\ "
+"をクリックする必要があります。"
 
 #: ../../user_guide/collaboration.rst:133
 msgid "You get a notification with the request, ``Click`` **Accept**."
-msgstr ""
+msgstr "リクエストの通知が届くので、\\ **承認**\\ を ``クリック`` 。"
 
 #: ../../user_guide/collaboration.rst:135
 msgid "On the profile page of another CryptPad user:"
-msgstr ""
+msgstr "他のCryptPadのユーザーのプロフィールページで、"
 
 #: ../../user_guide/collaboration.rst:137
 msgid "``Click`` **Send a contact request**."
-msgstr ""
+msgstr "**連絡先のリクエストを送信**\\ を ``クリック`` 。"
 
 #: ../../user_guide/collaboration.rst:140
 msgid "Manage contacts"
@@ -359,27 +373,28 @@ msgstr "連絡先を管理"
 
 #: ../../user_guide/collaboration.rst:142
 msgid "To access the Contacts page:"
-msgstr ""
+msgstr "連絡先のページにアクセスするには、"
 
 #: ../../user_guide/collaboration.rst:144
 msgid "User menu (avatar at the top-right) > |address-book| **Contacts**."
-msgstr ""
+msgstr "ユーザーメニュー（右上のアバター） > |address-book| **連絡先**\\ 。"
 
 #: ../../user_guide/collaboration.rst:146
 msgid "All contacts are listed at the left of the window. For each contact:"
-msgstr ""
+msgstr "全ての連絡先はウィンドウの左側に一覧で表示されます。それぞれの連絡先に関して"
+"は、"
 
 #: ../../user_guide/collaboration.rst:148
 msgid "|bell-slash|: Mute messages and notifications."
-msgstr ""
+msgstr "|bell-slash|: メッセージと通知をミュート。"
 
 #: ../../user_guide/collaboration.rst:149
 msgid "|user-times|: Remove."
-msgstr ""
+msgstr "|user-times|: 削除。"
 
 #: ../../user_guide/collaboration.rst:150
 msgid "|circle|: Indicates that this contact is online."
-msgstr ""
+msgstr "|circle|: 連絡先がオンラインであることを示す。"
 
 #: ../../user_guide/collaboration.rst:155
 msgid "Chat with contacts"
@@ -389,17 +404,20 @@ msgstr "連絡先とチャット"
 msgid ""
 "On the Contacts page, click on a contact in the list to open the chat "
 "with them in the main window."
-msgstr ""
+msgstr "連絡先ページで、リストにある連絡先をクリックすると、メインのウインドウで連絡"
+"先とのチャット画面が開きます。"
 
 #: ../../user_guide/collaboration.rst:159
 msgid ""
 "Write messages in the field at the bottom and send them with |paper-"
 "plane| or :kbd:`Enter`."
-msgstr ""
+msgstr "一番下にある入力欄にメッセージを記入して、 |paper-plane| または :kbd:`Enter` "
+"で送信できます。"
 
 #: ../../user_guide/collaboration.rst:161
 msgid "Load more chat history with |history| or delete the history with |eraser|."
-msgstr ""
+msgstr "|history| でチャットの履歴を更に読み込んだり、 |eraser| "
+"で履歴を消去したりできます。"
 
 #: ../../user_guide/collaboration.rst:166
 msgid "Teams"
@@ -410,6 +428,8 @@ msgid ""
 "CryptPad teams are shared spaces between a group of users. A team has its"
 " own CryptDrive, chat, and a list of members with roles and permissions."
 msgstr ""
+"CryptPadのチームはユーザーのグループで共有されるスペースです。チームには専用"
+"のCryptDrive、チャット、役割と権限が与えられたメンバーの一覧があります。"
 
 #: ../../user_guide/collaboration.rst:174
 msgid ""
@@ -419,27 +439,32 @@ msgid ""
 " allows users to negotiate the tradeoff between number of teams and "
 "increased loading time."
 msgstr ""
+"CryptPadのユーザーが参加できるチーム数は、性能の都合上、以前は3つまでに制限さ"
+"れていました。読み込み画面にチームの読み込みに必要な時間などに関する詳細を表"
+"示するようになったため、制限は5つまでに増加されました。チーム数と、読み込みの"
+"スピードのバランスを考慮して、参加できるチーム数をユーザー自身が決められるよ"
+"うになっています。"
 
 #: ../../user_guide/collaboration.rst:177
 msgid "To create a team:"
-msgstr ""
+msgstr "チームを作成するには、"
 
 #: ../../user_guide/collaboration.rst:179
 #: ../../user_guide/collaboration.rst:184
 msgid "User menu (avatar at the top-right) > |users| **Teams**."
-msgstr ""
+msgstr "ユーザーメニュー（右上のアバター） > |users| **チーム**\\ 。"
 
 #: ../../user_guide/collaboration.rst:180
 msgid "|plus-circle| **New**."
-msgstr ""
+msgstr "|plus-circle| **新規**\\ 。"
 
 #: ../../user_guide/collaboration.rst:182
 msgid "To open an existing team:"
-msgstr ""
+msgstr "既存のチームを開くには、"
 
 #: ../../user_guide/collaboration.rst:185
 msgid "|list| **Teams** > **Open** button on the desired team."
-msgstr ""
+msgstr "|list| **チーム** > 開きたいチームにある\\ **開く**\\ ボタン。"
 
 #: ../../user_guide/collaboration.rst:188
 msgid "Team Drive"
@@ -449,15 +474,17 @@ msgstr "チームドライブ"
 msgid ""
 "The team storage space is similar to the :ref:`CryptDrive <drive>` but "
 "shared between members of the team."
-msgstr ""
+msgstr "チームのストレージは\\ :ref:`CryptDrive <drive>`\\ "
+"と似ていますが、チームのメンバー間で共有されます。"
 
 #: ../../user_guide/collaboration.rst:193
 msgid "Team members"
-msgstr ""
+msgstr "チームのメンバー"
 
 #: ../../user_guide/collaboration.rst:195
 msgid "To manage the members of a team, go to the |users| **Members** tab."
-msgstr ""
+msgstr "チームのメンバーを管理する場合は、 |users| **メンバー**\\ "
+"のタブを開いてください。"
 
 #: ../../user_guide/collaboration.rst:198
 msgid "Invite members"
@@ -465,11 +492,11 @@ msgstr "メンバーを招待"
 
 #: ../../user_guide/collaboration.rst:200
 msgid "To invite members to a team:"
-msgstr ""
+msgstr "チームにメンバーを招待するには、"
 
 #: ../../user_guide/collaboration.rst:202
 msgid "|users| **Members** tab > **Invite members**."
-msgstr ""
+msgstr "|users| **メンバー**\\ のタブ > **メンバーを招待**\\ 。"
 
 #: ../../user_guide/collaboration.rst:204
 msgid ""
@@ -477,6 +504,8 @@ msgid ""
 "to the team. Invitees receive an invite notification and can confirm they"
 " want to join the team."
 msgstr ""
+"|address-book| **連絡先**\\ のタブ：チームに招待するCryptPadの連絡先を選択。"
+"招待されたユーザーは招待の通知を受信し、チームへの招待を承諾できます。"
 
 #: ../../user_guide/collaboration.rst:206
 msgid ""
@@ -484,22 +513,26 @@ msgid ""
 " (preferably a secure mode of cummunication). This link is single-use "
 "only. It becomes invalid after someone first uses it to join the team."
 msgstr ""
+"|link| **リンク**\\ のタブ：リンクをコピーして、任意の方法（安全な通信経路が"
+"望ましい）で送信。リンクは1度のみ使用可。誰かがチームの参加にリンクを使うと、"
+"リンクは無効になります。"
 
 #: ../../user_guide/collaboration.rst:208
 msgid ""
 "**Temporary name**: Used to identify the invite link in the list of "
 "pending invitations."
-msgstr ""
+msgstr "**一時的な名前**\\ ：保留中の招待の一覧で招待リンクを特定するのに使用。"
 
 #: ../../user_guide/collaboration.rst:210
 msgid "**Password**: Protect the link against potiential interception. (optional)"
-msgstr ""
+msgstr "**パスワード**\\ ：リンクを傍受から保護します（設定は任意）。"
 
 #: ../../user_guide/collaboration.rst:212
 msgid ""
 "**Personal message**: Message that the recipient will see before they "
 "decide to accept the invitation to join the team."
-msgstr ""
+msgstr "**個人メッセージ**\\ "
+"：チームへの参加の受諾または辞退を決定する前に受取人に表示されるメッセージ。"
 
 #: ../../user_guide/collaboration.rst:217
 msgid "Roles and permissions"
@@ -523,11 +556,11 @@ msgstr "メンバーを管理"
 
 #: ../../user_guide/collaboration.rst:220
 msgid "Manage team"
-msgstr ""
+msgstr "チームを管理"
 
 #: ../../user_guide/collaboration.rst:222
 msgid "Viewers"
-msgstr ""
+msgstr "閲覧者"
 
 #: ../../user_guide/collaboration.rst:222
 #: ../../user_guide/collaboration.rst:223
@@ -555,30 +588,29 @@ msgid "Owners"
 msgstr "所有者"
 
 #: ../../user_guide/collaboration.rst:228
-#, fuzzy
 msgid "Permissions:"
 msgstr "権限："
 
 #: ../../user_guide/collaboration.rst:230
-#, fuzzy
 msgid "View: access folders and documents (read-only)."
-msgstr "表示: フォルダーとパッドへのアクセス（閲覧のみ）。"
+msgstr "表示：フォルダーとドキュメントへのアクセス（閲覧のみ）。"
 
 #: ../../user_guide/collaboration.rst:232
 msgid "Edit: create, modify, and delete folders and documents."
-msgstr ""
+msgstr "編集：フォルダーとドキュメントの作成、編集、削除。"
 
 #: ../../user_guide/collaboration.rst:234
 msgid ""
 "Manage Members: invite and revoke members, change member roles up to "
 "Admin."
-msgstr ""
+msgstr "メンバーの管理：メンバーの招待や取り消し、メンバーの権限を管理者まで設定。"
 
 #: ../../user_guide/collaboration.rst:236
 msgid ""
 "Manage Team: change team name and avatar, add or remove Owners, change "
 "team subscription, delete team."
-msgstr ""
+msgstr "チームの管理：チーム名やアバターの変更、所有者の追加と削除、チームの定額利用"
+"プランの変更、チームの削除。"
 
 #: ../../user_guide/collaboration.rst:239
 msgid "Administration"
@@ -589,18 +621,21 @@ msgid ""
 "Each member’s role can be changed in the team roster. Team admins and "
 "owners can manage members of equal or lower role. For each member:"
 msgstr ""
+"各メンバーの役割はチーム内で変更できます。チームの管理者と所有者は、同一また"
+"は下位の役割のメンバーを管理できます。各メンバーには以下の方法で管理できます"
+"。"
 
 #: ../../user_guide/collaboration.rst:243
 msgid "|angle-double-up| : Promote to higher role."
-msgstr ""
+msgstr "|angle-double-up|\\ ：上位の役割に昇格。"
 
 #: ../../user_guide/collaboration.rst:244
 msgid "|angle-double-down|: Demote to lower role."
-msgstr ""
+msgstr "|angle-double-down|\\ ：下位の役割に降格。"
 
 #: ../../user_guide/collaboration.rst:245
 msgid "|times|: Kick from the team."
-msgstr ""
+msgstr "|times|：チームからキック。"
 
 #: ../../user_guide/collaboration.rst:248
 msgid "Chat"
@@ -611,28 +646,30 @@ msgid ""
 "The team chat is similar to the chat with :ref:`contacts <contacts>` "
 "except shared between all members of the team."
 msgstr ""
+"チームのチャットは\\ :ref:`連絡先 <contacts>`\\ とのチャットと共通しています"
+"が、チームのメンバー全員と共有される点で異なります。"
 
 #: ../../user_guide/collaboration.rst:253
 msgid "Administration tab"
-msgstr ""
+msgstr "管理タブ"
 
 #: ../../user_guide/collaboration.rst:255
 msgid ":badge_owner:`Team owners`"
-msgstr ""
+msgstr ":badge_owner:`チームの所有者`"
 
 #: ../../user_guide/collaboration.rst:257
 msgid ""
 "**Public signing key**: Used to identify the team on instances that offer"
 " subscriptions."
-msgstr ""
+msgstr "**公開署名鍵**\\ ：定期利用を提供しているインスタンスのチームの特定に使用。"
 
 #: ../../user_guide/collaboration.rst:258
 msgid "**Team name**: Change the name of the team."
-msgstr ""
+msgstr "**チーム名**\\ ：チームの名前を変更。"
 
 #: ../../user_guide/collaboration.rst:259
 msgid "**Team avatar**: Import/modify an avatar for the team."
-msgstr ""
+msgstr "**チームのアバター**\\ ：チームのアバターをインポートまたは変更。"
 
 #: ../../user_guide/collaboration.rst:260
 msgid ""
@@ -641,10 +678,14 @@ msgid ""
 "other software. Some applications produce files that are only readable by"
 " CryptPad."
 msgstr ""
+"**チームドライブをダウンロード**\\ ：CryptDriveの全てのドキュメントの内容を保"
+"存。可能であれば、他のソフトウェアでも読み取れるフォーマットで保存します。ア"
+"プリケーションの中には、CryptPadでしか読み取れないデータを出力するものもあり"
+"ます。"
 
 #: ../../user_guide/collaboration.rst:261
 msgid "**Team deletion**: Permanently delete the team and all of its documents."
-msgstr ""
+msgstr "**チームの削除**\\ ：チームとその全ドキュメントを完全に削除。"
 
 #~ msgid ":badge_new:`New in version 5.2`"
 #~ msgstr ""
