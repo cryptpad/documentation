@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-23 13:49+0200\n"
-"PO-Revision-Date: 2024-09-11 15:55+0000\n"
+"PO-Revision-Date: 2024-09-12 11:50+0000\n"
 "Last-Translator: Suguru Hirahara <shirahara@users.noreply.weblate.cryptpad."
 "org>\n"
 "Language-Team: Japanese <https://weblate.cryptpad.org/projects/user-guide/"
@@ -57,8 +57,8 @@ msgstr "ブラウザーをプライベートモードで開いたり、全ての
 msgid ""
 "Try using a different browser. We recommend the latest versions of "
 "Firefox or Chromium"
-msgstr "…違うブラウザーを試してみてください。推奨するブラウザーは最新版のFirefoxまた"
-"はChromiumです"
+msgstr "違うブラウザーを試してみてください。推奨するブラウザーは最新版のFirefoxまたは"
+"Chromiumです"
 
 #: ../../FAQ.rst:12
 msgid "If the issues persist, please contact support"
@@ -216,6 +216,9 @@ msgid ""
 "easy first step to try when importing/exporting. Please note that the "
 "import/export methods below can improve results significantly."
 msgstr ""
+"簡単で単純な方法は、既存のソフトウェアからCryptPadにファイルの内容をコピーペ"
+"ーストすることです。ただし、以下の方法によるインポート、エクスポートの方がよ"
+"りよく機能します。"
 
 #: ../../FAQ.rst:56
 msgid ""
@@ -223,6 +226,10 @@ msgid ""
 "sharing, however this does not make every file an editable CryptPad "
 "**document**."
 msgstr ""
+"安全に保存し共有するために\\ **ファイル**\\ "
+"をCryptPadにアップロードすることは可能ですが、"
+"アップロードした全てのファイルがCryptOadで編集可能な\\ **ドキュメント**\\ "
+"となるわけではありません。"
 
 #: ../../FAQ.rst:58
 msgid ""
@@ -230,6 +237,9 @@ msgid ""
 "from the Drive with ``Right click`` > |cptools code| **Open in Code "
 "editor**."
 msgstr ""
+"ファイルとしてアップロードしたテキストファイルを ``右クリック`` > |cptools "
+"code| **コードエディターで開く**\\ を選択すると、コードまたはマークダウンのド"
+"キュメントの形式でドライブから開くことができます。"
 
 #: ../../FAQ.rst:60
 msgid ""
@@ -237,6 +247,9 @@ msgid ""
 "|file-o| **File** > |upload| **Import** functionality in the appropriate "
 "CryptPad editor as explained below."
 msgstr ""
+"他のファイルを編集可能な形式でインポートするには、以下で説明するように、"
+"適切なCryptPadのエディターで |file-o| **ファイル** > |upload| **インポート**"
+"\\ の機能を使ってください。"
 
 #: ../../FAQ.rst:63
 msgid "Import/export is not visible in the File menu"
@@ -249,6 +262,10 @@ msgid ""
 "menu on the same screen. Please make sure to check in both menus, when "
 "looking for import/export."
 msgstr ""
+"スプレッドシートと、ドキュメントの高度な処理用に、CryptPadはOnlyOfficeを統合"
+"しています。統合の結果、同一のスクリーンにそれぞれのファイルメニューがあるツ"
+"ールバーが2つ表示されます。インポートとエクスポート機能を探す際は、両方のツー"
+"ルバーを確認してください。"
 
 #: ../../FAQ.rst:68
 msgid ""
@@ -256,20 +273,25 @@ msgid ""
 "<https://docs.cryptpad.org/en/user_guide/apps/sheets.html#toolbars>`_ in "
 "our Spreadsheet application documentation."
 msgstr ""
+"スプレッドシートアプリケーションのドキュメンテーションにある\\ `注意事項 "
+"<https://docs.cryptpad.org/en/user_guide/apps/sheets.html#toolbars>`_\\ "
+"もご覧ください。"
 
 #: ../../FAQ.rst:71
 msgid "Rich text document import/export"
-msgstr ""
+msgstr "リッチテキストドキュメントのインポート、エクスポート"
 
 #: ../../FAQ.rst:73
 msgid ""
 "To import rich text documents (Microsoft Word, Google Docs, LibreOffice "
 "Writer, etc.), the supported format is HTML:"
 msgstr ""
+"リッチテキストのドキュメント（Microsoft Word、Google Docs、LibreOffice "
+"Writerなど）をインポートする場合、サポートするフォーマットはHTMLです。"
 
 #: ../../FAQ.rst:75
 msgid "Export your document as HTML in your existing software."
-msgstr ""
+msgstr "使用しているソフトウェアでドキュメントをHTMLとしてエクスポート。"
 
 #: ../../FAQ.rst:76 ../../FAQ.rst:88
 msgid "Save the file to your computer."
@@ -280,16 +302,20 @@ msgid ""
 "Open a new :ref:`app_rich_text` document on CryptPad (or an existing one "
 "to replace the contents)."
 msgstr ""
+"CryptPadで新しい\\ :ref:`app_rich_text`\\ "
+"ドキュメント（または、内容を置き換える場合は、既存のドキュメント）を開く。"
 
 #: ../../FAQ.rst:78 ../../FAQ.rst:90
 msgid "|file-o| **File** > |upload| **Import** and select your file."
-msgstr ""
+msgstr "|file-o| **ファイル** > |upload| **インポート**\\ でファイルを選択。"
 
 #: ../../FAQ.rst:80
 msgid ""
 "To export, use |file-o| **File** > |download| **Export** and select "
 "``.doc`` as the format."
 msgstr ""
+"エクスポートするには、 |file-o| **ファイル** > |download| **エクスポート**\\ "
+"へ進み、 ``.doc`` をフォーマットとして選択。"
 
 #: ../../FAQ.rst:83
 msgid "Spreadsheets import/export"
@@ -301,42 +327,51 @@ msgid ""
 "``.xlsx`` and OpenDocument ``.ods``. These can both be exported from "
 "popular software such as Google Sheets and LibreOffice Calc:"
 msgstr ""
+"スプレッドシートをインポートする場合、サポートするフォーマットはMicrosoft "
+"Excelの ``.xlsx`` とOpenDocumentの ``.ods`` となります。この2つはGoogle "
+"SheetsやLibreOffice "
+"Calcなどのよく使われているソフトウェアでエクスポートできます。"
 
 #: ../../FAQ.rst:87
 msgid "Export your document as ``.xlsx`` or ``.ods`` in your existing software."
-msgstr ""
+msgstr "使用しているソフトウェアでドキュメントを ``.xlsx`` または ``.ods`` "
+"でエクスポート。"
 
 #: ../../FAQ.rst:89
 msgid ""
 "Open a new :ref:`app_sheets` document (or an existing one to replace the "
 "contents)."
-msgstr ""
+msgstr "新しい\\ :ref:`app_sheets`\\ "
+"ドキュメント（または、内容を置き換える場合は、既存のドキュメント）を開く。"
 
 #: ../../FAQ.rst:92
 msgid ""
 "To export, use |file-o| **File** > |download| **Export** and choose a "
 "format:"
-msgstr ""
+msgstr "エクスポートするには、 |file-o| **ファイル** > |download| **エクスポート**\\ "
+"へ進み、 フォーマットを選択。"
 
 #: ../../FAQ.rst:97
 msgid "To use in Microsoft Excel or Google sheets, select ``.xlsx``."
-msgstr ""
+msgstr "Microsoft ExcelまたはGoogle sheetsで使用する場合は、 ``.xlsx`` を選択。"
 
 #: ../../FAQ.rst:98
 msgid "To use in LibreOffice Calc, select ``.ods``."
-msgstr ""
+msgstr "LibreOffice Calcで使用する場合は、 ``.ods`` を選択。"
 
 #: ../../FAQ.rst:99
 msgid ""
 "For cases where no further editing of the data is required after export "
 "(presentations, reports, etc), select ``.pdf``."
-msgstr ""
+msgstr "エクスポート後にデータを編集する必要性が無い場合（プレゼンテーション、報告な"
+"ど）は、 ``.pdf`` を選択。"
 
 #: ../../FAQ.rst:100
 msgid ""
 "For backup purposes or to share with a user on another CryptPad instance,"
 " select ``.bin``."
-msgstr ""
+msgstr "バックアップ用、または別のCryptPadのインスタンスのユーザーと共有する場合は、 "
+"``.bin`` を選択。"
 
 #: ../../FAQ.rst:103
 msgid ""
@@ -351,7 +386,7 @@ msgstr ""
 
 #: ../../FAQ.rst:106
 msgid "I cannot do X with a document I created"
-msgstr ""
+msgstr "作成したドキュメントで実行できない機能があります"
 
 #: ../../FAQ.rst:108
 msgid ""
@@ -383,6 +418,9 @@ msgid ""
 "and cannot be changed afterwards if the document is created without an "
 "owner."
 msgstr ""
+"ドキュメントの所有権は、\\ :ref:`ドキュメントを作成 <new_document>`\\ した際"
+"に設定されます。ドキュメントが所有者無しで作成された場合、所有権を後から変更"
+"することはできません。"
 
 #: ../../FAQ.rst:117
 msgid ""
@@ -391,10 +429,13 @@ msgid ""
 "create in order to retain full control over them, including the ability "
 "to destroy them."
 msgstr ""
+"開発チームは、将来この区別を無くすことを計画しています。それまでは、作成する"
+"全てのドキュメントを「所有」して、完全に削除する能力も含めて、ファイルを完全"
+"にコントロールできるようにしておくことが、安全な既定のオプションとなります。"
 
 #: ../../FAQ.rst:120
 msgid "Can I use CryptPad on mobile?"
-msgstr ""
+msgstr "携帯端末でCryptPadを使用できますか？"
 
 #: ../../FAQ.rst:122
 msgid ""
@@ -405,6 +446,11 @@ msgid ""
 " contact :ref:`support` or submit an `issue on Github "
 "<https://github.com/cryptpad/cryptpad/issues/new/choose>`_."
 msgstr ""
+"CryptPadは小さなサイズのスクリーンでも機能するように設計されています。デバイ"
+"スの性能に応じて、CryptPadを携帯端末で使用することは可能です。CryptPadをレス"
+"ポンシブデザインにする開発作業は2020年に行われましたが、改善すべき箇所を見つ"
+"けた場合は、\\ :ref:`support` まで連絡するか、または\\ `Githubでissueを作成 "
+"<https://github.com/cryptpad/cryptpad/issues/new/choose>`_\\ してください。"
 
 #: ../../FAQ.rst:125
 msgid "Are you planning to make an app?"
@@ -423,6 +469,8 @@ msgid ""
 "developed and maintained, effectively creating other \"versions\" of "
 "CryptPad for iOS and Android."
 msgstr ""
+"実質的にiOSとAndroid向けのCryptPadの複数のバージョンを作成することになり、開"
+"発、維持しなければならないソースコードの量が非常に多くなってしまうため。"
 
 #: ../../FAQ.rst:131
 msgid ""
@@ -433,6 +481,12 @@ msgid ""
 "instance may be running a different version of the software, depending on"
 " whether or not the latest updates were applied by the administrators."
 msgstr ""
+"CryptPadはオープンソースであり、誰でもサービスを提供することができます。その"
+"ため、携帯端末のアプリケーションのユーザーは、接続したい\\ :ref:`"
+"CryptPadのインスタンス <cryptpad_instances>`\\ を指定しなければならなくなり、"
+"この点で混乱が生じてしまうおそれがあるため。加えて、各インスタンスは、管理人"
+"が最新のアップデートを適用しているかどうかに応じて、異なるバージョンのソフト"
+"ウェアを実行している可能性もあります。"
 
 #: ../../FAQ.rst:133
 msgid ""
@@ -443,6 +497,12 @@ msgid ""
 "turning every CryptPad instance into a web app provider, rather than "
 "putting the burden of choosing the right instance on the user."
 msgstr ""
+"これらの問題に対処するために、開発チームはCryptPadを「プログレッシブウェブア"
+"プリ（PWA）」にすべく作業を行っています。プログレッシブウェブアプリにすると、"
+"デスクトップのブラウザーで動作する同じソフトウェアを、携帯端末でウェブブラウ"
+"ザーを通じて、アプリケーションとして使うことができるようになります。これには"
+"、全てのCryptPadのインスタンスをウェブアプリのサービス提供者にすることで、ユ"
+"ーザーが正しいインスタンスを選択する手間を省けるというメリットがあります。"
 
 #: ../../FAQ.rst:141
 msgid "Can CryptPad sync documents to my local filesystem?"
@@ -454,10 +514,13 @@ msgid ""
 "with the local file system. This is a regularly requested feature "
 "however, so the development team hopes to make it available in future."
 msgstr ""
+"現在のCryptPadの暗号化の仕組み上、ローカルのファイルシステムとの同期を行うこ"
+"とはできません。これは頻繁にリクエストされている機能なので、将来的には利用で"
+"きるようにしたいと思っています。"
 
 #: ../../FAQ.rst:148
 msgid "What is the relationship between CryptPad and OnlyOffice?"
-msgstr ""
+msgstr "CryptPadとOnlyOfficeの関係性は何ですか？"
 
 #: ../../FAQ.rst:150
 msgid ""
@@ -472,6 +535,16 @@ msgid ""
 "run in the browser rather than on the server, therefore avoiding the need"
 " to reveal the contents of users' documents when converting."
 msgstr ""
+"CryptPadの\\ :ref:`app_sheets`\\ アプリケーションは、\\ `OnlyOffice "
+"スプレッドシート <https://www.onlyoffice.com/en/spreadsheet-editor.aspx>`_\\ "
+"を統合したものですが、これはクライアント側のコードに関してのみであり、 "
+"CryptPadはOnlyOfficeのDocument Serverを使用していません。スプレッドシートとそ"
+"の他のアプリケーションで用いられているCryptPad'sの暗号化された共同作業は、Onl"
+"yOfficeのソースコードで部分的に用いられている暗号化システムとは全く異なってい"
+"ます。CryptPadのファイルフォーマットの変換ツールには、OnlyOfficeのソースコー"
+"ドに基づいている部分もありますが、変換中にユーザーのドキュメントの内容がサー"
+"バーに流出することを防ぐために、変換作業をサーバーではなくブラウザーで実行す"
+"るよう、元のソースコードは大幅に改変されています。"
 
 #: ../../FAQ.rst:153
 msgid "How Secure is CryptPad?"
@@ -486,10 +559,16 @@ msgid ""
 "are available in `our blog <https://blog.cryptpad.org/2024/03/14/Most-"
 "Secure-CryptPad-Usage/>`_."
 msgstr ""
+"CryptPadは、ユーザーの身元とドキュメントの内容を、内部の開発者と外部の脅威か"
+"ら保護することを目指しています。ただし、CryptPadのセキュリティーは完璧ではな"
+"く、ユーザーが\\ *望ましい使用法*\\ に従っており、アクセスするインスタンスが"
+"信頼に値することを条件としています。この点に関する説明と推薦される事項につい"
+"ては、\\ `私たちのブログ <https://blog.cryptpad.org/2024/03/14/"
+"Most-Secure-CryptPad-Usage/>`_\\ をご覧ください。"
 
 #: ../../FAQ.rst:157
 msgid "To summarize the key points:"
-msgstr ""
+msgstr "要点を要約すると、以下の通りとなります。"
 
 #: ../../FAQ.rst:159
 msgid ""
@@ -499,6 +578,11 @@ msgid ""
 "of `CryptPad public instances <https://cryptpad.org/instances>`_ for "
 "which we verified that they are up-to-date and well configured;"
 msgstr ""
+"インスタンスの管理者は\\ *誠実だが好奇心がある*\\ と想定されます。これはつま"
+"り、管理者は規則に従ってはいるが、知覚したものからできるだけ多くの情報を引き"
+"出そうとするということです。私たちは、最新版であり、"
+"よく設定されていると判断した\\ `CryptPadの公開インスタンス <https://cryptpad."
+"org/instances>`_\\ の一覧を作成、維持しています。"
 
 #: ../../FAQ.rst:160
 msgid ""
@@ -506,6 +590,9 @@ msgid ""
 "malicious*: external threat are able to tamper, replay or drop messages. "
 "This should not alter the security of CryptPad;"
 msgstr ""
+"通信経路は信頼できず\\ *実際に問題を抱えている*\\ 可能性があります。外部の脅"
+"威がメッセージを改変したり、リプレイ攻撃を行ったり、抜き取ったりする可能性が"
+"あります。ただしこれはCryptPadのセキュリティーを弱めるものではありません。"
 
 #: ../../FAQ.rst:161
 msgid ""
@@ -514,6 +601,10 @@ msgid ""
 "remains oblivious to them in a weak form of anonymity: they have access "
 "to your public key and your display name;"
 msgstr ""
+"あなたがドキュメントを共有するユーザーは\\ *誠実*\\ であると見なされます。ド"
+"キュメントを一旦共有したら、共有先のユーザーはそれを流出しないと信頼されてい"
+"ます。ただし、ユーザーはあなたの公開鍵や表示名にアクセスできるという点で、"
+"あなたの\\ *身元*\\ はユーザーに対して、弱い匿名性でしか保護されていません。"
 
 #: ../../FAQ.rst:163
 msgid ""
@@ -524,6 +615,12 @@ msgid ""
 "However, external users finding the link still need the file password to "
 "access it."
 msgstr ""
+"そのため、\\ *共有リンク*\\ は\\ *パスフレーズと同様に秘密にすべき*\\ もので"
+"あると見なす必要があります。セキュリティーを強化するためには、ファイルにパス"
+"ワードを設定することが推奨されます。アカウントを所有していれば、パスワードは"
+"あなたのCryptDrive（これは安全であると想定されます）に保存され、ファイルへの"
+"アクセスはスムーズに行われます。一方、外部ユーザーがリンクを開いた場合、それ"
+"にアクセスするにはパスワードの入力が要求されます。"
 
 #: ../../FAQ.rst:164
 msgid ""
@@ -532,6 +629,10 @@ msgid ""
 "is to make then share a copy of the document, which will start anew with "
 "a fresh history."
 msgstr ""
+"ドキュメントを共有すると、共有先の相手は、履歴の全体と共同作業者を確認するこ"
+"とができるようになります。もしそれを公開したくない場合は、ドキュメントのコピ"
+"ーを作成し、共有してください。コピーしたドキュメントには元のドキュメントの履"
+"歴は反映されません。"
 
 #: ../../FAQ.rst:167
 msgid "FAQ for cryptpad.fr"
@@ -549,6 +650,9 @@ msgid ""
 "invoices and processing payments manually, this option is limited to "
 "yearly plans for our Duo offer and above and incurs a 30% surcharge."
 msgstr ""
+"銀行送金、Paypal、その他要求に応じた支払方法を利用できますが、請求書の発行と"
+"支払いの手動処理にかかり追加の作業が発生するため、Duoの年払いプラン以上に関し"
+"、30％の割増料金を追加して受け付けます。"
 
 #: ../../FAQ.rst:177
 msgid "Do you accept cryptocurrencies for subscriptions and donations?"
@@ -562,10 +666,15 @@ msgid ""
 "legally required to ask for a name and address to issue the invoice to, "
 "and an email for communication about your subscription."
 msgstr ""
+"Bitcoinによる支払いを受け付けていますが、上述と同様の理由で、\\ :ref:`"
+"手動処理にかかる割増料金 <faq_manual_payments>`\\ が発生します。また、会社が"
+"フランスにて登録されているため、請求書の発行先となる人の名前と住所をお知らせ"
+"いただくよう要求することが、法的に義務付けられています。また、定額利用に関す"
+"る連絡のため、メールアドレスもお知らせいただきます。"
 
 #: ../../FAQ.rst:182
 msgid "Can you provide a Data processing Agreement (DPA)?"
-msgstr ""
+msgstr "データ処理契約（DPA）を結ぶことはできますか？"
 
 #: ../../FAQ.rst:184
 msgid ""
@@ -573,6 +682,8 @@ msgid ""
 "<https://cryptpad.fr/accounts/#org>`_, note that a example DPA is "
 "available for preview on that page."
 msgstr ""
+"DPAは\\ `組織向けプラン <https://cryptpad.fr/accounts/#org>`_\\ の機能となっ"
+"ています。リンク先のページではDPAのプレビューをご確認いただけます。"
 
 #~ msgid ""
 #~ "If you identify issues with another "
