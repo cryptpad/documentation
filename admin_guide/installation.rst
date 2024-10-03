@@ -268,6 +268,45 @@ After that, you can update the different OnlyOffice versions. Check https://gith
    cd www/common/onlyoffice/dist/v7
    git checkout 9d8b914a
 
+.. _admin_change_crypto:
+
+Change the server’s cryptography library (optional)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In CryptPad, the cryptography library that is used in the server and the client
+are, by default, the same: `TweetNaCl.
+<https://github.com/dchest/tweetnacl-js>`__.
+This choice was made to keep the codebase simple, and to avoid introducing extra
+dependencies.
+
+However, this design shows its limitation on large-scale instances where the
+server-side cryptographic operations can be costly, thus slowing down the
+server.
+To alleviate this issue, we propose using the plugin system of CryptPad to
+switch the server cryptographic library with a more computationally efficient
+one.
+
+For instance, the flagship instance `CryptPad.fr <https://cryptpad.fr/>`__ uses
+the `Sodium <https://github.com/holepunchto/sodium-native>`__ library.
+To enable that, we use `a plugin <https://github.com/cryptpad/cryptpad-sodium-plugin>`__.
+To install it, first download the plugin in the right location. Starting from
+the root of your CryptPad’s copy, do the following:
+
+.. code:: bash
+
+   cd lib/plugins
+   git clone https://github.com/cryptpad/cryptpad-sodium-plugin sodium
+
+Then, install its dependencies:
+
+.. code:: bash
+
+   cd sodium/
+   npm ci
+
+Finally, restart your CryptPad server. It should now be using *Sodium* on the
+server.
+
 .. _admin_domain_config:
 
 Domains
