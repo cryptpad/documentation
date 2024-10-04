@@ -41,11 +41,9 @@ Before starting the installation, ensure the following software is installed:
 
    -  Using `nodesource <https://github.com/nodesource/distributions#using-debian-as-root-4>`__ is recommended
 
-
 - Docker engine (if using Docker, see :ref:`Install with Docker <admin_docker_install>`)
 
    - See `the official Docker installation guide <https://docs.docker.com/engine/install/debian/>`__
-
 
 Install Cryptpad
 ----------------
@@ -140,7 +138,7 @@ Use the ``crontab -e`` command to set up a daily cron job, starting every day at
 
 .. code:: bash
 
-   0 0 * * * "/usr/bin/node cryptpad/scripts/evict-inactive.js" > /dev/null
+   0 0 * * * /usr/bin/node cryptpad/scripts/evict-inactive.js > /dev/null
 
 Then you'll likely want to do the same for ``scripts/evict-archivad.js``. Which will clean the archive directory by permanently remove files that have been archived for more than ``archiveRetentionTime`` days.
 
@@ -148,7 +146,7 @@ Again, use the ``crontab -e`` command to set up a weekly cron job, starting ever
 
 .. code:: bash
 
-   0 0 * * 0 "/usr/bin/node cryptpad/scripts/evict-archived.js" > /dev/null
+   0 0 * * 0 /usr/bin/node cryptpad/scripts/evict-archived.js > /dev/null
 
 Daemonization
 """""""""""""
@@ -268,6 +266,9 @@ After that, you can update the different OnlyOffice versions. Check https://gith
    cd www/common/onlyoffice/dist/v7
    git checkout 9d8b914a
 
+.. _admin_change_crypto:
+
+
 .. _admin_domain_config:
 
 Domains
@@ -293,7 +294,7 @@ The `example Nginx configuration <https://github.com/cryptpad/cryptpad/blob/main
 
 .. note::
    
-   Thanks to community contributions, example configuration files for other reverse proxies than Nginx are also available in the `docs folder <https://github.com/cryptpad/cryptpad/tree/main/docs>`__. Please be aware that those are community supported and not officialy supported by the development team.
+   Thanks to community contributions, example configuration files for other reverse proxies than Nginx are also available in the `docs/community <https://github.com/cryptpad/cryptpad/tree/main/docs/community>`__ folder. Please be aware that those are only community supported and not officialy endorsed by the development team.
 
 Install and configure Nginx
 ---------------------------
@@ -382,7 +383,7 @@ The last step let you enable two options:
 Add other administrators
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-To make this account an instance administrator:
+To make an account instance administrator:
 
 1. Copy their public key found in **User Menu** (avatar at the top right) > **Settings** > **Account** > **Public Signing Key**
 2. Paste this key in ``cryptpad/config/config.js`` in the following array (uncomment and replace the placeholder):
@@ -397,21 +398,22 @@ To make this account an instance administrator:
 
 .. _admin_support_mailbox:
 
-Configure support mailbox
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Configure support help-desk
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The support mailbox can be configured from the :ref:`admin_panel`.
+The support help-desk can be configured from the :ref:`admin_panel`.
 
 #. With an instance administrator account, visit the ``/admin/#support`` page
-#. ``Click`` **Generate Support Keys**
-#. The support mailbox is now active
-#. Flush the cache to access the mailbox:  **General** tab > **Flush HTTP Cache**
+#. ``Click`` **INITIALIZE HELP-DESK ON THIS INSTANCE**
+#. The help-desk is now active
 
-To allow other administrators to access the support mailbox:
+To add other people to the instance support team:
 
-#. Copy the key at the bottom of the support page
-#. Send it to another administrator account
-#. They can use the **Add private key** field on the support page to gain access to the support mailbox
+#. Add them to your contact list
+#. Choose from the list shown below
+#. ``Click`` **ADD**
+
+To remove someone from the instance support team, simply ``click`` the cross at the end left of their display name.
 
 .. _configure_open_graph:
 
@@ -432,6 +434,39 @@ To modify the preview images please see :ref:`preview_images`
 
     Updating to a newer version of the software in the future without re-running this command may result in outdated code.
 
+
+Change the server’s cryptography library (optional)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In CryptPad, the server and client use the same cryptography library called 
+`TweetNaCl <https://github.com/dchest/tweetnacl-js>`__.
+This choice was made to keep the codebase simple, and to avoid introducing extra
+dependencies. However, this design shows its limitation on large-scale instances where the
+server-side cryptographic operations can be costly, thus slowing down the
+server.
+
+To alleviate this issue, CryptPad plugins can be used to replace the server's 
+cryptographic library with a more computationally efficient one.
+For example, the flagship instance `CryptPad.fr <https://cryptpad.fr/>`__ uses
+the `Sodium library<https://github.com/holepunchto/sodium-native>`__ through our `CryptPad Sodium plugin <https://github.com/cryptpad/cryptpad-sodium-plugin>`__.
+To install it, first download the plugin in the right location. Starting from
+the root of your CryptPad instance, do the following:
+
+.. code:: bash
+
+   cd lib/plugins
+   git clone https://github.com/cryptpad/cryptpad-sodium-plugin sodium
+
+Then, install its dependencies:
+
+.. code:: bash
+
+   cd sodium/
+   npm ci
+
+Finally, restart your CryptPad server. It should now be using *Sodium* on the
+server.
+
 Diagnostics
 ~~~~~~~~~~~
 
@@ -440,11 +475,7 @@ CryptPad provides a diagnostics page that runs instance configuration tests. Vis
 Support
 ~~~~~~~
 
-.. XXX DB: rewrite:
-..    mention of org plans as reference is weird
-..    link instance pricing page on .org when it is ready
-
-The development team is available to provide paid support contracts (see our `organizational plans <https://cryptpad.fr/accounts/#org>`__ for an idea of our pricing), otherwise, requests for assistance can be directed to the community.
+The development team is available to provide paid support contracts (see our `pricing page <https://cryptpad.org/pricing/>`__), otherwise, requests for assistance can be directed to the community.
 
 We recommend you to go over our `forum <https://forum.cryptpad.org>`_ and or `admins Matrix channel <https://matrix.to/#/#cryptpad-admins:matrix.xwiki.com>`_.
 

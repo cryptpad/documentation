@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CryptPad \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-02 11:56+0200\n"
+"POT-Creation-Date: 2024-10-04 11:51+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgstr ""
 msgid "Prerequisites"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:10 ../../admin_guide/installation.rst:274
+#: ../../admin_guide/installation.rst:10 ../../admin_guide/installation.rst:311
 msgid "Domains"
 msgstr ""
 
@@ -122,80 +122,80 @@ msgid ""
 "debian-as-root-4>`__ is recommended"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:45
+#: ../../admin_guide/installation.rst:44
 msgid ""
 "Docker engine (if using Docker, see :ref:`Install with Docker "
 "<admin_docker_install>`)"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:47
+#: ../../admin_guide/installation.rst:46
 msgid ""
 "See `the official Docker installation guide "
 "<https://docs.docker.com/engine/install/debian/>`__"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:51
+#: ../../admin_guide/installation.rst:49
 msgid "Install Cryptpad"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:56
+#: ../../admin_guide/installation.rst:54
 msgid "Recommended"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:59
+#: ../../admin_guide/installation.rst:57
 msgid ""
 "The development team recommends creating a dedicated user to install and "
 "run CryptPad in production rather than using the root user."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:61
+#: ../../admin_guide/installation.rst:59
 msgid "Clone the CryptPad repository"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:67
+#: ../../admin_guide/installation.rst:65
 msgid "Move to the newly cloned repository"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:73
+#: ../../admin_guide/installation.rst:71
 msgid "Switch to the latest published tag"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:80
+#: ../../admin_guide/installation.rst:78
 msgid "Dependencies"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:90
+#: ../../admin_guide/installation.rst:88
 msgid "OnlyOffice (optional)"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:92
+#: ../../admin_guide/installation.rst:90
 msgid ""
 "OnlyOffice applications (Spreadsheet, Document, and Presentation) are not"
 " bundled with CryptPad anymore. You can install/update OnlyOffice by "
 "running the installation script provided:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:98
+#: ../../admin_guide/installation.rst:96
 msgid ""
 "If you can not or do not want to use this script, it is also possible to "
 ":ref:`install OnlyOffice manually <admin_install_onlyoffice_manually>`."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:101
+#: ../../admin_guide/installation.rst:99
 msgid "Configuration"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:103
+#: ../../admin_guide/installation.rst:101
 msgid "Copy the example configuration"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:109
+#: ../../admin_guide/installation.rst:107
 msgid ""
 "Please read the configuration file, and modify variables as needed. The "
 ":ref:`domains <admin_domain_config>` are particularly important."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:111
+#: ../../admin_guide/installation.rst:109
 msgid ""
 "As part of the installation process, be sure to read "
 ":ref:`admin_customization` and to modify "
@@ -203,45 +203,45 @@ msgid ""
 "once user accounts have been created."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:113
+#: ../../admin_guide/installation.rst:111
 msgid "The server can now be started with"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:119
+#: ../../admin_guide/installation.rst:117
 msgid ""
 "You will get as result an installation URL with a unique token for "
 "setting up your instance."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:123
+#: ../../admin_guide/installation.rst:121
 msgid ""
 "Don't use it just yet. Note it down, you'll need it later at the "
 ":ref:`admin_instance_setup`"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:125
+#: ../../admin_guide/installation.rst:123
 msgid ""
 "The instance is now ready to run but cannot yet be accessed from the "
 "internet."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:127
+#: ../../admin_guide/installation.rst:125
 msgid "Regarding storage, data retention is set by default to:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:129
+#: ../../admin_guide/installation.rst:127
 msgid "90 days for documents not \"pinned\" by any registered user"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:130
+#: ../../admin_guide/installation.rst:128
 msgid "15 days for deleted data that is first archived prior to final deletion"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:131
+#: ../../admin_guide/installation.rst:129
 msgid "365 days for inactive accounts"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:133
+#: ../../admin_guide/installation.rst:131
 msgid ""
 "You can also setup a dedicated cron job to run the ``scripts/evict-"
 "inactive.js`` script. Its purpose is to move all the users destroyed & "
@@ -249,46 +249,46 @@ msgid ""
 "archive directory."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:137
+#: ../../admin_guide/installation.rst:135
 msgid ""
 "Note that you'll need to set ``disableIntegratedEviction`` to ``true`` in"
 " that case."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:139
+#: ../../admin_guide/installation.rst:137
 msgid ""
 "Use the ``crontab -e`` command to set up a daily cron job, starting every"
 " day at 00h00:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:145
+#: ../../admin_guide/installation.rst:143
 msgid ""
 "Then you'll likely want to do the same for ``scripts/evict-archivad.js``."
 " Which will clean the archive directory by permanently remove files that "
 "have been archived for more than ``archiveRetentionTime`` days."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:147
+#: ../../admin_guide/installation.rst:145
 msgid ""
 "Again, use the ``crontab -e`` command to set up a weekly cron job, "
 "starting every Sunday at 00h00:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:154
+#: ../../admin_guide/installation.rst:152
 msgid "Daemonization"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:156
+#: ../../admin_guide/installation.rst:154
 msgid ""
 "In production you may want to run CryptPad as a daemon that restarts "
 "automatically."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:159
+#: ../../admin_guide/installation.rst:157
 msgid "Systemd"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:161
+#: ../../admin_guide/installation.rst:159
 msgid ""
 "To run CryptPad as a `systemd "
 "<https://www.freedesktop.org/software/systemd/man/systemd.service.html>`__"
@@ -297,30 +297,30 @@ msgid ""
 " file."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:163
+#: ../../admin_guide/installation.rst:161
 msgid "Save the example as ``cryptpad.service`` in ``/etc/systemd/system/``"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:164
+#: ../../admin_guide/installation.rst:162
 msgid "Make necessary adjustments (e.g. user name, path, nodejs version)"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:165
+#: ../../admin_guide/installation.rst:163
 msgid "Enable the service at startup with ``systemctl enable cryptpad``."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:167
+#: ../../admin_guide/installation.rst:165
 msgid ""
 "Other ways of daemonizing nodejs applications include for example "
 "`foreverjs <https://github.com/foreversd/forever>`_ or `pm2 "
 "<https://pm2.keymetrics.io/>`_."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:170
+#: ../../admin_guide/installation.rst:168
 msgid "FreeBSD"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:172
+#: ../../admin_guide/installation.rst:170
 msgid ""
 "To run CryptPad as a `rc.d "
 "<https://man.freebsd.org/cgi/man.cgi?query=rc.d&sektion=8&n=1>`__ unit, "
@@ -329,126 +329,126 @@ msgid ""
 "file."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:174
+#: ../../admin_guide/installation.rst:172
 msgid "Save the example as ``cryptpad`` in ``/usr/local/etc/rc.d/``"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:175
+#: ../../admin_guide/installation.rst:173
 msgid "Make necessary adjustments (e.g. user name, path)"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:176
+#: ../../admin_guide/installation.rst:174
 msgid "Enable the service at startup with ``service cryptpad enable``"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:181
+#: ../../admin_guide/installation.rst:179
 msgid "Docker"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:183
+#: ../../admin_guide/installation.rst:181
 msgid ""
 "While we still prefer :ref:`the recommended installation method "
 "<admin_recommended_install>`, Docker is now officially supported."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:185
+#: ../../admin_guide/installation.rst:183
 msgid "We provide the following files in the CryptPad repository:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:187
+#: ../../admin_guide/installation.rst:185
 msgid ""
 "``.dockerignore`` is useful to remove parts of the repository from the "
 "image (avoid making it use too much storage)"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:188
+#: ../../admin_guide/installation.rst:186
 msgid "``Dockerfile`` is used to build the Docker image itself"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:189
+#: ../../admin_guide/installation.rst:187
 msgid ""
 "``docker-entrypoint.sh`` allows to configure a few things (domain names "
 "and build static assets)"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:190
+#: ../../admin_guide/installation.rst:188
 msgid ""
 "``docker-compose.yml`` used to create a container using the image and "
 "keep it running"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:193
+#: ../../admin_guide/installation.rst:191
 msgid "Build your own Docker image"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:199
+#: ../../admin_guide/installation.rst:197
 msgid "Modify ``docker-compose.yml`` with your own values"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:201
+#: ../../admin_guide/installation.rst:199
 msgid "``CPAD_MAIN_DOMAIN``"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:202
+#: ../../admin_guide/installation.rst:200
 msgid "``CPAD_SANDBOX_DOMAIN``"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:203
+#: ../../admin_guide/installation.rst:201
 msgid "``CPAD_INSTALL_ONLYOFFICE``"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:205
+#: ../../admin_guide/installation.rst:203
 msgid "Set appropriate permissions"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:212
+#: ../../admin_guide/installation.rst:210
 msgid "Run the container with Docker Compose"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:218
+#: ../../admin_guide/installation.rst:216
 msgid ""
 "Note that you'll still need to follow the CryptPad configuration steps, "
 "especially :ref:`admin_adminusers`. To do that you can mount your "
 "``config.js`` file as a Docker volume."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:235
+#: ../../admin_guide/installation.rst:233
 msgid "Install OnlyOffice manually"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:237
+#: ../../admin_guide/installation.rst:235
 msgid ""
 "It is easier to use the :ref:`script <admin_install_onlyoffice>` to "
 "install OnlyOffice. However, it is also possible to install OnlyOffice "
 "manually."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:239
+#: ../../admin_guide/installation.rst:237
 msgid ""
 "For the first installation you need to clone `onlyoffice-builds` into "
 "your `cryptpad` folder:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:245
+#: ../../admin_guide/installation.rst:243
 msgid ""
 "After that, you can check out the different OnlyOffice versions CryptPad "
 "uses:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:256
+#: ../../admin_guide/installation.rst:254
 msgid ""
 "To install x2t, needed for document conversions, you should download "
 "`x2t.zip` from https://github.com/cryptpad/onlyoffice-x2t-wasm/releases, "
 "and extract its contents into `www/common/onlyoffice/dist/x2t/`."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:258
+#: ../../admin_guide/installation.rst:256
 msgid ""
 "If you want to upgrade OnlyOffice, you need to update the `onlyoffice-"
 "builds` repository. Call this inside the `onlyoffice-builds/` folder:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:264
+#: ../../admin_guide/installation.rst:262
 msgid ""
 "After that, you can update the different OnlyOffice versions. Check "
 "https://github.com/cryptpad/cryptpad/blob/staging/install-"
@@ -456,29 +456,71 @@ msgid ""
 " changed, check out the updated commit hash. For example:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:276
+#: ../../admin_guide/installation.rst:272
+msgid "Change the server’s cryptography library (optional)"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:274
+msgid ""
+"In CryptPad, the cryptography library that is used in the server and the "
+"client are, by default, the same: `TweetNaCl. <https://github.com/dchest"
+"/tweetnacl-js>`__. This choice was made to keep the codebase simple, and "
+"to avoid introducing extra dependencies."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:280
+msgid ""
+"However, this design shows its limitation on large-scale instances where "
+"the server-side cryptographic operations can be costly, thus slowing down"
+" the server. To alleviate this issue, we propose using the plugin system "
+"of CryptPad to switch the server cryptographic library with a more "
+"computationally efficient one."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:287
+msgid ""
+"For instance, the flagship instance `CryptPad.fr "
+"<https://cryptpad.fr/>`__ uses the `Sodium "
+"<https://github.com/holepunchto/sodium-native>`__ library. To enable "
+"that, we use `a plugin <https://github.com/cryptpad/cryptpad-sodium-"
+"plugin>`__. To install it, first download the plugin in the right "
+"location. Starting from the root of your CryptPad’s copy, do the "
+"following:"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:298
+msgid "Then, install its dependencies:"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:305
+msgid ""
+"Finally, restart your CryptPad server. It should now be using *Sodium* on"
+" the server."
+msgstr ""
+
+#: ../../admin_guide/installation.rst:313
 msgid ""
 "You need two domains to take full advantage of CryptPad’s security "
 "features."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:278
+#: ../../admin_guide/installation.rst:315
 msgid "The main domain on which users access your instance"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:279
+#: ../../admin_guide/installation.rst:316
 msgid ""
 "A “sandbox” domain or subdomain to which a set of restrictive Content-"
 "Security Policy headers are applied"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:283
+#: ../../admin_guide/installation.rst:320
 msgid ""
 "Using CryptPad in production without the sandboxing system may put users’"
 " information at risk."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:285
+#: ../../admin_guide/installation.rst:322
 msgid ""
 "The intent of this system is to limit the risk of Cross-Site Scripting "
 "(XSS) vulnerabilities allowing attackers to leak user data. Sensitive "
@@ -487,7 +529,7 @@ msgid ""
 "domain."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:287
+#: ../../admin_guide/installation.rst:324
 msgid ""
 "The `example Nginx configuration "
 "<https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf>`__"
@@ -496,44 +538,44 @@ msgid ""
 "effective. You will need:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:289
+#: ../../admin_guide/installation.rst:326
 msgid "two domains or subdomains"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:290
+#: ../../admin_guide/installation.rst:327
 msgid ""
 "to include both domains in ``cryptpad/config/config.js`` as described in "
 ":ref:`admin_cryptpad_config`"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:291
+#: ../../admin_guide/installation.rst:328
 msgid ""
 "to generate one TLS certificate that covers both domains. The development"
 " team uses `acme.sh <https://acme.sh/>`__ and this is reflected in the "
 "example config."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:292
+#: ../../admin_guide/installation.rst:329
 msgid ""
 "to correctly assign both domains and certificates to the `example Nginx "
 "configuration "
 "<https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf>`__"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:296
+#: ../../admin_guide/installation.rst:333
 msgid ""
 "Thanks to community contributions, example configuration files for other "
-"reverse proxies than Nginx are also available in the `docs folder "
-"<https://github.com/cryptpad/cryptpad/tree/main/docs>`__. Please be aware"
-" that those are community supported and not officialy supported by the "
-"development team."
+"reverse proxies than Nginx are also available in the `docs/community "
+"<https://github.com/cryptpad/cryptpad/tree/main/docs/community>`__ "
+"folder. Please be aware that those are only community supported and not "
+"officialy endorsed by the development team."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:299
+#: ../../admin_guide/installation.rst:336
 msgid "Install and configure Nginx"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:301
+#: ../../admin_guide/installation.rst:338
 msgid ""
 "CryptPad’s application server handles active connections via websocket "
 "and serves static assets (HTML, Javascript, CSS, etc.). This basic "
@@ -546,219 +588,217 @@ msgid ""
 "advanced.nginx.conf>`__ for the following reasons:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:303
+#: ../../admin_guide/installation.rst:340
 msgid ""
 "Scale to many more users by serving static content with a more scalable "
 "web-server instead of the single-threaded NodeJS web-server that is "
 "built-in"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:304
+#: ../../admin_guide/installation.rst:341
 msgid ""
 "Allow the application server to focus exclusively on handling websocket "
 "connections"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:308
+#: ../../admin_guide/installation.rst:345
 msgid ""
 "CryptPad cannot run in a subfolder. Make sure you configure your server "
 "to access it through the root domain or a subdomain."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:310
+#: ../../admin_guide/installation.rst:347
 msgid ""
 "Note that the version of Nginx distributed by your operating system may "
 "not support websockets. We recommend and only support `Nginx stable "
 "<https://nginx.org/en/download.html>`__."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:312
+#: ../../admin_guide/installation.rst:349
 msgid "To configure Nginx for CryptPad:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:314
+#: ../../admin_guide/installation.rst:351
 msgid ""
 "Copy the example config file so that it is used/imported by the main "
 "Nginx config, for example by placing it in "
 "``/etc/nginx/conf.d/cryptpad.conf``"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:316
+#: ../../admin_guide/installation.rst:353
 msgid ""
 "`Basic example "
 "<https://github.com/cryptpad/cryptpad/blob/main/docs/example.nginx.conf>`__"
 " for small and midsize instances, where everything is processed by NodeJS"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:317
+#: ../../admin_guide/installation.rst:354
 msgid ""
 "`Advanced example <https://github.com/cryptpad/cryptpad/blob/main/docs"
 "/example-advanced.nginx.conf>`__ for big instances, where Nginx handle "
 "static content and only websocket connections are processed by NodeJS"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:319
+#: ../../admin_guide/installation.rst:356
 msgid ""
 "Edit the configuration file with the correct domains and paths to "
 "certificates."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:320
+#: ../../admin_guide/installation.rst:357
 msgid ""
 "Run ``openssl dhparam -out /etc/nginx/dhparam.pem 4096`` if you haven’t "
 "done so already on the host machine."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:322
+#: ../../admin_guide/installation.rst:359
 msgid ""
 "Static assets and pages such as "
 "``https://cryptpad.yourdomain.com/index.html`` should now be accessible "
 "at the main domain."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:327
+#: ../../admin_guide/installation.rst:364
 msgid "Configure CryptPad"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:329
+#: ../../admin_guide/installation.rst:366
 msgid ""
 "To finalise the installation, ensure ``cryptpad/config/config.js`` "
 "contains at least:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:332
+#: ../../admin_guide/installation.rst:369
 msgid "The correct domains:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:334
+#: ../../admin_guide/installation.rst:371
 msgid "The main domain in place of:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:340
+#: ../../admin_guide/installation.rst:377
 msgid "The Sandbox domain in place of:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:349
+#: ../../admin_guide/installation.rst:386
 msgid "Setup your instance"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:351
+#: ../../admin_guide/installation.rst:388
 msgid ""
 "Once CryptPad is installed, use the URL with the token generated when you"
 " ran the server for the first time to start the onboarding workflow."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:353
+#: ../../admin_guide/installation.rst:390
 msgid "First, create your administrator account."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:358
+#: ../../admin_guide/installation.rst:395
 msgid ""
 "Then you can add a logo of your choice (200KB maximum size), change the "
 "instance title, description and choose an accent color."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:363
+#: ../../admin_guide/installation.rst:400
 msgid ""
 "The next step is about chosing the applications to enable (all by "
 "default)."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:368
+#: ../../admin_guide/installation.rst:405
 msgid "The last step let you enable two options:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:370
+#: ../../admin_guide/installation.rst:407
 msgid "Mandatory Two-Factor Authentication"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:371
+#: ../../admin_guide/installation.rst:408
 msgid "Close registration"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:378
+#: ../../admin_guide/installation.rst:415
 msgid "All these options can be changed later on in the administration panel."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:383
+#: ../../admin_guide/installation.rst:420
 msgid "Add other administrators"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:385
-msgid "To make this account an instance administrator:"
+#: ../../admin_guide/installation.rst:422
+msgid "To make an account instance administrator:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:387
+#: ../../admin_guide/installation.rst:424
 msgid ""
 "Copy their public key found in **User Menu** (avatar at the top right) > "
 "**Settings** > **Account** > **Public Signing Key**"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:388
+#: ../../admin_guide/installation.rst:425
 msgid ""
 "Paste this key in ``cryptpad/config/config.js`` in the following array "
 "(uncomment and replace the placeholder):"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:396
+#: ../../admin_guide/installation.rst:433
 msgid "Restart CryptPad"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:401
-msgid "Configure support mailbox"
+#: ../../admin_guide/installation.rst:438
+msgid "Configure support help-desk"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:403
-msgid "The support mailbox can be configured from the :ref:`admin_panel`."
+#: ../../admin_guide/installation.rst:440
+msgid "The support help-desk can be configured from the :ref:`admin_panel`."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:405
+#: ../../admin_guide/installation.rst:442
 msgid "With an instance administrator account, visit the ``/admin/#support`` page"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:406
-msgid "``Click`` **Generate Support Keys**"
+#: ../../admin_guide/installation.rst:443
+msgid "``Click`` **INITIALIZE HELP-DESK ON THIS INSTANCE**"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:407
-msgid "The support mailbox is now active"
+#: ../../admin_guide/installation.rst:444
+msgid "The help-desk is now active"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:408
+#: ../../admin_guide/installation.rst:446
+msgid "To add other people to the instance support team:"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:448
+msgid "Add them to your contact list"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:449
+msgid "Choose from the list shown below"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:450
+msgid "``Click`` **ADD**"
+msgstr ""
+
+#: ../../admin_guide/installation.rst:452
 msgid ""
-"Flush the cache to access the mailbox:  **General** tab > **Flush HTTP "
-"Cache**"
+"To remove someone from the instance support team, simply ``click`` the "
+"cross at the end left of their display name."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:410
-msgid "To allow other administrators to access the support mailbox:"
-msgstr ""
-
-#: ../../admin_guide/installation.rst:412
-msgid "Copy the key at the bottom of the support page"
-msgstr ""
-
-#: ../../admin_guide/installation.rst:413
-msgid "Send it to another administrator account"
-msgstr ""
-
-#: ../../admin_guide/installation.rst:414
-msgid ""
-"They can use the **Add private key** field on the support page to gain "
-"access to the support mailbox"
-msgstr ""
-
-#: ../../admin_guide/installation.rst:419
+#: ../../admin_guide/installation.rst:457
 msgid "Build static pages & Open Graph metadata"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:421
+#: ../../admin_guide/installation.rst:459
 msgid ""
 "To build some of CryptPad static pages & enable social media link "
 "previews, run the following command:"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:427
+#: ../../admin_guide/installation.rst:465
 msgid ""
 "This creates an ``index.html`` page for each application in the "
 "``customize/www`` directory. It is **not recommended to perform manual "
@@ -766,21 +806,21 @@ msgid ""
 "``npm run build`` is run."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:429
+#: ../../admin_guide/installation.rst:467
 msgid "To modify the preview images please see :ref:`preview_images`"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:433
+#: ../../admin_guide/installation.rst:471
 msgid ""
 "Updating to a newer version of the software in the future without re-"
 "running this command may result in outdated code."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:436
+#: ../../admin_guide/installation.rst:474
 msgid "Diagnostics"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:438
+#: ../../admin_guide/installation.rst:476
 msgid ""
 "CryptPad provides a diagnostics page that runs instance configuration "
 "tests. Visit ``https://cryptpad.yourdomain.com/checkup/`` after "
@@ -788,26 +828,25 @@ msgid ""
 "configured."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:441
+#: ../../admin_guide/installation.rst:479
 msgid "Support"
 msgstr ""
 
-#: ../../admin_guide/installation.rst:447
+#: ../../admin_guide/installation.rst:481
 msgid ""
 "The development team is available to provide paid support contracts (see "
-"our `organizational plans <https://cryptpad.fr/accounts/#org>`__ for an "
-"idea of our pricing), otherwise, requests for assistance can be directed "
-"to the community."
+"our `pricing page <https://cryptpad.org/pricing/>`__), otherwise, "
+"requests for assistance can be directed to the community."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:449
+#: ../../admin_guide/installation.rst:483
 msgid ""
 "We recommend you to go over our `forum <https://forum.cryptpad.org>`_ and"
 " or `admins Matrix channel <https://matrix.to/#/#cryptpad-"
 "admins:matrix.xwiki.com>`_."
 msgstr ""
 
-#: ../../admin_guide/installation.rst:451
+#: ../../admin_guide/installation.rst:485
 msgid ""
 "Note that community support is provided by volunteers, please be aware of"
 " what you are asking of them and respect `our Code of Conduct "
@@ -1183,5 +1222,62 @@ msgstr ""
 #~ " account via the Register button on"
 #~ " the home page. To make this "
 #~ "account an instance administrator:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Thanks to community contributions, example "
+#~ "configuration files for other reverse "
+#~ "proxies than Nginx are also available"
+#~ " in the `docs folder "
+#~ "<https://github.com/cryptpad/cryptpad/tree/main/docs>`__. Please"
+#~ " be aware that those are community"
+#~ " supported and not officialy supported "
+#~ "by the development team."
+#~ msgstr ""
+
+#~ msgid "To make this account an instance administrator:"
+#~ msgstr ""
+
+#~ msgid "Configure support mailbox"
+#~ msgstr ""
+
+#~ msgid "The support mailbox can be configured from the :ref:`admin_panel`."
+#~ msgstr ""
+
+#~ msgid "``Click`` **Generate Support Keys**"
+#~ msgstr ""
+
+#~ msgid "The support mailbox is now active"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Flush the cache to access the "
+#~ "mailbox:  **General** tab > **Flush HTTP"
+#~ " Cache**"
+#~ msgstr ""
+
+#~ msgid "To allow other administrators to access the support mailbox:"
+#~ msgstr ""
+
+#~ msgid "Copy the key at the bottom of the support page"
+#~ msgstr ""
+
+#~ msgid "Send it to another administrator account"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "They can use the **Add private "
+#~ "key** field on the support page to"
+#~ " gain access to the support mailbox"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The development team is available to "
+#~ "provide paid support contracts (see our"
+#~ " `organizational plans "
+#~ "<https://cryptpad.fr/accounts/#org>`__ for an idea"
+#~ " of our pricing), otherwise, requests "
+#~ "for assistance can be directed to "
+#~ "the community."
 #~ msgstr ""
 
