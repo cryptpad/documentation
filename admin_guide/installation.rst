@@ -448,7 +448,7 @@ server.
 To alleviate this issue, CryptPad plugins can be used to replace the server's 
 cryptographic library with a more computationally efficient one.
 For example, the flagship instance `CryptPad.fr <https://cryptpad.fr/>`__ uses
-the `Sodium library<https://github.com/holepunchto/sodium-native>`__ through our `CryptPad Sodium plugin <https://github.com/cryptpad/cryptpad-sodium-plugin>`__.
+the `Sodium library <https://github.com/holepunchto/sodium-native>`__ through our `CryptPad Sodium plugin <https://github.com/cryptpad/cryptpad-sodium-plugin>`__.
 To install it, first download the plugin in the right location. Starting from
 the root of your CryptPad instance, do the following:
 
