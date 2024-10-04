@@ -148,10 +148,6 @@ To delete a snapshot:
 - |file-o| **File** > |camera| **Snapshots**
 - In the dialog, ``Click`` on the snapshot in the list and |trash| **Delete**.
 
-.. warning::
-   Snapshots are part of the document's history. If you delete the history in the :ref:`document_properties`
-   snapshots will be deleted as well.
-
 .. _document_properties:
 
 Properties
@@ -175,6 +171,10 @@ Available data:
 -  Size.
 
 The document size shows the proportions used for content and for history. To save storage space, delete the document’s history with **Delete history** and confirm. :badge_owner:`Document owners`
+
+.. warning::
+   :ref:`snapshots` are part of the document's history. If you delete the history in the document's properties
+   snapshots will be deleted as well.
 
 .. _document_users_and_chat:
 

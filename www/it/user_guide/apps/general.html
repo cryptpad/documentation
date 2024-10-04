@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>General &mdash; CryptPad 2024.6.1 documentazione</title>
+  <title>General &mdash; CryptPad 2024.9.0 documentazione</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2024.6.1</span>
+              <span class="release">Documentation 2024.9.0</span>
             </a>
             
 <div role="search">
@@ -339,8 +339,9 @@
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#configure-cryptpad">Configure CryptPad</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#setup-your-instance">Setup your instance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#add-other-administrators">Add other administrators</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-support-help-desk">Configure support help-desk</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#build-static-pages-open-graph-metadata">Build static pages &amp; Open Graph metadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#change-the-servers-cryptography-library-optional">Change the server’s cryptography library (optional)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#diagnostics">Diagnostics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#support">Support</a></li>
 </ul>
@@ -845,11 +846,6 @@ with <em class="fa fa-times"></em> <strong>Close</strong>.</p></li>
 <li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-camera"></em> <strong>Snapshots</strong></p></li>
 <li><p>In the dialog, <code class="docutils literal notranslate"><span class="pre">Click</span></code> on the snapshot in the list and <em class="fa fa-trash"></em> <strong>Delete</strong>.</p></li>
 </ul>
-<div class="admonition warning">
-<p class="admonition-title">Avvertimento</p>
-<p>Snapshots are part of the document's history. If you delete the history in the <a class="reference internal" href="#document-properties"><span class="std std-ref">Properties</span></a>
-snapshots will be deleted as well.</p>
-</div>
 </section>
 <section id="properties">
 <span id="document-properties"></span><h2>Properties<a class="headerlink" href="#properties" title="Permalink to this heading">¶</a></h2>
@@ -869,6 +865,11 @@ snapshots will be deleted as well.</p>
 <li><p>Size.</p></li>
 </ul>
 <p>The document size shows the proportions used for content and for history. To save storage space, delete the document’s history with <strong>Delete history</strong> and confirm. <span class="badge-owner">Document owners</span></p>
+<div class="admonition warning">
+<p class="admonition-title">Avvertimento</p>
+<p><a class="reference internal" href="#snapshots"><span class="std std-ref">Snapshots</span></a> are part of the document's history. If you delete the history in the document's properties
+snapshots will be deleted as well.</p>
+</div>
 </section>
 <section id="users-and-chat">
 <span id="document-users-and-chat"></span><h2>Users and chat<a class="headerlink" href="#users-and-chat" title="Permalink to this heading">¶</a></h2>
@@ -927,7 +928,7 @@ snapshots will be deleted as well.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2024.6.1',
+            VERSION:'2024.9.0',
             LANGUAGE:'it',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

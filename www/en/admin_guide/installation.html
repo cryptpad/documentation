@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Installation &mdash; CryptPad 2024.6.1 documentation</title>
+  <title>Installation &mdash; CryptPad 2024.9.0 documentation</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2024.6.1</span>
+              <span class="release">Documentation 2024.9.0</span>
             </a>
             
 <div role="search">
@@ -339,8 +339,9 @@
 <li class="toctree-l3"><a class="reference internal" href="#configure-cryptpad">Configure CryptPad</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#setup-your-instance">Setup your instance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#add-other-administrators">Add other administrators</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#configure-support-mailbox">Configure support mailbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#configure-support-help-desk">Configure support help-desk</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#build-static-pages-open-graph-metadata">Build static pages &amp; Open Graph metadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#change-the-servers-cryptography-library-optional">Change the server’s cryptography library (optional)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#diagnostics">Diagnostics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#support">Support</a></li>
 </ul>
@@ -827,12 +828,12 @@ npm run install:components
 <p>Note that you'll need to set <code class="docutils literal notranslate"><span class="pre">disableIntegratedEviction</span></code> to <code class="docutils literal notranslate"><span class="pre">true</span></code> in that case.</p>
 </div>
 <p>Use the <code class="docutils literal notranslate"><span class="pre">crontab</span> <span class="pre">-e</span></code> command to set up a daily cron job, starting every day at 00h00:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">0</span> <span class="m">0</span> * * * <span class="s2">&quot;/usr/bin/node cryptpad/scripts/evict-inactive.js&quot;</span> &gt; /dev/null
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">0</span> <span class="m">0</span> * * * /usr/bin/node cryptpad/scripts/evict-inactive.js &gt; /dev/null
 </pre></div>
 </div>
 <p>Then you'll likely want to do the same for <code class="docutils literal notranslate"><span class="pre">scripts/evict-archivad.js</span></code>. Which will clean the archive directory by permanently remove files that have been archived for more than <code class="docutils literal notranslate"><span class="pre">archiveRetentionTime</span></code> days.</p>
 <p>Again, use the <code class="docutils literal notranslate"><span class="pre">crontab</span> <span class="pre">-e</span></code> command to set up a weekly cron job, starting every Sunday at 00h00:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">0</span> <span class="m">0</span> * * <span class="m">0</span> <span class="s2">&quot;/usr/bin/node cryptpad/scripts/evict-archived.js&quot;</span> &gt; /dev/null
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">0</span> <span class="m">0</span> * * <span class="m">0</span> /usr/bin/node cryptpad/scripts/evict-archived.js &gt; /dev/null
 </pre></div>
 </div>
 </section>
@@ -939,7 +940,7 @@ git checkout 9d8b914a
 </section>
 </section>
 <section id="admin-domain-config">
-<span id="id1"></span><h2>Domains<a class="headerlink" href="#admin-domain-config" title="Permalink to this heading">¶</a></h2>
+<span id="admin-change-crypto"></span><span id="id1"></span><h2>Domains<a class="headerlink" href="#admin-domain-config" title="Permalink to this heading">¶</a></h2>
 <p>You need two domains to take full advantage of CryptPad’s security features.</p>
 <ol class="arabic simple">
 <li><p>The main domain on which users access your instance</p></li>
@@ -959,7 +960,7 @@ git checkout 9d8b914a
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Thanks to community contributions, example configuration files for other reverse proxies than Nginx are also available in the <a class="reference external" href="https://github.com/cryptpad/cryptpad/tree/main/docs">docs folder</a>. Please be aware that those are community supported and not officialy supported by the development team.</p>
+<p>Thanks to community contributions, example configuration files for other reverse proxies than Nginx are also available in the <a class="reference external" href="https://github.com/cryptpad/cryptpad/tree/main/docs/community">docs/community</a> folder. Please be aware that those are only community supported and not officialy endorsed by the development team.</p>
 </div>
 </section>
 <section id="install-and-configure-nginx">
@@ -1029,7 +1030,7 @@ contains at least:</p>
 </section>
 <section id="add-other-administrators">
 <span id="admin-adminusers"></span><h3>Add other administrators<a class="headerlink" href="#add-other-administrators" title="Permalink to this heading">¶</a></h3>
-<p>To make this account an instance administrator:</p>
+<p>To make an account instance administrator:</p>
 <ol class="arabic simple">
 <li><p>Copy their public key found in <strong>User Menu</strong> (avatar at the top right) &gt; <strong>Settings</strong> &gt; <strong>Account</strong> &gt; <strong>Public Signing Key</strong></p></li>
 <li><p>Paste this key in <code class="docutils literal notranslate"><span class="pre">cryptpad/config/config.js</span></code> in the following array (uncomment and replace the placeholder):</p></li>
@@ -1043,21 +1044,21 @@ contains at least:</p>
 <li><p>Restart CryptPad</p></li>
 </ol>
 </section>
-<section id="configure-support-mailbox">
-<span id="admin-support-mailbox"></span><h3>Configure support mailbox<a class="headerlink" href="#configure-support-mailbox" title="Permalink to this heading">¶</a></h3>
-<p>The support mailbox can be configured from the <a class="reference internal" href="admin_panel.html#admin-panel"><span class="std std-ref">Administration panel</span></a>.</p>
+<section id="configure-support-help-desk">
+<span id="admin-support-mailbox"></span><h3>Configure support help-desk<a class="headerlink" href="#configure-support-help-desk" title="Permalink to this heading">¶</a></h3>
+<p>The support help-desk can be configured from the <a class="reference internal" href="admin_panel.html#admin-panel"><span class="std std-ref">Administration panel</span></a>.</p>
 <ol class="arabic simple">
 <li><p>With an instance administrator account, visit the <code class="docutils literal notranslate"><span class="pre">/admin/#support</span></code> page</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> <strong>Generate Support Keys</strong></p></li>
-<li><p>The support mailbox is now active</p></li>
-<li><p>Flush the cache to access the mailbox:  <strong>General</strong> tab &gt; <strong>Flush HTTP Cache</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> <strong>INITIALIZE HELP-DESK ON THIS INSTANCE</strong></p></li>
+<li><p>The help-desk is now active</p></li>
 </ol>
-<p>To allow other administrators to access the support mailbox:</p>
+<p>To add other people to the instance support team:</p>
 <ol class="arabic simple">
-<li><p>Copy the key at the bottom of the support page</p></li>
-<li><p>Send it to another administrator account</p></li>
-<li><p>They can use the <strong>Add private key</strong> field on the support page to gain access to the support mailbox</p></li>
+<li><p>Add them to your contact list</p></li>
+<li><p>Choose from the list shown below</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> <strong>ADD</strong></p></li>
 </ol>
+<p>To remove someone from the instance support team, simply <code class="docutils literal notranslate"><span class="pre">click</span></code> the cross at the end left of their display name.</p>
 </section>
 <section id="build-static-pages-open-graph-metadata">
 <span id="configure-open-graph"></span><h3>Build static pages &amp; Open Graph metadata<a class="headerlink" href="#build-static-pages-open-graph-metadata" title="Permalink to this heading">¶</a></h3>
@@ -1072,13 +1073,39 @@ contains at least:</p>
 <p>Updating to a newer version of the software in the future without re-running this command may result in outdated code.</p>
 </div>
 </section>
+<section id="change-the-servers-cryptography-library-optional">
+<h3>Change the server’s cryptography library (optional)<a class="headerlink" href="#change-the-servers-cryptography-library-optional" title="Permalink to this heading">¶</a></h3>
+<p>In CryptPad, the server and client use the same cryptography library called
+<a class="reference external" href="https://github.com/dchest/tweetnacl-js">TweetNaCl</a>.
+This choice was made to keep the codebase simple, and to avoid introducing extra
+dependencies. However, this design shows its limitation on large-scale instances where the
+server-side cryptographic operations can be costly, thus slowing down the
+server.</p>
+<p>To alleviate this issue, CryptPad plugins can be used to replace the server's
+cryptographic library with a more computationally efficient one.
+For example, the flagship instance <a class="reference external" href="https://cryptpad.fr/">CryptPad.fr</a> uses
+the <a class="reference external" href="https://github.com/holepunchto/sodium-native">Sodium library</a> through our <a class="reference external" href="https://github.com/cryptpad/cryptpad-sodium-plugin">CryptPad Sodium plugin</a>.
+To install it, first download the plugin in the right location. Starting from
+the root of your CryptPad instance, do the following:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> lib/plugins
+git clone https://github.com/cryptpad/cryptpad-sodium-plugin sodium
+</pre></div>
+</div>
+<p>Then, install its dependencies:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> sodium/
+npm ci
+</pre></div>
+</div>
+<p>Finally, restart your CryptPad server. It should now be using <em>Sodium</em> on the
+server.</p>
+</section>
 <section id="diagnostics">
 <h3>Diagnostics<a class="headerlink" href="#diagnostics" title="Permalink to this heading">¶</a></h3>
 <p>CryptPad provides a diagnostics page that runs instance configuration tests. Visit <code class="docutils literal notranslate"><span class="pre">https://cryptpad.yourdomain.com/checkup/</span></code> after completing all of the steps above to ensure everything is correctly configured.</p>
 </section>
 <section id="support">
 <h3>Support<a class="headerlink" href="#support" title="Permalink to this heading">¶</a></h3>
-<p>The development team is available to provide paid support contracts (see our <a class="reference external" href="https://cryptpad.fr/accounts/#org">organizational plans</a> for an idea of our pricing), otherwise, requests for assistance can be directed to the community.</p>
+<p>The development team is available to provide paid support contracts (see our <a class="reference external" href="https://cryptpad.org/pricing/">pricing page</a>), otherwise, requests for assistance can be directed to the community.</p>
 <p>We recommend you to go over our <a class="reference external" href="https://forum.cryptpad.org">forum</a> and or <a class="reference external" href="https://matrix.to/#/#cryptpad-admins:matrix.xwiki.com">admins Matrix channel</a>.</p>
 <p>Note that community support is provided by volunteers, please be aware of what you are asking of them and respect <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/CODE_OF_CONDUCT.md">our Code of Conduct</a> at all time.</p>
 </section>
@@ -1130,7 +1157,7 @@ contains at least:</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'2024.6.1',
+            VERSION:'2024.9.0',
             LANGUAGE:'en',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

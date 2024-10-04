@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>カンバン &mdash; CryptPad 2024.6.1 ドキュメント</title>
+  <title>カンバン &mdash; CryptPad 2024.9.0 ドキュメント</title>
   
 
   
@@ -37,7 +37,7 @@
   <link rel="stylesheet" href="../../_static/css/cp-overrides.css" type="text/css" />
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
-    <link rel="next" title="ダイヤグラム" href="diagram.html" />
+    <link rel="next" title="ダイアグラム" href="diagram.html" />
     <link rel="prev" title="フォーム" href="form.html" /> 
 
   
@@ -58,7 +58,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2024.6.1</span>
+              <span class="release">Documentation 2024.9.0</span>
             </a>
             
 <div role="search">
@@ -109,13 +109,13 @@
 <li class="toctree-l3"><a class="reference internal" href="../user_account.html#notifications">通知</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_account.html#settings">設定</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#account">アカウント</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../user_account.html#security-privacy">Security &amp; Privacy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#security-privacy">セキュリティーとプライバシー</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#appearance">表示モード</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#cryptdrive">CryptDrive</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#cursor">カーソル</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#rich-text">リッチテキスト</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#code">コード</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../user_account.html#kanban">Kanban</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#kanban">カンバン</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#user-settings-notifications">通知</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#subscription">定額利用</a></li>
 </ul>
@@ -124,15 +124,15 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../support.html">サポート</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../support.html#existing-tickets">既存のチケット</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../support.html#new-ticket">New ticket</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../support.html#debug-data">Debug data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../support.html#new-ticket">新しいチケット</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../support.html#debug-data">デバッグ用データ</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../support.html#names">名前</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../support.html#identifiers">識別子</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../support.html#keys">鍵</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../support.html#quota">Quota</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../support.html#quota">保存領域の制限</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../support.html#web-browser">ウェブブラウザー</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../support.html#screen">スクリーン</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../support.html#block-location">Block location</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../support.html#block-location">ブロックの位置</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../support.html#teams">チーム</a></li>
 </ul>
 </li>
@@ -144,9 +144,9 @@
 <li class="toctree-l3"><a class="reference internal" href="../security.html#verifying-contacts">連絡先の認証</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../security.html#self-destructing-documents">自己破棄ドキュメント</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../security.html#remote-disconnect">遠隔切断</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../security.html#remote-content">Remote Content</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../security.html#known-caveats">Known caveats</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../security.html#no-unique-usernames">No unique usernames</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#remote-content">サーバー外のコンテンツ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../security.html#known-caveats">既知の注意事項</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../security.html#no-unique-usernames">同じユーザー名は複数設定可能</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../security.html#edit-rights-in-teams">チームでの権限の編集</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../security.html#access-of-former-team-members">以前のチームメンバーのアクセス</a></li>
 </ul>
@@ -157,7 +157,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#display">表示</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#managing-documents">ドキュメントの管理</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../drive.html#folders">フォルダー</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../drive.html#renaming">Renaming</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../drive.html#renaming">名前の変更</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../drive.html#deleting">削除</a></li>
 </ul>
 </li>
@@ -166,15 +166,15 @@
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#templates">テンプレート</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../collaboration.html">Collaboration / Social</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../collaboration.html">共同作業 / ソーシャル</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../collaboration.html#profile">プロフィール</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../collaboration.html#personal-profile">個人用プロフィール</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../collaboration.html#user-profile">ユーザーのプロフィール</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../collaboration.html#calendar">Calendar</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../collaboration.html#calendar">カレンダー</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../collaboration.html#toolbar">ツールバー</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#share-access">Share &amp; Access</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#share-access">共有とアクセス</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../collaboration.html#contacts">連絡先</a><ul>
@@ -185,12 +185,12 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../collaboration.html#teams">チーム</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../collaboration.html#team-drive">チームドライブ</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#team-members">Team members</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#team-members">チームのメンバー</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../collaboration.html#invite-members">メンバーを招待</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../collaboration.html#roles-and-permissions">役割と権限</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../collaboration.html#administration">管理</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../collaboration.html#chat">チャット</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#administration-tab">Administration tab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../collaboration.html#administration-tab">管理タブ</a></li>
 </ul>
 </li>
 </ul>
@@ -236,11 +236,11 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="sheets.html">スプレッドシート</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="sheets.html#documentation">Documentation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sheets.html#toolbars">Toolbars</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sheets.html#undo-and-collaboration-modes">Undo and collaboration modes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#documentation">ドキュメンテーション</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#toolbars">ツールバー</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#undo-and-collaboration-modes">取り消しと共同作業モード</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sheets.html#history">履歴</a></li>
-<li class="toctree-l4"><a class="reference internal" href="sheets.html#printing">Printing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sheets.html#printing">印刷</a></li>
 <li class="toctree-l4"><a class="reference internal" href="sheets.html#import-export">インポート/エクスポート</a></li>
 </ul>
 </li>
@@ -250,16 +250,16 @@
 <li class="toctree-l4"><a class="reference internal" href="code.html#import-export">インポート/エクスポート</a></li>
 <li class="toctree-l4"><a class="reference internal" href="code.html#markdown">マークダウン</a></li>
 <li class="toctree-l4"><a class="reference internal" href="code.html#images">画像</a></li>
-<li class="toctree-l4"><a class="reference internal" href="code.html#lightbox">Lightbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="code.html#lightbox">ギャラリー</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="slides.html">スライド</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="slides.html#toolbar">ツールバー</a></li>
-<li class="toctree-l4"><a class="reference internal" href="slides.html#writing-slides-with-markdown">Writing slides with Markdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="slides.html#writing-slides-with-markdown">マークダウンでスライドを作成</a></li>
 <li class="toctree-l4"><a class="reference internal" href="slides.html#theme">テーマ</a></li>
 <li class="toctree-l4"><a class="reference internal" href="slides.html#import-export">インポート/エクスポート</a></li>
 <li class="toctree-l4"><a class="reference internal" href="slides.html#images">画像</a></li>
-<li class="toctree-l4"><a class="reference internal" href="slides.html#lightbox">Lightbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="slides.html#lightbox">ギャラリー</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="form.html">フォーム</a><ul>
@@ -284,15 +284,15 @@
 <li class="toctree-l4"><a class="reference internal" href="#import-export">インポート/エクスポート</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="diagram.html">ダイヤグラム</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="diagram.html#documentation">Documentation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="diagram.html#toolbars">Toolbars</a></li>
-<li class="toctree-l4"><a class="reference internal" href="diagram.html#import-export">Import/Export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="diagram.html">ダイアグラム</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="diagram.html#documentation">ドキュメンテーション</a></li>
+<li class="toctree-l4"><a class="reference internal" href="diagram.html#toolbars">ツールバー</a></li>
+<li class="toctree-l4"><a class="reference internal" href="diagram.html#import-export">インポート/エクスポート</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">ホワイトボード</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">ツールバー</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Drawing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">描画</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> 描画モード</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> 選択モード</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">エクスポート</a></li>
@@ -302,10 +302,10 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../accessibility.html">アクセシビリティー</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../accessibility.html#feedback-channels">フィードバック用の連絡先</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../accessibility.html#keyboard-shortcuts">Keyboard Shortcuts</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../accessibility.html#general-shortcuts">General Shortcuts</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../accessibility.html#drive-shortcuts">Drive Shortcuts</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../accessibility.html#toolbar-shortcuts">Toolbar Shortcuts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../accessibility.html#keyboard-shortcuts">キーボードショートカット</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../accessibility.html#general-shortcuts">一般的なショートカット</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../accessibility.html#drive-shortcuts">ドライブのショートカット</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../accessibility.html#toolbar-shortcuts">ツールバーのショートカット</a></li>
 </ul>
 </li>
 </ul>
@@ -339,8 +339,9 @@
 <li class="toctree-l3"><a class="reference internal" href="../../admin_guide/installation.html#configure-cryptpad">Configure CryptPad</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#setup-your-instance">Setup your instance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#add-other-administrators">Add other administrators</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-support-mailbox">Configure support mailbox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#configure-support-help-desk">Configure support help-desk</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#build-static-pages-open-graph-metadata">Build static pages &amp; Open Graph metadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#change-the-servers-cryptography-library-optional">Change the server’s cryptography library (optional)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#diagnostics">Diagnostics</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../../admin_guide/installation.html#support">Support</a></li>
 </ul>
@@ -590,29 +591,29 @@
 </ul>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../../FAQ.html">よくある質問</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#common-issues">Common Issues</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#common-issues">全般的な問題</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#list-of-extensions-known-to-cause-issues-with-cryptpad">CryptPadの正常な機能を妨げる既知の拡張機能のリスト</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-forgot-my-password">パスワードを紛失した場合</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">How to import/export my documents to/from another platform?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#import-export-is-not-visible-in-the-file-menu">Import/export is not visible in the File menu</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#rich-text-document-import-export">Rich text document import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#spreadsheets-import-export">Spreadsheets import/export</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">ドキュメントをプラットフォーム間でインポートまたはエクスポートするには？</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#import-export-is-not-visible-in-the-file-menu">ファイルメニューにインポートとエクスポートがありません</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#rich-text-document-import-export">リッチテキストドキュメントのインポート、エクスポート</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#spreadsheets-import-export">スプレッドシートのインポートとエクスポート</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-cannot-do-x-with-a-document-i-created">I cannot do X with a document I created</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-i-use-cryptpad-on-mobile">Can I use CryptPad on mobile?</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#are-you-planning-to-make-an-app">Are you planning to make an app?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-cannot-do-x-with-a-document-i-created">作成したドキュメントで実行できない機能があります</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-i-use-cryptpad-on-mobile">携帯端末でCryptPadを使用できますか？</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#are-you-planning-to-make-an-app">アプリを作る予定はありますか？</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-cryptpad-sync-documents-to-my-local-filesystem">Can CryptPad sync documents to my local filesystem?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#what-is-the-relationship-between-cryptpad-and-onlyoffice">What is the relationship between CryptPad and OnlyOffice?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-secure-is-cryptpad">How Secure is CryptPad?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#faq-for-cryptpad-fr">FAQ for cryptpad.fr</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#can-i-pay-for-my-subscription-without-a-card">Can I pay for my subscription without a card?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#do-you-accept-cryptocurrencies-for-subscriptions-and-donations">Do you accept cryptocurrencies for subscriptions and donations?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#can-you-provide-a-data-processing-agreement-dpa">Can you provide a Data processing Agreement (DPA)?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#can-cryptpad-sync-documents-to-my-local-filesystem">CryptPadはドキュメントをローカルのファイルシステムに同期できますか？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#what-is-the-relationship-between-cryptpad-and-onlyoffice">CryptPadとOnlyOfficeの関係性は何ですか？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-secure-is-cryptpad">CryptPadはどの程度安全ですか？</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#faq-for-cryptpad-fr">cryptpad.frに関するよくある質問</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#can-i-pay-for-my-subscription-without-a-card">カード以外で定額利用の支払いはできますか？</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#do-you-accept-cryptocurrencies-for-subscriptions-and-donations">定額利用の支払いと募金に暗号通貨は利用できますか？</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#can-you-provide-a-data-processing-agreement-dpa">データ処理契約（DPA）を結ぶことはできますか？</a></li>
 </ul>
 </li>
 </ul>
@@ -622,14 +623,14 @@
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#report-bugs">不具合の報告</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#contribute-to-the-documentation">ドキュメンテーションに貢献</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#translate-cryptpad">CryptPadを翻訳</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../how_to_contribute.html#community-translation-program">Community translation program</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../../how_to_contribute.html#terms">Terms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../how_to_contribute.html#community-translation-program">コミュニティーによる翻訳プロジェクト</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../how_to_contribute.html#terms">利用規約</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#contribute-to-the-code">コードに貢献</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#financial-support">Financial support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../how_to_contribute.html#financial-support">財政支援</a></li>
 </ul>
 </li>
 </ul>
@@ -722,51 +723,51 @@
 <h2>編成<a class="headerlink" href="#organisation" title="この見出しへのパーマリンク">¶</a></h2>
 <p>カード、列の移動：</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Drag</span></code> the card/column to its desired position and <code class="docutils literal notranslate"><span class="pre">Drop</span></code>.</p></li>
+<li><p>カードまたは列を任意の場所まで <code class="docutils literal notranslate"><span class="pre">ドラッグ</span></code> して <code class="docutils literal notranslate"><span class="pre">ドロップ</span></code> 。</p></li>
 </ul>
-<p>Remove a card/column:</p>
+<p>カード、列の削除：</p>
 <ul class="simple">
-<li><p>The <em class="fa fa-trash"></em> area appears once you are dragging an element.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Drag</span></code> the card/column to the <em class="fa fa-trash"></em> Delete area at the bottom of the screen and <code class="docutils literal notranslate"><span class="pre">Drop</span></code> the card/column.</p></li>
+<li><p>カードまたは列をドラッグすると <em class="fa fa-trash"></em> の領域が表示されます。</p></li>
+<li><p>カード、列をスクリーンの下にある <em class="fa fa-trash"></em> 削除エリアに <code class="docutils literal notranslate"><span class="pre">ドラッグ</span></code> して <code class="docutils literal notranslate"><span class="pre">ドロップ</span></code> 。</p></li>
 </ul>
 <p>または</p>
 <ul class="simple">
-<li><p><em class="fa fa-pencil"></em> button on the card/column to open the editor &gt; <strong>Delete</strong> and confirm.</p></li>
+<li><p>カードまたは列の <em class="fa fa-pencil"></em> ボタンでエディターを開き、<strong>削除</strong>を選択して、これを承認。</p></li>
 </ul>
 </section>
 <section id="columns">
 <h2>列<a class="headerlink" href="#columns" title="この見出しへのパーマリンク">¶</a></h2>
-<p>Create a new column:</p>
+<p>新しい列の作成：</p>
 <ul class="simple">
-<li><p><em class="fa fa-plus"></em> button to the right of the last columns.</p></li>
+<li><p>最後の列の右にある <em class="fa fa-plus"></em> ボタン。</p></li>
 </ul>
-<p>Change the title of a column:</p>
+<p>列のタイトルの変更：</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on the column title.</p></li>
+<li><p>列のタイトルを <code class="docutils literal notranslate"><span class="pre">クリック</span></code> 。</p></li>
 <li><p>新しいタイトルを入力。</p></li>
 <li><p><kbd class="kbd docutils literal notranslate">Enter</kbd></p></li>
 </ol>
-<p>The column title and color can be changed in the column editor:</p>
+<p>列のタイトルと色は、列のエディターでも変更できます。</p>
 <ol class="arabic simple">
-<li><p><em class="fa fa-pencil"></em> button next to the column title.</p></li>
-<li><p>Change the title and/or pick a color.</p></li>
-<li><p><strong>Close</strong>, <kbd class="kbd docutils literal notranslate">Esc</kbd> or <kbd class="kbd docutils literal notranslate">Enter</kbd></p></li>
+<li><p>列のタイトルの横にある <em class="fa fa-pencil"></em> ボタン。</p></li>
+<li><p>タイトル、色の変更。</p></li>
+<li><p><strong>閉じる</strong>、 <kbd class="kbd docutils literal notranslate">Esc</kbd> または <kbd class="kbd docutils literal notranslate">Enter</kbd></p></li>
 </ol>
 </section>
 <section id="cards">
 <h2>カード<a class="headerlink" href="#cards" title="この見出しへのパーマリンク">¶</a></h2>
-<p>Create a new card with the buttons at the bottom of each column:</p>
+<p>各列の一番下にあるボタンで新しいカードを作成できます。</p>
 <ul class="simple">
 <li><p><em class="cptools cptools-add-bottom"></em> で列の一番下にカードを追加できます。</p></li>
 <li><p><em class="cptools cptools-add-top"></em> で列の一番上にカードを追加できます。</p></li>
 </ul>
 <p>カードのタイトルを変更：</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on the card title.</p></li>
+<li><p>カードのタイトルを <code class="docutils literal notranslate"><span class="pre">クリック</span></code> 。</p></li>
 <li><p>新しいタイトルを入力。</p></li>
 <li><p><kbd class="kbd docutils literal notranslate">Enter</kbd></p></li>
 </ol>
-<p>The title of a card can also be modified in the card editor (see below).</p>
+<p>カードのタイトルは、カードのエディターでも変更できます（以下を参照）。</p>
 </section>
 <section id="card-editor">
 <h2>カードのエディター<a class="headerlink" href="#card-editor" title="この見出しへのパーマリンク">¶</a></h2>
@@ -777,40 +778,37 @@
 <p>カードのエディターにて、</p>
 <ul class="simple">
 <li><p>カードのタイトルを編集。</p></li>
-<li><p>Edit the card body using
-<a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown</a>:
-Italics, bold, links, lists, todo-lists, etc. are supported.</p></li>
-<li><p>Insert images with the <em class="fa fa-picture-o"></em> menu in the markdown toolbar (Markdown syntax for remote images is blocked, see <a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">Remote Content</span></a>).</p></li>
-<li><p>Pick a card color.</p></li>
+<li><p>カードの本文は<a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">マークダウン</a>を使って編集できます。斜字体、太字、リンク、リスト、TODOリストなどをサポートしています。</p></li>
+<li><p>マークダウンのツールバーの <em class="fa fa-picture-o"></em> メニューで画像を挿入できます（リモートの画像を読み込むマークダウンの記法はブロックされています。詳細は<a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">サーバー外のコンテンツ</span></a>をご覧ください）。</p></li>
+<li><p>カードの色を選択。</p></li>
 <li><p>カードにタグを追加または削除。</p></li>
 <li><p>カードを削除。</p></li>
 </ul>
 </section>
 <section id="display">
 <h2>表示<a class="headerlink" href="#display" title="この見出しへのパーマリンク">¶</a></h2>
-<p>Use the <em class="fa fa-minus"></em> and <em class="fa fa-bars"></em> icons at the top right to display:</p>
+<p>右上の <em class="fa fa-minus"></em> と <em class="fa fa-bars"></em> のアイコンでカードに関する表示を切り替えられます。</p>
 <ul class="simple">
-<li><p><em class="fa fa-minus"></em> only card titles.</p></li>
-<li><p><em class="fa fa-bars"></em> full card contents.</p></li>
+<li><p><em class="fa fa-minus"></em> カードのタイトルのみ。</p></li>
+<li><p><em class="fa fa-bars"></em> カードの内容全体。</p></li>
 </ul>
-<p>The tags at the top of the board are used to filter cards:</p>
+<p>ボードの上部にあるタグでカードをフィルタリングできます。</p>
 <ol class="arabic simple">
-<li><p>タグを``クリック``。</p></li>
-<li><p>Only cards with these tags are displayed.</p></li>
-<li><p>Any new cards will automatically receive the selected tags.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on a selected tag to de-select it, or use <em class="fa fa-times"></em> <strong>Clear
-filter</strong> (at the left of the list) to de-select all tags.</p></li>
+<li><p>タグを <code class="docutils literal notranslate"><span class="pre">クリック</span></code> 。</p></li>
+<li><p>選択したタグが付けられているカードのみが表示されます。</p></li>
+<li><p>新しいカードには自動的に選択したタグが付けられます。</p></li>
+<li><p>選択済のタグを <code class="docutils literal notranslate"><span class="pre">クリック</span></code> すると選択を解除します。 <em class="fa fa-times"></em> <strong>フィルターを消去</strong>（リストの左）で全てのタグの選択を解除できます。</p></li>
 </ol>
 </section>
 <section id="import-export">
 <h2>インポート/エクスポート<a class="headerlink" href="#import-export" title="この見出しへのパーマリンク">¶</a></h2>
 <div class="line-block">
 <div class="line"><em class="fa fa-file-o"></em> <strong>ファイル</strong> &gt; <em class="fa fa-upload"></em> <strong>インポート</strong></div>
-<div class="line">Supported formats: <code class="docutils literal notranslate"><span class="pre">.json</span></code> files exported by this application.</div>
+<div class="line">サポートするフォーマット：このアプリケーションによりエクスポートされた <code class="docutils literal notranslate"><span class="pre">.json</span></code> ファイル。</div>
 </div>
 <div class="line-block">
 <div class="line"><em class="fa fa-file-o"></em> <strong>ファイル</strong> &gt; <em class="fa fa-download"></em> <strong>エクスポート</strong></div>
-<div class="line">サポートするフォーマット: <code class="docutils literal notranslate"><span class="pre">.json</span></code>。</div>
+<div class="line">サポートするフォーマット：<code class="docutils literal notranslate"><span class="pre">.json</span></code>。</div>
 </div>
 </section>
 </section>
@@ -823,7 +821,7 @@ filter</strong> (at the left of the list) to de-select all tags.</p></li>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="diagram.html" class="btn btn-neutral float-right" title="ダイヤグラム" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="diagram.html" class="btn btn-neutral float-right" title="ダイアグラム" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="form.html" class="btn btn-neutral" title="フォーム" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
@@ -860,7 +858,7 @@ filter</strong> (at the left of the list) to de-select all tags.</p></li>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2024.6.1',
+            VERSION:'2024.9.0',
             LANGUAGE:'ja',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
