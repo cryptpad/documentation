@@ -19,3 +19,4 @@ This guide is about using CryptPad to create, store, and collaborate on document
     share_and_access
     applications
     accessibility
+    keyboard_shortcuts
