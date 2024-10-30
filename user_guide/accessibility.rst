@@ -67,3 +67,9 @@ Specific Shortcuts
 | :kbd:`Esc`     | Remove focus from CKEditor4 to avoid keyboard trap            |
 +----------------+---------------------------------------------------------------+
 **Note:** CKEditor4 is the rich text editor used in CryptPad for Code, Rich Text and text areas.
+
+For shortcuts specific to third-party applications, please refer to their respective documentation:
+
+- `Drawio shortcuts <https://drawio-app.com/tutorials/shortcuts/>`_
+- `CKEditor shortcuts <https://ckeditor.com/docs/ckeditor4/latest/features/shortcuts.html>`_
+- `OnlyOffice shortcuts <https://helpcenter.onlyoffice.com/onlyoffice-editors/onlyoffice-spreadsheet-editor/helpfulhints/keyboardshortcuts.aspx>`_
