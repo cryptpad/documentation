@@ -720,8 +720,8 @@
 <h2>Getting started<a class="headerlink" href="#getting-started" title="此标题的永久链接">¶</a></h2>
 <p>Once everything is working, copy the default (English) source file <code class="docutils literal notranslate"><span class="pre">/www/common/translations/messages.js</span></code> to a file named according to your language's <a class="reference external" href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">ISO 639-1 Code</a>, like <code class="docutils literal notranslate"><span class="pre">/www/common/translations/messages.fr.js</span></code>.
 There is no ISO 639-1 language code for English-pirate, so we'll just call it <code class="docutils literal notranslate"><span class="pre">messages.pirate.js</span></code>.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> www/common/translations/
-cp messages.js messages.pirate.js
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>www/common/translations/
+cp<span class="w"> </span>messages.js<span class="w"> </span>messages.pirate.js
 </pre></div>
 </div>
 </section>
@@ -729,36 +729,36 @@ cp messages.js messages.pirate.js
 <h2>Including your translation<a class="headerlink" href="#including-your-translation" title="此标题的永久链接">¶</a></h2>
 <p>To include your translation in the list, you'll need to add it to <code class="docutils literal notranslate"><span class="pre">/customize.dist/messages.js</span></code>.
 There are comments indicating what to modify in three places:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="c1">// add your module to this map so it gets used</span><span class="w"></span>
-<span class="c1">// please use the translated name of your language (&quot;Français&quot; and not &quot;French&quot;)</span><span class="w"></span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">map</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;fr&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Français&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;es&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Español&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;pl&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Polski&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;de&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Deutsch&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;pt-br&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Português do Brasil&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;ro&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Română&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;zh&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;中文(簡體)&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;el&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Ελληνικά&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="p">};</span><span class="w"></span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="c1">// add your module to this map so it gets used</span>
+<span class="c1">// please use the translated name of your language (&quot;Français&quot; and not &quot;French&quot;)</span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">map</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s1">&#39;fr&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Français&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;es&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Español&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;pl&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Polski&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;de&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Deutsch&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;pt-br&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Português do Brasil&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;ro&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Română&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;zh&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;中文(簡體)&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;el&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Ελληνικά&#39;</span><span class="p">,</span>
+<span class="p">};</span>
 </pre></div>
 </div>
 <p>We need to modify that map to include our translation:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="c1">// add your module to this map so it gets used</span><span class="w"></span>
-<span class="c1">// please use the translated name of your language (&quot;Français&quot; and not &quot;French&quot;)</span><span class="w"></span>
-<span class="kd">var</span><span class="w"> </span><span class="nx">map</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;fr&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Français&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;es&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Español&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;pl&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Polski&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;de&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Deutsch&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;pt-br&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Português do Brasil&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;ro&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Română&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;zh&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;中文(簡體)&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;el&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Ελληνικά&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="s1">&#39;pirate&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;English Pirate&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// add our module to the map of languages</span><span class="w"></span>
-<span class="p">};</span><span class="w"></span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="c1">// add your module to this map so it gets used</span>
+<span class="c1">// please use the translated name of your language (&quot;Français&quot; and not &quot;French&quot;)</span>
+<span class="kd">var</span><span class="w"> </span><span class="nx">map</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="s1">&#39;fr&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Français&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;es&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Español&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;pl&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Polski&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;de&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Deutsch&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;pt-br&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Português do Brasil&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;ro&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Română&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;zh&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;中文(簡體)&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;el&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;Ελληνικά&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="s1">&#39;pirate&#39;</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;English Pirate&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">// add our module to the map of languages</span>
+<span class="p">};</span>
 </pre></div>
 </div>
 <p>Just add your module in a similar fashion to the existing translations, save your changes, and close <code class="docutils literal notranslate"><span class="pre">/customize.dist/messages.js</span></code>.</p>
@@ -769,12 +769,12 @@ There are comments indicating what to modify in three places:</p>
 <span class="cm">in a &#39;customize&#39; directory (/customize/translations/messages.{LANG}.js).</span>
 <span class="cm">* If you want to check all the existing translation keys, you can open the internal language file</span>
 <span class="cm">but you should not change it directly (/common/translations/messages.{LANG}.js)</span>
-<span class="cm">*/</span><span class="w"></span>
-<span class="nx">define</span><span class="p">([</span><span class="s1">&#39;/common/translations/messages.pirate.js&#39;</span><span class="p">],</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">Messages</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// Change the file name here</span><span class="w"></span>
-<span class="w">    </span><span class="c1">// Replace the existing keys (in your copied file) here:</span><span class="w"></span>
-<span class="w">    </span><span class="c1">// Messages.button_newpad = &quot;New Rich Text Document&quot;;</span><span class="w"></span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">Messages</span><span class="p">;</span><span class="w"></span>
-<span class="p">});</span><span class="w"></span>
+<span class="cm">*/</span>
+<span class="nx">define</span><span class="p">([</span><span class="s1">&#39;/common/translations/messages.pirate.js&#39;</span><span class="p">],</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">Messages</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// Change the file name here</span>
+<span class="w">    </span><span class="c1">// Replace the existing keys (in your copied file) here:</span>
+<span class="w">    </span><span class="c1">// Messages.button_newpad = &quot;New Rich Text Document&quot;;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">Messages</span><span class="p">;</span>
+<span class="p">});</span>
 </pre></div>
 </div>
 <p>That's all!</p>
@@ -784,17 +784,17 @@ There are comments indicating what to modify in three places:</p>
 <p>Now we can go back to our file, <code class="docutils literal notranslate"><span class="pre">/www/common/translations/messages.pirate.js</span></code> and start to add our Pirate-language customizations.</p>
 <p>Open the translation file you created in <code class="docutils literal notranslate"><span class="pre">/customize.dist/translations/</span></code>.
 You should see something like:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">define</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span><span class="w"></span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">define</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
 
-<span class="w">    </span><span class="nx">out</span><span class="p">.</span><span class="nx">main_title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;CryptPad: Zero Knowledge, Collaborative Real Time Editing&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nx">out</span><span class="p">.</span><span class="nx">main_title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;CryptPad: Zero Knowledge, Collaborative Real Time Editing&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
 <p>Now you just need to work through this file, updating the strings like so:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">define</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span><span class="w"></span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">define</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">var</span><span class="w"> </span><span class="nx">out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{};</span>
 
-<span class="w">    </span><span class="nx">out</span><span class="p">.</span><span class="nx">main_title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;CryptPad: Knowledge lost at sea while ye scribble with yer mateys&quot;</span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nx">out</span><span class="p">.</span><span class="nx">main_title</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;CryptPad: Knowledge lost at sea while ye scribble with yer mateys&quot;</span><span class="p">;</span>
 </pre></div>
 </div>
 <p>It's important that you modify just the string, and not the variable name which is used to access its content.
@@ -814,7 +814,7 @@ These tests will check to make sure that your translation has an entry for every
 <section id="deleting-a-translation">
 <h2>Deleting a translation<a class="headerlink" href="#deleting-a-translation" title="此标题的永久链接">¶</a></h2>
 <p>When a key is nolonger used (such as presentSuccess) you can delete it using this bash one-liner.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span> <span class="nb">export</span> <span class="nv">KEY</span><span class="o">=</span>presentSuccess <span class="o">&amp;&amp;</span> grep -nr <span class="s2">&quot;</span><span class="nv">$KEY</span><span class="s2">&quot;</span> ./www/common/translations/ <span class="p">|</span> sed <span class="s1">&#39;s/:.*$//&#39;</span> <span class="p">|</span> <span class="k">while</span> <span class="nb">read</span> x<span class="p">;</span> <span class="k">do</span> sed -i -e <span class="s2">&quot;/out\.</span><span class="nv">$KEY</span><span class="s2"> =/d&quot;</span> <span class="nv">$x</span><span class="p">;</span> <span class="k">done</span> <span class="o">)</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">(</span><span class="w"> </span><span class="nb">export</span><span class="w"> </span><span class="nv">KEY</span><span class="o">=</span>presentSuccess<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>grep<span class="w"> </span>-nr<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$KEY</span><span class="s2">&quot;</span><span class="w"> </span>./www/common/translations/<span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/:.*$//&#39;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="nb">read</span><span class="w"> </span>x<span class="p">;</span><span class="w"> </span><span class="k">do</span><span class="w"> </span>sed<span class="w"> </span>-i<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;/out\.</span><span class="nv">$KEY</span><span class="s2"> =/d&quot;</span><span class="w"> </span><span class="nv">$x</span><span class="p">;</span><span class="w"> </span><span class="k">done</span><span class="w"> </span><span class="o">)</span>
 </pre></div>
 </div>
 </section>

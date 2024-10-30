@@ -730,15 +730,15 @@
 <section id="database-administration">
 <span id="admin-database"></span><h2>Database administration<a class="headerlink" href="#database-administration" title="此标题的永久链接">¶</a></h2>
 <p>CryptPad stores user data on the file system rather than a relational database. The paths to different types of data are configurable in <code class="docutils literal notranslate"><span class="pre">cryptpad/config/config.js</span></code>:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">filePath</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./datastore/&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="nx">archivePath</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./data/archive&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="nx">pinPath</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./data/pins&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="nx">taskPath</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./data/tasks&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="nx">blockPath</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./block&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="nx">blobPath</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./blob&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="nx">blobStagingPath</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./data/blobstage&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="nx">decreePath</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./data/decrees&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="nx">logPath</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./data/logs&#39;</span><span class="p">,</span><span class="w"></span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">filePath</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./datastore/&#39;</span><span class="p">,</span>
+<span class="nx">archivePath</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./data/archive&#39;</span><span class="p">,</span>
+<span class="nx">pinPath</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./data/pins&#39;</span><span class="p">,</span>
+<span class="nx">taskPath</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./data/tasks&#39;</span><span class="p">,</span>
+<span class="nx">blockPath</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./block&#39;</span><span class="p">,</span>
+<span class="nx">blobPath</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./blob&#39;</span><span class="p">,</span>
+<span class="nx">blobStagingPath</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./data/blobstage&#39;</span><span class="p">,</span>
+<span class="nx">decreePath</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./data/decrees&#39;</span><span class="p">,</span>
+<span class="nx">logPath</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;./data/logs&#39;</span><span class="p">,</span>
 </pre></div>
 </div>
 <p>Each CryptPad document is a “chain” of edits stored in a file in <code class="docutils literal notranslate"><span class="pre">filePath</span></code>. To find a specific document in the database, use the identifier found in the document properties.</p>

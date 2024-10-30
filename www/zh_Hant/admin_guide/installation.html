@@ -772,21 +772,21 @@
 <p>The development team recommends creating a dedicated user to install and run CryptPad in production rather than using the root user.</p>
 </div>
 <p>Clone the CryptPad repository</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/cryptpad/cryptpad.git cryptpad
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/cryptpad/cryptpad.git<span class="w"> </span>cryptpad
 </pre></div>
 </div>
 <p>Move to the newly cloned repository</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> cryptpad
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>cryptpad
 </pre></div>
 </div>
 <p>Switch to the latest published tag</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout <span class="m">2024</span>.6.1
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span><span class="m">2024</span>.6.1
 </pre></div>
 </div>
 <section id="dependencies">
 <h4>Dependencies<a class="headerlink" href="#dependencies" title="此标题的永久链接">¶</a></h4>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>npm ci
-npm run install:components
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>npm<span class="w"> </span>ci
+npm<span class="w"> </span>run<span class="w"> </span>install:components
 </pre></div>
 </div>
 </section>
@@ -801,13 +801,13 @@ npm run install:components
 <section id="configuration">
 <h4>Configuration<a class="headerlink" href="#configuration" title="此标题的永久链接">¶</a></h4>
 <p>Copy the example configuration</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cp config/config.example.js config/config.js
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cp<span class="w"> </span>config/config.example.js<span class="w"> </span>config/config.js
 </pre></div>
 </div>
 <p>Please read the configuration file, and modify variables as needed. The <a class="reference internal" href="#admin-domain-config"><span class="std std-ref">domains</span></a> are particularly important.</p>
 <p>As part of the installation process, be sure to read <a class="reference internal" href="customization.html#admin-customization"><span class="std std-ref">Instance customization</span></a> and to modify <code class="docutils literal notranslate"><span class="pre">customize/application_config.js</span></code> as some settings cannot be changed once user accounts have been created.</p>
 <p>The server can now be started with</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>node server
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>node<span class="w"> </span>server
 </pre></div>
 </div>
 <p>You will get as result an installation URL with a unique token for setting up your instance.</p>
@@ -828,12 +828,12 @@ npm run install:components
 <p>Note that you'll need to set <code class="docutils literal notranslate"><span class="pre">disableIntegratedEviction</span></code> to <code class="docutils literal notranslate"><span class="pre">true</span></code> in that case.</p>
 </div>
 <p>Use the <code class="docutils literal notranslate"><span class="pre">crontab</span> <span class="pre">-e</span></code> command to set up a daily cron job, starting every day at 00h00:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">0</span> <span class="m">0</span> * * * /usr/bin/node cryptpad/scripts/evict-inactive.js &gt; /dev/null
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">0</span><span class="w"> </span><span class="m">0</span><span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>/usr/bin/node<span class="w"> </span>cryptpad/scripts/evict-inactive.js<span class="w"> </span>&gt;<span class="w"> </span>/dev/null
 </pre></div>
 </div>
 <p>Then you'll likely want to do the same for <code class="docutils literal notranslate"><span class="pre">scripts/evict-archivad.js</span></code>. Which will clean the archive directory by permanently remove files that have been archived for more than <code class="docutils literal notranslate"><span class="pre">archiveRetentionTime</span></code> days.</p>
 <p>Again, use the <code class="docutils literal notranslate"><span class="pre">crontab</span> <span class="pre">-e</span></code> command to set up a weekly cron job, starting every Sunday at 00h00:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">0</span> <span class="m">0</span> * * <span class="m">0</span> /usr/bin/node cryptpad/scripts/evict-archived.js &gt; /dev/null
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">0</span><span class="w"> </span><span class="m">0</span><span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span><span class="m">0</span><span class="w"> </span>/usr/bin/node<span class="w"> </span>cryptpad/scripts/evict-archived.js<span class="w"> </span>&gt;<span class="w"> </span>/dev/null
 </pre></div>
 </div>
 </section>
@@ -873,7 +873,7 @@ npm run install:components
 </ul>
 <ol class="arabic">
 <li><p>Build your own Docker image</p>
-<div class="highlight-docker notranslate"><div class="highlight"><pre><span></span>docker build -t cryptpad/cryptpad:local-latest .
+<div class="highlight-docker notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>cryptpad/cryptpad:local-latest<span class="w"> </span>.
 </pre></div>
 </div>
 </li>
@@ -885,13 +885,13 @@ npm run install:components
 </ul>
 </li>
 <li><p>Set appropriate permissions</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir -p data customize onlyoffice-dist onlyoffice-conf
-sudo chown -R <span class="m">4001</span>:4001 data customize onlyoffice-dist onlyoffice-conf
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>-p<span class="w"> </span>data<span class="w"> </span>customize<span class="w"> </span>onlyoffice-dist<span class="w"> </span>onlyoffice-conf
+sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span><span class="m">4001</span>:4001<span class="w"> </span>data<span class="w"> </span>customize<span class="w"> </span>onlyoffice-dist<span class="w"> </span>onlyoffice-conf
 </pre></div>
 </div>
 </li>
 <li><p>Run the container with Docker Compose</p>
-<div class="highlight-docker notranslate"><div class="highlight"><pre><span></span>docker compose up -d
+<div class="highlight-docker notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d
 </pre></div>
 </div>
 </li>
@@ -899,14 +899,14 @@ sudo chown -R <span class="m">4001</span>:4001 data customize onlyoffice-dist on
 <p>Note that you'll still need to follow the CryptPad configuration steps, especially <a class="reference internal" href="#admin-adminusers"><span class="std std-ref">Add other administrators</span></a>. To do that you can mount your <code class="docutils literal notranslate"><span class="pre">config.js</span></code> file as a Docker volume.</p>
 <blockquote>
 <div><div class="highlight-docker notranslate"><div class="highlight"><pre><span></span>volumes:
-- ./data/blob:/cryptpad/blob
-- ./data/block:/cryptpad/block
-- ./customize:/cryptpad/customize
-- ./data/data:/cryptpad/data
-- ./data/files:/cryptpad/datastore
-- ./onlyoffice-dist:/cryptpad/www/common/onlyoffice/dist
-- ./onlyoffice-conf:/cryptpad/onlyoffice-conf
-- ./config/config.js:/cryptpad/config/config.js
+-<span class="w"> </span>./data/blob:/cryptpad/blob
+-<span class="w"> </span>./data/block:/cryptpad/block
+-<span class="w"> </span>./customize:/cryptpad/customize
+-<span class="w"> </span>./data/data:/cryptpad/data
+-<span class="w"> </span>./data/files:/cryptpad/datastore
+-<span class="w"> </span>./onlyoffice-dist:/cryptpad/www/common/onlyoffice/dist
+-<span class="w"> </span>./onlyoffice-conf:/cryptpad/onlyoffice-conf
+-<span class="w"> </span>./config/config.js:/cryptpad/config/config.js
 </pre></div>
 </div>
 </div></blockquote>
@@ -915,26 +915,26 @@ sudo chown -R <span class="m">4001</span>:4001 data customize onlyoffice-dist on
 <span id="admin-install-onlyoffice-manually"></span><h3>Install OnlyOffice manually<a class="headerlink" href="#install-onlyoffice-manually" title="此标题的永久链接">¶</a></h3>
 <p>It is easier to use the <a class="reference internal" href="#admin-install-onlyoffice"><span class="std std-ref">script</span></a> to install OnlyOffice. However, it is also possible to install OnlyOffice manually.</p>
 <p>For the first installation you need to clone <cite>onlyoffice-builds</cite> into your <cite>cryptpad</cite> folder:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone --bare https://github.com/cryptpad/onlyoffice-builds.git
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>--bare<span class="w"> </span>https://github.com/cryptpad/onlyoffice-builds.git
 </pre></div>
 </div>
 <p>After that, you can check out the different OnlyOffice versions CryptPad uses:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git worktree add www/common/onlyoffice/dist/v1 4f370beb
-git worktree add www/common/onlyoffice/dist/v2b d9da72fd
-git worktree add www/common/onlyoffice/dist/v4 6ebc6938
-git worktree add www/common/onlyoffice/dist/v5 88a356f0
-git worktree add www/common/onlyoffice/dist/v6 abd8a309
-git worktree add www/common/onlyoffice/dist/v7 9d8b914a
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>worktree<span class="w"> </span>add<span class="w"> </span>www/common/onlyoffice/dist/v1<span class="w"> </span>4f370beb
+git<span class="w"> </span>worktree<span class="w"> </span>add<span class="w"> </span>www/common/onlyoffice/dist/v2b<span class="w"> </span>d9da72fd
+git<span class="w"> </span>worktree<span class="w"> </span>add<span class="w"> </span>www/common/onlyoffice/dist/v4<span class="w"> </span>6ebc6938
+git<span class="w"> </span>worktree<span class="w"> </span>add<span class="w"> </span>www/common/onlyoffice/dist/v5<span class="w"> </span>88a356f0
+git<span class="w"> </span>worktree<span class="w"> </span>add<span class="w"> </span>www/common/onlyoffice/dist/v6<span class="w"> </span>abd8a309
+git<span class="w"> </span>worktree<span class="w"> </span>add<span class="w"> </span>www/common/onlyoffice/dist/v7<span class="w"> </span>9d8b914a
 </pre></div>
 </div>
 <p>To install x2t, needed for document conversions, you should download <cite>x2t.zip</cite> from <a class="reference external" href="https://github.com/cryptpad/onlyoffice-x2t-wasm/releases">https://github.com/cryptpad/onlyoffice-x2t-wasm/releases</a>, and extract its contents into <cite>www/common/onlyoffice/dist/x2t/</cite>.</p>
 <p>If you want to upgrade OnlyOffice, you need to update the <cite>onlyoffice-builds</cite> repository. Call this inside the <cite>onlyoffice-builds/</cite> folder:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git fetch --all
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>fetch<span class="w"> </span>--all
 </pre></div>
 </div>
 <p>After that, you can update the different OnlyOffice versions. Check <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/staging/install-onlyoffice.sh#L31">https://github.com/cryptpad/cryptpad/blob/staging/install-onlyoffice.sh#L31</a>, if the commit hash of a version has changed. If it has changed, check out the updated commit hash. For example:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> www/common/onlyoffice/dist/v7
-git checkout 9d8b914a
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>www/common/onlyoffice/dist/v7
+git<span class="w"> </span>checkout<span class="w"> </span>9d8b914a
 </pre></div>
 </div>
 </section>
@@ -996,12 +996,12 @@ contains at least:</p>
 <li><p>The correct domains:</p>
 <ul>
 <li><p>The main domain in place of:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">httpUnsafeOrigin</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;http://localhost:3000&#39;</span><span class="p">,</span><span class="w"></span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">httpUnsafeOrigin</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;http://localhost:3000&#39;</span><span class="p">,</span>
 </pre></div>
 </div>
 </li>
 <li><p>The Sandbox domain in place of:</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">httpSafeOrigin</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://some-other-domain.xyz&quot;</span><span class="p">,</span><span class="w"></span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">httpSafeOrigin</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;https://some-other-domain.xyz&quot;</span><span class="p">,</span>
 </pre></div>
 </div>
 </li>
@@ -1035,9 +1035,9 @@ contains at least:</p>
 <li><p>Copy their public key found in <strong>User Menu</strong> (avatar at the top right) &gt; <strong>Settings</strong> &gt; <strong>Account</strong> &gt; <strong>Public Signing Key</strong></p></li>
 <li><p>Paste this key in <code class="docutils literal notranslate"><span class="pre">cryptpad/config/config.js</span></code> in the following array (uncomment and replace the placeholder):</p></li>
 </ol>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">adminKeys</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
-<span class="w">        </span><span class="s2">&quot;[cryptpad-user1@my.awesome.website/YZgXQxKR0Rcb6r6CmxHPdAGLVludrAF2lEnkbx1vVOo=]&quot;</span><span class="p">,</span><span class="w"></span>
-<span class="p">],</span><span class="w"></span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">adminKeys</span><span class="o">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;[cryptpad-user1@my.awesome.website/YZgXQxKR0Rcb6r6CmxHPdAGLVludrAF2lEnkbx1vVOo=]&quot;</span><span class="p">,</span>
+<span class="p">],</span>
 </pre></div>
 </div>
 <ol class="arabic simple" start="3">
@@ -1063,7 +1063,7 @@ contains at least:</p>
 <section id="build-static-pages-open-graph-metadata">
 <span id="configure-open-graph"></span><h3>Build static pages &amp; Open Graph metadata<a class="headerlink" href="#build-static-pages-open-graph-metadata" title="此标题的永久链接">¶</a></h3>
 <p>To build some of CryptPad static pages &amp; enable social media link previews, run the following command:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>npm run build
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>npm<span class="w"> </span>run<span class="w"> </span>build
 </pre></div>
 </div>
 <p>This creates an <code class="docutils literal notranslate"><span class="pre">index.html</span></code> page for each application in the <code class="docutils literal notranslate"><span class="pre">customize/www</span></code> directory. It is <strong>not recommended to perform manual modifications on these pages</strong> as they will be overridden the next time <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">run</span> <span class="pre">build</span></code> is run.</p>
@@ -1087,13 +1087,13 @@ For example, the flagship instance <a class="reference external" href="https://c
 the <a class="reference external" href="https://github.com/holepunchto/sodium-native">Sodium library</a> through our <a class="reference external" href="https://github.com/cryptpad/cryptpad-sodium-plugin">CryptPad Sodium plugin</a>.
 To install it, first download the plugin in the right location. Starting from
 the root of your CryptPad instance, do the following:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> lib/plugins
-git clone https://github.com/cryptpad/cryptpad-sodium-plugin sodium
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>lib/plugins
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/cryptpad/cryptpad-sodium-plugin<span class="w"> </span>sodium
 </pre></div>
 </div>
 <p>Then, install its dependencies:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> sodium/
-npm ci
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>sodium/
+npm<span class="w"> </span>ci
 </pre></div>
 </div>
 <p>Finally, restart your CryptPad server. It should now be using <em>Sodium</em> on the

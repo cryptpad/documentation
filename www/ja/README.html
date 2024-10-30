@@ -714,15 +714,15 @@
 <section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="この見出しへのパーマリンク">¶</a></h2>
 <p>Using <a class="reference external" href="https://python-poetry.org/docs/">Poetry</a></p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>poetry install
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>poetry<span class="w"> </span>install
 </pre></div>
 </div>
 <p>or Pip</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install -r requirements.txt
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
 </pre></div>
 </div>
 <p>Keep <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> up to date with the Poetry environment by running</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>poetry <span class="nb">export</span> -f requirements.txt --output requirements.txt
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>poetry<span class="w"> </span><span class="nb">export</span><span class="w"> </span>-f<span class="w"> </span>requirements.txt<span class="w"> </span>--output<span class="w"> </span>requirements.txt
 </pre></div>
 </div>
 </section>
@@ -730,11 +730,11 @@
 <h2>Build<a class="headerlink" href="#build" title="この見出しへのパーマリンク">¶</a></h2>
 <p>English <code class="docutils literal notranslate"><span class="pre">en</span></code> is the default language.</p>
 <p>to build the default:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make html
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>html
 </pre></div>
 </div>
 <p>to build another language, e.g. French:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make -e <span class="nv">SPHINXOPTS</span><span class="o">=</span><span class="s2">&quot;-D language=&#39;fr&#39;&quot;</span> html
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>-e<span class="w"> </span><span class="nv">SPHINXOPTS</span><span class="o">=</span><span class="s2">&quot;-D language=&#39;fr&#39;&quot;</span><span class="w"> </span>html
 </pre></div>
 </div>
 <p>View the result in <code class="docutils literal notranslate"><span class="pre">/_build/html/</span></code></p>
@@ -750,12 +750,12 @@
 <section id="translated-builds">
 <h3>Translated builds<a class="headerlink" href="#translated-builds" title="この見出しへのパーマリンク">¶</a></h3>
 <p>To update after default language has changed:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sphinx-intl update -p _build/locale<span class="sb">`</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sphinx-intl<span class="w"> </span>update<span class="w"> </span>-p<span class="w"> </span>_build/locale<span class="sb">`</span>
 </pre></div>
 </div>
 <p>To generate <code class="docutils literal notranslate"><span class="pre">.po</span></code> files for a new language e.g. French:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make gettext
-sphinx-intl update -p _build/gettext -l fr
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make<span class="w"> </span>gettext
+sphinx-intl<span class="w"> </span>update<span class="w"> </span>-p<span class="w"> </span>_build/gettext<span class="w"> </span>-l<span class="w"> </span>fr
 </pre></div>
 </div>
 <p><a class="reference external" href="update.sh">update.sh</a> updates all languages after English has changed:</p>
