@@ -140,7 +140,7 @@ Use the ``crontab -e`` command to set up a daily cron job, starting every day at
 
    0 0 * * * /usr/bin/node cryptpad/scripts/evict-inactive.js > /dev/null
 
-Then you'll likely want to do the same for ``scripts/evict-archivad.js``. Which will clean the archive directory by permanently remove files that have been archived for more than ``archiveRetentionTime`` days.
+Then you'll likely want to do the same for ``scripts/evict-archived.js``. Which will clean the archive directory by permanently remove files that have been archived for more than ``archiveRetentionTime`` days.
 
 Again, use the ``crontab -e`` command to set up a weekly cron job, starting every Sunday at 00h00:
 
