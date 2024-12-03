@@ -13,6 +13,50 @@ We welcome contributions that make CryptPad more accessible. User feedback is cr
 - `Matrix chat <https://matrix.to/#/#cryptpad-accessibility:matrix.xwiki.com>`__
 - `GitHub issues <https://github.com/cryptpad/cryptpad/issues/new/choose>`__
 
-.. note::
-    This new section will be extended in future updates to include keyboard shortcuts, accessibility settings, and any other relevant information.
+Accessibility Features
+----------------------
 
+Below are some key accessibility features currently implemented or in progress:
+
+- **Keyboard Navigation**: Interactive elements can be accessed and used via keyboard.
+- **Focus Indicators**: Clear and visible focus indicators are present.
+- **Responsive Design**: We do our best to create interfaces that adapt to various devices and screen sizes.
+
+Third-Party Content and Limitations
+-----------------------------------
+
+While CryptPad strives to make all aspects of its platform fully accessible, there may be limitations in third-party content or services that we integrate. These third-party components may not always fully meet the same WCAG 2.1 AA standards. Please check their documentation for more details:
+
+CryptPad integrates with the following third-party apps:
+
+- `CodeMirror <https://codemirror.net/>`_
+- `Drawio <https://www.drawio.com/doc/>`_
+- `CKEditor4 <https://ckeditor.com/docs/ckeditor4/latest/guide/dev_a11y.html>`_
+- `OnlyOffice <https://helpcenter.onlyoffice.com/ONLYOFFICE-Editors/Editors-User-Guides/AllEditors/Accessibility.aspx>`_
+
+Known Issues
+------------
+
+We keep track of issues we know about in the `Accessibility project <https://github.com/orgs/cryptpad/projects/5>`_. These include:
+
+- Potential keyboard traps when interacting with third-party applications.
+- Screen reader compatibility issues.
+- Limited responsiveness for mobile usage.
+- Lack of descriptive error messages across the app.
+
+Assessment Approach
+-------------------
+
+CryptPad utilizes a combination of external and self-evaluation methods to verify progress towards accessibility goals.
+
+- **External Audits**:
+
+  - NGI Report, Teams audit [April 2020].
+  - a11ylab [March 2021]: `View Table <http://ux.a11ylab.com/table/cryptpad>`_.
+  - HAN audit [August 2024]: `List of Issues <https://github.com/cryptpad/cryptpad/issues?page=1&q=+is%3Aissue+label%3A%22HAN+scan+08-24%22>`_.
+
+Version Information
+-------------------
+
+- **Date**: December 2024
+- **Version**: v2024.12.0
