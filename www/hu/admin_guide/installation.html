@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Installation &mdash; CryptPad 2024.9.0 dokumentáció</title>
+  <title>Installation &mdash; CryptPad 2024.12.0 dokumentáció</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2024.9.0</span>
+              <span class="release">Documentation 2024.12.0</span>
             </a>
             
 <div role="search">
@@ -300,14 +300,20 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../user_guide/accessibility.html">Accessibility</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../user_guide/accessibility.html#feedback-channels">Feedback channels</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../user_guide/accessibility.html#keyboard-shortcuts">Keyboard Shortcuts</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../user_guide/accessibility.html#general-shortcuts">General Shortcuts</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../user_guide/accessibility.html#drive-shortcuts">Drive Shortcuts</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../user_guide/accessibility.html#toolbar-shortcuts">Toolbar Shortcuts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/keyboard_shortcuts.html">Keyboard Shortcuts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/keyboard_shortcuts.html#general-shortcuts">General Shortcuts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/keyboard_shortcuts.html#drive-shortcuts">Drive Shortcuts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/keyboard_shortcuts.html#toolbar-shortcuts">Toolbar Shortcuts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/keyboard_shortcuts.html#apps-shortcuts">Apps Shortcuts</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../user_guide/accessibility.html">Accessibility</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/accessibility.html#feedback-channels">Feedback channels</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/accessibility.html#accessibility-features">Accessibility Features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/accessibility.html#third-party-content-and-limitations">Third-Party Content and Limitations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/accessibility.html#known-issues">Known Issues</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/accessibility.html#assessment-approach">Assessment Approach</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/accessibility.html#version-information">Version Information</a></li>
 </ul>
 </li>
 </ul>
@@ -780,7 +786,7 @@
 </pre></div>
 </div>
 <p>Switch to the latest published tag</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span><span class="m">2024</span>.6.1
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span><span class="m">2024</span>.12.0
 </pre></div>
 </div>
 <section id="dependencies">
@@ -831,7 +837,7 @@ npm<span class="w"> </span>run<span class="w"> </span>install:components
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">0</span><span class="w"> </span><span class="m">0</span><span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>/usr/bin/node<span class="w"> </span>cryptpad/scripts/evict-inactive.js<span class="w"> </span>&gt;<span class="w"> </span>/dev/null
 </pre></div>
 </div>
-<p>Then you'll likely want to do the same for <code class="docutils literal notranslate"><span class="pre">scripts/evict-archivad.js</span></code>. Which will clean the archive directory by permanently remove files that have been archived for more than <code class="docutils literal notranslate"><span class="pre">archiveRetentionTime</span></code> days.</p>
+<p>Then you'll likely want to do the same for <code class="docutils literal notranslate"><span class="pre">scripts/evict-archived.js</span></code>. Which will clean the archive directory by permanently remove files that have been archived for more than <code class="docutils literal notranslate"><span class="pre">archiveRetentionTime</span></code> days.</p>
 <p>Again, use the <code class="docutils literal notranslate"><span class="pre">crontab</span> <span class="pre">-e</span></code> command to set up a weekly cron job, starting every Sunday at 00h00:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">0</span><span class="w"> </span><span class="m">0</span><span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span><span class="m">0</span><span class="w"> </span>/usr/bin/node<span class="w"> </span>cryptpad/scripts/evict-archived.js<span class="w"> </span>&gt;<span class="w"> </span>/dev/null
 </pre></div>
@@ -1157,7 +1163,7 @@ server.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'2024.9.0',
+            VERSION:'2024.12.0',
             LANGUAGE:'hu',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Доступность &mdash; документация CryptPad 2024.9.0</title>
+  <title>Доступность &mdash; документация CryptPad 2024.12.0</title>
   
 
   
@@ -38,7 +38,7 @@
     <link rel="index" title="Алфавитный указатель" href="../genindex.html" />
     <link rel="search" title="Поиск" href="../search.html" />
     <link rel="next" title="Administrator Guide" href="../admin_guide/index.html" />
-    <link rel="prev" title="Рисунки" href="apps/whiteboard.html" /> 
+    <link rel="prev" title="Keyboard Shortcuts" href="keyboard_shortcuts.html" /> 
 
   
   <script src="../_static/js/modernizr.min.js"></script>
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2024.9.0</span>
+              <span class="release">Documentation 2024.12.0</span>
             </a>
             
 <div role="search">
@@ -300,14 +300,20 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Доступность</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#feedback-channels">Каналы обратной связи</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#keyboard-shortcuts">Горячие Клавиши</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#general-shortcuts">Общие сочетания клавиш</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#drive-shortcuts">Горячие клавиши Drive</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#toolbar-shortcuts">Сочетания клавиш на панели инструментов</a></li>
+<li class="toctree-l2"><a class="reference internal" href="keyboard_shortcuts.html">Keyboard Shortcuts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keyboard_shortcuts.html#general-shortcuts">General Shortcuts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="keyboard_shortcuts.html#drive-shortcuts">Drive Shortcuts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="keyboard_shortcuts.html#toolbar-shortcuts">Toolbar Shortcuts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="keyboard_shortcuts.html#apps-shortcuts">Apps Shortcuts</a></li>
 </ul>
 </li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Доступность</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#feedback-channels">Каналы обратной связи</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#accessibility-features">Доступность</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#third-party-content-and-limitations">Контент и ограничения сторонних производителей</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#known-issues">Известные проблемы</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#assessment-approach">Подход к оценке</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#version-information">Информация о версии</a></li>
 </ul>
 </li>
 </ul>
@@ -725,82 +731,56 @@
 <li><p><a class="reference external" href="https://matrix.to/#/#cryptpad-accessibility:matrix.xwiki.com">Чат в Matrix</a></p></li>
 <li><p><a class="reference external" href="https://github.com/cryptpad/cryptpad/issues/new/choose">Баг-трекер на GitHub</a></p></li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Примечание</p>
-<p>В будущих обновлениях этот новый раздел будет расширен и будет включать в себя сочетания клавиш, настройки специальных возможностей и любую другую соответствующую информацию.</p>
-</div>
 </section>
-<section id="keyboard-shortcuts">
-<h2>Горячие Клавиши<a class="headerlink" href="#keyboard-shortcuts" title="Permalink to this heading">¶</a></h2>
-<section id="general-shortcuts">
-<h3>Общие сочетания клавиш<a class="headerlink" href="#general-shortcuts" title="Permalink to this heading">¶</a></h3>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Клавиши</p></th>
-<th class="head"><p>Действие</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">e</kbd></kbd></p></td>
-<td><p>Создать новый документ</p></td>
-</tr>
-<tr class="row-odd"><td><p><kbd class="kbd docutils literal notranslate">Tab</kbd></p></td>
-<td><p>Навигация по фокусируемым элементам</p></td>
-</tr>
-<tr class="row-even"><td><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">Tab</kbd></kbd></p></td>
-<td><p>Переход назад по фокусируемым элементам</p></td>
-</tr>
-<tr class="row-odd"><td><p><kbd class="kbd docutils literal notranslate">Enter</kbd></p></td>
-<td><p>Нажать на выделенный элемент</p></td>
-</tr>
-</tbody>
-</table>
+<section id="accessibility-features">
+<h2>Доступность<a class="headerlink" href="#accessibility-features" title="Permalink to this heading">¶</a></h2>
+<p>Ниже приведены некоторые ключевые функции обеспечения доступности, реализованные в настоящее время или находящиеся в стадии разработки:</p>
+<ul class="simple">
+<li><p><strong>Навигация с помощью клавиатуры</strong>: доступ к интерактивным элементам и их использование можно осуществлять с помощью клавиатуры.</p></li>
+<li><p><strong>Индикаторы фокуса</strong>: имеются чёткие и видимые индикаторы фокуса.</p></li>
+<li><p><strong>Адаптивный дизайн</strong>: Мы делаем всё возможное, чтобы создавать интерфейсы, которые подстраиваются под различные устройства и размеры экрана.</p></li>
+</ul>
 </section>
-<section id="drive-shortcuts">
-<h3>Горячие клавиши Drive<a class="headerlink" href="#drive-shortcuts" title="Permalink to this heading">¶</a></h3>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Клавиши</p></th>
-<th class="head"><p>Действие</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>Клавиши <kbd class="kbd docutils literal notranslate">↑</kbd> и <kbd class="kbd docutils literal notranslate">↓</kbd></p></td>
-<td><p>Навигация по содержимому на диске</p></td>
-</tr>
-<tr class="row-odd"><td><p><kbd class="kbd docutils literal notranslate">Enter</kbd></p></td>
-<td><p>Открыть файл или папку на диске</p></td>
-</tr>
-</tbody>
-</table>
+<section id="third-party-content-and-limitations">
+<h2>Контент и ограничения сторонних производителей<a class="headerlink" href="#third-party-content-and-limitations" title="Permalink to this heading">¶</a></h2>
+<p>Хотя CryptPad стремится сделать все аспекты своей платформы полностью доступными, могут существовать ограничения в контенте сторонних производителей или в сервисах, которые мы интегрируем. Эти компоненты сторонних производителей не всегда могут полностью соответствовать тем же стандартам WCAG 2.1 AA. Пожалуйста, ознакомьтесь с их документацией для получения более подробной информации:</p>
+<p>CryptPad интегрируется со следующими сторонними приложениями:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://codemirror.net/">CodeMirror</a></p></li>
+<li><p><a class="reference external" href="https://www.drawio.com/doc/">Drawio</a></p></li>
+<li><p><a class="reference external" href="https://ckeditor.com/docs/ckeditor4/latest/guide/dev_a11y.html">CKEditor4</a></p></li>
+<li><p><a class="reference external" href="https://helpcenter.onlyoffice.com/ru/ONLYOFFICE-Editors/Editors-User-Guides/AllEditors/Accessibility.aspx">OnlyOffice</a></p></li>
+</ul>
 </section>
-<section id="toolbar-shortcuts">
-<h3>Сочетания клавиш на панели инструментов<a class="headerlink" href="#toolbar-shortcuts" title="Permalink to this heading">¶</a></h3>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Клавиши</p></th>
-<th class="head"><p>Действие</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><kbd class="kbd docutils literal notranslate">Enter</kbd></p></td>
-<td><p>Нажать на выделенный элемент, чтобы открыть меню</p></td>
-</tr>
-<tr class="row-odd"><td><p>Клавиши <kbd class="kbd docutils literal notranslate">↑</kbd> и <kbd class="kbd docutils literal notranslate">↓</kbd></p></td>
-<td><p>Навигация по пунктам внутри меню</p></td>
-</tr>
-<tr class="row-even"><td><p><kbd class="kbd docutils literal notranslate">Esc</kbd></p></td>
-<td><p>Закрыть меню</p></td>
-</tr>
-<tr class="row-odd"><td><p><kbd class="kbd docutils literal notranslate">Del</kbd></p></td>
-<td><p>Удалить уведомление из меню уведомлений</p></td>
-</tr>
-<tr class="row-even"><td><p>Функции поиска</p></td>
-<td><p>Найдите определенные элементы в меню, набрав первую букву</p></td>
-</tr>
-</tbody>
-</table>
+<section id="known-issues">
+<h2>Известные проблемы<a class="headerlink" href="#known-issues" title="Permalink to this heading">¶</a></h2>
+<p>Мы отслеживаем проблемы, о которых нам известно в <cite>Проекте обеспечения доступности &lt;https://github.com/orgs/cryptpad/projects/5&gt;</cite>. К ним относятся:</p>
+<ul class="simple">
+<li><p>Возможные коллизии клавиатуры при взаимодействии со сторонними приложениями.</p></li>
+<li><p>Проблемы совместимости с программами для чтения с экрана.</p></li>
+<li><p>Ограниченная скорость отклика при использовании мобильных устройств.</p></li>
+<li><p>Отсутствие описательных сообщений об ошибках в приложении.</p></li>
+</ul>
 </section>
+<section id="assessment-approach">
+<h2>Подход к оценке<a class="headerlink" href="#assessment-approach" title="Permalink to this heading">¶</a></h2>
+<p>CryptPad использует комбинацию методов оценки со стороны и методов самооценки чтобы оценить прогресс по улучшению доступности.</p>
+<ul class="simple">
+<li><p><strong>Внешний аудит</strong>:</p>
+<ul>
+<li><p>NGI Report, Teams audit [April 2020].</p></li>
+<li><p>a11ylab [March 2021]: <a class="reference external" href="http://ux.a11ylab.com/table/cryptpad">View Table</a>.</p></li>
+<li><p>HAN audit [August 2024]: <a class="reference external" href="https://github.com/cryptpad/cryptpad/issues?page=1&amp;q=+is%3Aissue+label%3A%22HAN+scan+08-24%22">List of Issues</a>.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="version-information">
+<h2>Информация о версии<a class="headerlink" href="#version-information" title="Permalink to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><strong>Дата</strong>: Декабрь 2024</p></li>
+<li><p><strong>Версия</strong>: v2024.12.0</p></li>
+</ul>
 </section>
 </section>
 
@@ -815,7 +795,7 @@
         <a href="../admin_guide/index.html" class="btn btn-neutral float-right" title="Administrator Guide" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="apps/whiteboard.html" class="btn btn-neutral" title="Рисунки" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="keyboard_shortcuts.html" class="btn btn-neutral" title="Keyboard Shortcuts" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
       
     </div>
   
@@ -849,7 +829,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'2024.9.0',
+            VERSION:'2024.12.0',
             LANGUAGE:'ru',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
