@@ -74,7 +74,8 @@ exclude_patterns = [
     'requirements.txt',
     'robots.txt',
     'SECURITY.md',
-    '.venv'
+    '.venv',
+    '.python-version'
     ]
 
 # -- Substitutions
