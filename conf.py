@@ -67,13 +67,14 @@ exclude_patterns = [
     '_build',
     'Thumbs.db',
     '.DS_Store',
-    'Readme.md',
+    'README.md',
     'www',
     'www2',
     '_themes/theme/static/fonts/cptools/README.md',
     'requirements.txt',
     'robots.txt',
-    'SECURITY.md'
+    'SECURITY.md',
+    '.venv'
     ]
 
 # -- Substitutions

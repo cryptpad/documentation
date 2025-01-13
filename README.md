@@ -1,13 +1,36 @@
 # CryptPad Documentation
 ## Installation 
-Using [Poetry](https://python-poetry.org/docs/)
+
+### UV
+
+To use [UV](https://docs.astral.sh/uv/#getting-started), install dependencies with 
+
+```bash
+uv sync
+```
+
+Activate the environment with 
+
+```bash
+source ./.venv/bin/activate
+```
+
+Keep `requirements.txt` up to date with the UV venv by running
+
+```bash
+uv export --format requirements-txt
+```
+
+### Poetry 
+
+To use [Poetry](https://python-poetry.org/docs/) rename `pyprojet-poetry.toml` to `pyproject.toml` and run
 ```bash
 poetry install
 ```
+Activate the environment with 
 
-or Pip
 ```bash
-pip install -r requirements.txt
+poetry shell
 ```
 
 Keep `requirements.txt` up to date with the Poetry environment by running 
@@ -15,6 +38,12 @@ Keep `requirements.txt` up to date with the Poetry environment by running
 ```bash
 poetry export -f requirements.txt --output requirements.txt
 ```
+
+### Pip
+```bash
+pip install -r requirements.txt
+```
+
 
 ## Build
 English `en` is the default language.
