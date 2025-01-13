@@ -1,23 +1,19 @@
-[tool.poetry]
+[project]
+authors = [
+    {name = "The CryptPad Team", email = "contact@cryptpad.org"},
+]
+license = {text = "CC-BY"}
+requires-python = "<4.0,>=3.10"
+dependencies = [
+    "Sphinx<6.0.0,>=5.3.0",
+    "recommonmark<1.0.0,>=0.7.1",
+    "sphinx-intl<3.0.0,>=2.0.1",
+    "sphinx-markdown-tables<1.0.0,>=0.0.17",
+    "sphinx-fontawesome<1.0.0,>=0.0.6",
+    "sphinx-sitemap<3.0.0,>=2.2.1",
+    "Jinja2<4.0.0,>=3.1.4",
+]
 name = "documentation"
 version = "2024.9.0"
 description = "CryptPad official documentation"
-authors = ["The CryptPad Team <contact@cryptpad.org>"]
-license = "CC-BY"
 readme = "README.md"
-packages = [{include = "cryptpad_documentation"}]
-
-[tool.poetry.dependencies]
-python = "^3.10"
-Sphinx = "^5.3.0"
-recommonmark = "^0.7.1"
-sphinx-intl = "^2.0.1"
-sphinx-markdown-tables = "^0.0.17"
-sphinx_fontawesome = "^0.0.6"
-sphinx-sitemap = "^2.2.1"
-Jinja2 = "^3.1.4"
-
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
