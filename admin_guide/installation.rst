@@ -39,7 +39,7 @@ Before starting the installation, ensure the following software is installed:
 
 -  Nodejs with NPM included (we use the official NodeJs LTS release)
 
-   -  Using `nodesource <https://github.com/nodesource/distributions#using-debian-as-root-4>`__ is recommended
+   -  Using `nodesource <https://github.com/nodesource/distributions?tab=readme-ov-file#installation-instructions-deb>`__ is recommended
 
 - Docker engine (if using Docker, see :ref:`Install with Docker <admin_docker_install>`)
 
