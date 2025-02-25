@@ -11,7 +11,7 @@ The Spreadsheet application in CryptPad is an integration of `OnlyOffice <https:
 Documentation
 -------------
 
-Please refer to the `OnlyOffice documentation <https://helpcenter.onlyoffice.com/en/ONLYOFFICE-Editors/ONLYOFFICE-Spreadsheet-Editor/index.aspx>`__ for a spreadsheet user-guide.
+Please refer to the `OnlyOffice documentation <https://helpcenter.onlyoffice.com/userguides/docs-se.aspx>`__ for a spreadsheet user-guide.
 
 .. note::
    
