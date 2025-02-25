@@ -60,7 +60,7 @@ Clone the CryptPad repository
 
 .. code:: bash
 
-   git clone https://github.com/cryptpad/cryptpad.git cryptpad
+   git clone -b 2024.12.0 --depth 1 https://github.com/cryptpad/cryptpad.git cryptpad
 
 Move to the newly cloned repository
 
