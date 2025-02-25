@@ -37,7 +37,7 @@ Before starting the installation, ensure the following software is installed:
 
 -  Git
 
--  Nodejs with NPM included (we use the official NodeJs LTS release)
+-  Node.js with NPM included (we use the official NodeJs LTS release)
 
    -  Using `nodesource <https://github.com/nodesource/distributions?tab=readme-ov-file#installation-instructions-deb>`__ is recommended
 
