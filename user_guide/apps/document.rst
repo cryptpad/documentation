@@ -1,0 +1,86 @@
+.. _app_documents:
+
+Document
+========
+
+The Document application in CryptPad is an integration of `OnlyOffice <https://www.onlyoffice.com/>`__. To read more about the details of this integration see :ref:`FAQ_OOintegration`
+
+.. image:: /images/app-sheets-preview.png
+   :class: screenshot
+
+Documentation
+-------------
+
+Please refer to the `OnlyOffice documentation <https://helpcenter.onlyoffice.com/userguides/docs-de.aspx>`__ for a document user-guide.
+
+.. note::
+   
+   Due to various security implications, `OnlyOffice plugins <https://helpcenter.onlyoffice.com/ONLYOFFICE-Editors/Editors-User-Guides/AllEditors/Plugin-manager.aspx>`__, also `macros <https://api.onlyoffice.com/plugin/macros>`__, aren't available on CryptPad. 
+
+Toolbars
+--------
+
+CryptPad integrates OnlyOffice documents into the same encrypted collaboration system as the other applications. Additionally OnlyOffice provides a wide range of functions in a tabbed toolbar. This results in a double toolbar that can cause confusion:
+
+- The topmost **CryptPad toolbar** is used for |file-o| **File** operations (including import/export, history, properties, etc) as well as |share-alt| **Share** and |unlock-alt| **Access**.
+- The **OnlyOffice toolbar** is used for all functionality within the document itself, as well as the collaboration modes explained in the next section.
+
+Undo and collaboration modes
+----------------------------
+
+.. image:: /images/app-sheets-collab-mode.png
+   :class: screenshot
+
+OnlyOffice provides two collaborative editing modes in documents that affect how changes are synced between users and whether or not the **Undo** functionality is available.
+
+- **Fast Mode** is enabled by default. New edits by all users are automatically synced with others as they are made. In this mode it is not possible to undo.
+- **Strict Mode** allows each user to make changes independently. The modified cells are "locked" for others until the author manually saves their changes. New edits are only synced with other users after being saved. In this mode it is possible to undo changes that have not yet been saved. When a user saves their changes, others are prompted to save in order to receive the latest edits.
+
+When :kbd:`Ctrl + Z` is pressed for undo, the application will automatically suggest switching to **Strict Mode** to enable the undo functionality.
+
+To switch back to **Fast mode** use the **Collaboration** tab in the OnlyOffice toolbar and select **Co-editing Mode** > **Fast**.
+
+.. note::
+   CryptPad remembers your choice of editing mode on each device for all documents.
+
+.. _documents_history:
+
+History
+-------
+
+To access the document history, use |file-o| **File** > |history| **History** in the CryptPad toolbar.
+
+Due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration, history in documents works differently than :ref:`in the other applications <document_history>`.
+
+.. figure:: /images/history-toolbar-sheets.png
+   :class: screenshot
+
+   The document history toolbar
+
+History in documents only allows to jump back to the previous version, and then move forward through individual edits.
+
+- |fast-backward| previous version
+- |step-forward| step forward one edit
+- |fast-forward| next version
+
+The functionality to restore and share a version, as well as everything relating to :ref:`snapshots`, works in the same way as in :ref:`the other applications <document_history>`.
+
+.. _documents_printing:
+
+Printing
+--------
+
+To print spreadsheets it is recommended to export using one of the formats below and to handle page layout with a desktop application such as LibreOffice Writer.
+
+Alternatively the ``.pdf`` export can be used to produce file for print, results may vary depending on the layout of the document.
+
+Import/Export
+-------------
+
+| |file-o| **File** > |upload| **Import**.
+| Supported formats: ``.bin`` files exported by this application, Excel ``.xlsx``.
+
+| |file-o| **File** > |download| **Export**.
+| Supported formats: ``.bin``, Word ``.docx``, ``.odt``, ``.pdf``.
+
+.. .csv removed from the supported export formats as it's broken and deactivated
