@@ -5,7 +5,7 @@ Presentation
 
 The Presentation application in CryptPad is an integration of `OnlyOffice <https://www.onlyoffice.com/>`__. To read more about the details of this integration see :ref:`FAQ_OOintegration`
 
-.. image:: /images/app-sheets-preview.png
+.. image:: /images/app-presentation-preview.png
    :class: screenshot
 
 Documentation
@@ -28,7 +28,7 @@ CryptPad integrates OnlyOffice presentations into the same encrypted collaborati
 Undo and collaboration modes
 ----------------------------
 
-.. image:: /images/app-sheets-collab-mode.png
+.. image:: /images/app-presentation-collab-mode.png
    :class: screenshot
 
 OnlyOffice provides two collaborative editing modes in presentations that affect how changes are synced between users and whether or not the **Undo** functionality is available.
@@ -48,11 +48,11 @@ To switch back to **Fast mode** use the **Collaboration** tab in the OnlyOffice 
 History
 -------
 
-To access the spreadsheet history, use |file-o| **File** > |history| **History** in the CryptPad toolbar.
+To access the presentation history, use |file-o| **File** > |history| **History** in the CryptPad toolbar.
 
 Due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration, history in presentations works differently than :ref:`in the other applications <document_history>`.
 
-.. figure:: /images/history-toolbar-sheets.png
+.. figure:: /images/history-toolbar-presentation.png
    :class: screenshot
 
    The presentation history toolbar
