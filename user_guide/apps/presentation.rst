@@ -78,9 +78,9 @@ Import/Export
 -------------
 
 | |file-o| **File** > |upload| **Import**.
-| Supported formats: ``.bin`` files exported by this application, Excel ``.xlsx``.
+| Supported formats: ``.bin`` files exported by this application, PowerPoint ``.pptx``, ``.odp``.
 
 | |file-o| **File** > |download| **Export**.
-| Supported formats: ``.bin``, Excel ``.pptx``, ``.odp``, ``.pdf``.
+| Supported formats: ``.bin``, PowerPoint ``.pptx``, ``.odp``, ``.pdf``.
 
 .. .csv removed from the supported export formats as it's broken and deactivated
