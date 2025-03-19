@@ -211,7 +211,7 @@ Query a document or file via its id or URL. Click the **GENERATE REPORT** button
 
 - Report timestamp: the time and date when the report was made
 - Document identifier: the identifier code of the document
-- Document type: the type of the document (either *Document*, ) // FIXME
+- Document type: either *Document* for a realtime document or *File* for a static file (image, audio, PDF file, etc)
 - Document size:  the size of the document in megabyte
 - Current metadata: metadata of the document formatted in JSON  
 - Metadata history: click the **FETCH** button to show the history of the document 
