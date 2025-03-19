@@ -180,7 +180,26 @@ This section is dedicated for the database management. You will find moderation 
 Account information
 ~~~~~~~~~~~~~~~~~~~
 
-Enter a user's public key to fetch data about their account.
+Enter a user's public key to fetch data about their account. Click the **GENERATE REPORT** button, when it's generated, you can access the following information:
+
+- **Report timestamp**: the time and date when the report was made
+- **Public Signing Key**: the public key of the user
+- **First pin activity time**: the time and date when the user registered their account
+- **Last pin activity time**: the last time the user modified their account, teams, folders or documents
+- **Is currently online**: if the user is currently online (*true* of *false*)
+- **Plan name**: if the user has a paid subscription, the type of plan subscribed
+- **Plan note**: a note left by an administrator if a plan is gifted to the user
+- **Storage limit**: the storage quota for the user
+- **Data stored**: the actual storage usage
+- **Pin log is available**: if the account is usable (*true* or *false*)
+- **Pin log is archived**: if the account is archived (*true* of *false*) 
+- **Current pin list**: click the **FETCH** button to generate the list of all pinned teams, folders and documents
+- **Archive this account** (Including its owned documents): click the **ARCHIVE** button to delete the account of the user. You must then fill a popup with a reason for the archival.
+- **Report content (JSON)**, This feature is considered experimental: click **COPY TO CLIPBOARD** to gather informations about the user in the JSON format
+
+.. note::
+
+   The **Archive this account** functionality is how you can moderate your CryptPad instance. Removing unwanted accounts, those not respecting your Terms of Service, breaking the laws where you operate your instance or simply when an user ask for their account removal.
 
 Document information
 ~~~~~~~~~~~~~~~~~~~~
