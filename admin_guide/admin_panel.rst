@@ -123,7 +123,6 @@ Instance applications
 
 Choose which apps to enable on this instance. Enable or disable the ones you want and hit the **SAVE** button.
 
-
 User Directory
 --------------
 
