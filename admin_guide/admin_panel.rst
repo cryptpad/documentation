@@ -180,22 +180,25 @@ This section is dedicated for the database management. You will find moderation 
 Account information
 ~~~~~~~~~~~~~~~~~~~
 
-Enter a user's public key to fetch data about their account. Click the **GENERATE REPORT** button, when it's generated, you can access the following information:
+Enter a user's public key to fetch data about their account. Click the **GENERATE REPORT** button, when it's done, you can access the following information:
 
-- **Report timestamp**: the time and date when the report was made
-- **Public Signing Key**: the public key of the user
-- **First pin activity time**: the time and date when the user registered their account
-- **Last pin activity time**: the last time the user modified their account, teams, folders or documents
-- **Is currently online**: if the user is currently online (*true* of *false*)
-- **Plan name**: if the user has a paid subscription, the type of plan subscribed
-- **Plan note**: a note left by an administrator if a plan is gifted to the user
-- **Storage limit**: the storage quota for the user
-- **Data stored**: the actual storage usage
-- **Pin log is available**: if the account is usable (*true* or *false*)
-- **Pin log is archived**: if the account is archived (*true* of *false*) 
-- **Current pin list**: click the **FETCH** button to generate the list of all pinned teams, folders and documents
-- **Archive this account** (Including its owned documents): click the **ARCHIVE** button to delete the account of the user. You must then fill a popup with a reason for the archival.
-- **Report content (JSON)**, This feature is considered experimental: click **COPY TO CLIPBOARD** to gather informations about the user in the JSON format
+- Report timestamp: the time and date when the report was made
+- Public Signing Key: the public key of the user
+- First pin activity time: the time and date when the user registered their account
+- Last pin activity time: the last time the user modified their account, teams, folders or documents
+- Is currently online: if the user is currently online (*true* of *false*)
+- Plan name: if the user has a paid subscription, the type of plan subscribed
+- Plan note: a note left by an administrator if a plan is gifted to the user
+- Storage limit: the storage quota for the user
+- Data stored: the actual storage usage
+- Pin log is available: if the account is usable (*true* or *false*)
+- Pin log is archived: if the account is archived (*true* of *false*) 
+- Current pin list: click the **FETCH** button to generate the list of all pinned teams, folders and documents
+- Archive this account (Including its owned documents): click the **ARCHIVE** button to delete the account of the user.
+
+   - You must then fill a popup with a text field to register the reason for the archival.
+
+- Report content (JSON), This feature is considered experimental: click the **COPY TO CLIPBOARD** button to gather informations about the user in the JSON format
 
 .. note::
 
@@ -204,7 +207,30 @@ Enter a user's public key to fetch data about their account. Click the **GENERAT
 Document information
 ~~~~~~~~~~~~~~~~~~~~
 
-Query a document or file via its id or URL
+Query a document or file via its id or URL. Click the **GENERATE REPORT** button, when it's done, you can access the following information:
+
+- Report timestamp: the time and date when the report was made
+- Document identifier: the identifier code of the document
+- Document type: the type of the document (either *Document*, ) // FIXME
+- Document size:  the size of the document in megabyte
+- Current metadata: metadata of the document formatted in JSON  
+- Metadata history: click the **FETCH** button to show the history of the document 
+- Created: the time and date when the document was created
+- Last modified:  the time and date when the document was modified for the last time
+- Currently open: shows if the document is currenlty accessed by someone (*true* or *false*)
+- Available: shows if the document can be accessed (*true* or *false*)
+- Archived: tells you if the document has been archived or not (*true* or *false*)
+- Archive document: click the **ARCHIVE** button to delete the document.
+
+   - You must then fill a popup with a text field to register the reason for the archival.
+   - It makes a document unavailable without deleting it permanently.
+   - It will be placed in an archive directory and deleted after a few days (configurable in the server configuration file).
+
+- Report content (JSON), This feature is considered experimental: click the **COPY TO CLIPBOARD** button to gather informations about the document in the JSON format
+
+.. note::
+
+   Just like the **Archive this account** functionality, the **Archive document** one is used to moderate your CryptPad instance. Removing unwanted content, the kind not respecting your Terms of Service, breaking the laws where you operate your instance or simply when an owner ask for its removal.
 
 Login-block information
 ~~~~~~~~~~~~~~~~~~~~~~~
