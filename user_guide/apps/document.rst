@@ -5,7 +5,7 @@ Document
 
 The Document application in CryptPad is an integration of `OnlyOffice <https://www.onlyoffice.com/>`__. To read more about the details of this integration see :ref:`FAQ_OOintegration`
 
-.. image:: /images/app-documents-preview.png
+.. image:: /images/app-document-preview.png
    :class: screenshot
 
 Documentation
@@ -28,7 +28,7 @@ CryptPad integrates OnlyOffice documents into the same encrypted collaboration s
 Undo and collaboration modes
 ----------------------------
 
-.. image:: /images/app-documents-collab-mode.png
+.. image:: /images/app-document-collab-mode.png
    :class: screenshot
 
 OnlyOffice provides two collaborative editing modes in documents that affect how changes are synced between users and whether or not the **Undo** functionality is available.
@@ -52,7 +52,7 @@ To access the document history, use |file-o| **File** > |history| **History** in
 
 Due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration, history in documents works differently than :ref:`in the other applications <document_history>`.
 
-.. figure:: /images/history-toolbar-documents.png
+.. figure:: /images/history-toolbar-document.png
    :class: screenshot
 
    The document history toolbar
