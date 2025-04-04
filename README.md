@@ -1,9 +1,7 @@
 # CryptPad Documentation
 ## Installation 
 
-### UV
-
-To use [UV](https://docs.astral.sh/uv/#getting-started), install dependencies with 
+We use [UV](https://docs.astral.sh/uv/#getting-started) to maintain the development environment for the documentation. Install dependencies with 
 
 ```bash
 uv sync
@@ -25,7 +23,6 @@ uv export --format requirements-txt
 ```bash
 pip install -r requirements.txt
 ```
-
 
 ## Build
 English `en` is the default language.
