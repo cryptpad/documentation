@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Spreadsheet &mdash; CryptPad 2024.12.0 - dokumentacja</title>
+  <title>Arkusz &mdash; CryptPad 2025.3.0 - dokumentacja</title>
   
 
   
@@ -38,7 +38,7 @@
     <link rel="index" title="Indeks" href="../../genindex.html" />
     <link rel="search" title="Szukaj" href="../../search.html" />
     <link rel="next" title="Code / Markdown" href="code.html" />
-    <link rel="prev" title="Tekst Sformatowany" href="richtext.html" /> 
+    <link rel="prev" title="Presentation" href="presentation.html" /> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -58,7 +58,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2024.12.0</span>
+              <span class="release">Documentation 2025.3.0</span>
             </a>
             
 <div role="search">
@@ -235,7 +235,25 @@
 <li class="toctree-l4"><a class="reference internal" href="richtext.html#comments">Komentarze</a></li>
 </ul>
 </li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Spreadsheet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="document.html">Document</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="document.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="document.html#toolbars">Toolbars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="document.html#undo-and-collaboration-modes">Undo and collaboration modes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="document.html#history">History</a></li>
+<li class="toctree-l4"><a class="reference internal" href="document.html#printing">Printing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="document.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="presentation.html">Presentation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="presentation.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="presentation.html#toolbars">Toolbars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="presentation.html#undo-and-collaboration-modes">Undo and collaboration modes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="presentation.html#history">History</a></li>
+<li class="toctree-l4"><a class="reference internal" href="presentation.html#printing">Printing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="presentation.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Arkusz</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#documentation">Dokumentacja</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#toolbars">Paski narzędzi</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#undo-and-collaboration-modes">Undo and collaboration modes</a></li>
@@ -698,7 +716,7 @@
         
           <li><a href="../applications.html">Aplikacje</a> &raquo;</li>
         
-      <li>Spreadsheet</li>
+      <li>Arkusz</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -722,12 +740,12 @@
            <div itemprop="articleBody">
             
   <section id="spreadsheet">
-<span id="app-sheets"></span><h1>Spreadsheet<a class="headerlink" href="#spreadsheet" title="Permalink to this heading">¶</a></h1>
+<span id="app-sheets"></span><h1>Arkusz<a class="headerlink" href="#spreadsheet" title="Permalink to this heading">¶</a></h1>
 <p>Aplikacja Arkusz pakietu CryptPad wykorzystuje`OnlyOffice &lt;<a class="reference external" href="https://www.onlyoffice.com/">https://www.onlyoffice.com/</a>&gt;`__. Aby dowiedzieć się więcej o tej implementacji zobacz <a class="reference internal" href="../../FAQ.html#faq-oointegration"><span class="std std-ref">What is the relationship between CryptPad and OnlyOffice?</span></a></p>
 <img alt="../../_images/app-sheets-preview.png" class="screenshot" src="../../_images/app-sheets-preview.png" />
 <section id="documentation">
 <h2>Dokumentacja<a class="headerlink" href="#documentation" title="Permalink to this heading">¶</a></h2>
-<p>Please refer to the <a class="reference external" href="https://helpcenter.onlyoffice.com/en/ONLYOFFICE-Editors/ONLYOFFICE-Spreadsheet-Editor/index.aspx">OnlyOffice documentation</a> for a spreadsheet user-guide.</p>
+<p>Please refer to the <a class="reference external" href="https://helpcenter.onlyoffice.com/userguides/docs-se.aspx">OnlyOffice documentation</a> for a spreadsheet user-guide.</p>
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
 <p>Due to various security implications, <a class="reference external" href="https://helpcenter.onlyoffice.com/ONLYOFFICE-Editors/Editors-User-Guides/AllEditors/Plugin-manager.aspx">OnlyOffice plugins</a>, also <a class="reference external" href="https://api.onlyoffice.com/plugin/macros">macros</a>, aren't available on CryptPad.</p>
@@ -783,7 +801,7 @@
 <h2>Import/Eksport<a class="headerlink" href="#import-export" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
 <div class="line"><em class="fa fa-file-o"></em> <strong>Plik</strong> &gt; <em class="fa fa-upload"></em> <strong>Importuj</strong>.</div>
-<div class="line">Supported formats: pliki <code class="docutils literal notranslate"><span class="pre">.bin</span></code> exportowane przez tę aplikację, Excel <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code>.</div>
+<div class="line">Supported formats: <code class="docutils literal notranslate"><span class="pre">.bin</span></code> files exported by this application, Excel <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code>, <code class="docutils literal notranslate"><span class="pre">.ods</span></code>.</div>
 </div>
 <div class="line-block">
 <div class="line"><em class="fa fa-file-o"></em> <strong>Plik</strong> &gt; <em class="fa fa-download"></em> <strong>Eksportuj</strong>.</div>
@@ -803,7 +821,7 @@
         <a href="code.html" class="btn btn-neutral float-right" title="Code / Markdown" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="richtext.html" class="btn btn-neutral" title="Tekst Sformatowany" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="presentation.html" class="btn btn-neutral" title="Presentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
       
     </div>
   
@@ -812,7 +830,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2024, CryptPad Team.
+        &copy; Copyright 2025, CryptPad Team.
 
     </p>
   </div>
@@ -837,7 +855,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2024.12.0',
+            VERSION:'2025.3.0',
             LANGUAGE:'pl',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

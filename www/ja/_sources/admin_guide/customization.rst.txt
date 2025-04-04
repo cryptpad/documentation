@@ -50,7 +50,7 @@ Please restart your CryptPad instance after making these changes.
 Security Hardening
 ~~~~~~~~~~~~~~~~~~
 
-It is strongly recommended to set in ``www/common/application_config.js`` a randomly chosen string as a salt for the password hashing.
+It is strongly recommended to set in ``customize/application_config.js`` a randomly chosen string as a salt for the password hashing.
 This makes it such attackers who want to bruteforce common credentials must do so again on each CryptPad instance that they wish to attack.
 
 .. warning::

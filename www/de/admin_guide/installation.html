@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Installation &mdash; CryptPad 2024.12.0 Dokumentation</title>
+  <title>Installation &mdash; CryptPad 2025.3.0 Dokumentation</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2024.12.0</span>
+              <span class="release">Documentation 2025.3.0</span>
             </a>
             
 <div role="search">
@@ -233,6 +233,24 @@
 </li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/richtext.html#import-export">Import/Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/richtext.html#comments">Kommentare</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/document.html">Document</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/document.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/document.html#toolbars">Toolbars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/document.html#undo-and-collaboration-modes">Undo and collaboration modes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/document.html#history">History</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/document.html#printing">Printing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/document.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/presentation.html">Presentation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/presentation.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/presentation.html#toolbars">Toolbars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/presentation.html#undo-and-collaboration-modes">Undo and collaboration modes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/presentation.html#history">History</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/presentation.html#printing">Printing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/presentation.html#import-export">Import/Export</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/sheets.html">Tabellen</a><ul>
@@ -754,9 +772,9 @@
 <p>Before starting the installation, ensure the following software is installed:</p>
 <ul>
 <li><p>Git</p></li>
-<li><p>Nodejs with NPM included (we use the official NodeJs LTS release)</p>
+<li><p>Node.js with NPM included (we use the official NodeJs LTS release)</p>
 <ul class="simple">
-<li><p>Using <a class="reference external" href="https://github.com/nodesource/distributions#using-debian-as-root-4">nodesource</a> is recommended</p></li>
+<li><p>Using <a class="reference external" href="https://github.com/nodesource/distributions?tab=readme-ov-file#installation-instructions-deb">nodesource</a> is recommended</p></li>
 </ul>
 </li>
 <li><p>Docker engine (if using Docker, see <a class="reference internal" href="#admin-docker-install"><span class="std std-ref">Install with Docker</span></a>)</p>
@@ -778,7 +796,7 @@
 <p>The development team recommends creating a dedicated user to install and run CryptPad in production rather than using the root user.</p>
 </div>
 <p>Clone the CryptPad repository</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/cryptpad/cryptpad.git<span class="w"> </span>cryptpad
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span><span class="m">2025</span>.3.0<span class="w"> </span>--depth<span class="w"> </span><span class="m">1</span><span class="w"> </span>https://github.com/cryptpad/cryptpad.git<span class="w"> </span>cryptpad
 </pre></div>
 </div>
 <p>Move to the newly cloned repository</p>
@@ -786,7 +804,7 @@
 </pre></div>
 </div>
 <p>Switch to the latest published tag</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span><span class="m">2024</span>.12.0
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span><span class="m">2025</span>.3.0
 </pre></div>
 </div>
 <section id="dependencies">
@@ -1138,7 +1156,7 @@ server.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2024, CryptPad Team.
+        &copy; Copyright 2025, CryptPad Team.
 
     </p>
   </div>
@@ -1163,7 +1181,7 @@ server.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'2024.12.0',
+            VERSION:'2025.3.0',
             LANGUAGE:'de',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

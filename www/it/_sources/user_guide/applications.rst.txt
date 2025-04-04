@@ -8,6 +8,8 @@ This section starts with general concepts on creating and managing documents on 
 
     apps/general
     apps/richtext
+    apps/document
+    apps/presentation
     apps/sheets
     apps/code
     apps/slides

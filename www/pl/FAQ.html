@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Najczęściej Zadawane Pytania &mdash; CryptPad 2024.12.0 - dokumentacja</title>
+  <title>Najczęściej Zadawane Pytania &mdash; CryptPad 2025.3.0 - dokumentacja</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="index.html" class="icon icon-home">
               <img src="_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2024.12.0</span>
+              <span class="release">Documentation 2025.3.0</span>
             </a>
             
 <div role="search">
@@ -235,7 +235,25 @@
 <li class="toctree-l4"><a class="reference internal" href="user_guide/apps/richtext.html#comments">Komentarze</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="user_guide/apps/sheets.html">Spreadsheet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="user_guide/apps/document.html">Document</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/document.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/document.html#toolbars">Toolbars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/document.html#undo-and-collaboration-modes">Undo and collaboration modes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/document.html#history">History</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/document.html#printing">Printing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/document.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="user_guide/apps/presentation.html">Presentation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/presentation.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/presentation.html#toolbars">Toolbars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/presentation.html#undo-and-collaboration-modes">Undo and collaboration modes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/presentation.html#history">History</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/presentation.html#printing">Printing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/presentation.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="user_guide/apps/sheets.html">Arkusz</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/apps/sheets.html#documentation">Dokumentacja</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/apps/sheets.html#toolbars">Paski narzędzi</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/apps/sheets.html#undo-and-collaboration-modes">Undo and collaboration modes</a></li>
@@ -799,7 +817,7 @@
 <ol class="arabic simple">
 <li><p>Eksportuj dokument jako <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code> w <code class="docutils literal notranslate"><span class="pre">.ods</span></code> swoim obecnym programie.</p></li>
 <li><p>Save the file to your computer.</p></li>
-<li><p>Open a new <a class="reference internal" href="user_guide/apps/sheets.html#app-sheets"><span class="std std-ref">Spreadsheet</span></a> document (or an existing one to replace the contents).</p></li>
+<li><p>Open a new <a class="reference internal" href="user_guide/apps/sheets.html#app-sheets"><span class="std std-ref">Arkusz</span></a> document (or an existing one to replace the contents).</p></li>
 <li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> and select your file.</p></li>
 </ol>
 <p>Aby eksportować, wykorzystaj <em class="fa fa-file-o"></em> <strong>Plik</strong> &gt; <em class="fa fa-download"></em> <strong>Eksportuj</strong> i wybierz format:</p>
@@ -846,7 +864,7 @@
 </section>
 <section id="what-is-the-relationship-between-cryptpad-and-onlyoffice">
 <span id="faq-oointegration"></span><h2>What is the relationship between CryptPad and OnlyOffice?<a class="headerlink" href="#what-is-the-relationship-between-cryptpad-and-onlyoffice" title="Permalink to this heading">¶</a></h2>
-<p>The CryptPad <a class="reference internal" href="user_guide/apps/sheets.html#app-sheets"><span class="std std-ref">Spreadsheet</span></a> application is an integration of <a class="reference external" href="https://www.onlyoffice.com/en/spreadsheet-editor.aspx">OnlyOffice Spreadsheets</a>. However, this only concerns the client-side code, CryptPad does not make use of the OnlyOffice Document Server. CryptPad's encrypted collaboration, used for spreadsheets and other applications, is completely different from the encryption system used in parts of upstream OnlyOffice. Some of CryptPad's file format conversion tools are based on OnlyOffice code, but substantial work has been done to make it run in the browser rather than on the server, therefore avoiding the need to reveal the contents of users' documents when converting.</p>
+<p>The CryptPad <a class="reference internal" href="user_guide/apps/sheets.html#app-sheets"><span class="std std-ref">Arkusz</span></a> application is an integration of <a class="reference external" href="https://www.onlyoffice.com/en/spreadsheet-editor.aspx">OnlyOffice Spreadsheets</a>. However, this only concerns the client-side code, CryptPad does not make use of the OnlyOffice Document Server. CryptPad's encrypted collaboration, used for spreadsheets and other applications, is completely different from the encryption system used in parts of upstream OnlyOffice. Some of CryptPad's file format conversion tools are based on OnlyOffice code, but substantial work has been done to make it run in the browser rather than on the server, therefore avoiding the need to reveal the contents of users' documents when converting.</p>
 </section>
 <section id="how-secure-is-cryptpad">
 <h2>How Secure is CryptPad?<a class="headerlink" href="#how-secure-is-cryptpad" title="Permalink to this heading">¶</a></h2>
@@ -902,7 +920,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2024, CryptPad Team.
+        &copy; Copyright 2025, CryptPad Team.
 
     </p>
   </div>
@@ -927,7 +945,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'2024.12.0',
+            VERSION:'2025.3.0',
             LANGUAGE:'pl',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

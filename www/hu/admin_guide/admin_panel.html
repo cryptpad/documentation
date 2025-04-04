@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Administration panel &mdash; CryptPad 2024.12.0 dokumentáció</title>
+  <title>Administration panel &mdash; CryptPad 2025.3.0 dokumentáció</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2024.12.0</span>
+              <span class="release">Documentation 2025.3.0</span>
             </a>
             
 <div role="search">
@@ -233,6 +233,24 @@
 </li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/richtext.html#import-export">Import/Export</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/richtext.html#comments">Comments</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/document.html">Document</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/document.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/document.html#toolbars">Toolbars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/document.html#undo-and-collaboration-modes">Undo and collaboration modes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/document.html#history">History</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/document.html#printing">Printing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/document.html#import-export">Import/Export</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/presentation.html">Presentation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/presentation.html#documentation">Documentation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/presentation.html#toolbars">Toolbars</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/presentation.html#undo-and-collaboration-modes">Undo and collaboration modes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/presentation.html#history">History</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/presentation.html#printing">Printing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/presentation.html#import-export">Import/Export</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/sheets.html">Spreadsheet</a><ul>
@@ -860,11 +878,64 @@
 <p>This section is dedicated for the database management. You will find moderation tools and specific information about the accounts registered.</p>
 <section id="account-information">
 <h3>Account information<a class="headerlink" href="#account-information" title="Permalink to this heading">¶</a></h3>
-<p>Enter a user's public key to fetch data about their account.</p>
+<p>Enter a user's public key to fetch data about their account. Click the <strong>GENERATE REPORT</strong> button, when it's done, you can access the following information:</p>
+<ul>
+<li><p>Report timestamp: the time and date when the report was made</p></li>
+<li><p>Public Signing Key: the public key of the user</p></li>
+<li><p>First pin activity time: the time and date when the user registered their account</p></li>
+<li><p>Last pin activity time: the last time the user modified their account, teams, folders or documents</p></li>
+<li><p>Is currently online: if the user is currently online (<em>true</em> of <em>false</em>)</p></li>
+<li><p>Plan name: if the user has a paid subscription, the type of plan subscribed</p></li>
+<li><p>Plan note: a note left by an administrator if a plan is gifted to the user</p></li>
+<li><p>Storage limit: the storage quota for the user</p></li>
+<li><p>Data stored: the actual storage usage</p></li>
+<li><p>Pin log is available: if the account is usable (<em>true</em> or <em>false</em>)</p></li>
+<li><p>Pin log is archived: if the account is archived (<em>true</em> of <em>false</em>)</p></li>
+<li><p>Current pin list: click the <strong>FETCH</strong> button to generate the list of all pinned teams, folders and documents</p></li>
+<li><p>Archive this account (Including its owned documents): click the <strong>ARCHIVE</strong> button to delete the account of the user.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>You must then fill a popup with a text field to register the reason for the archival.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Report content (JSON), This feature is considered experimental: click the <strong>COPY TO CLIPBOARD</strong> button to gather informations about the user in the JSON format</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Megjegyzés</p>
+<p>The <strong>Archive this account</strong> functionality is how you can moderate your CryptPad instance. Removing unwanted accounts, those not respecting your Terms of Service, breaking the laws where you operate your instance or simply when an user ask for their account removal.</p>
+</div>
 </section>
 <section id="document-information">
 <h3>Document information<a class="headerlink" href="#document-information" title="Permalink to this heading">¶</a></h3>
-<p>Query a document or file via its id or URL</p>
+<p>Query a document or file via its id or URL. Click the <strong>GENERATE REPORT</strong> button, when it's done, you can access the following information:</p>
+<ul>
+<li><p>Report timestamp: the time and date when the report was made</p></li>
+<li><p>Document identifier: the identifier code of the document</p></li>
+<li><p>Document type: either <em>Document</em> for a realtime document or <em>File</em> for a static file (image, audio, PDF file, etc)</p></li>
+<li><p>Document size:  the size of the document in megabyte</p></li>
+<li><p>Current metadata: metadata of the document formatted in JSON</p></li>
+<li><p>Metadata history: click the <strong>FETCH</strong> button to show the history of the document</p></li>
+<li><p>Created: the time and date when the document was created</p></li>
+<li><p>Last modified:  the time and date when the document was modified for the last time</p></li>
+<li><p>Currently open: shows if the document is currenlty accessed by someone (<em>true</em> or <em>false</em>)</p></li>
+<li><p>Available: shows if the document can be accessed (<em>true</em> or <em>false</em>)</p></li>
+<li><p>Archived: tells you if the document has been archived or not (<em>true</em> or <em>false</em>)</p></li>
+<li><p>Archive document: click the <strong>ARCHIVE</strong> button to delete the document.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>You must then fill a popup with a text field to register the reason for the archival.</p></li>
+<li><p>It makes a document unavailable without deleting it permanently.</p></li>
+<li><p>It will be placed in an archive directory and deleted after a few days (configurable in the server configuration file).</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Report content (JSON), This feature is considered experimental: click the <strong>COPY TO CLIPBOARD</strong> button to gather informations about the document in the JSON format</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Megjegyzés</p>
+<p>Just like the <strong>Archive this account</strong> functionality, the <strong>Archive document</strong> one is used to moderate your CryptPad instance. Removing unwanted content, the kind not respecting your Terms of Service, breaking the laws where you operate your instance or simply when an owner ask for its removal.</p>
+</div>
 </section>
 <section id="login-block-information">
 <h3>Login-block information<a class="headerlink" href="#login-block-information" title="Permalink to this heading">¶</a></h3>
@@ -992,7 +1063,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2024, CryptPad Team.
+        &copy; Copyright 2025, CryptPad Team.
 
     </p>
   </div>
@@ -1017,7 +1088,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'2024.12.0',
+            VERSION:'2025.3.0',
             LANGUAGE:'hu',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
