@@ -13,6 +13,16 @@ Activate the environment with
 source ./.venv/bin/activate
 ```
 
+Keep `requirements.txt` up to date with the UV venv by running
+
+```bash
+uv export --format requirements-txt
+```
+
+### Pip
+```bash
+pip install -r requirements.txt
+```
 
 ## Build
 English `en` is the default language.

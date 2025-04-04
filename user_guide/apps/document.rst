@@ -1,17 +1,17 @@
-.. _app_sheets:
+.. _app_documents:
 
-Spreadsheet
-===========
+Document
+========
 
-The Spreadsheet application in CryptPad is an integration of `OnlyOffice <https://www.onlyoffice.com/>`__. To read more about the details of this integration see :ref:`FAQ_OOintegration`
+The Document application in CryptPad is an integration of `OnlyOffice <https://www.onlyoffice.com/>`__. To read more about the details of this integration see :ref:`FAQ_OOintegration`
 
-.. image:: /images/app-sheets-preview.png
+.. image:: /images/app-documents-preview.png
    :class: screenshot
 
 Documentation
 -------------
 
-Please refer to the `OnlyOffice documentation <https://helpcenter.onlyoffice.com/userguides/docs-se.aspx>`__ for a spreadsheet user-guide.
+Please refer to the `OnlyOffice documentation <https://helpcenter.onlyoffice.com/userguides/docs-de.aspx>`__ for a document user-guide.
 
 .. note::
    
@@ -20,18 +20,18 @@ Please refer to the `OnlyOffice documentation <https://helpcenter.onlyoffice.com
 Toolbars
 --------
 
-CryptPad integrates OnlyOffice spreadsheets into the same encrypted collaboration system as the other applications. Additionally OnlyOffice provides a wide range of functions in a tabbed toolbar. This results in a double toolbar that can cause confusion:
+CryptPad integrates OnlyOffice documents into the same encrypted collaboration system as the other applications. Additionally OnlyOffice provides a wide range of functions in a tabbed toolbar. This results in a double toolbar that can cause confusion:
 
 - The topmost **CryptPad toolbar** is used for |file-o| **File** operations (including import/export, history, properties, etc) as well as |share-alt| **Share** and |unlock-alt| **Access**.
-- The **OnlyOffice toolbar** is used for all functionality within the spreadsheet document itself, as well as the collaboration modes explained in the next section.
+- The **OnlyOffice toolbar** is used for all functionality within the document itself, as well as the collaboration modes explained in the next section.
 
 Undo and collaboration modes
 ----------------------------
 
-.. image:: /images/app-sheets-collab-mode.png
+.. image:: /images/app-documents-collab-mode.png
    :class: screenshot
 
-OnlyOffice provides two collaborative editing modes in spreadsheets that affect how changes are synced between users and whether or not the **Undo** functionality is available.
+OnlyOffice provides two collaborative editing modes in documents that affect how changes are synced between users and whether or not the **Undo** functionality is available.
 
 - **Fast Mode** is enabled by default. New edits by all users are automatically synced with others as they are made. In this mode it is not possible to undo.
 - **Strict Mode** allows each user to make changes independently. The modified cells are "locked" for others until the author manually saves their changes. New edits are only synced with other users after being saved. In this mode it is possible to undo changes that have not yet been saved. When a user saves their changes, others are prompted to save in order to receive the latest edits.
@@ -43,21 +43,21 @@ To switch back to **Fast mode** use the **Collaboration** tab in the OnlyOffice 
 .. note::
    CryptPad remembers your choice of editing mode on each device for all documents.
 
-.. _sheets_history:
+.. _documents_history:
 
 History
 -------
 
-To access the spreadsheet history, use |file-o| **File** > |history| **History** in the CryptPad toolbar.
+To access the document history, use |file-o| **File** > |history| **History** in the CryptPad toolbar.
 
-Due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration, history in speadsheets works differently than :ref:`in the other applications <document_history>`.
+Due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration, history in documents works differently than :ref:`in the other applications <document_history>`.
 
-.. figure:: /images/history-toolbar-sheets.png
+.. figure:: /images/history-toolbar-documents.png
    :class: screenshot
 
-   The spreadsheet history toolbar
+   The document history toolbar
 
-History in spreadsheets only allows to jump back to the previous version, and then move forward through individual edits.
+History in documents only allows to jump back to the previous version, and then move forward through individual edits.
 
 - |fast-backward| previous version
 - |step-forward| step forward one edit
@@ -65,12 +65,12 @@ History in spreadsheets only allows to jump back to the previous version, and th
 
 The functionality to restore and share a version, as well as everything relating to :ref:`snapshots`, works in the same way as in :ref:`the other applications <document_history>`.
 
-.. _sheets_printing:
+.. _documents_printing:
 
 Printing
 --------
 
-To print spreadsheets it is recommended to export using one of the formats below and to handle page layout with a desktop application such as LibreOffice Calc.
+To print documents it is recommended to export using one of the formats below and to handle page layout with a desktop application such as LibreOffice Writer.
 
 Alternatively the ``.pdf`` export can be used to produce file for print, results may vary depending on the layout of the document.
 
@@ -78,9 +78,9 @@ Import/Export
 -------------
 
 | |file-o| **File** > |upload| **Import**.
-| Supported formats: ``.bin`` files exported by this application, Excel ``.xlsx``, ``.ods``.
+| Supported formats: ``.bin`` files exported by this application, Word ``.docx``, ``.odt``.
 
 | |file-o| **File** > |download| **Export**.
-| Supported formats: ``.bin``, Excel ``.xlsx``, ``.ods``, ``.pdf``.
+| Supported formats: ``.bin``, Word ``.docx``, ``.odt``, ``.pdf``.
 
 .. .csv removed from the supported export formats as it's broken and deactivated
