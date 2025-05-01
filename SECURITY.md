@@ -7,7 +7,7 @@ We don't do releases of the CryptPad Documentation, deployments are directly han
 In case of issue we'd likely communicate about it on:
 - [Our blog](https://blog.cryptpad.org)
 - [Our Matrix public space](https://matrix.to/#/#cryptpad:matrix.xwiki.com)
-- [Our Mastodon account](https://fosstodon.org/@cryptpad)
+- [Our Mastodon account](https://social.xwiki.com/@CryptPad)
 
 ## Reporting a Vulnerability
 
