@@ -1,0 +1,200 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, CryptPad Team
+# This file is distributed under the same license as the CryptPad package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CryptPad \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-10 12:15+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ka\n"
+"Language-Team: ka <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../dev_guide/client/inner.rst:2
+msgid "Inner"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:4
+msgid ""
+"The inner level corresponds to the entire visible interface of CryptPad. "
+"It represents an iframe that is completely isolated from the content of "
+"the user's account. Each CryptPad application has its own interface, but "
+"many elements are common to all applications, with functionality "
+"remaining the same in the majority of cases. Only the way the data is "
+"displayed changes completely."
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:7
+msgid "Workflow"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:9
+msgid ""
+"The JavaScript starting point of the \"inner\" level corresponds to the "
+"``inner.js`` file of each application. This file loads all the necessary "
+"elements for the iframe to work and manages the data representation in "
+"the selected application. Whether the application uses the \"framework\" "
+"system or not, the overall operation remains the same: the sframe-common "
+"module loads the communication system with \"outer\" and initializes "
+"different elements."
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:12
+msgid "metadata-manager"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:14
+msgid "``www/common/metadata-manager.js``"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:16
+msgid ""
+"This module allows the levels outside the iframe (worker and outer) to "
+"provide data to the iframe. These data are divided into 2 categories: "
+"\"user\" data contain every public elements concerning the current user "
+"account and \"priv\" data contain elements that are private or that are "
+"not sent to other users."
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:18
+msgid ""
+"This module also uses data coming from the \"inner\" level, and in "
+"particular from the current collaborative document (when applicable). It "
+"can thus provide 3 types of content to any \"inner\" module requesting "
+"it:"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:20
+msgid ""
+"the collaborative document \"metadata\" that are stored in the document "
+"itself"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:22
+msgid "the title and name of the application"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:23
+msgid ""
+"the user list with public data of editors (name, avatar, profile, public "
+"keys, mailbox, etc.)"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:25
+msgid "the \"private\" data coming from the outside levels"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:27
+msgid "the \"unsafe\" origin used in \"outer\" and the name of the application"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:28
+msgid ""
+"the type of hash for collaborative documents: edition or read-only, "
+"presentation mode, embed mode, etc."
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:29
+msgid "data about the document itself"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:31
+msgid "the \"user\" data that represents the current user"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:34
+msgid "UI modules"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:37
+msgid "common-interface"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:39
+msgid "``www/common/common-interface.js``"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:41
+msgid ""
+"This module allows you to create reusable empty interface elements. The "
+"most used are :"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:43
+msgid ""
+"``UI.alert``, ``UI.confirm``, ``UI.prompt``: creates a dialog box similar"
+" to the native ``alert``, ``confirm`` and ``prompt`` but using the "
+"CryptPad style and not blocking the thread when it is open."
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:44
+msgid ""
+"``UI.log``: creates a small notification in the bottom-left corner that "
+"disappears automatically after a few seconds"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:45
+msgid ""
+"``UI.confirmButton``: adds a confirmation step \"Are you sure?\" on the "
+"button provided"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:46
+msgid ""
+"``UI.(add|remove|error)LoadingScreen``: add, remove or modify a loading "
+"screen"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:47
+msgid "Many tools to create custom windows using the CryptPad styles"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:50
+msgid "common-ui-elements"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:52
+msgid "``www/common/common-ui-elements.js``"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:54
+msgid ""
+"This module provides tools to display elements with pre-existing content,"
+" sometimes retrieved directly from outside the iframe:"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:56
+msgid "Display the pad creation screen"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:57
+msgid "Create action buttons for the toolbar with the appropriate style"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:58
+msgid "Create a Markdown toolbar (for code, slide, poll and profile applications)"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:59
+msgid ""
+"Create a \"|question| Help / Getting started...\" menu for the current "
+"application"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:60
+msgid "Create a drop-down menu to change the interface language"
+msgstr ""
+
+#: ../../dev_guide/client/inner.rst:61
+msgid "Many other tools ..."
+msgstr ""
+

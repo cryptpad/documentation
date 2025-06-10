@@ -1,0 +1,828 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, CryptPad Team
+# This file is distributed under the same license as the CryptPad package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CryptPad \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-10 12:15+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ka\n"
+"Language-Team: ka <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../admin_guide/admin_panel.rst:4
+msgid "Administration panel"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:6
+msgid ""
+"A number of monitoring and configuration options are available through "
+"the admin panel to administer your instance without needing to open "
+"config files on the server."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:8
+msgid ""
+"The admin panel is available to administrator users (see "
+":ref:`admin_adminusers`)."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:10
+msgid "**User Menu** (avatar at the top right) > |gears| **Administration**"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:11
+msgid "or go to https://your-instance.com/admin/"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:13
+msgid ""
+"This page repeats the comments present on the admin panels and adds a few"
+" clarifications."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:18
+msgid "General"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:22
+msgid ""
+"The following fields are used to describe the instance in the :ref:`list "
+"of public instances <admin_list_public>` and is shown on your instance "
+"front page."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:25
+msgid "Instance name"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:27
+msgid "The name displayed for this instance"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:30
+msgid "Instance description"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:32
+msgid "The descriptive text displayed for this instance"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:37
+msgid "Admin contact email"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:39
+msgid "This email address is displayed on the instance contact page."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:41
+msgid ""
+"This email may be used by the development team, only if "
+":ref:`admin_consent_contact` is given, to warn of security "
+"vulnerabilities or in other cases for example matters affecting public "
+"facing instances listed in `the directory "
+"<https://cryptpad.org/instances/>`_."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:44
+msgid "Hosting location"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:46
+msgid "The country where this instance's encrypted data is hosted."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:49
+msgid "Flush HTTP Cache"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:51
+msgid ""
+"Force users to download the latest client-side assets (only if your "
+"server is in fresh mode)."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:53
+msgid "This includes some configuration changes distributed via ``/api/config``."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:56
+msgid "Customize"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:59
+msgid "Upload Logo"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:61
+msgid ""
+"Browse local files on your computer to upload a logo for your CryptPad "
+"instance. Maximum size is 200KB. File formats supported are:"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:63
+msgid "SVG"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:64
+msgid "PNG"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:65
+msgid "JPG"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:67
+msgid ""
+"Click **RESTORE DEFAULT** button to restore the official CryptPad logo "
+"instead of the customized one."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:70
+msgid "Accent color"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:72
+msgid ""
+"Change the accent color of your CryptPad instance. Please ensure text and"
+" buttons are readable with sufficient contrast in both light and dark "
+"themes."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:74
+msgid ""
+"Use the color picker to select the color you want then click the **CHANGE"
+" COLOR** button. You can **RESTORE DEFAULT** with the red button."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:76
+msgid ""
+"You can see the preview of the color selected with a link and the two "
+"kind of buttons in CryptPad."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:79
+msgid "Broadcast"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:81
+msgid ""
+"This section offers different ways of sending notifications to all users "
+"on the instance."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:84
+msgid "Homepage notice"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:86
+msgid "An optional message to display on the home page."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:89
+msgid "Maintenance"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:91
+msgid ""
+"Plan a maintenance on this instance and notify all users. Limited to one "
+"active maintenance at a given time."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:94
+msgid "Survey"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:96
+msgid ""
+"Add, update or remove a link to an external survey. Users will receive a "
+"notification and the survey will remain available from the user menu."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:99
+msgid "Broadcast Message"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:101
+msgid ""
+"Send a message to all users on this instance. All existing and new users "
+"will receive it as a notification. Preview messages before sending them "
+"with \"Preview notification\". Preview notifications have a red icon and "
+"are visible only to you."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:104
+msgid "Security"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:107
+msgid "Enable remote embedding"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:109
+msgid ""
+"Allow documents and media from this instance to be embedded on other "
+"websites. This will add an \"Embed\" option to the Share menu. For "
+"security reasons applications that use OnlyOffice (Sheets, Document, "
+"Presentation) cannot be embedded even if this setting is active."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:111
+msgid ""
+"Please note that by enabling this settings, you will need to adapt your "
+"Nginx configuration file, adding ``vector:`` to pass :ref:`diagnostic "
+"tests <admin_checkup>`."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:114
+msgid "Mandatory Two-Factor Authentication"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:116
+msgid ""
+"Tick the box so all users on this instance will be asked to set up two-"
+"factor authentication to log in to their account."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:119
+msgid "Applications"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:122
+msgid "Instance applications"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:124
+msgid ""
+"Choose which apps to enable on this instance. Enable or disable the ones "
+"you want and hit the **SAVE** button."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:127 ../../admin_guide/admin_panel.rst:142
+msgid "User Directory"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:132
+msgid "Close registration"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:134
+msgid "Do not allow any new users to register."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:137
+msgid "Invitation Links"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:139
+msgid ""
+"Invitation links create one account each, even if registration is closed."
+" User name and email are for your identification purposes only. CryptPad "
+"will not email the invitation link (or anything else), please copy the "
+"link and send it using the secure channel of your choice."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:144
+msgid ""
+"List of known accounts on this instance. Select options to add invited "
+"accounts automatically, or enter information manually using the form."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:146
+msgid "You can toggle the two following options (enabled by default):"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:148
+msgid "Automatically store invited users"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:149
+msgid "Automatically store SSO users"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:152
+msgid "User Storage"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:154
+msgid "This section is for managing storage limits on the instance."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:158
+msgid ""
+"The values set in the admin panel override the defaults or modifications "
+"made to the configuration files."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:161
+msgid "Storage Limit"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:163
+msgid ""
+"Maximum storage limit for CryptDrives (users and teams) when no custom "
+"rule is applied."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:166
+msgid "Apply a custom limit"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:168
+msgid ""
+"Set custom limits for users by using their public key. You can update or "
+"remove an existing limit."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:171
+msgid "Custom limits"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:173
+msgid "List all the custom storage limits applied to your instance."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:176
+msgid "Database"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:178
+msgid ""
+"This section is dedicated for the database management. You will find "
+"moderation tools and specific information about the accounts registered."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:181
+msgid "Account information"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:183
+msgid ""
+"Enter a user's public key to fetch data about their account. Click the "
+"**GENERATE REPORT** button, when it's done, you can access the following "
+"information:"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:185 ../../admin_guide/admin_panel.rst:212
+msgid "Report timestamp: the time and date when the report was made"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:186
+msgid "Public Signing Key: the public key of the user"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:187
+msgid ""
+"First pin activity time: the time and date when the user registered their"
+" account"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:188
+msgid ""
+"Last pin activity time: the last time the user modified their account, "
+"teams, folders or documents"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:189
+msgid "Is currently online: if the user is currently online (*true* of *false*)"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:190
+msgid ""
+"Plan name: if the user has a paid subscription, the type of plan "
+"subscribed"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:191
+msgid "Plan note: a note left by an administrator if a plan is gifted to the user"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:192
+msgid "Storage limit: the storage quota for the user"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:193
+msgid "Data stored: the actual storage usage"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:194
+msgid "Pin log is available: if the account is usable (*true* or *false*)"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:195
+msgid "Pin log is archived: if the account is archived (*true* of *false*)"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:196
+msgid ""
+"Current pin list: click the **FETCH** button to generate the list of all "
+"pinned teams, folders and documents"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:197
+msgid ""
+"Archive this account (Including its owned documents): click the "
+"**ARCHIVE** button to delete the account of the user."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:199 ../../admin_guide/admin_panel.rst:225
+msgid ""
+"You must then fill a popup with a text field to register the reason for "
+"the archival."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:201
+msgid ""
+"Report content (JSON), This feature is considered experimental: click the"
+" **COPY TO CLIPBOARD** button to gather informations about the user in "
+"the JSON format"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:205
+msgid ""
+"The **Archive this account** functionality is how you can moderate your "
+"CryptPad instance. Removing unwanted accounts, those not respecting your "
+"Terms of Service, breaking the laws where you operate your instance or "
+"simply when an user ask for their account removal."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:208
+msgid "Document information"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:210
+msgid ""
+"Query a document or file via its id or URL. Click the **GENERATE REPORT**"
+" button, when it's done, you can access the following information:"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:213
+msgid "Document identifier: the identifier code of the document"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:214
+msgid ""
+"Document type: either *Document* for a realtime document or *File* for a "
+"static file (image, audio, PDF file, etc)"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:215
+msgid "Document size:  the size of the document in megabyte"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:216
+msgid "Current metadata: metadata of the document formatted in JSON"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:217
+msgid ""
+"Metadata history: click the **FETCH** button to show the history of the "
+"document"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:218
+msgid "Created: the time and date when the document was created"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:219
+msgid ""
+"Last modified:  the time and date when the document was modified for the "
+"last time"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:220
+msgid ""
+"Currently open: shows if the document is currenlty accessed by someone "
+"(*true* or *false*)"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:221
+msgid "Available: shows if the document can be accessed (*true* or *false*)"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:222
+msgid ""
+"Archived: tells you if the document has been archived or not (*true* or "
+"*false*)"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:223
+msgid "Archive document: click the **ARCHIVE** button to delete the document."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:226
+msgid "It makes a document unavailable without deleting it permanently."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:227
+msgid ""
+"It will be placed in an archive directory and deleted after a few days "
+"(configurable in the server configuration file)."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:229
+msgid ""
+"Report content (JSON), This feature is considered experimental: click the"
+" **COPY TO CLIPBOARD** button to gather informations about the document "
+"in the JSON format"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:233
+msgid ""
+"Just like the **Archive this account** functionality, the **Archive "
+"document** one is used to moderate your CryptPad instance. Removing "
+"unwanted content, the kind not respecting your Terms of Service, breaking"
+" the laws where you operate your instance or simply when an owner ask for"
+" its removal."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:236
+msgid "Login-block information"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:238
+msgid ""
+"The login block is what allows an account to log in to CryptPad with the "
+"combination of username + password"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:241
+msgid "2FA Recovery"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:243
+msgid ""
+"Users can copy recovery data on the 2FA recovery page https://your-"
+"instance.com/recovery/ in the \"*Forgot recovery code*\" section and "
+"email it to the instance administrators. Paste recovery data below to "
+"disable 2FA for an account"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:246
+msgid "Support"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:249
+msgid "Initialize support"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:251
+msgid "Create or update the support keys."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:254
+msgid "Manage support team"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:256
+msgid "Add and remove people from the instance support team."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:259
+msgid "Statistics"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:261
+msgid "Launch time: Date and time at which the server was launched"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:262
+msgid ""
+"Active connections: Number of active websocket connections (and unique IP"
+" addresses connected)"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:263
+msgid ""
+"Active documents: Number of unique documents currently being viewed or "
+"edited"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:264
+msgid "Open Files: Number of file descriptors currently open on the server"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:265
+msgid "Registered users: Number of users registered on your instance"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:266
+msgid "Disk usage: Amount of storage space consumed by various CryptPad resources"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:270
+msgid ""
+"The disk usage report can be very resource intensive to run on large "
+"instances."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:273 ../../admin_guide/admin_panel.rst:278
+msgid "Performance"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:275
+msgid ""
+"This section is dedicated to available measurments for checking resources"
+" consumption."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:280
+msgid "An overview of the total time spent executing various server-side commands"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:283
+msgid "Measure disk performance"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:285
+msgid ""
+"If enabled, a JSON API endpoint will be exposed under /api/profiling. "
+"This keeps a running measurement of disk I/O within the time window set "
+"below. This setting can impact server performance and may reveal "
+"sensitive data. It is recommended that you leave this setting disabled "
+"unless you know what you are doing."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:288
+msgid "Disk performance measurement window"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:290
+msgid ""
+"If you have enabled disk performance measurements then the duration of "
+"the window can be configured below."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:293
+msgid "Network"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:298
+msgid "Validate instance configuration"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:300
+msgid ""
+"CryptPad includes a page which automatically diagnoses common "
+"configuration issues and suggests how to correct them if necessary. To "
+"visit the page use the **Run Diagnostics** button or visit "
+"``https://your.instance/checkup/``."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:302
+msgid ""
+"The rest of this section includes options about how you and your instance"
+" communicate, or not, with the CryptPad development team."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:307
+msgid "Server telemetry"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:309
+msgid ""
+"**Opt-out** of daily messages sent from the instance to the development "
+"team's server. The purpose of these messages is to count how many third-"
+"party instances of CryptPad are in operation and which version of the "
+"software they are running. The full content of the messages can be "
+"reviewed in CryptPad's server logs."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:312
+msgid "Statistical aggregation"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:314
+msgid ""
+"You may opt-in to providing additional usage metrics to the developers, "
+"such as the approximate number of registered and daily users for your "
+"instance."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:319
+msgid "List my instance in public directories"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:321
+msgid ""
+"**Opt-in** to have the instance included in the `list of public instances"
+" <https://cryptpad.org/instances/>`_ on `the CryptPad project site "
+"<https://cryptpad.org>`_ if it is intended for public use. We add public "
+"instances to our `uptime monitoring <https://uptime.cryptpad.org/status"
+"/public-instances>`_ and encourage administrators to follow updates."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:323
+msgid ""
+"In addition to this setting being enabled, the following criteria are "
+"required in order to have an instance listed:"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:325
+msgid "All :ref:`diagnostic tests <admin_checkup>` must pass"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:326
+msgid ""
+"Must not use a domain such as cryptpad.TLD as they imply a relationship "
+"with the development team and copyright holder (XWiki SAS), please use a "
+"subdomain instead"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:327
+msgid ""
+"The version of CryptPad must be up to date within 90 days of `the latest "
+"release <https://github.com/cryptpad/cryptpad/releases>`_"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:328
+msgid ""
+"Instance information must be provided in the :ref:`General tab "
+"<admin_instance_info>`"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:329
+msgid ":ref:`admin_telemetry_optout` must be enabled"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:330
+msgid "Absence of analytics and third-party trackers"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:331
+msgid "Reasonable uptime, ±99% average availability on the previous 30 days"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:332
+msgid "A working backup strategy is in place and has been tested"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:333
+msgid "At least one other person must have access to the infrastructure"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:334
+msgid ""
+"Commitment to give users at least 6 months of advance warning in case of "
+"shutting down"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:338
+msgid ""
+"The `list of public instances <https://cryptpad.org/instances/>`_ is "
+"considered an extension of the CryptPad community. As such, the "
+"development team reserves the right to remove instances from the list if "
+"their administrators or the groups they represent are in breach of the "
+"`Code of Conduct "
+"<https://github.com/cryptpad/cryptpad/blob/main/CODE_OF_CONDUCT.md>`_ or "
+"for any other reason at their own discretion."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:343
+msgid "Consent to contact"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:345
+msgid ""
+"**Opt-in** to allow the development team to contact the "
+":ref:`admin_email` with notifications of serious problems with the "
+"software or the instance  configuration. Administrator emails are never "
+"shared, sold, or used for marketing purposes."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:348
+msgid "Crowdfunding participation"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:350
+msgid ""
+"**Opt-out** of advertizing CryptPad's crowdfunding campaign on the "
+"instance."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:353
+msgid "Instance purpose"
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:355
+msgid ""
+"Indicate the purpose of the instance, this is used to inform the "
+"development roadmap."
+msgstr ""
+
+#: ../../admin_guide/admin_panel.rst:358
+msgid ""
+"Instance purpose is only sent to the development team if "
+":ref:`admin_telemetry_optout` is enabled"
+msgstr ""
+
