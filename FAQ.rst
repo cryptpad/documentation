@@ -147,7 +147,7 @@ The way encryption is currently used in CryptPad does not allow syncing with the
 What is the relationship between CryptPad and OnlyOffice?
 ---------------------------------------------------------
 
-The CryptPad :ref:`app_sheets` application is an integration of `OnlyOffice Spreadsheets <https://www.onlyoffice.com/en/spreadsheet-editor.aspx>`_. However, this only concerns the client-side code, CryptPad does not make use of the OnlyOffice Document Server. CryptPad's encrypted collaboration, used for spreadsheets and other applications, is completely different from the encryption system used in parts of upstream OnlyOffice. Some of CryptPad's file format conversion tools are based on OnlyOffice code, but substantial work has been done to make it run in the browser rather than on the server, therefore avoiding the need to reveal the contents of users' documents when converting.
+The CryptPad :ref:`app_document`, :ref:`app_presentation` & :ref:`app_sheets` applications are an `OnlyOffice Docs <https://www.onlyoffice.com/en/office-suite.aspx>`_integration. However, this only concerns the client-side code, CryptPad does not make use of the OnlyOffice Document Server. CryptPad's encrypted collaboration, used for document, presentantion & spreadsheets and other applications, is completely different from the encryption system used in parts of upstream OnlyOffice. Some of CryptPad's file format conversion tools are based on OnlyOffice code, but substantial work has been done to make it run in the browser rather than on the server, therefore avoiding the need to reveal the contents of users' documents when converting.
 
 How Secure is CryptPad?
 -----------------------
