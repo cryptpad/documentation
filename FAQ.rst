@@ -92,7 +92,7 @@ To import documents, the supported format are Microsoft Word ``.docx`` and OpenD
 To export, use |file-o| **File** > |download| **Export** and choose a format:
 
 - To use in Microsoft Word or Google Docs, select ``.docx``.
-- To use in LibreOffice Word, select ``.odt``.
+- To use in LibreOffice Writer, select ``.odt``.
 - For cases where no further editing of the data is required after export (letters, reports, etc), select ``.pdf``.
 - For backup purposes or to share with a user on another CryptPad instance, select ``.bin``.
 
