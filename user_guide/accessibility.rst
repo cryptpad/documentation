@@ -30,20 +30,20 @@ While CryptPad strives to make all aspects of its platform fully accessible, the
 
 CryptPad integrates with the following third-party apps:
 
-- `CodeMirror <https://codemirror.net/>`_.
-- `Drawio <https://www.drawio.com/doc/>`_.
-- `CKEditor4 <https://ckeditor.com/docs/ckeditor4/latest/guide/dev_a11y.html>`_.
-- `OnlyOffice <https://helpcenter.onlyoffice.com/ONLYOFFICE-Editors/Editors-User-Guides/AllEditors/Accessibility.aspx>`_.
+- `CodeMirror <https://codemirror.net/>`_
+- `Drawio <https://www.drawio.com/doc/>`_
+- `CKEditor4 <https://ckeditor.com/docs/ckeditor4/latest/guide/dev_a11y.html>`_
+- `OnlyOffice <https://helpcenter.onlyoffice.com/ONLYOFFICE-Editors/Editors-User-Guides/AllEditors/Accessibility.aspx>`_
 
 Known Issues
 ------------
 
 We keep track of issues we know about in the `Accessibility project <https://github.com/orgs/cryptpad/projects/5>`_. These include:
 
-- Potential keyboard traps when interacting with third-party applications
-- Screen reader compatibility issues
-- Limited responsiveness for mobile usage
-- Lack of descriptive error messages across the app
+- Potential keyboard traps when interacting with third-party applications.
+- Screen reader compatibility issues.
+- Limited responsiveness for mobile usage.
+- Lack of descriptive error messages across the app.
 
 Assessment Approach
 -------------------
