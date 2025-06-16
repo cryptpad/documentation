@@ -18,10 +18,10 @@ Accessibility Features
 
 Below are some key accessibility features currently implemented or in progress:
 
-- **Keyboard Navigation**: Interactive elements can be accessed and used via keyboard
-- **Focus Indicators**: Clear and visible focus indicators are present
-- **Screen Reader Support**: We are actively working to improve compatibility with screen readers
-- **Responsive Design**: We do our best to create interfaces that adapt to various devices and screen sizes
+- **Keyboard Navigation**: Interactive elements can be accessed and used via keyboard.
+- **Focus Indicators**: Clear and visible focus indicators are present.
+- **Screen Reader Support**: We are actively working to improve compatibility with screen readers.
+- **Responsive Design**: We do our best to create interfaces that adapt to various devices and screen sizes.
 
 Third-Party Content and Limitations
 -----------------------------------
@@ -30,10 +30,10 @@ While CryptPad strives to make all aspects of its platform fully accessible, the
 
 CryptPad integrates with the following third-party apps:
 
-- `CodeMirror <https://codemirror.net/>`_
-- `Drawio <https://www.drawio.com/doc/>`_
-- `CKEditor4 <https://ckeditor.com/docs/ckeditor4/latest/guide/dev_a11y.html>`_
-- `OnlyOffice <https://helpcenter.onlyoffice.com/ONLYOFFICE-Editors/Editors-User-Guides/AllEditors/Accessibility.aspx>`_
+- `CodeMirror <https://codemirror.net/>`_.
+- `Drawio <https://www.drawio.com/doc/>`_.
+- `CKEditor4 <https://ckeditor.com/docs/ckeditor4/latest/guide/dev_a11y.html>`_.
+- `OnlyOffice <https://helpcenter.onlyoffice.com/ONLYOFFICE-Editors/Editors-User-Guides/AllEditors/Accessibility.aspx>`_.
 
 Known Issues
 ------------
@@ -52,6 +52,6 @@ CryptPad utilizes a combination of external and self-evaluation methods to verif
 
 - **External Audits**:
 
-  - NGI Report, Teams audit [April 2020]
-  - a11ylab [March 2021]: `View Table <http://ux.a11ylab.com/table/cryptpad>`_
-  - HAN audit [August 2024]: `List of Issues <https://github.com/cryptpad/cryptpad/issues?page=1&q=+is%3Aissue+label%3A%22HAN+scan+08-24%22>`_
+  - NGI Report, Teams audit [April 2020].
+  - a11ylab [March 2021]: `View Table <http://ux.a11ylab.com/table/cryptpad>`_.
+  - HAN audit [August 2024]: `List of Issues <https://github.com/cryptpad/cryptpad/issues?page=1&q=+is%3Aissue+label%3A%22HAN+scan+08-24%22>`_.
