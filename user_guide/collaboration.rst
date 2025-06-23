@@ -175,8 +175,7 @@ CryptPad teams are shared spaces between a group of users. A team has its own Cr
 
 .. note::
 
-   The number of teams a CryptPad user can join used to be limited to 3 for performance reasons. This has now been increased to 5 as we have added details to the loading screen that show how long teams take to load. This allows users to negotiate the tradeoff between number of teams and increased loading time.
-
+   The number of teams a CryptPad user can join used to be limited to 5 for performance reasons.
 
 To create a team:
 
