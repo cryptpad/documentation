@@ -397,7 +397,8 @@ To make an account instance administrator:
 3. Restart CryptPad
 
 .. warning::
-   This method to manage administrators is deprecated in favor of the :ref:`administration panel <admin_admins>`
+
+   This method to manage administrators is deprecated in favor of the :ref:`administration panel <admin_admins>`.
 
 .. _admin_support_mailbox:
 
