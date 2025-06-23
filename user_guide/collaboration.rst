@@ -206,7 +206,7 @@ To invite members to a team:
 
 |address-book| **Contacts** tab: Select CryptPad contacts to invite them to the team. Invitees receive an invite notification and can confirm they want to join the team.
 
-|link| **Link** tab: Copy a link to send through the means of your choice (preferably a secure mode of cummunication). This link is single-use only. It becomes invalid after someone first uses it to join the team.
+|link| **Link** tab: Copy a link to send through the means of your choice (preferably a secure mode of communication). This link is single-use only. It becomes invalid after someone first uses it to join the team.
 
 -  **Temporary name**: Used to identify the invite link in the list of pending invitations.
 
