@@ -160,6 +160,10 @@ Write messages in the field at the bottom and send them with |paper-plane| or :k
 
 Load more chat history with |history| or delete the history with |eraser|.
 
+.. note::
+
+   Currently, the only way to get a notification when receiving a new message, is having the Contacts application open and web browser notifications enabled. We are working on the possibility to receive a CryptPad notification in case of a new message.
+
 .. _teams:
 
 Teams
