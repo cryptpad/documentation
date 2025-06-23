@@ -16,7 +16,7 @@ source ./.venv/bin/activate
 Keep `requirements.txt` up to date with the UV venv by running
 
 ```bash
-uv export --format requirements-txt
+uv export --format requirements-txt > requirements.txt
 ```
 
 ### Pip
