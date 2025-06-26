@@ -266,9 +266,6 @@ After that, you can update the different OnlyOffice versions. Check https://gith
    cd www/common/onlyoffice/dist/v7
    git checkout 9d8b914a
 
-.. _admin_change_crypto:
-
-
 .. _admin_domain_config:
 
 Domains
@@ -438,6 +435,7 @@ To modify the preview images please see :ref:`preview_images`
 
     Updating to a newer version of the software in the future without re-running this command may result in outdated code.
 
+.. _admin_change_crypto:
 
 Change the server’s cryptography library (optional)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
