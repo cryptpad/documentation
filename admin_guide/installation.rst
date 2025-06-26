@@ -443,19 +443,10 @@ To modify the preview images please see :ref:`preview_images`
 Change the server’s cryptography library (optional)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In CryptPad, the server and client use the same cryptography library called 
-`TweetNaCl <https://github.com/dchest/tweetnacl-js>`__.
-This choice was made to keep the codebase simple, and to avoid introducing extra
-dependencies. However, this design shows its limitation on large-scale instances where the
-server-side cryptographic operations can be costly, thus slowing down the
-server.
+In CryptPad, the server and client use the same cryptography library called `TweetNaCl <https://github.com/dchest/tweetnacl-js>`__.
+This choice was made to keep the codebase simple, and to avoid introducing extra dependencies. However, this design shows its limitation on large-scale instances where the server-side cryptographic operations can be costly, thus slowing down the server.
 
-To alleviate this issue, CryptPad plugins can be used to replace the server's 
-cryptographic library with a more computationally efficient one.
-For example, the flagship instance `CryptPad.fr <https://cryptpad.fr/>`__ uses
-the `Sodium library <https://github.com/holepunchto/sodium-native>`__ through our `CryptPad Sodium plugin <https://github.com/cryptpad/cryptpad-sodium-plugin>`__.
-To install it, first download the plugin in the right location. Starting from
-the root of your CryptPad instance, do the following:
+To alleviate this issue, CryptPad plugins can be used to replace the server's cryptographic library with a more computationally efficient one. For example, the flagship instance `CryptPad.fr <https://cryptpad.fr/>`__ uses the `Sodium library <https://github.com/holepunchto/sodium-native>`__ through our `CryptPad Sodium plugin <https://github.com/cryptpad/cryptpad-sodium-plugin>`__. To install it, first download the plugin in the right location. Starting from the root of your CryptPad instance, do the following:
 
 .. code:: bash
 
@@ -469,8 +460,7 @@ Then, install its dependencies:
    cd sodium/
    npm ci
 
-Finally, restart your CryptPad server. It should now be using *Sodium* on the
-server.
+Finally, restart your CryptPad server. It should now be using *Sodium* on the server.
 
 Diagnostics
 ~~~~~~~~~~~
