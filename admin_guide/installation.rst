@@ -194,6 +194,10 @@ We provide the following files in the CryptPad repository:
 
       docker build -t cryptpad/cryptpad:local-latest .
 
+.. note::
+
+   If you don't want to build your own images, you can also use the ones we publish on `Docker Hub <https://hub.docker.com/r/cryptpad/cryptpad/tags>`__.
+
 #. Modify ``docker-compose.yml`` with your own values
 
    - ``CPAD_MAIN_DOMAIN``
