@@ -15,16 +15,12 @@ Each registered user on CryptPad has a profile page accessible from the user me
 Personal profile
 ~~~~~~~~~~~~~~~~
 
-The following elements can be customised on the profile page:
+:badge_new:`2025.6.0` Your profile can now be modified directly from your :ref:`account settings <user_settings_profile>`.
 
--  Avatar with |upload| **Upload a new avatar**.
--  Description with |pencil| **Add a description**.
--  Website with **Add a link to your website**.
+From here you can see what your profile look like to other users, you can also perform the following actions:
 
-Sharing:
-
-- **View my profile**: Preview the profile page as it appears to other users.
-
+- |key| **Copy public key**: Copies the key used by instance administrators and on instances that offer subscriptions.
+- |copy| **Copy user data**: As an instance administrator, add the user data in JSON format to your clipboard.
 - |share-alt| **Share**: Copy a link to your profile.
 
 .. _another_user_profile:
