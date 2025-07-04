@@ -86,7 +86,7 @@ To import documents, the supported format are Microsoft Word ``.docx`` and OpenD
 
 1. Export your document as ``.docx`` or ``.odt`` in your existing software.
 2. Save the file to your computer.
-3. Open a new :ref:`app_document` file (or an existing one to replace the contents).
+3. Open a new :ref:`app_documents` file (or an existing one to replace the contents).
 4. |file-o| **File** > |upload| **Import** and select your file.
 
 To export, use |file-o| **File** > |download| **Export** and choose a format:
@@ -181,7 +181,7 @@ The way encryption is currently used in CryptPad does not allow syncing with the
 What is the relationship between CryptPad and OnlyOffice?
 ---------------------------------------------------------
 
-The CryptPad :ref:`app_document`, :ref:`app_presentation` & :ref:`app_sheets` applications are an `OnlyOffice Docs <https://www.onlyoffice.com/en/office-suite.aspx>`_ integration. However, this only concerns the client-side code, CryptPad does not make use of the OnlyOffice Document Server. CryptPad's encrypted collaboration, used for document, presentantion & spreadsheets and other applications, is completely different from the encryption system used in parts of upstream OnlyOffice. Some of CryptPad's file format conversion tools are based on OnlyOffice code, but substantial work has been done to make it run in the browser rather than on the server, therefore avoiding the need to reveal the contents of users' documents when converting.
+The CryptPad :ref:`app_documents`, :ref:`app_presentation` & :ref:`app_sheets` applications are an `OnlyOffice Docs <https://www.onlyoffice.com/en/office-suite.aspx>`_ integration. However, this only concerns the client-side code, CryptPad does not make use of the OnlyOffice Document Server. CryptPad's encrypted collaboration, used for document, presentantion & spreadsheets and other applications, is completely different from the encryption system used in parts of upstream OnlyOffice. Some of CryptPad's file format conversion tools are based on OnlyOffice code, but substantial work has been done to make it run in the browser rather than on the server, therefore avoiding the need to reveal the contents of users' documents when converting.
 
 How Secure is CryptPad?
 -----------------------
