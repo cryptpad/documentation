@@ -15,16 +15,12 @@ Each registered user on CryptPad has a profile page accessible from the user me
 Personal profile
 ~~~~~~~~~~~~~~~~
 
-The following elements can be customised on the profile page:
+:badge_new:`2025.6.0` Your profile can now be modified directly from your :ref:`account settings <user_settings_profile>`.
 
--  Avatar with |upload| **Upload a new avatar**.
--  Description with |pencil| **Add a description**.
--  Website with **Add a link to your website**.
+From here you can see what your profile look like to other users, you can also perform the following actions:
 
-Sharing:
-
-- **View my profile**: Preview the profile page as it appears to other users.
-
+- |key| **Copy public key**: Copies the key used by instance administrators and on instances that offer subscriptions.
+- |copy| **Copy user data**: As an instance administrator, add the user data in JSON format to your clipboard.
 - |share-alt| **Share**: Copy a link to your profile.
 
 .. _another_user_profile:
@@ -160,6 +156,10 @@ Write messages in the field at the bottom and send them with |paper-plane| or :k
 
 Load more chat history with |history| or delete the history with |eraser|.
 
+.. note::
+
+   Currently, the only way to get a notification when receiving a new message, is having the Contacts application open and web browser notifications enabled. We are working on the possibility to receive a CryptPad notification in case of a new message.
+
 .. _teams:
 
 Teams
@@ -171,8 +171,7 @@ CryptPad teams are shared spaces between a group of users. A team has its own Cr
 
 .. note::
 
-   The number of teams a CryptPad user can join used to be limited to 3 for performance reasons. This has now been increased to 5 as we have added details to the loading screen that show how long teams take to load. This allows users to negotiate the tradeoff between number of teams and increased loading time.
-
+   The number of teams a CryptPad user can join used to be limited to 5 for performance reasons.
 
 To create a team:
 
@@ -203,7 +202,7 @@ To invite members to a team:
 
 |address-book| **Contacts** tab: Select CryptPad contacts to invite them to the team. Invitees receive an invite notification and can confirm they want to join the team.
 
-|link| **Link** tab: Copy a link to send through the means of your choice (preferably a secure mode of cummunication). This link is single-use only. It becomes invalid after someone first uses it to join the team.
+|link| **Link** tab: Copy a link to send through the means of your choice (preferably a secure mode of communication). This link is single-use only. It becomes invalid after someone first uses it to join the team.
 
 -  **Temporary name**: Used to identify the invite link in the list of pending invitations.
 

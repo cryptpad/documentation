@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>共同作業 / ソーシャル &mdash; CryptPad 2025.3.0 ドキュメント</title>
+  <title>共同作業 / ソーシャル &mdash; CryptPad 2025.6.0 ドキュメント</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2025.3.0</span>
+              <span class="release">Documentation 2025.6.0</span>
             </a>
             
 <div role="search">
@@ -109,6 +109,7 @@
 <li class="toctree-l3"><a class="reference internal" href="user_account.html#notifications">通知</a></li>
 <li class="toctree-l3"><a class="reference internal" href="user_account.html#settings">設定</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#account">アカウント</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#profile">Profile</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#security-privacy">セキュリティーとプライバシー</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#appearance">表示モード</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#cryptdrive">CryptDrive</a></li>
@@ -331,7 +332,6 @@
 <li class="toctree-l3"><a class="reference internal" href="accessibility.html#third-party-content-and-limitations">Third-Party Content and Limitations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="accessibility.html#known-issues">Known Issues</a></li>
 <li class="toctree-l3"><a class="reference internal" href="accessibility.html#assessment-approach">Assessment Approach</a></li>
-<li class="toctree-l3"><a class="reference internal" href="accessibility.html#version-information">Version Information</a></li>
 </ul>
 </li>
 </ul>
@@ -408,6 +408,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#customize">Customize</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#upload-logo">Upload Logo</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#accent-color">Accent color</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#administrators">Administrators</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#current-administrators">Current administrators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#add-administrators">Add administrators</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
@@ -623,6 +628,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">ドキュメントをプラットフォーム間でインポートまたはエクスポートするには？</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#import-export-is-not-visible-in-the-file-menu">ファイルメニューにインポートとエクスポートがありません</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">リッチテキストドキュメントのインポート、エクスポート</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-import-export">Document import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-import-export">Presentation import/export</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">スプレッドシートのインポートとエクスポート</a></li>
 </ul>
 </li>
@@ -748,15 +755,11 @@
 </ul>
 <section id="personal-profile">
 <h3>個人用プロフィール<a class="headerlink" href="#personal-profile" title="この見出しへのパーマリンク">¶</a></h3>
-<p>プロフィールページでは以下の要素を設定できます。</p>
+<p><span class="badge-new">2025.6.0</span> Your profile can now be modified directly from your <a class="reference internal" href="user_account.html#user-settings-profile"><span class="std std-ref">account settings</span></a>.</p>
+<p>From here you can see what your profile look like to other users, you can also perform the following actions:</p>
 <ul class="simple">
-<li><p><em class="fa fa-upload"></em> <strong>新しいアバターをアップロード</strong>からアバター。</p></li>
-<li><p><em class="fa fa-pencil"></em> <strong>説明文を追加</strong>から説明文。</p></li>
-<li><p><strong>ウェブサイトへのリンクを追加</strong>からウェブサイト。</p></li>
-</ul>
-<p>共有：</p>
-<ul class="simple">
-<li><p><strong>プロフィールを表示</strong>：他のユーザーに表示される形でプロフィールのページをプレビュー。</p></li>
+<li><p><em class="fa fa-key"></em> <strong>公開鍵をコピー</strong>：インスタンスの管理者が、定期利用を提供しているインスタンスで使っている鍵をコピー。</p></li>
+<li><p><em class="fa fa-copy"></em> <strong>Copy user data</strong>: As an instance administrator, add the user data in JSON format to your clipboard.</p></li>
 <li><p><em class="fa fa-share-alt"></em> <strong>共有</strong>：あなたのプロフィールへのリンクをコピー。</p></li>
 </ul>
 </section>
@@ -879,6 +882,10 @@
 <p>連絡先ページで、リストにある連絡先をクリックすると、メインのウインドウで連絡先とのチャット画面が開きます。</p>
 <p>一番下にある入力欄にメッセージを記入して、 <em class="fa fa-paper-plane"></em> または <kbd class="kbd docutils literal notranslate">Enter</kbd> で送信できます。</p>
 <p><em class="fa fa-history"></em> でチャットの履歴を更に読み込んだり <em class="fa fa-eraser"></em> で履歴を消去したりできます。</p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
+<p>Currently, the only way to get a notification when receiving a new message, is having the Contacts application open and web browser notifications enabled. We are working on the possibility to receive a CryptPad notification in case of a new message.</p>
+</div>
 </section>
 </section>
 <section id="teams">
@@ -887,7 +894,7 @@
 <p>CryptPadのチームはユーザーのグループで共有されるスペースです。チームには専用のCryptDrive、チャット、役割と権限が与えられたメンバーの一覧があります。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
-<p>CryptPadのユーザーが参加できるチーム数は、性能の都合上、以前は3つまでに制限されていました。読み込み画面にチームの読み込みに必要な時間などに関する詳細を表示するようになったため、制限は5つまでに増加されました。チーム数と、読み込みのスピードのバランスを考慮して、参加できるチーム数をユーザー自身が決められるようになっています。</p>
+<p>The number of teams a CryptPad user can join used to be limited to 5 for performance reasons.</p>
 </div>
 <p>チームを作成するには、</p>
 <ol class="arabic simple">
@@ -914,7 +921,7 @@
 <li><p><em class="fa fa-users"></em> <strong>メンバー</strong>のタブ &gt; <strong>メンバーを招待</strong>。</p></li>
 </ul>
 <p><em class="fa fa-address-book"></em> <strong>連絡先</strong>のタブ：チームに招待するCryptPadの連絡先を選択。招待されたユーザーは招待の通知を受信し、チームへの招待を承諾できます。</p>
-<p><em class="fa fa-link"></em> <strong>リンク</strong>のタブ：リンクをコピーして、任意の方法（安全な通信経路が望ましい）で送信。リンクは1度のみ使用可。誰かがチームの参加にリンクを使うと、リンクは無効になります。</p>
+<p><em class="fa fa-link"></em> <strong>Link</strong> tab: Copy a link to send through the means of your choice (preferably a secure mode of communication). This link is single-use only. It becomes invalid after someone first uses it to join the team.</p>
 <ul class="simple">
 <li><p><strong>一時的な名前</strong>：保留中の招待の一覧で招待リンクを特定するのに使用。</p></li>
 <li><p><strong>パスワード</strong>：リンクを傍受から保護します（設定は任意）。</p></li>
@@ -1037,7 +1044,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'2025.3.0',
+            VERSION:'2025.6.0',
             LANGUAGE:'ja',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

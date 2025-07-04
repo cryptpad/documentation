@@ -60,7 +60,7 @@ Clone the CryptPad repository
 
 .. code:: bash
 
-   git clone -b 2025.3.0 --depth 1 https://github.com/cryptpad/cryptpad.git cryptpad
+   git clone -b 2025.6.0 --depth 1 https://github.com/cryptpad/cryptpad.git cryptpad
 
 Move to the newly cloned repository
 
@@ -72,7 +72,7 @@ Switch to the latest published tag
 
 .. code:: bash
 
-   git checkout 2025.3.0
+   git checkout 2025.6.0
 
 Dependencies
 """"""""""""
@@ -187,6 +187,9 @@ We provide the following files in the CryptPad repository:
 - ``docker-entrypoint.sh`` allows to configure a few things (domain names and build static assets)
 - ``docker-compose.yml`` used to create a container using the image and keep it running
 
+.. note::
+
+   If you don't want to build your own images as explained below, you can also use the ones we publish on `Docker Hub <https://hub.docker.com/r/cryptpad/cryptpad/tags>`__, directly from the ``docker-compose.yml`` file.
 
 #. Build your own Docker image
 
@@ -204,7 +207,7 @@ We provide the following files in the CryptPad repository:
 
    .. code:: bash
 
-      mkdir -p data customize onlyoffice-dist onlyoffice-conf
+      mkdir -p data/{blob,block,data,files} customize onlyoffice-dist onlyoffice-conf
       sudo chown -R 4001:4001 data customize onlyoffice-dist onlyoffice-conf
 
 #. Run the container with Docker Compose
@@ -265,9 +268,6 @@ After that, you can update the different OnlyOffice versions. Check https://gith
 
    cd www/common/onlyoffice/dist/v7
    git checkout 9d8b914a
-
-.. _admin_change_crypto:
-
 
 .. _admin_domain_config:
 
@@ -396,6 +396,10 @@ To make an account instance administrator:
 
 3. Restart CryptPad
 
+.. warning::
+
+   This method to manage administrators is deprecated in favor of the :ref:`administration panel <admin_admins>`.
+
 .. _admin_support_mailbox:
 
 Configure support help-desk
@@ -434,23 +438,15 @@ To modify the preview images please see :ref:`preview_images`
 
     Updating to a newer version of the software in the future without re-running this command may result in outdated code.
 
+.. _admin_change_crypto:
 
 Change the server’s cryptography library (optional)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In CryptPad, the server and client use the same cryptography library called 
-`TweetNaCl <https://github.com/dchest/tweetnacl-js>`__.
-This choice was made to keep the codebase simple, and to avoid introducing extra
-dependencies. However, this design shows its limitation on large-scale instances where the
-server-side cryptographic operations can be costly, thus slowing down the
-server.
+In CryptPad, the server and client use the same cryptography library called `TweetNaCl <https://github.com/dchest/tweetnacl-js>`__.
+This choice was made to keep the codebase simple, and to avoid introducing extra dependencies. However, this design shows its limitation on large-scale instances where the server-side cryptographic operations can be costly, thus slowing down the server.
 
-To alleviate this issue, CryptPad plugins can be used to replace the server's 
-cryptographic library with a more computationally efficient one.
-For example, the flagship instance `CryptPad.fr <https://cryptpad.fr/>`__ uses
-the `Sodium library <https://github.com/holepunchto/sodium-native>`__ through our `CryptPad Sodium plugin <https://github.com/cryptpad/cryptpad-sodium-plugin>`__.
-To install it, first download the plugin in the right location. Starting from
-the root of your CryptPad instance, do the following:
+To alleviate this issue, CryptPad plugins can be used to replace the server's cryptographic library with a more computationally efficient one. For example, the flagship instance `CryptPad.fr <https://cryptpad.fr/>`__ uses the `Sodium library <https://github.com/holepunchto/sodium-native>`__ through our `CryptPad Sodium plugin <https://github.com/cryptpad/cryptpad-sodium-plugin>`__. To install it, first download the plugin in the right location. Starting from the root of your CryptPad instance, do the following:
 
 .. code:: bash
 
@@ -464,8 +460,7 @@ Then, install its dependencies:
    cd sodium/
    npm ci
 
-Finally, restart your CryptPad server. It should now be using *Sodium* on the
-server.
+Finally, restart your CryptPad server. It should now be using *Sodium* on the server.
 
 Diagnostics
 ~~~~~~~~~~~

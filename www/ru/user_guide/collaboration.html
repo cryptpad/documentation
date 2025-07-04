@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Совместная работа / Взаимодействие &mdash; документация CryptPad 2025.3.0</title>
+  <title>Совместная работа / Взаимодействие &mdash; документация CryptPad 2025.6.0</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2025.3.0</span>
+              <span class="release">Documentation 2025.6.0</span>
             </a>
             
 <div role="search">
@@ -109,6 +109,7 @@
 <li class="toctree-l3"><a class="reference internal" href="user_account.html#notifications">Уведомления</a></li>
 <li class="toctree-l3"><a class="reference internal" href="user_account.html#settings">Настройки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#account">Учетная запись</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#profile">Profile</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#security-privacy">Безопасность и Конфиденциальность</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#appearance">Внешний вид</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#cryptdrive">CryptDrive</a></li>
@@ -331,7 +332,6 @@
 <li class="toctree-l3"><a class="reference internal" href="accessibility.html#third-party-content-and-limitations">Контент и ограничения сторонних производителей</a></li>
 <li class="toctree-l3"><a class="reference internal" href="accessibility.html#known-issues">Известные проблемы</a></li>
 <li class="toctree-l3"><a class="reference internal" href="accessibility.html#assessment-approach">Подход к оценке</a></li>
-<li class="toctree-l3"><a class="reference internal" href="accessibility.html#version-information">Информация о версии</a></li>
 </ul>
 </li>
 </ul>
@@ -408,6 +408,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#customize">Customize</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#upload-logo">Upload Logo</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#accent-color">Accent color</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#administrators">Administrators</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#current-administrators">Current administrators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#add-administrators">Add administrators</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
@@ -623,6 +628,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Как импортировать/экспортировать мои документы на/с другую(ой) платформу(ы)?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#import-export-is-not-visible-in-the-file-menu">Импорт/экспорт не отображается в меню «Файл»</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">Импорт/экспорт форматированных текстовых документов</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-import-export">Document import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-import-export">Presentation import/export</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">Импорт/экспорт электронных таблиц</a></li>
 </ul>
 </li>
@@ -748,15 +755,11 @@
 </ul>
 <section id="personal-profile">
 <h3>Личный профиль<a class="headerlink" href="#personal-profile" title="Permalink to this heading">¶</a></h3>
-<p>На странице профиля можно настроить следующие элементы:</p>
+<p><span class="badge-new">2025.6.0</span> Your profile can now be modified directly from your <a class="reference internal" href="user_account.html#user-settings-profile"><span class="std std-ref">account settings</span></a>.</p>
+<p>From here you can see what your profile look like to other users, you can also perform the following actions:</p>
 <ul class="simple">
-<li><p>Аватар с помощью <em class="fa fa-upload"></em> <strong>Загрузить новый аватар</strong>.</p></li>
-<li><p>Описание с помощью <em class="fa fa-pencil"></em> <strong>Добавить описание</strong>.</p></li>
-<li><p>Сайт с помощью <strong>Добавьте ссылку на свой сайт</strong>.</p></li>
-</ul>
-<p>Поделиться:</p>
-<ul class="simple">
-<li><p><strong>Просмотреть мой профиль</strong>: Предварительный просмотр страницы профиля, как она отображается для других пользователей.</p></li>
+<li><p><em class="fa fa-key"></em> <strong>Копировать открытый ключ</strong>: Копирует ключ, используемый администраторами инстансов и инстансами, предлагающими подписки.</p></li>
+<li><p><em class="fa fa-copy"></em> <strong>Copy user data</strong>: As an instance administrator, add the user data in JSON format to your clipboard.</p></li>
 <li><p><em class="fa fa-share-alt"></em> <strong>Поделиться</strong>: скопируйте ссылку на свой профиль.</p></li>
 </ul>
 </section>
@@ -879,6 +882,10 @@
 <p>На странице «Контакты» нажмите на контакт в списке, чтобы открыть с ним чат в главном окне.</p>
 <p>Пишите сообщения в поле внизу и отправляйте их с помощью <em class="fa fa-paper-plane"></em> или <kbd class="kbd docutils literal notranslate">Enter</kbd>.</p>
 <p>Загрузите больше истории чата с помощью <em class="fa fa-history"></em> или удалите историю с помощью <em class="fa fa-eraser"></em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
+<p>Currently, the only way to get a notification when receiving a new message, is having the Contacts application open and web browser notifications enabled. We are working on the possibility to receive a CryptPad notification in case of a new message.</p>
+</div>
 </section>
 </section>
 <section id="teams">
@@ -887,7 +894,7 @@
 <p>Команды CryptPad — это общие пространства для группы пользователей. У команды есть свой CryptDrive, чат и список участников с ролями и разрешениями.</p>
 <div class="admonition note">
 <p class="admonition-title">Примечание</p>
-<p>Раньше количество команд, к которым может присоединиться пользователь CryptPad, было ограничено тремя из соображений производительности. Теперь это число увеличено до 5, так как мы добавили детали на экран загрузки, которые показывают, сколько времени требуется командам для загрузки. Это позволяет пользователям находить компромисс между количеством команд и увеличением времени загрузки.</p>
+<p>The number of teams a CryptPad user can join used to be limited to 5 for performance reasons.</p>
 </div>
 <p>Чтобы создать команду:</p>
 <ol class="arabic simple">
@@ -914,7 +921,7 @@
 <li><p>Вкладка <em class="fa fa-users"></em> <strong>Участники</strong> &gt; <strong>Пригласить участников</strong>.</p></li>
 </ul>
 <p>Вкладка <em class="fa fa-address-book"></em> <strong>Контакты</strong>: выберите контакты CryptPad, чтобы пригласить их в команду. Приглашенные получают уведомление о приглашении и могут подтвердить, что хотят присоединиться к команде.</p>
-<p>Вкладка <em class="fa fa-link"></em> <strong>Ссылка</strong>: Скопируйте ссылку для отправки любым удобным для вас способом (желательно безопасным способом связи). Эта ссылка является одноразовой. Она становится недействительной после того, как кто-то впервые использует её для присоединения к команде.</p>
+<p><em class="fa fa-link"></em> <strong>Link</strong> tab: Copy a link to send through the means of your choice (preferably a secure mode of communication). This link is single-use only. It becomes invalid after someone first uses it to join the team.</p>
 <ul class="simple">
 <li><p><strong>Временное имя</strong>: используется для идентификации ссылки приглашения в списке ожидающих приглашений.</p></li>
 <li><p><strong>Пароль</strong>: Защитите ссылку от возможного перехвата. (по желанию)</p></li>
@@ -1037,7 +1044,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'2025.3.0',
+            VERSION:'2025.6.0',
             LANGUAGE:'ru',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

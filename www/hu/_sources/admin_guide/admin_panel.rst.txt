@@ -75,6 +75,23 @@ Use the color picker to select the color you want then click the **CHANGE COLOR*
 
 You can see the preview of the color selected with a link and the two kind of buttons in CryptPad.
 
+.. _admin_admins:
+
+Administrators
+--------------
+
+This section is used to manage administrators of the instance.
+
+Current administrators
+~~~~~~~~~~~~~~~~~~~~~~
+
+View and remove current administrators.
+
+Add administrators
+~~~~~~~~~~~~~~~~~~
+
+Add administrators from their public key or from your contacts list.
+
 Broadcast
 ---------
 

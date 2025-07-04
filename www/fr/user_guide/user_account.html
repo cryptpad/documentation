@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Compte utilisateur·ice &mdash; Documentation CryptPad 2025.3.0</title>
+  <title>Compte utilisateur·ice &mdash; Documentation CryptPad 2025.6.0</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2025.3.0</span>
+              <span class="release">Documentation 2025.6.0</span>
             </a>
             
 <div role="search">
@@ -109,6 +109,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#notifications">Notifications</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#settings">Préférences</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#account">Compte</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#profile">Profil</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#security-privacy">Sécurité et confidentialité</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#appearance">Apparence</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cryptdrive">CryptDrive</a></li>
@@ -331,7 +332,6 @@
 <li class="toctree-l3"><a class="reference internal" href="accessibility.html#third-party-content-and-limitations">Contenu tiers et limitations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="accessibility.html#known-issues">Problèmes connus</a></li>
 <li class="toctree-l3"><a class="reference internal" href="accessibility.html#assessment-approach">Méthode de travail</a></li>
-<li class="toctree-l3"><a class="reference internal" href="accessibility.html#version-information">Information de version</a></li>
 </ul>
 </li>
 </ul>
@@ -408,6 +408,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#customize">Customize</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#upload-logo">Upload Logo</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#accent-color">Accent color</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#administrators">Administrators</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#current-administrators">Current administrators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#add-administrators">Add administrators</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
@@ -623,6 +628,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Comment importer/exporter mes documents vers/depuis un autre logiciel ?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#import-export-is-not-visible-in-the-file-menu">Import/export n'est pas visible depuis le menu Fichier</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">Import/export de documents texte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-import-export">Import/export de Document</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-import-export">Import/export de présentations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">Import/export de feuilles de calcul</a></li>
 </ul>
 </li>
@@ -851,10 +858,19 @@
 <ul class="simple">
 <li><p><strong>Nom d'utilisateur·ice</strong> : Nom utilisé lors de votre inscription. Ce nom n'est pas modifiable. <span class="badge-user">Utilisateurs enregistrés</span></p></li>
 <li><p><strong>Clé publique de signature</strong> : Utilisée par les administrateur·ices d'instance et/ou sur les instances avec abonnement. C'est la seule donnée concernant votre compte qui est visible par les administrateur·ices du service. <span class="badge-user">Utilisateurs enregistrés</span></p></li>
-<li><p><strong>Nom affiché</strong> : Nom affiché aux autres utilisateur·ices, par exemple lorsque vous collaborez sur un document. Pour modifier ce nom tapez le nouveau nom et cliquez sur <strong>Sauver</strong>. <span class="badge-user">Utilisateurs enregistrés</span></p></li>
 <li><p><strong>Langue</strong> : Langue utilisée dans l'interface de CryptPad. Pour changer de langue, en choisir une dans le menu déroulant. CryptPad est traduit en anglais et en français par l'équipe de développement, et dans d'autres langues par la <a class="reference internal" href="../how_to_contribute.html#contribute-translation"><span class="std std-ref">communauté</span></a>. Certaines traductions peuvent être incomplètes et/ou comporter des erreurs.</p></li>
 <li><p><strong>Limite de téléchargement automatique</strong> : Taille maximale en mégaoctets (Mo) pour le chargement automatique des pièces jointes (images, vidéos, PDF) intégrés dans les documents. Les pièces jointes dont la taille est supérieure à la taille spécifiée peuvent être chargées manuellement. Utilisez &quot;-1&quot; pour toujours charger automatiquement les pièces jointes.</p></li>
 <li><p><strong>Suppression du compte</strong> : Option pour supprimer définitivement votre compte et ses documents. Pour supprimer votre compte, cliquez sur <strong>Suppression du compte</strong> puis confirmez. <span class="badge-user">Utilisateurs enregistrés</span></p></li>
+</ul>
+</section>
+<section id="profile">
+<span id="user-settings-profile"></span><h3>Profil<a class="headerlink" href="#profile" title="Lien permanent vers cette rubrique">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Nom affiché</strong> : Nom affiché aux autres utilisateur·ices, par exemple lorsque vous collaborez sur un document. Pour modifier ce nom tapez le nouveau nom et cliquez sur <strong>Sauver</strong>.</p></li>
+<li><p><strong>Avatar</strong> : Une image pour votre profil, montrée au côté de votre nom affiché. <span class="badge-user">Logged in users</span></p></li>
+<li><p><strong>Badge</strong> : Montrez votre rôle aux autres utilisateur·ices, ce peut être &quot;Adminstrateur·ice&quot;, &quot;Support et modération&quot; ou même que vous être un·e utilisateur·ice payant. <span class="badge-user">Logged in users</span></p></li>
+<li><p><strong>Lien vers votre site web</strong> : Insérez une URL valide pour ajouter un lien vers votre site web personnel. <span class="badge-user">Logged in users</span></p></li>
+<li><p><strong>Description</strong> : Zone de texte où vous pouvez écrire une petite bio utilisant un formatage de texte riche avec la barre d'outil, ou en utilisant la syntaxe Markdown. <span class="badge-user">Logged in users</span></p></li>
 </ul>
 </section>
 <section id="security-privacy">
@@ -1008,7 +1024,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'2025.3.0',
+            VERSION:'2025.6.0',
             LANGUAGE:'fr',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

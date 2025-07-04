@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Foire Aux Questions &mdash; Documentation CryptPad 2025.3.0</title>
+  <title>Foire Aux Questions &mdash; Documentation CryptPad 2025.6.0</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="index.html" class="icon icon-home">
               <img src="_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2025.3.0</span>
+              <span class="release">Documentation 2025.6.0</span>
             </a>
             
 <div role="search">
@@ -109,6 +109,7 @@
 <li class="toctree-l3"><a class="reference internal" href="user_guide/user_account.html#notifications">Notifications</a></li>
 <li class="toctree-l3"><a class="reference internal" href="user_guide/user_account.html#settings">Préférences</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#account">Compte</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#profile">Profil</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#security-privacy">Sécurité et confidentialité</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#appearance">Apparence</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/user_account.html#cryptdrive">CryptDrive</a></li>
@@ -331,7 +332,6 @@
 <li class="toctree-l3"><a class="reference internal" href="user_guide/accessibility.html#third-party-content-and-limitations">Contenu tiers et limitations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="user_guide/accessibility.html#known-issues">Problèmes connus</a></li>
 <li class="toctree-l3"><a class="reference internal" href="user_guide/accessibility.html#assessment-approach">Méthode de travail</a></li>
-<li class="toctree-l3"><a class="reference internal" href="user_guide/accessibility.html#version-information">Information de version</a></li>
 </ul>
 </li>
 </ul>
@@ -408,6 +408,11 @@
 <li class="toctree-l3"><a class="reference internal" href="admin_guide/admin_panel.html#customize">Customize</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#upload-logo">Upload Logo</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#accent-color">Accent color</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="admin_guide/admin_panel.html#administrators">Administrators</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#current-administrators">Current administrators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_guide/admin_panel.html#add-administrators">Add administrators</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
@@ -623,6 +628,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#how-to-import-export-my-documents-to-from-another-platform">Comment importer/exporter mes documents vers/depuis un autre logiciel ?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#import-export-is-not-visible-in-the-file-menu">Import/export n'est pas visible depuis le menu Fichier</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#rich-text-document-import-export">Import/export de documents texte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#document-import-export">Import/export de Document</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#presentation-import-export">Import/export de présentations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#spreadsheets-import-export">Import/export de feuilles de calcul</a></li>
 </ul>
 </li>
@@ -811,6 +818,40 @@
 </ol>
 <p>Pour exporter, utiliser <em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-download"></em> <strong>Exporter</strong> et sélectionner <code class="docutils literal notranslate"><span class="pre">.doc</span></code> comme format.</p>
 </section>
+<section id="document-import-export">
+<h3>Import/export de Document<a class="headerlink" href="#document-import-export" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Pour importer des documents, les formats compatibles sont Microsoft Word <code class="docutils literal notranslate"><span class="pre">.docx</span></code> et OpenDocument <code class="docutils literal notranslate"><span class="pre">.odt</span></code>. Ces deux formats peuvent être exportés à partir de logiciels courants tels que Google Docs et LibreOffice Writer :</p>
+<ol class="arabic simple">
+<li><p>Exporter le document au format <code class="docutils literal notranslate"><span class="pre">.docx</span></code> ou <code class="docutils literal notranslate"><span class="pre">.odt</span></code> depuis un autre logiciel.</p></li>
+<li><p>Enregistrez le fichier sur votre ordinateur.</p></li>
+<li><p>Ouvrir un nouveau fichier <a class="reference internal" href="user_guide/apps/document.html#app-documents"><span class="std std-ref">Document</span></a> sur CryptPad (ou un document existant pour remplacer le contenu).</p></li>
+<li><p><em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-upload"></em> <strong>Importer</strong> et sélectionnez votre fichier.</p></li>
+</ol>
+<p>Pour exporter, utiliser <em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-download"></em> <strong>Exporter</strong> et sélectionner un format :</p>
+<ul class="simple">
+<li><p>Pour utilisation dans Microsoft Word ou Google Docs, sélectionner <code class="docutils literal notranslate"><span class="pre">.docx</span></code>.</p></li>
+<li><p>Pour utilisation dans LibreOffice Writer, sélectionner <code class="docutils literal notranslate"><span class="pre">.odt</span></code>.</p></li>
+<li><p>Pour les cas où aucune autre modification des données n'est nécessaire après l'exportation (lettres, rapports, etc.), sélectionner <code class="docutils literal notranslate"><span class="pre">.pdf</span></code>.</p></li>
+<li><p>Pour faire une sauvegarde ou pour partager avec un·e utilisateur·ice sur une autre instance CryptPad, sélectionner <code class="docutils literal notranslate"><span class="pre">.bin</span></code>.</p></li>
+</ul>
+</section>
+<section id="presentation-import-export">
+<h3>Import/export de présentations<a class="headerlink" href="#presentation-import-export" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Pour importer des présentations, les formats compatibles sont Microsoft PowerPoint <code class="docutils literal notranslate"><span class="pre">.pptx</span></code> et OpenDocument <code class="docutils literal notranslate"><span class="pre">.odp</span></code>. Ces deux formats peuvent être exportés à partir de logiciels courants tels que Google Slides et LibreOffice Impress :</p>
+<ol class="arabic simple">
+<li><p>Exporter le document au format <code class="docutils literal notranslate"><span class="pre">.pptx</span></code> ou <code class="docutils literal notranslate"><span class="pre">.odp</span></code> depuis un autre logiciel.</p></li>
+<li><p>Enregistrez le fichier sur votre ordinateur.</p></li>
+<li><p>Ouvrir une nouvelle <a class="reference internal" href="user_guide/apps/presentation.html#app-presentation"><span class="std std-ref">présentation</span></a> sur CryptPad (ou un document existant pour remplacer le contenu).</p></li>
+<li><p><em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-upload"></em> <strong>Importer</strong> et sélectionnez votre fichier.</p></li>
+</ol>
+<p>Pour exporter, utiliser <em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-download"></em> <strong>Exporter</strong> et sélectionner un format :</p>
+<ul class="simple">
+<li><p>Pour utilisation dans Microsoft PowerPoint ou Google Slides, sélectionner <code class="docutils literal notranslate"><span class="pre">.pptx</span></code>.</p></li>
+<li><p>Pour utilisation dans LibreOffice Impress, sélectionner <code class="docutils literal notranslate"><span class="pre">.odp</span></code>.</p></li>
+<li><p>Pour les cas où aucune autre modification des données n'est nécessaire après l'exportation (présentations, rapports, etc.), sélectionner <code class="docutils literal notranslate"><span class="pre">.pdf</span></code>.</p></li>
+<li><p>Pour faire une sauvegarde ou pour partager avec un·e utilisateur·ice sur une autre instance CryptPad, sélectionner <code class="docutils literal notranslate"><span class="pre">.bin</span></code>.</p></li>
+</ul>
+</section>
 <section id="spreadsheets-import-export">
 <h3>Import/export de feuilles de calcul<a class="headerlink" href="#spreadsheets-import-export" title="Lien permanent vers cette rubrique">¶</a></h3>
 <p>Pour importer des feuilles de calcul, les formats compatibles sont Microsoft Excel <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code> et OpenDocument <code class="docutils literal notranslate"><span class="pre">.ods</span></code>. Ces deux formats peuvent être exportés à partir de logiciels courants tels que Google Sheets et LibreOffice Calc :</p>
@@ -829,7 +870,7 @@
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>L'import/export de feuilles de calcul vers divers formats n'est disponible que dans les navigateurs qui supportent certaines fonctionnalités spécifiques. Veuillez consulter la <a class="reference external" href="https://caniuse.com/sharedarraybuffer">liste actualisée des navigateurs compatibles</a>.</p>
+<p>L'import/export de documents OnlyOffice vers divers formats n'est disponible que dans les navigateurs qui supportent certaines fonctionnalités spécifiques. Veuillez consulter la <a class="reference external" href="https://caniuse.com/sharedarraybuffer">liste actualisée des navigateurs compatibles</a>.</p>
 </div>
 </section>
 </section>
@@ -864,7 +905,7 @@
 </section>
 <section id="what-is-the-relationship-between-cryptpad-and-onlyoffice">
 <span id="faq-oointegration"></span><h2>Quelle est la relation entre CryptPad et OnlyOffice ?<a class="headerlink" href="#what-is-the-relationship-between-cryptpad-and-onlyoffice" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p>L'application CryptPad <a class="reference internal" href="user_guide/apps/sheets.html#app-sheets"><span class="std std-ref">Tableur</span></a> est une intégration du <a class="reference external" href="https://www.onlyoffice.com/en/spreadsheet-editor.aspx">Tableur OnlyOffice</a>. Cependant, cela ne concerne que le code côté client, le CryptPad n'utilise pas le serveur de documents OnlyOffice. La collaboration chiffrée du CryptPad, utilisée pour les feuilles de calcul et autres applications, est complètement différente du système de chiffrement utilisé dans certaines parties du OnlyOffice en amont. Certains des outils de conversion de format de fichier du CryptPad sont basés sur le code OnlyOffice, mais un travail important a été effectué pour le faire fonctionner dans le navigateur plutôt que sur le serveur, évitant ainsi de devoir révéler le contenu des documents des utilisateurs lors de la conversion.</p>
+<p>Les applications CryptPad <a class="reference internal" href="user_guide/apps/document.html#app-documents"><span class="std std-ref">Document</span></a>, <a class="reference internal" href="user_guide/apps/presentation.html#app-presentation"><span class="std std-ref">Présentation</span></a> et <a class="reference internal" href="user_guide/apps/sheets.html#app-sheets"><span class="std std-ref">Tableur</span></a> sont une intégration d'<a class="reference external" href="https://www.onlyoffice.com/en/office-suite.aspx">OnlyOffice Docs</a>. Cependant, cela ne concerne que le code côté client, le CryptPad n'utilise pas le serveur de documents OnlyOffice. La collaboration chiffrée du CryptPad, utilisée pour les feuilles de calcul et autres applications, est complètement différente du système de chiffrement utilisé dans certaines parties du OnlyOffice en amont. Certains des outils de conversion de format de fichier du CryptPad sont basés sur le code OnlyOffice, mais un travail important a été effectué pour le faire fonctionner dans le navigateur plutôt que sur le serveur, évitant ainsi de devoir révéler le contenu des documents des utilisateurs lors de la conversion.</p>
 </section>
 <section id="how-secure-is-cryptpad">
 <h2>À quel point CryptPad est sécurisé ?<a class="headerlink" href="#how-secure-is-cryptpad" title="Lien permanent vers cette rubrique">¶</a></h2>
@@ -945,7 +986,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'2025.3.0',
+            VERSION:'2025.6.0',
             LANGUAGE:'fr',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

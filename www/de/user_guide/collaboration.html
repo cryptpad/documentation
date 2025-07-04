@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Zusammenarbeit &mdash; CryptPad 2025.3.0 Dokumentation</title>
+  <title>Zusammenarbeit &mdash; CryptPad 2025.6.0 Dokumentation</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2025.3.0</span>
+              <span class="release">Documentation 2025.6.0</span>
             </a>
             
 <div role="search">
@@ -109,6 +109,7 @@
 <li class="toctree-l3"><a class="reference internal" href="user_account.html#notifications">Benachrichtigungen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="user_account.html#settings">Einstellungen</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#account">Account</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#profile">Profile</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#security-privacy">Sicherheit &amp; Datenschutz</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#appearance">Erscheinungsbild</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#cryptdrive">CryptDrive</a></li>
@@ -331,7 +332,6 @@
 <li class="toctree-l3"><a class="reference internal" href="accessibility.html#third-party-content-and-limitations">Inhalte von Drittanbietern und Einschränkungen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="accessibility.html#known-issues">Bekannte Probleme</a></li>
 <li class="toctree-l3"><a class="reference internal" href="accessibility.html#assessment-approach">Bewertungskonzept</a></li>
-<li class="toctree-l3"><a class="reference internal" href="accessibility.html#version-information">Versionsinformationen</a></li>
 </ul>
 </li>
 </ul>
@@ -408,6 +408,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#customize">Customize</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#upload-logo">Upload Logo</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#accent-color">Accent color</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#administrators">Administrators</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#current-administrators">Current administrators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#add-administrators">Add administrators</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
@@ -623,6 +628,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Wie kann ich meine Dokumente in andere Plattformen oder von anderen Plattformen importieren/exportieren?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#import-export-is-not-visible-in-the-file-menu">Import/Export ist im Menü Datei nicht sichtbar</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">Import/Export von Rich-Text-Dokumenten</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-import-export">Document import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-import-export">Presentation import/export</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">Import/Export von Tabellen</a></li>
 </ul>
 </li>
@@ -748,15 +755,11 @@
 </ul>
 <section id="personal-profile">
 <h3>Eigenes Profil<a class="headerlink" href="#personal-profile" title="Permalink to this heading">¶</a></h3>
-<p>Die folgenden Elemente können auf der Profilseite angepasst werden:</p>
+<p><span class="badge-new">2025.6.0</span> Your profile can now be modified directly from your <a class="reference internal" href="user_account.html#user-settings-profile"><span class="std std-ref">account settings</span></a>.</p>
+<p>From here you can see what your profile look like to other users, you can also perform the following actions:</p>
 <ul class="simple">
-<li><p>Avatar mit <em class="fa fa-upload"></em> <strong>Neuen Avatar hochladen</strong>.</p></li>
-<li><p>Beschreibung mit <em class="fa fa-pencil"></em> <strong>Beschreibung hinzufügen</strong>.</p></li>
-<li><p>Website mit <strong>Link zu deiner Website hinzufügen</strong>.</p></li>
-</ul>
-<p>Teilen:</p>
-<ul class="simple">
-<li><p><strong>Mein Profil anzeigen</strong>: Zeigt eine Vorschau des Profils an, so wie sie für andere Benutzer aussieht.</p></li>
+<li><p><em class="fa fa-key"></em> <strong>Öffentlichen Schlüssel kopieren</strong>: Kopiert den Schlüssel in die Zwischenablage. Er wird von Administratoren verwendet und auch auf Instanzen, die Abonnements anbieten.</p></li>
+<li><p><em class="fa fa-copy"></em> <strong>Copy user data</strong>: As an instance administrator, add the user data in JSON format to your clipboard.</p></li>
 <li><p><em class="fa fa-share-alt"></em> <strong>Teilen</strong>: Kopiert den Link zu deinem Profil in die Zwischenablage.</p></li>
 </ul>
 </section>
@@ -879,6 +882,10 @@
 <p>Auf der Kontakte-Seite klicke auf einen Kontakt, um einen Chat mit diesem Benutzer im Hauptfenster zu öffnen.</p>
 <p>Schreibe Nachrichten im Feld unten und sende sie mit <em class="fa fa-paper-plane"></em> oder <kbd class="kbd docutils literal notranslate">Enter</kbd> ab.</p>
 <p>Lade weiteren Chat-Verlauf mit <em class="fa fa-history"></em> oder lösche den Verlauf mit <em class="fa fa-eraser"></em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Bemerkung</p>
+<p>Currently, the only way to get a notification when receiving a new message, is having the Contacts application open and web browser notifications enabled. We are working on the possibility to receive a CryptPad notification in case of a new message.</p>
+</div>
 </section>
 </section>
 <section id="teams">
@@ -887,7 +894,7 @@
 <p>Teams auf CryptPad sind geteilte Arbeitsbereiche für Benutzergruppen. Ein Team hat ein eigenes CryptDrive, einen Chat, eine Mitgliederliste mit Rollen und Zugriffsrechten.</p>
 <div class="admonition note">
 <p class="admonition-title">Bemerkung</p>
-<p>Die Anzahl von Teams, denen ein Benutzer beitreten kann, war früher aus Performance-Gründen auf drei beschränkt. Dieses Limit wurde nun auf fünf erhöht, weil der Ladebildschirm nun anzeigt, wie viel Zeit die Teams zum Laden benötigen. Dadurch können Benutzer die Anzahl von Teams und die damit verbundene Ladezeit selbst abwägen.</p>
+<p>The number of teams a CryptPad user can join used to be limited to 5 for performance reasons.</p>
 </div>
 <p>Um ein Team zu erstellen:</p>
 <ol class="arabic simple">
@@ -914,7 +921,7 @@
 <li><p>Unterseite <em class="fa fa-users"></em> <strong>Mitglieder</strong> &gt; <strong>Mitglieder einladen</strong>.</p></li>
 </ul>
 <p><em class="fa fa-address-book"></em> <strong>Kontakte</strong>: Wähle CryptPad-Kontakte aus, um sie in das Team einzuladen. Die Eingeladenen erhalten eine Benachrichtigung über die Einladung und können bestätigen, dass sie dem Team beitreten möchten.</p>
-<p><em class="fa fa-link"></em> <strong>Link</strong>: Kopiere einen Link, um ihn auf einem selbst gewählten Weg zu versenden (am besten über einen sicheren Kommunikationskanal). Dieser Link kann nur einmal verwendet werden. Er wird ungültig, sobald jemand ihn zum ersten Mal benutzt, um dem Team beizutreten.</p>
+<p><em class="fa fa-link"></em> <strong>Link</strong> tab: Copy a link to send through the means of your choice (preferably a secure mode of communication). This link is single-use only. It becomes invalid after someone first uses it to join the team.</p>
 <ul class="simple">
 <li><p><strong>Vorläufiger Name</strong>: Wird in der Liste ausstehender Einladungen zur Identifikation des Einladungslinks verwendet.</p></li>
 <li><p><strong>Passwort</strong>: Schützt den Link davor, abgefangen zu werden. (optional)</p></li>
@@ -1037,7 +1044,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'2025.3.0',
+            VERSION:'2025.6.0',
             LANGUAGE:'de',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

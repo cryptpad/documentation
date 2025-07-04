@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>User Account &mdash; CryptPad 2025.3.0 文档</title>
+  <title>User Account &mdash; CryptPad 2025.6.0 文档</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2025.3.0</span>
+              <span class="release">Documentation 2025.6.0</span>
             </a>
             
 <div role="search">
@@ -109,6 +109,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#notifications">Notifications</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#settings">Settings</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#account">Account</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#profile">Profile</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#security-privacy">Security &amp; Privacy</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#appearance">Appearance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cryptdrive">CryptDrive</a></li>
@@ -331,7 +332,6 @@
 <li class="toctree-l3"><a class="reference internal" href="accessibility.html#third-party-content-and-limitations">Third-Party Content and Limitations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="accessibility.html#known-issues">Known Issues</a></li>
 <li class="toctree-l3"><a class="reference internal" href="accessibility.html#assessment-approach">Assessment Approach</a></li>
-<li class="toctree-l3"><a class="reference internal" href="accessibility.html#version-information">Version Information</a></li>
 </ul>
 </li>
 </ul>
@@ -408,6 +408,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#customize">Customize</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#upload-logo">Upload Logo</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#accent-color">Accent color</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#administrators">Administrators</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#current-administrators">Current administrators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#add-administrators">Add administrators</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
@@ -623,6 +628,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">How to import/export my documents to/from another platform?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#import-export-is-not-visible-in-the-file-menu">Import/export is not visible in the File menu</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">Rich text document import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-import-export">Document import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-import-export">Presentation import/export</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">Spreadsheets import/export</a></li>
 </ul>
 </li>
@@ -852,10 +859,19 @@ history.</p></li>
 <ul class="simple">
 <li><p><strong>Account name</strong>: Username chosen at registration. This name cannot be changed. <span class="badge-user">Logged in users</span></p></li>
 <li><p><strong>Public Signing Key</strong>: Used by instance administrators and/or on instances that offer subscriptions. This is the only data about your account that is available to the administrators of the service. <span class="badge-user">Logged in users</span></p></li>
-<li><p><strong>Display Name</strong>: Name displayed to other users, for example when you collaborate on documents. To change this name enter a new name and click on <strong>Save</strong>. <span class="badge-user">Logged in users</span></p></li>
 <li><p><strong>Language</strong>: Language used in the CryptPad interface. To change the language of CryptPad pick a new language in the drop-down menu. CryptPad is translated in English and French by the development team, and in other languages by the <a class="reference internal" href="../how_to_contribute.html#contribute-translation"><span class="std std-ref">community</span></a>. Some translations can be incomplete and/or contain errors.</p></li>
 <li><p><strong>Automatic Download limit</strong>: Maximum size in megabytes (MB) for automatically loading media elements (images, videos, pdf) embedded into documents. Elements bigger than the specified size can be loaded manually. Use &quot;-1&quot; to always load the media elements automatically.</p></li>
 <li><p><strong>Account deletion</strong>: Option to permanently delete your account and all of its documents. <strong>Delete your account</strong> and confirm. <span class="badge-user">Logged in users</span></p></li>
+</ul>
+</section>
+<section id="profile">
+<span id="user-settings-profile"></span><h3>Profile<a class="headerlink" href="#profile" title="此标题的永久链接">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Display Name</strong>: Name displayed to other users, for example when you collaborate on documents. To change this name enter a new name and click on <strong>Save</strong>.</p></li>
+<li><p><strong>Avatar</strong>: A picture for your profile, shown alongside your display name. <span class="badge-user">Logged in users</span></p></li>
+<li><p><strong>Badge</strong>: Show your role to other users, this can be &quot;Administrator&quot;, &quot;Support and moderation&quot; or as well that you are a paid subscriber. <span class="badge-user">Logged in users</span></p></li>
+<li><p><strong>Link to your website</strong>: Fill a valid URL to add a link to your personal website. <span class="badge-user">Logged in users</span></p></li>
+<li><p><strong>Profile description</strong>: Text area where you can write a little bio using rich text formatting with the toolbar or by using the Markdown syntax. <span class="badge-user">Logged in users</span></p></li>
 </ul>
 </section>
 <section id="security-privacy">
@@ -1009,7 +1025,7 @@ history.</p></li>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'2025.3.0',
+            VERSION:'2025.6.0',
             LANGUAGE:'zh-Hant',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

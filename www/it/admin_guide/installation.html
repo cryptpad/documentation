@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Installation &mdash; CryptPad 2025.3.0 documentazione</title>
+  <title>Installation &mdash; CryptPad 2025.6.0 documentazione</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2025.3.0</span>
+              <span class="release">Documentation 2025.6.0</span>
             </a>
             
 <div role="search">
@@ -109,6 +109,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#notifications">Notifications</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#settings">Settings</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#account">Account</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#profile">Profile</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#security-privacy">Security &amp; Privacy</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#appearance">Appearance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#cryptdrive">CryptDrive</a></li>
@@ -331,7 +332,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/accessibility.html#third-party-content-and-limitations">Third-Party Content and Limitations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/accessibility.html#known-issues">Known Issues</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/accessibility.html#assessment-approach">Assessment Approach</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../user_guide/accessibility.html#version-information">Version Information</a></li>
 </ul>
 </li>
 </ul>
@@ -408,6 +408,11 @@
 <li class="toctree-l3"><a class="reference internal" href="admin_panel.html#customize">Customize</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="admin_panel.html#upload-logo">Upload Logo</a></li>
 <li class="toctree-l4"><a class="reference internal" href="admin_panel.html#accent-color">Accent color</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="admin_panel.html#administrators">Administrators</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#current-administrators">Current administrators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="admin_panel.html#add-administrators">Add administrators</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="admin_panel.html#broadcast">Broadcast</a><ul>
@@ -623,6 +628,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">How to import/export my documents to/from another platform?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#import-export-is-not-visible-in-the-file-menu">Import/export is not visible in the File menu</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">Rich text document import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-import-export">Document import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-import-export">Presentation import/export</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">Spreadsheets import/export</a></li>
 </ul>
 </li>
@@ -796,7 +803,7 @@
 <p>The development team recommends creating a dedicated user to install and run CryptPad in production rather than using the root user.</p>
 </div>
 <p>Clone the CryptPad repository</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span><span class="m">2025</span>.3.0<span class="w"> </span>--depth<span class="w"> </span><span class="m">1</span><span class="w"> </span>https://github.com/cryptpad/cryptpad.git<span class="w"> </span>cryptpad
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span><span class="m">2025</span>.6.0<span class="w"> </span>--depth<span class="w"> </span><span class="m">1</span><span class="w"> </span>https://github.com/cryptpad/cryptpad.git<span class="w"> </span>cryptpad
 </pre></div>
 </div>
 <p>Move to the newly cloned repository</p>
@@ -804,7 +811,7 @@
 </pre></div>
 </div>
 <p>Switch to the latest published tag</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span><span class="m">2025</span>.3.0
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span><span class="m">2025</span>.6.0
 </pre></div>
 </div>
 <section id="dependencies">
@@ -895,6 +902,10 @@ npm<span class="w"> </span>run<span class="w"> </span>install:components
 <li><p><code class="docutils literal notranslate"><span class="pre">docker-entrypoint.sh</span></code> allows to configure a few things (domain names and build static assets)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">docker-compose.yml</span></code> used to create a container using the image and keep it running</p></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>If you don't want to build your own images as explained below, you can also use the ones we publish on <a class="reference external" href="https://hub.docker.com/r/cryptpad/cryptpad/tags">Docker Hub</a>, directly from the <code class="docutils literal notranslate"><span class="pre">docker-compose.yml</span></code> file.</p>
+</div>
 <ol class="arabic">
 <li><p>Build your own Docker image</p>
 <div class="highlight-docker notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>build<span class="w"> </span>-t<span class="w"> </span>cryptpad/cryptpad:local-latest<span class="w"> </span>.
@@ -909,7 +920,7 @@ npm<span class="w"> </span>run<span class="w"> </span>install:components
 </ul>
 </li>
 <li><p>Set appropriate permissions</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>-p<span class="w"> </span>data<span class="w"> </span>customize<span class="w"> </span>onlyoffice-dist<span class="w"> </span>onlyoffice-conf
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>-p<span class="w"> </span>data/<span class="o">{</span>blob,block,data,files<span class="o">}</span><span class="w"> </span>customize<span class="w"> </span>onlyoffice-dist<span class="w"> </span>onlyoffice-conf
 sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </span><span class="m">4001</span>:4001<span class="w"> </span>data<span class="w"> </span>customize<span class="w"> </span>onlyoffice-dist<span class="w"> </span>onlyoffice-conf
 </pre></div>
 </div>
@@ -964,7 +975,7 @@ git<span class="w"> </span>checkout<span class="w"> </span>9d8b914a
 </section>
 </section>
 <section id="admin-domain-config">
-<span id="admin-change-crypto"></span><span id="id1"></span><h2>Domains<a class="headerlink" href="#admin-domain-config" title="Permalink to this heading">¶</a></h2>
+<span id="id1"></span><h2>Domains<a class="headerlink" href="#admin-domain-config" title="Permalink to this heading">¶</a></h2>
 <p>You need two domains to take full advantage of CryptPad’s security features.</p>
 <ol class="arabic simple">
 <li><p>The main domain on which users access your instance</p></li>
@@ -1067,6 +1078,10 @@ contains at least:</p>
 <ol class="arabic simple" start="3">
 <li><p>Restart CryptPad</p></li>
 </ol>
+<div class="admonition warning">
+<p class="admonition-title">Avvertimento</p>
+<p>This method to manage administrators is deprecated in favor of the <a class="reference internal" href="admin_panel.html#admin-admins"><span class="std std-ref">administration panel</span></a>.</p>
+</div>
 </section>
 <section id="configure-support-help-desk">
 <span id="admin-support-mailbox"></span><h3>Configure support help-desk<a class="headerlink" href="#configure-support-help-desk" title="Permalink to this heading">¶</a></h3>
@@ -1098,19 +1113,10 @@ contains at least:</p>
 </div>
 </section>
 <section id="change-the-servers-cryptography-library-optional">
-<h3>Change the server’s cryptography library (optional)<a class="headerlink" href="#change-the-servers-cryptography-library-optional" title="Permalink to this heading">¶</a></h3>
-<p>In CryptPad, the server and client use the same cryptography library called
-<a class="reference external" href="https://github.com/dchest/tweetnacl-js">TweetNaCl</a>.
-This choice was made to keep the codebase simple, and to avoid introducing extra
-dependencies. However, this design shows its limitation on large-scale instances where the
-server-side cryptographic operations can be costly, thus slowing down the
-server.</p>
-<p>To alleviate this issue, CryptPad plugins can be used to replace the server's
-cryptographic library with a more computationally efficient one.
-For example, the flagship instance <a class="reference external" href="https://cryptpad.fr/">CryptPad.fr</a> uses
-the <a class="reference external" href="https://github.com/holepunchto/sodium-native">Sodium library</a> through our <a class="reference external" href="https://github.com/cryptpad/cryptpad-sodium-plugin">CryptPad Sodium plugin</a>.
-To install it, first download the plugin in the right location. Starting from
-the root of your CryptPad instance, do the following:</p>
+<span id="admin-change-crypto"></span><h3>Change the server’s cryptography library (optional)<a class="headerlink" href="#change-the-servers-cryptography-library-optional" title="Permalink to this heading">¶</a></h3>
+<p>In CryptPad, the server and client use the same cryptography library called <a class="reference external" href="https://github.com/dchest/tweetnacl-js">TweetNaCl</a>.
+This choice was made to keep the codebase simple, and to avoid introducing extra dependencies. However, this design shows its limitation on large-scale instances where the server-side cryptographic operations can be costly, thus slowing down the server.</p>
+<p>To alleviate this issue, CryptPad plugins can be used to replace the server's cryptographic library with a more computationally efficient one. For example, the flagship instance <a class="reference external" href="https://cryptpad.fr/">CryptPad.fr</a> uses the <a class="reference external" href="https://github.com/holepunchto/sodium-native">Sodium library</a> through our <a class="reference external" href="https://github.com/cryptpad/cryptpad-sodium-plugin">CryptPad Sodium plugin</a>. To install it, first download the plugin in the right location. Starting from the root of your CryptPad instance, do the following:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>lib/plugins
 git<span class="w"> </span>clone<span class="w"> </span>https://github.com/cryptpad/cryptpad-sodium-plugin<span class="w"> </span>sodium
 </pre></div>
@@ -1120,8 +1126,7 @@ git<span class="w"> </span>clone<span class="w"> </span>https://github.com/crypt
 npm<span class="w"> </span>ci
 </pre></div>
 </div>
-<p>Finally, restart your CryptPad server. It should now be using <em>Sodium</em> on the
-server.</p>
+<p>Finally, restart your CryptPad server. It should now be using <em>Sodium</em> on the server.</p>
 </section>
 <section id="diagnostics">
 <h3>Diagnostics<a class="headerlink" href="#diagnostics" title="Permalink to this heading">¶</a></h3>
@@ -1181,7 +1186,7 @@ server.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'2025.3.0',
+            VERSION:'2025.6.0',
             LANGUAGE:'it',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

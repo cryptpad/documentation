@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Collaboration / Social &mdash; Documentation CryptPad 2025.3.0</title>
+  <title>Collaboration / Social &mdash; Documentation CryptPad 2025.6.0</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2025.3.0</span>
+              <span class="release">Documentation 2025.6.0</span>
             </a>
             
 <div role="search">
@@ -109,6 +109,7 @@
 <li class="toctree-l3"><a class="reference internal" href="user_account.html#notifications">Notifications</a></li>
 <li class="toctree-l3"><a class="reference internal" href="user_account.html#settings">Préférences</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#account">Compte</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#profile">Profil</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#security-privacy">Sécurité et confidentialité</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#appearance">Apparence</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#cryptdrive">CryptDrive</a></li>
@@ -331,7 +332,6 @@
 <li class="toctree-l3"><a class="reference internal" href="accessibility.html#third-party-content-and-limitations">Contenu tiers et limitations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="accessibility.html#known-issues">Problèmes connus</a></li>
 <li class="toctree-l3"><a class="reference internal" href="accessibility.html#assessment-approach">Méthode de travail</a></li>
-<li class="toctree-l3"><a class="reference internal" href="accessibility.html#version-information">Information de version</a></li>
 </ul>
 </li>
 </ul>
@@ -408,6 +408,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#customize">Customize</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#upload-logo">Upload Logo</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#accent-color">Accent color</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#administrators">Administrators</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#current-administrators">Current administrators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#add-administrators">Add administrators</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
@@ -623,6 +628,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Comment importer/exporter mes documents vers/depuis un autre logiciel ?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#import-export-is-not-visible-in-the-file-menu">Import/export n'est pas visible depuis le menu Fichier</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">Import/export de documents texte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-import-export">Import/export de Document</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-import-export">Import/export de présentations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">Import/export de feuilles de calcul</a></li>
 </ul>
 </li>
@@ -748,15 +755,11 @@
 </ul>
 <section id="personal-profile">
 <h3>Profil personnel<a class="headerlink" href="#personal-profile" title="Lien permanent vers cette rubrique">¶</a></h3>
-<p>Sur la page de profil personnel, les éléments suivants sont personnalisables :</p>
+<p><span class="badge-new">2025.6.0</span> Votre profil peut maintenant être modifié directement depuis les <a class="reference internal" href="user_account.html#user-settings-profile"><span class="std std-ref">préférences de votre compte</span></a>.</p>
+<p>Depuis là vous pouvez voir à quoi ressemble votre profil pour les autres utilisateur·ices, vous pouvez aussi réaliser les actions suivantes :</p>
 <ul class="simple">
-<li><p>L'avatar avec <em class="fa fa-upload"></em> <strong>Importer un nouvel avatar</strong>.</p></li>
-<li><p>La description personnelle avec <em class="fa fa-pencil"></em> <strong>Ajouter une description</strong>.</p></li>
-<li><p>L'adresse web avec <strong>Ajouter un lien vers votre site web</strong>.</p></li>
-</ul>
-<p>Partage :</p>
-<ul class="simple">
-<li><p><strong>Voir mon profil</strong> : Aperçu de la page de profil comme elle apparaît aux autres utilisateur·ices.</p></li>
+<li><p><em class="fa fa-key"></em> <strong>Copier la clé publique</strong> : Copie la clé utilisée par les administrateur·ices d'instance et/ou sur les instances avec abonnement.</p></li>
+<li><p><em class="fa fa-copy"></em> <strong>Copier les données utilisateur·ice</strong> : En tant qu'administrateur·ice, ajouter les données utilisateur·ice dans votre presse-papier.</p></li>
 <li><p><em class="fa fa-share-alt"></em> <strong>Partager</strong> : Copier le lien vers votre profil.</p></li>
 </ul>
 </section>
@@ -879,6 +882,10 @@
 <p>Sur la page Contacts, clic sur un contact dans la liste ouvre la conversation avec cette personne dans la fenêtre principale.</p>
 <p>Écrire des messages dans le champ en bas de la fenêtre et les envoyer avec <em class="fa fa-paper-plane"></em> ou <kbd class="kbd docutils literal notranslate">Entrée</kbd>.</p>
 <p>Récupérer l'historique du chat avec <em class="fa fa-history"></em> ou l'effacer avec <em class="fa fa-eraser"></em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Pour le moment, la seule manière de recevoir une notification en cas de nouveau message est d'avoir l'application Contacts ouverte et les notifications de votre navigateur web activées. Nous travaillons à rendre possible la réception d'une notification CryptPad en cas de nouveau message.</p>
+</div>
 </section>
 </section>
 <section id="teams">
@@ -887,7 +894,7 @@
 <p>Les équipes CryptPad sont des espaces partagés entre plusieurs utilisateur·ices. Une équipe possède son propre stockage CryptDrive, un chat et une liste de membres dont l'accès peut être régulé.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Le nombre d'équipes dont un·e utilisateur·ice peut être membre était auparavant limité à 3 pour des raisons de performance. Ce nombre a été augmenté à 5 car l'écran de démarrage indique désormais le temps de chargement des équipes. Cela permet aux utilisateur·ices de négocier le compromis entre le nombre d'équipes et l'augmentation du temps de chargement.</p>
+<p>Le nombre d'équipes qu'un·e utilisateur·ice de CryptPad peut rejoindre est limité à 5 pour des raisons de performance.</p>
 </div>
 <p>Pour créer une équipe :</p>
 <ol class="arabic simple">
@@ -914,7 +921,7 @@
 <li><p>Onglet <em class="fa fa-users"></em> <strong>Membres</strong> &gt; <strong>Inviter des membres</strong>.</p></li>
 </ul>
 <p>Onglet <em class="fa fa-address-book"></em> <strong>Contacts</strong> : Sélectionner des contacts CryptPad pour les inviter. Les destinataires reçoivent une notification et peuvent accepter l'invitation.</p>
-<p>Onglet <em class="fa fa-link"></em> <strong>Lien</strong> : Copier un lien à envoyer (de préférence par un moyen sécurisé). Le lien créé est à usage unique, il est invalidé une fois qu'un·e utilisateur·ice l'utilise pour rejoindre l'équipe.</p>
+<p><em class="fa fa-link"></em> <strong>Lien</strong> : Copier un lien à envoyer (de préférence par un moyen sécurisé). Le lien créé est à usage unique, il est invalidé une fois qu'un·e utilisateur·ice l'utilise pour rejoindre l'équipe.</p>
 <ul class="simple">
 <li><p><strong>Nom temporaire</strong> : Utilisé pour reconnaître l'invitation dans la liste des invitations en attente.</p></li>
 <li><p><strong>Mot de passe</strong> : Protection du lien contre une éventuelle interception. (facultatif)</p></li>
@@ -1037,7 +1044,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'2025.3.0',
+            VERSION:'2025.6.0',
             LANGUAGE:'fr',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

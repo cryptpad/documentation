@@ -129,10 +129,20 @@ Account
 
 -  **Account name**: Username chosen at registration. This name cannot be changed. :badge_user:`Logged in users`
 -  **Public Signing Key**: Used by instance administrators and/or on instances that offer subscriptions. This is the only data about your account that is available to the administrators of the service. :badge_user:`Logged in users`
--  **Display Name**: Name displayed to other users, for example when you collaborate on documents. To change this name enter a new name and click on **Save**. :badge_user:`Logged in users`
 -  **Language**: Language used in the CryptPad interface. To change the language of CryptPad pick a new language in the drop-down menu. CryptPad is translated in English and French by the development team, and in other languages by the :ref:`community <contribute_translation>`. Some translations can be incomplete and/or contain errors.
 - **Automatic Download limit**: Maximum size in megabytes (MB) for automatically loading media elements (images, videos, pdf) embedded into documents. Elements bigger than the specified size can be loaded manually. Use "-1" to always load the media elements automatically.
 -  **Account deletion**: Option to permanently delete your account and all of its documents. **Delete your account** and confirm. :badge_user:`Logged in users`
+
+.. _user_settings_profile:
+
+Profile
+~~~~~~~
+
+-  **Display Name**: Name displayed to other users, for example when you collaborate on documents. To change this name enter a new name and click on **Save**.
+- **Avatar**: A picture for your profile, shown alongside your display name. :badge_user:`Logged in users`
+- **Badge**: Show your role to other users, this can be "Administrator", "Support and moderation" or as well that you are a paid subscriber. :badge_user:`Logged in users`
+- **Link to your website**: Fill a valid URL to add a link to your personal website. :badge_user:`Logged in users`
+- **Profile description**: Text area where you can write a little bio using rich text formatting with the toolbar or by using the Markdown syntax. :badge_user:`Logged in users`
 
 .. _user_settings_confidentiality:
 

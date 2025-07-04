@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Accessibilité &mdash; Documentation CryptPad 2025.3.0</title>
+  <title>Accessibilité &mdash; Documentation CryptPad 2025.6.0</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2025.3.0</span>
+              <span class="release">Documentation 2025.6.0</span>
             </a>
             
 <div role="search">
@@ -109,6 +109,7 @@
 <li class="toctree-l3"><a class="reference internal" href="user_account.html#notifications">Notifications</a></li>
 <li class="toctree-l3"><a class="reference internal" href="user_account.html#settings">Préférences</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#account">Compte</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_account.html#profile">Profil</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#security-privacy">Sécurité et confidentialité</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#appearance">Apparence</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_account.html#cryptdrive">CryptDrive</a></li>
@@ -331,7 +332,6 @@
 <li class="toctree-l3"><a class="reference internal" href="#third-party-content-and-limitations">Contenu tiers et limitations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#known-issues">Problèmes connus</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#assessment-approach">Méthode de travail</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#version-information">Information de version</a></li>
 </ul>
 </li>
 </ul>
@@ -408,6 +408,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#customize">Customize</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#upload-logo">Upload Logo</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#accent-color">Accent color</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#administrators">Administrators</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#current-administrators">Current administrators</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../admin_guide/admin_panel.html#add-administrators">Add administrators</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../admin_guide/admin_panel.html#broadcast">Broadcast</a><ul>
@@ -623,6 +628,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Comment importer/exporter mes documents vers/depuis un autre logiciel ?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#import-export-is-not-visible-in-the-file-menu">Import/export n'est pas visible depuis le menu Fichier</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">Import/export de documents texte</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-import-export">Import/export de Document</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-import-export">Import/export de présentations</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">Import/export de feuilles de calcul</a></li>
 </ul>
 </li>
@@ -756,6 +763,7 @@
 <ul class="simple">
 <li><p><strong>Navigation au clavier</strong> : les éléments interactifs peuvent être accédés et utilisés avec le clavier.</p></li>
 <li><p><strong>Indicateurs de sélection</strong> : des indicateurs de sélection clairs et visibles sont présents.</p></li>
+<li><p><strong>Support lecteurs d'écran</strong> : Nous travaillons activement à améliorer la compatibilité avec les lecteurs d'écran.</p></li>
 <li><p><strong>Conception réactive</strong> : nous faisons de notre mieux pour créer des interfaces qui s'adaptent à vos divers appareils et tailles d'écrans.</p></li>
 </ul>
 </section>
@@ -791,13 +799,6 @@
 <li><p>Audit HAN [août 2024] : <a class="reference external" href="https://github.com/cryptpad/cryptpad/issues?page=1&amp;q=+is%3Aissue+label%3A%22HAN+scan+08-24%22">liste des problèmes</a>.</p></li>
 </ul>
 </li>
-</ul>
-</section>
-<section id="version-information">
-<h2>Information de version<a class="headerlink" href="#version-information" title="Lien permanent vers cette rubrique">¶</a></h2>
-<ul class="simple">
-<li><p><strong>Date</strong> : Décembre 2024</p></li>
-<li><p><strong>Version</strong> : v2024.12.0</p></li>
 </ul>
 </section>
 </section>
@@ -847,7 +848,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'2025.3.0',
+            VERSION:'2025.6.0',
             LANGUAGE:'fr',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
