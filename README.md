@@ -51,7 +51,7 @@ change `de` to the locale you want to add
 ### Translated builds
 To update after default language has changed:  
 ```bash
-sphinx-intl update -p _build/locale`
+sphinx-intl update -p _build/locale
 ```
 
 To generate `.po` files for a new language e.g. French:  
