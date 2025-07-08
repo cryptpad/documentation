@@ -136,9 +136,6 @@ To export, use |file-o| **File** > |download| **Export** and choose a format:
 - For cases where no further editing of the data is required after export (presentations, reports, etc), select ``.pdf``.
 - For backup purposes or to share with a user on another CryptPad instance, select ``.bin``.
 
-.. note::
-    Import/export of OnlyOffice documents to various formats is only available in browsers that support specific functionality. Please see the `up-to-date list of supported browsers <https://caniuse.com/sharedarraybuffer>`_.
-
 I cannot do X with a document I created
 ---------------------------------------
 
