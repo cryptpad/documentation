@@ -61,7 +61,8 @@ It is possible to upload **files** to CryptPad for secure storage and sharing, h
 - Create a blank document and use the |file-o| **File** > |upload| **Import** functionality in the appropriate CryptPad editor as explained below.
 
 .. warning::
-    Support for `OpenDocument formats <https://en.wikipedia.org/wiki/OpenDocument>`_, ``.odt``, ``.odp`` & ``.ods`` import/export is currently experimental and prone to errors.
+    - The `Safari <https://www.apple.com/safari/>`_ web browser, used on macOS, iPadOS and iOS, isn't supported at this time.
+    - Support for `OpenDocument formats <https://en.wikipedia.org/wiki/OpenDocument>`_, ``.odt``, ``.odp`` & ``.ods`` import/export is currently experimental and prone to errors.
 
 If you encounter any issues, please check the :ref:`faq_common_issues` first. If you aren't able to make it work following these instructions, please reach out to your instance administrators through the :ref:`support` help desk. Providing an example document with the :ref:`share_link` functionality.
 
