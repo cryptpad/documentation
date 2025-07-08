@@ -70,13 +70,10 @@ Import/export is not visible in the File menu
 
 For spreadsheets and advanced document processing, Cryptpad integrates OnlyOffice. As a result, there are two toolbars each with their own File menu on the same screen. Please make sure to check in both menus, when looking for import/export.
 
-.. note::
-    See the `warning note <https://docs.cryptpad.org/en/user_guide/apps/sheets.html#toolbars>`_ in our Spreadsheet application documentation.
+Rich text application import/export
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Rich text document import/export
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To import rich text documents (Microsoft Word, Google Docs, LibreOffice Writer, etc.), the supported format is HTML:
+The :ref:`app_rich_text` application support the HTML format for import/export:
 
 1. Export your document as HTML in your existing software.
 2. Save the file to your computer.
@@ -85,10 +82,10 @@ To import rich text documents (Microsoft Word, Google Docs, LibreOffice Writer, 
 
 To export, use |file-o| **File** > |download| **Export** and select ``.doc`` as the format.
 
-Document import/export
-~~~~~~~~~~~~~~~~~~~~~~
+Document application import/export
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To import documents, the supported format are Microsoft Word ``.docx`` and OpenDocument ``.odt``. These can both be exported from popular software such as Google Docs and LibreOffice Writer:
+The :ref:`app_documents` application supported format are Microsoft Word ``.docx`` and OpenDocument ``.odt``. These can both be exported from popular software such as Google Docs and LibreOffice Writer:
 
 1. Export your document as ``.docx`` or ``.odt`` in your existing software.
 2. Save the file to your computer.
@@ -102,10 +99,10 @@ To export, use |file-o| **File** > |download| **Export** and choose a format:
 - For cases where no further editing of the data is required after export (letters, reports, etc), select ``.pdf``.
 - For backup purposes or to share with a user on another CryptPad instance, select ``.bin``.
 
-Presentation import/export
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Presentation application import/export
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To import presentations, the supported format are Microsoft PowerPoint ``.pptx`` and OpenDocument ``.odp``. These can both be exported from popular software such as Google Slides and LibreOffice Impress:
+The :ref:`app_presentation` application supported format are Microsoft PowerPoint ``.pptx`` and OpenDocument ``.odp``. These can both be exported from popular software such as Google Slides and LibreOffice Impress:
 
 1. Export your document as ``.pptx`` or ``.odp`` in your existing software.
 2. Save the file to your computer.
@@ -122,7 +119,7 @@ To export, use |file-o| **File** > |download| **Export** and choose a format:
 Spreadsheets import/export
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To import spreadsheets, the supported format are Microsoft Excel ``.xlsx`` and OpenDocument ``.ods``. These can both be exported from popular software such as Google Sheets and LibreOffice Calc:
+The :ref:`app_sheets` supported format are Microsoft Excel ``.xlsx`` and OpenDocument ``.ods``. These can both be exported from popular software such as Google Sheets and LibreOffice Calc:
 
 1. Export your document as ``.xlsx`` or ``.ods`` in your existing software.
 2. Save the file to your computer.
