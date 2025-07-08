@@ -50,7 +50,7 @@ If you are still logged in to an account for which you have forgotten the passwo
 How to import/export to/from another platform?
 ----------------------------------------------
 
-Making CryptPad compatible with a wide range of document formats is an ongoing challenge for the development team. Unfortunately the technology for converting documents in the browser still has limitations, especially as far as private and open source solutions are concerned. While work in this area is in progress, the methods below should help in importing and exporting to/from other widely used software.
+Making CryptPad compatible with a wide range of document formats is an ongoing challenge for the development team. While work in this area is in progress, the methods below should help in importing and exporting to/from other widely used software.
 
 .. note::
     Simply copy-pasting content from existing software into CryptPad is an easy first step to try when importing/exporting. Please note that the import/export methods below can improve results significantly.
