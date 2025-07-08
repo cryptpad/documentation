@@ -106,8 +106,8 @@ To export, use |file-o| **File** > |download| **Export** and choose a format:
 - For cases where no further editing of the data is required after export (presentations, reports, etc), select ``.pdf``
 - For backup purposes or to share with a user on another CryptPad instance, select ``.bin``
 
-Spreadsheets import/export
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+Spreadsheet application import/export
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The :ref:`app_sheets` supported format are Microsoft Excel ``.xlsx`` and OpenDocument ``.ods``. These can both be exported from popular software such as Google Sheets and LibreOffice Calc:
 
