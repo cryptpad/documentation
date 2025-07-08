@@ -11,7 +11,7 @@ If CryptPad is not working as expected there are a few common things to try. Mos
 #. Check the list of extensions below, disable the ones you have installed, if any
 #. Try using your browser in a private window and/or with all extensions disabled
 #. Try using a different browser. We recommend the latest versions of Firefox or Chromium
-#. If the issues persist, please contact support
+#. If the issues persist, please contact :ref:`support`
 
 List of extensions known to cause issues with CryptPad
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
