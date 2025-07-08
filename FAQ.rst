@@ -55,9 +55,9 @@ Making CryptPad compatible with a wide range of document formats is an ongoing c
 .. note::
     Simply copy-pasting content from existing software into CryptPad is an easy first step to try when importing/exporting. Please note that the import/export methods below can improve results significantly.
 
-It is possible to upload **files** to CryptPad for secure storage and sharing, however this does not make every file an editable CryptPad **document**. For this, you either have to:
+It is possible to upload **files** to CryptPad for secure storage and sharing, however this does not make every file an editable CryptPad **document** right away. For this, you either have to:
 
-- ``Right click`` > **Open in editor**, or...
+- ``Right click`` on the uploaded file > **Open in editor**, or...
 - Create a blank document and use the |file-o| **File** > |upload| **Import** functionality in the appropriate CryptPad editor as explained below.
 
 .. warning::
