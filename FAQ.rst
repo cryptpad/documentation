@@ -71,22 +71,10 @@ Import/export is not visible in the File menu
 
 For spreadsheets and advanced document processing, Cryptpad integrates OnlyOffice. As a result, there are two toolbars each with their own File menu on the same screen. Please make sure to check in both menus, when looking for import/export.
 
-Rich text application import/export
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The :ref:`app_rich_text` application support the HTML format for import/export:
-
-1. Export your document as HTML in your existing software.
-2. Save the file to your computer.
-3. Open a new :ref:`app_rich_text` document on CryptPad (or an existing one to replace the contents).
-4. |file-o| **File** > |upload| **Import** and select your file.
-
-To export, use |file-o| **File** > |download| **Export** and select ``.doc`` as the format.
-
 Document application import/export
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The :ref:`app_documents` application supported format are Microsoft Word ``.docx`` and OpenDocument ``.odt``. These can both be exported from popular software such as Google Docs and LibreOffice Writer:
+The :ref:`app_documents` supported format are Microsoft Word ``.docx`` and OpenDocument ``.odt``. These can both be exported from popular software such as Google Docs and LibreOffice Writer:
 
 1. Export your document as ``.docx`` or ``.odt`` in your existing software.
 2. Save the file to your computer.
@@ -103,7 +91,7 @@ To export, use |file-o| **File** > |download| **Export** and choose a format:
 Presentation application import/export
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The :ref:`app_presentation` application supported format are Microsoft PowerPoint ``.pptx`` and OpenDocument ``.odp``. These can both be exported from popular software such as Google Slides and LibreOffice Impress:
+The :ref:`app_presentation` supported format are Microsoft PowerPoint ``.pptx`` and OpenDocument ``.odp``. These can both be exported from popular software such as Google Slides and LibreOffice Impress:
 
 1. Export your document as ``.pptx`` or ``.odp`` in your existing software.
 2. Save the file to your computer.
@@ -136,6 +124,18 @@ To export, use |file-o| **File** > |download| **Export** and choose a format:
 - To use in LibreOffice Calc, select ``.ods``.
 - For cases where no further editing of the data is required after export (presentations, reports, etc), select ``.pdf``.
 - For backup purposes or to share with a user on another CryptPad instance, select ``.bin``.
+
+Rich text application import/export
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The :ref:`app_rich_text` support the HTML format for import/export:
+
+1. Export your document as HTML in your existing software.
+2. Save the file to your computer.
+3. Open a new :ref:`app_rich_text` document on CryptPad (or an existing one to replace the contents).
+4. |file-o| **File** > |upload| **Import** and select your file.
+
+To export, use |file-o| **File** > |download| **Export** and select ``.doc`` as the format.
 
 I cannot do X with a document I created
 ---------------------------------------
