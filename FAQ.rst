@@ -1,6 +1,8 @@
 Frequently Asked Questions
 ==========================
 
+.. _faq_common_issues:
+
 Common Issues
 -------------
 
@@ -45,19 +47,23 @@ If you are still logged in to an account for which you have forgotten the passwo
 3. In another browser, register a new account with a known password
 4. While logged in to the new account: **User Menu** (avatar at the top right) > |gear| **Settings** > |hdd-o| **CryptDrive** and click the **Restore** button.
 
-How to import/export my documents to/from another platform?
------------------------------------------------------------
+How to import/export to/from another platform?
+----------------------------------------------
 
 Making CryptPad compatible with a wide range of document formats is an ongoing challenge for the development team. Unfortunately the technology for converting documents in the browser still has limitations, especially as far as private and open source solutions are concerned. While work in this area is in progress, the methods below should help in importing and exporting to/from other widely used software.
 
 .. note::
     Simply copy-pasting content from existing software into CryptPad is an easy first step to try when importing/exporting. Please note that the import/export methods below can improve results significantly.
 
-It is possible to upload **files** to CryptPad for secure storage and sharing, however this does not make every file an editable CryptPad **document**.
+It is possible to upload **files** to CryptPad for secure storage and sharing, however this does not make every file an editable CryptPad **document**. For this, you either have to:
 
-Text files uploaded as files can be opened as a Code/Markdown document from the Drive with ``Right click`` > |cptools code| **Open in Code editor**.
+- ``Right click`` > **Open in editor**, or...
+- Create a blank document and use the |file-o| **File** > |upload| **Import** functionality in the appropriate CryptPad editor as explained below.
 
-To import any other file type in an editable form, please use the |file-o| **File** > |upload| **Import** functionality in the appropriate CryptPad editor as explained below.
+.. warning::
+    Support for `OpenDocument formats <https://en.wikipedia.org/wiki/OpenDocument>`_, ``.odt``, ``.odp`` & ``.ods`` import/export is currently experimental and prone to errors.
+
+If you encounter any issues, please check the :ref:`faq_common_issues` first. If you aren't able to make it work following these instructions, please reach out to your instance administrators through the :ref:`support` help desk. Providing an example document with the :ref:`share_link` functionality.
 
 Import/export is not visible in the File menu
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
