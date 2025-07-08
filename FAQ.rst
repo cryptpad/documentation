@@ -33,7 +33,7 @@ List of extensions known to cause issues with CryptPad
 * User-Agent Switcher and Manager
 
 .. note::
-    If you identify issues with another extension please `report it to the development team <https://github.com/cryptpad/cryptpad/issues/new/choose>`_
+    If you identify issues with another extension please `report it <https://github.com/cryptpad/cryptpad/issues/new/choose>`_  to the development team
 
 I forgot my password
 --------------------
@@ -45,7 +45,7 @@ If you are still logged in to an account for which you have forgotten the passwo
 1. While logged in to the account with the lost password, navigate to: **User Menu** (avatar at the top right) > |gear| **Settings** > |hdd-o| **CryptDrive**
 2. Click the **Backup** button to download a file containing the keys to all documents. (note: this is different to **Download my Cryptdrive** that saves the content of all individual documents)
 3. In another browser, register a new account with a known password
-4. While logged in to the new account: **User Menu** (avatar at the top right) > |gear| **Settings** > |hdd-o| **CryptDrive** and click the **Restore** button.
+4. While logged in to the new account: **User Menu** (avatar at the top right) > |gear| **Settings** > |hdd-o| **CryptDrive** and click the **Restore** button
 
 How to import/export to/from another platform?
 ----------------------------------------------
@@ -58,11 +58,11 @@ Making CryptPad compatible with a wide range of document formats is an ongoing c
 It is possible to upload **files** to CryptPad for secure storage and sharing, however this does not make every file an editable CryptPad **document** right away. For this, you either have to:
 
 - ``Right click`` on the uploaded file > **Open in editor**, or...
-- Create a blank document and use the |file-o| **File** > |upload| **Import** functionality in the appropriate CryptPad editor as explained below.
+- Create a blank document and use the |file-o| **File** > |upload| **Import** functionality in the appropriate CryptPad editor as explained below
 
 .. warning::
-    - The `Safari <https://www.apple.com/safari/>`_ web browser, used on macOS, iPadOS and iOS, isn't supported at this time.
-    - Support for `OpenDocument formats <https://en.wikipedia.org/wiki/OpenDocument>`_, ``.odt``, ``.odp`` & ``.ods`` import/export is currently experimental and prone to errors.
+    - The `Safari <https://www.apple.com/safari/>`_ web browser, used on macOS, iPadOS and iOS, isn't supported at this time
+    - Support for `OpenDocument formats <https://en.wikipedia.org/wiki/OpenDocument>`_, ``.odt``, ``.odp`` & ``.ods`` import/export is currently experimental and prone to errors
 
 If you encounter any issues, please check the :ref:`faq_common_issues` first. If you aren't able to make it work following these instructions, please reach out to your instance administrators through the :ref:`support` help desk. Providing an example document with the :ref:`share_link` functionality.
 
@@ -76,64 +76,64 @@ Document application import/export
 
 The :ref:`app_documents` supported format are Microsoft Word ``.docx`` and OpenDocument ``.odt``. These can both be exported from popular software such as Google Docs and LibreOffice Writer:
 
-1. Export your document as ``.docx`` or ``.odt`` in your existing software.
-2. Save the file to your computer.
-3. Open a new :ref:`app_documents` file (or an existing one to replace the contents).
-4. |file-o| **File** > |upload| **Import** and select your file.
+1. Export your document as ``.docx`` or ``.odt`` in your existing software
+2. Save the file to your computer
+3. Open a new :ref:`app_documents` file (or an existing one to replace the contents)
+4. |file-o| **File** > |upload| **Import** and select your file
 
 To export, use |file-o| **File** > |download| **Export** and choose a format:
 
-- To use in Microsoft Word or Google Docs, select ``.docx``.
-- To use in LibreOffice Writer, select ``.odt``.
-- For cases where no further editing of the data is required after export (letters, reports, etc), select ``.pdf``.
-- For backup purposes or to share with a user on another CryptPad instance, select ``.bin``.
+- To use in Microsoft Word or Google Docs, select ``.docx``
+- To use in LibreOffice Writer, select ``.odt``
+- For cases where no further editing of the data is required after export (letters, reports, etc), select ``.pdf``
+- For backup purposes or to share with a user on another CryptPad instance, select ``.bin``
 
 Presentation application import/export
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The :ref:`app_presentation` supported format are Microsoft PowerPoint ``.pptx`` and OpenDocument ``.odp``. These can both be exported from popular software such as Google Slides and LibreOffice Impress:
 
-1. Export your document as ``.pptx`` or ``.odp`` in your existing software.
-2. Save the file to your computer.
-3. Open a new :ref:`app_presentation` document (or an existing one to replace the contents).
-4. |file-o| **File** > |upload| **Import** and select your file.
+1. Export your document as ``.pptx`` or ``.odp`` in your existing software
+2. Save the file to your computer
+3. Open a new :ref:`app_presentation` document (or an existing one to replace the contents)
+4. |file-o| **File** > |upload| **Import** and select your file
 
 To export, use |file-o| **File** > |download| **Export** and choose a format:
 
-- To use in Microsoft PowerPoint or Google Slides, select ``.pptx``.
-- To use in LibreOffice Impress, select ``.odp``.
-- For cases where no further editing of the data is required after export (presentations, reports, etc), select ``.pdf``.
-- For backup purposes or to share with a user on another CryptPad instance, select ``.bin``.
+- To use in Microsoft PowerPoint or Google Slides, select ``.pptx``
+- To use in LibreOffice Impress, select ``.odp``
+- For cases where no further editing of the data is required after export (presentations, reports, etc), select ``.pdf``
+- For backup purposes or to share with a user on another CryptPad instance, select ``.bin``
 
 Spreadsheets import/export
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The :ref:`app_sheets` supported format are Microsoft Excel ``.xlsx`` and OpenDocument ``.ods``. These can both be exported from popular software such as Google Sheets and LibreOffice Calc:
 
-1. Export your document as ``.xlsx`` or ``.ods`` in your existing software.
-2. Save the file to your computer.
-3. Open a new :ref:`app_sheets` document (or an existing one to replace the contents).
-4. |file-o| **File** > |upload| **Import** and select your file.
+1. Export your document as ``.xlsx`` or ``.ods`` in your existing software
+2. Save the file to your computer
+3. Open a new :ref:`app_sheets` document (or an existing one to replace the contents)
+4. |file-o| **File** > |upload| **Import** and select your file
 
 To export, use |file-o| **File** > |download| **Export** and choose a format:
 
 .. .csv commented out as it's broken and deactivated
 .. - The ``.csv`` format is the most widely supported (note that it only contains data and not formatting).
 
-- To use in Microsoft Excel or Google sheets, select ``.xlsx``.
-- To use in LibreOffice Calc, select ``.ods``.
-- For cases where no further editing of the data is required after export (presentations, reports, etc), select ``.pdf``.
-- For backup purposes or to share with a user on another CryptPad instance, select ``.bin``.
+- To use in Microsoft Excel or Google sheets, select ``.xlsx``
+- To use in LibreOffice Calc, select ``.ods``
+- For cases where no further editing of the data is required after export (presentations, reports, etc), select ``.pdf``
+- For backup purposes or to share with a user on another CryptPad instance, select ``.bin``
 
 Rich text application import/export
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The :ref:`app_rich_text` support the HTML format for import/export:
 
-1. Export your document as HTML in your existing software.
-2. Save the file to your computer.
-3. Open a new :ref:`app_rich_text` document on CryptPad (or an existing one to replace the contents).
-4. |file-o| **File** > |upload| **Import** and select your file.
+1. Export your document as HTML in your existing software
+2. Save the file to your computer
+3. Open a new :ref:`app_rich_text` document on CryptPad (or an existing one to replace the contents)
+4. |file-o| **File** > |upload| **Import** and select your file
 
 To export, use |file-o| **File** > |download| **Export** and select ``.doc`` as the format.
 
@@ -142,10 +142,10 @@ I cannot do X with a document I created
 
 Some functionality on CryptPad is restricted to :ref:`document owners <owners>`. This includes:
 
--  Enabling an :ref:`access list <access_list>`.
--  Enabling a password.
--  Adding or removing other owners.
--  Destroying the document.
+-  Enabling an :ref:`access list <access_list>`
+-  Enabling a password
+-  Adding or removing other owners
+-  Destroying the document
 
 The ownership of a document is set when :ref:`creating it<new_document>` and cannot be changed afterwards if the document is created without an owner.
 
@@ -161,9 +161,9 @@ Are you planning to make an app?
 
 We are not planning a dedicated mobile application for the following reasons:
 
-- It would dramatically increase the amount of code that has to be developed and maintained, effectively creating other "versions" of CryptPad for iOS and Android.
+- It would dramatically increase the amount of code that has to be developed and maintained, effectively creating other "versions" of CryptPad for iOS and Android
 
-- CryptPad is open source and can be hosted by anyone who wants to offer the service. Therefore, users of a mobile application would have to specify which :ref:`CryptPad instance <cryptpad_instances>` they want to connect to, which would be confusing. To complicate things further, each instance may be running a different version of the software, depending on whether or not the latest updates were applied by the administrators.
+- CryptPad is open source and can be hosted by anyone who wants to offer the service. Therefore, users of a mobile application would have to specify which :ref:`CryptPad instance <cryptpad_instances>` they want to connect to, which would be confusing. To complicate things further, each instance may be running a different version of the software, depending on whether or not the latest updates were applied by the administrators
 
 To address these problems, the development team is working on making CryptPad a "Progressive Web App". This means that it can be used on mobile through the web browser, behaving like an application while being the same software that runs on desktop browsers. This has the benefit of turning every CryptPad instance into a web app provider, rather than putting the burden of choosing the right instance on the user.
 
