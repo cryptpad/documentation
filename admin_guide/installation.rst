@@ -344,6 +344,33 @@ contains at least:
 
          httpSafeOrigin: "https://some-other-domain.xyz",
 
+
+It is strongly recommended to set a login salt before users create accounts on your instance. This makes it more difficult for attackers to use rainbow tables or reuse credentials from other CryptPad instances.
+
+.. warning::
+    The login salt can only be set when first creating your CryptPad instance.
+    **Changing it later will break logins for all existing users.**
+
+Create ``customize/application_config.js`` file (see :ref:`admin_application_config`) and add the following configuration, replacing the preset value with a random string of your choice:
+
+Generate a random 32 character string:
+
+.. code:: bash
+
+    openssl rand -hex 32
+
+Then add the following to ``customize/application_config.js``:
+
+.. code:: javascript
+
+    AppConfig.loginSalt = '<RANDOM-SALT>';
+
+You may also want to increase the minimum password length by adding:
+
+.. code:: javascript
+
+    AppConfig.minimumPasswordLength = 8;
+
 .. _admin_instance_setup:
 
 Setup your instance
