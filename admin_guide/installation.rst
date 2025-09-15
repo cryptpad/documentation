@@ -134,19 +134,19 @@ You can also setup a dedicated cron job to run the ``scripts/evict-inactive.js``
 
    Note that you'll need to set ``disableIntegratedEviction`` to ``true`` in that case.
 
-Use the ``crontab -e`` command to set up a daily cron job, starting every day at 00h00:
+Use the ``crontab -e`` command to set up a cron job, happening twice a month, starting on the first and 15th at 01h30:
 
 .. code:: bash
 
-   0 0 * * * /usr/bin/node cryptpad/scripts/evict-inactive.js > /dev/null
+   30 1 1,15 * * (cd cryptpad; node scripts/evict-inactive.js > /dev/null)
 
 Then you'll likely want to do the same for ``scripts/evict-archived.js``. Which will clean the archive directory by permanently remove files that have been archived for more than ``archiveRetentionTime`` days.
 
-Again, use the ``crontab -e`` command to set up a weekly cron job, starting every Sunday at 00h00:
+Again, use the ``crontab -e`` command to set up a another cron job, starting on the 7th and 22th at 01h30:
 
 .. code:: bash
 
-   0 0 * * 0 /usr/bin/node cryptpad/scripts/evict-archived.js > /dev/null
+   30 1 7,22 * * (cd cryptpad; node scripts/evict-archived.js > /dev/null)
 
 Daemonization
 """""""""""""
