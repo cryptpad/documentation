@@ -189,7 +189,10 @@ We provide the following files in the CryptPad repository:
 
 .. note::
 
-   If you don't want to build your own images as explained below, you can also use the ones we publish on `Docker Hub <https://hub.docker.com/r/cryptpad/cryptpad/tags>`__, directly from the ``docker-compose.yml`` file.
+   If you don't want to build your own images as explained below, you can also use the ones we publish on `Docker Hub <https://hub.docker.com/r/cryptpad/cryptpad/tags>`__, directly from the ``docker-compose.yml`` file:
+
+   - ``cryptpad/version-X.x.z`` matches the official releases made on `GitHub <https://github.com/cryptpad/cryptpad/releases>`__
+   - ``cryptpad/latest`` is the latest one published with the versioning scheme
 
 #. Build your own Docker image
 
