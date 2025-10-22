@@ -78,6 +78,8 @@
 
   {# Keep modernizr in head - http://modernizr.com/docs/#installing #}
   <script src="{{ pathto('_static/js/modernizr.min.js', 1) }}"></script>
+  {# Lucide icons #}
+  <script src="{{ pathto('_static/js/lucide.min.js', 1) }}"></script>
 
 </head>
 
@@ -220,6 +222,9 @@
           {% endif %}
       });
   </script>
+
+  {# Lucide Icons #}
+  <script> lucide.createIcons() </script>
 
   {%- block footer %} {% endblock %}
 
