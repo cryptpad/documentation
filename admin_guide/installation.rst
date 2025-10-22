@@ -219,6 +219,12 @@ We provide the following files in the CryptPad repository:
 
       docker compose up -d
 
+#. Get the installation URL from the logs
+
+   .. code:: docker
+
+      docker compose logs
+
 Note that you'll still need to follow the CryptPad configuration steps, especially :ref:`admin_adminusers`. To do that you can mount your ``config.js`` file as a Docker volume.
 
    .. code:: docker
