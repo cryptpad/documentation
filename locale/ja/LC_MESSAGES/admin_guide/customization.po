@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CryptPad \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-04 17:52+0100\n"
+"POT-Creation-Date: 2025-10-24 14:07+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,64 +40,80 @@ msgid ""
 "before each upgrade**."
 msgstr ""
 
-#: ../../admin_guide/customization.rst:14
+#: ../../admin_guide/customization.rst:15
 msgid "Application config"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:16
+#: ../../admin_guide/customization.rst:17
 msgid ""
 "A wide range of settings are available in "
 "``www/common/application_config_internal.js``. To modify them:"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:18
+#: ../../admin_guide/customization.rst:19
 msgid ""
 "Make a copy of ``customize.dist/application_config.js`` in the "
 "``customize`` folder."
 msgstr ""
 
-#: ../../admin_guide/customization.rst:19
+#: ../../admin_guide/customization.rst:20
 msgid ""
 "Copy the default value(s) to modify from "
 "``www/common/application_config_internal.js`` into "
 "``customize/application_config.js``."
 msgstr ""
 
-#: ../../admin_guide/customization.rst:22
+#: ../../admin_guide/customization.rst:23
 msgid "Restricting guest access"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:24
+#: ../../admin_guide/customization.rst:25
 msgid ""
 "To disable unregistered use of CryptPad, add the following to "
 "``customize/application_config.js``:"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:32
+#: ../../admin_guide/customization.rst:31
+msgid "This will prevent unregistered users from using any of the applications."
+msgstr ""
+
+#: ../../admin_guide/customization.rst:33
+msgid ""
+"To block unregistered users from creating or saving new documents, add "
+"the following lines to ``customize/application_config.js``:"
+msgstr ""
+
+#: ../../admin_guide/customization.rst:40
+msgid ""
+"However, documents can still be shared with unregistered users, allowing "
+"them to edit and view files via shared links."
+msgstr ""
+
+#: ../../admin_guide/customization.rst:44
 msgid ""
 "To close registration of new users on the instance, see "
 ":ref:`admin_close_registration` in the admin panel."
 msgstr ""
 
-#: ../../admin_guide/customization.rst:35
+#: ../../admin_guide/customization.rst:47
 msgid "Links to Terms of Service, Privacy Policy and Imprint pages"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:37
+#: ../../admin_guide/customization.rst:49
 msgid ""
 "Links to these pages are added to ``customize/application_config.js`` and"
 " are shown on the instance home page and About menu if provided."
 msgstr ""
 
-#: ../../admin_guide/customization.rst:48
+#: ../../admin_guide/customization.rst:60
 msgid "Please restart your CryptPad instance after making these changes."
 msgstr ""
 
-#: ../../admin_guide/customization.rst:51
+#: ../../admin_guide/customization.rst:63
 msgid "Security Hardening"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:53
+#: ../../admin_guide/customization.rst:65
 msgid ""
 "It is strongly recommended to set in ``customize/application_config.js`` "
 "a randomly chosen string as a salt for the password hashing. This makes "
@@ -105,45 +121,45 @@ msgid ""
 "again on each CryptPad instance that they wish to attack."
 msgstr ""
 
-#: ../../admin_guide/customization.rst:57
+#: ../../admin_guide/customization.rst:69
 msgid ""
 "The ``loginSalt`` should only be set when your CryptPad instance is first"
 " created. **Changing it at a later time will break logins for all "
 "existing users.**"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:60
+#: ../../admin_guide/customization.rst:72
 msgid "For this, insert your chosen string in the following line:"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:66
+#: ../../admin_guide/customization.rst:78
 msgid ""
 "You may further want to increase the minimum password length. For this, "
 "modify the following line:"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:74
+#: ../../admin_guide/customization.rst:86
 msgid "Dark theme switch"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:76
+#: ../../admin_guide/customization.rst:88
 msgid ""
 "You can enforce the use of the dark theme on your instance by setting the"
 " ``AppConfig.defaultDarkTheme`` variable to true in "
 "``customize/application_config.js``:"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:83
+#: ../../admin_guide/customization.rst:95
 msgid "Look and feel"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:84
+#: ../../admin_guide/customization.rst:96
 msgid ""
 "Many aspects of CryptPad's interface can be customized by copying files "
 "from ``customize.dist`` to your ``customize`` directory."
 msgstr ""
 
-#: ../../admin_guide/customization.rst:86
+#: ../../admin_guide/customization.rst:98
 msgid ""
 "For example to change colors, copy the LESS color themes "
 "``colortheme.less`` and ``colortheme-dark.less`` from "
@@ -151,71 +167,71 @@ msgid ""
 " and edit the color values."
 msgstr ""
 
-#: ../../admin_guide/customization.rst:88
+#: ../../admin_guide/customization.rst:100
 msgid "To use a custom logo on the instance's homepage:"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:90
+#: ../../admin_guide/customization.rst:102
 msgid "Add your SVG logo to ``customize``"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:91
+#: ../../admin_guide/customization.rst:103
 msgid "Rename the logo ``CryptPad_logo_hero.svg``"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:93
+#: ../../admin_guide/customization.rst:105
 msgid "Files you may be interested in:"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:95
+#: ../../admin_guide/customization.rst:107
 msgid "``index.html`` is the main page"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:96
+#: ../../admin_guide/customization.rst:108
 msgid "``main.js`` contains javascript for the home page"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:97
+#: ../../admin_guide/customization.rst:109
 msgid ""
 "``application_config.js`` allows you to modify settings used by the "
 "various applications"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:98
+#: ../../admin_guide/customization.rst:110
 msgid ""
 "``messages.js`` contains functions for applying translations to various "
 "pages"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:99
+#: ../../admin_guide/customization.rst:111
 msgid ""
 "look inside ``/translations/`` for the rest of the files which contain "
 "translated strings"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:100
+#: ../../admin_guide/customization.rst:112
 msgid ""
 "``/share/`` implements an iframe RPC which allows multiple domains to "
 "access the same localStorage"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:101
+#: ../../admin_guide/customization.rst:113
 msgid ""
 "``/src/`` contains source files for html and css (in the form of html "
 "templates and .less stylesheets)"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:103
+#: ../../admin_guide/customization.rst:115
 msgid ""
 "All other content which is placed in this directory will be referencable "
 "at the ``/customize/`` URL location."
 msgstr ""
 
-#: ../../admin_guide/customization.rst:109
+#: ../../admin_guide/customization.rst:121
 msgid "Open Graph preview images"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:111
+#: ../../admin_guide/customization.rst:123
 msgid ""
 "Previews when links from the instance are posted to social media include "
 "images, these are located in "
@@ -225,11 +241,11 @@ msgid ""
 "just like any other image."
 msgstr ""
 
-#: ../../admin_guide/customization.rst:114
+#: ../../admin_guide/customization.rst:126
 msgid "Translations"
 msgstr ""
 
-#: ../../admin_guide/customization.rst:116
+#: ../../admin_guide/customization.rst:128
 msgid ""
 "To customize the text of the CryptPad interface in a given language, copy"
 " ``customize.dist/translations/messages.xx.js`` to "
@@ -237,7 +253,7 @@ msgid ""
 "the language (use ``messages.js`` to customize English)."
 msgstr ""
 
-#: ../../admin_guide/customization.rst:118
+#: ../../admin_guide/customization.rst:130
 msgid ""
 "In this file, modify the default text using the \"Messages\" object as "
 "follows: ``Messages.key = \"Text\";``. For all the keys and their "
@@ -247,14 +263,14 @@ msgid ""
 "translated text."
 msgstr ""
 
-#: ../../admin_guide/customization.rst:120
+#: ../../admin_guide/customization.rst:132
 msgid ""
 "For example, to customize the text about the instance on the home page, "
 "the following could be pasted in ``customize/translations/messages.js`` "
 "and the text changed to describe the instance."
 msgstr ""
 
-#: ../../admin_guide/customization.rst:126
+#: ../../admin_guide/customization.rst:138
 msgid ""
 "For more information on how translations work in CryptPad please see "
 ":ref:`dev_translations` in the developer guide."
