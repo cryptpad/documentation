@@ -33,7 +33,7 @@ List of extensions known to cause issues with CryptPad
 * User-Agent Switcher and Manager
 
 .. note::
-    If you identify issues with another extension please `report it <https://github.com/cryptpad/cryptpad/issues/new/choose>`_  to the development team
+    If you identify issues with another extension please `report it <https://github.com/cryptpad/cryptpad/issues/new/choose>`_ to the development team
 
 I forgot my password
 --------------------
