@@ -109,7 +109,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../user_account.html#notifications">Уведомления</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_account.html#settings">Настройки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#account">Учетная запись</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../user_account.html#profile">Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#profile">Профиль</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#security-privacy">Безопасность и Конфиденциальность</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#appearance">Внешний вид</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#cryptdrive">CryptDrive</a></li>
@@ -306,7 +306,11 @@
 <li class="toctree-l3"><a class="reference internal" href="diagram.html">Диаграмма</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="diagram.html#documentation">Документация</a></li>
 <li class="toctree-l4"><a class="reference internal" href="diagram.html#toolbars">Панели инструментов</a></li>
-<li class="toctree-l4"><a class="reference internal" href="diagram.html#import-export">Импорт/Экспорт</a></li>
+<li class="toctree-l4"><a class="reference internal" href="diagram.html#import-export">Импорт/Экспорт</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="diagram.html#cryptpad-toolbar">CryptPad toolbar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="diagram.html#draw-io-toolbar">Draw.io toolbar</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Рисунки</a><ul>
@@ -625,12 +629,12 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-forgot-my-password">Я забыл свой пароль</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Как импортировать/экспортировать мои документы на/с другую(ой) платформу(ы)?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-to-import-export-to-from-another-platform">How to import/export to/from another platform?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#import-export-is-not-visible-in-the-file-menu">Импорт/экспорт не отображается в меню «Файл»</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#rich-text-document-import-export">Импорт/экспорт форматированных текстовых документов</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#document-import-export">Document import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#presentation-import-export">Presentation import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#spreadsheets-import-export">Импорт/экспорт электронных таблиц</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#document-application-import-export">Document application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#presentation-application-import-export">Presentation application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#spreadsheet-application-import-export">Spreadsheet application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#rich-text-application-import-export">Rich text application import/export</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-cannot-do-x-with-a-document-i-created">Я не могу сделать X с документом, который я создал</a></li>
@@ -771,8 +775,8 @@
 <img alt="../../_images/app-presentation-collab-mode.png" class="screenshot" src="../../_images/app-presentation-collab-mode.png" />
 <p>OnlyOffice предоставляет два режима совместного редактирования в презентациях, которые влияют на то, как изменения синхронизируются между пользователями и доступна ли функция <strong>Отменить</strong>.</p>
 <ul class="simple">
-<li><p>** Быстрый режим ** включен по умолчанию. Новые правки всех пользователей автоматически синхронизируются с другими по мере их внесения. В этом режиме отменить его невозможно.</p></li>
-<li><p>** Строгий режим ** позволяет каждому пользователю вносить изменения независимо. Измененные ячейки 'блокируются' для других до тех пор, пока автор вручную не сохранит их изменения. Новые изменения синхронизируются с другими пользователями только после сохранения. В этом режиме можно отменить изменения, которые еще не были сохранены. Когда пользователь сохраняет свои изменения, другим пользователям предлагается сохранить их, чтобы получить последние изменения.</p></li>
+<li><p><strong>Быстрый режим</strong> включен по умолчанию. Новые правки всех пользователей автоматически синхронизируются с другими по мере их внесения. В этом режиме отменить его невозможно.</p></li>
+<li><p><strong>Строгий режим</strong> позволяет каждому пользователю вносить изменения независимо. Измененные ячейки 'блокируются' для других до тех пор, пока автор вручную не сохранит их изменения. Новые изменения синхронизируются с другими пользователями только после сохранения. В этом режиме можно отменить изменения, которые еще не были сохранены. Когда пользователь сохраняет свои изменения, другим пользователям предлагается сохранить их, чтобы получить последние изменения.</p></li>
 </ul>
 <p>Когда для отмены правки нажимается <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">Z</kbd></kbd>, приложение автоматически предлагает переключиться в <strong>Строгий режим</strong>, чтобы активировать функцию отмены.</p>
 <p>Чтобы вернуться в <strong>Быстрый режим</strong>, используйте вкладку <strong>Совместная работа</strong> на панели инструментов OnlyOffice и выберите <strong>Режим совместного редактирования</strong> &gt; <strong>Быстрый</strong>.</p>

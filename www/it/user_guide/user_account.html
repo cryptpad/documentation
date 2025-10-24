@@ -306,7 +306,11 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/diagram.html">Diagram</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#documentation">Documentation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#toolbars">Toolbars</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">Import/Export</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apps/diagram.html#cryptpad-toolbar">CryptPad toolbar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="apps/diagram.html#draw-io-toolbar">Draw.io toolbar</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Whiteboard</a><ul>
@@ -625,12 +629,12 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-forgot-my-password">I forgot my password</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">How to import/export my documents to/from another platform?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-to-from-another-platform">How to import/export to/from another platform?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#import-export-is-not-visible-in-the-file-menu">Import/export is not visible in the File menu</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">Rich text document import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-import-export">Document import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-import-export">Presentation import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">Spreadsheets import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-application-import-export">Document application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-application-import-export">Presentation application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheet-application-import-export">Spreadsheet application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-application-import-export">Rich text application import/export</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-cannot-do-x-with-a-document-i-created">I cannot do X with a document I created</a></li>
@@ -747,7 +751,10 @@
   <section id="user-account">
 <h1>User Account<a class="headerlink" href="#user-account" title="Permalink to this heading">¶</a></h1>
 <p>CryptPad encrypts data so that it is readable only by you and your collaborators. For this reason <strong>the administrators of the service cannot view, retrieve or reset your password</strong>. Therefore it is important that you make a note of your password in a safe place separate from your CryptPad account.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
 <p>CryptPad uses the combination of your username and password to identify you. Usernames are not unique on CryptPad. It is possible to create multiple accounts with the same username and different passwords.</p>
+</div>
 <section id="account-types">
 <h2>Account types<a class="headerlink" href="#account-types" title="Permalink to this heading">¶</a></h2>
 <p>There are three types of accounts on CryptPad:</p>
@@ -890,7 +897,10 @@ history.</p></li>
 <li><p><strong>Change your password</strong>: Change your account's password. Enter your current password, and confirm the new password by typing it twice</p></li>
 <li><p><strong>Safe links</strong>: When this setting is active, the link in your browser’s address bar does not provide access to the document unless the recipient already has it in their CryptDrive. This setting is active by default. It is highly recommended to keep it active and to use the <a class="reference internal" href="share_and_access.html#share"><span class="std std-ref">Share</span></a> menu to copy links to documents.</p></li>
 </ul>
+<div class="admonition danger">
+<p class="admonition-title">Pericolo</p>
 <p>CryptPad includes the keys to decrypt your documents in their links. Anyone with access to your browsing history can potentially read your data. This includes intrusive browser extensions and browsers that sync your history across devices. Situations where your browser is visible by others, such as screen-sharing or screenshots, are also potentially risky in terms of leaking access to your documents. Enabling “safe links” prevents the keys from entering your browsing history or being displayed in your address bar whenever possible.</p>
+</div>
 <ul class="simple">
 <li><p><strong>Feedback</strong>: CryptPad can send anonymised usage feedback to the server in order to improve the user experience. The content of documents is never shared. This option is disabled by default.</p></li>
 <li><p><strong>Cache</strong>: CryptPad stores parts of your documents in your browser's memory in order to save network usage and improve loading times. You can disable the cache if your device doesn't have a lot of free storage space. For security reasons, the cache is always cleared when you log out, but you can clear it manually if you want to reclaim storage space on your machine.</p></li>

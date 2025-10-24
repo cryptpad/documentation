@@ -134,19 +134,19 @@ You can also setup a dedicated cron job to run the ``scripts/evict-inactive.js``
 
    Note that you'll need to set ``disableIntegratedEviction`` to ``true`` in that case.
 
-Use the ``crontab -e`` command to set up a daily cron job, starting every day at 00h00:
+Use the ``crontab -e`` command to set up a cron job, happening twice a month, starting on the first and 15th at 01h30:
 
 .. code:: bash
 
-   0 0 * * * /usr/bin/node cryptpad/scripts/evict-inactive.js > /dev/null
+   30 1 1,15 * * (cd cryptpad; node scripts/evict-inactive.js > /dev/null)
 
 Then you'll likely want to do the same for ``scripts/evict-archived.js``. Which will clean the archive directory by permanently remove files that have been archived for more than ``archiveRetentionTime`` days.
 
-Again, use the ``crontab -e`` command to set up a weekly cron job, starting every Sunday at 00h00:
+Again, use the ``crontab -e`` command to set up a another cron job, starting on the 7th and 22th at 01h30:
 
 .. code:: bash
 
-   0 0 * * 0 /usr/bin/node cryptpad/scripts/evict-archived.js > /dev/null
+   30 1 7,22 * * (cd cryptpad; node scripts/evict-archived.js > /dev/null)
 
 Daemonization
 """""""""""""
@@ -189,7 +189,10 @@ We provide the following files in the CryptPad repository:
 
 .. note::
 
-   If you don't want to build your own images as explained below, you can also use the ones we publish on `Docker Hub <https://hub.docker.com/r/cryptpad/cryptpad/tags>`__, directly from the ``docker-compose.yml`` file.
+   If you don't want to build your own images as explained below, you can also use the ones we publish on `Docker Hub <https://hub.docker.com/r/cryptpad/cryptpad/tags>`__, directly from the ``docker-compose.yml`` file:
+
+   - ``cryptpad/version-X.x.z`` matches the official releases made on `GitHub <https://github.com/cryptpad/cryptpad/releases>`__
+   - ``cryptpad/latest`` is the latest one published with the versioning scheme
 
 #. Build your own Docker image
 
@@ -215,6 +218,12 @@ We provide the following files in the CryptPad repository:
    .. code:: docker
 
       docker compose up -d
+
+#. Get the installation URL from the logs
+
+   .. code:: docker
+
+      docker compose logs
 
 Note that you'll still need to follow the CryptPad configuration steps, especially :ref:`admin_adminusers`. To do that you can mount your ``config.js`` file as a Docker volume.
 
@@ -299,7 +308,7 @@ The `example Nginx configuration <https://github.com/cryptpad/cryptpad/blob/main
 Install and configure Nginx
 ---------------------------
 
-CryptPad’s application server handles active connections via websocket and serves static assets (HTML, Javascript, CSS, etc.). This basic configuration is designed to be very easy to configure for small to midsize instances (up to 3000 concurrent users). In a production environment, the development team recommends `Nginx <https://nginx.org/en/linux_packages.html#Debian>`__ with our `advanced example configuration <https://github.com/cryptpad/cryptpad/blob/main/docs/example-advanced.nginx.conf>`__ for the following reasons:
+CryptPad’s application server handles active connections via websocket and serves static assets (HTML, Javascript, CSS, etc.). This basic configuration is designed to be very easy to configure for small to midsize instances (up to 3000 concurrent users). In a more demanding environment, the development team recommends `Nginx <https://nginx.org/en/linux_packages.html#Debian>`__ with our `advanced example configuration <https://github.com/cryptpad/cryptpad/blob/main/docs/example-advanced.nginx.conf>`__ for the following reasons:
 
 1. Scale to many more users by serving static content with a more scalable web-server instead of the single-threaded NodeJS web-server that is built-in
 2. Allow the application server to focus exclusively on handling websocket connections
@@ -343,6 +352,33 @@ contains at least:
       .. code:: javascript
 
          httpSafeOrigin: "https://some-other-domain.xyz",
+
+
+It is strongly recommended to set a login salt before users create accounts on your instance. This makes it more difficult for attackers to use rainbow tables or reuse credentials from other CryptPad instances.
+
+.. warning::
+    The login salt can only be set when first creating your CryptPad instance.
+    **Changing it later will break logins for all existing users.**
+
+Create ``customize/application_config.js`` file (see :ref:`admin_application_config`) and add the following configuration, replacing the preset value with a random string of your choice:
+
+Generate a random 32 character string:
+
+.. code:: bash
+
+    openssl rand -hex 32
+
+Then add the following to ``customize/application_config.js``:
+
+.. code:: javascript
+
+    AppConfig.loginSalt = '<RANDOM-SALT>';
+
+You may also want to increase the minimum password length by adding:
+
+.. code:: javascript
+
+    AppConfig.minimumPasswordLength = 8;
 
 .. _admin_instance_setup:
 

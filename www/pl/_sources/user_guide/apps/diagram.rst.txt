@@ -24,8 +24,25 @@ CryptPad integrates Draw.io diagrams into the same encrypted collaboration syste
 Import/Export
 -------------
 
+CryptPad toolbar
+""""""""""""""""
+
+Import and export diagram files.
+
 | |file-o| **File** > |upload| **Import**.
 | Supported formats: ``.drawio``
 
 | |file-o| **File** > |download| **Export**.
-| Supported formats: ``.png``, ``.jpg``, ``.svg``, ``.pdf``
+| Supported formats: ``.drawio``
+
+
+Draw.io toolbar
+"""""""""""""""
+
+Add content inside your diagram document or preview it in an image format.
+
+| **File** > **Import from**.
+| Supported formats: ``.drawio``
+
+| **File** > **Export as**.
+| Supported formats: ``.png``, ``.jpg``, ``.svg`` & ``.pdf``

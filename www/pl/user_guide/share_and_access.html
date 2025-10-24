@@ -201,7 +201,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#access-rights">Poziomy dostępu</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#sharing-with-contacts">Udostępnianie kontaktom</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#sharing-a-link">Sharing a link</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#embedding">Embedding</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#embedding">Osadzanie</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#shared-folders">Shared folders</a></li>
 </ul>
 </li>
@@ -306,7 +306,11 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/diagram.html">Diagram</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#documentation">Dokumentacja</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#toolbars">Paski narzędzi</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">Import/Eksport</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">Import/Eksport</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apps/diagram.html#cryptpad-toolbar">CryptPad toolbar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="apps/diagram.html#draw-io-toolbar">Draw.io toolbar</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Tablica</a><ul>
@@ -625,12 +629,12 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-forgot-my-password">Zapomniane hasło</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Jak importować/eksportować moje dokumenty z/na inną platformę?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-to-from-another-platform">How to import/export to/from another platform?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#import-export-is-not-visible-in-the-file-menu">Import/export is not visible in the File menu</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">Import/eksport dokumentu sformatowanego</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-import-export">Document import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-import-export">Presentation import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">Import/eksport arkuszy kalkulacyjnych</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-application-import-export">Document application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-application-import-export">Presentation application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheet-application-import-export">Spreadsheet application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-application-import-export">Rich text application import/export</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-cannot-do-x-with-a-document-i-created">I cannot do X with a document I created</a></li>
@@ -753,7 +757,7 @@
 </ul>
 <section id="share">
 <span id="id1"></span><h2>Udostępnianie<a class="headerlink" href="#share" title="Permalink to this heading">¶</a></h2>
-<p>There are three ways to share a document: <a class="reference internal" href="#share-contacts"><span class="std std-ref">Udostępnianie kontaktom</span></a>, <a class="reference internal" href="#share-link"><span class="std std-ref">Sharing a link</span></a>, and <a class="reference internal" href="#share-embed"><span class="std std-ref">Embedding</span></a>. In each case, access rights can be set to authorise the recipient to edit the document, or to only view it.</p>
+<p>There are three ways to share a document: <a class="reference internal" href="#share-contacts"><span class="std std-ref">Udostępnianie kontaktom</span></a>, <a class="reference internal" href="#share-link"><span class="std std-ref">Sharing a link</span></a>, and <a class="reference internal" href="#share-embed"><span class="std std-ref">Osadzanie</span></a>. In each case, access rights can be set to authorise the recipient to edit the document, or to only view it.</p>
 <section id="access-rights">
 <span id="share-access-rights"></span><h3>Poziomy dostępu<a class="headerlink" href="#access-rights" title="Permalink to this heading">¶</a></h3>
 <p>There are 4 levels of permissions:</p>
@@ -780,9 +784,9 @@
 </ul>
 <p>Następnie:</p>
 <ol class="arabic simple">
-<li><p>Choose the <a class="reference internal" href="#share-access-rights"><span class="std std-ref">access rights</span></a>.</p></li>
-<li><p>Select the contacts or teams to share with.</p></li>
-<li><p><strong>Share</strong> button.</p></li>
+<li><p>Wybierz <a class="reference internal" href="#share-access-rights"><span class="std std-ref">zezwolenia dostępu</span></a>.</p></li>
+<li><p>Wybierz kontakty lub zespoły, którym chcesz udzielić dostępu.</p></li>
+<li><p>Przycisk <strong>Udostępnij</strong>.</p></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
@@ -801,7 +805,7 @@ When sharing with a team, the document is added directly to the team’s CryptDr
 </ul>
 <p>Następnie:</p>
 <ol class="arabic simple">
-<li><p>Choose the <a class="reference internal" href="#share-access-rights"><span class="std std-ref">access rights</span></a> and additional options:</p>
+<li><p>Wybierz <a class="reference internal" href="#share-access-rights"><span class="std std-ref">zezwolenia dostępu</span></a> i dodatkowe opcje:</p>
 <ul class="simple">
 <li><p><strong>Embed mode</strong> hides the toolbar and user list.</p></li>
 <li><p><strong>Preview</strong> allows to check what the link will look like before sending it.</p></li>
@@ -812,17 +816,17 @@ When sharing with a team, the document is added directly to the team’s CryptDr
 </ol>
 </section>
 <section id="embedding">
-<span id="share-embed"></span><h3>Embedding<a class="headerlink" href="#embedding" title="Permalink to this heading">¶</a></h3>
+<span id="share-embed"></span><h3>Osadzanie<a class="headerlink" href="#embedding" title="Permalink to this heading">¶</a></h3>
 <p>Embedding allows for a CryptPad document to be displayed on a web page.</p>
 <img alt="../_images/modal-share-embed.png" class="screenshot" src="../_images/modal-share-embed.png" />
-<p>To embed a document:</p>
+<p>Aby osadzić dokument:</p>
 <ul class="simple">
 <li><p>From the document : <em class="fa fa-share-alt"></em> <strong>Share</strong> in the toolbar &gt; <em class="fa fa-code"></em> <strong>Embed</strong>.</p></li>
 <li><p>From the CryptDrive : <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document &gt; <em class="fa fa-share-alt"></em> <strong>Share</strong> &gt; <em class="fa fa-code"></em> <strong>Embed</strong>.</p></li>
 </ul>
 <p>then</p>
 <ol class="arabic simple">
-<li><p>Choose the <a class="reference internal" href="#share-access-rights"><span class="std std-ref">access rights</span></a>.</p></li>
+<li><p>Wybierz <a class="reference internal" href="#share-access-rights"><span class="std std-ref">zezwolenia dostępu</span></a>.</p></li>
 <li><p><strong>Copy</strong> the embed code.</p></li>
 <li><p>Paste the code on a web page.</p></li>
 </ol>
@@ -861,6 +865,7 @@ choice.
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
 <p>Shared folders have their own history, separate from the <a class="reference internal" href="drive.html#drive-history"><span class="std std-ref">Historia</span></a>. Restoring the history of the drive does not affect shared folders, conversely the history of a shared folder can be restored without affecting the rest of the drive.</p>
+<p>Please note that, once shared, they cannot be reverted to normal folders.</p>
 </div>
 </section>
 </section>
@@ -881,8 +886,8 @@ choice.
 <li><p><strong>Password</strong>: Displays if a password has been set. A new password can be set, or an existing password modified.</p></li>
 <li><p><strong>Owners</strong>: List of all the document’s <a class="reference external" href="#owners">owners</a>.</p></li>
 <li><div class="line-block">
-<div class="line"><strong>Edit rights requests</strong>:</div>
-<div class="line"><strong>Request edit rights</strong>: For users with read-only access rights.</div>
+<div class="line"><strong>Prośby o zezwolenie edycji</strong>:</div>
+<div class="line"><strong>Poproś o zezwolenie edycji</strong>: Dla użytkowników z zezwoleniami dostępu tylko do odczytu.</div>
 <div class="line"><em class="fa fa-bell-slash"></em> <strong>Mute access requests for this pad</strong>: Hides edit rights requests for this document. <span class="badge-owner">Document owners</span></div>
 </div>
 </li>
@@ -897,9 +902,9 @@ indicates if it is enabled.</p></li>
 <img alt="../_images/modal-access-list.png" class="screenshot" src="../_images/modal-access-list.png" />
 <p>The access list restricts access to a document. Once active, users who are not on the list are not able to access the document, even if they have it stored in their CryptDrive.</p>
 <p>To enable the access list, tick <strong>Enable access list</strong>. The <a class="reference external" href="#owners">owners</a> of the document are on the list by default and cannot be removed from it.</p>
-<p>To add contacts or teams to the list:</p>
+<p>Aby dodać kontakty lub zespoły do listy:</p>
 <ol class="arabic simple">
-<li><p>Select them in the list of contacts on the right.</p></li>
+<li><p>Wybierz je z listy kontaktów po prawej.</p></li>
 <li><p>Add them to the list with the <em class="fa fa-arrow-left"></em> button.</p></li>
 </ol>
 <p>To remove a user or team from the list use the <em class="fa fa-times"></em> button next to their name.</p>
@@ -922,7 +927,7 @@ indicates if it is enabled.</p></li>
 <p><span class="badge-owner">Document owners</span></p>
 <p>To add users or teams as owners:</p>
 <ol class="arabic simple">
-<li><p>Select them in the list of contacts on the right.</p></li>
+<li><p>Wybierz je z listy kontaktów po prawej.</p></li>
 <li><p>Add them to the list with the <em class="fa fa-arrow-left"></em> button.</p></li>
 </ol>
 <p>To remove an owner, use the <em class="fa fa-times"></em> button next to their name.</p>

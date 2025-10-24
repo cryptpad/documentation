@@ -109,7 +109,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../user_account.html#notifications">Уведомления</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_account.html#settings">Настройки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#account">Учетная запись</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../user_account.html#profile">Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#profile">Профиль</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#security-privacy">Безопасность и Конфиденциальность</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#appearance">Внешний вид</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#cryptdrive">CryptDrive</a></li>
@@ -306,7 +306,11 @@
 <li class="toctree-l3"><a class="reference internal" href="diagram.html">Диаграмма</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="diagram.html#documentation">Документация</a></li>
 <li class="toctree-l4"><a class="reference internal" href="diagram.html#toolbars">Панели инструментов</a></li>
-<li class="toctree-l4"><a class="reference internal" href="diagram.html#import-export">Импорт/Экспорт</a></li>
+<li class="toctree-l4"><a class="reference internal" href="diagram.html#import-export">Импорт/Экспорт</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="diagram.html#cryptpad-toolbar">CryptPad toolbar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="diagram.html#draw-io-toolbar">Draw.io toolbar</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Рисунки</a><ul>
@@ -625,12 +629,12 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-forgot-my-password">Я забыл свой пароль</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Как импортировать/экспортировать мои документы на/с другую(ой) платформу(ы)?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-to-import-export-to-from-another-platform">How to import/export to/from another platform?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#import-export-is-not-visible-in-the-file-menu">Импорт/экспорт не отображается в меню «Файл»</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#rich-text-document-import-export">Импорт/экспорт форматированных текстовых документов</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#document-import-export">Document import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#presentation-import-export">Presentation import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#spreadsheets-import-export">Импорт/экспорт электронных таблиц</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#document-application-import-export">Document application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#presentation-application-import-export">Presentation application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#spreadsheet-application-import-export">Spreadsheet application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#rich-text-application-import-export">Rich text application import/export</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-cannot-do-x-with-a-document-i-created">Я не могу сделать X с документом, который я создал</a></li>
@@ -986,14 +990,14 @@
 <section id="import-export">
 <h2>Импорт/Экспорт<a class="headerlink" href="#import-export" title="Permalink to this heading">¶</a></h2>
 <p>Сами документы форм можно экспортировать и импортировать в формате <code class="docutils literal notranslate"><span class="pre">JSON</span></code>.</p>
-<p>Чтобы экспортировать ответы, из <em class="fa fa-bar-chart"></em> на странице <strong>Ответы</strong> у Вас есть две возможности:</p>
+<p>Чтобы экспортировать ответы со страницы <em class="fa fa-bar-chart"></em> <strong>Ответы</strong> у Вас есть две возможности:</p>
 <ol class="arabic simple">
 <li><p>в виде файла CSV или JSON используйте кнопку <em class="fa fa-download"></em> <strong>ЭКСПОРТ</strong></p></li>
-<li><p>как Таблица, которую можно добавить на Диск с помощью кнопки <strong>ЭКСПОРТИРОВАТЬ В ЛИСТ</strong></p></li>
+<li><p>как Таблицу, которую можно добавить на Диск кнопкой <strong>ЭКСПОРТ В ТАБЛИЦА</strong></p></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Примечание</p>
-<p>Документ электронной таблицы будет автоматически заполнен данными из Вашей формы в момент её создания. Однако из-за особенностей работы сквозного шифрования содержимое электронной таблицы не будет автоматически обновляться новыми ответами по мере их поступления.</p>
+<p>Документ электронной таблицы будет автоматически заполнен данными (ответами) из Вашей формы в момент его создания. Однако из-за особенностей работы сквозного шифрования содержимое электронной таблицы не будет автоматически обновляться новыми ответами по мере их поступления.</p>
 </div>
 </section>
 </section>

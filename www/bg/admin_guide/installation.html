@@ -306,7 +306,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/diagram.html">Diagram</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/diagram.html#documentation">Документация</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/diagram.html#toolbars">Toolbars</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/diagram.html#import-export">Импортиране/Експортиране</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/diagram.html#import-export">Импортиране/Експортиране</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../user_guide/apps/diagram.html#cryptpad-toolbar">CryptPad toolbar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../user_guide/apps/diagram.html#draw-io-toolbar">Draw.io toolbar</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/whiteboard.html">Бяла дъска</a><ul>
@@ -625,12 +629,12 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-forgot-my-password">Забравих паролата си</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Как да импортирам/експортирам моите документи към/от друга платформа?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-to-from-another-platform">How to import/export to/from another platform?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#import-export-is-not-visible-in-the-file-menu">Импортиране/експортиране не се вижда в менюто Файл</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">Импорт/експорт на текстов документ (RTF)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-import-export">Document import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-import-export">Presentation import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">Импортиране/експортиране на електронни таблици</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-application-import-export">Document application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-application-import-export">Presentation application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheet-application-import-export">Spreadsheet application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-application-import-export">Rich text application import/export</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-cannot-do-x-with-a-document-i-created">I cannot do X with a document I created</a></li>
@@ -858,13 +862,13 @@ npm<span class="w"> </span>run<span class="w"> </span>install:components
 <p class="admonition-title">Note</p>
 <p>Note that you'll need to set <code class="docutils literal notranslate"><span class="pre">disableIntegratedEviction</span></code> to <code class="docutils literal notranslate"><span class="pre">true</span></code> in that case.</p>
 </div>
-<p>Use the <code class="docutils literal notranslate"><span class="pre">crontab</span> <span class="pre">-e</span></code> command to set up a daily cron job, starting every day at 00h00:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">0</span><span class="w"> </span><span class="m">0</span><span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>/usr/bin/node<span class="w"> </span>cryptpad/scripts/evict-inactive.js<span class="w"> </span>&gt;<span class="w"> </span>/dev/null
+<p>Use the <code class="docutils literal notranslate"><span class="pre">crontab</span> <span class="pre">-e</span></code> command to set up a cron job, happening twice a month, starting on the first and 15th at 01h30:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">30</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">1</span>,15<span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span><span class="o">(</span><span class="nb">cd</span><span class="w"> </span>cryptpad<span class="p">;</span><span class="w"> </span>node<span class="w"> </span>scripts/evict-inactive.js<span class="w"> </span>&gt;<span class="w"> </span>/dev/null<span class="o">)</span>
 </pre></div>
 </div>
 <p>Then you'll likely want to do the same for <code class="docutils literal notranslate"><span class="pre">scripts/evict-archived.js</span></code>. Which will clean the archive directory by permanently remove files that have been archived for more than <code class="docutils literal notranslate"><span class="pre">archiveRetentionTime</span></code> days.</p>
-<p>Again, use the <code class="docutils literal notranslate"><span class="pre">crontab</span> <span class="pre">-e</span></code> command to set up a weekly cron job, starting every Sunday at 00h00:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">0</span><span class="w"> </span><span class="m">0</span><span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span><span class="m">0</span><span class="w"> </span>/usr/bin/node<span class="w"> </span>cryptpad/scripts/evict-archived.js<span class="w"> </span>&gt;<span class="w"> </span>/dev/null
+<p>Again, use the <code class="docutils literal notranslate"><span class="pre">crontab</span> <span class="pre">-e</span></code> command to set up a another cron job, starting on the 7th and 22th at 01h30:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="m">30</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="m">7</span>,22<span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span><span class="o">(</span><span class="nb">cd</span><span class="w"> </span>cryptpad<span class="p">;</span><span class="w"> </span>node<span class="w"> </span>scripts/evict-archived.js<span class="w"> </span>&gt;<span class="w"> </span>/dev/null<span class="o">)</span>
 </pre></div>
 </div>
 </section>
@@ -904,7 +908,11 @@ npm<span class="w"> </span>run<span class="w"> </span>install:components
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you don't want to build your own images as explained below, you can also use the ones we publish on <a class="reference external" href="https://hub.docker.com/r/cryptpad/cryptpad/tags">Docker Hub</a>, directly from the <code class="docutils literal notranslate"><span class="pre">docker-compose.yml</span></code> file.</p>
+<p>If you don't want to build your own images as explained below, you can also use the ones we publish on <a class="reference external" href="https://hub.docker.com/r/cryptpad/cryptpad/tags">Docker Hub</a>, directly from the <code class="docutils literal notranslate"><span class="pre">docker-compose.yml</span></code> file:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">cryptpad/version-X.x.z</span></code> matches the official releases made on <a class="reference external" href="https://github.com/cryptpad/cryptpad/releases">GitHub</a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cryptpad/latest</span></code> is the latest one published with the versioning scheme</p></li>
+</ul>
 </div>
 <ol class="arabic">
 <li><p>Build your own Docker image</p>
@@ -927,6 +935,11 @@ sudo<span class="w"> </span>chown<span class="w"> </span>-R<span class="w"> </sp
 </li>
 <li><p>Run the container with Docker Compose</p>
 <div class="highlight-docker notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d
+</pre></div>
+</div>
+</li>
+<li><p>Get the installation URL from the logs</p>
+<div class="highlight-docker notranslate"><div class="highlight"><pre><span></span>docker<span class="w"> </span>compose<span class="w"> </span>logs
 </pre></div>
 </div>
 </li>
@@ -1000,7 +1013,7 @@ git<span class="w"> </span>checkout<span class="w"> </span>9d8b914a
 </section>
 <section id="install-and-configure-nginx">
 <h2>Install and configure Nginx<a class="headerlink" href="#install-and-configure-nginx" title="Permalink to this heading">¶</a></h2>
-<p>CryptPad’s application server handles active connections via websocket and serves static assets (HTML, Javascript, CSS, etc.). This basic configuration is designed to be very easy to configure for small to midsize instances (up to 3000 concurrent users). In a production environment, the development team recommends <a class="reference external" href="https://nginx.org/en/linux_packages.html#Debian">Nginx</a> with our <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/docs/example-advanced.nginx.conf">advanced example configuration</a> for the following reasons:</p>
+<p>CryptPad’s application server handles active connections via websocket and serves static assets (HTML, Javascript, CSS, etc.). This basic configuration is designed to be very easy to configure for small to midsize instances (up to 3000 concurrent users). In a more demanding environment, the development team recommends <a class="reference external" href="https://nginx.org/en/linux_packages.html#Debian">Nginx</a> with our <a class="reference external" href="https://github.com/cryptpad/cryptpad/blob/main/docs/example-advanced.nginx.conf">advanced example configuration</a> for the following reasons:</p>
 <ol class="arabic simple">
 <li><p>Scale to many more users by serving static content with a more scalable web-server instead of the single-threaded NodeJS web-server that is built-in</p></li>
 <li><p>Allow the application server to focus exclusively on handling websocket connections</p></li>
@@ -1043,6 +1056,25 @@ contains at least:</p>
 </ul>
 </li>
 </ul>
+<p>It is strongly recommended to set a login salt before users create accounts on your instance. This makes it more difficult for attackers to use rainbow tables or reuse credentials from other CryptPad instances.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The login salt can only be set when first creating your CryptPad instance.
+<strong>Changing it later will break logins for all existing users.</strong></p>
+</div>
+<p>Create <code class="docutils literal notranslate"><span class="pre">customize/application_config.js</span></code> file (see <a class="reference internal" href="customization.html#admin-application-config"><span class="std std-ref">Application config</span></a>) and add the following configuration, replacing the preset value with a random string of your choice:</p>
+<p>Generate a random 32 character string:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>openssl<span class="w"> </span>rand<span class="w"> </span>-hex<span class="w"> </span><span class="m">32</span>
+</pre></div>
+</div>
+<p>Then add the following to <code class="docutils literal notranslate"><span class="pre">customize/application_config.js</span></code>:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">AppConfig</span><span class="p">.</span><span class="nx">loginSalt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&lt;RANDOM-SALT&gt;&#39;</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>You may also want to increase the minimum password length by adding:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">AppConfig</span><span class="p">.</span><span class="nx">minimumPasswordLength</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">8</span><span class="p">;</span>
+</pre></div>
+</div>
 <section id="setup-your-instance">
 <span id="admin-instance-setup"></span><h3>Setup your instance<a class="headerlink" href="#setup-your-instance" title="Permalink to this heading">¶</a></h3>
 <p>Once CryptPad is installed, use the URL with the token generated when you ran the server for the first time to start the onboarding workflow.</p>

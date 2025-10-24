@@ -306,7 +306,11 @@
 <li class="toctree-l3"><a class="reference internal" href="user_guide/apps/diagram.html">Diagram</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/apps/diagram.html#documentation">Documentation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/apps/diagram.html#toolbars">Toolbars</a></li>
-<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/diagram.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/diagram.html#import-export">Import/Export</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="user_guide/apps/diagram.html#cryptpad-toolbar">CryptPad toolbar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="user_guide/apps/diagram.html#draw-io-toolbar">Draw.io toolbar</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="user_guide/apps/whiteboard.html">Whiteboard</a><ul>
@@ -625,12 +629,12 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#i-forgot-my-password">I forgot my password</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#how-to-import-export-my-documents-to-from-another-platform">How to import/export my documents to/from another platform?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-import-export-to-from-another-platform">How to import/export to/from another platform?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#import-export-is-not-visible-in-the-file-menu">Import/export is not visible in the File menu</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#rich-text-document-import-export">Rich text document import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#document-import-export">Document import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#presentation-import-export">Presentation import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#spreadsheets-import-export">Spreadsheets import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#document-application-import-export">Document application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#presentation-application-import-export">Presentation application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#spreadsheet-application-import-export">Spreadsheet application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rich-text-application-import-export">Rich text application import/export</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#i-cannot-do-x-with-a-document-i-created">I cannot do X with a document I created</a></li>
@@ -745,13 +749,13 @@
   <section id="frequently-asked-questions">
 <h1>Frequently Asked Questions<a class="headerlink" href="#frequently-asked-questions" title="Enlace permanente a este encabezado">¶</a></h1>
 <section id="common-issues">
-<h2>Common Issues<a class="headerlink" href="#common-issues" title="Enlace permanente a este encabezado">¶</a></h2>
+<span id="faq-common-issues"></span><h2>Common Issues<a class="headerlink" href="#common-issues" title="Enlace permanente a este encabezado">¶</a></h2>
 <p>If CryptPad is not working as expected there are a few common things to try. Most of these relate to web browsers and extensions that either interfere with CryptPad's security features or disable basic browser functionality.</p>
 <ol class="arabic simple">
 <li><p>Check the list of extensions below, disable the ones you have installed, if any</p></li>
 <li><p>Try using your browser in a private window and/or with all extensions disabled</p></li>
-<li><p>Try using a different browser. We recommend the latest versions of Firefox or Chromium</p></li>
-<li><p>If the issues persist, please contact support</p></li>
+<li><p>Try using a different browser. We recommend the latest versions of <a class="reference external" href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a> or <a class="reference external" href="https://www.chromium.org/Home/">Chromium</a></p></li>
+<li><p>If the issues persist, please contact your instance <a class="reference internal" href="user_guide/support.html#support"><span class="std std-ref">Support</span></a></p></li>
 </ol>
 <section id="list-of-extensions-known-to-cause-issues-with-cryptpad">
 <h3>List of extensions known to cause issues with CryptPad<a class="headerlink" href="#list-of-extensions-known-to-cause-issues-with-cryptpad" title="Enlace permanente a este encabezado">¶</a></h3>
@@ -774,7 +778,7 @@
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
-<p>If you identify issues with another extension please <a class="reference external" href="https://github.com/cryptpad/cryptpad/issues/new/choose">report it to the development team</a></p>
+<p>If you identify issues with another extension please <a class="reference external" href="https://github.com/cryptpad/cryptpad/issues/new/choose">report it</a> to the development team</p>
 </div>
 </section>
 </section>
@@ -786,102 +790,105 @@
 <li><p>While logged in to the account with the lost password, navigate to: <strong>User Menu</strong> (avatar at the top right) &gt; <em class="fa fa-gear"></em> <strong>Settings</strong> &gt; <em class="fa fa-hdd-o"></em> <strong>CryptDrive</strong></p></li>
 <li><p>Click the <strong>Backup</strong> button to download a file containing the keys to all documents. (note: this is different to <strong>Download my Cryptdrive</strong> that saves the content of all individual documents)</p></li>
 <li><p>In another browser, register a new account with a known password</p></li>
-<li><p>While logged in to the new account: <strong>User Menu</strong> (avatar at the top right) &gt; <em class="fa fa-gear"></em> <strong>Settings</strong> &gt; <em class="fa fa-hdd-o"></em> <strong>CryptDrive</strong> and click the <strong>Restore</strong> button.</p></li>
+<li><p>While logged in to the new account: <strong>User Menu</strong> (avatar at the top right) &gt; <em class="fa fa-gear"></em> <strong>Settings</strong> &gt; <em class="fa fa-hdd-o"></em> <strong>CryptDrive</strong> and click the <strong>Restore</strong> button</p></li>
 </ol>
 </section>
-<section id="how-to-import-export-my-documents-to-from-another-platform">
-<h2>How to import/export my documents to/from another platform?<a class="headerlink" href="#how-to-import-export-my-documents-to-from-another-platform" title="Enlace permanente a este encabezado">¶</a></h2>
-<p>Making CryptPad compatible with a wide range of document formats is an ongoing challenge for the development team. Unfortunately the technology for converting documents in the browser still has limitations, especially as far as private and open source solutions are concerned. While work in this area is in progress, the methods below should help in importing and exporting to/from other widely used software.</p>
+<section id="how-to-import-export-to-from-another-platform">
+<h2>How to import/export to/from another platform?<a class="headerlink" href="#how-to-import-export-to-from-another-platform" title="Enlace permanente a este encabezado">¶</a></h2>
+<p>Making CryptPad compatible with a wide range of document formats is an ongoing challenge for the development team. While work in this area is in progress, the methods below should help in importing and exporting to/from other widely used software.</p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
 <p>Simply copy-pasting content from existing software into CryptPad is an easy first step to try when importing/exporting. Please note that the import/export methods below can improve results significantly.</p>
 </div>
-<p>It is possible to upload <strong>files</strong> to CryptPad for secure storage and sharing, however this does not make every file an editable CryptPad <strong>document</strong>.</p>
-<p>Text files uploaded as files can be opened as a Code/Markdown document from the Drive with <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> &gt; <em class="cptools cptools-code"></em> <strong>Open in Code editor</strong>.</p>
-<p>To import any other file type in an editable form, please use the <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> functionality in the appropriate CryptPad editor as explained below.</p>
+<p>It is possible to upload <strong>files</strong> to CryptPad for secure storage and sharing, however this does not make every file an editable CryptPad <strong>document</strong> right away. For this, you either have to:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the uploaded file &gt; <strong>Open in editor</strong>, or...</p></li>
+<li><p>Create a blank document and use the <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> functionality in the appropriate CryptPad editor as explained below</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Advertencia</p>
+<ul class="simple">
+<li><p>The <a class="reference external" href="https://www.apple.com/safari/">Safari</a> web browser, used on macOS, iPadOS and iOS, isn't supported at this time</p></li>
+<li><p>Support for <a class="reference external" href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> is currently broken, <code class="docutils literal notranslate"><span class="pre">.csv</span></code> import/export is disabled for the time being</p></li>
+<li><p>Support for <a class="reference external" href="https://en.wikipedia.org/wiki/OpenDocument">OpenDocument formats</a>, <code class="docutils literal notranslate"><span class="pre">.odt</span></code>, <code class="docutils literal notranslate"><span class="pre">.odp</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">.ods</span></code> import/export is currently experimental and prone to errors</p></li>
+</ul>
+</div>
+<p>If you encounter any issues, please check the <a class="reference internal" href="#faq-common-issues"><span class="std std-ref">Common Issues</span></a> first. If you aren't able to make it work following these instructions, please reach out to your instance administrators through the <a class="reference internal" href="user_guide/support.html#support"><span class="std std-ref">Support</span></a> help desk. Providing an example document with the <a class="reference internal" href="user_guide/share_and_access.html#share-link"><span class="std std-ref">Sharing a link</span></a> functionality.</p>
 <section id="import-export-is-not-visible-in-the-file-menu">
 <h3>Import/export is not visible in the File menu<a class="headerlink" href="#import-export-is-not-visible-in-the-file-menu" title="Enlace permanente a este encabezado">¶</a></h3>
 <p>For spreadsheets and advanced document processing, Cryptpad integrates OnlyOffice. As a result, there are two toolbars each with their own File menu on the same screen. Please make sure to check in both menus, when looking for import/export.</p>
-<div class="admonition note">
-<p class="admonition-title">Nota</p>
-<p>See the <a class="reference external" href="https://docs.cryptpad.org/en/user_guide/apps/sheets.html#toolbars">warning note</a> in our Spreadsheet application documentation.</p>
-</div>
 </section>
-<section id="rich-text-document-import-export">
-<h3>Rich text document import/export<a class="headerlink" href="#rich-text-document-import-export" title="Enlace permanente a este encabezado">¶</a></h3>
-<p>To import rich text documents (Microsoft Word, Google Docs, LibreOffice Writer, etc.), the supported format is HTML:</p>
+<section id="document-application-import-export">
+<h3>Document application import/export<a class="headerlink" href="#document-application-import-export" title="Enlace permanente a este encabezado">¶</a></h3>
+<p>The <a class="reference internal" href="user_guide/apps/document.html#app-documents"><span class="std std-ref">Document</span></a> supported format are Microsoft Word <code class="docutils literal notranslate"><span class="pre">.docx</span></code> and OpenDocument <code class="docutils literal notranslate"><span class="pre">.odt</span></code>. These can both be exported from popular software such as Google Docs and LibreOffice Writer:</p>
 <ol class="arabic simple">
-<li><p>Export your document as HTML in your existing software.</p></li>
-<li><p>Save the file to your computer.</p></li>
-<li><p>Open a new <a class="reference internal" href="user_guide/apps/richtext.html#app-rich-text"><span class="std std-ref">Rich Text</span></a> document on CryptPad (or an existing one to replace the contents).</p></li>
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> and select your file.</p></li>
+<li><p>Export your document as <code class="docutils literal notranslate"><span class="pre">.docx</span></code> or <code class="docutils literal notranslate"><span class="pre">.odt</span></code> in your existing software</p></li>
+<li><p>Save the file to your computer</p></li>
+<li><p>Open a new <a class="reference internal" href="user_guide/apps/document.html#app-documents"><span class="std std-ref">Document</span></a> file (or an existing one to replace the contents)</p></li>
+<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> and select your file</p></li>
+</ol>
+<p>To export, use <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-download"></em> <strong>Export</strong> and choose a format:</p>
+<ul class="simple">
+<li><p>To use in Microsoft Word or Google Docs, select <code class="docutils literal notranslate"><span class="pre">.docx</span></code></p></li>
+<li><p>To use in LibreOffice Writer, select <code class="docutils literal notranslate"><span class="pre">.odt</span></code></p></li>
+<li><p>For cases where no further editing of the data is required after export (letters, reports, etc), select <code class="docutils literal notranslate"><span class="pre">.pdf</span></code></p></li>
+<li><p>For backup purposes or to share with a user on another CryptPad instance, select <code class="docutils literal notranslate"><span class="pre">.bin</span></code></p></li>
+</ul>
+</section>
+<section id="presentation-application-import-export">
+<h3>Presentation application import/export<a class="headerlink" href="#presentation-application-import-export" title="Enlace permanente a este encabezado">¶</a></h3>
+<p>The <a class="reference internal" href="user_guide/apps/presentation.html#app-presentation"><span class="std std-ref">Presentation</span></a> supported format are Microsoft PowerPoint <code class="docutils literal notranslate"><span class="pre">.pptx</span></code> and OpenDocument <code class="docutils literal notranslate"><span class="pre">.odp</span></code>. These can both be exported from popular software such as Google Slides and LibreOffice Impress:</p>
+<ol class="arabic simple">
+<li><p>Export your document as <code class="docutils literal notranslate"><span class="pre">.pptx</span></code> or <code class="docutils literal notranslate"><span class="pre">.odp</span></code> in your existing software</p></li>
+<li><p>Save the file to your computer</p></li>
+<li><p>Open a new <a class="reference internal" href="user_guide/apps/presentation.html#app-presentation"><span class="std std-ref">Presentation</span></a> document (or an existing one to replace the contents)</p></li>
+<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> and select your file</p></li>
+</ol>
+<p>To export, use <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-download"></em> <strong>Export</strong> and choose a format:</p>
+<ul class="simple">
+<li><p>To use in Microsoft PowerPoint or Google Slides, select <code class="docutils literal notranslate"><span class="pre">.pptx</span></code></p></li>
+<li><p>To use in LibreOffice Impress, select <code class="docutils literal notranslate"><span class="pre">.odp</span></code></p></li>
+<li><p>For cases where no further editing of the data is required after export (presentations, reports, etc), select <code class="docutils literal notranslate"><span class="pre">.pdf</span></code></p></li>
+<li><p>For backup purposes or to share with a user on another CryptPad instance, select <code class="docutils literal notranslate"><span class="pre">.bin</span></code></p></li>
+</ul>
+</section>
+<section id="spreadsheet-application-import-export">
+<h3>Spreadsheet application import/export<a class="headerlink" href="#spreadsheet-application-import-export" title="Enlace permanente a este encabezado">¶</a></h3>
+<p>The <a class="reference internal" href="user_guide/apps/sheets.html#app-sheets"><span class="std std-ref">Spreadsheet</span></a> supported format are Microsoft Excel <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code> and OpenDocument <code class="docutils literal notranslate"><span class="pre">.ods</span></code>. These can both be exported from popular software such as Google Sheets and LibreOffice Calc:</p>
+<ol class="arabic simple">
+<li><p>Export your document as <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code> or <code class="docutils literal notranslate"><span class="pre">.ods</span></code> in your existing software</p></li>
+<li><p>Save the file to your computer</p></li>
+<li><p>Open a new <a class="reference internal" href="user_guide/apps/sheets.html#app-sheets"><span class="std std-ref">Spreadsheet</span></a> document (or an existing one to replace the contents)</p></li>
+<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> and select your file</p></li>
+</ol>
+<p>To export, use <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-download"></em> <strong>Export</strong> and choose a format:</p>
+<ul class="simple">
+<li><p>To use in Microsoft Excel or Google sheets, select <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code></p></li>
+<li><p>To use in LibreOffice Calc, select <code class="docutils literal notranslate"><span class="pre">.ods</span></code></p></li>
+<li><p>For cases where no further editing of the data is required after export (presentations, reports, etc), select <code class="docutils literal notranslate"><span class="pre">.pdf</span></code></p></li>
+<li><p>For backup purposes or to share with a user on another CryptPad instance, select <code class="docutils literal notranslate"><span class="pre">.bin</span></code></p></li>
+</ul>
+</section>
+<section id="rich-text-application-import-export">
+<h3>Rich text application import/export<a class="headerlink" href="#rich-text-application-import-export" title="Enlace permanente a este encabezado">¶</a></h3>
+<p>The <a class="reference internal" href="user_guide/apps/richtext.html#app-rich-text"><span class="std std-ref">Rich Text</span></a> support the HTML format for import/export:</p>
+<ol class="arabic simple">
+<li><p>Export your document as HTML in your existing software</p></li>
+<li><p>Save the file to your computer</p></li>
+<li><p>Open a new <a class="reference internal" href="user_guide/apps/richtext.html#app-rich-text"><span class="std std-ref">Rich Text</span></a> document on CryptPad (or an existing one to replace the contents)</p></li>
+<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> and select your file</p></li>
 </ol>
 <p>To export, use <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-download"></em> <strong>Export</strong> and select <code class="docutils literal notranslate"><span class="pre">.doc</span></code> as the format.</p>
-</section>
-<section id="document-import-export">
-<h3>Document import/export<a class="headerlink" href="#document-import-export" title="Enlace permanente a este encabezado">¶</a></h3>
-<p>To import documents, the supported format are Microsoft Word <code class="docutils literal notranslate"><span class="pre">.docx</span></code> and OpenDocument <code class="docutils literal notranslate"><span class="pre">.odt</span></code>. These can both be exported from popular software such as Google Docs and LibreOffice Writer:</p>
-<ol class="arabic simple">
-<li><p>Export your document as <code class="docutils literal notranslate"><span class="pre">.docx</span></code> or <code class="docutils literal notranslate"><span class="pre">.odt</span></code> in your existing software.</p></li>
-<li><p>Save the file to your computer.</p></li>
-<li><p>Open a new <a class="reference internal" href="user_guide/apps/document.html#app-documents"><span class="std std-ref">Document</span></a> file (or an existing one to replace the contents).</p></li>
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> and select your file.</p></li>
-</ol>
-<p>To export, use <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-download"></em> <strong>Export</strong> and choose a format:</p>
-<ul class="simple">
-<li><p>To use in Microsoft Word or Google Docs, select <code class="docutils literal notranslate"><span class="pre">.docx</span></code>.</p></li>
-<li><p>To use in LibreOffice Writer, select <code class="docutils literal notranslate"><span class="pre">.odt</span></code>.</p></li>
-<li><p>For cases where no further editing of the data is required after export (letters, reports, etc), select <code class="docutils literal notranslate"><span class="pre">.pdf</span></code>.</p></li>
-<li><p>For backup purposes or to share with a user on another CryptPad instance, select <code class="docutils literal notranslate"><span class="pre">.bin</span></code>.</p></li>
-</ul>
-</section>
-<section id="presentation-import-export">
-<h3>Presentation import/export<a class="headerlink" href="#presentation-import-export" title="Enlace permanente a este encabezado">¶</a></h3>
-<p>To import presentations, the supported format are Microsoft PowerPoint <code class="docutils literal notranslate"><span class="pre">.pptx</span></code> and OpenDocument <code class="docutils literal notranslate"><span class="pre">.odp</span></code>. These can both be exported from popular software such as Google Slides and LibreOffice Impress:</p>
-<ol class="arabic simple">
-<li><p>Export your document as <code class="docutils literal notranslate"><span class="pre">.pptx</span></code> or <code class="docutils literal notranslate"><span class="pre">.odp</span></code> in your existing software.</p></li>
-<li><p>Save the file to your computer.</p></li>
-<li><p>Open a new <a class="reference internal" href="user_guide/apps/presentation.html#app-presentation"><span class="std std-ref">Presentation</span></a> document (or an existing one to replace the contents).</p></li>
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> and select your file.</p></li>
-</ol>
-<p>To export, use <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-download"></em> <strong>Export</strong> and choose a format:</p>
-<ul class="simple">
-<li><p>To use in Microsoft PowerPoint or Google Slides, select <code class="docutils literal notranslate"><span class="pre">.pptx</span></code>.</p></li>
-<li><p>To use in LibreOffice Impress, select <code class="docutils literal notranslate"><span class="pre">.odp</span></code>.</p></li>
-<li><p>For cases where no further editing of the data is required after export (presentations, reports, etc), select <code class="docutils literal notranslate"><span class="pre">.pdf</span></code>.</p></li>
-<li><p>For backup purposes or to share with a user on another CryptPad instance, select <code class="docutils literal notranslate"><span class="pre">.bin</span></code>.</p></li>
-</ul>
-</section>
-<section id="spreadsheets-import-export">
-<h3>Spreadsheets import/export<a class="headerlink" href="#spreadsheets-import-export" title="Enlace permanente a este encabezado">¶</a></h3>
-<p>To import spreadsheets, the supported format are Microsoft Excel <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code> and OpenDocument <code class="docutils literal notranslate"><span class="pre">.ods</span></code>. These can both be exported from popular software such as Google Sheets and LibreOffice Calc:</p>
-<ol class="arabic simple">
-<li><p>Export your document as <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code> or <code class="docutils literal notranslate"><span class="pre">.ods</span></code> in your existing software.</p></li>
-<li><p>Save the file to your computer.</p></li>
-<li><p>Open a new <a class="reference internal" href="user_guide/apps/sheets.html#app-sheets"><span class="std std-ref">Spreadsheet</span></a> document (or an existing one to replace the contents).</p></li>
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> and select your file.</p></li>
-</ol>
-<p>To export, use <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-download"></em> <strong>Export</strong> and choose a format:</p>
-<ul class="simple">
-<li><p>To use in Microsoft Excel or Google sheets, select <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code>.</p></li>
-<li><p>To use in LibreOffice Calc, select <code class="docutils literal notranslate"><span class="pre">.ods</span></code>.</p></li>
-<li><p>For cases where no further editing of the data is required after export (presentations, reports, etc), select <code class="docutils literal notranslate"><span class="pre">.pdf</span></code>.</p></li>
-<li><p>For backup purposes or to share with a user on another CryptPad instance, select <code class="docutils literal notranslate"><span class="pre">.bin</span></code>.</p></li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Nota</p>
-<p>Import/export of OnlyOffice documents to various formats is only available in browsers that support specific functionality. Please see the <a class="reference external" href="https://caniuse.com/sharedarraybuffer">up-to-date list of supported browsers</a>.</p>
-</div>
 </section>
 </section>
 <section id="i-cannot-do-x-with-a-document-i-created">
 <h2>I cannot do X with a document I created<a class="headerlink" href="#i-cannot-do-x-with-a-document-i-created" title="Enlace permanente a este encabezado">¶</a></h2>
 <p>Some functionality on CryptPad is restricted to <a class="reference internal" href="user_guide/share_and_access.html#owners"><span class="std std-ref">document owners</span></a>. This includes:</p>
 <ul class="simple">
-<li><p>Enabling an <a class="reference internal" href="user_guide/share_and_access.html#access-list"><span class="std std-ref">access list</span></a>.</p></li>
-<li><p>Enabling a password.</p></li>
-<li><p>Adding or removing other owners.</p></li>
-<li><p>Destroying the document.</p></li>
+<li><p>Enabling an <a class="reference internal" href="user_guide/share_and_access.html#access-list"><span class="std std-ref">access list</span></a></p></li>
+<li><p>Enabling a password</p></li>
+<li><p>Adding or removing other owners</p></li>
+<li><p>Destroying the document</p></li>
 </ul>
 <p>The ownership of a document is set when <a class="reference internal" href="user_guide/apps/general.html#new-document"><span class="std std-ref">creating it</span></a> and cannot be changed afterwards if the document is created without an owner.</p>
 <p>The development team is considering removing this distinction in future. In the meantime, the safe default option is to &quot;own&quot; all documents you create in order to retain full control over them, including the ability to destroy them.</p>
@@ -893,8 +900,8 @@
 <h3>Are you planning to make an app?<a class="headerlink" href="#are-you-planning-to-make-an-app" title="Enlace permanente a este encabezado">¶</a></h3>
 <p>We are not planning a dedicated mobile application for the following reasons:</p>
 <ul class="simple">
-<li><p>It would dramatically increase the amount of code that has to be developed and maintained, effectively creating other &quot;versions&quot; of CryptPad for iOS and Android.</p></li>
-<li><p>CryptPad is open source and can be hosted by anyone who wants to offer the service. Therefore, users of a mobile application would have to specify which <a class="reference internal" href="user_guide/instances.html#cryptpad-instances"><span class="std std-ref">CryptPad instance</span></a> they want to connect to, which would be confusing. To complicate things further, each instance may be running a different version of the software, depending on whether or not the latest updates were applied by the administrators.</p></li>
+<li><p>It would dramatically increase the amount of code that has to be developed and maintained, effectively creating other &quot;versions&quot; of CryptPad for iOS and Android</p></li>
+<li><p>CryptPad is open source and can be hosted by anyone who wants to offer the service. Therefore, users of a mobile application would have to specify which <a class="reference internal" href="user_guide/instances.html#cryptpad-instances"><span class="std std-ref">CryptPad instance</span></a> they want to connect to, which would be confusing. To complicate things further, each instance may be running a different version of the software, depending on whether or not the latest updates were applied by the administrators</p></li>
 </ul>
 <p>To address these problems, the development team is working on making CryptPad a &quot;Progressive Web App&quot;. This means that it can be used on mobile through the web browser, behaving like an application while being the same software that runs on desktop browsers. This has the benefit of turning every CryptPad instance into a web app provider, rather than putting the burden of choosing the right instance on the user.</p>
 </section>

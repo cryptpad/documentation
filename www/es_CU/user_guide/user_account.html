@@ -306,7 +306,11 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/diagram.html">Diagrama</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#documentation">Documentación</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#toolbars">Barras de herramientas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">Importar/Exportar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">Importar/Exportar</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apps/diagram.html#cryptpad-toolbar">CryptPad toolbar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="apps/diagram.html#draw-io-toolbar">Draw.io toolbar</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Whiteboard</a><ul>
@@ -625,12 +629,12 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-forgot-my-password">Olvidé mi contraseña</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">¿Cómo importar/exportar mis documentos hacia/desde otra plataforma?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-to-from-another-platform">How to import/export to/from another platform?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#import-export-is-not-visible-in-the-file-menu">Importar/exportar no es visible en el menú Archivo</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">Importación/exportación de documentos de texto enriquecido</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-import-export">Document import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-import-export">Presentation import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">Importación/exportación de hojas de cálculo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-application-import-export">Document application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-application-import-export">Presentation application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheet-application-import-export">Spreadsheet application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-application-import-export">Rich text application import/export</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-cannot-do-x-with-a-document-i-created">No puedo hacer X con un documento que creé</a></li>
@@ -747,7 +751,10 @@
   <section id="user-account">
 <h1>Cuenta de usuario<a class="headerlink" href="#user-account" title="Enlace permanente a este encabezado">¶</a></h1>
 <p>CryptPad cifra los datos para que solo tu y tus colaboradores puedan leerlos. Por este motivo <strong>los administradores del servicio no pueden ver, recuperar ni restablecer su contraseña</strong>. Por lo tanto, es importante que anotes tu contraseña en un lugar seguro separado de tu cuenta CryptPad.</p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
 <p>CryptPad utiliza la combinación de tu nombre de usuario y contraseña para identificarte. Los nombres de usuario no son únicos en CryptPad. Es posible crear varias cuentas con el mismo nombre de usuario y diferentes contraseñas.</p>
+</div>
 <section id="account-types">
 <h2>Tipos de cuenta<a class="headerlink" href="#account-types" title="Enlace permanente a este encabezado">¶</a></h2>
 <p>Hay tres tipos de cuentas en CryptPad:</p>
@@ -889,7 +896,10 @@
 <li><p><strong>Cambiar tu contraseña</strong>: Cambia la contraseña de tu cuenta. Ingresa tu contraseña actual y confirma la nueva contraseña escribiéndola dos veces</p></li>
 <li><p><strong>Enlaces seguros</strong>: cuando esta configuración está activa, el enlace en la barra de direcciones de tu navegador no proporciona acceso al documento a menos que el destinatario ya lo tenga en su CryptDrive. Esta configuración está activa de forma predeterminada. Se recomienda encarecidamente mantenerlo activo y utilizar el menú <a class="reference internal" href="share_and_access.html#share"><span class="std std-ref">Compartir</span></a> para copiar enlaces a documentos.</p></li>
 </ul>
+<div class="admonition danger">
+<p class="admonition-title">Peligro</p>
 <p>CryptPad incluye las claves para descifrar tus documentos en sus enlaces. Cualquiera que tenga acceso a tu historial de navegación puede potencialmente leer tus datos. Esto incluye, extensiones de navegador intrusivas y navegadores que sincronizan su historial entre dispositivos. Las situaciones en las que otros pueden ver tu navegador, como compartir pantalla o capturas de pantalla, también son potencialmente riesgosas en términos de filtración de acceso a tus documentos. Habilitar &quot;enlaces seguros&quot; evita que las claves ingresen a tu historial de navegación o se muestren en tu barra de direcciones siempre que sea posible.</p>
+</div>
 <ul class="simple">
 <li><p><strong>Comentarios</strong>: CryptPad puede enviar comentarios de uso anónimos al servidor para mejorar la experiencia del usuario. El contenido de los documentos nunca se comparte. Esta opción está deshabilitada de forma predeterminada.</p></li>
 <li><p><strong>Caché</strong>: CryptPad almacena partes de tus documentos en la memoria de tu navegador para ahorrar uso de la red y mejorar los tiempos de carga. Puedes desactivar el caché si tu dispositivo no tiene mucho espacio de almacenamiento libre. Por razones de seguridad, el caché siempre se borra cuando cierras sesión, pero puedes borrarlo manualmente si deseas recuperar espacio de almacenamiento en tu máquina.</p></li>

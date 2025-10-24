@@ -109,7 +109,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#notifications">Уведомления</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/user_account.html#settings">Настройки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#account">Учетная запись</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#profile">Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#profile">Профиль</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#security-privacy">Безопасность и Конфиденциальность</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#appearance">Внешний вид</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/user_account.html#cryptdrive">CryptDrive</a></li>
@@ -306,7 +306,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/diagram.html">Диаграмма</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/diagram.html#documentation">Документация</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/diagram.html#toolbars">Панели инструментов</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/diagram.html#import-export">Импорт/Экспорт</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/diagram.html#import-export">Импорт/Экспорт</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../user_guide/apps/diagram.html#cryptpad-toolbar">CryptPad toolbar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../user_guide/apps/diagram.html#draw-io-toolbar">Draw.io toolbar</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/whiteboard.html">Рисунки</a><ul>
@@ -625,12 +629,12 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-forgot-my-password">Я забыл свой пароль</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Как импортировать/экспортировать мои документы на/с другую(ой) платформу(ы)?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-to-from-another-platform">How to import/export to/from another platform?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#import-export-is-not-visible-in-the-file-menu">Импорт/экспорт не отображается в меню «Файл»</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">Импорт/экспорт форматированных текстовых документов</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-import-export">Document import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-import-export">Presentation import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">Импорт/экспорт электронных таблиц</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-application-import-export">Document application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-application-import-export">Presentation application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheet-application-import-export">Spreadsheet application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-application-import-export">Rich text application import/export</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-cannot-do-x-with-a-document-i-created">Я не могу сделать X с документом, который я создал</a></li>
@@ -752,7 +756,7 @@
 <p>The purpose of the <code class="docutils literal notranslate"><span class="pre">customize</span></code> directory is to make it easier to upgrade CryptPad while maintaining customizations in place. Occasionally, a major new version may introduce breaking changes or require adjustments in the customizations. Administrators with customized instances are therefore encouraged to <strong>read instructions carefully before each upgrade</strong>.</p>
 </div>
 <section id="application-config">
-<h2>Application config<a class="headerlink" href="#application-config" title="Permalink to this heading">¶</a></h2>
+<span id="admin-application-config"></span><h2>Application config<a class="headerlink" href="#application-config" title="Permalink to this heading">¶</a></h2>
 <p>A wide range of settings are available in <code class="docutils literal notranslate"><span class="pre">www/common/application_config_internal.js</span></code>. To modify them:</p>
 <ol class="arabic simple">
 <li><p>Make a copy of <code class="docutils literal notranslate"><span class="pre">customize.dist/application_config.js</span></code> in the <code class="docutils literal notranslate"><span class="pre">customize</span></code> folder.</p></li>
@@ -764,6 +768,13 @@
 <div class="highlight-javaScript notranslate"><div class="highlight"><pre><span></span><span class="nx">AppConfig</span><span class="p">.</span><span class="nx">registeredOnlyTypes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">AppConfig</span><span class="p">.</span><span class="nx">availablePadTypes</span><span class="p">;</span>
 </pre></div>
 </div>
+<p>This will prevent unregistered users from using any of the applications.</p>
+<p>To block unregistered users from creating or saving new documents, add the following lines to <code class="docutils literal notranslate"><span class="pre">customize/application_config.js</span></code>:</p>
+<div class="highlight-javaScript notranslate"><div class="highlight"><pre><span></span><span class="nx">AppConfig</span><span class="p">.</span><span class="nx">disableAnonymousPadCreation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+<span class="nx">AppConfig</span><span class="p">.</span><span class="nx">disableAnonymousStore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>However, documents can still be shared with unregistered users, allowing them to edit and view files via shared links.</p>
 <div class="admonition note">
 <p class="admonition-title">Примечание</p>
 <p>To close registration of new users on the instance, see <a class="reference internal" href="admin_panel.html#admin-close-registration"><span class="std std-ref">Close registration</span></a> in the admin panel.</p>

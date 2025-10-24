@@ -306,7 +306,11 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/diagram.html">ダイアグラム</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#documentation">ドキュメンテーション</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#toolbars">ツールバー</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">インポート/エクスポート</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">インポート/エクスポート</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apps/diagram.html#cryptpad-toolbar">CryptPad toolbar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="apps/diagram.html#draw-io-toolbar">Draw.io toolbar</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">ホワイトボード</a><ul>
@@ -625,12 +629,12 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-forgot-my-password">パスワードを紛失した場合</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">ドキュメントをプラットフォーム間でインポートまたはエクスポートするには？</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-to-from-another-platform">How to import/export to/from another platform?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#import-export-is-not-visible-in-the-file-menu">ファイルメニューにインポートとエクスポートがありません</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">リッチテキストドキュメントのインポート、エクスポート</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-import-export">Document import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-import-export">Presentation import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">スプレッドシートのインポートとエクスポート</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-application-import-export">Document application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-application-import-export">Presentation application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheet-application-import-export">Spreadsheet application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-application-import-export">Rich text application import/export</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-cannot-do-x-with-a-document-i-created">作成したドキュメントで実行できない機能があります</a></li>
@@ -747,7 +751,10 @@
   <section id="user-account">
 <h1>ユーザーアカウント<a class="headerlink" href="#user-account" title="この見出しへのパーマリンク">¶</a></h1>
 <p>CryptPadでは、あなたとあなたの知人のみが読み取れるようにデータを暗号化します。そのため<strong>サービスの管理者に、あなたのパスワードを閲覧、取得、リセットすることはできません</strong>。したがって、CryptPadのアカウントとは別の安全な場所にパスワードを記録しておくことが重要です。</p>
+<div class="admonition note">
+<p class="admonition-title">注釈</p>
 <p>CryptPadでは、ユーザー名とパスワードの組み合わせを使用してユーザーを特定します。CryptPadではユーザー名は一意ではありません。同じユーザー名と異なるパスワードの組み合わせで、複数のアカウントを作成することができます。</p>
+</div>
 <section id="account-types">
 <h2>アカウントの種類<a class="headerlink" href="#account-types" title="この見出しへのパーマリンク">¶</a></h2>
 <p>CryptPadには3種類のアカウントがあります。</p>
@@ -889,7 +896,10 @@
 <li><p><strong>パスワードの変更</strong>：アカウントのパスワードを変更できます。現在のパスワードを入力し、新しいパスワードを2回入力して承認してください。 <span class="badge-user">ログイン済ユーザー</span></p></li>
 <li><p><strong>セーフリンク</strong>：この設定が有効になっている間、CryptDriveに既にドキュメントが存在するのでない限り、ブラウザーのアドレスバーにあるリンクから当該のドキュメントにアクセスすることはできません。この設定は既定で有効です。ドキュメントを共有する際には、これを無効にせず、<a class="reference internal" href="share_and_access.html#share"><span class="std std-ref">共有</span></a>メニューでドキュメントへのリンクをコピーすることが強く推奨されます。</p></li>
 </ul>
+<div class="admonition danger">
+<p class="admonition-title">危険</p>
 <p>CryptPadでは、リンクの中にドキュメントを復号するための鍵が含まれています。ブラウザーの閲覧履歴にアクセスできる人は、理論上は誰でもCryptPadのデータを閲覧することができます。ここにはデバイス間で履歴を同期するブラウザーやその拡張機能も含まれます。画面共有やスクリーンショットなど、ブラウザーの画面が第三者に表示される場合も、ドキュメントへのアクセスが流出する可能性がある点で潜在的なリスクがあります。「セーフリンク」を有効にすると、鍵がブラウザーの閲覧履歴に残ったり、アドレスバーに表示されたりするのを可能な限り防ぐことができます。</p>
+</div>
 <ul class="simple">
 <li><p><strong>フィードバック</strong>：CryptPadはユーザー経験の向上のため、使用状況に関する匿名のフィードバックを送信することができます。ドキュメントの内容は決して共有されません。このオプションは既定で無効になっています。</p></li>
 <li><p><strong>キャッシュ</strong>：CryptPadはネットワークの使用量を節約し、また、読み込み時間を改善するため、ドキュメントの各部分をブラウザーのメモリーに保存します。端末のストレージの空き容量が少ない場合、キャッシュを無効にできます。セキュリティー上の理由から、キャッシュはログアウトすると常に消去されますが、端末で使用しているストレージ容量を減らしたい場合は、手動でこれを消去することもできます。</p></li>

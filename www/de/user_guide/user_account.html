@@ -109,7 +109,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#notifications">Benachrichtigungen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#settings">Einstellungen</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#account">Account</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#profile">Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#profile">Profil</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#security-privacy">Sicherheit &amp; Datenschutz</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#appearance">Erscheinungsbild</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cryptdrive">CryptDrive</a></li>
@@ -306,7 +306,11 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/diagram.html">Diagramm</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#documentation">Dokumentation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#toolbars">Werkzeugleisten</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">Import/Export</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">Import/Export</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apps/diagram.html#cryptpad-toolbar">CryptPad toolbar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="apps/diagram.html#draw-io-toolbar">Draw.io toolbar</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Whiteboard</a><ul>
@@ -625,12 +629,12 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-forgot-my-password">Ich habe mein Passwort vergessen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Wie kann ich meine Dokumente in andere Plattformen oder von anderen Plattformen importieren/exportieren?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-to-from-another-platform">How to import/export to/from another platform?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#import-export-is-not-visible-in-the-file-menu">Import/Export ist im Menü Datei nicht sichtbar</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">Import/Export von Rich-Text-Dokumenten</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-import-export">Document import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-import-export">Presentation import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">Import/Export von Tabellen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-application-import-export">Document application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-application-import-export">Presentation application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheet-application-import-export">Spreadsheet application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-application-import-export">Rich text application import/export</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-cannot-do-x-with-a-document-i-created">Mit dem von mir erstellten Dokument kann ich X nicht machen</a></li>
@@ -747,7 +751,10 @@
   <section id="user-account">
 <h1>Benutzer-Account<a class="headerlink" href="#user-account" title="Permalink to this heading">¶</a></h1>
 <p>CryptPad verschlüsselt Daten so, dass diese nur für dich und deine Mitarbeitenden lesbar sind. Aus diesem Grund <strong>können die Administratoren des Dienstes dein Passwort nicht einsehen, abrufen oder zurücksetzen</strong>. Daher ist es wichtig, dass du dir dein Passwort an einem sicheren Ort getrennt von deinem CryptPad-Account notierst.</p>
+<div class="admonition note">
+<p class="admonition-title">Bemerkung</p>
 <p>CryptPad verwendet die Kombination aus deinem Benutzernamen und Passwort, um dich zu identifizieren. Benutzernamen sind auf CryptPad nicht eindeutig. Es ist möglich, mehrere Konten mit dem gleichen Benutzernamen und verschiedenen Passwörtern zu erstellen.</p>
+</div>
 <section id="account-types">
 <h2>Account-Typen<a class="headerlink" href="#account-types" title="Permalink to this heading">¶</a></h2>
 <p>Es gibt drei Account-Typen auf CryptPad:</p>
@@ -864,13 +871,13 @@
 </ul>
 </section>
 <section id="profile">
-<span id="user-settings-profile"></span><h3>Profile<a class="headerlink" href="#profile" title="Permalink to this heading">¶</a></h3>
+<span id="user-settings-profile"></span><h3>Profil<a class="headerlink" href="#profile" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
-<li><p><strong>Display Name</strong>: Name displayed to other users, for example when you collaborate on documents. To change this name enter a new name and click on <strong>Save</strong>.</p></li>
-<li><p><strong>Avatar</strong>: A picture for your profile, shown alongside your display name. <span class="badge-user">Logged in users</span></p></li>
-<li><p><strong>Badge</strong>: Show your role to other users, this can be &quot;Administrator&quot;, &quot;Support and moderation&quot; or as well that you are a paid subscriber. <span class="badge-user">Logged in users</span></p></li>
-<li><p><strong>Link to your website</strong>: Fill a valid URL to add a link to your personal website. <span class="badge-user">Logged in users</span></p></li>
-<li><p><strong>Profile description</strong>: Text area where you can write a little bio using rich text formatting with the toolbar or by using the Markdown syntax. <span class="badge-user">Logged in users</span></p></li>
+<li><p><strong>Anzeigename</strong>: Für andere Benutzer sichtbarer Name, beispielsweise bei der gemeinsamen Bearbeitung von Dokumenten. Um diesen Namen zu ändern, gib einen neuen Namen ein und klicke auf <strong>Speichern</strong>.</p></li>
+<li><p><strong>Avatar</strong>: Ein Bild für dein Profil, das neben deinem Anzeigenamen angezeigt wird. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
+<li><p><strong>Abzeichen</strong>: Zeige anderen Nutzern deine Rolle, z. B. &quot;Administrator&quot;, &quot;Support und Moderation&quot; oder auch, dass du ein zahlender Abonnent bist. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
+<li><p><strong>Link zu deiner Website</strong>: Gib eine gültige URL ein, um einen Link zu deiner persönlichen Website hinzuzufügen. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
+<li><p><strong>Profilbeschreibung</strong>: In das Textfeld kannst du mit der Werkzeugleiste oder mit der Markdown-Syntax einen kleinen Steckbrief schreiben. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
 </ul>
 </section>
 <section id="security-privacy">
@@ -889,7 +896,10 @@
 <li><p><strong>Dein Passwort ändern</strong>: Gib dein aktuelles Passwort ein und bestätige dein neues Passwort, indem du es zweimal eingibst</p></li>
 <li><p><strong>Sichere Links</strong>: Wenn diese Einstellung aktiv ist, ermöglicht der Link in der Adressleiste deines Browsers keinen Zugriff auf das Dokument, es sei denn, der Empfänger hat es bereits in seinem CryptDrive. Diese Einstellung ist standardmäßig aktiv. Es wird dringend empfohlen, sie aktiv zu lassen und das Menü <a class="reference internal" href="share_and_access.html#share"><span class="std std-ref">Teilen</span></a> zu verwenden, um Links zu Dokumenten zu kopieren.</p></li>
 </ul>
+<div class="admonition danger">
+<p class="admonition-title">Gefahr</p>
 <p>CryptPad fügt den Pad-Links die Schlüssel zum Entschlüsseln der Inhalte hinzu. Jeder, der Zugriff auf den Browserverlauf hat, kann möglicherweise die Daten lesen. Dazu gehören Browsererweiterungen und Browser, die den Verlauf geräteübergreifend synchronisieren. Situationen, in denen dein Browser für andere sichtbar ist, wie z.B. Screen-Sharing oder Screenshots, sind ebenfalls potentiell riskant. Die Aktivierung von &quot;sicheren Links&quot; verhindert, dass die Schlüssel in den Browserverlauf gelangen oder in der Adressleiste angezeigt werden, wann immer dies möglich ist.</p>
+</div>
 <ul class="simple">
 <li><p><strong>Rückmeldung</strong>: CryptPad kann anonymisierte Rückmeldungen an den Server senden, um die Benutzererfahrung zu verbessern. Der Inhalt von Dokumenten wird niemals geteilt. Diese Option ist standardmäßig deaktiviert.</p></li>
 <li><p><strong>Cache</strong>: CryptPad legt Teile deiner Dokumente im Speicher deines Browser ab, um den Datenverkehr und die Ladezeiten zu reduzieren. Du kannst diesen Cache deaktivieren, wenn dein Gerät nicht über viel freien Speicherplatz verfügt. Aus Sicherheitsgründen wird der Cache immer beim Ausloggen geleert. Du kannst ihn auch manuell leeren, sofern du Speicherplatz auf deinem Gerät freigeben möchtest.</p></li>

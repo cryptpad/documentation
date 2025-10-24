@@ -15,7 +15,7 @@ Each registered user on CryptPad has a profile page accessible from the user me
 Personal profile
 ~~~~~~~~~~~~~~~~
 
-:badge_new:`2025.6.0` Your profile can now be modified directly from your :ref:`account settings <user_settings_profile>`.
+Your profile can now be modified directly from your :ref:`account settings <user_settings_profile>`.
 
 From here you can see what your profile look like to other users, you can also perform the following actions:
 

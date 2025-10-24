@@ -306,7 +306,11 @@
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/diagram.html">ダイアグラム</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/diagram.html#documentation">ドキュメンテーション</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/diagram.html#toolbars">ツールバー</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/diagram.html#import-export">インポート/エクスポート</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_guide/apps/diagram.html#import-export">インポート/エクスポート</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../user_guide/apps/diagram.html#cryptpad-toolbar">CryptPad toolbar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../user_guide/apps/diagram.html#draw-io-toolbar">Draw.io toolbar</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/apps/whiteboard.html">ホワイトボード</a><ul>
@@ -625,12 +629,12 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-forgot-my-password">パスワードを紛失した場合</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">ドキュメントをプラットフォーム間でインポートまたはエクスポートするには？</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-to-from-another-platform">How to import/export to/from another platform?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#import-export-is-not-visible-in-the-file-menu">ファイルメニューにインポートとエクスポートがありません</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">リッチテキストドキュメントのインポート、エクスポート</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-import-export">Document import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-import-export">Presentation import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">スプレッドシートのインポートとエクスポート</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-application-import-export">Document application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-application-import-export">Presentation application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheet-application-import-export">Spreadsheet application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-application-import-export">Rich text application import/export</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-cannot-do-x-with-a-document-i-created">作成したドキュメントで実行できない機能があります</a></li>
@@ -752,7 +756,7 @@
 <p>The purpose of the <code class="docutils literal notranslate"><span class="pre">customize</span></code> directory is to make it easier to upgrade CryptPad while maintaining customizations in place. Occasionally, a major new version may introduce breaking changes or require adjustments in the customizations. Administrators with customized instances are therefore encouraged to <strong>read instructions carefully before each upgrade</strong>.</p>
 </div>
 <section id="application-config">
-<h2>Application config<a class="headerlink" href="#application-config" title="この見出しへのパーマリンク">¶</a></h2>
+<span id="admin-application-config"></span><h2>Application config<a class="headerlink" href="#application-config" title="この見出しへのパーマリンク">¶</a></h2>
 <p>A wide range of settings are available in <code class="docutils literal notranslate"><span class="pre">www/common/application_config_internal.js</span></code>. To modify them:</p>
 <ol class="arabic simple">
 <li><p>Make a copy of <code class="docutils literal notranslate"><span class="pre">customize.dist/application_config.js</span></code> in the <code class="docutils literal notranslate"><span class="pre">customize</span></code> folder.</p></li>
@@ -764,6 +768,13 @@
 <div class="highlight-javaScript notranslate"><div class="highlight"><pre><span></span><span class="nx">AppConfig</span><span class="p">.</span><span class="nx">registeredOnlyTypes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">AppConfig</span><span class="p">.</span><span class="nx">availablePadTypes</span><span class="p">;</span>
 </pre></div>
 </div>
+<p>This will prevent unregistered users from using any of the applications.</p>
+<p>To block unregistered users from creating or saving new documents, add the following lines to <code class="docutils literal notranslate"><span class="pre">customize/application_config.js</span></code>:</p>
+<div class="highlight-javaScript notranslate"><div class="highlight"><pre><span></span><span class="nx">AppConfig</span><span class="p">.</span><span class="nx">disableAnonymousPadCreation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+<span class="nx">AppConfig</span><span class="p">.</span><span class="nx">disableAnonymousStore</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">;</span>
+</pre></div>
+</div>
+<p>However, documents can still be shared with unregistered users, allowing them to edit and view files via shared links.</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>To close registration of new users on the instance, see <a class="reference internal" href="admin_panel.html#admin-close-registration"><span class="std std-ref">Close registration</span></a> in the admin panel.</p>

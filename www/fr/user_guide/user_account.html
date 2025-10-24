@@ -306,7 +306,11 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/diagram.html">Diagramme</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#documentation">Documentation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#toolbars">Barre d'outils</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">Importer/Exporter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">Importer/Exporter</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apps/diagram.html#cryptpad-toolbar">Barre d'outils CryptPad</a></li>
+<li class="toctree-l5"><a class="reference internal" href="apps/diagram.html#draw-io-toolbar">Barre d'outils Draw.io</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Dessin</a><ul>
@@ -625,12 +629,12 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-forgot-my-password">J'ai oublié mon mot de passe</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Comment importer/exporter mes documents vers/depuis un autre logiciel ?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-to-from-another-platform">Comment importer/exporter mes documents vers/depuis un autre logiciel ?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#import-export-is-not-visible-in-the-file-menu">Import/export n'est pas visible depuis le menu Fichier</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">Import/export de documents texte</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-import-export">Import/export de Document</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-import-export">Import/export de présentations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">Import/export de feuilles de calcul</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-application-import-export">Import/export de l'application Document</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-application-import-export">Import/export de l'application Présentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheet-application-import-export">Import/export de l'application Tableur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-application-import-export">Import/export de l'application Documents texte</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-cannot-do-x-with-a-document-i-created">Je ne peux pas faire X avec un document que j'ai créé</a></li>
@@ -747,7 +751,10 @@
   <section id="user-account">
 <h1>Compte utilisateur·ice<a class="headerlink" href="#user-account" title="Lien permanent vers cette rubrique">¶</a></h1>
 <p>CryptPad chiffre vos données, elles ne sont lisibles que par vous et vos collaborateurs. Pour cette raison <strong>les administrateur·ices du service ne peuvent pas voir ou changer votre mot de passe</strong>. Il est donc important de le sauvegarder dans un endroit sécurisé, hors de votre compte CryptPad.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>CryptPad utilise la combinaison de votre nom d'utilisateur·ice et de votre mot de passe pour vous identifier. Les noms d'utilisateur·ices ne sont pas uniques sur CryptPad, il est possible de créer plusieurs comptes avec le même nom d'utilisateur·ice et des mots de passe différents.</p>
+</div>
 <section id="account-types">
 <h2>Types de comptes<a class="headerlink" href="#account-types" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p>Il existe trois types d'utilisateurs sur CryptPad :</p>
@@ -889,7 +896,10 @@
 <li><p><strong>Changer de mot de passe</strong> : Entrez votre mot de passe actuel de votre compte et confirmez le nouveau mot de passe en le tapant deux fois</p></li>
 <li><p><strong>Liens Sécurisés</strong> : Quand cette option est activée, le lien dans la barre d'adresse de votre navigateur ne donne pas accès au pad si le destinataire ne l'a pas déjà dans son CryptDrive. Cette fonction est activée par défaut. Il est vivement recommandé de la laisser activée et d'utiliser le menu <a class="reference internal" href="share_and_access.html#share"><span class="std std-ref">Partager</span></a> pour copier les liens de vos documents.</p></li>
 </ul>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
 <p>CryptPad inclut dans ses liens les clés permettant de déchiffrer vos documents. Toute personne ayant accès à votre historique de navigation peut potentiellement lire vos données. Cela inclut les extensions de navigateur intrusives et les navigateurs qui synchronisent votre historique entre les appareils. Toute situation dans laquelle votre navigateur est visible par d'autres est potentiellement à risque, par exemple le partage d'écran en vidéoconférence ou la capture d'écran. L'activation des &quot;liens sécurisés&quot; empêche les clés d'entrer dans votre historique de navigation ou d'être affichées dans votre barre d'adresse quand cela est possible.</p>
+</div>
 <ul class="simple">
 <li><p><strong>Retour d'expérience</strong> : CryptPad peut envoyer des retours d'expérience anonymisés très limités vers le serveur, en vue d'améliorer l'expérience des utilisateurs. Le contenu de vos documents n'est jamais partagé. Cette option est désactivée par défaut.</p></li>
 <li><p><strong>Cache</strong> : CryptPad enregistre certaines parties de votre document dans la mémoire de votre navigateur afin de limiter l'usage de bande passante et améliorer les temps de chargement. Vous pouvez désactiver le cache si votre appareil n'a pas assez d'espace de stockage libre. Pour des raisons de sécurité, le cache est purgé à chaque déconnexion,vous pouvez cependant le vider manuellement si vous voulez récupérer de l'espace de stockage sur votre machine.</p></li>

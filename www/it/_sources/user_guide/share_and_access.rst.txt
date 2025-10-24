@@ -146,6 +146,8 @@ Folders are shared in a similar way to documents. To share a folder from the Cry
 
    Shared folders have their own history, separate from the :ref:`drive_history`. Restoring the history of the drive does not affect shared folders, conversely the history of a shared folder can be restored without affecting the rest of the drive.
 
+   Please note that, once shared, they cannot be reverted to normal folders.
+
 .. _access:
 
 Access
