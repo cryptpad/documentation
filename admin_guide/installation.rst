@@ -37,9 +37,9 @@ Before starting the installation, ensure the following software is installed:
 
 -  Git
 
--  Node.js with NPM included (we use the official NodeJs LTS release)
+-  Node.js with NPM included (we use the `Active LTS <https://nodejs.org/en/about/previous-releases#looking-for-the-latest-release-of-a-version-branch>`__ version branch)
 
-   -  Using `nodesource <https://github.com/nodesource/distributions?tab=readme-ov-file#installation-instructions-deb>`__ is recommended
+   -  Using `NVM <https://nodejs.org/en/download>`__ is recommended
 
 - Docker engine (if using Docker, see :ref:`Install with Docker <admin_docker_install>`)
 
@@ -54,13 +54,14 @@ Recommended
 ~~~~~~~~~~~
 
 .. note::
+
    The development team recommends creating a dedicated user to install and run CryptPad in production rather than using the root user.
 
 Clone the CryptPad repository
 
 .. code:: bash
 
-   git clone -b 2025.9.0 --depth 1 https://github.com/cryptpad/cryptpad.git cryptpad
+   git clone -b 2025.12.0 --depth 1 https://github.com/cryptpad/cryptpad.git cryptpad
 
 Move to the newly cloned repository
 
@@ -72,7 +73,7 @@ Switch to the latest published tag
 
 .. code:: bash
 
-   git checkout 2025.9.0
+   git checkout 2025.12.0
 
 Dependencies
 """"""""""""

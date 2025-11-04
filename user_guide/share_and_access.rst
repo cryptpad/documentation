@@ -115,6 +115,10 @@ Shared folders
 
 Shared folders are made for sharing a set of documents at once.
 
+.. warning::
+
+   Shared folders are impacting the storage quota of everyone who has them in their drive. Hence, it's usage should be limited and ideally used only in last resort, when a :ref:`team <teams>` isn't fitting for the use case.
+
 To create a shared folder in the CryptDrive:
 
 -  ``+ New`` > |cptools shared-folder| **Shared folder**.
