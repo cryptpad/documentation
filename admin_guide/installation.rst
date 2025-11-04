@@ -61,7 +61,7 @@ Clone the CryptPad repository
 
 .. code:: bash
 
-   git clone -b 2025.9.0 --depth 1 https://github.com/cryptpad/cryptpad.git cryptpad
+   git clone -b 2025.12.0 --depth 1 https://github.com/cryptpad/cryptpad.git cryptpad
 
 Move to the newly cloned repository
 
@@ -73,7 +73,7 @@ Switch to the latest published tag
 
 .. code:: bash
 
-   git checkout 2025.9.0
+   git checkout 2025.12.0
 
 Dependencies
 """"""""""""
