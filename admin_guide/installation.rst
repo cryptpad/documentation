@@ -39,7 +39,7 @@ Before starting the installation, ensure the following software is installed:
 
 -  Node.js with NPM included (we use the `Active LTS <https://nodejs.org/en/about/previous-releases#looking-for-the-latest-release-of-a-version-branch>`__ version branch)
 
-   -  Using `nodesource <https://github.com/nodesource/distributions?tab=readme-ov-file#installation-instructions-deb>`__ is recommended
+   -  Using `NVM <https://nodejs.org/en/download>`__ is recommended
 
 - Docker engine (if using Docker, see :ref:`Install with Docker <admin_docker_install>`)
 
