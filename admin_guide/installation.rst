@@ -54,6 +54,7 @@ Recommended
 ~~~~~~~~~~~
 
 .. note::
+
    The development team recommends creating a dedicated user to install and run CryptPad in production rather than using the root user.
 
 Clone the CryptPad repository
