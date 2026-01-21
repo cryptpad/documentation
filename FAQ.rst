@@ -32,6 +32,7 @@ List of extensions known to cause issues with CryptPad
 * Emoji keyboard emojis for chrome
 * PAYBACK Internet Assistent (PIA)
 * User-Agent Switcher and Manager
+* ClearURLs
 
 .. note::
     If you identify issues with another extension please `report it <https://github.com/cryptpad/cryptpad/issues/new/choose>`_ to the development team
