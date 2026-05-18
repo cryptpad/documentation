@@ -33,6 +33,7 @@ List of extensions known to cause issues with CryptPad
 * PAYBACK Internet Assistent (PIA)
 * User-Agent Switcher and Manager
 * ClearURLs
+* Excellent Data Filler
 
 .. note::
     If you identify issues with another extension please `report it <https://github.com/cryptpad/cryptpad/issues/new/choose>`_ to the development team
