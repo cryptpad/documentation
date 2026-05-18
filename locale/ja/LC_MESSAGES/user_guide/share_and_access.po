@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-24 14:07+0100\n"
+"POT-Creation-Date: 2026-05-18 16:39+0100\n"
 "PO-Revision-Date: 2024-09-12 14:47+0000\n"
 "Last-Translator: Suguru Hirahara "
 "<shirahara@users.noreply.weblate.cryptpad.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.17.0\n"
 
 #: ../../user_guide/share_and_access.rst:4
 msgid "Share / Access"
@@ -107,7 +107,7 @@ msgstr "連絡先と共有"
 
 #: ../../user_guide/share_and_access.rst:39
 #: ../../user_guide/share_and_access.rst:114
-#: ../../user_guide/share_and_access.rst:156
+#: ../../user_guide/share_and_access.rst:160
 msgid ":badge_user:`Logged in users`"
 msgstr ":badge_user:`ログイン済ユーザー`"
 
@@ -260,46 +260,54 @@ msgstr "共有フォルダー"
 msgid "Shared folders are made for sharing a set of documents at once."
 msgstr "複数のドキュメントを一度に共有する際に、共有フォルダーを使用できます。"
 
-#: ../../user_guide/share_and_access.rst:118
+#: ../../user_guide/share_and_access.rst:120
+msgid ""
+"Shared folders are impacting the storage quota of everyone who has them "
+"in their drive. Hence, it's usage should be limited and ideally used only"
+" in last resort, when a :ref:`team <teams>` isn't fitting for the use "
+"case."
+msgstr ""
+
+#: ../../user_guide/share_and_access.rst:122
 msgid "To create a shared folder in the CryptDrive:"
 msgstr "CryptDriveで共有フォルダーは以下の方法で作成できます。"
 
-#: ../../user_guide/share_and_access.rst:120
+#: ../../user_guide/share_and_access.rst:124
 msgid "``+ New`` > |cptools shared-folder| **Shared folder**."
 msgstr "``+ 新規`` > |cptools shared-folder| **共有フォルダー**\\ 。"
 
-#: ../../user_guide/share_and_access.rst:121
+#: ../../user_guide/share_and_access.rst:125
 msgid ":kbd:`Ctrl + e` > |cptools shared-folder| **Shared folder**."
 msgstr ":kbd:`Ctrl + e` > |cptools shared-folder| **共有フォルダー**\\ 。"
 
-#: ../../user_guide/share_and_access.rst:122
+#: ../../user_guide/share_and_access.rst:126
 msgid "``Right click`` > |cptools shared-folder| **New shared folder**."
 msgstr "``右クリック`` > |cptools shared-folder| **新しい共有フォルダー**\\ 。"
 
-#: ../../user_guide/share_and_access.rst:124
+#: ../../user_guide/share_and_access.rst:128
 msgid "To convert an existing folder into a shared folder:"
 msgstr "既存のフォルダーは以下の方法で共有フォルダーに変換できます。"
 
-#: ../../user_guide/share_and_access.rst:126
-#: ../../user_guide/share_and_access.rst:134
+#: ../../user_guide/share_and_access.rst:130
+#: ../../user_guide/share_and_access.rst:138
 msgid "``Right click`` on the folder > |share-alt| **Share**."
 msgstr "フォルダーを ``右クリック`` > |share-alt| **共有**\\ 。"
 
-#: ../../user_guide/share_and_access.rst:127
+#: ../../user_guide/share_and_access.rst:131
 msgid "Choose the conversion options. Password. :ref:`Owned <owners>` folder."
 msgstr "変換時のオプションを設定。設定できるオプションは、パスワードと\\ :ref:`所有されている <owners>`\\ フォルダーの2つ。"
 
-#: ../../user_guide/share_and_access.rst:130
+#: ../../user_guide/share_and_access.rst:134
 msgid "``OK`` or press the :kbd:`Enter` key."
 msgstr "``OK`` または :kbd:`Enter` キーを押す。"
 
-#: ../../user_guide/share_and_access.rst:132
+#: ../../user_guide/share_and_access.rst:136
 msgid ""
 "Folders are shared in a similar way to documents. To share a folder from "
 "the CryptDrive:"
 msgstr "フォルダーはドキュメントと同様の方法で共有できます。CryptDriveでフォルダーは以下の方法で共有できます。"
 
-#: ../../user_guide/share_and_access.rst:135
+#: ../../user_guide/share_and_access.rst:139
 msgid ""
 "Choose the `access rights <#access-rights>`__. **View**: Read-only "
 "without editing the contents of the folder. **Edit**: View and make "
@@ -308,7 +316,7 @@ msgstr ""
 "`アクセス権 <#access-rights>`__\\ を設定してください。**閲覧**\\ ：フォルダーの内容の読み取りのみ。\\ "
 "**編集**\\ ：フォルダーの閲覧と変更。"
 
-#: ../../user_guide/share_and_access.rst:138
+#: ../../user_guide/share_and_access.rst:142
 msgid ""
 "Three tabs are available: |address-book| **Contacts**: Recommended method"
 " to share securely with contacts and teams on CryptPad. |link| **Link**: "
@@ -319,7 +327,7 @@ msgstr ""
 "|link| **リンク**\\ ：リンクをコピーして、任意の方法で送信。 |code| **埋め込み**\\ "
 "：フォルダーをウェブページに含めるためのコードをコピー。"
 
-#: ../../user_guide/share_and_access.rst:147
+#: ../../user_guide/share_and_access.rst:151
 msgid ""
 "Shared folders have their own history, separate from the "
 ":ref:`drive_history`. Restoring the history of the drive does not affect "
@@ -329,50 +337,50 @@ msgstr ""
 "共有フォルダーには、\\ :ref:`drive_history`\\ "
 "とは別に、固有の履歴が設定されます。ドライブの履歴を復元しても共有フォルダーの履歴に対する影響はなく、逆にまた、共有フォルダーの履歴を復元してもドライブの履歴に対する影響はありません。"
 
-#: ../../user_guide/share_and_access.rst:149
+#: ../../user_guide/share_and_access.rst:153
 msgid "Please note that, once shared, they cannot be reverted to normal folders."
 msgstr ""
 
-#: ../../user_guide/share_and_access.rst:154
+#: ../../user_guide/share_and_access.rst:158
 msgid "Access"
 msgstr "アクセス"
 
-#: ../../user_guide/share_and_access.rst:158
+#: ../../user_guide/share_and_access.rst:162
 msgid "This menu is used to restrict access to a document or shared folder:"
 msgstr "このメニューでドキュメントまたは共有フォルダーへのアクセスを制限できます。"
 
-#: ../../user_guide/share_and_access.rst:160
+#: ../../user_guide/share_and_access.rst:164
 msgid "From the document: |unlock-alt| **Access**."
 msgstr "ドキュメントから：|unlock-alt| **アクセス**\\ 。"
 
-#: ../../user_guide/share_and_access.rst:161
+#: ../../user_guide/share_and_access.rst:165
 msgid ""
 "From the CryptDrive: ``Right click`` on the document or shared folder > "
 "|unlock-alt| **Access**."
 msgstr "CryptDriveから：ドキュメントまたは共有フォルダーを ``右クリック`` > |unlock-alt| **アクセス**\\ 。"
 
-#: ../../user_guide/share_and_access.rst:166
+#: ../../user_guide/share_and_access.rst:170
 msgid "Access tab"
 msgstr "アクセスのタブ"
 
-#: ../../user_guide/share_and_access.rst:171
+#: ../../user_guide/share_and_access.rst:175
 msgid "This tab summarises all the modalities of access to the document:"
 msgstr "このタブはドキュメントのアクセスに関する詳細を表示します。"
 
-#: ../../user_guide/share_and_access.rst:173
+#: ../../user_guide/share_and_access.rst:177
 msgid ""
 "**Expiration date**: Date at which the document will be deleted. This "
 "date is set at the creation of the document and cannot be modified "
 "afterwards."
 msgstr "**有効期限**\\ ：ドキュメントを削除する日時。有効期限はドキュメントの作成時に設定され、その後に変更することはできません。"
 
-#: ../../user_guide/share_and_access.rst:174
+#: ../../user_guide/share_and_access.rst:178
 msgid ""
 "**Password**: Displays if a password has been set. A new password can be "
 "set, or an existing password modified."
 msgstr "**パスワード**\\ ：パスワードが設定済かどうかを表示。新しいパスワードを設定したり、既存のパスワードを変更したりできます。"
 
-#: ../../user_guide/share_and_access.rst:175
+#: ../../user_guide/share_and_access.rst:179
 msgid "**Owners**: List of all the document’s `owners <#owners>`__."
 msgstr "**所有者** \\： 全てのドキュメントの\\ `所有者 <#owners>`__\\ の一覧。"
 
@@ -392,33 +400,33 @@ msgstr ""
 "|bell-slash| **このパッドへのアクセス要求をミュート**\\ ：このドキュメントに関する編集権限の要求を表示しないよう設定。 "
 ":badge_owner:`ドキュメントの所有者`"
 
-#: ../../user_guide/share_and_access.rst:179
+#: ../../user_guide/share_and_access.rst:183
 msgid ""
 "**Access list**: Displays the `access list <#access-list>`__ and "
 "indicates if it is enabled."
 msgstr "**アクセスリスト**\\ ：\\ `アクセスリスト <#access-list>`__\\ が有効な場合、これを表示。"
 
-#: ../../user_guide/share_and_access.rst:181
+#: ../../user_guide/share_and_access.rst:185
 msgid "|cptools destroy| **Destroy**: Delete the document permanently."
 msgstr "|cptools destroy| **完全に削除**\\ ：ドキュメントを完全に破棄。"
 
-#: ../../user_guide/share_and_access.rst:186
+#: ../../user_guide/share_and_access.rst:190
 msgid "Access List"
 msgstr "アクセスリスト"
 
-#: ../../user_guide/share_and_access.rst:188
-#: ../../user_guide/share_and_access.rst:226
+#: ../../user_guide/share_and_access.rst:192
+#: ../../user_guide/share_and_access.rst:230
 msgid ":badge_owner:`Document owners`"
 msgstr ":badge_owner:`ドキュメントの所有者`"
 
-#: ../../user_guide/share_and_access.rst:194
+#: ../../user_guide/share_and_access.rst:198
 msgid ""
 "The access list restricts access to a document. Once active, users who "
 "are not on the list are not able to access the document, even if they "
 "have it stored in their CryptDrive."
 msgstr "アクセスリストでは、ドキュメントへのアクセスを制限できます。有効にすると、一覧にないユーザーは、CryptDriveにドキュメントを保存していても、それにアクセスすることはできなくなります。"
 
-#: ../../user_guide/share_and_access.rst:196
+#: ../../user_guide/share_and_access.rst:200
 msgid ""
 "To enable the access list, tick **Enable access list**. The `owners "
 "<#owners>`__ of the document are on the list by default and cannot be "
@@ -427,57 +435,57 @@ msgstr ""
 "アクセスリストを有効にするには、\\ **アクセスリストを有効にする**\\ をチェックしてください。ドキュメントの\\ `所有者 "
 "<#owners>`__\\ は既定でリストに含まれており、削除することはできません。"
 
-#: ../../user_guide/share_and_access.rst:198
+#: ../../user_guide/share_and_access.rst:202
 msgid "To add contacts or teams to the list:"
 msgstr "連絡先またはチームは以下の方法で一覧に追加できます。"
 
-#: ../../user_guide/share_and_access.rst:200
-#: ../../user_guide/share_and_access.rst:230
+#: ../../user_guide/share_and_access.rst:204
+#: ../../user_guide/share_and_access.rst:234
 msgid "Select them in the list of contacts on the right."
 msgstr "右側にある連絡先の一覧から選択。"
 
-#: ../../user_guide/share_and_access.rst:201
-#: ../../user_guide/share_and_access.rst:231
+#: ../../user_guide/share_and_access.rst:205
+#: ../../user_guide/share_and_access.rst:235
 msgid "Add them to the list with the |arrow-left| button."
 msgstr "|arrow-left| ボタンでリストに追加。"
 
-#: ../../user_guide/share_and_access.rst:203
+#: ../../user_guide/share_and_access.rst:207
 msgid ""
 "To remove a user or team from the list use the |times| button next to "
 "their name."
 msgstr "リストからユーザーまたはチームを削除するには、名前の隣にある |times| ボタンを使用してください。"
 
-#: ../../user_guide/share_and_access.rst:208
+#: ../../user_guide/share_and_access.rst:212
 msgid "Owners"
 msgstr "所有者"
 
-#: ../../user_guide/share_and_access.rst:213
+#: ../../user_guide/share_and_access.rst:217
 msgid ""
 "This tab is used to manage the ownership of the document. Owners of a "
 "document have the following permissions:"
 msgstr "このタブでは、ドキュメントの所有権を管理できます。ドキュメントの所有者には以下の権限が与えられています。"
 
-#: ../../user_guide/share_and_access.rst:215
+#: ../../user_guide/share_and_access.rst:219
 msgid "Enable an :ref:`access list <access_list>`."
 msgstr ":ref:`アクセスリスト <access_list>`\\ を有効にする。"
 
-#: ../../user_guide/share_and_access.rst:216
+#: ../../user_guide/share_and_access.rst:220
 msgid "Enable a password."
 msgstr "パスワードを有効にする。"
 
-#: ../../user_guide/share_and_access.rst:217
+#: ../../user_guide/share_and_access.rst:221
 msgid "Add or remove other owners."
 msgstr "その他の所有者を追加あるいは削除。"
 
-#: ../../user_guide/share_and_access.rst:218
+#: ../../user_guide/share_and_access.rst:222
 msgid "Destroy the document."
 msgstr "ドキュメントを完全に削除。"
 
-#: ../../user_guide/share_and_access.rst:220
+#: ../../user_guide/share_and_access.rst:224
 msgid "The ownership of a document is set when :ref:`creating it<new_document>`."
 msgstr "ドキュメントの所有権は\\ :ref:`新しくドキュメントを作成 <new_document>`\\ した際に設定されます。"
 
-#: ../../user_guide/share_and_access.rst:224
+#: ../../user_guide/share_and_access.rst:228
 msgid ""
 "If a document is created without owners, no one has permissions to manage"
 " its ownership. It cannot be permanently destroyed by anyone, but can be "
@@ -485,11 +493,11 @@ msgid ""
 "days of inactivity."
 msgstr "ドキュメントが所有者なしで作成された場合、どのユーザーにもその所有権を管理することはできません。そのドキュメントは誰も完全に削除できませんが、CryptDriveから削除される可能性があり、90日利用しない場合には、完全に削除されます。"
 
-#: ../../user_guide/share_and_access.rst:228
+#: ../../user_guide/share_and_access.rst:232
 msgid "To add users or teams as owners:"
 msgstr "ユーザーまたはチームは以下の方法で所有者に追加できます。"
 
-#: ../../user_guide/share_and_access.rst:233
+#: ../../user_guide/share_and_access.rst:237
 msgid "To remove an owner, use the |times| button next to their name."
 msgstr "所有者を削除するには、名前の隣にある |times| ボタンを使用してください。"
 
