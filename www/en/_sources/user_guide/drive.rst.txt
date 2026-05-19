@@ -180,3 +180,19 @@ To use a template:
 
 -  Select the template when creating a :ref:`new document <new_document>`.
 -  In an existing document: |file-o| **File** > |upload| **Import a template**. Please note: this option **replaces** the contents of the document with the template.
+
+Storage quota
+-------------
+
+When reaching the storage limit, you can still edit existing documents but you cannot create new ones.
+
+To reclaim storage space you can clear:
+
+- The :ref:`drive history <drive_history>`
+- Documents history, from their :ref:`properties <document_properties>`
+
+If necessary, an administrator can easily raise the storage limit of a specific account.
+
+.. note::
+
+    Some CryptPad instances offer paid plans with more storage space.

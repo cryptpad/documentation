@@ -67,4 +67,9 @@ It is important to note that no "build" or "compilation" step is necessary when 
 Launching in development mode
 -----------------------------
 
--  ``npm run dev``
+- If you are on Linux or macOS:
+
+    - ``npm run dev``
+- If your are on Microsoft Windows:
+
+    - ``npm run windev``

@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Installation &mdash; documentación de CryptPad - 2025.9.0</title>
+  <title>Installation &mdash; documentación de CryptPad - 2026.5.0</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2025.9.0</span>
+              <span class="release">Documentation 2026.5.0</span>
             </a>
             
 <div role="search">
@@ -165,6 +165,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/drive.html#history">Historial</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/drive.html#tags">Etiquetas</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_guide/drive.html#templates">Plantillas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user_guide/drive.html#storage-quota">Storage quota</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../user_guide/collaboration.html">Colaboración / Social</a><ul>
@@ -783,9 +784,9 @@
 <p>Before starting the installation, ensure the following software is installed:</p>
 <ul>
 <li><p>Git</p></li>
-<li><p>Node.js with NPM included (we use the official NodeJs LTS release)</p>
+<li><p>Node.js with NPM included (we use the <a class="reference external" href="https://nodejs.org/en/about/previous-releases#looking-for-the-latest-release-of-a-version-branch">Active LTS</a> version branch)</p>
 <ul class="simple">
-<li><p>Using <a class="reference external" href="https://github.com/nodesource/distributions?tab=readme-ov-file#installation-instructions-deb">nodesource</a> is recommended</p></li>
+<li><p>Using <a class="reference external" href="https://nodejs.org/en/download">NVM</a> is recommended</p></li>
 </ul>
 </li>
 <li><p>Docker engine (if using Docker, see <a class="reference internal" href="#admin-docker-install"><span class="std std-ref">Install with Docker</span></a>)</p>
@@ -807,7 +808,7 @@
 <p>The development team recommends creating a dedicated user to install and run CryptPad in production rather than using the root user.</p>
 </div>
 <p>Clone the CryptPad repository</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span><span class="m">2025</span>.9.0<span class="w"> </span>--depth<span class="w"> </span><span class="m">1</span><span class="w"> </span>https://github.com/cryptpad/cryptpad.git<span class="w"> </span>cryptpad
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span><span class="m">2025</span>.12.0<span class="w"> </span>--depth<span class="w"> </span><span class="m">1</span><span class="w"> </span>https://github.com/cryptpad/cryptpad.git<span class="w"> </span>cryptpad
 </pre></div>
 </div>
 <p>Move to the newly cloned repository</p>
@@ -815,7 +816,7 @@
 </pre></div>
 </div>
 <p>Switch to the latest published tag</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span><span class="m">2025</span>.9.0
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>checkout<span class="w"> </span><span class="m">2025</span>.12.0
 </pre></div>
 </div>
 <section id="dependencies">
@@ -1193,7 +1194,7 @@ npm<span class="w"> </span>ci
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2025, CryptPad Team.
+        &copy; Copyright 2026, CryptPad Team.
 
     </p>
   </div>
@@ -1218,7 +1219,7 @@ npm<span class="w"> </span>ci
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'2025.9.0',
+            VERSION:'2026.5.0',
             LANGUAGE:'es-CU',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

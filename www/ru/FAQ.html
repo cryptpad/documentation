@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Часто задаваемые вопросы &mdash; документация CryptPad 2025.9.0</title>
+  <title>Часто задаваемые вопросы &mdash; документация CryptPad 2026.5.0</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="index.html" class="icon icon-home">
               <img src="_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2025.9.0</span>
+              <span class="release">Documentation 2026.5.0</span>
             </a>
             
 <div role="search">
@@ -165,6 +165,7 @@
 <li class="toctree-l3"><a class="reference internal" href="user_guide/drive.html#history">История</a></li>
 <li class="toctree-l3"><a class="reference internal" href="user_guide/drive.html#tags">Теги</a></li>
 <li class="toctree-l3"><a class="reference internal" href="user_guide/drive.html#templates">Шаблоны</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_guide/drive.html#storage-quota">Storage quota</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="user_guide/collaboration.html">Совместная работа / Взаимодействие</a><ul>
@@ -307,8 +308,8 @@
 <li class="toctree-l4"><a class="reference internal" href="user_guide/apps/diagram.html#documentation">Документация</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/apps/diagram.html#toolbars">Панели инструментов</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/apps/diagram.html#import-export">Импорт/Экспорт</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="user_guide/apps/diagram.html#cryptpad-toolbar">CryptPad toolbar</a></li>
-<li class="toctree-l5"><a class="reference internal" href="user_guide/apps/diagram.html#draw-io-toolbar">Draw.io toolbar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="user_guide/apps/diagram.html#cryptpad-toolbar">Панель инструментов CryptPad</a></li>
+<li class="toctree-l5"><a class="reference internal" href="user_guide/apps/diagram.html#draw-io-toolbar">Панель инструментов Draw.io</a></li>
 </ul>
 </li>
 </ul>
@@ -323,11 +324,11 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="user_guide/keyboard_shortcuts.html">Keyboard Shortcuts</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="user_guide/keyboard_shortcuts.html#general-shortcuts">General Shortcuts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="user_guide/keyboard_shortcuts.html#drive-shortcuts">Drive Shortcuts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="user_guide/keyboard_shortcuts.html#toolbar-shortcuts">Toolbar Shortcuts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="user_guide/keyboard_shortcuts.html#apps-shortcuts">Apps Shortcuts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user_guide/keyboard_shortcuts.html">Сочетания клавиш</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="user_guide/keyboard_shortcuts.html#general-shortcuts">Общие</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_guide/keyboard_shortcuts.html#drive-shortcuts">Комбинации клавиш при работе с Диском</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_guide/keyboard_shortcuts.html#toolbar-shortcuts">Комбинации клавиш при работе с Панелью инструментов</a></li>
+<li class="toctree-l3"><a class="reference internal" href="user_guide/keyboard_shortcuts.html#apps-shortcuts">Комбинации клавиш в Приложениях</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="user_guide/accessibility.html">Доступность</a><ul>
@@ -754,6 +755,7 @@
 <ol class="arabic simple">
 <li><p>Проверьте список расширений ниже, отключите те, которые Вы установили, если они есть</p></li>
 <li><p>Попробуйте использовать браузер в режиме приватного окна и/или с отключенными расширениями</p></li>
+<li><p>Turn off any Virtual Private Network (VPN) and/or custom DNS filtering solution (NextDNS, AdGuard DNS...) you may use</p></li>
 <li><p>Try using a different browser. We recommend the latest versions of <a class="reference external" href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a> or <a class="reference external" href="https://www.chromium.org/Home/">Chromium</a></p></li>
 <li><p>If the issues persist, please contact your instance <a class="reference internal" href="user_guide/support.html#support"><span class="std std-ref">Техподдержка</span></a></p></li>
 </ol>
@@ -775,6 +777,8 @@
 <li><p>Emoji keyboard emojis for chrome</p></li>
 <li><p>PAYBACK Internet Assistent (PIA)</p></li>
 <li><p>User-Agent Switcher and Manager</p></li>
+<li><p>ClearURLs</p></li>
+<li><p>Excellent Data Filler</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Примечание</p>
@@ -802,18 +806,18 @@
 </div>
 <p>It is possible to upload <strong>files</strong> to CryptPad for secure storage and sharing, however this does not make every file an editable CryptPad <strong>document</strong> right away. For this, you either have to:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the uploaded file &gt; <strong>Open in editor</strong>, or...</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Щелчок</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по загруженному файлу &gt; <strong>Открыть в редакторе</strong>, или...</p></li>
 <li><p>Create a blank document and use the <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> functionality in the appropriate CryptPad editor as explained below</p></li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Предупреждение</p>
 <ul class="simple">
-<li><p>The <a class="reference external" href="https://www.apple.com/safari/">Safari</a> web browser, used on macOS, iPadOS and iOS, isn't supported at this time</p></li>
-<li><p>Support for <a class="reference external" href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> is currently broken, <code class="docutils literal notranslate"><span class="pre">.csv</span></code> import/export is disabled for the time being</p></li>
-<li><p>Support for <a class="reference external" href="https://en.wikipedia.org/wiki/OpenDocument">OpenDocument formats</a>, <code class="docutils literal notranslate"><span class="pre">.odt</span></code>, <code class="docutils literal notranslate"><span class="pre">.odp</span></code> &amp; <code class="docutils literal notranslate"><span class="pre">.ods</span></code> import/export is currently experimental and prone to errors</p></li>
+<li><p>Веб-браузер <a class="reference external" href="https://www.apple.com/safari/">Safari</a>, используемый в macOS, iPadOS и iOS, в настоящее время не поддерживается</p></li>
+<li><p>Поддержка <a class="reference external" href="https://ru.wikipedia.org/wiki/CSV">CSV</a> в настоящее время не работает, импорт/экспорт <code class="docutils literal notranslate"><span class="pre">.csv</span></code> на данный момент отключен</p></li>
+<li><p>Поддержка (импорта из/экспорта в) форматы <a class="reference external" href="https://ru.wikipedia.org/wiki/OpenDocument">OpenDocument</a>: <code class="docutils literal notranslate"><span class="pre">.odt</span></code>, <code class="docutils literal notranslate"><span class="pre">.odp</span></code> и <code class="docutils literal notranslate"><span class="pre">.ods</span></code> в настоящее время является экспериментальной и подвержена ошибкам</p></li>
 </ul>
 </div>
-<p>If you encounter any issues, please check the <a class="reference internal" href="#faq-common-issues"><span class="std std-ref">Общие проблемы</span></a> first. If you aren't able to make it work following these instructions, please reach out to your instance administrators through the <a class="reference internal" href="user_guide/support.html#support"><span class="std std-ref">Техподдержка</span></a> help desk. Providing an example document with the <a class="reference internal" href="user_guide/share_and_access.html#share-link"><span class="std std-ref">Поделиться ссылкой</span></a> functionality.</p>
+<p>Если у Вас возникнут какие-либо проблемы, пожалуйста, сначала проверьте <a class="reference internal" href="#faq-common-issues"><span class="std std-ref">Общие проблемы</span></a>. Если те инструкции не помогли, обратитесь к администраторам Вашего экземпляра через службу поддержки <a class="reference internal" href="user_guide/support.html#support"><span class="std std-ref">Техподдержка</span></a>. Предоставив им пример документа с помощью <a class="reference internal" href="user_guide/share_and_access.html#share-link"><span class="std std-ref">Поделиться ссылкой</span></a>.</p>
 <section id="import-export-is-not-visible-in-the-file-menu">
 <h3>Импорт/экспорт не отображается в меню «Файл»<a class="headerlink" href="#import-export-is-not-visible-in-the-file-menu" title="Permalink to this heading">¶</a></h3>
 <p>Для работы с электронными таблицами и расширенной обработки документов, Cryptpad интегрирует OnlyOffice. В результате на одном экране появляются две панели инструментов, каждая со своим собственным меню «Файл». Пожалуйста, обязательно проверьте оба меню при поиске авриантов импорта/экспорта.</p>
@@ -830,7 +834,7 @@
 <p>Для экспорта используйте <em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-download"></em> <strong>Экспорт</strong> и выберите формат:</p>
 <ul class="simple">
 <li><p>To use in Microsoft Word or Google Docs, select <code class="docutils literal notranslate"><span class="pre">.docx</span></code></p></li>
-<li><p>To use in LibreOffice Writer, select <code class="docutils literal notranslate"><span class="pre">.odt</span></code></p></li>
+<li><p>Чтобы использовать его в LibreOffice Writer, выберите <code class="docutils literal notranslate"><span class="pre">.odt</span></code></p></li>
 <li><p>For cases where no further editing of the data is required after export (letters, reports, etc), select <code class="docutils literal notranslate"><span class="pre">.pdf</span></code></p></li>
 <li><p>For backup purposes or to share with a user on another CryptPad instance, select <code class="docutils literal notranslate"><span class="pre">.bin</span></code></p></li>
 </ul>
@@ -871,7 +875,7 @@
 </section>
 <section id="rich-text-application-import-export">
 <h3>Rich text application import/export<a class="headerlink" href="#rich-text-application-import-export" title="Permalink to this heading">¶</a></h3>
-<p>The <a class="reference internal" href="user_guide/apps/richtext.html#app-rich-text"><span class="std std-ref">Документ</span></a> support the HTML format for import/export:</p>
+<p><a class="reference internal" href="user_guide/apps/richtext.html#app-rich-text"><span class="std std-ref">Документ</span></a> поддерживает формат HTML для импорта/экспорта:</p>
 <ol class="arabic simple">
 <li><p>Export your document as HTML in your existing software</p></li>
 <li><p>Save the file to your computer</p></li>
@@ -912,7 +916,7 @@
 </section>
 <section id="what-is-the-relationship-between-cryptpad-and-onlyoffice">
 <span id="faq-oointegration"></span><h2>Какова связь между CryptPad и OnlyOffice?<a class="headerlink" href="#what-is-the-relationship-between-cryptpad-and-onlyoffice" title="Permalink to this heading">¶</a></h2>
-<p>CryptPad-приложения <a class="reference internal" href="user_guide/apps/document.html#app-documents"><span class="std std-ref">Документ</span></a>, <a class="reference internal" href="user_guide/apps/presentation.html#app-presentation"><span class="std std-ref">Презентация</span></a> и <a class="reference internal" href="user_guide/apps/sheets.html#app-sheets"><span class="std std-ref">Таблица</span></a> являются интеграцией <a class="reference external" href="https://www.onlyoffice.com/ru/office-suite.aspx">OnlyOffice Docs</a> . Однако, это касается только кода на стороне клиента: CryptPad не использует Cервер Документов OnlyOffice. Зашифрованная совместная работа CryptPad, используемая для документов, презентаций, электронных таблиц и других приложений, полностью отличается от системы шифрования, используемой в некоторых частях OnlyOffice. Некоторые из инструментов преобразования форматов файлов CryptPad основаны на коде OnlyOffice, но была проделана значительная работа, чтобы он работал в браузере, а не на сервере, что позволяет избежать необходимости раскрывать содержимое пользовательских документов при конвертации.</p>
+<p>The CryptPad <a class="reference internal" href="user_guide/apps/document.html#app-documents"><span class="std std-ref">Документ</span></a>, <a class="reference internal" href="user_guide/apps/presentation.html#app-presentation"><span class="std std-ref">Презентация</span></a> &amp; <a class="reference internal" href="user_guide/apps/sheets.html#app-sheets"><span class="std std-ref">Таблица</span></a> applications are an <a class="reference external" href="https://www.onlyoffice.com/en/office-suite.aspx">OnlyOffice Docs</a> integration. However, this only concerns the client-side code, CryptPad does not make use of the OnlyOffice Document Server. CryptPad's encrypted collaboration, used for document, presentation &amp; spreadsheets and other applications, is completely different from the encryption system used in parts of upstream OnlyOffice. Some of CryptPad's file format conversion tools are based on OnlyOffice code, but substantial work has been done to make it run in the browser rather than on the server, therefore avoiding the need to reveal the contents of users' documents when converting.</p>
 </section>
 <section id="how-secure-is-cryptpad">
 <h2>Насколько безопасен CryptPad?<a class="headerlink" href="#how-secure-is-cryptpad" title="Permalink to this heading">¶</a></h2>
@@ -924,7 +928,7 @@
 <li><p>Пользователи, с которым Вы делитесь своим документом, должны быть <em>честны</em>, поскольку, как только Вы отправляете свой контент, Вы полагаетесь на них, что они не передадут его третьим лицам. Однако Ваша <em>личность</em> остаётся для них некоторой загадкой: у них есть доступ к Вашему открытому ключу и Вашему отображаемому имени пользователя;</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Следовательно, ссылку <em>поделиться</em> следует рассматривать как &quot;настолько же конфиденциальную, каковой является кодовая фраза*. Чтобы добавить ещё один уровень безопасности, мы рекомендуем добавить пароль к Вашим файлам. Если у Вас есть учётная запись, они хранятся в Вашем CryptDrive (который считается безопасным), и доступ к ним остаётся беспрепятственным. Однако внешним пользователям, если они каким-то образом найдут ссылку, по-прежнему требуется пароль файла для доступа к нему.</p></li>
+<li><p>Следовательно, ссылку <em>Поделиться</em> следует рассматривать как &quot;настолько же конфиденциальную, каковой является кодовая фраза*. Чтобы добавить ещё один уровень безопасности, мы рекомендуем Вам добавить пароль к Вашим файлам. Если у Вас есть учётная запись, он хранится в Вашем CryptDrive (что считается безопасным), и доступ к файлам остаётся беспрепятственным. Однако внешним пользователям, если они каким-то образом найдут ссылку, по-прежнему потребуется пароль файла для доступа к нему.</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -968,7 +972,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2025, CryptPad Team.
+        &copy; Copyright 2026, CryptPad Team.
 
     </p>
   </div>
@@ -993,7 +997,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'2025.9.0',
+            VERSION:'2026.5.0',
             LANGUAGE:'ru',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
