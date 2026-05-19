@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Учетная запись пользователя &mdash; документация CryptPad 2025.6.0</title>
+  <title>Учетная запись пользователя &mdash; документация CryptPad 2026.5.0</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2025.6.0</span>
+              <span class="release">Documentation 2026.5.0</span>
             </a>
             
 <div role="search">
@@ -109,7 +109,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#notifications">Уведомления</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#settings">Настройки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#account">Учетная запись</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#profile">Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#profile">Профиль</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#security-privacy">Безопасность и Конфиденциальность</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#appearance">Внешний вид</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cryptdrive">CryptDrive</a></li>
@@ -165,6 +165,7 @@
 <li class="toctree-l3"><a class="reference internal" href="drive.html#history">История</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#tags">Теги</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#templates">Шаблоны</a></li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#storage-quota">Storage quota</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="collaboration.html">Совместная работа / Взаимодействие</a><ul>
@@ -306,7 +307,11 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/diagram.html">Диаграмма</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#documentation">Документация</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#toolbars">Панели инструментов</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">Импорт/Экспорт</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">Импорт/Экспорт</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apps/diagram.html#cryptpad-toolbar">Панель инструментов CryptPad</a></li>
+<li class="toctree-l5"><a class="reference internal" href="apps/diagram.html#draw-io-toolbar">Панель инструментов Draw.io</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Рисунки</a><ul>
@@ -319,11 +324,11 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="keyboard_shortcuts.html">Keyboard Shortcuts</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="keyboard_shortcuts.html#general-shortcuts">General Shortcuts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="keyboard_shortcuts.html#drive-shortcuts">Drive Shortcuts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="keyboard_shortcuts.html#toolbar-shortcuts">Toolbar Shortcuts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="keyboard_shortcuts.html#apps-shortcuts">Apps Shortcuts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="keyboard_shortcuts.html">Сочетания клавиш</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keyboard_shortcuts.html#general-shortcuts">Общие</a></li>
+<li class="toctree-l3"><a class="reference internal" href="keyboard_shortcuts.html#drive-shortcuts">Комбинации клавиш при работе с Диском</a></li>
+<li class="toctree-l3"><a class="reference internal" href="keyboard_shortcuts.html#toolbar-shortcuts">Комбинации клавиш при работе с Панелью инструментов</a></li>
+<li class="toctree-l3"><a class="reference internal" href="keyboard_shortcuts.html#apps-shortcuts">Комбинации клавиш в Приложениях</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="accessibility.html">Доступность</a><ul>
@@ -625,12 +630,12 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-forgot-my-password">Я забыл свой пароль</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Как импортировать/экспортировать мои документы на/с другую(ой) платформу(ы)?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-to-from-another-platform">How to import/export to/from another platform?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#import-export-is-not-visible-in-the-file-menu">Импорт/экспорт не отображается в меню «Файл»</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">Импорт/экспорт форматированных текстовых документов</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-import-export">Document import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-import-export">Presentation import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">Импорт/экспорт электронных таблиц</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-application-import-export">Document application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-application-import-export">Presentation application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheet-application-import-export">Spreadsheet application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-application-import-export">Rich text application import/export</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-cannot-do-x-with-a-document-i-created">Я не могу сделать X с документом, который я создал</a></li>
@@ -747,7 +752,10 @@
   <section id="user-account">
 <h1>Учетная запись пользователя<a class="headerlink" href="#user-account" title="Permalink to this heading">¶</a></h1>
 <p>CryptPad шифрует данные, чтобы их могли прочитать только Вы и ваши сотрудники. По этой причине <strong>администраторы службы не могут просмотреть, восстановить или сбросить ваш пароль</strong>. Поэтому важно, чтобы Вы записали свой пароль в надежном месте отдельно от своей учетной записи CryptPad.</p>
+<div class="admonition note">
+<p class="admonition-title">Примечание</p>
 <p>Для Вашей идентификации CryptPad использует комбинацию Вашего имени пользователя и пароля. Имена пользователей в CryptPad не уникальны. Можно создать несколько учетных записей с одним и тем же именем пользователя и разными паролями.</p>
+</div>
 <section id="account-types">
 <h2>Типы учетных записей<a class="headerlink" href="#account-types" title="Permalink to this heading">¶</a></h2>
 <p>На CryptPad существует три типа учетных записей:</p>
@@ -856,28 +864,28 @@
 <section id="account">
 <span id="user-settings-account"></span><h3>Учетная запись<a class="headerlink" href="#account" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
-<li><p><strong>Имя учетной записи</strong>: имя пользователя, выбранное при регистрации. Это имя нельзя изменить. <span class="badge-user">Зарегистрированные пользователи</span></p></li>
+<li><p><strong>Имя учётной записи</strong>: имя пользователя, выбранное при регистрации. Это имя нельзя изменить. <span class="badge-user">Зарегистрированные пользователи</span></p></li>
 <li><p><strong>Открытый ключ подписи</strong>: используется администраторами экземпляров и/или в экземплярах, предлагающих подписки. Это единственные данные о Вашем аккаунте, которые доступны администраторам сервиса. <span class="badge-user">Зарегистрированные пользователи</span></p></li>
 <li><p><strong>Язык</strong>: язык, используемый в интерфейсе CryptPad. Чтобы изменить язык CryptPad, выберите новый язык в раскрывающемся меню. CryptPad переводится на английский и французский языки командой разработчиков, а на другие языки — <a class="reference internal" href="../how_to_contribute.html#contribute-translation"><span class="std std-ref">сообществом</span></a>. Некоторые переводы могут быть неполными и/или содержать ошибки.</p></li>
 <li><p><strong>Лимит автоматического скачивания</strong>: максимальный размер в мегабайтах (МБ) для автоматической загрузки мультимедийных элементов (изображений, видео, PDF), встроенных в документы. Элементы больше указанного размера можно загрузить вручную. Используйте «-1», чтобы всегда автоматически загружать элементы мультимедиа.</p></li>
-<li><p><strong>Удаление учетной записи</strong>: возможность навсегда удалить свою учетную запись и все её документы. <strong>Удалить вашу учетную запись</strong> и подтвердите. <span class="badge-user">Зарегистрированные пользователи</span></p></li>
+<li><p><strong>Удаление учётной записи</strong>: возможность навсегда удалить свою учётную запись и все её документы. Для этого нужно щёлкнуть по <strong>Удалить вашу учётную запись</strong> и подтвердить решение. <span class="badge-user">Зарегистрированные пользователи</span></p></li>
 </ul>
 </section>
 <section id="profile">
-<span id="user-settings-profile"></span><h3>Profile<a class="headerlink" href="#profile" title="Permalink to this heading">¶</a></h3>
+<span id="user-settings-profile"></span><h3>Профиль<a class="headerlink" href="#profile" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
-<li><p><strong>Display Name</strong>: Name displayed to other users, for example when you collaborate on documents. To change this name enter a new name and click on <strong>Save</strong>.</p></li>
-<li><p><strong>Avatar</strong>: A picture for your profile, shown alongside your display name. <span class="badge-user">Logged in users</span></p></li>
-<li><p><strong>Badge</strong>: Show your role to other users, this can be &quot;Administrator&quot;, &quot;Support and moderation&quot; or as well that you are a paid subscriber. <span class="badge-user">Logged in users</span></p></li>
-<li><p><strong>Link to your website</strong>: Fill a valid URL to add a link to your personal website. <span class="badge-user">Logged in users</span></p></li>
-<li><p><strong>Profile description</strong>: Text area where you can write a little bio using rich text formatting with the toolbar or by using the Markdown syntax. <span class="badge-user">Logged in users</span></p></li>
+<li><p><strong>Отображаемое имя</strong>: имя, отображаемое другим пользователям, например, при совместной работе над документами. Чтобы изменить это имя, введите новое имя и нажмите <strong>Сохранить</strong>.</p></li>
+<li><p><strong>Аватар</strong>: Изображение для Вашего профиля, отображаемое рядом с Вашим отображаемым именем. <span class="badge-user">Зарегистрированные пользователи</span></p></li>
+<li><p><strong>Значок</strong>: Покажите свою роль другим пользователям, это может быть «Администратор», «Поддержка и модерация» или то, что Вы являетесь платным подписчиком. <span class="badge-user">Зарегистрированные пользователи</span></p></li>
+<li><p><strong>Ссылка на Ваш веб-сайт</strong>: Введите действительный URL-адрес, чтобы добавить ссылку на Ваш личный веб-сайт. <span class="badge-user">Зарегистрированные пользователи</span></p></li>
+<li><p><strong>Описание профиля</strong>: Текстовая область, где Вы можете написать небольшую биографию, используя форматирование текста с помощью панели инструментов или с помощью синтаксиса Markdown. <span class="badge-user">Зарегистрированные пользователи</span></p></li>
 </ul>
 </section>
 <section id="security-privacy">
 <span id="user-settings-confidentiality"></span><h3>Безопасность и Конфиденциальность<a class="headerlink" href="#security-privacy" title="Permalink to this heading">¶</a></h3>
 <ul>
-<li><p><strong>Закрытие удаленных сеансов</strong>: выйти из всех сеансов, кроме того, в котором активирована эта опция. (см. также <a class="reference internal" href="security.html#remote-disconnect"><span class="std std-ref">Удаленное отключение</span></a>) <span class="badge-user">Пользователи, вошедшие в систему</span></p></li>
-<li><p><strong>Двухфакторная аутентификация (2FA)</strong>: Защитите свою учетную запись с помощью дополнительного кода подтверждения, предоставленного выбранным Вами приложением для аутентификации. <span class="badge-user">Зарегистрированные пользователи</span></p>
+<li><p><strong>Закрытие удаленных сеансов</strong>: выйти из всех сеансов (сессий), кроме того, в котором Вы задействовали этот пункт меню. (см. также <a class="reference internal" href="security.html#remote-disconnect"><span class="std std-ref">Удаленное отключение</span></a>) <span class="badge-user">Зарегистрированные пользователи</span></p></li>
+<li><p><strong>Двухфакторная аутентификация (2FA)</strong>: Защитите свою учётную запись с помощью дополнительного кода подтверждения, предоставленного выбранным Вами приложением для аутентификации. <span class="badge-user">Зарегистрированные пользователи</span></p>
 <p>Чтобы активировать 2FA:</p>
 <ol class="arabic simple">
 <li><p>Введите пароль Вашей учетной записи</p></li>
@@ -889,7 +897,10 @@
 <li><p><strong>Измените пароль</strong>: Измените пароль Вашей учётной записи. Введите свой текущий пароль и подтвердите новый пароль, введя тот дважды</p></li>
 <li><p><strong>Безопасные ссылки</strong>: когда этот параметр активен, ссылка в адресной строке Вашего браузера не даёт доступ к документу, если только получатель уже не имеет его в своем CryptDrive. Этот параметр активен по умолчанию. Настоятельно рекомендуется оставить его активным и использовать меню <a class="reference internal" href="share_and_access.html#share"><span class="std std-ref">Поделиться</span></a> для копирования ссылок на документы.</p></li>
 </ul>
+<div class="admonition danger">
+<p class="admonition-title">Опасно</p>
 <p>CryptPad включает в ссылки на Ваши документы ключи для их расшифровки. Любой, у кого есть доступ к Вашей истории просмотров, потенциально может прочитать Ваши данные. Это включает в себя навязчивые расширения браузера и браузеры, которые синхронизируют Вашу историю на разных устройствах. Ситуации, когда Ваш браузер виден другим, например при совместном использовании экрана или снимках экрана, также потенциально опасны с точки зрения утечки доступа к Вашим документам. Включение «безопасных ссылок» предотвращает попадание ключей в историю посещенных страниц или их отображение в адресной строке, когда это возможно.</p>
+</div>
 <ul class="simple">
 <li><p><strong>Телеметрия</strong>: CryptPad может отправлять анонимную статистику об использовании на сервер, чтобы улучшить взаимодействие с пользователем. Содержание документов никогда не передается. Эта опция отключена по умолчанию.</p></li>
 <li><p><strong>Кэш</strong>: CryptPad сохраняет части Ваших документов в памяти Вашего браузера, чтобы сэкономить использование сети и сократить время загрузки. Вы можете отключить кэш, если на Вашем устройстве недостаточно свободного места. По соображениям безопасности кэш всегда очищается при выходе из учётной записи CryptPad, но Вы можете очистить его вручную, если хотите освободить место на своем компьютере.</p></li>
@@ -922,7 +933,7 @@
 <li><p><strong>Скачать мой CryptDrive</strong> сохраняет содержимое всех документов из CryptDrive. Когда это возможно, это делается в формате, читаемом другим программным обеспечением. Некоторые приложения создают файлы, которые доступны для чтения только CryptPad.</p></li>
 </ul>
 </li>
-<li><p><strong>Импорт</strong>: Если документы были созданы незарегистрированным пользователем до входа в систему, их можно импортировать в CryptDrive. <span class="badge-user">Зарегистрированные пользователи</span></p></li>
+<li><p><strong>Импорт</strong>: Если Вы создали какие-то документы как незарегистрированный пользователь (до авторизации в Cryptpad), их можно импортировать в Ваш CryptDrive. <span class="badge-user">Зарегистрированные пользователи</span></p></li>
 <li><p><strong>Удалить историю</strong>: историю CryptDrive и уведомлений можно удалить, чтобы сэкономить место на диске. Это не влияет на историю документов, которую можно удалить по отдельности в диалоговом окне <a class="reference internal" href="apps/general.html#document-properties"><span class="std std-ref">properties</span></a>.</p></li>
 </ul>
 </section>
@@ -939,7 +950,7 @@
 <p>Пользовательские настройки для приложения <a class="reference internal" href="apps/richtext.html#app-rich-text"><span class="std std-ref">Документ</span></a>.</p>
 <ul class="simple">
 <li><p><strong>Максимальная ширина редактора</strong>: переключение между режимом страницы (по умолчанию), который ограничивает ширину текстового редактора, и использованием полной ширины экрана.</p></li>
-<li><p><strong>Проверка орфографии</strong>: включите проверку орфографии в документах с форматированным текстом. Орфографические ошибки подчеркнуты, а предлагаемые исправления доступны через <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl`</kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">``щелчок</kbd> <kbd class="kbd docutils literal notranslate">правой</kbd> <kbd class="kbd docutils literal notranslate">кнопкой</kbd> <kbd class="kbd docutils literal notranslate">мыши`</kbd></kbd> по слову, которое нужно исправить.</p></li>
+<li><p><strong>Проверка орфографии</strong>: включите проверку орфографии в документах с форматированным текстом. Орфографические ошибки подчеркнуты, а предлагаемые исправления доступны через <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl`</kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">``Щелчок</kbd> <kbd class="kbd docutils literal notranslate">правой</kbd> <kbd class="kbd docutils literal notranslate">кнопкой</kbd> <kbd class="kbd docutils literal notranslate">мыши`</kbd></kbd> по слову, которое нужно исправить.</p></li>
 <li><p><strong>Уведомления о комментариях</strong>: отключите уведомления о том, что другой пользователь ответил на один из Ваших комментариев.</p></li>
 <li><p><strong>Открывать ссылки при первом клике</strong>. Открывать встроенные ссылки при клике без всплывающего окна предварительного просмотра.</p></li>
 </ul>
@@ -999,7 +1010,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2025, CryptPad Team.
+        &copy; Copyright 2026, CryptPad Team.
 
     </p>
   </div>
@@ -1024,7 +1035,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'2025.6.0',
+            VERSION:'2026.5.0',
             LANGUAGE:'ru',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

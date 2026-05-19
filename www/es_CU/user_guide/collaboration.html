@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Colaboración / Social &mdash; documentación de CryptPad - 2025.6.0</title>
+  <title>Colaboración / Social &mdash; documentación de CryptPad - 2026.5.0</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2025.6.0</span>
+              <span class="release">Documentation 2026.5.0</span>
             </a>
             
 <div role="search">
@@ -165,6 +165,7 @@
 <li class="toctree-l3"><a class="reference internal" href="drive.html#history">Historial</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#tags">Etiquetas</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#templates">Plantillas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#storage-quota">Storage quota</a></li>
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Colaboración / Social</a><ul>
@@ -306,7 +307,11 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/diagram.html">Diagrama</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#documentation">Documentación</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#toolbars">Barras de herramientas</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">Importar/Exportar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">Importar/Exportar</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apps/diagram.html#cryptpad-toolbar">CryptPad toolbar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="apps/diagram.html#draw-io-toolbar">Draw.io toolbar</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Whiteboard</a><ul>
@@ -625,12 +630,12 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-forgot-my-password">Olvidé mi contraseña</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">¿Cómo importar/exportar mis documentos hacia/desde otra plataforma?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-to-from-another-platform">How to import/export to/from another platform?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#import-export-is-not-visible-in-the-file-menu">Importar/exportar no es visible en el menú Archivo</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">Importación/exportación de documentos de texto enriquecido</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-import-export">Document import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-import-export">Presentation import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">Importación/exportación de hojas de cálculo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-application-import-export">Document application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-application-import-export">Presentation application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheet-application-import-export">Spreadsheet application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-application-import-export">Rich text application import/export</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-cannot-do-x-with-a-document-i-created">No puedo hacer X con un documento que creé</a></li>
@@ -755,7 +760,7 @@
 </ul>
 <section id="personal-profile">
 <h3>Perfil personal<a class="headerlink" href="#personal-profile" title="Enlace permanente a este encabezado">¶</a></h3>
-<p><span class="badge-new">2025.6.0</span> Your profile can now be modified directly from your <a class="reference internal" href="user_account.html#user-settings-profile"><span class="std std-ref">account settings</span></a>.</p>
+<p>Your profile can now be modified directly from your <a class="reference internal" href="user_account.html#user-settings-profile"><span class="std std-ref">account settings</span></a>.</p>
 <p>From here you can see what your profile look like to other users, you can also perform the following actions:</p>
 <ul class="simple">
 <li><p><em class="fa fa-key"></em> <strong>Copiar clave pública</strong>: Copia la clave utilizada por los administradores de instancias y en instancias que ofrecen suscripciones.</p></li>
@@ -855,7 +860,7 @@
 <p>Al compartir tu perfil:</p>
 <ol class="arabic simple">
 <li><p>Copia el enlace: Menú de usuario (avatar en la parte superior derecha) &gt; <em class="fa fa-user-circle"></em> <strong>Perfil</strong> &gt; <em class="fa fa-share-alt"></em> <strong>Compartir</strong>.</p></li>
-<li><p>Pega y envía por el medio de tu elección (preferiblemente un modo de comunicación seguro).</p></li>
+<li><p>Paste and send through the means of your choice (preferably a secure mode of communication).</p></li>
 <li><p>Luego, su contacto debe hacer click en <strong>Enviar una solicitud de contacto</strong>.</p></li>
 <li><p>Recibirás una notificación con la solicitud, <code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span></code> <strong>Aceptar</strong>.</p></li>
 </ol>
@@ -1019,7 +1024,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2025, CryptPad Team.
+        &copy; Copyright 2026, CryptPad Team.
 
     </p>
   </div>
@@ -1044,7 +1049,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'2025.6.0',
+            VERSION:'2026.5.0',
             LANGUAGE:'es-CU',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

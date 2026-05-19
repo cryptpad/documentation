@@ -9,6 +9,7 @@ The functionality as well as the look-and-feel of an instance can be customized 
 
     The purpose of the ``customize`` directory is to make it easier to upgrade CryptPad while maintaining customizations in place. Occasionally, a major new version may introduce breaking changes or require adjustments in the customizations. Administrators with customized instances are therefore encouraged to **read instructions carefully before each upgrade**.
 
+.. _admin_application_config:
 
 Application config
 ------------------
@@ -26,6 +27,17 @@ To disable unregistered use of CryptPad, add the following to ``customize/applic
 .. code:: javaScript
 
     AppConfig.registeredOnlyTypes = AppConfig.availablePadTypes;
+
+This will prevent unregistered users from using any of the applications.
+
+To block unregistered users from creating or saving new documents, add the following lines to ``customize/application_config.js``:
+
+.. code:: javaScript
+
+    AppConfig.disableAnonymousPadCreation = true;
+    AppConfig.disableAnonymousStore = true;
+
+However, documents can still be shared with unregistered users, allowing them to edit and view files via shared links.
 
 .. note::
 

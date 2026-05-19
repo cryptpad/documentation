@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Рисунки &mdash; документация CryptPad 2025.6.0</title>
+  <title>Рисунки &mdash; документация CryptPad 2026.5.0</title>
   
 
   
@@ -37,7 +37,7 @@
   <link rel="stylesheet" href="../../_static/css/cp-overrides.css" type="text/css" />
     <link rel="index" title="Алфавитный указатель" href="../../genindex.html" />
     <link rel="search" title="Поиск" href="../../search.html" />
-    <link rel="next" title="Keyboard Shortcuts" href="../keyboard_shortcuts.html" />
+    <link rel="next" title="Сочетания клавиш" href="../keyboard_shortcuts.html" />
     <link rel="prev" title="Диаграмма" href="diagram.html" /> 
 
   
@@ -58,7 +58,7 @@
             <a href="../../index.html" class="icon icon-home">
               <img src="../../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2025.6.0</span>
+              <span class="release">Documentation 2026.5.0</span>
             </a>
             
 <div role="search">
@@ -109,7 +109,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../user_account.html#notifications">Уведомления</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../user_account.html#settings">Настройки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#account">Учетная запись</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../user_account.html#profile">Profile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user_account.html#profile">Профиль</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#security-privacy">Безопасность и Конфиденциальность</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#appearance">Внешний вид</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../user_account.html#cryptdrive">CryptDrive</a></li>
@@ -165,6 +165,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#history">История</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#tags">Теги</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../drive.html#templates">Шаблоны</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../drive.html#storage-quota">Storage quota</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../collaboration.html">Совместная работа / Взаимодействие</a><ul>
@@ -306,7 +307,11 @@
 <li class="toctree-l3"><a class="reference internal" href="diagram.html">Диаграмма</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="diagram.html#documentation">Документация</a></li>
 <li class="toctree-l4"><a class="reference internal" href="diagram.html#toolbars">Панели инструментов</a></li>
-<li class="toctree-l4"><a class="reference internal" href="diagram.html#import-export">Импорт/Экспорт</a></li>
+<li class="toctree-l4"><a class="reference internal" href="diagram.html#import-export">Импорт/Экспорт</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="diagram.html#cryptpad-toolbar">Панель инструментов CryptPad</a></li>
+<li class="toctree-l5"><a class="reference internal" href="diagram.html#draw-io-toolbar">Панель инструментов Draw.io</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Рисунки</a><ul>
@@ -319,11 +324,11 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../keyboard_shortcuts.html">Keyboard Shortcuts</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../keyboard_shortcuts.html#general-shortcuts">General Shortcuts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../keyboard_shortcuts.html#drive-shortcuts">Drive Shortcuts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../keyboard_shortcuts.html#toolbar-shortcuts">Toolbar Shortcuts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../keyboard_shortcuts.html#apps-shortcuts">Apps Shortcuts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../keyboard_shortcuts.html">Сочетания клавиш</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../keyboard_shortcuts.html#general-shortcuts">Общие</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../keyboard_shortcuts.html#drive-shortcuts">Комбинации клавиш при работе с Диском</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../keyboard_shortcuts.html#toolbar-shortcuts">Комбинации клавиш при работе с Панелью инструментов</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../keyboard_shortcuts.html#apps-shortcuts">Комбинации клавиш в Приложениях</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../accessibility.html">Доступность</a><ul>
@@ -625,12 +630,12 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-forgot-my-password">Я забыл свой пароль</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Как импортировать/экспортировать мои документы на/с другую(ой) платформу(ы)?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#how-to-import-export-to-from-another-platform">How to import/export to/from another platform?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#import-export-is-not-visible-in-the-file-menu">Импорт/экспорт не отображается в меню «Файл»</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#rich-text-document-import-export">Импорт/экспорт форматированных текстовых документов</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#document-import-export">Document import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#presentation-import-export">Presentation import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#spreadsheets-import-export">Импорт/экспорт электронных таблиц</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#document-application-import-export">Document application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#presentation-application-import-export">Presentation application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#spreadsheet-application-import-export">Spreadsheet application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../FAQ.html#rich-text-application-import-export">Rich text application import/export</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../../FAQ.html#i-cannot-do-x-with-a-document-i-created">Я не могу сделать X с документом, который я создал</a></li>
@@ -809,7 +814,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../keyboard_shortcuts.html" class="btn btn-neutral float-right" title="Keyboard Shortcuts" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../keyboard_shortcuts.html" class="btn btn-neutral float-right" title="Сочетания клавиш" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="diagram.html" class="btn btn-neutral" title="Диаграмма" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
@@ -821,7 +826,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2025, CryptPad Team.
+        &copy; Copyright 2026, CryptPad Team.
 
     </p>
   </div>
@@ -846,7 +851,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../../',
-            VERSION:'2025.6.0',
+            VERSION:'2026.5.0',
             LANGUAGE:'ru',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

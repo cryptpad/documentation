@@ -15,7 +15,7 @@ Each registered user on CryptPad has a profile page accessible from the user me
 Personal profile
 ~~~~~~~~~~~~~~~~
 
-:badge_new:`2025.6.0` Your profile can now be modified directly from your :ref:`account settings <user_settings_profile>`.
+Your profile can now be modified directly from your :ref:`account settings <user_settings_profile>`.
 
 From here you can see what your profile look like to other users, you can also perform the following actions:
 
@@ -124,7 +124,7 @@ Add a contact
 By sharing your profile:
 
 1. Copy the link: User menu (avatar at the top-right) > |user-circle| **Profile** > |share-alt| **Share**.
-2. Paste and send through the means of your choice (preferably a secure mode of cummunication).
+2. Paste and send through the means of your choice (preferably a secure mode of communication).
 3. Your contact must then click **Send a contact request**.
 4. You get a notification with the request, ``Click`` **Accept**.
 

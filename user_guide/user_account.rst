@@ -3,7 +3,8 @@ User Account
 
 CryptPad encrypts data so that it is readable only by you and your collaborators. For this reason **the administrators of the service cannot view, retrieve or reset your password**. Therefore it is important that you make a note of your password in a safe place separate from your CryptPad account.
 
-CryptPad uses the combination of your username and password to identify you. Usernames are not unique on CryptPad. It is possible to create multiple accounts with the same username and different passwords.
+.. note::
+   CryptPad uses the combination of your username and password to identify you. Usernames are not unique on CryptPad. It is possible to create multiple accounts with the same username and different passwords.
 
 Account types
 -------------
@@ -72,7 +73,6 @@ Fill out the following information:
    :class: screenshot
 
 .. danger::
-
    Important: CryptPad administrators cannot view, retrieve or reset your password if it is lost or forgotten.
 
 -  **Terms of service**: Read and accept the terms of service.
@@ -162,7 +162,8 @@ Security & Privacy
 - **Change your password**: Change your account's password. Enter your current password, and confirm the new password by typing it twice
 - **Safe links**: When this setting is active, the link in your browser’s address bar does not provide access to the document unless the recipient already has it in their CryptDrive. This setting is active by default. It is highly recommended to keep it active and to use the :ref:`share` menu to copy links to documents.
 
-CryptPad includes the keys to decrypt your documents in their links. Anyone with access to your browsing history can potentially read your data. This includes intrusive browser extensions and browsers that sync your history across devices. Situations where your browser is visible by others, such as screen-sharing or screenshots, are also potentially risky in terms of leaking access to your documents. Enabling “safe links” prevents the keys from entering your browsing history or being displayed in your address bar whenever possible.
+.. danger::
+   CryptPad includes the keys to decrypt your documents in their links. Anyone with access to your browsing history can potentially read your data. This includes intrusive browser extensions and browsers that sync your history across devices. Situations where your browser is visible by others, such as screen-sharing or screenshots, are also potentially risky in terms of leaking access to your documents. Enabling “safe links” prevents the keys from entering your browsing history or being displayed in your address bar whenever possible.
 
 -  **Feedback**: CryptPad can send anonymised usage feedback to the server in order to improve the user experience. The content of documents is never shared. This option is disabled by default.
 -  **Cache**: CryptPad stores parts of your documents in your browser's memory in order to save network usage and improve loading times. You can disable the cache if your device doesn't have a lot of free storage space. For security reasons, the cache is always cleared when you log out, but you can clear it manually if you want to reclaim storage space on your machine.

@@ -21,7 +21,7 @@ For examples of past presentations please see the `CryptPad Peertube Channel <ht
 
 Here is a list of some public catalogs mentioning the project:
 
-- `Wikipedia <https://en.wikipedia.org/wiki/Draft:CryptPad>`__
+- `Privacy Guides <https://www.privacyguides.org/articles/2025/02/07/cryptpad-review/>`__ 
 - `AlternativeTo <https://alternativeto.net/software/cryptpad/about/>`__
 - `Slant <https://www.slant.co/options/31378/~cryptpad-review>`__
 - `Product Hunt <https://www.producthunt.com/products/cryptpad#cryptpad>`__

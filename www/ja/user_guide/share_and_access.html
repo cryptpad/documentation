@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>共有 / アクセス &mdash; CryptPad 2025.6.0 ドキュメント</title>
+  <title>共有 / アクセス &mdash; CryptPad 2026.5.0 ドキュメント</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2025.6.0</span>
+              <span class="release">Documentation 2026.5.0</span>
             </a>
             
 <div role="search">
@@ -165,6 +165,7 @@
 <li class="toctree-l3"><a class="reference internal" href="drive.html#history">履歴</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#tags">タグ</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#templates">テンプレート</a></li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#storage-quota">Storage quota</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="collaboration.html">共同作業 / ソーシャル</a><ul>
@@ -306,7 +307,11 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/diagram.html">ダイアグラム</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#documentation">ドキュメンテーション</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#toolbars">ツールバー</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">インポート/エクスポート</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">インポート/エクスポート</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apps/diagram.html#cryptpad-toolbar">CryptPad toolbar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="apps/diagram.html#draw-io-toolbar">Draw.io toolbar</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">ホワイトボード</a><ul>
@@ -625,12 +630,12 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-forgot-my-password">パスワードを紛失した場合</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">ドキュメントをプラットフォーム間でインポートまたはエクスポートするには？</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-to-from-another-platform">How to import/export to/from another platform?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#import-export-is-not-visible-in-the-file-menu">ファイルメニューにインポートとエクスポートがありません</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">リッチテキストドキュメントのインポート、エクスポート</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-import-export">Document import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-import-export">Presentation import/export</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">スプレッドシートのインポートとエクスポート</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-application-import-export">Document application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-application-import-export">Presentation application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheet-application-import-export">Spreadsheet application import/export</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-application-import-export">Rich text application import/export</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-cannot-do-x-with-a-document-i-created">作成したドキュメントで実行できない機能があります</a></li>
@@ -830,6 +835,10 @@
 <span id="id2"></span><h3>共有フォルダー<a class="headerlink" href="#shared-folders" title="この見出しへのパーマリンク">¶</a></h3>
 <p><span class="badge-user">ログイン済ユーザー</span></p>
 <p>複数のドキュメントを一度に共有する際に、共有フォルダーを使用できます。</p>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>Shared folders are impacting the storage quota of everyone who has them in their drive. Hence, it's usage should be limited and ideally used only in last resort, when a <a class="reference internal" href="collaboration.html#teams"><span class="std std-ref">team</span></a> isn't fitting for the use case.</p>
+</div>
 <p>CryptDriveで共有フォルダーは以下の方法で作成できます。</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">新規</span></code> &gt; <em class="cptools cptools-shared-folder"></em> <strong>共有フォルダー</strong>。</p></li>
@@ -851,6 +860,7 @@
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>共有フォルダーには、<a class="reference internal" href="drive.html#drive-history"><span class="std std-ref">履歴</span></a>とは別に、固有の履歴が設定されます。ドライブの履歴を復元しても共有フォルダーの履歴に対する影響はなく、逆にまた、共有フォルダーの履歴を復元してもドライブの履歴に対する影響はありません。</p>
+<p>Please note that, once shared, they cannot be reverted to normal folders.</p>
 </div>
 </section>
 </section>
@@ -939,7 +949,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2025, CryptPad Team.
+        &copy; Copyright 2026, CryptPad Team.
 
     </p>
   </div>
@@ -964,7 +974,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'2025.6.0',
+            VERSION:'2026.5.0',
             LANGUAGE:'ja',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',

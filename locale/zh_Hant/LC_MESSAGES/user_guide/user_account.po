@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the CryptPad package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CryptPad \n"
+"Project-Id-Version: CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-07-04 14:31+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-05-19 15:49+0000\n"
+"Last-Translator: David Benqué <david.benque@xwiki.com>\n"
+"Language-Team: Chinese (Traditional Han script) <https://"
+"weblate.cryptpad.org/projects/user-guide/user_account/zh_Hant/>\n"
+"Language: zh_Hant\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.15.1\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../user_guide/user_account.rst:2
 msgid "User Account"
-msgstr ""
+msgstr "使用者帳號"
 
 #: ../../user_guide/user_account.rst:4
 msgid ""
@@ -29,6 +32,9 @@ msgid ""
 "you make a note of your password in a safe place separate from your "
 "CryptPad account."
 msgstr ""
+"CryptPad 會加密資料，使其只會被您與您的協作者讀取。由於這個原因，**此服務的管"
+"理員無法檢視、取回或重設您的密碼**。因此請務必將您的密碼記錄在與 CryptPad 帳"
+"號分開且安全的地方。"
 
 #: ../../user_guide/user_account.rst:6
 msgid ""
@@ -36,56 +42,60 @@ msgid ""
 "you. Usernames are not unique on CryptPad. It is possible to create "
 "multiple accounts with the same username and different passwords."
 msgstr ""
+"CryptPad 透過您的使用者名稱與密碼的組合來識別您的身分。在 CryptPad 上，使用者"
+"名稱並不是唯一的，您可以使用相同的使用者名稱搭配不同密碼來建立多個帳號。"
 
 #: ../../user_guide/user_account.rst:9
 msgid "Account types"
-msgstr ""
+msgstr "帳號類型"
 
 #: ../../user_guide/user_account.rst:11
 msgid "There are three types of accounts on CryptPad:"
-msgstr ""
+msgstr "CryptPad 上有三種帳號類型："
 
 #: ../../user_guide/user_account.rst:14
 msgid "Guest user"
-msgstr ""
+msgstr "訪客使用者"
 
 #: ../../user_guide/user_account.rst:16
 msgid ""
 "Non-registered users are identified by an emoji animal or mascot avatar "
 "(at the top right)."
-msgstr ""
+msgstr "未註冊的使用者會以表情符號動物或吉祥物頭像顯示（在右上角）。"
 
 #: ../../user_guide/user_account.rst:18
 msgid ""
 "No personal information is necessary to use CryptPad without registering."
 " However, functionality is reduced:"
 msgstr ""
+"未註冊即可使用 CryptPad，而且不需要提供任何個人資訊。不過，可用功能會有所限制"
+"："
 
 #: ../../user_guide/user_account.rst:20
 msgid "Access to all applications."
-msgstr ""
+msgstr "可使用所有應用程式。"
 
 #: ../../user_guide/user_account.rst:21
 msgid "Sharing and collaborating on documents."
-msgstr ""
+msgstr "可以分享文件並共同協作。"
 
 #: ../../user_guide/user_account.rst:22
 msgid "Storage limited to 3 months of inactivity (counted per document)."
-msgstr ""
+msgstr "儲存空間僅限於文件 3 個月內有活動（以每份文件計算）。"
 
 #: ../../user_guide/user_account.rst:23
 msgid "File storage unavailable for images/videos/PDF/etc…"
-msgstr ""
+msgstr "無法儲存圖片、影片、PDF 等檔案 …"
 
 #: ../../user_guide/user_account.rst:24
 msgid ""
 "Limited access to :ref:`calendars <calendar>` (link-shared calendars "
 "only)."
-msgstr ""
+msgstr "只能有限度地使用 :ref:`行事曆 <calendar>` （僅限透過連結分享的行事曆）。"
 
 #: ../../user_guide/user_account.rst:27
 msgid "Logged in user"
-msgstr ""
+msgstr "已登入使用者"
 
 #: ../../user_guide/user_account.rst:29
 msgid ""
@@ -93,20 +103,24 @@ msgid ""
 "their profile picture if they have set one or the first 2 letters of "
 "their display name."
 msgstr ""
+"已登入的使用者會以頭像顯示（在右上角），如果有設定個人圖片就會顯示圖片，否則"
+"會顯示顯示名稱的前兩個字。"
 
 #: ../../user_guide/user_account.rst:31
 msgid ""
 "Registering an account does not require any personal information, only a "
 "username and password. Additional functionality for logged in users:"
 msgstr ""
+"註冊帳號不需要任何個人資料，只需要使用者名稱與密碼。登入使用者可以使用以下額"
+"外功能："
 
 #: ../../user_guide/user_account.rst:33
 msgid "Personal and permanent storage space for documents."
-msgstr ""
+msgstr "個人且永久的文件儲存空間。"
 
 #: ../../user_guide/user_account.rst:34
 msgid "File storage for images/videos/PDF/etc…"
-msgstr ""
+msgstr "可儲存圖片、影片、PDF 等檔案 …"
 
 #: ../../user_guide/user_account.rst:35
 msgid ""
@@ -114,6 +128,8 @@ msgid ""
 ":ref:`password <access_tab>`, an :ref:`expiry date <access_tab>`, or an "
 ":ref:`access list <access_list>`."
 msgstr ""
+"以 :ref:`擁有者 <owners>` 身分管理文件時有更多選項：可以新增 :ref:`密碼 "
+"<access_tab>`、:ref:`到期日 <access_tab>`，或 :ref:`存取名單 <access_list>`。"
 
 #: ../../user_guide/user_account.rst:36
 msgid ""
@@ -121,10 +137,12 @@ msgid ""
 "folders <shared_folders>`, or with :ref:`tags <tags>` and :ref:`templates"
 " <templates>`."
 msgstr ""
+"可以使用 :ref:`資料夾 <folders>`、:ref:`共用資料夾 <shared_folders>`，或 "
+":ref:`標籤 <tags>` 與 :ref:`範本 <templates>` 來整理文件。"
 
 #: ../../user_guide/user_account.rst:37
 msgid "Creation of :ref:`teams <teams>`."
-msgstr ""
+msgstr "建立 :ref:`團隊 <teams>`。"
 
 #: ../../user_guide/user_account.rst:38
 msgid ""
@@ -133,52 +151,55 @@ msgid ""
 ":ref:`chat <chat_contacts>` with. Notifications for interactions between "
 "contacts."
 msgstr ""
+"自訂 :ref:`個人檔案 <profile>` 頁面，並管理 :ref:`聯絡人 <contacts>` 名單，以"
+"便 :ref:`分享文件 <share>` 與 :ref:`聊天 <chat_contacts>`。當聯絡人互動時會收"
+"到通知。"
 
 #: ../../user_guide/user_account.rst:39
 msgid "Creation and management of :ref:`calendars <calendar>`."
-msgstr ""
+msgstr "建立與管理 :ref:`行事曆 <calendar>`。"
 
 #: ../../user_guide/user_account.rst:42
 msgid "Premium user"
-msgstr ""
+msgstr "付費使用者"
 
 #: ../../user_guide/user_account.rst:44 ../../user_guide/user_account.rst:256
 msgid "(only on cryptpad.fr)"
-msgstr ""
+msgstr "（僅限 cryptpad.fr）"
 
 #: ../../user_guide/user_account.rst:46
 msgid "More storage space."
-msgstr ""
+msgstr "更多儲存空間。"
 
 #: ../../user_guide/user_account.rst:47
 msgid "Higher maximum upload size for files (images/videos/PDF/etc…)."
-msgstr ""
+msgstr "更高的檔案上傳大小上限（圖片、影片、PDF 等）。"
 
 #: ../../user_guide/user_account.rst:48
 msgid "Priority response from the admin/support team."
-msgstr ""
+msgstr "管理員／支援團隊會優先回覆。"
 
 #: ../../user_guide/user_account.rst:49
 msgid "Support the development and sustainability of CryptPad."
-msgstr ""
+msgstr "協助支持 CryptPad 的開發與長期營運。"
 
 #: ../../user_guide/user_account.rst:52
 msgid "Account management"
-msgstr ""
+msgstr "帳號管理"
 
 #: ../../user_guide/user_account.rst:55
 msgid "Registration"
-msgstr ""
+msgstr "註冊"
 
 #: ../../user_guide/user_account.rst:57
 msgid ""
 "To register a new account, go to the registration page: **Register** at "
 "the top right of the home page."
-msgstr ""
+msgstr "若要註冊新帳號，請前往註冊頁面：在首頁右上角點選 **註冊**。"
 
 #: ../../user_guide/user_account.rst:62
 msgid "Fill out the following information:"
-msgstr ""
+msgstr "請填寫以下資訊："
 
 #: ../../user_guide/user_account.rst:64
 msgid ""
@@ -186,6 +207,8 @@ msgid ""
 "different from the **Display name** visible by other users. The "
 "**Username** cannot be changed once the account is created."
 msgstr ""
+"**使用者名稱**：這是用來登入 CryptPad 的名稱，與其他使用者看到的 **顯示名"
+"稱** 不同。帳號建立後，**使用者名稱** 無法變更。"
 
 #: ../../user_guide/user_account.rst:67
 msgid ""
@@ -196,50 +219,60 @@ msgid ""
 " communicate about your account (especially not to send \"password "
 "reset\" emails, as these do not exist on CryptPad)."
 msgstr ""
+"與多數線上服務不同，**CryptPad 不需要電子郵件地址即可註冊**。您可以把電子郵件"
+"地址當作使用者名稱，但系統只會把它視為一般字串。如下所述，這個使用者名稱對管"
+"理員來說是不可見的，也不會被用來與您聯絡有關帳號的事務（尤其是不會寄送任何「"
+"密碼重設」郵件，因為 CryptPad 並沒有這項功能）。"
 
 #: ../../user_guide/user_account.rst:69
 msgid ""
 "**Password**: It is recommended to use a strong password. The password "
 "can be changed in :ref:`user settings <user_settings>`."
 msgstr ""
+"**密碼**：建議使用強度較高的密碼。日後可以在 :ref:`使用者設定 <user_settings>"
+"` 中變更密碼。"
 
 #: ../../user_guide/user_account.rst:76
 msgid ""
 "Important: CryptPad administrators cannot view, retrieve or reset your "
 "password if it is lost or forgotten."
-msgstr ""
+msgstr "重要：如果您遺失或忘記密碼，CryptPad 管理員無法查看、取回或重設您的密碼。"
 
 #: ../../user_guide/user_account.rst:78
 msgid "**Terms of service**: Read and accept the terms of service."
-msgstr ""
+msgstr "**服務條款**：請閱讀並接受服務條款。"
 
 #: ../../user_guide/user_account.rst:80 ../../user_guide/user_account.rst:89
 msgid "Optional:"
-msgstr ""
+msgstr "選填："
 
 #: ../../user_guide/user_account.rst:82 ../../user_guide/user_account.rst:91
 msgid ""
 "**Import documents from your anonymous session**: If you have created "
 "documents as a non-registered user you can import them into your account."
 msgstr ""
+"**從匿名工作階段匯入文件**：如果您在未註冊的情況下建立過文件，可以將這些文件"
+"匯入到您的帳號中。"
 
 #: ../../user_guide/user_account.rst:85
 msgid "Logging in"
-msgstr ""
+msgstr "登入"
 
 #: ../../user_guide/user_account.rst:87
 msgid ""
 "To log in to CryptPad visit the **log in** page (at the top right of the "
 "home page), and fill in the username and password used at registration."
 msgstr ""
+"若要登入 CryptPad，請前往 **登入** 頁面（在首頁右上角），輸入註冊時設定的使用"
+"者名稱與密碼。"
 
 #: ../../user_guide/user_account.rst:94 ../../user_guide/user_account.rst:245
 msgid "Notifications"
-msgstr ""
+msgstr "通知"
 
 #: ../../user_guide/user_account.rst:96
 msgid ":badge_user:`Logged in users`"
-msgstr ""
+msgstr ":badge_user:`已登入使用者`"
 
 #: ../../user_guide/user_account.rst:98
 msgid ""
@@ -248,72 +281,76 @@ msgid ""
 "right). If you have unread notifications, the bell is filled |bell| and a"
 " count is displayed."
 msgstr ""
+"當您的聯絡人與您互動時，CryptPad 會發出通知。通知會以鐘形圖示 |bell-o| 顯示在"
+"頭像旁邊（右上角）。如果有未讀通知，圖示會變成實心 |bell|，並顯示未讀數量。"
 
 #: ../../user_guide/user_account.rst:100
 msgid "|bell| Bell drop down menu:"
-msgstr ""
+msgstr "|bell| 鐘形圖示下拉選單："
 
 #: ../../user_guide/user_account.rst:102
 msgid "Browse unread notifications."
-msgstr ""
+msgstr "瀏覽未讀通知。"
 
 #: ../../user_guide/user_account.rst:103
 msgid "Delete a notification with |times|."
-msgstr ""
+msgstr "使用 |times| 刪除通知。"
 
 #: ../../user_guide/user_account.rst:104
 msgid ""
 "**Open notifications panel**: View all notifications and notification "
 "history."
-msgstr ""
+msgstr "**開啟通知面板**：檢視所有通知與通知歷史紀錄。"
 
 #: ../../user_guide/user_account.rst:107
 msgid "On the notifications panel page:"
-msgstr ""
+msgstr "在通知面板頁面中："
 
 #: ../../user_guide/user_account.rst:109
 msgid "Select the type of notification to view:"
-msgstr ""
+msgstr "選擇要檢視的通知類型："
 
 #: ../../user_guide/user_account.rst:111
 msgid "|bars| All."
-msgstr ""
+msgstr "|bars| 全部。"
 
 #: ../../user_guide/user_account.rst:112
 msgid "|user| Contact Requests."
-msgstr ""
+msgstr "|user| 聯絡人請求。"
 
 #: ../../user_guide/user_account.rst:113
 msgid "|cptools richtext| Shared with me."
-msgstr ""
+msgstr "|cptools richtext| 與我共用。"
 
 #: ../../user_guide/user_account.rst:114
 msgid "|archive| History."
-msgstr ""
+msgstr "|archive| 歷史紀錄。"
 
 #: ../../user_guide/user_account.rst:116
 msgid "|trash|: Delete notifications."
-msgstr ""
+msgstr "|trash|：刪除通知。"
 
 #: ../../user_guide/user_account.rst:121
 msgid "Settings"
-msgstr ""
+msgstr "設定"
 
 #: ../../user_guide/user_account.rst:123
 msgid ""
 "The account settings are found in the user menu (avatar at the top right)"
 " > |gear| **Settings**."
-msgstr ""
+msgstr "帳號設定位於使用者選單中（右上角的頭像）> |gear| **設定**。"
 
 #: ../../user_guide/user_account.rst:128
 msgid "Account"
-msgstr ""
+msgstr "帳號"
 
 #: ../../user_guide/user_account.rst:130
 msgid ""
 "**Account name**: Username chosen at registration. This name cannot be "
 "changed. :badge_user:`Logged in users`"
 msgstr ""
+"**帳號名稱**：註冊時選擇的使用者名稱。此名稱無法變更。:badge_user:`已登入使用"
+"者`"
 
 #: ../../user_guide/user_account.rst:131
 msgid ""
@@ -322,6 +359,8 @@ msgid ""
 "account that is available to the administrators of the service. "
 ":badge_user:`Logged in users`"
 msgstr ""
+"**公開簽署金鑰**：供站台管理員及／或提供訂閱方案的站台使用。這是服務管理員唯"
+"一能取得的帳號相關資料。:badge_user:`已登入使用者`"
 
 #: ../../user_guide/user_account.rst:132
 msgid ""
@@ -331,6 +370,9 @@ msgid ""
 " languages by the :ref:`community <contribute_translation>`. Some "
 "translations can be incomplete and/or contain errors."
 msgstr ""
+"**語言**：CryptPad 介面所使用的語言。若要變更 CryptPad 的語言，請在下拉選單中"
+"選擇新的語言。CryptPad 的英文與法文由開發團隊維護，其他語言則由 :ref:`社群 "
+"<contribute_translation>` 翻譯；部分語言可能尚未完整，或偶有錯誤。"
 
 #: ../../user_guide/user_account.rst:133
 msgid ""
@@ -339,6 +381,9 @@ msgid ""
 "documents. Elements bigger than the specified size can be loaded "
 "manually. Use \"-1\" to always load the media elements automatically."
 msgstr ""
+"**自動下載大小上限**：自動載入嵌入文件中的媒體物件（圖片、影片、PDF）的最大容"
+"量（以 MB 計）。超過此大小的物件需要手動載入。若設定為「-1」，則一律自動載入"
+"媒體物件。"
 
 #: ../../user_guide/user_account.rst:134
 msgid ""
@@ -346,10 +391,12 @@ msgid ""
 "of its documents. **Delete your account** and confirm. "
 ":badge_user:`Logged in users`"
 msgstr ""
+"**刪除帳號**：將您的帳號與其所有文件永久刪除。請點選 **刪除帳號** 並確認"
+"。:badge_user:`已登入使用者`"
 
 #: ../../user_guide/user_account.rst:139
 msgid "Profile"
-msgstr ""
+msgstr "個人檔案"
 
 #: ../../user_guide/user_account.rst:141
 msgid ""
@@ -357,12 +404,14 @@ msgid ""
 "collaborate on documents. To change this name enter a new name and click "
 "on **Save**."
 msgstr ""
+"**顯示名稱**：在與其他使用者協作編輯文件時所顯示的名稱。若要變更這個名稱，請"
+"輸入新名稱後按 **儲存**。"
 
 #: ../../user_guide/user_account.rst:142
 msgid ""
 "**Avatar**: A picture for your profile, shown alongside your display "
 "name. :badge_user:`Logged in users`"
-msgstr ""
+msgstr "**頭像**：顯示在顯示名稱旁邊的個人圖片。:badge_user:`已登入使用者`"
 
 #: ../../user_guide/user_account.rst:143
 msgid ""
@@ -370,12 +419,16 @@ msgid ""
 "\"Support and moderation\" or as well that you are a paid subscriber. "
 ":badge_user:`Logged in users`"
 msgstr ""
+"**徽章**：向其他使用者顯示您的身分，例如「管理員」、「支援與管理」，或您是付"
+"費訂閱者。:badge_user:`已登入使用者`"
 
 #: ../../user_guide/user_account.rst:144
 msgid ""
 "**Link to your website**: Fill a valid URL to add a link to your personal"
 " website. :badge_user:`Logged in users`"
 msgstr ""
+"**個人網站連結**：輸入有效網址，為您的個人網站加上連結。:badge_user:`已登入使"
+"用者`"
 
 #: ../../user_guide/user_account.rst:145
 msgid ""
@@ -383,10 +436,12 @@ msgid ""
 " rich text formatting with the toolbar or by using the Markdown syntax. "
 ":badge_user:`Logged in users`"
 msgstr ""
+"**個人簡介**：可輸入個人簡短介紹的文字區塊。您可以使用工具列進行富文字格式化"
+"，或使用 Markdown 語法。:badge_user:`已登入使用者`"
 
 #: ../../user_guide/user_account.rst:150
 msgid "Security & Privacy"
-msgstr ""
+msgstr "安全與隱私"
 
 #: ../../user_guide/user_account.rst:152
 msgid ""
@@ -394,6 +449,8 @@ msgid ""
 "which this option is activated. (see also :ref:`remote_disconnect`) "
 ":badge_user:`Logged in users`"
 msgstr ""
+"**關閉遠端工作階段**：將除了目前這一個以外的所有工作階段登出。（另請參閱 "
+":ref:`remote_disconnect`）:badge_user:`已登入使用者`"
 
 #: ../../user_guide/user_account.rst:153
 msgid ""
@@ -401,34 +458,36 @@ msgid ""
 "additional verification code provided by an authenticator app of your "
 "choice.   :badge_user:`Logged in users`"
 msgstr ""
+"**兩步驟驗證（2FA）**：透過您選擇的身分驗證 App 所提供的驗證碼，為帳號增加一"
+"道保護機制。:badge_user:`已登入使用者`"
 
 #: ../../user_guide/user_account.rst:155
 msgid "To activate 2FA:"
-msgstr ""
+msgstr "啟用 2FA："
 
 #: ../../user_guide/user_account.rst:157
 msgid "Enter your account password"
-msgstr ""
+msgstr "輸入您的帳號密碼"
 
 #: ../../user_guide/user_account.rst:158
 msgid "Save the recovery code"
-msgstr ""
+msgstr "妥善保存還原代碼"
 
 #: ../../user_guide/user_account.rst:159
 msgid ""
 "Snap the QR code with a 2FA app of your choice (or copy the address and "
 "paste into your app)"
-msgstr ""
+msgstr "使用您選擇的 2FA App 掃描 QR Code（或複製位址並貼到 App 中）"
 
 #: ../../user_guide/user_account.rst:160
 msgid "Enter the verification code to confirm"
-msgstr ""
+msgstr "輸入驗證碼以完成設定"
 
 #: ../../user_guide/user_account.rst:162
 msgid ""
 "**Change your password**: Change your account's password. Enter your "
 "current password, and confirm the new password by typing it twice"
-msgstr ""
+msgstr "**變更密碼**：變更您的帳號密碼。請先輸入目前的密碼，再輸入兩次新密碼以確認"
 
 #: ../../user_guide/user_account.rst:163
 msgid ""
@@ -438,6 +497,9 @@ msgid ""
 " is highly recommended to keep it active and to use the :ref:`share` menu"
 " to copy links to documents."
 msgstr ""
+"**安全連結**：啟用此設定後，瀏覽器網址列中的連結不會讓其他人直接存取文件，除"
+"非對方已在自己的 CryptDrive 中擁有該文件。此設定預設為啟用，強烈建議維持啟用"
+"狀態，並透過 :ref:`分享 <share>` 選單來複製文件連結。"
 
 #: ../../user_guide/user_account.rst:165
 msgid ""
@@ -450,6 +512,10 @@ msgid ""
 "prevents the keys from entering your browsing history or being displayed "
 "in your address bar whenever possible."
 msgstr ""
+"CryptPad 的文件連結中包含解密用的金鑰。任何能存取您瀏覽紀錄的人都有可能讀取您"
+"的資料，這也包含具侵入性的瀏覽器擴充套件，或會在不同裝置間同步瀏覽紀錄的瀏覽"
+"器。當您共用螢幕或截圖時，瀏覽器畫面被他人看到也可能導致文件存取權外洩。啟用"
+"「安全連結」可在可能情況下避免將金鑰寫入瀏覽紀錄，或顯示在網址列中。"
 
 #: ../../user_guide/user_account.rst:167
 msgid ""
@@ -457,6 +523,8 @@ msgid ""
 "in order to improve the user experience. The content of documents is "
 "never shared. This option is disabled by default."
 msgstr ""
+"**回饋**：CryptPad 可以將匿名化的使用情形回傳伺服器，以改善使用體驗。文件內容"
+"絕不會被傳送。此選項預設為關閉。"
 
 #: ../../user_guide/user_account.rst:168
 msgid ""
@@ -467,16 +535,19 @@ msgid ""
 "out, but you can clear it manually if you want to reclaim storage space "
 "on your machine."
 msgstr ""
+"**快取**：CryptPad 會在您的瀏覽器中暫存部分文件內容，以減少網路流量並加快載入"
+"速度。如果您的裝置可用儲存空間不多，可以停用快取。基於安全考量，登出時會自動"
+"清除快取，您也可以隨時手動清除以釋放空間。"
 
 #: ../../user_guide/user_account.rst:169
 msgid ""
 "**Destroy all owned documents**: All documents where you are the sole "
 "owner will be permanently destroyed"
-msgstr ""
+msgstr "**銷毀所有由您擁有的文件**：您為唯一擁有者的所有文件都會被永久刪除"
 
 #: ../../user_guide/user_account.rst:172
 msgid "Appearance"
-msgstr ""
+msgstr "外觀"
 
 #: ../../user_guide/user_account.rst:174
 msgid ""
@@ -484,22 +555,26 @@ msgid ""
 "CryptPad. By default this follows the operating system and/or browser "
 "setting, but it can also be set manually."
 msgstr ""
+"**色彩主題**：決定 CryptPad 整體使用的主題（淺色或深色）。預設會依照作業系統"
+"與／或瀏覽器設定，但也可以手動指定。"
 
 #: ../../user_guide/user_account.rst:179
 msgid "CryptDrive"
-msgstr ""
+msgstr "CryptDrive"
 
 #: ../../user_guide/user_account.rst:181
 msgid ""
 "**Homepage redirection**: Automatic redirection from the home page to the"
 " drive when logged in is no longer enabled by default"
-msgstr ""
+msgstr "**首頁重新導向**：登入後，自動從首頁導向到雲端硬碟的功能，已不再預設啟用"
 
 #: ../../user_guide/user_account.rst:182
 msgid ""
 "**Tips**: Help messages in the CryptPad interface. Click on **Reset** to "
 "display them again if they have been dismissed."
 msgstr ""
+"**提示**：CryptPad 介面中的說明訊息。如果您之前關閉過提示，可以按 **重設** 讓"
+"提示再次顯示。"
 
 #: ../../user_guide/user_account.rst:183
 msgid ""
@@ -508,22 +583,29 @@ msgid ""
 " document you add to your CryptDrive, it counts against your storage "
 "quota."
 msgstr ""
+"**在 CryptDrive 中儲存文件**：管理您造訪的文件是否要自動儲存在 CryptDrive 中"
+"。如果您將一份沒有任何人 :ref:`擁有 <owners>` 的文件加入 CryptDrive，該文件就"
+"會佔用您的儲存額度。"
 
 #: ../../user_guide/user_account.rst:185
 msgid "**Automatic**: All the documents you visit are stored in your CryptDrive."
-msgstr ""
+msgstr "**自動**：您造訪的所有文件都會儲存在 CryptDrive 中。"
 
 #: ../../user_guide/user_account.rst:186
 msgid ""
 "**Manual (always ask)**: If you have not stored a document yet, you will "
 "be asked if you want to store them in your CryptDrive."
 msgstr ""
+"**手動（一律詢問）**：若您尚未儲存某份文件，系統會詢問您是否要將其儲存到 "
+"CryptDrive。"
 
 #: ../../user_guide/user_account.rst:187
 msgid ""
 "**Manual (never ask)** Documents are not stored automatically in your "
 "Cryptpad. The option to store them will be hidden."
 msgstr ""
+"**手動（不再詢問）**：文件不會自動儲存到 CryptPad 中，相關儲存選項也會被隱藏"
+"。"
 
 #: ../../user_guide/user_account.rst:189
 msgid ""
@@ -533,6 +615,9 @@ msgid ""
 "shared version will be visible, unless deleted, in which case the "
 "original will be displayed in its previous location."
 msgstr ""
+"**重複的擁有文件**：當您將自己擁有的文件移到共用資料夾時，系統會在您的 "
+"CryptDrive 中保留一份副本，確保您仍保有控制權。您可以選擇隱藏這些重複檔案。只"
+"有共用版本會顯示；若共用版本被刪除，原始版本會在原本位置重新顯示。"
 
 #: ../../user_guide/user_account.rst:190
 msgid ""
@@ -542,10 +627,13 @@ msgid ""
 "slow down the browser on less powerful computers. The **Clean** button "
 "deletes all existing thumbnails."
 msgstr ""
+"**縮圖**：為了讓您在 :ref:`網格模式 <drive_display>` 下更容易瀏覽 CryptDrive"
+"，CryptPad 可以為文件建立縮圖並儲存在瀏覽器中。由於這可能會讓效能較差的電腦變"
+"慢，此選項預設為關閉。按下 **清除** 按鈕可以刪除所有現有縮圖。"
 
 #: ../../user_guide/user_account.rst:191
 msgid "**Backup**: Two types of backups are available."
-msgstr ""
+msgstr "**備份**：提供兩種類型的備份。"
 
 #: ../../user_guide/user_account.rst:193
 msgid ""
@@ -553,6 +641,8 @@ msgid ""
 "content. This option is designed to save access to documents and "
 "**Restore** it in another session."
 msgstr ""
+"**備份** 只會儲存 CryptDrive 中各文件的金鑰，而不是文件內容。此選項的目的是保"
+"留您對文件的存取權，好讓您在其他工作階段使用 **還原** 取回。"
 
 #: ../../user_guide/user_account.rst:194
 msgid ""
@@ -561,6 +651,9 @@ msgid ""
 "other software. Some applications produce files that are only readable by"
 " CryptPad."
 msgstr ""
+"**下載我的 CryptDrive** 會下載 CryptDrive 中所有文件的內容。在可行的情況下，"
+"檔案會轉成可被其他軟體讀取的格式。不過，部分應用程式產生的檔案仍只能在 "
+"CryptPad 中開啟。"
 
 #: ../../user_guide/user_account.rst:196
 msgid ""
@@ -568,6 +661,8 @@ msgid ""
 " to logging in, they can be imported to the CryptDrive. "
 ":badge_user:`Logged in users`"
 msgstr ""
+"**匯入**：如果您在登入前，以未註冊身分建立過文件，可以將這些文件匯入 "
+"CryptDrive。:badge_user:`已登入使用者`"
 
 #: ../../user_guide/user_account.rst:197
 msgid ""
@@ -576,10 +671,13 @@ msgid ""
 "documents, which can be deleted individually in the :ref:`properties "
 "<document_properties>` dialog."
 msgstr ""
+"**刪除歷史紀錄**：您可以刪除 CryptDrive 與通知的歷史紀錄，以節省儲存空間。這"
+"不會影響各文件自己的歷史紀錄；文件歷史可在 :ref:`內容 <document_properties>` "
+"視窗中分別刪除。"
 
 #: ../../user_guide/user_account.rst:202
 msgid "Cursor"
-msgstr ""
+msgstr "游標"
 
 #: ../../user_guide/user_account.rst:204
 msgid ""
@@ -588,26 +686,29 @@ msgid ""
 "color of your text when :ref:`color by author <app_code_theme>` is active"
 " in Code documents."
 msgstr ""
+"**游標顏色**：變更您的游標顏色。協作編輯文件時，這個顏色可用來識別您的編輯位"
+"置；在程式碼文件中啟用 :ref:`依作者著色 <app_code_theme>` 時，也會套用到您輸"
+"入的文字。"
 
 #: ../../user_guide/user_account.rst:205
 msgid ""
 "**Share my cursor position**: Display or hide the exact position of your "
 "cursor to other users."
-msgstr ""
+msgstr "**分享我的游標位置**：決定是否讓其他使用者看見您游標的確切位置。"
 
 #: ../../user_guide/user_account.rst:206
 msgid ""
 "**Display other users’ cursor position (BETA)**: Display or hide the "
 "position of other users’ cursors."
-msgstr ""
+msgstr "**顯示其他使用者的游標位置（測試版）**：決定是否顯示其他使用者游標的位置。"
 
 #: ../../user_guide/user_account.rst:211
 msgid "Rich Text"
-msgstr ""
+msgstr "富文字"
 
 #: ../../user_guide/user_account.rst:213
 msgid "User settings for the :ref:`app_rich_text` application."
-msgstr ""
+msgstr ":ref:`app_rich_text` 應用程式的使用者設定。"
 
 #: ../../user_guide/user_account.rst:215
 msgid ""
@@ -615,6 +716,8 @@ msgid ""
 "limits the width of the text editor, and using the full width of the "
 "screen."
 msgstr ""
+"**編輯器最大寬度**：在限制編輯器寬度的頁面模式（預設）與使用整個螢幕寬度之間"
+"切換。"
 
 #: ../../user_guide/user_account.rst:216
 msgid ""
@@ -622,38 +725,40 @@ msgid ""
 " are underlined and suggested corrections are available through "
 ":kbd:`Ctrl` + ``Right click`` on the word to correct."
 msgstr ""
+"**拼字檢查**：在富文字文件中啟用拼字檢查。拼字錯誤會以下底線標示，可以按 "
+":kbd:`Ctrl` + ``滑鼠右鍵`` 在該字上取得建議更正。"
 
 #: ../../user_guide/user_account.rst:217
 msgid ""
 "**Comment notifications**: Disable notifications when another user "
 "replies to one of your comments."
-msgstr ""
+msgstr "**留言通知**：停用其他使用者回覆您留言時所發出的通知。"
 
 #: ../../user_guide/user_account.rst:218
 msgid ""
 "**Open links on first click**: Open embedded links on click without the "
 "preview popup."
-msgstr ""
+msgstr "**一次點擊開啟連結**：點擊嵌入的連結時，直接開啟而不顯示預覽視窗。"
 
 #: ../../user_guide/user_account.rst:223
 msgid "Code"
-msgstr ""
+msgstr "程式碼"
 
 #: ../../user_guide/user_account.rst:225
 msgid "User settings for the :ref:`app_code` application."
-msgstr ""
+msgstr ":ref:`app_code` 應用程式的使用者設定。"
 
 #: ../../user_guide/user_account.rst:227
 msgid ""
 "**Code editor indentation (spaces)**: Choose the number of spaces for "
 "each level of indentation."
-msgstr ""
+msgstr "**程式碼縮排（空白數）**：選擇每一層縮排要使用的空白字元數量。"
 
 #: ../../user_guide/user_account.rst:228
 msgid ""
 "**Indent using tabs (instead of spaces)**: Insert tabs rather than spaces"
 " with the :kbd:`Tab` key."
-msgstr ""
+msgstr "**使用 Tab 縮排（而非空白）**：按 :kbd:`Tab` 鍵時插入跳位字元，而不是空白。"
 
 #: ../../user_guide/user_account.rst:229
 msgid ""
@@ -661,10 +766,12 @@ msgid ""
 "when brackets are opened with ``(`` (also works with ``[``, ``'``, "
 "``\"``)."
 msgstr ""
+"**自動補齊括號**：輸入左括號 ``(`` 時，自動插入對應的右括號 ``)``（同樣適用"
+"於 ``[``、``'``、``\"``）。"
 
 #: ../../user_guide/user_account.rst:230
 msgid "**Font size in the code editor**: Set the size of text in the code editor."
-msgstr ""
+msgstr "**程式碼編輯器字型大小**：調整程式碼編輯器中文字的大小。"
 
 #: ../../user_guide/user_account.rst:231
 msgid ""
@@ -672,14 +779,16 @@ msgid ""
 "correction suggestions are available through ``Right click`` on the word "
 "to correct."
 msgstr ""
+"**拼字檢查**：在程式碼編輯器中以下底線標記拼字錯誤，並可透過在該字上 ``滑鼠右"
+"鍵`` 取得建議更正。"
 
 #: ../../user_guide/user_account.rst:236
 msgid "Kanban"
-msgstr ""
+msgstr "看板"
 
 #: ../../user_guide/user_account.rst:238
 msgid "User settings for the :ref:`app_kanban` application."
-msgstr ""
+msgstr ":ref:`app_kanban` 應用程式的使用者設定。"
 
 #: ../../user_guide/user_account.rst:240
 msgid ""
@@ -687,24 +796,26 @@ msgid ""
 "multiple tags: only show cards containing all the selected tags (AND) or "
 "show cards containing any of the selected tags (OR)."
 msgstr ""
+"**標籤篩選**：選取多個標籤時，要如何篩選卡片：只顯示同時包含所有選取標籤的卡"
+"片（AND），或顯示包含任一選取標籤的卡片（OR）。"
 
 #: ../../user_guide/user_account.rst:247
 msgid "User settings for the notifications."
-msgstr ""
+msgstr "通知相關的使用者設定。"
 
 #: ../../user_guide/user_account.rst:249
 msgid ""
 "**Calendar notifications**: Enable/disable all notifications for upcoming"
 " calendar events."
-msgstr ""
+msgstr "**行事曆通知**：啟用或停用所有即將到來的行事曆事件通知。"
 
 #: ../../user_guide/user_account.rst:254
 msgid "Subscription"
-msgstr ""
+msgstr "訂閱"
 
 #: ../../user_guide/user_account.rst:258
 msgid "Redirects to the account page."
-msgstr ""
+msgstr "重新導向到帳號頁面。"
 
 #~ msgid "|cptools pad| Shared with me."
 #~ msgstr ""
@@ -800,4 +911,3 @@ msgstr ""
 #~ "click on **Save**. :badge_user:`Logged in "
 #~ "users`"
 #~ msgstr ""
-

@@ -115,6 +115,10 @@ Shared folders
 
 Shared folders are made for sharing a set of documents at once.
 
+.. warning::
+
+   Shared folders are impacting the storage quota of everyone who has them in their drive. Hence, it's usage should be limited and ideally used only in last resort, when a :ref:`team <teams>` isn't fitting for the use case.
+
 To create a shared folder in the CryptDrive:
 
 -  ``+ New`` > |cptools shared-folder| **Shared folder**.
@@ -145,6 +149,8 @@ Folders are shared in a similar way to documents. To share a folder from the Cry
 .. note::
 
    Shared folders have their own history, separate from the :ref:`drive_history`. Restoring the history of the drive does not affect shared folders, conversely the history of a shared folder can be restored without affecting the rest of the drive.
+
+   Please note that, once shared, they cannot be reverted to normal folders.
 
 .. _access:
 

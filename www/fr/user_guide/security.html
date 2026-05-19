@@ -9,7 +9,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Sécurité &mdash; Documentation CryptPad 2025.6.0</title>
+  <title>Sécurité &mdash; Documentation CryptPad 2026.5.0</title>
   
 
   
@@ -58,7 +58,7 @@
             <a href="../index.html" class="icon icon-home">
               <img src="../_static/images/CryptPad_docs_logo.svg" class="logo" alt="Logo"/>
               <div class="icon-title">CryptPad</div>
-              <span class="release">Documentation 2025.6.0</span>
+              <span class="release">Documentation 2026.5.0</span>
             </a>
             
 <div role="search">
@@ -145,7 +145,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#verifying-contacts">Vérifier vos contacts</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#self-destructing-documents">Documents éphémères</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#remote-disconnect">Déconnexion à distance</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#remote-content">Déconnexion à distance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remote-content">Contenu distant</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#known-caveats">Limitations connues</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#no-unique-usernames">Les noms d'utilisateur·ices ne sont pas uniques</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#edit-rights-in-teams">Droits d'édition dans une équipe</a></li>
@@ -165,6 +165,7 @@
 <li class="toctree-l3"><a class="reference internal" href="drive.html#history">Historique</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#tags">Mots-Clés</a></li>
 <li class="toctree-l3"><a class="reference internal" href="drive.html#templates">Modèles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="drive.html#storage-quota">Storage quota</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="collaboration.html">Collaboration / Social</a><ul>
@@ -306,7 +307,11 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/diagram.html">Diagramme</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#documentation">Documentation</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#toolbars">Barre d'outils</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">Importer/Exporter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/diagram.html#import-export">Importer/Exporter</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="apps/diagram.html#cryptpad-toolbar">Barre d'outils CryptPad</a></li>
+<li class="toctree-l5"><a class="reference internal" href="apps/diagram.html#draw-io-toolbar">Barre d'outils Draw.io</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Dessin</a><ul>
@@ -319,11 +324,11 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="keyboard_shortcuts.html">Keyboard Shortcuts</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="keyboard_shortcuts.html#general-shortcuts">General Shortcuts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="keyboard_shortcuts.html#drive-shortcuts">Drive Shortcuts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="keyboard_shortcuts.html#toolbar-shortcuts">Toolbar Shortcuts</a></li>
-<li class="toctree-l3"><a class="reference internal" href="keyboard_shortcuts.html#apps-shortcuts">Apps Shortcuts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="keyboard_shortcuts.html">Raccourcis clavier</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="keyboard_shortcuts.html#general-shortcuts">Raccourcis généraux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="keyboard_shortcuts.html#drive-shortcuts">Raccourcis du drive</a></li>
+<li class="toctree-l3"><a class="reference internal" href="keyboard_shortcuts.html#toolbar-shortcuts">Raccourcis de la barre d'outils</a></li>
+<li class="toctree-l3"><a class="reference internal" href="keyboard_shortcuts.html#apps-shortcuts">Raccourcis des applications</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="accessibility.html">Accessibilité</a><ul>
@@ -625,12 +630,12 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-forgot-my-password">J'ai oublié mon mot de passe</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-my-documents-to-from-another-platform">Comment importer/exporter mes documents vers/depuis un autre logiciel ?</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../FAQ.html#how-to-import-export-to-from-another-platform">Comment importer/exporter mes documents vers/depuis un autre logiciel ?</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../FAQ.html#import-export-is-not-visible-in-the-file-menu">Import/export n'est pas visible depuis le menu Fichier</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-document-import-export">Import/export de documents texte</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-import-export">Import/export de Document</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-import-export">Import/export de présentations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheets-import-export">Import/export de feuilles de calcul</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#document-application-import-export">Import/export de l'application Document</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#presentation-application-import-export">Import/export de l'application Présentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#spreadsheet-application-import-export">Import/export de l'application Tableur</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../FAQ.html#rich-text-application-import-export">Import/export de l'application Documents texte</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../FAQ.html#i-cannot-do-x-with-a-document-i-created">Je ne peux pas faire X avec un document que j'ai créé</a></li>
@@ -750,7 +755,7 @@
 <span id="trust"></span><h2>Hypothèse sur la confiance<a class="headerlink" href="#trust-assumptions" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p>CryptPad est une suite collaborative chiffrée de bout en bout et open-source, le serveur n'a pas accès à vos données. Néanmoins, comme avec tous les applis web, il y a quelques entités auxquels on doit se fier :</p>
 <ul class="simple">
-<li><p>Votre <a class="reference internal" href="instances.html#cryptpad-instances"><span class="std std-ref">instance</span></a> de CryptPad choisi de</p>
+<li><p>Votre <a class="reference internal" href="instances.html#cryptpad-instances"><span class="std std-ref">instance</span></a> de CryptPad choisit de</p>
 <ul>
 <li><p>exécuter le même code qui est publié sur GitHub,</p></li>
 <li><p>ne pas bloquer vos messages du réseau, et</p></li>
@@ -759,26 +764,26 @@
 </li>
 <li><p>Vos collaborateur·ices de ne pas faire suivre les <a class="reference internal" href="share_and_access.html#share-link"><span class="std std-ref">liens partagés</span></a> avec des tiers illégitimes.</p></li>
 </ul>
-<p>En supposant les points mentionné ci-dessus, vous pouvez être sûr·e que c'est techniquement impossible de lire ou modifier vos documents pour</p>
+<p>En supposant les points mentionné ci-dessus, vous pouvez être sûr·e qu’il est techniquement impossible de lire ou modifier vos documents pour</p>
 <ul class="simple">
 <li><p>votre instance de CryptPad,</p></li>
-<li><p>n'importe quel·le adversaire fort·e qui peux voire votre trafic web, ou</p></li>
+<li><p>n'importe quel·le adversaire fort·e qui peut voir votre trafic web, ou</p></li>
 <li><p>n'importe quel·le autre utilisateur·ice.</p></li>
 </ul>
-<p>Nous maintenons une <a class="reference external" href="https://cryptpad.org/instances">liste des instances CryptPad publiques</a> pour que vous pouviez décider en qui vous voulez faire confiance.</p>
+<p>Nous maintenons une <a class="reference external" href="https://cryptpad.org/instances">liste des instances CryptPad publiques</a> pour mieux vous aider à décider en qui placer votre confiance.</p>
 <div class="admonition warning">
 <p class="admonition-title">Avertissement</p>
-<p>CryptPad ne garantis qu'une forme faible d'anonymat. Votre instance de CryptPad peut voire votre adresse IP et votre &quot;user agent&quot; (navigateur et système d'exploitation).</p>
-<p>Si vous avez besoin des garanties d'anonymat plus fortes, vous pouvez accéder CryptPad par <a class="reference external" href="https://www.torproject.org">Tor</a>.</p>
+<p>CryptPad ne garantit qu'une forme faible d'anonymat. Votre instance de CryptPad peut voir votre adresse IP et votre “user agent” (navigateur et système d'exploitation).</p>
+<p>Si vous avez besoin de garanties d'anonymat plus fortes, vous pouvez accéder CryptPad par <a class="reference external" href="https://www.torproject.org">Tor</a>.</p>
 </div>
 </section>
 <section id="passwords-for-documents-and-folders">
 <span id="passwords"></span><h2>Mot de passe des documents et dossiers<a class="headerlink" href="#passwords-for-documents-and-folders" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p><span class="badge-user">Utilisateur·ices enregistré·es</span></p>
-<p>Quand vous partagez le lien d'un document ou dossier de manière non sécurisée (par exemple par e-mail ou SMS), il se peut que quelqu'un l'intercepte et y accède. Pour éviter cela, les <a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">propriétaires</span></a> d'un document ou dossier peuvent ajouter un mot de passe.</p>
+<p>Lorsque vous partagez le lien d'un document ou dossier à travers un canal non sécurisé (par exemple par e-mail ou SMS), il se peut que quelqu'un l'intercepte et y accède. Pour éviter cela, les <a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">propriétaires</span></a> d'un document ou dossier peuvent ajouter un mot de passe.</p>
 <p>Quand vous <a class="reference internal" href="share_and_access.html#share-contacts"><span class="std std-ref">partagez avec vos contacts ou équipes directement sur CryptPad</span></a>, les communications sont chiffrées et nous partons du principe que vous voulez donner l'accès. C'est pourquoi le mot de passe est alors stocké et envoyé avec le document quand vous le partagez. Les destinataires, ou vous-même, n'ont <strong>pas</strong> à le donner pour ouvrir le document.</p>
 <p>Vous pouvez ajouter un mot de passe à un document lors de sa <a class="reference internal" href="apps/general.html#new-document"><span class="std std-ref">création</span></a>.</p>
-<p>Vous pouvez aussi ajouter ou modifier un mot de passe dans le menu <a class="reference internal" href="share_and_access.html#access"><span class="std std-ref">Accès</span></a> :</p>
+<p>Vous pouvez aussi ajouter ou modifier un mot de passe dans le menu <a class="reference internal" href="share_and_access.html#access"><span class="std std-ref">Accès</span></a> :</p>
 <ul class="simple">
 <li><p>Dans le CryptDrive : <cite>Clique droit</cite> &gt; <em class="fa fa-unlock-alt"></em> <strong>Accès</strong>.</p></li>
 <li><p>Dans la barre d'outils du document : <em class="fa fa-unlock-alt"></em> <strong>Accès</strong>.</p></li>
@@ -787,20 +792,20 @@
 <section id="verifying-contacts">
 <span id="id1"></span><h2>Vérifier vos contacts<a class="headerlink" href="#verifying-contacts" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p><span class="badge-user">Utilisateur·ices enregistré·es</span></p>
-<p>Pour vérifier l'identité d'un de vos contacts (que le contact est vraiment la personne que vous pensez), vous pouvez comparer les clés de signature publique :</p>
+<p>Pour vérifier l'identité d'un de vos contacts (c’est à dire que le contact est réellement la personne que vous pensez), vous pouvez comparer les clés publiques de signature :</p>
 <ol class="arabic simple">
 <li><p>Demandez à votre contact de partager <a class="reference internal" href="user_account.html#user-settings-account"><span class="std std-ref">sa clé publique</span></a> par un canal sécurisé avec vous.</p></li>
-<li><p>Si cette publique clé correspond à laquelle de votre contact <a class="reference internal" href="collaboration.html#another-user-profile"><span class="std std-ref">profile page</span></a>, vous pouvez être sûr·e que le contact correspond à la personne à l'autre bout du canal sécurisé.</p></li>
+<li><p>Si cette clé publique correspond à celle du <a class="reference internal" href="collaboration.html#another-user-profile"><span class="std std-ref">profil utilisateur·ice</span></a> de votre contact, vous pouvez être sûr·e que le contact correspond à la personne à l'autre bout du canal sécurisé.</p></li>
 </ol>
 </section>
 <section id="self-destructing-documents">
 <span id="id2"></span><h2>Documents éphémères<a class="headerlink" href="#self-destructing-documents" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p><span class="badge-user">Utilisateur·ices enregistré·es</span></p>
-<p>Les documents éphémères vont être détruits automatiquement sans interaction des utilisateur·ices.</p>
-<p>Il y a deux méthodes :</p>
+<p>Les documents éphémères vont être détruits automatiquement sans interaction des utilisateur·ices. Cela garantit que les données sensibles ne restent pas accessible pour toujours.</p>
+<p>Il y a deux méthodes pour créer des documents éphémères :</p>
 <ul class="simple">
-<li><p>Vous pouvez ajouter une durée de vie quand vous <a class="reference internal" href="apps/general.html#new-document"><span class="std std-ref">créez un nouveau document</span></a>.</p></li>
-<li><p>Vous pouvez partager un document par un <a class="reference internal" href="share_and_access.html#share-access-rights"><span class="std std-ref">lien &quot;voire et autodétruire&quot;</span></a>.</p></li>
+<li><p>Vous pouvez ajouter une date de destruction lorsque vous <a class="reference internal" href="apps/general.html#new-document"><span class="std std-ref">créez un nouveau document</span></a>.</p></li>
+<li><p>Vous pouvez partager un document par un <a class="reference internal" href="share_and_access.html#share-access-rights"><span class="std std-ref">lien &quot;voir et autodétruire&quot;</span></a>.</p></li>
 </ul>
 </section>
 <section id="remote-disconnect">
@@ -808,7 +813,7 @@
 <p><span class="badge-user">Utilisateur·ices enregistré·es</span></p>
 <p>Dans certains cas (vol ou perte de matériel, oubli d'une session ouverte sur un ordinateur partagé, etc.) il peut être utile de déconnecter toutes les sessions CryptPad actives. Cela peut être effectué de deux manières :</p>
 <ul class="simple">
-<li><p>Menu utilisateur·ice (avatar en haut à droite) &gt; <em class="fa fa-gear"></em> <strong>Préférences</strong> &gt; <em class="fa fa-lock"></em> <strong>Confidentialité</strong> &gt; <strong>SE DÉCONNECTER</strong>.</p></li>
+<li><p>Menu utilisateur·ice (avatar en haut à droite) &gt; <em class="fa fa-gear"></em> <strong>Préférences</strong> &gt; <em class="fa fa-lock"></em> <strong>Sécurité et confidentialité</strong> &gt; <strong>SE DÉCONNECTER</strong>.</p></li>
 </ul>
 <p>Cette option déconnecte toutes les sessions <strong>sauf</strong> celle depuis laquelle elle est activée.</p>
 <ul class="simple">
@@ -817,7 +822,7 @@
 <p>Cette option déconnecte toutes les sessions à distance <strong>y compris</strong> celle depuis laquelle elle est activée.</p>
 </section>
 <section id="remote-content">
-<span id="id4"></span><h2>Déconnexion à distance<a class="headerlink" href="#remote-content" title="Lien permanent vers cette rubrique">¶</a></h2>
+<span id="id4"></span><h2>Contenu distant<a class="headerlink" href="#remote-content" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p>Dans les éditeurs Markdown (<a class="reference internal" href="apps/code.html#app-code"><span class="std std-ref">Code / Markdown</span></a>, <a class="reference internal" href="apps/slides.html#app-slides"><span class="std std-ref">Présentation</span></a>, <a class="reference internal" href="apps/kanban.html#app-kanban"><span class="std std-ref">Kanban</span></a>), CryptPad bloque les images et autres contenus hébergés à distance pour éviter tout risque de traçage.</p>
 <p><span class="badge-user">Utilisateur·ices enregistré·es</span></p>
 <p>Pour insérer des images à partir du CryptDrive ou pour en ajouter de nouvelles, utiliser le menu <em class="fa fa-picture-o"></em> <strong>Insert</strong>. Ce menu insère un élément <code class="docutils literal notranslate"><span class="pre">media-tag</span></code> qui est plus complexe que la syntaxe d'image Markdown mais qui est géré automatiquement.</p>
@@ -864,7 +869,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2025, CryptPad Team.
+        &copy; Copyright 2026, CryptPad Team.
 
     </p>
   </div>
@@ -889,7 +894,7 @@
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'../',
-            VERSION:'2025.6.0',
+            VERSION:'2026.5.0',
             LANGUAGE:'fr',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
