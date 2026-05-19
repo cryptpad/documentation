@@ -3,23 +3,26 @@
 # This file is distributed under the same license as the CryptPad package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CryptPad \n"
+"Project-Id-Version: CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-04 17:52+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-03-14 20:02+0000\n"
+"Last-Translator: Toomore Chiang <toomore@anoni.net>\n"
+"Language-Team: Chinese (Traditional Han script) <https://"
+"weblate.cryptpad.org/projects/user-guide/application-sheets/zh_Hant/>\n"
+"Language: zh_Hant\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.15.1\n"
 "Generated-By: Babel 2.16.0\n"
 
 #: ../../user_guide/apps/sheets.rst:4
 msgid "Spreadsheet"
-msgstr ""
+msgstr "試算表"
 
 #: ../../user_guide/apps/sheets.rst:6
 msgid ""
@@ -27,10 +30,12 @@ msgid ""
 "<https://www.onlyoffice.com/>`__. To read more about the details of this "
 "integration see :ref:`FAQ_OOintegration`"
 msgstr ""
+"CryptPad 的試算表應用程式整合了 `OnlyOffice <https://www.onlyoffice.com/>"
+"`__。欲進一步了解此整合的細節，請參閱 :ref:`FAQ_OOintegration`"
 
 #: ../../user_guide/apps/sheets.rst:12
 msgid "Documentation"
-msgstr ""
+msgstr "說明文件"
 
 #: ../../user_guide/apps/sheets.rst:14
 msgid ""
@@ -38,6 +43,8 @@ msgid ""
 "<https://helpcenter.onlyoffice.com/userguides/docs-se.aspx>`__ for a "
 "spreadsheet user-guide."
 msgstr ""
+"試算表使用說明請參閱 `OnlyOffice 說明文件 <https://helpcenter.onlyoffice.com/"
+"userguides/docs-se.aspx>`__。"
 
 #: ../../user_guide/apps/sheets.rst:18
 msgid ""
@@ -47,10 +54,14 @@ msgid ""
 "<https://api.onlyoffice.com/plugin/macros>`__, aren't available on "
 "CryptPad."
 msgstr ""
+"基於各項安全考量，`OnlyOffice 外掛 <https://helpcenter.onlyoffice.com/"
+"ONLYOFFICE-Editors/Editors-User-Guides/AllEditors/Plugin-manager.aspx>`__ 以"
+"及 `巨集 <https://api.onlyoffice.com/plugin/macros>`__ 在 CryptPad 上無法使用"
+"。"
 
 #: ../../user_guide/apps/sheets.rst:21
 msgid "Toolbars"
-msgstr ""
+msgstr "工具列"
 
 #: ../../user_guide/apps/sheets.rst:23
 msgid ""
@@ -59,6 +70,8 @@ msgid ""
 "provides a wide range of functions in a tabbed toolbar. This results in a"
 " double toolbar that can cause confusion:"
 msgstr ""
+"CryptPad 將 OnlyOffice 試算表整合至與其他應用程式相同的加密協作系統中。此外 "
+"OnlyOffice 在分頁式工具列中提供多種功能，因此會出現雙層工具列，可能造成混淆："
 
 #: ../../user_guide/apps/sheets.rst:25
 msgid ""
@@ -66,6 +79,8 @@ msgid ""
 " (including import/export, history, properties, etc) as well as |share-"
 "alt| **Share** and |unlock-alt| **Access**."
 msgstr ""
+"最上方的 **CryptPad 工具列** 用於 |file-o| **檔案** 操作（含匯入/匯出、歷程、"
+"屬性等），以及 |share-alt| **分享** 與 |unlock-alt| **存取**。"
 
 #: ../../user_guide/apps/sheets.rst:26
 msgid ""
@@ -73,10 +88,12 @@ msgid ""
 "spreadsheet document itself, as well as the collaboration modes explained"
 " in the next section."
 msgstr ""
+"**OnlyOffice 工具列** 用於試算表文件本身的所有功能，以及下一節說明的協作模式"
+"。"
 
 #: ../../user_guide/apps/sheets.rst:29
 msgid "Undo and collaboration modes"
-msgstr ""
+msgstr "復原與協作模式"
 
 #: ../../user_guide/apps/sheets.rst:34
 msgid ""
@@ -84,6 +101,8 @@ msgid ""
 "affect how changes are synced between users and whether or not the "
 "**Undo** functionality is available."
 msgstr ""
+"OnlyOffice 在試算表中提供兩種協同編輯模式，會影響變更在使用者間的同步方式，以"
+"及 **復原** 功能是否可用。"
 
 #: ../../user_guide/apps/sheets.rst:36
 msgid ""
@@ -91,6 +110,8 @@ msgid ""
 "automatically synced with others as they are made. In this mode it is not"
 " possible to undo."
 msgstr ""
+"**快速模式** 預設為開啟。所有使用者的新編輯會在輸入時自動與他人同步。在此模式"
+"下無法使用復原功能。"
 
 #: ../../user_guide/apps/sheets.rst:37
 msgid ""
@@ -101,6 +122,9 @@ msgid ""
 " saved. When a user saves their changes, others are prompted to save in "
 "order to receive the latest edits."
 msgstr ""
+"**嚴格模式** 讓每位使用者可獨立修改。被修改的儲存格在作者手動儲存變更前會對他"
+"人「鎖定」。新編輯只有在儲存後才會與其他使用者同步。在此模式下可以復原尚未儲"
+"存的變更。當某位使用者儲存變更時，其他人會收到儲存提示以取得最新編輯內容。"
 
 #: ../../user_guide/apps/sheets.rst:39
 msgid ""
@@ -108,28 +132,34 @@ msgid ""
 "automatically suggest switching to **Strict Mode** to enable the undo "
 "functionality."
 msgstr ""
+"當按下 :kbd:`Ctrl + Z` 進行復原時，應用程式會自動建議切換至 **嚴格模式** 以啟"
+"用復原功能。"
 
 #: ../../user_guide/apps/sheets.rst:41
 msgid ""
 "To switch back to **Fast mode** use the **Collaboration** tab in the "
 "OnlyOffice toolbar and select **Co-editing Mode** > **Fast**."
 msgstr ""
+"若要切回 **快速模式**，請在 OnlyOffice 工具列點選 **協作** 分頁，並選擇 **共"
+"同編輯模式** > **快速**。"
 
 #: ../../user_guide/apps/sheets.rst:44
 msgid ""
 "CryptPad remembers your choice of editing mode on each device for all "
 "documents."
-msgstr ""
+msgstr "CryptPad 會在各裝置上記住您對所有文件所選擇的編輯模式。"
 
 #: ../../user_guide/apps/sheets.rst:49
 msgid "History"
-msgstr ""
+msgstr "歷程"
 
 #: ../../user_guide/apps/sheets.rst:51
 msgid ""
 "To access the spreadsheet history, use |file-o| **File** > |history| "
 "**History** in the CryptPad toolbar."
 msgstr ""
+"若要查看試算表歷程，請在 CryptPad 工具列使用 |file-o| **檔案** > |history| "
+"**歷程**。"
 
 #: ../../user_guide/apps/sheets.rst:53
 msgid ""
@@ -137,28 +167,30 @@ msgid ""
 "collaboration, history in speadsheets works differently than :ref:`in the"
 " other applications <document_history>`."
 msgstr ""
+"由於 OnlyOffice 與 CryptPad 加密即時協作的整合方式，試算表的歷程運作方式與 "
+":ref:`其他應用程式 <document_history>` 不同。"
 
 #: ../../user_guide/apps/sheets.rst:58
 msgid "The spreadsheet history toolbar"
-msgstr ""
+msgstr "試算表歷程工具列"
 
 #: ../../user_guide/apps/sheets.rst:60
 msgid ""
 "History in spreadsheets only allows to jump back to the previous version,"
 " and then move forward through individual edits."
-msgstr ""
+msgstr "試算表的歷程僅能跳回上一版本，再依單次編輯逐步往前瀏覽。"
 
 #: ../../user_guide/apps/sheets.rst:62
 msgid "|fast-backward| previous version"
-msgstr ""
+msgstr "|fast-backward| 上一版本"
 
 #: ../../user_guide/apps/sheets.rst:63
 msgid "|step-forward| step forward one edit"
-msgstr ""
+msgstr "|step-forward| 向前一步編輯"
 
 #: ../../user_guide/apps/sheets.rst:64
 msgid "|fast-forward| next version"
-msgstr ""
+msgstr "|fast-forward| 下一版本"
 
 #: ../../user_guide/apps/sheets.rst:66
 msgid ""
@@ -166,10 +198,12 @@ msgid ""
 "relating to :ref:`snapshots`, works in the same way as in :ref:`the other"
 " applications <document_history>`."
 msgstr ""
+"還原與分享某版本的功能，以及所有與 :ref:`snapshots` 相關的項目，運作方式與 "
+":ref:`其他應用程式 <document_history>` 相同。"
 
 #: ../../user_guide/apps/sheets.rst:71
 msgid "Printing"
-msgstr ""
+msgstr "列印"
 
 #: ../../user_guide/apps/sheets.rst:73
 msgid ""
@@ -177,34 +211,36 @@ msgid ""
 "formats below and to handle page layout with a desktop application such "
 "as LibreOffice Calc."
 msgstr ""
+"若要列印試算表，建議先以下列其中一種格式匯出，再使用 LibreOffice Calc 等桌面"
+"應用程式處理版面配置。"
 
 #: ../../user_guide/apps/sheets.rst:75
 msgid ""
 "Alternatively the ``.pdf`` export can be used to produce file for print, "
 "results may vary depending on the layout of the document."
-msgstr ""
+msgstr "或者可使用 ``.pdf`` 匯出產生列印用檔案，實際效果會依文件版面而異。"
 
 #: ../../user_guide/apps/sheets.rst:78
 msgid "Import/Export"
-msgstr ""
+msgstr "匯入/匯出"
 
 #: ../../user_guide/apps/sheets.rst:80
 msgid "|file-o| **File** > |upload| **Import**."
-msgstr ""
+msgstr "|file-o| **檔案** > |upload| **匯入**。"
 
 #: ../../user_guide/apps/sheets.rst:81
 msgid ""
 "Supported formats: ``.bin`` files exported by this application, Excel "
 "``.xlsx``, ``.ods``."
-msgstr ""
+msgstr "支援格式：本應用程式匯出的 ``.bin`` 檔、Excel ``.xlsx``、``.ods``。"
 
 #: ../../user_guide/apps/sheets.rst:83
 msgid "|file-o| **File** > |download| **Export**."
-msgstr ""
+msgstr "|file-o| **檔案** > |download| **匯出**。"
 
 #: ../../user_guide/apps/sheets.rst:84
 msgid "Supported formats: ``.bin``, Excel ``.xlsx``, ``.ods``, ``.pdf``."
-msgstr ""
+msgstr "支援格式：``.bin``、Excel ``.xlsx``、``.ods``、``.pdf``。"
 
 #~ msgid ""
 #~ "The Spreadsheet application in CryptPad "
@@ -233,4 +269,3 @@ msgstr ""
 #~ "Supported formats: ``.bin`` files exported "
 #~ "by this application, Excel ``.xlsx``."
 #~ msgstr ""
-

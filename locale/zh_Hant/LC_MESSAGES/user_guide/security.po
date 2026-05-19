@@ -3,27 +3,30 @@
 # This file is distributed under the same license as the CryptPad package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: CryptPad \n"
+"Project-Id-Version: CryptPad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-12-05 14:37+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2026-03-13 07:26+0000\n"
+"Last-Translator: Toomore Chiang <toomore@anoni.net>\n"
+"Language-Team: Chinese (Traditional Han script) <https://"
+"weblate.cryptpad.org/projects/user-guide/security/zh_Hant/>\n"
+"Language: zh_Hant\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.15.1\n"
 "Generated-By: Babel 2.11.0\n"
 
 #: ../../user_guide/security.rst:2
 msgid "Security"
-msgstr ""
+msgstr "安全性"
 
 #: ../../user_guide/security.rst:7
 msgid "Trust Assumptions"
-msgstr ""
+msgstr "信任假設"
 
 #: ../../user_guide/security.rst:9
 msgid ""
@@ -31,46 +34,48 @@ msgid ""
 "data. However, as with any other web application, some entities still "
 "need to be trusted in order to guarantee security:"
 msgstr ""
+"CryptPad 採用端對端加密，伺服器無法存取您的資料。然而，與其他網頁應用程式一樣"
+"，若要確保安全性，仍須信任以下對象："
 
 #: ../../user_guide/security.rst:12
 msgid "Your chosen CryptPad :ref:`instance <cryptpad_instances>` to"
-msgstr ""
+msgstr "您所選擇的 CryptPad :ref:`實例 <cryptpad_instances>` 需"
 
 #: ../../user_guide/security.rst:14
 msgid "run the same code as the one published on GitHub,"
-msgstr ""
+msgstr "執行與 GitHub 上公開的程式碼相同，"
 
 #: ../../user_guide/security.rst:15
 msgid "not block your network messages, and"
-msgstr ""
+msgstr "不封鎖您的網路訊息，且"
 
 #: ../../user_guide/security.rst:16
 msgid "follow its terms of service and privacy policy."
-msgstr ""
+msgstr "遵守其服務條款與隱私權政策。"
 
 #: ../../user_guide/security.rst:17
 msgid ""
 "Your collaborators not to forward :ref:`sharing links <share_link>` to "
 "illegitimate third parties."
-msgstr ""
+msgstr "您的協作者不會將 :ref:`分享連結 <share_link>` 轉傳給未經授權的第三方。"
 
 #: ../../user_guide/security.rst:19
 msgid ""
 "Under these assumptions you can be sure that it is technically not "
 "possible to read or modify your documents by"
-msgstr ""
+msgstr "在這些假設下，您可以確信下列對象在技術上無法讀取或修改您的文件："
 
 #: ../../user_guide/security.rst:21
 msgid "your chosen CryptPad instance,"
-msgstr ""
+msgstr "您所選擇的 CryptPad 實例，"
 
 #: ../../user_guide/security.rst:22
 msgid "any powerful adversary that can see your web traffic, or"
-msgstr ""
+msgstr "任何能窺探您網路流量的強大對手，或"
 
 #: ../../user_guide/security.rst:23
 msgid "any other user."
-msgstr ""
+msgstr "任何其他使用者。"
 
 #: ../../user_guide/security.rst:25
 msgid ""
@@ -78,6 +83,8 @@ msgid ""
 "<https://cryptpad.org/instances>`_ to let you better decide on whom you "
 "want to trust."
 msgstr ""
+"我們維護一份 `公開 CryptPad 實例清單 <https://cryptpad.org/instances>`_，方便"
+"您決定要信任哪個實例。"
 
 #: ../../user_guide/security.rst:28
 msgid ""
@@ -85,22 +92,26 @@ msgid ""
 " instance can see your IP address and your \"user agent\" (browser and "
 "operating system)."
 msgstr ""
+"CryptPad 僅提供較弱的匿名性。您所選擇的 CryptPad 實例可看到您的 IP 位址與「使"
+"用者代理」（瀏覽器與作業系統）。"
 
 #: ../../user_guide/security.rst:31
 msgid ""
 "If you need stronger anonymity guarantees, you can access CryptPad via "
 "`Tor <https://www.torproject.org>`_."
 msgstr ""
+"若需要更強的匿名保障，可透過 `Tor <https://www.torproject.org>`_ 存取 "
+"CryptPad。"
 
 #: ../../user_guide/security.rst:36
 msgid "Passwords for documents and folders"
-msgstr ""
+msgstr "文件與資料夾的密碼"
 
 #: ../../user_guide/security.rst:38 ../../user_guide/security.rst:55
 #: ../../user_guide/security.rst:67 ../../user_guide/security.rst:82
 #: ../../user_guide/security.rst:101
 msgid ":badge_user:`Logged in users`"
-msgstr ""
+msgstr ":badge_user:`已登入使用者`"
 
 #: ../../user_guide/security.rst:40
 msgid ""
@@ -109,6 +120,9 @@ msgid ""
 "link and gain access to your data. To prevent this from happening, the "
 ":ref:`owners <owners>` of a document or folder can add a password."
 msgstr ""
+"當您透過不安全的管道（例如電子郵件或簡訊）分享文件或共用資料夾的連結時，他人"
+"可能攔截連結並取得您的資料。為避免此情況，文件或資料夾的 :ref:`擁有者 "
+"<owners>` 可設定密碼。"
 
 #: ../../user_guide/security.rst:42
 msgid ""
@@ -118,40 +132,43 @@ msgid ""
 "and sent with the document/folder when you share it. The recipient, or "
 "yourself, are **not** asked for it when they open the document."
 msgstr ""
+"當您 :ref:`在 CryptPad 上直接與聯絡人及團隊分享文件 <share_contacts>` 時，通"
+"訊會加密，且我們假設您要授權他們存取。因此分享時密碼會一併記住並隨文件／資料"
+"夾傳送。收件者或您本人在開啟文件時**不會**被要求輸入密碼。"
 
 #: ../../user_guide/security.rst:44
 msgid ""
 "You can add a password to a document when you :ref:`create "
 "<new_document>` it."
-msgstr ""
+msgstr "您可以在 :ref:`建立 <new_document>` 文件時設定密碼。"
 
 #: ../../user_guide/security.rst:46
 msgid "You can also add or change the password in the :ref:`access` menu:"
-msgstr ""
+msgstr "您也可以在 :ref:`存取` 選單中新增或變更密碼："
 
 #: ../../user_guide/security.rst:48
 msgid "From the CryptDrive: ``Right click`` > |unlock-alt| **Access**."
-msgstr ""
+msgstr "從 CryptDrive：``按右鍵`` > |unlock-alt| **存取**。"
 
 #: ../../user_guide/security.rst:49
 msgid "From the document toolbar: |unlock-alt| **Access**."
-msgstr ""
+msgstr "從文件工具列：|unlock-alt| **存取**。"
 
 #: ../../user_guide/security.rst:54
 msgid "Verifying contacts"
-msgstr ""
+msgstr "驗證聯絡人"
 
 #: ../../user_guide/security.rst:57
 msgid ""
 "To verify a contact's identity, i.e., that a contact belongs to the "
 "person you think, you can compare the public signing keys:"
-msgstr ""
+msgstr "若要驗證聯絡人身分（即確認該聯絡人就是您認為的那個人），可比對公開簽章金鑰："
 
 #: ../../user_guide/security.rst:59
 msgid ""
 "Ask your contact to share :ref:`their public key <user_settings_account>`"
 " over a secure channel with you."
-msgstr ""
+msgstr "請聯絡人透過安全管道與您分享 :ref:`其公開金鑰 <user_settings_account>`。"
 
 #: ../../user_guide/security.rst:60
 msgid ""
@@ -159,10 +176,12 @@ msgid ""
 " <another_user_profile>`, you can be sure that the contact belongs to the"
 " person at the other end of the secure channel."
 msgstr ""
+"若此公開金鑰與聯絡人 :ref:`個人資料頁 <another_user_profile>` 上的金鑰一致，"
+"即可確認該聯絡人就是安全管道另一端的那個人。"
 
 #: ../../user_guide/security.rst:65
 msgid "Self-destructing documents"
-msgstr ""
+msgstr "自毀文件"
 
 #: ../../user_guide/security.rst:69
 msgid ""
@@ -170,24 +189,26 @@ msgid ""
 "interaction of any user. This ensures that sensitive data is not "
 "accessible forever."
 msgstr ""
+"自毀文件會自動銷毀，無需任何使用者操作。如此可確保敏感資料不會永久留存可供存"
+"取。"
 
 #: ../../user_guide/security.rst:72
 msgid "There are two ways to create self-destructing documents:"
-msgstr ""
+msgstr "建立自毀文件有兩種方式："
 
 #: ../../user_guide/security.rst:74
 msgid "You can set an expiration time during :ref:`creating <new_document>`."
-msgstr ""
+msgstr "可在 :ref:`建立 <new_document>` 時設定過期時間。"
 
 #: ../../user_guide/security.rst:75
 msgid ""
 "You can share a document via a :ref:`view-once-and-self-destruct "
 "link<share_access_rights>`."
-msgstr ""
+msgstr "可透過 :ref:`僅供檢視一次並自毀的連結 <share_access_rights>` 分享文件。"
 
 #: ../../user_guide/security.rst:80
 msgid "Remote Disconnect"
-msgstr ""
+msgstr "遠端登出"
 
 #: ../../user_guide/security.rst:84
 msgid ""
@@ -195,32 +216,34 @@ msgid ""
 "session on a shared computer, etc.) it can be necessary to close all "
 "active CryptPad sessions. This can be done in two ways:"
 msgstr ""
+"在某些情況下（裝置遺失或遭竊、在共用電腦上忘記登出等），可能需要關閉所有使用"
+"中的 CryptPad 工作階段。可用以下兩種方式："
 
 #: ../../user_guide/security.rst:86
 msgid ""
 "User menu (avatar at the top-right) > |gear| **Settings** > |lock| "
 "**Confidentiality** > **LOG OUT**."
-msgstr ""
+msgstr "使用者選單（右上角頭像）> |gear| **設定** > |lock| **隱私** > **登出**。"
 
 #: ../../user_guide/security.rst:88
 msgid ""
 "This option logs out all sessions **except** the one from which it is "
 "activated."
-msgstr ""
+msgstr "此選項會登出所有工作階段，**但不包含**目前啟用此選項的這一個。"
 
 #: ../../user_guide/security.rst:90
 msgid "User menu (avatar at the top-right) > |plug| **Log out everywhere**."
-msgstr ""
+msgstr "使用者選單（右上角頭像）> |plug| **全部登出**。"
 
 #: ../../user_guide/security.rst:92
 msgid ""
 "This option logs out all sessions **including** the one from which it is "
 "activated."
-msgstr ""
+msgstr "此選項會登出所有工作階段，**包含**目前啟用此選項的這一個。"
 
 #: ../../user_guide/security.rst:97
 msgid "Remote Content"
-msgstr ""
+msgstr "遠端內容"
 
 #: ../../user_guide/security.rst:99
 msgid ""
@@ -228,6 +251,9 @@ msgid ""
 ":ref:`app_kanban`), CryptPad blocks images and other remotely hosted "
 "content to prevent potential tracking."
 msgstr ""
+"在 Markdown 編輯器（:ref:`程式碼 <app_code>`、:ref:`簡報 <app_slides>"
+"`、:ref:`看板 <app_kanban>`）中，CryptPad 會封鎖圖片及其他遠端託管內容，以降"
+"低追蹤風險。"
 
 #: ../../user_guide/security.rst:103
 msgid ""
@@ -236,14 +262,16 @@ msgid ""
 "that is more complex than Markdown image syntax but is managed "
 "automatically."
 msgstr ""
+"若要插入 CryptDrive 中的圖片或上傳新圖片，請使用 |picture-o| **插入** 選單。"
+"此選單會插入 ``media-tag`` 元素，雖比 Markdown 圖片語法複雜，但會自動管理。"
 
 #: ../../user_guide/security.rst:108
 msgid "Known caveats"
-msgstr ""
+msgstr "已知限制"
 
 #: ../../user_guide/security.rst:111
 msgid "No unique usernames"
-msgstr ""
+msgstr "使用者名稱不具唯一性"
 
 #: ../../user_guide/security.rst:113
 msgid ""
@@ -252,10 +280,13 @@ msgid ""
 "means that you cannot trust usernames to identify people. Instead, "
 ":ref:`identify your contact <verifying_contacts>` via their public keys."
 msgstr ""
+"在 CryptPad 中，:ref:`帳號名稱 <user_settings_account>` 與 :ref:`顯示名稱 "
+"<user_settings_account>` 皆不具唯一性。因此無法僅憑使用者名稱辨識身分，請改"
+"以 :ref:`聯絡人的公開金鑰驗證其身分 <verifying_contacts>`。"
 
 #: ../../user_guide/security.rst:118
 msgid "Edit rights in teams"
-msgstr ""
+msgstr "團隊中的編輯權限"
 
 #: ../../user_guide/security.rst:120
 msgid ""
@@ -264,28 +295,32 @@ msgid ""
 "convert folders into :ref:`shared folders <shared_folders>` and delegate "
 "their access to anybody they want."
 msgstr ""
+"對團隊雲端硬碟具編輯權限的成員，可將此權限分享給團隊內外的其他使用者。成員甚"
+"至可將資料夾轉為 :ref:`共用資料夾 <shared_folders>`，並將存取權委派給任何人。"
 
 #: ../../user_guide/security.rst:123
 msgid ""
 "You therefore have to be careful with whom you grant edit rights. You may"
 " also want to"
-msgstr ""
+msgstr "因此授予編輯權限時須謹慎選擇對象。您也可以"
 
 #: ../../user_guide/security.rst:126
 msgid ""
 "set the :ref:`role  <team_roles_and_permissions>` of a member to viewer "
 "and selectively share edit rights to this person."
 msgstr ""
+"將成員的 :ref:`角色 <team_roles_and_permissions>` 設為檢視者，再選擇性授予該"
+"成員編輯權限。"
 
 #: ../../user_guide/security.rst:127
 msgid ""
 "use :ref:`access lists <access_list>` to limit the access to a file to "
 "specific contacts."
-msgstr ""
+msgstr "使用 :ref:`存取清單 <access_list>` 將檔案的存取限於特定聯絡人。"
 
 #: ../../user_guide/security.rst:130
 msgid "Access of former team members"
-msgstr ""
+msgstr "已離開團隊成員的存取權"
 
 #: ../../user_guide/security.rst:132
 msgid ""
@@ -296,10 +331,12 @@ msgid ""
 " the client source code as the official one does neither store the keys "
 "nor decrypt any messages of a team which the user is not part of."
 msgstr ""
+"團隊通訊使用固定金鑰加密，代表已離開的成員仍持有金鑰。因此已離開的成員理論上"
+"可解密團隊訊息，並維持與離開前相同的團隊文件存取權。但這需修改用戶端原始碼，"
+"因為官方版本既不會儲存金鑰，也不會解密使用者已非成員之團隊的訊息。"
 
 #~ msgid ""
 #~ "This option logs out all sessions "
 #~ "**except** the one from which it "
 #~ "is actiaved."
 #~ msgstr ""
-
