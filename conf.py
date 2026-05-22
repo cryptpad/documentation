@@ -173,6 +173,13 @@ cptools_icons = ['destroy', 'add-bottom', 'add-top', 'folder-upload', 'folder-no
 prolog = '\n'.join(['.. |cptools %s| cptools:: %s' % (icon, icon) for icon in cptools_icons])
 prolog += '\n'
 
+# New role for Lucide
+prolog += '''.. role:: raw-html(raw)
+   :format: html\n'''
+
+# Substitution that doesn't work XXX
+# prolog += '.. |icon download| :raw-html:`<i data-lucide="download"></i>`'
+
 def setup(app):
     app.add_role('cptools', cptools_global())
     app.add_directive('cptools', Cptools)
