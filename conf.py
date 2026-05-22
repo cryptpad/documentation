@@ -184,7 +184,6 @@ class Lucide(Directive):
 
     def run(self):
         icon_name = self.content[0]
-        print("Sub call", self.content[0], "---")
         node = raw(format="html", text=f"<i data-lucide='{icon_name}'></i>")
         return [node]
 
