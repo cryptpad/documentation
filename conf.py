@@ -16,7 +16,7 @@
 
 import os
 from sphinx import addnodes
-from docutils.nodes import strong, emphasis, reference, Text
+from docutils.nodes import strong, emphasis, reference, Text, raw
 from docutils.parsers.rst.roles import set_classes
 from docutils.parsers.rst import Directive
 import docutils.parsers.rst.directives as directives
@@ -173,15 +173,28 @@ cptools_icons = ['destroy', 'add-bottom', 'add-top', 'folder-upload', 'folder-no
 prolog = '\n'.join(['.. |cptools %s| cptools:: %s' % (icon, icon) for icon in cptools_icons])
 prolog += '\n'
 
-# New role for Lucide
+# New 'raw' role for Lucide
 prolog += '''.. role:: raw-html(raw)
    :format: html\n'''
 
-# Substitution that doesn't work XXX
-# prolog += '.. |icon download| :raw-html:`<i data-lucide="download"></i>`'
+# Lucide icon directive
+class Lucide(Directive):
+
+    has_content = True
+
+    def run(self):
+        icon_name = self.content[0]
+        print("Sub call", self.content[0], "---")
+        node = raw(format="html", text=f"<i data-lucide='{icon_name}'></i>")
+        return [node]
+
+# Substitution example
+prolog += '.. |icon download| lucide:: download'
+
 
 def setup(app):
     app.add_role('cptools', cptools_global())
     app.add_directive('cptools', Cptools)
+    app.add_directive('lucide', Lucide)
     app.config.rst_prolog += prolog
     return {'version': '0.0.1'}
