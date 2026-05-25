@@ -188,7 +188,7 @@ class Lucide(Directive):
         return [node]
 
 # Import lucide icons file
-from lucide_icons import lucide_icons
+from conf_icons import lucide_icons
 
 prolog += '\n'.join(
     ['.. |icon %s| lucide:: %s' % (icon, icon) for icon in lucide_icons]

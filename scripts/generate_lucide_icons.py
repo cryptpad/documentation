@@ -7,7 +7,7 @@ from pathlib import Path
 
 root = Path(__file__).resolve().parents[1]
 lucide_js = Path(sys.argv[1]) if len(sys.argv) > 1 else root / "_themes/theme/static/js/lucide.min.js"
-out = root / "lucide_icons.py"
+out = root / "conf_icons.py"
 
 text = lucide_js.read_text(encoding="utf-8")
 names = re.findall(r"a\.([A-Z][A-Za-z0-9]*)=", text)
