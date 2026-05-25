@@ -187,8 +187,13 @@ class Lucide(Directive):
         node = raw(format="html", text=f"<i data-lucide='{icon_name}'></i>")
         return [node]
 
-# Substitution example
-prolog += '.. |icon download| lucide:: download'
+# Import lucide icons file
+from lucide_icons import lucide_icons
+
+prolog += '\n'.join(
+    ['.. |icon %s| lucide:: %s' % (icon, icon) for icon in lucide_icons]
+)
+prolog += '\n'
 
 
 def setup(app):

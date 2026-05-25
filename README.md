@@ -23,6 +23,16 @@ uv export --format requirements-txt > requirements.txt
 ```bash
 pip install -r requirements.txt
 ```
+## Lucide icons
+
+Use `|icon download|` in RST (see `conf.py`). Icon names can be found in `lucide_icons.py`,
+generated from `_themes/theme/static/js/lucide.min.js`:
+
+```bash
+python scripts/generate_lucide_icons.py
+```
+
+Run again after replacing `lucide.min.js`.
 
 ## Build
 English `en` is the default language.
