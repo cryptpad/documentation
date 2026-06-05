@@ -10,9 +10,9 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
+import os
+import sys
+sys.path.insert(0, os.path.abspath('.'))
 
 import os
 import re
@@ -79,13 +79,6 @@ exclude_patterns = [
 # -- Substitutions
 # ----------------------------------------------
 
-rst_epilog = """
-
-.. role:: badge_user
-.. role:: badge_owner
-.. role:: badge_new
-
-"""
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -138,6 +131,16 @@ prolog = ''
 # New 'raw' role for Lucide
 prolog += '''.. role:: raw-html(raw)
    :format: html\n'''
+
+def make_badge_role(css_class, icon_name):
+    def role(name, rawtext, text, lineno, inliner, options=None, content=None):
+        html = f'<span class="{css_class}" data-icon="{icon_name}"><i data-lucide="{icon_name}"></i> {text}</span>'
+        return [raw(format="html", text=html)], []
+    return role
+
+badge_user_role = make_badge_role("badge-user", "user")
+badge_owner_role = make_badge_role("badge-owner", "crown")
+badge_new_role = make_badge_role("badge-new", "sparkles")
 
 # Lucide icon directive
 class Lucide(Directive):
@@ -208,5 +211,8 @@ prolog += '\n'
 
 def setup(app):
     app.add_directive('lucide', Lucide)
+    app.add_role('badge_user', badge_user_role)
+    app.add_role('badge_owner', badge_owner_role)
+    app.add_role('badge_new', badge_new_role)
     app.config.rst_prolog = (app.config.rst_prolog or '') + prolog
     return {'version': '0.0.1'}

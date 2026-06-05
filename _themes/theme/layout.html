@@ -226,7 +226,12 @@
   </script>
 
   {# Lucide Icons #}
-  <script>lucide.createIcons()</script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      lucide.createIcons();
+    });
+  </script>
 
   {%- block footer %} {% endblock %}
 
