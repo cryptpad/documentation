@@ -48,6 +48,26 @@
     height: 1.25em;
     vertical-align: middle;
 }
+@media screen and (max-width: 800px) {
+    .wy-nav-top::before,
+    .wy-nav-top::after {
+        display: none;
+        content: none;
+    }
+
+    .wy-nav-top-menu {
+        position: absolute;
+        left: 1em;
+        top: 50%;
+        transform: translateY(-50%);
+        line-height: 0;
+    }
+
+    .wy-nav-top-menu svg.lucide {
+        width: 1.875rem;
+        height: 1.875rem;
+    }
+}
 
 h1, h2, h3 {
     font-family: "IBM Plex Mono";

@@ -153,8 +153,10 @@
       {# MOBILE NAV, TRIGGLES SIDE NAV ON TOGGLE #}
       <nav class="wy-nav-top" aria-label="top navigation">
         {% block mobile_nav %}
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="{{ pathto(master_doc) }}">{{ project }}</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="{{ _('Menu') }}">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         {% endblock %}
       </nav>
 
@@ -224,7 +226,7 @@
   </script>
 
   {# Lucide Icons #}
-  <script> lucide.createIcons() </script>
+  <script>lucide.createIcons()</script>
 
   {%- block footer %} {% endblock %}
 
