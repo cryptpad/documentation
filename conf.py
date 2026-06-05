@@ -15,8 +15,6 @@ import sys
 sys.path.insert(0, os.path.abspath('.'))
 
 import os
-import re
-from pathlib import Path
 from sphinx import addnodes
 from docutils.nodes import strong, reference, Text, raw
 from docutils.parsers.rst import Directive
@@ -156,9 +154,6 @@ class Lucide(Directive):
 from conf_icons import lucide_icons
 from icon_mappings import shortcut_icon_map, cptools_icon_map
 
-shortcut_pattern = re.compile(r'\|([A-Za-z0-9][A-Za-z0-9\- ]{0,80})\|')
-shortcut_ignore = {'release', 'md basic', 'md extensions'}
-cptools_pattern = re.compile(r'\|cptools ([A-Za-z0-9][A-Za-z0-9\-]{0,80})\|')
 lucide_icon_set = set(lucide_icons)
 
 
@@ -178,32 +173,20 @@ def resolve_shortcut_icon(shortcut):
     return '.. |%s| lucide:: %s' % (shortcut, icon) if icon else None
 
 
-source_dir = Path(__file__).resolve().parent
-collected_shortcuts = set()
-for rst_file in source_dir.rglob('*.rst'):
-    text = rst_file.read_text(encoding='utf-8')
-    for match in shortcut_pattern.findall(text):
-        if match in shortcut_ignore or match.startswith('icon ') or match.startswith('cptools '):
-            continue
-        collected_shortcuts.add(match)
-    for match in cptools_pattern.findall(text):
-        collected_shortcuts.add('cptools ' + match)
-
 lucide_substitutions = []
 
 for icon in lucide_icons:
     lucide_substitutions.append('.. |icon %s| lucide:: %s' % (icon, icon))
 
-unresolved_shortcuts = []
-for shortcut in collected_shortcuts:
+for shortcut in shortcut_icon_map:
     substitution = resolve_shortcut_icon(shortcut)
     if substitution:
         lucide_substitutions.append(substitution)
-    else:
-        unresolved_shortcuts.append(shortcut)
 
-if unresolved_shortcuts:
-    print('warning: unresolved shortcuts: %s' % ', '.join(sorted(unresolved_shortcuts)))
+for name in cptools_icon_map:
+    substitution = resolve_shortcut_icon('cptools ' + name)
+    if substitution:
+        lucide_substitutions.append(substitution)
 
 prolog += '\n'.join(lucide_substitutions)
 prolog += '\n'

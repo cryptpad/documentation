@@ -7,12 +7,14 @@ shortcut_icon_map = {
     'hashtag': 'hash',                    # tag
     'th-large': 'layout-grid',            # grid
     'list-ul': 'list',                    # list
+    'list': 'list',
     'folder': 'folder',
     'folder-open': 'folder-open',
   # Actions
     'share-alt': 'share2',                # share
     'unlock-alt': 'lock-open',            # access / unlocked
     'clone': 'copy',
+    'copy': 'copy',
     'remove': 'x',                          # close
     'times': 'x',                           # close
     'send-o': 'send',
@@ -29,6 +31,7 @@ shortcut_icon_map = {
     'expand': 'square-plus',
   # Notifications
     'bell-o': 'bell',                       # notification
+    'bell': 'bell',
     'bell-slash': 'bell-off',               # mute
     'envelope-o': 'mail',
     'comment': 'message-square-text',
@@ -53,6 +56,7 @@ shortcut_icon_map = {
     'file-o': 'file',
     'file-image-o': 'file-image',
     'picture-o': 'image-plus',              # toolbar-insert
+    'camera': 'camera',
     'font': 'type',
     'i-cursor': 'text-cursor',              # cursor
     'paint-brush': 'brush-cleaning',        # clear-canvas (whiteboard)
@@ -60,6 +64,7 @@ shortcut_icon_map = {
     'link': 'link',
     'code': 'code-xml',
     'lock': 'lock',
+    'key': 'key',
     'plug': 'unplug',                       # logout-everywhere
     'user': 'user',
     'user-circle': 'circle-user-round',     # user-profile
@@ -116,4 +121,18 @@ cptools_icon_map = {
     'form-poll': 'cp-form-poll',
     'form-poll-maybe': 'cp-form-poll-maybe',
     'form-text': 'minus',
+}
+
+admonition_icon_map = {
+    'note': 'info',
+    'warning': 'triangle-alert',
+    'danger': 'octagon-alert',
+    'error': 'circle-x',
+    'tip': 'lightbulb',
+    'hint': 'lightbulb',
+    'important': 'circle-alert',
+    'caution': 'triangle-alert',
+    'attention': 'triangle-alert',
+    'seealso': 'book-open',
+    'admonition-todo': 'list-todo',
 }
