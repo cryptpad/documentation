@@ -80,8 +80,35 @@ h1, h2, h3 {
     font-family: "Open Sans", sans-serif;
 }
 
-.rst-content .admonition-title::before {
-    font-family: "FontAwesome";
+.rst-content .admonition-title::before,
+.rst-content .admonition-title::after {
+    content: none;
+    display: none;
+}
+
+.rst-content .admonition-title svg.lucide {
+    margin-right: 0.35em;
+}
+
+.rst-content a.headerlink.lucide-permalink::before,
+.rst-content a.headerlink.lucide-permalink::after {
+    content: none;
+    display: none;
+    visibility: hidden;
+}
+
+.rst-content a.headerlink.lucide-permalink {
+    visibility: visible;
+    opacity: 0;
+    display: inline-block;
+    margin-left: 0.5em;
+    text-decoration: none;
+    color: #0087ff;
+}
+
+.rst-content :is(h1, h2, h3, h4, h5, h6, dl dt, p, figcaption, table > caption):hover a.headerlink.lucide-permalink,
+.rst-content a.headerlink.lucide-permalink:focus {
+    opacity: 1;
 }
 
 /* List fix */
@@ -182,10 +209,6 @@ html.writer-html5 .rst-content dl.option-list kbd {
     font-size: inherit
 }
 
-.rst-content table > caption .headerlink:focus, .rst-content table > caption:hover .headerlink {
-    opacity: 1
-}
-
 .rst-content p a {
     overflow-wrap: anywhere;
 }
@@ -203,10 +226,6 @@ html.writer-html5 .rst-content dl.option-list kbd {
 .rst-content table.field-list th p,
 .rst-content table.field-list th ul {
     font-size: inherit;
-}
-
-.rst-content table > caption .headerlink:after {
-    font-size: 12px;
 }
 
 .rst-content table.docutils th {

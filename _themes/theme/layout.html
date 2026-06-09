@@ -225,13 +225,8 @@
       });
   </script>
 
-  {# Lucide Icons #}
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      lucide.createIcons();
-    });
-  </script>
+  <script type="application/json" id="lucide-theme-config">{{ lucide_theme_config|safe }}</script>
+  <script src="{{ pathto('_static/js/lucide-theme.js', 1) }}"></script>
 
   {%- block footer %} {% endblock %}
 

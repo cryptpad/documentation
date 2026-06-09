@@ -10,11 +10,11 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
+import json
 import os
 import sys
 sys.path.insert(0, os.path.abspath('.'))
 
-import os
 from sphinx import addnodes
 from docutils.nodes import strong, reference, Text, raw
 from docutils.parsers.rst import Directive
@@ -152,9 +152,15 @@ class Lucide(Directive):
 
 # Import lucide icons file
 from conf_icons import lucide_icons
-from icon_mappings import shortcut_icon_map, cptools_icon_map
+from icon_mappings import shortcut_icon_map, cptools_icon_map, admonition_icon_map
 
 lucide_icon_set = set(lucide_icons)
+html_context = {
+    'lucide_theme_config': json.dumps({
+        'admonitions': admonition_icon_map,
+        'permalinks': {'icon': 'link'},
+    }),
+}
 
 
 def mapped_icon(name, icon_map):
