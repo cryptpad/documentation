@@ -159,6 +159,7 @@ html_context = {
     'lucide_theme_config': json.dumps({
         'admonitions': admonition_icon_map,
         'permalinks': {'icon': 'link'},
+        'toctree': {'icon': 'chevron-right'},
     }),
 }
 

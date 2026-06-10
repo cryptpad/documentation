@@ -107,6 +107,25 @@ h1, h2, h3 {
     opacity: 1;
 }
 
+/* Sidebar expand/collapse chevrons */
+
+.wy-menu-vertical li span.toctree-expand.lucide-toctree-expand::before,
+.wy-menu-vertical li.on a span.toctree-expand.lucide-toctree-expand::before,
+.wy-menu-vertical li.current > a span.toctree-expand.lucide-toctree-expand::before {
+    content: none;
+    display: none;
+}
+
+.wy-menu-vertical span.toctree-expand.lucide-toctree-expand svg.lucide {
+    vertical-align: middle;
+    transition: transform 0.15s ease;
+}
+
+.wy-menu-vertical li.on a span.toctree-expand.lucide-toctree-expand svg.lucide,
+.wy-menu-vertical li.current > a span.toctree-expand.lucide-toctree-expand svg.lucide {
+    transform: rotate(90deg);
+}
+
 /* List fix */
 
 ul.simple {

@@ -10,6 +10,12 @@ document.addEventListener('DOMContentLoaded', function () {
         return el.querySelector('svg.lucide, [data-lucide]');
     };
 
+    var createIcons = function () {
+        if (window.lucide) {
+            lucide.createIcons({ attrs: { width: '1em', height: '1em' } });
+        }
+    };
+
     function applyAdmonitionIcons() {
         document.querySelectorAll('.rst-content .admonition > .admonition-title').forEach(function (title) {
             if (hasLucide(title)) return;
@@ -37,10 +43,35 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+    function applySidebarIcons() {
+        if (!config.toctree) return false;
+        var icon = config.toctree.icon || 'chevron-right';
+        var added = false;
+        document.querySelectorAll('.wy-menu-vertical span.toctree-expand').forEach(function (span) {
+            if (hasLucide(span)) return;
+            span.classList.add('lucide-toctree-expand');
+            span.innerHTML = tag(icon);
+            added = true;
+        });
+        return added;
+    }
+
+    function watchSidebarIcons() {
+        if (!config.toctree) return;
+        var menu = document.querySelector('.wy-nav-side') || document.body;
+        var observer = new MutationObserver(function () {
+            if (applySidebarIcons(menu)) {
+                createIcons();
+                observer.disconnect();
+            }
+        });
+        observer.observe(menu, { childList: true, subtree: true });
+    }
+
     applyAdmonitionIcons();
     applyPermalinkIcons();
+    applySidebarIcons();
+    createIcons();
 
-    if (window.lucide) {
-        lucide.createIcons({ attrs: { width: '1em', height: '1em' } });
-    }
+    watchSidebarIcons();
 });
