@@ -137,7 +137,7 @@ def make_badge_role(css_class, icon_name):
     return role
 
 badge_user_role = make_badge_role("badge-user", "user")
-badge_owner_role = make_badge_role("badge-owner", "crown")
+badge_owner_role = make_badge_role("badge-owner", "id-card-lanyard")
 badge_new_role = make_badge_role("badge-new", "sparkles")
 
 # Lucide icon directive
