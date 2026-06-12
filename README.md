@@ -25,14 +25,23 @@ pip install -r requirements.txt
 ```
 ## Lucide icons
 
-Use `|icon download|` in RST (see `conf.py`). Icon names can be found in `lucide_icons.py`,
-generated from `_themes/theme/static/js/lucide.min.js`:
+Icons use [Lucide](https://lucide.dev/). In RST:
+
+- `|gear|` — shortcut name (see `shortcut_icon_map` in `icon_mappings.py`)
+- `|cptools destroy|` — CryptPad app icon (see `cptools_icon_map`)
+- `|icon download|` — Lucide name directly
+
+To add or change a shortcut mapping, edit `icon_mappings.py` and rebuild. No `.rst` or `.po` change is needed unless you introduce a new shortcut string.
+
+Lucide names are listed in `conf_icons.py`, generated from `_themes/theme/static/js/lucide.min.js`:
 
 ```bash
 python scripts/generate_lucide_icons.py
 ```
 
 Run again after replacing `lucide.min.js`.
+
+Admonitions, permalinks, and sidebar expand/collapse are handled by `lucide-theme.js`. Their icon names are set in `icon_mappings.py` / `conf.py` (`html_context` to `lucide_theme_config`). Other theme UI (prev/next, breadcrumbs, mobile menu) uses Lucide in the templates under `_themes/theme/`.
 
 ## Build
 English `en` is the default language.

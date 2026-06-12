@@ -8,15 +8,7 @@ CryptPad Documentation
 
 Welcome to the CryptPad documentation.
 
-.. raw:: html
-
-   <i data-lucide="hand"></i>
-
 CryptPad is a collaboration suite, encrypted and open-source.
-
-Hello :raw-html:`<i data-lucide="hand"></i>` inline :strong:`bold` text
-
-Ideally we would write |icon download| and it would put a download icon.
 
 This site contains 3 guides with information about using CryptPad, installing and administering the service, and ways to contribute.
 
