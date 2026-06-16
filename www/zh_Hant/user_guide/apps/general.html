@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">白板</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">工具列</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">繪圖</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> 繪圖模式</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> 選取模式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> 繪圖模式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> 選取模式</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">匯出</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -760,14 +764,14 @@
 <li><p>在 CryptPad 任意處：<kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">e</kbd></kbd>。</p></li>
 <li><p>從 CryptDrive：</p>
 <ul>
-<li><p>工具列中的 <em class="fa fa-plus"></em> <strong>新增</strong>。</p></li>
-<li><p>檔案清單／網格底部的 <em class="fa fa-plus"></em> <strong>新增</strong>。</p></li>
+<li><p>工具列中的 <i data-lucide='plus'></i> <strong>新增</strong>。</p></li>
+<li><p>檔案清單／網格底部的 <i data-lucide='plus'></i> <strong>新增</strong>。</p></li>
 </ul>
 </li>
-<li><p>從文件中：<em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-plus"></em> <strong>新增</strong>。</p></li>
+<li><p>從文件中：<i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='plus'></i> <strong>新增</strong>。</p></li>
 </ul>
 <img alt="../../_images/app-creation-screen.png" class="screenshot" src="../../_images/app-creation-screen.png" />
-<p><span class="badge-user">已登入使用者</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> 已登入使用者</span></p>
 <p>建立新文件時，建立畫面會提供多個選項。</p>
 <ul class="simple">
 <li><p><strong>具擁有者的文件</strong>：以 <a class="reference internal" href="../share_and_access.html#owners"><span class="std std-ref">擁有者</span></a> 身份建立新文件。若建立時未設定擁有者，此選項之後無法修改。</p></li>
@@ -779,11 +783,11 @@
 <p class="admonition-title">备注</p>
 <p>儲存於 CryptDrive 或您所屬團隊中的範本都會顯示在建立畫面上。若要將文件存成範本：</p>
 <ul class="simple">
-<li><p>在已開啟的文件中：<em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="cptools cptools-new-template"></em> <strong>另存為範本</strong>。</p></li>
+<li><p>在已開啟的文件中：<i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='file-up'></i> <strong>另存為範本</strong>。</p></li>
 </ul>
 <p>或</p>
 <ul class="simple">
-<li><p>在 CryptDrive 中：將文件拖曳至 <em class="cptools cptools-template"></em> <strong>範本</strong> 資料夾。</p></li>
+<li><p>在 CryptDrive 中：將文件拖曳至 <i data-lucide='file-cog'></i> <strong>範本</strong> 資料夾。</p></li>
 </ul>
 </div>
 </section>
@@ -795,8 +799,8 @@
 <span id="id3"></span><h2>製作副本<a class="headerlink" href="#make-a-copy" title="此标题的永久链接">¶</a></h2>
 <p>若要複製文件：</p>
 <ul class="simple">
-<li><p>從文件中：<em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-clone"></em> <strong>製作副本</strong>。</p></li>
-<li><p>從 CryptDrive：在文件上 <code class="docutils literal notranslate"><span class="pre">按右鍵</span></code> &gt; <em class="fa fa-clone"></em> <strong>製作副本</strong>。</p></li>
+<li><p>從文件中：<i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='copy'></i> <strong>製作副本</strong>。</p></li>
+<li><p>從 CryptDrive：在文件上 <code class="docutils literal notranslate"><span class="pre">按右鍵</span></code> &gt; <i data-lucide='copy'></i> <strong>製作副本</strong>。</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
@@ -817,17 +821,17 @@
 </figure>
 <p>文件歷史會儲存，必要時可還原。若要檢視並還原文件歷史：</p>
 <ol class="arabic simple">
-<li><p><em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-history"></em> <strong>歷史</strong>。</p></li>
+<li><p><i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='history'></i> <strong>歷史</strong>。</p></li>
 <li><p>使用箭頭切換：</p>
 <ul class="simple">
-<li><p><em class="fa fa-step-backward"></em> 與 <em class="fa fa-step-forward"></em> 在每次編輯之間切換。</p></li>
-<li><p><em class="fa fa-step-backward"></em> <em class="fa fa-user"></em> 與 <em class="fa fa-user"></em> <em class="fa fa-step-forward"></em> 在每位作者之間切換。</p></li>
-<li><p><em class="fa fa-step-backward"></em> <em class="fa fa-users"></em> 與 <em class="fa fa-users"></em> <em class="fa fa-step-forward"></em> 在每次編輯階段之間切換（同一群作者連線至該文件時）。</p></li>
+<li><p><i data-lucide='arrow-left'></i> 與 <i data-lucide='arrow-right'></i> 在每次編輯之間切換。</p></li>
+<li><p><i data-lucide='arrow-left'></i> <i data-lucide='user'></i> 與 <i data-lucide='user'></i> <i data-lucide='arrow-right'></i> 在每位作者之間切換。</p></li>
+<li><p><i data-lucide='arrow-left'></i> <i data-lucide='users-round'></i> 與 <i data-lucide='users-round'></i> <i data-lucide='arrow-right'></i> 在每次編輯階段之間切換（同一群作者連線至該文件時）。</p></li>
 </ul>
 </li>
-<li><p>以 <em class="fa fa-check"></em> <strong>還原</strong> 還原目前顯示的版本，或以 <em class="fa fa-times"></em> <strong>關閉</strong> 不還原直接關閉歷史。</p></li>
+<li><p>以 <i data-lucide='check'></i> <strong>還原</strong> 還原目前顯示的版本，或以 <i data-lucide='x'></i> <strong>關閉</strong> 不還原直接關閉歷史。</p></li>
 </ol>
-<p>為節省儲存空間，可在文件的 <a class="reference internal" href="#document-properties"><span class="std std-ref">屬性</span></a> 中刪除歷史。<span class="badge-owner">文件擁有者</span></p>
+<p>為節省儲存空間，可在文件的 <a class="reference internal" href="#document-properties"><span class="std std-ref">屬性</span></a> 中刪除歷史。<span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> 文件擁有者</span></p>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p><a class="reference internal" href="sheets.html#app-sheets"><span class="std std-ref">試算表</span></a> 應用程式的歷史功能運作方式略有不同，因 OnlyOffice 與 CryptPad 的加密即時協作整合之故。詳情請參閱 <a class="reference internal" href="sheets.html#sheets-history"><span class="std std-ref">試算表歷史</span></a>。</p>
@@ -835,7 +839,7 @@
 <p><strong>版本連結</strong></p>
 <p>若要分享目前顯示之歷史版本的連結：</p>
 <ul class="simple">
-<li><p>工具列中的 <em class="fa fa-share-alt"></em> <strong>分享</strong>。</p></li>
+<li><p>工具列中的 <i data-lucide='share2'></i> <strong>分享</strong>。</p></li>
 <li><p>如同 <a class="reference internal" href="../share_and_access.html#share"><span class="std std-ref">分享文件</span></a> 時，選擇 <strong>聯絡人</strong>、<strong>連結</strong> 或 <strong>嵌入</strong>。</p></li>
 </ul>
 <p>收件者可唯讀方式檢視所選版本。</p>
@@ -846,9 +850,9 @@
 <p id="snapshot-from-history"><strong>從歷史建立快照</strong></p>
 <p>若要從目前顯示的歷史版本建立 <a class="reference internal" href="#snapshots"><span class="std std-ref">快照</span></a>：</p>
 <ul class="simple">
-<li><p>工具列中的 <em class="fa fa-camera"></em> 按鈕。</p></li>
+<li><p>工具列中的 <i data-lucide='camera'></i> 按鈕。</p></li>
 <li><p>在對話方塊中輸入快照名稱。</p></li>
-<li><p><em class="fa fa-camera"></em> <strong>新增快照</strong></p></li>
+<li><p><i data-lucide='camera'></i> <strong>新增快照</strong></p></li>
 </ul>
 </section>
 <section id="snapshots">
@@ -862,22 +866,22 @@
 <p>快照是文件歷史中的特定時間點，可命名以便參照。</p>
 <p>若要從文件目前狀態建立快照：</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-camera"></em> <strong>快照</strong></p></li>
+<li><p><i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='camera'></i> <strong>快照</strong></p></li>
 <li><p>在對話方塊中輸入快照名稱。</p></li>
-<li><p><em class="fa fa-camera"></em> <strong>新增快照</strong></p></li>
+<li><p><i data-lucide='camera'></i> <strong>新增快照</strong></p></li>
 </ul>
 <p>若要從文件歷史中的某版本建立快照，請見上方的 <a class="reference internal" href="#document-history"><span class="std std-ref">從歷史建立快照</span></a>。</p>
 <p>若要檢視並還原快照：</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-camera"></em> <strong>快照</strong></p></li>
-<li><p>在對話方塊中，<code class="docutils literal notranslate"><span class="pre">點選</span></code> 清單中的快照，再按 <em class="fa fa-eye"></em> <strong>檢視</strong>。</p></li>
+<li><p><i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='camera'></i> <strong>快照</strong></p></li>
+<li><p>在對話方塊中，<code class="docutils literal notranslate"><span class="pre">點選</span></code> 清單中的快照，再按 <i data-lucide='eye'></i> <strong>檢視</strong>。</p></li>
 <li><p>快照會在新視窗中開啟。</p></li>
-<li><p><em class="fa fa-check"></em> <strong>還原</strong> 或 <em class="fa fa-times"></em> <strong>關閉</strong></p></li>
+<li><p><i data-lucide='check'></i> <strong>還原</strong> 或 <i data-lucide='x'></i> <strong>關閉</strong></p></li>
 </ul>
 <p>若要刪除快照：</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-camera"></em> <strong>快照</strong></p></li>
-<li><p>在對話方塊中，<code class="docutils literal notranslate"><span class="pre">點選</span></code> 清單中的快照，再按 <em class="fa fa-trash"></em> <strong>刪除</strong>。</p></li>
+<li><p><i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='camera'></i> <strong>快照</strong></p></li>
+<li><p>在對話方塊中，<code class="docutils literal notranslate"><span class="pre">點選</span></code> 清單中的快照，再按 <i data-lucide='trash2'></i> <strong>刪除</strong>。</p></li>
 </ul>
 </section>
 <section id="properties">
@@ -885,8 +889,8 @@
 <img alt="../../_images/modal-properties.png" class="screenshot" src="../../_images/modal-properties.png" />
 <p>若要開啟屬性選單：</p>
 <ul class="simple">
-<li><p>從文件中：<em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-info-circle"></em> <strong>屬性</strong>。</p></li>
-<li><p>從 CryptDrive：在文件上 <code class="docutils literal notranslate"><span class="pre">按右鍵</span></code> &gt; <em class="fa fa-info-circle"></em> <strong>屬性</strong>。</p></li>
+<li><p>從文件中：<i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='info'></i> <strong>屬性</strong>。</p></li>
+<li><p>從 CryptDrive：在文件上 <code class="docutils literal notranslate"><span class="pre">按右鍵</span></code> &gt; <i data-lucide='info'></i> <strong>屬性</strong>。</p></li>
 </ul>
 <p>可檢視的資料：</p>
 <ul class="simple">
@@ -895,7 +899,7 @@
 <li><p>建立日期與最後存取日期。</p></li>
 <li><p>大小。</p></li>
 </ul>
-<p>文件大小會顯示內容與歷史所佔比例。為節省儲存空間，可點選 <strong>刪除歷史</strong> 並確認以刪除文件歷史。<span class="badge-owner">文件擁有者</span></p>
+<p>文件大小會顯示內容與歷史所佔比例。為節省儲存空間，可點選 <strong>刪除歷史</strong> 並確認以刪除文件歷史。<span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> 文件擁有者</span></p>
 <div class="admonition warning">
 <p class="admonition-title">警告</p>
 <p><a class="reference internal" href="#snapshots"><span class="std std-ref">快照</span></a> 屬於文件歷史的一部分。若在文件屬性中刪除歷史，快照也會一併刪除。</p>
@@ -903,11 +907,11 @@
 </section>
 <section id="users-and-chat">
 <span id="document-users-and-chat"></span><h2>使用者與即時通<a class="headerlink" href="#users-and-chat" title="此标题的永久链接">¶</a></h2>
-<p>可透過使用者清單 <em class="fa fa-user"></em> <em class="fa fa-eye"></em> 與 <em class="fa fa-comments"></em> <strong>即時通</strong> 與連線至同一文件的使用者互動。</p>
+<p>可透過使用者清單 <i data-lucide='user'></i> <i data-lucide='eye'></i> 與 <i data-lucide='message-square-more'></i> <strong>即時通</strong> 與連線至同一文件的使用者互動。</p>
 <p>若要顯示／隱藏這些窗格：</p>
 <ul class="simple">
-<li><p><em class="fa fa-user"></em> <em class="fa fa-eye"></em> 為使用者清單。</p></li>
-<li><p><em class="fa fa-comments"></em> <strong>即時通</strong> 為即時通窗格。</p></li>
+<li><p><i data-lucide='user'></i> <i data-lucide='eye'></i> 為使用者清單。</p></li>
+<li><p><i data-lucide='message-square-more'></i> <strong>即時通</strong> 為即時通窗格。</p></li>
 </ul>
 </section>
 </section>
@@ -920,10 +924,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="richtext.html" class="btn btn-neutral float-right" title="富文字" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="richtext.html" class="btn btn-neutral float-right" title="富文字" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="../applications.html" class="btn btn-neutral" title="應用程式" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="../applications.html" class="btn btn-neutral" title="應用程式" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -985,7 +989,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

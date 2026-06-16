@@ -42,6 +42,8 @@
 
   
   <script src="../_static/js/modernizr.min.js"></script>
+  
+  <script src="../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Whiteboard</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">Barra de herramientas</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">Dibujo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Modo pintura</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Modo seleccionar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Modo pintura</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Modo seleccionar</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#export">Exportar</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -753,33 +757,33 @@
 <h1>Colaboración / Social<a class="headerlink" href="#collaboration-social" title="Enlace permanente a este encabezado">¶</a></h1>
 <section id="profile">
 <span id="id1"></span><h2>Perfil<a class="headerlink" href="#profile" title="Enlace permanente a este encabezado">¶</a></h2>
-<p><span class="badge-user">Usuarios registrados</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Usuarios registrados</span></p>
 <p>Cada usuario registrado en CryptPad tiene una página de perfil accesible desde el menú de usuario:</p>
 <ul class="simple">
-<li><p>Menú de usuario (avatar en la parte superior derecha) &gt; <em class="fa fa-user-circle"></em> <strong>Perfil</strong>.</p></li>
+<li><p>Menú de usuario (avatar en la parte superior derecha) &gt; <i data-lucide='circle-user-round'></i> <strong>Perfil</strong>.</p></li>
 </ul>
 <section id="personal-profile">
 <h3>Perfil personal<a class="headerlink" href="#personal-profile" title="Enlace permanente a este encabezado">¶</a></h3>
 <p>Your profile can now be modified directly from your <a class="reference internal" href="user_account.html#user-settings-profile"><span class="std std-ref">account settings</span></a>.</p>
 <p>From here you can see what your profile look like to other users, you can also perform the following actions:</p>
 <ul class="simple">
-<li><p><em class="fa fa-key"></em> <strong>Copiar clave pública</strong>: Copia la clave utilizada por los administradores de instancias y en instancias que ofrecen suscripciones.</p></li>
-<li><p><em class="fa fa-copy"></em> <strong>Copy user data</strong>: As an instance administrator, add the user data in JSON format to your clipboard.</p></li>
-<li><p><em class="fa fa-share-alt"></em> <strong>Compartir</strong>: Copia un enlace a tu perfil.</p></li>
+<li><p><i data-lucide='key'></i> <strong>Copiar clave pública</strong>: Copia la clave utilizada por los administradores de instancias y en instancias que ofrecen suscripciones.</p></li>
+<li><p><i data-lucide='copy'></i> <strong>Copy user data</strong>: As an instance administrator, add the user data in JSON format to your clipboard.</p></li>
+<li><p><i data-lucide='share2'></i> <strong>Compartir</strong>: Copia un enlace a tu perfil.</p></li>
 </ul>
 </section>
 <section id="user-profile">
 <span id="another-user-profile"></span><h3>Perfil del usuario<a class="headerlink" href="#user-profile" title="Enlace permanente a este encabezado">¶</a></h3>
 <p>Para ver el perfil de otro usuario:</p>
 <ul class="simple">
-<li><p><strong>Lista de usuarios</strong> <em class="fa fa-users"></em> <em class="fa fa-eye"></em> de un documento donde están conectados &gt; <code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span></code> en su nombre,</p></li>
-<li><p>Si el usuario está en tu lista de <a class="reference internal" href="#contacts"><span class="std std-ref">contactos</span></a>. Menú de usuario (avatar en la parte superior derecha) &gt; <em class="fa fa-address-book"></em> <strong>Contactos</strong> &gt; <code class="docutils literal notranslate"><span class="pre">Doble</span> <span class="pre">click</span></code> en su nombre en la lista.</p></li>
+<li><p><strong>Lista de usuarios</strong> <i data-lucide='users-round'></i> <i data-lucide='eye'></i> de un documento donde están conectados &gt; <code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span></code> en su nombre,</p></li>
+<li><p>Si el usuario está en tu lista de <a class="reference internal" href="#contacts"><span class="std std-ref">contactos</span></a>. Menú de usuario (avatar en la parte superior derecha) &gt; <i data-lucide='book-user'></i> <strong>Contactos</strong> &gt; <code class="docutils literal notranslate"><span class="pre">Doble</span> <span class="pre">click</span></code> en su nombre en la lista.</p></li>
 </ul>
 <p>En la página de perfil de otro usuario:</p>
 <ul class="simple">
 <li><p><strong>Enviar una solicitud de contacto</strong>: Agregar este usuario a tus <a class="reference internal" href="#contacts"><span class="std std-ref">contactos</span></a> una vez que hayan aprobado la solicitud.</p></li>
-<li><p><em class="fa fa-bell-slash"></em> <strong>Silenciar</strong>: bloquea notificaciones y mensajes de este usuario. No sabrán que han sido silenciados.</p></li>
-<li><p><em class="fa fa-key"></em> <strong>Copiar clave pública</strong>: Copia la clave utilizada por los administradores de instancias y en instancias que ofrecen suscripciones.</p></li>
+<li><p><i data-lucide='bell-off'></i> <strong>Silenciar</strong>: bloquea notificaciones y mensajes de este usuario. No sabrán que han sido silenciados.</p></li>
+<li><p><i data-lucide='key'></i> <strong>Copiar clave pública</strong>: Copia la clave utilizada por los administradores de instancias y en instancias que ofrecen suscripciones.</p></li>
 </ul>
 </section>
 </section>
@@ -788,7 +792,7 @@
 <figure class="align-default">
 <img alt="captura de pantalla del calendario" class="screenshot" src="../_images/calendar.png" />
 </figure>
-<p>Para agregar eventos, simplemente haz click en la hora/fecha deseada en el calendario, ve (arrastre para ver la duración). Alternativamente utiliza <em class="fa fa-plus"></em> <strong>Nuevo evento</strong> en la barra de herramientas.</p>
+<p>Para agregar eventos, simplemente haz click en la hora/fecha deseada en el calendario, ve (arrastre para ver la duración). Alternativamente utiliza <i data-lucide='plus'></i> <strong>Nuevo evento</strong> en la barra de herramientas.</p>
 <p>Luego abre un formulario de creación de eventos donde un <strong>Título</strong> es obligatorio.</p>
 <p>Opcionalmente, puedes especificar una <strong>Ubicación</strong> y una <strong>Descripción</strong>. El campo <strong>Descripción</strong> admite la sintaxis de Markdown para formatear su contenido.</p>
 <p>Puedes crear eventos recurrentes, repetir:</p>
@@ -819,47 +823,47 @@
 <p>Para editar eventos, arrástralos a la nueva fecha/hora o alternativamente:</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span></code> en el evento para abrir la vista detallada.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span></code> en <em class="fa fa-pencil"></em> <strong>Editar</strong> para abrir el formulario de edición.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span></code> en <i data-lucide='pencil'></i> <strong>Editar</strong> para abrir el formulario de edición.</p></li>
 </ol>
 <section id="toolbar">
 <h3>Barra de herramientas<a class="headerlink" href="#toolbar" title="Enlace permanente a este encabezado">¶</a></h3>
 <ul class="simple">
-<li><p><em class="fa fa-plus"></em> <strong>Nuevo evento</strong></p></li>
+<li><p><i data-lucide='plus'></i> <strong>Nuevo evento</strong></p></li>
 <li><p>Menú <strong>Ver</strong> (lado derecho): Mes, Semana, Día</p></li>
-<li><p><em class="fa fa-chevron-left"></em> <em class="fa fa-chevron-right"></em>: pasar al período anterior/siguiente dependiendo de la vista</p></li>
+<li><p><i data-lucide='chevron-left'></i> <i data-lucide='chevron-right'></i>: pasar al período anterior/siguiente dependiendo de la vista</p></li>
 <li><p><strong>Hoy</strong>: haz click para centrar la vista en hoy</p></li>
 </ul>
 </section>
 <section id="share-access">
 <h3>Compartir y acceder<a class="headerlink" href="#share-access" title="Enlace permanente a este encabezado">¶</a></h3>
 <p>Los calendarios de CryptPad funcionan de la misma manera que cualquier otro documento a los efectos de <a class="reference internal" href="share_and_access.html#share"><span class="std std-ref">compartir</span></a> y <a class="reference internal" href="share_and_access.html#access"><span class="std std-ref">regular el acceso</span></a>.</p>
-<p>El menú <em class="fa fa-ellipsis-h"></em> para cada calendario en la barra lateral contiene las siguientes opciones:</p>
+<p>El menú <i data-lucide='ellipsis'></i> para cada calendario en la barra lateral contiene las siguientes opciones:</p>
 <ul class="simple">
-<li><p><em class="fa fa-pencil"></em> <strong>Editar</strong> para cambiar el nombre y color del calendario</p></li>
-<li><p><em class="fa fa-share-alt"></em> <strong>Compartir</strong> y <em class="fa fa-unlock-alt"></em> <strong>Acceso</strong> funcionan de la misma manera que cualquier otro documento de CryptPad. ver <a class="reference internal" href="share_and_access.html#share-and-access"><span class="std std-ref">Compartir / Acceso</span></a>.</p></li>
-<li><p><em class="fa fa-upload"></em> <strong>Importar</strong> y <em class="fa fa-download"></em> <strong>Exportar</strong> al formato estándar <code class="docutils literal notranslate"><span class="pre">.ics</span></code>.</p></li>
-<li><p><em class="fa fa-info-circle"></em> <strong>Propiedades</strong></p></li>
-<li><p><em class="fa fa-trash-o"></em> <strong>Eliminar</strong></p></li>
+<li><p><i data-lucide='pencil'></i> <strong>Editar</strong> para cambiar el nombre y color del calendario</p></li>
+<li><p><i data-lucide='share2'></i> <strong>Compartir</strong> y <i data-lucide='lock-open'></i> <strong>Acceso</strong> funcionan de la misma manera que cualquier otro documento de CryptPad. ver <a class="reference internal" href="share_and_access.html#share-and-access"><span class="std std-ref">Compartir / Acceso</span></a>.</p></li>
+<li><p><i data-lucide='upload'></i> <strong>Importar</strong> y <i data-lucide='download'></i> <strong>Exportar</strong> al formato estándar <code class="docutils literal notranslate"><span class="pre">.ics</span></code>.</p></li>
+<li><p><i data-lucide='info'></i> <strong>Propiedades</strong></p></li>
+<li><p><i data-lucide='trash'></i> <strong>Eliminar</strong></p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
 <p>Al exportar un calendario, las descripciones de los eventos se exportan en Markdown.</p>
 </div>
 <p><a class="reference internal" href="#teams"><span class="std std-ref">Equipos</span></a> también pueden tener calendarios disponibles para todos los miembros. Simplemente comparte un calendario con un equipo para agregarlo:</p>
-<p><em class="fa fa-share-alt"></em> <strong>Compartir</strong> &gt; <em class="fa fa-address-book"></em> <strong>Contactos</strong> &gt; Selecciona el equipo</p>
-<p><span class="badge-user">Usuarios registrados</span></p>
-<p>Al ver un calendario compartido mediante un enlace, agréguelo a sus calendarios con: <em class="fa fa-calendar-plus-o"></em> <strong>Importar este calendario</strong></p>
+<p><i data-lucide='share2'></i> <strong>Compartir</strong> &gt; <i data-lucide='book-user'></i> <strong>Contactos</strong> &gt; Selecciona el equipo</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Usuarios registrados</span></p>
+<p>Al ver un calendario compartido mediante un enlace, agréguelo a sus calendarios con: <i data-lucide='calendar-plus2'></i> <strong>Importar este calendario</strong></p>
 </section>
 </section>
 <section id="contacts">
 <span id="id3"></span><h2>Contactos<a class="headerlink" href="#contacts" title="Enlace permanente a este encabezado">¶</a></h2>
-<p><span class="badge-user">Usuarios registrados</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Usuarios registrados</span></p>
 <p>En CryptPad, el uso de contactos hace que la colaboración sea más segura y sencilla.</p>
 <section id="add-a-contact">
 <h3>Añade un contacto<a class="headerlink" href="#add-a-contact" title="Enlace permanente a este encabezado">¶</a></h3>
 <p>Al compartir tu perfil:</p>
 <ol class="arabic simple">
-<li><p>Copia el enlace: Menú de usuario (avatar en la parte superior derecha) &gt; <em class="fa fa-user-circle"></em> <strong>Perfil</strong> &gt; <em class="fa fa-share-alt"></em> <strong>Compartir</strong>.</p></li>
+<li><p>Copia el enlace: Menú de usuario (avatar en la parte superior derecha) &gt; <i data-lucide='circle-user-round'></i> <strong>Perfil</strong> &gt; <i data-lucide='share2'></i> <strong>Compartir</strong>.</p></li>
 <li><p>Paste and send through the means of your choice (preferably a secure mode of communication).</p></li>
 <li><p>Luego, su contacto debe hacer click en <strong>Enviar una solicitud de contacto</strong>.</p></li>
 <li><p>Recibirás una notificación con la solicitud, <code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span></code> <strong>Aceptar</strong>.</p></li>
@@ -873,20 +877,20 @@
 <h3>Gestionar contactos<a class="headerlink" href="#manage-contacts" title="Enlace permanente a este encabezado">¶</a></h3>
 <p>Para acceder a la página de Contactos:</p>
 <ul class="simple">
-<li><p>Menú de usuario (avatar en la parte superior derecha) &gt; <em class="fa fa-address-book"></em> <strong>Contactos</strong>.</p></li>
+<li><p>Menú de usuario (avatar en la parte superior derecha) &gt; <i data-lucide='book-user'></i> <strong>Contactos</strong>.</p></li>
 </ul>
 <p>Todos los contactos se enumeran a la izquierda de la ventana. Para cada contacto:</p>
 <ul class="simple">
-<li><p><em class="fa fa-bell-slash"></em>: Silenciar mensajes y notificaciones.</p></li>
-<li><p><em class="fa fa-user-times"></em>: Eliminar.</p></li>
-<li><p><em class="fa fa-circle"></em>: Indica que este contacto está en línea.</p></li>
+<li><p><i data-lucide='bell-off'></i>: Silenciar mensajes y notificaciones.</p></li>
+<li><p><i data-lucide='user-round-x'></i>: Eliminar.</p></li>
+<li><p><i data-lucide='circle'></i>: Indica que este contacto está en línea.</p></li>
 </ul>
 </section>
 <section id="chat-with-contacts">
 <span id="chat-contacts"></span><h3>Chatear con contactos<a class="headerlink" href="#chat-with-contacts" title="Enlace permanente a este encabezado">¶</a></h3>
 <p>En la página de Contactos, haz clic en un contacto de la lista para abrir el chat con ellos en la ventana principal.</p>
-<p>Escribe mensajes en el campo de abajo y envíalos con <em class="fa fa-paper-plane"></em> o <kbd class="kbd docutils literal notranslate">Enter</kbd>.</p>
-<p>Carga más historial de chat con <em class="fa fa-history"></em> o elimina el historial con <em class="fa fa-eraser"></em>.</p>
+<p>Escribe mensajes en el campo de abajo y envíalos con <i data-lucide='send'></i> o <kbd class="kbd docutils literal notranslate">Enter</kbd>.</p>
+<p>Carga más historial de chat con <i data-lucide='history'></i> o elimina el historial con <i data-lucide='eraser'></i>.</p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
 <p>Currently, the only way to get a notification when receiving a new message, is having the Contacts application open and web browser notifications enabled. We are working on the possibility to receive a CryptPad notification in case of a new message.</p>
@@ -895,7 +899,7 @@
 </section>
 <section id="teams">
 <span id="id4"></span><h2>Equipos<a class="headerlink" href="#teams" title="Enlace permanente a este encabezado">¶</a></h2>
-<p><span class="badge-user">Usuarios registrados</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Usuarios registrados</span></p>
 <p>Los equipos de CryptPad son espacios compartidos entre un grupo de usuarios. Un equipo tiene su propio CryptDrive, chat y una lista de miembros con roles y permisos.</p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
@@ -903,13 +907,13 @@
 </div>
 <p>Para crear un equipo:</p>
 <ol class="arabic simple">
-<li><p>Menú de usuario (avatar en la parte superior derecha) &gt; <em class="fa fa-users"></em> <strong>Equipos</strong>.</p></li>
-<li><p><em class="fa fa-plus-circle"></em> <strong>Nuevo</strong>.</p></li>
+<li><p>Menú de usuario (avatar en la parte superior derecha) &gt; <i data-lucide='users-round'></i> <strong>Equipos</strong>.</p></li>
+<li><p><i data-lucide='circle-plus'></i> <strong>Nuevo</strong>.</p></li>
 </ol>
 <p>Para abrir un equipo existente:</p>
 <ol class="arabic simple">
-<li><p>Menú de usuario (avatar en la parte superior derecha) &gt; <em class="fa fa-users"></em> <strong>Equipos</strong>.</p></li>
-<li><p><em class="fa fa-list"></em> <strong>Equipos</strong> &gt; botón <strong>Abrir</strong> en el equipo deseado.</p></li>
+<li><p>Menú de usuario (avatar en la parte superior derecha) &gt; <i data-lucide='users-round'></i> <strong>Equipos</strong>.</p></li>
+<li><p><i data-lucide='list'></i> <strong>Equipos</strong> &gt; botón <strong>Abrir</strong> en el equipo deseado.</p></li>
 </ol>
 <section id="team-drive">
 <h3>Unidad del equipo<a class="headerlink" href="#team-drive" title="Enlace permanente a este encabezado">¶</a></h3>
@@ -917,16 +921,16 @@
 </section>
 <section id="team-members">
 <h3>Miembros del equipo<a class="headerlink" href="#team-members" title="Enlace permanente a este encabezado">¶</a></h3>
-<p>Para gestionar los miembros de un equipo, ve a <em class="fa fa-users"></em> pestaña de**Miembros**.</p>
+<p>Para gestionar los miembros de un equipo, ve a <i data-lucide='users-round'></i> pestaña de**Miembros**.</p>
 </section>
 <section id="invite-members">
 <h3>Invitar a los miembros<a class="headerlink" href="#invite-members" title="Enlace permanente a este encabezado">¶</a></h3>
 <p>Para invitar a los miembros a un equipo:</p>
 <ul class="simple">
-<li><p><em class="fa fa-users"></em> Pestaña de <strong>Miembros</strong> &gt; <strong>Invitar miembros</strong>.</p></li>
+<li><p><i data-lucide='users-round'></i> Pestaña de <strong>Miembros</strong> &gt; <strong>Invitar miembros</strong>.</p></li>
 </ul>
-<p><em class="fa fa-address-book"></em> Pestaña <strong>Contactos</strong>: selecciona los contactos de CryptPad para invitarlos al equipo. Los invitados reciben una notificación de invitación y pueden confirmar que quieren unirse al equipo.</p>
-<p><em class="fa fa-link"></em> <strong>Link</strong> tab: Copy a link to send through the means of your choice (preferably a secure mode of communication). This link is single-use only. It becomes invalid after someone first uses it to join the team.</p>
+<p><i data-lucide='book-user'></i> Pestaña <strong>Contactos</strong>: selecciona los contactos de CryptPad para invitarlos al equipo. Los invitados reciben una notificación de invitación y pueden confirmar que quieren unirse al equipo.</p>
+<p><i data-lucide='link'></i> <strong>Link</strong> tab: Copy a link to send through the means of your choice (preferably a secure mode of communication). This link is single-use only. It becomes invalid after someone first uses it to join the team.</p>
 <ul class="simple">
 <li><p><strong>Nombre temporal</strong>: Se utiliza para identificar el enlace de invitación en la lista de invitaciones pendientes.</p></li>
 <li><p><strong>Contraseña</strong>: Protege el enlace contra posibles interceptaciones. (opcional)</p></li>
@@ -981,9 +985,9 @@
 <h3>Administración<a class="headerlink" href="#administration" title="Enlace permanente a este encabezado">¶</a></h3>
 <p>El rol de cada miembro se puede cambiar en la lista del equipo. Los administradores y propietarios del equipo pueden gestionar miembros con roles iguales o inferiores. Para cada miembro:</p>
 <div class="line-block">
-<div class="line"><em class="fa fa-angle-double-up"></em>: Promover a un rol superior.</div>
-<div class="line"><em class="fa fa-angle-double-down"></em>: Degradar a un rol inferior.</div>
-<div class="line"><em class="fa fa-times"></em>: Expulsión del equipo.</div>
+<div class="line"><i data-lucide='chevrons-up'></i>: Promover a un rol superior.</div>
+<div class="line"><i data-lucide='chevrons-down'></i>: Degradar a un rol inferior.</div>
+<div class="line"><i data-lucide='x'></i>: Expulsión del equipo.</div>
 </div>
 </section>
 <section id="chat">
@@ -992,7 +996,7 @@
 </section>
 <section id="administration-tab">
 <h3>Pestaña de administración<a class="headerlink" href="#administration-tab" title="Enlace permanente a este encabezado">¶</a></h3>
-<p><span class="badge-owner">Propietarios del equipo</span></p>
+<p><span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> Propietarios del equipo</span></p>
 <ul class="simple">
 <li><p><strong>Clave de firma pública</strong>: Se utiliza para identificar el equipo en instancias que ofrecen suscripciones.</p></li>
 <li><p><strong>Nombre del equipo</strong>: cambia el nombre del equipo.</p></li>
@@ -1012,10 +1016,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="share_and_access.html" class="btn btn-neutral float-right" title="Compartir / Acceso" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="share_and_access.html" class="btn btn-neutral float-right" title="Compartir / Acceso" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="drive.html" class="btn btn-neutral" title="CryptDrive" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="drive.html" class="btn btn-neutral" title="CryptDrive" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -1077,7 +1081,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

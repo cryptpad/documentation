@@ -42,6 +42,8 @@
 
   
   <script src="../_static/js/modernizr.min.js"></script>
+  
+  <script src="../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">ホワイトボード</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">ツールバー</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">描画</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> 描画モード</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> 選択モード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> 描画モード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> 選択モード</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#export">エクスポート</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -753,33 +757,33 @@
 <h1>共同作業 / ソーシャル<a class="headerlink" href="#collaboration-social" title="この見出しへのパーマリンク">¶</a></h1>
 <section id="profile">
 <span id="id1"></span><h2>プロフィール<a class="headerlink" href="#profile" title="この見出しへのパーマリンク">¶</a></h2>
-<p><span class="badge-user">ログイン済ユーザー</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p>
 <p>CryptPadに登録済の各ユーザーには、ユーザーメニューからアクセスできるプロフィールページが用意されます。</p>
 <ul class="simple">
-<li><p>ユーザーメニュー（右上のアバター） &gt; <em class="fa fa-user-circle"></em> <strong>プロフィール</strong>。</p></li>
+<li><p>ユーザーメニュー（右上のアバター） &gt; <i data-lucide='circle-user-round'></i> <strong>プロフィール</strong>。</p></li>
 </ul>
 <section id="personal-profile">
 <h3>個人用プロフィール<a class="headerlink" href="#personal-profile" title="この見出しへのパーマリンク">¶</a></h3>
 <p>Your profile can now be modified directly from your <a class="reference internal" href="user_account.html#user-settings-profile"><span class="std std-ref">account settings</span></a>.</p>
 <p>From here you can see what your profile look like to other users, you can also perform the following actions:</p>
 <ul class="simple">
-<li><p><em class="fa fa-key"></em> <strong>公開鍵をコピー</strong>：インスタンスの管理者が、定期利用を提供しているインスタンスで使っている鍵をコピー。</p></li>
-<li><p><em class="fa fa-copy"></em> <strong>Copy user data</strong>: As an instance administrator, add the user data in JSON format to your clipboard.</p></li>
-<li><p><em class="fa fa-share-alt"></em> <strong>共有</strong>：あなたのプロフィールへのリンクをコピー。</p></li>
+<li><p><i data-lucide='key'></i> <strong>公開鍵をコピー</strong>：インスタンスの管理者が、定期利用を提供しているインスタンスで使っている鍵をコピー。</p></li>
+<li><p><i data-lucide='copy'></i> <strong>Copy user data</strong>: As an instance administrator, add the user data in JSON format to your clipboard.</p></li>
+<li><p><i data-lucide='share2'></i> <strong>共有</strong>：あなたのプロフィールへのリンクをコピー。</p></li>
 </ul>
 </section>
 <section id="user-profile">
 <span id="another-user-profile"></span><h3>ユーザーのプロフィール<a class="headerlink" href="#user-profile" title="この見出しへのパーマリンク">¶</a></h3>
 <p>他のユーザーのプロフィールを表示するには、</p>
 <ul class="simple">
-<li><p>同時に利用しているドキュメントの<strong>ユーザー一覧</strong> <em class="fa fa-users"></em> <em class="fa fa-eye"></em> &gt; ユーザーの名前を <code class="docutils literal notranslate"><span class="pre">クリック</span></code> 、</p></li>
-<li><p>ユーザーがあなたの<a class="reference internal" href="#contacts"><span class="std std-ref">連絡先</span></a>リストに含まれている場合、ユーザーメニュー（右上のアバター） &gt; <em class="fa fa-address-book"></em> <strong>連絡先</strong> &gt; リストの名前を <code class="docutils literal notranslate"><span class="pre">ダブルクリック</span></code> 。</p></li>
+<li><p>同時に利用しているドキュメントの<strong>ユーザー一覧</strong> <i data-lucide='users-round'></i> <i data-lucide='eye'></i> &gt; ユーザーの名前を <code class="docutils literal notranslate"><span class="pre">クリック</span></code> 、</p></li>
+<li><p>ユーザーがあなたの<a class="reference internal" href="#contacts"><span class="std std-ref">連絡先</span></a>リストに含まれている場合、ユーザーメニュー（右上のアバター） &gt; <i data-lucide='book-user'></i> <strong>連絡先</strong> &gt; リストの名前を <code class="docutils literal notranslate"><span class="pre">ダブルクリック</span></code> 。</p></li>
 </ul>
 <p>他のユーザーのプロフィールページで、</p>
 <ul class="simple">
 <li><p><strong>連絡先のリクエストを送信</strong>：ユーザーがリクエストを承諾したら、ユーザーはあなたの<a class="reference internal" href="#contacts"><span class="std std-ref">連絡先</span></a>に登録されます。</p></li>
-<li><p><em class="fa fa-bell-slash"></em> <strong>ミュート</strong>：このユーザーからの通知とメッセージをブロック。ミュートされていることは相手には伝わりません。</p></li>
-<li><p><em class="fa fa-key"></em> <strong>公開鍵をコピー</strong>：インスタンスの管理者が、定期利用を提供しているインスタンスで使っている鍵をコピー。</p></li>
+<li><p><i data-lucide='bell-off'></i> <strong>ミュート</strong>：このユーザーからの通知とメッセージをブロック。ミュートされていることは相手には伝わりません。</p></li>
+<li><p><i data-lucide='key'></i> <strong>公開鍵をコピー</strong>：インスタンスの管理者が、定期利用を提供しているインスタンスで使っている鍵をコピー。</p></li>
 </ul>
 </section>
 </section>
@@ -788,7 +792,7 @@
 <figure class="align-default">
 <img alt="カレンダーのスクリーンショット" class="screenshot" src="../_images/calendar.png" />
 </figure>
-<p>予定を追加するには、カレンダービューの日時をクリックしてください（ドラッグで長さを指定）。ツールバーの <em class="fa fa-plus"></em> <strong>新しいイベント</strong>でも追加できます。</p>
+<p>予定を追加するには、カレンダービューの日時をクリックしてください（ドラッグで長さを指定）。ツールバーの <i data-lucide='plus'></i> <strong>新しいイベント</strong>でも追加できます。</p>
 <p>予定の作成フォームが開きます。<strong>タイトル</strong>の入力は必須です。</p>
 <p><strong>場所</strong>と<strong>説明文</strong>も指定できます。<strong>説明文</strong>の欄ではマークダウンの記法で内容を装飾できます。</p>
 <p>繰り返しのイベントを作成できます。繰り返しの間隔は以下から選択できます。</p>
@@ -819,47 +823,47 @@
 <p>イベントを編集するには、イベントを新しい日時にドラッグするか、または</p>
 <ol class="arabic simple">
 <li><p>イベントを <code class="docutils literal notranslate"><span class="pre">クリック</span></code> して詳細画面を表示。</p></li>
-<li><p><em class="fa fa-pencil"></em> <strong>編集</strong>を <code class="docutils literal notranslate"><span class="pre">クリック</span></code> して編集用フォームを開く。</p></li>
+<li><p><i data-lucide='pencil'></i> <strong>編集</strong>を <code class="docutils literal notranslate"><span class="pre">クリック</span></code> して編集用フォームを開く。</p></li>
 </ol>
 <section id="toolbar">
 <h3>ツールバー<a class="headerlink" href="#toolbar" title="この見出しへのパーマリンク">¶</a></h3>
 <ul class="simple">
-<li><p><em class="fa fa-plus"></em> <strong>新しいイベント</strong></p></li>
+<li><p><i data-lucide='plus'></i> <strong>新しいイベント</strong></p></li>
 <li><p><strong>表示</strong>メニュー（右側）：月、週、日</p></li>
-<li><p><em class="fa fa-chevron-left"></em> <em class="fa fa-chevron-right"></em>: 表示に応じて以前または次の期間に移動</p></li>
+<li><p><i data-lucide='chevron-left'></i> <i data-lucide='chevron-right'></i>: 表示に応じて以前または次の期間に移動</p></li>
 <li><p><strong>今日</strong>：クリックすると今日を中央に表示</p></li>
 </ul>
 </section>
 <section id="share-access">
 <h3>共有とアクセス<a class="headerlink" href="#share-access" title="この見出しへのパーマリンク">¶</a></h3>
 <p>CryptPadのカレンダーは<a class="reference internal" href="share_and_access.html#share"><span class="std std-ref">共有</span></a>や<a class="reference internal" href="share_and_access.html#access"><span class="std std-ref">アクセス制限</span></a>に関して他のドキュメントと同様の形で機能します。</p>
-<p>サイドバーの各カレンダーの <em class="fa fa-ellipsis-h"></em> メニューには以下の設定項目があります。</p>
+<p>サイドバーの各カレンダーの <i data-lucide='ellipsis'></i> メニューには以下の設定項目があります。</p>
 <ul class="simple">
-<li><p><em class="fa fa-pencil"></em> <strong>編集</strong>。カレンダーの名前と色を変更</p></li>
-<li><p><em class="fa fa-share-alt"></em> <strong>共有</strong>と <em class="fa fa-unlock-alt"></em> <strong>アクセス</strong>の機能はCryptPadの他のドキュメントと同じ形で機能します。<a class="reference internal" href="share_and_access.html#share-and-access"><span class="std std-ref">共有 / アクセス</span></a>を参照。</p></li>
-<li><p>標準の <code class="docutils literal notranslate"><span class="pre">.ics</span></code> フォーマットで <em class="fa fa-upload"></em> <strong>インポート</strong>と <em class="fa fa-download"></em> <strong>エクスポート</strong>。</p></li>
-<li><p><em class="fa fa-info-circle"></em> <strong>プロパティー</strong></p></li>
-<li><p><em class="fa fa-trash-o"></em> <strong>削除</strong></p></li>
+<li><p><i data-lucide='pencil'></i> <strong>編集</strong>。カレンダーの名前と色を変更</p></li>
+<li><p><i data-lucide='share2'></i> <strong>共有</strong>と <i data-lucide='lock-open'></i> <strong>アクセス</strong>の機能はCryptPadの他のドキュメントと同じ形で機能します。<a class="reference internal" href="share_and_access.html#share-and-access"><span class="std std-ref">共有 / アクセス</span></a>を参照。</p></li>
+<li><p>標準の <code class="docutils literal notranslate"><span class="pre">.ics</span></code> フォーマットで <i data-lucide='upload'></i> <strong>インポート</strong>と <i data-lucide='download'></i> <strong>エクスポート</strong>。</p></li>
+<li><p><i data-lucide='info'></i> <strong>プロパティー</strong></p></li>
+<li><p><i data-lucide='trash'></i> <strong>削除</strong></p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>カレンダーをエクスポートする際、イベントの説明文はマークダウンでエクスポートされます。</p>
 </div>
 <p><a class="reference internal" href="#teams"><span class="std std-ref">チーム</span></a>はメンバー全員が利用できるカレンダーを設定することもできます。カレンダーを設定するには、追加するカレンダーを以下の方法でチームと共有してください。</p>
-<p><em class="fa fa-share-alt"></em> <strong>共有</strong> &gt; <em class="fa fa-address-book"></em> <strong>連絡先</strong> &gt; チームを選択</p>
-<p><span class="badge-user">ログイン済ユーザー</span></p>
-<p>リンクで共有されているカレンダーを閲覧している場合は、 <em class="fa fa-calendar-plus-o"></em> <strong>カレンダーをインポート</strong>で、閲覧中のカレンダーを自分のカレンダーに追加できます。</p>
+<p><i data-lucide='share2'></i> <strong>共有</strong> &gt; <i data-lucide='book-user'></i> <strong>連絡先</strong> &gt; チームを選択</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p>
+<p>リンクで共有されているカレンダーを閲覧している場合は、 <i data-lucide='calendar-plus2'></i> <strong>カレンダーをインポート</strong>で、閲覧中のカレンダーを自分のカレンダーに追加できます。</p>
 </section>
 </section>
 <section id="contacts">
 <span id="id3"></span><h2>連絡先<a class="headerlink" href="#contacts" title="この見出しへのパーマリンク">¶</a></h2>
-<p><span class="badge-user">ログイン済ユーザー</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p>
 <p>CryptPadでは、連絡先機能を使うと共同作業がより安全でシンプルになります。</p>
 <section id="add-a-contact">
 <h3>連絡先を追加<a class="headerlink" href="#add-a-contact" title="この見出しへのパーマリンク">¶</a></h3>
 <p>プロフィールを共有するには、</p>
 <ol class="arabic simple">
-<li><p>リンクをコピー：ユーザーメニュー（右上のアバター）&gt; <em class="fa fa-user-circle"></em> <strong>プロフィール</strong> &gt; <em class="fa fa-share-alt"></em> <strong>共有</strong>。</p></li>
+<li><p>リンクをコピー：ユーザーメニュー（右上のアバター）&gt; <i data-lucide='circle-user-round'></i> <strong>プロフィール</strong> &gt; <i data-lucide='share2'></i> <strong>共有</strong>。</p></li>
 <li><p>Paste and send through the means of your choice (preferably a secure mode of communication).</p></li>
 <li><p>その後、送信先の相手は<strong>連絡先のリクエストを送信</strong>をクリックする必要があります。</p></li>
 <li><p>リクエストの通知が届くので、<strong>承認</strong>を <code class="docutils literal notranslate"><span class="pre">クリック</span></code> 。</p></li>
@@ -873,20 +877,20 @@
 <h3>連絡先を管理<a class="headerlink" href="#manage-contacts" title="この見出しへのパーマリンク">¶</a></h3>
 <p>連絡先のページにアクセスするには、</p>
 <ul class="simple">
-<li><p>ユーザーメニュー（右上のアバター） &gt; <em class="fa fa-address-book"></em> <strong>連絡先</strong>。</p></li>
+<li><p>ユーザーメニュー（右上のアバター） &gt; <i data-lucide='book-user'></i> <strong>連絡先</strong>。</p></li>
 </ul>
 <p>全ての連絡先はウィンドウの左側に一覧で表示されます。それぞれの連絡先に関しては、</p>
 <ul class="simple">
-<li><p><em class="fa fa-bell-slash"></em>: メッセージと通知をミュート。</p></li>
-<li><p><em class="fa fa-user-times"></em>: 削除。</p></li>
-<li><p><em class="fa fa-circle"></em>: 連絡先がオンラインであることを示す。</p></li>
+<li><p><i data-lucide='bell-off'></i>: メッセージと通知をミュート。</p></li>
+<li><p><i data-lucide='user-round-x'></i>: 削除。</p></li>
+<li><p><i data-lucide='circle'></i>: 連絡先がオンラインであることを示す。</p></li>
 </ul>
 </section>
 <section id="chat-with-contacts">
 <span id="chat-contacts"></span><h3>連絡先とチャット<a class="headerlink" href="#chat-with-contacts" title="この見出しへのパーマリンク">¶</a></h3>
 <p>連絡先ページで、リストにある連絡先をクリックすると、メインのウインドウで連絡先とのチャット画面が開きます。</p>
-<p>一番下にある入力欄にメッセージを記入して、 <em class="fa fa-paper-plane"></em> または <kbd class="kbd docutils literal notranslate">Enter</kbd> で送信できます。</p>
-<p><em class="fa fa-history"></em> でチャットの履歴を更に読み込んだり <em class="fa fa-eraser"></em> で履歴を消去したりできます。</p>
+<p>一番下にある入力欄にメッセージを記入して、 <i data-lucide='send'></i> または <kbd class="kbd docutils literal notranslate">Enter</kbd> で送信できます。</p>
+<p><i data-lucide='history'></i> でチャットの履歴を更に読み込んだり <i data-lucide='eraser'></i> で履歴を消去したりできます。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>Currently, the only way to get a notification when receiving a new message, is having the Contacts application open and web browser notifications enabled. We are working on the possibility to receive a CryptPad notification in case of a new message.</p>
@@ -895,7 +899,7 @@
 </section>
 <section id="teams">
 <span id="id4"></span><h2>チーム<a class="headerlink" href="#teams" title="この見出しへのパーマリンク">¶</a></h2>
-<p><span class="badge-user">ログイン済ユーザー</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p>
 <p>CryptPadのチームはユーザーのグループで共有されるスペースです。チームには専用のCryptDrive、チャット、役割と権限が与えられたメンバーの一覧があります。</p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
@@ -903,13 +907,13 @@
 </div>
 <p>チームを作成するには、</p>
 <ol class="arabic simple">
-<li><p>ユーザーメニュー（右上のアバター） &gt; <em class="fa fa-users"></em> <strong>チーム</strong>。</p></li>
-<li><p><em class="fa fa-plus-circle"></em> <strong>新規</strong>。</p></li>
+<li><p>ユーザーメニュー（右上のアバター） &gt; <i data-lucide='users-round'></i> <strong>チーム</strong>。</p></li>
+<li><p><i data-lucide='circle-plus'></i> <strong>新規</strong>。</p></li>
 </ol>
 <p>既存のチームを開くには、</p>
 <ol class="arabic simple">
-<li><p>ユーザーメニュー（右上のアバター） &gt; <em class="fa fa-users"></em> <strong>チーム</strong>。</p></li>
-<li><p><em class="fa fa-list"></em> <strong>チーム</strong> &gt; 開きたいチームにある<strong>開く</strong>ボタン。</p></li>
+<li><p>ユーザーメニュー（右上のアバター） &gt; <i data-lucide='users-round'></i> <strong>チーム</strong>。</p></li>
+<li><p><i data-lucide='list'></i> <strong>チーム</strong> &gt; 開きたいチームにある<strong>開く</strong>ボタン。</p></li>
 </ol>
 <section id="team-drive">
 <h3>チームドライブ<a class="headerlink" href="#team-drive" title="この見出しへのパーマリンク">¶</a></h3>
@@ -917,16 +921,16 @@
 </section>
 <section id="team-members">
 <h3>チームのメンバー<a class="headerlink" href="#team-members" title="この見出しへのパーマリンク">¶</a></h3>
-<p>チームのメンバーを管理する場合は、 <em class="fa fa-users"></em> <strong>メンバー</strong>のタブを開いてください。</p>
+<p>チームのメンバーを管理する場合は、 <i data-lucide='users-round'></i> <strong>メンバー</strong>のタブを開いてください。</p>
 </section>
 <section id="invite-members">
 <h3>メンバーを招待<a class="headerlink" href="#invite-members" title="この見出しへのパーマリンク">¶</a></h3>
 <p>チームにメンバーを招待するには、</p>
 <ul class="simple">
-<li><p><em class="fa fa-users"></em> <strong>メンバー</strong>のタブ &gt; <strong>メンバーを招待</strong>。</p></li>
+<li><p><i data-lucide='users-round'></i> <strong>メンバー</strong>のタブ &gt; <strong>メンバーを招待</strong>。</p></li>
 </ul>
-<p><em class="fa fa-address-book"></em> <strong>連絡先</strong>のタブ：チームに招待するCryptPadの連絡先を選択。招待されたユーザーは招待の通知を受信し、チームへの招待を承諾できます。</p>
-<p><em class="fa fa-link"></em> <strong>Link</strong> tab: Copy a link to send through the means of your choice (preferably a secure mode of communication). This link is single-use only. It becomes invalid after someone first uses it to join the team.</p>
+<p><i data-lucide='book-user'></i> <strong>連絡先</strong>のタブ：チームに招待するCryptPadの連絡先を選択。招待されたユーザーは招待の通知を受信し、チームへの招待を承諾できます。</p>
+<p><i data-lucide='link'></i> <strong>Link</strong> tab: Copy a link to send through the means of your choice (preferably a secure mode of communication). This link is single-use only. It becomes invalid after someone first uses it to join the team.</p>
 <ul class="simple">
 <li><p><strong>一時的な名前</strong>：保留中の招待の一覧で招待リンクを特定するのに使用。</p></li>
 <li><p><strong>パスワード</strong>：リンクを傍受から保護します（設定は任意）。</p></li>
@@ -981,9 +985,9 @@
 <h3>管理<a class="headerlink" href="#administration" title="この見出しへのパーマリンク">¶</a></h3>
 <p>各メンバーの役割はチーム内で変更できます。チームの管理者と所有者は、同一または下位の役割のメンバーを管理できます。各メンバーには以下の方法で管理できます。</p>
 <div class="line-block">
-<div class="line"><em class="fa fa-angle-double-up"></em>：上位の役割に昇格。</div>
-<div class="line"><em class="fa fa-angle-double-down"></em>：下位の役割に降格。</div>
-<div class="line"><em class="fa fa-times"></em>：チームからキック。</div>
+<div class="line"><i data-lucide='chevrons-up'></i>：上位の役割に昇格。</div>
+<div class="line"><i data-lucide='chevrons-down'></i>：下位の役割に降格。</div>
+<div class="line"><i data-lucide='x'></i>：チームからキック。</div>
 </div>
 </section>
 <section id="chat">
@@ -992,7 +996,7 @@
 </section>
 <section id="administration-tab">
 <h3>管理タブ<a class="headerlink" href="#administration-tab" title="この見出しへのパーマリンク">¶</a></h3>
-<p><span class="badge-owner">チームの所有者</span></p>
+<p><span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> チームの所有者</span></p>
 <ul class="simple">
 <li><p><strong>公開署名鍵</strong>：定期利用を提供しているインスタンスのチームの特定に使用。</p></li>
 <li><p><strong>チーム名</strong>：チームの名前を変更。</p></li>
@@ -1012,10 +1016,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="share_and_access.html" class="btn btn-neutral float-right" title="共有 / アクセス" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="share_and_access.html" class="btn btn-neutral float-right" title="共有 / アクセス" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="drive.html" class="btn btn-neutral" title="CryptDrive" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="drive.html" class="btn btn-neutral" title="CryptDrive" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -1078,7 +1082,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

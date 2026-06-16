@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Dessin</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#toolbar">Barre d'outils</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#drawing">Dessiner</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Mode Pinceau</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#arrows-select-mode"><em class="fa fa-arrows"></em> Mode Sélection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Mode Pinceau</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#arrows-select-mode"><i data-lucide='move'></i> Mode Sélection</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#export">Export</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -757,20 +761,20 @@
 <img alt="../../_images/app-whiteboard-preview.png" class="screenshot" src="../../_images/app-whiteboard-preview.png" />
 <section id="toolbar">
 <h2>Barre d'outils<a class="headerlink" href="#toolbar" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p><em class="fa fa-picture-o"></em> <strong>Insérer</strong> : Intègre une image dans votre dessin. Vous pouvez choisir une image dans votre CryptDrive ou en importer une depuis votre ordinateur. <span class="badge-user">Utilisateurs enregistrés</span></p>
+<p><i data-lucide='image-plus'></i> <strong>Insérer</strong> : Intègre une image dans votre dessin. Vous pouvez choisir une image dans votre CryptDrive ou en importer une depuis votre ordinateur. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Utilisateurs enregistrés</span></p>
 </section>
 <section id="drawing">
 <h2>Dessiner<a class="headerlink" href="#drawing" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p>Deux modes sont disponibles :</p>
 <ul class="simple">
-<li><p><em class="fa fa-paint-brush"></em> Pinceau pour ajouter de nouvelles formes au dessin.</p></li>
-<li><p><em class="fa fa-arrows"></em> Sélection pour manipuler les formes existantes.</p></li>
+<li><p><i data-lucide='brush-cleaning'></i> Pinceau pour ajouter de nouvelles formes au dessin.</p></li>
+<li><p><i data-lucide='move'></i> Sélection pour manipuler les formes existantes.</p></li>
 </ul>
 <p>Fonctions disponibles dans les deux modes :</p>
 <ul class="simple">
-<li><p><em class="fa fa-undo"></em> : Annuler</p></li>
-<li><p><em class="fa fa-repeat"></em> : Rétablir</p></li>
-<li><p><em class="fa fa-font"></em> : Insérer un élément texte dans le dessin</p></li>
+<li><p><i data-lucide='undo'></i> : Annuler</p></li>
+<li><p><i data-lucide='redo'></i> : Rétablir</p></li>
+<li><p><i data-lucide='type'></i> : Insérer un élément texte dans le dessin</p></li>
 </ul>
 <p>Pour effacer tous les éléments :</p>
 <ul class="simple">
@@ -778,12 +782,12 @@
 </ul>
 </section>
 <section id="paint-brush-paint-mode">
-<h2><em class="fa fa-paint-brush"></em> Mode Pinceau<a class="headerlink" href="#paint-brush-paint-mode" title="Lien permanent vers cette rubrique">¶</a></h2>
+<h2><i data-lucide='brush-cleaning'></i> Mode Pinceau<a class="headerlink" href="#paint-brush-paint-mode" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p>La taille et l'opacité du trait sont réglées dans la barre d'outils de dessin. Un aperçu du curseur à droite permet de visualiser la taille du trait.</p>
 <p>La couleur est sélectionnée dans la palette en bas de la fenêtre. Pour modifier une couleur double clic sur celle-ci et en sélectionner une nouvelle.</p>
 </section>
 <section id="arrows-select-mode">
-<h2><em class="fa fa-arrows"></em> Mode Sélection<a class="headerlink" href="#arrows-select-mode" title="Lien permanent vers cette rubrique">¶</a></h2>
+<h2><i data-lucide='move'></i> Mode Sélection<a class="headerlink" href="#arrows-select-mode" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur un élément pour le sélectionner, puis :</p>
 <ul class="simple">
 <li><p>Déplacer en le faisant glisser.</p></li>
@@ -792,17 +796,17 @@
 <p>Pour supprimer un élément sélectionné :</p>
 <ul class="simple">
 <li><p>Touche <kbd class="kbd docutils literal notranslate">Suppr</kbd>.</p></li>
-<li><p>Bouton <em class="fa fa-trash"></em> dans la barre d'outils de dessin.</p></li>
+<li><p>Bouton <i data-lucide='trash2'></i> dans la barre d'outils de dessin.</p></li>
 </ul>
 </section>
 <section id="export">
 <h2>Export<a class="headerlink" href="#export" title="Lien permanent vers cette rubrique">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-download"></em> <strong>Exporter</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>Fichier</strong> &gt; <i data-lucide='download'></i> <strong>Exporter</strong></div>
 <div class="line">Format supporté : <code class="docutils literal notranslate"><span class="pre">.png</span></code></div>
 </div>
 <p>Pour exporter une image dans votre CryptDrive, par exemple pour l'inclure dans d'autres documents :</p>
-<p><em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-file-image-o"></em> <strong>Sauvegarder une image</strong></p>
+<p><i data-lucide='file'></i> <strong>Fichier</strong> &gt; <i data-lucide='file-image'></i> <strong>Sauvegarder une image</strong></p>
 </section>
 </section>
 
@@ -814,10 +818,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../keyboard_shortcuts.html" class="btn btn-neutral float-right" title="Raccourcis clavier" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../keyboard_shortcuts.html" class="btn btn-neutral float-right" title="Raccourcis clavier" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="diagram.html" class="btn btn-neutral" title="Diagramme" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="diagram.html" class="btn btn-neutral" title="Diagramme" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -880,7 +884,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

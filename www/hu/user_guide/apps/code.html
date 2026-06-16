@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Rajztábla</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Eszköztár</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Rajzolás</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Rajz mód</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Kiválasztás mód</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Rajz mód</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Kiválasztás mód</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Exportálás</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -757,17 +761,17 @@
 <img alt="../../_images/app-code-preview.png" class="screenshot" src="../../_images/app-code-preview.png" />
 <section id="toolbar">
 <h2>Eszköztár<a class="headerlink" href="#toolbar" title="Permalink to this heading">¶</a></h2>
-<p><em class="fa fa-wrench"></em> <strong>Tools</strong>: Show/hide the text editor toolbar.</p>
-<p><em class="fa fa-picture-o"></em> <strong>Insert</strong>: Add an image to the document. The image can be chosen in the drive or uploaded. <span class="badge-user">Logged in users</span></p>
-<p><em class="cptools cptools-palette"></em> <strong>Theme</strong>: Set colors for the editor, detailed <a class="reference internal" href="#app-code-theme"><span class="std std-ref">below</span></a>.</p>
-<p><em class="fa fa-eye"></em> <strong>Preview</strong>: Show/hide the Markdown preview pane.</p>
+<p><i data-lucide='wrench'></i> <strong>Tools</strong>: Show/hide the text editor toolbar.</p>
+<p><i data-lucide='image-plus'></i> <strong>Insert</strong>: Add an image to the document. The image can be chosen in the drive or uploaded. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Logged in users</span></p>
+<p><i data-lucide='palette'></i> <strong>Theme</strong>: Set colors for the editor, detailed <a class="reference internal" href="#app-code-theme"><span class="std std-ref">below</span></a>.</p>
+<p><i data-lucide='eye'></i> <strong>Preview</strong>: Show/hide the Markdown preview pane.</p>
 </section>
 <section id="theme">
 <span id="app-code-theme"></span><h2>Theme<a class="headerlink" href="#theme" title="Permalink to this heading">¶</a></h2>
-<p><em class="fa fa-paint-brush"></em> <strong>Color by author</strong>: Highlight the text written by each user with their cursor color (picked in <a class="reference internal" href="../user_account.html#user-settings-cursor"><span class="std std-ref">user settings</span></a>). When active:</p>
+<p><i data-lucide='brush-cleaning'></i> <strong>Color by author</strong>: Highlight the text written by each user with their cursor color (picked in <a class="reference internal" href="../user_account.html#user-settings-cursor"><span class="std std-ref">user settings</span></a>). When active:</p>
 <ul class="simple">
-<li><p><em class="fa fa-paint-brush"></em> <strong>Hide author colors</strong> to turn off the display of colors in this window, the colors can be turned back on and remain active for other users.</p></li>
-<li><p><em class="fa fa-paint-brush"></em> <strong>Color by author</strong> &gt; <strong>Clear and disable</strong> to turn off the colors for all users and delete the data.</p></li>
+<li><p><i data-lucide='brush-cleaning'></i> <strong>Hide author colors</strong> to turn off the display of colors in this window, the colors can be turned back on and remain active for other users.</p></li>
+<li><p><i data-lucide='brush-cleaning'></i> <strong>Color by author</strong> &gt; <strong>Clear and disable</strong> to turn off the colors for all users and delete the data.</p></li>
 </ul>
 <p><strong>Theme</strong>: Color scheme used in the code editor pane.</p>
 <p><strong>Language</strong>: Used for syntax highlighting.</p>
@@ -775,11 +779,11 @@
 <section id="import-export">
 <h2>Import/Export<a class="headerlink" href="#import-export" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong>.</div>
+<div class="line"><i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='upload'></i> <strong>Import</strong>.</div>
 <div class="line">Supported formats: Any plain text file, the file extension is used to determine the language.</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-download"></em> <strong>Export</strong>.</div>
+<div class="line"><i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='download'></i> <strong>Export</strong>.</div>
 <div class="line">Supported formats: <code class="docutils literal notranslate"><span class="pre">.md</span></code>, any other extension can be typed for the name of the exported file.</div>
 </div>
 </section>
@@ -787,14 +791,14 @@
 <h2>Markdown<a class="headerlink" href="#markdown" title="Permalink to this heading">¶</a></h2>
 <p>The Code application is particularly suited for writing documents in Markdown: a lightweight syntax that offers basic formatting while remaining readable. Markdown is readily converted to other formats such as HTML.</p>
 <p>For examples of Markdown syntax in CryptPad please see:</p>
-<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/kmYt1-pxaMlinUl2+YQSLyZetKE2GJo9QtTlCQ8RNks/"><em class="cptools cptools-code"></em> <strong>Markdown Guide: Basic Syntax</strong></a></p>
+<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/kmYt1-pxaMlinUl2+YQSLyZetKE2GJo9QtTlCQ8RNks/"><i data-lucide='file-code'></i> <strong>Markdown Guide: Basic Syntax</strong></a></p>
 <p>Additionally to basic Markdown syntax, the following features are also available:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">[TOC]</span></code> Inserts a table of contents.</p></li>
 <li><p>Todo list</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[</span> <span class="pre">]</span> <span class="pre">task</span></code> for a task to do: <em class="fa fa-square-o"></em> task.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[x]</span> <span class="pre">task</span></code> for a completed task: <em class="fa fa-check-square"></em> task.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[</span> <span class="pre">]</span> <span class="pre">task</span></code> for a task to do: <i data-lucide='square'></i> task.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[x]</span> <span class="pre">task</span></code> for a completed task: <i data-lucide='square-check'></i> task.</p></li>
 </ul>
 </li>
 </ul>
@@ -811,13 +815,13 @@
 </pre></div>
 </div>
 <p>for detailed examples of the extensions in use please see:</p>
-<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/VJtytDV8tsmlGx0GlR02azrp51A8cl8ivifXf6GQ9RA/"><em class="cptools cptools-code"></em> <strong>Markdown Guide: Extensions</strong></a></p>
+<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/VJtytDV8tsmlGx0GlR02azrp51A8cl8ivifXf6GQ9RA/"><i data-lucide='file-code'></i> <strong>Markdown Guide: Extensions</strong></a></p>
 </section>
 <section id="images">
 <span id="app-code-images"></span><h2>Images<a class="headerlink" href="#images" title="Permalink to this heading">¶</a></h2>
 <p>Markdown syntax to include remote images such as <code class="docutils literal notranslate"><span class="pre">![description](https://site.com/image.jpg)</span></code> is blocked by CryptPad for security reasons.</p>
-<p><span class="badge-user">Logged in users</span></p>
-<p>To insert images from the CryptDrive or upload new ones, use the <em class="fa fa-picture-o"></em> <strong>Insert</strong> menu in the toolbar.</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Logged in users</span></p>
+<p>To insert images from the CryptDrive or upload new ones, use the <i data-lucide='image-plus'></i> <strong>Insert</strong> menu in the toolbar.</p>
 <p>See <a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">Remote Content</span></a> for more details.</p>
 </section>
 <section id="lightbox">
@@ -826,7 +830,7 @@
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Double</span> <span class="pre">click</span></code> on an image or diagram in the Markdown preview.</p></li>
 <li><p>Navigate with the arrow keys.</p></li>
-<li><p>Close the light box with <em class="fa fa-times"></em> or <kbd class="kbd docutils literal notranslate">Esc</kbd>.</p></li>
+<li><p>Close the light box with <i data-lucide='x'></i> or <kbd class="kbd docutils literal notranslate">Esc</kbd>.</p></li>
 </ol>
 </section>
 </section>
@@ -839,10 +843,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="slides.html" class="btn btn-neutral float-right" title="Slides" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="slides.html" class="btn btn-neutral float-right" title="Slides" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="sheets.html" class="btn btn-neutral" title="Spreadsheet" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="sheets.html" class="btn btn-neutral" title="Spreadsheet" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -905,7 +909,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

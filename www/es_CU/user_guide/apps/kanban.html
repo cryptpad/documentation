@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Whiteboard</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Barra de herramientas</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Dibujo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Modo pintura</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Modo seleccionar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Modo pintura</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Modo seleccionar</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Exportar</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -763,19 +767,19 @@
 </ul>
 <p>Eliminar una tarjeta/columna:</p>
 <ul class="simple">
-<li><p>El área <em class="fa fa-trash"></em> aparece una vez que arrastras un elemento.</p></li>
+<li><p>El área <i data-lucide='trash2'></i> aparece una vez que arrastras un elemento.</p></li>
 <li><p>&quot;Arrastra&quot; la tarjeta/columna al área de eliminación de papelera en la parte inferior de la pantalla y &quot;Suelta&quot; la tarjeta/columna.</p></li>
 </ul>
 <p>o</p>
 <ul class="simple">
-<li><p>Botón de <em class="fa fa-pencil"></em> en la tarjeta/columna para abrir el editor&gt; <strong>Eliminar</strong> y confirmar.</p></li>
+<li><p>Botón de <i data-lucide='pencil'></i> en la tarjeta/columna para abrir el editor&gt; <strong>Eliminar</strong> y confirmar.</p></li>
 </ul>
 </section>
 <section id="columns">
 <h2>Columna<a class="headerlink" href="#columns" title="Enlace permanente a este encabezado">¶</a></h2>
 <p>Crea una nueva columna:</p>
 <ul class="simple">
-<li><p>botón <em class="fa fa-plus"></em> a la derecha de las últimas columnas.</p></li>
+<li><p>botón <i data-lucide='plus'></i> a la derecha de las últimas columnas.</p></li>
 </ul>
 <p>Cambiar el título de una columna:</p>
 <ol class="arabic simple">
@@ -785,7 +789,7 @@
 </ol>
 <p>El título y el color de la columna se pueden cambiar en el editor de columnas:</p>
 <ol class="arabic simple">
-<li><p>Botón de <em class="fa fa-pencil"></em> en el título de la columna.</p></li>
+<li><p>Botón de <i data-lucide='pencil'></i> en el título de la columna.</p></li>
 <li><p>Cambiar el título y/o seleccionar el color.</p></li>
 <li><p><strong>Cerrar</strong>, :kbd: <cite>Esc</cite> o: kbd: <cite>Enter</cite></p></li>
 </ol>
@@ -794,8 +798,8 @@
 <h2>Tarjetas<a class="headerlink" href="#cards" title="Enlace permanente a este encabezado">¶</a></h2>
 <p>Crea una nueva tarjeta con los botones en la parte inferior de cada columna:</p>
 <ul class="simple">
-<li><p><em class="cptools cptools-add-bottom"></em> para agregar una tarjeta en la parte inferior de la columna.</p></li>
-<li><p><em class="cptools cptools-add-top"></em> para agregar una tarjeta en la parte superior de la columna.</p></li>
+<li><p><i data-lucide='cp-kanban-add-bottom'></i> para agregar una tarjeta en la parte inferior de la columna.</p></li>
+<li><p><i data-lucide='cp-kanban-add-top'></i> para agregar una tarjeta en la parte superior de la columna.</p></li>
 </ul>
 <p>Cambiar el título de una tarjeta:</p>
 <ol class="arabic simple">
@@ -809,13 +813,13 @@
 <h2>Editor de tarjeta<a class="headerlink" href="#card-editor" title="Enlace permanente a este encabezado">¶</a></h2>
 <p>Abre el editor de tarjeta:</p>
 <ul class="simple">
-<li><p>Botón de <em class="fa fa-pencil"></em> al lado del título de la tarjeta.</p></li>
+<li><p>Botón de <i data-lucide='pencil'></i> al lado del título de la tarjeta.</p></li>
 </ul>
 <p>En el editor de tarjeta:</p>
 <ul class="simple">
 <li><p>Editar el título de la tarjeta.</p></li>
 <li><p>Edita el cuerpo de la tarjeta usando <a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown</a>: Se admiten cursiva, negrita, enlaces, listas, listas de tareas pendientes, etc.</p></li>
-<li><p>Inserta imágenes con el menú <em class="fa fa-picture-o"></em> en la barra de herramientas de Markdown (la sintaxis de Markdown para imágenes remotas está bloqueada, consulta <a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">Contenido remoto</span></a>).</p></li>
+<li><p>Inserta imágenes con el menú <i data-lucide='image-plus'></i> en la barra de herramientas de Markdown (la sintaxis de Markdown para imágenes remotas está bloqueada, consulta <a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">Contenido remoto</span></a>).</p></li>
 <li><p>Elegir color de la tarjeta.</p></li>
 <li><p>Agrega o elimina etiquetas a la tarjeta.</p></li>
 <li><p>Elimina la tarjeta.</p></li>
@@ -823,27 +827,27 @@
 </section>
 <section id="display">
 <h2>Mostrar<a class="headerlink" href="#display" title="Enlace permanente a este encabezado">¶</a></h2>
-<p>Utiliza los íconos <em class="fa fa-minus"></em> y <em class="fa fa-bars"></em> en la parte superior derecha para mostrar:</p>
+<p>Utiliza los íconos <i data-lucide='minus'></i> y <i data-lucide='menu'></i> en la parte superior derecha para mostrar:</p>
 <ul class="simple">
-<li><p><em class="fa fa-minus"></em> solo títulos de la tarjetas.</p></li>
-<li><p><em class="fa fa-bars"></em> el contenido completo de la tarjeta.</p></li>
+<li><p><i data-lucide='minus'></i> solo títulos de la tarjetas.</p></li>
+<li><p><i data-lucide='menu'></i> el contenido completo de la tarjeta.</p></li>
 </ul>
 <p>Las etiquetas en la parte superior del tablero se utilizan para filtrar tarjetas:</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code>: en una o más etiquetas.</p></li>
 <li><p>Solo se muestran las tarjetas con estas etiquetas.</p></li>
 <li><p>Cualquier tarjeta nueva recibirá automáticamente las etiquetas seleccionadas.</p></li>
-<li><p>Haz <code class="docutils literal notranslate"><span class="pre">Click</span></code> en una etiqueta inicial para anular su selección o utiliza <em class="fa fa-times"></em> <strong>Borrar filtro</strong> ( a la izquierda de la lista) para anular la selección de todas las etiquetas.</p></li>
+<li><p>Haz <code class="docutils literal notranslate"><span class="pre">Click</span></code> en una etiqueta inicial para anular su selección o utiliza <i data-lucide='x'></i> <strong>Borrar filtro</strong> ( a la izquierda de la lista) para anular la selección de todas las etiquetas.</p></li>
 </ol>
 </section>
 <section id="import-export">
 <h2>Importar/Exportar<a class="headerlink" href="#import-export" title="Enlace permanente a este encabezado">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Archivo</strong> &gt; <em class="fa fa-upload"></em> <strong>Importar</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>Archivo</strong> &gt; <i data-lucide='upload'></i> <strong>Importar</strong></div>
 <div class="line">Formatos soportados: archivos <code class="docutils literal notranslate"><span class="pre">.json</span></code> exportados por esta aplicación.</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Archivos</strong>&gt; <em class="fa fa-download"></em> <strong>Exportar</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>Archivos</strong>&gt; <i data-lucide='download'></i> <strong>Exportar</strong></div>
 <div class="line">formato soportado: <code class="docutils literal notranslate"><span class="pre">.json</span></code>.</div>
 </div>
 </section>
@@ -857,10 +861,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="diagram.html" class="btn btn-neutral float-right" title="Diagrama" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="diagram.html" class="btn btn-neutral float-right" title="Diagrama" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="form.html" class="btn btn-neutral" title="Formulario" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="form.html" class="btn btn-neutral" title="Formulario" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -922,7 +926,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

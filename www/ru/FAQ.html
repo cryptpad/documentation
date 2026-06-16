@@ -42,6 +42,8 @@
 
   
   <script src="_static/js/modernizr.min.js"></script>
+  
+  <script src="_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="user_guide/apps/whiteboard.html">Рисунки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/apps/whiteboard.html#toolbar">Инструменты</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/apps/whiteboard.html#drawing">Рисование</a></li>
-<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Режим рисования</a></li>
-<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Режим выбора</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Режим рисования</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Режим выбора</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/apps/whiteboard.html#export">Экспорт</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -791,10 +795,10 @@
 <p>Администраторы экземпляра CryptPad не могут восстановить или сбросить пароли пользователей. Это также гарантирует, что они не смогут получить доступ к каким-либо пользовательским данным (например, к содержанию документов).</p>
 <p>Если Вы забыли пароль для своей учетной записи, но всё ещё авторизованы в системе, вы можете перенести свои данные в новую учетную запись выполнив следующие шаги:</p>
 <ol class="arabic simple">
-<li><p>Находясь в учетной записи от которой утерян пароль, перейдите к: <strong>Меню пользователя</strong> (аватарка в правом верхнем углу) &gt; <em class="fa fa-gear"></em> <strong>Настройки</strong> &gt; <em class="fa fa-hdd-o"></em> <strong>CryptDrive</strong></p></li>
+<li><p>Находясь в учетной записи от которой утерян пароль, перейдите к: <strong>Меню пользователя</strong> (аватарка в правом верхнем углу) &gt; <i data-lucide='settings'></i> <strong>Настройки</strong> &gt; <i data-lucide='hard-drive'></i> <strong>CryptDrive</strong></p></li>
 <li><p>Нажмите кнопку <strong>Резервное копирование</strong>, чтобы скачать файл, содержащий ключи ко всем документам. (примечание: это отличается от <strong>Скачать мой Cryptdrive</strong>, которое сохраняет содержимое всех отдельных документов)</p></li>
 <li><p>В другом браузере зарегистрируйте новую учетную запись с известным паролем</p></li>
-<li><p>While logged in to the new account: <strong>User Menu</strong> (avatar at the top right) &gt; <em class="fa fa-gear"></em> <strong>Settings</strong> &gt; <em class="fa fa-hdd-o"></em> <strong>CryptDrive</strong> and click the <strong>Restore</strong> button</p></li>
+<li><p>While logged in to the new account: <strong>User Menu</strong> (avatar at the top right) &gt; <i data-lucide='settings'></i> <strong>Settings</strong> &gt; <i data-lucide='hard-drive'></i> <strong>CryptDrive</strong> and click the <strong>Restore</strong> button</p></li>
 </ol>
 </section>
 <section id="how-to-import-export-to-from-another-platform">
@@ -807,7 +811,7 @@
 <p>It is possible to upload <strong>files</strong> to CryptPad for secure storage and sharing, however this does not make every file an editable CryptPad <strong>document</strong> right away. For this, you either have to:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Щелчок</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по загруженному файлу &gt; <strong>Открыть в редакторе</strong>, или...</p></li>
-<li><p>Create a blank document and use the <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> functionality in the appropriate CryptPad editor as explained below</p></li>
+<li><p>Create a blank document and use the <i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='upload'></i> <strong>Import</strong> functionality in the appropriate CryptPad editor as explained below</p></li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Предупреждение</p>
@@ -829,9 +833,9 @@
 <li><p>Export your document as <code class="docutils literal notranslate"><span class="pre">.docx</span></code> or <code class="docutils literal notranslate"><span class="pre">.odt</span></code> in your existing software</p></li>
 <li><p>Save the file to your computer</p></li>
 <li><p>Open a new <a class="reference internal" href="user_guide/apps/document.html#app-documents"><span class="std std-ref">Документ</span></a> file (or an existing one to replace the contents)</p></li>
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> and select your file</p></li>
+<li><p><i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='upload'></i> <strong>Import</strong> and select your file</p></li>
 </ol>
-<p>Для экспорта используйте <em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-download"></em> <strong>Экспорт</strong> и выберите формат:</p>
+<p>Для экспорта используйте <i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='download'></i> <strong>Экспорт</strong> и выберите формат:</p>
 <ul class="simple">
 <li><p>To use in Microsoft Word or Google Docs, select <code class="docutils literal notranslate"><span class="pre">.docx</span></code></p></li>
 <li><p>Чтобы использовать его в LibreOffice Writer, выберите <code class="docutils literal notranslate"><span class="pre">.odt</span></code></p></li>
@@ -846,9 +850,9 @@
 <li><p>Export your document as <code class="docutils literal notranslate"><span class="pre">.pptx</span></code> or <code class="docutils literal notranslate"><span class="pre">.odp</span></code> in your existing software</p></li>
 <li><p>Save the file to your computer</p></li>
 <li><p>Open a new <a class="reference internal" href="user_guide/apps/presentation.html#app-presentation"><span class="std std-ref">Презентация</span></a> document (or an existing one to replace the contents)</p></li>
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> and select your file</p></li>
+<li><p><i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='upload'></i> <strong>Import</strong> and select your file</p></li>
 </ol>
-<p>Для экспорта используйте <em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-download"></em> <strong>Экспорт</strong> и выберите формат:</p>
+<p>Для экспорта используйте <i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='download'></i> <strong>Экспорт</strong> и выберите формат:</p>
 <ul class="simple">
 <li><p>To use in Microsoft PowerPoint or Google Slides, select <code class="docutils literal notranslate"><span class="pre">.pptx</span></code></p></li>
 <li><p>To use in LibreOffice Impress, select <code class="docutils literal notranslate"><span class="pre">.odp</span></code></p></li>
@@ -863,9 +867,9 @@
 <li><p>Export your document as <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code> or <code class="docutils literal notranslate"><span class="pre">.ods</span></code> in your existing software</p></li>
 <li><p>Save the file to your computer</p></li>
 <li><p>Open a new <a class="reference internal" href="user_guide/apps/sheets.html#app-sheets"><span class="std std-ref">Таблица</span></a> document (or an existing one to replace the contents)</p></li>
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> and select your file</p></li>
+<li><p><i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='upload'></i> <strong>Import</strong> and select your file</p></li>
 </ol>
-<p>Для экспорта используйте <em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-download"></em> <strong>Экспорт</strong> и выберите формат:</p>
+<p>Для экспорта используйте <i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='download'></i> <strong>Экспорт</strong> и выберите формат:</p>
 <ul class="simple">
 <li><p>To use in Microsoft Excel or Google sheets, select <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code></p></li>
 <li><p>To use in LibreOffice Calc, select <code class="docutils literal notranslate"><span class="pre">.ods</span></code></p></li>
@@ -880,9 +884,9 @@
 <li><p>Export your document as HTML in your existing software</p></li>
 <li><p>Save the file to your computer</p></li>
 <li><p>Open a new <a class="reference internal" href="user_guide/apps/richtext.html#app-rich-text"><span class="std std-ref">Документ</span></a> document on CryptPad (or an existing one to replace the contents)</p></li>
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong> and select your file</p></li>
+<li><p><i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='upload'></i> <strong>Import</strong> and select your file</p></li>
 </ol>
-<p>Для экспорта используйте <em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-download"></em> <strong>Экспорт</strong> и выберите <code class="docutils literal notranslate"><span class="pre">.doc</span></code> в качестве формата.</p>
+<p>Для экспорта используйте <i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='download'></i> <strong>Экспорт</strong> и выберите <code class="docutils literal notranslate"><span class="pre">.doc</span></code> в качестве формата.</p>
 </section>
 </section>
 <section id="i-cannot-do-x-with-a-document-i-created">
@@ -960,10 +964,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="how_to_contribute.html" class="btn btn-neutral float-right" title="Как внести свой вклад" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="how_to_contribute.html" class="btn btn-neutral float-right" title="Как внести свой вклад" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="dev_guide/translations.html" class="btn btn-neutral" title="Adding Translations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="dev_guide/translations.html" class="btn btn-neutral" title="Adding Translations" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -1026,7 +1030,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

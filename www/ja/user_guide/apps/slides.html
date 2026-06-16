@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">ホワイトボード</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">ツールバー</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">描画</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> 描画モード</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> 選択モード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> 描画モード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> 選択モード</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">エクスポート</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -757,11 +761,11 @@
 <img alt="../../_images/app-slides-preview.png" class="screenshot" src="../../_images/app-slides-preview.png" />
 <section id="toolbar">
 <h2>ツールバー<a class="headerlink" href="#toolbar" title="この見出しへのパーマリンク">¶</a></h2>
-<p><em class="fa fa-wrench"></em> <strong>ツール</strong>：テキストエディターのツールを表示または非表示。</p>
-<p><em class="fa fa-picture-o"></em> <strong>挿入</strong>：画像をドキュメントに追加。画像はドライブから選択するかアップロードできます。 <span class="badge-user">ログイン済ユーザー</span></p>
-<p><em class="cptools cptools-palette"></em> <strong>テーマ</strong>：エディターの色を設定。詳細については<a class="reference internal" href="#app-slides-theme"><span class="std std-ref">以下</span></a>を参照。</p>
-<p><em class="fa fa-eye"></em> <strong>プレビュー</strong>：スライドのプレビューパネルの表示の切り替え。</p>
-<p><em class="fa fa-play-circle"></em> <strong>プレゼンテーション</strong>：スライドのプレゼンテーションを全画面で開始。</p>
+<p><i data-lucide='wrench'></i> <strong>ツール</strong>：テキストエディターのツールを表示または非表示。</p>
+<p><i data-lucide='image-plus'></i> <strong>挿入</strong>：画像をドキュメントに追加。画像はドライブから選択するかアップロードできます。 <span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p>
+<p><i data-lucide='palette'></i> <strong>テーマ</strong>：エディターの色を設定。詳細については<a class="reference internal" href="#app-slides-theme"><span class="std std-ref">以下</span></a>を参照。</p>
+<p><i data-lucide='eye'></i> <strong>プレビュー</strong>：スライドのプレビューパネルの表示の切り替え。</p>
+<p><i data-lucide='circle-play'></i> <strong>プレゼンテーション</strong>：スライドのプレゼンテーションを全画面で開始。</p>
 </section>
 <section id="writing-slides-with-markdown">
 <h2>マークダウンでスライドを作成<a class="headerlink" href="#writing-slides-with-markdown" title="この見出しへのパーマリンク">¶</a></h2>
@@ -772,7 +776,7 @@ https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdo
 </section>
 <section id="theme">
 <span id="app-slides-theme"></span><h2>テーマ<a class="headerlink" href="#theme" title="この見出しへのパーマリンク">¶</a></h2>
-<p><em class="fa fa-gear"></em> <strong>オプション</strong>:</p>
+<p><i data-lucide='settings'></i> <strong>オプション</strong>:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p><strong>レイアウト</strong>：スライド番号、日付、タイトル、アニメーションの切り替え。</p></li>
@@ -780,25 +784,25 @@ https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdo
 <li><p><strong>ユーザー定義のCSS</strong>：CSSコードを貼り付けてプレゼンテーションの表示をカスタマイズ。</p></li>
 </ul>
 </div></blockquote>
-<p><em class="fa fa-i-cursor"></em> <strong>テキストの色</strong>、 <em class="fa fa-square-o"></em> <strong>背景色</strong>：プレゼンテーションの色を選択。</p>
+<p><i data-lucide='text-cursor'></i> <strong>テキストの色</strong>、 <i data-lucide='square'></i> <strong>背景色</strong>：プレゼンテーションの色を選択。</p>
 <p><strong>テーマ</strong>：コードエディターのパネルで使用する色テーマ。</p>
 </section>
 <section id="import-export">
 <h2>インポート/エクスポート<a class="headerlink" href="#import-export" title="この見出しへのパーマリンク">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>ファイル</strong> &gt; <em class="fa fa-upload"></em> <strong>インポート</strong>。</div>
+<div class="line"><i data-lucide='file'></i> <strong>ファイル</strong> &gt; <i data-lucide='upload'></i> <strong>インポート</strong>。</div>
 <div class="line">サポートするフォーマット：プレーンテキストファイル。</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>ファイル</strong> &gt; <em class="fa fa-download"></em> <strong>エクスポート</strong>。</div>
+<div class="line"><i data-lucide='file'></i> <strong>ファイル</strong> &gt; <i data-lucide='download'></i> <strong>エクスポート</strong>。</div>
 <div class="line">サポートするフォーマット：<code class="docutils literal notranslate"><span class="pre">.md</span></code>。</div>
 </div>
 </section>
 <section id="images">
 <h2>画像<a class="headerlink" href="#images" title="この見出しへのパーマリンク">¶</a></h2>
 <p>リモートの画像を表示する <code class="docutils literal notranslate"><span class="pre">![説明文](https://site.com/image.jpg)</span></code> などの記法はセキュリティー上の理由でCryptPadでは使用できません。</p>
-<p><span class="badge-user">ログイン済ユーザー</span></p>
-<p>CryptDriveから画像を挿入したり新しい画像をアップロードしたりする場合は、ツールバーの <em class="fa fa-picture-o"></em> <strong>挿入</strong> メニューを使用してください。</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p>
+<p>CryptDriveから画像を挿入したり新しい画像をアップロードしたりする場合は、ツールバーの <i data-lucide='image-plus'></i> <strong>挿入</strong> メニューを使用してください。</p>
 <p>詳細については<a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">サーバー外のコンテンツ</span></a>をご覧ください。</p>
 </section>
 <section id="lightbox">
@@ -807,7 +811,7 @@ https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdo
 <ol class="arabic simple">
 <li><p>マークダウンのプレビューで画像またはダイアグラムを <code class="docutils literal notranslate"><span class="pre">ダブルクリック</span></code> 。</p></li>
 <li><p>矢印キーで選択。</p></li>
-<li><p><em class="fa fa-times"></em> または <kbd class="kbd docutils literal notranslate">Esc</kbd> でギャラリー画面を閉じる。</p></li>
+<li><p><i data-lucide='x'></i> または <kbd class="kbd docutils literal notranslate">Esc</kbd> でギャラリー画面を閉じる。</p></li>
 </ol>
 </section>
 </section>
@@ -820,10 +824,10 @@ https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdo
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="form.html" class="btn btn-neutral float-right" title="フォーム" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="form.html" class="btn btn-neutral float-right" title="フォーム" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="code.html" class="btn btn-neutral" title="コード / マークダウン" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="code.html" class="btn btn-neutral" title="コード / マークダウン" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -886,7 +890,10 @@ https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdo
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

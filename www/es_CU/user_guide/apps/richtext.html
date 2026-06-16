@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Whiteboard</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Barra de herramientas</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Dibujo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Modo pintura</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Modo seleccionar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Modo pintura</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Modo seleccionar</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Exportar</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -757,18 +761,18 @@
 <img alt="../../_images/app-richtext-preview.png" class="screenshot" src="../../_images/app-richtext-preview.png" />
 <section id="toolbar">
 <h2>Barra de herramientas<a class="headerlink" href="#toolbar" title="Enlace permanente a este encabezado">¶</a></h2>
-<p><em class="fa fa-wrench"></em> <strong>Herramientas</strong>: Muestra/oculta la barra de herramientas del editor de texto.</p>
-<p><em class="fa fa-picture-o"></em> <strong>Insertar</strong>: Añade una imagen al documento. La imagen se puede elegir en el disco o cargar. <span class="badge-user">Logged in users</span></p>
+<p><i data-lucide='wrench'></i> <strong>Herramientas</strong>: Muestra/oculta la barra de herramientas del editor de texto.</p>
+<p><i data-lucide='image-plus'></i> <strong>Insertar</strong>: Añade una imagen al documento. La imagen se puede elegir en el disco o cargar. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Logged in users</span></p>
 </section>
 <section id="view-settings">
 <h2>Ver configuraciones<a class="headerlink" href="#view-settings" title="Enlace permanente a este encabezado">¶</a></h2>
 <p>Los botones en la parte superior del editor controlan la visualización de los elementos del editor de texto.</p>
-<p><em class="fa fa-list-ul"></em> : Mostrar/ocultar el esquema del documento.</p>
-<p><em class="fa fa-comment"></em> : Mostrar/ocultar los comentarios (un ícono rojo cuando está cerrado indica que hay comentarios).</p>
-<p><em class="fa fa-expand"></em> : Utiliza todo el ancho de la ventana para el editor de texto.</p>
-<p><em class="fa fa-compress"></em> : Utiliza el &quot;modo de página&quot; de ancho reducido para el editor de texto.</p>
+<p><i data-lucide='list'></i> : Mostrar/ocultar el esquema del documento.</p>
+<p><i data-lucide='message-square-text'></i> : Mostrar/ocultar los comentarios (un ícono rojo cuando está cerrado indica que hay comentarios).</p>
+<p><i data-lucide='square-plus'></i> : Utiliza todo el ancho de la ventana para el editor de texto.</p>
+<p><i data-lucide='minimize2'></i> : Utiliza el &quot;modo de página&quot; de ancho reducido para el editor de texto.</p>
 <p>Para establecer valores predeterminados para estas configuraciones, por ejemplo para controlar qué secciones son visibles cuando los destinatarios visitan un enlace compartido al documento, utilice el cuadro de diálogo <strong>Configuración del documento</strong>:</p>
-<p><em class="fa fa-file-o"></em> <strong>Archivo</strong> &gt; <em class="fa fa-cog"></em> <strong>Configuración del documento</strong>.</p>
+<p><i data-lucide='file'></i> <strong>Archivo</strong> &gt; <i data-lucide='settings'></i> <strong>Configuración del documento</strong>.</p>
 </section>
 <section id="editing">
 <h2>Edición<a class="headerlink" href="#editing" title="Enlace permanente a este encabezado">¶</a></h2>
@@ -792,16 +796,16 @@
 <section id="import-export">
 <h2>Importar/Exportar<a class="headerlink" href="#import-export" title="Enlace permanente a este encabezado">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Archivo</strong> &gt; <em class="fa fa-upload"></em> <strong>Importar</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>Archivo</strong> &gt; <i data-lucide='upload'></i> <strong>Importar</strong></div>
 <div class="line">Formatos soportados: <code class="docutils literal notranslate"><span class="pre">.html</span></code>, <code class="docutils literal notranslate"><span class="pre">.md</span></code>.</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Archivo</strong> &gt; <em class="fa fa-download"></em> <strong>Exportar</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>Archivo</strong> &gt; <i data-lucide='download'></i> <strong>Exportar</strong></div>
 <div class="line">Formatos soportados: <code class="docutils literal notranslate"><span class="pre">.html</span></code>, <code class="docutils literal notranslate"><span class="pre">.doc</span></code>, <code class="docutils literal notranslate"><span class="pre">.md</span></code>.</div>
 </div>
 <p>Para imprimir o exportar un PDF:</p>
 <ol class="arabic simple">
-<li><p><em class="fa fa-file-o"></em> <strong>Archivo</strong> &gt; <em class="fa fa-print"></em> <strong>Imprimir</strong>.</p></li>
+<li><p><i data-lucide='file'></i> <strong>Archivo</strong> &gt; <i data-lucide='printer'></i> <strong>Imprimir</strong>.</p></li>
 <li><p>Selecciona tu impresora o &quot;imprimir en archivo&quot;.</p></li>
 </ol>
 </section>
@@ -810,14 +814,14 @@
 <p>Para comentar una parte del texto:</p>
 <ol class="arabic simple">
 <li><p>Selecciona el texto a comentar.</p></li>
-<li><p><em class="fa fa-comment"></em> botón , ya sea a la derecha del texto o en la barra de herramientas del editor de texto.</p></li>
+<li><p><i data-lucide='message-square-text'></i> botón , ya sea a la derecha del texto o en la barra de herramientas del editor de texto.</p></li>
 <li><p>Escribe el comentario.</p></li>
-<li><p><em class="fa fa-send-o"></em> <strong>Entregar</strong>.</p></li>
+<li><p><i data-lucide='send'></i> <strong>Entregar</strong>.</p></li>
 </ol>
 <p><code class="docutils literal notranslate"><span class="pre">Click</span></code> en un comentario para seleccionarlo, luego:</p>
 <ul class="simple">
-<li><p><em class="fa fa-reply"></em> <strong>Responder</strong>: Agrega un comentario como respuesta.</p></li>
-<li><p><em class="fa fa-check"></em> <strong>Resolver</strong>: Elimina el comentario después de la confirmación.</p></li>
+<li><p><i data-lucide='reply'></i> <strong>Responder</strong>: Agrega un comentario como respuesta.</p></li>
+<li><p><i data-lucide='check'></i> <strong>Resolver</strong>: Elimina el comentario después de la confirmación.</p></li>
 </ul>
 <p>Para notificar a los contactos en un comentario, menciónalos con <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> y su <a class="reference internal" href="../user_account.html#user-settings-account"><span class="std std-ref">nombre de la pantalla</span></a>.</p>
 <p>Recibirás notificaciones cuando:</p>
@@ -836,10 +840,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="document.html" class="btn btn-neutral float-right" title="Document" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="document.html" class="btn btn-neutral float-right" title="Document" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="general.html" class="btn btn-neutral" title="General" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="general.html" class="btn btn-neutral" title="General" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -901,7 +905,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

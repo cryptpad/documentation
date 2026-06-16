@@ -42,6 +42,8 @@
 
   
   <script src="../_static/js/modernizr.min.js"></script>
+  
+  <script src="../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Dessin</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">Barre d'outils</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">Dessiner</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Mode Pinceau</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Mode Sélection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Mode Pinceau</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Mode Sélection</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#export">Export</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -779,19 +783,19 @@
 </section>
 <section id="passwords-for-documents-and-folders">
 <span id="passwords"></span><h2>Mot de passe des documents et dossiers<a class="headerlink" href="#passwords-for-documents-and-folders" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p><span class="badge-user">Utilisateur·ices enregistré·es</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Utilisateur·ices enregistré·es</span></p>
 <p>Lorsque vous partagez le lien d'un document ou dossier à travers un canal non sécurisé (par exemple par e-mail ou SMS), il se peut que quelqu'un l'intercepte et y accède. Pour éviter cela, les <a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">propriétaires</span></a> d'un document ou dossier peuvent ajouter un mot de passe.</p>
 <p>Quand vous <a class="reference internal" href="share_and_access.html#share-contacts"><span class="std std-ref">partagez avec vos contacts ou équipes directement sur CryptPad</span></a>, les communications sont chiffrées et nous partons du principe que vous voulez donner l'accès. C'est pourquoi le mot de passe est alors stocké et envoyé avec le document quand vous le partagez. Les destinataires, ou vous-même, n'ont <strong>pas</strong> à le donner pour ouvrir le document.</p>
 <p>Vous pouvez ajouter un mot de passe à un document lors de sa <a class="reference internal" href="apps/general.html#new-document"><span class="std std-ref">création</span></a>.</p>
 <p>Vous pouvez aussi ajouter ou modifier un mot de passe dans le menu <a class="reference internal" href="share_and_access.html#access"><span class="std std-ref">Accès</span></a> :</p>
 <ul class="simple">
-<li><p>Dans le CryptDrive : <cite>Clique droit</cite> &gt; <em class="fa fa-unlock-alt"></em> <strong>Accès</strong>.</p></li>
-<li><p>Dans la barre d'outils du document : <em class="fa fa-unlock-alt"></em> <strong>Accès</strong>.</p></li>
+<li><p>Dans le CryptDrive : <cite>Clique droit</cite> &gt; <i data-lucide='lock-open'></i> <strong>Accès</strong>.</p></li>
+<li><p>Dans la barre d'outils du document : <i data-lucide='lock-open'></i> <strong>Accès</strong>.</p></li>
 </ul>
 </section>
 <section id="verifying-contacts">
 <span id="id1"></span><h2>Vérifier vos contacts<a class="headerlink" href="#verifying-contacts" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p><span class="badge-user">Utilisateur·ices enregistré·es</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Utilisateur·ices enregistré·es</span></p>
 <p>Pour vérifier l'identité d'un de vos contacts (c’est à dire que le contact est réellement la personne que vous pensez), vous pouvez comparer les clés publiques de signature :</p>
 <ol class="arabic simple">
 <li><p>Demandez à votre contact de partager <a class="reference internal" href="user_account.html#user-settings-account"><span class="std std-ref">sa clé publique</span></a> par un canal sécurisé avec vous.</p></li>
@@ -800,7 +804,7 @@
 </section>
 <section id="self-destructing-documents">
 <span id="id2"></span><h2>Documents éphémères<a class="headerlink" href="#self-destructing-documents" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p><span class="badge-user">Utilisateur·ices enregistré·es</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Utilisateur·ices enregistré·es</span></p>
 <p>Les documents éphémères vont être détruits automatiquement sans interaction des utilisateur·ices. Cela garantit que les données sensibles ne restent pas accessible pour toujours.</p>
 <p>Il y a deux méthodes pour créer des documents éphémères :</p>
 <ul class="simple">
@@ -810,22 +814,22 @@
 </section>
 <section id="remote-disconnect">
 <span id="id3"></span><h2>Déconnexion à distance<a class="headerlink" href="#remote-disconnect" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p><span class="badge-user">Utilisateur·ices enregistré·es</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Utilisateur·ices enregistré·es</span></p>
 <p>Dans certains cas (vol ou perte de matériel, oubli d'une session ouverte sur un ordinateur partagé, etc.) il peut être utile de déconnecter toutes les sessions CryptPad actives. Cela peut être effectué de deux manières :</p>
 <ul class="simple">
-<li><p>Menu utilisateur·ice (avatar en haut à droite) &gt; <em class="fa fa-gear"></em> <strong>Préférences</strong> &gt; <em class="fa fa-lock"></em> <strong>Sécurité et confidentialité</strong> &gt; <strong>SE DÉCONNECTER</strong>.</p></li>
+<li><p>Menu utilisateur·ice (avatar en haut à droite) &gt; <i data-lucide='settings'></i> <strong>Préférences</strong> &gt; <i data-lucide='lock'></i> <strong>Sécurité et confidentialité</strong> &gt; <strong>SE DÉCONNECTER</strong>.</p></li>
 </ul>
 <p>Cette option déconnecte toutes les sessions <strong>sauf</strong> celle depuis laquelle elle est activée.</p>
 <ul class="simple">
-<li><p>Menu utilisateur·ice (avatar en haut à droite) &gt; <em class="fa fa-plug"></em> <strong>Se déconnecter partout</strong>.</p></li>
+<li><p>Menu utilisateur·ice (avatar en haut à droite) &gt; <i data-lucide='unplug'></i> <strong>Se déconnecter partout</strong>.</p></li>
 </ul>
 <p>Cette option déconnecte toutes les sessions à distance <strong>y compris</strong> celle depuis laquelle elle est activée.</p>
 </section>
 <section id="remote-content">
 <span id="id4"></span><h2>Contenu distant<a class="headerlink" href="#remote-content" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p>Dans les éditeurs Markdown (<a class="reference internal" href="apps/code.html#app-code"><span class="std std-ref">Code / Markdown</span></a>, <a class="reference internal" href="apps/slides.html#app-slides"><span class="std std-ref">Présentation</span></a>, <a class="reference internal" href="apps/kanban.html#app-kanban"><span class="std std-ref">Kanban</span></a>), CryptPad bloque les images et autres contenus hébergés à distance pour éviter tout risque de traçage.</p>
-<p><span class="badge-user">Utilisateur·ices enregistré·es</span></p>
-<p>Pour insérer des images à partir du CryptDrive ou pour en ajouter de nouvelles, utiliser le menu <em class="fa fa-picture-o"></em> <strong>Insert</strong>. Ce menu insère un élément <code class="docutils literal notranslate"><span class="pre">media-tag</span></code> qui est plus complexe que la syntaxe d'image Markdown mais qui est géré automatiquement.</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Utilisateur·ices enregistré·es</span></p>
+<p>Pour insérer des images à partir du CryptDrive ou pour en ajouter de nouvelles, utiliser le menu <i data-lucide='image-plus'></i> <strong>Insert</strong>. Ce menu insère un élément <code class="docutils literal notranslate"><span class="pre">media-tag</span></code> qui est plus complexe que la syntaxe d'image Markdown mais qui est géré automatiquement.</p>
 </section>
 <section id="known-caveats">
 <span id="known-sec-issue"></span><h2>Limitations connues<a class="headerlink" href="#known-caveats" title="Lien permanent vers cette rubrique">¶</a></h2>
@@ -857,10 +861,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="drive.html" class="btn btn-neutral float-right" title="CryptDrive" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="drive.html" class="btn btn-neutral float-right" title="CryptDrive" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="support.html" class="btn btn-neutral" title="Support" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="support.html" class="btn btn-neutral" title="Support" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -923,7 +927,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

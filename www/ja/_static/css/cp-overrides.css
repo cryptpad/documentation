@@ -36,6 +36,39 @@
     margin-bottom: 2rem;
 }
 
+.rst-content svg[class*="lucide-"] {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+}
+
+.rst-footer-buttons svg.lucide,
+.rst-breadcrumbs-buttons svg.lucide {
+    width: 1.25em;
+    height: 1.25em;
+    vertical-align: middle;
+}
+@media screen and (max-width: 800px) {
+    .wy-nav-top::before,
+    .wy-nav-top::after {
+        display: none;
+        content: none;
+    }
+
+    .wy-nav-top-menu {
+        position: absolute;
+        left: 1em;
+        top: 50%;
+        transform: translateY(-50%);
+        line-height: 0;
+    }
+
+    .wy-nav-top-menu svg.lucide {
+        width: 1.875rem;
+        height: 1.875rem;
+    }
+}
+
 h1, h2, h3 {
     font-family: "IBM Plex Mono";
 }
@@ -47,8 +80,50 @@ h1, h2, h3 {
     font-family: "Open Sans", sans-serif;
 }
 
-.rst-content .admonition-title::before {
-    font-family: "FontAwesome";
+.rst-content .admonition-title::before,
+.rst-content .admonition-title::after {
+    content: none;
+    display: none;
+}
+
+.rst-content a.headerlink.lucide-permalink::before,
+.rst-content a.headerlink.lucide-permalink::after {
+    content: none;
+    display: none;
+    visibility: hidden;
+}
+
+.rst-content a.headerlink.lucide-permalink {
+    visibility: visible;
+    opacity: 0;
+    display: inline-block;
+    margin-left: 0.5em;
+    text-decoration: none;
+    color: #0087ff;
+}
+
+.rst-content :is(h1, h2, h3, h4, h5, h6, dl dt, p, figcaption, table > caption):hover a.headerlink.lucide-permalink,
+.rst-content a.headerlink.lucide-permalink:focus {
+    opacity: 1;
+}
+
+/* Sidebar expand/collapse chevrons */
+
+.wy-menu-vertical li span.toctree-expand.lucide-toctree-expand::before,
+.wy-menu-vertical li.on a span.toctree-expand.lucide-toctree-expand::before,
+.wy-menu-vertical li.current > a span.toctree-expand.lucide-toctree-expand::before {
+    content: none;
+    display: none;
+}
+
+.wy-menu-vertical span.toctree-expand.lucide-toctree-expand svg.lucide {
+    vertical-align: middle;
+    transition: transform 0.15s ease;
+}
+
+.wy-menu-vertical li.on a span.toctree-expand.lucide-toctree-expand svg.lucide,
+.wy-menu-vertical li.current > a span.toctree-expand.lucide-toctree-expand svg.lucide {
+    transform: rotate(90deg);
 }
 
 /* List fix */
@@ -73,18 +148,6 @@ ul.simple li p {
     font-size: 0.8em;
     background-color: #c2e2f8;
     padding: 0px 5px;
-}
-
-.badge-owner::before, .badge-user::before {
-    font-family: "FontAwesome";
-}
-
-.badge-user::before {
-    content: " ";
-}
-
-.badge-owner::before {
-    content: " ";
 }
 
 h3 {
@@ -161,10 +224,6 @@ html.writer-html5 .rst-content dl.option-list kbd {
     font-size: inherit
 }
 
-.rst-content table > caption .headerlink:focus, .rst-content table > caption:hover .headerlink {
-    opacity: 1
-}
-
 .rst-content p a {
     overflow-wrap: anywhere;
 }
@@ -182,10 +241,6 @@ html.writer-html5 .rst-content dl.option-list kbd {
 .rst-content table.field-list th p,
 .rst-content table.field-list th ul {
     font-size: inherit;
-}
-
-.rst-content table > caption .headerlink:after {
-    font-size: 12px;
 }
 
 .rst-content table.docutils th {

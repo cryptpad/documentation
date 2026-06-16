@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Рисунки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Инструменты</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Рисование</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Режим рисования</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Режим выбора</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Режим рисования</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Режим выбора</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Экспорт</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -760,14 +764,14 @@
 <li><p>Из любого места в CryptPad: <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">e</kbd></kbd>.</p></li>
 <li><p>Из CryptDrive:</p>
 <ul>
-<li><p><em class="fa fa-plus"></em> <strong>Новый</strong> на панели инструментов.</p></li>
-<li><p><em class="fa fa-plus"></em> <strong>Новый</strong> в нижней части списка файлов/сетки.</p></li>
+<li><p><i data-lucide='plus'></i> <strong>Новый</strong> на панели инструментов.</p></li>
+<li><p><i data-lucide='plus'></i> <strong>Новый</strong> в нижней части списка файлов/сетки.</p></li>
 </ul>
 </li>
-<li><p>Из документа: <em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-plus"></em> <strong>Новый</strong>.</p></li>
+<li><p>Из документа: <i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='plus'></i> <strong>Новый</strong>.</p></li>
 </ul>
 <img alt="../../_images/app-creation-screen.png" class="screenshot" src="../../_images/app-creation-screen.png" />
-<p><span class="badge-user">Зарегистрированные пользователи</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Зарегистрированные пользователи</span></p>
 <p>Окно создания документа предлагает несколько параметров при создании новых документов.</p>
 <ul class="simple">
 <li><p><strong>Собственный документ</strong>: создайте новый документ как <a class="reference internal" href="../share_and_access.html#owners"><span class="std std-ref">владелец</span></a>. Если документ создан без владельца, этот параметр изменить нельзя.</p></li>
@@ -779,11 +783,11 @@
 <p class="admonition-title">Примечание</p>
 <p>Все шаблоны, сохраненные в CryptDrive или в командах, в которых Вы состоите, отображаются на экране создания. Чтобы сохранить документ как шаблон:</p>
 <ul class="simple">
-<li><p>В открытом документе: <em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="cptools cptools-new-template"></em> <strong>Сохранить как шаблон</strong>.</p></li>
+<li><p>В открытом документе: <i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='file-up'></i> <strong>Сохранить как шаблон</strong>.</p></li>
 </ul>
 <p>либо</p>
 <ul class="simple">
-<li><p>В CryptDrive: перетащите документ в папку <em class="cptools cptools-template"></em> <strong>Шаблоны</strong>.</p></li>
+<li><p>В CryptDrive: перетащите документ в папку <i data-lucide='file-cog'></i> <strong>Шаблоны</strong>.</p></li>
 </ul>
 </div>
 </section>
@@ -795,8 +799,8 @@
 <span id="id3"></span><h2>Создание копии<a class="headerlink" href="#make-a-copy" title="Permalink to this heading">¶</a></h2>
 <p>Чтобы дублировать документ:</p>
 <ul class="simple">
-<li><p>Из документа: <em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-clone"></em> <strong>Создать копию</strong>.</p></li>
-<li><p>Из CryptDrive: <code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> на документе &gt; <em class="fa fa-clone"></em> <strong>Создать копию</strong>.</p></li>
+<li><p>Из документа: <i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='copy'></i> <strong>Создать копию</strong>.</p></li>
+<li><p>Из CryptDrive: <code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> на документе &gt; <i data-lucide='copy'></i> <strong>Создать копию</strong>.</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Примечание</p>
@@ -817,17 +821,17 @@
 </figure>
 <p>История изменений документов сохраняется и при необходимости может быть восстановлена. Чтобы просмотреть и восстановить историю документа:</p>
 <ol class="arabic simple">
-<li><p><em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-history"></em> <strong>История</strong>.</p></li>
+<li><p><i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='history'></i> <strong>История</strong>.</p></li>
 <li><p>Используйте стрелки для навигации:</p>
 <ul class="simple">
-<li><p><em class="fa fa-step-backward"></em> и <em class="fa fa-step-forward"></em> между каждым редактированием.</p></li>
-<li><p><em class="fa fa-step-backward"></em> <em class="fa fa-user"></em> и <em class="fa fa-user"></em> <em class="fa fa-step-forward"></em> между каждым автором.</p></li>
-<li><p><em class="fa fa-step-backward"></em> <em class="fa fa-users"></em> и <em class="fa fa-users"></em> <em class="fa fa-step-forward"></em> между каждым сеансом редактирования (когда к документу подключалась одна и та же группа авторов).</p></li>
+<li><p><i data-lucide='arrow-left'></i> и <i data-lucide='arrow-right'></i> между каждым редактированием.</p></li>
+<li><p><i data-lucide='arrow-left'></i> <i data-lucide='user'></i> и <i data-lucide='user'></i> <i data-lucide='arrow-right'></i> между каждым автором.</p></li>
+<li><p><i data-lucide='arrow-left'></i> <i data-lucide='users-round'></i> и <i data-lucide='users-round'></i> <i data-lucide='arrow-right'></i> между каждым сеансом редактирования (когда к документу подключалась одна и та же группа авторов).</p></li>
 </ul>
 </li>
-<li><p>Восстановите отображаемую версию с помощью <em class="fa fa-check"></em> <strong>Восстановить</strong> или закройте историю без восстановления с помощью <em class="fa fa-times"></em> <strong>Закрыть</strong>.</p></li>
+<li><p>Восстановите отображаемую версию с помощью <i data-lucide='check'></i> <strong>Восстановить</strong> или закройте историю без восстановления с помощью <i data-lucide='x'></i> <strong>Закрыть</strong>.</p></li>
 </ol>
-<p>Для экономии места историю можно удалить в <a class="reference internal" href="#document-properties"><span class="std std-ref">свойствах документа</span></a> <span class="badge-owner">Владельцы документа</span></p>
+<p>Для экономии места историю можно удалить в <a class="reference internal" href="#document-properties"><span class="std std-ref">свойствах документа</span></a> <span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> Владельцы документа</span></p>
 <div class="admonition note">
 <p class="admonition-title">Примечание</p>
 <p>Функциональность истории работает немного иначе в приложении <a class="reference internal" href="sheets.html#app-sheets"><span class="std std-ref">Таблица</span></a> из-за интеграции OnlyOffice с зашифрованной совместной работой CryptPad в реальном времени. Дополнительные сведения см. в разделе <a class="reference internal" href="sheets.html#sheets-history"><span class="std std-ref">история электронных таблиц</span></a>.</p>
@@ -835,7 +839,7 @@
 <p><strong>Ссылки на версии</strong></p>
 <p>Чтобы поделиться ссылкой на отображаемую версию истории:</p>
 <ul class="simple">
-<li><p><em class="fa fa-share-alt"></em> <strong>Поделиться</strong> на панели инструментов.</p></li>
+<li><p><i data-lucide='share2'></i> <strong>Поделиться</strong> на панели инструментов.</p></li>
 <li><p>Выберите <strong>Контакты</strong>, <strong>Ссылка</strong> или <strong>Встроить</strong>, как и при <a class="reference internal" href="../share_and_access.html#share"><span class="std std-ref">совместном использовании документа</span></a>.</p></li>
 </ul>
 <p>Получатели смогут просматривать выбранную версию в режиме только для чтения.</p>
@@ -846,9 +850,9 @@
 <p id="snapshot-from-history"><strong>Создание снимка из истории</strong></p>
 <p>Чтобы создать <a class="reference internal" href="#snapshots"><span class="std std-ref">снимок</span></a> из отображаемой версии истории:</p>
 <ul class="simple">
-<li><p>кнопка <em class="fa fa-camera"></em> на панели инструментов.</p></li>
+<li><p>кнопка <i data-lucide='camera'></i> на панели инструментов.</p></li>
 <li><p>В диалоговом окне укажите имя снимка.</p></li>
-<li><p><em class="fa fa-camera"></em> <strong>Новый снимок</strong></p></li>
+<li><p><i data-lucide='camera'></i> <strong>Новый снимок</strong></p></li>
 </ul>
 </section>
 <section id="snapshots">
@@ -862,22 +866,22 @@
 <p>Снимки - это определенные моменты в истории изменений документа, именованные для удобства использования.</p>
 <p>Чтобы создать снимок текущего состояния документа:</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-camera"></em> <strong>Снимки</strong></p></li>
+<li><p><i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='camera'></i> <strong>Снимки</strong></p></li>
 <li><p>В диалоговом окне укажите имя снимка.</p></li>
-<li><p><em class="fa fa-camera"></em> <strong>Новый снимок</strong></p></li>
+<li><p><i data-lucide='camera'></i> <strong>Новый снимок</strong></p></li>
 </ul>
 <p>Чтобы создать снимок из версии в истории документа, см. выше <a class="reference internal" href="#document-history"><span class="std std-ref">снимок из истории</span></a>.</p>
 <p>Чтобы просмотреть и восстановить снимок:</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-camera"></em> <strong>Снимки</strong></p></li>
-<li><p>В диалоговом окне <code class="docutils literal notranslate"><span class="pre">Щелкните</span></code> по снимку в списке и <em class="fa fa-eye"></em> <strong>Вид</strong>.</p></li>
+<li><p><i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='camera'></i> <strong>Снимки</strong></p></li>
+<li><p>В диалоговом окне <code class="docutils literal notranslate"><span class="pre">Щелкните</span></code> по снимку в списке и <i data-lucide='eye'></i> <strong>Вид</strong>.</p></li>
 <li><p>Снимок откроется в новом окне.</p></li>
-<li><p><em class="fa fa-check"></em> <strong>Восстановить</strong> или <em class="fa fa-times"></em> <strong>Закрыть</strong></p></li>
+<li><p><i data-lucide='check'></i> <strong>Восстановить</strong> или <i data-lucide='x'></i> <strong>Закрыть</strong></p></li>
 </ul>
 <p>Чтобы удалить снимок:</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-camera"></em> <strong>Снимки</strong></p></li>
-<li><p>В диалоговом окне <code class="docutils literal notranslate"><span class="pre">Щелкните</span></code> снимок в списке и <em class="fa fa-trash"></em> <strong>Удалить</strong>.</p></li>
+<li><p><i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='camera'></i> <strong>Снимки</strong></p></li>
+<li><p>В диалоговом окне <code class="docutils literal notranslate"><span class="pre">Щелкните</span></code> снимок в списке и <i data-lucide='trash2'></i> <strong>Удалить</strong>.</p></li>
 </ul>
 </section>
 <section id="properties">
@@ -885,8 +889,8 @@
 <img alt="../../_images/modal-properties.png" class="screenshot" src="../../_images/modal-properties.png" />
 <p>Чтобы получить доступ к меню свойств:</p>
 <ul class="simple">
-<li><p>Из документа: <em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-info-circle"></em> <strong>Свойства</strong>.</p></li>
-<li><p>Из CryptDrive: <code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по документу &gt; <em class="fa fa-info-circle"></em> <strong>Свойства</strong>.</p></li>
+<li><p>Из документа: <i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='info'></i> <strong>Свойства</strong>.</p></li>
+<li><p>Из CryptDrive: <code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по документу &gt; <i data-lucide='info'></i> <strong>Свойства</strong>.</p></li>
 </ul>
 <p>Доступные данные:</p>
 <ul class="simple">
@@ -895,7 +899,7 @@
 <li><p>Даты создания и последнего доступа.</p></li>
 <li><p>Размер.</p></li>
 </ul>
-<p>Размер документа показывает пропорции, используемые для содержимого и для истории. Чтобы сэкономить место для хранения, удалите историю документа с помощью <strong>Удалить историю</strong> и подтвердите. <span class="badge-owner">Владельцы документа</span></p>
+<p>Размер документа показывает пропорции, используемые для содержимого и для истории. Чтобы сэкономить место для хранения, удалите историю документа с помощью <strong>Удалить историю</strong> и подтвердите. <span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> Владельцы документа</span></p>
 <div class="admonition warning">
 <p class="admonition-title">Предупреждение</p>
 <p><a class="reference internal" href="#snapshots"><span class="std std-ref">Снимки</span></a> являются частью истории документа. Если Вы удалите историю в свойствах документа, снимки также будут удалены.</p>
@@ -903,11 +907,11 @@
 </section>
 <section id="users-and-chat">
 <span id="document-users-and-chat"></span><h2>Пользователи и чат<a class="headerlink" href="#users-and-chat" title="Permalink to this heading">¶</a></h2>
-<p>Взаимодействие с пользователями, подключенными к тому же документу, через список пользователей <em class="fa fa-user"></em> <em class="fa fa-eye"></em> и <em class="fa fa-comments"></em> <strong>Чат</strong>.</p>
+<p>Взаимодействие с пользователями, подключенными к тому же документу, через список пользователей <i data-lucide='user'></i> <i data-lucide='eye'></i> и <i data-lucide='message-square-more'></i> <strong>Чат</strong>.</p>
 <p>Чтобы показать/скрыть эти панели:</p>
 <ul class="simple">
-<li><p><em class="fa fa-user"></em> <em class="fa fa-eye"></em> для списка пользователей.</p></li>
-<li><p><em class="fa fa-comments"></em> <strong>Чат</strong> для чата.</p></li>
+<li><p><i data-lucide='user'></i> <i data-lucide='eye'></i> для списка пользователей.</p></li>
+<li><p><i data-lucide='message-square-more'></i> <strong>Чат</strong> для чата.</p></li>
 </ul>
 </section>
 </section>
@@ -920,10 +924,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="richtext.html" class="btn btn-neutral float-right" title="Документ" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="richtext.html" class="btn btn-neutral float-right" title="Документ" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="../applications.html" class="btn btn-neutral" title="Приложения" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="../applications.html" class="btn btn-neutral" title="Приложения" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -986,7 +990,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

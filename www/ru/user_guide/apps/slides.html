@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Рисунки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Инструменты</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Рисование</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Режим рисования</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Режим выбора</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Режим рисования</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Режим выбора</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Экспорт</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -757,11 +761,11 @@
 <img alt="../../_images/app-slides-preview.png" class="screenshot" src="../../_images/app-slides-preview.png" />
 <section id="toolbar">
 <h2>Инструменты<a class="headerlink" href="#toolbar" title="Permalink to this heading">¶</a></h2>
-<p><em class="fa fa-wrench"></em> <strong>Инструменты</strong>: Показать/скрыть панель инструментов текстового редактора.</p>
-<p><em class="fa fa-picture-o"></em> <strong>Вставить</strong>: добавить изображение в документ. Изображение может быть выбрано на диске или загружено. :badge_user :<cite>Зарегистрированные пользователи</cite></p>
-<p><em class="cptools cptools-palette"></em> <strong>Тема</strong>: Установите цвета для редактора, подробно <a class="reference internal" href="#app-slides-theme"><span class="std std-ref">ниже</span></a>.</p>
-<p><em class="fa fa-eye"></em> <strong>Предварительный просмотр</strong>: показать/скрыть панель предварительного просмотра слайдов.</p>
-<p><em class="fa fa-play-circle"></em> <strong>Запуск</strong>: запуск слайдовой презентации в полноэкранном режиме.</p>
+<p><i data-lucide='wrench'></i> <strong>Инструменты</strong>: Показать/скрыть панель инструментов текстового редактора.</p>
+<p><i data-lucide='image-plus'></i> <strong>Вставить</strong>: добавить изображение в документ. Изображение может быть выбрано на диске или загружено. :badge_user :<cite>Зарегистрированные пользователи</cite></p>
+<p><i data-lucide='palette'></i> <strong>Тема</strong>: Установите цвета для редактора, подробно <a class="reference internal" href="#app-slides-theme"><span class="std std-ref">ниже</span></a>.</p>
+<p><i data-lucide='eye'></i> <strong>Предварительный просмотр</strong>: показать/скрыть панель предварительного просмотра слайдов.</p>
+<p><i data-lucide='circle-play'></i> <strong>Запуск</strong>: запуск слайдовой презентации в полноэкранном режиме.</p>
 </section>
 <section id="writing-slides-with-markdown">
 <h2>Создание слайдов с помощью Markdown<a class="headerlink" href="#writing-slides-with-markdown" title="Permalink to this heading">¶</a></h2>
@@ -772,7 +776,7 @@ https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdo
 </section>
 <section id="theme">
 <span id="app-slides-theme"></span><h2>Тема<a class="headerlink" href="#theme" title="Permalink to this heading">¶</a></h2>
-<p><em class="fa fa-gear"></em> <strong>Настройки</strong>:</p>
+<p><i data-lucide='settings'></i> <strong>Настройки</strong>:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p><strong>Макет</strong>: переключайте отображение номеров слайдов, даты, заголовка и анимацию смены слайдов.</p></li>
@@ -780,25 +784,25 @@ https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdo
 <li><p><strong>Пользовательский CSS</strong>: вставьте код CSS для настройки внешнего вида презентации.</p></li>
 </ul>
 </div></blockquote>
-<p><em class="fa fa-i-cursor"></em> <strong>Цвет текста</strong>, <em class="fa fa-square-o"></em> <strong>Цвет фона</strong>: выберите цвета для презентации.</p>
+<p><i data-lucide='text-cursor'></i> <strong>Цвет текста</strong>, <i data-lucide='square'></i> <strong>Цвет фона</strong>: выберите цвета для презентации.</p>
 <p><strong>Тема</strong>: цветовая схема, используемая на панели редактора кода.</p>
 </section>
 <section id="import-export">
 <h2>Импорт/Экспорт<a class="headerlink" href="#import-export" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-upload"></em> <strong>Импорт</strong>.</div>
+<div class="line"><i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='upload'></i> <strong>Импорт</strong>.</div>
 <div class="line">Поддерживаемые форматы: любой обычный текстовый файл.</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-download"></em> <strong>Экспорт</strong>.</div>
+<div class="line"><i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='download'></i> <strong>Экспорт</strong>.</div>
 <div class="line">Поддерживаемые форматы: <code class="docutils literal notranslate"><span class="pre">.md</span></code>.</div>
 </div>
 </section>
 <section id="images">
 <h2>Изображения<a class="headerlink" href="#images" title="Permalink to this heading">¶</a></h2>
 <p>Синтаксис Markdown для включения удаленных изображений, например <code class="docutils literal notranslate"><span class="pre">![description](https://site.com/image.jpg)</span></code>, заблокирован CryptPad по соображениям безопасности.</p>
-<p><span class="badge-user">Зарегистрированные пользователи</span></p>
-<p>Чтобы вставить изображения из CryptDrive или загрузить новые, используйте команду <em class="fa fa-picture-o"></em> <strong>Вставить</strong> меню панели инструментов.</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Зарегистрированные пользователи</span></p>
+<p>Чтобы вставить изображения из CryptDrive или загрузить новые, используйте команду <i data-lucide='image-plus'></i> <strong>Вставить</strong> меню панели инструментов.</p>
 <p>См. <a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">Удаленно Размещенный Контент</span></a> для более подробной информации.</p>
 </section>
 <section id="lightbox">
@@ -807,7 +811,7 @@ https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdo
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Двойной</span> <span class="pre">щелчок</span></code> на изображении или диаграмме в предварительном просмотре Markdown.</p></li>
 <li><p>Перемещайтесь с помощью клавиш со стрелками.</p></li>
-<li><p>Закройте монтажный стол с помощью <em class="fa fa-times"></em> или <kbd class="kbd docutils literal notranslate">Esc</kbd>.</p></li>
+<li><p>Закройте монтажный стол с помощью <i data-lucide='x'></i> или <kbd class="kbd docutils literal notranslate">Esc</kbd>.</p></li>
 </ol>
 </section>
 </section>
@@ -820,10 +824,10 @@ https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdo
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="form.html" class="btn btn-neutral float-right" title="Формы" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="form.html" class="btn btn-neutral float-right" title="Формы" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="code.html" class="btn btn-neutral" title="Код / Markdown" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="code.html" class="btn btn-neutral" title="Код / Markdown" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -886,7 +890,10 @@ https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdo
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

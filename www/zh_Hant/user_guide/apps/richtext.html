@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">白板</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">工具列</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">繪圖</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> 繪圖模式</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> 選取模式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> 繪圖模式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> 選取模式</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">匯出</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -757,18 +761,18 @@
 <img alt="../../_images/app-richtext-preview.png" class="screenshot" src="../../_images/app-richtext-preview.png" />
 <section id="toolbar">
 <h2>工具列<a class="headerlink" href="#toolbar" title="此标题的永久链接">¶</a></h2>
-<p><em class="fa fa-wrench"></em> <strong>工具</strong>：顯示或隱藏文字編輯器工具列。</p>
-<p><em class="fa fa-picture-o"></em> <strong>插入</strong>：在文件中加入圖片。可從雲端硬碟選擇或上傳。 <span class="badge-user">已登入使用者</span></p>
+<p><i data-lucide='wrench'></i> <strong>工具</strong>：顯示或隱藏文字編輯器工具列。</p>
+<p><i data-lucide='image-plus'></i> <strong>插入</strong>：在文件中加入圖片。可從雲端硬碟選擇或上傳。 <span class="badge-user" data-icon="user"><i data-lucide="user"></i> 已登入使用者</span></p>
 </section>
 <section id="view-settings">
 <h2>檢視設定<a class="headerlink" href="#view-settings" title="此标题的永久链接">¶</a></h2>
 <p>編輯器頂端的按鈕可控制文字編輯器元件的顯示方式。</p>
-<p><em class="fa fa-list-ul"></em> ：顯示或隱藏文件大綱。</p>
-<p><em class="fa fa-comment"></em> ：顯示或隱藏註解（關閉時若圖示為紅色表示有註解）。</p>
-<p><em class="fa fa-expand"></em> ：以視窗全寬顯示文字編輯器。</p>
-<p><em class="fa fa-compress"></em> ：以縮減寬度的「頁面模式」顯示文字編輯器。</p>
+<p><i data-lucide='list'></i> ：顯示或隱藏文件大綱。</p>
+<p><i data-lucide='message-square-text'></i> ：顯示或隱藏註解（關閉時若圖示為紅色表示有註解）。</p>
+<p><i data-lucide='square-plus'></i> ：以視窗全寬顯示文字編輯器。</p>
+<p><i data-lucide='minimize2'></i> ：以縮減寬度的「頁面模式」顯示文字編輯器。</p>
 <p>若要設定這些選項的預設值（例如控制收件人透過分享連結開啟文件時會看到哪些區塊），請使用 <strong>文件設定</strong> 對話框：</p>
-<p><em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-cog"></em> <strong>文件設定</strong>。</p>
+<p><i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='settings'></i> <strong>文件設定</strong>。</p>
 </section>
 <section id="editing">
 <h2>編輯<a class="headerlink" href="#editing" title="此标题的永久链接">¶</a></h2>
@@ -792,16 +796,16 @@
 <section id="import-export">
 <h2>匯入/匯出<a class="headerlink" href="#import-export" title="此标题的永久链接">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-upload"></em> <strong>匯入</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='upload'></i> <strong>匯入</strong></div>
 <div class="line">支援格式：<code class="docutils literal notranslate"><span class="pre">.html</span></code>、<code class="docutils literal notranslate"><span class="pre">.md</span></code>。</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-download"></em> <strong>匯出</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='download'></i> <strong>匯出</strong></div>
 <div class="line">支援格式：<code class="docutils literal notranslate"><span class="pre">.html</span></code>、<code class="docutils literal notranslate"><span class="pre">.doc</span></code>、<code class="docutils literal notranslate"><span class="pre">.md</span></code>。</div>
 </div>
 <p>若要列印或匯出 PDF：</p>
 <ol class="arabic simple">
-<li><p><em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-print"></em> <strong>列印</strong>。</p></li>
+<li><p><i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='printer'></i> <strong>列印</strong>。</p></li>
 <li><p>選擇您的印表機或「列印成檔案」。</p></li>
 </ol>
 </section>
@@ -810,14 +814,14 @@
 <p>若要對某段文字加入註解：</p>
 <ol class="arabic simple">
 <li><p>選取要加註的文字。</p></li>
-<li><p>點選文字右側或文字編輯器工具列上的 <em class="fa fa-comment"></em> 按鈕。</p></li>
+<li><p>點選文字右側或文字編輯器工具列上的 <i data-lucide='message-square-text'></i> 按鈕。</p></li>
 <li><p>輸入註解內容。</p></li>
-<li><p>點選 <em class="fa fa-send-o"></em> <strong>送出</strong>。</p></li>
+<li><p>點選 <i data-lucide='send'></i> <strong>送出</strong>。</p></li>
 </ol>
 <p><code class="docutils literal notranslate"><span class="pre">點選</span></code> 註解以選取後，可：</p>
 <ul class="simple">
-<li><p><em class="fa fa-reply"></em> <strong>回覆</strong>：新增一則回覆註解。</p></li>
-<li><p><em class="fa fa-check"></em> <strong>標記為已解決</strong>：確認後會刪除該註解。</p></li>
+<li><p><i data-lucide='reply'></i> <strong>回覆</strong>：新增一則回覆註解。</p></li>
+<li><p><i data-lucide='check'></i> <strong>標記為已解決</strong>：確認後會刪除該註解。</p></li>
 </ul>
 <p>若要在註解中通知聯絡人，請輸入 <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> 加上對方的 <a class="reference internal" href="../user_account.html#user-settings-account"><span class="std std-ref">顯示名稱</span></a> 來提及他們。</p>
 <p>在以下情況您會收到通知：</p>
@@ -836,10 +840,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="document.html" class="btn btn-neutral float-right" title="文件" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="document.html" class="btn btn-neutral float-right" title="文件" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="general.html" class="btn btn-neutral" title="一般" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="general.html" class="btn btn-neutral" title="一般" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -901,7 +905,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

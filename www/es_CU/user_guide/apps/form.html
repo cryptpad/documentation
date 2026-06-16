@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Whiteboard</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Barra de herramientas</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Dibujo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Modo pintura</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Modo seleccionar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Modo pintura</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Modo seleccionar</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Exportar</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -762,7 +766,7 @@
 <li><p><strong>Editor</strong>: puede ver las respuestas al formulario sea público o no.</p></li>
 <li><p><strong>Participante</strong>: puede responde el formulario y solo ver las respuestas una vez que el autor las haga públicas.</p></li>
 </ul>
-<p>Para compartir un formulario con un rol específico, por ejemplo para enviarlo a los participantes, selecciona el rol en el menú <em class="fa fa-share-alt"></em> <strong>Compartir</strong> antes de seleccionar contactos o copiar el enlace.</p>
+<p>Para compartir un formulario con un rol específico, por ejemplo para enviarlo a los participantes, selecciona el rol en el menú <i data-lucide='share2'></i> <strong>Compartir</strong> antes de seleccionar contactos o copiar el enlace.</p>
 <img alt="el menú de compartir en la aplicación de formulario, mostrando los tres roles: participantes, autor y auditor." class="screenshot" src="../../_images/app-form-share.png" />
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
@@ -771,27 +775,27 @@
 </section>
 <section id="editing-a-form">
 <h2>Editar un formulario<a class="headerlink" href="#editing-a-form" title="Enlace permanente a este encabezado">¶</a></h2>
-<p>Para agregar una pregunta, utiliza el menú <em class="fa fa-plus"></em> <strong>Agregar</strong> después de la última pregunta, o el <em class="fa fa-plus"></em> entre cada pregunta.</p>
-<p>Para eliminar una pregunta, utiliza el botón <em class="fa fa-trash-o"></em> <strong>Eliminar</strong> en la pregunta que deseas eliminar.</p>
+<p>Para agregar una pregunta, utiliza el menú <i data-lucide='plus'></i> <strong>Agregar</strong> después de la última pregunta, o el <i data-lucide='plus'></i> entre cada pregunta.</p>
+<p>Para eliminar una pregunta, utiliza el botón <i data-lucide='trash'></i> <strong>Eliminar</strong> en la pregunta que deseas eliminar.</p>
 <section id="utilities">
 <h3>Utilidades<a class="headerlink" href="#utilities" title="Enlace permanente a este encabezado">¶</a></h3>
 <section id="cptools-form-paragraph-description">
-<h4><em class="cptools cptools-form-paragraph"></em> Descripción<a class="headerlink" href="#cptools-form-paragraph-description" title="Enlace permanente a este encabezado">¶</a></h4>
+<h4><i data-lucide='text'></i> Descripción<a class="headerlink" href="#cptools-form-paragraph-description" title="Enlace permanente a este encabezado">¶</a></h4>
 <p>Agregar texto al formulario usando la sintaxis de Makdown.</p>
-<p><span class="badge-user">Usuarios registrados</span></p>
-<p>Para agregar una imagen desde CryptDrive o cargar una nueva, utiliza el ícono <em class="fa fa-picture-o"></em> en la barra de herramientas.</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Usuarios registrados</span></p>
+<p>Para agregar una imagen desde CryptDrive o cargar una nueva, utiliza el ícono <i data-lucide='image-plus'></i> en la barra de herramientas.</p>
 </section>
 <section id="cptools-form-page-break-page-break">
-<h4><em class="cptools cptools-form-page-break"></em> Salto de página<a class="headerlink" href="#cptools-form-page-break-page-break" title="Enlace permanente a este encabezado">¶</a></h4>
+<h4><i data-lucide='cp-form-page-break'></i> Salto de página<a class="headerlink" href="#cptools-form-page-break-page-break" title="Enlace permanente a este encabezado">¶</a></h4>
 <p>Dividir el formulario en páginas. Solo se muestra a los participantes.</p>
 </section>
 <section id="cptools-form-conditional-conditional-section">
-<h4><em class="cptools cptools-form-conditional"></em> Sección condicional<a class="headerlink" href="#cptools-form-conditional-conditional-section" title="Enlace permanente a este encabezado">¶</a></h4>
-<p><em class="cptools cptools-form-list-radio"></em> <strong>Elección</strong> y <em class="cptools cptools-form-list-check"></em> <strong>Casilla de verificación</strong> que se puede utilizar para mostrar u ocultar una sección de preguntas.</p>
+<h4><i data-lucide='cp-form-conditional'></i> Sección condicional<a class="headerlink" href="#cptools-form-conditional-conditional-section" title="Enlace permanente a este encabezado">¶</a></h4>
+<p><i data-lucide='list'></i> <strong>Elección</strong> y <i data-lucide='list-checks'></i> <strong>Casilla de verificación</strong> que se puede utilizar para mostrar u ocultar una sección de preguntas.</p>
 <ol class="arabic simple">
-<li><p>En el editor de formularios, utiliza los botones <em class="fa fa-plus"></em> <strong>Agregar</strong> entre las preguntas, o la lista en la parte inferior del formulario, para agregar una <em class="cptools cptools-form-conditional"></em> <strong>Sección condicional</strong>.</p></li>
+<li><p>En el editor de formularios, utiliza los botones <i data-lucide='plus'></i> <strong>Agregar</strong> entre las preguntas, o la lista en la parte inferior del formulario, para agregar una <i data-lucide='cp-form-conditional'></i> <strong>Sección condicional</strong>.</p></li>
 <li><p>Asegúrate de que haya al menos una <a class="reference internal" href="#form-q-choice"><span class="std std-ref"> Elección</span></a> o <a class="reference internal" href="#form-q-checkbox"><span class="std std-ref"> Casilla de verificación</span></a> antes de la sección (se mostrará una pista si no la hay). Solo las preguntas que se coloquen <em>antes</em> de la sección estarán disponibles para su uso en las condiciones.</p></li>
-<li><p>Agregar contenido (texto de descripción, preguntas) a la sección usando el <em class="fa fa-plus"></em> en <strong>agregar</strong> o arrastrando preguntas al área de la sección.</p></li>
+<li><p>Agregar contenido (texto de descripción, preguntas) a la sección usando el <i data-lucide='plus'></i> en <strong>agregar</strong> o arrastrando preguntas al área de la sección.</p></li>
 <li><p>Establece algunas condiciones usando los menús de selección. Las condiciones con AND deben ser todas verdaderas a la vez, solo una de las condiciones con OR necesita ser verdadera.</p></li>
 <li><p>En la vista del participante, la sección solo se mostrará si las condiciones son verdaderas.</p></li>
 </ol>
@@ -800,7 +804,7 @@
 <section id="question-types">
 <h3>Tipos de preguntas<a class="headerlink" href="#question-types" title="Enlace permanente a este encabezado">¶</a></h3>
 <section id="cptools-form-text-text">
-<h4><em class="cptools cptools-form-text"></em> Texto<a class="headerlink" href="#cptools-form-text-text" title="Enlace permanente a este encabezado">¶</a></h4>
+<h4><i data-lucide='minus'></i> Texto<a class="headerlink" href="#cptools-form-text-text" title="Enlace permanente a este encabezado">¶</a></h4>
 <p><strong>Respuesta</strong>: una línea de texto</p>
 <p><strong>Opciones</strong>:</p>
 <ul class="simple">
@@ -812,7 +816,7 @@
 </div>
 </section>
 <section id="cptools-form-paragraph-paragraph">
-<h4><em class="cptools cptools-form-paragraph"></em> Párrafo<a class="headerlink" href="#cptools-form-paragraph-paragraph" title="Enlace permanente a este encabezado">¶</a></h4>
+<h4><i data-lucide='text'></i> Párrafo<a class="headerlink" href="#cptools-form-paragraph-paragraph" title="Enlace permanente a este encabezado">¶</a></h4>
 <p><strong>Respuesta</strong> varias líneas de texto</p>
 <p><strong>Opciones</strong>:</p>
 <ul class="simple">
@@ -820,74 +824,74 @@
 </ul>
 </section>
 <section id="cptools-form-list-radio-choice">
-<span id="form-q-choice"></span><h4><em class="cptools cptools-form-list-radio"></em> Elección<a class="headerlink" href="#cptools-form-list-radio-choice" title="Enlace permanente a este encabezado">¶</a></h4>
+<span id="form-q-choice"></span><h4><i data-lucide='list'></i> Elección<a class="headerlink" href="#cptools-form-list-radio-choice" title="Enlace permanente a este encabezado">¶</a></h4>
 <p><strong>Respuesta</strong>: una opción de la lista</p>
 <p><strong>Opciones</strong>:</p>
 <ul class="simple">
-<li><p>Botón <em class="fa fa-plus"></em> <strong>Añadir opción</strong></p></li>
-<li><p>Toma el controlador <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> y arrástralo para reordenar las opciones</p></li>
-<li><p>Elimina una opción con <em class="fa fa-times"></em></p></li>
+<li><p>Botón <i data-lucide='plus'></i> <strong>Añadir opción</strong></p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order options</p></li>
+<li><p>Elimina una opción con <i data-lucide='x'></i></p></li>
 </ul>
 </section>
 <section id="cptools-form-grid-radio-choice-grid">
-<h4><em class="cptools cptools-form-grid-radio"></em> Cuadrícula de elección<a class="headerlink" href="#cptools-form-grid-radio-choice-grid" title="Enlace permanente a este encabezado">¶</a></h4>
+<h4><i data-lucide='cp-form-grid-radio'></i> Cuadrícula de elección<a class="headerlink" href="#cptools-form-grid-radio-choice-grid" title="Enlace permanente a este encabezado">¶</a></h4>
 <p><strong>Respuesta</strong>: una opción por elemento</p>
 <p><strong>Opciones</strong>:</p>
 <ul class="simple">
-<li><p>Botones <em class="fa fa-plus"></em> <strong>Agregar opción</strong> y <em class="fa fa-plus"></em> <strong>Agregar elemento</strong></p></li>
-<li><p>Toma el controlador <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> y arrástralo para reordenar elementos y opciones</p></li>
-<li><p>Eliminar un elemento u opción con <em class="fa fa-times"></em></p></li>
+<li><p>Botones <i data-lucide='plus'></i> <strong>Agregar opción</strong> y <i data-lucide='plus'></i> <strong>Agregar elemento</strong></p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order items and options</p></li>
+<li><p>Eliminar un elemento u opción con <i data-lucide='x'></i></p></li>
 </ul>
 </section>
 <section id="calendar-date">
-<h4><em class="fa fa-calendar"></em> Fecha<a class="headerlink" href="#calendar-date" title="Enlace permanente a este encabezado">¶</a></h4>
+<h4><i data-lucide='calendar-days'></i> Fecha<a class="headerlink" href="#calendar-date" title="Enlace permanente a este encabezado">¶</a></h4>
 <p><strong>Respuesta</strong>: elegir fecha y hora</p>
 </section>
 <section id="cptools-form-list-check-checkbox">
-<span id="form-q-checkbox"></span><h4><em class="cptools cptools-form-list-check"></em> Casilla de verificación<a class="headerlink" href="#cptools-form-list-check-checkbox" title="Enlace permanente a este encabezado">¶</a></h4>
+<span id="form-q-checkbox"></span><h4><i data-lucide='list-checks'></i> Casilla de verificación<a class="headerlink" href="#cptools-form-list-check-checkbox" title="Enlace permanente a este encabezado">¶</a></h4>
 <p><strong>Responder</strong>: múltiples opciones de la lista</p>
 <p><strong>Opciones</strong>:</p>
 <ul class="simple">
 <li><p>Opciones máximas seleccionables</p></li>
-<li><p>Botón <em class="fa fa-plus"></em> <strong>Añadir opción</strong></p></li>
-<li><p>Toma el controlador <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> y arrástralo para reordenar las opciones</p></li>
-<li><p>Elimina una opción con <em class="fa fa-times"></em></p></li>
+<li><p>Botón <i data-lucide='plus'></i> <strong>Añadir opción</strong></p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order options</p></li>
+<li><p>Elimina una opción con <i data-lucide='x'></i></p></li>
 </ul>
 </section>
 <section id="cptools-form-grid-check-checkbox-grid">
-<h4><em class="cptools cptools-form-grid-check"></em> Casilla de verificación de red<a class="headerlink" href="#cptools-form-grid-check-checkbox-grid" title="Enlace permanente a este encabezado">¶</a></h4>
+<h4><i data-lucide='cp-form-grid-check'></i> Casilla de verificación de red<a class="headerlink" href="#cptools-form-grid-check-checkbox-grid" title="Enlace permanente a este encabezado">¶</a></h4>
 <p><strong>Responder</strong>: múltiples opciones para cada elemento</p>
 <p><strong>Opciones</strong>:</p>
 <ul class="simple">
 <li><p>Opciones máximas seleccionables (por artículos)</p></li>
-<li><p>Botones <em class="fa fa-plus"></em> <strong>Agregar opción</strong> y <em class="fa fa-plus"></em> <strong>Agregar elemento</strong></p></li>
-<li><p>Toma el controlador <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> y arrástralo para reordenar elementos y opciones</p></li>
-<li><p>Eliminar un elemento u opción con <em class="fa fa-times"></em></p></li>
+<li><p>Botones <i data-lucide='plus'></i> <strong>Agregar opción</strong> y <i data-lucide='plus'></i> <strong>Agregar elemento</strong></p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order items and options</p></li>
+<li><p>Eliminar un elemento u opción con <i data-lucide='x'></i></p></li>
 </ul>
 </section>
 <section id="cptools-form-list-ordered-ordered-list">
-<h4><em class="cptools cptools-form-list-ordered"></em> Lista ordenada<a class="headerlink" href="#cptools-form-list-ordered-ordered-list" title="Enlace permanente a este encabezado">¶</a></h4>
+<h4><i data-lucide='list-ordered'></i> Lista ordenada<a class="headerlink" href="#cptools-form-list-ordered-ordered-list" title="Enlace permanente a este encabezado">¶</a></h4>
 <p><strong>Responder</strong>: orden de preferencia para las opciones listadas</p>
 <p><strong>Opciones</strong>:</p>
 <ul class="simple">
-<li><p>Botón <em class="fa fa-plus"></em> <strong>Añadir opción</strong></p></li>
-<li><p>Toma el controlador <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> y arrástralo para reordenar las opciones</p></li>
-<li><p>Elimina una opción con <em class="fa fa-times"></em></p></li>
+<li><p>Botón <i data-lucide='plus'></i> <strong>Añadir opción</strong></p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order options</p></li>
+<li><p>Elimina una opción con <i data-lucide='x'></i></p></li>
 </ul>
 <p><strong>Condorcet</strong>:</p>
 <p>Desde la versión v5.3 las respuestas pueden mostrar los resultados con el <a class="reference external" href="https://en.wikipedia.org/wiki/Condorcet_method">Condorcet method</a>. Puedes seleccionar Schulze o parejas Ranked clasificadas para mostrar el ganador. Los detalles también mostrarán la cantidad de partidos ganados por cada candidato.</p>
 </section>
 <section id="cptools-form-poll-poll">
-<h4><em class="cptools cptools-form-poll"></em> Encuesta<a class="headerlink" href="#cptools-form-poll-poll" title="Enlace permanente a este encabezado">¶</a></h4>
-<p><strong>Respuesta</strong>: <em class="fa fa-check"></em> Sí, <em class="fa fa-times"></em> No, o <em class="cptools cptools-form-poll-maybe"></em> Aceptable para cada una de las opciones propuestas</p>
+<h4><i data-lucide='cp-form-poll'></i> Encuesta<a class="headerlink" href="#cptools-form-poll-poll" title="Enlace permanente a este encabezado">¶</a></h4>
+<p><strong>Respuesta</strong>: <i data-lucide='check'></i> Sí, <i data-lucide='x'></i> No, o <i data-lucide='cp-form-poll-maybe'></i> Aceptable para cada una de las opciones propuestas</p>
 <p><strong>Tipos de opciones</strong>:</p>
 <ul>
 <li><p>Texto</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>Botón <em class="fa fa-plus"></em> <strong>Añadir opción</strong></p></li>
-<li><p>Toma el controlador <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> y arrástralo para reordenar las opciones</p></li>
-<li><p>Elimina una opción con <em class="fa fa-times"></em></p></li>
+<li><p>Botón <i data-lucide='plus'></i> <strong>Añadir opción</strong></p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order options</p></li>
+<li><p>Elimina una opción con <i data-lucide='x'></i></p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -902,7 +906,7 @@
 <blockquote>
 <div><ul class="simple">
 <li><p>Click en una opción para seleccionar la fecha y hora en el calendario</p></li>
-<li><p>Haz click en &quot;Agregar varias fechas y horas&quot; para seleccionar varias opciones y utiliza <em class="fa fa-plus"></em> &quot;Agregar todo&quot; para agregar todas las opciones seleccionadas a la vez.</p></li>
+<li><p>Haz click en &quot;Agregar varias fechas y horas&quot; para seleccionar varias opciones y utiliza <i data-lucide='plus'></i> &quot;Agregar todo&quot; para agregar todas las opciones seleccionadas a la vez.</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -913,9 +917,9 @@
 <span id="id1"></span><h3>Configuración del formulario<a class="headerlink" href="#form-settings" title="Enlace permanente a este encabezado">¶</a></h3>
 <p>Utiliza los 3 puntos en la parte superior para acceder fácilmente a:</p>
 <ul class="simple">
-<li><p><em class="fa fa-bar-chart"></em> <strong>Respuesta</strong> (recuerdo): alterna la página de respuestas</p></li>
-<li><p><em class="fa fa-eye"></em> <strong>Formulario de vista previa</strong>: Abrir enlace del participante</p></li>
-<li><p><em class="fa fa-link"></em> <strong>Copiar enlace público</strong>: Copiar el enlace del participante</p></li>
+<li><p><i data-lucide='chart-no-axes-combined'></i> <strong>Respuesta</strong> (recuerdo): alterna la página de respuestas</p></li>
+<li><p><i data-lucide='eye'></i> <strong>Formulario de vista previa</strong>: Abrir enlace del participante</p></li>
+<li><p><i data-lucide='link'></i> <strong>Copiar enlace público</strong>: Copiar el enlace del participante</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
@@ -991,9 +995,9 @@
 <section id="import-export">
 <h2>Importar/Exportar<a class="headerlink" href="#import-export" title="Enlace permanente a este encabezado">¶</a></h2>
 <p>Los propios documentos del formulario se pueden imprimir en formato <code class="docutils literal notranslate"><span class="pre">JSON</span></code>.</p>
-<p>Para exportar respuestas desde la página <em class="fa fa-bar-chart"></em> ** Respuestas** tienes dos posibilidades:</p>
+<p>Para exportar respuestas desde la página <i data-lucide='chart-no-axes-combined'></i> ** Respuestas** tienes dos posibilidades:</p>
 <ol class="arabic simple">
-<li><p>como archivo CSV o JSON utiliza botón <em class="fa fa-download"></em> <strong>EXPORTAR</strong></p></li>
+<li><p>como archivo CSV o JSON utiliza botón <i data-lucide='download'></i> <strong>EXPORTAR</strong></p></li>
 <li><p>como una hoja de cálculo que se puede agregar a tu disco con el botón ** EXPORTAR A HOJA**</p></li>
 </ol>
 <div class="admonition note">
@@ -1011,10 +1015,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="kanban.html" class="btn btn-neutral float-right" title="Kanban" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="kanban.html" class="btn btn-neutral float-right" title="Kanban" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="slides.html" class="btn btn-neutral" title="Diapositivas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="slides.html" class="btn btn-neutral" title="Diapositivas" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -1076,7 +1080,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

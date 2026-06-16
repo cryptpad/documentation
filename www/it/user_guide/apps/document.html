@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Whiteboard</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Toolbar</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Drawing</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Paint mode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Select mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Paint mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Select mode</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Export</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -767,7 +771,7 @@
 <h2>Toolbars<a class="headerlink" href="#toolbars" title="Permalink to this heading">¶</a></h2>
 <p>CryptPad integrates OnlyOffice documents into the same encrypted collaboration system as the other applications. Additionally OnlyOffice provides a wide range of functions in a tabbed toolbar. This results in a double toolbar that can cause confusion:</p>
 <ul class="simple">
-<li><p>The topmost <strong>CryptPad toolbar</strong> is used for <em class="fa fa-file-o"></em> <strong>File</strong> operations (including import/export, history, properties, etc) as well as <em class="fa fa-share-alt"></em> <strong>Share</strong> and <em class="fa fa-unlock-alt"></em> <strong>Access</strong>.</p></li>
+<li><p>The topmost <strong>CryptPad toolbar</strong> is used for <i data-lucide='file'></i> <strong>File</strong> operations (including import/export, history, properties, etc) as well as <i data-lucide='share2'></i> <strong>Share</strong> and <i data-lucide='lock-open'></i> <strong>Access</strong>.</p></li>
 <li><p>The <strong>OnlyOffice toolbar</strong> is used for all functionality within the document itself, as well as the collaboration modes explained in the next section.</p></li>
 </ul>
 </section>
@@ -788,7 +792,7 @@
 </section>
 <section id="history">
 <span id="documents-history"></span><h2>History<a class="headerlink" href="#history" title="Permalink to this heading">¶</a></h2>
-<p>To access the document history, use <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-history"></em> <strong>History</strong> in the CryptPad toolbar.</p>
+<p>To access the document history, use <i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='history'></i> <strong>History</strong> in the CryptPad toolbar.</p>
 <p>Due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration, history in documents works differently than <a class="reference internal" href="general.html#document-history"><span class="std std-ref">in the other applications</span></a>.</p>
 <figure class="align-default" id="id1">
 <img alt="../../_images/history-toolbar-document.png" class="screenshot" src="../../_images/history-toolbar-document.png" />
@@ -798,9 +802,9 @@
 </figure>
 <p>History in documents only allows to jump back to the previous version, and then move forward through individual edits.</p>
 <ul class="simple">
-<li><p><em class="fa fa-fast-backward"></em> previous version</p></li>
-<li><p><em class="fa fa-step-forward"></em> step forward one edit</p></li>
-<li><p><em class="fa fa-fast-forward"></em> next version</p></li>
+<li><p><i data-lucide='arrow-left-to-line'></i> previous version</p></li>
+<li><p><i data-lucide='arrow-right'></i> step forward one edit</p></li>
+<li><p><i data-lucide='arrow-right-to-line'></i> next version</p></li>
 </ul>
 <p>The functionality to restore and share a version, as well as everything relating to <a class="reference internal" href="general.html#snapshots"><span class="std std-ref">Snapshots</span></a>, works in the same way as in <a class="reference internal" href="general.html#document-history"><span class="std std-ref">the other applications</span></a>.</p>
 </section>
@@ -812,11 +816,11 @@
 <section id="import-export">
 <h2>Import/Export<a class="headerlink" href="#import-export" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong>.</div>
+<div class="line"><i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='upload'></i> <strong>Import</strong>.</div>
 <div class="line">Supported formats: <code class="docutils literal notranslate"><span class="pre">.bin</span></code> files exported by this application, Word <code class="docutils literal notranslate"><span class="pre">.docx</span></code>, <code class="docutils literal notranslate"><span class="pre">.odt</span></code>.</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-download"></em> <strong>Export</strong>.</div>
+<div class="line"><i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='download'></i> <strong>Export</strong>.</div>
 <div class="line">Supported formats: <code class="docutils literal notranslate"><span class="pre">.bin</span></code>, Word <code class="docutils literal notranslate"><span class="pre">.docx</span></code>, <code class="docutils literal notranslate"><span class="pre">.odt</span></code>, <code class="docutils literal notranslate"><span class="pre">.pdf</span></code>.</div>
 </div>
 </section>
@@ -830,10 +834,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="presentation.html" class="btn btn-neutral float-right" title="Presentation" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="presentation.html" class="btn btn-neutral float-right" title="Presentation" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="richtext.html" class="btn btn-neutral" title="Rich Text" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="richtext.html" class="btn btn-neutral" title="Rich Text" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -896,7 +900,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

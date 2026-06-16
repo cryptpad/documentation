@@ -42,6 +42,8 @@
 
   
   <script src="../_static/js/modernizr.min.js"></script>
+  
+  <script src="../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Whiteboard</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">Werkzeugleiste</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">Zeichnen</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Zeichenmodus</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Auswahlmodus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Zeichenmodus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Auswahlmodus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#export">Export</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -837,55 +841,55 @@
 </section>
 <section id="notifications">
 <h2>Benachrichtigungen<a class="headerlink" href="#notifications" title="Permalink to this heading">¶</a></h2>
-<p><span class="badge-user">Eingeloggte Benutzer</span></p>
-<p>CryptPad benachrichtigt dich, wenn ein Kontakt mit dir interagiert. Benachrichtigungen werden bei der Glocke <em class="fa fa-bell-o"></em> neben deinem Avatar (oben rechts) angezeigt. Wenn du ungelesene Benachrichtigungen hast, ist die Glocke ausgefüllt <em class="fa fa-bell"></em> und es wird ein Zähler angezeigt.</p>
-<p><em class="fa fa-bell"></em> Dropdown-Menü der Glocke:</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Eingeloggte Benutzer</span></p>
+<p>CryptPad benachrichtigt dich, wenn ein Kontakt mit dir interagiert. Benachrichtigungen werden bei der Glocke <i data-lucide='bell'></i> neben deinem Avatar (oben rechts) angezeigt. Wenn du ungelesene Benachrichtigungen hast, ist die Glocke ausgefüllt <i data-lucide='bell'></i> und es wird ein Zähler angezeigt.</p>
+<p><i data-lucide='bell'></i> Dropdown-Menü der Glocke:</p>
 <ul class="simple">
 <li><p>Durchsuche ungelesene Benachrichtigungen.</p></li>
-<li><p>Lösche eine Benachrichtigung mit <em class="fa fa-times"></em>.</p></li>
+<li><p>Lösche eine Benachrichtigung mit <i data-lucide='x'></i>.</p></li>
 <li><p><strong>Benachrichtungspanel öffnen</strong>: Alle Benachrichtigungen und den Verlauf der Benachrichtigungen ansehen.</p></li>
 </ul>
 <p>Auf der Seite des Benachrichtigungspanels:</p>
 <ul class="simple">
 <li><p>Wähle die Art der anzuzeigenden Benachrichtigungen:</p>
 <ul>
-<li><p><em class="fa fa-bars"></em> Alle.</p></li>
-<li><p><em class="fa fa-user"></em> Kontaktanfragen.</p></li>
-<li><p><em class="cptools cptools-richtext"></em> Mit mir geteilt.</p></li>
-<li><p><em class="fa fa-archive"></em> Verlauf.</p></li>
+<li><p><i data-lucide='menu'></i> Alle.</p></li>
+<li><p><i data-lucide='user'></i> Kontaktanfragen.</p></li>
+<li><p><i data-lucide='file-text'></i> Mit mir geteilt.</p></li>
+<li><p><i data-lucide='archive'></i> Verlauf.</p></li>
 </ul>
 </li>
-<li><p><em class="fa fa-trash"></em>: Benachrichtigungen löschen.</p></li>
+<li><p><i data-lucide='trash2'></i>: Benachrichtigungen löschen.</p></li>
 </ul>
 </section>
 <section id="settings">
 <span id="user-settings"></span><h2>Einstellungen<a class="headerlink" href="#settings" title="Permalink to this heading">¶</a></h2>
-<p>Die Einstellungen für den Account befinden sich im Benutzermenü (Avatar oben rechts) &gt; <em class="fa fa-gear"></em> <strong>Einstellungen</strong>.</p>
+<p>Die Einstellungen für den Account befinden sich im Benutzermenü (Avatar oben rechts) &gt; <i data-lucide='settings'></i> <strong>Einstellungen</strong>.</p>
 <section id="account">
 <span id="user-settings-account"></span><h3>Account<a class="headerlink" href="#account" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
-<li><p><strong>Kontoname</strong>: Bei der Registrierung gewählter Benutzername . Dieser Name kann nicht geändert werden. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
-<li><p><strong>Öffentlicher Schlüssel zum Unterschreiben</strong>: Wird von Administratoren verwendet und/oder auf Instanzen, die Abonnements anbieten. Dies ist die einzige Information über deinen Account, der für die Administratoren des Dienstes einsehbar ist. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
+<li><p><strong>Kontoname</strong>: Bei der Registrierung gewählter Benutzername . Dieser Name kann nicht geändert werden. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Eingeloggte Benutzer</span></p></li>
+<li><p><strong>Öffentlicher Schlüssel zum Unterschreiben</strong>: Wird von Administratoren verwendet und/oder auf Instanzen, die Abonnements anbieten. Dies ist die einzige Information über deinen Account, der für die Administratoren des Dienstes einsehbar ist. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Eingeloggte Benutzer</span></p></li>
 <li><p><strong>Sprache</strong>: In der Benutzeroberfläche von CryptPad verwendete Sprache. Um die Sprache zu ändern, wähle ein andere Sprache aus dem Auswahlmenü aus. CryptPad wird vom Entwicklerteam ins Englische und Französische übersetzt. Andere Sprachen werden von der <a class="reference internal" href="../how_to_contribute.html#contribute-translation"><span class="std std-ref">Community</span></a> gepflegt. Manche Übersetzungen können unvollständig sein oder Fehler enthalten.</p></li>
 <li><p><strong>Limit für automatisches Herunterladen</strong>: Maximale Größe in Megabytes (MB) für das automatische Laden von Medienelementen (Bilder, Videos, PDFs), die in Dokumenten eingebettet sind. Größere Elemente können manuell geladen werden. Gib &quot;-1&quot; ein, um Medienelemente immer automatisch zu laden.</p></li>
-<li><p><strong>Löschung des Accounts</strong>: Option zum Löschen deines Accounts und aller darin gespeicherter Dokumente. Klicke auf <strong>Deinen Account löschen</strong> und bestätige. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
+<li><p><strong>Löschung des Accounts</strong>: Option zum Löschen deines Accounts und aller darin gespeicherter Dokumente. Klicke auf <strong>Deinen Account löschen</strong> und bestätige. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Eingeloggte Benutzer</span></p></li>
 </ul>
 </section>
 <section id="profile">
 <span id="user-settings-profile"></span><h3>Profil<a class="headerlink" href="#profile" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><strong>Anzeigename</strong>: Für andere Benutzer sichtbarer Name, beispielsweise bei der gemeinsamen Bearbeitung von Dokumenten. Um diesen Namen zu ändern, gib einen neuen Namen ein und klicke auf <strong>Speichern</strong>.</p></li>
-<li><p><strong>Avatar</strong>: Ein Bild für dein Profil, das neben deinem Anzeigenamen angezeigt wird. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
-<li><p><strong>Abzeichen</strong>: Zeige anderen Nutzern deine Rolle, z. B. &quot;Administrator&quot;, &quot;Support und Moderation&quot; oder auch, dass du ein zahlender Abonnent bist. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
-<li><p><strong>Link zu deiner Website</strong>: Gib eine gültige URL ein, um einen Link zu deiner persönlichen Website hinzuzufügen. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
-<li><p><strong>Profilbeschreibung</strong>: In das Textfeld kannst du mit der Werkzeugleiste oder mit der Markdown-Syntax einen kleinen Steckbrief schreiben. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
+<li><p><strong>Avatar</strong>: Ein Bild für dein Profil, das neben deinem Anzeigenamen angezeigt wird. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Eingeloggte Benutzer</span></p></li>
+<li><p><strong>Abzeichen</strong>: Zeige anderen Nutzern deine Rolle, z. B. &quot;Administrator&quot;, &quot;Support und Moderation&quot; oder auch, dass du ein zahlender Abonnent bist. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Eingeloggte Benutzer</span></p></li>
+<li><p><strong>Link zu deiner Website</strong>: Gib eine gültige URL ein, um einen Link zu deiner persönlichen Website hinzuzufügen. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Eingeloggte Benutzer</span></p></li>
+<li><p><strong>Profilbeschreibung</strong>: In das Textfeld kannst du mit der Werkzeugleiste oder mit der Markdown-Syntax einen kleinen Steckbrief schreiben. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Eingeloggte Benutzer</span></p></li>
 </ul>
 </section>
 <section id="security-privacy">
 <span id="user-settings-confidentiality"></span><h3>Sicherheit &amp; Datenschutz<a class="headerlink" href="#security-privacy" title="Permalink to this heading">¶</a></h3>
 <ul>
-<li><p><strong>Andere Sitzungen beenden</strong>: Logge dich aus allen Sitzungen aus, abgesehen von der gerade verwendeten Sitzung (siehe auch <a class="reference internal" href="security.html#remote-disconnect"><span class="std std-ref">Sitzungen beenden</span></a>). <span class="badge-user">Eingeloggte Benutzer</span></p></li>
-<li><p><strong>Zwei-Faktor-Authentifizierung (2FA)</strong>: Schütze deinen Account mit einem zusätzlichen Verifizierungscode, der von einer Authentifizierungs-App deiner Wahl erzeugt wird.   <span class="badge-user">Eingeloggte Benutzer</span></p>
+<li><p><strong>Andere Sitzungen beenden</strong>: Logge dich aus allen Sitzungen aus, abgesehen von der gerade verwendeten Sitzung (siehe auch <a class="reference internal" href="security.html#remote-disconnect"><span class="std std-ref">Sitzungen beenden</span></a>). <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Eingeloggte Benutzer</span></p></li>
+<li><p><strong>Zwei-Faktor-Authentifizierung (2FA)</strong>: Schütze deinen Account mit einem zusätzlichen Verifizierungscode, der von einer Authentifizierungs-App deiner Wahl erzeugt wird.   <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Eingeloggte Benutzer</span></p>
 <p>Um 2FA zu aktivieren:</p>
 <ol class="arabic simple">
 <li><p>Gib dein Account-Passwort ein</p></li>
@@ -933,7 +937,7 @@
 <li><p><strong>Mein CryptDrive herunterladen</strong> speichert den Inhalt aller Dokumente im CryptDrive. Wenn möglich, geschieht dies in einem für andere Software lesbaren Format. Einige Anwendungen speichern die Dokumente in einem Format, das nur für CryptPad lesbar ist.</p></li>
 </ul>
 </li>
-<li><p><strong>Importieren</strong>: Wenn Dokumente vor dem Einloggen erstellt wurden, können sie in das CryptDrive importiert werden. <span class="badge-user">Eingeloggte Benutzer</span></p></li>
+<li><p><strong>Importieren</strong>: Wenn Dokumente vor dem Einloggen erstellt wurden, können sie in das CryptDrive importiert werden. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Eingeloggte Benutzer</span></p></li>
 <li><p><strong>Verlauf löschen</strong>: Der Verlauf des CryptDrives und der Benachrichtigungen kann gelöscht werden, um Speicherplatz zu sparen. Dies betrifft nicht den Verlauf von Dokumenten, der jeweils in den <a class="reference internal" href="apps/general.html#document-properties"><span class="std std-ref">Eigenschaften</span></a> des Dokuments gelöscht werden kann.</p></li>
 </ul>
 </section>
@@ -998,10 +1002,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="support.html" class="btn btn-neutral float-right" title="Support" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="support.html" class="btn btn-neutral float-right" title="Support" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="instances.html" class="btn btn-neutral" title="CryptPad-Instanzen" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="instances.html" class="btn btn-neutral" title="CryptPad-Instanzen" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -1064,7 +1068,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Tablica</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Pasek narzędzi</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Drawing</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Tryb malowania</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Select mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Tryb malowania</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Select mode</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Export</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -762,7 +766,7 @@
 <li><p><strong>Auditor</strong>: can view responses to the form whether or not they are public.</p></li>
 <li><p><strong>Participant</strong>: can answer the form and only view responses once they are made public by an author.</p></li>
 </ul>
-<p>To share a form with a specific role, for example to send it to participants, select the role in the <em class="fa fa-share-alt"></em> <strong>Share</strong> menu before selecting contacts or copying the link.</p>
+<p>To share a form with a specific role, for example to send it to participants, select the role in the <i data-lucide='share2'></i> <strong>Share</strong> menu before selecting contacts or copying the link.</p>
 <img alt="the share menu in the form application, showing the three roles: participant, auditor, and author." class="screenshot" src="../../_images/app-form-share.png" />
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
@@ -771,27 +775,27 @@
 </section>
 <section id="editing-a-form">
 <h2>Editing a form<a class="headerlink" href="#editing-a-form" title="Permalink to this heading">¶</a></h2>
-<p>To add a question, use the <em class="fa fa-plus"></em> <strong>Add</strong> menu after the last question, or the <em class="fa fa-plus"></em> between each question.</p>
-<p>To delete a question use the <em class="fa fa-trash-o"></em> <strong>Delete</strong> button on the question to remove.</p>
+<p>To add a question, use the <i data-lucide='plus'></i> <strong>Add</strong> menu after the last question, or the <i data-lucide='plus'></i> between each question.</p>
+<p>To delete a question use the <i data-lucide='trash'></i> <strong>Delete</strong> button on the question to remove.</p>
 <section id="utilities">
 <h3>Utilities<a class="headerlink" href="#utilities" title="Permalink to this heading">¶</a></h3>
 <section id="cptools-form-paragraph-description">
-<h4><em class="cptools cptools-form-paragraph"></em> Description<a class="headerlink" href="#cptools-form-paragraph-description" title="Permalink to this heading">¶</a></h4>
+<h4><i data-lucide='text'></i> Description<a class="headerlink" href="#cptools-form-paragraph-description" title="Permalink to this heading">¶</a></h4>
 <p>Add text to the form using Markdown syntax.</p>
-<p><span class="badge-user">Zalogowani użytkownicy</span></p>
-<p>To add an image from the CryptDrive or upload a new one, use the <em class="fa fa-picture-o"></em> icon in the toolbar.</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Zalogowani użytkownicy</span></p>
+<p>To add an image from the CryptDrive or upload a new one, use the <i data-lucide='image-plus'></i> icon in the toolbar.</p>
 </section>
 <section id="cptools-form-page-break-page-break">
-<h4><em class="cptools cptools-form-page-break"></em> Page Break<a class="headerlink" href="#cptools-form-page-break-page-break" title="Permalink to this heading">¶</a></h4>
+<h4><i data-lucide='cp-form-page-break'></i> Page Break<a class="headerlink" href="#cptools-form-page-break-page-break" title="Permalink to this heading">¶</a></h4>
 <p>Split the form into pages. Only displayed to participants.</p>
 </section>
 <section id="cptools-form-conditional-conditional-section">
-<h4><em class="cptools cptools-form-conditional"></em> Conditional Section<a class="headerlink" href="#cptools-form-conditional-conditional-section" title="Permalink to this heading">¶</a></h4>
-<p><em class="cptools cptools-form-list-radio"></em> <strong>Choice</strong> and <em class="cptools cptools-form-list-check"></em> <strong>Checkbox</strong> questions can be used to display or hide a section of questions.</p>
+<h4><i data-lucide='cp-form-conditional'></i> Conditional Section<a class="headerlink" href="#cptools-form-conditional-conditional-section" title="Permalink to this heading">¶</a></h4>
+<p><i data-lucide='list'></i> <strong>Choice</strong> and <i data-lucide='list-checks'></i> <strong>Checkbox</strong> questions can be used to display or hide a section of questions.</p>
 <ol class="arabic simple">
-<li><p>In the form editor, use the <em class="fa fa-plus"></em> <strong>Add</strong> buttons between questions, or the list at the bottom of the form, to add a <em class="cptools cptools-form-conditional"></em> <strong>Conditional Section</strong>.</p></li>
+<li><p>In the form editor, use the <i data-lucide='plus'></i> <strong>Add</strong> buttons between questions, or the list at the bottom of the form, to add a <i data-lucide='cp-form-conditional'></i> <strong>Conditional Section</strong>.</p></li>
 <li><p>Ensure that there is at least one <a class="reference internal" href="#form-q-choice"><span class="std std-ref"> Choice</span></a> or <a class="reference internal" href="#form-q-checkbox"><span class="std std-ref"> Checkbox</span></a> before the section (a hint will be displayed if not). Only questions placed <em>before</em> the section will be available to use in the conditions.</p></li>
-<li><p>Add some content (description text, questions) to the section using the <em class="fa fa-plus"></em> <strong>Add</strong> button or by dragging questions into the section area.</p></li>
+<li><p>Add some content (description text, questions) to the section using the <i data-lucide='plus'></i> <strong>Add</strong> button or by dragging questions into the section area.</p></li>
 <li><p>Set some conditions using the selection menus. AND conditions must all be true together, only of the OR conditions needs to be true.</p></li>
 <li><p>In the participant view, the section will only be displayed if the conditions are true.</p></li>
 </ol>
@@ -800,7 +804,7 @@
 <section id="question-types">
 <h3>Question types<a class="headerlink" href="#question-types" title="Permalink to this heading">¶</a></h3>
 <section id="cptools-form-text-text">
-<h4><em class="cptools cptools-form-text"></em> Text<a class="headerlink" href="#cptools-form-text-text" title="Permalink to this heading">¶</a></h4>
+<h4><i data-lucide='minus'></i> Text<a class="headerlink" href="#cptools-form-text-text" title="Permalink to this heading">¶</a></h4>
 <p><strong>Response</strong>: one line of text</p>
 <p><strong>Options</strong>:</p>
 <ul class="simple">
@@ -812,7 +816,7 @@
 </div>
 </section>
 <section id="cptools-form-paragraph-paragraph">
-<h4><em class="cptools cptools-form-paragraph"></em> Paragraph<a class="headerlink" href="#cptools-form-paragraph-paragraph" title="Permalink to this heading">¶</a></h4>
+<h4><i data-lucide='text'></i> Paragraph<a class="headerlink" href="#cptools-form-paragraph-paragraph" title="Permalink to this heading">¶</a></h4>
 <p><strong>Response</strong>: multiple lines of text</p>
 <p><strong>Options</strong>:</p>
 <ul class="simple">
@@ -820,74 +824,74 @@
 </ul>
 </section>
 <section id="cptools-form-list-radio-choice">
-<span id="form-q-choice"></span><h4><em class="cptools cptools-form-list-radio"></em> Choice<a class="headerlink" href="#cptools-form-list-radio-choice" title="Permalink to this heading">¶</a></h4>
+<span id="form-q-choice"></span><h4><i data-lucide='list'></i> Choice<a class="headerlink" href="#cptools-form-list-radio-choice" title="Permalink to this heading">¶</a></h4>
 <p><strong>Response</strong>: one choice from the list</p>
 <p><strong>Options</strong>:</p>
 <ul class="simple">
-<li><p><em class="fa fa-plus"></em> <strong>Add option</strong> button</p></li>
-<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> handle and drag to re-order options</p></li>
-<li><p>Delete an option with <em class="fa fa-times"></em></p></li>
+<li><p><i data-lucide='plus'></i> <strong>Add option</strong> button</p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order options</p></li>
+<li><p>Delete an option with <i data-lucide='x'></i></p></li>
 </ul>
 </section>
 <section id="cptools-form-grid-radio-choice-grid">
-<h4><em class="cptools cptools-form-grid-radio"></em> Choice Grid<a class="headerlink" href="#cptools-form-grid-radio-choice-grid" title="Permalink to this heading">¶</a></h4>
+<h4><i data-lucide='cp-form-grid-radio'></i> Choice Grid<a class="headerlink" href="#cptools-form-grid-radio-choice-grid" title="Permalink to this heading">¶</a></h4>
 <p><strong>Response</strong>: one option choice per item</p>
 <p><strong>Options</strong>:</p>
 <ul class="simple">
-<li><p><em class="fa fa-plus"></em> <strong>Add option</strong> and <em class="fa fa-plus"></em> <strong>Add item</strong> buttons</p></li>
-<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> handle and drag to re-order items and options</p></li>
-<li><p>Delete an item or option with <em class="fa fa-times"></em></p></li>
+<li><p><i data-lucide='plus'></i> <strong>Add option</strong> and <i data-lucide='plus'></i> <strong>Add item</strong> buttons</p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order items and options</p></li>
+<li><p>Delete an item or option with <i data-lucide='x'></i></p></li>
 </ul>
 </section>
 <section id="calendar-date">
-<h4><em class="fa fa-calendar"></em> Date<a class="headerlink" href="#calendar-date" title="Permalink to this heading">¶</a></h4>
+<h4><i data-lucide='calendar-days'></i> Date<a class="headerlink" href="#calendar-date" title="Permalink to this heading">¶</a></h4>
 <p><strong>Response</strong>: pick a date and time</p>
 </section>
 <section id="cptools-form-list-check-checkbox">
-<span id="form-q-checkbox"></span><h4><em class="cptools cptools-form-list-check"></em> Checkbox<a class="headerlink" href="#cptools-form-list-check-checkbox" title="Permalink to this heading">¶</a></h4>
+<span id="form-q-checkbox"></span><h4><i data-lucide='list-checks'></i> Checkbox<a class="headerlink" href="#cptools-form-list-check-checkbox" title="Permalink to this heading">¶</a></h4>
 <p><strong>Response</strong>: multiple choices from the list</p>
 <p><strong>Options</strong>:</p>
 <ul class="simple">
 <li><p>Maximum selectable options</p></li>
-<li><p><em class="fa fa-plus"></em> <strong>Add option</strong> button</p></li>
-<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> handle and drag to re-order options</p></li>
-<li><p>Delete an option with <em class="fa fa-times"></em></p></li>
+<li><p><i data-lucide='plus'></i> <strong>Add option</strong> button</p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order options</p></li>
+<li><p>Delete an option with <i data-lucide='x'></i></p></li>
 </ul>
 </section>
 <section id="cptools-form-grid-check-checkbox-grid">
-<h4><em class="cptools cptools-form-grid-check"></em> Checkbox Grid<a class="headerlink" href="#cptools-form-grid-check-checkbox-grid" title="Permalink to this heading">¶</a></h4>
+<h4><i data-lucide='cp-form-grid-check'></i> Checkbox Grid<a class="headerlink" href="#cptools-form-grid-check-checkbox-grid" title="Permalink to this heading">¶</a></h4>
 <p><strong>Response</strong>: multiple choices for each item</p>
 <p><strong>Options</strong>:</p>
 <ul class="simple">
 <li><p>Maximum selectable options (per item)</p></li>
-<li><p><em class="fa fa-plus"></em> <strong>Add option</strong> and <em class="fa fa-plus"></em> <strong>Add item</strong> buttons</p></li>
-<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> handle and drag to re-order items and options</p></li>
-<li><p>Delete an item or option with <em class="fa fa-times"></em></p></li>
+<li><p><i data-lucide='plus'></i> <strong>Add option</strong> and <i data-lucide='plus'></i> <strong>Add item</strong> buttons</p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order items and options</p></li>
+<li><p>Delete an item or option with <i data-lucide='x'></i></p></li>
 </ul>
 </section>
 <section id="cptools-form-list-ordered-ordered-list">
-<h4><em class="cptools cptools-form-list-ordered"></em> Ordered List<a class="headerlink" href="#cptools-form-list-ordered-ordered-list" title="Permalink to this heading">¶</a></h4>
+<h4><i data-lucide='list-ordered'></i> Ordered List<a class="headerlink" href="#cptools-form-list-ordered-ordered-list" title="Permalink to this heading">¶</a></h4>
 <p><strong>Response</strong>: order of preference for the listed options</p>
 <p><strong>Options</strong>:</p>
 <ul class="simple">
-<li><p><em class="fa fa-plus"></em> <strong>Add option</strong> button</p></li>
-<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> handle and drag to re-order options</p></li>
-<li><p>Delete an option with <em class="fa fa-times"></em></p></li>
+<li><p><i data-lucide='plus'></i> <strong>Add option</strong> button</p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order options</p></li>
+<li><p>Delete an option with <i data-lucide='x'></i></p></li>
 </ul>
 <p><strong>Condorcet</strong>:</p>
 <p>Since v5.3 responses can show the results with the <a class="reference external" href="https://en.wikipedia.org/wiki/Condorcet_method">Condorcet method</a>. You can select Schulze or Ranked Pairs to display the winner. The details will also show the number of matches won by each candidates.</p>
 </section>
 <section id="cptools-form-poll-poll">
-<h4><em class="cptools cptools-form-poll"></em> Poll<a class="headerlink" href="#cptools-form-poll-poll" title="Permalink to this heading">¶</a></h4>
-<p><strong>Response</strong>: <em class="fa fa-check"></em> Yes, <em class="fa fa-times"></em> No, or <em class="cptools cptools-form-poll-maybe"></em> Acceptable for each of the proposed options</p>
+<h4><i data-lucide='cp-form-poll'></i> Poll<a class="headerlink" href="#cptools-form-poll-poll" title="Permalink to this heading">¶</a></h4>
+<p><strong>Response</strong>: <i data-lucide='check'></i> Yes, <i data-lucide='x'></i> No, or <i data-lucide='cp-form-poll-maybe'></i> Acceptable for each of the proposed options</p>
 <p><strong>Option types</strong>:</p>
 <ul>
 <li><p>Text</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><em class="fa fa-plus"></em> <strong>Add option</strong> button</p></li>
-<li><p>Grab the <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> handle and drag to re-order options</p></li>
-<li><p>Delete an option with <em class="fa fa-times"></em></p></li>
+<li><p><i data-lucide='plus'></i> <strong>Add option</strong> button</p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order options</p></li>
+<li><p>Delete an option with <i data-lucide='x'></i></p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -902,7 +906,7 @@
 <blockquote>
 <div><ul class="simple">
 <li><p>Click on an option to select the date and time in the calendar</p></li>
-<li><p>Click &quot;Add multiple dates and times&quot; to select multiple options and use <em class="fa fa-plus"></em> <strong>Add all</strong> to add all of the selected options at once.</p></li>
+<li><p>Click &quot;Add multiple dates and times&quot; to select multiple options and use <i data-lucide='plus'></i> <strong>Add all</strong> to add all of the selected options at once.</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -913,9 +917,9 @@
 <span id="id1"></span><h3>Form Settings<a class="headerlink" href="#form-settings" title="Permalink to this heading">¶</a></h3>
 <p>Use the 3 buttons at the top for easy access to:</p>
 <ul class="simple">
-<li><p><em class="fa fa-bar-chart"></em> <strong>Responses</strong> (count): toggles the response page</p></li>
-<li><p><em class="fa fa-eye"></em> <strong>Preview form</strong>: Opens the participant link</p></li>
-<li><p><em class="fa fa-link"></em> <strong>Copy public link</strong>: Copies the participant link</p></li>
+<li><p><i data-lucide='chart-no-axes-combined'></i> <strong>Responses</strong> (count): toggles the response page</p></li>
+<li><p><i data-lucide='eye'></i> <strong>Preview form</strong>: Opens the participant link</p></li>
+<li><p><i data-lucide='link'></i> <strong>Copy public link</strong>: Copies the participant link</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Informacja</p>
@@ -991,9 +995,9 @@
 <section id="import-export">
 <h2>Import/Eksport<a class="headerlink" href="#import-export" title="Permalink to this heading">¶</a></h2>
 <p>Form documents themselves can be exported and imported in <code class="docutils literal notranslate"><span class="pre">JSON</span></code> format.</p>
-<p>To export responses, from the <em class="fa fa-bar-chart"></em> <strong>Responses</strong> page, you have two possibilities:</p>
+<p>To export responses, from the <i data-lucide='chart-no-axes-combined'></i> <strong>Responses</strong> page, you have two possibilities:</p>
 <ol class="arabic simple">
-<li><p>as a CSV or JSON file use the <em class="fa fa-download"></em> <strong>EXPORT</strong> button</p></li>
+<li><p>as a CSV or JSON file use the <i data-lucide='download'></i> <strong>EXPORT</strong> button</p></li>
 <li><p>as a Spreadsheet that can be added to your drive with the <strong>EXPORT TO SHEET</strong> button</p></li>
 </ol>
 <div class="admonition note">
@@ -1011,10 +1015,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="kanban.html" class="btn btn-neutral float-right" title="Kanban" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="kanban.html" class="btn btn-neutral float-right" title="Kanban" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="slides.html" class="btn btn-neutral" title="Slides" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="slides.html" class="btn btn-neutral" title="Slides" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -1077,7 +1081,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="#">白板</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#toolbar">工具列</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#drawing">繪圖</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> 繪圖模式</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#arrows-select-mode"><em class="fa fa-arrows"></em> 選取模式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> 繪圖模式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#arrows-select-mode"><i data-lucide='move'></i> 選取模式</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#export">匯出</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -757,20 +761,20 @@
 <img alt="../../_images/app-whiteboard-preview.png" class="screenshot" src="../../_images/app-whiteboard-preview.png" />
 <section id="toolbar">
 <h2>工具列<a class="headerlink" href="#toolbar" title="此标题的永久链接">¶</a></h2>
-<p><em class="fa fa-picture-o"></em> <strong>插入</strong>：在文件中加入圖片。可從 CryptDrive 選擇圖片或上傳。 <span class="badge-user">已登入使用者</span></p>
+<p><i data-lucide='image-plus'></i> <strong>插入</strong>：在文件中加入圖片。可從 CryptDrive 選擇圖片或上傳。 <span class="badge-user" data-icon="user"><i data-lucide="user"></i> 已登入使用者</span></p>
 </section>
 <section id="drawing">
 <h2>繪圖<a class="headerlink" href="#drawing" title="此标题的永久链接">¶</a></h2>
 <p>提供兩種模式：</p>
 <ul class="simple">
-<li><p><em class="fa fa-paint-brush"></em> 繪圖模式：在圖面中新增圖形。</p></li>
-<li><p><em class="fa fa-arrows"></em> 選取模式：變更既有圖形。</p></li>
+<li><p><i data-lucide='brush-cleaning'></i> 繪圖模式：在圖面中新增圖形。</p></li>
+<li><p><i data-lucide='move'></i> 選取模式：變更既有圖形。</p></li>
 </ul>
 <p>兩種模式皆可用的功能：</p>
 <ul class="simple">
-<li><p><em class="fa fa-undo"></em> ：復原</p></li>
-<li><p><em class="fa fa-repeat"></em> ：重做</p></li>
-<li><p><em class="fa fa-font"></em> ：在圖面中插入文字元件</p></li>
+<li><p><i data-lucide='undo'></i> ：復原</p></li>
+<li><p><i data-lucide='redo'></i> ：重做</p></li>
+<li><p><i data-lucide='type'></i> ：在圖面中插入文字元件</p></li>
 </ul>
 <p>若要清除畫布上的所有內容：</p>
 <ul class="simple">
@@ -778,12 +782,12 @@
 </ul>
 </section>
 <section id="paint-brush-paint-mode">
-<h2><em class="fa fa-paint-brush"></em> 繪圖模式<a class="headerlink" href="#paint-brush-paint-mode" title="此标题的永久链接">¶</a></h2>
+<h2><i data-lucide='brush-cleaning'></i> 繪圖模式<a class="headerlink" href="#paint-brush-paint-mode" title="此标题的永久链接">¶</a></h2>
 <p>線條寬度與不透明度在繪圖工具列中設定。右側預覽會顯示畫筆的大小與不透明度。</p>
 <p>顏色在繪圖工具列的色盤中選擇。若要變更顏色，請雙擊該顏色，並使用選色器選擇新顏色。</p>
 </section>
 <section id="arrows-select-mode">
-<h2><em class="fa fa-arrows"></em> 選取模式<a class="headerlink" href="#arrows-select-mode" title="此标题的永久链接">¶</a></h2>
+<h2><i data-lucide='move'></i> 選取模式<a class="headerlink" href="#arrows-select-mode" title="此标题的永久链接">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">點擊</span></code> 元件即可選取，接著：</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">拖曳</span></code> 即可移動。</p></li>
@@ -792,17 +796,17 @@
 <p>若要刪除已選取的元件：</p>
 <ul class="simple">
 <li><p>按 <kbd class="kbd docutils literal notranslate">Del</kbd> 鍵。</p></li>
-<li><p>或使用繪圖工具列中的 <em class="fa fa-trash"></em> 按鈕。</p></li>
+<li><p>或使用繪圖工具列中的 <i data-lucide='trash2'></i> 按鈕。</p></li>
 </ul>
 </section>
 <section id="export">
 <h2>匯出<a class="headerlink" href="#export" title="此标题的永久链接">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-download"></em> <strong>匯出</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='download'></i> <strong>匯出</strong></div>
 <div class="line">支援格式：<code class="docutils literal notranslate"><span class="pre">.png</span></code></div>
 </div>
 <p>若要將圖片匯出至 CryptDrive，例如用於其他文件：</p>
-<p><em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-file-image-o"></em> <strong>另存為圖片</strong></p>
+<p><i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='file-image'></i> <strong>另存為圖片</strong></p>
 </section>
 </section>
 
@@ -814,10 +818,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../keyboard_shortcuts.html" class="btn btn-neutral float-right" title="鍵盤快速鍵" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../keyboard_shortcuts.html" class="btn btn-neutral float-right" title="鍵盤快速鍵" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="diagram.html" class="btn btn-neutral" title="圖表" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="diagram.html" class="btn btn-neutral" title="圖表" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -879,7 +883,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

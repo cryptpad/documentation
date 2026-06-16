@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">ホワイトボード</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">ツールバー</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">描画</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> 描画モード</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> 選択モード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> 描画モード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> 選択モード</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">エクスポート</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -763,19 +767,19 @@
 </ul>
 <p>カード、列の削除：</p>
 <ul class="simple">
-<li><p>カードまたは列をドラッグすると <em class="fa fa-trash"></em> の領域が表示されます。</p></li>
-<li><p>カード、列をスクリーンの下にある <em class="fa fa-trash"></em> 削除エリアに <code class="docutils literal notranslate"><span class="pre">ドラッグ</span></code> して <code class="docutils literal notranslate"><span class="pre">ドロップ</span></code> 。</p></li>
+<li><p>カードまたは列をドラッグすると <i data-lucide='trash2'></i> の領域が表示されます。</p></li>
+<li><p>カード、列をスクリーンの下にある <i data-lucide='trash2'></i> 削除エリアに <code class="docutils literal notranslate"><span class="pre">ドラッグ</span></code> して <code class="docutils literal notranslate"><span class="pre">ドロップ</span></code> 。</p></li>
 </ul>
 <p>または</p>
 <ul class="simple">
-<li><p>カードまたは列の <em class="fa fa-pencil"></em> ボタンでエディターを開き、<strong>削除</strong>を選択して、これを承認。</p></li>
+<li><p>カードまたは列の <i data-lucide='pencil'></i> ボタンでエディターを開き、<strong>削除</strong>を選択して、これを承認。</p></li>
 </ul>
 </section>
 <section id="columns">
 <h2>列<a class="headerlink" href="#columns" title="この見出しへのパーマリンク">¶</a></h2>
 <p>新しい列の作成：</p>
 <ul class="simple">
-<li><p>最後の列の右にある <em class="fa fa-plus"></em> ボタン。</p></li>
+<li><p>最後の列の右にある <i data-lucide='plus'></i> ボタン。</p></li>
 </ul>
 <p>列のタイトルの変更：</p>
 <ol class="arabic simple">
@@ -785,7 +789,7 @@
 </ol>
 <p>列のタイトルと色は、列のエディターでも変更できます。</p>
 <ol class="arabic simple">
-<li><p>列のタイトルの横にある <em class="fa fa-pencil"></em> ボタン。</p></li>
+<li><p>列のタイトルの横にある <i data-lucide='pencil'></i> ボタン。</p></li>
 <li><p>タイトル、色の変更。</p></li>
 <li><p><strong>閉じる</strong>、 <kbd class="kbd docutils literal notranslate">Esc</kbd> または <kbd class="kbd docutils literal notranslate">Enter</kbd></p></li>
 </ol>
@@ -794,8 +798,8 @@
 <h2>カード<a class="headerlink" href="#cards" title="この見出しへのパーマリンク">¶</a></h2>
 <p>各列の一番下にあるボタンで新しいカードを作成できます。</p>
 <ul class="simple">
-<li><p><em class="cptools cptools-add-bottom"></em> で列の一番下にカードを追加できます。</p></li>
-<li><p><em class="cptools cptools-add-top"></em> で列の一番上にカードを追加できます。</p></li>
+<li><p><i data-lucide='cp-kanban-add-bottom'></i> で列の一番下にカードを追加できます。</p></li>
+<li><p><i data-lucide='cp-kanban-add-top'></i> で列の一番上にカードを追加できます。</p></li>
 </ul>
 <p>カードのタイトルを変更：</p>
 <ol class="arabic simple">
@@ -809,13 +813,13 @@
 <h2>カードのエディター<a class="headerlink" href="#card-editor" title="この見出しへのパーマリンク">¶</a></h2>
 <p>カードのエディターは、以下の方法で開くことができます。</p>
 <ul class="simple">
-<li><p>カードのタイトルの隣にある <em class="fa fa-pencil"></em> ボタン。</p></li>
+<li><p>カードのタイトルの隣にある <i data-lucide='pencil'></i> ボタン。</p></li>
 </ul>
 <p>カードのエディターにて、</p>
 <ul class="simple">
 <li><p>カードのタイトルを編集。</p></li>
 <li><p>カードの本文は<a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">マークダウン</a>を使って編集できます。斜字体、太字、リンク、リスト、TODOリストなどをサポートしています。</p></li>
-<li><p>マークダウンのツールバーの <em class="fa fa-picture-o"></em> メニューで画像を挿入できます（リモートの画像を読み込むマークダウンの記法はブロックされています。詳細は<a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">サーバー外のコンテンツ</span></a>をご覧ください）。</p></li>
+<li><p>マークダウンのツールバーの <i data-lucide='image-plus'></i> メニューで画像を挿入できます（リモートの画像を読み込むマークダウンの記法はブロックされています。詳細は<a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">サーバー外のコンテンツ</span></a>をご覧ください）。</p></li>
 <li><p>カードの色を選択。</p></li>
 <li><p>カードにタグを追加または削除。</p></li>
 <li><p>カードを削除。</p></li>
@@ -823,27 +827,27 @@
 </section>
 <section id="display">
 <h2>表示<a class="headerlink" href="#display" title="この見出しへのパーマリンク">¶</a></h2>
-<p>右上の <em class="fa fa-minus"></em> と <em class="fa fa-bars"></em> のアイコンでカードに関する表示を切り替えられます。</p>
+<p>右上の <i data-lucide='minus'></i> と <i data-lucide='menu'></i> のアイコンでカードに関する表示を切り替えられます。</p>
 <ul class="simple">
-<li><p><em class="fa fa-minus"></em> カードのタイトルのみ。</p></li>
-<li><p><em class="fa fa-bars"></em> カードの内容全体。</p></li>
+<li><p><i data-lucide='minus'></i> カードのタイトルのみ。</p></li>
+<li><p><i data-lucide='menu'></i> カードの内容全体。</p></li>
 </ul>
 <p>ボードの上部にあるタグでカードをフィルタリングできます。</p>
 <ol class="arabic simple">
 <li><p>タグを <code class="docutils literal notranslate"><span class="pre">クリック</span></code> 。</p></li>
 <li><p>選択したタグが付けられているカードのみが表示されます。</p></li>
 <li><p>新しいカードには自動的に選択したタグが付けられます。</p></li>
-<li><p>選択済のタグを <code class="docutils literal notranslate"><span class="pre">クリック</span></code> すると選択を解除します。 <em class="fa fa-times"></em> <strong>フィルターを消去</strong>（リストの左）で全てのタグの選択を解除できます。</p></li>
+<li><p>選択済のタグを <code class="docutils literal notranslate"><span class="pre">クリック</span></code> すると選択を解除します。 <i data-lucide='x'></i> <strong>フィルターを消去</strong>（リストの左）で全てのタグの選択を解除できます。</p></li>
 </ol>
 </section>
 <section id="import-export">
 <h2>インポート/エクスポート<a class="headerlink" href="#import-export" title="この見出しへのパーマリンク">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>ファイル</strong> &gt; <em class="fa fa-upload"></em> <strong>インポート</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>ファイル</strong> &gt; <i data-lucide='upload'></i> <strong>インポート</strong></div>
 <div class="line">サポートするフォーマット：このアプリケーションによりエクスポートされた <code class="docutils literal notranslate"><span class="pre">.json</span></code> ファイル。</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>ファイル</strong> &gt; <em class="fa fa-download"></em> <strong>エクスポート</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>ファイル</strong> &gt; <i data-lucide='download'></i> <strong>エクスポート</strong></div>
 <div class="line">サポートするフォーマット：<code class="docutils literal notranslate"><span class="pre">.json</span></code>。</div>
 </div>
 </section>
@@ -857,10 +861,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="diagram.html" class="btn btn-neutral float-right" title="ダイアグラム" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="diagram.html" class="btn btn-neutral float-right" title="ダイアグラム" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="form.html" class="btn btn-neutral" title="フォーム" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="form.html" class="btn btn-neutral" title="フォーム" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -923,7 +927,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

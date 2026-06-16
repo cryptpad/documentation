@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Whiteboard</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Barra de herramientas</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Dibujo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Modo pintura</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Modo seleccionar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Modo pintura</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Modo seleccionar</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Exportar</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -757,11 +761,11 @@
 <img alt="../../_images/app-slides-preview.png" class="screenshot" src="../../_images/app-slides-preview.png" />
 <section id="toolbar">
 <h2>Barra de herramientas<a class="headerlink" href="#toolbar" title="Enlace permanente a este encabezado">¶</a></h2>
-<p><em class="fa fa-wrench"></em> <strong>Herramientas</strong>: Muestra/oculta la barra de herramientas del editor de texto.</p>
-<p><em class="fa fa-picture-o"></em> <strong>Insertar</strong>: Añade una imagen al documento. La imagen se puede elegir en el disco o cargar. <span class="badge-user">Logged in users</span></p>
-<p><em class="cptools cptools-palette"></em> <strong>Tema</strong>: establece colores para el editor, detallado <a class="reference internal" href="#app-slides-theme"><span class="std std-ref">a continuación</span></a>.</p>
-<p><em class="fa fa-eye"></em> <strong>Vista previa</strong>: Muestra/oculta el panel de vista previa de las diapositivas.</p>
-<p><em class="fa fa-play-circle"></em> <strong>Presentar</strong>: Inicia la presentación de diapositivas en ventana completa.</p>
+<p><i data-lucide='wrench'></i> <strong>Herramientas</strong>: Muestra/oculta la barra de herramientas del editor de texto.</p>
+<p><i data-lucide='image-plus'></i> <strong>Insertar</strong>: Añade una imagen al documento. La imagen se puede elegir en el disco o cargar. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Logged in users</span></p>
+<p><i data-lucide='palette'></i> <strong>Tema</strong>: establece colores para el editor, detallado <a class="reference internal" href="#app-slides-theme"><span class="std std-ref">a continuación</span></a>.</p>
+<p><i data-lucide='eye'></i> <strong>Vista previa</strong>: Muestra/oculta el panel de vista previa de las diapositivas.</p>
+<p><i data-lucide='circle-play'></i> <strong>Presentar</strong>: Inicia la presentación de diapositivas en ventana completa.</p>
 </section>
 <section id="writing-slides-with-markdown">
 <h2>Escribir diapositivas con Markdown<a class="headerlink" href="#writing-slides-with-markdown" title="Enlace permanente a este encabezado">¶</a></h2>
@@ -772,7 +776,7 @@ https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdo
 </section>
 <section id="theme">
 <span id="app-slides-theme"></span><h2>Tema<a class="headerlink" href="#theme" title="Enlace permanente a este encabezado">¶</a></h2>
-<p><em class="fa fa-gear"></em> <strong>Opciones</strong>:</p>
+<p><i data-lucide='settings'></i> <strong>Opciones</strong>:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p><strong>Layout</strong>: Alternar números de diapositiva, fecha, título y transiciones.</p></li>
@@ -780,25 +784,25 @@ https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdo
 <li><p><strong>CSS personalizado</strong>: Pega el código CSS para personalizar la apariencia de la presentación.</p></li>
 </ul>
 </div></blockquote>
-<p><em class="fa fa-i-cursor"></em> <strong>Color del texto</strong>, <em class="fa fa-square-o"></em> <strong>Color de fondo</strong>: Elige colores para la presentación.</p>
+<p><i data-lucide='text-cursor'></i> <strong>Color del texto</strong>, <i data-lucide='square'></i> <strong>Color de fondo</strong>: Elige colores para la presentación.</p>
 <p><strong>Tema</strong>: Combinación de colores utilizada en el panel del editor de código.</p>
 </section>
 <section id="import-export">
 <h2>Importar/Exportar<a class="headerlink" href="#import-export" title="Enlace permanente a este encabezado">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Archivo</strong> &gt; <em class="fa fa-upload"></em> <strong>Importar</strong>.</div>
+<div class="line"><i data-lucide='file'></i> <strong>Archivo</strong> &gt; <i data-lucide='upload'></i> <strong>Importar</strong>.</div>
 <div class="line">Formatos admitidos: cualquier archivo de texto sin formato.</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Archivo</strong> &gt; <em class="fa fa-download"></em> <strong>Exportar</strong>.</div>
+<div class="line"><i data-lucide='file'></i> <strong>Archivo</strong> &gt; <i data-lucide='download'></i> <strong>Exportar</strong>.</div>
 <div class="line">Formatos soportados: <code class="docutils literal notranslate"><span class="pre">.md</span></code>.</div>
 </div>
 </section>
 <section id="images">
 <h2>Imágenes<a class="headerlink" href="#images" title="Enlace permanente a este encabezado">¶</a></h2>
 <p>La sintaxis Markdown para incluir imágenes remotas, como `` ![description](<a class="reference external" href="https://site.com/image.jpg">https://site.com/image.jpg</a>) `` está bloqueada por CryptPad por razones de seguridad.</p>
-<p><span class="badge-user">Usuarios registrados</span></p>
-<p>Para insertar imágenes desde el CryptDrive o subir nuevas, usa el menú <em class="fa fa-picture-o"></em> <strong>Insertar</strong> en la barra de herramientas.</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Usuarios registrados</span></p>
+<p>Para insertar imágenes desde el CryptDrive o subir nuevas, usa el menú <i data-lucide='image-plus'></i> <strong>Insertar</strong> en la barra de herramientas.</p>
 <p>Consulta <a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">Contenido remoto</span></a> para obtener más detalles.</p>
 </section>
 <section id="lightbox">
@@ -807,7 +811,7 @@ https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdo
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Doble</span> <span class="pre">click</span></code> en una imagen o diagrama en la vista previa de Markdown.</p></li>
 <li><p>Navega con las teclas de flecha.</p></li>
-<li><p>Cierra la Lightbox con <em class="fa fa-times"></em> o <kbd class="kbd docutils literal notranslate">Esc</kbd>.</p></li>
+<li><p>Cierra la Lightbox con <i data-lucide='x'></i> o <kbd class="kbd docutils literal notranslate">Esc</kbd>.</p></li>
 </ol>
 </section>
 </section>
@@ -820,10 +824,10 @@ https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdo
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="form.html" class="btn btn-neutral float-right" title="Formulario" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="form.html" class="btn btn-neutral float-right" title="Formulario" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="code.html" class="btn btn-neutral" title="Código / Markdown" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="code.html" class="btn btn-neutral" title="Código / Markdown" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -885,7 +889,10 @@ https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdo
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

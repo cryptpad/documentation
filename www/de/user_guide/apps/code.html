@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Whiteboard</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Werkzeugleiste</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Zeichnen</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Zeichenmodus</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Auswahlmodus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Zeichenmodus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Auswahlmodus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Export</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -757,17 +761,17 @@
 <img alt="../../_images/app-code-preview.png" class="screenshot" src="../../_images/app-code-preview.png" />
 <section id="toolbar">
 <h2>Werkzeugleiste<a class="headerlink" href="#toolbar" title="Permalink to this heading">¶</a></h2>
-<p><em class="fa fa-wrench"></em> <strong>Werkzeuge</strong>: Blendet die Werkzeugleiste für den Texteditor ein/aus.</p>
-<p><em class="fa fa-picture-o"></em> <strong>Einfügen</strong>: Fügt ein Bild in das Dokument ein. Das Bild kann aus dem CryptDrive ausgewählt oder hochgeladen werden. <span class="badge-user">Eingeloggte Benutzer</span></p>
-<p><em class="cptools cptools-palette"></em> <strong>Theme</strong>: Bestimmt die Farben für den Editor, wie <a class="reference internal" href="#app-code-theme"><span class="std std-ref">unten</span></a> genauer beschrieben.</p>
-<p><em class="fa fa-eye"></em> <strong>Preview</strong>: Blendet die Markdown-Vorschau ein/aus.</p>
+<p><i data-lucide='wrench'></i> <strong>Werkzeuge</strong>: Blendet die Werkzeugleiste für den Texteditor ein/aus.</p>
+<p><i data-lucide='image-plus'></i> <strong>Einfügen</strong>: Fügt ein Bild in das Dokument ein. Das Bild kann aus dem CryptDrive ausgewählt oder hochgeladen werden. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Eingeloggte Benutzer</span></p>
+<p><i data-lucide='palette'></i> <strong>Theme</strong>: Bestimmt die Farben für den Editor, wie <a class="reference internal" href="#app-code-theme"><span class="std std-ref">unten</span></a> genauer beschrieben.</p>
+<p><i data-lucide='eye'></i> <strong>Preview</strong>: Blendet die Markdown-Vorschau ein/aus.</p>
 </section>
 <section id="theme">
 <span id="app-code-theme"></span><h2>Theme<a class="headerlink" href="#theme" title="Permalink to this heading">¶</a></h2>
-<p><em class="fa fa-paint-brush"></em> <strong>Autorenfarben</strong>: Hebt den Text in der jeweiligen Farbe des Autors hervor (gewählt in den <a class="reference internal" href="../user_account.html#user-settings-cursor"><span class="std std-ref">Benutzereinstellungen</span></a>). Wenn aktiv:</p>
+<p><i data-lucide='brush-cleaning'></i> <strong>Autorenfarben</strong>: Hebt den Text in der jeweiligen Farbe des Autors hervor (gewählt in den <a class="reference internal" href="../user_account.html#user-settings-cursor"><span class="std std-ref">Benutzereinstellungen</span></a>). Wenn aktiv:</p>
 <ul class="simple">
-<li><p><em class="fa fa-paint-brush"></em> <strong>Autorenfarben verbergen</strong> schaltet die Anzeige der Autorenfarben in diesem Fenster ab, wobei sie später wieder aktiviert werden kann und für andere Benutzer aktiv bleibt.</p></li>
-<li><p><em class="fa fa-paint-brush"></em> <strong>Autorenfarben</strong> &gt; <strong>Löschen und Deaktivieren</strong> schaltet die Farben für alle Benutzer ab und löscht die dazugehörigen Daten.</p></li>
+<li><p><i data-lucide='brush-cleaning'></i> <strong>Autorenfarben verbergen</strong> schaltet die Anzeige der Autorenfarben in diesem Fenster ab, wobei sie später wieder aktiviert werden kann und für andere Benutzer aktiv bleibt.</p></li>
+<li><p><i data-lucide='brush-cleaning'></i> <strong>Autorenfarben</strong> &gt; <strong>Löschen und Deaktivieren</strong> schaltet die Farben für alle Benutzer ab und löscht die dazugehörigen Daten.</p></li>
 </ul>
 <p><strong>Theme</strong>: Farbschema für den Codeeditor-Bereich.</p>
 <p><strong>Sprache</strong>: Wird für Syntax-Hervorhebung verwendet.</p>
@@ -775,11 +779,11 @@
 <section id="import-export">
 <h2>Import/Export<a class="headerlink" href="#import-export" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Datei</strong> &gt; <em class="fa fa-upload"></em> <strong>Importieren</strong>.</div>
+<div class="line"><i data-lucide='file'></i> <strong>Datei</strong> &gt; <i data-lucide='upload'></i> <strong>Importieren</strong>.</div>
 <div class="line">Unterstützte Formate: Jede Textdatei, die Dateierweiterung wird zur Bestimmung der Sprache verwendet.</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Datei</strong> &gt; <em class="fa fa-download"></em> <strong>Exportieren</strong>.</div>
+<div class="line"><i data-lucide='file'></i> <strong>Datei</strong> &gt; <i data-lucide='download'></i> <strong>Exportieren</strong>.</div>
 <div class="line">Unterstützte Formate: <code class="docutils literal notranslate"><span class="pre">.md</span></code>, der exportierten Datei kann eine beliebige Erweiterung gegeben werden.</div>
 </div>
 </section>
@@ -787,14 +791,14 @@
 <h2>Markdown<a class="headerlink" href="#markdown" title="Permalink to this heading">¶</a></h2>
 <p>Die Code-Anwendung eignet sich besonders für das Schreiben von Dokumenten in Markdown: eine einfache Syntax, die eine grundlegende Formatierungen bietet und gleichzeitig lesbar bleibt. Markdown lässt sich leicht in andere Formate wie z.B. HTML konvertieren.</p>
 <p>Beispiele für die Markdown-Syntax in CryptPad:</p>
-<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/kmYt1-pxaMlinUl2+YQSLyZetKE2GJo9QtTlCQ8RNks/"><em class="cptools cptools-code"></em> <strong>Markdown Guide: Basic Syntax</strong></a></p>
+<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/kmYt1-pxaMlinUl2+YQSLyZetKE2GJo9QtTlCQ8RNks/"><i data-lucide='file-code'></i> <strong>Markdown Guide: Basic Syntax</strong></a></p>
 <p>Zusätzlich zur grundlegenden Markdown-Syntax werden folgende Funktionen unterstützt:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">[TOC]</span></code> Fügt ein Inhaltsverzeichnis ein.</p></li>
 <li><p>To-Do-Liste</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[</span> <span class="pre">]</span> <span class="pre">Aufgabe</span></code> für eine zu erledigende Aufgabe: <em class="fa fa-square-o"></em> Aufgabe.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[x]</span> <span class="pre">Aufgabe</span></code> für eine abgeschlossene Aufgabe: <em class="fa fa-check-square"></em> Aufgabe.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[</span> <span class="pre">]</span> <span class="pre">Aufgabe</span></code> für eine zu erledigende Aufgabe: <i data-lucide='square'></i> Aufgabe.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[x]</span> <span class="pre">Aufgabe</span></code> für eine abgeschlossene Aufgabe: <i data-lucide='square-check'></i> Aufgabe.</p></li>
 </ul>
 </li>
 </ul>
@@ -811,13 +815,13 @@
 </pre></div>
 </div>
 <p>Beispiele für die Verwendung von Erweiterungen:</p>
-<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/VJtytDV8tsmlGx0GlR02azrp51A8cl8ivifXf6GQ9RA/"><em class="cptools cptools-code"></em> <strong>Markdown Guide: Extensions</strong></a></p>
+<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/VJtytDV8tsmlGx0GlR02azrp51A8cl8ivifXf6GQ9RA/"><i data-lucide='file-code'></i> <strong>Markdown Guide: Extensions</strong></a></p>
 </section>
 <section id="images">
 <span id="app-code-images"></span><h2>Bilder<a class="headerlink" href="#images" title="Permalink to this heading">¶</a></h2>
 <p>Markdown-Syntax zum Einbetten externer Bilder wie <code class="docutils literal notranslate"><span class="pre">![Beschreibung](https://site.com/bild.jpg)</span></code> wird von CryptPad aus Sicherheitsgründen blockiert.</p>
-<p><span class="badge-user">Eingeloggte Benutzer</span></p>
-<p>Um Bilder aus dem CryptDrive einzubetten oder neue Bilder hochzuladen, verwende <em class="fa fa-picture-o"></em> <strong>Einfügen</strong> in der Werkzeugleiste.</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Eingeloggte Benutzer</span></p>
+<p>Um Bilder aus dem CryptDrive einzubetten oder neue Bilder hochzuladen, verwende <i data-lucide='image-plus'></i> <strong>Einfügen</strong> in der Werkzeugleiste.</p>
 <p>Siehe <a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">Externer Inhalt</span></a> für weitere Informationen.</p>
 </section>
 <section id="lightbox">
@@ -826,7 +830,7 @@
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Doppelklicke</span></code> auf ein Bild oder Diagramm in der Markdown-Vorschau.</p></li>
 <li><p>Navigiere mit den Pfeiltasten.</p></li>
-<li><p>Schließe die Lightbox mit <em class="fa fa-times"></em> oder <kbd class="kbd docutils literal notranslate">Esc</kbd>.</p></li>
+<li><p>Schließe die Lightbox mit <i data-lucide='x'></i> oder <kbd class="kbd docutils literal notranslate">Esc</kbd>.</p></li>
 </ol>
 </section>
 </section>
@@ -839,10 +843,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="slides.html" class="btn btn-neutral float-right" title="Folien" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="slides.html" class="btn btn-neutral float-right" title="Folien" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="sheets.html" class="btn btn-neutral" title="Tabellen" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="sheets.html" class="btn btn-neutral" title="Tabellen" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -905,7 +909,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

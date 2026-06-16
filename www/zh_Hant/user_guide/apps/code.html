@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">白板</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">工具列</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">繪圖</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> 繪圖模式</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> 選取模式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> 繪圖模式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> 選取模式</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">匯出</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -757,17 +761,17 @@
 <img alt="../../_images/app-code-preview.png" class="screenshot" src="../../_images/app-code-preview.png" />
 <section id="toolbar">
 <h2>工具列<a class="headerlink" href="#toolbar" title="此标题的永久链接">¶</a></h2>
-<p><em class="fa fa-wrench"></em> <strong>工具</strong>：顯示或隱藏文字編輯器工具列。</p>
-<p><em class="fa fa-picture-o"></em> <strong>插入</strong>：在文件中加入圖片。可從雲端硬碟選擇或上傳。 <span class="badge-user">已登入使用者</span></p>
-<p><em class="cptools cptools-palette"></em> <strong>主題</strong>：設定編輯器色彩，詳見 <a class="reference internal" href="#app-code-theme"><span class="std std-ref">下方</span></a>。</p>
-<p><em class="fa fa-eye"></em> <strong>預覽</strong>：顯示或隱藏 Markdown 預覽窗格。</p>
+<p><i data-lucide='wrench'></i> <strong>工具</strong>：顯示或隱藏文字編輯器工具列。</p>
+<p><i data-lucide='image-plus'></i> <strong>插入</strong>：在文件中加入圖片。可從雲端硬碟選擇或上傳。 <span class="badge-user" data-icon="user"><i data-lucide="user"></i> 已登入使用者</span></p>
+<p><i data-lucide='palette'></i> <strong>主題</strong>：設定編輯器色彩，詳見 <a class="reference internal" href="#app-code-theme"><span class="std std-ref">下方</span></a>。</p>
+<p><i data-lucide='eye'></i> <strong>預覽</strong>：顯示或隱藏 Markdown 預覽窗格。</p>
 </section>
 <section id="theme">
 <span id="app-code-theme"></span><h2>主題<a class="headerlink" href="#theme" title="此标题的永久链接">¶</a></h2>
-<p><em class="fa fa-paint-brush"></em> <strong>依作者著色</strong>：以每位使用者的游標顏色標示其撰寫的文字（於 <a class="reference internal" href="../user_account.html#user-settings-cursor"><span class="std std-ref">使用者設定</span></a> 中選擇）。啟用時：</p>
+<p><i data-lucide='brush-cleaning'></i> <strong>依作者著色</strong>：以每位使用者的游標顏色標示其撰寫的文字（於 <a class="reference internal" href="../user_account.html#user-settings-cursor"><span class="std std-ref">使用者設定</span></a> 中選擇）。啟用時：</p>
 <ul class="simple">
-<li><p><em class="fa fa-paint-brush"></em> <strong>隱藏作者色彩</strong> 可關閉此視窗中的色彩顯示，其他使用者仍可重新開啟並繼續使用。</p></li>
-<li><p><em class="fa fa-paint-brush"></em> <strong>依作者著色</strong> &gt; <strong>清除並停用</strong> 可關閉所有使用者的色彩顯示並刪除相關資料。</p></li>
+<li><p><i data-lucide='brush-cleaning'></i> <strong>隱藏作者色彩</strong> 可關閉此視窗中的色彩顯示，其他使用者仍可重新開啟並繼續使用。</p></li>
+<li><p><i data-lucide='brush-cleaning'></i> <strong>依作者著色</strong> &gt; <strong>清除並停用</strong> 可關閉所有使用者的色彩顯示並刪除相關資料。</p></li>
 </ul>
 <p><strong>主題</strong>：程式碼編輯器窗格所使用的色彩配置。</p>
 <p><strong>語言</strong>：用於語法醒目提示。</p>
@@ -775,11 +779,11 @@
 <section id="import-export">
 <h2>匯入/匯出<a class="headerlink" href="#import-export" title="此标题的永久链接">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-upload"></em> <strong>匯入</strong>。</div>
+<div class="line"><i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='upload'></i> <strong>匯入</strong>。</div>
 <div class="line">支援格式：任何純文字檔，會依副檔名判斷語言。</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-download"></em> <strong>匯出</strong>。</div>
+<div class="line"><i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='download'></i> <strong>匯出</strong>。</div>
 <div class="line">支援格式：<code class="docutils literal notranslate"><span class="pre">.md</span></code>，匯出檔名可自行輸入其他副檔名。</div>
 </div>
 </section>
@@ -787,14 +791,14 @@
 <h2>Markdown<a class="headerlink" href="#markdown" title="此标题的永久链接">¶</a></h2>
 <p>程式碼應用程式特別適合以 Markdown 撰寫文件：這是一種輕量語法，能提供基本排版且易於閱讀，並可輕鬆轉換為 HTML 等格式。</p>
 <p>CryptPad 的 Markdown 語法範例請參閱：</p>
-<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/kmYt1-pxaMlinUl2+YQSLyZetKE2GJo9QtTlCQ8RNks/"><em class="cptools cptools-code"></em> <strong>Markdown Guide: Basic Syntax</strong></a></p>
+<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/kmYt1-pxaMlinUl2+YQSLyZetKE2GJo9QtTlCQ8RNks/"><i data-lucide='file-code'></i> <strong>Markdown Guide: Basic Syntax</strong></a></p>
 <p>除了基本 Markdown 語法外，也支援以下功能：</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">[TOC]</span></code> 插入目錄。</p></li>
 <li><p>待辦清單</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[</span> <span class="pre">]</span> <span class="pre">task</span></code> 表示待辦項目：<em class="fa fa-square-o"></em> task。</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[x]</span> <span class="pre">task</span></code> 表示已完成項目：<em class="fa fa-check-square"></em> task。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[</span> <span class="pre">]</span> <span class="pre">task</span></code> 表示待辦項目：<i data-lucide='square'></i> task。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[x]</span> <span class="pre">task</span></code> 表示已完成項目：<i data-lucide='square-check'></i> task。</p></li>
 </ul>
 </li>
 </ul>
@@ -811,13 +815,13 @@
 </pre></div>
 </div>
 <p>擴充功能的使用範例詳情請參閱：</p>
-<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/VJtytDV8tsmlGx0GlR02azrp51A8cl8ivifXf6GQ9RA/"><em class="cptools cptools-code"></em> <strong>Markdown Guide: Extensions</strong></a></p>
+<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/VJtytDV8tsmlGx0GlR02azrp51A8cl8ivifXf6GQ9RA/"><i data-lucide='file-code'></i> <strong>Markdown Guide: Extensions</strong></a></p>
 </section>
 <section id="images">
 <span id="app-code-images"></span><h2>圖片<a class="headerlink" href="#images" title="此标题的永久链接">¶</a></h2>
 <p>基於安全考量，CryptPad 會封鎖以 Markdown 語法嵌入遠端圖片（例如 <code class="docutils literal notranslate"><span class="pre">![description](https://site.com/image.jpg)</span></code>）。</p>
-<p><span class="badge-user">已登入使用者</span></p>
-<p>要從 CryptDrive 插入圖片或上傳新圖片，請使用工具列中的 <em class="fa fa-picture-o"></em> <strong>插入</strong> 選單。</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> 已登入使用者</span></p>
+<p>要從 CryptDrive 插入圖片或上傳新圖片，請使用工具列中的 <i data-lucide='image-plus'></i> <strong>插入</strong> 選單。</p>
 <p>詳見 <a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">遠端內容</span></a>。</p>
 </section>
 <section id="lightbox">
@@ -826,7 +830,7 @@
 <ol class="arabic simple">
 <li><p>在 Markdown 預覽中**雙擊**圖片或圖表。</p></li>
 <li><p>使用方向鍵瀏覽。</p></li>
-<li><p>按 <em class="fa fa-times"></em> 或 <kbd class="kbd docutils literal notranslate">Esc</kbd> 關閉燈箱。</p></li>
+<li><p>按 <i data-lucide='x'></i> 或 <kbd class="kbd docutils literal notranslate">Esc</kbd> 關閉燈箱。</p></li>
 </ol>
 </section>
 </section>
@@ -839,10 +843,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="slides.html" class="btn btn-neutral float-right" title="簡報" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="slides.html" class="btn btn-neutral float-right" title="簡報" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="sheets.html" class="btn btn-neutral" title="試算表" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="sheets.html" class="btn btn-neutral" title="試算表" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -904,7 +908,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

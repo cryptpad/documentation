@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">ホワイトボード</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">ツールバー</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">描画</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> 描画モード</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> 選択モード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> 描画モード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> 選択モード</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">エクスポート</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -762,7 +766,7 @@
 <li><p><strong>監察人</strong>：フォームが公開・未公開のどちらの状態でも回答を確認できます。</p></li>
 <li><p><strong>参加者</strong>：フォームに回答し、作者が回答を公開したときにのみ回答を確認できます。</p></li>
 </ul>
-<p>役割を指定してフォームを共有する場合、例えば参加者にフォームを送信する場合は、<em class="fa fa-share-alt"></em> <strong>共有</strong>メニューから役割を選択した後で、連絡先を選択、またはリンクをコピーしてください。</p>
+<p>役割を指定してフォームを共有する場合、例えば参加者にフォームを送信する場合は、<i data-lucide='share2'></i> <strong>共有</strong>メニューから役割を選択した後で、連絡先を選択、またはリンクをコピーしてください。</p>
 <img alt="フォームアプリケーションの共有メニュー。参加者、監察人、作者の3つの役割を表示中。" class="screenshot" src="../../_images/app-form-share.png" />
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
@@ -771,27 +775,27 @@
 </section>
 <section id="editing-a-form">
 <h2>フォームの編集<a class="headerlink" href="#editing-a-form" title="この見出しへのパーマリンク">¶</a></h2>
-<p>最後の質問の <em class="fa fa-plus"></em> <strong>追加</strong>メニュー、またはそれぞれの質問の間にある <em class="fa fa-plus"></em> から質問を追加できます。</p>
-<p>質問は、各質問の <em class="fa fa-trash-o"></em> <strong>削除</strong>ボタンを使うと削除できます。</p>
+<p>最後の質問の <i data-lucide='plus'></i> <strong>追加</strong>メニュー、またはそれぞれの質問の間にある <i data-lucide='plus'></i> から質問を追加できます。</p>
+<p>質問は、各質問の <i data-lucide='trash'></i> <strong>削除</strong>ボタンを使うと削除できます。</p>
 <section id="utilities">
 <h3>機能<a class="headerlink" href="#utilities" title="この見出しへのパーマリンク">¶</a></h3>
 <section id="cptools-form-paragraph-description">
-<h4><em class="cptools cptools-form-paragraph"></em> 説明文<a class="headerlink" href="#cptools-form-paragraph-description" title="この見出しへのパーマリンク">¶</a></h4>
+<h4><i data-lucide='text'></i> 説明文<a class="headerlink" href="#cptools-form-paragraph-description" title="この見出しへのパーマリンク">¶</a></h4>
 <p>マークダウンの構文を使ってフォームに文を追加できます。</p>
-<p><span class="badge-user">ログイン済ユーザー</span></p>
-<p>ツールバーの <em class="fa fa-picture-o"></em> アイコンから、CryptDriveから画像を追加したり、新しい画像をアップロードしたりすることができます。</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p>
+<p>ツールバーの <i data-lucide='image-plus'></i> アイコンから、CryptDriveから画像を追加したり、新しい画像をアップロードしたりすることができます。</p>
 </section>
 <section id="cptools-form-page-break-page-break">
-<h4><em class="cptools cptools-form-page-break"></em> ページ分割<a class="headerlink" href="#cptools-form-page-break-page-break" title="この見出しへのパーマリンク">¶</a></h4>
+<h4><i data-lucide='cp-form-page-break'></i> ページ分割<a class="headerlink" href="#cptools-form-page-break-page-break" title="この見出しへのパーマリンク">¶</a></h4>
 <p>フォームを複数のページに分割。参加者にのみ表示されます。</p>
 </section>
 <section id="cptools-form-conditional-conditional-section">
-<h4><em class="cptools cptools-form-conditional"></em> 条件のセクション<a class="headerlink" href="#cptools-form-conditional-conditional-section" title="この見出しへのパーマリンク">¶</a></h4>
-<p><em class="cptools cptools-form-list-radio"></em> <strong>選択肢</strong>と <em class="cptools cptools-form-list-check"></em> <strong>チェックボックス</strong>の質問を使うと、質問のセクションを表示したり非表示にしたりできます。</p>
+<h4><i data-lucide='cp-form-conditional'></i> 条件のセクション<a class="headerlink" href="#cptools-form-conditional-conditional-section" title="この見出しへのパーマリンク">¶</a></h4>
+<p><i data-lucide='list'></i> <strong>選択肢</strong>と <i data-lucide='list-checks'></i> <strong>チェックボックス</strong>の質問を使うと、質問のセクションを表示したり非表示にしたりできます。</p>
 <ol class="arabic simple">
-<li><p>フォームのエディターで、セクション間の <em class="fa fa-plus"></em> <strong>追加</strong>ボタン、またはフォームの一番下にあるリストから、 <em class="cptools cptools-form-conditional"></em> <strong>条件のセクション</strong>を追加してください。</p></li>
+<li><p>フォームのエディターで、セクション間の <i data-lucide='plus'></i> <strong>追加</strong>ボタン、またはフォームの一番下にあるリストから、 <i data-lucide='cp-form-conditional'></i> <strong>条件のセクション</strong>を追加してください。</p></li>
 <li><p>セクションの前には少なくとも1つの<a class="reference internal" href="#form-q-choice"><span class="std std-ref"> 選択肢</span></a>または<a class="reference internal" href="#form-q-checkbox"><span class="std std-ref"> チェックボックス</span></a>を作成してください（そうでない場合はヒントが表示されます）。セクションの「前」に設定された質問のみが条件に使用できます。</p></li>
-<li><p><em class="fa fa-plus"></em> <strong>追加</strong>ボタンを使ったりセクションの領域に質問をドラッグしたりして、説明文や設問などの内容を追加してください。</p></li>
+<li><p><i data-lucide='plus'></i> <strong>追加</strong>ボタンを使ったりセクションの領域に質問をドラッグしたりして、説明文や設問などの内容を追加してください。</p></li>
 <li><p>選択用メニューを使って条件を設定してください。「かつ」の条件は全て満たされていなければならず、「または」の条件はどれかが満たされていれば十分です。</p></li>
 <li><p>参加者には、条件が真の場合にのみセクションが表示されます。</p></li>
 </ol>
@@ -800,7 +804,7 @@
 <section id="question-types">
 <h3>質問の種類<a class="headerlink" href="#question-types" title="この見出しへのパーマリンク">¶</a></h3>
 <section id="cptools-form-text-text">
-<h4><em class="cptools cptools-form-text"></em> 文<a class="headerlink" href="#cptools-form-text-text" title="この見出しへのパーマリンク">¶</a></h4>
+<h4><i data-lucide='minus'></i> 文<a class="headerlink" href="#cptools-form-text-text" title="この見出しへのパーマリンク">¶</a></h4>
 <p><strong>回答</strong>：1行の文</p>
 <p><strong>選択肢</strong>：</p>
 <ul class="simple">
@@ -812,7 +816,7 @@
 </div>
 </section>
 <section id="cptools-form-paragraph-paragraph">
-<h4><em class="cptools cptools-form-paragraph"></em> 段落<a class="headerlink" href="#cptools-form-paragraph-paragraph" title="この見出しへのパーマリンク">¶</a></h4>
+<h4><i data-lucide='text'></i> 段落<a class="headerlink" href="#cptools-form-paragraph-paragraph" title="この見出しへのパーマリンク">¶</a></h4>
 <p><strong>回答</strong> ：複数行の文</p>
 <p><strong>選択肢</strong>：</p>
 <ul class="simple">
@@ -820,74 +824,74 @@
 </ul>
 </section>
 <section id="cptools-form-list-radio-choice">
-<span id="form-q-choice"></span><h4><em class="cptools cptools-form-list-radio"></em> 選択肢<a class="headerlink" href="#cptools-form-list-radio-choice" title="この見出しへのパーマリンク">¶</a></h4>
+<span id="form-q-choice"></span><h4><i data-lucide='list'></i> 選択肢<a class="headerlink" href="#cptools-form-list-radio-choice" title="この見出しへのパーマリンク">¶</a></h4>
 <p><strong>回答</strong>：リストから1つ選択</p>
 <p><strong>選択肢</strong>：</p>
 <ul class="simple">
-<li><p><em class="fa fa-plus"></em> <strong>選択肢を追加</strong>のボタン</p></li>
-<li><p><em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> をつかんでドラッグすると、選択肢を並び替えられます</p></li>
-<li><p><em class="fa fa-times"></em> で選択肢を削除</p></li>
+<li><p><i data-lucide='plus'></i> <strong>選択肢を追加</strong>のボタン</p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order options</p></li>
+<li><p><i data-lucide='x'></i> で選択肢を削除</p></li>
 </ul>
 </section>
 <section id="cptools-form-grid-radio-choice-grid">
-<h4><em class="cptools cptools-form-grid-radio"></em> 選択式グリッド<a class="headerlink" href="#cptools-form-grid-radio-choice-grid" title="この見出しへのパーマリンク">¶</a></h4>
+<h4><i data-lucide='cp-form-grid-radio'></i> 選択式グリッド<a class="headerlink" href="#cptools-form-grid-radio-choice-grid" title="この見出しへのパーマリンク">¶</a></h4>
 <p><strong>回答</strong>：1項目につき選択肢を1つ選択</p>
 <p><strong>選択肢</strong>：</p>
 <ul class="simple">
-<li><p><em class="fa fa-plus"></em> <strong>選択肢を追加</strong>と <em class="fa fa-plus"></em> <strong>項目を追加</strong>のボタン</p></li>
-<li><p><em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> をつかんでドラッグすると、項目や選択肢を並び替えられます</p></li>
-<li><p><em class="fa fa-times"></em> で項目または選択肢を削除</p></li>
+<li><p><i data-lucide='plus'></i> <strong>選択肢を追加</strong>と <i data-lucide='plus'></i> <strong>項目を追加</strong>のボタン</p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order items and options</p></li>
+<li><p><i data-lucide='x'></i> で項目または選択肢を削除</p></li>
 </ul>
 </section>
 <section id="calendar-date">
-<h4><em class="fa fa-calendar"></em> 日付<a class="headerlink" href="#calendar-date" title="この見出しへのパーマリンク">¶</a></h4>
+<h4><i data-lucide='calendar-days'></i> 日付<a class="headerlink" href="#calendar-date" title="この見出しへのパーマリンク">¶</a></h4>
 <p><strong>回答</strong>：日時を選択</p>
 </section>
 <section id="cptools-form-list-check-checkbox">
-<span id="form-q-checkbox"></span><h4><em class="cptools cptools-form-list-check"></em> チェックボックス<a class="headerlink" href="#cptools-form-list-check-checkbox" title="この見出しへのパーマリンク">¶</a></h4>
+<span id="form-q-checkbox"></span><h4><i data-lucide='list-checks'></i> チェックボックス<a class="headerlink" href="#cptools-form-list-check-checkbox" title="この見出しへのパーマリンク">¶</a></h4>
 <p><strong>回答</strong>：リストから複数選択可</p>
 <p><strong>選択肢</strong>：</p>
 <ul class="simple">
 <li><p>選択可能な選択肢の数</p></li>
-<li><p><em class="fa fa-plus"></em> <strong>選択肢を追加</strong>のボタン</p></li>
-<li><p><em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> をつかんでドラッグすると、選択肢を並び替えられます</p></li>
-<li><p><em class="fa fa-times"></em> で選択肢を削除</p></li>
+<li><p><i data-lucide='plus'></i> <strong>選択肢を追加</strong>のボタン</p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order options</p></li>
+<li><p><i data-lucide='x'></i> で選択肢を削除</p></li>
 </ul>
 </section>
 <section id="cptools-form-grid-check-checkbox-grid">
-<h4><em class="cptools cptools-form-grid-check"></em> チェックボックス式グリッド<a class="headerlink" href="#cptools-form-grid-check-checkbox-grid" title="この見出しへのパーマリンク">¶</a></h4>
+<h4><i data-lucide='cp-form-grid-check'></i> チェックボックス式グリッド<a class="headerlink" href="#cptools-form-grid-check-checkbox-grid" title="この見出しへのパーマリンク">¶</a></h4>
 <p><strong>回答</strong>：各項目に複数の選択肢</p>
 <p><strong>選択肢</strong>：</p>
 <ul class="simple">
 <li><p>選択可能な選択肢の数（各項目につき）</p></li>
-<li><p><em class="fa fa-plus"></em> <strong>選択肢を追加</strong>と <em class="fa fa-plus"></em> <strong>項目を追加</strong>のボタン</p></li>
-<li><p><em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> をつかんでドラッグすると、項目や選択肢を並び替えられます</p></li>
-<li><p><em class="fa fa-times"></em> で項目または選択肢を削除</p></li>
+<li><p><i data-lucide='plus'></i> <strong>選択肢を追加</strong>と <i data-lucide='plus'></i> <strong>項目を追加</strong>のボタン</p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order items and options</p></li>
+<li><p><i data-lucide='x'></i> で項目または選択肢を削除</p></li>
 </ul>
 </section>
 <section id="cptools-form-list-ordered-ordered-list">
-<h4><em class="cptools cptools-form-list-ordered"></em> 番号付きリスト<a class="headerlink" href="#cptools-form-list-ordered-ordered-list" title="この見出しへのパーマリンク">¶</a></h4>
+<h4><i data-lucide='list-ordered'></i> 番号付きリスト<a class="headerlink" href="#cptools-form-list-ordered-ordered-list" title="この見出しへのパーマリンク">¶</a></h4>
 <p><strong>回答</strong>：一覧にある選択肢の優先順位</p>
 <p><strong>選択肢</strong>：</p>
 <ul class="simple">
-<li><p><em class="fa fa-plus"></em> <strong>選択肢を追加</strong>のボタン</p></li>
-<li><p><em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> をつかんでドラッグすると、選択肢を並び替えられます</p></li>
-<li><p><em class="fa fa-times"></em> で選択肢を削除</p></li>
+<li><p><i data-lucide='plus'></i> <strong>選択肢を追加</strong>のボタン</p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order options</p></li>
+<li><p><i data-lucide='x'></i> で選択肢を削除</p></li>
 </ul>
 <p><strong>コンドルセ式</strong>：</p>
 <p>バージョン5.3より回答を<a class="reference external" href="https://en.wikipedia.org/wiki/Condorcet_method">コンドルセ法</a>で表示できます。シュルツェまたはランク付けのペアを選択して勝者を表示できます。詳細からは、それぞれの候補が勝利した数を確認できます。</p>
 </section>
 <section id="cptools-form-poll-poll">
-<h4><em class="cptools cptools-form-poll"></em> 投票<a class="headerlink" href="#cptools-form-poll-poll" title="この見出しへのパーマリンク">¶</a></h4>
-<p><strong>回答</strong>：それぞれの選択肢に対し <em class="fa fa-check"></em> はい、<em class="fa fa-times"></em> いいえ、<em class="cptools cptools-form-poll-maybe"></em> 可のいずれか</p>
+<h4><i data-lucide='cp-form-poll'></i> 投票<a class="headerlink" href="#cptools-form-poll-poll" title="この見出しへのパーマリンク">¶</a></h4>
+<p><strong>回答</strong>：それぞれの選択肢に対し <i data-lucide='check'></i> はい、<i data-lucide='x'></i> いいえ、<i data-lucide='cp-form-poll-maybe'></i> 可のいずれか</p>
 <p>選択肢の種類：</p>
 <ul>
 <li><p>文</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><em class="fa fa-plus"></em> <strong>選択肢を追加</strong>のボタン</p></li>
-<li><p><em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> をつかんでドラッグすると、選択肢を並び替えられます</p></li>
-<li><p><em class="fa fa-times"></em> で選択肢を削除</p></li>
+<li><p><i data-lucide='plus'></i> <strong>選択肢を追加</strong>のボタン</p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order options</p></li>
+<li><p><i data-lucide='x'></i> で選択肢を削除</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -902,7 +906,7 @@
 <blockquote>
 <div><ul class="simple">
 <li><p>選択肢をクリックすると、カレンダーから日時を設定できます</p></li>
-<li><p>&quot;複数の日時を追加&quot;をクリックして複数の選択肢を選び、<em class="fa fa-plus"></em> <strong>全て追加</strong>から一度に全ての選択肢を追加できます。</p></li>
+<li><p>&quot;複数の日時を追加&quot;をクリックして複数の選択肢を選び、<i data-lucide='plus'></i> <strong>全て追加</strong>から一度に全ての選択肢を追加できます。</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -913,9 +917,9 @@
 <span id="id1"></span><h3>フォームの設定<a class="headerlink" href="#form-settings" title="この見出しへのパーマリンク">¶</a></h3>
 <p>上にある3つのボタンから、以下に直接アクセスできます：</p>
 <ul class="simple">
-<li><p><em class="fa fa-bar-chart"></em> <strong>回答</strong>（回答数） : 回答ページの表示を切り替えます</p></li>
-<li><p><em class="fa fa-eye"></em> <strong>フォームをプレビュー</strong>：参加者用リンクを開きます</p></li>
-<li><p><em class="fa fa-link"></em> <strong>公開リンクをコピー</strong>：参加者用リンクをコピーします</p></li>
+<li><p><i data-lucide='chart-no-axes-combined'></i> <strong>回答</strong>（回答数） : 回答ページの表示を切り替えます</p></li>
+<li><p><i data-lucide='eye'></i> <strong>フォームをプレビュー</strong>：参加者用リンクを開きます</p></li>
+<li><p><i data-lucide='link'></i> <strong>公開リンクをコピー</strong>：参加者用リンクをコピーします</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
@@ -991,9 +995,9 @@
 <section id="import-export">
 <h2>インポート/エクスポート<a class="headerlink" href="#import-export" title="この見出しへのパーマリンク">¶</a></h2>
 <p>フォームのドキュメントは <code class="docutils literal notranslate"><span class="pre">JSON</span></code> フォーマットでエクスポート、インポートできます。</p>
-<p>回答をエクスポートする場合は、 <em class="fa fa-bar-chart"></em> <strong>回答</strong>のページから2つの方法を選択できます。</p>
+<p>回答をエクスポートする場合は、 <i data-lucide='chart-no-axes-combined'></i> <strong>回答</strong>のページから2つの方法を選択できます。</p>
 <ol class="arabic simple">
-<li><p>CSVまたはJSONファイルとしてエクスポートする場合は <em class="fa fa-download"></em> <strong>エクスポート</strong>ボタンをクリック</p></li>
+<li><p>CSVまたはJSONファイルとしてエクスポートする場合は <i data-lucide='download'></i> <strong>エクスポート</strong>ボタンをクリック</p></li>
 <li><p>ドライブに追加できるスプレッドシートとしてエクスポートする場合は<strong>シートにエクスポート</strong>ボタンをクリック</p></li>
 </ol>
 <div class="admonition note">
@@ -1011,10 +1015,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="kanban.html" class="btn btn-neutral float-right" title="カンバン" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="kanban.html" class="btn btn-neutral float-right" title="カンバン" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="slides.html" class="btn btn-neutral" title="スライド" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="slides.html" class="btn btn-neutral" title="スライド" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -1077,7 +1081,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">ホワイトボード</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">ツールバー</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">描画</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> 描画モード</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> 選択モード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> 描画モード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> 選択モード</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">エクスポート</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -760,14 +764,14 @@
 <li><p>CryptPad上で <code class="docutils literal notranslate"><span class="pre">Ctrl+e</span></code> を入力。</p></li>
 <li><p>CryptDriveからは、</p>
 <ul>
-<li><p>ツールバーの <em class="fa fa-plus"></em> <strong>新規</strong>。</p></li>
-<li><p><em class="fa fa-plus"></em> ファイル一覧またはグリッドの下にある<strong>新規</strong>。</p></li>
+<li><p>ツールバーの <i data-lucide='plus'></i> <strong>新規</strong>。</p></li>
+<li><p><i data-lucide='plus'></i> ファイル一覧またはグリッドの下にある<strong>新規</strong>。</p></li>
 </ul>
 </li>
-<li><p>ドキュメントから：<em class="fa fa-file-o"></em> <strong>ファイル</strong> &gt; <em class="fa fa-plus"></em> <strong>新規</strong>。</p></li>
+<li><p>ドキュメントから：<i data-lucide='file'></i> <strong>ファイル</strong> &gt; <i data-lucide='plus'></i> <strong>新規</strong>。</p></li>
 </ul>
 <img alt="../../_images/app-creation-screen.png" class="screenshot" src="../../_images/app-creation-screen.png" />
-<p><span class="badge-user">ログイン済ユーザー</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p>
 <p>作成画面では、新規ドキュメントの作成時に多くのオプションが表示されます。</p>
 <ul class="simple">
 <li><p><strong>所有するドキュメント</strong>：<a class="reference internal" href="../share_and_access.html#owners"><span class="std std-ref">所有者</span></a>として新しいドキュメントを作成。所有者を設定せずドキュメントを作成した場合、この設定は変更できません。</p></li>
@@ -779,11 +783,11 @@
 <p class="admonition-title">注釈</p>
 <p>作成画面には、CryptDrive、または、あなたが属するチームに保存されている全てのテンプレートが表示されます。ドキュメントは、以下の方法でテンプレートとして保存できます。</p>
 <ul class="simple">
-<li><p>ドキュメントから、<em class="fa fa-file-o"></em> <strong>ファイル</strong> &gt; <em class="cptools cptools-new-template"></em> <strong>テンプレートとして保存</strong>。</p></li>
+<li><p>ドキュメントから、<i data-lucide='file'></i> <strong>ファイル</strong> &gt; <i data-lucide='file-up'></i> <strong>テンプレートとして保存</strong>。</p></li>
 </ul>
 <p>または</p>
 <ul class="simple">
-<li><p>CryptDriveから、ドキュメントを <em class="cptools cptools-template"></em> <strong>テンプレート</strong>フォルダーにドラッグ。</p></li>
+<li><p>CryptDriveから、ドキュメントを <i data-lucide='file-cog'></i> <strong>テンプレート</strong>フォルダーにドラッグ。</p></li>
 </ul>
 </div>
 </section>
@@ -795,8 +799,8 @@
 <span id="id3"></span><h2>コピーの作成<a class="headerlink" href="#make-a-copy" title="この見出しへのパーマリンク">¶</a></h2>
 <p>ドキュメントは以下の方法で複製できます。</p>
 <ul class="simple">
-<li><p>ドキュメントから、<em class="fa fa-file-o"></em> <strong>ファイル</strong> &gt; <em class="fa fa-clone"></em> <strong>コピーを作成</strong>。</p></li>
-<li><p>CryptDriveから、ドキュメントを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <em class="fa fa-clone"></em> <strong>コピーを作成</strong>。</p></li>
+<li><p>ドキュメントから、<i data-lucide='file'></i> <strong>ファイル</strong> &gt; <i data-lucide='copy'></i> <strong>コピーを作成</strong>。</p></li>
+<li><p>CryptDriveから、ドキュメントを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <i data-lucide='copy'></i> <strong>コピーを作成</strong>。</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
@@ -817,17 +821,17 @@
 </figure>
 <p>ドキュメントの履歴が保存され、必要な場合にはこれを復元することができます。ドキュメントの履歴は以下の方法で表示、復元できます。</p>
 <ol class="arabic simple">
-<li><p><em class="fa fa-file-o"></em> <strong>ファイル</strong> &gt; <em class="fa fa-history"></em> <strong>履歴</strong>。</p></li>
+<li><p><i data-lucide='file'></i> <strong>ファイル</strong> &gt; <i data-lucide='history'></i> <strong>履歴</strong>。</p></li>
 <li><p>矢印マークで前後に移動できます。</p>
 <ul class="simple">
-<li><p><em class="fa fa-step-backward"></em> と <em class="fa fa-step-forward"></em> で各履歴間を移動できます。</p></li>
-<li><p><em class="fa fa-step-backward"></em> <em class="fa fa-user"></em> と <em class="fa fa-user"></em> <em class="fa fa-step-forward"></em> でユーザーの履歴間を移動できます。</p></li>
-<li><p><em class="fa fa-step-backward"></em> <em class="fa fa-users"></em> と <em class="fa fa-users"></em> <em class="fa fa-step-forward"></em> で各セッションの履歴間を移動できます（同じ作者のグループがドキュメントに接続している間）。</p></li>
+<li><p><i data-lucide='arrow-left'></i> と <i data-lucide='arrow-right'></i> で各履歴間を移動できます。</p></li>
+<li><p><i data-lucide='arrow-left'></i> <i data-lucide='user'></i> と <i data-lucide='user'></i> <i data-lucide='arrow-right'></i> でユーザーの履歴間を移動できます。</p></li>
+<li><p><i data-lucide='arrow-left'></i> <i data-lucide='users-round'></i> と <i data-lucide='users-round'></i> <i data-lucide='arrow-right'></i> で各セッションの履歴間を移動できます（同じ作者のグループがドキュメントに接続している間）。</p></li>
 </ul>
 </li>
-<li><p><em class="fa fa-check"></em> <strong>復元</strong>で表示中のバージョンを復元できます。<em class="fa fa-times"></em> <strong>閉じる</strong>で復元せず履歴を閉じます。</p></li>
+<li><p><i data-lucide='check'></i> <strong>復元</strong>で表示中のバージョンを復元できます。<i data-lucide='x'></i> <strong>閉じる</strong>で復元せず履歴を閉じます。</p></li>
 </ol>
-<p>ドキュメントの<a class="reference internal" href="#document-properties"><span class="std std-ref">プロパティー</span></a>から履歴を削除すると、使用しているストレージ容量を減らすことができます <span class="badge-owner">ドキュメントの所有者</span></p>
+<p>ドキュメントの<a class="reference internal" href="#document-properties"><span class="std std-ref">プロパティー</span></a>から履歴を削除すると、使用しているストレージ容量を減らすことができます <span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> ドキュメントの所有者</span></p>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
 <p>OnlyOfficeと、暗号化を行うCryptPadのリアルタイムの共同作業の統合により、<a class="reference internal" href="sheets.html#app-sheets"><span class="std std-ref">スプレッドシート</span></a>アプリケーションでは、履歴は少し異なった形で機能します。詳細は<a class="reference internal" href="sheets.html#sheets-history"><span class="std std-ref">スプレッドシートの履歴</span></a>を確認してください。</p>
@@ -835,7 +839,7 @@
 <p><strong>バージョンへのリンク</strong></p>
 <p>表示されている履歴のバージョンへのリンクは、以下の方法で共有できます。</p>
 <ul class="simple">
-<li><p>ツールバーの <em class="fa fa-share-alt"></em> <strong>共有</strong>。</p></li>
+<li><p>ツールバーの <i data-lucide='share2'></i> <strong>共有</strong>。</p></li>
 <li><p><a class="reference internal" href="../share_and_access.html#share"><span class="std std-ref">ドキュメントを共有</span></a>する際と同様に、<strong>連絡先</strong>、<strong>リンク</strong>、または<strong>埋め込む</strong>を選択。</p></li>
 </ul>
 <p>リンクを受け取った人は、選択したバージョンを閲覧モードで表示できます。</p>
@@ -846,9 +850,9 @@
 <p id="snapshot-from-history"><strong>履歴からスナップショットを作成</strong></p>
 <p>表示している履歴のバージョンの<a class="reference internal" href="#snapshots"><span class="std std-ref">スナップショット</span></a>は、以下の方法で作成できます。</p>
 <ul class="simple">
-<li><p>ツールバーの <em class="fa fa-camera"></em> ボタン。</p></li>
+<li><p>ツールバーの <i data-lucide='camera'></i> ボタン。</p></li>
 <li><p>ダイアログでは、スナップショットの名前を指定してください。</p></li>
-<li><p><em class="fa fa-camera"></em> <strong>新規スナップショット</strong></p></li>
+<li><p><i data-lucide='camera'></i> <strong>新規スナップショット</strong></p></li>
 </ul>
 </section>
 <section id="snapshots">
@@ -862,22 +866,22 @@
 <p>スナップショットは、ドキュメントの履歴の特定の地点のことをいいます。簡単に参照できるよう、名前を付けて保存できます。</p>
 <p>以下の方法で、ドキュメントの現在の状態のスナップショットを作成できます。</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>ファイル</strong> &gt; <em class="fa fa-camera"></em> <strong>スナップショット</strong></p></li>
+<li><p><i data-lucide='file'></i> <strong>ファイル</strong> &gt; <i data-lucide='camera'></i> <strong>スナップショット</strong></p></li>
 <li><p>ダイアログでは、スナップショットの名前を指定してください。</p></li>
-<li><p><em class="fa fa-camera"></em> <strong>新規スナップショット</strong></p></li>
+<li><p><i data-lucide='camera'></i> <strong>新規スナップショット</strong></p></li>
 </ul>
 <p>ドキュメントの履歴のバージョンのスナップショットを作成する方法については、上記の<a class="reference internal" href="#document-history"><span class="std std-ref">履歴からスナップショットを作成</span></a>を確認してください。</p>
 <p>スナップショットは以下の方法で表示、復元できます。</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>ファイル</strong> &gt; <em class="fa fa-camera"></em> <strong>スナップショット</strong></p></li>
-<li><p>ダイアログ上で、一覧からスナップショットを <code class="docutils literal notranslate"><span class="pre">クリック</span></code> して <em class="fa fa-eye"></em> <strong>表示</strong>をクリックしてください。</p></li>
+<li><p><i data-lucide='file'></i> <strong>ファイル</strong> &gt; <i data-lucide='camera'></i> <strong>スナップショット</strong></p></li>
+<li><p>ダイアログ上で、一覧からスナップショットを <code class="docutils literal notranslate"><span class="pre">クリック</span></code> して <i data-lucide='eye'></i> <strong>表示</strong>をクリックしてください。</p></li>
 <li><p>スナップショットは新しいウィンドウで開きます。</p></li>
-<li><p><em class="fa fa-check"></em> <strong>復元</strong>または <em class="fa fa-times"></em> <strong>閉じる</strong></p></li>
+<li><p><i data-lucide='check'></i> <strong>復元</strong>または <i data-lucide='x'></i> <strong>閉じる</strong></p></li>
 </ul>
 <p>スナップショットは以下の方法で削除できます。</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>ファイル</strong> &gt; <em class="fa fa-camera"></em> <strong>スナップショット</strong></p></li>
-<li><p>ダイアログ上で、一覧にあるスナップショットを <code class="docutils literal notranslate"><span class="pre">クリック</span></code> し <em class="fa fa-trash"></em> <strong>削除</strong> 。</p></li>
+<li><p><i data-lucide='file'></i> <strong>ファイル</strong> &gt; <i data-lucide='camera'></i> <strong>スナップショット</strong></p></li>
+<li><p>ダイアログ上で、一覧にあるスナップショットを <code class="docutils literal notranslate"><span class="pre">クリック</span></code> し <i data-lucide='trash2'></i> <strong>削除</strong> 。</p></li>
 </ul>
 </section>
 <section id="properties">
@@ -885,8 +889,8 @@
 <img alt="../../_images/modal-properties.png" class="screenshot" src="../../_images/modal-properties.png" />
 <p>プロパティーのメニューには、以下の方法でアクセスできます。</p>
 <ul class="simple">
-<li><p>ドキュメントから、<em class="fa fa-file-o"></em> <strong>ファイル</strong> &gt; <em class="fa fa-info-circle"></em> <strong>プロパティー</strong>。</p></li>
-<li><p>CryptDriveから、ドキュメントを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <em class="fa fa-info-circle"></em> <strong>プロパティー</strong> 。</p></li>
+<li><p>ドキュメントから、<i data-lucide='file'></i> <strong>ファイル</strong> &gt; <i data-lucide='info'></i> <strong>プロパティー</strong>。</p></li>
+<li><p>CryptDriveから、ドキュメントを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <i data-lucide='info'></i> <strong>プロパティー</strong> 。</p></li>
 </ul>
 <p>利用可能なデータは以下の通りです。</p>
 <ul class="simple">
@@ -895,7 +899,7 @@
 <li><p>作成日時と最終アクセス日時。</p></li>
 <li><p>容量。</p></li>
 </ul>
-<p>ドキュメントの容量の内訳では、内容と履歴がそれぞれ占めている割合が表示されます。<strong>履歴を削除</strong>をクリック、承認してドキュメントの履歴を削除すると、使用しているストレージ容量を減らすことができます。<span class="badge-owner">ドキュメントの所有者</span></p>
+<p>ドキュメントの容量の内訳では、内容と履歴がそれぞれ占めている割合が表示されます。<strong>履歴を削除</strong>をクリック、承認してドキュメントの履歴を削除すると、使用しているストレージ容量を減らすことができます。<span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> ドキュメントの所有者</span></p>
 <div class="admonition warning">
 <p class="admonition-title">警告</p>
 <p><a class="reference internal" href="#snapshots"><span class="std std-ref">スナップショット</span></a>はドキュメントの履歴の一部です。ドキュメントのプロパティーから履歴を削除すると、スナップショットも同時に削除されます。</p>
@@ -903,11 +907,11 @@
 </section>
 <section id="users-and-chat">
 <span id="document-users-and-chat"></span><h2>ユーザーとチャット<a class="headerlink" href="#users-and-chat" title="この見出しへのパーマリンク">¶</a></h2>
-<p>ユーザー一覧 <em class="fa fa-user"></em> <em class="fa fa-eye"></em> と <em class="fa fa-comments"></em> <strong>チャット</strong>から、同じドキュメントに接続しているユーザーと交流できます。</p>
+<p>ユーザー一覧 <i data-lucide='user'></i> <i data-lucide='eye'></i> と <i data-lucide='message-square-more'></i> <strong>チャット</strong>から、同じドキュメントに接続しているユーザーと交流できます。</p>
 <p>それらの枠は、以下の方法で表示したり非表示にしたりできます。</p>
 <ul class="simple">
-<li><p>ユーザー一覧は <em class="fa fa-user"></em> <em class="fa fa-eye"></em> から。</p></li>
-<li><p>チャットは <em class="fa fa-comments"></em> <strong>チャット</strong>から。</p></li>
+<li><p>ユーザー一覧は <i data-lucide='user'></i> <i data-lucide='eye'></i> から。</p></li>
+<li><p>チャットは <i data-lucide='message-square-more'></i> <strong>チャット</strong>から。</p></li>
 </ul>
 </section>
 </section>
@@ -920,10 +924,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="richtext.html" class="btn btn-neutral float-right" title="リッチテキスト" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="richtext.html" class="btn btn-neutral float-right" title="リッチテキスト" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="../applications.html" class="btn btn-neutral" title="アプリケーション" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="../applications.html" class="btn btn-neutral" title="アプリケーション" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -986,7 +990,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Бяла дъска</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Лента с инструменти</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Drawing</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Paint mode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Select mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Paint mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Select mode</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Export</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -757,17 +761,17 @@
 <img alt="../../_images/app-code-preview.png" class="screenshot" src="../../_images/app-code-preview.png" />
 <section id="toolbar">
 <h2>Лента с инструменти<a class="headerlink" href="#toolbar" title="Permalink to this heading">¶</a></h2>
-<p><em class="fa fa-wrench"></em> <strong>Инструменти</strong>: Покажи/скрии лентата с инструменти на панела за редактиране на текст.</p>
-<p><em class="fa fa-picture-o"></em> <strong>Добави</strong>: Добави снимка към документа. Снимката може да бъде избрана от диска или качена. <span class="badge-user">Влезли потребители</span></p>
-<p><em class="cptools cptools-palette"></em> <strong>Тема</strong>: Настрой цветовете на редактора, детайлно <a class="reference internal" href="#app-code-theme"><span class="std std-ref">под</span></a>.</p>
-<p><em class="fa fa-eye"></em> <strong>Предварителен преглед</strong>: Покажи/скрии менюто за предварителен преглед на Markdown.</p>
+<p><i data-lucide='wrench'></i> <strong>Инструменти</strong>: Покажи/скрии лентата с инструменти на панела за редактиране на текст.</p>
+<p><i data-lucide='image-plus'></i> <strong>Добави</strong>: Добави снимка към документа. Снимката може да бъде избрана от диска или качена. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Влезли потребители</span></p>
+<p><i data-lucide='palette'></i> <strong>Тема</strong>: Настрой цветовете на редактора, детайлно <a class="reference internal" href="#app-code-theme"><span class="std std-ref">под</span></a>.</p>
+<p><i data-lucide='eye'></i> <strong>Предварителен преглед</strong>: Покажи/скрии менюто за предварителен преглед на Markdown.</p>
 </section>
 <section id="theme">
 <span id="app-code-theme"></span><h2>Тема<a class="headerlink" href="#theme" title="Permalink to this heading">¶</a></h2>
-<p><em class="fa fa-paint-brush"></em> <strong>Цвят от автора</strong>: Оцветете текста, написан от разчните потребители, с цвета на техния курсор (избран в <a class="reference internal" href="../user_account.html#user-settings-cursor"><span class="std std-ref">потребителски настройки</span></a>). Когато е активен:</p>
+<p><i data-lucide='brush-cleaning'></i> <strong>Цвят от автора</strong>: Оцветете текста, написан от разчните потребители, с цвета на техния курсор (избран в <a class="reference internal" href="../user_account.html#user-settings-cursor"><span class="std std-ref">потребителски настройки</span></a>). Когато е активен:</p>
 <ul class="simple">
-<li><p><em class="fa fa-paint-brush"></em> <strong>Скрии цветовете на автора</strong> за да изключите показването на цветовете в този прозорец, те могат да бъдат включени отново и остават активни за другите потребители.</p></li>
-<li><p><em class="fa fa-paint-brush"></em> <strong>Цвят от автора</strong> &gt; <strong>Почисти и деактивираи</strong> за да изключите цветовете за всички потребители и да изтрияте всички данни.</p></li>
+<li><p><i data-lucide='brush-cleaning'></i> <strong>Скрии цветовете на автора</strong> за да изключите показването на цветовете в този прозорец, те могат да бъдат включени отново и остават активни за другите потребители.</p></li>
+<li><p><i data-lucide='brush-cleaning'></i> <strong>Цвят от автора</strong> &gt; <strong>Почисти и деактивираи</strong> за да изключите цветовете за всички потребители и да изтрияте всички данни.</p></li>
 </ul>
 <p><strong>Тема</strong>: Цветова схема, използвана в панела за редактиране на код.</p>
 <p><strong>Език</strong>: Използва се за подчертаване на синтаксиса.</p>
@@ -775,11 +779,11 @@
 <section id="import-export">
 <h2>Импортиране/Експортиране<a class="headerlink" href="#import-export" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-upload"></em> <strong>Импортиране</strong>.</div>
+<div class="line"><i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='upload'></i> <strong>Импортиране</strong>.</div>
 <div class="line">Поддържани формати: Всички файлове с обикновен текст, разширението на файла бива използван да определи езика.</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-download"></em> <strong>Експортирай</strong>.</div>
+<div class="line"><i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='download'></i> <strong>Експортирай</strong>.</div>
 <div class="line">Поддържани формати: <code class="docutils literal notranslate"><span class="pre">.md</span></code>, за името на експортирания файл може да се въведе всяко друго разширение.</div>
 </div>
 </section>
@@ -787,14 +791,14 @@
 <h2>Markdown<a class="headerlink" href="#markdown" title="Permalink to this heading">¶</a></h2>
 <p>The Code application is particularly suited for writing documents in Markdown: a lightweight syntax that offers basic formatting while remaining readable. Markdown is readily converted to other formats such as HTML.</p>
 <p>За примери на синтаксис на Markdown в CryptPad моля вижте:</p>
-<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/kmYt1-pxaMlinUl2+YQSLyZetKE2GJo9QtTlCQ8RNks/"><em class="cptools cptools-code"></em> <strong>Markdown Guide: Basic Syntax</strong></a></p>
+<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/kmYt1-pxaMlinUl2+YQSLyZetKE2GJo9QtTlCQ8RNks/"><i data-lucide='file-code'></i> <strong>Markdown Guide: Basic Syntax</strong></a></p>
 <p>Допълнително към обикновения синтаксис на Markdown, следните функционалности са налични:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">[TOC]</span></code> Добавя таблица със съдържание.</p></li>
 <li><p>Списък със задачи</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[</span> <span class="pre">]</span> <span class="pre">task</span></code> for a task to do: <em class="fa fa-square-o"></em> task.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[x]</span> <span class="pre">task</span></code> for a completed task: <em class="fa fa-check-square"></em> task.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[</span> <span class="pre">]</span> <span class="pre">task</span></code> for a task to do: <i data-lucide='square'></i> task.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[x]</span> <span class="pre">task</span></code> for a completed task: <i data-lucide='square-check'></i> task.</p></li>
 </ul>
 </li>
 </ul>
@@ -811,13 +815,13 @@
 </pre></div>
 </div>
 <p>За детайлни примери на използваните разширения, моля вижте:</p>
-<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/VJtytDV8tsmlGx0GlR02azrp51A8cl8ivifXf6GQ9RA/"><em class="cptools cptools-code"></em> <strong>Markdown Guide: Extensions</strong></a></p>
+<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/VJtytDV8tsmlGx0GlR02azrp51A8cl8ivifXf6GQ9RA/"><i data-lucide='file-code'></i> <strong>Markdown Guide: Extensions</strong></a></p>
 </section>
 <section id="images">
 <span id="app-code-images"></span><h2>Снимки<a class="headerlink" href="#images" title="Permalink to this heading">¶</a></h2>
 <p>Markdown syntax to include remote images such as <code class="docutils literal notranslate"><span class="pre">![description](https://site.com/image.jpg)</span></code> is blocked by CryptPad for security reasons.</p>
-<p><span class="badge-user">Logged in users</span></p>
-<p>За да добавите снимки от CryptDrive-a или да качите нови, използвайте менюто <em class="fa fa-picture-o"></em> <strong>Добави</strong> в лентата с инструменти.</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Logged in users</span></p>
+<p>За да добавите снимки от CryptDrive-a или да качите нови, използвайте менюто <i data-lucide='image-plus'></i> <strong>Добави</strong> в лентата с инструменти.</p>
 <p>Вижте <a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">Remote Content</span></a> за повече детайли.</p>
 </section>
 <section id="lightbox">
@@ -826,7 +830,7 @@
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Двойно</span> <span class="pre">кликане</span></code> върху снимка или диаграма в предварителен преглед на Markdown.</p></li>
 <li><p>Навигирайте чрез стрелките на клавиатурата.</p></li>
-<li><p>Затворете ефекта на осветяване чрез <em class="fa fa-times"></em> или <kbd class="kbd docutils literal notranslate">Esc</kbd>.</p></li>
+<li><p>Затворете ефекта на осветяване чрез <i data-lucide='x'></i> или <kbd class="kbd docutils literal notranslate">Esc</kbd>.</p></li>
 </ol>
 </section>
 </section>
@@ -839,10 +843,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="slides.html" class="btn btn-neutral float-right" title="Slides" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="slides.html" class="btn btn-neutral float-right" title="Slides" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="sheets.html" class="btn btn-neutral" title="Таблица" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="sheets.html" class="btn btn-neutral" title="Таблица" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -905,7 +909,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

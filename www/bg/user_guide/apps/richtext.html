@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Бяла дъска</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Лента с инструменти</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Drawing</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Paint mode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Select mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Paint mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Select mode</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Export</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -757,18 +761,18 @@
 <img alt="../../_images/app-richtext-preview.png" class="screenshot" src="../../_images/app-richtext-preview.png" />
 <section id="toolbar">
 <h2>Лента с инструменти<a class="headerlink" href="#toolbar" title="Permalink to this heading">¶</a></h2>
-<p><em class="fa fa-wrench"></em> <strong>Инструменти</strong>: Покажи/скрии лентата с инструменти на панела за редактиране на текст.</p>
-<p><em class="fa fa-picture-o"></em> <strong>Добави</strong>: Добави снимка към документа. Снимката може да бъде избрана от диска или качена. <span class="badge-user">Влезли потребители</span></p>
+<p><i data-lucide='wrench'></i> <strong>Инструменти</strong>: Покажи/скрии лентата с инструменти на панела за редактиране на текст.</p>
+<p><i data-lucide='image-plus'></i> <strong>Добави</strong>: Добави снимка към документа. Снимката може да бъде избрана от диска или качена. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Влезли потребители</span></p>
 </section>
 <section id="view-settings">
 <h2>View settings<a class="headerlink" href="#view-settings" title="Permalink to this heading">¶</a></h2>
 <p>The buttons at the top of the editor control the display of text editor elements.</p>
-<p><em class="fa fa-list-ul"></em> : Show/hide the document outline.</p>
-<p><em class="fa fa-comment"></em> : Show/hide the comments (a red icon when closed indicates that there are comments).</p>
-<p><em class="fa fa-expand"></em> : Use the full width of the window for the text editor.</p>
-<p><em class="fa fa-compress"></em> : Use reduced width &quot;page mode&quot; for the text editor.</p>
+<p><i data-lucide='list'></i> : Show/hide the document outline.</p>
+<p><i data-lucide='message-square-text'></i> : Show/hide the comments (a red icon when closed indicates that there are comments).</p>
+<p><i data-lucide='square-plus'></i> : Use the full width of the window for the text editor.</p>
+<p><i data-lucide='minimize2'></i> : Use reduced width &quot;page mode&quot; for the text editor.</p>
 <p>To set defaults for these settings, for example to control which sections are visible when recipients visit a shared link to the document, use the <strong>Document Settings</strong> dialog:</p>
-<p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-cog"></em> <strong>Document Settings</strong>.</p>
+<p><i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='settings'></i> <strong>Document Settings</strong>.</p>
 </section>
 <section id="editing">
 <h2>Editing<a class="headerlink" href="#editing" title="Permalink to this heading">¶</a></h2>
@@ -792,16 +796,16 @@
 <section id="import-export">
 <h2>Импортиране/Експортиране<a class="headerlink" href="#import-export" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='upload'></i> <strong>Import</strong></div>
 <div class="line">Supported formats: <code class="docutils literal notranslate"><span class="pre">.html</span></code>, <code class="docutils literal notranslate"><span class="pre">.md</span></code>.</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-download"></em> <strong>Export</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='download'></i> <strong>Export</strong></div>
 <div class="line">Supported formats: <code class="docutils literal notranslate"><span class="pre">.html</span></code>, <code class="docutils literal notranslate"><span class="pre">.doc</span></code>, <code class="docutils literal notranslate"><span class="pre">.md</span></code>.</div>
 </div>
 <p>To print or export a PDF:</p>
 <ol class="arabic simple">
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-print"></em> <strong>Print</strong>.</p></li>
+<li><p><i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='printer'></i> <strong>Print</strong>.</p></li>
 <li><p>Select your printer or “print to file”.</p></li>
 </ol>
 </section>
@@ -810,15 +814,15 @@
 <p>To comment on a part of the text:</p>
 <ol class="arabic simple">
 <li><p>Select the text to comment.</p></li>
-<li><p><em class="fa fa-comment"></em> button, either to the right of the text or in the text
+<li><p><i data-lucide='message-square-text'></i> button, either to the right of the text or in the text
 editor toolbar.</p></li>
 <li><p>Write the comment.</p></li>
-<li><p><em class="fa fa-send-o"></em> <strong>Submit</strong>.</p></li>
+<li><p><i data-lucide='send'></i> <strong>Submit</strong>.</p></li>
 </ol>
 <p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on a comment to select it, then:</p>
 <ul class="simple">
-<li><p><em class="fa fa-reply"></em> <strong>Reply</strong>: Adds a comment as a response.</p></li>
-<li><p><em class="fa fa-check"></em> <strong>Resolve</strong>: Deletes the comment after confirmation.</p></li>
+<li><p><i data-lucide='reply'></i> <strong>Reply</strong>: Adds a comment as a response.</p></li>
+<li><p><i data-lucide='check'></i> <strong>Resolve</strong>: Deletes the comment after confirmation.</p></li>
 </ul>
 <p>To notify contacts in a comment, mention them with <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> and their
 <a class="reference internal" href="../user_account.html#user-settings-account"><span class="std std-ref">display name</span></a>.</p>
@@ -838,10 +842,10 @@ editor toolbar.</p></li>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="document.html" class="btn btn-neutral float-right" title="Документ" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="document.html" class="btn btn-neutral float-right" title="Документ" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="general.html" class="btn btn-neutral" title="General" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="general.html" class="btn btn-neutral" title="General" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -904,7 +908,10 @@ editor toolbar.</p></li>
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

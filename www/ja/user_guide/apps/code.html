@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">ホワイトボード</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">ツールバー</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">描画</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> 描画モード</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> 選択モード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> 描画モード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> 選択モード</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">エクスポート</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -757,17 +761,17 @@
 <img alt="../../_images/app-code-preview.png" class="screenshot" src="../../_images/app-code-preview.png" />
 <section id="toolbar">
 <h2>ツールバー<a class="headerlink" href="#toolbar" title="この見出しへのパーマリンク">¶</a></h2>
-<p><em class="fa fa-wrench"></em> <strong>ツール</strong>：テキストエディターのツールを表示または非表示。</p>
-<p><em class="fa fa-picture-o"></em> <strong>挿入</strong>：画像をドキュメントに追加。画像はドライブから選択するかアップロードできます。 <span class="badge-user">ログイン済ユーザー</span></p>
-<p><em class="cptools cptools-palette"></em> <strong>テーマ</strong>：エディターの色を設定。詳細は<a class="reference internal" href="#app-code-theme"><span class="std std-ref">以下</span></a>。</p>
-<p><em class="fa fa-eye"></em> <strong>プレビュー</strong>：マークダウンのプレビューパネルを表示または非表示。</p>
+<p><i data-lucide='wrench'></i> <strong>ツール</strong>：テキストエディターのツールを表示または非表示。</p>
+<p><i data-lucide='image-plus'></i> <strong>挿入</strong>：画像をドキュメントに追加。画像はドライブから選択するかアップロードできます。 <span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p>
+<p><i data-lucide='palette'></i> <strong>テーマ</strong>：エディターの色を設定。詳細は<a class="reference internal" href="#app-code-theme"><span class="std std-ref">以下</span></a>。</p>
+<p><i data-lucide='eye'></i> <strong>プレビュー</strong>：マークダウンのプレビューパネルを表示または非表示。</p>
 </section>
 <section id="theme">
 <span id="app-code-theme"></span><h2>テーマ<a class="headerlink" href="#theme" title="この見出しへのパーマリンク">¶</a></h2>
-<p><em class="fa fa-paint-brush"></em> <strong>作者ごとの色</strong>：各ユーザーが記述したテキストを、ユーザーのカーソルの色で強調します（色は<a class="reference internal" href="../user_account.html#user-settings-cursor"><span class="std std-ref">ユーザー設定</span></a>で指定）。アクティブな場合は、</p>
+<p><i data-lucide='brush-cleaning'></i> <strong>作者ごとの色</strong>：各ユーザーが記述したテキストを、ユーザーのカーソルの色で強調します（色は<a class="reference internal" href="../user_account.html#user-settings-cursor"><span class="std std-ref">ユーザー設定</span></a>で指定）。アクティブな場合は、</p>
 <ul class="simple">
-<li><p><em class="fa fa-paint-brush"></em> <strong>作者の色を隠す</strong>と、このウィンドウでの色の表示を無効にします。色の表示は再び有効にできます。また、他のユーザーには有効のままにすることもできます。</p></li>
-<li><p><em class="fa fa-paint-brush"></em> <strong>作者ごとの色</strong> &gt; <strong>消去して無効にする</strong>と、全てのユーザーの色の設定を無効にして、データを削除します。</p></li>
+<li><p><i data-lucide='brush-cleaning'></i> <strong>作者の色を隠す</strong>と、このウィンドウでの色の表示を無効にします。色の表示は再び有効にできます。また、他のユーザーには有効のままにすることもできます。</p></li>
+<li><p><i data-lucide='brush-cleaning'></i> <strong>作者ごとの色</strong> &gt; <strong>消去して無効にする</strong>と、全てのユーザーの色の設定を無効にして、データを削除します。</p></li>
 </ul>
 <p><strong>テーマ</strong>：コードエディターのパネルで使用する色テーマ。</p>
 <p><strong>言語</strong>：ハイライトに使用。</p>
@@ -775,11 +779,11 @@
 <section id="import-export">
 <h2>インポート/エクスポート<a class="headerlink" href="#import-export" title="この見出しへのパーマリンク">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>ファイル</strong> &gt; <em class="fa fa-upload"></em> <strong>インポート</strong>。</div>
+<div class="line"><i data-lucide='file'></i> <strong>ファイル</strong> &gt; <i data-lucide='upload'></i> <strong>インポート</strong>。</div>
 <div class="line">サポートするフォーマット：任意のプレーンテキストファイル。ファイルの拡張子で言語を特定します。</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>ファイル</strong> &gt; <em class="fa fa-download"></em> <strong>エクスポート</strong>。</div>
+<div class="line"><i data-lucide='file'></i> <strong>ファイル</strong> &gt; <i data-lucide='download'></i> <strong>エクスポート</strong>。</div>
 <div class="line">サポートするフォーマット：<code class="docutils literal notranslate"><span class="pre">.md</span></code>。エクスポートするファイルの名前にはどの拡張子も入力できます。</div>
 </div>
 </section>
@@ -787,14 +791,14 @@
 <h2>マークダウン<a class="headerlink" href="#markdown" title="この見出しへのパーマリンク">¶</a></h2>
 <p>コードアプリケーションは特にマークダウンでドキュメントを記述するのに適しています。マークダウンは、可読性を維持しながら基本的なテキストの装飾を可能にする軽量な記法です。マークダウンは、HTMLなど他のフォーマットに簡単に変換することができます。</p>
 <p>CryptPadでのマークダウンの記法の例については、以下をご覧ください。</p>
-<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/kmYt1-pxaMlinUl2+YQSLyZetKE2GJo9QtTlCQ8RNks/"><em class="cptools cptools-code"></em> <strong>Markdown Guide: Basic Syntax</strong></a></p>
+<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/kmYt1-pxaMlinUl2+YQSLyZetKE2GJo9QtTlCQ8RNks/"><i data-lucide='file-code'></i> <strong>Markdown Guide: Basic Syntax</strong></a></p>
 <p>基本的なマークダウンの記法に加えて、以下の機能も利用できます。</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">[TOC]</span></code> 目次を挿入。</p></li>
 <li><p>Todoリスト</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[</span> <span class="pre">]</span> <span class="pre">task</span></code> で未着手のタスクを表現：<em class="fa fa-square-o"></em> タスク。</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[x]</span> <span class="pre">task</span></code> で完了済のタスクを表現：<em class="fa fa-check-square"></em> タスク。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[</span> <span class="pre">]</span> <span class="pre">task</span></code> で未着手のタスクを表現：<i data-lucide='square'></i> タスク。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[x]</span> <span class="pre">task</span></code> で完了済のタスクを表現：<i data-lucide='square-check'></i> タスク。</p></li>
 </ul>
 </li>
 </ul>
@@ -811,13 +815,13 @@
 </pre></div>
 </div>
 <p>拡張機能の詳細な例については、以下をご覧ください。</p>
-<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/VJtytDV8tsmlGx0GlR02azrp51A8cl8ivifXf6GQ9RA/"><em class="cptools cptools-code"></em> <strong>Markdown Guide: Extensions</strong></a></p>
+<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/VJtytDV8tsmlGx0GlR02azrp51A8cl8ivifXf6GQ9RA/"><i data-lucide='file-code'></i> <strong>Markdown Guide: Extensions</strong></a></p>
 </section>
 <section id="images">
 <span id="app-code-images"></span><h2>画像<a class="headerlink" href="#images" title="この見出しへのパーマリンク">¶</a></h2>
 <p>リモートの画像を表示する <code class="docutils literal notranslate"><span class="pre">![説明文](https://site.com/image.jpg)</span></code> などの記法はセキュリティー上の理由でCryptPadでは使用できません。</p>
-<p><span class="badge-user">ログイン済ユーザー</span></p>
-<p>CryptDriveから画像を挿入したり新しい画像をアップロードしたりする場合は、ツールバーの <em class="fa fa-picture-o"></em> <strong>挿入</strong> メニューを使用してください。</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p>
+<p>CryptDriveから画像を挿入したり新しい画像をアップロードしたりする場合は、ツールバーの <i data-lucide='image-plus'></i> <strong>挿入</strong> メニューを使用してください。</p>
 <p>詳細については<a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">サーバー外のコンテンツ</span></a>をご覧ください。</p>
 </section>
 <section id="lightbox">
@@ -826,7 +830,7 @@
 <ol class="arabic simple">
 <li><p>マークダウンのプレビューで画像またはダイアグラムを <code class="docutils literal notranslate"><span class="pre">ダブルクリック</span></code> 。</p></li>
 <li><p>矢印キーで選択。</p></li>
-<li><p><em class="fa fa-times"></em> または <kbd class="kbd docutils literal notranslate">Esc</kbd> でギャラリー画面を閉じる。</p></li>
+<li><p><i data-lucide='x'></i> または <kbd class="kbd docutils literal notranslate">Esc</kbd> でギャラリー画面を閉じる。</p></li>
 </ol>
 </section>
 </section>
@@ -839,10 +843,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="slides.html" class="btn btn-neutral float-right" title="スライド" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="slides.html" class="btn btn-neutral float-right" title="スライド" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="sheets.html" class="btn btn-neutral" title="スプレッドシート" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="sheets.html" class="btn btn-neutral" title="スプレッドシート" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -905,7 +909,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Whiteboard</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Barra de herramientas</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Dibujo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Modo pintura</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Modo seleccionar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Modo pintura</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Modo seleccionar</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Exportar</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -767,7 +771,7 @@
 <h2>Barras de herramientas<a class="headerlink" href="#toolbars" title="Enlace permanente a este encabezado">¶</a></h2>
 <p>CryptPad integra hojas de cálculo de OnlyOffice en el mismo sistema de colaboración cifrado que las otras aplicaciones. Además, OnlyOffice proporciona una amplia gama de funciones en una barra de herramientas con pestañas. Esto da como resultado una doble barra de herramientas que puede causar confusión:</p>
 <ul class="simple">
-<li><p>La <strong>barra de herramientas CryptPad</strong> superior se utiliza para <em class="fa fa-file-o"></em> operaciones de <strong>archivo</strong> (incluidas importación/exportación, historial, propiedades, etc.), así como <em class="fa fa-share-alt"></em> <strong>Compartir</strong> y <em class="fa fa-unlock-alt"></em> <strong>Acceso</strong>.</p></li>
+<li><p>La <strong>barra de herramientas CryptPad</strong> superior se utiliza para <i data-lucide='file'></i> operaciones de <strong>archivo</strong> (incluidas importación/exportación, historial, propiedades, etc.), así como <i data-lucide='share2'></i> <strong>Compartir</strong> y <i data-lucide='lock-open'></i> <strong>Acceso</strong>.</p></li>
 <li><p>La <strong>barra de herramientas OnlyOffice</strong> se utiliza para todas las funciones dentro del documento de hoja de cálculo, así como para los modos de colaboración que se explican en la siguiente sección.</p></li>
 </ul>
 </section>
@@ -788,7 +792,7 @@
 </section>
 <section id="history">
 <span id="sheets-history"></span><h2>Historial<a class="headerlink" href="#history" title="Enlace permanente a este encabezado">¶</a></h2>
-<p>Para acceder al historial de la hoja de cálculo, utiliza <em class="fa fa-file-o"></em> <strong>Archivo</strong> &gt; <em class="fa fa-history"></em> <strong>Historial</strong> en la barra de herramientas de CryptPad.</p>
+<p>Para acceder al historial de la hoja de cálculo, utiliza <i data-lucide='file'></i> <strong>Archivo</strong> &gt; <i data-lucide='history'></i> <strong>Historial</strong> en la barra de herramientas de CryptPad.</p>
 <p>Debido a la integración de OnlyOffice con la colaboración cifrada en tiempo real de CryptPad, el historial en las hojas de cálculo funciona de manera diferente a <a class="reference internal" href="general.html#document-history"><span class="std std-ref">en las otras aplicaciones</span></a>.</p>
 <figure class="align-default" id="id1">
 <img alt="../../_images/history-toolbar-sheets.png" class="screenshot" src="../../_images/history-toolbar-sheets.png" />
@@ -798,9 +802,9 @@
 </figure>
 <p>El historial en las hojas de cálculo solo permite volver a la versión anterior y luego avanzar a través de ediciones individuales.</p>
 <ul class="simple">
-<li><p><em class="fa fa-fast-backward"></em> versión previa</p></li>
-<li><p><em class="fa fa-step-forward"></em> Un paso adelante una edición</p></li>
-<li><p><em class="fa fa-fast-forward"></em> próxima versión</p></li>
+<li><p><i data-lucide='arrow-left-to-line'></i> versión previa</p></li>
+<li><p><i data-lucide='arrow-right'></i> Un paso adelante una edición</p></li>
+<li><p><i data-lucide='arrow-right-to-line'></i> próxima versión</p></li>
 </ul>
 <p>La funcionalidad para restaurar y compartir una versión, así como todo lo relacionado con <a class="reference internal" href="general.html#snapshots"><span class="std std-ref">Copia instantánea</span></a>, funciona de la misma manera que en <a class="reference internal" href="general.html#document-history"><span class="std std-ref">las otras aplicaciones</span></a>.</p>
 </section>
@@ -812,11 +816,11 @@
 <section id="import-export">
 <h2>Importar/Exportar<a class="headerlink" href="#import-export" title="Enlace permanente a este encabezado">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Archivo</strong> &gt; <em class="fa fa-upload"></em> <strong>Importar</strong>.</div>
+<div class="line"><i data-lucide='file'></i> <strong>Archivo</strong> &gt; <i data-lucide='upload'></i> <strong>Importar</strong>.</div>
 <div class="line">Supported formats: <code class="docutils literal notranslate"><span class="pre">.bin</span></code> files exported by this application, Excel <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code>, <code class="docutils literal notranslate"><span class="pre">.ods</span></code>.</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Archivo</strong> &gt; <em class="fa fa-download"></em> <strong>Exportar</strong>.</div>
+<div class="line"><i data-lucide='file'></i> <strong>Archivo</strong> &gt; <i data-lucide='download'></i> <strong>Exportar</strong>.</div>
 <div class="line">Formatos soportados: <code class="docutils literal notranslate"><span class="pre">.bin</span></code>, Excel <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code>, <code class="docutils literal notranslate"><span class="pre">.ods</span></code>, <code class="docutils literal notranslate"><span class="pre">.pdf</span></code>.</div>
 </div>
 </section>
@@ -830,10 +834,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="code.html" class="btn btn-neutral float-right" title="Código / Markdown" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="code.html" class="btn btn-neutral float-right" title="Código / Markdown" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="presentation.html" class="btn btn-neutral" title="Presentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="presentation.html" class="btn btn-neutral" title="Presentation" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -895,7 +899,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

@@ -42,6 +42,8 @@
 
   
   <script src="../_static/js/modernizr.min.js"></script>
+  
+  <script src="../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Dessin</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">Barre d'outils</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">Dessiner</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Mode Pinceau</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Mode Sélection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Mode Pinceau</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Mode Sélection</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#export">Export</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -754,11 +758,11 @@
 <p>CryptDrive est utilisé pour stocker et organiser les documents. Pour les utilisateur·ices connecté·es, c'est la page par défaut de CryptPad. Il est aussi accessible depuis les autres pages :</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur le logo (en haut à gauche).</p></li>
-<li><p>Avatar (en haut à droite) &gt; <em class="fa fa-hdd-o"></em> <strong>CryptDrive</strong>.</p></li>
+<li><p>Avatar (en haut à droite) &gt; <i data-lucide='hard-drive'></i> <strong>CryptDrive</strong>.</p></li>
 </ul>
 <section id="display">
 <span id="drive-display"></span><h2>Affichage<a class="headerlink" href="#display" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p>Les documents dans le drive sont affichés sous forme de <em class="fa fa-list"></em> liste ou de <em class="fa fa-th-large"></em> grille. Pour passer de l'un à l'autre, utiliser le bouton à droite dans la barre d'outils du drive (sous l'avatar).</p>
+<p>Les documents dans le drive sont affichés sous forme de <i data-lucide='list'></i> liste ou de <i data-lucide='layout-grid'></i> grille. Pour passer de l'un à l'autre, utiliser le bouton à droite dans la barre d'outils du drive (sous l'avatar).</p>
 <p>En mode grille CryptPad peut afficher des miniatures des documents, si elles sont activées dans les <a class="reference internal" href="user_account.html#user-settings-cryptdrive"><span class="std std-ref">préférences utilisateur·ice</span></a>.</p>
 <figure class="align-default" id="id5">
 <img alt="../_images/drive-grid.png" class="screenshot" src="../_images/drive-grid.png" />
@@ -777,21 +781,21 @@
 <h2>Gestion des documents<a class="headerlink" href="#managing-documents" title="Lien permanent vers cette rubrique">¶</a></h2>
 <section id="folders">
 <span id="id1"></span><h3>Dossiers<a class="headerlink" href="#folders" title="Lien permanent vers cette rubrique">¶</a></h3>
-<p><span class="badge-user">Utilisateur·ices enregistré·es</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Utilisateur·ices enregistré·es</span></p>
 <p>Il y a plusieurs manières de créer un dossier dans le drive :</p>
 <ul class="simple">
-<li><p><em class="fa fa-plus"></em> <strong>Nouveau</strong> dans la barre d'outils du CryptDrive &gt; <em class="fa fa-folder"></em> <strong>Dossier</strong>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> &gt; <em class="fa fa-folder"></em> <strong>Nouveau dossier</strong>.</p></li>
-<li><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">e</kbd></kbd> &gt; <em class="fa fa-folder"></em> <strong>Dossier</strong>.</p></li>
+<li><p><i data-lucide='plus'></i> <strong>Nouveau</strong> dans la barre d'outils du CryptDrive &gt; <i data-lucide='folder'></i> <strong>Dossier</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> &gt; <i data-lucide='folder'></i> <strong>Nouveau dossier</strong>.</p></li>
+<li><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">e</kbd></kbd> &gt; <i data-lucide='folder'></i> <strong>Dossier</strong>.</p></li>
 </ul>
 <p>Une fois qu'un dossier est créé, des documents peuvent y être ajouté en les faisant glisser dans le drive. Vous pouvez aussi glisser/déposer des fichiers d'un dossier à un autre. Utilisez la barre latérale à gauche pour déposer le fichier dans le dossier désiré.</p>
 <p>Pour changer la couleur d'un dossier :</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le dossier &gt; <em class="cptools cptools-palette"></em> <strong>Changer la couleur</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le dossier &gt; <i data-lucide='palette'></i> <strong>Changer la couleur</strong>.</p></li>
 </ul>
 <p>Pour partager un dossier et tout son contenu :</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le dossier &gt; <em class="fa fa-share-alt"></em> <strong>Partager</strong>. Le dossier sera alors converti en <a class="reference internal" href="share_and_access.html#shared-folders"><span class="std std-ref">dossier partagé</span></a>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le dossier &gt; <i data-lucide='share2'></i> <strong>Partager</strong>. Le dossier sera alors converti en <a class="reference internal" href="share_and_access.html#shared-folders"><span class="std std-ref">dossier partagé</span></a>.</p></li>
 </ul>
 </section>
 <section id="renaming">
@@ -799,24 +803,24 @@
 <p>Il y a deux manières de renommer un document dans CryptPad. L'une change le titre pour tou·tes les utilisateur·ices, l'autre uniquement pour vous.</p>
 <p>Pour changer le titre d'un document pour tou·tes les utilisateur·ices qui ont ce document dans leur drive :</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur le titre ou sur le bouton <em class="fa fa-pencil"></em> dans la barre d'outils du document.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur le titre ou sur le bouton <i data-lucide='pencil'></i> dans la barre d'outils du document.</p></li>
 <li><p>Entrer le nouveau titre.</p></li>
-<li><p>Valider avec le bouton <em class="fa fa-check"></em> ou la touche <kbd class="kbd docutils literal notranslate">Entrée</kbd>.</p></li>
+<li><p>Valider avec le bouton <i data-lucide='check'></i> ou la touche <kbd class="kbd docutils literal notranslate">Entrée</kbd>.</p></li>
 </ol>
 <p>Pour renommer un document uniquement dans votre drive :</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le document dans votre drive &gt; <em class="fa fa-pencil"></em> <strong>Renommer</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le document dans votre drive &gt; <i data-lucide='pencil'></i> <strong>Renommer</strong>.</p></li>
 <li><p>Entrer le nouveau titre.</p></li>
 <li><p>Valider avec la touche <kbd class="kbd docutils literal notranslate">Entrée</kbd>.</p></li>
 </ol>
-<p>L’icône <em class="fa fa-flag"></em> indique les documents qui ont été renommés dans votre drive uniquement.</p>
+<p>L’icône <i data-lucide='flag'></i> indique les documents qui ont été renommés dans votre drive uniquement.</p>
 </section>
 <section id="deleting">
 <span id="id2"></span><h3>Supprimer<a class="headerlink" href="#deleting" title="Lien permanent vers cette rubrique">¶</a></h3>
 <p>Il y a deux manières de supprimer un document sur CryptPad :</p>
 <ul class="simple">
-<li><p><em class="fa fa-trash"></em> <strong>Supprimer</strong> un document le fait disparaître du drive mais pas de la base de données. Le document reste dans le drive d'autres utilisateur·ices qui l'ont stocké et peut être restauré par l'<a class="reference internal" href="#drive-history"><span class="std std-ref">historique</span></a>.</p></li>
-<li><p><em class="cptools cptools-destroy"></em> <strong>Détruire</strong> un document le supprime de la base de données de manière permanente. Le document est supprimé de tous les drives où il est stocké, et il ne peut pas être restauré par l'historique. <span class="badge-owner">Propriétaires du document</span></p></li>
+<li><p><i data-lucide='trash2'></i> <strong>Supprimer</strong> un document le fait disparaître du drive mais pas de la base de données. Le document reste dans le drive d'autres utilisateur·ices qui l'ont stocké et peut être restauré par l'<a class="reference internal" href="#drive-history"><span class="std std-ref">historique</span></a>.</p></li>
+<li><p><i data-lucide='shredder'></i> <strong>Détruire</strong> un document le supprime de la base de données de manière permanente. Le document est supprimé de tous les drives où il est stocké, et il ne peut pas être restauré par l'historique. <span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> Propriétaires du document</span></p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -824,8 +828,8 @@
 </div>
 <p>Pour <strong>supprimer</strong> un document dans CryptDrive.</p>
 <ul class="simple">
-<li><p>Faire glisser le document depuis le drive jusque dans la <em class="fa fa-trash"></em> <strong>Corbeille</strong>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> &gt; <em class="fa fa-trash"></em> <strong>Déplacer vers la corbeille</strong></p></li>
+<li><p>Faire glisser le document depuis le drive jusque dans la <i data-lucide='trash2'></i> <strong>Corbeille</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> &gt; <i data-lucide='trash2'></i> <strong>Déplacer vers la corbeille</strong></p></li>
 <li><p>Sélectionner le document puis appuyer sur la touche <kbd class="kbd docutils literal notranslate">Suppr</kbd>.</p></li>
 </ul>
 <p>Pour <strong>supprimer</strong> directement un document depuis CryptDrive sans passer par la corbeille :</p>
@@ -834,13 +838,13 @@
 </ul>
 <p>Pour vider la corbeille :</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur l'onglet <em class="fa fa-trash"></em> <strong>Corbeille</strong> à gauche du drive &gt; <em class="fa fa-trash-o"></em> <strong>Vider la Corbeille</strong>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur l'onglet <em class="fa fa-trash"></em> <strong>Corbeille</strong> pour accéder à la corbeille &gt; <em class="fa fa-trash-o"></em> <strong>Vider la Corbeille</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur l'onglet <i data-lucide='trash2'></i> <strong>Corbeille</strong> à gauche du drive &gt; <i data-lucide='trash'></i> <strong>Vider la Corbeille</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur l'onglet <i data-lucide='trash2'></i> <strong>Corbeille</strong> pour accéder à la corbeille &gt; <i data-lucide='trash'></i> <strong>Vider la Corbeille</strong>.</p></li>
 </ul>
 <p>Si vous êtes <a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">propriétaire</span></a> de documents dans la corbeille lorsque vous la videz, il vous est demandé si vous souhaitez les <strong>supprimer</strong> ou les <strong>détruire</strong>.</p>
 <p>Pour <strong>détruire</strong> un document sans le stocker dans la corbeille :</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le document dans le drive &gt; <em class="cptools cptools-destroy"></em> <strong>Détruire</strong>. <span class="badge-owner">Propriétaires du document</span></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le document dans le drive &gt; <i data-lucide='shredder'></i> <strong>Détruire</strong>. <span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> Propriétaires du document</span></p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -852,9 +856,9 @@
 <span id="drive-history"></span><h2>Historique<a class="headerlink" href="#history" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p>L'historique du drive est sauvegardé et peut être restauré en cas de besoin. Depuis le drive :</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur le bouton <em class="fa fa-history"></em> en haut à droite (sous l'avatar).</p></li>
-<li><p>Utiliser les flèches <em class="fa fa-fast-backward"></em> <em class="fa fa-step-backward"></em> et <em class="fa fa-step-forward"></em> <em class="fa fa-fast-forward"></em> pour remonter dans l'historique.</p></li>
-<li><p>Restaurer la version affichée avec <em class="fa fa-check"></em> <strong>Restaurer</strong> ou sortir de l'historique sans restaurer avec <em class="fa fa-times"></em> <strong>Fermer</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur le bouton <i data-lucide='history'></i> en haut à droite (sous l'avatar).</p></li>
+<li><p>Utiliser les flèches <i data-lucide='arrow-left-to-line'></i> <i data-lucide='arrow-left'></i> et <i data-lucide='arrow-right'></i> <i data-lucide='arrow-right-to-line'></i> pour remonter dans l'historique.</p></li>
+<li><p>Restaurer la version affichée avec <i data-lucide='check'></i> <strong>Restaurer</strong> ou sortir de l'historique sans restaurer avec <i data-lucide='x'></i> <strong>Fermer</strong>.</p></li>
 </ol>
 <p>Pour économiser de l'espace de stockage, l'historique du CryptDrive peut être supprimé dans les <a class="reference internal" href="user_account.html#user-settings-cryptdrive"><span class="std std-ref">préférences utilisateur·ice</span></a>.</p>
 <div class="admonition note">
@@ -864,44 +868,44 @@
 </section>
 <section id="tags">
 <span id="id3"></span><h2>Mots-Clés<a class="headerlink" href="#tags" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p><span class="badge-user">Utilisateur·ices enregistré·es</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Utilisateur·ices enregistré·es</span></p>
 <p>Les mots-clés permettent de grouper les documents dans des catégories multiples. Vos mots-clés ne sont pas visibles par d'autres utilisateur·ices.</p>
-<p>L'onglet <em class="fa fa-hashtag"></em> <strong>Mots-clés</strong> dans le drive permet de voir tous les mots-clés utilisés et leurs documents associés.</p>
+<p>L'onglet <i data-lucide='hash'></i> <strong>Mots-clés</strong> dans le drive permet de voir tous les mots-clés utilisés et leurs documents associés.</p>
 <img alt="../_images/modal-tags.png" class="screenshot" src="../_images/modal-tags.png" />
 <p>Pour ajouter ou supprimer des mots-clés à un document :</p>
 <ul class="simple">
-<li><p>Dans le drive : <code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le document&gt; <em class="fa fa-hashtag"></em> <strong>Mots-clés</strong>.</p></li>
-<li><p>Dans un document : <em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-hashtag"></em> <strong>Mots-clés</strong>.</p></li>
+<li><p>Dans le drive : <code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le document&gt; <i data-lucide='hash'></i> <strong>Mots-clés</strong>.</p></li>
+<li><p>Dans un document : <i data-lucide='file'></i> <strong>Fichier</strong> &gt; <i data-lucide='hash'></i> <strong>Mots-clés</strong>.</p></li>
 </ul>
 <p>Pour gérer les mots-clés de plusieurs documents :</p>
 <ol class="arabic simple">
 <li><p>Sélectionner les documents avec <kbd class="kbd docutils literal notranslate">Ctrl</kbd> + <code class="docutils literal notranslate"><span class="pre">Clic</span></code> dans CryptDrive.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur les documents &gt; <em class="fa fa-hashtag"></em> <strong>Mots-clés</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur les documents &gt; <i data-lucide='hash'></i> <strong>Mots-clés</strong>.</p></li>
 </ol>
 <p>Seuls les mots-clés en commun à tous les documents sélectionnés sont alors affichés. Les ajouts et/ou suppressions de mots-clés sont appliquées à toute la sélection.</p>
 </section>
 <section id="templates">
 <span id="id4"></span><h2>Modèles<a class="headerlink" href="#templates" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p><span class="badge-user">Utilisateur·ices enregistré·es</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Utilisateur·ices enregistré·es</span></p>
 <p>Les modèles sont des gabarits réutilisables pour créer des documents de même type, par exemple facture, papier à lettre, rapport, etc.</p>
 <p>Créer un modèle :</p>
 <ol class="arabic simple">
-<li><p>Sélectionner l'onglet <em class="cptools cptools-template"></em> <strong>Modèles</strong> dans le drive.</p></li>
-<li><p><em class="fa fa-plus"></em> <strong>Nouveau pad</strong> dans la barre d'outils.</p></li>
+<li><p>Sélectionner l'onglet <i data-lucide='file-cog'></i> <strong>Modèles</strong> dans le drive.</p></li>
+<li><p><i data-lucide='plus'></i> <strong>Nouveau pad</strong> dans la barre d'outils.</p></li>
 </ol>
 <p>ou</p>
 <ol class="arabic simple">
-<li><p>Dans un document existant : <em class="fa fa-file-o"></em> <strong>Ficher</strong> &gt; <em class="fa fa-bookmark"></em> <strong>Sauvegarder en tant que modèle</strong>.</p></li>
+<li><p>Dans un document existant : <i data-lucide='file'></i> <strong>Ficher</strong> &gt; <i data-lucide='save'></i> <strong>Sauvegarder en tant que modèle</strong>.</p></li>
 </ol>
 <p>ou</p>
 <ol class="arabic simple">
 <li><p>Créer un <a class="reference internal" href="apps/general.html#new-document"><span class="std std-ref">nouveau document</span></a>.</p></li>
-<li><p>Sur l'écran de création sélectionner <em class="cptools cptools-new-template"></em> <strong>Nouveau modèle</strong>.</p></li>
+<li><p>Sur l'écran de création sélectionner <i data-lucide='file-up'></i> <strong>Nouveau modèle</strong>.</p></li>
 </ol>
 <p>Utiliser un modèle :</p>
 <ul class="simple">
 <li><p>Sélectionner le modèle lors de la création d'un <a class="reference internal" href="apps/general.html#new-document"><span class="std std-ref">nouveau document</span></a>.</p></li>
-<li><p>Dans un document existant : <em class="fa fa-file-o"></em> <strong>Ficher</strong> &gt; <em class="fa fa-upload"></em> <strong>Importer un modèle</strong>. Attention cette option <strong>remplace</strong> le contenu du document avec celui du modèle.</p></li>
+<li><p>Dans un document existant : <i data-lucide='file'></i> <strong>Ficher</strong> &gt; <i data-lucide='upload'></i> <strong>Importer un modèle</strong>. Attention cette option <strong>remplace</strong> le contenu du document avec celui du modèle.</p></li>
 </ul>
 </section>
 <section id="storage-quota">
@@ -928,10 +932,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="collaboration.html" class="btn btn-neutral float-right" title="Collaboration / Social" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="collaboration.html" class="btn btn-neutral float-right" title="Collaboration / Social" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="security.html" class="btn btn-neutral" title="Sécurité" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="security.html" class="btn btn-neutral" title="Sécurité" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -994,7 +998,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

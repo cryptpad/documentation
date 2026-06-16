@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Dessin</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Barre d'outils</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Dessiner</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Mode Pinceau</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Mode Sélection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Mode Pinceau</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Mode Sélection</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Export</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -763,19 +767,19 @@
 </ul>
 <p>Effacer une carte/colonne :</p>
 <ul class="simple">
-<li><p>La zone <em class="fa fa-trash"></em> corbeille apparaît quand un élément est en cours de déplacement.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span></code> puis faire glisser la carte/colonne vers la zone <em class="fa fa-trash"></em> corbeille en bas de l'écran.</p></li>
+<li><p>La zone <i data-lucide='trash2'></i> corbeille apparaît quand un élément est en cours de déplacement.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span></code> puis faire glisser la carte/colonne vers la zone <i data-lucide='trash2'></i> corbeille en bas de l'écran.</p></li>
 </ul>
 <p>ou</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur <em class="fa fa-pencil"></em> pour ouvrir l'éditeur de carte/colonne &gt; <code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur <strong>Supprimer</strong> puis confirmation.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur <i data-lucide='pencil'></i> pour ouvrir l'éditeur de carte/colonne &gt; <code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur <strong>Supprimer</strong> puis confirmation.</p></li>
 </ul>
 </section>
 <section id="columns">
 <h2>Colonnes<a class="headerlink" href="#columns" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p>Créer une nouvelle colonne :</p>
 <ul class="simple">
-<li><p>Bouton <em class="fa fa-plus"></em> à droite de la dernière colonne.</p></li>
+<li><p>Bouton <i data-lucide='plus'></i> à droite de la dernière colonne.</p></li>
 </ul>
 <p>Changer le titre d'une colonne :</p>
 <ol class="arabic simple">
@@ -785,7 +789,7 @@
 </ol>
 <p>Le nom et la couleur d'une colonne peut être modifiés dans l'éditeur de colonne :</p>
 <ol class="arabic simple">
-<li><p>Bouton <em class="fa fa-pencil"></em> à côté du titre de la colonne.</p></li>
+<li><p>Bouton <i data-lucide='pencil'></i> à côté du titre de la colonne.</p></li>
 <li><p>Modifier le titre et/ou choisir une couleur.</p></li>
 <li><p><strong>Fermer</strong>, <kbd class="kbd docutils literal notranslate">Échap</kbd> ou <kbd class="kbd docutils literal notranslate">Entrée</kbd></p></li>
 </ol>
@@ -794,8 +798,8 @@
 <h2>Cartes<a class="headerlink" href="#cards" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p>Créer une nouvelle carte avec les boutons en bas de chaque colonne :</p>
 <ul class="simple">
-<li><p><em class="cptools cptools-add-bottom"></em> pour ajouter une carte en bas de la colonne.</p></li>
-<li><p><em class="cptools cptools-add-top"></em> pour ajouter une carte en haut de la colonne.</p></li>
+<li><p><i data-lucide='cp-kanban-add-bottom'></i> pour ajouter une carte en bas de la colonne.</p></li>
+<li><p><i data-lucide='cp-kanban-add-top'></i> pour ajouter une carte en haut de la colonne.</p></li>
 </ul>
 <p>Changer le titre d'une carte :</p>
 <ol class="arabic simple">
@@ -809,13 +813,13 @@
 <h2>Éditeur de carte<a class="headerlink" href="#card-editor" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p>Ouvrir l'éditeur de carte :</p>
 <ul class="simple">
-<li><p>Bouton <em class="fa fa-pencil"></em> à côté du titre de la carte.</p></li>
+<li><p>Bouton <i data-lucide='pencil'></i> à côté du titre de la carte.</p></li>
 </ul>
 <p>L'éditeur permet de :</p>
 <ul class="simple">
 <li><p>Modifier le titre de la carte.</p></li>
 <li><p>Modifier le texte de la carte en syntaxe <a class="reference external" href="https://blog.wax-o.com/2014/04/tutoriel-un-guide-pour-bien-commencer-avec-markdown/">Markdown</a> : italique, gras, liens, listes, listes de tâches, etc. sont supportés.</p></li>
-<li><p>Insérer des images avec le menu <em class="fa fa-picture-o"></em> dans la barre d'outils (la syntaxe Markdown pour les images distantes est bloquée, voir <a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">Contenu distant</span></a>).</p></li>
+<li><p>Insérer des images avec le menu <i data-lucide='image-plus'></i> dans la barre d'outils (la syntaxe Markdown pour les images distantes est bloquée, voir <a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">Contenu distant</span></a>).</p></li>
 <li><p>Assigner ou modifier une couleur à la carte.</p></li>
 <li><p>Ajouter ou modifier des mots-clés à la carte.</p></li>
 <li><p>Supprimer la carte.</p></li>
@@ -823,27 +827,27 @@
 </section>
 <section id="display">
 <h2>Affichage<a class="headerlink" href="#display" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p>Les boutons <em class="fa fa-minus"></em> et <em class="fa fa-bars"></em> en haut à droite permettent de voir :</p>
+<p>Les boutons <i data-lucide='minus'></i> et <i data-lucide='menu'></i> en haut à droite permettent de voir :</p>
 <ul class="simple">
-<li><p><em class="fa fa-minus"></em> seulement les titres de cartes.</p></li>
-<li><p><em class="fa fa-bars"></em> tout le contenu des cartes.</p></li>
+<li><p><i data-lucide='minus'></i> seulement les titres de cartes.</p></li>
+<li><p><i data-lucide='menu'></i> tout le contenu des cartes.</p></li>
 </ul>
 <p>Les mots-clés au-dessus du Kanban permettent de filtrer celui-ci :</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur un ou plusieurs mots-clés.</p></li>
 <li><p>Seulement les cartes avec ces mots-clés sont affichées.</p></li>
 <li><p>Les nouvelles cartes reçoivent automatiquement ces mots-clés.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur un mot-clé sélectionné pour le désélectionner ou <em class="fa fa-times"></em> <strong>Enlever le filtre</strong> (à gauche de la liste) pour désélectionner tous les mots-clés.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur un mot-clé sélectionné pour le désélectionner ou <i data-lucide='x'></i> <strong>Enlever le filtre</strong> (à gauche de la liste) pour désélectionner tous les mots-clés.</p></li>
 </ol>
 </section>
 <section id="import-export">
 <h2>Importer/Exporter<a class="headerlink" href="#import-export" title="Lien permanent vers cette rubrique">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-upload"></em> <strong>Importer</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>Fichier</strong> &gt; <i data-lucide='upload'></i> <strong>Importer</strong></div>
 <div class="line">Formats supportés : Fichiers <code class="docutils literal notranslate"><span class="pre">.json</span></code> exportés par l'application.</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-download"></em> <strong>Exporter</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>Fichier</strong> &gt; <i data-lucide='download'></i> <strong>Exporter</strong></div>
 <div class="line">Formats supportés : <code class="docutils literal notranslate"><span class="pre">.json</span></code>.</div>
 </div>
 </section>
@@ -857,10 +861,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="diagram.html" class="btn btn-neutral float-right" title="Diagramme" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="diagram.html" class="btn btn-neutral float-right" title="Diagramme" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="form.html" class="btn btn-neutral" title="Formulaire" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="form.html" class="btn btn-neutral" title="Formulaire" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -923,7 +927,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

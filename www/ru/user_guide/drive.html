@@ -42,6 +42,8 @@
 
   
   <script src="../_static/js/modernizr.min.js"></script>
+  
+  <script src="../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Рисунки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">Инструменты</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">Рисование</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Режим рисования</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Режим выбора</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Режим рисования</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Режим выбора</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#export">Экспорт</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -754,11 +758,11 @@
 <p>CryptDrive используется для хранения и управления документами. Для зарегистрированных пользователей на CryptPad это домашняя страница по умолчанию. Он также доступен с других страниц:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Нажмите</span></code> на логотип в левом верхнем углу.</p></li>
-<li><p>Меню пользователя (аватар вверху справа) &gt; <em class="fa fa-hdd-o"></em> <strong>CryptDrive</strong>.</p></li>
+<li><p>Меню пользователя (аватар вверху справа) &gt; <i data-lucide='hard-drive'></i> <strong>CryptDrive</strong>.</p></li>
 </ul>
 <section id="display">
 <span id="drive-display"></span><h2>Отображение<a class="headerlink" href="#display" title="Permalink to this heading">¶</a></h2>
-<p>Документы в диске могут отображаться в виде <em class="fa fa-list"></em> списка или <em class="fa fa-th-large"></em> сетки. Для переключения между ними используйте кнопку справа от панели инструментов диска (под аватаром).</p>
+<p>Документы в диске могут отображаться в виде <i data-lucide='list'></i> списка или <i data-lucide='layout-grid'></i> сетки. Для переключения между ними используйте кнопку справа от панели инструментов диска (под аватаром).</p>
 <p>В режиме сетки CryptPad может отображать эскизы документов. Их можно включить в <a class="reference internal" href="user_account.html#user-settings-cryptdrive"><span class="std std-ref">настройках пользователя</span></a>.</p>
 <figure class="align-default" id="id5">
 <img alt="../_images/drive-grid.png" class="screenshot" src="../_images/drive-grid.png" />
@@ -777,21 +781,21 @@
 <h2>Управление документами<a class="headerlink" href="#managing-documents" title="Permalink to this heading">¶</a></h2>
 <section id="folders">
 <span id="id1"></span><h3>Папки<a class="headerlink" href="#folders" title="Permalink to this heading">¶</a></h3>
-<p><span class="badge-user">Зарегистрированные пользователи</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Зарегистрированные пользователи</span></p>
 <p>Есть несколько способов создания папок на диске:</p>
 <ul class="simple">
-<li><p><em class="fa fa-plus"></em> <strong>Новый</strong> на панели инструментов &gt; <em class="fa fa-folder"></em> <strong>Папка</strong>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code>&gt; <em class="fa fa-folder"></em> <strong>Новая папка</strong>.</p></li>
-<li><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">e</kbd></kbd> &gt; <em class="fa fa-folder"></em> <strong>Папка</strong>.</p></li>
+<li><p><i data-lucide='plus'></i> <strong>Новый</strong> на панели инструментов &gt; <i data-lucide='folder'></i> <strong>Папка</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code>&gt; <i data-lucide='folder'></i> <strong>Новая папка</strong>.</p></li>
+<li><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">e</kbd></kbd> &gt; <i data-lucide='folder'></i> <strong>Папка</strong>.</p></li>
 </ul>
 <p>После создания папки в нее можно добавлять документы, перетаскивая их с диска. Вы также можете перетаскивать файлы из одной папки в другую. Используйте удобное дерево боковой панели слева, чтобы перетащить файл в нужное место.</p>
 <p>Чтобы изменить цвет папки:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по папке &gt; <em class="cptools cptools-palette"></em> <strong>Сменить цвет</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по папке &gt; <i data-lucide='palette'></i> <strong>Сменить цвет</strong>.</p></li>
 </ul>
 <p>Чтобы поделиться папкой и всем ее содержимым:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по папке &gt; <em class="fa fa-share-alt"></em> <strong>Поделиться</strong>. Тогда папка будет преобразована в <a class="reference internal" href="share_and_access.html#shared-folders"><span class="std std-ref">общую папку</span></a>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по папке &gt; <i data-lucide='share2'></i> <strong>Поделиться</strong>. Тогда папка будет преобразована в <a class="reference internal" href="share_and_access.html#shared-folders"><span class="std std-ref">общую папку</span></a>.</p></li>
 </ul>
 </section>
 <section id="renaming">
@@ -799,24 +803,24 @@
 <p>Есть два способа переименовать документы на CryptPad. Один изменяет название документа для всех пользователей, другой изменяет его только на вашем диске.</p>
 <p>Чтобы изменить название документа для всех пользователей, у которых он есть на диске:</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Нажмите</span></code> на заголовок или на кнопку <em class="fa fa-pencil"></em> на панели инструментов документа.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Нажмите</span></code> на заголовок или на кнопку <i data-lucide='pencil'></i> на панели инструментов документа.</p></li>
 <li><p>Введите новый заголовок.</p></li>
-<li><p>Сохраните изменение с помощью кнопки <em class="fa fa-check"></em> или клавишей <kbd class="kbd docutils literal notranslate">Enter</kbd>.</p></li>
+<li><p>Сохраните изменение с помощью кнопки <i data-lucide='check'></i> или клавишей <kbd class="kbd docutils literal notranslate">Enter</kbd>.</p></li>
 </ol>
 <p>Чтобы изменить название документа только на вашем диске:</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по документу на диске &gt; <em class="fa fa-pencil"></em> <strong>Переименовать</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по документу на диске &gt; <i data-lucide='pencil'></i> <strong>Переименовать</strong>.</p></li>
 <li><p>Введите новое имя.</p></li>
 <li><p>Сохраните с помощью клавиши <kbd class="kbd docutils literal notranslate">Enter</kbd>.</p></li>
 </ol>
-<p>Значок <em class="fa fa-flag"></em> указывает на то, что название документа на вашем диске отличается от названия документа для других пользователей.</p>
+<p>Значок <i data-lucide='flag'></i> указывает на то, что название документа на вашем диске отличается от названия документа для других пользователей.</p>
 </section>
 <section id="deleting">
 <span id="id2"></span><h3>Удаление<a class="headerlink" href="#deleting" title="Permalink to this heading">¶</a></h3>
 <p>Есть два способа удалить документ на CryptPad:</p>
 <ul class="simple">
-<li><p><em class="fa fa-trash"></em> <strong>Удаление</strong> документа означает, что он перестает отображаться на диске, но остается в базе данных. Документ остается на диске других пользователей, которые его сохранили. Документ можно восстановить на диске, используя <a class="reference internal" href="#drive-history"><span class="std std-ref">историю</span></a> .</p></li>
-<li><p><em class="cptools cptools-destroy"></em> <strong>Уничтожение</strong> документа навсегда удаляет его из базы данных. Документ удаляется со всех дисков, на которых он хранится, и его невозможно восстановить с помощью истории дисков. <span class="badge-owner">Владельцы документа</span></p></li>
+<li><p><i data-lucide='trash2'></i> <strong>Удаление</strong> документа означает, что он перестает отображаться на диске, но остается в базе данных. Документ остается на диске других пользователей, которые его сохранили. Документ можно восстановить на диске, используя <a class="reference internal" href="#drive-history"><span class="std std-ref">историю</span></a> .</p></li>
+<li><p><i data-lucide='shredder'></i> <strong>Уничтожение</strong> документа навсегда удаляет его из базы данных. Документ удаляется со всех дисков, на которых он хранится, и его невозможно восстановить с помощью истории дисков. <span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> Владельцы документа</span></p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Примечание</p>
@@ -824,8 +828,8 @@
 </div>
 <p>Чтобы <strong>удалить</strong> документ из CryptDrive.</p>
 <ul class="simple">
-<li><p>Перетащите документ с диска в <em class="fa fa-trash"></em> <strong>Корзину</strong>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> &gt; <em class="fa fa-trash"></em> <strong>Переместить в корзину</strong></p></li>
+<li><p>Перетащите документ с диска в <i data-lucide='trash2'></i> <strong>Корзину</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> &gt; <i data-lucide='trash2'></i> <strong>Переместить в корзину</strong></p></li>
 <li><p>Выберите документ и нажмите клавишу <kbd class="kbd docutils literal notranslate">Del</kbd>.</p></li>
 </ul>
 <p>Чтобы <strong>удалить</strong> документ из CryptDrive без предварительного помещения его в корзину:</p>
@@ -834,13 +838,13 @@
 </ul>
 <p>Чтобы очистить корзину:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по вкладке <em class="fa fa-trash"></em> <strong>Корзина</strong> слева от диска &gt; <em class="fa fa-trash-o"></em> <strong>Очистить корзину</strong>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Нажмите</span></code> на вкладку <em class="fa fa-trash"></em> <strong>Корзина</strong> `` для доступа к корзине &gt; <em class="fa fa-trash-o"></em> <strong>Очистить корзину</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по вкладке <i data-lucide='trash2'></i> <strong>Корзина</strong> слева от диска &gt; <i data-lucide='trash'></i> <strong>Очистить корзину</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Нажмите</span></code> на вкладку <i data-lucide='trash2'></i> <strong>Корзина</strong> `` для доступа к корзине &gt; <i data-lucide='trash'></i> <strong>Очистить корзину</strong>.</p></li>
 </ul>
 <p>Если Вы являетесь <a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">владельцем</span></a> некоторых документов в корзине, то когда Вы очищаете ее, Вам будет предложено решить, хотите ли Вы <strong>удалить</strong> или <strong>уничтожить</strong> их.</p>
 <p>Чтобы <strong>уничтожить</strong> документ без предварительного помещения его в корзину:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по документу на диске &gt; <em class="cptools cptools-destroy"></em> <strong>Уничтожить</strong>. <span class="badge-owner">Владельцы документа</span></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по документу на диске &gt; <i data-lucide='shredder'></i> <strong>Уничтожить</strong>. <span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> Владельцы документа</span></p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Примечание</p>
@@ -852,9 +856,9 @@
 <span id="drive-history"></span><h2>История<a class="headerlink" href="#history" title="Permalink to this heading">¶</a></h2>
 <p>История диска сохраняется и при необходимости может быть восстановлена. С диска:</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Нажмите</span></code> на кнопку <em class="fa fa-history"></em> история в правом верхнем углу (под аватаркой).</p></li>
-<li><p>Используйте стрелки <em class="fa fa-fast-backward"></em> <em class="fa fa-step-backward"></em> и <em class="fa fa-step-forward"></em> <em class="fa fa-fast-forward"></em> для пошагового просмотра истории.</p></li>
-<li><p>Восстановите отображаемую версию с помощью <em class="fa fa-check"></em> <strong>Восстановить</strong> или выйдите из истории без восстановления с помощью <em class="fa fa-times"></em> <strong>Закрыть</strong> .</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Нажмите</span></code> на кнопку <i data-lucide='history'></i> история в правом верхнем углу (под аватаркой).</p></li>
+<li><p>Используйте стрелки <i data-lucide='arrow-left-to-line'></i> <i data-lucide='arrow-left'></i> и <i data-lucide='arrow-right'></i> <i data-lucide='arrow-right-to-line'></i> для пошагового просмотра истории.</p></li>
+<li><p>Восстановите отображаемую версию с помощью <i data-lucide='check'></i> <strong>Восстановить</strong> или выйдите из истории без восстановления с помощью <i data-lucide='x'></i> <strong>Закрыть</strong> .</p></li>
 </ol>
 <p>Для экономии места в хранилище историю CryptDrive можно удалить через <a class="reference internal" href="user_account.html#user-settings-cryptdrive"><span class="std std-ref">настройки пользователя</span></a>.</p>
 <div class="admonition note">
@@ -864,44 +868,44 @@
 </section>
 <section id="tags">
 <span id="id3"></span><h2>Теги<a class="headerlink" href="#tags" title="Permalink to this heading">¶</a></h2>
-<p><span class="badge-user">Зарегистрированные пользователи</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Зарегистрированные пользователи</span></p>
 <p>Группируйте документы по нескольким категориям с помощью тегов. Ваши теги не видны другим пользователям.</p>
-<p>На вкладке <em class="fa fa-hashtag"></em> <strong>Теги</strong> на диске отображаются все используемые теги и связанные с ними документы.</p>
+<p>На вкладке <i data-lucide='hash'></i> <strong>Теги</strong> на диске отображаются все используемые теги и связанные с ними документы.</p>
 <img alt="../_images/modal-tags.png" class="screenshot" src="../_images/modal-tags.png" />
 <p>Чтобы добавить или удалить теги из документа:</p>
 <ul class="simple">
-<li><p>С диска: <cite>Щелкните правой кнопкой мыши</cite> по документу &gt; <em class="fa fa-hashtag"></em> <strong>Теги</strong>.</p></li>
-<li><p>Из документа: <em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-hashtag"></em> <strong>Теги</strong>.</p></li>
+<li><p>С диска: <cite>Щелкните правой кнопкой мыши</cite> по документу &gt; <i data-lucide='hash'></i> <strong>Теги</strong>.</p></li>
+<li><p>Из документа: <i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='hash'></i> <strong>Теги</strong>.</p></li>
 </ul>
 <p>Управление тегами для нескольких документов:</p>
 <ol class="arabic simple">
 <li><p>Выберите документы с помощью <kbd class="kbd docutils literal notranslate">Ctrl</kbd> + <code class="docutils literal notranslate"><span class="pre">клик</span> <span class="pre">мышью</span></code> в CryptDrive.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по документам &gt; <em class="fa fa-hashtag"></em> <strong>Теги</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по документам &gt; <i data-lucide='hash'></i> <strong>Теги</strong>.</p></li>
 </ol>
 <p>Затем отображаются только теги, присвоенные всем документам. Все добавленные и/или удаленные теги применяются ко всем выбранным документам.</p>
 </section>
 <section id="templates">
 <span id="id4"></span><h2>Шаблоны<a class="headerlink" href="#templates" title="Permalink to this heading">¶</a></h2>
-<p><span class="badge-user">Зарегистрированные пользователи</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Зарегистрированные пользователи</span></p>
 <p>Шаблоны предоставляют многоразовые отправные точки для создания документов аналогичной структуры, например счетов-фактур, фирменных бланков, отчетов и так далее.</p>
 <p>Чтобы создать шаблон:</p>
 <ol class="arabic simple">
-<li><p>Выберите вкладку <em class="cptools cptools-template"></em> <strong>Шаблоны</strong> на диске.</p></li>
-<li><p><em class="fa fa-plus"></em> <strong>Новый</strong> на панели инструментов.</p></li>
+<li><p>Выберите вкладку <i data-lucide='file-cog'></i> <strong>Шаблоны</strong> на диске.</p></li>
+<li><p><i data-lucide='plus'></i> <strong>Новый</strong> на панели инструментов.</p></li>
 </ol>
 <p>либо</p>
 <ol class="arabic simple">
-<li><p>В существующем документе: <em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-bookmark"></em> <strong>Сохранить как шаблон</strong>.</p></li>
+<li><p>В существующем документе: <i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='save'></i> <strong>Сохранить как шаблон</strong>.</p></li>
 </ol>
 <p>либо</p>
 <ol class="arabic simple">
 <li><p>Создайте <a class="reference internal" href="apps/general.html#new-document"><span class="std std-ref">новый документ</span></a>.</p></li>
-<li><p>На экране создания выберите <em class="cptools cptools-new-template"></em> <strong>Новый шаблон</strong>.</p></li>
+<li><p>На экране создания выберите <i data-lucide='file-up'></i> <strong>Новый шаблон</strong>.</p></li>
 </ol>
 <p>Чтобы использовать шаблон:</p>
 <ul class="simple">
 <li><p>Выберите шаблон при создании <a class="reference internal" href="apps/general.html#new-document"><span class="std std-ref">новый документ</span></a>.</p></li>
-<li><p>В существующем документе: <em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-upload"></em> <strong>Импортировать шаблон</strong>. Пожалуйста, обратите внимание: эта опция <strong>заменяет</strong> содержимое документа шаблоном.</p></li>
+<li><p>В существующем документе: <i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='upload'></i> <strong>Импортировать шаблон</strong>. Пожалуйста, обратите внимание: эта опция <strong>заменяет</strong> содержимое документа шаблоном.</p></li>
 </ul>
 </section>
 <section id="storage-quota">
@@ -928,10 +932,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="collaboration.html" class="btn btn-neutral float-right" title="Совместная работа / Взаимодействие" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="collaboration.html" class="btn btn-neutral float-right" title="Совместная работа / Взаимодействие" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="security.html" class="btn btn-neutral" title="Безопасность" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="security.html" class="btn btn-neutral" title="Безопасность" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -994,7 +998,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

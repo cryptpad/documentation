@@ -42,6 +42,8 @@
 
   
   <script src="../_static/js/modernizr.min.js"></script>
+  
+  <script src="../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">白板</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">工具列</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">繪圖</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> 繪圖模式</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> 選取模式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> 繪圖模式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> 選取模式</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#export">匯出</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -837,55 +841,55 @@
 </section>
 <section id="notifications">
 <h2>通知<a class="headerlink" href="#notifications" title="此标题的永久链接">¶</a></h2>
-<p><span class="badge-user">已登入使用者</span></p>
-<p>當您的聯絡人與您互動時，CryptPad 會發出通知。通知會以鐘形圖示 <em class="fa fa-bell-o"></em> 顯示在頭像旁邊（右上角）。如果有未讀通知，圖示會變成實心 <em class="fa fa-bell"></em>，並顯示未讀數量。</p>
-<p><em class="fa fa-bell"></em> 鐘形圖示下拉選單：</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> 已登入使用者</span></p>
+<p>當您的聯絡人與您互動時，CryptPad 會發出通知。通知會以鐘形圖示 <i data-lucide='bell'></i> 顯示在頭像旁邊（右上角）。如果有未讀通知，圖示會變成實心 <i data-lucide='bell'></i>，並顯示未讀數量。</p>
+<p><i data-lucide='bell'></i> 鐘形圖示下拉選單：</p>
 <ul class="simple">
 <li><p>瀏覽未讀通知。</p></li>
-<li><p>使用 <em class="fa fa-times"></em> 刪除通知。</p></li>
+<li><p>使用 <i data-lucide='x'></i> 刪除通知。</p></li>
 <li><p><strong>開啟通知面板</strong>：檢視所有通知與通知歷史紀錄。</p></li>
 </ul>
 <p>在通知面板頁面中：</p>
 <ul class="simple">
 <li><p>選擇要檢視的通知類型：</p>
 <ul>
-<li><p><em class="fa fa-bars"></em> 全部。</p></li>
-<li><p><em class="fa fa-user"></em> 聯絡人請求。</p></li>
-<li><p><em class="cptools cptools-richtext"></em> 與我共用。</p></li>
-<li><p><em class="fa fa-archive"></em> 歷史紀錄。</p></li>
+<li><p><i data-lucide='menu'></i> 全部。</p></li>
+<li><p><i data-lucide='user'></i> 聯絡人請求。</p></li>
+<li><p><i data-lucide='file-text'></i> 與我共用。</p></li>
+<li><p><i data-lucide='archive'></i> 歷史紀錄。</p></li>
 </ul>
 </li>
-<li><p><em class="fa fa-trash"></em>：刪除通知。</p></li>
+<li><p><i data-lucide='trash2'></i>：刪除通知。</p></li>
 </ul>
 </section>
 <section id="settings">
 <span id="user-settings"></span><h2>設定<a class="headerlink" href="#settings" title="此标题的永久链接">¶</a></h2>
-<p>帳號設定位於使用者選單中（右上角的頭像）&gt; <em class="fa fa-gear"></em> <strong>設定</strong>。</p>
+<p>帳號設定位於使用者選單中（右上角的頭像）&gt; <i data-lucide='settings'></i> <strong>設定</strong>。</p>
 <section id="account">
 <span id="user-settings-account"></span><h3>帳號<a class="headerlink" href="#account" title="此标题的永久链接">¶</a></h3>
 <ul class="simple">
-<li><p><strong>帳號名稱</strong>：註冊時選擇的使用者名稱。此名稱無法變更。<span class="badge-user">已登入使用者</span></p></li>
-<li><p><strong>公開簽署金鑰</strong>：供站台管理員及／或提供訂閱方案的站台使用。這是服務管理員唯一能取得的帳號相關資料。<span class="badge-user">已登入使用者</span></p></li>
+<li><p><strong>帳號名稱</strong>：註冊時選擇的使用者名稱。此名稱無法變更。<span class="badge-user" data-icon="user"><i data-lucide="user"></i> 已登入使用者</span></p></li>
+<li><p><strong>公開簽署金鑰</strong>：供站台管理員及／或提供訂閱方案的站台使用。這是服務管理員唯一能取得的帳號相關資料。<span class="badge-user" data-icon="user"><i data-lucide="user"></i> 已登入使用者</span></p></li>
 <li><p><strong>語言</strong>：CryptPad 介面所使用的語言。若要變更 CryptPad 的語言，請在下拉選單中選擇新的語言。CryptPad 的英文與法文由開發團隊維護，其他語言則由 <a class="reference internal" href="../how_to_contribute.html#contribute-translation"><span class="std std-ref">社群</span></a> 翻譯；部分語言可能尚未完整，或偶有錯誤。</p></li>
 <li><p><strong>自動下載大小上限</strong>：自動載入嵌入文件中的媒體物件（圖片、影片、PDF）的最大容量（以 MB 計）。超過此大小的物件需要手動載入。若設定為「-1」，則一律自動載入媒體物件。</p></li>
-<li><p><strong>刪除帳號</strong>：將您的帳號與其所有文件永久刪除。請點選 <strong>刪除帳號</strong> 並確認。<span class="badge-user">已登入使用者</span></p></li>
+<li><p><strong>刪除帳號</strong>：將您的帳號與其所有文件永久刪除。請點選 <strong>刪除帳號</strong> 並確認。<span class="badge-user" data-icon="user"><i data-lucide="user"></i> 已登入使用者</span></p></li>
 </ul>
 </section>
 <section id="profile">
 <span id="user-settings-profile"></span><h3>個人檔案<a class="headerlink" href="#profile" title="此标题的永久链接">¶</a></h3>
 <ul class="simple">
 <li><p><strong>顯示名稱</strong>：在與其他使用者協作編輯文件時所顯示的名稱。若要變更這個名稱，請輸入新名稱後按 <strong>儲存</strong>。</p></li>
-<li><p><strong>頭像</strong>：顯示在顯示名稱旁邊的個人圖片。<span class="badge-user">已登入使用者</span></p></li>
-<li><p><strong>徽章</strong>：向其他使用者顯示您的身分，例如「管理員」、「支援與管理」，或您是付費訂閱者。<span class="badge-user">已登入使用者</span></p></li>
-<li><p><strong>個人網站連結</strong>：輸入有效網址，為您的個人網站加上連結。<span class="badge-user">已登入使用者</span></p></li>
-<li><p><strong>個人簡介</strong>：可輸入個人簡短介紹的文字區塊。您可以使用工具列進行富文字格式化，或使用 Markdown 語法。<span class="badge-user">已登入使用者</span></p></li>
+<li><p><strong>頭像</strong>：顯示在顯示名稱旁邊的個人圖片。<span class="badge-user" data-icon="user"><i data-lucide="user"></i> 已登入使用者</span></p></li>
+<li><p><strong>徽章</strong>：向其他使用者顯示您的身分，例如「管理員」、「支援與管理」，或您是付費訂閱者。<span class="badge-user" data-icon="user"><i data-lucide="user"></i> 已登入使用者</span></p></li>
+<li><p><strong>個人網站連結</strong>：輸入有效網址，為您的個人網站加上連結。<span class="badge-user" data-icon="user"><i data-lucide="user"></i> 已登入使用者</span></p></li>
+<li><p><strong>個人簡介</strong>：可輸入個人簡短介紹的文字區塊。您可以使用工具列進行富文字格式化，或使用 Markdown 語法。<span class="badge-user" data-icon="user"><i data-lucide="user"></i> 已登入使用者</span></p></li>
 </ul>
 </section>
 <section id="security-privacy">
 <span id="user-settings-confidentiality"></span><h3>安全與隱私<a class="headerlink" href="#security-privacy" title="此标题的永久链接">¶</a></h3>
 <ul>
 <li><p><strong>關閉遠端工作階段</strong>：將除了目前這一個以外的所有工作階段登出。（另請參閱 <a class="reference internal" href="security.html#remote-disconnect"><span class="std std-ref">遠端登出</span></a>）:badge_user:<cite>已登入使用者</cite></p></li>
-<li><p><strong>兩步驟驗證（2FA）</strong>：透過您選擇的身分驗證 App 所提供的驗證碼，為帳號增加一道保護機制。<span class="badge-user">已登入使用者</span></p>
+<li><p><strong>兩步驟驗證（2FA）</strong>：透過您選擇的身分驗證 App 所提供的驗證碼，為帳號增加一道保護機制。<span class="badge-user" data-icon="user"><i data-lucide="user"></i> 已登入使用者</span></p>
 <p>啟用 2FA：</p>
 <ol class="arabic simple">
 <li><p>輸入您的帳號密碼</p></li>
@@ -933,7 +937,7 @@
 <li><p><strong>下載我的 CryptDrive</strong> 會下載 CryptDrive 中所有文件的內容。在可行的情況下，檔案會轉成可被其他軟體讀取的格式。不過，部分應用程式產生的檔案仍只能在 CryptPad 中開啟。</p></li>
 </ul>
 </li>
-<li><p><strong>匯入</strong>：如果您在登入前，以未註冊身分建立過文件，可以將這些文件匯入 CryptDrive。<span class="badge-user">已登入使用者</span></p></li>
+<li><p><strong>匯入</strong>：如果您在登入前，以未註冊身分建立過文件，可以將這些文件匯入 CryptDrive。<span class="badge-user" data-icon="user"><i data-lucide="user"></i> 已登入使用者</span></p></li>
 <li><p><strong>刪除歷史紀錄</strong>：您可以刪除 CryptDrive 與通知的歷史紀錄，以節省儲存空間。這不會影響各文件自己的歷史紀錄；文件歷史可在 <a class="reference internal" href="apps/general.html#document-properties"><span class="std std-ref">內容</span></a> 視窗中分別刪除。</p></li>
 </ul>
 </section>
@@ -998,10 +1002,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="support.html" class="btn btn-neutral float-right" title="技術支援" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="support.html" class="btn btn-neutral float-right" title="技術支援" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="instances.html" class="btn btn-neutral" title="CryptPad 實例" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="instances.html" class="btn btn-neutral" title="CryptPad 實例" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -1063,7 +1067,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

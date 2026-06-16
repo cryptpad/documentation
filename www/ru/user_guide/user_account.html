@@ -42,6 +42,8 @@
 
   
   <script src="../_static/js/modernizr.min.js"></script>
+  
+  <script src="../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Рисунки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">Инструменты</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">Рисование</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Режим рисования</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Режим выбора</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Режим рисования</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Режим выбора</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#export">Экспорт</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -837,55 +841,55 @@
 </section>
 <section id="notifications">
 <h2>Уведомления<a class="headerlink" href="#notifications" title="Permalink to this heading">¶</a></h2>
-<p><span class="badge-user">Зарегистрированные пользователи</span></p>
-<p>CryptPad уведомляет Вас, когда Ваши контакты взаимодействуют с Вами. Уведомления отображаются с помощью колокольчика <em class="fa fa-bell-o"></em> рядом с аватаркой (вверху справа). Если у Вас есть непрочитанные уведомления, колокольчик закрашен <em class="fa fa-bell"></em> и отображается их количество.</p>
-<p><em class="fa fa-bell"></em> Выпадающее меню колокольчика:</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Зарегистрированные пользователи</span></p>
+<p>CryptPad уведомляет Вас, когда Ваши контакты взаимодействуют с Вами. Уведомления отображаются с помощью колокольчика <i data-lucide='bell'></i> рядом с аватаркой (вверху справа). Если у Вас есть непрочитанные уведомления, колокольчик закрашен <i data-lucide='bell'></i> и отображается их количество.</p>
+<p><i data-lucide='bell'></i> Выпадающее меню колокольчика:</p>
 <ul class="simple">
 <li><p>Просмотреть непрочитанные уведомления.</p></li>
-<li><p>Удалить уведомление с помощью <em class="fa fa-times"></em>.</p></li>
+<li><p>Удалить уведомление с помощью <i data-lucide='x'></i>.</p></li>
 <li><p><strong>Открыть панель уведомлений</strong>: просмотреть все уведомления и историю уведомлений.</p></li>
 </ul>
 <p>На странице панели уведомлений:</p>
 <ul class="simple">
 <li><p>Выберите, уведомления какого типа показать:</p>
 <ul>
-<li><p><em class="fa fa-bars"></em> Все.</p></li>
-<li><p><em class="fa fa-user"></em> Запросы на Контакт.</p></li>
-<li><p><em class="cptools cptools-richtext"></em> Мне предоставлен доступ.</p></li>
-<li><p><em class="fa fa-archive"></em> История.</p></li>
+<li><p><i data-lucide='menu'></i> Все.</p></li>
+<li><p><i data-lucide='user'></i> Запросы на Контакт.</p></li>
+<li><p><i data-lucide='file-text'></i> Мне предоставлен доступ.</p></li>
+<li><p><i data-lucide='archive'></i> История.</p></li>
 </ul>
 </li>
-<li><p><em class="fa fa-trash"></em>: Удалить уведомления.</p></li>
+<li><p><i data-lucide='trash2'></i>: Удалить уведомления.</p></li>
 </ul>
 </section>
 <section id="settings">
 <span id="user-settings"></span><h2>Настройки<a class="headerlink" href="#settings" title="Permalink to this heading">¶</a></h2>
-<p>Настройки учетной записи находятся в меню пользователя (аватар вверху справа) &gt; <em class="fa fa-gear"></em> <strong>Настройки</strong>.</p>
+<p>Настройки учетной записи находятся в меню пользователя (аватар вверху справа) &gt; <i data-lucide='settings'></i> <strong>Настройки</strong>.</p>
 <section id="account">
 <span id="user-settings-account"></span><h3>Учетная запись<a class="headerlink" href="#account" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
-<li><p><strong>Имя учётной записи</strong>: имя пользователя, выбранное при регистрации. Это имя нельзя изменить. <span class="badge-user">Зарегистрированные пользователи</span></p></li>
-<li><p><strong>Открытый ключ подписи</strong>: используется администраторами экземпляров и/или в экземплярах, предлагающих подписки. Это единственные данные о Вашем аккаунте, которые доступны администраторам сервиса. <span class="badge-user">Зарегистрированные пользователи</span></p></li>
+<li><p><strong>Имя учётной записи</strong>: имя пользователя, выбранное при регистрации. Это имя нельзя изменить. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Зарегистрированные пользователи</span></p></li>
+<li><p><strong>Открытый ключ подписи</strong>: используется администраторами экземпляров и/или в экземплярах, предлагающих подписки. Это единственные данные о Вашем аккаунте, которые доступны администраторам сервиса. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Зарегистрированные пользователи</span></p></li>
 <li><p><strong>Язык</strong>: язык, используемый в интерфейсе CryptPad. Чтобы изменить язык CryptPad, выберите новый язык в раскрывающемся меню. CryptPad переводится на английский и французский языки командой разработчиков, а на другие языки — <a class="reference internal" href="../how_to_contribute.html#contribute-translation"><span class="std std-ref">сообществом</span></a>. Некоторые переводы могут быть неполными и/или содержать ошибки.</p></li>
 <li><p><strong>Лимит автоматического скачивания</strong>: максимальный размер в мегабайтах (МБ) для автоматической загрузки мультимедийных элементов (изображений, видео, PDF), встроенных в документы. Элементы больше указанного размера можно загрузить вручную. Используйте «-1», чтобы всегда автоматически загружать элементы мультимедиа.</p></li>
-<li><p><strong>Удаление учётной записи</strong>: возможность навсегда удалить свою учётную запись и все её документы. Для этого нужно щёлкнуть по <strong>Удалить вашу учётную запись</strong> и подтвердить решение. <span class="badge-user">Зарегистрированные пользователи</span></p></li>
+<li><p><strong>Удаление учётной записи</strong>: возможность навсегда удалить свою учётную запись и все её документы. Для этого нужно щёлкнуть по <strong>Удалить вашу учётную запись</strong> и подтвердить решение. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Зарегистрированные пользователи</span></p></li>
 </ul>
 </section>
 <section id="profile">
 <span id="user-settings-profile"></span><h3>Профиль<a class="headerlink" href="#profile" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p><strong>Отображаемое имя</strong>: имя, отображаемое другим пользователям, например, при совместной работе над документами. Чтобы изменить это имя, введите новое имя и нажмите <strong>Сохранить</strong>.</p></li>
-<li><p><strong>Аватар</strong>: Изображение для Вашего профиля, отображаемое рядом с Вашим отображаемым именем. <span class="badge-user">Зарегистрированные пользователи</span></p></li>
-<li><p><strong>Значок</strong>: Покажите свою роль другим пользователям, это может быть «Администратор», «Поддержка и модерация» или то, что Вы являетесь платным подписчиком. <span class="badge-user">Зарегистрированные пользователи</span></p></li>
-<li><p><strong>Ссылка на Ваш веб-сайт</strong>: Введите действительный URL-адрес, чтобы добавить ссылку на Ваш личный веб-сайт. <span class="badge-user">Зарегистрированные пользователи</span></p></li>
-<li><p><strong>Описание профиля</strong>: Текстовая область, где Вы можете написать небольшую биографию, используя форматирование текста с помощью панели инструментов или с помощью синтаксиса Markdown. <span class="badge-user">Зарегистрированные пользователи</span></p></li>
+<li><p><strong>Аватар</strong>: Изображение для Вашего профиля, отображаемое рядом с Вашим отображаемым именем. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Зарегистрированные пользователи</span></p></li>
+<li><p><strong>Значок</strong>: Покажите свою роль другим пользователям, это может быть «Администратор», «Поддержка и модерация» или то, что Вы являетесь платным подписчиком. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Зарегистрированные пользователи</span></p></li>
+<li><p><strong>Ссылка на Ваш веб-сайт</strong>: Введите действительный URL-адрес, чтобы добавить ссылку на Ваш личный веб-сайт. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Зарегистрированные пользователи</span></p></li>
+<li><p><strong>Описание профиля</strong>: Текстовая область, где Вы можете написать небольшую биографию, используя форматирование текста с помощью панели инструментов или с помощью синтаксиса Markdown. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Зарегистрированные пользователи</span></p></li>
 </ul>
 </section>
 <section id="security-privacy">
 <span id="user-settings-confidentiality"></span><h3>Безопасность и Конфиденциальность<a class="headerlink" href="#security-privacy" title="Permalink to this heading">¶</a></h3>
 <ul>
-<li><p><strong>Закрытие удаленных сеансов</strong>: выйти из всех сеансов (сессий), кроме того, в котором Вы задействовали этот пункт меню. (см. также <a class="reference internal" href="security.html#remote-disconnect"><span class="std std-ref">Удаленное отключение</span></a>) <span class="badge-user">Зарегистрированные пользователи</span></p></li>
-<li><p><strong>Двухфакторная аутентификация (2FA)</strong>: Защитите свою учётную запись с помощью дополнительного кода подтверждения, предоставленного выбранным Вами приложением для аутентификации. <span class="badge-user">Зарегистрированные пользователи</span></p>
+<li><p><strong>Закрытие удаленных сеансов</strong>: выйти из всех сеансов (сессий), кроме того, в котором Вы задействовали этот пункт меню. (см. также <a class="reference internal" href="security.html#remote-disconnect"><span class="std std-ref">Удаленное отключение</span></a>) <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Зарегистрированные пользователи</span></p></li>
+<li><p><strong>Двухфакторная аутентификация (2FA)</strong>: Защитите свою учётную запись с помощью дополнительного кода подтверждения, предоставленного выбранным Вами приложением для аутентификации. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Зарегистрированные пользователи</span></p>
 <p>Чтобы активировать 2FA:</p>
 <ol class="arabic simple">
 <li><p>Введите пароль Вашей учетной записи</p></li>
@@ -933,7 +937,7 @@
 <li><p><strong>Скачать мой CryptDrive</strong> сохраняет содержимое всех документов из CryptDrive. Когда это возможно, это делается в формате, читаемом другим программным обеспечением. Некоторые приложения создают файлы, которые доступны для чтения только CryptPad.</p></li>
 </ul>
 </li>
-<li><p><strong>Импорт</strong>: Если Вы создали какие-то документы как незарегистрированный пользователь (до авторизации в Cryptpad), их можно импортировать в Ваш CryptDrive. <span class="badge-user">Зарегистрированные пользователи</span></p></li>
+<li><p><strong>Импорт</strong>: Если Вы создали какие-то документы как незарегистрированный пользователь (до авторизации в Cryptpad), их можно импортировать в Ваш CryptDrive. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Зарегистрированные пользователи</span></p></li>
 <li><p><strong>Удалить историю</strong>: историю CryptDrive и уведомлений можно удалить, чтобы сэкономить место на диске. Это не влияет на историю документов, которую можно удалить по отдельности в диалоговом окне <a class="reference internal" href="apps/general.html#document-properties"><span class="std std-ref">properties</span></a>.</p></li>
 </ul>
 </section>
@@ -998,10 +1002,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="support.html" class="btn btn-neutral float-right" title="Техподдержка" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="support.html" class="btn btn-neutral float-right" title="Техподдержка" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="instances.html" class="btn btn-neutral" title="Инстансы CryptPad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="instances.html" class="btn btn-neutral" title="Инстансы CryptPad" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -1064,7 +1068,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

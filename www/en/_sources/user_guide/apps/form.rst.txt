@@ -96,7 +96,7 @@ Question types
 **Options**:
 
 - |plus| **Add option** button
-- Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order options
+- Grab the |icon grip-horizontal| handle and drag to re-order options
 - Delete an option with |times|
 
 |cptools form-grid-radio| Choice Grid
@@ -107,7 +107,7 @@ Question types
 **Options**:
 
 - |plus| **Add option** and |plus| **Add item** buttons
-- Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order items and options
+- Grab the |icon grip-horizontal| handle and drag to re-order items and options
 - Delete an item or option with |times|
 
 |calendar| Date
@@ -126,7 +126,7 @@ Question types
 
 - Maximum selectable options
 - |plus| **Add option** button
-- Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order options
+- Grab the |icon grip-horizontal| handle and drag to re-order options
 - Delete an option with |times|
 
 |cptools form-grid-check| Checkbox Grid
@@ -138,7 +138,7 @@ Question types
 
 - Maximum selectable options (per item)
 - |plus| **Add option** and |plus| **Add item** buttons
-- Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order items and options
+- Grab the |icon grip-horizontal| handle and drag to re-order items and options
 - Delete an item or option with |times|
 
 |cptools form-list-ordered| Ordered List
@@ -149,7 +149,7 @@ Question types
 **Options**:
 
 - |plus| **Add option** button
-- Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order options
+- Grab the |icon grip-horizontal| handle and drag to re-order options
 - Delete an option with |times|
 
 **Condorcet**:
@@ -166,7 +166,7 @@ Since v5.3 responses can show the results with the `Condorcet method <https://en
 - Text
 
    - |plus| **Add option** button
-   - Grab the |ellipsis-v| |ellipsis-v| handle and drag to re-order options
+   - Grab the |icon grip-horizontal| handle and drag to re-order options
    - Delete an option with |times|
 
 - Day

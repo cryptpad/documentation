@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Dessin</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Barre d'outils</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Dessiner</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Mode Pinceau</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Mode Sélection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Mode Pinceau</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Mode Sélection</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Export</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -767,7 +771,7 @@
 <h2>Barre d'outils<a class="headerlink" href="#toolbars" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p>CryptPad intègre les présentations OnlyOffice dans le même système de collaboration chiffrée que les autres applications. En complément, OnlyOffice offre un large éventail de fonctions dans une barre d'outils à onglets. Il en résulte une double barre d'outils qui peut prêter à confusion :</p>
 <ul class="simple">
-<li><p>La première, <strong>barre d'outils CryptPad</strong> est utilisée pour les opérations <em class="fa fa-file-o"></em> <strong>Fichier</strong> (incluant l'import/export, l'historique, les propriétés, etc) ainsi que <em class="fa fa-share-alt"></em> <strong>Partager</strong> et <em class="fa fa-unlock-alt"></em> <strong>Accès</strong>.</p></li>
+<li><p>La première, <strong>barre d'outils CryptPad</strong> est utilisée pour les opérations <i data-lucide='file'></i> <strong>Fichier</strong> (incluant l'import/export, l'historique, les propriétés, etc) ainsi que <i data-lucide='share2'></i> <strong>Partager</strong> et <i data-lucide='lock-open'></i> <strong>Accès</strong>.</p></li>
 <li><p>La barre d'outils <strong>OnlyOffice</strong> est utilisée pour toutes les fonctionnalités du tableur lui-même, ainsi que pour les modes de collaboration expliqués dans la section suivante.</p></li>
 </ul>
 </section>
@@ -788,7 +792,7 @@
 </section>
 <section id="history">
 <span id="presentations-history"></span><h2>Historique<a class="headerlink" href="#history" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p>Pour accéder à l'historique de la présentation, utilisez <em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-history"></em> <strong>Historique</strong> dans la barre d'outils CryptPad.</p>
+<p>Pour accéder à l'historique de la présentation, utilisez <i data-lucide='file'></i> <strong>Fichier</strong> &gt; <i data-lucide='history'></i> <strong>Historique</strong> dans la barre d'outils CryptPad.</p>
 <p>En raison de l'intégration de OnlyOffice avec la collaboration chiffrée en temps réel de CryptPad, l'historique de la présentation fonctionne différemment que <a class="reference internal" href="general.html#document-history"><span class="std std-ref">dans les autres applications</span></a>.</p>
 <figure class="align-default" id="id1">
 <img alt="../../_images/history-toolbar-presentation.png" class="screenshot" src="../../_images/history-toolbar-presentation.png" />
@@ -798,9 +802,9 @@
 </figure>
 <p>L'historique de la présentation permet uniquement de revenir à la version précédente, et de naviguer ensuite entre les modifications suivantes.</p>
 <ul class="simple">
-<li><p><em class="fa fa-fast-backward"></em> version précédente</p></li>
-<li><p><em class="fa fa-step-forward"></em> modification suivante</p></li>
-<li><p><em class="fa fa-fast-forward"></em> version suivante</p></li>
+<li><p><i data-lucide='arrow-left-to-line'></i> version précédente</p></li>
+<li><p><i data-lucide='arrow-right'></i> modification suivante</p></li>
+<li><p><i data-lucide='arrow-right-to-line'></i> version suivante</p></li>
 </ul>
 <p>La fonctionnalité permettant de restaurer et de partager une version, ainsi que tout ce qui concerne les <a class="reference internal" href="general.html#snapshots"><span class="std std-ref">Captures</span></a>, fonctionne de la même manière que dans <a class="reference internal" href="general.html#document-history"><span class="std std-ref">les autres applications</span></a>.</p>
 </section>
@@ -812,11 +816,11 @@
 <section id="import-export">
 <h2>Importer/Exporter<a class="headerlink" href="#import-export" title="Lien permanent vers cette rubrique">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-upload"></em> <strong>Importer</strong>.</div>
+<div class="line"><i data-lucide='file'></i> <strong>Fichier</strong> &gt; <i data-lucide='upload'></i> <strong>Importer</strong>.</div>
 <div class="line">Formats supportés : Fichiers <code class="docutils literal notranslate"><span class="pre">.bin</span></code> exportés par l'application. Fichiers PowerPoint <code class="docutils literal notranslate"><span class="pre">.pptx</span></code>, <code class="docutils literal notranslate"><span class="pre">.odp</span></code>.</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-download"></em> <strong>Exporter</strong>.</div>
+<div class="line"><i data-lucide='file'></i> <strong>Fichier</strong> &gt; <i data-lucide='download'></i> <strong>Exporter</strong>.</div>
 <div class="line">Formats supportés : <code class="docutils literal notranslate"><span class="pre">.bin</span></code>, PowerPoint <code class="docutils literal notranslate"><span class="pre">.pptx</span></code>, <code class="docutils literal notranslate"><span class="pre">.odp</span></code>, <code class="docutils literal notranslate"><span class="pre">.pdf</span></code>.</div>
 </div>
 </section>
@@ -830,10 +834,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="sheets.html" class="btn btn-neutral float-right" title="Tableur" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="sheets.html" class="btn btn-neutral float-right" title="Tableur" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="document.html" class="btn btn-neutral" title="Document" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="document.html" class="btn btn-neutral" title="Document" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -896,7 +900,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

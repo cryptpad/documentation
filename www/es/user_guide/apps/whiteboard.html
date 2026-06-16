@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Whiteboard</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#toolbar">Toolbar</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#drawing">Drawing</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Paint mode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#arrows-select-mode"><em class="fa fa-arrows"></em> Select mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Paint mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#arrows-select-mode"><i data-lucide='move'></i> Select mode</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#export">Export</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -757,20 +761,20 @@
 <img alt="../../_images/app-whiteboard-preview.png" class="screenshot" src="../../_images/app-whiteboard-preview.png" />
 <section id="toolbar">
 <h2>Toolbar<a class="headerlink" href="#toolbar" title="Enlace permanente a este encabezado">¶</a></h2>
-<p><em class="fa fa-picture-o"></em> <strong>Insert</strong>: Add an image to the document. The image can be chosen in the CryptDrive or uploaded. <span class="badge-user">Logged in users</span></p>
+<p><i data-lucide='image-plus'></i> <strong>Insert</strong>: Add an image to the document. The image can be chosen in the CryptDrive or uploaded. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Logged in users</span></p>
 </section>
 <section id="drawing">
 <h2>Drawing<a class="headerlink" href="#drawing" title="Enlace permanente a este encabezado">¶</a></h2>
 <p>Two modes are available:</p>
 <ul class="simple">
-<li><p><em class="fa fa-paint-brush"></em> Paint mode: add new shapes to the drawing.</p></li>
-<li><p><em class="fa fa-arrows"></em> Select mode: transform existing shapes.</p></li>
+<li><p><i data-lucide='brush-cleaning'></i> Paint mode: add new shapes to the drawing.</p></li>
+<li><p><i data-lucide='move'></i> Select mode: transform existing shapes.</p></li>
 </ul>
 <p>Functions available in both modes:</p>
 <ul class="simple">
-<li><p><em class="fa fa-undo"></em> : Undo</p></li>
-<li><p><em class="fa fa-repeat"></em> : Redo</p></li>
-<li><p><em class="fa fa-font"></em> : Insert a text element in the drawing</p></li>
+<li><p><i data-lucide='undo'></i> : Undo</p></li>
+<li><p><i data-lucide='redo'></i> : Redo</p></li>
+<li><p><i data-lucide='type'></i> : Insert a text element in the drawing</p></li>
 </ul>
 <p>To delete everything on the canvas:</p>
 <ul class="simple">
@@ -778,12 +782,12 @@
 </ul>
 </section>
 <section id="paint-brush-paint-mode">
-<h2><em class="fa fa-paint-brush"></em> Paint mode<a class="headerlink" href="#paint-brush-paint-mode" title="Enlace permanente a este encabezado">¶</a></h2>
+<h2><i data-lucide='brush-cleaning'></i> Paint mode<a class="headerlink" href="#paint-brush-paint-mode" title="Enlace permanente a este encabezado">¶</a></h2>
 <p>The width and opacity of line are set in the drawing toolbar. The preview to the right shows the size and opacity of the paintbrush.</p>
 <p>Color is selected in the palette in the drawing toolbar. To change a color double click on it and select a new one using the color-picker.</p>
 </section>
 <section id="arrows-select-mode">
-<h2><em class="fa fa-arrows"></em> Select mode<a class="headerlink" href="#arrows-select-mode" title="Enlace permanente a este encabezado">¶</a></h2>
+<h2><i data-lucide='move'></i> Select mode<a class="headerlink" href="#arrows-select-mode" title="Enlace permanente a este encabezado">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on an element to select it, then:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Drag</span></code> to move.</p></li>
@@ -792,17 +796,17 @@
 <p>To delete a selected element:</p>
 <ul class="simple">
 <li><p><kbd class="kbd docutils literal notranslate">Del</kbd> key.</p></li>
-<li><p><em class="fa fa-trash"></em> button in the drawing toolbar.</p></li>
+<li><p><i data-lucide='trash2'></i> button in the drawing toolbar.</p></li>
 </ul>
 </section>
 <section id="export">
 <h2>Export<a class="headerlink" href="#export" title="Enlace permanente a este encabezado">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-download"></em> <strong>Export</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='download'></i> <strong>Export</strong></div>
 <div class="line">Supported format: <code class="docutils literal notranslate"><span class="pre">.png</span></code></div>
 </div>
 <p>To export an image to the CryptDrive, for example to use it in other documents:</p>
-<p><em class="fa fa-file-o"></em> <strong>File</strong> &gt;  <em class="fa fa-file-image-o"></em> <strong>Save as image</strong></p>
+<p><i data-lucide='file'></i> <strong>File</strong> &gt;  <i data-lucide='file-image'></i> <strong>Save as image</strong></p>
 </section>
 </section>
 
@@ -814,10 +818,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../keyboard_shortcuts.html" class="btn btn-neutral float-right" title="Keyboard Shortcuts" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../keyboard_shortcuts.html" class="btn btn-neutral float-right" title="Keyboard Shortcuts" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="diagram.html" class="btn btn-neutral" title="Diagram" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="diagram.html" class="btn btn-neutral" title="Diagram" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -880,7 +884,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

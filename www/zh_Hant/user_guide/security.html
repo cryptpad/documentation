@@ -42,6 +42,8 @@
 
   
   <script src="../_static/js/modernizr.min.js"></script>
+  
+  <script src="../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">白板</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">工具列</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">繪圖</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> 繪圖模式</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> 選取模式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> 繪圖模式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> 選取模式</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#export">匯出</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -779,19 +783,19 @@
 </section>
 <section id="passwords-for-documents-and-folders">
 <span id="passwords"></span><h2>文件與資料夾的密碼<a class="headerlink" href="#passwords-for-documents-and-folders" title="此标题的永久链接">¶</a></h2>
-<p><span class="badge-user">已登入使用者</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> 已登入使用者</span></p>
 <p>當您透過不安全的管道（例如電子郵件或簡訊）分享文件或共用資料夾的連結時，他人可能攔截連結並取得您的資料。為避免此情況，文件或資料夾的 <a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">擁有者</span></a> 可設定密碼。</p>
 <p>When you <a class="reference internal" href="share_and_access.html#share-contacts"><span class="std std-ref">share documents with your contacts and teams directly on CryptPad</span></a>, communications are encrypted and we assume that you want to give them access. Therefore the password is remembered and sent with the document/folder when you share it. The recipient, or yourself, are <strong>not</strong> asked for it when they open the document.</p>
 <p>您可以在 <a class="reference internal" href="apps/general.html#new-document"><span class="std std-ref">建立</span></a> 文件時設定密碼。</p>
 <p>您也可以在 <a class="reference internal" href="share_and_access.html#access"><span class="std std-ref">存取</span></a> 選單中新增或變更密碼：</p>
 <ul class="simple">
-<li><p>從 CryptDrive：<code class="docutils literal notranslate"><span class="pre">按右鍵</span></code> &gt; <em class="fa fa-unlock-alt"></em> <strong>存取</strong>。</p></li>
-<li><p>從文件工具列：<em class="fa fa-unlock-alt"></em> <strong>存取</strong>。</p></li>
+<li><p>從 CryptDrive：<code class="docutils literal notranslate"><span class="pre">按右鍵</span></code> &gt; <i data-lucide='lock-open'></i> <strong>存取</strong>。</p></li>
+<li><p>從文件工具列：<i data-lucide='lock-open'></i> <strong>存取</strong>。</p></li>
 </ul>
 </section>
 <section id="verifying-contacts">
 <span id="id1"></span><h2>驗證聯絡人<a class="headerlink" href="#verifying-contacts" title="此标题的永久链接">¶</a></h2>
-<p><span class="badge-user">已登入使用者</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> 已登入使用者</span></p>
 <p>若要驗證聯絡人身分（即確認該聯絡人就是您認為的那個人），可比對公開簽章金鑰：</p>
 <ol class="arabic simple">
 <li><p>請聯絡人透過安全管道與您分享 <a class="reference internal" href="user_account.html#user-settings-account"><span class="std std-ref">其公開金鑰</span></a>。</p></li>
@@ -800,7 +804,7 @@
 </section>
 <section id="self-destructing-documents">
 <span id="id2"></span><h2>自毀文件<a class="headerlink" href="#self-destructing-documents" title="此标题的永久链接">¶</a></h2>
-<p><span class="badge-user">已登入使用者</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> 已登入使用者</span></p>
 <p>自毀文件會自動銷毀，無需任何使用者操作。如此可確保敏感資料不會永久留存可供存取。</p>
 <p>建立自毀文件有兩種方式：</p>
 <ul class="simple">
@@ -810,22 +814,22 @@
 </section>
 <section id="remote-disconnect">
 <span id="id3"></span><h2>遠端登出<a class="headerlink" href="#remote-disconnect" title="此标题的永久链接">¶</a></h2>
-<p><span class="badge-user">已登入使用者</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> 已登入使用者</span></p>
 <p>在某些情況下（裝置遺失或遭竊、在共用電腦上忘記登出等），可能需要關閉所有使用中的 CryptPad 工作階段。可用以下兩種方式：</p>
 <ul class="simple">
-<li><p>使用者選單（右上角頭像）&gt; <em class="fa fa-gear"></em> <strong>設定</strong> &gt; <em class="fa fa-lock"></em> <strong>隱私</strong> &gt; <strong>登出</strong>。</p></li>
+<li><p>使用者選單（右上角頭像）&gt; <i data-lucide='settings'></i> <strong>設定</strong> &gt; <i data-lucide='lock'></i> <strong>隱私</strong> &gt; <strong>登出</strong>。</p></li>
 </ul>
 <p>This option logs out all sessions <strong>except</strong> the one from which it is activated.</p>
 <ul class="simple">
-<li><p>使用者選單（右上角頭像）&gt; <em class="fa fa-plug"></em> <strong>全部登出</strong>。</p></li>
+<li><p>使用者選單（右上角頭像）&gt; <i data-lucide='unplug'></i> <strong>全部登出</strong>。</p></li>
 </ul>
 <p>This option logs out all sessions <strong>including</strong> the one from which it is activated.</p>
 </section>
 <section id="remote-content">
 <span id="id4"></span><h2>遠端內容<a class="headerlink" href="#remote-content" title="此标题的永久链接">¶</a></h2>
 <p>在 Markdown 編輯器（<a class="reference internal" href="apps/code.html#app-code"><span class="std std-ref">程式碼</span></a>、<a class="reference internal" href="apps/slides.html#app-slides"><span class="std std-ref">簡報</span></a>、<a class="reference internal" href="apps/kanban.html#app-kanban"><span class="std std-ref">看板</span></a>）中，CryptPad 會封鎖圖片及其他遠端託管內容，以降低追蹤風險。</p>
-<p><span class="badge-user">已登入使用者</span></p>
-<p>若要插入 CryptDrive 中的圖片或上傳新圖片，請使用 <em class="fa fa-picture-o"></em> <strong>插入</strong> 選單。此選單會插入 <code class="docutils literal notranslate"><span class="pre">media-tag</span></code> 元素，雖比 Markdown 圖片語法複雜，但會自動管理。</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> 已登入使用者</span></p>
+<p>若要插入 CryptDrive 中的圖片或上傳新圖片，請使用 <i data-lucide='image-plus'></i> <strong>插入</strong> 選單。此選單會插入 <code class="docutils literal notranslate"><span class="pre">media-tag</span></code> 元素，雖比 Markdown 圖片語法複雜，但會自動管理。</p>
 </section>
 <section id="known-caveats">
 <span id="known-sec-issue"></span><h2>已知限制<a class="headerlink" href="#known-caveats" title="此标题的永久链接">¶</a></h2>
@@ -857,10 +861,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="drive.html" class="btn btn-neutral float-right" title="CryptDrive" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="drive.html" class="btn btn-neutral float-right" title="CryptDrive" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="support.html" class="btn btn-neutral" title="技術支援" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="support.html" class="btn btn-neutral" title="技術支援" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -922,7 +926,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">白板</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">工具列</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">繪圖</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> 繪圖模式</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> 選取模式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> 繪圖模式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> 選取模式</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">匯出</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -762,7 +766,7 @@
 <li><p><strong>稽核者</strong>：可檢視表單的所有回應，不論是否已公開。</p></li>
 <li><p><strong>參與者</strong>：可填寫表單，且僅在作者將回應設為公開後才能檢視回應。</p></li>
 </ul>
-<p>若要依特定角色分享表單（例如傳給參與者），請先在 <em class="fa fa-share-alt"></em> <strong>分享</strong> 選單中選擇角色，再選擇聯絡人或複製連結。</p>
+<p>若要依特定角色分享表單（例如傳給參與者），請先在 <i data-lucide='share2'></i> <strong>分享</strong> 選單中選擇角色，再選擇聯絡人或複製連結。</p>
 <img alt="表單應用程式中的分享選單，顯示三種角色：參與者、稽核者與作者。" class="screenshot" src="../../_images/app-form-share.png" />
 <div class="admonition note">
 <p class="admonition-title">备注</p>
@@ -771,27 +775,27 @@
 </section>
 <section id="editing-a-form">
 <h2>編輯表單<a class="headerlink" href="#editing-a-form" title="此标题的永久链接">¶</a></h2>
-<p>要新增題目，請在最後一題之後使用 <em class="fa fa-plus"></em> <strong>新增</strong> 選單，或使用每題之間的 <em class="fa fa-plus"></em>。</p>
-<p>要刪除題目，請在該題上使用 <em class="fa fa-trash-o"></em> <strong>刪除</strong> 按鈕。</p>
+<p>要新增題目，請在最後一題之後使用 <i data-lucide='plus'></i> <strong>新增</strong> 選單，或使用每題之間的 <i data-lucide='plus'></i>。</p>
+<p>要刪除題目，請在該題上使用 <i data-lucide='trash'></i> <strong>刪除</strong> 按鈕。</p>
 <section id="utilities">
 <h3>工具<a class="headerlink" href="#utilities" title="此标题的永久链接">¶</a></h3>
 <section id="cptools-form-paragraph-description">
-<h4><em class="cptools cptools-form-paragraph"></em> 說明<a class="headerlink" href="#cptools-form-paragraph-description" title="此标题的永久链接">¶</a></h4>
+<h4><i data-lucide='text'></i> 說明<a class="headerlink" href="#cptools-form-paragraph-description" title="此标题的永久链接">¶</a></h4>
 <p>使用 Markdown 語法在表單中加入文字。</p>
-<p><span class="badge-user">已登入使用者</span></p>
-<p>要從 CryptDrive 加入圖片或上傳新圖片，請使用工具列中的 <em class="fa fa-picture-o"></em> 圖示。</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> 已登入使用者</span></p>
+<p>要從 CryptDrive 加入圖片或上傳新圖片，請使用工具列中的 <i data-lucide='image-plus'></i> 圖示。</p>
 </section>
 <section id="cptools-form-page-break-page-break">
-<h4><em class="cptools cptools-form-page-break"></em> 分頁<a class="headerlink" href="#cptools-form-page-break-page-break" title="此标题的永久链接">¶</a></h4>
+<h4><i data-lucide='cp-form-page-break'></i> 分頁<a class="headerlink" href="#cptools-form-page-break-page-break" title="此标题的永久链接">¶</a></h4>
 <p>將表單分成多頁。僅對參與者顯示。</p>
 </section>
 <section id="cptools-form-conditional-conditional-section">
-<h4><em class="cptools cptools-form-conditional"></em> 條件區塊<a class="headerlink" href="#cptools-form-conditional-conditional-section" title="此标题的永久链接">¶</a></h4>
-<p><em class="cptools cptools-form-list-radio"></em> <strong>單選</strong> 與 <em class="cptools cptools-form-list-check"></em> <strong>核取方塊</strong> 題型可用來顯示或隱藏某一區塊的題目。</p>
+<h4><i data-lucide='cp-form-conditional'></i> 條件區塊<a class="headerlink" href="#cptools-form-conditional-conditional-section" title="此标题的永久链接">¶</a></h4>
+<p><i data-lucide='list'></i> <strong>單選</strong> 與 <i data-lucide='list-checks'></i> <strong>核取方塊</strong> 題型可用來顯示或隱藏某一區塊的題目。</p>
 <ol class="arabic simple">
-<li><p>在表單編輯器中，使用題目之間的 <em class="fa fa-plus"></em> <strong>新增</strong> 按鈕，或表單底部的清單，來新增 <em class="cptools cptools-form-conditional"></em> <strong>條件區塊</strong>。</p></li>
+<li><p>在表單編輯器中，使用題目之間的 <i data-lucide='plus'></i> <strong>新增</strong> 按鈕，或表單底部的清單，來新增 <i data-lucide='cp-form-conditional'></i> <strong>條件區塊</strong>。</p></li>
 <li><p>請確保該區塊前至少有一題 <a class="reference internal" href="#form-q-choice"><span class="std std-ref"> 單選</span></a> 或 <a class="reference internal" href="#form-q-checkbox"><span class="std std-ref"> 核取方塊</span></a> （若無會顯示提示）。 只有 <em>區塊之前</em> 的題目可用於條件中。</p></li>
-<li><p>使用 <em class="fa fa-plus"></em> <strong>新增</strong> 按鈕或將題目拖曳至區塊內，在區塊中加入內容（說明文字、題目）。</p></li>
+<li><p>使用 <i data-lucide='plus'></i> <strong>新增</strong> 按鈕或將題目拖曳至區塊內，在區塊中加入內容（說明文字、題目）。</p></li>
 <li><p>使用選單設定條件。AND 條件須全部成立；OR 條件只需其中一項成立即可。</p></li>
 <li><p>在參與者檢視中，唯有條件成立時才會顯示該區塊。</p></li>
 </ol>
@@ -800,7 +804,7 @@
 <section id="question-types">
 <h3>題型<a class="headerlink" href="#question-types" title="此标题的永久链接">¶</a></h3>
 <section id="cptools-form-text-text">
-<h4><em class="cptools cptools-form-text"></em> 文字<a class="headerlink" href="#cptools-form-text-text" title="此标题的永久链接">¶</a></h4>
+<h4><i data-lucide='minus'></i> 文字<a class="headerlink" href="#cptools-form-text-text" title="此标题的永久链接">¶</a></h4>
 <p><strong>回應</strong>：單行文字</p>
 <p><strong>選項</strong>：</p>
 <ul class="simple">
@@ -812,7 +816,7 @@
 </div>
 </section>
 <section id="cptools-form-paragraph-paragraph">
-<h4><em class="cptools cptools-form-paragraph"></em> 段落<a class="headerlink" href="#cptools-form-paragraph-paragraph" title="此标题的永久链接">¶</a></h4>
+<h4><i data-lucide='text'></i> 段落<a class="headerlink" href="#cptools-form-paragraph-paragraph" title="此标题的永久链接">¶</a></h4>
 <p><strong>回應</strong>：多行文字</p>
 <p><strong>選項</strong>：</p>
 <ul class="simple">
@@ -820,74 +824,74 @@
 </ul>
 </section>
 <section id="cptools-form-list-radio-choice">
-<span id="form-q-choice"></span><h4><em class="cptools cptools-form-list-radio"></em> 單選<a class="headerlink" href="#cptools-form-list-radio-choice" title="此标题的永久链接">¶</a></h4>
+<span id="form-q-choice"></span><h4><i data-lucide='list'></i> 單選<a class="headerlink" href="#cptools-form-list-radio-choice" title="此标题的永久链接">¶</a></h4>
 <p><strong>回應</strong>：從清單中選一項</p>
 <p><strong>選項</strong>：</p>
 <ul class="simple">
-<li><p><em class="fa fa-plus"></em> <strong>新增選項</strong> 按鈕</p></li>
-<li><p>拖曳 <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> 把手以調整選項順序</p></li>
-<li><p>以 <em class="fa fa-times"></em> 刪除選項</p></li>
+<li><p><i data-lucide='plus'></i> <strong>新增選項</strong> 按鈕</p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order options</p></li>
+<li><p>以 <i data-lucide='x'></i> 刪除選項</p></li>
 </ul>
 </section>
 <section id="cptools-form-grid-radio-choice-grid">
-<h4><em class="cptools cptools-form-grid-radio"></em> 單選矩陣<a class="headerlink" href="#cptools-form-grid-radio-choice-grid" title="此标题的永久链接">¶</a></h4>
+<h4><i data-lucide='cp-form-grid-radio'></i> 單選矩陣<a class="headerlink" href="#cptools-form-grid-radio-choice-grid" title="此标题的永久链接">¶</a></h4>
 <p><strong>回應</strong>：每個項目各選一項</p>
 <p><strong>選項</strong>：</p>
 <ul class="simple">
-<li><p><em class="fa fa-plus"></em> <strong>新增選項</strong> 與 <em class="fa fa-plus"></em> <strong>新增項目</strong> 按鈕</p></li>
-<li><p>拖曳 <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> 把手以調整項目與選項的順序</p></li>
-<li><p>以 <em class="fa fa-times"></em> 刪除項目或選項</p></li>
+<li><p><i data-lucide='plus'></i> <strong>新增選項</strong> 與 <i data-lucide='plus'></i> <strong>新增項目</strong> 按鈕</p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order items and options</p></li>
+<li><p>以 <i data-lucide='x'></i> 刪除項目或選項</p></li>
 </ul>
 </section>
 <section id="calendar-date">
-<h4><em class="fa fa-calendar"></em> 日期<a class="headerlink" href="#calendar-date" title="此标题的永久链接">¶</a></h4>
+<h4><i data-lucide='calendar-days'></i> 日期<a class="headerlink" href="#calendar-date" title="此标题的永久链接">¶</a></h4>
 <p><strong>回應</strong>：選擇日期與時間</p>
 </section>
 <section id="cptools-form-list-check-checkbox">
-<span id="form-q-checkbox"></span><h4><em class="cptools cptools-form-list-check"></em> 核取方塊<a class="headerlink" href="#cptools-form-list-check-checkbox" title="此标题的永久链接">¶</a></h4>
+<span id="form-q-checkbox"></span><h4><i data-lucide='list-checks'></i> 核取方塊<a class="headerlink" href="#cptools-form-list-check-checkbox" title="此标题的永久链接">¶</a></h4>
 <p><strong>回應</strong>：從清單中可多選</p>
 <p><strong>選項</strong>：</p>
 <ul class="simple">
 <li><p>最多可選數量</p></li>
-<li><p><em class="fa fa-plus"></em> <strong>新增選項</strong> 按鈕</p></li>
-<li><p>拖曳 <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> 把手以調整選項順序</p></li>
-<li><p>以 <em class="fa fa-times"></em> 刪除選項</p></li>
+<li><p><i data-lucide='plus'></i> <strong>新增選項</strong> 按鈕</p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order options</p></li>
+<li><p>以 <i data-lucide='x'></i> 刪除選項</p></li>
 </ul>
 </section>
 <section id="cptools-form-grid-check-checkbox-grid">
-<h4><em class="cptools cptools-form-grid-check"></em> 核取方塊矩陣<a class="headerlink" href="#cptools-form-grid-check-checkbox-grid" title="此标题的永久链接">¶</a></h4>
+<h4><i data-lucide='cp-form-grid-check'></i> 核取方塊矩陣<a class="headerlink" href="#cptools-form-grid-check-checkbox-grid" title="此标题的永久链接">¶</a></h4>
 <p><strong>回應</strong>：每個項目可多選</p>
 <p><strong>選項</strong>：</p>
 <ul class="simple">
 <li><p>最多可選數量（每個項目）</p></li>
-<li><p><em class="fa fa-plus"></em> <strong>新增選項</strong> 與 <em class="fa fa-plus"></em> <strong>新增項目</strong> 按鈕</p></li>
-<li><p>拖曳 <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> 把手以調整項目與選項的順序</p></li>
-<li><p>以 <em class="fa fa-times"></em> 刪除項目或選項</p></li>
+<li><p><i data-lucide='plus'></i> <strong>新增選項</strong> 與 <i data-lucide='plus'></i> <strong>新增項目</strong> 按鈕</p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order items and options</p></li>
+<li><p>以 <i data-lucide='x'></i> 刪除項目或選項</p></li>
 </ul>
 </section>
 <section id="cptools-form-list-ordered-ordered-list">
-<h4><em class="cptools cptools-form-list-ordered"></em> 排序清單<a class="headerlink" href="#cptools-form-list-ordered-ordered-list" title="此标题的永久链接">¶</a></h4>
+<h4><i data-lucide='list-ordered'></i> 排序清單<a class="headerlink" href="#cptools-form-list-ordered-ordered-list" title="此标题的永久链接">¶</a></h4>
 <p><strong>回應</strong>：對清單選項的偏好順序</p>
 <p><strong>選項</strong>：</p>
 <ul class="simple">
-<li><p><em class="fa fa-plus"></em> <strong>新增選項</strong> 按鈕</p></li>
-<li><p>拖曳 <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> 把手以調整選項順序</p></li>
-<li><p>以 <em class="fa fa-times"></em> 刪除選項</p></li>
+<li><p><i data-lucide='plus'></i> <strong>新增選項</strong> 按鈕</p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order options</p></li>
+<li><p>以 <i data-lucide='x'></i> 刪除選項</p></li>
 </ul>
 <p><strong>孔多塞法</strong>：</p>
 <p>自 v5.3 起，回應可透過 <a class="reference external" href="https://en.wikipedia.org/wiki/Condorcet_method">孔多塞法</a> 顯示結果。可選擇舒爾茲法或排序配對法顯示勝出者，詳情也會顯示每位候選人贏得的對戰數。</p>
 </section>
 <section id="cptools-form-poll-poll">
-<h4><em class="cptools cptools-form-poll"></em> 投票<a class="headerlink" href="#cptools-form-poll-poll" title="此标题的永久链接">¶</a></h4>
-<p><strong>回應</strong>：對每個選項可填 <em class="fa fa-check"></em> 同意、<em class="fa fa-times"></em> 不同意，或 <em class="cptools cptools-form-poll-maybe"></em> 可接受</p>
+<h4><i data-lucide='cp-form-poll'></i> 投票<a class="headerlink" href="#cptools-form-poll-poll" title="此标题的永久链接">¶</a></h4>
+<p><strong>回應</strong>：對每個選項可填 <i data-lucide='check'></i> 同意、<i data-lucide='x'></i> 不同意，或 <i data-lucide='cp-form-poll-maybe'></i> 可接受</p>
 <p><strong>選項類型</strong>：</p>
 <ul>
 <li><p>文字</p>
 <blockquote>
 <div><ul class="simple">
-<li><p><em class="fa fa-plus"></em> <strong>新增選項</strong> 按鈕</p></li>
-<li><p>拖曳 <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> 把手以調整選項順序</p></li>
-<li><p>以 <em class="fa fa-times"></em> 刪除選項</p></li>
+<li><p><i data-lucide='plus'></i> <strong>新增選項</strong> 按鈕</p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order options</p></li>
+<li><p>以 <i data-lucide='x'></i> 刪除選項</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -902,7 +906,7 @@
 <blockquote>
 <div><ul class="simple">
 <li><p>點選選項以在月曆中選擇日期與時間</p></li>
-<li><p>點選「新增多個日期與時間」以選擇多個選項，並使用 <em class="fa fa-plus"></em> <strong>全部新增</strong> 一次加入所有已選選項。</p></li>
+<li><p>點選「新增多個日期與時間」以選擇多個選項，並使用 <i data-lucide='plus'></i> <strong>全部新增</strong> 一次加入所有已選選項。</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -913,9 +917,9 @@
 <span id="id1"></span><h3>表單設定<a class="headerlink" href="#form-settings" title="此标题的永久链接">¶</a></h3>
 <p>使用頂端三個按鈕可快速存取：</p>
 <ul class="simple">
-<li><p><em class="fa fa-bar-chart"></em> <strong>回應</strong> （數量）：切換至回應頁面</p></li>
-<li><p><em class="fa fa-eye"></em> <strong>預覽表單</strong>：開啟參與者連結</p></li>
-<li><p><em class="fa fa-link"></em> <strong>複製公開連結</strong>：複製參與者連結</p></li>
+<li><p><i data-lucide='chart-no-axes-combined'></i> <strong>回應</strong> （數量）：切換至回應頁面</p></li>
+<li><p><i data-lucide='eye'></i> <strong>預覽表單</strong>：開啟參與者連結</p></li>
+<li><p><i data-lucide='link'></i> <strong>複製公開連結</strong>：複製參與者連結</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
@@ -991,9 +995,9 @@
 <section id="import-export">
 <h2>匯入/匯出<a class="headerlink" href="#import-export" title="此标题的永久链接">¶</a></h2>
 <p>表單文件本身可匯出與匯入為 <code class="docutils literal notranslate"><span class="pre">JSON</span></code> 格式。</p>
-<p>要匯出回應，請在 <em class="fa fa-bar-chart"></em> <strong>回應</strong> 頁面選擇以下兩種方式之一：</p>
+<p>要匯出回應，請在 <i data-lucide='chart-no-axes-combined'></i> <strong>回應</strong> 頁面選擇以下兩種方式之一：</p>
 <ol class="arabic simple">
-<li><p>使用 <em class="fa fa-download"></em> <strong>匯出</strong> 按鈕匯出為 CSV 或 JSON 檔案</p></li>
+<li><p>使用 <i data-lucide='download'></i> <strong>匯出</strong> 按鈕匯出為 CSV 或 JSON 檔案</p></li>
 <li><p>使用 <strong>匯出至試算表</strong> 按鈕可將資料匯出為試算表並加入您的雲端硬碟</p></li>
 </ol>
 <div class="admonition note">
@@ -1011,10 +1015,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="kanban.html" class="btn btn-neutral float-right" title="看板" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="kanban.html" class="btn btn-neutral float-right" title="看板" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="slides.html" class="btn btn-neutral" title="簡報" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="slides.html" class="btn btn-neutral" title="簡報" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -1076,7 +1080,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

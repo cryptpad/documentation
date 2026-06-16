@@ -42,6 +42,8 @@
 
   
   <script src="../_static/js/modernizr.min.js"></script>
+  
+  <script src="../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Рисунки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">Инструменты</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">Рисование</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Режим рисования</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Режим выбора</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Режим рисования</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Режим выбора</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#export">Экспорт</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -751,10 +755,10 @@
             
   <section id="share-access">
 <span id="share-and-access"></span><h1>Поделиться / Доступ<a class="headerlink" href="#share-access" title="Permalink to this heading">¶</a></h1>
-<p><em class="fa fa-share-alt"></em> <strong>Поделиться</strong> и <em class="fa fa-unlock-alt"></em> <strong>Доступ</strong> — это два меню для управления тем, как другие пользователи могут взаимодействовать с Вашими документами на CryptPad.</p>
+<p><i data-lucide='share2'></i> <strong>Поделиться</strong> и <i data-lucide='lock-open'></i> <strong>Доступ</strong> — это два меню для управления тем, как другие пользователи могут взаимодействовать с Вашими документами на CryptPad.</p>
 <ul class="simple">
-<li><p>На панели инструментов документа: <em class="fa fa-share-alt"></em> <strong>Поделиться</strong> и <em class="fa fa-unlock-alt"></em> <strong>Доступ</strong> в центре.</p></li>
-<li><p>Из CryptDrive: <code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по документу &gt; <em class="fa fa-share-alt"></em> <strong>Поделиться</strong> или <em class="fa fa-unlock-alt"></em> <strong>Доступ</strong>.</p></li>
+<li><p>На панели инструментов документа: <i data-lucide='share2'></i> <strong>Поделиться</strong> и <i data-lucide='lock-open'></i> <strong>Доступ</strong> в центре.</p></li>
+<li><p>Из CryptDrive: <code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по документу &gt; <i data-lucide='share2'></i> <strong>Поделиться</strong> или <i data-lucide='lock-open'></i> <strong>Доступ</strong>.</p></li>
 </ul>
 <section id="share">
 <span id="id1"></span><h2>Поделиться<a class="headerlink" href="#share" title="Permalink to this heading">¶</a></h2>
@@ -775,13 +779,13 @@
 </section>
 <section id="sharing-with-contacts">
 <span id="share-contacts"></span><h3>Поделиться с контактами<a class="headerlink" href="#sharing-with-contacts" title="Permalink to this heading">¶</a></h3>
-<p><span class="badge-user">Зарегистрированные пользователи</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Зарегистрированные пользователи</span></p>
 <p>Это рекомендуемый метод для безопасного обмена документами на CryptPad. При предоставлении доступа к документу напрямую <a class="reference internal" href="collaboration.html#contacts"><span class="std std-ref">контактам</span></a> ссылки на документы никогда не покидают зашифрованную платформу CryptPad. Это предотвращает утечку данных третьим лицам.</p>
 <img alt="../_images/modal-share-contacts.png" class="screenshot" src="../_images/modal-share-contacts.png" />
 <p>Чтобы поделиться с одним или несколькими контактами:</p>
 <ul class="simple">
-<li><p><em class="fa fa-share-alt"></em> <strong>Поделиться</strong> на панели инструментов документа &gt; <em class="fa fa-address-book"></em> <strong>Контакты</strong>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по документу в CryptDrive &gt; <em class="fa fa-share-alt"></em> <strong>Поделиться</strong> &gt; <em class="fa fa-address-book"></em> <strong>Контакты</strong>.</p></li>
+<li><p><i data-lucide='share2'></i> <strong>Поделиться</strong> на панели инструментов документа &gt; <i data-lucide='book-user'></i> <strong>Контакты</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по документу в CryptDrive &gt; <i data-lucide='share2'></i> <strong>Поделиться</strong> &gt; <i data-lucide='book-user'></i> <strong>Контакты</strong>.</p></li>
 </ul>
 <p>Затем:</p>
 <ol class="arabic simple">
@@ -800,8 +804,8 @@
 <img alt="../_images/modal-share-link.png" class="screenshot" src="../_images/modal-share-link.png" />
 <p>Чтобы скопировать ссылку на документ:</p>
 <ul class="simple">
-<li><p>Из документа: <em class="fa fa-share-alt"></em> <strong>Поделиться</strong> на панели инструментов &gt; <em class="fa fa-link"></em> <strong>Ссылка</strong>.</p></li>
-<li><p>Из CryptDrive: <code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> на документе &gt; <em class="fa fa-share-alt"></em> <strong>Поделиться</strong> &gt; <em class="fa fa-link"></em> <strong>Ссылка</strong>.</p></li>
+<li><p>Из документа: <i data-lucide='share2'></i> <strong>Поделиться</strong> на панели инструментов &gt; <i data-lucide='link'></i> <strong>Ссылка</strong>.</p></li>
+<li><p>Из CryptDrive: <code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> на документе &gt; <i data-lucide='share2'></i> <strong>Поделиться</strong> &gt; <i data-lucide='link'></i> <strong>Ссылка</strong>.</p></li>
 </ul>
 <p>Затем:</p>
 <ol class="arabic simple">
@@ -821,8 +825,8 @@
 <img alt="../_images/modal-share-embed.png" class="screenshot" src="../_images/modal-share-embed.png" />
 <p>Чтобы встроить документ:</p>
 <ul class="simple">
-<li><p>Из документа: <em class="fa fa-share-alt"></em> <strong>Поделиться</strong> на панели инструментов &gt; <em class="fa fa-code"></em> <strong>Вставить</strong>.</p></li>
-<li><p>Из CryptDrive: <code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по документу &gt; <em class="fa fa-share-alt"></em> <strong>Поделиться</strong> &gt; <em class="fa fa-code"></em> <strong>Вставить</strong>.</p></li>
+<li><p>Из документа: <i data-lucide='share2'></i> <strong>Поделиться</strong> на панели инструментов &gt; <i data-lucide='code-xml'></i> <strong>Вставить</strong>.</p></li>
+<li><p>Из CryptDrive: <code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по документу &gt; <i data-lucide='share2'></i> <strong>Поделиться</strong> &gt; <i data-lucide='code-xml'></i> <strong>Вставить</strong>.</p></li>
 </ul>
 <p>затем</p>
 <ol class="arabic simple">
@@ -833,7 +837,7 @@
 </section>
 <section id="shared-folders">
 <span id="id2"></span><h3>Общие папки<a class="headerlink" href="#shared-folders" title="Permalink to this heading">¶</a></h3>
-<p><span class="badge-user">Зарегистрированные пользователи</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Зарегистрированные пользователи</span></p>
 <p>Общие папки предназначены для одновременного доступа к нескольким документам.</p>
 <div class="admonition warning">
 <p class="admonition-title">Предупреждение</p>
@@ -841,21 +845,21 @@
 </div>
 <p>Чтобы создать общую папку в CryptDrive:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Новый</span></code> &gt; <em class="cptools cptools-shared-folder"></em> <strong>Общая папка</strong>.</p></li>
-<li><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">e</kbd></kbd> &gt; <em class="cptools cptools-shared-folder"></em> <strong>Общая папка</strong>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> &gt; <em class="cptools cptools-shared-folder"></em> <strong>Новая общая папка</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Новый</span></code> &gt; <i data-lucide='cp-folder-shared'></i> <strong>Общая папка</strong>.</p></li>
+<li><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">e</kbd></kbd> &gt; <i data-lucide='cp-folder-shared'></i> <strong>Общая папка</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> &gt; <i data-lucide='cp-folder-shared'></i> <strong>Новая общая папка</strong>.</p></li>
 </ul>
 <p>Чтобы преобразовать существующую папку в общую папку:</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по папке &gt; <em class="fa fa-share-alt"></em> <strong>Поделиться</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по папке &gt; <i data-lucide='share2'></i> <strong>Поделиться</strong>.</p></li>
 <li><p>Выберите параметры конвертации. Пароль. Папка с <a class="reference internal" href="#owners"><span class="std std-ref">Владельцем</span></a>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">OK</span></code> или нажмите клавишу <kbd class="kbd docutils literal notranslate">Enter</kbd>.</p></li>
 </ol>
 <p>Папки используются аналогично документам. Чтобы поделиться папкой из CryptDrive:</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по папке &gt; <em class="fa fa-share-alt"></em> <strong>Поделиться</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по папке &gt; <i data-lucide='share2'></i> <strong>Поделиться</strong>.</p></li>
 <li><p>Выберите <a class="reference external" href="#access-rights">права доступа</a>. <strong>Просмотр</strong>: только для чтения без редактирования содержимого папки. <strong>Редактировать</strong>: просмотр и внесение изменений в папку.</p></li>
-<li><p>Доступны три вкладки: <em class="fa fa-address-book"></em> <strong>Контакты</strong>: рекомендуемый способ безопасного обмена данными с контактами и командами на CryptPad. <em class="fa fa-link"></em> <strong>Ссылка</strong>: Скопируйте ссылку для отправки через выбранный вами канал связи. <em class="fa fa-code"></em> <strong>Встроить</strong>: Скопируйте код, чтобы добавить папку на веб-страницу.</p></li>
+<li><p>Доступны три вкладки: <i data-lucide='book-user'></i> <strong>Контакты</strong>: рекомендуемый способ безопасного обмена данными с контактами и командами на CryptPad. <i data-lucide='link'></i> <strong>Ссылка</strong>: Скопируйте ссылку для отправки через выбранный вами канал связи. <i data-lucide='code-xml'></i> <strong>Встроить</strong>: Скопируйте код, чтобы добавить папку на веб-страницу.</p></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Примечание</p>
@@ -866,11 +870,11 @@
 </section>
 <section id="access">
 <span id="id3"></span><h2>Доступ<a class="headerlink" href="#access" title="Permalink to this heading">¶</a></h2>
-<p><span class="badge-user">Зарегистрированные пользователи</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Зарегистрированные пользователи</span></p>
 <p>Это меню используется для ограничения доступа к документу или общей папке:</p>
 <ul class="simple">
-<li><p>Из документа: <em class="fa fa-unlock-alt"></em> <strong>Доступ</strong>.</p></li>
-<li><p>Из CryptDrive: <code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по документу или общей папке &gt; <em class="fa fa-unlock-alt"></em> <strong>Доступ</strong>.</p></li>
+<li><p>Из документа: <i data-lucide='lock-open'></i> <strong>Доступ</strong>.</p></li>
+<li><p>Из CryptDrive: <code class="docutils literal notranslate"><span class="pre">Щелкните</span> <span class="pre">правой</span> <span class="pre">кнопкой</span> <span class="pre">мыши</span></code> по документу или общей папке &gt; <i data-lucide='lock-open'></i> <strong>Доступ</strong>.</p></li>
 </ul>
 <section id="access-tab">
 <span id="id4"></span><h3>Вкладка «Доступ»<a class="headerlink" href="#access-tab" title="Permalink to this heading">¶</a></h3>
@@ -883,25 +887,25 @@
 <li><div class="line-block">
 <div class="line"><strong>Запросы на изменение прав</strong>:</div>
 <div class="line"><strong>Запрос прав на редактирование</strong>: для пользователей с правами доступа только для чтения.</div>
-<div class="line"><em class="fa fa-bell-slash"></em> <strong>Не отображать запросы доступа к этому документу</strong>: скрывает запросы на редактирование этого документа. <span class="badge-owner">Владельцы документа</span></div>
+<div class="line"><i data-lucide='bell-off'></i> <strong>Не отображать запросы доступа к этому документу</strong>: скрывает запросы на редактирование этого документа. <span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> Владельцы документа</span></div>
 </div>
 </li>
 <li><p><strong>Список доступа</strong>: отображает <a class="reference external" href="#access-list">список доступа</a> и указывает, включен ли он.</p></li>
-<li><p><em class="cptools cptools-destroy"></em> <strong>Уничтожить</strong>: окончательное удаление документа.</p></li>
+<li><p><i data-lucide='shredder'></i> <strong>Уничтожить</strong>: окончательное удаление документа.</p></li>
 </ul>
 </section>
 <section id="access-list">
 <span id="id5"></span><h3>Список доступа<a class="headerlink" href="#access-list" title="Permalink to this heading">¶</a></h3>
-<p><span class="badge-owner">Владельцы документа</span></p>
+<p><span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> Владельцы документа</span></p>
 <img alt="../_images/modal-access-list.png" class="screenshot" src="../_images/modal-access-list.png" />
 <p>Список доступа ограничивает доступ к документу. После активации пользователи, которых нет в списке, не cмогут получить доступ к документу, даже если он хранится у них в CryptDrive.</p>
 <p>Чтобы включить список доступа, установите флажок <strong>Включить список доступа</strong>. <a class="reference external" href="#owners">Владельцы</a> документа находятся в списке по умолчанию и не могут быть удалены из него.</p>
 <p>Чтобы добавить контакты или группы в список:</p>
 <ol class="arabic simple">
 <li><p>Выберите их в списке контактов справа.</p></li>
-<li><p>Добавьте их в список с помощью кнопки <em class="fa fa-arrow-left"></em>.</p></li>
+<li><p>Добавьте их в список с помощью кнопки <i data-lucide='arrow-left'></i>.</p></li>
 </ol>
-<p>Чтобы удалить пользователя или команду из списка, используйте кнопку <em class="fa fa-times"></em> рядом с их именем.</p>
+<p>Чтобы удалить пользователя или команду из списка, используйте кнопку <i data-lucide='x'></i> рядом с их именем.</p>
 </section>
 <section id="owners">
 <span id="id6"></span><h3>Владельцы<a class="headerlink" href="#owners" title="Permalink to this heading">¶</a></h3>
@@ -918,13 +922,13 @@
 <p class="admonition-title">Примечание</p>
 <p>Если документ создан без владельцев, ни у кого нет прав на управление правом собственности на него. Он не может быть окончательно уничтожен кем-либо, но может быть удален из CryptDrive и будет автоматически уничтожен через 90 дней бездействия.</p>
 </div>
-<p><span class="badge-owner">Владельцы документа</span></p>
+<p><span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> Владельцы документа</span></p>
 <p>Чтобы добавить пользователей или группы в качестве владельцев:</p>
 <ol class="arabic simple">
 <li><p>Выберите их в списке контактов справа.</p></li>
-<li><p>Добавьте их в список с помощью кнопки <em class="fa fa-arrow-left"></em>.</p></li>
+<li><p>Добавьте их в список с помощью кнопки <i data-lucide='arrow-left'></i>.</p></li>
 </ol>
-<p>Чтобы удалить владельца, используйте кнопку <em class="fa fa-times"></em> рядом с его именем.</p>
+<p>Чтобы удалить владельца, используйте кнопку <i data-lucide='x'></i> рядом с его именем.</p>
 </section>
 </section>
 </section>
@@ -937,10 +941,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="applications.html" class="btn btn-neutral float-right" title="Приложения" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="applications.html" class="btn btn-neutral float-right" title="Приложения" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="collaboration.html" class="btn btn-neutral" title="Совместная работа / Взаимодействие" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="collaboration.html" class="btn btn-neutral" title="Совместная работа / Взаимодействие" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -1003,7 +1007,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

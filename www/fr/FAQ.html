@@ -42,6 +42,8 @@
 
   
   <script src="_static/js/modernizr.min.js"></script>
+  
+  <script src="_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="user_guide/apps/whiteboard.html">Dessin</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/apps/whiteboard.html#toolbar">Barre d'outils</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/apps/whiteboard.html#drawing">Dessiner</a></li>
-<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Mode Pinceau</a></li>
-<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Mode Sélection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Mode Pinceau</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Mode Sélection</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/apps/whiteboard.html#export">Export</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -791,10 +795,10 @@
 <p>Les administrateur·ices d'une instance CryptPad n'ont pas la possibilité de restaurer ou de réinitialiser les mots de passe des utilisateur·ices. Cela garantit également qu'ils ne peuvent pas accéder à leurs données (par exemple, le contenu des documents).</p>
 <p>Si vous êtes toujours connecté à un compte dont vous avez oublié le mot de passe, vous pouvez transférer tous les documents vers un nouveau compte en suivant les étapes suivantes :</p>
 <ol class="arabic simple">
-<li><p>En étant connecté au compte avec le mot de passe perdu, naviguez vers : <strong>Menu utilisateur·ice</strong> (avatar en haut à droite) &gt; <em class="fa fa-gear"></em> <strong>Préférences</strong> &gt; <em class="fa fa-hdd-o"></em> <strong>CryptDrive</strong></p></li>
+<li><p>En étant connecté au compte avec le mot de passe perdu, naviguez vers : <strong>Menu utilisateur·ice</strong> (avatar en haut à droite) &gt; <i data-lucide='settings'></i> <strong>Préférences</strong> &gt; <i data-lucide='hard-drive'></i> <strong>CryptDrive</strong></p></li>
 <li><p>Cliquez sur le bouton <strong>Sauvegarder</strong> pour télécharger un fichier contenant les clés de tous les documents. (note : ceci est différent de <strong>Télécharger mon Cryptdrive</strong> qui sauvegarde le contenu de tous les documents individuels)</p></li>
 <li><p>Dans un autre navigateur, créez un nouveau compte avec un mot de passe connu</p></li>
-<li><p>En étant connecté au nouveau compte : <strong>Menu utilisateur·ice</strong> (avatar en haut à droite) &gt; <em class="fa fa-gear"></em> <strong>Préférences</strong> &gt; <em class="fa fa-hdd-o"></em> <strong>CryptDrive</strong> et cliquez sur le bouton <strong>Restaurer</strong></p></li>
+<li><p>En étant connecté au nouveau compte : <strong>Menu utilisateur·ice</strong> (avatar en haut à droite) &gt; <i data-lucide='settings'></i> <strong>Préférences</strong> &gt; <i data-lucide='hard-drive'></i> <strong>CryptDrive</strong> et cliquez sur le bouton <strong>Restaurer</strong></p></li>
 </ol>
 </section>
 <section id="how-to-import-export-to-from-another-platform">
@@ -807,7 +811,7 @@
 <p>Il est possible d'importer des <strong>fichiers</strong> sur CryptPad pour un stockage et un partage sécurisés, mais cela ne fait pas de chaque fichier un <strong>document</strong> modifiable par les applications CryptPad. Pour ce faire, vous avez besoin de :</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Click</span> <span class="pre">droit</span></code> sur le fichier téléversé &gt; <strong>Ouvrir dans l'éditeur</strong>, ou...</p></li>
-<li><p>Créez un nouveau document vide et utilisez la fonctionnalité <em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-upload"></em> <strong>Importer</strong> dans l'application CryptPad appropriée, comme expliqué ci-dessous.</p></li>
+<li><p>Créez un nouveau document vide et utilisez la fonctionnalité <i data-lucide='file'></i> <strong>Fichier</strong> &gt; <i data-lucide='upload'></i> <strong>Importer</strong> dans l'application CryptPad appropriée, comme expliqué ci-dessous.</p></li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Avertissement</p>
@@ -829,9 +833,9 @@
 <li><p>Exporter le document au format <code class="docutils literal notranslate"><span class="pre">.docx</span></code> ou <code class="docutils literal notranslate"><span class="pre">.odt</span></code> depuis votre logiciel existant</p></li>
 <li><p>Enregistrez le fichier sur votre ordinateur</p></li>
 <li><p>Créez un nouveau fichier <a class="reference internal" href="user_guide/apps/document.html#app-documents"><span class="std std-ref">Document</span></a> sur CryptPad (ou un document existant pour remplacer le contenu)</p></li>
-<li><p><em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-upload"></em> <strong>Importer</strong> et sélectionnez votre fichier</p></li>
+<li><p><i data-lucide='file'></i> <strong>Fichier</strong> &gt; <i data-lucide='upload'></i> <strong>Importer</strong> et sélectionnez votre fichier</p></li>
 </ol>
-<p>Pour exporter, utiliser <em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-download"></em> <strong>Exporter</strong> et sélectionner un format :</p>
+<p>Pour exporter, utiliser <i data-lucide='file'></i> <strong>Fichier</strong> &gt; <i data-lucide='download'></i> <strong>Exporter</strong> et sélectionner un format :</p>
 <ul class="simple">
 <li><p>Pour utilisation dans Microsoft Word ou Google Docs, sélectionner <code class="docutils literal notranslate"><span class="pre">.docx</span></code></p></li>
 <li><p>Pour utilisation dans LibreOffice Writer, sélectionner <code class="docutils literal notranslate"><span class="pre">.odt</span></code></p></li>
@@ -846,9 +850,9 @@
 <li><p>Exporter votre document au format <code class="docutils literal notranslate"><span class="pre">.pptx</span></code> ou <code class="docutils literal notranslate"><span class="pre">.odp</span></code> depuis votre logiciel existant</p></li>
 <li><p>Enregistrez le fichier sur votre ordinateur</p></li>
 <li><p>Créez une nouvelle <a class="reference internal" href="user_guide/apps/presentation.html#app-presentation"><span class="std std-ref">présentation</span></a> sur CryptPad (ou un document existant pour remplacer le contenu)</p></li>
-<li><p><em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-upload"></em> <strong>Importer</strong> et sélectionnez votre fichier</p></li>
+<li><p><i data-lucide='file'></i> <strong>Fichier</strong> &gt; <i data-lucide='upload'></i> <strong>Importer</strong> et sélectionnez votre fichier</p></li>
 </ol>
-<p>Pour exporter, utiliser <em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-download"></em> <strong>Exporter</strong> et sélectionner un format :</p>
+<p>Pour exporter, utiliser <i data-lucide='file'></i> <strong>Fichier</strong> &gt; <i data-lucide='download'></i> <strong>Exporter</strong> et sélectionner un format :</p>
 <ul class="simple">
 <li><p>Pour utilisation dans Microsoft PowerPoint ou Google Slides, sélectionner <code class="docutils literal notranslate"><span class="pre">.pptx</span></code></p></li>
 <li><p>Pour utilisation dans LibreOffice Impress, sélectionner <code class="docutils literal notranslate"><span class="pre">.odp</span></code></p></li>
@@ -863,9 +867,9 @@
 <li><p>Exporter votre document au format <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code> ou <code class="docutils literal notranslate"><span class="pre">.ods</span></code> depuis votre logiciel existant</p></li>
 <li><p>Enregistrez le fichier sur votre ordinateur</p></li>
 <li><p>Créez un nouveau document <a class="reference internal" href="user_guide/apps/sheets.html#app-sheets"><span class="std std-ref">Tableur</span></a> sur CryptPad (ou un document existant pour remplacer le contenu)</p></li>
-<li><p><em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-upload"></em> <strong>Importer</strong> et sélectionnez votre fichier</p></li>
+<li><p><i data-lucide='file'></i> <strong>Fichier</strong> &gt; <i data-lucide='upload'></i> <strong>Importer</strong> et sélectionnez votre fichier</p></li>
 </ol>
-<p>Pour exporter, utiliser <em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-download"></em> <strong>Exporter</strong> et sélectionner un format :</p>
+<p>Pour exporter, utiliser <i data-lucide='file'></i> <strong>Fichier</strong> &gt; <i data-lucide='download'></i> <strong>Exporter</strong> et sélectionner un format :</p>
 <ul class="simple">
 <li><p>Pour utilisation dans Microsoft Excel ou Google Sheets, sélectionner <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code></p></li>
 <li><p>Pour utilisation dans LibreOffice Calc, sélectionner <code class="docutils literal notranslate"><span class="pre">.ods</span></code></p></li>
@@ -880,9 +884,9 @@
 <li><p>Exporter le document au format HTML depuis votre logiciel existant</p></li>
 <li><p>Enregistrez le fichier sur votre ordinateur</p></li>
 <li><p>Créez un nouveau <a class="reference internal" href="user_guide/apps/richtext.html#app-rich-text"><span class="std std-ref">Documents texte</span></a> sur CryptPad (ou un document existant pour remplacer le contenu)</p></li>
-<li><p><em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-upload"></em> <strong>Importer</strong> et sélectionnez votre fichier</p></li>
+<li><p><i data-lucide='file'></i> <strong>Fichier</strong> &gt; <i data-lucide='upload'></i> <strong>Importer</strong> et sélectionnez votre fichier</p></li>
 </ol>
-<p>Pour exporter, utiliser <em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-download"></em> <strong>Exporter</strong> et sélectionner <code class="docutils literal notranslate"><span class="pre">.doc</span></code> comme format.</p>
+<p>Pour exporter, utiliser <i data-lucide='file'></i> <strong>Fichier</strong> &gt; <i data-lucide='download'></i> <strong>Exporter</strong> et sélectionner <code class="docutils literal notranslate"><span class="pre">.doc</span></code> comme format.</p>
 </section>
 </section>
 <section id="i-cannot-do-x-with-a-document-i-created">
@@ -960,10 +964,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="how_to_contribute.html" class="btn btn-neutral float-right" title="Comment contribuer" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="how_to_contribute.html" class="btn btn-neutral float-right" title="Comment contribuer" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="dev_guide/translations.html" class="btn btn-neutral" title="Adding Translations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="dev_guide/translations.html" class="btn btn-neutral" title="Adding Translations" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -1026,7 +1030,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

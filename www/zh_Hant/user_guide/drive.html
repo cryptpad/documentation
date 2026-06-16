@@ -42,6 +42,8 @@
 
   
   <script src="../_static/js/modernizr.min.js"></script>
+  
+  <script src="../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">白板</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">工具列</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">繪圖</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> 繪圖模式</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> 選取模式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> 繪圖模式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> 選取模式</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#export">匯出</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -754,11 +758,11 @@
 <p>CryptDrive 用來儲存與管理文件。對已登入使用者而言，它是 CryptPad 的預設首頁，也可從其他頁面進入：</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on the logo at the top-left.</p></li>
-<li><p>使用者選單（右上角頭像）&gt; <em class="fa fa-hdd-o"></em> <strong>CryptDrive</strong>。</p></li>
+<li><p>使用者選單（右上角頭像）&gt; <i data-lucide='hard-drive'></i> <strong>CryptDrive</strong>。</p></li>
 </ul>
 <section id="display">
 <span id="drive-display"></span><h2>顯示方式<a class="headerlink" href="#display" title="此标题的永久链接">¶</a></h2>
-<p>雲端硬碟中的文件可以 <em class="fa fa-list"></em> 清單或 <em class="fa fa-th-large"></em> 網格方式顯示。若要切換，請使用雲端硬碟工具列右側（頭像下方）的按鈕。</p>
+<p>雲端硬碟中的文件可以 <i data-lucide='list'></i> 清單或 <i data-lucide='layout-grid'></i> 網格方式顯示。若要切換，請使用雲端硬碟工具列右側（頭像下方）的按鈕。</p>
 <p>在網格模式下，CryptPad 可顯示文件縮圖。此功能可在 <a class="reference internal" href="user_account.html#user-settings-cryptdrive"><span class="std std-ref">使用者設定</span></a> 中開啟。</p>
 <figure class="align-default" id="id5">
 <img alt="../_images/drive-grid.png" class="screenshot" src="../_images/drive-grid.png" />
@@ -777,21 +781,21 @@
 <h2>管理文件<a class="headerlink" href="#managing-documents" title="此标题的永久链接">¶</a></h2>
 <section id="folders">
 <span id="id1"></span><h3>資料夾<a class="headerlink" href="#folders" title="此标题的永久链接">¶</a></h3>
-<p><span class="badge-user">已登入使用者</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> 已登入使用者</span></p>
 <p>在雲端硬碟中建立資料夾的方式有以下幾種：</p>
 <ul class="simple">
-<li><p>工具列中的 <em class="fa fa-plus"></em> <strong>新增</strong> &gt; <em class="fa fa-folder"></em> <strong>資料夾</strong>。</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">按滑鼠右鍵</span></code> &gt; <em class="fa fa-folder"></em> <strong>新增資料夾</strong>。</p></li>
-<li><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">e</kbd></kbd> &gt; <em class="fa fa-folder"></em> <strong>資料夾</strong>。</p></li>
+<li><p>工具列中的 <i data-lucide='plus'></i> <strong>新增</strong> &gt; <i data-lucide='folder'></i> <strong>資料夾</strong>。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">按滑鼠右鍵</span></code> &gt; <i data-lucide='folder'></i> <strong>新增資料夾</strong>。</p></li>
+<li><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">e</kbd></kbd> &gt; <i data-lucide='folder'></i> <strong>資料夾</strong>。</p></li>
 </ul>
 <p>建立資料夾後，可從雲端硬碟拖曳文件加入其中，也可在資料夾之間拖曳搬移檔案。可利用左側邊欄的樹狀結構，將檔案拖放到目標位置。</p>
 <p>若要變更資料夾顏色：</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the folder &gt; <em class="cptools cptools-palette"></em> <strong>Change color</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the folder &gt; <i data-lucide='palette'></i> <strong>Change color</strong>.</p></li>
 </ul>
 <p>若要分享資料夾及其所有內容：</p>
 <ul class="simple">
-<li><p>在資料夾上 <code class="docutils literal notranslate"><span class="pre">按滑鼠右鍵</span></code> &gt; <em class="fa fa-share-alt"></em> <strong>分享</strong>。該資料夾會轉為 <a class="reference internal" href="share_and_access.html#shared-folders"><span class="std std-ref">共用資料夾</span></a>。</p></li>
+<li><p>在資料夾上 <code class="docutils literal notranslate"><span class="pre">按滑鼠右鍵</span></code> &gt; <i data-lucide='share2'></i> <strong>分享</strong>。該資料夾會轉為 <a class="reference internal" href="share_and_access.html#shared-folders"><span class="std std-ref">共用資料夾</span></a>。</p></li>
 </ul>
 </section>
 <section id="renaming">
@@ -799,24 +803,24 @@
 <p>在 CryptPad 上重新命名文件有兩種方式：一種會變更所有使用者的文件標題，另一種只會變更您雲端硬碟中的顯示名稱。</p>
 <p>若要變更文件標題（會影響所有將此文件加入雲端硬碟的使用者）：</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on the title or the <em class="fa fa-pencil"></em> button in the toolbar of the document.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on the title or the <i data-lucide='pencil'></i> button in the toolbar of the document.</p></li>
 <li><p>輸入新標題。</p></li>
-<li><p>以 <em class="fa fa-check"></em> 按鈕或 <kbd class="kbd docutils literal notranslate">Enter</kbd> 鍵儲存。</p></li>
+<li><p>以 <i data-lucide='check'></i> 按鈕或 <kbd class="kbd docutils literal notranslate">Enter</kbd> 鍵儲存。</p></li>
 </ol>
 <p>若只變更您雲端硬碟中的文件顯示名稱：</p>
 <ol class="arabic simple">
-<li><p>在雲端硬碟中的文件上 <code class="docutils literal notranslate"><span class="pre">按滑鼠右鍵</span></code> &gt; <em class="fa fa-pencil"></em> <strong>重新命名</strong>。</p></li>
+<li><p>在雲端硬碟中的文件上 <code class="docutils literal notranslate"><span class="pre">按滑鼠右鍵</span></code> &gt; <i data-lucide='pencil'></i> <strong>重新命名</strong>。</p></li>
 <li><p>輸入新名稱。</p></li>
 <li><p>按 <kbd class="kbd docutils literal notranslate">Enter</kbd> 鍵儲存。</p></li>
 </ol>
-<p><em class="fa fa-flag"></em> 圖示表示該文件在您雲端硬碟中的標題與其他使用者看到的不同。</p>
+<p><i data-lucide='flag'></i> 圖示表示該文件在您雲端硬碟中的標題與其他使用者看到的不同。</p>
 </section>
 <section id="deleting">
 <span id="id2"></span><h3>刪除<a class="headerlink" href="#deleting" title="此标题的永久链接">¶</a></h3>
 <p>在 CryptPad 上刪除文件有兩種方式：</p>
 <ul class="simple">
-<li><p><em class="fa fa-trash"></em> <strong>Removing</strong> a document means it stops appearing in the drive but remains in the database. The document remains in the drive of other users who have stored it. The document can be recovered in the drive using the <a class="reference internal" href="#drive-history"><span class="std std-ref">history</span></a>.</p></li>
-<li><p><em class="cptools cptools-destroy"></em> <strong>銷毀</strong> 文件會從資料庫永久刪除。該文件會從所有儲存它的雲端硬碟中刪除，且無法透過雲端硬碟歷程還原。<span class="badge-owner">文件擁有者</span></p></li>
+<li><p><i data-lucide='trash2'></i> <strong>Removing</strong> a document means it stops appearing in the drive but remains in the database. The document remains in the drive of other users who have stored it. The document can be recovered in the drive using the <a class="reference internal" href="#drive-history"><span class="std std-ref">history</span></a>.</p></li>
+<li><p><i data-lucide='shredder'></i> <strong>銷毀</strong> 文件會從資料庫永久刪除。該文件會從所有儲存它的雲端硬碟中刪除，且無法透過雲端硬碟歷程還原。<span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> 文件擁有者</span></p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
@@ -824,8 +828,8 @@
 </div>
 <p>To <strong>remove</strong> a document from CryptDrive.</p>
 <ul class="simple">
-<li><p>將文件從雲端硬碟拖曳到 <em class="fa fa-trash"></em> <strong>垃圾桶</strong>。</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">按滑鼠右鍵</span></code>  &gt; <em class="fa fa-trash"></em> <strong>移到垃圾桶</strong></p></li>
+<li><p>將文件從雲端硬碟拖曳到 <i data-lucide='trash2'></i> <strong>垃圾桶</strong>。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">按滑鼠右鍵</span></code>  &gt; <i data-lucide='trash2'></i> <strong>移到垃圾桶</strong></p></li>
 <li><p>選取文件後按 <kbd class="kbd docutils literal notranslate">Del</kbd> 鍵。</p></li>
 </ul>
 <p>To <strong>remove</strong> the document from CryptDrive without storing it in the trash first:</p>
@@ -834,13 +838,13 @@
 </ul>
 <p>若要清空垃圾桶：</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the <em class="fa fa-trash"></em> <strong>Trash</strong> tab to the left of the drive &gt; <em class="fa fa-trash-o"></em> <strong>Empty the trash</strong>.</p></li>
-<li><p>點選 <em class="fa fa-trash"></em> <strong>垃圾桶**分頁進入垃圾桶 &gt; |trash-o| **清空垃圾桶</strong>。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the <i data-lucide='trash2'></i> <strong>Trash</strong> tab to the left of the drive &gt; <i data-lucide='trash'></i> <strong>Empty the trash</strong>.</p></li>
+<li><p>點選 <i data-lucide='trash2'></i> <strong>垃圾桶**分頁進入垃圾桶 &gt; |trash-o| **清空垃圾桶</strong>。</p></li>
 </ul>
 <p>清空垃圾桶時，若您是垃圾桶中部分文件的 <a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">擁有者</span></a>，系統會詢問您要 <strong>移除</strong> 還是 <strong>銷毀</strong> 這些文件。</p>
 <p>若要 <strong>銷毀</strong> 文件且不先放入垃圾桶：</p>
 <ul class="simple">
-<li><p>在雲端硬碟中的文件上 <code class="docutils literal notranslate"><span class="pre">按滑鼠右鍵</span></code> &gt; <em class="cptools cptools-destroy"></em> <strong>銷毀</strong>。<span class="badge-owner">文件擁有者</span></p></li>
+<li><p>在雲端硬碟中的文件上 <code class="docutils literal notranslate"><span class="pre">按滑鼠右鍵</span></code> &gt; <i data-lucide='shredder'></i> <strong>銷毀</strong>。<span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> 文件擁有者</span></p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
@@ -852,9 +856,9 @@
 <span id="drive-history"></span><h2>歷程<a class="headerlink" href="#history" title="此标题的永久链接">¶</a></h2>
 <p>雲端硬碟的歷程會儲存，必要時可還原。在雲端硬碟中：</p>
 <ol class="arabic simple">
-<li><p>點選右上角（頭像下方）的 <em class="fa fa-history"></em> 歷程按鈕。</p></li>
-<li><p>使用 <em class="fa fa-fast-backward"></em> <em class="fa fa-step-backward"></em> 與 <em class="fa fa-step-forward"></em> <em class="fa fa-fast-forward"></em> 箭頭在歷程中前後移動。</p></li>
-<li><p>以 <em class="fa fa-check"></em> <strong>還原</strong> 恢復顯示的版本，或以 <em class="fa fa-times"></em> <strong>關閉</strong> 離開歷程且不還原。</p></li>
+<li><p>點選右上角（頭像下方）的 <i data-lucide='history'></i> 歷程按鈕。</p></li>
+<li><p>使用 <i data-lucide='arrow-left-to-line'></i> <i data-lucide='arrow-left'></i> 與 <i data-lucide='arrow-right'></i> <i data-lucide='arrow-right-to-line'></i> 箭頭在歷程中前後移動。</p></li>
+<li><p>以 <i data-lucide='check'></i> <strong>還原</strong> 恢復顯示的版本，或以 <i data-lucide='x'></i> <strong>關閉</strong> 離開歷程且不還原。</p></li>
 </ol>
 <p>為節省儲存空間，可在 <a class="reference internal" href="user_account.html#user-settings-cryptdrive"><span class="std std-ref">使用者設定</span></a> 中刪除 CryptDrive 歷程。</p>
 <div class="admonition note">
@@ -864,44 +868,44 @@
 </section>
 <section id="tags">
 <span id="id3"></span><h2>標籤<a class="headerlink" href="#tags" title="此标题的永久链接">¶</a></h2>
-<p><span class="badge-user">已登入使用者</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> 已登入使用者</span></p>
 <p>可用標籤將文件歸入多個分類。您的標籤不會被其他使用者看到。</p>
-<p>雲端硬碟中的 <em class="fa fa-hashtag"></em> <strong>標籤</strong> 分頁會顯示所有使用中的標籤及其對應文件。</p>
+<p>雲端硬碟中的 <i data-lucide='hash'></i> <strong>標籤</strong> 分頁會顯示所有使用中的標籤及其對應文件。</p>
 <img alt="../_images/modal-tags.png" class="screenshot" src="../_images/modal-tags.png" />
 <p>若要為文件新增或移除標籤：</p>
 <ul class="simple">
-<li><p>在雲端硬碟中：在文件上按滑鼠右鍵 &gt; <em class="fa fa-hashtag"></em> <strong>標籤</strong> 。</p></li>
-<li><p>在文件中：<em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-hashtag"></em> <strong>標籤</strong>。</p></li>
+<li><p>在雲端硬碟中：在文件上按滑鼠右鍵 &gt; <i data-lucide='hash'></i> <strong>標籤</strong> 。</p></li>
+<li><p>在文件中：<i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='hash'></i> <strong>標籤</strong>。</p></li>
 </ul>
 <p>若要管理多個文件的標籤：</p>
 <ol class="arabic simple">
 <li><p>Select the documents with <kbd class="kbd docutils literal notranslate">Ctrl</kbd> + <code class="docutils literal notranslate"><span class="pre">Click</span></code> in CryptDrive.</p></li>
-<li><p>在選取的文件上 <code class="docutils literal notranslate"><span class="pre">按滑鼠右鍵</span></code>  &gt; <em class="fa fa-hashtag"></em> <strong>標籤</strong>。</p></li>
+<li><p>在選取的文件上 <code class="docutils literal notranslate"><span class="pre">按滑鼠右鍵</span></code>  &gt; <i data-lucide='hash'></i> <strong>標籤</strong>。</p></li>
 </ol>
 <p>此時只會顯示所有選取文件共有的標籤。新增或移除的標籤會套用到所有已選取的文件。</p>
 </section>
 <section id="templates">
 <span id="id4"></span><h2>範本<a class="headerlink" href="#templates" title="此标题的永久链接">¶</a></h2>
-<p><span class="badge-user">已登入使用者</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> 已登入使用者</span></p>
 <p>範本提供可重複使用的起點，用來建立結構類似的文件，例如發票、信箋、報告等。</p>
 <p>若要建立範本：</p>
 <ol class="arabic simple">
-<li><p>Select the <em class="cptools cptools-template"></em> <strong>Templates</strong> tab in the drive.</p></li>
-<li><p>工具列中的 <em class="fa fa-plus"></em> <strong>新增</strong>。</p></li>
+<li><p>Select the <i data-lucide='file-cog'></i> <strong>Templates</strong> tab in the drive.</p></li>
+<li><p>工具列中的 <i data-lucide='plus'></i> <strong>新增</strong>。</p></li>
 </ol>
 <p>或</p>
 <ol class="arabic simple">
-<li><p>在既有文件中：<em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-bookmark"></em> <strong>另存為範本</strong>。</p></li>
+<li><p>在既有文件中：<i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='save'></i> <strong>另存為範本</strong>。</p></li>
 </ol>
 <p>或</p>
 <ol class="arabic simple">
 <li><p>建立 <a class="reference internal" href="apps/general.html#new-document"><span class="std std-ref">新文件</span></a>。</p></li>
-<li><p>在建立畫面上選取 <em class="cptools cptools-new-template"></em> <strong>新範本</strong>。</p></li>
+<li><p>在建立畫面上選取 <i data-lucide='file-up'></i> <strong>新範本</strong>。</p></li>
 </ol>
 <p>若要使用範本：</p>
 <ul class="simple">
 <li><p>建立 <a class="reference internal" href="apps/general.html#new-document"><span class="std std-ref">新文件</span></a> 時選取範本。</p></li>
-<li><p>In an existing document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import a template</strong>. Please note: this option <strong>replaces</strong> the contents of the document with the template.</p></li>
+<li><p>In an existing document: <i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='upload'></i> <strong>Import a template</strong>. Please note: this option <strong>replaces</strong> the contents of the document with the template.</p></li>
 </ul>
 </section>
 <section id="storage-quota">
@@ -928,10 +932,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="collaboration.html" class="btn btn-neutral float-right" title="協作 / 社群" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="collaboration.html" class="btn btn-neutral float-right" title="協作 / 社群" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="security.html" class="btn btn-neutral" title="安全性" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="security.html" class="btn btn-neutral" title="安全性" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -993,7 +997,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

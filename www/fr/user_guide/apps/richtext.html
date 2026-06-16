@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Dessin</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Barre d'outils</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Dessiner</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Mode Pinceau</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Mode Sélection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Mode Pinceau</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Mode Sélection</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Export</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -757,18 +761,18 @@
 <img alt="../../_images/app-richtext-preview.png" class="screenshot" src="../../_images/app-richtext-preview.png" />
 <section id="toolbar">
 <h2>Barre d'outils<a class="headerlink" href="#toolbar" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p><em class="fa fa-wrench"></em> <strong>Outils</strong> : Affiche ou cache la barre d'outils de l'éditeur de texte.</p>
-<p><em class="fa fa-picture-o"></em> <strong>Insérer</strong> : Intègre une image dans le document. L'image peut être choisie dans le drive ou importée. <span class="badge-user">Utilisateurs enregistrés</span></p>
+<p><i data-lucide='wrench'></i> <strong>Outils</strong> : Affiche ou cache la barre d'outils de l'éditeur de texte.</p>
+<p><i data-lucide='image-plus'></i> <strong>Insérer</strong> : Intègre une image dans le document. L'image peut être choisie dans le drive ou importée. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Utilisateurs enregistrés</span></p>
 </section>
 <section id="view-settings">
 <h2>Paramètres d'affichage<a class="headerlink" href="#view-settings" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p>Les boutons en haut de l'éditeur contrôlent l'affichage des informations de l'éditeur de texte.</p>
-<p><em class="fa fa-list-ul"></em> : Afficher/masquer le sommaire du document.</p>
-<p><em class="fa fa-comment"></em> : Afficher/masquer les commentaires (une icône rouge indique qu'il y a des commentaires).</p>
-<p><em class="fa fa-expand"></em> : Utiliser toute la largeur de la fenêtre pour l'éditeur de texte.</p>
-<p><em class="fa fa-compress"></em> : Utiliser le &quot;mode page&quot; à largeur réduite pour l'éditeur de texte.</p>
+<p><i data-lucide='list'></i> : Afficher/masquer le sommaire du document.</p>
+<p><i data-lucide='message-square-text'></i> : Afficher/masquer les commentaires (une icône rouge indique qu'il y a des commentaires).</p>
+<p><i data-lucide='square-plus'></i> : Utiliser toute la largeur de la fenêtre pour l'éditeur de texte.</p>
+<p><i data-lucide='minimize2'></i> : Utiliser le &quot;mode page&quot; à largeur réduite pour l'éditeur de texte.</p>
 <p>Pour définir des valeurs par défaut pour ces paramètres, par exemple pour contrôler quelles sections sont visibles lorsque les destinataires visitent un lien partagé vers le document, utilisez le menu <strong>Paramètres du document</strong> :</p>
-<p><em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-cog"></em> <strong>Paramètres du document</strong>.</p>
+<p><i data-lucide='file'></i> <strong>Fichier</strong> &gt; <i data-lucide='settings'></i> <strong>Paramètres du document</strong>.</p>
 </section>
 <section id="editing">
 <h2>Écriture<a class="headerlink" href="#editing" title="Lien permanent vers cette rubrique">¶</a></h2>
@@ -792,16 +796,16 @@
 <section id="import-export">
 <h2>Importer/Exporter<a class="headerlink" href="#import-export" title="Lien permanent vers cette rubrique">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-upload"></em> <strong>Importer</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>Fichier</strong> &gt; <i data-lucide='upload'></i> <strong>Importer</strong></div>
 <div class="line">Formats supportés : <code class="docutils literal notranslate"><span class="pre">.html</span></code>, <code class="docutils literal notranslate"><span class="pre">.md</span></code>.</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-download"></em> <strong>Exporter</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>Fichier</strong> &gt; <i data-lucide='download'></i> <strong>Exporter</strong></div>
 <div class="line">Formats supportés : <code class="docutils literal notranslate"><span class="pre">.html</span></code>, <code class="docutils literal notranslate"><span class="pre">.doc</span></code>, <code class="docutils literal notranslate"><span class="pre">.md</span></code>.</div>
 </div>
 <p>Pour imprimer ou exporter au format PDF :</p>
 <ol class="arabic simple">
-<li><p><em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-print"></em> <strong>Imprimer</strong>.</p></li>
+<li><p><i data-lucide='file'></i> <strong>Fichier</strong> &gt; <i data-lucide='printer'></i> <strong>Imprimer</strong>.</p></li>
 <li><p>Sélectionner une imprimante ou un ficher PDF comme destination.</p></li>
 </ol>
 </section>
@@ -810,14 +814,14 @@
 <p>Pour commenter une partie du texte :</p>
 <ol class="arabic simple">
 <li><p>Sélectionner le texte à commenter.</p></li>
-<li><p>Bouton <em class="fa fa-comment"></em>, à droite du texte ou dans la barre d'outils de l'éditeur texte.</p></li>
+<li><p>Bouton <i data-lucide='message-square-text'></i>, à droite du texte ou dans la barre d'outils de l'éditeur texte.</p></li>
 <li><p>Écrire le commentaire.</p></li>
-<li><p><em class="fa fa-send-o"></em> <strong>Valider</strong>.</p></li>
+<li><p><i data-lucide='send'></i> <strong>Valider</strong>.</p></li>
 </ol>
 <p><code class="docutils literal notranslate"><span class="pre">Cliquer</span></code> sur un commentaire pour le sélectionner, puis :</p>
 <ul class="simple">
-<li><p><em class="fa fa-reply"></em> <strong>Répondre</strong> : Ajoute un commentaire en réponse.</p></li>
-<li><p><em class="fa fa-check"></em> <strong>Fermer</strong> : Supprime le commentaire après confirmation.</p></li>
+<li><p><i data-lucide='reply'></i> <strong>Répondre</strong> : Ajoute un commentaire en réponse.</p></li>
+<li><p><i data-lucide='check'></i> <strong>Fermer</strong> : Supprime le commentaire après confirmation.</p></li>
 </ul>
 <p>Pour envoyer une notification à un·e autre utilisateur·ice, vous pouvez les mentionner avec <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> et leur <a class="reference internal" href="../user_account.html#user-settings-account"><span class="std std-ref">nom affiché</span></a>.</p>
 <p>Vous recevrez des notifications dans les cas suivants :</p>
@@ -836,10 +840,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="document.html" class="btn btn-neutral float-right" title="Document" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="document.html" class="btn btn-neutral float-right" title="Document" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="general.html" class="btn btn-neutral" title="Général" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="general.html" class="btn btn-neutral" title="Général" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -902,7 +906,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

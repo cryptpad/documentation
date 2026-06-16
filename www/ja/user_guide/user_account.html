@@ -42,6 +42,8 @@
 
   
   <script src="../_static/js/modernizr.min.js"></script>
+  
+  <script src="../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">ホワイトボード</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">ツールバー</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">描画</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> 描画モード</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> 選択モード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> 描画モード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> 選択モード</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#export">エクスポート</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -837,55 +841,55 @@
 </section>
 <section id="notifications">
 <h2>通知<a class="headerlink" href="#notifications" title="この見出しへのパーマリンク">¶</a></h2>
-<p><span class="badge-user">ログイン済ユーザー</span></p>
-<p>CryptPadはあなたの連絡先から連絡があった場合に通知を行います。通知は右上にあるアバターの横に表示される <em class="fa fa-bell-o"></em> ベルで行われます。未読の通知があれば、ベルのマークが <em class="fa fa-bell"></em> のように強調され、未読数が併せて表示されます。</p>
-<p><em class="fa fa-bell"></em> ベルのドロップダウンのメニューでは、</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p>
+<p>CryptPadはあなたの連絡先から連絡があった場合に通知を行います。通知は右上にあるアバターの横に表示される <i data-lucide='bell'></i> ベルで行われます。未読の通知があれば、ベルのマークが <i data-lucide='bell'></i> のように強調され、未読数が併せて表示されます。</p>
+<p><i data-lucide='bell'></i> ベルのドロップダウンのメニューでは、</p>
 <ul class="simple">
 <li><p>未読の通知を確認できます。</p></li>
-<li><p>通知は <em class="fa fa-times"></em> で削除できます。</p></li>
+<li><p>通知は <i data-lucide='x'></i> で削除できます。</p></li>
 <li><p><strong>通知パネルを開く</strong>：全ての通知と、通知の履歴を表示。</p></li>
 </ul>
 <p>通知パネルのページでは、</p>
 <ul class="simple">
 <li><p>表示する種類の通知を選択できます。</p>
 <ul>
-<li><p><em class="fa fa-bars"></em> 全て。</p></li>
-<li><p><em class="fa fa-user"></em> 連絡先のリクエスト。</p></li>
-<li><p><em class="cptools cptools-richtext"></em> 自分と共有済。</p></li>
-<li><p><em class="fa fa-archive"></em> 履歴。</p></li>
+<li><p><i data-lucide='menu'></i> 全て。</p></li>
+<li><p><i data-lucide='user'></i> 連絡先のリクエスト。</p></li>
+<li><p><i data-lucide='file-text'></i> 自分と共有済。</p></li>
+<li><p><i data-lucide='archive'></i> 履歴。</p></li>
 </ul>
 </li>
-<li><p><em class="fa fa-trash"></em>：通知を削除。</p></li>
+<li><p><i data-lucide='trash2'></i>：通知を削除。</p></li>
 </ul>
 </section>
 <section id="settings">
 <span id="user-settings"></span><h2>設定<a class="headerlink" href="#settings" title="この見出しへのパーマリンク">¶</a></h2>
-<p>アカウントの設定はユーザーメニュー（右上のアバター） &gt; <em class="fa fa-gear"></em> <strong>設定</strong>から確認できます。</p>
+<p>アカウントの設定はユーザーメニュー（右上のアバター） &gt; <i data-lucide='settings'></i> <strong>設定</strong>から確認できます。</p>
 <section id="account">
 <span id="user-settings-account"></span><h3>アカウント<a class="headerlink" href="#account" title="この見出しへのパーマリンク">¶</a></h3>
 <ul class="simple">
-<li><p><strong>アカウント名</strong>: 登録時に指定したユーザー名。アカウント名は変更できません。<span class="badge-user">ログイン済ユーザー</span></p></li>
-<li><p><strong>公開署名鍵</strong>：定額利用を提供しているインスタンスや、インスタンスの管理者が使用。これはサービスの管理者に利用可能な、あなたのアカウントに関する唯一のデータです。<span class="badge-user">ログイン済ユーザー</span></p></li>
+<li><p><strong>アカウント名</strong>: 登録時に指定したユーザー名。アカウント名は変更できません。<span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p></li>
+<li><p><strong>公開署名鍵</strong>：定額利用を提供しているインスタンスや、インスタンスの管理者が使用。これはサービスの管理者に利用可能な、あなたのアカウントに関する唯一のデータです。<span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p></li>
 <li><p><strong>言語</strong>：CryptPadの画面で使用される言語。変更するにはドロップダウンのメニューで別の言語を選択してください。CryptPadは開発チームにより英語とフランス語で、また、<a class="reference internal" href="../how_to_contribute.html#contribute-translation"><span class="std std-ref">コミュニティー</span></a>によりその他の言語で提供されています。翻訳の中には不完全だったり、誤訳を含んでいたりするものがある場合があります。</p></li>
 <li><p><strong>自動ダウンロードの制限</strong>：ドキュメントに埋め込まれたメディア要素（画像、ビデオ、PDF）を自動で読み込む最大のサイズをメガバイト（MB）で指定してください。指定したサイズより大きい要素については、手動で読み込む必要があります。「-1」を設定すると、メディア要素は常に自動で読み込みます。</p></li>
-<li><p><strong>アカウントの削除</strong>：アカウントと全てのドキュメントを完全に削除するオプションです。アカウントを削除するには、<strong>アカウントの削除</strong>をクリックし、承認してください。 <span class="badge-user">ログイン済ユーザー</span></p></li>
+<li><p><strong>アカウントの削除</strong>：アカウントと全てのドキュメントを完全に削除するオプションです。アカウントを削除するには、<strong>アカウントの削除</strong>をクリックし、承認してください。 <span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p></li>
 </ul>
 </section>
 <section id="profile">
 <span id="user-settings-profile"></span><h3>Profile<a class="headerlink" href="#profile" title="この見出しへのパーマリンク">¶</a></h3>
 <ul class="simple">
 <li><p><strong>Display Name</strong>: Name displayed to other users, for example when you collaborate on documents. To change this name enter a new name and click on <strong>Save</strong>.</p></li>
-<li><p><strong>Avatar</strong>: A picture for your profile, shown alongside your display name. <span class="badge-user">Logged in users</span></p></li>
-<li><p><strong>Badge</strong>: Show your role to other users, this can be &quot;Administrator&quot;, &quot;Support and moderation&quot; or as well that you are a paid subscriber. <span class="badge-user">Logged in users</span></p></li>
-<li><p><strong>Link to your website</strong>: Fill a valid URL to add a link to your personal website. <span class="badge-user">Logged in users</span></p></li>
-<li><p><strong>Profile description</strong>: Text area where you can write a little bio using rich text formatting with the toolbar or by using the Markdown syntax. <span class="badge-user">Logged in users</span></p></li>
+<li><p><strong>Avatar</strong>: A picture for your profile, shown alongside your display name. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Logged in users</span></p></li>
+<li><p><strong>Badge</strong>: Show your role to other users, this can be &quot;Administrator&quot;, &quot;Support and moderation&quot; or as well that you are a paid subscriber. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Logged in users</span></p></li>
+<li><p><strong>Link to your website</strong>: Fill a valid URL to add a link to your personal website. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Logged in users</span></p></li>
+<li><p><strong>Profile description</strong>: Text area where you can write a little bio using rich text formatting with the toolbar or by using the Markdown syntax. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Logged in users</span></p></li>
 </ul>
 </section>
 <section id="security-privacy">
 <span id="user-settings-confidentiality"></span><h3>セキュリティーとプライバシー<a class="headerlink" href="#security-privacy" title="この見出しへのパーマリンク">¶</a></h3>
 <ul>
-<li><p><strong>リモートセッションを閉じる</strong>：このオプションを有効にしたセッションを除く全てのセッションからログアウト（<a class="reference internal" href="security.html#remote-disconnect"><span class="std std-ref">遠隔切断</span></a>も参照）。<span class="badge-user">ログイン済ユーザー</span></p></li>
-<li><p><strong>二要素認証（2FA）</strong>：任意の認証用アプリケーションによる追加の認証コードで、アカウントを保護できます。 <span class="badge-user">ログイン済ユーザー</span></p>
+<li><p><strong>リモートセッションを閉じる</strong>：このオプションを有効にしたセッションを除く全てのセッションからログアウト（<a class="reference internal" href="security.html#remote-disconnect"><span class="std std-ref">遠隔切断</span></a>も参照）。<span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p></li>
+<li><p><strong>二要素認証（2FA）</strong>：任意の認証用アプリケーションによる追加の認証コードで、アカウントを保護できます。 <span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p>
 <p>二要素認証を有効にするには、以下の手順に従ってください。</p>
 <ol class="arabic simple">
 <li><p>アカウントのパスワードを入力</p></li>
@@ -894,7 +898,7 @@
 <li><p>認証コードを入力して承認</p></li>
 </ol>
 </li>
-<li><p><strong>パスワードの変更</strong>：アカウントのパスワードを変更できます。現在のパスワードを入力し、新しいパスワードを2回入力して承認してください。 <span class="badge-user">ログイン済ユーザー</span></p></li>
+<li><p><strong>パスワードの変更</strong>：アカウントのパスワードを変更できます。現在のパスワードを入力し、新しいパスワードを2回入力して承認してください。 <span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p></li>
 <li><p><strong>セーフリンク</strong>：この設定が有効になっている間、CryptDriveに既にドキュメントが存在するのでない限り、ブラウザーのアドレスバーにあるリンクから当該のドキュメントにアクセスすることはできません。この設定は既定で有効です。ドキュメントを共有する際には、これを無効にせず、<a class="reference internal" href="share_and_access.html#share"><span class="std std-ref">共有</span></a>メニューでドキュメントへのリンクをコピーすることが強く推奨されます。</p></li>
 </ul>
 <div class="admonition danger">
@@ -933,7 +937,7 @@
 <li><p><strong>CryptDriveをダウンロード</strong>では、CryptDriveの全てのドキュメントの内容を保存します。可能であれば、他のソフトウェアでも読み取れるフォーマットで保存します。アプリケーションの中には、CryptPadでしか読み取れないデータを出力するものもあります。</p></li>
 </ul>
 </li>
-<li><p><strong>インポート</strong>：ログイン前に未登録ユーザーとしてドキュメントを作成した場合、これをCryptDriveにインポートすることができます。 <span class="badge-user">ログイン済ユーザー</span></p></li>
+<li><p><strong>インポート</strong>：ログイン前に未登録ユーザーとしてドキュメントを作成した場合、これをCryptDriveにインポートすることができます。 <span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p></li>
 <li><p><strong>履歴を削除</strong>：ストレージ容量の節約のためにCryptDriveの履歴と通知を削除できます。これはドキュメントの履歴には影響しません。ドキュメントの履歴は、<a class="reference internal" href="apps/general.html#document-properties"><span class="std std-ref">プロパティー</span></a>のダイアログで個別に削除することができます。</p></li>
 </ul>
 </section>
@@ -998,10 +1002,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="support.html" class="btn btn-neutral float-right" title="サポート" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="support.html" class="btn btn-neutral float-right" title="サポート" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="instances.html" class="btn btn-neutral" title="CryptPadのインスタンス" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="instances.html" class="btn btn-neutral" title="CryptPadのインスタンス" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -1064,7 +1068,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

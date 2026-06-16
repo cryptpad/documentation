@@ -42,6 +42,8 @@
 
   
   <script src="../_static/js/modernizr.min.js"></script>
+  
+  <script src="../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Rajztábla</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">Eszköztár</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">Rajzolás</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Rajz mód</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Kiválasztás mód</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Rajz mód</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Kiválasztás mód</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#export">Exportálás</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -753,33 +757,33 @@
 <h1>Collaboration / Social<a class="headerlink" href="#collaboration-social" title="Permalink to this heading">¶</a></h1>
 <section id="profile">
 <span id="id1"></span><h2>Profile<a class="headerlink" href="#profile" title="Permalink to this heading">¶</a></h2>
-<p><span class="badge-user">Logged in users</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Logged in users</span></p>
 <p>Each registered user on CryptPad has a profile page accessible from the user menu:</p>
 <ul class="simple">
-<li><p>User menu (avatar at the top-right) &gt; <em class="fa fa-user-circle"></em> <strong>Profile</strong>.</p></li>
+<li><p>User menu (avatar at the top-right) &gt; <i data-lucide='circle-user-round'></i> <strong>Profile</strong>.</p></li>
 </ul>
 <section id="personal-profile">
 <h3>Personal profile<a class="headerlink" href="#personal-profile" title="Permalink to this heading">¶</a></h3>
 <p>Your profile can now be modified directly from your <a class="reference internal" href="user_account.html#user-settings-profile"><span class="std std-ref">account settings</span></a>.</p>
 <p>From here you can see what your profile look like to other users, you can also perform the following actions:</p>
 <ul class="simple">
-<li><p><em class="fa fa-key"></em> <strong>Copy public key</strong>: Copies the key used by instance administrators and on instances that offer subscriptions.</p></li>
-<li><p><em class="fa fa-copy"></em> <strong>Copy user data</strong>: As an instance administrator, add the user data in JSON format to your clipboard.</p></li>
-<li><p><em class="fa fa-share-alt"></em> <strong>Share</strong>: Copy a link to your profile.</p></li>
+<li><p><i data-lucide='key'></i> <strong>Copy public key</strong>: Copies the key used by instance administrators and on instances that offer subscriptions.</p></li>
+<li><p><i data-lucide='copy'></i> <strong>Copy user data</strong>: As an instance administrator, add the user data in JSON format to your clipboard.</p></li>
+<li><p><i data-lucide='share2'></i> <strong>Share</strong>: Copy a link to your profile.</p></li>
 </ul>
 </section>
 <section id="user-profile">
 <span id="another-user-profile"></span><h3>User profile<a class="headerlink" href="#user-profile" title="Permalink to this heading">¶</a></h3>
 <p>To see the profile of another user:</p>
 <ul class="simple">
-<li><p><strong>User list</strong> <em class="fa fa-users"></em> <em class="fa fa-eye"></em> of a document where they are connected &gt; <code class="docutils literal notranslate"><span class="pre">Click</span></code> on their name,</p></li>
-<li><p>If the user is in your list of <a class="reference internal" href="#contacts"><span class="std std-ref">contacts</span></a>. User menu (avatar at the top-right) &gt; <em class="fa fa-address-book"></em> <strong>Contacts</strong> &gt; <code class="docutils literal notranslate"><span class="pre">Double</span> <span class="pre">click</span></code> on their name in the list.</p></li>
+<li><p><strong>User list</strong> <i data-lucide='users-round'></i> <i data-lucide='eye'></i> of a document where they are connected &gt; <code class="docutils literal notranslate"><span class="pre">Click</span></code> on their name,</p></li>
+<li><p>If the user is in your list of <a class="reference internal" href="#contacts"><span class="std std-ref">contacts</span></a>. User menu (avatar at the top-right) &gt; <i data-lucide='book-user'></i> <strong>Contacts</strong> &gt; <code class="docutils literal notranslate"><span class="pre">Double</span> <span class="pre">click</span></code> on their name in the list.</p></li>
 </ul>
 <p>On another user’s profile page:</p>
 <ul class="simple">
 <li><p><strong>Send a contact request</strong>: Adds this user to your <a class="reference internal" href="#contacts"><span class="std std-ref">contacts</span></a> once they have approved the request.</p></li>
-<li><p><em class="fa fa-bell-slash"></em> <strong>Mute</strong>: Blocks notifications and messages from this user. They will not know that they have been muted.</p></li>
-<li><p><em class="fa fa-key"></em> <strong>Copy public key</strong>: Copies the key used by instance administrators and on instances that offer subscriptions.</p></li>
+<li><p><i data-lucide='bell-off'></i> <strong>Mute</strong>: Blocks notifications and messages from this user. They will not know that they have been muted.</p></li>
+<li><p><i data-lucide='key'></i> <strong>Copy public key</strong>: Copies the key used by instance administrators and on instances that offer subscriptions.</p></li>
 </ul>
 </section>
 </section>
@@ -788,7 +792,7 @@
 <figure class="align-default">
 <img alt="screenshot of the calendar" class="screenshot" src="../_images/calendar.png" />
 </figure>
-<p>To add events, simply click on the desired time/date in the calendar, view (drag for duration). Alternatively use <em class="fa fa-plus"></em> <strong>New event</strong> in the toolbar.</p>
+<p>To add events, simply click on the desired time/date in the calendar, view (drag for duration). Alternatively use <i data-lucide='plus'></i> <strong>New event</strong> in the toolbar.</p>
 <p>It then opens an event creation form where a <strong>Title</strong> is mandatory.</p>
 <p>You can optionally specify a <strong>Location</strong> and a <strong>Description</strong>.
 The <strong>Description</strong> field supports the Markdown syntax to format its content.</p>
@@ -820,47 +824,47 @@ The <strong>Description</strong> field supports the Markdown syntax to format it
 <p>To edit events, drag them to the new date/time or alternatively:</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on the event to open the detailed view.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on <em class="fa fa-pencil"></em> <strong>Edit</strong> to open the edition form.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on <i data-lucide='pencil'></i> <strong>Edit</strong> to open the edition form.</p></li>
 </ol>
 <section id="toolbar">
 <h3>Eszköztár<a class="headerlink" href="#toolbar" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
-<li><p><em class="fa fa-plus"></em> <strong>New event</strong></p></li>
+<li><p><i data-lucide='plus'></i> <strong>New event</strong></p></li>
 <li><p><strong>View</strong> menu (right side): Month, Week, Day</p></li>
-<li><p><em class="fa fa-chevron-left"></em> <em class="fa fa-chevron-right"></em>: move to the previous/next period depending on the view</p></li>
+<li><p><i data-lucide='chevron-left'></i> <i data-lucide='chevron-right'></i>: move to the previous/next period depending on the view</p></li>
 <li><p><strong>Today</strong>: click to center the view on today</p></li>
 </ul>
 </section>
 <section id="share-access">
 <h3>Share &amp; Access<a class="headerlink" href="#share-access" title="Permalink to this heading">¶</a></h3>
 <p>CryptPad calendars work in the same way as any other documents for the purposes of <a class="reference internal" href="share_and_access.html#share"><span class="std std-ref">sharing</span></a> and <a class="reference internal" href="share_and_access.html#access"><span class="std std-ref">regulating access</span></a>.</p>
-<p>The <em class="fa fa-ellipsis-h"></em> menu for each calendar in the sidebar contains the following options:</p>
+<p>The <i data-lucide='ellipsis'></i> menu for each calendar in the sidebar contains the following options:</p>
 <ul class="simple">
-<li><p><em class="fa fa-pencil"></em> <strong>Edit</strong> to change the calendar name and color</p></li>
-<li><p><em class="fa fa-share-alt"></em> <strong>Share</strong> and <em class="fa fa-unlock-alt"></em> <strong>Access</strong> function the same way as any other CryptPad document. see <a class="reference internal" href="share_and_access.html#share-and-access"><span class="std std-ref">Share / Access</span></a>.</p></li>
-<li><p><em class="fa fa-upload"></em> <strong>Import</strong> and <em class="fa fa-download"></em> <strong>Export</strong> to the standard <code class="docutils literal notranslate"><span class="pre">.ics</span></code> format.</p></li>
-<li><p><em class="fa fa-info-circle"></em> <strong>Properties</strong></p></li>
-<li><p><em class="fa fa-trash-o"></em> <strong>Delete</strong></p></li>
+<li><p><i data-lucide='pencil'></i> <strong>Edit</strong> to change the calendar name and color</p></li>
+<li><p><i data-lucide='share2'></i> <strong>Share</strong> and <i data-lucide='lock-open'></i> <strong>Access</strong> function the same way as any other CryptPad document. see <a class="reference internal" href="share_and_access.html#share-and-access"><span class="std std-ref">Share / Access</span></a>.</p></li>
+<li><p><i data-lucide='upload'></i> <strong>Import</strong> and <i data-lucide='download'></i> <strong>Export</strong> to the standard <code class="docutils literal notranslate"><span class="pre">.ics</span></code> format.</p></li>
+<li><p><i data-lucide='info'></i> <strong>Properties</strong></p></li>
+<li><p><i data-lucide='trash'></i> <strong>Delete</strong></p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Megjegyzés</p>
 <p>When exporting a calendar, the descriptions of events are exported in Markdown.</p>
 </div>
 <p><a class="reference internal" href="#teams"><span class="std std-ref">Teams</span></a> can also have calendars available to all members. Simply share a calendar with a team to add it:</p>
-<p><em class="fa fa-share-alt"></em> <strong>Share</strong> &gt; <em class="fa fa-address-book"></em> <strong>Contacts</strong> &gt; Select the team</p>
-<p><span class="badge-user">Logged in users</span></p>
-<p>When viewing a calendar shared via link, add it to your calendars with: <em class="fa fa-calendar-plus-o"></em> <strong>Import this calendar</strong></p>
+<p><i data-lucide='share2'></i> <strong>Share</strong> &gt; <i data-lucide='book-user'></i> <strong>Contacts</strong> &gt; Select the team</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Logged in users</span></p>
+<p>When viewing a calendar shared via link, add it to your calendars with: <i data-lucide='calendar-plus2'></i> <strong>Import this calendar</strong></p>
 </section>
 </section>
 <section id="contacts">
 <span id="id3"></span><h2>Contacts<a class="headerlink" href="#contacts" title="Permalink to this heading">¶</a></h2>
-<p><span class="badge-user">Logged in users</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Logged in users</span></p>
 <p>On CryptPad, using contacts makes collaboration more secure and simple.</p>
 <section id="add-a-contact">
 <h3>Add a contact<a class="headerlink" href="#add-a-contact" title="Permalink to this heading">¶</a></h3>
 <p>By sharing your profile:</p>
 <ol class="arabic simple">
-<li><p>Copy the link: User menu (avatar at the top-right) &gt; <em class="fa fa-user-circle"></em> <strong>Profile</strong> &gt; <em class="fa fa-share-alt"></em> <strong>Share</strong>.</p></li>
+<li><p>Copy the link: User menu (avatar at the top-right) &gt; <i data-lucide='circle-user-round'></i> <strong>Profile</strong> &gt; <i data-lucide='share2'></i> <strong>Share</strong>.</p></li>
 <li><p>Paste and send through the means of your choice (preferably a secure mode of communication).</p></li>
 <li><p>Your contact must then click <strong>Send a contact request</strong>.</p></li>
 <li><p>You get a notification with the request, <code class="docutils literal notranslate"><span class="pre">Click</span></code> <strong>Accept</strong>.</p></li>
@@ -874,20 +878,20 @@ The <strong>Description</strong> field supports the Markdown syntax to format it
 <h3>Manage contacts<a class="headerlink" href="#manage-contacts" title="Permalink to this heading">¶</a></h3>
 <p>To access the Contacts page:</p>
 <ul class="simple">
-<li><p>User menu (avatar at the top-right) &gt; <em class="fa fa-address-book"></em> <strong>Contacts</strong>.</p></li>
+<li><p>User menu (avatar at the top-right) &gt; <i data-lucide='book-user'></i> <strong>Contacts</strong>.</p></li>
 </ul>
 <p>All contacts are listed at the left of the window. For each contact:</p>
 <ul class="simple">
-<li><p><em class="fa fa-bell-slash"></em>: Mute messages and notifications.</p></li>
-<li><p><em class="fa fa-user-times"></em>: Remove.</p></li>
-<li><p><em class="fa fa-circle"></em>: Indicates that this contact is online.</p></li>
+<li><p><i data-lucide='bell-off'></i>: Mute messages and notifications.</p></li>
+<li><p><i data-lucide='user-round-x'></i>: Remove.</p></li>
+<li><p><i data-lucide='circle'></i>: Indicates that this contact is online.</p></li>
 </ul>
 </section>
 <section id="chat-with-contacts">
 <span id="chat-contacts"></span><h3>Chat with contacts<a class="headerlink" href="#chat-with-contacts" title="Permalink to this heading">¶</a></h3>
 <p>On the Contacts page, click on a contact in the list to open the chat with them in the main window.</p>
-<p>Write messages in the field at the bottom and send them with <em class="fa fa-paper-plane"></em> or <kbd class="kbd docutils literal notranslate">Enter</kbd>.</p>
-<p>Load more chat history with <em class="fa fa-history"></em> or delete the history with <em class="fa fa-eraser"></em>.</p>
+<p>Write messages in the field at the bottom and send them with <i data-lucide='send'></i> or <kbd class="kbd docutils literal notranslate">Enter</kbd>.</p>
+<p>Load more chat history with <i data-lucide='history'></i> or delete the history with <i data-lucide='eraser'></i>.</p>
 <div class="admonition note">
 <p class="admonition-title">Megjegyzés</p>
 <p>Currently, the only way to get a notification when receiving a new message, is having the Contacts application open and web browser notifications enabled. We are working on the possibility to receive a CryptPad notification in case of a new message.</p>
@@ -896,7 +900,7 @@ The <strong>Description</strong> field supports the Markdown syntax to format it
 </section>
 <section id="teams">
 <span id="id4"></span><h2>Teams<a class="headerlink" href="#teams" title="Permalink to this heading">¶</a></h2>
-<p><span class="badge-user">Logged in users</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Logged in users</span></p>
 <p>CryptPad teams are shared spaces between a group of users. A team has its own CryptDrive, chat, and a list of members with roles and permissions.</p>
 <div class="admonition note">
 <p class="admonition-title">Megjegyzés</p>
@@ -904,13 +908,13 @@ The <strong>Description</strong> field supports the Markdown syntax to format it
 </div>
 <p>To create a team:</p>
 <ol class="arabic simple">
-<li><p>User menu (avatar at the top-right) &gt; <em class="fa fa-users"></em> <strong>Teams</strong>.</p></li>
-<li><p><em class="fa fa-plus-circle"></em> <strong>New</strong>.</p></li>
+<li><p>User menu (avatar at the top-right) &gt; <i data-lucide='users-round'></i> <strong>Teams</strong>.</p></li>
+<li><p><i data-lucide='circle-plus'></i> <strong>New</strong>.</p></li>
 </ol>
 <p>To open an existing team:</p>
 <ol class="arabic simple">
-<li><p>User menu (avatar at the top-right) &gt; <em class="fa fa-users"></em> <strong>Teams</strong>.</p></li>
-<li><p><em class="fa fa-list"></em> <strong>Teams</strong> &gt; <strong>Open</strong> button on the desired team.</p></li>
+<li><p>User menu (avatar at the top-right) &gt; <i data-lucide='users-round'></i> <strong>Teams</strong>.</p></li>
+<li><p><i data-lucide='list'></i> <strong>Teams</strong> &gt; <strong>Open</strong> button on the desired team.</p></li>
 </ol>
 <section id="team-drive">
 <h3>Team Drive<a class="headerlink" href="#team-drive" title="Permalink to this heading">¶</a></h3>
@@ -918,16 +922,16 @@ The <strong>Description</strong> field supports the Markdown syntax to format it
 </section>
 <section id="team-members">
 <h3>Team members<a class="headerlink" href="#team-members" title="Permalink to this heading">¶</a></h3>
-<p>To manage the members of a team, go to the <em class="fa fa-users"></em> <strong>Members</strong> tab.</p>
+<p>To manage the members of a team, go to the <i data-lucide='users-round'></i> <strong>Members</strong> tab.</p>
 </section>
 <section id="invite-members">
 <h3>Invite members<a class="headerlink" href="#invite-members" title="Permalink to this heading">¶</a></h3>
 <p>To invite members to a team:</p>
 <ul class="simple">
-<li><p><em class="fa fa-users"></em> <strong>Members</strong> tab &gt; <strong>Invite members</strong>.</p></li>
+<li><p><i data-lucide='users-round'></i> <strong>Members</strong> tab &gt; <strong>Invite members</strong>.</p></li>
 </ul>
-<p><em class="fa fa-address-book"></em> <strong>Contacts</strong> tab: Select CryptPad contacts to invite them to the team. Invitees receive an invite notification and can confirm they want to join the team.</p>
-<p><em class="fa fa-link"></em> <strong>Link</strong> tab: Copy a link to send through the means of your choice (preferably a secure mode of communication). This link is single-use only. It becomes invalid after someone first uses it to join the team.</p>
+<p><i data-lucide='book-user'></i> <strong>Contacts</strong> tab: Select CryptPad contacts to invite them to the team. Invitees receive an invite notification and can confirm they want to join the team.</p>
+<p><i data-lucide='link'></i> <strong>Link</strong> tab: Copy a link to send through the means of your choice (preferably a secure mode of communication). This link is single-use only. It becomes invalid after someone first uses it to join the team.</p>
 <ul class="simple">
 <li><p><strong>Temporary name</strong>: Used to identify the invite link in the list of pending invitations.</p></li>
 <li><p><strong>Password</strong>: Protect the link against potiential interception. (optional)</p></li>
@@ -982,9 +986,9 @@ The <strong>Description</strong> field supports the Markdown syntax to format it
 <h3>Administration<a class="headerlink" href="#administration" title="Permalink to this heading">¶</a></h3>
 <p>Each member’s role can be changed in the team roster. Team admins and owners can manage members of equal or lower role. For each member:</p>
 <div class="line-block">
-<div class="line"><em class="fa fa-angle-double-up"></em> : Promote to higher role.</div>
-<div class="line"><em class="fa fa-angle-double-down"></em>: Demote to lower role.</div>
-<div class="line"><em class="fa fa-times"></em>: Kick from the team.</div>
+<div class="line"><i data-lucide='chevrons-up'></i> : Promote to higher role.</div>
+<div class="line"><i data-lucide='chevrons-down'></i>: Demote to lower role.</div>
+<div class="line"><i data-lucide='x'></i>: Kick from the team.</div>
 </div>
 </section>
 <section id="chat">
@@ -993,7 +997,7 @@ The <strong>Description</strong> field supports the Markdown syntax to format it
 </section>
 <section id="administration-tab">
 <h3>Administration tab<a class="headerlink" href="#administration-tab" title="Permalink to this heading">¶</a></h3>
-<p><span class="badge-owner">Team owners</span></p>
+<p><span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> Team owners</span></p>
 <ul class="simple">
 <li><p><strong>Public signing key</strong>: Used to identify the team on instances that offer subscriptions.</p></li>
 <li><p><strong>Team name</strong>: Change the name of the team.</p></li>
@@ -1013,10 +1017,10 @@ The <strong>Description</strong> field supports the Markdown syntax to format it
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="share_and_access.html" class="btn btn-neutral float-right" title="Share / Access" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="share_and_access.html" class="btn btn-neutral float-right" title="Share / Access" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="drive.html" class="btn btn-neutral" title="CryptDrive" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="drive.html" class="btn btn-neutral" title="CryptDrive" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -1079,7 +1083,10 @@ The <strong>Description</strong> field supports the Markdown syntax to format it
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

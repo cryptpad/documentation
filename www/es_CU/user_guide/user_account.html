@@ -42,6 +42,8 @@
 
   
   <script src="../_static/js/modernizr.min.js"></script>
+  
+  <script src="../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Whiteboard</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">Barra de herramientas</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">Dibujo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Modo pintura</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Modo seleccionar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Modo pintura</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Modo seleccionar</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#export">Exportar</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -837,55 +841,55 @@
 </section>
 <section id="notifications">
 <h2>Notificaciones<a class="headerlink" href="#notifications" title="Enlace permanente a este encabezado">¶</a></h2>
-<p><span class="badge-user">Usuarios registrados</span></p>
-<p>CryptPad te notifica cuando tus contactos interactúan contigo. Las notificaciones se muestran mediante la campana <em class="fa fa-bell-o"></em> al lado del avatar (en la parte superior derecha). Si tienes notificaciones sin leer, se llena la campana <em class="fa fa-bell"></em> y se muestra un recuento.</p>
-<p><em class="fa fa-bell"></em> Menú desplegable de campana:</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Usuarios registrados</span></p>
+<p>CryptPad te notifica cuando tus contactos interactúan contigo. Las notificaciones se muestran mediante la campana <i data-lucide='bell'></i> al lado del avatar (en la parte superior derecha). Si tienes notificaciones sin leer, se llena la campana <i data-lucide='bell'></i> y se muestra un recuento.</p>
+<p><i data-lucide='bell'></i> Menú desplegable de campana:</p>
 <ul class="simple">
 <li><p>Explorar notificaciones no leídas.</p></li>
-<li><p>Eliminar una notificación con <em class="fa fa-times"></em>.</p></li>
+<li><p>Eliminar una notificación con <i data-lucide='x'></i>.</p></li>
 <li><p><strong>Abrir panel de notificaciones</strong>: ve todas las notificaciones y el historial de notificaciones.</p></li>
 </ul>
 <p>En la página del panel de notificaciones:</p>
 <ul class="simple">
 <li><p>Selecciona el tipo de notificación para ver:</p>
 <ul>
-<li><p><em class="fa fa-bars"></em> Todo.</p></li>
-<li><p><em class="fa fa-user"></em> Solicitudes de contacto.</p></li>
-<li><p><em class="cptools cptools-richtext"></em> Comparte conmigo.</p></li>
-<li><p><em class="fa fa-archive"></em> Historia.</p></li>
+<li><p><i data-lucide='menu'></i> Todo.</p></li>
+<li><p><i data-lucide='user'></i> Solicitudes de contacto.</p></li>
+<li><p><i data-lucide='file-text'></i> Comparte conmigo.</p></li>
+<li><p><i data-lucide='archive'></i> Historia.</p></li>
 </ul>
 </li>
-<li><p><em class="fa fa-trash"></em>: Elimina notificaciones.</p></li>
+<li><p><i data-lucide='trash2'></i>: Elimina notificaciones.</p></li>
 </ul>
 </section>
 <section id="settings">
 <span id="user-settings"></span><h2>Ajustes<a class="headerlink" href="#settings" title="Enlace permanente a este encabezado">¶</a></h2>
-<p>La configuración de la cuenta se encuentra en el menú de usuario (avatar en la parte superior derecha) &gt; <em class="fa fa-gear"></em> <strong>Ajustes</strong>.</p>
+<p>La configuración de la cuenta se encuentra en el menú de usuario (avatar en la parte superior derecha) &gt; <i data-lucide='settings'></i> <strong>Ajustes</strong>.</p>
 <section id="account">
 <span id="user-settings-account"></span><h3>Cuenta<a class="headerlink" href="#account" title="Enlace permanente a este encabezado">¶</a></h3>
 <ul class="simple">
-<li><p><strong>Nombre de cuenta</strong>: Nombre de usuario elegido al registrarse. Este nombre no se puede cambiar. <span class="badge-user">Usuarios registrados</span></p></li>
-<li><p><strong>Clave de firma pública</strong>: utilizada por administradores de instancias y/o en instancias que ofrecen suscripciones. Estos son los únicos datos sobre tu cuenta que están disponibles para los administradores del servicio. <span class="badge-user">Usuarios registrados</span></p></li>
+<li><p><strong>Nombre de cuenta</strong>: Nombre de usuario elegido al registrarse. Este nombre no se puede cambiar. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Usuarios registrados</span></p></li>
+<li><p><strong>Clave de firma pública</strong>: utilizada por administradores de instancias y/o en instancias que ofrecen suscripciones. Estos son los únicos datos sobre tu cuenta que están disponibles para los administradores del servicio. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Usuarios registrados</span></p></li>
 <li><p><strong>Idioma</strong>: Idioma utilizado en la interfaz de CryptPad. Para cambiar el idioma de CryptPad, elige un nuevo idioma en el menú desplegable. CryptPad está traducido al inglés y al francés por el equipo de desarrollo, y a otros idiomas por la <a class="reference internal" href="../how_to_contribute.html#contribute-translation"><span class="std std-ref">community</span></a>. Algunas traducciones pueden estar incompletas y/o contener errores.</p></li>
 <li><p><strong>Límite de descarga automática</strong>: Tamaño máximo en megabytes (MB) para cargar automáticamente elementos multimedia (imágenes, videos, pdf) incrustados en documentos. Los elementos más grandes que el tamaño especificado se pueden cargar manualmente. Utiliza &quot;-1&quot; para cargar siempre los elementos multimedia automáticamente.</p></li>
-<li><p><strong>Eliminación de cuenta</strong>: Opción para eliminar permanentemente su cuenta y todos sus documentos. <strong>Elimina tu cuenta</strong> y confirma. <span class="badge-user">Usuarios registrados</span></p></li>
+<li><p><strong>Eliminación de cuenta</strong>: Opción para eliminar permanentemente su cuenta y todos sus documentos. <strong>Elimina tu cuenta</strong> y confirma. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Usuarios registrados</span></p></li>
 </ul>
 </section>
 <section id="profile">
 <span id="user-settings-profile"></span><h3>Profile<a class="headerlink" href="#profile" title="Enlace permanente a este encabezado">¶</a></h3>
 <ul class="simple">
 <li><p><strong>Display Name</strong>: Name displayed to other users, for example when you collaborate on documents. To change this name enter a new name and click on <strong>Save</strong>.</p></li>
-<li><p><strong>Avatar</strong>: A picture for your profile, shown alongside your display name. <span class="badge-user">Logged in users</span></p></li>
-<li><p><strong>Badge</strong>: Show your role to other users, this can be &quot;Administrator&quot;, &quot;Support and moderation&quot; or as well that you are a paid subscriber. <span class="badge-user">Logged in users</span></p></li>
-<li><p><strong>Link to your website</strong>: Fill a valid URL to add a link to your personal website. <span class="badge-user">Logged in users</span></p></li>
-<li><p><strong>Profile description</strong>: Text area where you can write a little bio using rich text formatting with the toolbar or by using the Markdown syntax. <span class="badge-user">Logged in users</span></p></li>
+<li><p><strong>Avatar</strong>: A picture for your profile, shown alongside your display name. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Logged in users</span></p></li>
+<li><p><strong>Badge</strong>: Show your role to other users, this can be &quot;Administrator&quot;, &quot;Support and moderation&quot; or as well that you are a paid subscriber. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Logged in users</span></p></li>
+<li><p><strong>Link to your website</strong>: Fill a valid URL to add a link to your personal website. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Logged in users</span></p></li>
+<li><p><strong>Profile description</strong>: Text area where you can write a little bio using rich text formatting with the toolbar or by using the Markdown syntax. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Logged in users</span></p></li>
 </ul>
 </section>
 <section id="security-privacy">
 <span id="user-settings-confidentiality"></span><h3>Seguridad y Privacidad<a class="headerlink" href="#security-privacy" title="Enlace permanente a este encabezado">¶</a></h3>
 <ul>
-<li><p><strong>Cerrar sesiones remotas</strong>: Cierra sesión en todas las sesiones excepto en aquella en la que está activada esta opción. (ver también <a class="reference internal" href="security.html#remote-disconnect"><span class="std std-ref">Desconexión remota</span></a>) <span class="badge-user">Usuarios registrados</span></p></li>
-<li><p><strong>Autenticación de dos factores (2FA)</strong>: protege tu cuenta con un código de verificación adicional proporcionado por una aplicación de autenticación de tu elección. <span class="badge-user">Logged in users</span></p>
+<li><p><strong>Cerrar sesiones remotas</strong>: Cierra sesión en todas las sesiones excepto en aquella en la que está activada esta opción. (ver también <a class="reference internal" href="security.html#remote-disconnect"><span class="std std-ref">Desconexión remota</span></a>) <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Usuarios registrados</span></p></li>
+<li><p><strong>Autenticación de dos factores (2FA)</strong>: protege tu cuenta con un código de verificación adicional proporcionado por una aplicación de autenticación de tu elección. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Logged in users</span></p>
 <p>Para activar 2FA:</p>
 <ol class="arabic simple">
 <li><p>Ingresa la contraseña de tu cuenta</p></li>
@@ -933,7 +937,7 @@
 <li><p><strong>Descargar mi CryptDrive</strong> guarda el contenido de todos los documentos en CryptDrive. Cuando sea posible, esto se hace en un formato que sea legible por otro software. Algunas aplicaciones producen archivos que sólo CryptPad puede leer.</p></li>
 </ul>
 </li>
-<li><p><strong>Importar</strong>: Si los documentos se han creado como un usuario no registrado antes de iniciar sesión, se pueden importar a CryptDrive. <span class="badge-user">Usuarios que han iniciado sesión</span></p></li>
+<li><p><strong>Importar</strong>: Si los documentos se han creado como un usuario no registrado antes de iniciar sesión, se pueden importar a CryptDrive. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Usuarios que han iniciado sesión</span></p></li>
 <li><p><strong>Eliminar historial</strong>: el historial de CryptDrive y las notificaciones se pueden eliminar para ahorrar espacio de almacenamiento. Esto no afecta al historial de documentos, que se pueden eliminar individualmente en el cuadro de diálogo <a class="reference internal" href="apps/general.html#document-properties"><span class="std std-ref">propiedades</span></a>.</p></li>
 </ul>
 </section>
@@ -998,10 +1002,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="support.html" class="btn btn-neutral float-right" title="Soporte" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="support.html" class="btn btn-neutral float-right" title="Soporte" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="instances.html" class="btn btn-neutral" title="Instancias de CryptPad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="instances.html" class="btn btn-neutral" title="Instancias de CryptPad" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -1063,7 +1067,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

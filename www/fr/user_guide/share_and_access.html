@@ -42,6 +42,8 @@
 
   
   <script src="../_static/js/modernizr.min.js"></script>
+  
+  <script src="../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Dessin</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">Barre d'outils</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">Dessiner</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Mode Pinceau</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Mode Sélection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Mode Pinceau</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Mode Sélection</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#export">Export</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -751,10 +755,10 @@
             
   <section id="share-access">
 <span id="share-and-access"></span><h1>Partage / Accès<a class="headerlink" href="#share-access" title="Lien permanent vers cette rubrique">¶</a></h1>
-<p><em class="fa fa-share-alt"></em> <strong>Partager</strong> et <em class="fa fa-unlock-alt"></em> <strong>Accès</strong> sont les deux menus pour gérer comment les autres utilisateur·ices peuvent interagir avec vos documents sur CryptPad.</p>
+<p><i data-lucide='share2'></i> <strong>Partager</strong> et <i data-lucide='lock-open'></i> <strong>Accès</strong> sont les deux menus pour gérer comment les autres utilisateur·ices peuvent interagir avec vos documents sur CryptPad.</p>
 <ul class="simple">
-<li><p>Depuis la barre d'outils d'un document : <em class="fa fa-share-alt"></em> <strong>Partager</strong> et <em class="fa fa-unlock-alt"></em> <strong>Accès</strong> au centre.</p></li>
-<li><p>Depuis le CryptDrive : <code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur un document &gt; <em class="fa fa-share-alt"></em> <strong>Partager</strong> ou <em class="fa fa-unlock-alt"></em> <strong>Accès</strong>.</p></li>
+<li><p>Depuis la barre d'outils d'un document : <i data-lucide='share2'></i> <strong>Partager</strong> et <i data-lucide='lock-open'></i> <strong>Accès</strong> au centre.</p></li>
+<li><p>Depuis le CryptDrive : <code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur un document &gt; <i data-lucide='share2'></i> <strong>Partager</strong> ou <i data-lucide='lock-open'></i> <strong>Accès</strong>.</p></li>
 </ul>
 <section id="share">
 <span id="id1"></span><h2>Partager<a class="headerlink" href="#share" title="Lien permanent vers cette rubrique">¶</a></h2>
@@ -766,7 +770,7 @@
 <li><p><strong>Lecture-seule</strong> : Consulter le document sans le modifier.</p></li>
 <li><p><strong>Présentation</strong> : Consulter le rendu du document, disponible dans les applications <a class="reference internal" href="apps/code.html#app-code"><span class="std std-ref">Code / Markdown</span></a> et <a class="reference internal" href="apps/slides.html#app-slides"><span class="std std-ref">Présentation</span></a>.</p></li>
 <li><p><strong>Édition</strong> : Consulter et modifier le document.</p></li>
-<li><p><strong>Voir et autodétruire</strong> : Consulter le document en lecture seule et <strong>une seule fois</strong>. Le document est supprimé définitivement une fois ouvert par le destinataire. <span class="badge-user">Logged in users</span></p></li>
+<li><p><strong>Voir et autodétruire</strong> : Consulter le document en lecture seule et <strong>une seule fois</strong>. Le document est supprimé définitivement une fois ouvert par le destinataire. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Logged in users</span></p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -775,13 +779,13 @@
 </section>
 <section id="sharing-with-contacts">
 <span id="share-contacts"></span><h3>Partager avec des contacts<a class="headerlink" href="#sharing-with-contacts" title="Lien permanent vers cette rubrique">¶</a></h3>
-<p><span class="badge-user">Utilisateur·ices enregistré·es</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Utilisateur·ices enregistré·es</span></p>
 <p>Il est recommandé d'utiliser cette méthode pour partager vos documents. En partageant directement avec vos <a class="reference internal" href="collaboration.html#contacts"><span class="std std-ref">contacts</span></a> les liens et les clés de chiffrement ne quittent pas la plateforme chiffrée de CryptPad. Cela garantit de ne pas donner l'accès à vos données à des services tiers.</p>
 <img alt="../_images/modal-share-contacts.png" class="screenshot" src="../_images/modal-share-contacts.png" />
 <p>Pour partager avec un·e/des contacts :</p>
 <ul class="simple">
-<li><p><em class="fa fa-share-alt"></em> <strong>Partager</strong> dans la barre d'outils du document &gt; <em class="fa fa-address-book"></em> <strong>Contacts</strong>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le document dans le CryptDrive &gt; <em class="fa fa-share-alt"></em> <strong>Partager</strong> &gt; <em class="fa fa-address-book"></em> <strong>Contacts</strong>.</p></li>
+<li><p><i data-lucide='share2'></i> <strong>Partager</strong> dans la barre d'outils du document &gt; <i data-lucide='book-user'></i> <strong>Contacts</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le document dans le CryptDrive &gt; <i data-lucide='share2'></i> <strong>Partager</strong> &gt; <i data-lucide='book-user'></i> <strong>Contacts</strong>.</p></li>
 </ul>
 <p>Puis :</p>
 <ol class="arabic simple">
@@ -800,8 +804,8 @@
 <img alt="../_images/modal-share-link.png" class="screenshot" src="../_images/modal-share-link.png" />
 <p>Pour copier le lien d'un document :</p>
 <ul class="simple">
-<li><p>Depuis le document : <em class="fa fa-share-alt"></em> <strong>Partager</strong> dans la barre d'outils &gt; <em class="fa fa-link"></em> <strong>Lien</strong>.</p></li>
-<li><p>Depuis le CryptDrive : <code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le document &gt; <em class="fa fa-share-alt"></em> <strong>Partager</strong> &gt; <em class="fa fa-link"></em> <strong>Lien</strong>.</p></li>
+<li><p>Depuis le document : <i data-lucide='share2'></i> <strong>Partager</strong> dans la barre d'outils &gt; <i data-lucide='link'></i> <strong>Lien</strong>.</p></li>
+<li><p>Depuis le CryptDrive : <code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le document &gt; <i data-lucide='share2'></i> <strong>Partager</strong> &gt; <i data-lucide='link'></i> <strong>Lien</strong>.</p></li>
 </ul>
 <p>Puis :</p>
 <ol class="arabic simple">
@@ -821,8 +825,8 @@
 <img alt="../_images/modal-share-embed.png" class="screenshot" src="../_images/modal-share-embed.png" />
 <p>Pour inclure un document :</p>
 <ul class="simple">
-<li><p>Depuis le document : <em class="fa fa-share-alt"></em> <strong>Partager</strong> dans la barre d'outils &gt; <em class="fa fa-code"></em> <strong>Intégration</strong>.</p></li>
-<li><p>Depuis le CryptDrive : <code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le document &gt; <em class="fa fa-share-alt"></em> <strong>Partager</strong> &gt; <em class="fa fa-code"></em> <strong>Intégration</strong>.</p></li>
+<li><p>Depuis le document : <i data-lucide='share2'></i> <strong>Partager</strong> dans la barre d'outils &gt; <i data-lucide='code-xml'></i> <strong>Intégration</strong>.</p></li>
+<li><p>Depuis le CryptDrive : <code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le document &gt; <i data-lucide='share2'></i> <strong>Partager</strong> &gt; <i data-lucide='code-xml'></i> <strong>Intégration</strong>.</p></li>
 </ul>
 <p>puis</p>
 <ol class="arabic simple">
@@ -833,7 +837,7 @@
 </section>
 <section id="shared-folders">
 <span id="id2"></span><h3>Dossiers partagés<a class="headerlink" href="#shared-folders" title="Lien permanent vers cette rubrique">¶</a></h3>
-<p><span class="badge-user">Utilisateur·ices enregistré·es</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Utilisateur·ices enregistré·es</span></p>
 <p>Les dossiers partagés permettent de partager un ensemble de documents.</p>
 <div class="admonition warning">
 <p class="admonition-title">Avertissement</p>
@@ -841,21 +845,21 @@
 </div>
 <p>Pour créer un dossier partagé dans le CryptDrive :</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Nouveau</span></code> &gt; <em class="cptools cptools-shared-folder"></em> <strong>Dossier partagé</strong>.</p></li>
-<li><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">e</kbd></kbd> &gt; <em class="cptools cptools-shared-folder"></em> <strong>Dossier partagé</strong>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> &gt; <em class="cptools cptools-shared-folder"></em> <strong>Nouveau dossier partagé</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">Nouveau</span></code> &gt; <i data-lucide='cp-folder-shared'></i> <strong>Dossier partagé</strong>.</p></li>
+<li><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">e</kbd></kbd> &gt; <i data-lucide='cp-folder-shared'></i> <strong>Dossier partagé</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> &gt; <i data-lucide='cp-folder-shared'></i> <strong>Nouveau dossier partagé</strong>.</p></li>
 </ul>
 <p>Pour convertir un dossier existant en dossier partagé :</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> &gt; <em class="fa fa-share-alt"></em> <strong>Partager</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> &gt; <i data-lucide='share2'></i> <strong>Partager</strong>.</p></li>
 <li><p>Choisir les options de conversion en dossier partagé. Mot de passe. Être <a class="reference internal" href="#owners"><span class="std std-ref">propriétaire</span></a> du dossier partagé.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">OK</span></code> ou la touche <kbd class="kbd docutils literal notranslate">Entrée</kbd>.</p></li>
 </ol>
 <p>Les dossiers sont partagés de manière similaire aux documents. Pour partager un dossier, depuis le CryptDrive :</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> &gt; <em class="fa fa-share-alt"></em> <strong>Partager</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> &gt; <i data-lucide='share2'></i> <strong>Partager</strong>.</p></li>
 <li><p>Choisir les <a class="reference external" href="#access-rights">droits d'accès</a>. <strong>Lecture-seule</strong> : Consulter le contenu du dossier sans le modifier. <strong>Édition</strong> : Consulter et modifier le contenu du dossier.</p></li>
-<li><p>Trois onglets sont disponibles : <em class="fa fa-address-book"></em> <strong>Contacts</strong> : Méthode conseillée pour partager de manière sécurisée avec vos contacts et équipes CryptPad. <em class="fa fa-link"></em> <strong>Lien</strong> : Copier un lien à transmettre par le moyen de votre choix. <em class="fa fa-code"></em> <strong>Intégration</strong> : Copier le code pour inclure le dossier sur une page web.</p></li>
+<li><p>Trois onglets sont disponibles : <i data-lucide='book-user'></i> <strong>Contacts</strong> : Méthode conseillée pour partager de manière sécurisée avec vos contacts et équipes CryptPad. <i data-lucide='link'></i> <strong>Lien</strong> : Copier un lien à transmettre par le moyen de votre choix. <i data-lucide='code-xml'></i> <strong>Intégration</strong> : Copier le code pour inclure le dossier sur une page web.</p></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -866,11 +870,11 @@
 </section>
 <section id="access">
 <span id="id3"></span><h2>Accès<a class="headerlink" href="#access" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p><span class="badge-user">Utilisateur·ices enregistré·es</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Utilisateur·ices enregistré·es</span></p>
 <p>Ce menu permet de restreindre l'accès à un document ou dossier partagé :</p>
 <ul class="simple">
-<li><p>Depuis le document : <em class="fa fa-unlock-alt"></em> <strong>Accès</strong> dans la barre d'outils.</p></li>
-<li><p>Depuis le CryptDrive : <code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le document ou dossier partagé &gt; <em class="fa fa-unlock-alt"></em> <strong>Accès</strong>.</p></li>
+<li><p>Depuis le document : <i data-lucide='lock-open'></i> <strong>Accès</strong> dans la barre d'outils.</p></li>
+<li><p>Depuis le CryptDrive : <code class="docutils literal notranslate"><span class="pre">Clic</span> <span class="pre">droit</span></code> sur le document ou dossier partagé &gt; <i data-lucide='lock-open'></i> <strong>Accès</strong>.</p></li>
 </ul>
 <section id="access-tab">
 <span id="id4"></span><h3>Onglet Accès<a class="headerlink" href="#access-tab" title="Lien permanent vers cette rubrique">¶</a></h3>
@@ -883,25 +887,25 @@
 <li><div class="line-block">
 <div class="line"><strong>Demander les droits d'édition</strong> :</div>
 <div class="line"><strong>Demander les droits d'édition</strong> : Pour les utilisateur·ices en lecture seule.</div>
-<div class="line"><em class="fa fa-bell-slash"></em> <strong>Masquer les requêtes d'accès pour ce pad</strong> : Bloque les requêtes de droits d'édition. <span class="badge-owner">Propriétaires du document</span></div>
+<div class="line"><i data-lucide='bell-off'></i> <strong>Masquer les requêtes d'accès pour ce pad</strong> : Bloque les requêtes de droits d'édition. <span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> Propriétaires du document</span></div>
 </div>
 </li>
 <li><p>Liste d'accès : Affiche la <a class="reference external" href="#access-list">access list</a> et indique si elle est activée.</p></li>
-<li><p><em class="cptools cptools-destroy"></em> <strong>Détruire</strong> : Supprimer le document de manière permanente.</p></li>
+<li><p><i data-lucide='shredder'></i> <strong>Détruire</strong> : Supprimer le document de manière permanente.</p></li>
 </ul>
 </section>
 <section id="access-list">
 <span id="id5"></span><h3>Liste<a class="headerlink" href="#access-list" title="Lien permanent vers cette rubrique">¶</a></h3>
-<p><span class="badge-owner">Propriétaires du document</span></p>
+<p><span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> Propriétaires du document</span></p>
 <img alt="../_images/modal-access-list.png" class="screenshot" src="../_images/modal-access-list.png" />
 <p>La liste d'accès permet de restreindre l'accès à un document. Une fois activée, les utilisateur·ices qui ne sont pas sur la liste n'ont pas accès au document, même si celui-ci est dans leur CryptDrive.</p>
 <p>Pour activer la liste d'accès, cochez la case <strong>Activer la liste d'accès</strong>. Les propriétaires du document sont sur la liste par défaut et ne peuvent pas en être supprimés.</p>
 <p>Pour ajouter d'autres utilisateur·ices ou équipes :</p>
 <ol class="arabic simple">
 <li><p>Les sélectionner dans la liste de contacts à droite du menu.</p></li>
-<li><p>Les ajouter à la liste avec le bouton <em class="fa fa-arrow-left"></em>.</p></li>
+<li><p>Les ajouter à la liste avec le bouton <i data-lucide='arrow-left'></i>.</p></li>
 </ol>
-<p>Pour supprimer un·e utilisateur·ice ou une équipe de la liste d'accès, utiliser le bouton <em class="fa fa-times"></em> à côté de leur nom.</p>
+<p>Pour supprimer un·e utilisateur·ice ou une équipe de la liste d'accès, utiliser le bouton <i data-lucide='x'></i> à côté de leur nom.</p>
 </section>
 <section id="owners">
 <span id="id6"></span><h3>Propriétaires<a class="headerlink" href="#owners" title="Lien permanent vers cette rubrique">¶</a></h3>
@@ -918,13 +922,13 @@
 <p class="admonition-title">Note</p>
 <p>Si un document est créé sans propriétaire, personne n'a la permission de gérer sa propriété. Il ne peut pas être détruit de manière permanente, mais peut être supprimé du CryptDrive et est détruit automatiquement après 90 jours d'inactivité.</p>
 </div>
-<p><span class="badge-owner">Propriétaires du document</span></p>
+<p><span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> Propriétaires du document</span></p>
 <p>Pour ajouter des propriétaires, utilisateur·ices ou équipes :</p>
 <ol class="arabic simple">
 <li><p>Les sélectionner dans la liste de contacts à droite du menu.</p></li>
-<li><p>Les ajouter à la liste avec le bouton <em class="fa fa-arrow-left"></em>.</p></li>
+<li><p>Les ajouter à la liste avec le bouton <i data-lucide='arrow-left'></i>.</p></li>
 </ol>
-<p>Pour supprimer un·e propriétaire, utiliser sur le bouton <em class="fa fa-times"></em> à côté de leur nom.</p>
+<p>Pour supprimer un·e propriétaire, utiliser sur le bouton <i data-lucide='x'></i> à côté de leur nom.</p>
 </section>
 </section>
 </section>
@@ -937,10 +941,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="applications.html" class="btn btn-neutral float-right" title="Applications" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="applications.html" class="btn btn-neutral float-right" title="Applications" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="collaboration.html" class="btn btn-neutral" title="Collaboration / Social" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="collaboration.html" class="btn btn-neutral" title="Collaboration / Social" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -1003,7 +1007,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

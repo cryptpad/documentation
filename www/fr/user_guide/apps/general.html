@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Dessin</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Barre d'outils</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Dessiner</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Mode Pinceau</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Mode Sélection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Mode Pinceau</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Mode Sélection</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Export</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -760,14 +764,14 @@
 <li><p>Partout sur CryptPad : <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">e</kbd></kbd>.</p></li>
 <li><p>Depuis le CryptDrive :</p>
 <ul>
-<li><p><em class="fa fa-plus"></em> <strong>Nouveau pad</strong> dans la barre d'outils.</p></li>
-<li><p><em class="fa fa-plus"></em> <strong>Nouveau pad</strong> en bas de la liste/grille.</p></li>
+<li><p><i data-lucide='plus'></i> <strong>Nouveau pad</strong> dans la barre d'outils.</p></li>
+<li><p><i data-lucide='plus'></i> <strong>Nouveau pad</strong> en bas de la liste/grille.</p></li>
 </ul>
 </li>
-<li><p>Depuis un document : <em class="fa fa-file-o"></em> <strong>Fichier</strong> &gt; <em class="fa fa-plus"></em> <strong>Nouveau</strong>.</p></li>
+<li><p>Depuis un document : <i data-lucide='file'></i> <strong>Fichier</strong> &gt; <i data-lucide='plus'></i> <strong>Nouveau</strong>.</p></li>
 </ul>
 <img alt="../../_images/app-creation-screen.png" class="screenshot" src="../../_images/app-creation-screen.png" />
-<p><span class="badge-user">Utilisateur·ices enregistré·es</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Utilisateur·ices enregistré·es</span></p>
 <p>L'écran de création permet de paramétrer un nouveau document.</p>
 <ul class="simple">
 <li><p><strong>Être propriétaire de ce document</strong> : Créer le nouveau document en tant que <a class="reference internal" href="../share_and_access.html#owners"><span class="std std-ref">propriétaire</span></a>. Si le document est créé sans propriétaire, ce réglage ne peut pas être modifié.</p></li>
@@ -779,11 +783,11 @@
 <p class="admonition-title">Note</p>
 <p>Tous les modèles enregistrés dans CryptDrive ou dans les équipes dont vous faites partie apparaissent sur l'écran de création. Pour enregistrer un document comme modèle :</p>
 <ul class="simple">
-<li><p>Depuis le document : <em class="fa fa-file-o"></em> <strong>Ficher</strong> &gt; <em class="cptools cptools-new-template"></em> <strong>Enregistrer en tant que modèle</strong>.</p></li>
+<li><p>Depuis le document : <i data-lucide='file'></i> <strong>Ficher</strong> &gt; <i data-lucide='file-up'></i> <strong>Enregistrer en tant que modèle</strong>.</p></li>
 </ul>
 <p>ou</p>
 <ul class="simple">
-<li><p>Dans le CryptDrive : Faire glisser le document dans le dossier <em class="cptools cptools-template"></em> <strong>Modèles</strong>.</p></li>
+<li><p>Dans le CryptDrive : Faire glisser le document dans le dossier <i data-lucide='file-cog'></i> <strong>Modèles</strong>.</p></li>
 </ul>
 </div>
 </section>
@@ -795,8 +799,8 @@
 <span id="id3"></span><h2>Faire une copie<a class="headerlink" href="#make-a-copy" title="Lien permanent vers cette rubrique">¶</a></h2>
 <p>Pour dupliquer un document :</p>
 <ul class="simple">
-<li><p>Depuis le document à dupliquer : <em class="fa fa-file-o"></em> <strong>Ficher</strong> &gt; <em class="fa fa-clone"></em> <strong>Créer une copie</strong>.</p></li>
-<li><p>Depuis le CryptDrive : <code class="docutils literal notranslate"><span class="pre">Clic-Droit</span></code> sur le document à dupliquer &gt; <em class="fa fa-clone"></em> <strong>Créer une copie</strong>.</p></li>
+<li><p>Depuis le document à dupliquer : <i data-lucide='file'></i> <strong>Ficher</strong> &gt; <i data-lucide='copy'></i> <strong>Créer une copie</strong>.</p></li>
+<li><p>Depuis le CryptDrive : <code class="docutils literal notranslate"><span class="pre">Clic-Droit</span></code> sur le document à dupliquer &gt; <i data-lucide='copy'></i> <strong>Créer une copie</strong>.</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -817,17 +821,17 @@
 </figure>
 <p>L'historique des documents est sauvegardé et peut être restauré en cas de besoin. Pour voir et restaurer l'historique d'un document :</p>
 <ol class="arabic simple">
-<li><p><em class="fa fa-file-o"></em> <strong>Ficher</strong> &gt; <em class="fa fa-history"></em> <strong>Historique</strong>.</p></li>
+<li><p><i data-lucide='file'></i> <strong>Ficher</strong> &gt; <i data-lucide='history'></i> <strong>Historique</strong>.</p></li>
 <li><p>Utiliser les flèches pour naviguer :</p>
 <ul class="simple">
-<li><p><em class="fa fa-step-backward"></em> et <em class="fa fa-step-forward"></em> entre chaque changement.</p></li>
-<li><p><em class="fa fa-step-backward"></em> <em class="fa fa-user"></em> et <em class="fa fa-user"></em> <em class="fa fa-step-forward"></em> entre chaque auteur·ice.</p></li>
-<li><p><em class="fa fa-step-backward"></em> <em class="fa fa-users"></em> et <em class="fa fa-users"></em> <em class="fa fa-step-forward"></em> entre chaque session (lorsque le même groupe d'auteur·ices était connecté au document).</p></li>
+<li><p><i data-lucide='arrow-left'></i> et <i data-lucide='arrow-right'></i> entre chaque changement.</p></li>
+<li><p><i data-lucide='arrow-left'></i> <i data-lucide='user'></i> et <i data-lucide='user'></i> <i data-lucide='arrow-right'></i> entre chaque auteur·ice.</p></li>
+<li><p><i data-lucide='arrow-left'></i> <i data-lucide='users-round'></i> et <i data-lucide='users-round'></i> <i data-lucide='arrow-right'></i> entre chaque session (lorsque le même groupe d'auteur·ices était connecté au document).</p></li>
 </ul>
 </li>
-<li><p>Restaurer l'étape sélectionnée avec <em class="fa fa-check"></em> <strong>Restaurer</strong>, ou sortir sans restaurer avec <em class="fa fa-times"></em> <strong>Fermer</strong>.</p></li>
+<li><p>Restaurer l'étape sélectionnée avec <i data-lucide='check'></i> <strong>Restaurer</strong>, ou sortir sans restaurer avec <i data-lucide='x'></i> <strong>Fermer</strong>.</p></li>
 </ol>
-<p>Pour économiser de l'espace de stockage, l'historique peut être supprimé dans les <a class="reference internal" href="#document-properties"><span class="std std-ref">propriétés du document</span></a>. <span class="badge-owner">Propriétaires du document</span></p>
+<p>Pour économiser de l'espace de stockage, l'historique peut être supprimé dans les <a class="reference internal" href="#document-properties"><span class="std std-ref">propriétés du document</span></a>. <span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> Propriétaires du document</span></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>La fonctionnalité d'historique fonctionne légèrement différemment dans l'application <a class="reference internal" href="sheets.html#app-sheets"><span class="std std-ref">Tableur</span></a>, en raison de l'intégration de OnlyOffice avec la collaboration chiffrée en temps réel de CryptPad. Veuillez vous référer à <a class="reference internal" href="sheets.html#sheets-history"><span class="std std-ref">l'historique du tableur</span></a> pour plus de détails.</p>
@@ -835,7 +839,7 @@
 <p><strong>Liens vers une version</strong></p>
 <p>Pour partager un lien vers la version affichée dans l'historique :</p>
 <ul class="simple">
-<li><p><em class="fa fa-share-alt"></em> <strong>Partager</strong> dans la barre d'outils.</p></li>
+<li><p><i data-lucide='share2'></i> <strong>Partager</strong> dans la barre d'outils.</p></li>
 <li><p>Sélectionner <strong>Contacts</strong>, <strong>Lien</strong> ou <strong>Intégration</strong> de la même façon que lors du <a class="reference internal" href="../share_and_access.html#share"><span class="std std-ref">partage d'un document</span></a>.</p></li>
 </ul>
 <p>Les destinataires verront la version sélectionnée en mode lecture seule.</p>
@@ -846,9 +850,9 @@
 <p id="snapshot-from-history"><strong>Faire une capture dans l'historique</strong></p>
 <p>Pour faire une <a class="reference internal" href="#snapshots"><span class="std std-ref">capture</span></a> de la version affichée dans l'historique :</p>
 <ul class="simple">
-<li><p>Bouton <em class="fa fa-camera"></em> dans la barre d'outils.</p></li>
+<li><p>Bouton <i data-lucide='camera'></i> dans la barre d'outils.</p></li>
 <li><p>Dans le dialogue, donner un nom à la capture.</p></li>
-<li><p><em class="fa fa-camera"></em> <strong>Capturer</strong></p></li>
+<li><p><i data-lucide='camera'></i> <strong>Capturer</strong></p></li>
 </ul>
 </section>
 <section id="snapshots">
@@ -862,22 +866,22 @@
 <p>Les captures sont des versions dans l'historique d'un document qui sont nommées pour être facilement retrouvées.</p>
 <p>Pour faire une nouvelle capture du document :</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>Ficher</strong> &gt; <em class="fa fa-camera"></em> <strong>Captures</strong></p></li>
+<li><p><i data-lucide='file'></i> <strong>Ficher</strong> &gt; <i data-lucide='camera'></i> <strong>Captures</strong></p></li>
 <li><p>Dans le dialogue, donner un nom à la capture.</p></li>
-<li><p><em class="fa fa-camera"></em> <strong>Capturer</strong></p></li>
+<li><p><i data-lucide='camera'></i> <strong>Capturer</strong></p></li>
 </ul>
 <p>Pour faire capturer une version antérieure dans l'historique du document voir <a class="reference internal" href="#document-history"><span class="std std-ref">faire une capture dans l'historique</span></a> ci dessus.</p>
 <p>Pour voir et restaurer une capture :</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>Ficher</strong> &gt; <em class="fa fa-camera"></em> <strong>Captures</strong></p></li>
-<li><p>Dans le dialogue, <code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur la capture et <em class="fa fa-eye"></em> <strong>Ouvrir</strong>.</p></li>
+<li><p><i data-lucide='file'></i> <strong>Ficher</strong> &gt; <i data-lucide='camera'></i> <strong>Captures</strong></p></li>
+<li><p>Dans le dialogue, <code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur la capture et <i data-lucide='eye'></i> <strong>Ouvrir</strong>.</p></li>
 <li><p>La capture s'ouvre dans une nouvelle fenêtre.</p></li>
-<li><p><em class="fa fa-check"></em> <strong>Restaurer</strong> ou <em class="fa fa-times"></em> <strong>Fermer</strong></p></li>
+<li><p><i data-lucide='check'></i> <strong>Restaurer</strong> ou <i data-lucide='x'></i> <strong>Fermer</strong></p></li>
 </ul>
 <p>Pour effacer une capture :</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>Ficher</strong> &gt; <em class="fa fa-camera"></em> <strong>Captures</strong></p></li>
-<li><p>Dans le dialogue, <code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur la capture et <em class="fa fa-trash"></em> <strong>Supprimer</strong>.</p></li>
+<li><p><i data-lucide='file'></i> <strong>Ficher</strong> &gt; <i data-lucide='camera'></i> <strong>Captures</strong></p></li>
+<li><p>Dans le dialogue, <code class="docutils literal notranslate"><span class="pre">Clic</span></code> sur la capture et <i data-lucide='trash2'></i> <strong>Supprimer</strong>.</p></li>
 </ul>
 </section>
 <section id="properties">
@@ -885,8 +889,8 @@
 <img alt="../../_images/modal-properties.png" class="screenshot" src="../../_images/modal-properties.png" />
 <p>Pour accéder aux propriétés d'un document :</p>
 <ul class="simple">
-<li><p>Depuis le document : <em class="fa fa-file-o"></em> <strong>Ficher</strong> &gt; <em class="fa fa-info-circle"></em> <strong>Propriétés</strong>.</p></li>
-<li><p>Depuis le CryptDrive : <code class="docutils literal notranslate"><span class="pre">Clic-Droit</span></code> sur le document &gt; <em class="fa fa-info-circle"></em> <strong>Propriétés</strong>.</p></li>
+<li><p>Depuis le document : <i data-lucide='file'></i> <strong>Ficher</strong> &gt; <i data-lucide='info'></i> <strong>Propriétés</strong>.</p></li>
+<li><p>Depuis le CryptDrive : <code class="docutils literal notranslate"><span class="pre">Clic-Droit</span></code> sur le document &gt; <i data-lucide='info'></i> <strong>Propriétés</strong>.</p></li>
 </ul>
 <p>Données disponibles :</p>
 <ul class="simple">
@@ -895,7 +899,7 @@
 <li><p>Dates de création et d'accès.</p></li>
 <li><p>Taille.</p></li>
 </ul>
-<p>La taille du document permet de voir la proportion du stockage utilisée pour le contenu du document et pour son historique. Pour économiser de l'espace de stockage : <strong>Effacer l'historique</strong> puis confirmer. <span class="badge-owner">Propriétaires du document</span></p>
+<p>La taille du document permet de voir la proportion du stockage utilisée pour le contenu du document et pour son historique. Pour économiser de l'espace de stockage : <strong>Effacer l'historique</strong> puis confirmer. <span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> Propriétaires du document</span></p>
 <div class="admonition warning">
 <p class="admonition-title">Avertissement</p>
 <p>Les <a class="reference internal" href="#snapshots"><span class="std std-ref">captures</span></a> font partie de l'historique du document. Si vous effacez l'historique dans les propriétés, les captures seront aussi supprimées.</p>
@@ -903,11 +907,11 @@
 </section>
 <section id="users-and-chat">
 <span id="document-users-and-chat"></span><h2>Utilisateur·ices et Chat<a class="headerlink" href="#users-and-chat" title="Lien permanent vers cette rubrique">¶</a></h2>
-<p>La liste des utilisateur·ices <em class="fa fa-user"></em> <em class="fa fa-eye"></em> et le <em class="fa fa-comments"></em> <strong>Chat</strong> permettent de voir et d'interagir avec les autres utilisateur·ices présent·es sur le document en même temps que vous.</p>
+<p>La liste des utilisateur·ices <i data-lucide='user'></i> <i data-lucide='eye'></i> et le <i data-lucide='message-square-more'></i> <strong>Chat</strong> permettent de voir et d'interagir avec les autres utilisateur·ices présent·es sur le document en même temps que vous.</p>
 <p>Pour afficher/cacher ces fenêtres :</p>
 <ul class="simple">
-<li><p><em class="fa fa-user"></em> <em class="fa fa-eye"></em> pour la liste des utilisateur·ices.</p></li>
-<li><p><em class="fa fa-comments"></em> <strong>Chat</strong> pour le chat.</p></li>
+<li><p><i data-lucide='user'></i> <i data-lucide='eye'></i> pour la liste des utilisateur·ices.</p></li>
+<li><p><i data-lucide='message-square-more'></i> <strong>Chat</strong> pour le chat.</p></li>
 </ul>
 </section>
 </section>
@@ -920,10 +924,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="richtext.html" class="btn btn-neutral float-right" title="Documents texte" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="richtext.html" class="btn btn-neutral float-right" title="Documents texte" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="../applications.html" class="btn btn-neutral" title="Applications" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="../applications.html" class="btn btn-neutral" title="Applications" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -986,7 +990,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

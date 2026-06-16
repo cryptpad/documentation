@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Рисунки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Инструменты</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Рисование</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Режим рисования</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Режим выбора</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Режим рисования</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Режим выбора</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Экспорт</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -757,18 +761,18 @@
 <img alt="../../_images/app-richtext-preview.png" class="screenshot" src="../../_images/app-richtext-preview.png" />
 <section id="toolbar">
 <h2>Инструменты<a class="headerlink" href="#toolbar" title="Permalink to this heading">¶</a></h2>
-<p><em class="fa fa-wrench"></em> <strong>Инструменты</strong>: Показать/скрыть панель инструментов текстового редактора.</p>
-<p><em class="fa fa-picture-o"></em> <strong>Вставить</strong>: добавить изображение в документ. Изображение может быть выбрано на диске или загружено. :badge_user :<cite>Зарегистрированные пользователи</cite></p>
+<p><i data-lucide='wrench'></i> <strong>Инструменты</strong>: Показать/скрыть панель инструментов текстового редактора.</p>
+<p><i data-lucide='image-plus'></i> <strong>Вставить</strong>: добавить изображение в документ. Изображение может быть выбрано на диске или загружено. :badge_user :<cite>Зарегистрированные пользователи</cite></p>
 </section>
 <section id="view-settings">
 <h2>Настройки отображения<a class="headerlink" href="#view-settings" title="Permalink to this heading">¶</a></h2>
 <p>Кнопки в верхней части редактора управляют отображением элементов текстового редактора.</p>
-<p><em class="fa fa-list-ul"></em> : Показать/скрыть структуру документа.</p>
-<p><em class="fa fa-comment"></em> : показать/скрыть комментарии (красный значок в закрытом состоянии указывает на наличие комментариев).</p>
-<p><em class="fa fa-expand"></em> : Используйте полную ширину окна для текстового редактора.</p>
-<p><em class="fa fa-compress"></em> : Используйте уменьшенную ширину «режим страницы» для текстового редактора.</p>
+<p><i data-lucide='list'></i> : Показать/скрыть структуру документа.</p>
+<p><i data-lucide='message-square-text'></i> : показать/скрыть комментарии (красный значок в закрытом состоянии указывает на наличие комментариев).</p>
+<p><i data-lucide='square-plus'></i> : Используйте полную ширину окна для текстового редактора.</p>
+<p><i data-lucide='minimize2'></i> : Используйте уменьшенную ширину «режим страницы» для текстового редактора.</p>
 <p>Чтобы установить значения по умолчанию для этих параметров, например, чтобы контролировать, какие разделы будут видны, когда получатели переходят по общей ссылке на документ, используйте диалоговое окно <strong>Настройки документа</strong>:</p>
-<p><em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-cog"></em> <strong>Настройки документа</strong>.</p>
+<p><i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='settings'></i> <strong>Настройки документа</strong>.</p>
 </section>
 <section id="editing">
 <h2>Редактирование<a class="headerlink" href="#editing" title="Permalink to this heading">¶</a></h2>
@@ -792,16 +796,16 @@
 <section id="import-export">
 <h2>Импорт/Экспорт<a class="headerlink" href="#import-export" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-upload"></em> <strong>Импорт</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='upload'></i> <strong>Импорт</strong></div>
 <div class="line">Поддерживаемые форматы: <code class="docutils literal notranslate"><span class="pre">.html</span></code>, <code class="docutils literal notranslate"><span class="pre">.md</span></code>.</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-download"></em> <strong>Экспорт</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='download'></i> <strong>Экспорт</strong></div>
 <div class="line">Поддерживаемые форматы: <code class="docutils literal notranslate"><span class="pre">.html</span></code>, <code class="docutils literal notranslate"><span class="pre">.doc</span></code>, <code class="docutils literal notranslate"><span class="pre">.md</span></code>.</div>
 </div>
 <p>Для печати или экспорта в PDF-файл:</p>
 <ol class="arabic simple">
-<li><p><em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-print"></em> <strong>Распечатать</strong>.</p></li>
+<li><p><i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='printer'></i> <strong>Распечатать</strong>.</p></li>
 <li><p>Выберите нужный принтер или “печать в файл”.</p></li>
 </ol>
 </section>
@@ -810,14 +814,14 @@
 <p>Чтобы прокомментировать часть текста:</p>
 <ol class="arabic simple">
 <li><p>Выберите текст для комментирования.</p></li>
-<li><p>кнопка <em class="fa fa-comment"></em> либо справа от текста, либо на панели инструментов текстового редактора.</p></li>
+<li><p>кнопка <i data-lucide='message-square-text'></i> либо справа от текста, либо на панели инструментов текстового редактора.</p></li>
 <li><p>Напишите комментарий.</p></li>
-<li><p><em class="fa fa-send-o"></em> <strong>Отправить</strong>.</p></li>
+<li><p><i data-lucide='send'></i> <strong>Отправить</strong>.</p></li>
 </ol>
 <p><code class="docutils literal notranslate"><span class="pre">Нажмите</span></code> на комментарий, чтобы выбрать его, затем:</p>
 <ul class="simple">
-<li><p><em class="fa fa-reply"></em> <strong>Ответить</strong>: добавляет комментарий в качестве ответа.</p></li>
-<li><p><em class="fa fa-check"></em> <strong>Согласовано</strong>: удаляет комментарий после подтверждения.</p></li>
+<li><p><i data-lucide='reply'></i> <strong>Ответить</strong>: добавляет комментарий в качестве ответа.</p></li>
+<li><p><i data-lucide='check'></i> <strong>Согласовано</strong>: удаляет комментарий после подтверждения.</p></li>
 </ul>
 <p>Чтобы уведомить контакт в комментарии, упомяните его с помощью <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> и его <a class="reference internal" href="../user_account.html#user-settings-account"><span class="std std-ref">отображаемое имя</span></a>.</p>
 <p>Вы получаете уведомления, когда:</p>
@@ -836,10 +840,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="document.html" class="btn btn-neutral float-right" title="Документ" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="document.html" class="btn btn-neutral float-right" title="Документ" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="general.html" class="btn btn-neutral" title="Общая информация" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="general.html" class="btn btn-neutral" title="Общая информация" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -902,7 +906,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

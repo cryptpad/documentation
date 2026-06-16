@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">白板</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">工具列</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">繪圖</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> 繪圖模式</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> 選取模式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> 繪圖模式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> 選取模式</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">匯出</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -763,19 +767,19 @@
 </ul>
 <p>移除卡片或欄位：</p>
 <ul class="simple">
-<li><p>當您拖曳某個項目時，畫面會出現 <em class="fa fa-trash"></em> 區域。</p></li>
-<li><p>將卡片或欄位「拖曳」到畫面底部的 <em class="fa fa-trash"></em> 刪除區域後「放開」。</p></li>
+<li><p>當您拖曳某個項目時，畫面會出現 <i data-lucide='trash2'></i> 區域。</p></li>
+<li><p>將卡片或欄位「拖曳」到畫面底部的 <i data-lucide='trash2'></i> 刪除區域後「放開」。</p></li>
 </ul>
 <p>或</p>
 <ul class="simple">
-<li><p>點選卡片或欄位上的 <em class="fa fa-pencil"></em> 按鈕開啟編輯器 &gt; <strong>刪除</strong> 並確認。</p></li>
+<li><p>點選卡片或欄位上的 <i data-lucide='pencil'></i> 按鈕開啟編輯器 &gt; <strong>刪除</strong> 並確認。</p></li>
 </ul>
 </section>
 <section id="columns">
 <h2>欄位<a class="headerlink" href="#columns" title="此标题的永久链接">¶</a></h2>
 <p>新增欄位：</p>
 <ul class="simple">
-<li><p>最後一個欄位右側的 <em class="fa fa-plus"></em> 按鈕。</p></li>
+<li><p>最後一個欄位右側的 <i data-lucide='plus'></i> 按鈕。</p></li>
 </ul>
 <p>變更欄位標題：</p>
 <ol class="arabic simple">
@@ -785,7 +789,7 @@
 </ol>
 <p>可在欄位編輯器中變更欄位標題與顏色：</p>
 <ol class="arabic simple">
-<li><p>欄位標題旁的 <em class="fa fa-pencil"></em> 按鈕。</p></li>
+<li><p>欄位標題旁的 <i data-lucide='pencil'></i> 按鈕。</p></li>
 <li><p>變更標題及／或選擇顏色。</p></li>
 <li><p><strong>關閉</strong>、<kbd class="kbd docutils literal notranslate">Esc</kbd> 或 <kbd class="kbd docutils literal notranslate">Enter</kbd></p></li>
 </ol>
@@ -794,8 +798,8 @@
 <h2>卡片<a class="headerlink" href="#cards" title="此标题的永久链接">¶</a></h2>
 <p>使用各欄位底部的按鈕新增卡片：</p>
 <ul class="simple">
-<li><p><em class="cptools cptools-add-bottom"></em>：在欄位底部新增卡片。</p></li>
-<li><p><em class="cptools cptools-add-top"></em>：在欄位頂端新增卡片。</p></li>
+<li><p><i data-lucide='cp-kanban-add-bottom'></i>：在欄位底部新增卡片。</p></li>
+<li><p><i data-lucide='cp-kanban-add-top'></i>：在欄位頂端新增卡片。</p></li>
 </ul>
 <p>變更卡片標題：</p>
 <ol class="arabic simple">
@@ -809,13 +813,13 @@
 <h2>卡片編輯器<a class="headerlink" href="#card-editor" title="此标题的永久链接">¶</a></h2>
 <p>開啟卡片編輯器：</p>
 <ul class="simple">
-<li><p>卡片標題旁的 <em class="fa fa-pencil"></em> 按鈕。</p></li>
+<li><p>卡片標題旁的 <i data-lucide='pencil'></i> 按鈕。</p></li>
 </ul>
 <p>在卡片編輯器中：</p>
 <ul class="simple">
 <li><p>編輯卡片標題。</p></li>
 <li><p>使用 <a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown</a> 編輯卡片內文：支援斜體、粗體、連結、清單、待辦清單等。</p></li>
-<li><p>使用 Markdown 工具列中的 <em class="fa fa-picture-o"></em> 選單插入圖片（遠端圖片的 Markdown 語法已停用，請參閱 <a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">遠端內容</span></a>）。</p></li>
+<li><p>使用 Markdown 工具列中的 <i data-lucide='image-plus'></i> 選單插入圖片（遠端圖片的 Markdown 語法已停用，請參閱 <a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">遠端內容</span></a>）。</p></li>
 <li><p>選擇卡片顏色。</p></li>
 <li><p>為卡片新增或移除標籤。</p></li>
 <li><p>刪除卡片。</p></li>
@@ -823,27 +827,27 @@
 </section>
 <section id="display">
 <h2>顯示方式<a class="headerlink" href="#display" title="此标题的永久链接">¶</a></h2>
-<p>使用右上角的 <em class="fa fa-minus"></em> 與 <em class="fa fa-bars"></em> 圖示切換顯示：</p>
+<p>使用右上角的 <i data-lucide='minus'></i> 與 <i data-lucide='menu'></i> 圖示切換顯示：</p>
 <ul class="simple">
-<li><p><em class="fa fa-minus"></em>：僅顯示卡片標題。</p></li>
-<li><p><em class="fa fa-bars"></em>：顯示完整卡片內容。</p></li>
+<li><p><i data-lucide='minus'></i>：僅顯示卡片標題。</p></li>
+<li><p><i data-lucide='menu'></i>：顯示完整卡片內容。</p></li>
 </ul>
 <p>看板頂端的標籤可用來篩選卡片：</p>
 <ol class="arabic simple">
 <li><p>點選一個或多個標籤。</p></li>
 <li><p>僅會顯示具有這些標籤的卡片。</p></li>
 <li><p>新建立的卡片會自動套用目前選取的標籤。</p></li>
-<li><p>點選已選取的標籤可取消選取，或使用清單左側的 <em class="fa fa-times"></em> <strong>清除篩選</strong> 取消所有標籤選取。</p></li>
+<li><p>點選已選取的標籤可取消選取，或使用清單左側的 <i data-lucide='x'></i> <strong>清除篩選</strong> 取消所有標籤選取。</p></li>
 </ol>
 </section>
 <section id="import-export">
 <h2>匯入/匯出<a class="headerlink" href="#import-export" title="此标题的永久链接">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-upload"></em> <strong>匯入</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='upload'></i> <strong>匯入</strong></div>
 <div class="line">支援格式：由此應用程式匯出的 <code class="docutils literal notranslate"><span class="pre">.json</span></code> 檔案。</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-download"></em> <strong>匯出</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='download'></i> <strong>匯出</strong></div>
 <div class="line">支援格式：<code class="docutils literal notranslate"><span class="pre">.json</span></code>。</div>
 </div>
 </section>
@@ -857,10 +861,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="diagram.html" class="btn btn-neutral float-right" title="圖表" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="diagram.html" class="btn btn-neutral float-right" title="圖表" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="form.html" class="btn btn-neutral" title="表單" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="form.html" class="btn btn-neutral" title="表單" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -922,7 +926,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

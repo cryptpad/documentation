@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Рисунки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#toolbar">Инструменты</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#drawing">Рисование</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Режим рисования</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#arrows-select-mode"><em class="fa fa-arrows"></em> Режим выбора</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Режим рисования</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#arrows-select-mode"><i data-lucide='move'></i> Режим выбора</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#export">Экспорт</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -757,20 +761,20 @@
 <img alt="../../_images/app-whiteboard-preview.png" class="screenshot" src="../../_images/app-whiteboard-preview.png" />
 <section id="toolbar">
 <h2>Инструменты<a class="headerlink" href="#toolbar" title="Permalink to this heading">¶</a></h2>
-<p><em class="fa fa-picture-o"></em> <strong>Вставить</strong>: добавьте изображение в документ. Изображение можно выбрать в CryptDrive или загрузить. <span class="badge-user">Зарегистрированные пользователи</span></p>
+<p><i data-lucide='image-plus'></i> <strong>Вставить</strong>: добавьте изображение в документ. Изображение можно выбрать в CryptDrive или загрузить. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Зарегистрированные пользователи</span></p>
 </section>
 <section id="drawing">
 <h2>Рисование<a class="headerlink" href="#drawing" title="Permalink to this heading">¶</a></h2>
 <p>Доступны два режима:</p>
 <ul class="simple">
-<li><p><em class="fa fa-paint-brush"></em> Режим рисования: добавьте новые фигуры к рисунку.</p></li>
-<li><p><em class="fa fa-arrows"></em> Режим выбора: преобразование существующих фигур.</p></li>
+<li><p><i data-lucide='brush-cleaning'></i> Режим рисования: добавьте новые фигуры к рисунку.</p></li>
+<li><p><i data-lucide='move'></i> Режим выбора: преобразование существующих фигур.</p></li>
 </ul>
 <p>Функции, доступные в обоих режимах:</p>
 <ul class="simple">
-<li><p><em class="fa fa-undo"></em> : Отмена</p></li>
-<li><p><em class="fa fa-repeat"></em> : Повтор</p></li>
-<li><p><em class="fa fa-font"></em> : Вставка текстового элемента в рисунок</p></li>
+<li><p><i data-lucide='undo'></i> : Отмена</p></li>
+<li><p><i data-lucide='redo'></i> : Повтор</p></li>
+<li><p><i data-lucide='type'></i> : Вставка текстового элемента в рисунок</p></li>
 </ul>
 <p>Чтобы удалить всё на холсте:</p>
 <ul class="simple">
@@ -778,12 +782,12 @@
 </ul>
 </section>
 <section id="paint-brush-paint-mode">
-<h2><em class="fa fa-paint-brush"></em> Режим рисования<a class="headerlink" href="#paint-brush-paint-mode" title="Permalink to this heading">¶</a></h2>
+<h2><i data-lucide='brush-cleaning'></i> Режим рисования<a class="headerlink" href="#paint-brush-paint-mode" title="Permalink to this heading">¶</a></h2>
 <p>Ширина и непрозрачность линии задаются на панели инструментов рисования. Предварительный просмотр справа показывает размер и непрозрачность кисти.</p>
 <p>Цвет выбирается в палитре на панели инструментов рисования. Чтобы изменить цвет в палитре, <code class="docutils literal notranslate"><span class="pre">Дважды</span> <span class="pre">щелкните</span></code> по нему и выберите новый, используя редактор цветов.</p>
 </section>
 <section id="arrows-select-mode">
-<h2><em class="fa fa-arrows"></em> Режим выбора<a class="headerlink" href="#arrows-select-mode" title="Permalink to this heading">¶</a></h2>
+<h2><i data-lucide='move'></i> Режим выбора<a class="headerlink" href="#arrows-select-mode" title="Permalink to this heading">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">Щелкните</span></code> по элементу, чтобы выбрать его, затем:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Перетащите</span></code> для перемещения.</p></li>
@@ -792,17 +796,17 @@
 <p>Чтобы удалить выбранный элемент:</p>
 <ul class="simple">
 <li><p>Клавиша <kbd class="kbd docutils literal notranslate">Del</kbd>.</p></li>
-<li><p>кнопка <em class="fa fa-trash"></em> на панели инструментов рисования.</p></li>
+<li><p>кнопка <i data-lucide='trash2'></i> на панели инструментов рисования.</p></li>
 </ul>
 </section>
 <section id="export">
 <h2>Экспорт<a class="headerlink" href="#export" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-download"></em> <strong>Экспорт</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='download'></i> <strong>Экспорт</strong></div>
 <div class="line">Поддерживаемый формат: <code class="docutils literal notranslate"><span class="pre">.png</span></code></div>
 </div>
 <p>Чтобы экспортировать изображение в CryptDrive, например, чтобы использовать его в других документах:</p>
-<p><em class="fa fa-file-o"></em> <strong>Файл</strong> &gt;  <em class="fa fa-file-image-o"></em> <strong>Сохранить как изображение</strong></p>
+<p><i data-lucide='file'></i> <strong>Файл</strong> &gt;  <i data-lucide='file-image'></i> <strong>Сохранить как изображение</strong></p>
 </section>
 </section>
 
@@ -814,10 +818,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../keyboard_shortcuts.html" class="btn btn-neutral float-right" title="Сочетания клавиш" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../keyboard_shortcuts.html" class="btn btn-neutral float-right" title="Сочетания клавиш" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="diagram.html" class="btn btn-neutral" title="Диаграмма" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="diagram.html" class="btn btn-neutral" title="Диаграмма" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -880,7 +884,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Whiteboard</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Werkzeugleiste</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Zeichnen</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Zeichenmodus</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Auswahlmodus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Zeichenmodus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Auswahlmodus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Export</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -763,7 +767,7 @@
 <h2>Werkzeugleisten<a class="headerlink" href="#toolbars" title="Permalink to this heading">¶</a></h2>
 <p>CryptPad integriert Diagramme von Draw.io wie die anderen Anwendungen in das System zur verschlüsselten Zusammenarbeit. Draw.io stellt viele Funktionen in einer Werkzeugleiste mit Registerkarten bereit. Deswegen werden zwei Werkzeugleisten angezeigt, was verwirrend sein kann:</p>
 <ul class="simple">
-<li><p>Die obere <strong>Werkzeugleiste von CryptPad</strong> wird für <em class="fa fa-file-o"></em> <strong>Datei</strong> (einschließlich Import/Export, Verlauf, Eigenschaften, etc) verwendet, sowie für <em class="fa fa-share-alt"></em> <strong>Teilen</strong> und <em class="fa fa-unlock-alt"></em> <strong>Zugriff</strong>.</p></li>
+<li><p>Die obere <strong>Werkzeugleiste von CryptPad</strong> wird für <i data-lucide='file'></i> <strong>Datei</strong> (einschließlich Import/Export, Verlauf, Eigenschaften, etc) verwendet, sowie für <i data-lucide='share2'></i> <strong>Teilen</strong> und <i data-lucide='lock-open'></i> <strong>Zugriff</strong>.</p></li>
 <li><p>Die <strong>Werkzeugleiste von Draw. io</strong> wird für alle Funktionen im Diagrammdokument verwendet.</p></li>
 </ul>
 </section>
@@ -773,11 +777,11 @@
 <h3>Werkzeugleiste von CryptPad<a class="headerlink" href="#cryptpad-toolbar" title="Permalink to this heading">¶</a></h3>
 <p>Importiere und exportiere Diagrammdateien.</p>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Datei</strong> &gt; <em class="fa fa-upload"></em> <strong>Importieren</strong>.</div>
+<div class="line"><i data-lucide='file'></i> <strong>Datei</strong> &gt; <i data-lucide='upload'></i> <strong>Importieren</strong>.</div>
 <div class="line">Unterstützte Formate: <code class="docutils literal notranslate"><span class="pre">.drawio</span></code></div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Datei</strong> &gt; <em class="fa fa-download"></em> <strong>Exportieren</strong>.</div>
+<div class="line"><i data-lucide='file'></i> <strong>Datei</strong> &gt; <i data-lucide='download'></i> <strong>Exportieren</strong>.</div>
 <div class="line">Unterstützte Formate: <code class="docutils literal notranslate"><span class="pre">.drawio</span></code></div>
 </div>
 </section>
@@ -804,10 +808,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="whiteboard.html" class="btn btn-neutral float-right" title="Whiteboard" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="whiteboard.html" class="btn btn-neutral float-right" title="Whiteboard" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="kanban.html" class="btn btn-neutral" title="Kanban" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="kanban.html" class="btn btn-neutral" title="Kanban" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -870,7 +874,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

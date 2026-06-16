@@ -42,6 +42,8 @@
 
   
   <script src="../_static/js/modernizr.min.js"></script>
+  
+  <script src="../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">Whiteboard</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">Barra de herramientas</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">Dibujo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Modo pintura</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Modo seleccionar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Modo pintura</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Modo seleccionar</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#export">Exportar</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -754,11 +758,11 @@
 <p>CryptDrive se utiliza para almacenar y gestionar documentos. Para los usuarios registrados, es la página de inicio predeterminada en CryptPad. También es accesible desde las otras páginas:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span></code> en el logo en la esquina superior izquierda.</p></li>
-<li><p>Menú de usuario (avatar en la esquina superior derecha) &gt; <em class="fa fa-hdd-o"></em> <strong>CryptDrive</strong>.</p></li>
+<li><p>Menú de usuario (avatar en la esquina superior derecha) &gt; <i data-lucide='hard-drive'></i> <strong>CryptDrive</strong>.</p></li>
 </ul>
 <section id="display">
 <span id="drive-display"></span><h2>Mostrar<a class="headerlink" href="#display" title="Enlace permanente a este encabezado">¶</a></h2>
-<p>Los documentos en la unidad se pueden mostrar como una <em class="fa fa-list"></em> lista o una <em class="fa fa-th-large"></em> cuadrícula. Para cambiar entre las dos vistas, usa el botón a la derecha de la barra de herramientas de la unidad (debajo del avatar).</p>
+<p>Los documentos en la unidad se pueden mostrar como una <i data-lucide='list'></i> lista o una <i data-lucide='layout-grid'></i> cuadrícula. Para cambiar entre las dos vistas, usa el botón a la derecha de la barra de herramientas de la unidad (debajo del avatar).</p>
 <p>En el modo de cuadrícula, CryptPad puede mostrar miniaturas de los documentos. Estas se pueden activar en la <a class="reference internal" href="user_account.html#user-settings-cryptdrive"><span class="std std-ref">configuración del usuario</span></a>.</p>
 <figure class="align-default" id="id5">
 <img alt="../_images/drive-grid.png" class="screenshot" src="../_images/drive-grid.png" />
@@ -777,21 +781,21 @@
 <h2>Gestionar documentos<a class="headerlink" href="#managing-documents" title="Enlace permanente a este encabezado">¶</a></h2>
 <section id="folders">
 <span id="id1"></span><h3>Carpetas<a class="headerlink" href="#folders" title="Enlace permanente a este encabezado">¶</a></h3>
-<p><span class="badge-user">Usuarios registrados</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Usuarios registrados</span></p>
 <p>Hay varias formas de crear carpetas en la unidad:</p>
 <ul class="simple">
-<li><p><em class="fa fa-plus"></em> <strong>Nuevo</strong> en la barra de herramientas &gt; <em class="fa fa-folder"></em> <strong>Carpeta</strong>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span> <span class="pre">derecho</span></code> &gt; <em class="fa fa-folder"></em> <strong>Nueva carpeta</strong>.</p></li>
-<li><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">e</kbd></kbd> &gt; <em class="fa fa-folder"></em> <strong>Carpeta</strong>.</p></li>
+<li><p><i data-lucide='plus'></i> <strong>Nuevo</strong> en la barra de herramientas &gt; <i data-lucide='folder'></i> <strong>Carpeta</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span> <span class="pre">derecho</span></code> &gt; <i data-lucide='folder'></i> <strong>Nueva carpeta</strong>.</p></li>
+<li><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">e</kbd></kbd> &gt; <i data-lucide='folder'></i> <strong>Carpeta</strong>.</p></li>
 </ul>
 <p>Una vez que se crea una carpeta, los documentos se pueden añadir arrastrándolos desde la unidad. También puedes arrastrar y soltar archivos de una carpeta a otra. Usa el conveniente árbol de la barra lateral izquierda para soltar el archivo en el destino deseado.</p>
 <p>Para cambiar el color de una carpeta:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span> <span class="pre">derecho</span></code> en la carpeta &gt; <em class="cptools cptools-palette"></em> <strong>Cambiar el color</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span> <span class="pre">derecho</span></code> en la carpeta &gt; <i data-lucide='palette'></i> <strong>Cambiar el color</strong>.</p></li>
 </ul>
 <p>Para compartir una carpeta y todo su contenido:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span> <span class="pre">derecho</span></code> en la carpeta &gt; <em class="fa fa-share-alt"></em> <strong>Compartir</strong>. La carpeta se convertirá en una <a class="reference internal" href="share_and_access.html#shared-folders"><span class="std std-ref">carpeta compartida</span></a>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span> <span class="pre">derecho</span></code> en la carpeta &gt; <i data-lucide='share2'></i> <strong>Compartir</strong>. La carpeta se convertirá en una <a class="reference internal" href="share_and_access.html#shared-folders"><span class="std std-ref">carpeta compartida</span></a>.</p></li>
 </ul>
 </section>
 <section id="renaming">
@@ -799,24 +803,24 @@
 <p>Hay dos formas de cambiar el nombre de los documentos en CryptPad. Una cambia el título del documento para todos los usuarios y la otra lo cambia solo en tu unidad.</p>
 <p>Para cambiar el título de un documento para todos los usuarios que lo tienen en su unidad:</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span></code> en el título o en el botón <em class="fa fa-pencil"></em> de la barra de herramientas del documento.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span></code> en el título o en el botón <i data-lucide='pencil'></i> de la barra de herramientas del documento.</p></li>
 <li><p>Escribe el nuevo título.</p></li>
-<li><p>Guardar con el <em class="fa fa-check"></em> botón o la tecla :kbd: <cite>Enter</cite>.</p></li>
+<li><p>Guardar con el <i data-lucide='check'></i> botón o la tecla :kbd: <cite>Enter</cite>.</p></li>
 </ol>
 <p>Para cambiar el título de un documento solo en tu drive:</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span> <span class="pre">derecho</span></code> en el documento en tu unidad &gt; <em class="fa fa-pencil"></em> <strong>Renombrar</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span> <span class="pre">derecho</span></code> en el documento en tu unidad &gt; <i data-lucide='pencil'></i> <strong>Renombrar</strong>.</p></li>
 <li><p>Escribe el nuevo nombre.</p></li>
 <li><p>Guardar con la tecla <kbd class="kbd docutils literal notranslate">Enter</kbd>.</p></li>
 </ol>
-<p>El icono <em class="fa fa-flag"></em> indica que el título de un documento es diferente en tu drive que para otros usuarios.</p>
+<p>El icono <i data-lucide='flag'></i> indica que el título de un documento es diferente en tu drive que para otros usuarios.</p>
 </section>
 <section id="deleting">
 <span id="id2"></span><h3>Borrando<a class="headerlink" href="#deleting" title="Enlace permanente a este encabezado">¶</a></h3>
 <p>Hay dos formas de eliminar un documento en CryptPad:</p>
 <ul class="simple">
-<li><p><em class="fa fa-trash"></em> <strong>Remover</strong> un documento significa que deja de aparecer en la unidad pero permanece en la base de datos. El documento seguirá en la unidad de otros usuarios que lo tengan almacenado. El documento se puede recuperar en la unidad utilizando la <a class="reference internal" href="#drive-history"><span class="std std-ref">historial</span></a>.</p></li>
-<li><p><em class="cptools cptools-destroy"></em> <strong>Destruir</strong> un documento lo elimina permanentemente de la base de datos. El documento se borra de todos las unidades donde esté almacenado y no se puede recuperar utilizando el historial de la unidad. <span class="badge-owner">Propietarios de documentos</span></p></li>
+<li><p><i data-lucide='trash2'></i> <strong>Remover</strong> un documento significa que deja de aparecer en la unidad pero permanece en la base de datos. El documento seguirá en la unidad de otros usuarios que lo tengan almacenado. El documento se puede recuperar en la unidad utilizando la <a class="reference internal" href="#drive-history"><span class="std std-ref">historial</span></a>.</p></li>
+<li><p><i data-lucide='shredder'></i> <strong>Destruir</strong> un documento lo elimina permanentemente de la base de datos. El documento se borra de todos las unidades donde esté almacenado y no se puede recuperar utilizando el historial de la unidad. <span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> Propietarios de documentos</span></p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
@@ -824,8 +828,8 @@
 </div>
 <p>Para <strong>remover</strong> un documento de CryptDrive.</p>
 <ul class="simple">
-<li><p>Arrastra el documento desde el drive hacia la <em class="fa fa-trash"></em> <strong>Papelera</strong>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span> <span class="pre">derecho</span></code> &gt; <em class="fa fa-trash"></em> <strong>Mover a la papelera</strong></p></li>
+<li><p>Arrastra el documento desde el drive hacia la <i data-lucide='trash2'></i> <strong>Papelera</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span> <span class="pre">derecho</span></code> &gt; <i data-lucide='trash2'></i> <strong>Mover a la papelera</strong></p></li>
 <li><p>Selecciona el documento y presiona la tecla <kbd class="kbd docutils literal notranslate">Del</kbd>.</p></li>
 </ul>
 <p>Para <strong>remover</strong> el documento de CryptDrive sin almacenarlo primero en la papelera:</p>
@@ -834,13 +838,13 @@
 </ul>
 <p>Para vaciar la papelera:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span> <span class="pre">derecho</span></code> en la pestaña <em class="fa fa-trash"></em> <strong>Papelera</strong> a la izquierda del drive &gt; <em class="fa fa-trash-o"></em> <strong>Vaciar la papelera</strong>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span></code> en la pestaña <em class="fa fa-trash"></em> <strong>Papelera</strong> para acceder a la papelera &gt; <em class="fa fa-trash-o"></em> <strong>Vaciar la papelera</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span> <span class="pre">derecho</span></code> en la pestaña <i data-lucide='trash2'></i> <strong>Papelera</strong> a la izquierda del drive &gt; <i data-lucide='trash'></i> <strong>Vaciar la papelera</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span></code> en la pestaña <i data-lucide='trash2'></i> <strong>Papelera</strong> para acceder a la papelera &gt; <i data-lucide='trash'></i> <strong>Vaciar la papelera</strong>.</p></li>
 </ul>
 <p>Si eres un <a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">propietario</span></a> de algunos documentos en la papelera cuando la vacías, se te pedirá que decidas si quieres <strong>removerlos</strong> o <strong>destruirlos</strong>.</p>
 <p>Para <strong>destruir</strong> un documento sin almacenarlo primero en la papelera:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span> <span class="pre">derecho</span></code> en el documento en el drive &gt; <em class="cptools cptools-destroy"></em> <strong>Destruir</strong>. <span class="badge-owner">Propietarios del documento</span></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span> <span class="pre">derecho</span></code> en el documento en el drive &gt; <i data-lucide='shredder'></i> <strong>Destruir</strong>. <span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> Propietarios del documento</span></p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
@@ -852,9 +856,9 @@
 <span id="drive-history"></span><h2>Historial<a class="headerlink" href="#history" title="Enlace permanente a este encabezado">¶</a></h2>
 <p>El historial de la unidad se guarda y se puede restaurar si es necesario. Desde la unidad:</p>
 <ol class="arabic simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span></code> en el <em class="fa fa-history"></em> botón de historial en la esquina superior derecha (debajo del avatar).</p></li>
-<li><p>Utiliza las flechas <em class="fa fa-fast-backward"></em> <em class="fa fa-step-backward"></em> y <em class="fa fa-step-forward"></em> <em class="fa fa-fast-forward"></em> para avanzar a través del historial.</p></li>
-<li><p>Restaura la versión mostrada con <em class="fa fa-check"></em> <strong>Restaurar</strong>, o sal del historial sin restaurar con <em class="fa fa-times"></em> <strong>Cerrar</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span></code> en el <i data-lucide='history'></i> botón de historial en la esquina superior derecha (debajo del avatar).</p></li>
+<li><p>Utiliza las flechas <i data-lucide='arrow-left-to-line'></i> <i data-lucide='arrow-left'></i> y <i data-lucide='arrow-right'></i> <i data-lucide='arrow-right-to-line'></i> para avanzar a través del historial.</p></li>
+<li><p>Restaura la versión mostrada con <i data-lucide='check'></i> <strong>Restaurar</strong>, o sal del historial sin restaurar con <i data-lucide='x'></i> <strong>Cerrar</strong>.</p></li>
 </ol>
 <p>Para ahorrar espacio de almacenamiento, el historial de CryptDrive se puede eliminar en la <a class="reference internal" href="user_account.html#user-settings-cryptdrive"><span class="std std-ref">configuración del usuario</span></a>.</p>
 <div class="admonition note">
@@ -864,44 +868,44 @@
 </section>
 <section id="tags">
 <span id="id3"></span><h2>Etiquetas<a class="headerlink" href="#tags" title="Enlace permanente a este encabezado">¶</a></h2>
-<p><span class="badge-user">Usuarios registrados</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Usuarios registrados</span></p>
 <p>Agrupa documentos en múltiples categorías usando etiquetas. Tus etiquetas no son visibles para otros usuarios.</p>
-<p>La pestaña <em class="fa fa-hashtag"></em> <strong>Etiquetas</strong> en la unidad muestra todas las etiquetas en uso y los documentos asociados a cada una.</p>
+<p>La pestaña <i data-lucide='hash'></i> <strong>Etiquetas</strong> en la unidad muestra todas las etiquetas en uso y los documentos asociados a cada una.</p>
 <img alt="../_images/modal-tags.png" class="screenshot" src="../_images/modal-tags.png" />
 <p>Para agregar o eliminar etiquetas de un documento:</p>
 <ul class="simple">
-<li><p>Desde la unidad: <code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span> <span class="pre">derecho</span></code> en el documento &gt; <em class="fa fa-hashtag"></em> <strong>Etiquetas</strong>.</p></li>
-<li><p>Desde un documento: <em class="fa fa-file-o"></em> <strong>Archivo</strong> &gt; <em class="fa fa-hashtag"></em> <strong>Etiquetas</strong>.</p></li>
+<li><p>Desde la unidad: <code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span> <span class="pre">derecho</span></code> en el documento &gt; <i data-lucide='hash'></i> <strong>Etiquetas</strong>.</p></li>
+<li><p>Desde un documento: <i data-lucide='file'></i> <strong>Archivo</strong> &gt; <i data-lucide='hash'></i> <strong>Etiquetas</strong>.</p></li>
 </ul>
 <p>Para administrar etiquetas para varios documentos:</p>
 <ol class="arabic simple">
 <li><p>Selecciona los documentos con <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd> <kbd class="kbd docutils literal notranslate">`</kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">``Click`</kbd></kbd> en CryptDrive.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span> <span class="pre">derecho</span></code> en los documentos &gt; <em class="fa fa-hashtag"></em> <strong>Etiquetas</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span> <span class="pre">derecho</span></code> en los documentos &gt; <i data-lucide='hash'></i> <strong>Etiquetas</strong>.</p></li>
 </ol>
 <p>Solo se muestran las etiquetas asignadas a todos los documentos seleccionados. Cualquier etiqueta añadida y/o eliminada se aplica a todos los documentos seleccionados.</p>
 </section>
 <section id="templates">
 <span id="id4"></span><h2>Plantillas<a class="headerlink" href="#templates" title="Enlace permanente a este encabezado">¶</a></h2>
-<p><span class="badge-user">Usuarios registrados</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Usuarios registrados</span></p>
 <p>Las plantillas proporcionan puntos de partida reutilizables para crear documentos de estructura similar, por ejemplo, facturas, membretes, informes, etc.</p>
 <p>Para crear una plantilla:</p>
 <ol class="arabic simple">
-<li><p>Selecciona la pestaña <em class="cptools cptools-template"></em> <strong>Plantillas</strong> en la unidad.</p></li>
-<li><p><em class="fa fa-plus"></em> <strong>Nuevo</strong> en la barra de herramientas.</p></li>
+<li><p>Selecciona la pestaña <i data-lucide='file-cog'></i> <strong>Plantillas</strong> en la unidad.</p></li>
+<li><p><i data-lucide='plus'></i> <strong>Nuevo</strong> en la barra de herramientas.</p></li>
 </ol>
 <p>o</p>
 <ol class="arabic simple">
-<li><p>En un documento existente: <em class="fa fa-file-o"></em> <strong>Archivo</strong> &gt; <em class="fa fa-bookmark"></em> <strong>Guardar como plantilla</strong>.</p></li>
+<li><p>En un documento existente: <i data-lucide='file'></i> <strong>Archivo</strong> &gt; <i data-lucide='save'></i> <strong>Guardar como plantilla</strong>.</p></li>
 </ol>
 <p>o</p>
 <ol class="arabic simple">
 <li><p>Crea un <a class="reference internal" href="apps/general.html#new-document"><span class="std std-ref">nuevo documento</span></a>.</p></li>
-<li><p>En la pantalla de creación selecciona <em class="cptools cptools-new-template"></em> <strong>Nueva plantilla</strong>.</p></li>
+<li><p>En la pantalla de creación selecciona <i data-lucide='file-up'></i> <strong>Nueva plantilla</strong>.</p></li>
 </ol>
 <p>Para usar una plantilla:</p>
 <ul class="simple">
 <li><p>Selecciona la plantilla al crear un <a class="reference internal" href="apps/general.html#new-document"><span class="std std-ref">nuevo documento</span></a>.</p></li>
-<li><p>En un documento existente: <em class="fa fa-file-o"></em> <strong>Archivo</strong> &gt; <em class="fa fa-upload"></em> <strong>Importar una plantilla</strong>. Ten en cuenta que esta opción <strong>reemplaza</strong> el contenido del documento con la plantilla.</p></li>
+<li><p>En un documento existente: <i data-lucide='file'></i> <strong>Archivo</strong> &gt; <i data-lucide='upload'></i> <strong>Importar una plantilla</strong>. Ten en cuenta que esta opción <strong>reemplaza</strong> el contenido del documento con la plantilla.</p></li>
 </ul>
 </section>
 <section id="storage-quota">
@@ -928,10 +932,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="collaboration.html" class="btn btn-neutral float-right" title="Colaboración / Social" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="collaboration.html" class="btn btn-neutral float-right" title="Colaboración / Social" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="security.html" class="btn btn-neutral" title="Seguridad" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="security.html" class="btn btn-neutral" title="Seguridad" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -993,7 +997,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

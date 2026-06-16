@@ -42,6 +42,8 @@
 
   
   <script src="../_static/js/modernizr.min.js"></script>
+  
+  <script src="../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">ホワイトボード</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">ツールバー</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">描画</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> 描画モード</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> 選択モード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> 描画モード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> 選択モード</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#export">エクスポート</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -751,10 +755,10 @@
             
   <section id="share-access">
 <span id="share-and-access"></span><h1>共有 / アクセス<a class="headerlink" href="#share-access" title="この見出しへのパーマリンク">¶</a></h1>
-<p><em class="fa fa-share-alt"></em> <strong>共有</strong>と <em class="fa fa-unlock-alt"></em> <strong>アクセス</strong>のメニューから、他のユーザーがCryptPadのあなたのドキュメントを操作する方法を設定できます。</p>
+<p><i data-lucide='share2'></i> <strong>共有</strong>と <i data-lucide='lock-open'></i> <strong>アクセス</strong>のメニューから、他のユーザーがCryptPadのあなたのドキュメントを操作する方法を設定できます。</p>
 <ul class="simple">
-<li><p>ドキュメントのツールバーから：中央にある <em class="fa fa-share-alt"></em> <strong>共有</strong>と <em class="fa fa-unlock-alt"></em> <strong>アクセス</strong>。</p></li>
-<li><p>CryptDriveから：ドキュメントを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <em class="fa fa-share-alt"></em> <strong>共有</strong>または <em class="fa fa-unlock-alt"></em> <strong>アクセス</strong>。</p></li>
+<li><p>ドキュメントのツールバーから：中央にある <i data-lucide='share2'></i> <strong>共有</strong>と <i data-lucide='lock-open'></i> <strong>アクセス</strong>。</p></li>
+<li><p>CryptDriveから：ドキュメントを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <i data-lucide='share2'></i> <strong>共有</strong>または <i data-lucide='lock-open'></i> <strong>アクセス</strong>。</p></li>
 </ul>
 <section id="share">
 <span id="id1"></span><h2>共有<a class="headerlink" href="#share" title="この見出しへのパーマリンク">¶</a></h2>
@@ -766,7 +770,7 @@
 <li><p><strong>閲覧</strong> ：ドキュメントの読み取りのみ。編集は不可。</p></li>
 <li><p><strong>プレゼンテーション</strong>：ドキュメントを描写した出力結果の読み取りのみ。<a class="reference internal" href="apps/code.html#app-code"><span class="std std-ref">コード / マークダウン</span></a>と<a class="reference internal" href="apps/slides.html#app-slides"><span class="std std-ref">スライド</span></a>のアプリケーションで利用可能。</p></li>
 <li><p><strong>編集</strong>：ドキュメントを表示、編集。</p></li>
-<li><p><strong>一度だけ表示した後に自動で削除</strong>：<strong>1回</strong>読み込み専用で共有。リンクを受け取った相手がリンクを開くと、ドキュメントは完全に削除されます。<span class="badge-user">ログイン済ユーザー</span></p></li>
+<li><p><strong>一度だけ表示した後に自動で削除</strong>：<strong>1回</strong>読み込み専用で共有。リンクを受け取った相手がリンクを開くと、ドキュメントは完全に削除されます。<span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
@@ -775,13 +779,13 @@
 </section>
 <section id="sharing-with-contacts">
 <span id="share-contacts"></span><h3>連絡先と共有<a class="headerlink" href="#sharing-with-contacts" title="この見出しへのパーマリンク">¶</a></h3>
-<p><span class="badge-user">ログイン済ユーザー</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p>
 <p>この方法がCryptPadで安全にドキュメントを共有するのに推奨されます。<a class="reference internal" href="collaboration.html#contacts"><span class="std std-ref">連絡先</span></a>と直接ドキュメントを共有すれば、ドキュメントのリンクはCryptPadの外部に伝わることはなく、第三者にデータが流出することもありません。</p>
 <img alt="../_images/modal-share-contacts.png" class="screenshot" src="../_images/modal-share-contacts.png" />
 <p>連絡先とは以下の方法で共有できます。</p>
 <ul class="simple">
-<li><p>ドキュメントのツールバーの <em class="fa fa-share-alt"></em> <strong>共有</strong> &gt; <em class="fa fa-address-book"></em> <strong>連絡先</strong>。</p></li>
-<li><p>CryptDriveのドキュメントを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <em class="fa fa-share-alt"></em> <strong>共有</strong> &gt; <em class="fa fa-address-book"></em> <strong>連絡先</strong>。</p></li>
+<li><p>ドキュメントのツールバーの <i data-lucide='share2'></i> <strong>共有</strong> &gt; <i data-lucide='book-user'></i> <strong>連絡先</strong>。</p></li>
+<li><p>CryptDriveのドキュメントを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <i data-lucide='share2'></i> <strong>共有</strong> &gt; <i data-lucide='book-user'></i> <strong>連絡先</strong>。</p></li>
 </ul>
 <p>その後、</p>
 <ol class="arabic simple">
@@ -800,8 +804,8 @@
 <img alt="../_images/modal-share-link.png" class="screenshot" src="../_images/modal-share-link.png" />
 <p>ドキュメントへのリンクは、以下の方法でコピーできます。</p>
 <ul class="simple">
-<li><p>ドキュメントから：ツールバーの <em class="fa fa-share-alt"></em> <strong>共有</strong> &gt; <em class="fa fa-link"></em> <strong>リンク</strong>。</p></li>
-<li><p>CryptDriveから：ドキュメントを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <em class="fa fa-share-alt"></em> <strong>共有</strong> &gt; <em class="fa fa-link"></em> <strong>リンク</strong>。</p></li>
+<li><p>ドキュメントから：ツールバーの <i data-lucide='share2'></i> <strong>共有</strong> &gt; <i data-lucide='link'></i> <strong>リンク</strong>。</p></li>
+<li><p>CryptDriveから：ドキュメントを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <i data-lucide='share2'></i> <strong>共有</strong> &gt; <i data-lucide='link'></i> <strong>リンク</strong>。</p></li>
 </ul>
 <p>その後、</p>
 <ol class="arabic simple">
@@ -821,8 +825,8 @@
 <img alt="../_images/modal-share-embed.png" class="screenshot" src="../_images/modal-share-embed.png" />
 <p>ドキュメントは以下の方法で埋め込むことができます。</p>
 <ul class="simple">
-<li><p>ドキュメントから：ツールバーの <em class="fa fa-share-alt"></em> <strong>共有</strong> &gt; <em class="fa fa-code"></em> <strong>埋め込む</strong>。</p></li>
-<li><p>CryptDriveから：ドキュメントを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <em class="fa fa-share-alt"></em> <strong>共有</strong> &gt; <em class="fa fa-code"></em> <strong>埋め込む</strong>。</p></li>
+<li><p>ドキュメントから：ツールバーの <i data-lucide='share2'></i> <strong>共有</strong> &gt; <i data-lucide='code-xml'></i> <strong>埋め込む</strong>。</p></li>
+<li><p>CryptDriveから：ドキュメントを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <i data-lucide='share2'></i> <strong>共有</strong> &gt; <i data-lucide='code-xml'></i> <strong>埋め込む</strong>。</p></li>
 </ul>
 <p>その後、</p>
 <ol class="arabic simple">
@@ -833,7 +837,7 @@
 </section>
 <section id="shared-folders">
 <span id="id2"></span><h3>共有フォルダー<a class="headerlink" href="#shared-folders" title="この見出しへのパーマリンク">¶</a></h3>
-<p><span class="badge-user">ログイン済ユーザー</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p>
 <p>複数のドキュメントを一度に共有する際に、共有フォルダーを使用できます。</p>
 <div class="admonition warning">
 <p class="admonition-title">警告</p>
@@ -841,21 +845,21 @@
 </div>
 <p>CryptDriveで共有フォルダーは以下の方法で作成できます。</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">新規</span></code> &gt; <em class="cptools cptools-shared-folder"></em> <strong>共有フォルダー</strong>。</p></li>
-<li><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">e</kbd></kbd> &gt; <em class="cptools cptools-shared-folder"></em> <strong>共有フォルダー</strong>。</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <em class="cptools cptools-shared-folder"></em> <strong>新しい共有フォルダー</strong>。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">+</span> <span class="pre">新規</span></code> &gt; <i data-lucide='cp-folder-shared'></i> <strong>共有フォルダー</strong>。</p></li>
+<li><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">e</kbd></kbd> &gt; <i data-lucide='cp-folder-shared'></i> <strong>共有フォルダー</strong>。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <i data-lucide='cp-folder-shared'></i> <strong>新しい共有フォルダー</strong>。</p></li>
 </ul>
 <p>既存のフォルダーは以下の方法で共有フォルダーに変換できます。</p>
 <ol class="arabic simple">
-<li><p>フォルダーを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <em class="fa fa-share-alt"></em> <strong>共有</strong>。</p></li>
+<li><p>フォルダーを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <i data-lucide='share2'></i> <strong>共有</strong>。</p></li>
 <li><p>変換時のオプションを設定。設定できるオプションは、パスワードと<a class="reference internal" href="#owners"><span class="std std-ref">所有されている</span></a>フォルダーの2つ。</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">OK</span></code> または <kbd class="kbd docutils literal notranslate">Enter</kbd> キーを押す。</p></li>
 </ol>
 <p>フォルダーはドキュメントと同様の方法で共有できます。CryptDriveでフォルダーは以下の方法で共有できます。</p>
 <ol class="arabic simple">
-<li><p>フォルダーを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <em class="fa fa-share-alt"></em> <strong>共有</strong>。</p></li>
+<li><p>フォルダーを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <i data-lucide='share2'></i> <strong>共有</strong>。</p></li>
 <li><p><a class="reference external" href="#access-rights">アクセス権</a>を設定してください。<strong>閲覧</strong>：フォルダーの内容の読み取りのみ。<strong>編集</strong>：フォルダーの閲覧と変更。</p></li>
-<li><p>3つのタブが利用可能です。<em class="fa fa-address-book"></em> <strong>連絡先</strong>：CryptPadの連絡先やチームと安全に共有する方法（推奨）。 <em class="fa fa-link"></em> <strong>リンク</strong>：リンクをコピーして、任意の方法で送信。 <em class="fa fa-code"></em> <strong>埋め込み</strong>：フォルダーをウェブページに含めるためのコードをコピー。</p></li>
+<li><p>3つのタブが利用可能です。<i data-lucide='book-user'></i> <strong>連絡先</strong>：CryptPadの連絡先やチームと安全に共有する方法（推奨）。 <i data-lucide='link'></i> <strong>リンク</strong>：リンクをコピーして、任意の方法で送信。 <i data-lucide='code-xml'></i> <strong>埋め込み</strong>：フォルダーをウェブページに含めるためのコードをコピー。</p></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
@@ -866,11 +870,11 @@
 </section>
 <section id="access">
 <span id="id3"></span><h2>アクセス<a class="headerlink" href="#access" title="この見出しへのパーマリンク">¶</a></h2>
-<p><span class="badge-user">ログイン済ユーザー</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p>
 <p>このメニューでドキュメントまたは共有フォルダーへのアクセスを制限できます。</p>
 <ul class="simple">
-<li><p>ドキュメントから：<em class="fa fa-unlock-alt"></em> <strong>アクセス</strong>。</p></li>
-<li><p>CryptDriveから：ドキュメントまたは共有フォルダーを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <em class="fa fa-unlock-alt"></em> <strong>アクセス</strong>。</p></li>
+<li><p>ドキュメントから：<i data-lucide='lock-open'></i> <strong>アクセス</strong>。</p></li>
+<li><p>CryptDriveから：ドキュメントまたは共有フォルダーを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <i data-lucide='lock-open'></i> <strong>アクセス</strong>。</p></li>
 </ul>
 <section id="access-tab">
 <span id="id4"></span><h3>アクセスのタブ<a class="headerlink" href="#access-tab" title="この見出しへのパーマリンク">¶</a></h3>
@@ -883,25 +887,25 @@
 <li><div class="line-block">
 <div class="line"><strong>編集権限に関する要求</strong>：</div>
 <div class="line"><strong>編集権限を要求</strong>：読み取り専用アクセス権をもつユーザー用。</div>
-<div class="line"><em class="fa fa-bell-slash"></em> <strong>このパッドへのアクセス要求をミュート</strong>：このドキュメントに関する編集権限の要求を表示しないよう設定。 <span class="badge-owner">ドキュメントの所有者</span></div>
+<div class="line"><i data-lucide='bell-off'></i> <strong>このパッドへのアクセス要求をミュート</strong>：このドキュメントに関する編集権限の要求を表示しないよう設定。 <span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> ドキュメントの所有者</span></div>
 </div>
 </li>
 <li><p><strong>アクセスリスト</strong>：<a class="reference external" href="#access-list">アクセスリスト</a>が有効な場合、これを表示。</p></li>
-<li><p><em class="cptools cptools-destroy"></em> <strong>完全に削除</strong>：ドキュメントを完全に破棄。</p></li>
+<li><p><i data-lucide='shredder'></i> <strong>完全に削除</strong>：ドキュメントを完全に破棄。</p></li>
 </ul>
 </section>
 <section id="access-list">
 <span id="id5"></span><h3>アクセスリスト<a class="headerlink" href="#access-list" title="この見出しへのパーマリンク">¶</a></h3>
-<p><span class="badge-owner">ドキュメントの所有者</span></p>
+<p><span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> ドキュメントの所有者</span></p>
 <img alt="../_images/modal-access-list.png" class="screenshot" src="../_images/modal-access-list.png" />
 <p>アクセスリストでは、ドキュメントへのアクセスを制限できます。有効にすると、一覧にないユーザーは、CryptDriveにドキュメントを保存していても、それにアクセスすることはできなくなります。</p>
 <p>アクセスリストを有効にするには、<strong>アクセスリストを有効にする</strong>をチェックしてください。ドキュメントの<a class="reference external" href="#owners">所有者</a>は既定でリストに含まれており、削除することはできません。</p>
 <p>連絡先またはチームは以下の方法で一覧に追加できます。</p>
 <ol class="arabic simple">
 <li><p>右側にある連絡先の一覧から選択。</p></li>
-<li><p><em class="fa fa-arrow-left"></em> ボタンでリストに追加。</p></li>
+<li><p><i data-lucide='arrow-left'></i> ボタンでリストに追加。</p></li>
 </ol>
-<p>リストからユーザーまたはチームを削除するには、名前の隣にある <em class="fa fa-times"></em> ボタンを使用してください。</p>
+<p>リストからユーザーまたはチームを削除するには、名前の隣にある <i data-lucide='x'></i> ボタンを使用してください。</p>
 </section>
 <section id="owners">
 <span id="id6"></span><h3>所有者<a class="headerlink" href="#owners" title="この見出しへのパーマリンク">¶</a></h3>
@@ -918,13 +922,13 @@
 <p class="admonition-title">注釈</p>
 <p>ドキュメントが所有者なしで作成された場合、どのユーザーにもその所有権を管理することはできません。そのドキュメントは誰も完全に削除できませんが、CryptDriveから削除される可能性があり、90日利用しない場合には、完全に削除されます。</p>
 </div>
-<p><span class="badge-owner">ドキュメントの所有者</span></p>
+<p><span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> ドキュメントの所有者</span></p>
 <p>ユーザーまたはチームは以下の方法で所有者に追加できます。</p>
 <ol class="arabic simple">
 <li><p>右側にある連絡先の一覧から選択。</p></li>
-<li><p><em class="fa fa-arrow-left"></em> ボタンでリストに追加。</p></li>
+<li><p><i data-lucide='arrow-left'></i> ボタンでリストに追加。</p></li>
 </ol>
-<p>所有者を削除するには、名前の隣にある <em class="fa fa-times"></em> ボタンを使用してください。</p>
+<p>所有者を削除するには、名前の隣にある <i data-lucide='x'></i> ボタンを使用してください。</p>
 </section>
 </section>
 </section>
@@ -937,10 +941,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="applications.html" class="btn btn-neutral float-right" title="アプリケーション" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="applications.html" class="btn btn-neutral float-right" title="アプリケーション" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="collaboration.html" class="btn btn-neutral" title="共同作業 / ソーシャル" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="collaboration.html" class="btn btn-neutral" title="共同作業 / ソーシャル" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -1003,7 +1007,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

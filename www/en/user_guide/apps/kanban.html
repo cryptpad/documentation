@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Whiteboard</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Toolbar</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Drawing</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Paint mode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Select mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Paint mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Select mode</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Export</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -764,19 +768,19 @@
 </ul>
 <p>Remove a card/column:</p>
 <ul class="simple">
-<li><p>The <em class="fa fa-trash"></em> area appears once you are dragging an element.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Drag</span></code> the card/column to the <em class="fa fa-trash"></em> Delete area at the bottom of the screen and <code class="docutils literal notranslate"><span class="pre">Drop</span></code> the card/column.</p></li>
+<li><p>The <i data-lucide='trash2'></i> area appears once you are dragging an element.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Drag</span></code> the card/column to the <i data-lucide='trash2'></i> Delete area at the bottom of the screen and <code class="docutils literal notranslate"><span class="pre">Drop</span></code> the card/column.</p></li>
 </ul>
 <p>or</p>
 <ul class="simple">
-<li><p><em class="fa fa-pencil"></em> button on the card/column to open the editor &gt; <strong>Delete</strong> and confirm.</p></li>
+<li><p><i data-lucide='pencil'></i> button on the card/column to open the editor &gt; <strong>Delete</strong> and confirm.</p></li>
 </ul>
 </section>
 <section id="columns">
 <h2>Columns<a class="headerlink" href="#columns" title="Permalink to this heading">¶</a></h2>
 <p>Create a new column:</p>
 <ul class="simple">
-<li><p><em class="fa fa-plus"></em> button to the right of the last columns.</p></li>
+<li><p><i data-lucide='plus'></i> button to the right of the last columns.</p></li>
 </ul>
 <p>Change the title of a column:</p>
 <ol class="arabic simple">
@@ -786,7 +790,7 @@
 </ol>
 <p>The column title and color can be changed in the column editor:</p>
 <ol class="arabic simple">
-<li><p><em class="fa fa-pencil"></em> button next to the column title.</p></li>
+<li><p><i data-lucide='pencil'></i> button next to the column title.</p></li>
 <li><p>Change the title and/or pick a color.</p></li>
 <li><p><strong>Close</strong>, <kbd class="kbd docutils literal notranslate">Esc</kbd> or <kbd class="kbd docutils literal notranslate">Enter</kbd></p></li>
 </ol>
@@ -795,8 +799,8 @@
 <h2>Cards<a class="headerlink" href="#cards" title="Permalink to this heading">¶</a></h2>
 <p>Create a new card with the buttons at the bottom of each column:</p>
 <ul class="simple">
-<li><p><em class="cptools cptools-add-bottom"></em> to add a card at the bottom of the column.</p></li>
-<li><p><em class="cptools cptools-add-top"></em> to add a card at the top of the column.</p></li>
+<li><p><i data-lucide='cp-kanban-add-bottom'></i> to add a card at the bottom of the column.</p></li>
+<li><p><i data-lucide='cp-kanban-add-top'></i> to add a card at the top of the column.</p></li>
 </ul>
 <p>Change the title of a card:</p>
 <ol class="arabic simple">
@@ -810,7 +814,7 @@
 <h2>Card editor<a class="headerlink" href="#card-editor" title="Permalink to this heading">¶</a></h2>
 <p>Open the card editor:</p>
 <ul class="simple">
-<li><p><em class="fa fa-pencil"></em> button next to the card title.</p></li>
+<li><p><i data-lucide='pencil'></i> button next to the card title.</p></li>
 </ul>
 <p>In the card editor:</p>
 <ul class="simple">
@@ -818,7 +822,7 @@
 <li><p>Edit the card body using
 <a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown</a>:
 Italics, bold, links, lists, todo-lists, etc. are supported.</p></li>
-<li><p>Insert images with the <em class="fa fa-picture-o"></em> menu in the markdown toolbar (Markdown syntax for remote images is blocked, see <a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">Remote Content</span></a>).</p></li>
+<li><p>Insert images with the <i data-lucide='image-plus'></i> menu in the markdown toolbar (Markdown syntax for remote images is blocked, see <a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">Remote Content</span></a>).</p></li>
 <li><p>Pick a card color.</p></li>
 <li><p>Add or remove tags to the card.</p></li>
 <li><p>Delete the card.</p></li>
@@ -826,28 +830,28 @@ Italics, bold, links, lists, todo-lists, etc. are supported.</p></li>
 </section>
 <section id="display">
 <h2>Display<a class="headerlink" href="#display" title="Permalink to this heading">¶</a></h2>
-<p>Use the <em class="fa fa-minus"></em> and <em class="fa fa-bars"></em> icons at the top right to display:</p>
+<p>Use the <i data-lucide='minus'></i> and <i data-lucide='menu'></i> icons at the top right to display:</p>
 <ul class="simple">
-<li><p><em class="fa fa-minus"></em> only card titles.</p></li>
-<li><p><em class="fa fa-bars"></em> full card contents.</p></li>
+<li><p><i data-lucide='minus'></i> only card titles.</p></li>
+<li><p><i data-lucide='menu'></i> full card contents.</p></li>
 </ul>
 <p>The tags at the top of the board are used to filter cards:</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on one or more tags.</p></li>
 <li><p>Only cards with these tags are displayed.</p></li>
 <li><p>Any new cards will automatically receive the selected tags.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on a selected tag to de-select it, or use <em class="fa fa-times"></em> <strong>Clear
+<li><p><code class="docutils literal notranslate"><span class="pre">Click</span></code> on a selected tag to de-select it, or use <i data-lucide='x'></i> <strong>Clear
 filter</strong> (at the left of the list) to de-select all tags.</p></li>
 </ol>
 </section>
 <section id="import-export">
 <h2>Import/Export<a class="headerlink" href="#import-export" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-upload"></em> <strong>Import</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='upload'></i> <strong>Import</strong></div>
 <div class="line">Supported formats: <code class="docutils literal notranslate"><span class="pre">.json</span></code> files exported by this application.</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Files</strong> &gt; <em class="fa fa-download"></em> <strong>Export</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>Files</strong> &gt; <i data-lucide='download'></i> <strong>Export</strong></div>
 <div class="line">Supported formats: <code class="docutils literal notranslate"><span class="pre">.json</span></code>.</div>
 </div>
 </section>
@@ -861,10 +865,10 @@ filter</strong> (at the left of the list) to de-select all tags.</p></li>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="diagram.html" class="btn btn-neutral float-right" title="Diagram" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="diagram.html" class="btn btn-neutral float-right" title="Diagram" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="form.html" class="btn btn-neutral" title="Form" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="form.html" class="btn btn-neutral" title="Form" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -926,7 +930,10 @@ filter</strong> (at the left of the list) to de-select all tags.</p></li>
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

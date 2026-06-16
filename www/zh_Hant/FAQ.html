@@ -42,6 +42,8 @@
 
   
   <script src="_static/js/modernizr.min.js"></script>
+  
+  <script src="_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="user_guide/apps/whiteboard.html">白板</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/apps/whiteboard.html#toolbar">工具列</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/apps/whiteboard.html#drawing">繪圖</a></li>
-<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> 繪圖模式</a></li>
-<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> 選取模式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> 繪圖模式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="user_guide/apps/whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> 選取模式</a></li>
 <li class="toctree-l4"><a class="reference internal" href="user_guide/apps/whiteboard.html#export">匯出</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -791,10 +795,10 @@
 <p>CryptPad 站台的管理員無法復原或重設使用者密碼。這也確保他們無法存取任何使用者資料（例如文件內容）。</p>
 <p>若您仍登入在已忘記密碼的帳號，可依下列步驟將所有文件轉移到新帳號：</p>
 <ol class="arabic simple">
-<li><p>在仍登入遺失密碼的帳號時，前往：<strong>使用者選單**（右上角頭像）&gt; |gear| **設定</strong> &gt; <em class="fa fa-hdd-o"></em> <strong>CryptDrive</strong></p></li>
+<li><p>在仍登入遺失密碼的帳號時，前往：<strong>使用者選單**（右上角頭像）&gt; |gear| **設定</strong> &gt; <i data-lucide='hard-drive'></i> <strong>CryptDrive</strong></p></li>
 <li><p>點選 <strong>備份</strong> 按鈕下載包含所有文件金鑰的檔案。（注意：此與 <strong>下載我的 CryptDrive</strong> 不同，後者是儲存每份文件的內容）</p></li>
 <li><p>在另一套瀏覽器中，以已知密碼註冊新帳號</p></li>
-<li><p>登入新帳號後：<strong>使用者選單**（右上角頭像）&gt; |gear| **設定</strong> &gt; <em class="fa fa-hdd-o"></em> <strong>CryptDrive</strong>，再點選 <strong>還原</strong> 按鈕</p></li>
+<li><p>登入新帳號後：<strong>使用者選單**（右上角頭像）&gt; |gear| **設定</strong> &gt; <i data-lucide='hard-drive'></i> <strong>CryptDrive</strong>，再點選 <strong>還原</strong> 按鈕</p></li>
 </ol>
 </section>
 <section id="how-to-import-export-to-from-another-platform">
@@ -807,7 +811,7 @@
 <p>可將 <strong>檔案</strong> 上傳至 CryptPad 以安全儲存與分享，但上傳後不會自動變成可編輯的 CryptPad <strong>文件</strong>。若要編輯，您需要：</p>
 <ul class="simple">
 <li><p>在已上傳的檔案上 <strong>按右鍵</strong> &gt; <strong>在編輯器中開啟</strong>，或…</p></li>
-<li><p>建立空白文件，並在對應的 CryptPad 編輯器中使用 <em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-upload"></em> <strong>匯入</strong> 功能（如下所述）</p></li>
+<li><p>建立空白文件，並在對應的 CryptPad 編輯器中使用 <i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='upload'></i> <strong>匯入</strong> 功能（如下所述）</p></li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">警告</p>
@@ -829,9 +833,9 @@
 <li><p>在您現有軟體中將文件匯出為 <code class="docutils literal notranslate"><span class="pre">.docx</span></code> 或 <code class="docutils literal notranslate"><span class="pre">.odt</span></code></p></li>
 <li><p>將檔案儲存到您的電腦</p></li>
 <li><p>開啟新的 <a class="reference internal" href="user_guide/apps/document.html#app-documents"><span class="std std-ref">文件</span></a> 檔案（或既有檔案以取代內容）</p></li>
-<li><p><em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-upload"></em> <strong>匯入</strong>，並選擇您的檔案</p></li>
+<li><p><i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='upload'></i> <strong>匯入</strong>，並選擇您的檔案</p></li>
 </ol>
-<p>若要匯出，請使用 <em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-download"></em> <strong>匯出</strong> 並選擇格式：</p>
+<p>若要匯出，請使用 <i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='download'></i> <strong>匯出</strong> 並選擇格式：</p>
 <ul class="simple">
 <li><p>若要在 Microsoft Word 或 Google 文件中使用，請選 <code class="docutils literal notranslate"><span class="pre">.docx</span></code></p></li>
 <li><p>若要在 LibreOffice Writer 中使用，請選 <code class="docutils literal notranslate"><span class="pre">.odt</span></code></p></li>
@@ -846,9 +850,9 @@
 <li><p>在您現有軟體中將文件匯出為 <code class="docutils literal notranslate"><span class="pre">.pptx</span></code> 或 <code class="docutils literal notranslate"><span class="pre">.odp</span></code></p></li>
 <li><p>將檔案儲存到您的電腦</p></li>
 <li><p>開啟新的 <a class="reference internal" href="user_guide/apps/presentation.html#app-presentation"><span class="std std-ref">簡報</span></a> 文件（或既有文件以取代內容）</p></li>
-<li><p><em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-upload"></em> <strong>匯入</strong>，並選擇您的檔案</p></li>
+<li><p><i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='upload'></i> <strong>匯入</strong>，並選擇您的檔案</p></li>
 </ol>
-<p>若要匯出，請使用 <em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-download"></em> <strong>匯出</strong> 並選擇格式：</p>
+<p>若要匯出，請使用 <i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='download'></i> <strong>匯出</strong> 並選擇格式：</p>
 <ul class="simple">
 <li><p>若要在 Microsoft PowerPoint 或 Google 簡報中使用，請選 <code class="docutils literal notranslate"><span class="pre">.pptx</span></code></p></li>
 <li><p>若要在 LibreOffice Impress 中使用，請選 <code class="docutils literal notranslate"><span class="pre">.odp</span></code></p></li>
@@ -863,9 +867,9 @@
 <li><p>在您現有軟體中將文件匯出為 <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code> 或 <code class="docutils literal notranslate"><span class="pre">.ods</span></code></p></li>
 <li><p>將檔案儲存到您的電腦</p></li>
 <li><p>開啟新的 <a class="reference internal" href="user_guide/apps/sheets.html#app-sheets"><span class="std std-ref">試算表</span></a> 文件（或既有文件以取代內容）</p></li>
-<li><p><em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-upload"></em> <strong>匯入</strong>，並選擇您的檔案</p></li>
+<li><p><i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='upload'></i> <strong>匯入</strong>，並選擇您的檔案</p></li>
 </ol>
-<p>若要匯出，請使用 <em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-download"></em> <strong>匯出</strong> 並選擇格式：</p>
+<p>若要匯出，請使用 <i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='download'></i> <strong>匯出</strong> 並選擇格式：</p>
 <ul class="simple">
 <li><p>若要在 Microsoft Excel 或 Google 試算表中使用，請選 <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code></p></li>
 <li><p>若要在 LibreOffice Calc 中使用，請選 <code class="docutils literal notranslate"><span class="pre">.ods</span></code></p></li>
@@ -880,9 +884,9 @@
 <li><p>在您現有軟體中將文件匯出為 HTML</p></li>
 <li><p>將檔案儲存到您的電腦</p></li>
 <li><p>在 CryptPad 上開啟新的 <a class="reference internal" href="user_guide/apps/richtext.html#app-rich-text"><span class="std std-ref">富文字</span></a> 文件（或既有文件以取代內容）</p></li>
-<li><p><em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-upload"></em> <strong>匯入</strong>，並選擇您的檔案</p></li>
+<li><p><i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='upload'></i> <strong>匯入</strong>，並選擇您的檔案</p></li>
 </ol>
-<p>若要匯出，請使用 <em class="fa fa-file-o"></em> <strong>檔案</strong> &gt; <em class="fa fa-download"></em> <strong>匯出</strong>，並選擇 <code class="docutils literal notranslate"><span class="pre">.doc</span></code> 格式。</p>
+<p>若要匯出，請使用 <i data-lucide='file'></i> <strong>檔案</strong> &gt; <i data-lucide='download'></i> <strong>匯出</strong>，並選擇 <code class="docutils literal notranslate"><span class="pre">.doc</span></code> 格式。</p>
 </section>
 </section>
 <section id="i-cannot-do-x-with-a-document-i-created">
@@ -960,10 +964,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="how_to_contribute.html" class="btn btn-neutral float-right" title="如何參與貢獻" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="how_to_contribute.html" class="btn btn-neutral float-right" title="如何參與貢獻" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="dev_guide/translations.html" class="btn btn-neutral" title="Adding Translations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="dev_guide/translations.html" class="btn btn-neutral" title="Adding Translations" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -1025,7 +1029,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

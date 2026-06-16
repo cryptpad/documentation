@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Рисунки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Инструменты</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Рисование</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Режим рисования</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Режим выбора</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Режим рисования</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Режим выбора</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Экспорт</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -757,17 +761,17 @@
 <img alt="../../_images/app-code-preview.png" class="screenshot" src="../../_images/app-code-preview.png" />
 <section id="toolbar">
 <h2>Инструменты<a class="headerlink" href="#toolbar" title="Permalink to this heading">¶</a></h2>
-<p><em class="fa fa-wrench"></em> <strong>Инструменты</strong>: Показать/скрыть панель инструментов текстового редактора.</p>
-<p><em class="fa fa-picture-o"></em> <strong>Вставить</strong>: добавить изображение в документ. Изображение может быть выбрано на диске или загружено. :badge_user :<cite>Зарегистрированные пользователи</cite></p>
-<p><em class="cptools cptools-palette"></em> <strong>Тема</strong>: Установите цвета для редактора, подробно <a class="reference internal" href="#app-code-theme"><span class="std std-ref">ниже</span></a>.</p>
-<p><em class="fa fa-eye"></em> <strong>Предварительный просмотр</strong>: показать/скрыть панель предварительного просмотра Markdown.</p>
+<p><i data-lucide='wrench'></i> <strong>Инструменты</strong>: Показать/скрыть панель инструментов текстового редактора.</p>
+<p><i data-lucide='image-plus'></i> <strong>Вставить</strong>: добавить изображение в документ. Изображение может быть выбрано на диске или загружено. :badge_user :<cite>Зарегистрированные пользователи</cite></p>
+<p><i data-lucide='palette'></i> <strong>Тема</strong>: Установите цвета для редактора, подробно <a class="reference internal" href="#app-code-theme"><span class="std std-ref">ниже</span></a>.</p>
+<p><i data-lucide='eye'></i> <strong>Предварительный просмотр</strong>: показать/скрыть панель предварительного просмотра Markdown.</p>
 </section>
 <section id="theme">
 <span id="app-code-theme"></span><h2>Тема<a class="headerlink" href="#theme" title="Permalink to this heading">¶</a></h2>
-<p><em class="fa fa-paint-brush"></em> <strong>Цвета по авторам</strong>: Выделите текст, написанный каждым пользователем, соответсвуйющим цветом курсора (выбранным в <a class="reference internal" href="../user_account.html#user-settings-cursor"><span class="std std-ref">настройках поользователя</span></a>). Когда активно:</p>
+<p><i data-lucide='brush-cleaning'></i> <strong>Цвета по авторам</strong>: Выделите текст, написанный каждым пользователем, соответсвуйющим цветом курсора (выбранным в <a class="reference internal" href="../user_account.html#user-settings-cursor"><span class="std std-ref">настройках поользователя</span></a>). Когда активно:</p>
 <ul class="simple">
-<li><p><em class="fa fa-paint-brush"></em> <strong>Скрыть цвета по авторам</strong>, чтобы отключить отображение цветов в этом окне. Цвета можно снова включить и они останутся активными для других пользователей.</p></li>
-<li><p><em class="fa fa-paint-brush"></em> <strong>Цвета по авторам</strong> &gt; <strong>Очистить и отключить</strong>, чтобы отключить цвета для всех пользователей и удалить данные.</p></li>
+<li><p><i data-lucide='brush-cleaning'></i> <strong>Скрыть цвета по авторам</strong>, чтобы отключить отображение цветов в этом окне. Цвета можно снова включить и они останутся активными для других пользователей.</p></li>
+<li><p><i data-lucide='brush-cleaning'></i> <strong>Цвета по авторам</strong> &gt; <strong>Очистить и отключить</strong>, чтобы отключить цвета для всех пользователей и удалить данные.</p></li>
 </ul>
 <p><strong>Тема</strong>: цветовая схема, используемая на панели редактора кода.</p>
 <p><strong>Язык</strong>: используется для подсветки синтаксиса.</p>
@@ -775,11 +779,11 @@
 <section id="import-export">
 <h2>Импорт/Экспорт<a class="headerlink" href="#import-export" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-upload"></em> <strong>Импорт</strong>.</div>
+<div class="line"><i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='upload'></i> <strong>Импорт</strong>.</div>
 <div class="line">Поддерживаемые форматы: любой обычный текстовый файл, расширение файла используется для определения языка.</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-download"></em> <strong>Экспорт</strong>.</div>
+<div class="line"><i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='download'></i> <strong>Экспорт</strong>.</div>
 <div class="line">Поддерживаемые форматы: <code class="docutils literal notranslate"><span class="pre">.md</span></code>, для имени экспортируемого файла можно указать любое другое расширение.</div>
 </div>
 </section>
@@ -787,14 +791,14 @@
 <h2>Markdown<a class="headerlink" href="#markdown" title="Permalink to this heading">¶</a></h2>
 <p>Приложение Код особенно подходит для написания документов в Markdown: упрощенный синтаксис, который предлагает базовое форматирование, оставаясь при этом удобочитаемым. Markdown легко конвертируется в другие форматы, такие как HTML.</p>
 <p>Примеры синтаксиса Markdown в CryptPad см. в разделе:</p>
-<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/kmYt1-pxaMlinUl2+YQSLyZetKE2GJo9QtTlCQ8RNks/"><em class="cptools cptools-code"></em> <strong>Markdown Guide: Basic Syntax</strong></a></p>
+<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/kmYt1-pxaMlinUl2+YQSLyZetKE2GJo9QtTlCQ8RNks/"><i data-lucide='file-code'></i> <strong>Markdown Guide: Basic Syntax</strong></a></p>
 <p>В дополнение к базовому синтаксису Markdown также доступны следующие функции:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">[TOC]</span></code> Вставляет оглавление.</p></li>
 <li><p>Список дел</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[</span> <span class="pre">]</span> <span class="pre">task</span></code> для задачи к выполнению: <em class="fa fa-square-o"></em> задача.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[x]</span> <span class="pre">задача</span></code> для выполненной задачи: <em class="fa fa-check-square"></em> задача.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[</span> <span class="pre">]</span> <span class="pre">task</span></code> для задачи к выполнению: <i data-lucide='square'></i> задача.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">[x]</span> <span class="pre">задача</span></code> для выполненной задачи: <i data-lucide='square-check'></i> задача.</p></li>
 </ul>
 </li>
 </ul>
@@ -811,13 +815,13 @@
 </pre></div>
 </div>
 <p>подробные примеры используемых расширений см. в разделе:</p>
-<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/VJtytDV8tsmlGx0GlR02azrp51A8cl8ivifXf6GQ9RA/"><em class="cptools cptools-code"></em> <strong>Markdown Guide: Extensions</strong></a></p>
+<p><a class="reference external" href="https://cryptpad.fr/code/#/2/code/view/VJtytDV8tsmlGx0GlR02azrp51A8cl8ivifXf6GQ9RA/"><i data-lucide='file-code'></i> <strong>Markdown Guide: Extensions</strong></a></p>
 </section>
 <section id="images">
 <span id="app-code-images"></span><h2>Изображения<a class="headerlink" href="#images" title="Permalink to this heading">¶</a></h2>
 <p>Синтаксис Markdown для включения удаленных изображений, например <code class="docutils literal notranslate"><span class="pre">![description](https://site.com/image.jpg)</span></code>, заблокирован CryptPad по соображениям безопасности.</p>
-<p><span class="badge-user">Зарегистрированные пользователи</span></p>
-<p>Чтобы вставить изображения из CryptDrive или загрузить новые, используйте команду <em class="fa fa-picture-o"></em> <strong>Вставить</strong> меню панели инструментов.</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Зарегистрированные пользователи</span></p>
+<p>Чтобы вставить изображения из CryptDrive или загрузить новые, используйте команду <i data-lucide='image-plus'></i> <strong>Вставить</strong> меню панели инструментов.</p>
 <p>См. <a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">Удаленно Размещенный Контент</span></a> для более подробной информации.</p>
 </section>
 <section id="lightbox">
@@ -826,7 +830,7 @@
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Двойной</span> <span class="pre">щелчок</span></code> на изображении или диаграмме в предварительном просмотре Markdown.</p></li>
 <li><p>Перемещайтесь с помощью клавиш со стрелками.</p></li>
-<li><p>Закройте монтажный стол с помощью <em class="fa fa-times"></em> или <kbd class="kbd docutils literal notranslate">Esc</kbd>.</p></li>
+<li><p>Закройте монтажный стол с помощью <i data-lucide='x'></i> или <kbd class="kbd docutils literal notranslate">Esc</kbd>.</p></li>
 </ol>
 </section>
 </section>
@@ -839,10 +843,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="slides.html" class="btn btn-neutral float-right" title="Слайды" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="slides.html" class="btn btn-neutral float-right" title="Слайды" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="sheets.html" class="btn btn-neutral" title="Таблица" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="sheets.html" class="btn btn-neutral" title="Таблица" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -905,7 +909,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

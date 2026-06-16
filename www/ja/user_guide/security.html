@@ -42,6 +42,8 @@
 
   
   <script src="../_static/js/modernizr.min.js"></script>
+  
+  <script src="../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">ホワイトボード</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">ツールバー</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">描画</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> 描画モード</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> 選択モード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> 描画モード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> 選択モード</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#export">エクスポート</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -779,19 +783,19 @@
 </section>
 <section id="passwords-for-documents-and-folders">
 <span id="passwords"></span><h2>ドキュメントとフォルダーのパスワード<a class="headerlink" href="#passwords-for-documents-and-folders" title="この見出しへのパーマリンク">¶</a></h2>
-<p><span class="badge-user">ログイン済ユーザー</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p>
 <p>安全でない経路（電子メールやSMSなど）でドキュメントや共有フォルダーのリンクを共有すると、第三者がリンクを傍受してデータへのアクセス権を入手する可能性があります。予防策として、ドキュメントまたはフォルダーの<a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">所有者</span></a>はパスワードを追加することができます。</p>
 <p><a class="reference internal" href="share_and_access.html#share-contacts"><span class="std std-ref">CryptPadで直接に連絡先やチームとドキュメントを共有する場合</span></a>、通信は暗号化されており、私たちはあなたが他のユーザーにアクセスを与えようとしていると想定します。そのため、ドキュメントまたはフォルダーを共有する際、パスワードは記憶され、ドキュメントまたはフォルダーと併せて送信されます。受取人、またはあなた自身がドキュメントを開く際に、パスワードは要求<strong>されません</strong>。</p>
 <p>ドキュメントを<a class="reference internal" href="apps/general.html#new-document"><span class="std std-ref">作成</span></a>する際に、ドキュメントにアカウントを追加できます。</p>
 <p><a class="reference internal" href="share_and_access.html#access"><span class="std std-ref">アクセス</span></a>メニューからパスワードを追加または変更することもできます：</p>
 <ul class="simple">
-<li><p>CryptDriveから：<code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <em class="fa fa-unlock-alt"></em> <strong>アクセス</strong>。</p></li>
-<li><p>ドキュメントのツールバー：<em class="fa fa-unlock-alt"></em> <strong>アクセス</strong>。</p></li>
+<li><p>CryptDriveから：<code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <i data-lucide='lock-open'></i> <strong>アクセス</strong>。</p></li>
+<li><p>ドキュメントのツールバー：<i data-lucide='lock-open'></i> <strong>アクセス</strong>。</p></li>
 </ul>
 </section>
 <section id="verifying-contacts">
 <span id="id1"></span><h2>連絡先の認証<a class="headerlink" href="#verifying-contacts" title="この見出しへのパーマリンク">¶</a></h2>
-<p><span class="badge-user">ログイン済ユーザー</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p>
 <p>公開署名鍵を比較することで、連絡先の身元、つまり、相手があなたの想定通りの人物であることを確認できます。</p>
 <ol class="arabic simple">
 <li><p>安全な通信経路で<a class="reference internal" href="user_account.html#user-settings-account"><span class="std std-ref">公開鍵</span></a>を共有してくれるよう、連絡先に依頼してください。</p></li>
@@ -800,7 +804,7 @@
 </section>
 <section id="self-destructing-documents">
 <span id="id2"></span><h2>自己破棄ドキュメント<a class="headerlink" href="#self-destructing-documents" title="この見出しへのパーマリンク">¶</a></h2>
-<p><span class="badge-user">ログイン済ユーザー</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p>
 <p>自己破棄ドキュメントは、ユーザーの指示を必要とせず、自動で完全に削除されます。これによって、機密データへと完全にアクセスできなくなります。</p>
 <p>自己破棄ドキュメントは以下の2つの方法で作成できます。</p>
 <ul class="simple">
@@ -810,22 +814,22 @@
 </section>
 <section id="remote-disconnect">
 <span id="id3"></span><h2>遠隔切断<a class="headerlink" href="#remote-disconnect" title="この見出しへのパーマリンク">¶</a></h2>
-<p><span class="badge-user">ログイン済ユーザー</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p>
 <p>端末を紛失または盗まれた場合、共有コンピューターでログアウトするの忘れた場合など、CryptPadの全てのアクティブなセッションを閉じることが必要になる可能性があります。アクティブな全セッションを閉じるには2つの方法があります。</p>
 <ul class="simple">
-<li><p>ユーザーメニュー（右上のアバター） &gt; <em class="fa fa-gear"></em> <strong>設定</strong> &gt; <em class="fa fa-lock"></em> <strong>機密</strong> &gt; <strong>ログアウト</strong>。</p></li>
+<li><p>ユーザーメニュー（右上のアバター） &gt; <i data-lucide='settings'></i> <strong>設定</strong> &gt; <i data-lucide='lock'></i> <strong>機密</strong> &gt; <strong>ログアウト</strong>。</p></li>
 </ul>
 <p>このオプションは、それを実行したセッションを<strong>除く</strong>全てのセッションをログアウトします。</p>
 <ul class="simple">
-<li><p>ユーザーメニュー（右上のアバター） &gt; <em class="fa fa-plug"></em> <strong>全ての場所でログアウト</strong>。</p></li>
+<li><p>ユーザーメニュー（右上のアバター） &gt; <i data-lucide='unplug'></i> <strong>全ての場所でログアウト</strong>。</p></li>
 </ul>
 <p>このオプションは、これを実行したセッションも<strong>含めて</strong>全てのセッションをログアウトします。</p>
 </section>
 <section id="remote-content">
 <span id="id4"></span><h2>サーバー外のコンテンツ<a class="headerlink" href="#remote-content" title="この見出しへのパーマリンク">¶</a></h2>
 <p>マークダウンのエディターでは（<a class="reference internal" href="apps/code.html#app-code"><span class="std std-ref">コード / マークダウン</span></a>、<a class="reference internal" href="apps/slides.html#app-slides"><span class="std std-ref">スライド</span></a>、<a class="reference internal" href="apps/kanban.html#app-kanban"><span class="std std-ref">カンバン</span></a>）CryptPadはトラッキングを防ぐため、画像やその他、遠隔で保存されているコンテンツの読み込みをブロックします。</p>
-<p><span class="badge-user">ログイン済ユーザー</span></p>
-<p>CryptDriveの画像を含めたり新しい画像をアップロードしたりする場合は <em class="fa fa-picture-o"></em> <strong>挿入</strong>メニューを使ってください。挿入メニューでは <code class="docutils literal notranslate"><span class="pre">media-tag</span></code> の要素が挿入されます。これはマークダウンの画像の記法よりも複雑ですが、自動的に管理されます。</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p>
+<p>CryptDriveの画像を含めたり新しい画像をアップロードしたりする場合は <i data-lucide='image-plus'></i> <strong>挿入</strong>メニューを使ってください。挿入メニューでは <code class="docutils literal notranslate"><span class="pre">media-tag</span></code> の要素が挿入されます。これはマークダウンの画像の記法よりも複雑ですが、自動的に管理されます。</p>
 </section>
 <section id="known-caveats">
 <span id="known-sec-issue"></span><h2>既知の注意事項<a class="headerlink" href="#known-caveats" title="この見出しへのパーマリンク">¶</a></h2>
@@ -857,10 +861,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="drive.html" class="btn btn-neutral float-right" title="CryptDrive" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="drive.html" class="btn btn-neutral float-right" title="CryptDrive" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="support.html" class="btn btn-neutral" title="サポート" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="support.html" class="btn btn-neutral" title="サポート" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -923,7 +927,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

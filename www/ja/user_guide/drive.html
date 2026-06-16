@@ -42,6 +42,8 @@
 
   
   <script src="../_static/js/modernizr.min.js"></script>
+  
+  <script src="../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="apps/whiteboard.html">ホワイトボード</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#toolbar">ツールバー</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#drawing">描画</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> 描画モード</a></li>
-<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> 選択モード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> 描画モード</a></li>
+<li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> 選択モード</a></li>
 <li class="toctree-l4"><a class="reference internal" href="apps/whiteboard.html#export">エクスポート</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -754,11 +758,11 @@
 <p>CryptDriveはドキュメントを保存したり管理したりするために使用されます。ログイン済のユーザーには、CryptPadの既定のランディングページとなります。他のページからアクセスすることもできます。</p>
 <ul class="simple">
 <li><p>左上のロゴを <code class="docutils literal notranslate"><span class="pre">クリック</span></code>。</p></li>
-<li><p>ユーザーメニュー（右上のアバター）&gt; <em class="fa fa-hdd-o"></em> <strong>CryptDrive</strong>。</p></li>
+<li><p>ユーザーメニュー（右上のアバター）&gt; <i data-lucide='hard-drive'></i> <strong>CryptDrive</strong>。</p></li>
 </ul>
 <section id="display">
 <span id="drive-display"></span><h2>表示<a class="headerlink" href="#display" title="この見出しへのパーマリンク">¶</a></h2>
-<p>ドライブのドキュメントは <em class="fa fa-list"></em> リストまたは <em class="fa fa-th-large"></em> グリッドで表示できます。表示を切り替える際は、ドライブのツールバーの右（アバターの下）にあるボタンを使ってください。</p>
+<p>ドライブのドキュメントは <i data-lucide='list'></i> リストまたは <i data-lucide='layout-grid'></i> グリッドで表示できます。表示を切り替える際は、ドライブのツールバーの右（アバターの下）にあるボタンを使ってください。</p>
 <p>グリッドモードでは、ドキュメントのサムネイルを表示するよう設定できます。これは<a class="reference internal" href="user_account.html#user-settings-cryptdrive"><span class="std std-ref">ユーザー設定</span></a>で有効にできます。</p>
 <figure class="align-default" id="id5">
 <img alt="../_images/drive-grid.png" class="screenshot" src="../_images/drive-grid.png" />
@@ -777,21 +781,21 @@
 <h2>ドキュメントの管理<a class="headerlink" href="#managing-documents" title="この見出しへのパーマリンク">¶</a></h2>
 <section id="folders">
 <span id="id1"></span><h3>フォルダー<a class="headerlink" href="#folders" title="この見出しへのパーマリンク">¶</a></h3>
-<p><span class="badge-user">ログイン済ユーザー</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p>
 <p>ドライブでフォルダーを作成するには複数の方法があります。</p>
 <ul class="simple">
-<li><p>ツールバーの <em class="fa fa-plus"></em> <strong>新規</strong> &gt; <em class="fa fa-folder"></em> <strong>フォルダー</strong>。</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <em class="fa fa-folder"></em> <strong>新しいフォルダー</strong>。</p></li>
-<li><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">e</kbd></kbd> &gt; <em class="fa fa-folder"></em> <strong>フォルダー</strong>。</p></li>
+<li><p>ツールバーの <i data-lucide='plus'></i> <strong>新規</strong> &gt; <i data-lucide='folder'></i> <strong>フォルダー</strong>。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <i data-lucide='folder'></i> <strong>新しいフォルダー</strong>。</p></li>
+<li><p><kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">e</kbd></kbd> &gt; <i data-lucide='folder'></i> <strong>フォルダー</strong>。</p></li>
 </ul>
 <p>フォルダーを作成すると、ドライブからドキュメントをドラッグしてフォルダーに追加することができます。フォルダーを別のフォルダーにドラッグアンドドロップすることもできます。また、左にあるサイドバーのツリーで、好きな場所にファイルをドロップできます。</p>
 <p>フォルダーの色を変更するには、</p>
 <ul class="simple">
-<li><p>フォルダーを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <em class="cptools cptools-palette"></em> <strong>色を変更</strong>。</p></li>
+<li><p>フォルダーを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <i data-lucide='palette'></i> <strong>色を変更</strong>。</p></li>
 </ul>
 <p>フォルダーとその全ての内容を共有するには、</p>
 <ul class="simple">
-<li><p>フォルダーを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <em class="fa fa-share-alt"></em> <strong>共有</strong>。フォルダーは<a class="reference internal" href="share_and_access.html#shared-folders"><span class="std std-ref">共有フォルダー</span></a>に変換されます。</p></li>
+<li><p>フォルダーを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <i data-lucide='share2'></i> <strong>共有</strong>。フォルダーは<a class="reference internal" href="share_and_access.html#shared-folders"><span class="std std-ref">共有フォルダー</span></a>に変換されます。</p></li>
 </ul>
 </section>
 <section id="renaming">
@@ -799,24 +803,24 @@
 <p>CryptPadでドキュメントの名前を変更するには2つの方法があります。1つは全てのユーザーに対してドキュメントのタイトルを変更すること、もう1つはあなたのドライブでのみ変更することです。</p>
 <p>ファイルをドライブで所有している全てのユーザーに関してドキュメントのタイトルを変更するには、</p>
 <ol class="arabic simple">
-<li><p>タイトル、または、ドキュメントのツールバーの <em class="fa fa-pencil"></em> ボタンを <code class="docutils literal notranslate"><span class="pre">クリック</span></code> 。</p></li>
+<li><p>タイトル、または、ドキュメントのツールバーの <i data-lucide='pencil'></i> ボタンを <code class="docutils literal notranslate"><span class="pre">クリック</span></code> 。</p></li>
 <li><p>新しいタイトルを入力。</p></li>
-<li><p><em class="fa fa-check"></em> ボタン、または <kbd class="kbd docutils literal notranslate">Enter</kbd> キーで保存。</p></li>
+<li><p><i data-lucide='check'></i> ボタン、または <kbd class="kbd docutils literal notranslate">Enter</kbd> キーで保存。</p></li>
 </ol>
 <p>あなたのドライブでのみドキュメントのタイトルを変更するには、</p>
 <ol class="arabic simple">
-<li><p>あなたのドライブのドキュメントを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <em class="fa fa-pencil"></em> <strong>名前を変更</strong>。</p></li>
+<li><p>あなたのドライブのドキュメントを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <i data-lucide='pencil'></i> <strong>名前を変更</strong>。</p></li>
 <li><p>新しい名前を入力。</p></li>
 <li><p><kbd class="kbd docutils literal notranslate">Enter</kbd> キーで保存。</p></li>
 </ol>
-<p><em class="fa fa-flag"></em> のアイコンは、ドキュメントのタイトルがあなたのドライブと他のユーザーのドライブとの間で異なっていることを示しています。</p>
+<p><i data-lucide='flag'></i> のアイコンは、ドキュメントのタイトルがあなたのドライブと他のユーザーのドライブとの間で異なっていることを示しています。</p>
 </section>
 <section id="deleting">
 <span id="id2"></span><h3>削除<a class="headerlink" href="#deleting" title="この見出しへのパーマリンク">¶</a></h3>
 <p>CryptPadでドキュメントを削除するには2つの方法があります。</p>
 <ul class="simple">
-<li><p><em class="fa fa-trash"></em> ドキュメントを<strong>削除</strong>すると、ドキュメントはドライブには表示されなくなりますが、データベースには残っています。ドキュメントは、それを保存した他のユーザーのドライブには残ります。ドキュメントは<a class="reference internal" href="#drive-history"><span class="std std-ref">履歴</span></a>を使えば復元することができます。</p></li>
-<li><p><em class="cptools cptools-destroy"></em> ドキュメントを<strong>破棄（完全に削除）</strong>すると、ドキュメントはデータベースから完全に削除されます。ドキュメントは、それを保存した全てのドライブから削除され、ドライブの履歴から復元することはできません。<span class="badge-owner">ドキュメントの所有者</span></p></li>
+<li><p><i data-lucide='trash2'></i> ドキュメントを<strong>削除</strong>すると、ドキュメントはドライブには表示されなくなりますが、データベースには残っています。ドキュメントは、それを保存した他のユーザーのドライブには残ります。ドキュメントは<a class="reference internal" href="#drive-history"><span class="std std-ref">履歴</span></a>を使えば復元することができます。</p></li>
+<li><p><i data-lucide='shredder'></i> ドキュメントを<strong>破棄（完全に削除）</strong>すると、ドキュメントはデータベースから完全に削除されます。ドキュメントは、それを保存した全てのドライブから削除され、ドライブの履歴から復元することはできません。<span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> ドキュメントの所有者</span></p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
@@ -824,8 +828,8 @@
 </div>
 <p>ドキュメントをCryptDriveから<strong>削除</strong>するには、</p>
 <ul class="simple">
-<li><p>ドキュメントをドライブから <em class="fa fa-trash"></em> <strong>ごみ箱</strong>にドラッグ。</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <em class="fa fa-trash"></em> <strong>ごみ箱に移動</strong></p></li>
+<li><p>ドキュメントをドライブから <i data-lucide='trash2'></i> <strong>ごみ箱</strong>にドラッグ。</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <i data-lucide='trash2'></i> <strong>ごみ箱に移動</strong></p></li>
 <li><p>ドキュメントを選択し、 <kbd class="kbd docutils literal notranslate">Del</kbd> キーを押す。</p></li>
 </ul>
 <p>ごみ箱に移動せずにドキュメントをCryptDriveから<strong>削除</strong>するには、</p>
@@ -834,13 +838,13 @@
 </ul>
 <p>ごみ箱を空にするには、</p>
 <ul class="simple">
-<li><p>ドライブの左にある <em class="fa fa-trash"></em> <strong>ごみ箱</strong> のタブを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <em class="fa fa-trash-o"></em> <strong>ごみ箱を空にする</strong>。</p></li>
-<li><p><em class="fa fa-trash"></em> <strong>ごみ箱</strong>タブを <code class="docutils literal notranslate"><span class="pre">クリック</span></code> してごみ箱を開く &gt; <em class="fa fa-trash-o"></em> <strong>ごみ箱を空にする</strong>。</p></li>
+<li><p>ドライブの左にある <i data-lucide='trash2'></i> <strong>ごみ箱</strong> のタブを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <i data-lucide='trash'></i> <strong>ごみ箱を空にする</strong>。</p></li>
+<li><p><i data-lucide='trash2'></i> <strong>ごみ箱</strong>タブを <code class="docutils literal notranslate"><span class="pre">クリック</span></code> してごみ箱を開く &gt; <i data-lucide='trash'></i> <strong>ごみ箱を空にする</strong>。</p></li>
 </ul>
 <p>ごみ箱を空にする際、あなたがごみ箱のドキュメントの<a class="reference internal" href="share_and_access.html#owners"><span class="std std-ref">所有者</span></a>である場合、それらのドキュメントを<strong>削除</strong>するか<strong>破棄（完全に削除）</strong>するかを選択するよう求められます。</p>
 <p>ドキュメントをごみ箱に移さずそのまま<strong>完全に削除</strong>するには、</p>
 <ul class="simple">
-<li><p>ドライブのドキュメントを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <em class="cptools cptools-destroy"></em> <strong>完全に削除</strong>。 <span class="badge-owner">ドキュメントの所有者</span></p></li>
+<li><p>ドライブのドキュメントを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <i data-lucide='shredder'></i> <strong>完全に削除</strong>。 <span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> ドキュメントの所有者</span></p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">注釈</p>
@@ -852,9 +856,9 @@
 <span id="drive-history"></span><h2>履歴<a class="headerlink" href="#history" title="この見出しへのパーマリンク">¶</a></h2>
 <p>ドライブの履歴は保存され、必要な際に復元できます。ドライブから復元するには、</p>
 <ol class="arabic simple">
-<li><p>右上（アバターの下）にある <em class="fa fa-history"></em> 履歴ボタンを <code class="docutils literal notranslate"><span class="pre">クリック</span></code>。</p></li>
-<li><p>矢印 <em class="fa fa-fast-backward"></em> <em class="fa fa-step-backward"></em> と <em class="fa fa-step-forward"></em> <em class="fa fa-fast-forward"></em> で履歴を確認できます。</p></li>
-<li><p>表示されているバージョンを <em class="fa fa-check"></em> <strong>復元</strong>で復元するか、 <em class="fa fa-times"></em> <strong>閉じる</strong>で復元せず履歴の確認を終了できます。</p></li>
+<li><p>右上（アバターの下）にある <i data-lucide='history'></i> 履歴ボタンを <code class="docutils literal notranslate"><span class="pre">クリック</span></code>。</p></li>
+<li><p>矢印 <i data-lucide='arrow-left-to-line'></i> <i data-lucide='arrow-left'></i> と <i data-lucide='arrow-right'></i> <i data-lucide='arrow-right-to-line'></i> で履歴を確認できます。</p></li>
+<li><p>表示されているバージョンを <i data-lucide='check'></i> <strong>復元</strong>で復元するか、 <i data-lucide='x'></i> <strong>閉じる</strong>で復元せず履歴の確認を終了できます。</p></li>
 </ol>
 <p>ストレージ容量を節約したい場合は、<a class="reference internal" href="user_account.html#user-settings-cryptdrive"><span class="std std-ref">ユーザー設定</span></a>でCryptDriveの履歴を削除することができます。</p>
 <div class="admonition note">
@@ -864,44 +868,44 @@
 </section>
 <section id="tags">
 <span id="id3"></span><h2>タグ<a class="headerlink" href="#tags" title="この見出しへのパーマリンク">¶</a></h2>
-<p><span class="badge-user">ログイン済ユーザー</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p>
 <p>タグを使えば、ドキュメントを複数のカテゴリーにまとめることができます。設定したタグは他のユーザーには表示されません。</p>
-<p>ドライブの <em class="fa fa-hashtag"></em> <strong>タグ</strong>のタブでは、使用中の全てのタグと、タグ付けされたドキュメントが表示されます。</p>
+<p>ドライブの <i data-lucide='hash'></i> <strong>タグ</strong>のタブでは、使用中の全てのタグと、タグ付けされたドキュメントが表示されます。</p>
 <img alt="../_images/modal-tags.png" class="screenshot" src="../_images/modal-tags.png" />
 <p>ドキュメントでタグを追加・削除するには、</p>
 <ul class="simple">
-<li><p>ドライブからは、ドキュメントを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <em class="fa fa-hashtag"></em> <strong>タグ</strong>。</p></li>
-<li><p>ドキュメントからは、 <em class="fa fa-file-o"></em> <strong>ファイル</strong> &gt; <em class="fa fa-hashtag"></em> <strong>タグ</strong>。</p></li>
+<li><p>ドライブからは、ドキュメントを <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <i data-lucide='hash'></i> <strong>タグ</strong>。</p></li>
+<li><p>ドキュメントからは、 <i data-lucide='file'></i> <strong>ファイル</strong> &gt; <i data-lucide='hash'></i> <strong>タグ</strong>。</p></li>
 </ul>
 <p>複数のドキュメントのタグを管理するには、</p>
 <ol class="arabic simple">
 <li><p>CryptDriveで <kbd class="kbd docutils literal notranslate">Ctrl</kbd> + <code class="docutils literal notranslate"><span class="pre">クリック</span></code> してドキュメントを選択。</p></li>
-<li><p>ドキュメントで <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <em class="fa fa-hashtag"></em> <strong>タグ</strong>。</p></li>
+<li><p>ドキュメントで <code class="docutils literal notranslate"><span class="pre">右クリック</span></code> &gt; <i data-lucide='hash'></i> <strong>タグ</strong>。</p></li>
 </ol>
 <p>その後、全てのドキュメントに付けられているタグだけが表示されます。タグを追加、削除すると、選択した全てのドキュメントに適用されます。</p>
 </section>
 <section id="templates">
 <span id="id4"></span><h2>テンプレート<a class="headerlink" href="#templates" title="この見出しへのパーマリンク">¶</a></h2>
-<p><span class="badge-user">ログイン済ユーザー</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> ログイン済ユーザー</span></p>
 <p>テンプレートは、請求書やレターヘッド、報告書など、基本的な構造を共有している文書を作成する際のひな型として利用することができます。</p>
 <p>テンプレートを作成するには、</p>
 <ol class="arabic simple">
-<li><p>ドライブの <em class="cptools cptools-template"></em> <strong>テンプレート</strong>タブを選択。</p></li>
-<li><p>ツールバーの <em class="fa fa-plus"></em> <strong>新規</strong>。</p></li>
+<li><p>ドライブの <i data-lucide='file-cog'></i> <strong>テンプレート</strong>タブを選択。</p></li>
+<li><p>ツールバーの <i data-lucide='plus'></i> <strong>新規</strong>。</p></li>
 </ol>
 <p>または</p>
 <ol class="arabic simple">
-<li><p>既存のドキュメントで、 <em class="fa fa-file-o"></em> <strong>ファイル</strong> &gt; <em class="fa fa-bookmark"></em> <strong>テンプレートとして保存</strong>。</p></li>
+<li><p>既存のドキュメントで、 <i data-lucide='file'></i> <strong>ファイル</strong> &gt; <i data-lucide='save'></i> <strong>テンプレートとして保存</strong>。</p></li>
 </ol>
 <p>または</p>
 <ol class="arabic simple">
 <li><p><a class="reference internal" href="apps/general.html#new-document"><span class="std std-ref">新しいドキュメント</span></a>を作成。</p></li>
-<li><p>作成画面で <em class="cptools cptools-new-template"></em> <strong>新しいテンプレート</strong>を選択。</p></li>
+<li><p>作成画面で <i data-lucide='file-up'></i> <strong>新しいテンプレート</strong>を選択。</p></li>
 </ol>
 <p>テンプレートを使用するには、</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="apps/general.html#new-document"><span class="std std-ref">新しいドキュメント</span></a>を作成する際にテンプレートを選択。</p></li>
-<li><p>既存のドキュメントで、 <em class="fa fa-file-o"></em> <strong>ファイル</strong> &gt; <em class="fa fa-upload"></em> <strong>テンプレートをインポート</strong>。注意：このオプションはドキュメントの内容をテンプレートで<strong>置き換えます</strong>。</p></li>
+<li><p>既存のドキュメントで、 <i data-lucide='file'></i> <strong>ファイル</strong> &gt; <i data-lucide='upload'></i> <strong>テンプレートをインポート</strong>。注意：このオプションはドキュメントの内容をテンプレートで<strong>置き換えます</strong>。</p></li>
 </ul>
 </section>
 <section id="storage-quota">
@@ -928,10 +932,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="collaboration.html" class="btn btn-neutral float-right" title="共同作業 / ソーシャル" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="collaboration.html" class="btn btn-neutral float-right" title="共同作業 / ソーシャル" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="security.html" class="btn btn-neutral" title="セキュリティー" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="security.html" class="btn btn-neutral" title="セキュリティー" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -994,7 +998,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

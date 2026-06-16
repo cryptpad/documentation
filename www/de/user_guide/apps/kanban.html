@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Whiteboard</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Werkzeugleiste</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Zeichnen</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Zeichenmodus</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Auswahlmodus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Zeichenmodus</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Auswahlmodus</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Export</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -763,19 +767,19 @@
 </ul>
 <p>Entferne eine Karte/Spalte:</p>
 <ul class="simple">
-<li><p>Die Fläche <em class="fa fa-trash"></em> erscheint, während du ein Element verschiebst.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Ziehe</span></code> die Karte/Spalte zur Fläche <em class="fa fa-trash"></em> am unteren Ende des Bildschirms und <code class="docutils literal notranslate"><span class="pre">lege</span> <span class="pre">sie</span> <span class="pre">ab</span></code>.</p></li>
+<li><p>Die Fläche <i data-lucide='trash2'></i> erscheint, während du ein Element verschiebst.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ziehe</span></code> die Karte/Spalte zur Fläche <i data-lucide='trash2'></i> am unteren Ende des Bildschirms und <code class="docutils literal notranslate"><span class="pre">lege</span> <span class="pre">sie</span> <span class="pre">ab</span></code>.</p></li>
 </ul>
 <p>oder</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">Klicke</span></code> auf <em class="fa fa-pencil"></em> auf der Karte/Spalte, um den Editor zu öffnen &gt; <code class="docutils literal notranslate"><span class="pre">Klicke</span></code> auf <strong>Löschen</strong> und bestätige.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Klicke</span></code> auf <i data-lucide='pencil'></i> auf der Karte/Spalte, um den Editor zu öffnen &gt; <code class="docutils literal notranslate"><span class="pre">Klicke</span></code> auf <strong>Löschen</strong> und bestätige.</p></li>
 </ul>
 </section>
 <section id="columns">
 <h2>Spalten<a class="headerlink" href="#columns" title="Permalink to this heading">¶</a></h2>
 <p>Erstellen einer neuen Spalte:</p>
 <ul class="simple">
-<li><p>Schaltfläche <em class="fa fa-plus"></em> rechts der letzten Spalte.</p></li>
+<li><p>Schaltfläche <i data-lucide='plus'></i> rechts der letzten Spalte.</p></li>
 </ul>
 <p>Ändern des Titel einer Spalte:</p>
 <ol class="arabic simple">
@@ -785,7 +789,7 @@
 </ol>
 <p>Der Titel und Farbe einer Spalte kann im Spalteneditor geändert werden:</p>
 <ol class="arabic simple">
-<li><p>Schaltfläche <em class="fa fa-pencil"></em> neben dem Titel der Spalte.</p></li>
+<li><p>Schaltfläche <i data-lucide='pencil'></i> neben dem Titel der Spalte.</p></li>
 <li><p>Ändere den Titel und/oder wähle eine Farbe.</p></li>
 <li><p><strong>Schließen</strong>, <kbd class="kbd docutils literal notranslate">Esc</kbd> oder <kbd class="kbd docutils literal notranslate">Enter</kbd></p></li>
 </ol>
@@ -794,8 +798,8 @@
 <h2>Karten<a class="headerlink" href="#cards" title="Permalink to this heading">¶</a></h2>
 <p>Erstelle neue Karten mit den Schaltflächen am Ende der Spalten:</p>
 <ul class="simple">
-<li><p><em class="cptools cptools-add-bottom"></em> zum Hinzufügen einer Karte am Ende der Spalte.</p></li>
-<li><p><em class="cptools cptools-add-top"></em> zum Hinzufügen einer Karte am Anfang einer Spalte.</p></li>
+<li><p><i data-lucide='cp-kanban-add-bottom'></i> zum Hinzufügen einer Karte am Ende der Spalte.</p></li>
+<li><p><i data-lucide='cp-kanban-add-top'></i> zum Hinzufügen einer Karte am Anfang einer Spalte.</p></li>
 </ul>
 <p>Ändern des Titels einer Karte:</p>
 <ol class="arabic simple">
@@ -809,13 +813,13 @@
 <h2>Karteneditor<a class="headerlink" href="#card-editor" title="Permalink to this heading">¶</a></h2>
 <p>Öffnen des Karteneditors:</p>
 <ul class="simple">
-<li><p>Schaltfläche <em class="fa fa-pencil"></em> neben dem Titel der Karte.</p></li>
+<li><p>Schaltfläche <i data-lucide='pencil'></i> neben dem Titel der Karte.</p></li>
 </ul>
 <p>Im Karteneditor:</p>
 <ul class="simple">
 <li><p>Ändere den Titel der Karte.</p></li>
 <li><p>Formatiere den Inhalt der Karte mit <a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown</a>: Kursivschreibung, Fettschreibung, Links, Listen, To-Do-Listen etc. werden unterstützt.</p></li>
-<li><p>Füge Bilder mit <em class="fa fa-picture-o"></em> in der Markdown-Werkzeugleiste ein (Markdown-Syntax für externe Bilder wird blockiert, siehe <a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">Externer Inhalt</span></a>).</p></li>
+<li><p>Füge Bilder mit <i data-lucide='image-plus'></i> in der Markdown-Werkzeugleiste ein (Markdown-Syntax für externe Bilder wird blockiert, siehe <a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">Externer Inhalt</span></a>).</p></li>
 <li><p>Wähle eine Farbe für die Karte.</p></li>
 <li><p>Füge Tags hinzu oder entferne sie.</p></li>
 <li><p>Lösche die Karte.</p></li>
@@ -823,27 +827,27 @@
 </section>
 <section id="display">
 <h2>Anzeige<a class="headerlink" href="#display" title="Permalink to this heading">¶</a></h2>
-<p>Benutze die Symbole <em class="fa fa-minus"></em> und <em class="fa fa-bars"></em> in der Ecke oben rechts, um die Anzeige zu ändern:</p>
+<p>Benutze die Symbole <i data-lucide='minus'></i> und <i data-lucide='menu'></i> in der Ecke oben rechts, um die Anzeige zu ändern:</p>
 <ul class="simple">
-<li><p><em class="fa fa-minus"></em> zeigt nur den Titel der Karten.</p></li>
-<li><p><em class="fa fa-bars"></em> zeigt den vollständigen Inhalt der Karten an.</p></li>
+<li><p><i data-lucide='minus'></i> zeigt nur den Titel der Karten.</p></li>
+<li><p><i data-lucide='menu'></i> zeigt den vollständigen Inhalt der Karten an.</p></li>
 </ul>
 <p>Die über den Spalten angezeigten Tags werden zum Filtern der Karten verwendet:</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Klicke</span></code> auf ein oder mehrere Tags.</p></li>
 <li><p>Nur Karten mit diesen Tags werden angezeigt.</p></li>
 <li><p>Neue Karten übernehmen automatisch die ausgewählten Tags.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Klicke</span></code> auf einen ausgewählten Tag, um ihn abzuwählen, oder verwende <em class="fa fa-times"></em> <strong>Filter löschen</strong> (links der Liste), um alle Tags abzuwählen.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Klicke</span></code> auf einen ausgewählten Tag, um ihn abzuwählen, oder verwende <i data-lucide='x'></i> <strong>Filter löschen</strong> (links der Liste), um alle Tags abzuwählen.</p></li>
 </ol>
 </section>
 <section id="import-export">
 <h2>Import/Export<a class="headerlink" href="#import-export" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Datei</strong> &gt; <em class="fa fa-upload"></em> <strong>Importieren</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>Datei</strong> &gt; <i data-lucide='upload'></i> <strong>Importieren</strong></div>
 <div class="line">Unterstützte Formate: <code class="docutils literal notranslate"><span class="pre">.json</span></code> wie von dieser Anwendung exportiert.</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Datei</strong> &gt; <em class="fa fa-download"></em> <strong>Exportieren</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>Datei</strong> &gt; <i data-lucide='download'></i> <strong>Exportieren</strong></div>
 <div class="line">Unterstützte Formate: <code class="docutils literal notranslate"><span class="pre">.json</span></code>.</div>
 </div>
 </section>
@@ -857,10 +861,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="diagram.html" class="btn btn-neutral float-right" title="Diagramm" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="diagram.html" class="btn btn-neutral float-right" title="Diagramm" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="form.html" class="btn btn-neutral" title="Formular" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="form.html" class="btn btn-neutral" title="Formular" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -923,7 +927,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

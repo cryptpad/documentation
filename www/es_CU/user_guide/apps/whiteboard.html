@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Whiteboard</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#toolbar">Barra de herramientas</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#drawing">Dibujo</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Modo pintura</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#arrows-select-mode"><em class="fa fa-arrows"></em> Modo seleccionar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Modo pintura</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#arrows-select-mode"><i data-lucide='move'></i> Modo seleccionar</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#export">Exportar</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -757,20 +761,20 @@
 <img alt="../../_images/app-whiteboard-preview.png" class="screenshot" src="../../_images/app-whiteboard-preview.png" />
 <section id="toolbar">
 <h2>Barra de herramientas<a class="headerlink" href="#toolbar" title="Enlace permanente a este encabezado">¶</a></h2>
-<p><em class="fa fa-picture-o"></em> <strong>Insertar</strong>: Añade una imagen al documento. La imagen se puede elegir en CryptDrive o cargar. <span class="badge-user">Usuarios registrados</span></p>
+<p><i data-lucide='image-plus'></i> <strong>Insertar</strong>: Añade una imagen al documento. La imagen se puede elegir en CryptDrive o cargar. <span class="badge-user" data-icon="user"><i data-lucide="user"></i> Usuarios registrados</span></p>
 </section>
 <section id="drawing">
 <h2>Dibujo<a class="headerlink" href="#drawing" title="Enlace permanente a este encabezado">¶</a></h2>
 <p>Hay dos modos disponibles:</p>
 <ul class="simple">
-<li><p><em class="fa fa-paint-brush"></em> Modo pintar: añade nuevas formas al dibujo.</p></li>
-<li><p><em class="fa fa-arrows"></em> Modo de selección: transforma formas existentes.</p></li>
+<li><p><i data-lucide='brush-cleaning'></i> Modo pintar: añade nuevas formas al dibujo.</p></li>
+<li><p><i data-lucide='move'></i> Modo de selección: transforma formas existentes.</p></li>
 </ul>
 <p>Funciones disponibles en ambos modos:</p>
 <ul class="simple">
-<li><p><em class="fa fa-undo"></em> : Deshacer</p></li>
-<li><p><em class="fa fa-repeat"></em> : Rehacer</p></li>
-<li><p><em class="fa fa-font"></em> : Insertar un elemento de texto en el dibujo</p></li>
+<li><p><i data-lucide='undo'></i> : Deshacer</p></li>
+<li><p><i data-lucide='redo'></i> : Rehacer</p></li>
+<li><p><i data-lucide='type'></i> : Insertar un elemento de texto en el dibujo</p></li>
 </ul>
 <p>Para eliminar todo lo que hay en el lienzo:</p>
 <ul class="simple">
@@ -778,12 +782,12 @@
 </ul>
 </section>
 <section id="paint-brush-paint-mode">
-<h2><em class="fa fa-paint-brush"></em> Modo pintura<a class="headerlink" href="#paint-brush-paint-mode" title="Enlace permanente a este encabezado">¶</a></h2>
+<h2><i data-lucide='brush-cleaning'></i> Modo pintura<a class="headerlink" href="#paint-brush-paint-mode" title="Enlace permanente a este encabezado">¶</a></h2>
 <p>El ancho y la opacidad de la línea se establecen en la barra de herramientas de dibujo. La vista previa de la derecha muestra el tamaño y la opacidad del pincel.</p>
 <p>El color se selecciona en la paleta de la barra de herramientas de dibujo. Para cambiar un color, haz doble click en el y selecciona uno nuevo usando el selector de color.</p>
 </section>
 <section id="arrows-select-mode">
-<h2><em class="fa fa-arrows"></em> Modo seleccionar<a class="headerlink" href="#arrows-select-mode" title="Enlace permanente a este encabezado">¶</a></h2>
+<h2><i data-lucide='move'></i> Modo seleccionar<a class="headerlink" href="#arrows-select-mode" title="Enlace permanente a este encabezado">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">Haz</span> <span class="pre">click</span></code> en un elemento para seleccionarlo, luego:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Arrastra</span></code> para mover.</p></li>
@@ -792,17 +796,17 @@
 <p>Para eliminar un elemento seleccionado:</p>
 <ul class="simple">
 <li><p><kbd class="kbd docutils literal notranslate">Del</kbd> tecla.</p></li>
-<li><p><em class="fa fa-trash"></em> Botón en la barra de herramientas de dibujo.</p></li>
+<li><p><i data-lucide='trash2'></i> Botón en la barra de herramientas de dibujo.</p></li>
 </ul>
 </section>
 <section id="export">
 <h2>Exportar<a class="headerlink" href="#export" title="Enlace permanente a este encabezado">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Archivo</strong> &gt; <em class="fa fa-download"></em> <strong>Exportar</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>Archivo</strong> &gt; <i data-lucide='download'></i> <strong>Exportar</strong></div>
 <div class="line">Formato soportado:<code class="docutils literal notranslate"><span class="pre">.png</span></code></div>
 </div>
 <p>Para exportar una imagen a CryptDrive, por ejemplo para usarla en otros documentos:</p>
-<p><em class="fa fa-file-o"></em> <strong>Archivo</strong> &gt;   <em class="fa fa-file-image-o"></em> <strong>Guardar como imagen</strong></p>
+<p><i data-lucide='file'></i> <strong>Archivo</strong> &gt;   <i data-lucide='file-image'></i> <strong>Guardar como imagen</strong></p>
 </section>
 </section>
 
@@ -814,10 +818,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../keyboard_shortcuts.html" class="btn btn-neutral float-right" title="Keyboard Shortcuts" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="../keyboard_shortcuts.html" class="btn btn-neutral float-right" title="Keyboard Shortcuts" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="diagram.html" class="btn btn-neutral" title="Diagrama" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="diagram.html" class="btn btn-neutral" title="Diagrama" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -879,7 +883,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

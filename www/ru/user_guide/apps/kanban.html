@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Рисунки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Инструменты</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Рисование</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Режим рисования</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Режим выбора</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Режим рисования</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Режим выбора</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Экспорт</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -763,19 +767,19 @@
 </ul>
 <p>Удалить карточку/столбец:</p>
 <ul class="simple">
-<li><p>При перетаскивании элемента появляется область <em class="fa fa-trash"></em>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Перетащите</span></code> карточку/столбец в область <em class="fa fa-trash"></em> внизу экрана.</p></li>
+<li><p>При перетаскивании элемента появляется область <i data-lucide='trash2'></i>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Перетащите</span></code> карточку/столбец в область <i data-lucide='trash2'></i> внизу экрана.</p></li>
 </ul>
 <p>либо</p>
 <ul class="simple">
-<li><p>нажать на значок <em class="fa fa-pencil"></em> на карточке/столбце, чтобы открыть редактор, затем нажать <strong>Удалить</strong> и подтвердить.</p></li>
+<li><p>нажать на значок <i data-lucide='pencil'></i> на карточке/столбце, чтобы открыть редактор, затем нажать <strong>Удалить</strong> и подтвердить.</p></li>
 </ul>
 </section>
 <section id="columns">
 <h2>Столбцы<a class="headerlink" href="#columns" title="Permalink to this heading">¶</a></h2>
 <p>Создание нового столбца:</p>
 <ul class="simple">
-<li><p>кнопка <em class="fa fa-plus"></em> справа от последних столбцов.</p></li>
+<li><p>кнопка <i data-lucide='plus'></i> справа от последних столбцов.</p></li>
 </ul>
 <p>Изменение заголовка столбца:</p>
 <ol class="arabic simple">
@@ -785,7 +789,7 @@
 </ol>
 <p>Заголовок и цвет столбца можно изменить в редакторе столбцов:</p>
 <ol class="arabic simple">
-<li><p>кнопка <em class="fa fa-pencil"></em> рядом с заголовком столбца.</p></li>
+<li><p>кнопка <i data-lucide='pencil'></i> рядом с заголовком столбца.</p></li>
 <li><p>Измените заголовок и/или выберите цвет.</p></li>
 <li><p><strong>Закрыть</strong>, <kbd class="kbd docutils literal notranslate">Esc</kbd> или <kbd class="kbd docutils literal notranslate">Enter</kbd></p></li>
 </ol>
@@ -794,8 +798,8 @@
 <h2>Карточки<a class="headerlink" href="#cards" title="Permalink to this heading">¶</a></h2>
 <p>Создайте новую карточку с помощью кнопок в нижней части каждого столбца:</p>
 <ul class="simple">
-<li><p><em class="cptools cptools-add-bottom"></em> для добавления карточки в нижней части столбца.</p></li>
-<li><p><em class="cptools cptools-add-top"></em> для добавления карточки в верхнюю часть столбца.</p></li>
+<li><p><i data-lucide='cp-kanban-add-bottom'></i> для добавления карточки в нижней части столбца.</p></li>
+<li><p><i data-lucide='cp-kanban-add-top'></i> для добавления карточки в верхнюю часть столбца.</p></li>
 </ul>
 <p>Изменение названия карточки:</p>
 <ol class="arabic simple">
@@ -809,13 +813,13 @@
 <h2>Редактор карточки<a class="headerlink" href="#card-editor" title="Permalink to this heading">¶</a></h2>
 <p>Откройте редактор карточки:</p>
 <ul class="simple">
-<li><p>кнопка <em class="fa fa-pencil"></em> рядом с названием карточки.</p></li>
+<li><p>кнопка <i data-lucide='pencil'></i> рядом с названием карточки.</p></li>
 </ul>
 <p>В редакторе карточки:</p>
 <ul class="simple">
 <li><p>Отредактируйте название карточки.</p></li>
 <li><p>Отредактируйте тело карточки, используя <a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown</a>: поддерживаются курсив, полужирный шрифт, ссылки, списки, списки дел и т. д.</p></li>
-<li><p>Вставьте изображения с помощью <em class="fa fa-picture-o"></em> на панели инструментов Markdown (синтаксис Markdown для удаленных изображений (remote images) заблокирован, см. <a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">Удаленно Размещенный Контент</span></a>).</p></li>
+<li><p>Вставьте изображения с помощью <i data-lucide='image-plus'></i> на панели инструментов Markdown (синтаксис Markdown для удаленных изображений (remote images) заблокирован, см. <a class="reference internal" href="../security.html#remote-content"><span class="std std-ref">Удаленно Размещенный Контент</span></a>).</p></li>
 <li><p>Выберите цвет карточки.</p></li>
 <li><p>Добавляйте или удаляйте теги на карточке.</p></li>
 <li><p>Удалить карточку.</p></li>
@@ -823,27 +827,27 @@
 </section>
 <section id="display">
 <h2>Отображение<a class="headerlink" href="#display" title="Permalink to this heading">¶</a></h2>
-<p>Используйте значки <em class="fa fa-minus"></em> и <em class="fa fa-bars"></em> в правом верхнем углу для отображения:</p>
+<p>Используйте значки <i data-lucide='minus'></i> и <i data-lucide='menu'></i> в правом верхнем углу для отображения:</p>
 <ul class="simple">
-<li><p><em class="fa fa-minus"></em> только названия карточек.</p></li>
-<li><p><em class="fa fa-bars"></em> полное содержимое карточек.</p></li>
+<li><p><i data-lucide='minus'></i> только названия карточек.</p></li>
+<li><p><i data-lucide='menu'></i> полное содержимое карточек.</p></li>
 </ul>
 <p>Метки в верхней части доски используются для фильтрации карточек:</p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Нажмите</span></code> на одну или несколько меток.</p></li>
 <li><p>Отображаются только карточки с этими метками.</p></li>
 <li><p>Любые новые карточки будут автоматически получать выбранные метки.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span></code> по выбранной метке, чтобы снять с неё выделение, или используйте значок <em class="fa fa-times"></em> <strong>Очистить фильтр</strong> (слева от списка), чтобы отменить выбор всех меток.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Щелкните</span></code> по выбранной метке, чтобы снять с неё выделение, или используйте значок <i data-lucide='x'></i> <strong>Очистить фильтр</strong> (слева от списка), чтобы отменить выбор всех меток.</p></li>
 </ol>
 </section>
 <section id="import-export">
 <h2>Импорт/Экспорт<a class="headerlink" href="#import-export" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-upload"></em> <strong>Импорт</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='upload'></i> <strong>Импорт</strong></div>
 <div class="line">Поддерживаемые форматы: файлы <code class="docutils literal notranslate"><span class="pre">.json</span></code>, экспортируемые этим приложением.</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Файлы</strong> &gt; <em class="fa fa-download"></em> <strong>Экспорт</strong></div>
+<div class="line"><i data-lucide='file'></i> <strong>Файлы</strong> &gt; <i data-lucide='download'></i> <strong>Экспорт</strong></div>
 <div class="line">Поддерживаемые форматы: <code class="docutils literal notranslate"><span class="pre">.json</span></code>.</div>
 </div>
 </section>
@@ -857,10 +861,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="diagram.html" class="btn btn-neutral float-right" title="Диаграмма" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="diagram.html" class="btn btn-neutral float-right" title="Диаграмма" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="form.html" class="btn btn-neutral" title="Формы" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="form.html" class="btn btn-neutral" title="Формы" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -923,7 +927,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

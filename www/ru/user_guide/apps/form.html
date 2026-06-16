@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Рисунки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Инструменты</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Рисование</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Режим рисования</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Режим выбора</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Режим рисования</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Режим выбора</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Экспорт</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -762,7 +766,7 @@
 <li><p><strong>Аудитор</strong>: может просматривать ответы на форму независимо от того, являются ли они общедоступными.</p></li>
 <li><p><strong>Участник</strong>: может отвечать на форму и просматривать ответы только после их публикации автором.</p></li>
 </ul>
-<p>Чтобы поделиться формой с определенной ролью, например, чтобы отправить её участникам, выберите роль в <em class="fa fa-share-alt"></em> <strong>Поделиться</strong> перед выбором контактов или копированием ссылки.</p>
+<p>Чтобы поделиться формой с определенной ролью, например, чтобы отправить её участникам, выберите роль в <i data-lucide='share2'></i> <strong>Поделиться</strong> перед выбором контактов или копированием ссылки.</p>
 <img alt="меню общего доступа в форме приложения, показывающее три роли: участник, аудитор и автор." class="screenshot" src="../../_images/app-form-share.png" />
 <div class="admonition note">
 <p class="admonition-title">Примечание</p>
@@ -771,27 +775,27 @@
 </section>
 <section id="editing-a-form">
 <h2>Редактирование формы<a class="headerlink" href="#editing-a-form" title="Permalink to this heading">¶</a></h2>
-<p>Чтобы добавить вопрос, используйте меню <em class="fa fa-plus"></em> <strong>Добавить</strong> после последнего вопроса или <em class="fa fa-plus"></em> между каждыми двумя вопросами.</p>
-<p>Чтобы удалить вопрос, используйте кнопку <em class="fa fa-trash-o"></em> <strong>Удалить</strong> на вопросе, который нужно удалить.</p>
+<p>Чтобы добавить вопрос, используйте меню <i data-lucide='plus'></i> <strong>Добавить</strong> после последнего вопроса или <i data-lucide='plus'></i> между каждыми двумя вопросами.</p>
+<p>Чтобы удалить вопрос, используйте кнопку <i data-lucide='trash'></i> <strong>Удалить</strong> на вопросе, который нужно удалить.</p>
 <section id="utilities">
 <h3>Элементы<a class="headerlink" href="#utilities" title="Permalink to this heading">¶</a></h3>
 <section id="cptools-form-paragraph-description">
-<h4><em class="cptools cptools-form-paragraph"></em> Описание<a class="headerlink" href="#cptools-form-paragraph-description" title="Permalink to this heading">¶</a></h4>
+<h4><i data-lucide='text'></i> Описание<a class="headerlink" href="#cptools-form-paragraph-description" title="Permalink to this heading">¶</a></h4>
 <p>Добавьте текст в форму, используя синтаксис Markdown.</p>
-<p><span class="badge-user">Зарегистрированные пользователи</span></p>
-<p>Чтобы добавить изображение из CryptDrive или загрузить новое, используйте значок <em class="fa fa-picture-o"></em> на панели инструментов.</p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Зарегистрированные пользователи</span></p>
+<p>Чтобы добавить изображение из CryptDrive или загрузить новое, используйте значок <i data-lucide='image-plus'></i> на панели инструментов.</p>
 </section>
 <section id="cptools-form-page-break-page-break">
-<h4><em class="cptools cptools-form-page-break"></em> Разрыв страницы<a class="headerlink" href="#cptools-form-page-break-page-break" title="Permalink to this heading">¶</a></h4>
+<h4><i data-lucide='cp-form-page-break'></i> Разрыв страницы<a class="headerlink" href="#cptools-form-page-break-page-break" title="Permalink to this heading">¶</a></h4>
 <p>Разделите форму на страницы. Отображается только для участников.</p>
 </section>
 <section id="cptools-form-conditional-conditional-section">
-<h4><em class="cptools cptools-form-conditional"></em> Вариативная часть<a class="headerlink" href="#cptools-form-conditional-conditional-section" title="Permalink to this heading">¶</a></h4>
-<p><em class="cptools cptools-form-list-radio"></em> <strong>Выбор</strong> and <em class="cptools cptools-form-list-check"></em> <strong>Флажок</strong> можно использовать для отображения или скрытия дополнительного раздела с вопросами.</p>
+<h4><i data-lucide='cp-form-conditional'></i> Вариативная часть<a class="headerlink" href="#cptools-form-conditional-conditional-section" title="Permalink to this heading">¶</a></h4>
+<p><i data-lucide='list'></i> <strong>Выбор</strong> and <i data-lucide='list-checks'></i> <strong>Флажок</strong> можно использовать для отображения или скрытия дополнительного раздела с вопросами.</p>
 <ol class="arabic simple">
-<li><p>В редакторе форм чтобы добавить <em class="cptools cptools-form-conditional"></em> <strong>Вариативную часть</strong> - используйте кнопки <em class="fa fa-plus"></em> <strong>Добавить</strong> между вопросами или список в нижней части формы.</p></li>
+<li><p>В редакторе форм чтобы добавить <i data-lucide='cp-form-conditional'></i> <strong>Вариативную часть</strong> - используйте кнопки <i data-lucide='plus'></i> <strong>Добавить</strong> между вопросами или список в нижней части формы.</p></li>
 <li><p>Убедитесь, что перед разделом стоит хотя бы один <a class="reference internal" href="#form-q-choice"><span class="std std-ref"> Выбор</span></a> или <a class="reference internal" href="#form-q-checkbox"><span class="std std-ref"> Флажок</span></a> (в противном случае появится подсказка). Только вопросы, размещенные <em>перед</em> разделом, будут доступны для использования в условиях.</p></li>
-<li><p>Добавьте содержимое (текст описания, вопросы) в раздел, используя <em class="fa fa-plus"></em> <strong>Добавить</strong> или перетащив вопросы в область раздела.</p></li>
+<li><p>Добавьте содержимое (текст описания, вопросы) в раздел, используя <i data-lucide='plus'></i> <strong>Добавить</strong> или перетащив вопросы в область раздела.</p></li>
 <li><p>Установите некоторые условия, используя меню выбора. Все условия И должны быть истинными вместе, только одно из условий ИЛИ должно быть истинным.</p></li>
 <li><p>В отображении для участника опроса раздел будет отображаться только в том случае, если условия верны.</p></li>
 </ol>
@@ -800,7 +804,7 @@
 <section id="question-types">
 <h3>Типы вопросов<a class="headerlink" href="#question-types" title="Permalink to this heading">¶</a></h3>
 <section id="cptools-form-text-text">
-<h4><em class="cptools cptools-form-text"></em> Текст<a class="headerlink" href="#cptools-form-text-text" title="Permalink to this heading">¶</a></h4>
+<h4><i data-lucide='minus'></i> Текст<a class="headerlink" href="#cptools-form-text-text" title="Permalink to this heading">¶</a></h4>
 <p><strong>Ответ</strong>: одна строка текста</p>
 <p><strong>Варианты</strong>:</p>
 <ul class="simple">
@@ -812,7 +816,7 @@
 </div>
 </section>
 <section id="cptools-form-paragraph-paragraph">
-<h4><em class="cptools cptools-form-paragraph"></em> Абзац<a class="headerlink" href="#cptools-form-paragraph-paragraph" title="Permalink to this heading">¶</a></h4>
+<h4><i data-lucide='text'></i> Абзац<a class="headerlink" href="#cptools-form-paragraph-paragraph" title="Permalink to this heading">¶</a></h4>
 <p><strong>Ответ</strong>: несколько строк текста</p>
 <p><strong>Варианты</strong>:</p>
 <ul class="simple">
@@ -820,74 +824,74 @@
 </ul>
 </section>
 <section id="cptools-form-list-radio-choice">
-<span id="form-q-choice"></span><h4><em class="cptools cptools-form-list-radio"></em> Выбор<a class="headerlink" href="#cptools-form-list-radio-choice" title="Permalink to this heading">¶</a></h4>
+<span id="form-q-choice"></span><h4><i data-lucide='list'></i> Выбор<a class="headerlink" href="#cptools-form-list-radio-choice" title="Permalink to this heading">¶</a></h4>
 <p><strong>Ответ</strong>: один вариант из списка</p>
 <p><strong>Варианты</strong>:</p>
 <ul class="simple">
-<li><p>кнопка <em class="fa fa-plus"></em> <strong>Добавить вариант</strong></p></li>
-<li><p>Возьмите рукоятку <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> и перетащите её, чтобы изменить порядок вариантов</p></li>
-<li><p>Удалить вариант с помощью <em class="fa fa-times"></em></p></li>
+<li><p>кнопка <i data-lucide='plus'></i> <strong>Добавить вариант</strong></p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order options</p></li>
+<li><p>Удалить вариант с помощью <i data-lucide='x'></i></p></li>
 </ul>
 </section>
 <section id="cptools-form-grid-radio-choice-grid">
-<h4><em class="cptools cptools-form-grid-radio"></em> Таблица вариантов<a class="headerlink" href="#cptools-form-grid-radio-choice-grid" title="Permalink to this heading">¶</a></h4>
+<h4><i data-lucide='cp-form-grid-radio'></i> Таблица вариантов<a class="headerlink" href="#cptools-form-grid-radio-choice-grid" title="Permalink to this heading">¶</a></h4>
 <p><strong>Ответ</strong>: один вариант выбора для каждого элемента</p>
 <p><strong>Варианты</strong>:</p>
 <ul class="simple">
-<li><p>кнопки <em class="fa fa-plus"></em> <strong>Добавить вариант</strong> и <em class="fa fa-plus"></em> <strong>Добавить элемент</strong></p></li>
-<li><p>Возьмите рукоятку <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> и перетащите, чтобы изменить порядок элементов и вариантов</p></li>
-<li><p>Удалить элемент или вариант с помощью <em class="fa fa-times"></em></p></li>
+<li><p>кнопки <i data-lucide='plus'></i> <strong>Добавить вариант</strong> и <i data-lucide='plus'></i> <strong>Добавить элемент</strong></p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order items and options</p></li>
+<li><p>Удалить элемент или вариант с помощью <i data-lucide='x'></i></p></li>
 </ul>
 </section>
 <section id="calendar-date">
-<h4><em class="fa fa-calendar"></em> Дата<a class="headerlink" href="#calendar-date" title="Permalink to this heading">¶</a></h4>
+<h4><i data-lucide='calendar-days'></i> Дата<a class="headerlink" href="#calendar-date" title="Permalink to this heading">¶</a></h4>
 <p><strong>Ответ</strong>: выберите дату и время</p>
 </section>
 <section id="cptools-form-list-check-checkbox">
-<span id="form-q-checkbox"></span><h4><em class="cptools cptools-form-list-check"></em> Флажок<a class="headerlink" href="#cptools-form-list-check-checkbox" title="Permalink to this heading">¶</a></h4>
+<span id="form-q-checkbox"></span><h4><i data-lucide='list-checks'></i> Флажок<a class="headerlink" href="#cptools-form-list-check-checkbox" title="Permalink to this heading">¶</a></h4>
 <p><strong>Ответ</strong>: несколько вариантов из списка</p>
 <p><strong>Варианты</strong>:</p>
 <ul class="simple">
 <li><p>Максимальное количество выбираемых вариантов</p></li>
-<li><p>кнопка <em class="fa fa-plus"></em> <strong>Добавить вариант</strong></p></li>
-<li><p>Возьмите рукоятку <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> и перетащите её, чтобы изменить порядок вариантов</p></li>
-<li><p>Удалить вариант с помощью <em class="fa fa-times"></em></p></li>
+<li><p>кнопка <i data-lucide='plus'></i> <strong>Добавить вариант</strong></p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order options</p></li>
+<li><p>Удалить вариант с помощью <i data-lucide='x'></i></p></li>
 </ul>
 </section>
 <section id="cptools-form-grid-check-checkbox-grid">
-<h4><em class="cptools cptools-form-grid-check"></em> Таблица флажков<a class="headerlink" href="#cptools-form-grid-check-checkbox-grid" title="Permalink to this heading">¶</a></h4>
+<h4><i data-lucide='cp-form-grid-check'></i> Таблица флажков<a class="headerlink" href="#cptools-form-grid-check-checkbox-grid" title="Permalink to this heading">¶</a></h4>
 <p><strong>Ответ</strong>: несколько вариантов для каждого элемента</p>
 <p><strong>Варианты</strong>:</p>
 <ul class="simple">
 <li><p>Максимальное количество выбираемых вариантов (для каждого элемента)</p></li>
-<li><p>кнопки <em class="fa fa-plus"></em> <strong>Добавить вариант</strong> и <em class="fa fa-plus"></em> <strong>Добавить элемент</strong></p></li>
-<li><p>Возьмите рукоятку <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> и перетащите, чтобы изменить порядок элементов и вариантов</p></li>
-<li><p>Удалить элемент или вариант с помощью <em class="fa fa-times"></em></p></li>
+<li><p>кнопки <i data-lucide='plus'></i> <strong>Добавить вариант</strong> и <i data-lucide='plus'></i> <strong>Добавить элемент</strong></p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order items and options</p></li>
+<li><p>Удалить элемент или вариант с помощью <i data-lucide='x'></i></p></li>
 </ul>
 </section>
 <section id="cptools-form-list-ordered-ordered-list">
-<h4><em class="cptools cptools-form-list-ordered"></em> Нумерованный список<a class="headerlink" href="#cptools-form-list-ordered-ordered-list" title="Permalink to this heading">¶</a></h4>
+<h4><i data-lucide='list-ordered'></i> Нумерованный список<a class="headerlink" href="#cptools-form-list-ordered-ordered-list" title="Permalink to this heading">¶</a></h4>
 <p><strong>Ответ</strong>: отсортировать перечисленные варианты по своему вкусу</p>
 <p><strong>Варианты</strong>:</p>
 <ul class="simple">
-<li><p>кнопка <em class="fa fa-plus"></em> <strong>Добавить вариант</strong></p></li>
-<li><p>Возьмите рукоятку <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> и перетащите её, чтобы изменить порядок вариантов</p></li>
-<li><p>Удалить вариант с помощью <em class="fa fa-times"></em></p></li>
+<li><p>кнопка <i data-lucide='plus'></i> <strong>Добавить вариант</strong></p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order options</p></li>
+<li><p>Удалить вариант с помощью <i data-lucide='x'></i></p></li>
 </ul>
 <p><strong>Кондорсе</strong>:</p>
 <p>Начиная с версии 5.3, ответы могут отображать результаты с помощью <a class="reference external" href="https://en.wikipedia.org/wiki/Condorcet_method">метода Кондорсе</a>. Вы можете выбрать Schulze или Ranked Pairs, чтобы отобразить победителя. В деталях также будет указано количество матчей, выигранных каждым кандидатом.</p>
 </section>
 <section id="cptools-form-poll-poll">
-<h4><em class="cptools cptools-form-poll"></em> Опрос<a class="headerlink" href="#cptools-form-poll-poll" title="Permalink to this heading">¶</a></h4>
-<p><strong>Ответ</strong>: <em class="fa fa-check"></em> Да, <em class="fa fa-times"></em> Нет, или <em class="cptools cptools-form-poll-maybe"></em> Возможно - для каждого из предложенных вариантов</p>
+<h4><i data-lucide='cp-form-poll'></i> Опрос<a class="headerlink" href="#cptools-form-poll-poll" title="Permalink to this heading">¶</a></h4>
+<p><strong>Ответ</strong>: <i data-lucide='check'></i> Да, <i data-lucide='x'></i> Нет, или <i data-lucide='cp-form-poll-maybe'></i> Возможно - для каждого из предложенных вариантов</p>
 <p><strong>Варианты типов</strong>:</p>
 <ul>
 <li><p>Текст</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>кнопка <em class="fa fa-plus"></em> <strong>Добавить вариант</strong></p></li>
-<li><p>Возьмите рукоятку <em class="fa fa-ellipsis-v"></em> <em class="fa fa-ellipsis-v"></em> и перетащите её, чтобы изменить порядок вариантов</p></li>
-<li><p>Удалить вариант с помощью <em class="fa fa-times"></em></p></li>
+<li><p>кнопка <i data-lucide='plus'></i> <strong>Добавить вариант</strong></p></li>
+<li><p>Grab the <i data-lucide='grip-horizontal'></i> handle and drag to re-order options</p></li>
+<li><p>Удалить вариант с помощью <i data-lucide='x'></i></p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -902,7 +906,7 @@
 <blockquote>
 <div><ul class="simple">
 <li><p>Нажмите на вариант, чтобы выбрать дату и время в календаре</p></li>
-<li><p>Нажмите «Добавить несколько дат и времени», чтобы выбрать несколько вариантов и используйте <em class="fa fa-plus"></em> <strong>Добавить все</strong>, чтобы добавить сразу все выбранные варианты.</p></li>
+<li><p>Нажмите «Добавить несколько дат и времени», чтобы выбрать несколько вариантов и используйте <i data-lucide='plus'></i> <strong>Добавить все</strong>, чтобы добавить сразу все выбранные варианты.</p></li>
 </ul>
 </div></blockquote>
 </li>
@@ -913,9 +917,9 @@
 <span id="id1"></span><h3>Настройки формы<a class="headerlink" href="#form-settings" title="Permalink to this heading">¶</a></h3>
 <p>Используйте 3 кнопки вверху для быстрого доступа к:</p>
 <ul class="simple">
-<li><p><em class="fa fa-bar-chart"></em> <strong>Ответы</strong> (количество): переключает на страницу ответов</p></li>
-<li><p><em class="fa fa-eye"></em> <strong>Предварительный просмотр формы</strong>: открывает ссылку участника</p></li>
-<li><p><em class="fa fa-link"></em> <strong>Копировать публичную ссылку</strong>: копирует ссылку участника</p></li>
+<li><p><i data-lucide='chart-no-axes-combined'></i> <strong>Ответы</strong> (количество): переключает на страницу ответов</p></li>
+<li><p><i data-lucide='eye'></i> <strong>Предварительный просмотр формы</strong>: открывает ссылку участника</p></li>
+<li><p><i data-lucide='link'></i> <strong>Копировать публичную ссылку</strong>: копирует ссылку участника</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Примечание</p>
@@ -991,9 +995,9 @@
 <section id="import-export">
 <h2>Импорт/Экспорт<a class="headerlink" href="#import-export" title="Permalink to this heading">¶</a></h2>
 <p>Сами документы форм можно экспортировать и импортировать в формате <code class="docutils literal notranslate"><span class="pre">JSON</span></code>.</p>
-<p>Чтобы экспортировать ответы со страницы <em class="fa fa-bar-chart"></em> <strong>Ответы</strong> у Вас есть две возможности:</p>
+<p>Чтобы экспортировать ответы со страницы <i data-lucide='chart-no-axes-combined'></i> <strong>Ответы</strong> у Вас есть две возможности:</p>
 <ol class="arabic simple">
-<li><p>в виде файла CSV или JSON используйте кнопку <em class="fa fa-download"></em> <strong>ЭКСПОРТ</strong></p></li>
+<li><p>в виде файла CSV или JSON используйте кнопку <i data-lucide='download'></i> <strong>ЭКСПОРТ</strong></p></li>
 <li><p>как Таблицу, которую можно добавить на Диск кнопкой <strong>ЭКСПОРТ В ТАБЛИЦА</strong></p></li>
 </ol>
 <div class="admonition note">
@@ -1011,10 +1015,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="kanban.html" class="btn btn-neutral float-right" title="Канбан" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="kanban.html" class="btn btn-neutral float-right" title="Канбан" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="slides.html" class="btn btn-neutral" title="Слайды" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="slides.html" class="btn btn-neutral" title="Слайды" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -1077,7 +1081,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

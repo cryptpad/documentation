@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Рисунки</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Инструменты</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Рисование</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Режим рисования</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Режим выбора</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Режим рисования</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Режим выбора</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Экспорт</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -767,7 +771,7 @@
 <h2>Панели инструментов<a class="headerlink" href="#toolbars" title="Permalink to this heading">¶</a></h2>
 <p>CryptPad интегрирует Документы OnlyOffice в ту же зашифрованную систему совместной работы, что и другие приложения. Кроме того, OnlyOffice предоставляет широкий спектр функций на панели инструментов с вкладками. В результате получается двойная панель инструментов, которая может вызвать путаницу:</p>
 <ul class="simple">
-<li><p>Самая верхняя <strong>панель инструментов CryptPad</strong> используется для операций с файлом - <em class="fa fa-file-o"></em> <strong>Файл</strong> (включая импорт/экспорт, историю, свойства и т. д.), а также <em class="fa fa-share-alt"></em> <strong>Поделиться</strong> и <em class="fa fa-unlock-alt"></em> <strong>Доступ</strong>.</p></li>
+<li><p>Самая верхняя <strong>панель инструментов CryptPad</strong> используется для операций с файлом - <i data-lucide='file'></i> <strong>Файл</strong> (включая импорт/экспорт, историю, свойства и т. д.), а также <i data-lucide='share2'></i> <strong>Поделиться</strong> и <i data-lucide='lock-open'></i> <strong>Доступ</strong>.</p></li>
 <li><p><strong>Панель инструментов OnlyOffice</strong> используется для всей функциональности в самом документе, а также для режимов совместной работы, описанных в следующем разделе.</p></li>
 </ul>
 </section>
@@ -788,7 +792,7 @@
 </section>
 <section id="history">
 <span id="documents-history"></span><h2>История<a class="headerlink" href="#history" title="Permalink to this heading">¶</a></h2>
-<p>Чтобы получить доступ к истории документа, используйте <em class="fa fa-file-o"></em> <strong>Файл</strong>&gt; <em class="fa fa-history"></em> <strong>История</strong> на панели инструментов CryptPad.</p>
+<p>Чтобы получить доступ к истории документа, используйте <i data-lucide='file'></i> <strong>Файл</strong>&gt; <i data-lucide='history'></i> <strong>История</strong> на панели инструментов CryptPad.</p>
 <p>Из-за интеграции OnlyOffice с зашифрованной совместной работой в режиме реального времени CryptPad, история в документах работает иначе, чем <a class="reference internal" href="general.html#document-history"><span class="std std-ref">в других приложениях</span></a>.</p>
 <figure class="align-default" id="id1">
 <img alt="../../_images/history-toolbar-document.png" class="screenshot" src="../../_images/history-toolbar-document.png" />
@@ -798,9 +802,9 @@
 </figure>
 <p>История в документах позволяет только вернуться к предыдущей версии, а затем продвигаться вперед по отдельным правкам.</p>
 <ul class="simple">
-<li><p><em class="fa fa-fast-backward"></em> предыдущая версия</p></li>
-<li><p><em class="fa fa-step-forward"></em> шаг вперед на одну правку</p></li>
-<li><p><em class="fa fa-fast-forward"></em> следующая версия</p></li>
+<li><p><i data-lucide='arrow-left-to-line'></i> предыдущая версия</p></li>
+<li><p><i data-lucide='arrow-right'></i> шаг вперед на одну правку</p></li>
+<li><p><i data-lucide='arrow-right-to-line'></i> следующая версия</p></li>
 </ul>
 <p>Функции восстановления версии и общего доступа к версии, а также всё, что относится к <a class="reference internal" href="general.html#snapshots"><span class="std std-ref">Снимки</span></a>, работает так же, как в <a class="reference internal" href="general.html#document-history"><span class="std std-ref">других приложениях</span></a>.</p>
 </section>
@@ -812,11 +816,11 @@
 <section id="import-export">
 <h2>Импорт/Экспорт<a class="headerlink" href="#import-export" title="Permalink to this heading">¶</a></h2>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-upload"></em> <strong>Импорт</strong>.</div>
+<div class="line"><i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='upload'></i> <strong>Импорт</strong>.</div>
 <div class="line">Поддерживаемые форматы: файлы <code class="docutils literal notranslate"><span class="pre">.bin</span></code>, экспортируемые этим приложением, Word <code class="docutils literal notranslate"><span class="pre">.docx</span></code>, <code class="docutils literal notranslate"><span class="pre">.odt</span></code>.</div>
 </div>
 <div class="line-block">
-<div class="line"><em class="fa fa-file-o"></em> <strong>Файл</strong> &gt; <em class="fa fa-download"></em> <strong>Экспорт</strong>.</div>
+<div class="line"><i data-lucide='file'></i> <strong>Файл</strong> &gt; <i data-lucide='download'></i> <strong>Экспорт</strong>.</div>
 <div class="line">Поддерживаемые форматы: <code class="docutils literal notranslate"><span class="pre">.bin</span></code>, Word <code class="docutils literal notranslate"><span class="pre">.docx</span></code>, <code class="docutils literal notranslate"><span class="pre">.odt</span></code>, <code class="docutils literal notranslate"><span class="pre">.pdf</span></code>.</div>
 </div>
 </section>
@@ -830,10 +834,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="presentation.html" class="btn btn-neutral float-right" title="Презентация" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="presentation.html" class="btn btn-neutral float-right" title="Презентация" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="richtext.html" class="btn btn-neutral" title="Документ" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="richtext.html" class="btn btn-neutral" title="Документ" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -896,7 +900,10 @@
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>

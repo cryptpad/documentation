@@ -42,6 +42,8 @@
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
+  
+  <script src="../../_static/js/lucide.min.js"></script>
 
 </head>
 
@@ -317,8 +319,8 @@
 <li class="toctree-l3"><a class="reference internal" href="whiteboard.html">Whiteboard</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#toolbar">Toolbar</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#drawing">Drawing</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><em class="fa fa-paint-brush"></em> Paint mode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><em class="fa fa-arrows"></em> Select mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#paint-brush-paint-mode"><i data-lucide='brush-cleaning'></i> Paint mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="whiteboard.html#arrows-select-mode"><i data-lucide='move'></i> Select mode</a></li>
 <li class="toctree-l4"><a class="reference internal" href="whiteboard.html#export">Export</a></li>
 </ul>
 </li>
@@ -692,8 +694,10 @@
       
       <nav class="wy-nav-top" aria-label="top navigation">
         
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">CryptPad</a>
+          <span class="wy-nav-top-menu" data-toggle="wy-nav-top" role="button" tabindex="0" aria-label="Menu">
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </span>
         
       </nav>
 
@@ -760,14 +764,14 @@
 <li><p>From anywhere on CryptPad: <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>+<kbd class="kbd docutils literal notranslate">e</kbd></kbd>.</p></li>
 <li><p>From the CryptDrive:</p>
 <ul>
-<li><p><em class="fa fa-plus"></em> <strong>New</strong> in the toolbar.</p></li>
-<li><p><em class="fa fa-plus"></em> <strong>New</strong> at the bottom of the file list/grid.</p></li>
+<li><p><i data-lucide='plus'></i> <strong>New</strong> in the toolbar.</p></li>
+<li><p><i data-lucide='plus'></i> <strong>New</strong> at the bottom of the file list/grid.</p></li>
 </ul>
 </li>
-<li><p>From a document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-plus"></em> <strong>New</strong>.</p></li>
+<li><p>From a document: <i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='plus'></i> <strong>New</strong>.</p></li>
 </ul>
 <img alt="../../_images/app-creation-screen.png" class="screenshot" src="../../_images/app-creation-screen.png" />
-<p><span class="badge-user">Logged in users</span></p>
+<p><span class="badge-user" data-icon="user"><i data-lucide="user"></i> Logged in users</span></p>
 <p>The creation screen offers a number of options when new documents are
 created.</p>
 <ul class="simple">
@@ -780,11 +784,11 @@ created.</p>
 <p class="admonition-title">Nota</p>
 <p>All templates saved in CryptDrive or in teams that you are part of appear on the creation screen. To save a document as a template:</p>
 <ul class="simple">
-<li><p>In the open document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="cptools cptools-new-template"></em> <strong>Save as template</strong>.</p></li>
+<li><p>In the open document: <i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='file-up'></i> <strong>Save as template</strong>.</p></li>
 </ul>
 <p>or</p>
 <ul class="simple">
-<li><p>In the CryptDrive: Drag the document to the <em class="cptools cptools-template"></em> <strong>Templates</strong> folder.</p></li>
+<li><p>In the CryptDrive: Drag the document to the <i data-lucide='file-cog'></i> <strong>Templates</strong> folder.</p></li>
 </ul>
 </div>
 </section>
@@ -796,8 +800,8 @@ created.</p>
 <span id="id3"></span><h2>Make a copy<a class="headerlink" href="#make-a-copy" title="Permalink to this heading">¶</a></h2>
 <p>To duplicate a document:</p>
 <ul class="simple">
-<li><p>From the document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-clone"></em> <strong>Make a copy</strong>.</p></li>
-<li><p>From the CryptDrive: <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document &gt; <em class="fa fa-clone"></em>
+<li><p>From the document: <i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='copy'></i> <strong>Make a copy</strong>.</p></li>
+<li><p>From the CryptDrive: <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document &gt; <i data-lucide='copy'></i>
 <strong>Make a copy</strong>.</p></li>
 </ul>
 <div class="admonition note">
@@ -819,18 +823,18 @@ created.</p>
 </figure>
 <p>The history of documents is saved and can be restored if needed. To view and restore the history of a document:</p>
 <ol class="arabic simple">
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-history"></em> <strong>History</strong>.</p></li>
+<li><p><i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='history'></i> <strong>History</strong>.</p></li>
 <li><p>Use the arrows to navigate:</p>
 <ul class="simple">
-<li><p><em class="fa fa-step-backward"></em> and <em class="fa fa-step-forward"></em> between each edit.</p></li>
-<li><p><em class="fa fa-step-backward"></em> <em class="fa fa-user"></em> and <em class="fa fa-user"></em> <em class="fa fa-step-forward"></em> between each author.</p></li>
-<li><p><em class="fa fa-step-backward"></em> <em class="fa fa-users"></em> and <em class="fa fa-users"></em> <em class="fa fa-step-forward"></em> between each editing session (when the same group of authors was connected to the document).</p></li>
+<li><p><i data-lucide='arrow-left'></i> and <i data-lucide='arrow-right'></i> between each edit.</p></li>
+<li><p><i data-lucide='arrow-left'></i> <i data-lucide='user'></i> and <i data-lucide='user'></i> <i data-lucide='arrow-right'></i> between each author.</p></li>
+<li><p><i data-lucide='arrow-left'></i> <i data-lucide='users-round'></i> and <i data-lucide='users-round'></i> <i data-lucide='arrow-right'></i> between each editing session (when the same group of authors was connected to the document).</p></li>
 </ul>
 </li>
-<li><p>Restore the displayed version with <em class="fa fa-check"></em> <strong>Restore</strong> , or close the history without restoring
-with <em class="fa fa-times"></em> <strong>Close</strong>.</p></li>
+<li><p>Restore the displayed version with <i data-lucide='check'></i> <strong>Restore</strong> , or close the history without restoring
+with <i data-lucide='x'></i> <strong>Close</strong>.</p></li>
 </ol>
-<p>To save storage space, history can be deleted in the document’s <a class="reference internal" href="#document-properties"><span class="std std-ref">properties</span></a> <span class="badge-owner">Document owners</span></p>
+<p>To save storage space, history can be deleted in the document’s <a class="reference internal" href="#document-properties"><span class="std std-ref">properties</span></a> <span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> Document owners</span></p>
 <div class="admonition note">
 <p class="admonition-title">Nota</p>
 <p>The history functionality works slightly differently in the <a class="reference internal" href="sheets.html#app-sheets"><span class="std std-ref">Spreadsheet</span></a> application, due to the integration of OnlyOffice with CryptPad's encrypted real-time collaboration. Please refer to <a class="reference internal" href="sheets.html#sheets-history"><span class="std std-ref">spreadsheet history</span></a> for further details.</p>
@@ -838,7 +842,7 @@ with <em class="fa fa-times"></em> <strong>Close</strong>.</p></li>
 <p><strong>Version Links</strong></p>
 <p>To share a link to the displayed version of the history:</p>
 <ul class="simple">
-<li><p><em class="fa fa-share-alt"></em> <strong>Share</strong> in the toolbar.</p></li>
+<li><p><i data-lucide='share2'></i> <strong>Share</strong> in the toolbar.</p></li>
 <li><p>Select <strong>Contacts</strong>, <strong>Link</strong> or <strong>Embed</strong> similarly to when <a class="reference internal" href="../share_and_access.html#share"><span class="std std-ref">sharing a document</span></a>.</p></li>
 </ul>
 <p>Recipients will be able to view the selected version in read-only mode.</p>
@@ -849,9 +853,9 @@ with <em class="fa fa-times"></em> <strong>Close</strong>.</p></li>
 <p id="snapshot-from-history"><strong>Create a snapshot from history</strong></p>
 <p>To create a <a class="reference internal" href="#snapshots"><span class="std std-ref">snapshot</span></a> from the displayed version of the history:</p>
 <ul class="simple">
-<li><p><em class="fa fa-camera"></em> button in the toolbar.</p></li>
+<li><p><i data-lucide='camera'></i> button in the toolbar.</p></li>
 <li><p>In the dialog, provide a name for the snapshot.</p></li>
-<li><p><em class="fa fa-camera"></em> <strong>New Snapshot</strong></p></li>
+<li><p><i data-lucide='camera'></i> <strong>New Snapshot</strong></p></li>
 </ul>
 </section>
 <section id="snapshots">
@@ -865,22 +869,22 @@ with <em class="fa fa-times"></em> <strong>Close</strong>.</p></li>
 <p>Snapshots are specific points in the history of a document that are named for easy reference.</p>
 <p>To create a snapshot from the current state of the document:</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-camera"></em> <strong>Snapshots</strong></p></li>
+<li><p><i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='camera'></i> <strong>Snapshots</strong></p></li>
 <li><p>In the dialog, provide a name for the snapshot.</p></li>
-<li><p><em class="fa fa-camera"></em> <strong>New Snapshot</strong></p></li>
+<li><p><i data-lucide='camera'></i> <strong>New Snapshot</strong></p></li>
 </ul>
 <p>To create a snapshot from a version in the document's history see <a class="reference internal" href="#document-history"><span class="std std-ref">snapshot from history</span></a> above.</p>
 <p>To view and restore a snapshot:</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-camera"></em> <strong>Snapshots</strong></p></li>
-<li><p>In the dialog, <code class="docutils literal notranslate"><span class="pre">Click</span></code> on the snapshot in the list and <em class="fa fa-eye"></em> <strong>View</strong>.</p></li>
+<li><p><i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='camera'></i> <strong>Snapshots</strong></p></li>
+<li><p>In the dialog, <code class="docutils literal notranslate"><span class="pre">Click</span></code> on the snapshot in the list and <i data-lucide='eye'></i> <strong>View</strong>.</p></li>
 <li><p>The snapshot opens in a new window.</p></li>
-<li><p><em class="fa fa-check"></em> <strong>Restore</strong> or <em class="fa fa-times"></em> <strong>Close</strong></p></li>
+<li><p><i data-lucide='check'></i> <strong>Restore</strong> or <i data-lucide='x'></i> <strong>Close</strong></p></li>
 </ul>
 <p>To delete a snapshot:</p>
 <ul class="simple">
-<li><p><em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-camera"></em> <strong>Snapshots</strong></p></li>
-<li><p>In the dialog, <code class="docutils literal notranslate"><span class="pre">Click</span></code> on the snapshot in the list and <em class="fa fa-trash"></em> <strong>Delete</strong>.</p></li>
+<li><p><i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='camera'></i> <strong>Snapshots</strong></p></li>
+<li><p>In the dialog, <code class="docutils literal notranslate"><span class="pre">Click</span></code> on the snapshot in the list and <i data-lucide='trash2'></i> <strong>Delete</strong>.</p></li>
 </ul>
 </section>
 <section id="properties">
@@ -888,10 +892,10 @@ with <em class="fa fa-times"></em> <strong>Close</strong>.</p></li>
 <img alt="../../_images/modal-properties.png" class="screenshot" src="../../_images/modal-properties.png" />
 <p>To access the properties menu:</p>
 <ul class="simple">
-<li><p>From the document: <em class="fa fa-file-o"></em> <strong>File</strong> &gt; <em class="fa fa-info-circle"></em>
+<li><p>From the document: <i data-lucide='file'></i> <strong>File</strong> &gt; <i data-lucide='info'></i>
 <strong>Properties</strong>.</p></li>
 <li><p>From the CryptDrive: <code class="docutils literal notranslate"><span class="pre">Right</span> <span class="pre">click</span></code> on the document &gt;
-<em class="fa fa-info-circle"></em> <strong>Properties</strong>.</p></li>
+<i data-lucide='info'></i> <strong>Properties</strong>.</p></li>
 </ul>
 <p>Available data:</p>
 <ul class="simple">
@@ -900,7 +904,7 @@ with <em class="fa fa-times"></em> <strong>Close</strong>.</p></li>
 <li><p>Dates of creation and last access.</p></li>
 <li><p>Size.</p></li>
 </ul>
-<p>The document size shows the proportions used for content and for history. To save storage space, delete the document’s history with <strong>Delete history</strong> and confirm. <span class="badge-owner">Document owners</span></p>
+<p>The document size shows the proportions used for content and for history. To save storage space, delete the document’s history with <strong>Delete history</strong> and confirm. <span class="badge-owner" data-icon="id-card-lanyard"><i data-lucide="id-card-lanyard"></i> Document owners</span></p>
 <div class="admonition warning">
 <p class="admonition-title">Avvertimento</p>
 <p><a class="reference internal" href="#snapshots"><span class="std std-ref">Snapshots</span></a> are part of the document's history. If you delete the history in the document's properties
@@ -910,11 +914,11 @@ snapshots will be deleted as well.</p>
 <section id="users-and-chat">
 <span id="document-users-and-chat"></span><h2>Users and chat<a class="headerlink" href="#users-and-chat" title="Permalink to this heading">¶</a></h2>
 <p>Interact with users connected to the same document through the user-list
-<em class="fa fa-user"></em> <em class="fa fa-eye"></em> and the <em class="fa fa-comments"></em> <strong>Chat</strong>.</p>
+<i data-lucide='user'></i> <i data-lucide='eye'></i> and the <i data-lucide='message-square-more'></i> <strong>Chat</strong>.</p>
 <p>To show/hide these panes:</p>
 <ul class="simple">
-<li><p><em class="fa fa-user"></em> <em class="fa fa-eye"></em> for the user-list.</p></li>
-<li><p><em class="fa fa-comments"></em> <strong>Chat</strong> for the chat.</p></li>
+<li><p><i data-lucide='user'></i> <i data-lucide='eye'></i> for the user-list.</p></li>
+<li><p><i data-lucide='message-square-more'></i> <strong>Chat</strong> for the chat.</p></li>
 </ul>
 </section>
 </section>
@@ -927,10 +931,10 @@ snapshots will be deleted as well.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="richtext.html" class="btn btn-neutral float-right" title="Rich Text" accesskey="n" rel="next"> <!-- Next --> <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="richtext.html" class="btn btn-neutral float-right" title="Rich Text" accesskey="n" rel="next"><i data-lucide="circle-chevron-right" aria-hidden="true"></i></a>
       
       
-        <a href="../applications.html" class="btn btn-neutral" title="Applications" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> <!-- Previous  -->  </a>
+        <a href="../applications.html" class="btn btn-neutral" title="Applications" accesskey="p" rel="prev"><i data-lucide="circle-chevron-left" aria-hidden="true"></i></a>
       
     </div>
   
@@ -993,7 +997,10 @@ snapshots will be deleted as well.</p>
           SphinxRtdTheme.Navigation.enableSticky();
           
       });
-  </script> 
+  </script>
+
+  <script type="application/json" id="lucide-theme-config">{"admonitions": {"note": "info", "warning": "triangle-alert", "danger": "octagon-alert", "error": "circle-x", "tip": "lightbulb", "hint": "lightbulb", "important": "circle-alert", "caution": "triangle-alert", "attention": "triangle-alert", "seealso": "book-open", "admonition-todo": "list-todo"}, "permalinks": {"icon": "link"}, "toctree": {"icon": "chevron-right"}}</script>
+  <script src="../../_static/js/lucide-theme.js"></script> 
 
 </body>
 </html>
