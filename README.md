@@ -15,11 +15,13 @@ source ./.venv/bin/activate
 
 ## Lucide icons
 
-Icons use [Lucide](https://lucide.dev/). In RST:
+Following the product in 2025.9.0, the documentation uses [Lucide](https://lucide.dev/) icons since 2026.5.0.
 
-- `|gear|` — shortcut name (see `shortcut_icon_map` in `icon_mappings.py`)
-- `|cptools destroy|` — CryptPad app icon (see `cptools_icon_map`)
-- `|icon download|` — Lucide name directly
+Icons usage in RST:
+
+- `|name|` — old Fontawesome shortcut for an icon "name", now mapped to a Lucide icon (see `shortcut_icon_map` in `icon_mappings.py`)
+- `|cptools name|` — old CPTools shortcut for an icon "name" (custom web font), now mapped to a Lucide icon (see `cptools_icon_map`)
+- `|icon name|` — Lucide icon "name" (new)
 
 To add or change a shortcut mapping, edit `icon_mappings.py` and rebuild. No `.rst` or `.po` change is needed unless you introduce a new shortcut string.
 
