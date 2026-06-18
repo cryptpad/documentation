@@ -98,26 +98,13 @@ html_css_files = [
     'css/cp-overrides.css'
 ]
 
-html_theme = "theme"
+html_theme = "furo"
 html_theme_path = ["_themes"]
 using_rtd_theme = True
 smartquotes = False
 
 html_baseurl = 'https://docs.cryptpad.org/' # for the generated site-map
 #html_extra_path = ["robots.txt"]
-
-html_theme_options = {
-    'logo_only': False,
-    'display_version': True,
-    'prev_next_buttons_location': 'bottom',
-    'style_external_links': False,
-    # Toc options
-    'collapse_navigation': False,
-    'sticky_navigation': True,
-    'navigation_depth': 5,
-    'includehidden': True,
-    'titles_only': False
-}
 
 # Translations
 locale_dirs = ['locale/']
