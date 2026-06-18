@@ -90,12 +90,19 @@ exclude_patterns = [
 # so a file named "default.css" will overwrite the builtin "default.css".
 # html_static_path = ['static']
 
+html_static_path = ['_themes/theme/static']
+
 html_css_files = [
     'css/open-sans.css',
     'css/cptools.css',
     'css/fontawesome.css',
     'css/IBM-plex.css',
     'css/cp-overrides.css'
+]
+
+html_js_files = [
+    'js/lucide.min.js',
+    'js/lucide-theme.js'
 ]
 
 html_theme = "furo"
