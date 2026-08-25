@@ -92,7 +92,7 @@ OnlyOffice applications (Spreadsheet, Document, and Presentation) are not bundle
 
 .. code:: bash
 
-   ./install-onlyoffice.sh
+   ./install-office.sh
 
 If you can not or do not want to use this script, it is also possible to :ref:`install OnlyOffice manually <admin_install_onlyoffice_manually>`.
 
