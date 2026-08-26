@@ -73,7 +73,7 @@ If you encounter any issues, please check the :ref:`faq_common_issues` first. If
 Import/export is not visible in the File menu
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For spreadsheets and advanced document processing, Cryptpad integrates OnlyOffice. As a result, there are two toolbars each with their own File menu on the same screen. Please make sure to check in both menus, when looking for import/export.
+For spreadsheets and advanced document processing, Cryptpad integrates Euro-Office. As a result, there are two toolbars each with their own File menu on the same screen. Please make sure to check in both menus, when looking for import/export.
 
 Document application import/export
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -183,10 +183,10 @@ The way encryption is currently used in CryptPad does not allow syncing with the
 
 .. _FAQ_OOintegration:
 
-What is the relationship between CryptPad and OnlyOffice?
+What is the relationship between CryptPad and Euro-Office?
 ---------------------------------------------------------
 
-The CryptPad :ref:`app_documents`, :ref:`app_presentation` & :ref:`app_sheets` applications are an `OnlyOffice Docs <https://www.onlyoffice.com/en/office-suite.aspx>`_ integration. However, this only concerns the client-side code, CryptPad does not make use of the OnlyOffice Document Server. CryptPad's encrypted collaboration, used for document, presentation & spreadsheets and other applications, is completely different from the encryption system used in parts of upstream OnlyOffice. Some of CryptPad's file format conversion tools are based on OnlyOffice code, but substantial work has been done to make it run in the browser rather than on the server, therefore avoiding the need to reveal the contents of users' documents when converting.
+The CryptPad :ref:`app_documents`, :ref:`app_presentation` & :ref:`app_sheets` applications are an `Euro-Office Docs <https://github.com/Euro-Office/>`_ integration. However, this only concerns the client-side code, CryptPad does not make use of the Euro-Office Document Server. CryptPad's encrypted collaboration, used for document, presentation & spreadsheets and other applications, is completely different from the encryption system used in parts of upstream Euro-Office. Some of CryptPad's file format conversion tools are based on Euro-Office code, but substantial work has been done to make it run in the browser rather than on the server, therefore avoiding the need to reveal the contents of users' documents when converting.
 
 How Secure is CryptPad?
 -----------------------

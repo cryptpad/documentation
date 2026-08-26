@@ -6,7 +6,7 @@ Upgrading CryptPad
 
 To upgrade your CryptPad instance, please follow the indications provided in the Upgrade notes section of the `releases published on GitHub <https://github.com/cryptpad/cryptpad/releases>`__.
 
-If OnlyOffice is installed, it also needs to be upgraded:
+If Euro-Office is installed, it also needs to be upgraded:
 
 .. code:: bash
 

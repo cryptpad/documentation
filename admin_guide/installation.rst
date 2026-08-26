@@ -83,18 +83,18 @@ Dependencies
    npm ci
    npm run install:components
 
-.. _admin_install_onlyoffice:
+.. _admin_install_eurooffice:
 
-OnlyOffice (optional)
+Euro-Office (optional)
 """""""""""""""""""""
 
-OnlyOffice applications (Spreadsheet, Document, and Presentation) are not bundled with CryptPad anymore. You can install/update OnlyOffice by running the installation script provided:
+Euro-Office applications (Spreadsheet, Document, and Presentation) are not bundled with CryptPad anymore. You can install/update Euro-Office by running the installation script provided:
 
 .. code:: bash
 
    ./install-office.sh
 
-If you can not or do not want to use this script, it is also possible to :ref:`install OnlyOffice manually <admin_install_onlyoffice_manually>`.
+If you can not or do not want to use this script, it is also possible to :ref:`install Euro-Office manually <admin_install_eurooffice_manually>`.
 
 Configuration
 """""""""""""
@@ -240,12 +240,12 @@ Note that you'll still need to follow the CryptPad configuration steps, especial
       - ./onlyoffice-conf:/cryptpad/onlyoffice-conf
       - ./config/config.js:/cryptpad/config/config.js
 
-.. _admin_install_onlyoffice_manually:
+.. _admin_install_eurooffice_manually:
 
-Install OnlyOffice manually
+Install Euro-Office manually
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-It is easier to use the :ref:`script <admin_install_onlyoffice>` to install OnlyOffice. However, it is also possible to install OnlyOffice manually.
+It is easier to use the :ref:`script <admin_install_eurooffice>` to install Euro-Office. However, it is also possible to install Euro-Office manually.
 
 For the first installation you need to clone `onlyoffice-builds` into your `cryptpad` folder:
 
