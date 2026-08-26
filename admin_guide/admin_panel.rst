@@ -123,7 +123,7 @@ Security
 Enable remote embedding
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Allow documents and media from this instance to be embedded on other websites. This will add an "Embed" option to the Share menu. For security reasons applications that use OnlyOffice (Sheets, Document, Presentation) cannot be embedded even if this setting is active.
+Allow documents and media from this instance to be embedded on other websites. This will add an "Embed" option to the Share menu. For security reasons applications that use Euro-Office (Sheets, Document, Presentation) cannot be embedded even if this setting is active.
 
 Please note that by enabling this settings, you will need to adapt your Nginx configuration file, adding ``vector:`` to pass :ref:`diagnostic tests <admin_checkup>`.
 
