@@ -11,7 +11,7 @@ The Diagram application in CryptPad is an integration of `Draw.io <https://www.d
 Documentation
 -------------
 
-Please refer to the `Draw.io documentation <https://www.drawio.com/doc/>`__ for a diagram user-guide.
+Please refer to the `Draw.io documentation <https://www.drawio.com/docs/>`__ for a diagram user-guide.
 
 Toolbars
 --------
