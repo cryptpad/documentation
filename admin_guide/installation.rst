@@ -183,36 +183,32 @@ While we still prefer :ref:`the recommended installation method <admin_recommend
 
 We provide the following files in the CryptPad repository:
 
-- ``.dockerignore`` is useful to remove parts of the repository from the image (avoid making it use too much storage)
+- ``.dockerignore`` is useful to remove parts of the repository from the image if you build it yourself (avoid making it use too much storage)
 - ``Dockerfile`` is used to build the Docker image itself
-- ``docker-entrypoint.sh`` allows to configure a few things (domain names and build static assets)
-- ``docker-compose.yml`` used to create a container using the image and keep it running
+- ``docker-entrypoint.sh`` prepares the container with custom configurations (domain names and build static assets)
+- ``docker-compose.yml`` is used to configure and create a container using the image and keep it running
 
-.. note::
+CryptPad publishes docker images for its releases. You can find them on `Docker Hub <https://hub.docker.com/r/cryptpad/cryptpad/tags>`__. These images can be used directly from the ``docker-compose.yml`` file ``image`` parameter:
 
-   If you don't want to build your own images as explained below, you can also use the ones we publish on `Docker Hub <https://hub.docker.com/r/cryptpad/cryptpad/tags>`__, directly from the ``docker-compose.yml`` file:
+- ``cryptpad/version-X.x.z`` matches the official releases made on `GitHub <https://github.com/cryptpad/cryptpad/releases>`__
+- ``cryptpad/latest`` is the latest one published with the versioning scheme
 
-   - ``cryptpad/version-X.x.z`` matches the official releases made on `GitHub <https://github.com/cryptpad/cryptpad/releases>`__
-   - ``cryptpad/latest`` is the latest one published with the versioning scheme
+To install an image, you can follow the following steps:
 
-#. Build your own Docker image
-
-   .. code:: docker
-
-      docker build -t cryptpad/cryptpad:local-latest .
+#. Get our ``docker-compose.yml`` base from the `CryptPad repository <https://raw.githubusercontent.com/cryptpad/cryptpad/refs/heads/main/docker-compose.yml>`__
 
 #. Modify ``docker-compose.yml`` with your own values
 
-   - ``CPAD_MAIN_DOMAIN``
-   - ``CPAD_SANDBOX_DOMAIN``
-   - ``CPAD_INSTALL_ONLYOFFICE``
+   - ``CPAD_MAIN_DOMAIN``: The main domain with the protocol and without trailing slash (for instance ``https://cryptpad.example.com``). See :ref:`domains <admin_domain_config>` for more details
+   - ``CPAD_SANDBOX_DOMAIN``: The sandbox domain, with the same syntax as above (for instance ``https://sandbox.example.com``)
+   - ``CPAD_INSTALL_OFFICE``: Uncomment this line to install our office applications (document, spreadsheet and presentation). It may take a few minutes the first time and requires you to accept the licence of office applications.
 
-#. Set appropriate permissions
+#. By default, CryptPad docker container runs as user and group ``4001``. It requires you to create the folders and set appropriate permissions
 
    .. code:: bash
 
-      mkdir -p data/{blob,block,data,files} customize onlyoffice-dist onlyoffice-conf
-      sudo chown -R 4001:4001 data customize onlyoffice-dist onlyoffice-conf
+      mkdir -p data/{blob,block,data,files} customize onlyoffice-{dist,conf} config
+      sudo chown -R 4001:4001 data customize onlyoffice-{dist,conf} config
 
 #. Run the container with Docker Compose
 
@@ -226,19 +222,18 @@ We provide the following files in the CryptPad repository:
 
       docker compose logs
 
-Note that you'll still need to follow the CryptPad configuration steps, especially :ref:`admin_adminusers`. To do that you can mount your ``config.js`` file as a Docker volume.
+Running the container also creates configuration files ``config.js`` and ``infra.js`` in the ``config/`` directory if they don’t exist yet.
+Note that you'll still need to follow the :ref:`CryptPad configuration steps <admin_cryptpad_config>` except for the :ref:`domain <admin_domain_config>` part that is handled by docker compose.
+For further customization, you can follow the :ref:`Instance customization guide <admin_customization>`.
+
+
+.. note::
+   You can also build your own docker image with the following command:
 
    .. code:: docker
 
-      volumes:
-      - ./data/blob:/cryptpad/blob
-      - ./data/block:/cryptpad/block
-      - ./customize:/cryptpad/customize
-      - ./data/data:/cryptpad/data
-      - ./data/files:/cryptpad/datastore
-      - ./onlyoffice-dist:/cryptpad/www/common/onlyoffice/dist
-      - ./onlyoffice-conf:/cryptpad/onlyoffice-conf
-      - ./config/config.js:/cryptpad/config/config.js
+      docker build -t cryptpad/cryptpad:local-latest .
+   Then, change the value of the ``image`` parameter in ``docker-compose.yml`` to ``cryptpad/cryptpad:local-latest``.
 
 .. _admin_install_onlyoffice_manually:
 
