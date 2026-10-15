@@ -248,6 +248,10 @@ Responses
 
 Notifications for new responses are sent to the form *owner* through the integrated notifications.
 
+.. note::
+
+   Please note that only the original :ref:`owner <owners>` of the form can delete responses. Users added as co-owners can view responses but cannot delete them. Participants may still modify or delete their own responses if allowed by the **Editing after submission** setting.
+
 Advanced use-cases
 ~~~~~~~~~~~~~~~~~~
 
