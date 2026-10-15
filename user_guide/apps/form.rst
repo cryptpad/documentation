@@ -211,6 +211,8 @@ Guest Access
  - Blocked: only users who are logged in to their CryptPad account can respond to the form.
  - Allowed: unregistered users can respond, logged in users can choose to respond anonymously.
 
+.. _form_editing_after_submission:
+
 Editing after submission
 ++++++++++++++++++++++++
 
@@ -250,7 +252,7 @@ Notifications for new responses are sent to the form *owner* through the integra
 
 .. note::
 
-   Please note that only the original :ref:`owner <owners>` of the form can delete responses. Users added as co-owners can view responses but cannot delete them. Participants may still modify or delete their own responses if allowed by the **Editing after submission** setting.
+   Please note that only the original :ref:`owner <owners>` of the form can delete responses. Users added as co-owners can view responses but cannot delete them. Participants may still modify or delete their own responses if allowed by the :ref:`Editing after submission <form_editing_after_submission>` setting.
 
 Advanced use-cases
 ~~~~~~~~~~~~~~~~~~
