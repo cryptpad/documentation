@@ -24,6 +24,18 @@ To create a new document:
 The creation screen offers a number of options when new documents are
 created.
 
+-  **Store in**: Choose where to store the new document:
+
+   -  **CryptDrive** (default): Store the document in your CryptDrive. If it is created as an owned document, you are its only initial :ref:`owner <owners>`.
+
+   -  **Team**: Store the document in a :ref:`team <teams>` drive.
+
+      .. attention::
+
+         Creating an owned document in your team's drive will give ownership to the team.
+
+   -  **Do not store**: Do not add the document to any drive. This option does not guarantee access if the edit/author link is lost. If the document is not stored in any drive, it is destroyed from the database after 90 days of inactivity (the length of this delay can be set by the service administrators).
+
 -  **Owned document**: Create the new document as :ref:`owner <owners>`. If the document is created without an owner this setting cannot be modified.
 
 -  **Expiring document**: Specify an expiry date after which the document will be destroyed. This setting cannot be modified after the document is created.
