@@ -477,8 +477,16 @@ To modify the preview images please see :ref:`preview_images`
 
 .. _admin_change_crypto:
 
-Change the server’s cryptography library (optional)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Change the server’s cryptography library (deprecated)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. warning::
+    Since `2026.10.0`, this feature has been integrated in CryptPad, henceforth the plugin is **deprecated**. If you have installed it in a previous version, please remove the plugin. If you followed the following instructions in the past, you can run the following command:
+
+      .. code:: bash
+
+         [[ -e lib/plugin/sodium/ ]] && rm -fr lib/plugins/sodium/
+
 
 In CryptPad, the server and client use the same cryptography library called `TweetNaCl <https://github.com/dchest/tweetnacl-js>`__.
 This choice was made to keep the codebase simple, and to avoid introducing extra dependencies. However, this design shows its limitation on large-scale instances where the server-side cryptographic operations can be costly, thus slowing down the server.
