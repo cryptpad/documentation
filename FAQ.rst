@@ -50,6 +50,8 @@ If you are still logged in to an account for which you have forgotten the passwo
 3. In another browser, register a new account with a known password
 4. While logged in to the new account: **User Menu** (avatar at the top right) > |gear| **Settings** > |hdd-o| **CryptDrive** and click the **Restore** button
 
+.. _faq_import_export:
+
 How to import/export to/from another platform?
 ----------------------------------------------
 
@@ -60,7 +62,7 @@ Making CryptPad compatible with a wide range of document formats is an ongoing c
 
 It is possible to upload **files** to CryptPad for secure storage and sharing, however this does not make every file an editable CryptPad **document** right away. For this, you either have to:
 
-- ``Right click`` on the uploaded file > **Open in editor**, or...
+- ``Right click`` on the uploaded file > **Open in**, or...
 - Create a blank document and use the |file-o| **File** > |upload| **Import** functionality in the appropriate CryptPad editor as explained below
 
 .. warning::

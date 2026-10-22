@@ -53,6 +53,29 @@ To share a folder and all of its contents:
 
 - ``Right click`` on the folder > |share-alt| **Share**. The folder will then be converted into a :ref:`shared folder <shared_folders>`.
 
+.. _open_in:
+
+Open in
+~~~~~~~
+
+Files uploaded to CryptDrive are stored as static files for secure storage and sharing. Compatible files can be converted into editable CryptPad documents with **Open in**:
+
+#. Upload the file to CryptDrive.
+#. ``Right click`` on the file > **Open in** > select the application.
+
+This converts the uploaded file into a collaborative document that can be edited real-time in the selected CryptPad application.
+
+**Open in** is available for:
+
+- :ref:`app_documents`: Microsoft Word ``.docx`` and OpenDocument ``.odt``
+- :ref:`app_presentation`: Microsoft PowerPoint ``.pptx`` and OpenDocument ``.odp``
+- :ref:`app_sheets`: Microsoft Excel ``.xlsx`` and OpenDocument ``.ods``
+- :ref:`app_code`: plain text files
+
+.. note::
+
+   Alternatively, create a blank document and use |file-o| **File** > |upload| **Import** in the appropriate application. For further details and known limitations, please see :ref:`faq_import_export`.
+
 Renaming
 ~~~~~~~~
 
