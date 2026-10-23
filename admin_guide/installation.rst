@@ -16,7 +16,7 @@ Hardware
 
 The development team uses and recommends the following hardware requirements as a minimum on the host machine:
 
--  Debian 12
+-  Debian 13
 -  2GB RAM
 -  2 CPUs
 -  20GB storage (depending on planned usage)
@@ -61,7 +61,7 @@ Clone the CryptPad repository
 
 .. code:: bash
 
-   git clone -b 2025.12.0 --depth 1 https://github.com/cryptpad/cryptpad.git cryptpad
+   git clone -b 2026.10.0 --depth 1 https://github.com/cryptpad/cryptpad.git cryptpad
 
 Move to the newly cloned repository
 
@@ -73,7 +73,7 @@ Switch to the latest published tag
 
 .. code:: bash
 
-   git checkout 2025.12.0
+   git checkout 2026.10.0
 
 Dependencies
 """"""""""""
@@ -311,7 +311,7 @@ Install and configure Nginx
 
 CryptPad’s application server handles active connections via websocket and serves static assets (HTML, Javascript, CSS, etc.). This basic configuration is designed to be very easy to configure for small to midsize instances (up to 3000 concurrent users). In a more demanding environment, the development team recommends `Nginx <https://nginx.org/en/linux_packages.html#Debian>`__ with our `advanced example configuration <https://github.com/cryptpad/cryptpad/blob/main/docs/example-advanced.nginx.conf>`__ for the following reasons:
 
-1. Scale to many more users by serving static content with a more scalable web-server instead of the single-threaded NodeJS web-server that is built-in
+1. Scale to many more users by serving static content with a dedicated web-server instead of the NodeJS web-server that is built-in
 2. Allow the application server to focus exclusively on handling websocket connections
 
 .. warning::
